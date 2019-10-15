@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Program name="BRAT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
+  <MetaData>
+    <Meta name="projectfile">project.rs.xml</Meta>
+    <Meta name="cognitoUserpoolId">us-west-2_5LnOSGlts</Meta>
+    <Meta name="cognitoWebclientId">rsfn72s12uoe8a0h2h58rsq9i</Meta>
+    <Meta name="cognitoRegion">us-west-2</Meta>
+    <Meta name="apiUrl">https://abgo77bhnc.execute-api.us-west-2.amazonaws.com/dev/api</Meta>
+    <Meta name="projectXSD">https://gist.githubusercontent.com/MattReimer/8632b6ab88d5be7c2a034eb8bb563c6c/raw/CHaMP_Program.xsd</Meta>
+  </MetaData>
+  
+
+  <Definitions>
+    <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
+    <Collections>
+      <Collection id="COL_HUC8" name="HUC8">
+        <Allow pattern="[0-9]{8}" />
+      </Collection>
+      <Collection id="COL_HUC4" name="HUC4">
+        <Allow pattern="[0-9]{4}" />
+      </Collection>      
+    </Collections>
+
+    <!--Groups are a lot simpler than collections. They can only be a single folder-->
+    <Groups>
+      <Group id="GRP_NATIONAL" name="National" folder="National" />
+      <Group id="GRP_HUC8" name="HUC8" folder="HUC8" />
+      <Group id="GRP_HUC4" name="HUC4" folder="HUC4" />
+    </Groups>
+
+    <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
+    <Products>
+      <Product id="BRATModel4" name="BRAT Model (HUC4)" folder="BRAT" url="" />
+      <Product id="BRATInputs4" name="BRAT Inputs (HUC4)" folder="BRATInputs" url="" />
+      
+      <Product id="BRATModel8" name="BRAT Models (HUC8)" folder="BRAT" url="" />
+      <Product id="BRATInputs8" name="BRAT Inputs (HUC8)" folder="BRATInputs" url="" />
+
+      <Product id="NationalDatasets" name="National Datasets" folder="nationaldatasets" url="" />
+
+    </Products>
+  </Definitions>
+
+  <!-- Here's where we specify the actual structure
+    Reminder:
+      - Collection: Repeating folders (e.g. Asotin, Lemhi
+      - Group: Single folder with an explicit name (e.g. Topography)
+     Rules:
+      - Only one collection is allowed at any level
+      - Collections cannot be mixed with groups or products
+  -->
+  <Hierarchy>
+    <Group ref="GRP_NATIONAL">
+      <Product ref="NationalDatasets" />
+    </Group>
+    <Group ref="GRP_HUC4">
+      <Collection ref="COL_HUC4">
+        <Product ref="BRATModel4" />
+        <Product ref="BRATInputs4" />
+      </Collection>  
+    </Group>
+    <Group ref="GRP_HUC8">
+      <Collection ref="COL_HUC8">
+        <Product ref="BRATModel8" />
+        <Product ref="BRATInputs8" />
+      </Collection>  
+    </Group>
+  </Hierarchy>
+</Program>

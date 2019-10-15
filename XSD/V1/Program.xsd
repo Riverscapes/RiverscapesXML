@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Program" type="ProgramType"/>
+
+  <xs:complexType name="ProgramType">
+    <xs:sequence>
+      <xs:element type="MetaDataType" name="MetaData" maxOccurs="1" minOccurs="0"/>
+      <xs:element type="DefinitionsType" name="Definitions" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="HierarchyType" name="Hierarchy" maxOccurs="1" minOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+
+  <!--Hierarchy stuff-->
+  <xs:complexType name="HierarchyType">
+    <xs:choice>
+      <xs:element type="FolderType" name="Collection" maxOccurs="1"/>
+      <xs:element type="FolderType" name="Group" maxOccurs="unbounded"/>
+      <xs:element type="ProductType" name="Product" maxOccurs="1"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="FolderType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="FolderType" name="Collection" maxOccurs="1" minOccurs="0"/>
+      <xs:element type="FolderType" name="Group" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="ProductType" name="Product" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="ref" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ProductType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="ref" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MetaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MetaDataType">
+    <xs:sequence>
+      <xs:element type="MetaType" name="Meta" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--HEre's where the definitions go-->
+  <xs:complexType name="DefinitionsType">
+    <xs:sequence>
+      <xs:element type="CollectionsDefType" name="Collections" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="GroupsDefType" name="Groups" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="ProductsDefType" name="Products" maxOccurs="1" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CollectionsDefType">
+    <xs:sequence>
+      <xs:element type="CollectionDefType" name="Collection" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CollectionDefType">
+    <xs:sequence>
+      <xs:element type="AllowType" name="Allow" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="required"/>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+    <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="AllowType">
+    <xs:attribute type="xs:string" name="pattern"/>
+    <xs:attribute type="xs:string" name="name"/>
+    <xs:attribute type="xs:string" name="aliases" use="optional"/>
+    <xs:attribute type="xs:string" name="folder"/>
+  </xs:complexType>
+
+  <xs:complexType name="GroupsDefType">
+    <xs:sequence>
+      <xs:element type="GroupDefType" name="Group" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="GroupDefType">
+    <xs:attribute type="xs:string" name="id" use="required"/>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+    <xs:attribute type="xs:string" name="folder" use="required"/>
+    <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="ProductsDefType">
+    <xs:sequence>
+      <xs:element type="ProductDefType" name="Product" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProductDefType">
+    <xs:attribute type="xs:string" name="id" use="required"/>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+    <xs:attribute type="xs:string" name="folder" use="required"/>
+    <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+  </xs:complexType>
+
+</xs:schema>

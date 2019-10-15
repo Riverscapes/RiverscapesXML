@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Program name="CHaMP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
+<MetaData>
+  <Meta name="projectfile">project.rs.xml</Meta>
+  <Meta name="cognitoUserpoolId">us-west-2_5LnOSGlts</Meta>
+  <Meta name="cognitoWebclientId">rsfn72s12uoe8a0h2h58rsq9i</Meta>
+  <Meta name="cognitoRegion">us-west-2</Meta>
+  <Meta name="apiUrl">https://abgo77bhnc.execute-api.us-west-2.amazonaws.com/dev/api</Meta>
+  <Meta name="projectXSD">https://gist.githubusercontent.com/MattReimer/8632b6ab88d5be7c2a034eb8bb563c6c/raw/CHaMP_Program.xsd</Meta>
+</MetaData>
+
+<Definitions>
+  <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
+  <Collections>
+    <Collection id="COL_WATERSHED" name="Watershed">
+      <Allow name="Asotin" folder="Asotin"/>
+      <Allow name="Brownlee Reservoir" folder="BrownleeReservoir"/>
+      <Allow name="Big Navarro Garcia" folder="BigNavarroGarcia" aliases="Big-Navarro-Garcia(CA)"/>
+      <Allow name="Clearwater" folder="Clearwater"/>
+      <Allow name="Entiat" folder="Entiat"/>
+      <Allow name="Hells Canyon" folder="HellsCanyon"/>
+      <Allow name="Imnaha" folder="Imnaha"/>
+      <Allow name="John Day" folder="JohnDay"/>
+      <Allow name="Klickitat" folder="Klickitat"/>
+      <Allow name="Lemhi" folder="Lemhi"/>
+      <Allow name="Little Salmon" folder="LittleSalmon"/>
+      <Allow name="Lochsa" folder="Lochsa"/>
+      <Allow name="Lolo" folder="Lolo"/>
+      <Allow name="Lower Clearwater" folder="LowerClearwater" aliases="LowerClearwater"/>
+      <Allow name="Lower Grande Ronde" folder="LowerGrandeRonde"/>
+      <Allow name="Lower John Day" folder="LowerJohnDay"/>
+      <Allow name="Lower Middle Fork Salmon" folder="LowerMiddleForkSalmon"/>
+      <Allow name="Lower North Fork Clearwater" folder="LowerNorthForkClearwater"/>
+      <Allow name="Lower Salmon" folder="LowerSalmon"/>
+      <Allow name="Lower Selway" folder="LowerSelway"/>
+      <Allow name="Lower Snake-Asotin" folder="Asotin"/>
+      <Allow name="Lower Snake-Tucannon" folder="Tucannon"/>
+      <Allow name="Lower Yakima" folder="LowerYakima"/>
+      <Allow name="Methow" folder="Methow"/>
+      <Allow name="Middle Fork Clearwater" folder="MiddleForkClearwater"/>
+      <Allow name="Middle Columbia-Lake Wallula" folder="LakeWallula"/>
+      <Allow name="Middle Fork John Day" folder="MiddleForkJohnDay"/>
+      <Allow name="Middle Salmon-Chamberlain" folder="MiddleSalmonChamberlain"/>
+      <Allow name="Middle Salmon-Panther" folder="MiddleSalmonPanther"/>
+      <Allow name="Minam" folder="Minam"/>
+      <Allow name="Naches" folder="Naches"/>
+      <Allow name="North Fork John Day" folder="NorthForkJohnDay"/>
+      <Allow name="Okanogan" folder="Okanogan"/>
+      <Allow name="Pahsimeroi" folder="Pahsimeroi"/>
+      <Allow name="Secesh" folder="Secesh"/>
+      <Allow name="South Fork Clearwater" folder="SouthForkClearwater"/>
+      <Allow name="South Fork Salmon" folder="SouthForkSalmon" aliases="SouthForkSalmon"/>
+      <Allow name="South Fork John Day" folder="SouthForkJohnDay"/>
+      <Allow name="Tucannon" folder="Tucannon"/>
+      <Allow name="Umatilla" folder="Umatilla"/>
+      <Allow name="Upper Grande Ronde" folder="UpperGrandeRonde" aliases="UpperGrandeRonde"/>
+      <Allow name="Upper John Day" folder="UpperJohnDay"/>
+      <Allow name="Upper Middle Fork Salmon" folder="UpperMiddleForkSalmon"/>
+      <Allow name="Upper North Fork Clearwater" folder="UpperNorthForkClearwater"/>
+      <Allow name="Upper Salmon" folder="UpperSalmon"/>
+      <Allow name="Upper Selway" folder="UpperSelway"/>
+      <Allow name="Upper Yakima" folder="UpperYakima"/>
+      <Allow name="Walla Walla" folder="WallaWalla" aliases="WallaWalla"/>
+      <Allow name="Wallowa" folder="Wallowa"/>
+      <Allow name="Wenatchee" folder="Wenatchee"/>
+      <Allow name="Willow" folder="Willow"/>
+      <Allow name="Yankee Fork" folder="YankeeFork" aliases="YankeeFork"/>
+    </Collection>
+    <Collection id="COL_SITE" name="Site">
+      <Allow pattern=".*"/>
+    </Collection>
+    <Collection id="COL_VISIT" name="Visit">
+      <Allow pattern="[0-9]{4}"/>
+    </Collection>
+    <Collection id="COL_YEAR" name="Year">
+      <Allow pattern="[0-9]{4}"/>
+    </Collection>
+    <Collection id="COL_FLOW" name="Flow">
+      <Allow pattern=".*"/>
+    </Collection>
+  </Collections>
+  
+  <!--Groups are a lot simpler than collections. They can only be a single folder-->
+  <Groups>
+    <Group id="GRP_BASE" name="CHaMP" folder="CHaMP"/>
+    <Group id="GRP_WATERSHED" name="Watershed" folder="Watershed"/>
+    <Group id="GRP_NETWORK" name="Network" folder="Network"/>
+    <Group id="GRP_SITE" name="Site" folder="Site"/>
+    <Group id="GRP_YEAR" name="Year" folder="Year"/>
+    <Group id="GRP_FLOW" name="Flow" folder="Flow"/>
+    <Group id="GRP_TOPO" name="Topography" folder="Topography"/>
+    <Group id="GRP_STREAMTEMP" name="Stream Temperature" folder="StreamTemp"/>
+  </Groups>
+  
+  <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
+  <Products>
+    <Product id="QRF" name="QRF" folder="QRF" url=""/>
+    
+    <!--NETWORK level products-->
+    <Product id="GRTS" name="GRTS" folder="GRTS" url=""/>
+    <Product id="GAA" name="GAA" folder="GAA" url=""/>
+    <Product id="CAD_Export" name="CAD Export" folder="CAD_Export" url=""/>
+    <Product id="Substrate" name="Substrate" folder="Substrate" url=""/>
+    <Product id="CONTEXT" name="Context Layers" folder="context_layers" url=""/>
+    <Product id="VBET" name="VBET" folder="VBET" url=""/>
+    <Product id="RVD" name="RVD" folder="RVD" url=""/>
+    <Product id="RCA" name="RCA" folder="RCA" url=""/>
+    <Product id="WRAT" name="WRAT" folder="WRAT" url=""/>
+    <Product id="GPP" name="GPP" folder="GPP" url=""/>
+    <Product id="CAPACITY" name="Capacity" folder="Capacity" url=""/>
+    <Product id="CONFINEMENT" name="Confinement" folder="CONFINEMENT" url=""/>
+    <Product id="EC" name="EC" folder="EC" url=""/>
+    <Product id="Solar" name="Solar" folder="Solar" url=""/>
+    <Product id="GNAT" name="GNAT" folder="GNAT" url=""/>
+    <Product id="CHAMPMETRICS" name="CHaMP Metrics" folder="CHaMPMetrics" url=""/>
+    
+    <!--Streamtemp-->
+    <Product id="STREAMTEMPMIN" name="STREAMTEMPMIN" folder="StreamTempMin" url=""/>
+    <Product id="STREAMTEMPMAX" name="STREAMTEMPMAX" folder="StreamTempMax" url=""/>
+    <Product id="STREAMTEMPMEAN" name="STREAMTEMPMEAN" folder="StreamTempMean" url=""/>
+    <Product id="STREAMTEMPPOTMAX" name="STREAMTEMPPOTMAX" folder="StreamTempPotMax" url=""/>
+    <Product id="STREAMTEMPPOTMEAN" name="STREAMTEMPPOTMEAN" folder="StreamTempPotMean" url=""/>
+    <Product id="STREAMTEMPPOTMIN" name="STREAMTEMPPOTMIN" folder="StreamTempPotMin" url=""/>
+    <!--Site-level products-->
+    <Product id="SITE_HYDRO" name="Hydro" folder="Hydro" url=""/>
+    <Product id="GCD" name="GCD" folder="GCD" url=""/>
+    
+    <!--Visit-level products-->
+    <Product id="Topo" name="Topo" folder="Topo" url=""/>
+    
+    <!--Flow-level products-->
+    <Product id="FHM" name="FHM" folder="FHM" url=""/>
+    <Product id="GUT" name="GUT" folder="GUT" url=""/>
+    <Product id="Hydro" name="Hydro" folder="Hydro" url=""/>
+    <Product id="NREI" name="NREI" folder="NREI" url=""/>
+    
+    
+  </Products>
+</Definitions>
+
+<!-- Here's where we specify the actual structure
+  Reminder:
+  - Collection: Repeating folders (e.g. Asotin, Lemhi
+  - Group: Single folder with an explicit name (e.g. Topography)
+  Rules:
+  - Only one collection is allowed at any level
+  - Collections cannot be mixed with groups or products
+-->
+<Hierarchy>
+  <Group ref="GRP_BASE">
+    <Product ref="QRF"/>
+    <Product ref="CHAMPMETRICS" />
+    <Product ref="GAA"/>
+    <Product ref="CONTEXT"/>
+    <Group ref="GRP_WATERSHED">
+      <Collection ref="COL_WATERSHED">
+        <Product ref="GRTS"/>
+        <Group ref="GRP_NETWORK">
+          <Product ref="VBET"/>
+          <Product ref="RVD"/>
+          <Product ref="RCA"/>
+          <Product ref="WRAT"/>
+          <Product ref="GPP"/>
+          <Product ref="CAPACITY"/>
+          <Product ref="CONFINEMENT"/>
+          <Product ref="EC"/>
+          <Product ref="Solar"/>
+          <Product ref="GNAT"/>
+          <Group ref="GRP_STREAMTEMP">
+            <Collection ref="COL_YEAR">
+              <Product ref="STREAMTEMPMIN"/>
+              <Product ref="STREAMTEMPMAX"/>
+              <Product ref="STREAMTEMPMEAN"/>              
+              <Product ref="STREAMTEMPPOTMAX"/>
+              <Product ref="STREAMTEMPPOTMIN"/>
+              <Product ref="STREAMTEMPPOTMEAN"/>
+            </Collection>
+          </Group>
+        </Group>
+        <Group ref="GRP_SITE">
+          <Collection ref="COL_SITE">
+            <Product ref="GCD"/>
+            <Product ref="FHM"/>
+            <Product ref="SITE_HYDRO"/>
+            <Product ref="NREI"/>
+            <Group ref="GRP_YEAR">
+              <Collection ref="COL_YEAR">
+                <Collection ref="COL_VISIT">
+                  <Group ref="GRP_FLOW">
+                    <Collection ref="COL_FLOW">
+                      <Product ref="Hydro"/>
+                    </Collection>
+                  </Group>
+                  <Product ref="GUT"/>
+                  <Product ref="Topo"/>
+                  <Product ref="CAD_Export"/>
+                  <Product ref="Substrate"/>
+                </Collection>
+              </Collection>
+            </Group>
+          </Collection>
+        </Group>
+      </Collection>
+    </Group>
+  </Group>
+</Hierarchy>
+</Program>

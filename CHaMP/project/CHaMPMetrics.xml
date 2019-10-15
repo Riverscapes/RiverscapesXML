@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:noNamespaceSchemaLocation="XSD/V1/Project.xsd">
+	<Name>
+		Habitat Monitoring Metrics
+	</Name>
+	<ProjectType>CHaMP Metrics</ProjectType>
+	<MetaData>
+		<Meta name="Region">
+			CRB
+		</Meta>
+	</MetaData>
+	<Inputs/>
+	<Realizations>
+		<Metrics dateCreated="2016-11-03T10:53:19.057000" guid="65669D37-5BEA-4573-B9FA-08BEFEEF69B2" id="run201611031053" productVersion="0.4">
+			<Name>CHaMP Metrics</Name>
+			<Analyses>
+				<Analysis>
+					<Name>Topo Metrics</Name>
+					<Outputs>
+						<Vector guid="test" id="1">
+							<Name>Topo Metrics</Name>
+							<Path>Metrics/TopoMetrics.shp</Path>
+						</Vector>
+						<CSV guid="test" id="1">
+							<Name>Test</Name>
+							<Path>Metrics/TopoMetrics.csv</Path>
+						</CSV>
+					</Outputs>
+				</Analysis>
+				<Analysis>
+					<Name>Aux Metrics</Name>
+					<Outputs>
+						<Vector guid="test" id="1">
+							<Name>Auxilliary Metrics</Name>
+							<Path>Metrics/AuxMetrics.shp</Path>
+						</Vector>
+						<CSV guid="test" id="1">
+							<Name>Test</Name>
+							<Path>Metrics/TopoMetrics.csv</Path>
+						</CSV>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+        </Metrics>
+    </Realizations>
+</Project>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="XSD/V1/Project.xsd">
+
+  <Name>RiverStylesProject1</Name>
+  <ProjectType>RiverStyles</ProjectType>
+
+  <MetaData>
+    <Meta name="SomeKey">SomeVal</Meta>
+  </MetaData>
+
+  <Inputs>
+    <!--Inputs are defined here so they can be used in Realizations-->
+    <Vector id="drainageNetwork01">
+      <Name>UpperSalmon_NHD</Name>
+      <Path>inputs\drainage_networks\network_01\NHD_upperSalmon_abv_Redfish.shp</Path>
+    </Vector>
+
+    <Vector id="segmentednetwork01">
+      <Name>USal_500m</Name>
+      <Path>inputs\confinements\confinement_01\segmented_networks\segmented_network_01\USal_500m_segment.shp</Path>
+    </Vector>
+
+    <Vector id="valleybottom01">
+      <Name>USal_valley_bottom</Name>
+      <Path>inputs\confinements\valley_bottom_polygon\valley_bottom_polygon_01\USal_valleybottom.shp</Path>
+    </Vector>
+
+    <Vector id="streamBuffer01">
+      <Name>USal_bankfull_buffer</Name>
+      <Path>inputs\confinements\confinement_01\stream_buffers\stream_buffer_01\USal_bankfull_buffer.shp</Path>
+    </Vector>
+
+    <!--Context Layers-->
+    <Vector id="ecoregions01" guid="">
+      <Name>Eco Regions</Name>
+      <Path>analyses\context\layers\UpperSalmon_eco_L4.shp</Path>
+    </Vector>
+    <Vector id="watershedBoundary01" guid="">
+      <Name>Watershed Boundary</Name>
+      <Path>analyses\context\layers\watershed_boundary\Upper_Salmon_ab_Redfish_Boundary.shp</Path>
+    </Vector>
+    <HillShade id="hillshade01" guid="">
+      <Name>Hillshade</Name>
+      <Path>analyses\context\layers\hillshade\Upper_Salmon_Hillshade.tif</Path>
+      <URL>http://path/to/tileserver/{x}/{y}/{z}.png</URL>
+    </HillShade>
+  </Inputs>
+
+
+  <Realizations>
+    <RiverStyles promoted="true" id="" dateCreated="" productVersion="" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
+      <Name>USal_confinement_500m</Name>
+
+      <Parameters>
+        <Param name="segmentation_distance">500</Param>
+      </Parameters>
+
+      <!--Inputs refer to the files defined at the top of the file-->
+      <Inputs>
+        <DrainageNetworks guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
+          <Network ref="drainageNetwork01">
+            <Buffers>
+              <Buffer ref="USal_500m"/>
+            </Buffers>
+            <ValleyBottom ref="valleybottom01"/>
+          </Network>
+        </DrainageNetworks>
+      </Inputs>
+
+      <Analysis>
+        <Confinements>
+          <Confinement>
+            <Name>USal_confinement_500m</Name>
+            <Path>analyses\confinements\confinement_01\USal_Confinement_500m.shp</Path>
+            <MetaData>
+              <Meta name="segmentation_distance">500</Meta>
+            </MetaData>
+          </Confinement>
+        </Confinements>
+        <RiverStyleReach>
+          <ManualCrossChecks>
+            <ManualCrossCheck>
+              <Path>analyses\river_styles\manual_crosschecks\manual_crosscheck_01\USal_River_Styles.shp</Path>
+            </ManualCrossCheck>
+          </ManualCrossChecks>
+        </RiverStyleReach>
+      </Analysis>
+
+    </RiverStyles>
+
+  </Realizations>
+
+</Project>
