@@ -6,9 +6,6 @@
   
   <MetaData>
     <Meta name="projectfile">project.rs.xml</Meta>
-    <Meta name="cognitoUserpoolId">us-west-2_5LnOSGlts</Meta>
-    <Meta name="cognitoWebclientId">rsfn72s12uoe8a0h2h58rsq9i</Meta>
-    <Meta name="cognitoRegion">us-west-2</Meta>
     <Meta name="apiUrl">https://abgo77bhnc.execute-api.us-west-2.amazonaws.com/dev/api</Meta>
     <Meta name="projectXSD">https://gist.githubusercontent.com/MattReimer/8632b6ab88d5be7c2a034eb8bb563c6c/raw/CHaMP_Program.xsd</Meta>
   </MetaData>
