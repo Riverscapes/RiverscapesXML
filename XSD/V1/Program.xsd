@@ -5,6 +5,8 @@
 
   <xs:complexType name="ProgramType">
     <xs:sequence>
+      <xs:element type="xs:string" name="Name" maxOccurs="1" minOccurs="0"/>
+      <xs:element type="xs:string" name="MachineName" maxOccurs="1" minOccurs="0"/>
       <xs:element type="MetaDataType" name="MetaData" maxOccurs="1" minOccurs="0"/>
       <xs:element type="DefinitionsType" name="Definitions" maxOccurs="1" minOccurs="1"/>
       <xs:element type="HierarchyType" name="Hierarchy" maxOccurs="1" minOccurs="1"/>

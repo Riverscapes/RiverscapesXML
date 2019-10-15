@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Program name="CHaMP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
+
+<Name>CHaMP</Name>
+<MachineName>CHaMP</MachineName>
+
 <MetaData>
   <Meta name="projectfile">project.rs.xml</Meta>
   <Meta name="cognitoUserpoolId">us-west-2_5LnOSGlts</Meta>
