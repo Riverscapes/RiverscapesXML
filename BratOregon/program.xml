@@ -15,10 +15,110 @@
     <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
     <Collections>
       <Collection id="COL_HUC8" name="HUC8">
-        <AllowRegex pattern="[0-9]{8}" />
+          <Allow id="16040201" name="Upper Quinn" folder="16040201"/>
+          <Allow id="16040205" name="Thousand-Virgin" folder="16040205"/>
+          <Allow id="18010201" name="Williamson" folder="18010201"/>
+          <Allow id="18010202" name="Sprague" folder="18010202"/>
+          <Allow id="18010203" name="Upper Klamath Lake" folder="18010203"/>
+          <Allow id="18010101" name="Smith" folder="18010101"/>
+          <Allow id="18010205" name="Butte" folder="18010205"/>
+          <Allow id="18010209" name="Lower Klamath" folder="18010209"/>
+          <Allow id="17050117" name="Lower Malheur" folder="17050117"/>
+          <Allow id="18010204" name="Lost" folder="18010204"/>
+          <Allow id="18010206" name="Upper Klamath" folder="18010206"/>
+          <Allow id="18020001" name="Goose Lake" folder="18020001"/>
+          <Allow id="17100309" name="Applegate" folder="17100309"/>
+          <Allow id="17100311" name="Illinois" folder="17100311"/>
+          <Allow id="17100312" name="Chetco" folder="17100312"/>
+          <Allow id="17120007" name="Warner Lakes" folder="17120007"/>
+          <Allow id="17120008" name="Guano" folder="17120008"/>
+          <Allow id="17100201" name="Necanicum" folder="17100201"/>
+          <Allow id="17100202" name="Nehalem" folder="17100202"/>
+          <Allow id="17100203" name="Wilson-Trusk-Nestuccu" folder="17100203"/>
+          <Allow id="17100204" name="Siletz-Yaquina" folder="17100204"/>
+          <Allow id="17100205" name="Alsea" folder="17100205"/>
+          <Allow id="17100206" name="Siuslaw" folder="17100206"/>
+          <Allow id="17100207" name="Siltcoos" folder="17100207"/>
+          <Allow id="17100301" name="North Umpqua" folder="17100301"/>
+          <Allow id="17100302" name="South Umpqua" folder="17100302"/>
+          <Allow id="17100303" name="Umpqua" folder="17100303"/>
+          <Allow id="17100304" name="Coos" folder="17100304"/>
+          <Allow id="17100305" name="Coquille" folder="17100305"/>
+          <Allow id="17100306" name="Sixes" folder="17100306"/>
+          <Allow id="17100307" name="Upper Rogue" folder="17100307"/>
+          <Allow id="17100308" name="Middle Rogue" folder="17100308"/>
+          <Allow id="17100310" name="Lower Rogue" folder="17100310"/>
+          <Allow id="17120001" name="Harney-Malheur Lakes" folder="17120001"/>
+          <Allow id="17120002" name="Silvies" folder="17120002"/>
+          <Allow id="17120003" name="Donner und Blitzen" folder="17120003"/>
+          <Allow id="17120004" name="Silver" folder="17120004"/>
+          <Allow id="17120005" name="Summer Lake" folder="17120005"/>
+          <Allow id="17120006" name="Lake Abert" folder="17120006"/>
+          <Allow id="17120009" name="Alvord Lake" folder="17120009"/>
+          <Allow id="17100106" name="Willapa Bay" folder="17100106"/>
+          <Allow id="17050103" name="Middle Snake-Succor" folder="17050103"/>
+          <Allow id="17050107" name="Middle Owyhee" folder="17050107"/>
+          <Allow id="17050108" name="Jordan" folder="17050108"/>
+          <Allow id="17050115" name="Middle Snake-Payette" folder="17050115"/>
+          <Allow id="17060101" name="Hells Canyon" folder="17060101"/>
+          <Allow id="17050105" name="South Fork Owyhee" folder="17050105"/>
+          <Allow id="17050106" name="East Little Owyhee" folder="17050106"/>
+          <Allow id="17050109" name="Crooked-Rattlesnake" folder="17050109"/>
+          <Allow id="17050110" name="Lower Owyhee" folder="17050110"/>
+          <Allow id="17050116" name="Upper Malheur" folder="17050116"/>
+          <Allow id="17050118" name="Bully" folder="17050118"/>
+          <Allow id="17050119" name="Willow" folder="17050119"/>
+          <Allow id="17050202" name="Burnt" folder="17050202"/>
+          <Allow id="17050203" name="Powder" folder="17050203"/>
+          <Allow id="17060102" name="Imnaha" folder="17060102"/>
+          <Allow id="17060104" name="Upper Grande Ronde" folder="17060104"/>
+          <Allow id="17060105" name="Wallowa" folder="17060105"/>
+          <Allow id="17060106" name="Lower Grande Ronde" folder="17060106"/>
+          <Allow id="17070103" name="Umatilla" folder="17070103"/>
+          <Allow id="17070104" name="Willow" folder="17070104"/>
+          <Allow id="17070201" name="Upper John Day" folder="17070201"/>
+          <Allow id="17070202" name="North Fork John Day" folder="17070202"/>
+          <Allow id="17070203" name="Middle Fork John Day" folder="17070203"/>
+          <Allow id="17070204" name="Lower John Day" folder="17070204"/>
+          <Allow id="17070301" name="Upper Deschutes" folder="17070301"/>
+          <Allow id="17070302" name="Little Deschutes" folder="17070302"/>
+          <Allow id="17070303" name="Beaver-South Fork" folder="17070303"/>
+          <Allow id="17070304" name="Upper Crooked" folder="17070304"/>
+          <Allow id="17070305" name="Lower Crooked" folder="17070305"/>
+          <Allow id="17070306" name="Lower Deschutes" folder="17070306"/>
+          <Allow id="17070307" name="Trout" folder="17070307"/>
+          <Allow id="17090001" name="Middle Fork Willamette" folder="17090001"/>
+          <Allow id="17090002" name="Coast Fork Willamette" folder="17090002"/>
+          <Allow id="17090003" name="Upper Willamette" folder="17090003"/>
+          <Allow id="17090004" name="Mckenzie" folder="17090004"/>
+          <Allow id="17090005" name="North Santiam" folder="17090005"/>
+          <Allow id="17090006" name="South Santiam" folder="17090006"/>
+          <Allow id="17090007" name="Middle Willamette" folder="17090007"/>
+          <Allow id="17090008" name="Yamhill" folder="17090008"/>
+          <Allow id="17090009" name="Molalla-Pudding" folder="17090009"/>
+          <Allow id="17090010" name="Tualatin" folder="17090010"/>
+          <Allow id="17090011" name="Clackamas" folder="17090011"/>
+          <Allow id="17050201" name="Brownlee Reservoir" folder="17050201"/>
+          <Allow id="17060103" name="Lower Snake-Asotin" folder="17060103"/>
+          <Allow id="17070101" name="Middle Columbia-Lake Wallula" folder="17070101"/>
+          <Allow id="17070102" name="Walla Walla" folder="17070102"/>
+          <Allow id="17070105" name="Middle Columbia-Hood" folder="17070105"/>
+          <Allow id="17080001" name="Lower Columbia-Sandy" folder="17080001"/>
+          <Allow id="17080003" name="Lower Columbia-Clatskanie" folder="17080003"/>
+          <Allow id="17080006" name="Lower Columbia" folder="17080006"/>
+          <Allow id="17090012" name="Lower Willamette" folder="17090012"/>
       </Collection>
       <Collection id="COL_HUC4" name="HUC4">
-        <AllowRegex pattern="[0-9]{4}" />
+          <Allow id="1801" name="Klamath-Northern California Coastal" folder="1801"/>
+          <Allow id="1802" name="Sacramento" folder="1802"/>
+          <Allow id="1604" name="Black Rock Desert-Humboldt" folder="1604"/>
+          <Allow id="1710" name="Oregon-Washington Coastal" folder="1710"/>
+          <Allow id="1706" name="Lower Snake" folder="1706"/>
+          <Allow id="1705" name="Middle Snake" folder="1705"/>
+          <Allow id="1712" name="Oregon Closed Basins" folder="1712"/>
+          <Allow id="1707" name="Middle Columbia" folder="1707"/>
+          <Allow id="1708" name="Lower Columbia" folder="1708"/>
+          <Allow id="1709" name="Willamette" folder="1709"/>
       </Collection>      
     </Collections>
 
