@@ -14,10 +14,10 @@
     <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
     <Collections>
       <Collection id="COL_HUC8" name="HUC8">
-        <Allow pattern="[0-9]{8}" />
+        <AllowRegex pattern="[0-9]{8}" />
       </Collection>
       <Collection id="COL_HUC4" name="HUC4">
-        <Allow pattern="[0-9]{4}" />
+        <AllowRegex pattern="[0-9]{4}" />
       </Collection>      
     </Collections>
 

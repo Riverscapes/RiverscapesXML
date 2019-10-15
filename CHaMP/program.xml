@@ -14,70 +14,70 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
   <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
   <Collections>
     <Collection id="COL_WATERSHED" name="Watershed">
-      <Allow name="Asotin" folder="Asotin"/>
-      <Allow name="Brownlee Reservoir" folder="BrownleeReservoir"/>
-      <Allow name="Big Navarro Garcia" folder="BigNavarroGarcia" aliases="Big-Navarro-Garcia(CA)"/>
-      <Allow name="Clearwater" folder="Clearwater"/>
-      <Allow name="Entiat" folder="Entiat"/>
-      <Allow name="Hells Canyon" folder="HellsCanyon"/>
-      <Allow name="Imnaha" folder="Imnaha"/>
-      <Allow name="John Day" folder="JohnDay"/>
-      <Allow name="Klickitat" folder="Klickitat"/>
-      <Allow name="Lemhi" folder="Lemhi"/>
-      <Allow name="Little Salmon" folder="LittleSalmon"/>
-      <Allow name="Lochsa" folder="Lochsa"/>
-      <Allow name="Lolo" folder="Lolo"/>
-      <Allow name="Lower Clearwater" folder="LowerClearwater" aliases="LowerClearwater"/>
-      <Allow name="Lower Grande Ronde" folder="LowerGrandeRonde"/>
-      <Allow name="Lower John Day" folder="LowerJohnDay"/>
-      <Allow name="Lower Middle Fork Salmon" folder="LowerMiddleForkSalmon"/>
-      <Allow name="Lower North Fork Clearwater" folder="LowerNorthForkClearwater"/>
-      <Allow name="Lower Salmon" folder="LowerSalmon"/>
-      <Allow name="Lower Selway" folder="LowerSelway"/>
-      <Allow name="Lower Snake-Asotin" folder="Asotin"/>
-      <Allow name="Lower Snake-Tucannon" folder="Tucannon"/>
-      <Allow name="Lower Yakima" folder="LowerYakima"/>
-      <Allow name="Methow" folder="Methow"/>
-      <Allow name="Middle Fork Clearwater" folder="MiddleForkClearwater"/>
-      <Allow name="Middle Columbia-Lake Wallula" folder="LakeWallula"/>
-      <Allow name="Middle Fork John Day" folder="MiddleForkJohnDay"/>
-      <Allow name="Middle Salmon-Chamberlain" folder="MiddleSalmonChamberlain"/>
-      <Allow name="Middle Salmon-Panther" folder="MiddleSalmonPanther"/>
-      <Allow name="Minam" folder="Minam"/>
-      <Allow name="Naches" folder="Naches"/>
-      <Allow name="North Fork John Day" folder="NorthForkJohnDay"/>
-      <Allow name="Okanogan" folder="Okanogan"/>
-      <Allow name="Pahsimeroi" folder="Pahsimeroi"/>
-      <Allow name="Secesh" folder="Secesh"/>
-      <Allow name="South Fork Clearwater" folder="SouthForkClearwater"/>
-      <Allow name="South Fork Salmon" folder="SouthForkSalmon" aliases="SouthForkSalmon"/>
-      <Allow name="South Fork John Day" folder="SouthForkJohnDay"/>
-      <Allow name="Tucannon" folder="Tucannon"/>
-      <Allow name="Umatilla" folder="Umatilla"/>
-      <Allow name="Upper Grande Ronde" folder="UpperGrandeRonde" aliases="UpperGrandeRonde"/>
-      <Allow name="Upper John Day" folder="UpperJohnDay"/>
-      <Allow name="Upper Middle Fork Salmon" folder="UpperMiddleForkSalmon"/>
-      <Allow name="Upper North Fork Clearwater" folder="UpperNorthForkClearwater"/>
-      <Allow name="Upper Salmon" folder="UpperSalmon"/>
-      <Allow name="Upper Selway" folder="UpperSelway"/>
-      <Allow name="Upper Yakima" folder="UpperYakima"/>
-      <Allow name="Walla Walla" folder="WallaWalla" aliases="WallaWalla"/>
-      <Allow name="Wallowa" folder="Wallowa"/>
-      <Allow name="Wenatchee" folder="Wenatchee"/>
-      <Allow name="Willow" folder="Willow"/>
-      <Allow name="Yankee Fork" folder="YankeeFork" aliases="YankeeFork"/>
+      <Allow id="Asotin" name="Asotin" folder="Asotin"/>
+      <Allow id="Brownlee Reservoir" name="Brownlee Reservoir" folder="BrownleeReservoir"/>
+      <Allow id="Big Navarro Garcia" name="Big Navarro Garcia" folder="BigNavarroGarcia" aliases="Big-Navarro-Garcia(CA)"/>
+      <Allow id="Clearwater" name="Clearwater" folder="Clearwater"/>
+      <Allow id="Entiat" name="Entiat" folder="Entiat"/>
+      <Allow id="Hells Canyon" name="Hells Canyon" folder="HellsCanyon"/>
+      <Allow id="Imnaha" name="Imnaha" folder="Imnaha"/>
+      <Allow id="John Day" name="John Day" folder="JohnDay"/>
+      <Allow id="Klickitat" name="Klickitat" folder="Klickitat"/>
+      <Allow id="Lemhi" name="Lemhi" folder="Lemhi"/>
+      <Allow id="Little Salmon" name="Little Salmon" folder="LittleSalmon"/>
+      <Allow id="Lochsa" name="Lochsa" folder="Lochsa"/>
+      <Allow id="Lolo" name="Lolo" folder="Lolo"/>
+      <Allow id="Lower Clearwater" name="Lower Clearwater" folder="LowerClearwater" aliases="LowerClearwater"/>
+      <Allow id="Lower Grande Ronde" name="Lower Grande Ronde" folder="LowerGrandeRonde"/>
+      <Allow id="Lower John Day" name="Lower John Day" folder="LowerJohnDay"/>
+      <Allow id="Lower Middle Fork Salmon" name="Lower Middle Fork Salmon" folder="LowerMiddleForkSalmon"/>
+      <Allow id="Lower North Fork Clearwater" name="Lower North Fork Clearwater" folder="LowerNorthForkClearwater"/>
+      <Allow id="Lower Salmon" name="Lower Salmon" folder="LowerSalmon"/>
+      <Allow id="Lower Selway" name="Lower Selway" folder="LowerSelway"/>
+      <Allow id="Lower Snake-Asotin" name="Lower Snake-Asotin" folder="Asotin"/>
+      <Allow id="Lower Snake-Tucannon" name="Lower Snake-Tucannon" folder="Tucannon"/>
+      <Allow id="Lower Yakima" name="Lower Yakima" folder="LowerYakima"/>
+      <Allow id="Methow" name="Methow" folder="Methow"/>
+      <Allow id="Middle Fork Clearwater" name="Middle Fork Clearwater" folder="MiddleForkClearwater"/>
+      <Allow id="Middle Columbia-Lake Wallula" name="Middle Columbia-Lake Wallula" folder="LakeWallula"/>
+      <Allow id="Middle Fork John Day" name="Middle Fork John Day" folder="MiddleForkJohnDay"/>
+      <Allow id="Middle Salmon-Chamberlain" name="Middle Salmon-Chamberlain" folder="MiddleSalmonChamberlain"/>
+      <Allow id="Middle Salmon-Panther" name="Middle Salmon-Panther" folder="MiddleSalmonPanther"/>
+      <Allow id="Minam" name="Minam" folder="Minam"/>
+      <Allow id="Naches" name="Naches" folder="Naches"/>
+      <Allow id="North Fork John Day" name="North Fork John Day" folder="NorthForkJohnDay"/>
+      <Allow id="Okanogan" name="Okanogan" folder="Okanogan"/>
+      <Allow id="Pahsimeroi" name="Pahsimeroi" folder="Pahsimeroi"/>
+      <Allow id="Secesh" name="Secesh" folder="Secesh"/>
+      <Allow id="South Fork Clearwater" name="South Fork Clearwater" folder="SouthForkClearwater"/>
+      <Allow id="South Fork Salmon" name="South Fork Salmon" folder="SouthForkSalmon" aliases="SouthForkSalmon"/>
+      <Allow id="South Fork John Day" name="South Fork John Day" folder="SouthForkJohnDay"/>
+      <Allow id="Tucannon" name="Tucannon" folder="Tucannon"/>
+      <Allow id="Umatilla" name="Umatilla" folder="Umatilla"/>
+      <Allow id="Upper Grande Ronde" name="Upper Grande Ronde" folder="UpperGrandeRonde" aliases="UpperGrandeRonde"/>
+      <Allow id="Upper John Day" name="Upper John Day" folder="UpperJohnDay"/>
+      <Allow id="Upper Middle Fork Salmon" name="Upper Middle Fork Salmon" folder="UpperMiddleForkSalmon"/>
+      <Allow id="Upper North Fork Clearwater" name="Upper North Fork Clearwater" folder="UpperNorthForkClearwater"/>
+      <Allow id="Upper Salmon" name="Upper Salmon" folder="UpperSalmon"/>
+      <Allow id="Upper Selway" name="Upper Selway" folder="UpperSelway"/>
+      <Allow id="Upper Yakima" name="Upper Yakima" folder="UpperYakima"/>
+      <Allow id="Walla Walla" name="Walla Walla" folder="WallaWalla" aliases="WallaWalla"/>
+      <Allow id="Wallowa" name="Wallowa" folder="Wallowa"/>
+      <Allow id="Wenatchee" name="Wenatchee" folder="Wenatchee"/>
+      <Allow id="Willow" name="Willow" folder="Willow"/>
+      <Allow id="Yankee Fork" name="Yankee Fork" folder="YankeeFork" aliases="YankeeFork"/>
     </Collection>
     <Collection id="COL_SITE" name="Site">
-      <Allow pattern=".*"/>
+      <AllowRegex pattern=".*"/>
     </Collection>
     <Collection id="COL_VISIT" name="Visit">
-      <Allow pattern="[0-9]{4}"/>
+      <AllowRegex pattern="[0-9]{4}"/>
     </Collection>
     <Collection id="COL_YEAR" name="Year">
-      <Allow pattern="[0-9]{4}"/>
+      <AllowRegex pattern="[0-9]{4}"/>
     </Collection>
     <Collection id="COL_FLOW" name="Flow">
-      <Allow pattern=".*"/>
+      <AllowRegex pattern=".*"/>
     </Collection>
   </Collections>
   

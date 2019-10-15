@@ -69,18 +69,23 @@
 
   <xs:complexType name="CollectionDefType">
     <xs:sequence>
-      <xs:element type="AllowType" name="Allow" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="AllowNamedType" name="Allow" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="AllowRegExType" name="AllowRegex" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute type="xs:string" name="id" use="required"/>
     <xs:attribute type="xs:string" name="name" use="required"/>
     <xs:attribute type="xs:anyURI" name="url" use="optional"/>
   </xs:complexType>
 
-  <xs:complexType name="AllowType">
-    <xs:attribute type="xs:string" name="pattern"/>
-    <xs:attribute type="xs:string" name="name"/>
+  <xs:complexType name="AllowNamedType">
+    <xs:attribute type="xs:string" name="id" use="required"/>
+    <xs:attribute type="xs:string" name="name" use="required"/>
     <xs:attribute type="xs:string" name="aliases" use="optional"/>
-    <xs:attribute type="xs:string" name="folder"/>
+    <xs:attribute type="xs:string" name="folder" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="AllowRegExType">
+    <xs:attribute type="xs:string" name="pattern" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="GroupsDefType">
