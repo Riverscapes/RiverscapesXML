@@ -8,7 +8,7 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
 <MetaData>
   <Meta name="projectfile">project.rs.xml</Meta>
   <Meta name="apiUrl">https://abgo77bhnc.execute-api.us-west-2.amazonaws.com/dev/api</Meta>
-  <Meta name="projectXSD">https://gist.githubusercontent.com/MattReimer/8632b6ab88d5be7c2a034eb8bb563c6c/raw/CHaMP_Program.xsd</Meta>
+  <Meta name="projectXSD">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/CHaMP/project/XSD/V1/Project.xsd</Meta>
 </MetaData>
 
 <Definitions>
