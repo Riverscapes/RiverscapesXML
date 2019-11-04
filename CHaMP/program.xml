@@ -124,7 +124,7 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
     <Product id="STREAMTEMPPOTMEAN" name="STREAMTEMPPOTMEAN" folder="StreamTempPotMean" url=""/>
     <Product id="STREAMTEMPPOTMIN" name="STREAMTEMPPOTMIN" folder="StreamTempPotMin" url=""/>
     <!--Site-level products-->
-    <Product id="SITE_HYDRO" name="Hydro" folder="Hydro" url=""/>
+    <Product id="SITE_HYDRO" name="Site Hydro" folder="Hydro" url=""/>
     <Product id="GCD" name="GCD" folder="GCD" url=""/>
     
     <!--Visit-level products-->
