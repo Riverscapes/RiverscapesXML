@@ -124,7 +124,7 @@
       <xs:element type="SimpleFileType" name="SurveyQualityDB" />
       <xs:element type="SimpleFileType" name="InstrumentFile" />
       <xs:element type="SimpleFileType" name="AuxInstrumentFile" />
-      <xs:element type="SimpleFileType" name="MSAccessDB" />
+      <xs:element type="SimpleFileType" name="Database" />
       <xs:element type="SimpleFileType" name="PDF" />
 
     </xs:choice>

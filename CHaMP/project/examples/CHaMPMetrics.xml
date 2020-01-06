@@ -1,47 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 				 xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">
-	<Name>
-		Habitat Monitoring Metrics
-	</Name>
-	<ProjectType>CHaMP Metrics</ProjectType>
+	<Name>CHaMP Site Metrics</Name>
+	<ProjectType>CHAMPMETRICS</ProjectType>
+	<Warehouse>
+	<Meta name="id">8046017d-ad44-433e-ba26-d13b9864787b</Meta>
+	<Meta name="user">85ab1fe3-69dd-473c-aceb-0a6e20498f3b</Meta>
+	<Meta name="program">CHaMP</Meta>
+	<Meta name="tags">s3TransferScript</Meta>
+	</Warehouse>
 	<MetaData>
-		<Meta name="Region">
-			CRB
-		</Meta>
+		<Meta name="Region">CRB</Meta>
+		<Meta name="DateCreated">2017-07-21 13:24:00</Meta>
 	</MetaData>
 	<Inputs/>
 	<Realizations>
-		<Metrics dateCreated="2016-11-03T10:53:19.057000" guid="65669D37-5BEA-4573-B9FA-08BEFEEF69B2" id="run201611031053" productVersion="0.4">
-			<Name>CHaMP Metrics</Name>
+		<Metrics id="04cbb80b-18f9-4987-933c-31dbe8797e91" productVersion="1.0.0" dateCreated="2017-07-21 13:24:00">
+			<Name>CHaMP Site Metrics</Name>
 			<Analyses>
 				<Analysis>
 					<Name>Topo Metrics</Name>
 					<Outputs>
-						<Vector guid="test" id="1">
-							<Name>Topo Metrics</Name>
-							<Path>Metrics/TopoMetrics.shp</Path>
+						<Vector>
+							<Name>Topo Metrics ShapeFile</Name>
+							<Path>Outputs\TopoMetrics.shp</Path>
 						</Vector>
-						<CSV guid="test" id="1">
-							<Name>Test</Name>
-							<Path>Metrics/TopoMetrics.csv</Path>
+						<CSV>
+							<Name>Topo Metrics CSV</Name>
+							<Path>Outputs\Metrics.csv</Path>
 						</CSV>
-					</Outputs>
-				</Analysis>
-				<Analysis>
-					<Name>Aux Metrics</Name>
-					<Outputs>
-						<Vector guid="test" id="1">
-							<Name>Auxilliary Metrics</Name>
-							<Path>Metrics/AuxMetrics.shp</Path>
-						</Vector>
-						<CSV guid="test" id="1">
-							<Name>Test</Name>
-							<Path>Metrics/TopoMetrics.csv</Path>
-						</CSV>
+						<Database>
+							<Name>tgubg</Name>
+							<Path>Outputssdfsdfjksdkjf\</Path>
+							<MetaData>
+								<Meta name=""></Meta>
+							</MetaData>
+						</Database>
 					</Outputs>
 				</Analysis>
 			</Analyses>
-        </Metrics>
-    </Realizations>
+		</Metrics>
+	</Realizations>
 </Project>
