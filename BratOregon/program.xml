@@ -130,12 +130,9 @@
     </Groups>
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
-    <Products>
-      <Product id="BRATModel4" name="BRAT Model (HUC4)" folder="BRAT" url="" />
-      <Product id="BRATInputs4" name="BRAT Inputs (HUC4)" folder="BRATInputs" url="" />
-      
+    <Products>   
       <Product id="BRATModel8" name="BRAT Models (HUC8)" folder="BRAT" url="" />
-      <Product id="BRATInputs8" name="BRAT Inputs (HUC8)" folder="BRATInputs" url="" />
+      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
 
       <Product id="NationalDatasets" name="National Datasets" folder="nationaldatasets" url="" />
 
@@ -154,16 +151,10 @@
     <Group ref="GRP_NATIONAL">
       <Product ref="NationalDatasets" />
     </Group>
-    <Group ref="GRP_HUC4">
-      <Collection ref="COL_HUC4">
-        <Product ref="BRATModel4" />
-        <Product ref="BRATInputs4" />
-      </Collection>  
-    </Group>
     <Group ref="GRP_HUC8">
       <Collection ref="COL_HUC8">
         <Product ref="BRATModel8" />
-        <Product ref="BRATInputs8" />
+        <Product ref="RSContext" />
       </Collection>  
     </Group>
   </Hierarchy>

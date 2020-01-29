@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">
-	<Name>BRAT Inputs for HUC 17010216</Name>
-	<ProjectType>BRATInputs</ProjectType>
+	<Name>Riverscapes Context for HUC 17010216</Name>
+	<ProjectType>RSContext</ProjectType>
 	<MetaData>
 		<Meta name="dateCreated">2019-09-12T16:42:24.610951</Meta>
 		<Meta name="HUC8">17010216</Meta>
 	</MetaData>
 	<Realizations>
-		<BRATInputs dateCreated="2019-09-12T16:42:24.619206" guid="f8c8efcc-d5b6-11e9-be3c-acde48001122" id="BRATInputs1" productVersion="4.0.0">
-			<Name>BRAT Inputs for HUC 17010216</Name>
+		<RSContext dateCreated="2019-09-12T16:42:24.619206" guid="f8c8efcc-d5b6-11e9-be3c-acde48001122" id="RSContext1" productVersion="4.0.0">
+			<Name>Riverscapes Context for HUC 17010216</Name>
 			<DEM guid="f8c94260-d5b6-11e9-be3c-acde48001122" id="DEM">
 				<Name>NED 10m DEM</Name>
 				<Path>dem.tif</Path>
@@ -109,6 +109,6 @@
 				<Name>Canals</Name>
 				<Path>ntd/canals.shp</Path>
 			</Vector>
-		</BRATInputs>
+		</RSContext>
 	</Realizations>
 </Project>

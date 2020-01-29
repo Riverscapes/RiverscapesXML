@@ -213,8 +213,7 @@
       <xs:element type="LandfireType" name="Landfire" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="EcoregionsType" name="Ecoregions" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="StreamStatsType" name="StreamStats" maxOccurs="unbounded" minOccurs="0" />
-      <xs:element type="BRATInputsType" name="BRATInputs" maxOccurs="unbounded" minOccurs="0" />
-      <xs:element type="BRATPrepType" name="BRATPrep" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="RSContextType" name="RSContext" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="BRATRunType" name="BRATRun" maxOccurs="unbounded" minOccurs="0" />
     </xs:choice>
   </xs:complexType>
@@ -225,7 +224,7 @@
   
   ============================================================================== -->
 
-  <xs:complexType name="BRATInputsType" mixed="true">
+  <xs:complexType name="RSContextType" mixed="true">
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -236,19 +235,6 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-
-  <xs:complexType name="BRATPrepType" mixed="true">
-    <xs:complexContent>
-      <xs:extension base="RealizationType">
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
-          <xs:element type="DEMType" name="DEM" minOccurs="1" maxOccurs="1" />
-          <xs:element type="RasterType" name="Raster" />
-          <xs:element type="VectorType" name="Vector" />
-        </xs:choice>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-
 
   <xs:complexType name="BRATRunType" mixed="true">
     <xs:complexContent>
