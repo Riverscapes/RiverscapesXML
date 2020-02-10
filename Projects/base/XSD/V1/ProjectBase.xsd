@@ -2,7 +2,6 @@
 <xs:schema 
   attributeFormDefault="unqualified" 
   elementFormDefault="qualified" 
-  xmlns="https://www.w3schools.com"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
 
