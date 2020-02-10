@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Program.xsd">
+<Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
   <Name>Brat Oregon</Name>
   <MachineName>BRAT_OREGON</MachineName>
   
   <MetaData>
     <Meta name="projectfile">project.rs.xml</Meta>
-    <Meta name="apiUrl">https://abgo77bhnc.execute-api.us-west-2.amazonaws.com/dev/api</Meta>
+    <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
     <Meta name="projectXSD">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/BratOregon/project/XSD/V1/Project.xsd</Meta>
   </MetaData>
   
