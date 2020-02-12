@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
-  <Name>Brat Oregon</Name>
-  <MachineName>BRAT_OREGON</MachineName>
+  <Name>BRAT CRB</Name>
+  <MachineName>BRAT_CRB</MachineName>
   
   <MetaData>
     <Meta name="projectfile">project.rs.xml</Meta>
