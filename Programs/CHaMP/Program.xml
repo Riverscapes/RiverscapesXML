@@ -7,7 +7,7 @@
 <MetaData>
   <Meta name="projectfile">project.rs.xml</Meta>
   <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
-  <Meta name="projectXSD">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Project/CHaMP/XSD/V1/Project.xsd</Meta>
+  <Meta name="projectXSD">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/CHaMP/XSD/V1/Project.xsd</Meta>
 </MetaData>
 
 <Definitions>

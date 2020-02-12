@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">
-  <!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/BratOregon/project/XSD/V1/Project.xsd" -->
+  <!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
   <Name>Sample_VBET_Project</Name>
   <ProjectType>VBET</ProjectType>
   
