@@ -1,123 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">
-  <!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
-  <Name>Sample_VBET_Project</Name>
+  <Name>VBET for HUC 17060103</Name>
   <ProjectType>VBET</ProjectType>
-  
   <MetaData>
-    <Meta name="Operator">Jordan Gilbert</Meta>
-    <Meta name="HUC8ID">17020005</Meta>
-    <Meta name="HUC8NAME">Chief Joseph</Meta>
-    <Meta name="HUC8ID">17020005</Meta>
-    <Meta name="HUC8NAME">Upper Columbia</Meta>
-    <Meta name="SomeMetaName">SomeOtherValue</Meta>
+    <Meta name="ModelVersion">4.0.0</Meta>
+    <Meta name="dateCreated">2020-03-03T11:52:37.206315</Meta>
   </MetaData>
-  
-  <Inputs>
-    <!-- Inputs must have unique Ids that can be referenced in realizations I'm keeping
-      legible here so that it's readable in the realiations the GUID is to keep things unique-->
-      <Raster id="SLOPE4235" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-        <Name>Slope</Name>
-        <Path>01_Inputs/01_Topo/Slope/Slope1.img</Path>
-      </Raster>
-      
-      <Raster id="FLOW4235" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-        <Name>Flow</Name>
-        <Path>01_Inputs/01_Topo/DEM_001/Flows/Flow1.tif</Path>
-      </Raster>
-      
-      <Vector id="DN001" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-        <Name>Drainage Network</Name>
-        <Path>01_Inputs/01_Topo/DEM_001/Tucannon_DEM_10m_NED.img</Path>
-      </Vector>
-      
-      <DEM id="DEM1" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-        <Name>DEM</Name>
-        <Path>01_Inputs/01_Topo/Slope/Slope1.img</Path>
-        <MetaData>
-          <Meta name="description">Jordan Gilbert</Meta>
-          <Meta name="HUC8ID">17020005</Meta>
-        </MetaData>
-      </DEM>
-      
-    </Inputs>
-    
-    <Realizations>
-      <VBET id="Realization1" dateCreated="2016-07-08T23:49:51" productVersion="1.4.0" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-        
-        <Name>My realization Name</Name>
-        
-        <MetaData>
-          <Meta name="somecontextthing">Hello</Meta>
-          <Meta name="description">I did a thing and then another thing...</Meta>
-        </MetaData>
-        
-        <Parameters>
-          <Param name="high_da_thresh">250</Param>
-          <Param name="low_da_thresh">25</Param>
-          <Param name="lg_buf_size">500</Param>
-          <Param name="med_buf_size">150</Param>
-          <Param name="sm_buf_size">25</Param>
-          <Param name="min_buf_size">8</Param>
-          <Param name="lg_slope_thresh">5</Param>
-          <Param name="med_slope_thresh">7</Param>
-          <Param name="sm_slope_thresh">12</Param>
-          <Param name="ag_distance">150</Param>
-          <Param name="min_area">30000</Param>
-          <Param name="min_hole">30000</Param>
-        </Parameters>
-        
-        <Inputs>
-          <Topography>
-            <DEM ref="DEM1"/>
-            <Flow ref="FLOW4235"/>
-            <Slope ref="SLOPE4235"/>
-          </Topography>
-          <DrainageNetworks>
-            <Network ref="DN001">
-              <Buffers>
-                <Buffer>
-                  <Name>Large Buffer</Name>
-                  <Path>01_Inputs/02_Network/Network_001/Buffers/lg_buf1.shp</Path>
-                </Buffer>
-                <Buffer>
-                  <Name>Medium Buffer</Name>
-                  <Path>01_Inputs/02_Network/Network_001/Buffers/med_buf1.shp</Path>
-                </Buffer>
-                <Buffer>
-                  <Name>Small Buffer</Name>
-                  <Path>01_Inputs/02_Network/Network_001/Buffers/sm_buf1.shp</Path>
-                </Buffer>
-              </Buffers>
-            </Network>
-          </DrainageNetworks>
-        </Inputs>
-        
-        <Analyses>
-          <Analysis>
-            <Name>My First Analysis</Name>
-            <Outputs>
-              <!-- These are just the types we know and love -->
-              <Vector>
-                <Name>Raw Valley Bottom</Name>
-                <Path>02_Analyses/Output_001/Tucannon_VBET_unedited.shp</Path>
-              </Vector>
-              
-              <Vector>
-                <Name>Edited Valley Bottom</Name>
-                <Path>02_Analyses/Output_001/Tucannon_VBET_edited.shp</Path>
-              </Vector>
-            </Outputs>
-          </Analysis>
-        </Analyses>
-        
-      </VBET>
-      
-      <VBET productVersion="" id="" dateCreated="2016-07-08T23:49:51" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-        <Name>My Second Realization</Name>
-        
-      </VBET>
-      
-    </Realizations>
-    
-  </Project>
+  <Realizations>
+    <VBET dateCreated="2020-03-03T11:52:37.217718" guid="885136d2-5d88-11ea-9fee-f40f243c4b95" id="VBET" productVersion="4.0.0">
+      <Name>VBET for HUC 17060103</Name>
+      <Inputs>
+        <Raster guid="894e08ee-5d88-11ea-9fee-f40f243c4b95" id="SLOPE_RASTER">
+          <Name>Slope Raster</Name>
+          <Path>inputs/slope.tif</Path>
+        </Raster>
+        <Raster guid="8a63721e-5d88-11ea-9fee-f40f243c4b95" id="HAND_RASTER">
+          <Name>Hand Raster</Name>
+          <Path>inputs/hand.tif</Path>
+        </Raster>
+        <Raster guid="8f1583ba-5d88-11ea-9fee-f40f243c4b95" id="FLOWLINES">
+          <Name>NHD Flowlines</Name>
+          <Path>inputs/flowlines.shp</Path>
+        </Raster>
+        <Raster guid="8f22ded4-5d88-11ea-9fee-f40f243c4b95" id="FLOW_AREA">
+          <Name>NHD Flow Areas</Name>
+          <Path>inputs/flow_areas.shp</Path>
+        </Raster>
+      </Inputs>
+      <Intermediates>
+        <Vector guid="92cccc3e-5d88-11ea-9fee-f40f243c4b95" id="VBET_NETWORK">
+          <Name>VBET Network</Name>
+          <Path>intermediates/vbet_network.shp</Path>
+        </Vector>
+        <Raster guid="9f1e3bc6-5d88-11ea-9fee-f40f243c4b95" id="CHANNEL_RASTER">
+          <Name>Channel Raster</Name>
+          <Path>inputs/channel.tif</Path>
+        </Raster>
+      </Intermediates>
+      <Outputs/>
+    </VBET>
+  </Realizations>
+</Project>

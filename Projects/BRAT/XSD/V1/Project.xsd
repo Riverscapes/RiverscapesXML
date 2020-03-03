@@ -29,6 +29,9 @@
       <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
       <xs:element type="ParametersType" name="Parameters" minOccurs="0" maxOccurs="1" />
+      <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
+      <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" maxOccurs="1" />
+      <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute type="xs:string" name="id" use="required" />
     <xs:attribute type="xs:boolean" name="promoted" use="optional" />
@@ -215,6 +218,7 @@
       <xs:element type="StreamStatsType" name="StreamStats" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="RSContextType" name="RSContext" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="BRATType" name="BRAT" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="VBETType" name="VBET" maxOccurs="unbounded" minOccurs="0" />
     </xs:choice>
   </xs:complexType>
 
@@ -267,6 +271,26 @@
       <xs:element type="VectorType" name="Vector" />
     </xs:choice>
   </xs:complexType>  
+
+
+  <!-- =========================================================================
+  
+  Project: VBET
+  
+  ============================================================================== -->
+
+  <xs:complexType name="VBETType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element type="DEMType" name="DEM" minOccurs="1" maxOccurs="1" />
+          <xs:element type="RasterType" name="Raster" />
+          <xs:element type="VectorType" name="Vector" />
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
 
   <!-- =========================================================================
   
