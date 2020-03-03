@@ -27,11 +27,10 @@
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
     <Products>   
-      <Product id="BRAT8" name="BRAT Models (HUC8)" folder="BRAT" url="" />
-      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
-
       <Product id="NationalDatasets" name="National Datasets" folder="nationaldatasets" url="" />
-
+      <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
+      <Product id="VBET" name="Valley Bottem Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
     </Products>
   </Definitions>
 
@@ -49,7 +48,8 @@
     </Group>
     <Group ref="GRP_HUC8">
       <Collection ref="COL_HUC8">
-        <Product ref="BRAT8" />
+        <Product ref="BRAT" />
+        <Product ref="VBET" />
         <Product ref="RSContext" />
       </Collection>  
     </Group>

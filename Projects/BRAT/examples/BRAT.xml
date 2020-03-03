@@ -2,7 +2,7 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">
 	<!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
 	<Name>BRAT for HUC 17060103</Name>
-	<ProjectType>BRAT8</ProjectType>
+	<ProjectType>BRAT</ProjectType>
 	<MetaData>
 		<Meta name="dateCreated">2019-11-29T15:44:58.892718</Meta>
 		<Meta name="HUC8">17060103</Meta>
