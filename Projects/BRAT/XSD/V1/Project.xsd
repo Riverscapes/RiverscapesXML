@@ -235,6 +235,7 @@
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element type="DEMType" name="DEM" minOccurs="1" maxOccurs="1" />
           <xs:element type="RasterType" name="Raster" />
+          <xs:element type="SimpleFileType" name="SQLiteDB" />
           <xs:element type="VectorType" name="Vector" />
         </xs:choice>
       </xs:extension>
