@@ -214,9 +214,10 @@
 
   <xs:complexType name="RealizationsType">
     <xs:choice maxOccurs="unbounded">
-      <xs:element type="LandfireType" name="Landfire" maxOccurs="unbounded" minOccurs="0" />
-      <xs:element type="EcoregionsType" name="Ecoregions" maxOccurs="unbounded" minOccurs="0" />
-      <xs:element type="StreamStatsType" name="StreamStats" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="LandfireType" name="Landfire" maxOccurs="1" minOccurs="0" />
+      <xs:element type="EcoregionsType" name="Ecoregions" maxOccurs="1" minOccurs="0" />
+      <xs:element type="StreamStatsType" name="StreamStats" maxOccurs="1" minOccurs="0" />
+      <xs:element type="FlowlinesType" name="Flowlines" maxOccurs="1" minOccurs="0" />
       <xs:element type="RSContextType" name="RSContext" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="BRATType" name="BRAT" maxOccurs="unbounded" minOccurs="0" />
       <xs:element type="VBETType" name="VBET" maxOccurs="unbounded" minOccurs="0" />
@@ -326,6 +327,16 @@
       <xs:extension base="RealizationType">
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element type="SimpleFileType" name="Database" />
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="FlowlinesType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element type="VectorType" name="Vector" />
         </xs:choice>
       </xs:extension>
     </xs:complexContent>

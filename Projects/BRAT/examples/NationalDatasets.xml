@@ -45,5 +45,16 @@
 				<Path>streamstats/NSS_v6_2018-01-12.sqlite</Path>
 			</Database>
 		</StreamStats>
+		<Flowlines dateCreated="2018-01-12T00:00:00.00" guid="5faf5dfc-9cc8-4fc6-9e62-70dfb142df77" id="Flowlines" productVersion="1">
+			<Name> Reach flow lines</Name>
+			<Vector guid="93ec274d-c4a3-4511-addc-8701d51fd68b" id="CRB">
+				<Name>NOAA Columbia River Basin Flowlines</Name>
+				<Path>nhd/crb/ICRB_ALL_FINAL_20200320.shp</Path>
+			</Vector>
+			<Vector guid="93ec274d-c4a3-4511-addc-8701d51fd68b" id="CRB">
+				<Name>NOAA Columbia River Basin Flowlines</Name>
+				<Path>nhd/crb/ICRB_ALL_FINAL_20200320.shp</Path>
+			</Vector>
+		</Flowlines>
 	</Realizations>
 </Project>
