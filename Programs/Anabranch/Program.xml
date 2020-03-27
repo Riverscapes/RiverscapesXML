@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
-  <Name>Annabranch</Name>
-  <MachineName>Annabranch</MachineName>
+  <Name>Anabranch</Name>
+  <MachineName>Anabranch</MachineName>
   
   <MetaData>
     <Meta name="projectfile">project.rs.xml</Meta>
