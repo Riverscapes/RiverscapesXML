@@ -17,6 +17,7 @@
       <Collection id="COL_HUC8" name="HUC8">
         <AllowRegex pattern="^[0-9]{8}$"/>
       </Collection>
+      
     </Collections>
 
     <!--Groups are a lot simpler than collections. They can only be a single folder-->
@@ -29,7 +30,7 @@
     <Products>
       <Product id="NationalDatasets" name="National Datasets" folder="nationaldatasets" url="" />
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
-      <Product id="VBET" name="Valley Bottem Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
     </Products>
   </Definitions>
