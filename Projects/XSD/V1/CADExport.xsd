@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+
+  <!-- This file contains all the things Riverscapes projects have in common -->
+  <xs:include schemaLocation="RiverscapesProject.xsd" />
+
+  
+  <xs:element name="Project" type="ProjectType" />
+
+
+  <!-- Top Leve item: Here's where the overall project gets extended -->
+  <xs:complexType name="ProjectType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="ProjectBaseType">
+        <xs:sequence>
+        <xs:element type="RealizationsType" name="Realizations" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RealizationsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="CAD_ExportType" name="CAD_Export" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Project: CAD_Export
+  
+  ============================================================================== -->
+
+  <xs:complexType name="CAD_ExportType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:sequence>
+          <xs:element type="CAD_ExportInputsType" name="Inputs" minOccurs="0" />
+          <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="CAD_ExportInputsType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element type="VectorType" name="Breaklines" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="VectorType" name="Topo_Points" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="VectorType" name="TopoTin" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="VectorType" name="Survey_Extent" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="VectorType" name="Control_Points" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="VectorType" name="EdgeofWater_Points" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+
+
+
+</xs:schema>

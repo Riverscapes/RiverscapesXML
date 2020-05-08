@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../XSD/V1/GUT.xsd">
+
+  <Name>My GUT NAME</Name>
+  <ProjectType>GUT</ProjectType>
+
+  <MetaData>
+    <Meta name="Watershed">Lemhi</Meta>
+    <Meta name="Site">CBW05583-028079</Meta>
+    <Meta name="Year">2012</Meta>
+    <Meta name="Visit">1029</Meta>
+    <Meta name="Flow">Q200F</Meta>
+  </MetaData>
+
+  <!--Inputs are defined here so they can be used in Realizations-->
+  <Inputs>
+    <DEM id="DEM01" guid="">
+      <Name>DEM1</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/dem.img</Path>
+    </DEM>
+    <Raster id="DETDEM01" guid="">
+      <Name>Detrended DEM</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/detDEM.img</Path>
+    </Raster>
+    <Raster id="DEPTH01" guid="">
+      <Name>Water Depth</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/waterDepth.img</Path>
+    </Raster>
+
+    <HillShade id="HS01" guid="">
+      <Name>Hillshade</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/HS.img</Path>
+    </HillShade>
+
+    <Vector id="BFCL01" guid="">
+      <Name>Bankfull CenterLine</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/bfCL.shp</Path>
+    </Vector>
+    <Vector id="BFPOLY01" guid="">
+      <Name>Bankfull Polygon</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/bfPolygon.shp</Path>
+    </Vector>
+    <Vector id="BFXS01" guid="">
+      <Name>Bankfull Cross Sections</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/bfXS.shp</Path>
+    </Vector>
+    <Vector id="CHUNCLIP01" guid="">
+      <Name>Channel Units Clip</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/channelUnitsClip.shp</Path>
+    </Vector>
+    <Vector id="THALWEG01" guid="">
+      <Name>Thalweg</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/Thalweg.shp</Path>
+    </Vector>
+    <Vector id="WEPOLY01" guid="">
+      <Name>Wetted Polygon</Name>
+      <Path>CBW05583-028079/2012/VISIT_1029/Inputs/wePoly.shp</Path>
+    </Vector>
+  </Inputs>
+
+  <Realizations>
+
+    <GUT dateCreated="" id="" guid="" productVersion="" promoted="true">
+      <Name>VISIT 1029 Realization 1</Name>
+
+      <Parameters>
+        <Param name="Bankfull Width">0.0</Param>
+        <Param name="Wetted Width">0.0</Param>
+        <Param name="Tier 2 Membership Threshold">0.0</Param>
+      </Parameters>
+
+      <!--In this case the inputs for this realization reference
+      the ones defined at the top of the file. If there are any
+      inputs specific to this realization they would be defined
+      here instead of referencing them.-->
+      <Inputs>
+        <Raster ref="DEM01"/>
+        <Raster ref="DETDEM01"/>
+        <Raster ref="DEPTH01"/>
+        <Raster ref="BFCL01"/>
+        <Raster ref="BFPOLY01"/>
+        <Raster ref="BFXS01"/>
+        <Raster ref="CHUNCLIP01"/>
+        <Raster ref="THALWEG01"/>
+        <Raster ref="WETPOLY01"/>
+      </Inputs>
+
+      <Analyses>
+
+        <EvidenceLayers>
+            <Raster>
+              <Name>Bankfull Channel</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/bfCh.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Bankfull Surface Slope</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/bfeSlope.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Bankfull Surface Slope Mean Over Bankfull Width Window</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/bfeSlope_meanBFW.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Channel Margin</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/chMargin.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>DEM Mean Over 10% Bankfull Width Window</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/dem_mean.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Detrended DEM Mean Over 10% Bankfull Width Window</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/detDEM_mean.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>In Channel Detrended DEM Mean Over 10% Bankfull Width Window</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/inCh_dem.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>In Channel Detrended DEM Mean Over 10% Bankfull Width Window</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/inCh_detDEM.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Meander Index</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/mIndex.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Normalized Fill</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/normFill.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>Residual Topography</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/resTopo.tif</Path>
+            </Raster>
+            <Raster>
+              <Name>DEM Slope</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/smDEMSlope.tif</Path>
+            </Raster>
+            <Vector>
+              <Name>Channel Edge</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/channelEdge.shp</Path>
+            </Vector>
+            <Vector>
+              <Name>Channel Intersection Nodes</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/channelNodes.shp</Path>
+            </Vector>
+            <Vector>
+              <Name>Potential Riffle Crests</Name>
+              <Path>CBW05583-028079/2012/VISIT_1029/EvLyrs/potentialRiffCrests.shp</Path>
+            </Vector>
+        </EvidenceLayers>
+
+        <Metrics>
+          <InChannel>
+            <Tier1>
+              <Metric name="TotalArea">0.0</Metric>
+            </Tier1>
+            <Tier2>
+              <Concavity>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </Concavity>
+              <Convexity>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </Convexity>
+              <Planar>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </Planar>
+              <TransitionZone>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </TransitionZone>
+            </Tier2>
+            <Tier3>
+              <Concavity>
+                <Name>Backwater Pool</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Chute</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Confluence Pool</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Plunge Pool</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Scour Pool</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Shallow Thalweg</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+              </Concavity>
+              <Convexity>
+
+              <Unit>
+                <Name>Bank</Name>
+                <MetaData>
+                  <Meta name="Tier">3</Meta>
+                  <Meta name="Type">Convexity</Meta>
+                </MetaData>
+                <Metrics>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                </Metrics>
+              </Unit>
+
+                <Name>Bank</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Diagonal Bar</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Expansion Bar</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Lateral Bar</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Longitudinal Bar</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Point Bar</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Riffle</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Unit Bar</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+              </Convexity>
+              <Planar>
+                <Name>Cascade</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Glide</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Rapid</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+                <Name>Run</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+              </Planar>
+              <TransitionZone>
+                <Name>TransitionZone</Name>
+                  <Metric name="TotalArea">0.0</Metric>
+                  <Metric name="Count">0</Metric>
+              </TransitionZone>
+            </Tier3>
+          </InChannel>
+          <OutofChannel>
+            <Tier1>
+              <Metric name="TotalArea">0.0</Metric>
+            </Tier1>
+            <Tier2>
+              <Concavity>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </Concavity>
+              <Convexity>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </Convexity>
+              <Planar>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </Planar>
+              <TransitionZone>
+                <Metric name="TotalArea">0.0</Metric>
+                <Metric name="Count">0</Metric>
+              </TransitionZone>
+            </Tier2>
+          </OutofChannel>
+        </Metrics>
+
+        <Outputs>
+          <InChannel>
+            <Tier1>
+              <Vector>
+                <Name>Tier 1 In Channel</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier1_InChannel.shp</Path>
+              </Vector>
+            </Tier1>
+            <Tier2>
+              <Raster>
+                <Name>Tier 2 In Channel Concavity Membership</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier2_InChannel.shp</Path>
+              </Raster>
+              <Raster>
+                <Name>Tier 2 In Channel Convexity Membership</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier2_InChannel.shp</Path>
+              </Raster>
+              <Raster>
+                <Name>Tier 2 In Channel Planar Membership</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier2_InChannel.shp</Path>
+              </Raster>
+              <Vector>
+                <Name>Tier 2 In Channel</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier2_InChannel.shp</Path>
+              </Vector>
+            </Tier2>
+            <Tier3>
+              <Vector>
+                <Name>Tier 3 In Channel</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier3_InChannel.shp</Path>
+              </Vector>
+            </Tier3>
+          </InChannel>
+          <OutChannel>
+            <Tier1>
+              <Vector>
+                <Name>Tier 1 Out of Channel</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier1_OutOfChannel.shp</Path>
+              </Vector>
+            </Tier1>
+            <Tier2>
+              <Vector>
+                <Name>Tier 2 Out of Channel</Name>
+                <Path>CBW05583-028079/2012/VISIT_1029/Output/Tier2_OutOfChannel.shp</Path>
+              </Vector>
+            </Tier2>
+          </OutChannel>
+        </Outputs>
+      </Analyses>
+
+    </GUT>
+  </Realizations>
+</Project>

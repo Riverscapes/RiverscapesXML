@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+
+  <!-- This file contains all the things Riverscapes projects have in common -->
+  <xs:include schemaLocation="RiverscapesProject.xsd" />
+
+  <xs:element name="Project" type="ProjectType" />
+
+
+  <!-- Top Leve item: Here's where the overall project gets extended -->
+  <xs:complexType name="ProjectType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="ProjectBaseType">
+        <xs:sequence>
+        <xs:element type="RealizationsType" name="Realizations" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RealizationsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="SurveyDataType" name="SurveyData" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="TopographyType" name="Topography" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Project: Topo Toolbar
+  
+  This is a big one and it breaks a lot of the rules so be really careful with it.
+  
+  ============================================================================== -->
+
+  <xs:complexType name="SurveyDataType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:sequence>
+          <xs:element type="VectorType" name="Vector" minOccurs="1" maxOccurs="unbounded" />
+          <xs:element type="TopoSurveyExtentsType" name="SurveyExtents" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute type="xs:boolean" name="projected" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TopoSurveyExtentsType">
+    <xs:sequence>
+      <xs:element type="SurveyExtentsVectorType" name="Vector" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="TopographyType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:sequence>
+          <xs:element type="TopoTINType" name="TIN" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TopoTINType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element type="DEMType" name="DEM" minOccurs="0" maxOccurs="1" />
+          <xs:element type="RasterType" name="Detrended" minOccurs="0" maxOccurs="1" />
+          <xs:element type="HillShadeType" name="DEMHillshade" minOccurs="0" maxOccurs="1" />
+          <xs:element type="VectorType" name="Thalweg" minOccurs="0" maxOccurs="1" />
+          <xs:element type="VectorType" name="ChannelUnitsField" minOccurs="0" maxOccurs="1" />
+          <xs:element type="VectorType" name="ChannelUnits" minOccurs="0" maxOccurs="1" />
+          <xs:element type="RasterType" name="WaterSurfaceDEM" minOccurs="0" maxOccurs="1" />
+          <xs:element type="WaterSurfaceTINType" name="WaterSurfaceTIN" minOccurs="0" maxOccurs="1" />
+          <xs:element type="RasterType" name="PointQuality3D" minOccurs="0" maxOccurs="1" />
+          <xs:element type="RasterType" name="Roughness" minOccurs="0" maxOccurs="1" />
+          <xs:element type="RasterType" name="WaterDepth" minOccurs="0" maxOccurs="1" />
+          <xs:element type="AssocSurfacesType" name="AssocSurfaces" minOccurs="0" maxOccurs="1" />
+          <xs:element type="TopoStagesType" name="Stages" minOccurs="0" maxOccurs="1" />
+        </xs:choice>
+        <xs:attribute type="xs:boolean" name="active" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="WaterSurfaceTINType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType">
+        <xs:attribute type="xs:boolean" name="active" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="AssocSurfacesType" mixed="true">
+    <xs:all>
+      <xs:element type="RasterType" name="Slope" minOccurs="1" maxOccurs="1" />
+      <xs:element type="RasterType" name="PointDensity" minOccurs="1" maxOccurs="1" />
+      <xs:element type="RasterType" name="InterpolationError" minOccurs="1" maxOccurs="1" />
+      <xs:element type="RasterType" name="PointQuality3D" minOccurs="0" maxOccurs="1" />
+      <xs:element type="RasterType" name="Roughness" minOccurs="0" maxOccurs="1" />
+      <xs:element type="RasterType" name="ErrSurface" minOccurs="1" maxOccurs="1" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="TopoStagesType">
+    <xs:sequence>
+      <xs:element type="TopoStageVectorType" name="Vector" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TopoSurveyDataType">
+    <xs:sequence>
+      <xs:element type="VectorType" name="Vector" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TopoStageVectorType">
+    <xs:complexContent>
+      <xs:extension base="VectorType">
+        <xs:attribute type="xs:string" name="stage" use="required" />
+        <xs:attribute type="xs:string" name="type" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="SurveyExtentsVectorType">
+    <xs:complexContent>
+      <xs:extension base="VectorType">
+        <xs:attribute type="xs:string" name="active" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+</xs:schema>
+

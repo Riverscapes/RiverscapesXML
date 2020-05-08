@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+
+  <!-- This file contains all the things Riverscapes projects have in common -->
+  <xs:include schemaLocation="RiverscapesProject.xsd" />
+
+  <xs:element name="Project" type="ProjectType" />
+
+
+  <!-- Top Leve item: Here's where the overall project gets extended -->
+  <xs:complexType name="ProjectType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="ProjectBaseType">
+        <xs:sequence>
+        <xs:element type="RealizationsType" name="Realizations" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RealizationsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="RVDType" name="RVD" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Project: RVD
+  
+  ============================================================================== -->
+  <xs:complexType name="RVDType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:sequence>
+          <xs:element type="RVDInputs" name="Inputs" minOccurs="0" />
+          <xs:element type="RVDAnalysesType" name="Analyses" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- RVD Inputs -->
+  <xs:complexType name="RVDInputs">
+    <xs:sequence>
+      <xs:element type="RVDExistingVegetationType" name="ExistingVegetation" />
+      <xs:element type="RVDHistoricVegetationType" name="HistoricVegetation" />
+      <xs:element type="RVDDrainageNetworksType" name="DrainageNetworks" />
+      <xs:element type="VectorType" name="ValleyBottom" />
+      <xs:element type="VectorType" name="LargeRiverPolygon" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RVDExistingVegetationType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RasterType">
+        <xs:sequence>
+          <xs:element name="ExistingCoverRasters">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element type="RasterType" name="Raster" maxOccurs="unbounded" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RVDHistoricVegetationType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RasterType">
+        <xs:sequence>
+          <xs:element name="HistoricCoverRasters">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element type="RasterType" name="Raster" maxOccurs="unbounded" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RVDDrainageNetworksType" mixed="true">
+    <xs:sequence>
+      <xs:element name="Network">
+        <xs:complexType mixed="true">
+          <xs:complexContent>
+            <xs:extension base="RasterType">
+              <xs:sequence>
+                <xs:element type="VectorType" name="ThiessenPolygons" />
+              </xs:sequence>
+            </xs:extension>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--Analysis and Outputs-->
+  <xs:complexType name="RVDAnalysesType">
+    <xs:sequence>
+      <xs:element type="RVDAnalysisType" name="Analysis" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RVDAnalysisType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" />
+      <xs:element type="RVDOutputsType" name="Outputs" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RVDOutputsType">
+    <xs:sequence>
+      <xs:element type="VectorType" name="Vector" />
+      <xs:element type="RasterType" name="Raster" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+</xs:schema>
