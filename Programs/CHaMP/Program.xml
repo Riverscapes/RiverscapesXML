@@ -5,9 +5,10 @@
 <MachineName>CHaMP</MachineName>
 
 <MetaData>
-  <Meta name="projectfile">project.rs.xml</Meta>
+  <Meta name="projectFile">project.rs.xml</Meta>
+  <Meta name="access">PUBLIC</Meta>
   <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
-  <Meta name="projectXSD">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/CHaMP/XSD/V1/Project.xsd</Meta>
+  <Meta name="projectXSDs">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/XSD/V1</Meta>
 </MetaData>
 
 <Definitions>
