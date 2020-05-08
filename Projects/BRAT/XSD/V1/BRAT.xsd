@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="RiverscapesProject.xsd" />
+
+  <xs:element name="Project" type="ProjectType" />
+
+  <!-- Top Leve item: Here's where the overall project gets Defined -->
+  <xs:complexType name="ProjectType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="ProjectType" minOccurs="1" maxOccurs="1" />
+      <xs:element type="MetaDataType" name="Warehouse" minOccurs="0" maxOccurs="1" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="1" maxOccurs="1" />
+      <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
+      <xs:element type="RealizationsType" name="Realizations" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RealizationsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="BRATType" name="BRAT" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Project: BRAT
+  
+  ============================================================================== -->
+
+  <xs:complexType name="RSContextType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element type="DEMType" name="DEM" minOccurs="1" maxOccurs="1" />
+          <xs:element type="RasterType" name="Raster" />
+          <xs:element type="SimpleFileType" name="SQLiteDB" />
+          <xs:element type="VectorType" name="Vector" />
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="BRATType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element type="BRATInputsType" name="Inputs" minOccurs="1" maxOccurs="1" />
+          <xs:element type="BRATIntermediatesType" name="Intermediates" minOccurs="1" maxOccurs="1" />
+          <xs:element type="BRATOutputsType" name="Outputs" minOccurs="1" maxOccurs="1" />
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="BRATInputsType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element type="DEMType" name="DEM" minOccurs="1" maxOccurs="1" />
+      <xs:element type="RasterType" name="Raster" />
+      <xs:element type="VectorType" name="Vector" />
+    </xs:choice>
+  </xs:complexType>  
+
+  <xs:complexType name="BRATIntermediatesType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element type="VectorType" name="Vector" />
+    </xs:choice>
+  </xs:complexType>  
+
+  <xs:complexType name="BRATOutputsType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element type="VectorType" name="Vector" />
+    </xs:choice>
+  </xs:complexType>  
+
+
+</xs:schema>
