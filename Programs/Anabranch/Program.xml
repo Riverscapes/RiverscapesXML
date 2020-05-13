@@ -3,22 +3,22 @@
 
   <Name>Anabranch</Name>
   <MachineName>Anabranch</MachineName>
-  
+
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
     <Meta name="access">PUBLIC</Meta>
     <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
-    <Meta name="projectXSDs">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/XSD/V1</Meta>
+    <Meta name="projectXSDs">http://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
   </MetaData>
-  
+
 
   <Definitions>
     <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
     <Collections>
       <Collection id="COL_HUC8" name="HUC8">
-        <AllowRegex pattern="^[0-9]{8}$"/>
+        <AllowRegex pattern="^[0-9]{8}$" />
       </Collection>
-      
+
     </Collections>
 
     <!--Groups are a lot simpler than collections. They can only be a single folder-->
@@ -53,7 +53,7 @@
         <Product ref="BRAT" />
         <Product ref="VBET" />
         <Product ref="RSContext" />
-      </Collection>  
+      </Collection>
     </Group>
   </Hierarchy>
 </Program>

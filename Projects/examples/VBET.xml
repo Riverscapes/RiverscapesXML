@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/VBET.xsd">
   <Name>VBET for HUC 17060103</Name>
   <ProjectType>VBET</ProjectType>
@@ -9,35 +9,33 @@
   <Realizations>
     <VBET dateCreated="2020-03-03T11:52:37.217718" guid="885136d2-5d88-11ea-9fee-f40f243c4b95" id="VBET" productVersion="4.0.0">
       <Name>VBET for HUC 17060103</Name>
-      <Inputs>
-        <Raster guid="894e08ee-5d88-11ea-9fee-f40f243c4b95" id="SLOPE_RASTER">
-          <Name>Slope Raster</Name>
-          <Path>inputs/slope.tif</Path>
-        </Raster>
-        <Raster guid="8a63721e-5d88-11ea-9fee-f40f243c4b95" id="HAND_RASTER">
-          <Name>Hand Raster</Name>
-          <Path>inputs/hand.tif</Path>
-        </Raster>
-        <Raster guid="8f1583ba-5d88-11ea-9fee-f40f243c4b95" id="FLOWLINES">
-          <Name>NHD Flowlines</Name>
-          <Path>inputs/flowlines.shp</Path>
-        </Raster>
-        <Raster guid="8f22ded4-5d88-11ea-9fee-f40f243c4b95" id="FLOW_AREA">
-          <Name>NHD Flow Areas</Name>
-          <Path>inputs/flow_areas.shp</Path>
-        </Raster>
-      </Inputs>
-      <Intermediates>
-        <Vector guid="92cccc3e-5d88-11ea-9fee-f40f243c4b95" id="VBET_NETWORK">
-          <Name>VBET Network</Name>
-          <Path>intermediates/vbet_network.shp</Path>
-        </Vector>
-        <Raster guid="9f1e3bc6-5d88-11ea-9fee-f40f243c4b95" id="CHANNEL_RASTER">
-          <Name>Channel Raster</Name>
-          <Path>inputs/channel.tif</Path>
-        </Raster>
-      </Intermediates>
-      <Outputs/>
+      <DEM></DEM>
+      <Raster></Raster>
+      <Vector></Vector>
+      <Raster guid="894e08ee-5d88-11ea-9fee-f40f243c4b95" id="SLOPE_RASTER">
+        <Name>Slope Raster</Name>
+        <Path>inputs/slope.tif</Path>
+      </Raster>
+      <Raster guid="8a63721e-5d88-11ea-9fee-f40f243c4b95" id="HAND_RASTER">
+        <Name>Hand Raster</Name>
+        <Path>inputs/hand.tif</Path>
+      </Raster>
+      <Raster guid="8f1583ba-5d88-11ea-9fee-f40f243c4b95" id="FLOWLINES">
+        <Name>NHD Flowlines</Name>
+        <Path>inputs/flowlines.shp</Path>
+      </Raster>
+      <Raster guid="8f22ded4-5d88-11ea-9fee-f40f243c4b95" id="FLOW_AREA">
+        <Name>NHD Flow Areas</Name>
+        <Path>inputs/flow_areas.shp</Path>
+      </Raster>
+      <Vector guid="92cccc3e-5d88-11ea-9fee-f40f243c4b95" id="VBET_NETWORK">
+        <Name>VBET Network</Name>
+        <Path>intermediates/vbet_network.shp</Path>
+      </Vector>
+      <Raster guid="9f1e3bc6-5d88-11ea-9fee-f40f243c4b95" id="CHANNEL_RASTER">
+        <Name>Channel Raster</Name>
+        <Path>inputs/channel.tif</Path>
+      </Raster>
     </VBET>
   </Realizations>
 </Project>
