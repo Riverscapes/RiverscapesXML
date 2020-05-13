@@ -3,20 +3,20 @@
 
   <Name>BRAT</Name>
   <MachineName>BRAT</MachineName>
-  
+
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
     <Meta name="access">PUBLIC</Meta>
     <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
-    <Meta name="projectXSDs">https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/XSD/V1</Meta>
+    <Meta name="projectXSDs">http://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
   </MetaData>
-  
+
 
   <Definitions>
     <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
     <Collections>
       <Collection id="COL_HUC8" name="HUC8">
-        <AllowRegex pattern="^[0-9]{8}$"/>
+        <AllowRegex pattern="^[0-9]{8}$" />
       </Collection>
     </Collections>
 
@@ -27,7 +27,7 @@
     </Groups>
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
-    <Products>   
+    <Products>
       <Product id="BRAT8" name="BRAT Models (HUC8)" folder="BRAT" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
 
@@ -52,7 +52,7 @@
       <Collection ref="COL_HUC8">
         <Product ref="BRAT8" />
         <Product ref="RSContext" />
-      </Collection>  
+      </Collection>
     </Group>
   </Hierarchy>
 </Program>
