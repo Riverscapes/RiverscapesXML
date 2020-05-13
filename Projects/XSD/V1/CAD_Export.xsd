@@ -3,7 +3,8 @@
   xmlns:xsL="http://www.w3.org/2001/XMLSchema">
 
   <!-- This file contains all the things Riverscapes projects have in common -->
-  <xs:include schemaLocation="./RiverscapesProject.xsd" />
+  <!-- IT MUST BE AN ABSOLUTE URI. You can make it temporarily reference a local path but don't commit it that way. -->
+  <xs:include schemaLocation="http://xml.riverscapes.xyz/Projects/XSD/V1/RiverscapesProject.xsd" />
 
   
   <xs:element name="Project" type="ProjectType" />
