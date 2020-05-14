@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
+
+  <Name>Asotin IMW</Name>
+  <MachineName>AsotinIMW</MachineName>
+
+  <MetaData>
+    <Meta name="projectFile">project.rs.xml</Meta>
+    <Meta name="access">PUBLIC</Meta>
+    <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
+    <Meta name="projectXSDs">http://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
+  </MetaData>
+
+  <Definitions>
+    <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
+    <Collections>
+      <Collection id="COL_WATERSHED" name="Watershed">
+        <Allow id="Asotin" name="Asotin" folder="Asotin" />
+        <Allow id="Brownlee Reservoir" name="Brownlee Reservoir" folder="BrownleeReservoir" />
+        <Allow id="Big Navarro Garcia" name="Big Navarro Garcia" folder="BigNavarroGarcia" aliases="Big-Navarro-Garcia(CA)" />
+        <Allow id="Clearwater" name="Clearwater" folder="Clearwater" />
+        <Allow id="Entiat" name="Entiat" folder="Entiat" />
+        <Allow id="Hells Canyon" name="Hells Canyon" folder="HellsCanyon" />
+        <Allow id="Imnaha" name="Imnaha" folder="Imnaha" />
+        <Allow id="John Day" name="John Day" folder="JohnDay" />
+        <Allow id="Klickitat" name="Klickitat" folder="Klickitat" />
+        <Allow id="Lemhi" name="Lemhi" folder="Lemhi" />
+        <Allow id="Little Salmon" name="Little Salmon" folder="LittleSalmon" />
+        <Allow id="Lochsa" name="Lochsa" folder="Lochsa" />
+        <Allow id="Lolo" name="Lolo" folder="Lolo" />
+        <Allow id="Lower Clearwater" name="Lower Clearwater" folder="LowerClearwater" aliases="LowerClearwater" />
+        <Allow id="Lower Grande Ronde" name="Lower Grande Ronde" folder="LowerGrandeRonde" />
+        <Allow id="Lower John Day" name="Lower John Day" folder="LowerJohnDay" />
+        <Allow id="Lower Middle Fork Salmon" name="Lower Middle Fork Salmon" folder="LowerMiddleForkSalmon" />
+        <Allow id="Lower North Fork Clearwater" name="Lower North Fork Clearwater" folder="LowerNorthForkClearwater" />
+        <Allow id="Lower Salmon" name="Lower Salmon" folder="LowerSalmon" />
+        <Allow id="Lower Selway" name="Lower Selway" folder="LowerSelway" />
+        <Allow id="Lower Snake-Asotin" name="Lower Snake-Asotin" folder="Asotin" />
+        <Allow id="Lower Snake-Tucannon" name="Lower Snake-Tucannon" folder="Tucannon" />
+        <Allow id="Lower Yakima" name="Lower Yakima" folder="LowerYakima" />
+        <Allow id="Methow" name="Methow" folder="Methow" />
+        <Allow id="Middle Fork Clearwater" name="Middle Fork Clearwater" folder="MiddleForkClearwater" />
+        <Allow id="Middle Columbia-Lake Wallula" name="Middle Columbia-Lake Wallula" folder="LakeWallula" />
+        <Allow id="Middle Fork John Day" name="Middle Fork John Day" folder="MiddleForkJohnDay" />
+        <Allow id="Middle Salmon-Chamberlain" name="Middle Salmon-Chamberlain" folder="MiddleSalmonChamberlain" />
+        <Allow id="Middle Salmon-Panther" name="Middle Salmon-Panther" folder="MiddleSalmonPanther" />
+        <Allow id="Minam" name="Minam" folder="Minam" />
+        <Allow id="Naches" name="Naches" folder="Naches" />
+        <Allow id="North Fork John Day" name="North Fork John Day" folder="NorthForkJohnDay" />
+        <Allow id="Okanogan" name="Okanogan" folder="Okanogan" />
+        <Allow id="Pahsimeroi" name="Pahsimeroi" folder="Pahsimeroi" />
+        <Allow id="Secesh" name="Secesh" folder="Secesh" />
+        <Allow id="South Fork Clearwater" name="South Fork Clearwater" folder="SouthForkClearwater" />
+        <Allow id="South Fork Salmon" name="South Fork Salmon" folder="SouthForkSalmon" aliases="SouthForkSalmon" />
+        <Allow id="South Fork John Day" name="South Fork John Day" folder="SouthForkJohnDay" />
+        <Allow id="Tucannon" name="Tucannon" folder="Tucannon" />
+        <Allow id="Umatilla" name="Umatilla" folder="Umatilla" />
+        <Allow id="Upper Grande Ronde" name="Upper Grande Ronde" folder="UpperGrandeRonde" aliases="UpperGrandeRonde" />
+        <Allow id="Upper John Day" name="Upper John Day" folder="UpperJohnDay" />
+        <Allow id="Upper Middle Fork Salmon" name="Upper Middle Fork Salmon" folder="UpperMiddleForkSalmon" />
+        <Allow id="Upper North Fork Clearwater" name="Upper North Fork Clearwater" folder="UpperNorthForkClearwater" />
+        <Allow id="Upper Salmon" name="Upper Salmon" folder="UpperSalmon" />
+        <Allow id="Upper Selway" name="Upper Selway" folder="UpperSelway" />
+        <Allow id="Upper Yakima" name="Upper Yakima" folder="UpperYakima" />
+        <Allow id="Walla Walla" name="Walla Walla" folder="WallaWalla" aliases="WallaWalla" />
+        <Allow id="Wallowa" name="Wallowa" folder="Wallowa" />
+        <Allow id="Wenatchee" name="Wenatchee" folder="Wenatchee" />
+        <Allow id="Willow" name="Willow" folder="Willow" />
+        <Allow id="Yankee Fork" name="Yankee Fork" folder="YankeeFork" aliases="YankeeFork" />
+      </Collection>
+      <Collection id="COL_SITE" name="Site">
+        <AllowRegex pattern=".*" />
+      </Collection>
+      <Collection id="COL_VISIT" name="Visit">
+        <AllowRegex pattern="^[0-9]{2,6}$" />
+      </Collection>
+      <Collection id="COL_YEAR" name="Year">
+        <AllowRegex pattern="^[0-9]{4}$" />
+      </Collection>
+      <Collection id="COL_FLOW" name="Flow">
+        <AllowRegex pattern=".*" />
+      </Collection>
+      <!-- 17060103 -->
+      <Collection id="COL_HUC8" name="HUC8">
+        <AllowRegex pattern="^[0-9]{8}$" />
+      </Collection>      
+    </Collections>
+
+    <!--Groups are a lot simpler than collections. They can only be a single folder-->
+    <Groups>
+      <Group id="GRP_BASE" name="CHaMP" folder="CHaMP" />
+      <Group id="GRP_WATERSHED" name="Watershed" folder="Watershed" />
+      <Group id="GRP_NETWORK" name="Network" folder="Network" />
+      <Group id="GRP_SITE" name="Site" folder="Site" />
+      <Group id="GRP_YEAR" name="Year" folder="Year" />
+      <Group id="GRP_FLOW" name="Flow" folder="Flow" />
+      <Group id="GRP_TOPO" name="Topography" folder="Topography" />
+      <Group id="GRP_HUC8" name="HUC8" folder="HUC8" />      
+    </Groups>
+
+    <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
+    <Products>
+      <!--NETWORK level products-->
+      
+      <!--Site-level products-->
+      <Product id="GCD" name="GCD" folder="GCD" url="" />
+      <Product id="GUT" name="GUT" folder="GUT" url="" />
+      
+      <!--Visit-level products-->
+      <Product id="CAD_Export" name="CAD Export" folder="CAD_Export" url="" />
+      <Product id="Topo" name="Topo" folder="Topo" url="" />
+      <!-- <Product id="Aux" name="Aux Measurements" folder="Aux" url="" /> -->
+      <!-- <Product id="Photos" name="Photos" folder="Photos" url="" /> -->
+
+      <!--Flow-level products-->
+      <Product id="FHM" name="FHM" folder="FHM" url="" />
+      <Product id="Hydro" name="Hydro" folder="Hydro" url="" />
+
+      <!--HUC8 Level Projects -->
+      <Product id="CHAMPMETRICS" name="CHaMP Metrics" folder="CHaMPMetrics" url="" />      
+      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
+      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
+
+    </Products>
+  </Definitions>
+
+  <!-- Here's where we specify the actual structure
+  Reminder:
+  - Collection: Repeating folders (e.g. Asotin, Lemhi
+  - Group: Single folder with an explicit name (e.g. Topography)
+  Rules:
+  - Only one collection is allowed at any level
+  - Collections cannot be mixed with groups or products
+-->
+  <Hierarchy>
+    <Group ref="GRP_BASE">
+      <Group ref="GRP_WATERSHED">
+        <Collection ref="COL_WATERSHED">
+          <Group ref="GRP_NETWORK">
+            <Product ref="VBET" />
+            <Product ref="BRAT" />
+            <Product ref="RSContext" />
+          </Group>
+          <Group ref="GRP_SITE">
+            <Collection ref="COL_SITE">
+              <Product ref="GCD" />
+              <Product ref="FHM" />
+              <Group ref="GRP_YEAR">
+                <Collection ref="COL_YEAR">
+                  <Collection ref="COL_VISIT">
+                    <Group ref="GRP_FLOW">
+                      <Collection ref="COL_FLOW">
+                        <Product ref="Hydro" />
+                      </Collection>
+                    </Group>
+                    <Product ref="GUT" />
+                    <Product ref="Topo" />
+                    <Product ref="CAD_Export" />
+                  </Collection>
+                </Collection>
+              </Group>
+            </Collection>
+          </Group>
+        </Collection>
+      </Group>
+      <Group ref="GRP_HUC8">
+        <Collection ref="COL_HUC8">
+          <Product ref="BRAT" />
+          <Product ref="CHAMPMETRICS" />
+          <Product ref="VBET" />
+          <Product ref="RSContext" />
+        </Collection>
+      </Group>      
+    </Group>
+  </Hierarchy>
+</Program>
