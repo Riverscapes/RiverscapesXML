@@ -80,6 +80,7 @@
       <Collection id="COL_FLOW" name="Flow">
         <AllowRegex pattern=".*" />
       </Collection>
+      <!-- 17060103 -->
       <Collection id="COL_HUC8" name="HUC8">
         <AllowRegex pattern="^[0-9]{8}$" />
       </Collection>      
