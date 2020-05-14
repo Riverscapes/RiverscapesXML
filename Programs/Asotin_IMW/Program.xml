@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
-  <Name>Aostin IMW</Name>
-  <MachineName>Aostin_IMW</MachineName>
+  <Name>Asotin IMW</Name>
+  <MachineName>AsotinIMW</MachineName>
 
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
@@ -80,6 +80,9 @@
       <Collection id="COL_FLOW" name="Flow">
         <AllowRegex pattern=".*" />
       </Collection>
+      <Collection id="COL_HUC8" name="HUC8">
+        <AllowRegex pattern="^[0-9]{8}$" />
+      </Collection>      
     </Collections>
 
     <!--Groups are a lot simpler than collections. They can only be a single folder-->
@@ -91,25 +94,30 @@
       <Group id="GRP_YEAR" name="Year" folder="Year" />
       <Group id="GRP_FLOW" name="Flow" folder="Flow" />
       <Group id="GRP_TOPO" name="Topography" folder="Topography" />
+      <Group id="GRP_HUC8" name="HUC8" folder="HUC8" />      
     </Groups>
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
     <Products>
       <!--NETWORK level products-->
-      <Product id="CAD_Export" name="CAD Export" folder="CAD_Export" url="" />
-
+      
       <!--Site-level products-->
       <Product id="GCD" name="GCD" folder="GCD" url="" />
-
+      <Product id="GUT" name="GUT" folder="GUT" url="" />
+      
       <!--Visit-level products-->
+      <Product id="CAD_Export" name="CAD Export" folder="CAD_Export" url="" />
       <Product id="Topo" name="Topo" folder="Topo" url="" />
+      <!-- <Product id="Aux" name="Aux Measurements" folder="Aux" url="" /> -->
+      <!-- <Product id="Photos" name="Photos" folder="Photos" url="" /> -->
 
       <!--Flow-level products-->
       <Product id="FHM" name="FHM" folder="FHM" url="" />
-      <Product id="GUT" name="GUT" folder="GUT" url="" />
       <Product id="Hydro" name="Hydro" folder="Hydro" url="" />
 
       <!--HUC8 Level Projects -->
+      <Product id="CHAMPMETRICS" name="CHaMP Metrics" folder="CHaMPMetrics" url="" />      
+      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
 
@@ -155,6 +163,14 @@
           </Group>
         </Collection>
       </Group>
+      <Group ref="GRP_HUC8">
+        <Collection ref="COL_HUC8">
+          <Product ref="BRAT" />
+          <Product ref="CHAMPMETRICS" />
+          <Product ref="VBET" />
+          <Product ref="RSContext" />
+        </Collection>
+      </Group>      
     </Group>
   </Hierarchy>
 </Program>
