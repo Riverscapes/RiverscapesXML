@@ -137,11 +137,6 @@
     <Group ref="GRP_BASE">
       <Group ref="GRP_WATERSHED">
         <Collection ref="COL_WATERSHED">
-          <Group ref="GRP_NETWORK">
-            <Product ref="VBET" />
-            <Product ref="BRAT" />
-            <Product ref="RSContext" />
-          </Group>
           <Group ref="GRP_SITE">
             <Collection ref="COL_SITE">
               <Product ref="GCD" />
