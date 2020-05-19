@@ -15,7 +15,8 @@
 			<MetaData>
 				<Meta name="Visit">2142</Meta>
 				<Meta name="Discharge">S0002_28816</Meta>
-			</MetaData>
+				<Meta name="url" type="URL">http://thing.com</Meta>
+			</MetaData> 
 			<Inputs>
 				<Cover id="2014_VISIT_2142_S0002_28816_CoverIndex">
 					<Name>2014 Visit 2142 S0002_28816 Cover Index</Name>
