@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
 
   <!-- =========================================================================
   
@@ -61,10 +60,24 @@
     </xs:sequence>
   </xs:complexType>
 
+  <!-- The type of string in the <Meta> tag. These are optional -->
+  <xs:simpleType name="MetaDataStringType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="URL" />
+      <xs:enumeration value="RichText" />
+      <xs:enumeration value="Markdown" />
+      <xs:enumeration value="ImageURL" />
+      <xs:enumeration value="ISODate" />
+      <xs:enumeration value="UnixTimestamp" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
   <xs:complexType name="MetaType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
         <xs:attribute type="xs:string" name="name" use="required" />
+        <xs:attribute type="MetaDataStringType" name="type" use="optional" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -228,7 +241,6 @@
       <xs:extension base="ContextLayerType" />
     </xs:complexContent>
   </xs:complexType>
-
 
 
   <!-- =========================================================================
