@@ -1,9 +1,9 @@
-name: Python package
+name: XML Validation
 
 on: [push]
 
 jobs:
-  build:
+  validate:
 
     runs-on: ubuntu-latest
     strategy:
