@@ -10,7 +10,6 @@
   ============================================================================== -->
   <!-- Top Leve item: Here's where the overall project gets Defined -->
   <xs:complexType name="ProjectBaseType" mixed="true">
-    <xs:all></xs:all>
     <xs:sequence>
       <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
       <xs:element type="xs:string" name="ProjectType" minOccurs="1" maxOccurs="1" />
