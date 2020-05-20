@@ -5,6 +5,7 @@
   <!-- This file contains all the things Riverscapes projects have in common -->
   <!-- IT MUST BE AN ABSOLUTE URI. You can make it temporarily reference a local path but don't commit it that way. -->
   <xs:include schemaLocation="http://xml.riverscapes.xyz/Projects/XSD/V1/RiverscapesProject.xsd" />
+  <!-- <xs:include schemaLocation="./RiverscapesProject.xsd" /> -->
   
   <xs:element name="Project" type="ProjectType" />
 
@@ -61,6 +62,7 @@
   <xs:complexType name="BRATOutputsType" mixed="true">
     <xs:choice minOccurs="0" maxOccurs="unbounded">
       <xs:element type="VectorType" name="Vector" />
+      <xs:element type="SimpleFileType" name="SQLiteDB" />
     </xs:choice>
   </xs:complexType>  
 

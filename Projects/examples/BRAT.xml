@@ -1,68 +1,80 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/BRAT.xsd">
-	<!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
-	<Name>BRAT for HUC 17060103</Name>
+	<Name>BRAT for HUC 16010202</Name>
 	<ProjectType>BRAT</ProjectType>
 	<MetaData>
-		<Meta name="dateCreated">2019-11-29T15:44:58.892718</Meta>
-		<Meta name="HUC8">17060103</Meta>
+		<Meta name="ModelVersion">4.0.0</Meta>
+		<Meta name="dateCreated">2020-05-19T16:32:00.787380</Meta>
+		<Meta name="dateCreated">2020-05-19T16:32:00.794243</Meta>
+		<Meta name="HUC8">16010202</Meta>
+		<Meta name="BRATBuildVersion">4.0.0</Meta>
+		<Meta name="BRATBuildTimestamp">1589931120</Meta>
+		<Meta name="Watershed">Middle Bear</Meta>
 	</MetaData>
 	<Realizations>
-		<BRAT dateCreated="2019-11-29T15:44:58.902436" guid="40f73258-1302-11ea-b4ff-f40f243c4b95" id="BRAT1" productVersion="4.0.0">
-			<Name>BRAT for HUC 17060103</Name>
+		<BRAT dateCreated="2020-05-19T16:32:00.797667" guid="f03ad776-9a28-11ea-9940-acde48001122" id="BRAT1" productVersion="4.0.0">
+			<Name>BRAT for HUC 16010202</Name>
 			<Inputs>
-				<DEM guid="7e42ed38-49f7-11ea-9844-0242ac110002" id="DEM">
+				<DEM guid="f22a9936-9a28-11ea-9940-acde48001122" id="DEM">
 					<Name>NED 10m DEM</Name>
-					<Path>Inputs/dem.tif</Path>
+					<Path>inputs/dem.tif</Path>
 				</DEM>
-				<Raster guid="7e75d4aa-49f7-11ea-9844-0242ac110002" id="EXVEG">
+				<Raster guid="f23cb710-9a28-11ea-9940-acde48001122" id="EXVEG">
 					<Name>Existing Vegetation</Name>
-					<Path>Inputs/existing_veg.tif</Path>
+					<Path>inputs/existing_veg.tif</Path>
 				</Raster>
-				<Raster guid="7eb0bf20-49f7-11ea-9844-0242ac110002" id="HISTVEG">
-					<Name>Historical Vegetation</Name>
-					<Path>Inputs/historic_veg.tif</Path>
+				<Raster guid="f28ce5f0-9a28-11ea-9940-acde48001122" id="HISTVEG">
+					<Name>Historic Vegetation</Name>
+					<Path>inputs/historic_veg.tif</Path>
 				</Raster>
-				<Raster guid="7fa39ba0-49f7-11ea-9844-0242ac110002" id="HILLSHADE">
+				<Raster guid="f370bd0c-9a28-11ea-9940-acde48001122" id="HILLSHADE">
 					<Name>DEM Hillshade</Name>
-					<Path>Inputs/dem_hillshade.tif</Path>
+					<Path>inputs/dem_hillshade.tif</Path>
 				</Raster>
-				<Raster guid="86bfe63c-49f7-11ea-9844-0242ac110002" id="FA">
+				<Raster guid="f6ca2498-9a28-11ea-9940-acde48001122" id="FA">
 					<Name>Flow Accumulation</Name>
-					<Path>Inputs/flow_accum.tif</Path>
+					<Path>inputs/flow_accum.tif</Path>
 				</Raster>
-				<Raster guid="8d766898-49f7-11ea-9844-0242ac110002" id="DA">
-					<Name>Drainage Area</Name>
-					<Path>Inputs/drainarea_sqkm.tif</Path>
+				<Raster guid="f912c048-9a28-11ea-9940-acde48001122" id="DA">
+					<Name>Drainage Area in sqkm</Name>
+					<Path>inputs/drainarea_sqkm.tif</Path>
 				</Raster>
-				<Raster guid="90c66e58-49f7-11ea-9844-0242ac110002" id="SLOPE">
-					<Name>Slope</Name>
-					<Path>Inputs/slope.tif</Path>
+				<Raster guid="face3a8e-9a28-11ea-9940-acde48001122" id="SLOPE">
+					<Name>Slope Raster</Name>
+					<Path>inputs/slope.tif</Path>
 				</Raster>
-				<Raster guid="99c5e556-49f7-11ea-9844-0242ac110002" id="FLOWLINES">
+				<Vector guid="fea86a6c-9a28-11ea-9940-acde48001122" id="FLOWLINES">
 					<Name>NHD Flowlines</Name>
-					<Path>Inputs/NHDFlowline.shp</Path>
-				</Raster>
-				<Raster guid="99dd92e6-49f7-11ea-9844-0242ac110002" id="FLOW_AREA">
-					<Name>NHD Flow Areas</Name>
-					<Path>Inputs/NHDArea.shp</Path>
-				</Raster>
-				<Raster guid="9a36baa6-49f7-11ea-9844-0242ac110002" id="WATERBODIES">
-					<Name>NHD Waterbodies</Name>
-					<Path>Inputs/NHDWaterbody.shp</Path>
-				</Raster>
+					<Path>inputs/NHDFlowline.shp</Path>
+				</Vector>
+				<Vector guid="feb0f600-9a28-11ea-9940-acde48001122" id="FLOW_AREA">
+					<Name>NHD Flow Area</Name>
+					<Path>inputs/NHDArea.shp</Path>
+				</Vector>
+				<Vector guid="ff4725e4-9a28-11ea-9940-acde48001122" id="WATERBODIES">
+					<Name>NHD Waterbody</Name>
+					<Path>inputs/NHDWaterbody.shp</Path>
+				</Vector>
+				<Vector guid="01abc966-9a29-11ea-9940-acde48001122" id="OBSERVATIONS">
+					<Name>Beaver Activity Observations</Name>
+					<Path>inputs/observations/beaver_activity.shp</Path>
+				</Vector>
 			</Inputs>
 			<Intermediates>
-				<Vector guid="9a3a2dd0-49f7-11ea-9844-0242ac110002" id="CLEANED">
+				<Vector guid="01adcc5c-9a29-11ea-9940-acde48001122" id="CLEANED">
 					<Name>Cleaned Network</Name>
-					<Path>Intermediates/cleaned.shp</Path>
+					<Path>intermediates/intermediate_nhd_network.shp</Path>
 				</Vector>
 			</Intermediates>
 			<Outputs>
-				<Vector guid="9a3e450a-49f7-11ea-9844-0242ac110002" id="SEGMENTED">
+				<Vector guid="01af7f02-9a29-11ea-9940-acde48001122" id="SEGMENTED">
 					<Name>BRAT Network</Name>
-					<Path>Outputs/segmented.shp</Path>
+					<Path>outputs/brat.shp</Path>
 				</Vector>
+				<SQLiteDB guid="78c45cd4-9a29-11ea-9940-acde48001122" id="BRATDB">
+					<Name>Brat Results Database</Name>
+					<Path>outputs/brat.sqlite</Path>
+				</SQLiteDB>
 			</Outputs>
 		</BRAT>
 	</Realizations>
