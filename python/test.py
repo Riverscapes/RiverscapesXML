@@ -20,6 +20,7 @@ class TestLambdaFunc(unittest.TestCase):
     def test_allxmls(self):
         xmls = get_xmls('./Projects/examples')
         errors = []
+        tested_xsds = []
         for xml in xmls:
             basename = xml.split('.')[0]
             xml_path='Projects/examples/{}.xml'.format(basename)
@@ -31,6 +32,7 @@ class TestLambdaFunc(unittest.TestCase):
                 # This is because we can create example XMLS that do other things
                 if not os.path.isfile(xsd_path):
                     continue
+                tested_xsds.append(xsd_path)
                 xsd_file = get_xsd(xsd_path)
                 result, errs = validate_xml(xml_file, xsd_file)
                 if not result:
@@ -38,6 +40,7 @@ class TestLambdaFunc(unittest.TestCase):
             except Exception as e:
                 errors.append([basename, str(e)])
         self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
-
+        for xsd_path in tested_xsds:
+            print("Tested: {}".format(xsd_path))
 if __name__ == '__main__':
     unittest.main()
