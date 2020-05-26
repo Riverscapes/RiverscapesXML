@@ -67,6 +67,10 @@
 				</Vector>
 			</Intermediates>
 			<Outputs>
+				<HTMLFile>
+					<Name>BRAT Run Report</Name>
+					<Path>outputs/brat_run.html</Path>
+				</HTMLFile>
 				<Vector guid="01af7f02-9a29-11ea-9940-acde48001122" id="SEGMENTED">
 					<Name>BRAT Network</Name>
 					<Path>outputs/brat.shp</Path>

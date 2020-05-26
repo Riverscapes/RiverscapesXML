@@ -64,6 +64,7 @@
     <xs:choice minOccurs="0" maxOccurs="unbounded">
       <xs:element type="VectorType" name="Vector" />
       <xs:element type="SimpleFileType" name="SQLiteDB" />
+      <xs:element type="SimpleFileType" name="HTMLFile" />
     </xs:choice>
   </xs:complexType>  
 

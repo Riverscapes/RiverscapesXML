@@ -135,6 +135,7 @@
       <xs:element type="SimpleFileType" name="MSAccessDB" />
       <xs:element type="SimpleFileType" name="SQLiteDB" />
       <xs:element type="SimpleFileType" name="PDF" />
+      <xs:element type="SimpleFileType" name="HTMLFile" />
 
     </xs:choice>
   </xs:complexType>
