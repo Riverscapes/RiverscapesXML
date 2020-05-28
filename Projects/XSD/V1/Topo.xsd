@@ -102,7 +102,7 @@
       <xs:element type="RasterType" name="InterpolationError" minOccurs="1" maxOccurs="1" />
       <xs:element type="RasterType" name="PointQuality3D" minOccurs="0" maxOccurs="1" />
       <xs:element type="RasterType" name="Roughness" minOccurs="0" maxOccurs="1" />
-      <xs:element type="RasterType" name="ErrSurface" minOccurs="1" maxOccurs="1" />
+      <xs:element type="RasterType" name="ErrSurface" minOccurs="0" maxOccurs="1" />
     </xs:all>
   </xs:complexType>
 
