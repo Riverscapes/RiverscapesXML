@@ -16,57 +16,7 @@
     <Collections>
       <Collection id="COL_WATERSHED" name="Watershed">
         <Allow id="Asotin" name="Asotin" folder="Asotin" />
-        <Allow id="Brownlee Reservoir" name="Brownlee Reservoir" folder="BrownleeReservoir" />
-        <Allow id="Big Navarro Garcia" name="Big Navarro Garcia" folder="BigNavarroGarcia" aliases="Big-Navarro-Garcia(CA)" />
-        <Allow id="Clearwater" name="Clearwater" folder="Clearwater" />
-        <Allow id="Entiat" name="Entiat" folder="Entiat" />
-        <Allow id="Hells Canyon" name="Hells Canyon" folder="HellsCanyon" />
-        <Allow id="Imnaha" name="Imnaha" folder="Imnaha" />
-        <Allow id="John Day" name="John Day" folder="JohnDay" />
-        <Allow id="Klickitat" name="Klickitat" folder="Klickitat" />
-        <Allow id="Lemhi" name="Lemhi" folder="Lemhi" />
-        <Allow id="Little Salmon" name="Little Salmon" folder="LittleSalmon" />
-        <Allow id="Lochsa" name="Lochsa" folder="Lochsa" />
-        <Allow id="Lolo" name="Lolo" folder="Lolo" />
-        <Allow id="Lower Clearwater" name="Lower Clearwater" folder="LowerClearwater" aliases="LowerClearwater" />
-        <Allow id="Lower Grande Ronde" name="Lower Grande Ronde" folder="LowerGrandeRonde" />
-        <Allow id="Lower John Day" name="Lower John Day" folder="LowerJohnDay" />
-        <Allow id="Lower Middle Fork Salmon" name="Lower Middle Fork Salmon" folder="LowerMiddleForkSalmon" />
-        <Allow id="Lower North Fork Clearwater" name="Lower North Fork Clearwater" folder="LowerNorthForkClearwater" />
-        <Allow id="Lower Salmon" name="Lower Salmon" folder="LowerSalmon" />
-        <Allow id="Lower Selway" name="Lower Selway" folder="LowerSelway" />
         <Allow id="Lower Snake-Asotin" name="Lower Snake-Asotin" folder="Asotin" />
-        <Allow id="Lower Snake-Tucannon" name="Lower Snake-Tucannon" folder="Tucannon" />
-        <Allow id="Lower Yakima" name="Lower Yakima" folder="LowerYakima" />
-        <Allow id="Methow" name="Methow" folder="Methow" />
-        <Allow id="Middle Fork Clearwater" name="Middle Fork Clearwater" folder="MiddleForkClearwater" />
-        <Allow id="Middle Columbia-Lake Wallula" name="Middle Columbia-Lake Wallula" folder="LakeWallula" />
-        <Allow id="Middle Fork John Day" name="Middle Fork John Day" folder="MiddleForkJohnDay" />
-        <Allow id="Middle Salmon-Chamberlain" name="Middle Salmon-Chamberlain" folder="MiddleSalmonChamberlain" />
-        <Allow id="Middle Salmon-Panther" name="Middle Salmon-Panther" folder="MiddleSalmonPanther" />
-        <Allow id="Minam" name="Minam" folder="Minam" />
-        <Allow id="Naches" name="Naches" folder="Naches" />
-        <Allow id="North Fork John Day" name="North Fork John Day" folder="NorthForkJohnDay" />
-        <Allow id="Okanogan" name="Okanogan" folder="Okanogan" />
-        <Allow id="Pahsimeroi" name="Pahsimeroi" folder="Pahsimeroi" />
-        <Allow id="Secesh" name="Secesh" folder="Secesh" />
-        <Allow id="South Fork Clearwater" name="South Fork Clearwater" folder="SouthForkClearwater" />
-        <Allow id="South Fork Salmon" name="South Fork Salmon" folder="SouthForkSalmon" aliases="SouthForkSalmon" />
-        <Allow id="South Fork John Day" name="South Fork John Day" folder="SouthForkJohnDay" />
-        <Allow id="Tucannon" name="Tucannon" folder="Tucannon" />
-        <Allow id="Umatilla" name="Umatilla" folder="Umatilla" />
-        <Allow id="Upper Grande Ronde" name="Upper Grande Ronde" folder="UpperGrandeRonde" aliases="UpperGrandeRonde" />
-        <Allow id="Upper John Day" name="Upper John Day" folder="UpperJohnDay" />
-        <Allow id="Upper Middle Fork Salmon" name="Upper Middle Fork Salmon" folder="UpperMiddleForkSalmon" />
-        <Allow id="Upper North Fork Clearwater" name="Upper North Fork Clearwater" folder="UpperNorthForkClearwater" />
-        <Allow id="Upper Salmon" name="Upper Salmon" folder="UpperSalmon" />
-        <Allow id="Upper Selway" name="Upper Selway" folder="UpperSelway" />
-        <Allow id="Upper Yakima" name="Upper Yakima" folder="UpperYakima" />
-        <Allow id="Walla Walla" name="Walla Walla" folder="WallaWalla" aliases="WallaWalla" />
-        <Allow id="Wallowa" name="Wallowa" folder="Wallowa" />
-        <Allow id="Wenatchee" name="Wenatchee" folder="Wenatchee" />
-        <Allow id="Willow" name="Willow" folder="Willow" />
-        <Allow id="Yankee Fork" name="Yankee Fork" folder="YankeeFork" aliases="YankeeFork" />
       </Collection>
       <Collection id="COL_SITE" name="Site">
         <AllowRegex pattern=".*" />
@@ -108,6 +58,7 @@
       
       <!--Visit-level products-->
       <Product id="CAD_Export" name="CAD Export" folder="CAD_Export" url="" />
+      <Product id="Substrate" name="Substrate Rasters" folder="Substrate" url="" />
       <Product id="Topo" name="Topo" folder="Topo" url="" />
       <!-- <Product id="Aux" name="Aux Measurements" folder="Aux" url="" /> -->
       <!-- <Product id="Photos" name="Photos" folder="Photos" url="" /> -->
@@ -152,6 +103,7 @@
                     <Product ref="GUT" />
                     <Product ref="Topo" />
                     <Product ref="CAD_Export" />
+                    <Product ref="Substrate" />
                   </Collection>
                 </Collection>
               </Group>
