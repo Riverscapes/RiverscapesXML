@@ -160,6 +160,105 @@
         <Name>TopoTIN4</Name>
         <Path>Topography\TIN0005\TopoTIN</Path>
       </TIN>
+      <TIN active="true" guid="0195464c-0666-40bc-b556-970df264e751" id="TIN">
+        <Name>TopoTIN</Name>
+        <Path>Topography\TIN0001\TIN</Path>
+        <DEMHillshade guid="7008c247-13c7-4224-82f5-0863b55b429d" id="DEMHillshade">
+          <Name>Hillshade</Name>
+          <Path>Topography\TIN0001\DEMHillshade.tif</Path>
+        </DEMHillshade>
+        <Thalweg guid="d7bb4d8e-6bbe-4d2b-9ca2-28fa11f076e3" id="thalweg">
+          <Name>Thalweg</Name>
+          <Path>Topography\TIN0001\Thalweg.shp</Path>
+        </Thalweg>
+        <ChannelUnitsField guid="e7ccdbdf-2b8b-4cb6-84ec-da63c3e8dc69" id="ChannelUnitsField">
+          <Name>Channel Units</Name>
+          <Path>Topography\TIN0001\Channel_Units_Field.shp</Path>
+        </ChannelUnitsField>
+        <WaterSurfaceTIN active="true" guid="2c06edc2-112d-45f5-bd40-622f8b9c443b" id="WaterSurfaceTIN">
+          <Name>Water Surface TIN</Name>
+          <Path>Topography\TIN0001\WSETIN</Path>
+        </WaterSurfaceTIN>
+        <WaterDepth guid="61ba880f-93ea-443b-ab69-f3f9285edc63" id="WaterDepth">
+          <Name>Water Depth</Name>
+          <Path>Topography\TIN0001\Water_Depth.tif</Path>
+        </WaterDepth>
+        <DEM guid="0d135d35-9db7-4fc9-a839-1a484dbd975c" id="DEM">
+          <Name>DEM</Name>
+          <Path>Topography\TIN0001\DEM.tif</Path>
+          <MetaData>
+            <Meta name="left">475928.0</Meta>
+            <Meta name="top">5125893.0</Meta>
+            <Meta name="right">476076.0</Meta>
+            <Meta name="bottom">5125809.0</Meta>
+            <Meta name="cellsize">0.1</Meta>
+          </MetaData>
+        </DEM>
+        <Detrended guid="26d16440-54a3-491a-980c-3d06f10c2731" id="Detrended">
+          <Name>Detrended</Name>
+          <Path>Topography\TIN0001\Detrended.tif</Path>
+        </Detrended>
+        <ChannelUnits guid="0cdcffb4-efc7-4137-9023-f6c55a9ea77d" id="ChannelUnits">
+          <Name>Channel Units</Name>
+          <Path>Topography\TIN0001\Channel_Units.shp</Path>
+        </ChannelUnits>
+        <WaterSurfaceDEM guid="5daa1334-a98c-478e-b7a5-b641adbb9bf5" id="WaterSurfaceDEM">
+          <Name>Water Surface DEM</Name>
+          <Path>Topography\TIN0001\WSEDEM.tif</Path>
+        </WaterSurfaceDEM>
+        <Stages>
+          <Vector guid="3c40f530-8c8f-44d0-a59e-6e523b84f096" id="bankfull_crosssections" stage="bankfull" type="crosssections">
+            <Name>BCrossSections</Name>
+            <Path>Topography\TIN0001\Stages\Bankfull\BCrossSections.shp</Path>
+          </Vector>
+          <Vector guid="f8d82d57-87fb-49b8-99d1-1763c21009ee" id="bankfull_islands" stage="bankfull" type="islands">
+            <Name>BIslands</Name>
+            <Path>Topography\TIN0001\Stages\Bankfull\BIslands.shp</Path>
+          </Vector>
+          <Vector guid="444867f8-ec53-461b-bcd9-a40743b853a9" id="wetted_extent" stage="wetted" type="extent">
+            <Name>WExtent</Name>
+            <Path>Topography\TIN0001\Stages\Wetted\WExtent.shp</Path>
+          </Vector>
+          <Vector guid="882727b7-1a86-4eb5-9aac-f9ead9ad879d" id="wetted_crosssections" stage="wetted" type="crosssections">
+            <Name>WCrossSections</Name>
+            <Path>Topography\TIN0001\Stages\Wetted\WCrossSections.shp</Path>
+          </Vector>
+          <Vector guid="7a5dac21-c866-46b6-86f5-a4c1af5ed9a8" id="bankfull_extent" stage="bankfull" type="extent">
+            <Name>BExtent</Name>
+            <Path>Topography\TIN0001\Stages\Bankfull\BExtent.shp</Path>
+          </Vector>
+          <Vector guid="90e220be-a730-49df-af53-7704058dc664" id="wetted_centerline" stage="wetted" type="centerline">
+            <Name>WCenterline</Name>
+            <Path>Topography\TIN0001\Stages\Wetted\WCenterline.shp</Path>
+          </Vector>
+          <Vector guid="6da8ef64-bf9b-4c4c-8690-88988458d7ff" id="bankfull_centerline" stage="bankfull" type="centerline">
+            <Name>BCenterline</Name>
+            <Path>Topography\TIN0001\Stages\Bankfull\BCenterline.shp</Path>
+          </Vector>
+          <Vector guid="e9ffddc5-d54d-4bfc-9467-d3c9a4c19c43" id="wetted_islands" stage="wetted" type="islands">
+            <Name>WIslands</Name>
+            <Path>Topography\TIN0001\Stages\Wetted\WIslands.shp</Path>
+          </Vector>
+        </Stages>
+        <AssocSurfaces>
+          <Slope guid="bb413321-3fe5-498f-8451-44e1d4f44b9c" id="Slope">
+            <Name>AssocSlope</Name>
+            <Path>Topography\TIN0001\AssocSurfaces\AssocSlope.tif</Path>
+          </Slope>
+          <PointQuality3D guid="eb27da10-e80e-477e-b5d8-eb4230eb27c0" id="PointQuality3D">
+            <Name>Assoc3DPQ</Name>
+            <Path>Topography\TIN0001\AssocSurfaces\Assoc3DPQ.tif</Path>
+          </PointQuality3D>
+          <InterpolationError guid="07aff9d3-1933-40f6-833f-0681ab4681af" id="InterpolationError">
+            <Name>AssocIErr</Name>
+            <Path>Topography\TIN0001\AssocSurfaces\AssocIErr.tif</Path>
+          </InterpolationError>
+          <PointDensity guid="e207d1cc-407e-4c68-8931-993910ef60f8" id="PointDensity">
+            <Name>AssocPDensity</Name>
+            <Path>Topography\TIN0001\AssocSurfaces\AssocPDensity.tif</Path>
+          </PointDensity>
+        </AssocSurfaces>
+      </TIN>      
     </Topography>
   </Realizations>
 </Project>

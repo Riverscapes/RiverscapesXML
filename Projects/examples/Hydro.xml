@@ -92,6 +92,10 @@
               <Name>DEM Grid Results</Name>
               <Path>dem_grid_results.csv</Path>
             </CSV>
+            <Vector guid="dc8a5003-3b86-45f3-97a6-d6f83ff5da87" id="demgridresults_shp">
+              <Name>DEM Grid Results ShapeFile</Name>
+              <Path>dem_grid_results.shp</Path>
+            </Vector>            
           </Outputs>
         </Analysis>
       </Analyses>
