@@ -92,6 +92,7 @@
             <Collection ref="COL_SITE">
               <Product ref="GCD" />
               <Product ref="FHM" />
+              <Product ref="GUT" />              
               <Group ref="GRP_YEAR">
                 <Collection ref="COL_YEAR">
                   <Collection ref="COL_VISIT">
@@ -100,7 +101,6 @@
                         <Product ref="Hydro" />
                       </Collection>
                     </Group>
-                    <Product ref="GUT" />
                     <Product ref="Topo" />
                     <Product ref="CAD_Export" />
                     <Product ref="Substrate" />
