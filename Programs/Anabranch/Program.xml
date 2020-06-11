@@ -33,6 +33,7 @@
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
+      <Product id="fmLTPBR" name="fmLTPBR" folder="fmLTPBR" url="" />
     </Products>
   </Definitions>
 
@@ -50,6 +51,7 @@
     </Group>
     <Group ref="GRP_HUC8">
       <Collection ref="COL_HUC8">
+        <Product ref="fmLTPBR" />
         <Product ref="BRAT" />
         <Product ref="VBET" />
         <Product ref="RSContext" />
