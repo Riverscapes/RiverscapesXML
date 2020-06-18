@@ -22,7 +22,7 @@
 
   <xs:complexType name="RealizationsType">
     <xs:choice maxOccurs="unbounded">
-      <xs:element type="DoDType" name="DoD" maxOccurs="1" minOccurs="0" />
+      <xs:element type="GCDType" name="GCD" minOccurs="1" />
     </xs:choice>
   </xs:complexType>
 
@@ -32,32 +32,14 @@
   
   ============================================================================== -->
 
-  <xs:complexType name="DoDType" mixed="true">
+  <xs:complexType name="GCDType" mixed="true">
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
-          <xs:element type="GCDInputType" name="Inputs" minOccurs="0" />
-          <xs:element type="GCDAnalysesType" name="Analyses" minOccurs="0" />
+          <xs:element type="xs:string" name="ProjectPath" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-
-
-  <xs:complexType name="GCDInputType">
-    <xs:sequence>
-      <xs:element type="RasterType" name="Topography" />
-      <xs:element type="RasterType" name="DrainageNetworks" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="GCDAnalysesType">
-    <xs:sequence>
-      <xs:element type="xs:string" name="Name" />
-      <xs:element type="DataSetContainerType" name="Outputs" />
-    </xs:sequence>
-  </xs:complexType>
-
-
 
 </xs:schema>
