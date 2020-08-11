@@ -22,18 +22,18 @@
 
   <xs:complexType name="RealizationsType">
     <xs:choice maxOccurs="unbounded">
-      <xs:element type="InnundationContextType" name="InnundationContext" maxOccurs="unbounded" minOccurs="0" />
-      <xs:element type="InnundationDCEType" name="InnundationDCE" maxOccurs="unbounded" minOccurs="0" />
-      <xs:element type="InnundationCDType" name="InnundationCD" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="InundationContextType" name="InundationContext" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="InundationDCEType" name="InundationDCE" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="InundationCDType" name="InundationCD" maxOccurs="unbounded" minOccurs="0" />
     </xs:choice>
   </xs:complexType>
 
   <!-- =========================================================================
   
-  Project: Innundation
+  Project: Inundation
   
   ============================================================================== -->
-  <xs:complexType name="InnundationContextType" mixed="true">
+  <xs:complexType name="InundationContextType" mixed="true">
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
@@ -45,7 +45,7 @@
   </xs:complexType>
 
 
-  <xs:complexType name="InnundationDCEType" mixed="true">
+  <xs:complexType name="InundationDCEType" mixed="true">
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
@@ -56,7 +56,7 @@
     </xs:complexContent>
   </xs:complexType>
   
-  <xs:complexType name="InnundationCDType" mixed="true">
+  <xs:complexType name="InundationCDType" mixed="true">
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
