@@ -11,87 +11,83 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Inundation.xsd">
   <Meta name="watershed">Upper Bear</Meta>
   <Meta name="site_name">Mill Creek</Meta>
 </MetaData>
-<Inputs>
-  <Raster id="AP_01">
-    <Name>2019 August</Name>
-    <Path>01_Inputs/01_Imagery/AP_01/orthomosaic.tif</Path>
-    <MetaData>
-      <Meta name="image_date">2019-08-04</Meta>
-      <Meta name="source">orthomosaic</Meta>
-      <Meta name="flow_stage">low</Meta>
-      <Meta name="ortho_processing_software">DroneDeploy</Meta>
-      <Meta name="orthomosaic_accuracy_display">RMSE = 6.5ft</Meta>
-      <Meta name="orthomosaic_RMSE_feet">6.5</Meta>
-      <Meta name="orthomosaic_XYaccuracy_meters"></Meta>
-    </MetaData>
-  </Raster>
-  <Raster id="AP_02">
-    <Name>2017 June</Name>
-    <Path>01_Inputs/01_Imagery/AP_02/2017_june_google_earth.jpg</Path>
-    <MetaData>
-      <Meta name="image_date">2017-06</Meta>
-      <Meta name="source">Google Earth</Meta>
-      <Meta name="flow_stage">low</Meta>
-      <Meta name="ortho_processing_software"></Meta>
-      <Meta name="orthomosaic_accuracy"></Meta>
-    </MetaData>
-  </Raster>
-  <DEM id="DEM_01">
-    <Name>DEM</Name>
-    <Path>01_Inputs/02_Topo/DEM_01/DEM.tif</Path>
-    <MetaData>
-      <Meta name="HUC12ID">160101010101</Meta>
-    </MetaData>
-  </DEM>
-  <Vector id="hillshade_01">
-    <Name>hillshade</Name>
-    <Path>01_Inputs/02_Topo/DEM_01/hlsd.tif</Path>
-  </Vector>
-  <Vector id="VBET_01">
-    <Name>VBET</Name>
-    <Path>01_Inputs/03_Context/VBET_01/VBET.shp</Path>
-    <MetaData>
-      <Meta name="source">ETAL statewide Utah run</Meta>
-    </MetaData>
-  </Vector>
-  <Vector id="BRAT_01">
-    <Name>BRAT</Name>
-    <Path>01_Inputs/03_Context/BRAT_01/BRAT.shp</Path>
-    <MetaData>
-      <Meta name="source">ETAL statewide Utah</Meta>
-    </MetaData>
-  </Vector>
-</Inputs>
 <Realizations>
   <InundationContext id="INN_CTX01" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
     <Name>Innundation Context</Name>
-    <Analyses>
-      <Analysis>
-        <Outputs>
-          <Vector id="valleybottom_01" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
-            <Name>Valley Bottom</Name>
-            <Path>02_Mapping/RS_01/valley_bottom.shp</Path>
-            <MetaData>
-              <Meta name="mapper">Karen Bartelt</Meta>
-              <Meta name="date">02042020</Meta>
-              <Meta name="evidence_used">orthomosaic, DEM, google earth, USGS 7 min quad contour map</Meta>
-              <Meta name="confidence_level">high</Meta>
-              <Meta name="notes">Did not use VBET output</Meta>
-            </MetaData>
-          </Vector>
-          <Vector id="vbcenterline_01">
-            <Name>VB Centerline</Name>
-            <Path>02_Mapping/RS_01/vb_centerline.shp</Path>
-            <MetaData>
-              <Meta name="mapper">Karen Bartelt</Meta>
-              <Meta name="date">02042020</Meta>
-              <Meta name="method">ArcGIS Polygon to Centerline tool</Meta>
-              <Meta name="notes"></Meta>
-            </MetaData>
-          </Vector>
-        </Outputs>
-      </Analysis>
-    </Analyses>
+    <Inputs>
+      <Raster id="AP_01">
+        <Name>2019 August</Name>
+        <Path>01_Inputs/01_Imagery/AP_01/orthomosaic.tif</Path>
+        <MetaData>
+          <Meta name="image_date">2019-08-04</Meta>
+          <Meta name="source">orthomosaic</Meta>
+          <Meta name="flow_stage">low</Meta>
+          <Meta name="ortho_processing_software">DroneDeploy</Meta>
+          <Meta name="orthomosaic_accuracy_display">RMSE = 6.5ft</Meta>
+          <Meta name="orthomosaic_RMSE_feet">6.5</Meta>
+          <Meta name="orthomosaic_XYaccuracy_meters"></Meta>
+        </MetaData>
+      </Raster>
+      <Raster id="AP_02">
+        <Name>2017 June</Name>
+        <Path>01_Inputs/01_Imagery/AP_02/2017_june_google_earth.jpg</Path>
+        <MetaData>
+          <Meta name="image_date">2017-06</Meta>
+          <Meta name="source">Google Earth</Meta>
+          <Meta name="flow_stage">low</Meta>
+          <Meta name="ortho_processing_software"></Meta>
+          <Meta name="orthomosaic_accuracy"></Meta>
+        </MetaData>
+      </Raster>
+      <DEM id="DEM_01">
+        <Name>DEM</Name>
+        <Path>01_Inputs/02_Topo/DEM_01/DEM.tif</Path>
+        <MetaData>
+          <Meta name="HUC12ID">160101010101</Meta>
+        </MetaData>
+      </DEM>
+      <Vector id="hillshade_01">
+        <Name>hillshade</Name>
+        <Path>01_Inputs/02_Topo/DEM_01/hlsd.tif</Path>
+      </Vector>
+      <Vector id="VBET_01">
+        <Name>VBET</Name>
+        <Path>01_Inputs/03_Context/VBET_01/VBET.shp</Path>
+        <MetaData>
+          <Meta name="source">ETAL statewide Utah run</Meta>
+        </MetaData>
+      </Vector>
+      <Vector id="BRAT_01">
+        <Name>BRAT</Name>
+        <Path>01_Inputs/03_Context/BRAT_01/BRAT.shp</Path>
+        <MetaData>
+          <Meta name="source">ETAL statewide Utah</Meta>
+        </MetaData>
+      </Vector>
+    </Inputs>
+    <Outputs>
+      <Vector id="valleybottom_01" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
+        <Name>Valley Bottom</Name>
+        <Path>02_Mapping/RS_01/valley_bottom.shp</Path>
+        <MetaData>
+          <Meta name="mapper">Karen Bartelt</Meta>
+          <Meta name="date">02042020</Meta>
+          <Meta name="evidence_used">orthomosaic, DEM, google earth, USGS 7 min quad contour map</Meta>
+          <Meta name="confidence_level">high</Meta>
+          <Meta name="notes">Did not use VBET output</Meta>
+        </MetaData>
+      </Vector>
+      <Vector id="vbcenterline_01">
+        <Name>VB Centerline</Name>
+        <Path>02_Mapping/RS_01/vb_centerline.shp</Path>
+        <MetaData>
+          <Meta name="mapper">Karen Bartelt</Meta>
+          <Meta name="date">02042020</Meta>
+          <Meta name="method">ArcGIS Polygon to Centerline tool</Meta>
+          <Meta name="notes"></Meta>
+        </MetaData>
+      </Vector>
+    </Outputs>
   </InundationContext>
   <InundationDCE id="DCE_01" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
     <Name>August 2019</Name>

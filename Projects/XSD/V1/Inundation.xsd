@@ -37,8 +37,8 @@
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
-          <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" />
-          <xs:element type="AnalysesType" name="Analyses" minOccurs="0" />
+          <xs:element type="DataSetContainerType" name="Inputs" minOccurs="1" />
+          <xs:element type="DataSetContainerType" name="Outputs" minOccurs="1" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -49,8 +49,8 @@
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
-          <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" />
-          <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" />
+          <xs:element type="DataSetContainerType" name="Inputs" minOccurs="1" />
+          <xs:element type="DataSetContainerType" name="Outputs" minOccurs="1" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -60,8 +60,8 @@
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
-          <xs:element type="CDInputsType" name="Inputs" minOccurs="0" />
-          <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" />
+          <xs:element type="CDInputsType" name="Inputs" minOccurs="1" />
+          <xs:element type="DataSetContainerType" name="Outputs" minOccurs="1" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
