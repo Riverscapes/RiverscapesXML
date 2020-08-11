@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="../XSD/V1/Innundation.xsd">
+xsi:noNamespaceSchemaLocation="../XSD/V1/Inundation.xsd">
 <Name>Inundation Mapper</Name>
 <ProjectType>Inundation</ProjectType>
 <MetaData>
@@ -63,7 +63,7 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Innundation.xsd">
   </Vector>
 </Inputs>
 <Realizations>
-  <InnundationContext id="INN_CTX01" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
+  <InundationContext id="INN_CTX01" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
     <Name>Innundation Context</Name>
     <Analyses>
       <Analysis>
@@ -92,8 +92,8 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Innundation.xsd">
         </Outputs>
       </Analysis>
     </Analyses>
-  </InnundationContext>
-  <InnundationDCE id="DCE_01" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
+  </InundationContext>
+  <InundationDCE id="DCE_01" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
     <Name>August 2019</Name>
     <MetaData>
       <Meta name="mapper">Karen Bartelt</Meta>
@@ -139,8 +139,8 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Innundation.xsd">
         </MetaData>
       </Vector>    
     </Outputs>
-  </InnundationDCE>
-  <InnundationDCE id="DCE_02" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
+  </InundationDCE>
+  <InundationDCE id="DCE_02" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
     <Name>Estimated Pre Beaver</Name>
     <Inputs>
       <Raster ref="none" />
@@ -179,8 +179,8 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Innundation.xsd">
         </MetaData>
       </Vector>
     </Outputs>
-  </InnundationDCE>
-  <InnundationCD id="DCE_0102CD" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
+  </InundationDCE>
+  <InundationCD id="DCE_0102CD" dateCreated="2020-05-05T19:14:41.605257" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662" productVersion="0.0.1">
     <Name>2019 vs estimated pre beaver</Name>
     <MetaData>
       <Meta name="DCEs">DCE01 and DCE02</Meta>
@@ -214,6 +214,6 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/Innundation.xsd">
         <Path>03_Analysis\DCE_02\02_Indicators\inundation_types.pdf</Path>
       </PDF>
     </Outputs>
-  </InnundationCD>
+  </InundationCD>
 </Realizations>
 </Project>
