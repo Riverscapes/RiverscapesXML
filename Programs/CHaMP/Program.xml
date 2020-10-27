@@ -110,7 +110,6 @@
       <Product id="WRAT" name="WRAT" folder="WRAT" url="" />
       <Product id="GPP" name="GPP" folder="GPP" url="" />
       <Product id="CAPACITY" name="Capacity" folder="Capacity" url="" />
-      <Product id="CONFINEMENT" name="Confinement" folder="CONFINEMENT" url="" />
       <Product id="EC" name="EC" folder="EC" url="" />
       <Product id="Solar" name="Solar" folder="Solar" url="" />
       <Product id="GNAT" name="GNAT" folder="GNAT" url="" />
@@ -164,7 +163,6 @@
             <Product ref="WRAT" />
             <Product ref="GPP" />
             <Product ref="CAPACITY" />
-            <Product ref="CONFINEMENT" />
             <Product ref="EC" />
             <Product ref="Solar" />
             <Product ref="GNAT" />
