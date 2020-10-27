@@ -1,118 +1,107 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="../XSD/V1/Confinement.xsd">
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="../XSD/V1/Confinement.xsd">
+    <Name>Confinement for HUC 17060304</Name>
+    <ProjectType>Confinement</ProjectType>
+    <MetaData>
+      <Meta name="ModelVersion">0.0.1</Meta>
+      <Meta name="dateCreated">2020-10-27T15:08:11.579051</Meta>
+      <Meta name="HUC8">17060304</Meta>
+      <Meta name="HUC">17060304</Meta>
+      <Meta name="ConfinementType">ValleyBottom</Meta>
+    </MetaData>
+    <Realizations>
+      <Confinement id="Confinement1" dateCreated="2020-10-27T15:08:11.598597" guid="1cba8df3-f576-432d-b784-6018220224f2" productVersion="0.0.1">
+        <Name>Confinement for HUC 17060304</Name>
+        <Inputs>
+          <Vector guid="e7e63736-18a0-11eb-af7b-f40f243c4b95" id="FLOWLINES">
+            <Name>Flowlines</Name>
+            <Path>inputs/Flowlines.shp</Path>
+            <MetaData>
+              <Meta name="BufferField">BFwidth</Meta>
+            </MetaData>
+          </Vector>
+          <Vector guid="e7e942aa-18a0-11eb-af7b-f40f243c4b95" id="CONFINING_POLYGON">
+            <Name>Confining Polygon</Name>
+            <Path>inputs/confining.shp</Path>
+          </Vector>
+        </Inputs>
+        <Outputs>
+          <HTMLFile guid="e71b8ee6-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_RUN_REPORT">
+            <Name>Confinement Report</Name>
+            <Path>outputs/confinement.html</Path>
+          </HTMLFile>       
+          <Geopackage guid="e7ea53f2-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT">
+            <Name>Confinement</Name>
+            <Path>outputs/confinement.gpkg</Path>
+            <Layers>
+              <Vector guid="e7ebd34e-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_RAW">
+                <Name>Confinement Raw</Name>
+                <Path>main.Confinement_Raw</Path>
+              </Vector>
+              <Vector guid="e7ed4936-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_MARGINS">
+                <Name>Confinement Margins</Name>
+                <Path>main.Confining_Margins</Path>
+              </Vector>
+              <Vector guid="e7eedef4-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_RATIO">
+                <Name>Confinement Margins</Name>
+                <Path>main.Confinement_Ratio</Path>
+              </Vector>
+            </Layers>
+          </Geopackage>
+        </Outputs>
+      </Confinement>
+    </Realizations>
+  </Project>
+  
 
-  <Name>ConfinementTestProject</Name>
+  <Name>Confinement For HUC 17060304</Name>
   <ProjectType>Confinement</ProjectType>
-
   <MetaData>
-    <Meta name="Watershed">Yankee Fork</Meta>
-    <Meta name="Operator">KMW</Meta>
+        <Meta name="ModelVersion">0.0.6</Meta>
+        <Meta name="dateCreated">2020-10-23T01:42:01.788665</Meta>
+        <Meta name="HUC8">17060304</Meta>
+        <Meta name="Watershed">Middle Fork Clearwater</Meta>
   </MetaData>
-
-  <Inputs>
-    <Vector id="ValleyBottom01" guid="257ecfc4-06ef-4270-884d-319d44f741cb">
-      <Name>Valley Bottom 01</Name>
-      <Path>Inputs\ValleyBottoms\ValleyBottom01\ValleyBottom.shp</Path>
-    </Vector>
-    <Vector id="ValleyBottom02" guid="6090e743-c54c-4a92-b165-ece0a073f650">
-      <Name>Valley Bottom 02</Name>
-      <Path>Inputs\ValleyBottoms\ValleyBottom02\ValleyBottom.shp</Path>
-    </Vector>
-    <Vector id="BankfullBuffer50Percent" guid="6c148311-acf9-4cbe-b720-17b973793cb7">
-      <Name>Bankfull Buffer 50 Percent</Name>
-      <Path>Inputs\ChannelPolygons\ChannelPolygon01\BankfullChannelBuffer.shp</Path>
-    </Vector>
-    <Vector id="StreamNetworkYF001" guid="004a9ccf-fef6-4911-a6a3-c44b14c611f5">
-      <Name>Stream Network</Name>
-      <Path>Inputs\StreamNetworks\StreamNetwork\StreamNetwork.shp</Path>
-    </Vector>
-  </Inputs>
-
   <Realizations>
-    <Confinement promoted="false"
-                 id="confine1"
-                 dateCreated=""
-                 productVersion="0.1"
-                 guid="241cdf2a-a397-4fd7-acd2-de0869ed4663">
-      <Name>Confinement Run 01</Name>
-
-      <Inputs> <!--there is only ever one instance of each input for any one realization-->
-        <ValleyBottom ref="ValleyBottom01"/>
-        <ChannelPolygon ref="BankfullBuffer50Percent"/>
-        <StreamNetwork ref="StreamNetworkYF001"/>
-        <SegmentedNetwork id="SegmentedNetwork01">
-          <Name>Segmented Network Smart</Name>
-          <Path>Inputs\SegmentedNetworks\JoesAwesomeSegments.shp</Path>
-        </SegmentedNetwork>
+    <Confinement id="CONFINEMENT1" dateCreated="" guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" productVersion="">
+      <Name>Valley Bottom Confinement for HUC 17060304</Name>
+      <MetaData>
+        <Meta name="ConfinementType">ValleyBottom</Meta> <!-- e.g. ValleyBottom, Anthropogenic, Composite-->
+      </MetaData>
+      <Inputs>
+        <Vector guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="FLOWLINES">
+            <Name>Flowlines</Name>
+            <Path>inputs\flowlines.shp</Path>
+            <MetaData>
+                <Meta name="BufferField">BFWidth</Meta>
+            </MetaData>
+        </Vector>
+        <Vector guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="VBET_50">
+            <Name>Confining Polygon</Name>
+            <Path>inputs\vbet_50.shp</Path>
+        </Vector>
       </Inputs>
+      <Outputs>
+        <Geopackage guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="ConfinementRaw">
 
-      <Outputs> <!-- every realization should have one and only one of each of these outputs. -->
-        <ConfiningMargins>
-          <Name>ConfiningMargins</Name>
-          <Path>Outputs\Output_01\ConfiningMargins.shp</Path>
-        </ConfiningMargins>
-        <RawConfiningState>
-          <Name>RawConfiningState</Name>
-          <Path>Outputs\Output_01\RawConfiningState.shp</Path>
-        </RawConfiningState>
+          <Path>outputs/Confinement.gpkg</Path>
+          <Layers>
+            <Vector>
+              <Name>Confinement Raw</Name>
+              <Path>main.Confinement_Raw</Path>
+            </Vector>
+            <Vector>
+              <Name>Confinement Margins</Name>
+              <Path>main.Confining_Margins</Path>
+            </Vector>
+            <Vector>
+              <Name>Confinement Ratio</Name>
+              <Path>main.Confinement_Ratio</Path>
+            </Vector>
+          </Layers>
+        </Geopackage>
       </Outputs>
-
-      <Analyses>
-        <MovingWindow>
-          <Name>Moving Window Analysis 500m 1K 2K</Name>
-
-          <Parameters>
-            <Param name="SeedPointDistance">500</Param><!--How best to represent a list of sizes? -->
-            <Param name="WindowSizes">500,1000,2000</Param>
-          </Parameters>
-
-          <Outputs>
-            <Vector>
-              <Name>Seed Points 01</Name>
-              <Path>Outputs\Output_01\Analysis\Confinement001\ConfinementLocal.shp</Path>
-              <MetaData>
-                <Meta name="Type">SeedPointFile</Meta>
-              </MetaData>
-            </Vector>
-            <Vector>
-              <Name>Moving Window 01></Name>
-              <Path>Outputs\Output_01\Analysis\Confinement001\ConfinementWindows.shp</Path>
-              <MetaData>
-                <Meta name="Type">MovingWindowFile</Meta>
-              </MetaData>
-            </Vector>
-          </Outputs>
-        </MovingWindow>
-        <FixedSegments>
-          <Name>Fixed Segments 500m</Name>
-          <Parameters>
-            <Param name="SegmentSize">500</Param>
-          </Parameters>
-          <Outputs>
-            <Vector>
-              <Name>Fixed Segments 500m</Name>
-              <Path>Outputs\Output_01\Analysis\Confinement002\ConfinementSegments.shp</Path>
-              <MetaData>
-                <Meta name="Type">FixedSegmentFile</Meta>
-              </MetaData>
-            </Vector>
-          </Outputs>
-        </FixedSegments>
-        <CustomSegments> <!-- No examples exist for this type yet, this is just demo -->
-          <Name>Joe's segmented Network!</Name>
-          <Parameters>
-            <Param name="SegmentedNetwork">SegmentedNetwork01</Param>
-          </Parameters>
-          <Outputs>
-            <Vector>
-              <Name>Segments 01</Name>
-              <Path>Outputs\Output_01\Analysis\Confinement003\ConfinementSegments.shp</Path>
-            </Vector>
-          </Outputs>
-        </CustomSegments>
-      </Analyses>
-
     </Confinement>
   </Realizations>
 </Project>

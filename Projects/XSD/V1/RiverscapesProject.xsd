@@ -120,6 +120,7 @@
       <xs:element type="RasterType" name="Velocity" />
       <xs:element type="RasterType" name="Depth" />
       <xs:element type="VectorType" name="Vector" />
+      <xs:element type="GeopackageType" name="Geopackage" />
       <xs:element type="VectorType" name="StreamNetwork" />
       <xs:element type="TINType" name="TIN" />
       <xs:element type="DEMType" name="DEM" />
@@ -136,7 +137,6 @@
       <xs:element type="SimpleFileType" name="SQLiteDB" />
       <xs:element type="SimpleFileType" name="PDF" />
       <xs:element type="SimpleFileType" name="HTMLFile" />
-
     </xs:choice>
   </xs:complexType>
 
@@ -195,6 +195,24 @@
       <xs:extension base="GeoSpatialType" />
     </xs:complexContent>
   </xs:complexType>
+
+  <xs:complexType name="GeopackageType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType">
+        <xs:sequence>
+          <xs:element type="GeopackageLayersType" name="Layers" />
+        </xs:sequence>
+    </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="GeopackageLayersType">
+  <xs:choice maxOccurs="unbounded" minOccurs="0">
+    <xs:element type="RasterType" name="Raster" />
+    <xs:element type="VectorType" name="Vector" />
+  </xs:choice>
+</xs:complexType>
+
 
   <!-- DEMs extend rasters -->
   <xs:complexType name="DEMType">
