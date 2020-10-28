@@ -137,6 +137,7 @@
       <xs:element type="SimpleFileType" name="SQLiteDB" />
       <xs:element type="SimpleFileType" name="PDF" />
       <xs:element type="SimpleFileType" name="HTMLFile" />
+      <xs:element type="SimpleFileType" name="ZipFile" />
     </xs:choice>
   </xs:complexType>
 
