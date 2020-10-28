@@ -15,6 +15,9 @@
   <Definitions>
     <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
     <Collections>
+      <Collection id="COL_HUC4" name="HUC4">
+        <AllowRegex pattern="^[0-9]{4}$" />
+      </Collection>
       <Collection id="COL_HUC8" name="HUC8">
         <AllowRegex pattern="^[0-9]{8}$" />
       </Collection>
@@ -24,6 +27,7 @@
     <Groups>
       <Group id="GRP_NATIONAL" name="National" folder="National" />
       <Group id="GRP_HUC8" name="HUC8" folder="HUC8" />
+      <Group id="GRP_HUC4" name="HUC4" folder="HUC4" />
     </Groups>
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
@@ -32,6 +36,7 @@
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
+      <Product id="MODIS" name="MODIS (HUC4)" folder="MODIS" url="" />
     </Products>
   </Definitions>
 
@@ -46,6 +51,11 @@
   <Hierarchy>
     <Group ref="GRP_NATIONAL">
       <Product ref="NationalDatasets" />
+    </Group>
+    <Group ref="GRP_HUC4">
+      <Collection ref="COL_HUC4">
+        <Product ref="MODIS" />
+      </Collection>
     </Group>
     <Group ref="GRP_HUC8">
       <Collection ref="COL_HUC8">
