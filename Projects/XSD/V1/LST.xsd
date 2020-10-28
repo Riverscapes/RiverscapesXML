@@ -21,17 +21,17 @@
 
   <xs:complexType name="RealizationsType">
     <xs:choice maxOccurs="unbounded">
-      <xs:element type="MODISType" name="MODIS" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="LSTType" name="LST" maxOccurs="unbounded" minOccurs="0" />
     </xs:choice>
   </xs:complexType>
 
   <!-- =========================================================================
   
-  Project: MODIS
+  Project: LST
   
   ============================================================================== -->
 
-  <xs:complexType name="MODISType" mixed="true">
+  <xs:complexType name="LSTType" mixed="true">
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>

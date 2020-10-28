@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/LST.xsd">
+	<Name>Land Surface Temperature for HUC 1702</Name>
+	<ProjectType>LST</ProjectType>
+	<MetaData>
+		<Meta name="ModelVersion">0.0.1</Meta>
+		<Meta name="HUC">1702</Meta>
+		<Meta name="dateCreated">2020-10-28T11:32:43.463823</Meta>
+		<Meta name="HUC4">1702</Meta>
+	</MetaData>
+	<Realizations>
+		<LST id="LST_1" dateCreated="2020-10-28T11:32:43.465747" guid="b3f7f317-1de8-44ba-9075-6bac7926a96b" productVersion="0.0.1">
+			<Name>Land Surface Temperature for HUC 1702</Name>
+			<Outputs>
+				<ZipFile guid="f7bef944-194b-11eb-862b-f40f243c4b95" id="LST_ZIP">
+					<Name>Land Surface Temperature Result for 1702</Name>
+					<Path>1702.zip</Path>
+				</ZipFile>
+			</Outputs>
+		</LST>
+	</Realizations>
+</Project>
