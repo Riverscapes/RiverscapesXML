@@ -34,6 +34,7 @@
           <xs:element type="RasterType" name="Raster" />
           <xs:element type="SimpleFileType" name="SQLiteDB" />
           <xs:element type="VectorType" name="Vector" />
+          <xs:element type="SimpleFileType" name="HTMLFile" />
         </xs:choice>
       </xs:extension>
     </xs:complexContent>

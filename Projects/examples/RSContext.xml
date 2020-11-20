@@ -110,6 +110,10 @@
 				<Name>Canals</Name>
 				<Path>ntd/canals.shp</Path>
 			</Vector>
+			<HTMLFile guid="f0830596-2b64-11eb-8a40-f40f243c4b95" id="REPORT">
+				<Name>RSContext Report</Name>
+				<Path>rs_context.html</Path>
+			</HTMLFile>			
 		</RSContext>
 	</Realizations>
 </Project>
