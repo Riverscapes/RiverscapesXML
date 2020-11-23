@@ -1,35 +1,41 @@
 <?xml version="1.0"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/NationalDatasets.xsd">
-	<!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
 	<Name>National Datasets</Name>
 	<ProjectType>NationalDatasets</ProjectType>
-	<Warehouse>
-		<Meta name="id">2fbd8852-4601-41ff-b644-9f90b594d0b8</Meta>
-		<Meta name="user">undefined</Meta>
-		<Meta name="program">BRAT</Meta>
-	</Warehouse>
-	<MetaData>
+	<Warehouse><Meta name="id">2fbd8852-4601-41ff-b644-9f90b594d0b8</Meta><Meta name="user">eeb79d24-68b5-405a-be55-8e23fdf929dc</Meta><Meta name="program">BRAT_CRB</Meta></Warehouse><MetaData>
 		<Meta name="dateCreated">2019-09-13T16:42:24.610951</Meta>
+		<Meta name="dateUpdated">2020-06-08T08:00:00.000001</Meta>
 	</MetaData>
 	<Realizations>
 		<Landfire dateCreated="2019-09-13T16:42:24.619206" guid="957159b2-af34-4be6-a317-4fccd1789cca" id="Landfire" productVersion="1.4">
 			<Name>LandFire Version 1.4</Name>
 			<Raster guid="05ea9da4-5fa7-4ebc-a454-7784cca1c72c" id="EVT140">
 				<Name>Existing Vegetation Type</Name>
-				<Path>landfire/us_140evt.tif</Path>
+				<Path>landfire/140/us_140evt.tif</Path>
 			</Raster>
 			<CSV guid="775d811f-7088-43e9-a03a-e67d6816f487" id="EVT140Lookup">
-				<Name>Existing Vegetation Type Lookup</Name>
-				<Path>landfire/us_140evt.csv</Path>
+				<Name>Existing Vegetation Type Lookup</Name> 
+				<Path>landfire/140/us_140evt.csv</Path>
 			</CSV>
 			<Raster guid="3e894b73-1a82-4afd-8166-f87381765e8e" id="BPS140">
 				<Name>Biophysical Settings</Name>
-				<Path>landfire/us_140bps.tif</Path>
+				<Path>landfire/140/us_140bps.tif</Path>
 			</Raster>
 			<CSV guid="3efc8e00-d3c7-4149-8e72-e24533f6c502" id="BPS140Lookup">
 				<Name>Biophysical Settings Lookup</Name>
-				<Path>landfire/us_140bps.csv</Path>
+				<Path>landfire/140/us_140bps.csv</Path>
 			</CSV>
+		</Landfire>
+   		<Landfire dateCreated="2020-01-20T10:00:00.0" guid="fb3eb54d-749a-4420-b3aa-0cc09bcb607f" id="Landfire" productVersion="2.0">
+			<Name>LandFire Version 2.0</Name>
+			<Raster guid="c19a1499-50dc-4dbc-9182-3255d9316eb6" id="EVT200">
+				<Name>Existing Vegetation Type</Name>
+				<Path>landfire/200/us_140evt.tif</Path>
+			</Raster>	
+			<Raster guid="ca05c9d5-d214-4564-acf1-9529e7c8da79" id="BPS200">
+				<Name>Biophysical Settings Lookup</Name>
+				<Path>landfire/200/us_200evt.tif</Path>
+			</Raster>		
 		</Landfire>
 		<Ecoregions dateCreated="2019-09-27T16:42:24.619206" guid="f61d2a40-553e-4545-b60a-77e3157308e5" id="Ecoregions" productVersion="1.4">
 			<Name>Ecoregions</Name>
@@ -51,10 +57,14 @@
 				<Name>NOAA Columbia River Basin Flowlines</Name>
 				<Path>nhd/crb/ICRB_ALL_FINAL_20200320.shp</Path>
 			</Vector>
-			<Vector guid="93ec274d-c4a3-4511-addc-8701d51fd68b" id="CRB">
-				<Name>NOAA Columbia River Basin Flowlines</Name>
-				<Path>nhd/crb/ICRB_ALL_FINAL_20200320.shp</Path>
-			</Vector>
 		</Flowlines>
+		<Ownership>
+			<Name>Ownership</Name>
+			<Path>ownership/surface_management_agency.shp</Path>
+		</Ownership>
+		<FairMarketValue>
+			<Name>Fair Market Value</Name>
+			<Path>ownership/FairMarketValue.tif</Path>
+		</FairMarketValue>
 	</Realizations>
 </Project>
