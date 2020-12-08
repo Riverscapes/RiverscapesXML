@@ -98,6 +98,24 @@
 				<Name>NHDAreaEventFC</Name>
 				<Path>nhd/Shape/NHDAreaEventFC.shp</Path>
 			</Vector>
+			<Geopackage guid="1abd0b6a-3973-11eb-9939-acde48001122" id="NHD">
+				<Name>Hydrology</Name>
+				<Path>hydrology/hydrology.gpkg</Path>
+				<Layers>
+					<Vector guid="1ac393d6-3973-11eb-9939-acde48001122" id="NETWORK">
+						<Name>NHD Flowlines</Name>
+						<Path>network</Path>
+					</Vector>
+					<Vector guid="1ac8a6e6-3973-11eb-9939-acde48001122" id="NETWORK300M">
+						<Name>NHD Flowlines intersected with road, rail and ownership</Name>
+						<Path>network_intersected</Path>
+					</Vector>
+					<Vector guid="1accc438-3973-11eb-9939-acde48001122" id="NETWORK300MCROSSINGS">
+						<Name>NHD Flowlines intersected with road, rail and ownership, segmented to 300m</Name>
+						<Path>network_intersected_300m</Path>
+					</Vector>
+				</Layers>
+			</Geopackage>			
 			<Vector guid="ffe5d3ce-d5b6-11e9-be3c-acde48001122" id="ROADS">
 				<Name>Roads</Name>
 				<Path>ntd/roads.shp</Path>

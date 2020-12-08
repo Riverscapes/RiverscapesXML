@@ -35,6 +35,7 @@
           <xs:element type="SimpleFileType" name="SQLiteDB" />
           <xs:element type="VectorType" name="Vector" />
           <xs:element type="SimpleFileType" name="HTMLFile" />
+          <xs:element type="GeopackageType" name="Geopackage" />
         </xs:choice>
       </xs:extension>
     </xs:complexContent>
