@@ -34,6 +34,7 @@
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
       <Product id="fmLTPBR" name="fmLTPBR" folder="fmLTPBR" url="" />
+      <Product id="RVD" name="Riparian Vegetation Departure" folder="RVD" url="" />
       <Product id="Confinement" name="Confinement" folder="Confinement" url="" />
     </Products>
   </Definitions>
@@ -57,6 +58,7 @@
         <Product ref="VBET" />
         <Product ref="RSContext" />
         <Product ref="Confinement" />
+        <Product ref="RVD" />
       </Collection>
     </Group>
   </Hierarchy>
