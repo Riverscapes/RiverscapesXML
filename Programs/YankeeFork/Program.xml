@@ -7,7 +7,6 @@
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
     <Meta name="access">PRIVATE</Meta>
-    <Meta name="apiUrl">https://iz2u8e5df2.execute-api.us-west-2.amazonaws.com/prod/api</Meta>
     <Meta name="projectXSDs">http://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
   </MetaData>
 
