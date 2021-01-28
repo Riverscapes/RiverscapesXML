@@ -4,48 +4,82 @@
     <Name>Confinement for HUC 17060304</Name>
     <ProjectType>Confinement</ProjectType>
     <MetaData>
-      <Meta name="ModelVersion">0.0.1</Meta>
-      <Meta name="dateCreated">2020-10-27T15:08:11.579051</Meta>
+      <Meta name="ModelVersion">0.1.1</Meta>
+      <Meta name="dateCreated">2021-01-27T19:34:50.341346</Meta>
       <Meta name="HUC8">17060304</Meta>
       <Meta name="HUC">17060304</Meta>
       <Meta name="ConfinementType">ValleyBottom</Meta>
     </MetaData>
     <Realizations>
-      <Confinement id="Confinement1" dateCreated="2020-10-27T15:08:11.598597" guid="1cba8df3-f576-432d-b784-6018220224f2" productVersion="0.0.1">
+      <Confinement id="Confinement1" dateCreated="2021-01-27T19:34:50.359068" guid="023adc42-3e07-4be5-8a68-ed641dfdce99" productVersion="0.1.1">
         <Name>Confinement for HUC 17060304</Name>
         <Inputs>
-          <Vector guid="e7e63736-18a0-11eb-af7b-f40f243c4b95" id="FLOWLINES">
-            <Name>Flowlines</Name>
-            <Path>inputs/Flowlines.shp</Path>
-            <MetaData>
-              <Meta name="BufferField">BFwidth</Meta>
-            </MetaData>
-          </Vector>
-          <Vector guid="e7e942aa-18a0-11eb-af7b-f40f243c4b95" id="CONFINING_POLYGON">
-            <Name>Confining Polygon</Name>
-            <Path>inputs/confining.shp</Path>
-          </Vector>
+          <Geopackage guid="cb650652-6119-11eb-bf86-f40f243c4b95" id="INPUTS">
+            <Name>Inputs</Name>
+            <Path>inputs/inputs.gpkg</Path>
+            <Layers>
+              <Vector guid="cb6715c8-6119-11eb-bf86-f40f243c4b95" id="FLOWLINES">
+                <Name>Flowlines</Name>
+                <Path>Flowlines</Path>
+                <MetaData>
+                  <Meta name="BufferField">BFwidth</Meta>
+                </MetaData>
+              </Vector>
+              <Vector guid="cb688da4-6119-11eb-bf86-f40f243c4b95" id="CONFINING_POLYGON">
+                <Name>Confining Polygon</Name>
+                <Path>ConfiningPolygon</Path>
+              </Vector>
+            </Layers>
+          </Geopackage>
         </Inputs>
+        <Intermediates>
+          <Geopackage guid="cb6dce72-6119-11eb-bf86-f40f243c4b95" id="INTERMEDIATES">
+            <Name>Intermediates</Name>
+            <Path>intermediates/confinement_intermediates.gpkg</Path>
+            <Layers>
+              <Vector guid="cb70ac8c-6119-11eb-bf86-f40f243c4b95" id="SPLIT_POINTS">
+                <Name>Split Points</Name>
+                <Path>Split_Points</Path>
+              </Vector>
+              <Vector guid="cb738dee-6119-11eb-bf86-f40f243c4b95" id="FLOWLINE_SEGMENTS">
+                <Name>Flowline Segments</Name>
+                <Path>Flowline_Segments</Path>
+              </Vector>
+              <Vector guid="cb759ee0-6119-11eb-bf86-f40f243c4b95" id="ERROR_POLYLINES">
+                <Name>Error Polylines</Name>
+                <Path>Error_Polylines</Path>
+              </Vector>
+              <Vector guid="cb774d6c-6119-11eb-bf86-f40f243c4b95" id="ERROR_POLYGONS">
+                <Name>Error Polygons</Name>
+                <Path>Error_Polygons</Path>
+              </Vector>
+            </Layers>
+          </Geopackage>
+        </Intermediates>
         <Outputs>
-          <HTMLFile guid="e71b8ee6-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_RUN_REPORT">
+          <HTMLFile guid="c6e184de-6119-11eb-bf86-f40f243c4b95" id="CONFINEMENT_RUN_REPORT">
             <Name>Confinement Report</Name>
             <Path>outputs/confinement.html</Path>
-          </HTMLFile>       
-          <Geopackage guid="e7ea53f2-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT">
+          </HTMLFile>
+          <Geopackage guid="cb794d92-6119-11eb-bf86-f40f243c4b95" id="CONFINEMENT">
             <Name>Confinement</Name>
             <Path>outputs/confinement.gpkg</Path>
             <Layers>
-              <Vector guid="e7ebd34e-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_RAW">
+              <Vector guid="cb7b074a-6119-11eb-bf86-f40f243c4b95" id="CONFINEMENT_RAW">
                 <Name>Confinement Raw</Name>
-                <Path>main.Confinement_Raw</Path>
+                <Path>Confinement_Raw</Path>
               </Vector>
-              <Vector guid="e7ed4936-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_MARGINS">
+              <Vector guid="cb7cbc98-6119-11eb-bf86-f40f243c4b95" id="CONFINEMENT_MARGINS">
                 <Name>Confinement Margins</Name>
-                <Path>main.Confining_Margins</Path>
+                <Path>Confining_Margins</Path>
               </Vector>
-              <Vector guid="e7eedef4-18a0-11eb-af7b-f40f243c4b95" id="CONFINEMENT_RATIO">
-                <Name>Confinement Margins</Name>
-                <Path>main.Confinement_Ratio</Path>
+              <Vector guid="cb7e87d0-6119-11eb-bf86-f40f243c4b95" id="CONFINEMENT_RATIO">
+                <Name>Confinement Ratio</Name>
+                <Path>Confinement_Ratio</Path>
+              </Vector>
+              <Vector guid="cb807d2e-6119-11eb-bf86-f40f243c4b95" id="CONFINEMENT_BUFFERS">
+                <Name>Bankfull Channel Buffers</Name>
+                <Path>Confinement_Buffers</Path>
               </Vector>
             </Layers>
           </Geopackage>
@@ -53,55 +87,3 @@
       </Confinement>
     </Realizations>
   </Project>
-  
-
-  <Name>Confinement For HUC 17060304</Name>
-  <ProjectType>Confinement</ProjectType>
-  <MetaData>
-        <Meta name="ModelVersion">0.0.6</Meta>
-        <Meta name="dateCreated">2020-10-23T01:42:01.788665</Meta>
-        <Meta name="HUC8">17060304</Meta>
-        <Meta name="Watershed">Middle Fork Clearwater</Meta>
-  </MetaData>
-  <Realizations>
-    <Confinement id="CONFINEMENT1" dateCreated="" guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" productVersion="">
-      <Name>Valley Bottom Confinement for HUC 17060304</Name>
-      <MetaData>
-        <Meta name="ConfinementType">ValleyBottom</Meta> <!-- e.g. ValleyBottom, Anthropogenic, Composite-->
-      </MetaData>
-      <Inputs>
-        <Vector guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="FLOWLINES">
-            <Name>Flowlines</Name>
-            <Path>inputs\flowlines.shp</Path>
-            <MetaData>
-                <Meta name="BufferField">BFWidth</Meta>
-            </MetaData>
-        </Vector>
-        <Vector guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="VBET_50">
-            <Name>Confining Polygon</Name>
-            <Path>inputs\vbet_50.shp</Path>
-        </Vector>
-      </Inputs>
-      <Outputs>
-        <Geopackage guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="ConfinementRaw">
-
-          <Path>outputs/Confinement.gpkg</Path>
-          <Layers>
-            <Vector>
-              <Name>Confinement Raw</Name>
-              <Path>main.Confinement_Raw</Path>
-            </Vector>
-            <Vector>
-              <Name>Confinement Margins</Name>
-              <Path>main.Confining_Margins</Path>
-            </Vector>
-            <Vector>
-              <Name>Confinement Ratio</Name>
-              <Path>main.Confinement_Ratio</Path>
-            </Vector>
-          </Layers>
-        </Geopackage>
-      </Outputs>
-    </Confinement>
-  </Realizations>
-</Project>

@@ -36,6 +36,7 @@
       <xs:extension base="RealizationType">
         <xs:sequence>
           <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
+          <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" maxOccurs="1" />
           <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
       </xs:extension>
