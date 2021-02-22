@@ -62,14 +62,19 @@
   </xs:complexType>
 
   <!-- The type of string in the <Meta> tag. These are optional -->
-  <xs:simpleType name="MetaDataStringType">
+  <xs:simpleType name="KeyValueType">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="URL" />
-      <xs:enumeration value="RichText" />
-      <xs:enumeration value="Markdown" />
-      <xs:enumeration value="ImageURL" />
-      <xs:enumeration value="ISODate" />
-      <xs:enumeration value="UnixTimestamp" />
+      <xs:enumeration value="guid" />
+      <xs:enumeration value="url" />
+      <xs:enumeration value="path" />
+      <xs:enumeration value="imgurl" />
+      <xs:enumeration value="isodate" />
+      <xs:enumeration value="timestamp" />
+      <xs:enumeration value="float" />
+      <xs:enumeration value="int" />
+      <xs:enumeration value="richtext" />
+      <xs:enumeration value="markdown" />
+      <xs:enumeration value="json" />
     </xs:restriction>
   </xs:simpleType>
 
@@ -78,7 +83,7 @@
     <xs:simpleContent>
       <xs:extension base="xs:string">
         <xs:attribute type="xs:string" name="name" use="required" />
-        <xs:attribute type="MetaDataStringType" name="type" use="optional" />
+        <xs:attribute type="KeyValueType" name="type" use="optional" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -93,6 +98,7 @@
     <xs:simpleContent>
       <xs:extension base="xs:string">
         <xs:attribute type="xs:string" name="name" use="required" />
+        <xs:attribute type="KeyValueType" name="type" use="optional" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
