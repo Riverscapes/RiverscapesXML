@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-				 xsi:noNamespaceSchemaLocation="../XSD/V1/EC.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/EC.xsd">
 	<Name>
 		Lower John Day Conductivity
 	</Name>
@@ -20,8 +19,11 @@
 		<Meta name="Model">
 			rf17bCnd9
 		</Meta>
+		<Meta name="url" type="URL">
+			http://google.ca
+		</Meta>
 	</MetaData>
-	<Inputs/>
+	<Inputs />
 	<Realizations>
 		<EC dateCreated="2017-05-04T19:33:47.730000" guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="run201705030744" productVersion="0.5.3">
 			<Name>
@@ -69,7 +71,7 @@
 						Realizations\run201705030744\Inputs\seg_1000m_20161130.shp
 					</Path>
 				</Vector>
-				<DataTable ref="PARAM_TABLE"/>
+				<DataTable ref="PARAM_TABLE" />
 			</Inputs>
 			<Analyses>
 				<Analysis>
