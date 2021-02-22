@@ -1,137 +1,233 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/RSContext.xsd">
-	<!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
-	<Name>Riverscapes Context for HUC 17010216</Name>
-	<ProjectType>RSContext</ProjectType>
-	<MetaData>
-		<Meta name="dateCreated">2019-09-12T16:42:24.610951</Meta>
-		<Meta name="HUC8">17010216</Meta>
-	</MetaData>
-	<Realizations>
-		<RSContext dateCreated="2019-09-12T16:42:24.619206" guid="f8c8efcc-d5b6-11e9-be3c-acde48001122" id="RSContext1" productVersion="4.0.0">
-			<Name>Riverscapes Context for HUC 17010216</Name>
-			<DEM guid="f8c94260-d5b6-11e9-be3c-acde48001122" id="DEM">
-				<Name>NED 10m DEM</Name>
-				<Path>dem.tif</Path>
-			</DEM>
-			<Raster guid="f8c9a0ac-d5b6-11e9-be3c-acde48001122" id="FA">
-				<Name>Flow Accumulation</Name>
-				<Path>flow_accum.tif</Path>
-			</Raster>
-			<Raster guid="f8ca1276-d5b6-11e9-be3c-acde48001122" id="DA">
-				<Name>Drainage Area</Name>
-				<Path>drainarea_sqkm.tif</Path>
-			</Raster>
-			<Raster guid="f8ca8c9c-d5b6-11e9-be3c-acde48001122" id="EXVEG">
-				<Name>Existing Vegetation</Name>
-				<Path>existing_veg.tif</Path>
-			</Raster>
-			<Raster guid="f8cb5672-d5b6-11e9-be3c-acde48001122" id="HISTVEG">
-				<Name>Historical Vegetation</Name>
-				<Path>historical_veg.tif</Path>
-			</Raster>
-			<Vector guid="fa2ecd32-d5b6-11e9-be3c-acde48001122" id="WBDHU12">
-				<Name>WBDHU12</Name>
-				<Path>nhd/Shape/WBDHU12.shp</Path>
-			</Vector>
-			<Vector guid="fa2f5d24-d5b6-11e9-be3c-acde48001122" id="WBDHU8">
-				<Name>WBDHU8</Name>
-				<Path>nhd/Shape/WBDHU8.shp</Path>
-			</Vector>
-			<Vector guid="fa2fe974-d5b6-11e9-be3c-acde48001122" id="NHDPOINT">
-				<Name>NHDPoint</Name>
-				<Path>nhd/Shape/NHDPoint.shp</Path>
-			</Vector>
-			<Vector guid="fa308500-d5b6-11e9-be3c-acde48001122" id="NHDAREA">
-				<Name>NHDArea</Name>
-				<Path>nhd/Shape/NHDArea.shp</Path>
-			</Vector>
-			<Vector guid="fa312226-d5b6-11e9-be3c-acde48001122" id="WBDHU10">
-				<Name>WBDHU10</Name>
-				<Path>nhd/Shape/WBDHU10.shp</Path>
-			</Vector>
-			<Vector guid="fa31ce06-d5b6-11e9-be3c-acde48001122" id="WBDHU14">
-				<Name>WBDHU14</Name>
-				<Path>nhd/Shape/WBDHU14.shp</Path>
-			</Vector>
-			<Vector guid="fa3285da-d5b6-11e9-be3c-acde48001122" id="NHDLINEEVENTFC">
-				<Name>NHDLineEventFC</Name>
-				<Path>nhd/Shape/NHDLineEventFC.shp</Path>
-			</Vector>
-			<Vector guid="fa3346b4-d5b6-11e9-be3c-acde48001122" id="WBDHU16">
-				<Name>WBDHU16</Name>
-				<Path>nhd/Shape/WBDHU16.shp</Path>
-			</Vector>
-			<Vector guid="fa346fee-d5b6-11e9-be3c-acde48001122" id="NHDFLOWLINE">
-				<Name>NHDFlowline</Name>
-				<Path>nhd/Shape/NHDFlowline.shp</Path>
-			</Vector>
-			<Vector guid="fa3551fc-d5b6-11e9-be3c-acde48001122" id="NHDWATERBODY">
-				<Name>NHDWaterbody</Name>
-				<Path>nhd/Shape/NHDWaterbody.shp</Path>
-			</Vector>
-			<Vector guid="fa36573c-d5b6-11e9-be3c-acde48001122" id="WBDLINE">
-				<Name>WBDLine</Name>
-				<Path>nhd/Shape/WBDLine.shp</Path>
-			</Vector>
-			<Vector guid="fa374502-d5b6-11e9-be3c-acde48001122" id="NHDLINE2">
-				<Name>NHDLine</Name>
-				<Path>nhd/Shape/NHDLine.shp</Path>
-			</Vector>
-			<Vector guid="fa383e62-d5b6-11e9-be3c-acde48001122" id="NHDPOINTEVENTFC">
-				<Name>NHDPointEventFC</Name>
-				<Path>nhd/Shape/NHDPointEventFC.shp</Path>
-			</Vector>
-			<Vector guid="fa394280-d5b6-11e9-be3c-acde48001122" id="WBDHU2">
-				<Name>WBDHU2</Name>
-				<Path>nhd/Shape/WBDHU2.shp</Path>
-			</Vector>
-			<Vector guid="fa3a761e-d5b6-11e9-be3c-acde48001122" id="WBDHU6">
-				<Name>WBDHU6</Name>
-				<Path>nhd/Shape/WBDHU6.shp</Path>
-			</Vector>
-			<Vector guid="fa3bf2dc-d5b6-11e9-be3c-acde48001122" id="WBDHU4">
-				<Name>WBDHU4</Name>
-				<Path>nhd/Shape/WBDHU4.shp</Path>
-			</Vector>
-			<Vector guid="fa3d0f32-d5b6-11e9-be3c-acde48001122" id="NHDAREAEVENTFC">
-				<Name>NHDAreaEventFC</Name>
-				<Path>nhd/Shape/NHDAreaEventFC.shp</Path>
-			</Vector>
-			<Geopackage guid="1abd0b6a-3973-11eb-9939-acde48001122" id="NHD">
-				<Name>Hydrology</Name>
-				<Path>hydrology/hydrology.gpkg</Path>
-				<Layers>
-					<Vector guid="1ac393d6-3973-11eb-9939-acde48001122" id="NETWORK">
-						<Name>NHD Flowlines</Name>
-						<Path>network</Path>
-					</Vector>
-					<Vector guid="1ac8a6e6-3973-11eb-9939-acde48001122" id="NETWORK300M">
-						<Name>NHD Flowlines intersected with road, rail and ownership</Name>
-						<Path>network_intersected</Path>
-					</Vector>
-					<Vector guid="1accc438-3973-11eb-9939-acde48001122" id="NETWORK300MCROSSINGS">
-						<Name>NHD Flowlines intersected with road, rail and ownership, segmented to 300m</Name>
-						<Path>network_intersected_300m</Path>
-					</Vector>
-				</Layers>
-			</Geopackage>			
-			<Vector guid="ffe5d3ce-d5b6-11e9-be3c-acde48001122" id="ROADS">
-				<Name>Roads</Name>
-				<Path>ntd/roads.shp</Path>
-			</Vector>
-			<Vector guid="ffe7f208-d5b6-11e9-be3c-acde48001122" id="RAIL">
-				<Name>Rail</Name>
-				<Path>ntd/railways.shp</Path>
-			</Vector>
-			<Vector guid="ffe978ee-d5b6-11e9-be3c-acde48001122" id="CANALS">
-				<Name>Canals</Name>
-				<Path>ntd/canals.shp</Path>
-			</Vector>
-			<HTMLFile guid="f0830596-2b64-11eb-8a40-f40f243c4b95" id="REPORT">
-				<Name>RSContext Report</Name>
-				<Path>rs_context.html</Path>
-			</HTMLFile>			
-		</RSContext>
-	</Realizations>
-</Project>
+		<Name>Riverscapes Context for HUC 17060304</Name>
+		<ProjectType>RSContext</ProjectType>
+		<Warehouse><Meta name="id">d7f09221-02e4-4d8b-9a59-5d4545ed1a4e</Meta><Meta name="user">d6c0ff26-8550-4f80-b9ea-6cc1e70a1c4d</Meta><Meta name="program">Anabranch</Meta><Meta name="tags">NEW_META,FEB19</Meta></Warehouse><MetaData>
+			<Meta name="ModelVersion">1.1.1</Meta>
+			<Meta name="dateCreated">2021-02-19T22:26:36.882152</Meta>
+			<Meta name="HUC8">17060304</Meta>
+			<Meta name="HUC">17060304</Meta>
+			<Meta name="Watershed">Middle Fork Clearwater</Meta>
+			<Meta name="mean_annual_precipitation_mm">842.3529488517745</Meta>
+		</MetaData>
+		<Realizations>
+			<RSContext id="RSContext1" dateCreated="2021-02-19T22:26:36.908182" guid="59e5ed08-d732-4079-80d3-3c73b869bc62" productVersion="1.1.1">
+				<Name>Riverscapes Context for HUC 17060304</Name>
+				<DEM guid="a2a843b3-0f97-42d8-a28d-9411046a54b3" id="DEM">
+					<Name>NED 10m DEM</Name>
+					<Path>topography/dem.tif</Path>
+					<MetaData>
+						<Meta name="num_rasters">4</Meta>
+						<Meta name="origin_urls" type="json">["https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/IMG/USGS_NED_13_n46w116_IMG.zip", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/IMG/USGS_NED_13_n47w116_IMG.zip", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/IMG/USGS_NED_13_n47w117_IMG.zip", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/IMG/USGS_NED_13_n46w117_IMG.zip"]</Meta>
+					</MetaData>
+				</DEM>
+				<Raster guid="860d98f9-dc88-4780-9991-d0c833c0d532" id="HILLSHADE">
+					<Name>DEM Hillshade</Name>
+					<Path>topography/dem_hillshade.tif</Path>
+				</Raster>
+				<Raster guid="42e73bec-2900-4de4-a4f5-b41157ccd7c4" id="FA">
+					<Name>Flow Accumulation</Name>
+					<Path>topography/flow_accum.tif</Path>
+				</Raster>
+				<Raster guid="dd23308f-7ffc-488b-989e-2b7267a0357b" id="DA">
+					<Name>Drainage Area</Name>
+					<Path>topography/drainarea_sqkm.tif</Path>
+				</Raster>
+				<Raster guid="c9305103-86d3-403d-9f0d-f925cde579ba" id="HAND">
+					<Name>Height above nearest drainage</Name>
+					<Path>topography/hand.tif</Path>
+					<MetaData>
+						<Meta name="origin_url">unknown</Meta>
+					</MetaData>
+				</Raster>
+				<Raster guid="20bcd111-cbcd-444f-a675-7f6d099fa6ce" id="SLOPE">
+					<Name>Slope</Name>
+					<Path>topography/slope.tif</Path>
+				</Raster>
+				<Raster guid="e33edecd-4d78-4cf7-81f8-2d79b1a1163e" id="EXVEG">
+					<Name>Existing Vegetation</Name>
+					<Path>vegetation/existing_veg.tif</Path>
+				</Raster>
+				<Raster guid="2348e865-5020-48a9-b023-a41cb8437790" id="HISTVEG">
+					<Name>Historic Vegetation</Name>
+					<Path>vegetation/historic_veg.tif</Path>
+				</Raster>
+				<Raster guid="a6855d8b-1f4f-4569-b3e0-4d8d2238cacc" id="FAIRMARKETVALUE">
+					<Name>Fair Market Value</Name>
+					<Path>ownership/fair_market_value.tif</Path>
+				</Raster>
+				<Raster guid="22778d05-3571-42de-b708-452452d8c29d" id="Precip">
+					<Name>Precipitation</Name>
+					<Path>climate/precipitation.tif</Path>
+				</Raster>
+				<Raster guid="11ab1057-5971-40ca-a700-37ac4f60fc88" id="MeanTemp">
+					<Name>Mean Temperature</Name>
+					<Path>climate/mean_temp.tif</Path>
+				</Raster>
+				<Raster guid="4cc8a240-9556-4d4f-be7f-5edcd561f9d5" id="MinTemp">
+					<Name>Minimum Temperature</Name>
+					<Path>climate/min_temp.tif</Path>
+				</Raster>
+				<Raster guid="5099e4e3-55f8-414f-ba3c-36c8bb46e8af" id="MaxTemp">
+					<Name>Maximum Temperature</Name>
+					<Path>climate/max_temp.tif</Path>
+				</Raster>
+				<Raster guid="fe2a7eb1-60cf-4100-bdee-30b5a2b6443d" id="MeanDew">
+					<Name>Mean Dew Point Temperature</Name>
+					<Path>climate/mean_dew_temp.tif</Path>
+				</Raster>
+				<Raster guid="21d4354a-fcd1-4552-96b2-9ca36a2fe4d3" id="MinVap">
+					<Name>Minimum Vapor Pressure Deficit</Name>
+					<Path>climate/min_vapor_pressure.tif</Path>
+				</Raster>
+				<Raster guid="07d2b967-572b-4fb5-854f-677ab991fa7c" id="MaxVap">
+					<Name>Maximum Vapor Pressure Deficit</Name>
+					<Path>climate/max_vapor_pressure.tif</Path>
+				</Raster>
+				<SQLiteDB guid="dbfc95a0-88fc-444a-a835-e54c16047b42" id="NHDTABLES">
+					<Name>NHD Tables</Name>
+					<Path>hydrology/nhd_data.sqlite</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</SQLiteDB>
+				<Vector guid="663bad5e-9ec3-48bd-b6c7-d7b759659d86" id="WBDHU2">
+					<Name>WBDHU2</Name>
+					<Path>hydrology/WBDHU2.shp</Path>
+					<MetaData>
+						<Meta name="origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="751fd31a-7d88-4d40-ba46-edd4eb694c3f" id="WBDHU4">
+					<Name>WBDHU4</Name>
+					<Path>hydrology/WBDHU4.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="cb810bc4-0356-44fe-b060-ae3d1261c9b6" id="WBDHU6">
+					<Name>WBDHU6</Name>
+					<Path>hydrology/WBDHU6.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="07df8402-7fa8-481b-82b6-b9f23b6feb9c" id="WBDHU8">
+					<Name>WBDHU8</Name>
+					<Path>hydrology/WBDHU8.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="b0e1bf4b-7482-4717-845c-53cf3dc88740" id="WBDHU10">
+					<Name>WBDHU10</Name>
+					<Path>hydrology/WBDHU10.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="0d900ff1-f18b-4fd8-a4c5-d66031342a94" id="WBDHU12">
+					<Name>WBDHU12</Name>
+					<Path>hydrology/WBDHU12.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="f04e1b94-874d-4b20-8432-bea96c73a959" id="NHDFlowline">
+					<Name>NHDFlowline</Name>
+					<Path>hydrology/NHDFlowline.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="8dbe163d-83f4-4622-ac5b-5ac6f40c67fa" id="NHDArea">
+					<Name>NHDArea</Name>
+					<Path>hydrology/NHDArea.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="371b55f7-3bfd-4379-8db2-6960fff9383f" id="NHDWaterbody">
+					<Name>NHDWaterbody</Name>
+					<Path>hydrology/NHDWaterbody.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="18d78b97-a0e3-4030-a80e-5ad09b2fd980" id="NHDPlusCatchment">
+					<Name>NHDPlusCatchment</Name>
+					<Path>hydrology/NHDPlusCatchment.shp</Path>
+					<MetaData>
+						<Meta name="origin_url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1706_HU4_GDB.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="a7ae1da0-4376-4a71-ae8d-a7da155cc823" id="Roads">
+					<Name>Roads</Name>
+					<Path>transportation/roads.shp</Path>
+					<MetaData>
+						<Meta name="Idaho">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="9cb4f593-852b-4579-b8ee-556ee1bb46ee" id="Rail">
+					<Name>Rail</Name>
+					<Path>transportation/railways.shp</Path>
+					<MetaData>
+						<Meta name="Idaho">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="4c3bb22d-0e17-4e56-94be-abf87b190772" id="Canals">
+					<Name>Canals</Name>
+					<Path>transportation/canals.shp</Path>
+					<MetaData>
+						<Meta name="Idaho">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
+					</MetaData>
+				</Vector>
+				<Vector guid="76e1472d-002f-4836-ad8b-ad415b7a529b" id="Ownership">
+					<Name>Ownership</Name>
+					<Path>ownership/ownership.shp</Path>
+				</Vector>
+				<Geopackage guid="c5c17b08-ee6b-4a25-b240-602d176d0dba" id="NHD">
+					<Name>Hydrology</Name>
+					<Path>hydrology/hydrology.gpkg</Path>
+					<Layers>
+						<Vector guid="05b33303-8150-4280-bde1-707a2c67c5f8" id="NETWORK">
+							<Name>NHD Flowlines</Name>
+							<Path>network</Path>
+						</Vector>
+						<Vector guid="97c14523-6393-408a-b03a-d0de7a0c96c8" id="BUFFERED_CLIP100">
+							<Name>Buffered Clip Shape 100m</Name>
+							<Path>buffered_clip100m</Path>
+						</Vector>
+						<Vector guid="1a62b512-62db-4cde-a592-d94058f9f9d5" id="BUFFERED_CLIP500">
+							<Name>Buffered Clip Shape 500m</Name>
+							<Path>buffered_clip500m</Path>
+						</Vector>
+						<Vector guid="8262b531-3899-4e1f-a415-52edab13b800" id="NETWORK300M">
+							<Name>NHD Flowlines Segmented 300m</Name>
+							<Path>network_300m</Path>
+						</Vector>
+						<Vector guid="b81a902a-1d08-483a-8a2a-eb6d1a239cdb" id="NETWORK300M_INTERSECTION">
+							<Name>NHD Flowlines intersected with road, rail and ownership</Name>
+							<Path>network_intersected</Path>
+						</Vector>
+						<Vector guid="325bf936-7907-4567-b111-ec6e156f8d70" id="NETWORK300MCROSSINGS">
+							<Name>NHD Flowlines intersected with road, rail and ownership, segmented to 300m</Name>
+							<Path>network_intersected_300m</Path>
+						</Vector>
+						<Vector guid="8786d813-ad9a-46a4-a0c9-29f7ffeecbe8" id="BANKFULL_CHANNEL">
+							<Name>Estimated Bankfull Channel</Name>
+							<Path>bankfull</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+				<Vector guid="22903caa-e404-4092-9fb4-824f24ff6f60" id="Ecoregions">
+					<Name>Ecoregions</Name>
+					<Path>ecoregions/ecoregions.shp</Path>
+				</Vector>
+				<HTMLFile guid="b68d25b2-11e1-4635-b2a2-b3415dee47db" id="REPORT">
+					<Name>RSContext Report</Name>
+					<Path>rs_context.html</Path>
+				</HTMLFile>
+			</RSContext>
+		</Realizations>
+	</Project>
