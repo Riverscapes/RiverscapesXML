@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+	<Name>GUT</Name>
+	<ProjectType>GUT</ProjectType>
+	<Node xpathlabel="Name">
+		<Children>
+			<Repeater label="Realizations" xpath="Realizations/GUT">
+				<Node xpathlabel="Name">
+					<Children collapsed="true">
+						<Node label="Inputs" xpath="Inputs">
+							<Children collapsed="true">
+								<Node label="Bankfull Extent">
+									<Children>
+										<Node xpathlabel="Name" xpath="Centerline[@id='BFCL']" type="vector" symbology="bfCL" />
+										<Node label="Bankfull Cross Sections QA/QC " xpath="CrossSections[@id='BFXS']" type="vector" symbology="XS_qaqc" />
+										<Node label="Bankfull Cross Sections Type" xpath="CrossSections[@id='BFXS']" type="vector" symbology="XS_type" />
+										<Node xpathlabel="Name" xpath="Extent[@id='BFEX']" type="vector" symbology="in_BankfullExtent" />
+										<Node xpathlabel="Name" xpath="Islands[@id='BFI']" type="vector" symbology="bfIlsands" />
+									</Children>
+								</Node>
+								<Node label="Wetted Extent">
+									<Children>
+										<Node xpathlabel="Name" xpath="Centerline[@id='WCL']" type="vector" symbology="in_WaterCenterline" />
+										<Node label="Wetted Cross Sections QA/QC" xpath="CrossSections[@id='WXS']" type="vector" symbology="XS_qaqc" />
+										<Node label="Wetted Cross Sections Type" xpath="CrossSections[@id='WXS']" type="vector" symbology="XS_type" />
+										<Node xpathlabel="Name" xpath="Extent[@id='WEEX']" type="vector" symbology="in_WaterExtent" transparency="40" />
+										<Node xpathlabel="Name" xpath="Islands[@id='WI']" type="vector" symbology="wetIslands" />
+									</Children>
+								</Node>
+								<Node label="Channel Units and Thalwegs">
+									<Children>
+										<Node xpathlabel="Name" xpath="ChannelUnits[@id='CU']" type="vector" symbology="cu_UnitNum" />
+										<Node xpathlabel="Name" xpath="ChannelUnits[@id='CU_1']" type="vector" symbology="Channel_Units_Field" transparency="40" />
+										<Node label="Thalweg Type" xpath="Thalweg" type="vector" symbology="in_Thalwegs_Type" />
+										<Node label="Thalweg Channel" xpath="Thalweg" type="vector" symbology="in_Thalwegs_Channel" />
+									</Children>
+								</Node>
+								<Node label="Digital Elevation Models">
+									<Children collapsed="true">
+										<Node xpathlabel="Name" xpath="Detrended" type="raster" symbology="detrendDEM" transparency="40" />
+										<Node xpathlabel="Name" xpath="DEM" type="raster" symbology="dem" transparency="40" />
+										<Node xpathlabel="Name" xpath="DEMHillshade" type="raster" symbology="" />
+									</Children>
+								</Node>
+							</Children>
+						</Node>
+						<Node label="Evidence" xpath="EvidenceLayers">
+							<Children collapsed="true">
+								<Node label="DEMs and Contours">
+									<Children>
+
+										<Node xpathlabel="Name" xpath="DEM[@id='DEMSMOOTH']" type="raster" symbology="dem" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_5']" type="raster" symbology="dem" transparency="40" />
+										<Node xpathlabel="Name" xpath="Vector[@id='ID_3']" type="vector" symbology="ev_contourNodes" />
+										<Node xpathlabel="Name" xpath="Vector[@id='ID_4']" type="vector" symbology="ev_contourPolygons" transparency="40" />
+										<Node xpathlabel="Name" xpath="Vector[@id='ID_5']" type="vector" symbology="ev_Contours" />
+									</Children>
+								</Node>
+								<Node label="Slope">
+									<Children>
+										<Node xpathlabel="Name" xpath="Slope[@id='ICDEMSLOPE']" type="raster" symbology="raster_slope" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID']" type="raster" symbology="ev_bsSD" transparency="40" />
+										<Node xpathlabel="Name" xpath="Slope[@id='BFSLOPE']" type="raster" symbology="raster_slope" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_2']" type="raster" symbology="raster_slope" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_3']" type="raster" symbology="raster_slope" transparency="40" />
+										<Node xpathlabel="Name" xpath="Slope[@id='BFSSSMOOTH']" type="raster" symbology="raster_slope" transparency="40" />
+										<Node xpathlabel="Name" xpath="Vector[@id='ID_1']" type="vector" symbology="ev_bfSlopeCat" transparency="40" />
+										<Node xpathlabel="Name" xpath="Vector[@id='ID']" type="vector" symbology="ev_bsSDCat" transparency="40" />
+									</Children>
+								</Node>
+								<Node label="Derivatives">
+									<Children>
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_6']" type="raster" symbology="ev_mBendIndex" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_7']" type="raster" symbology="ev_normFill" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_8']" type="raster" symbology="ev_resDepth" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_9']" type="raster" symbology="ev_resTopo" transparency="40" />
+										<Node xpathlabel="Name" xpath="Raster[@id='ID_1']" type="raster" symbology="ev_bfCh" transparency="40" />
+										<Node xpathlabel="Name" xpath="Vector[@id='ID_2']" type="vector" symbology="ev_channelEdge" transparency="40" />
+									</Children>
+								</Node>
+								<Node label="tmp">
+									<Children>
+										<Node label="Bowl Transitions" xpath="Vector[@id='ID_7']" type="vector" symbology="ev_tmp" transparency="40" />
+										<Node label="Bowl Transitions - Post GU" xpath="Vector[@id='ID_8']" type="vector" symbology="ev_tmp" transparency="40" />
+									</Children>
+								</Node>
+							</Children>
+						</Node>
+						<Repeater label="Analyses" xpath="Analyses/Analysis">
+							<Node xpathlabel="Name">
+								<Children collapsed="true">
+									<Node label="Tier 1">
+										<Children>
+											<Node label="Tier 1 Flow Unit" xpath="Outputs/Tier1" type="vector" symbology="out_Tier1_FlowUnit" />
+											<Node label="Tier 1 Valley Unit" xpath="Outputs/Tier1" type="vector" symbology="out_Tier1_ValleyUnit" transparency="40" />
+										</Children>
+									</Node>
+									<Node label="Tier 2">
+										<Children>
+											<Node label="Tier 2 Unit Form" xpath="Outputs/Tier2[@id='Tier2']" type="vector" symbology="out_Tier2_UnitForm" transparency="40" />
+											<Node label="Tier 2 Unit Form Shape" xpath="Outputs/Tier2[@id='Tier2']" type="vector" symbology="out_Tier2_UnitShape" transparency="40" />
+											<Node label="Tier 2 Discrete" xpath="Outputs/Tier2[@id='Tier2_1']" type="vector" symbology="out_Tier2_UnitForm_Discrete" transparency="40" />
+											<Node label="Tier 2 Discrete Shape" xpath="Outputs/Tier2[@id='Tier2_1']" type="vector" symbology="out_Tier2_UnitShape" transparency="40" />
+										</Children>
+									</Node>
+									<Node label="Tier 3">
+										<Children>
+											<Node label="working">
+												<Children>
+													<Node label="Geomorphic Units">
+														<Children>
+															<Node xpathlabel="Name" xpath="Outputs/Tier3[@id='Tier3']" type="vector" symbology="out_Tier3_GeomorphicUnit" transparency="40" />
+															<Node label="Tier 3 In Channel GU Orientation" xpath="Outputs/Tier3[@id='Tier3']" type="vector" symbology="out_Tier3_Orientation" transparency="40" />
+															<Node label="Tier 3 In Channel GU Position" xpath="Outputs/Tier3[@id='Tier3']" type="vector" symbology="out_Tier3_Position" transparency="40" />
+														</Children>
+													</Node>
+													<Node label="Sub Geomorphic Units">
+														<Children>
+															<Node xpathlabel="Name" xpath="Outputs/Tier3[@id='Tier3_2']" type="vector" symbology="out_Tier3_SubGU" transparency="40" />
+															<Node label="Tier 3 In Channel Sub GU Orientation" xpath="Outputs/Tier3[@id='Tier3_2']" type="vector" symbology="out_Tier3_Orientation" transparency="40" />
+															<Node label="Tier 3 In Channel Sub GU Position" xpath="Outputs/Tier3[@id='Tier3_2']" type="vector" symbology="out_Tier3_Position" transparency="40" />
+														</Children>
+													</Node>
+												</Children>
+											</Node>
+											<Node label="raw (original)">
+												<Children>
+													<Node xpathlabel="Name" xpath="Outputs/Tier3[@id='Tier3_3']" type="vector" symbology="out_Tier3_SubGU" transparency="40" />
+													<Node label="Tier 3 In Channel Sub GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="vector" symbology="out_Tier3_Orientation" transparency="40" />
+													<Node label="Tier 3 In Channel Sub GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="vector" symbology="out_Tier3_Position" transparency="40" />
+													<Node xpathlabel="" xpath="Outputs/Tier3[@id='Tier3_1']" type="vector" symbology="out_Tier3_GeomorphicUnit" transparency="40" />
+													<Node xpathlabel="Tier 3 In Channel GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="vector" symbology="out_Tier3_Orientation" transparency="40" />
+													<Node xpathlabel="Tier 3 In Channel GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="vector" symbology="out_Tier3_Position" transparency="40" />
+												</Children>
+											</Node>
+										</Children>
+									</Node>
+								</Children>
+							</Node>
+						</Repeater>
+					</Children>
+				</Node>
+			</Repeater>
+		</Children>
+	</Node>
+</Project>

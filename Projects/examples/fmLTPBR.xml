@@ -4,8 +4,11 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/fmLTPBR.xsd">
 	<Name>Bear Creek Hydrologic Enhancement</Name>
 	<ProjectType>fmLTPBR</ProjectType>
 	<MetaData>
+		<!-- We encourage modelversion and dateCreated as pseudo-mandatory metadata on the project -->
 		<Meta name="ModelVersion">4.0.1</Meta>
+		<!-- PLease use ISO 8601 compliant date format so we can parse it easily -->
 		<Meta name="dateCreated">2020-06-11T10:56:53.576247</Meta>
+		<!-- Everything else is up to you -->
 		<Meta name="pk">A4774065-5C52-4897-80B6-B779B09556D3</Meta>
 		<Meta name="Name">Bear Creek Hydrologic Enhancement</Meta>
 		<Meta name="SubWatershed">Lower John Day</Meta>
@@ -21,56 +24,58 @@ xsi:noNamespaceSchemaLocation="../XSD/V1/fmLTPBR.xsd">
 		<Meta name="calc_LengthTotalKM">1.09</Meta>
 		<Meta name="calc_LengthTreatmentKM">1.09</Meta>
 		<Meta name="calc_SumStructures">84</Meta>
-		<Meta name="DateCreated">5/23/2019 3:53:36 PM</Meta>
-		<Meta name="DateModified">4/1/2020 2:00:12 PM</Meta>
-		<Meta name="ExportDateTime">5/29/2020 10:49:54 AM</Meta>
 	</MetaData>
 	<Realizations>
-		<FMLTPBR dateCreated="2020-06-11T10:56:53.601035" guid="eee85dda-ac0c-11ea-aed5-acde48001122" id="fmLTPBR1" productVersion="4.0.1">
-			<Name>Bear Creek Hydrologic Enhancement</Name>
-			<Intermediates>
-				<CSV guid="eeff0184-ac0c-11ea-aed5-acde48001122" id="CSV_STRUCTURE">
-					<Name>Structure</Name>
-					<Path>Structure.csv</Path>
-				</CSV>
-				<CSV guid="eeffd924-ac0c-11ea-aed5-acde48001122" id="CSV_PROJECT">
-					<Name>Project</Name>
-					<Path>Project.csv</Path>
-				</CSV>
-				<CSV guid="ef022792-ac0c-11ea-aed5-acde48001122" id="CSV_PHOTO">
-					<Name>Photo</Name>
-					<Path>Photo.csv</Path>
-				</CSV>
-				<CSV guid="ef042d30-ac0c-11ea-aed5-acde48001122" id="CSV_PHOTOPOINT">
-					<Name>PhotoPoint</Name>
-					<Path>PhotoPoint.csv</Path>
-				</CSV>
-				<CSV guid="ef068c88-ac0c-11ea-aed5-acde48001122" id="CSV_COMPLEX">
-					<Name>Complex</Name>
-					<Path>Complex.csv</Path>
-				</CSV>
-				<CSV guid="ef085fb8-ac0c-11ea-aed5-acde48001122" id="CSV_REACH">
-					<Name>Reach</Name>
-					<Path>Reach.csv</Path>
-				</CSV>
-				<CSV guid="ef0aa0fc-ac0c-11ea-aed5-acde48001122" id="CSV_FEATURE">
-					<Name>Feature</Name>
-					<Path>Feature.csv</Path>
-				</CSV>
-			</Intermediates>
+		<FMLTPBR dateCreated="2020-06-11T10:56:53.601035" guid="c87e2a6d-2056-4669-82af-8ba3de489e10" id="fmLTPBR1" productVersion="4.0.1">
+			<Name>Give the realization a good name if possible</Name>
 			<Outputs>
-				<Vector guid="ef0cdfe8-ac0c-11ea-aed5-acde48001122" id="PHOTO">
-					<Name>Photos</Name>
-					<Path>Photos.shp</Path>
-				</Vector>
-				<Vector guid="ef0eaa1c-ac0c-11ea-aed5-acde48001122" id="REACH">
-					<Name>Reaches</Name>
-					<Path>Reaches.shp</Path>
-				</Vector>
-				<Vector guid="ef10b334-ac0c-11ea-aed5-acde48001122" id="STRUCT">
-					<Name>Structures</Name>
-					<Path>Structures.shp</Path>
-				</Vector>
+				<Geopackage guid="ec8525a0-e8dc-465b-9281-d9317321c163" id="LTPBR">
+					<Name>LTPBR Geopackage</Name>
+					<MetaData>
+						<Meta name="somekey">somevalue</Meta>
+					</MetaData>
+					<Layers>
+						<Vector>
+							<Name>Active Channels</Name>
+							<Path>active_channels</Path>
+							<MetaData>
+								<Meta name="somekey">only if you need it</Meta>
+							</MetaData>
+						</Vector>
+						<Vector>
+							<Name>Active Floodplains</Name>
+							<Path>active_floodplains</Path>
+						</Vector>						
+						<Vector>
+							<Name>Complexes</Name>
+							<Path>complexes</Path>
+						</Vector>
+						<Vector>
+							<Name>Meta</Name>
+							<Path>meta</Path>
+						</Vector>
+						<Vector>
+							<Name>Reaches</Name>
+							<Path>reaches</Path>
+						</Vector>						
+						<Vector>
+							<Name>Recovery Potentials</Name>
+							<Path>recovery_potentials</Path>
+						</Vector>
+						<Vector>
+							<Name>Structures</Name>
+							<Path>structures</Path>
+						</Vector>						
+						<Vector>
+							<Name>Structure Points</Name>
+							<Path>structures_pts</Path>
+						</Vector>						
+						<Vector>
+							<Name>Valley Bottoms</Name>
+							<Path>valley_bottoms</Path>
+						</Vector>						
+					</Layers>
+				</Geopackage>
 			</Outputs>
 		</FMLTPBR>
 	</Realizations>
