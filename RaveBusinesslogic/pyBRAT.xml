@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>pyBRAT</Name>
+  <ProjectType>pyBRAT</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Outputs">
+        <Children collapsed="true">
+          <Node label="Capacity">
+            <Children>
+              <Node label="Existing Dam Capacity" xpath="Realizations/pyBRAT/Outputs/Vector[@id='BRAT_TABLE']" type="vector" symbology="oCC_EX"/>
+              <Node label="Historic Dam Capacity" xpath="Realizations/pyBRAT/Outputs/Vector[@id='BRAT_TABLE']" type="vector" symbology="oCC_HPE"/>
+            </Children>
+          </Node>
+          <Node label="Management">
+            <Children collapsed="true">
+              <Node label="Restoration or Conservation Opportunities" xpath="Realizations/pyBRAT/Outputs/Vector[@id='BRAT_TABLE']" type="vector" symbology="oPBRC_CR"/>
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Inputs">
+        <Children collapsed="true">
+          <Node label="Network">
+            <Children>
+              <Node label="Network" xpath="Realizations/pyBRAT/Inputs/Vector[@id='NHD_FLOWLINES']" type="vector" symbology="flow_lines"/>
+              <Node label="Flow Direction" xpath="Realizations/pyBRAT/Inputs/Vector[@id='NHD_FLOWLINES']" type="vector" symbology="FlowDirection"/>
+              <Node label="Canals" xpath="Realizations/pyBRAT/Inputs/Vector[@id='CANALS']" type="vector" symbology="canals_ditches"/>
+            </Children>
+          </Node>
+          <Node label="Topography">
+            <Children>
+              <Node label="Flow Accumulation" xpath="Realizations/pyBRAT/Inputs/Raster[@id='NHD_FLOWLINES']" type="raster" symbology="flow_accumulation" transparency="40"/>
+              <Node label="DEM" xpath="Realizations/pyBRAT/Inputs/Raster[@id='NED_10M_DEM']" type="raster" symbology="dem" transparency="40"/>
+            </Children>
+          </Node>
+					<Node label="Roads and Rails">
+            <Children>
+              <Node label="Roads" xpath="Realizations/pyBRAT/Inputs/Vector[@id='ROADS']" type="vector" symbology="OldRoads"/>
+              <Node label="Rails" xpath="Realizations/pyBRAT/Inputs/Vector[@id='RAILS']" type="vector" symbology="railroads"/>
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>
