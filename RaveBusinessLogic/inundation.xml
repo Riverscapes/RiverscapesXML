@@ -73,12 +73,12 @@
       </Node>
     </Children>
   </Node>
-  <Views default="Watershed Context">
-    <View name="Site Extent">
+  <Views default="WATERSHED_CONTEXT">
+    <View name="Site Extent" id="SITE_EXTENT">
       <Layer id="ap02" />
       <Layer id="VB_poly" />
     </View>
-    <View name="Watershed Context">
+    <View name="Watershed Context" id="WATERSHED_CONTEXT">
       <Layer id="hillshade" />
       <Layer id="dem" />
       <Layer id="vbet" />

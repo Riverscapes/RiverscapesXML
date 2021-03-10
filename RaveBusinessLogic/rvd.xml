@@ -8,9 +8,9 @@
       <Node label="Inputs" xpath="Realizations/RVD/Inputs">
         <Children>
           <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="vector" symbology="" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="vector" symbology="" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="vector" symbology="" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="vector" symbology="" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="" />
           <Node xpathlabel="Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="" />
           <Node xpathlabel="Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="" />
         </Children>
@@ -19,10 +19,10 @@
         <Children collapsed="true">
           <Node label="Thiessen Polygons">
             <Children collapsed="true">
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN']" type="vector" symbology="" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN_POINTS']" type="vector" symbology="" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN_DISSOLVED']" type="vector" symbology="" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN_RAW']" type="vector" symbology="" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN']" type="polygon" symbology="" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN_POINTS']" type="polygon" symbology="" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN_DISSOLVED']" type="polygon" symbology="" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='THIESSEN_RAW']" type="polygon" symbology="" />
             </Children>
           </Node>
           <Node label="Existing Vegetation">
@@ -54,14 +54,14 @@
       </Node>
       <Node label="Outputs" xpath="Realizations/RVD/Outputs">
         <Children>
-          <Node label="Riparian Departure" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="vector" id="rvd_output" symbology="RiparianVegetationDeparture" />
-          <Node label="Conversion Type" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="vector" id="conversion_type" symbology="RiparianConversionType" />
+          <Node label="Riparian Departure" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="line" id="rvd_output" symbology="RiparianVegetationDeparture" />
+          <Node label="Conversion Type" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="line" id="conversion_type" symbology="RiparianConversionType" />
         </Children>
       </Node>
     </Children>
   </Node>
-  <Views default="RVD Output">
-    <View name="RVD Output">
+  <Views default="RVD_OUTPUT">
+    <View name="RVD Output" id="RVD_OUTPUT">
       <Layer id="rvd_output" />
       <Layer id="conversion_type" />
     </View>
