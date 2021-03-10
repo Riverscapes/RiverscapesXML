@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "RaveBusinessLogic"
+		},
+		{
+			"path": "Projects"
+		},
+		{
+			"path": "Programs"
+		},
+
+		{
+			"path": "python"
+		},
+		{
+			"name": "RiverscapesXML",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

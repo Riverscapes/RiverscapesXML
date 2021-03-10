@@ -1,5 +1,6 @@
 import sys
 import os
+import glob
 from lxml import etree
 import json
 
@@ -16,8 +17,8 @@ def get_xsd(xsd_path):
         raise Exception('XSD Failed to validate: {} \n {}'.format(xsd_path, errors))
     return xsd_encoded
 
-def get_xmls(dir_path):
-    xml_files = [f for f in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, f)) and f.endswith('.xml')]
+def get_xmls(dir_glob):
+    xml_files = glob.glob(dir_glob)
     return xml_files
 
 def get_xml(xml_path):
