@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
   <Name>Riverscapes Context</Name>
   <ProjectType>RSContext</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/RSContext">
@@ -7,47 +8,47 @@
       <Node xpathlabel="Name" xpath="Realizations/RSContext/HTMLFile[@id='REPORT']" type="file" />
       <Node label="Transportation Local">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Realizations/RSContext/Vector[@id='Roads']" type="vector" symbology="roads" />
-          <Node xpathlabel="Name" xpath="Realizations/RSContext/Vector[@id='Rail']" type="vector" symbology="railroads" />
+          <Node xpathlabel="Name" xpath="Realizations/RSContext/Vector[@id='Roads']" type="line" symbology="roads" />
+          <Node xpathlabel="Name" xpath="Realizations/RSContext/Vector[@id='Rail']" type="line" symbology="railroads" />
         </Children>
       </Node>
       <Node label="Hydrology">
         <Children collapsed="false">
           <Node label="Hydrography (NHD HR+)">
             <Children collapsed="true">
-              <Node label="Perrenial Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="vector" symbology="nhdperrenial" />
-              <Node label="Intermittent Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="vector" symbology="nhdintermittent" />
-              <Node label="Ephemeral Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="vector" symbology="nhdephemeral" />
-              <Node label="Network - Upstream Drainage Area" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="vector" symbology="upstreamdrainagearea" />
-              <Node label="Full NHD HR+ Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="vector" symbology="flow_lines" />
-              <Node label="Drainage Wings" xpath="Realizations/RSContext/Vector[@id='NHDPlusCatchment']" type="vector" symbology="drainagewings" />
-              <Node label="River Polygons (NHD Area)" xpath="Realizations/RSContext/Vector[@id='NHDArea']" type="vector" symbology="nhdarea" />
-              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Realizations/RSContext/Vector[@id='NHDWaterbody']" type="vector" symbology="waterbody" />
-              <Node label="Canals and Ditches" xpath="Realizations/RSContext/Vector[@id='Canals']" type="vector" symbology="canals_ditches" />
-              <Node label="Pipes and Ditches" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="vector" symbology="pipes" />
+              <Node label="Perrenial Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" />
+              <Node label="Intermittent Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" />
+              <Node label="Ephemeral Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="line" symbology="nhdephemeral" />
+              <Node label="Network - Upstream Drainage Area" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
+              <Node label="Full NHD HR+ Drainage Network" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="line" symbology="flow_lines" />
+              <Node label="Drainage Wings" xpath="Realizations/RSContext/Vector[@id='NHDPlusCatchment']" type="polygon" symbology="drainagewings" />
+              <Node label="River Polygons (NHD Area)" xpath="Realizations/RSContext/Vector[@id='NHDArea']" type="polygon" symbology="nhdarea" />
+              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Realizations/RSContext/Vector[@id='NHDWaterbody']" type="polygon" symbology="waterbody" />
+              <Node label="Canals and Ditches" xpath="Realizations/RSContext/Vector[@id='Canals']" type="line" symbology="canals_ditches" />
+              <Node label="Pipes and Ditches" xpath="Realizations/RSContext/Vector[@id='NHDFlowline']" type="line" symbology="pipes" />
               <Node label="Estimated Bankfull">
                 <Children>
-                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='NETWORK']" type="vector" symbology="bankfull_flowlines"/>
-                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='BANKFULL_CHANNEL']" type="vector" symbology="bankfull_channel"/>
-                  <!-- <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='COMPOSITE_CHANNEL_AREA']" type="vector" symbology="bankfull_nhd"/> -->
+                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='NETWORK']" type="line" symbology="bankfull_flowlines"/>
+                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='BANKFULL_CHANNEL']" type="polygon" symbology="bankfull_channel"/>
+                  <!-- <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='COMPOSITE_CHANNEL_AREA']" type="polygon" symbology="bankfull_nhd"/> -->
                 </Children>
               </Node>
               <Node label="Segmented Hydrography">
                 <Children>
-                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='NETWORK300M']" type="vector" symbology="" />
-                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage[@id='NHD']/Layers/Vector[@id='NETWORK300MCROSSINGS']" type="vector" symbology="" />
+                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage/Layers/Vector[@id='NETWORK300M']" type="line" symbology="" />
+                  <Node xpathlabel="Name" xpath="Realizations/RSContext/Geopackage[@id='NHD']/Layers/Vector[@id='NETWORK300MCROSSINGS']" type="line" symbology="" />
                 </Children>
               </Node>
             </Children>
           </Node>
           <Node label="Watershed Boundaries (HUCs)">
             <Children collapsed="true">
-              <Node label="Region - 2-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU2']" type="vector" symbology="wbdhu2" />
-              <Node label="Subregion - 4-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU4']" type="vector" symbology="wbdhu4" />
-              <Node label="Basin - 6-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU6']" type="vector" symbology="wbdhu6" />
-              <Node label="Sub-Basin - 8-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU8']" type="vector" symbology="wbdhu8" />
-              <Node label="Watersheds - 10-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU10']" type="vector" symbology="wbdhu10" />
-              <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU12']" type="vector" symbology="wbdhu12" />
+              <Node label="Region - 2-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU2']" type="polygon" symbology="wbdhu2" />
+              <Node label="Subregion - 4-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
+              <Node label="Basin - 6-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
+              <Node label="Sub-Basin - 8-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" />
+              <Node label="Watersheds - 10-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" />
+              <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Realizations/RSContext/Vector[@id='WBDHU12']" type="polygon" symbology="wbdhu12" />
             </Children>
           </Node>
         </Children>
@@ -65,14 +66,14 @@
       </Node>
       <Node label="Ecoregions">
         <Children collapsed="true">
-          <Node label="Level 1 Ecoregions" xpath="Realizations/RSContext/Vector[@id='Ecoregions']" type="vector" symbology="ecoregions_1" transparency="40" />
-          <Node label="Level 2 Ecoregions" xpath="Realizations/RSContext/Vector[@id='Ecoregions']" type="vector" symbology="ecoregions_2" transparency="40" />
-          <Node label="Level 3 Ecoregions" xpath="Realizations/RSContext/Vector[@id='Ecoregions']" type="vector" symbology="ecoregions_3" transparency="40" />
+          <Node label="Level 1 Ecoregions" xpath="Realizations/RSContext/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_1" transparency="40" />
+          <Node label="Level 2 Ecoregions" xpath="Realizations/RSContext/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_2" transparency="40" />
+          <Node label="Level 3 Ecoregions" xpath="Realizations/RSContext/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_3" transparency="40" />
         </Children>
       </Node>
       <Node label="Land Management">
         <Children collapsed="true">
-          <Node label="Land Ownership" xpath="Realizations/RSContext/Vector[@id='Ownership']" type="vector" symbology="ownership" transparency="40" />
+          <Node label="Land Ownership" xpath="Realizations/RSContext/Vector[@id='Ownership']" type="polygon" symbology="ownership" transparency="40" />
           <Node label="Fair Market Value" xpath="Realizations/RSContext/Raster[@id='FAIRMARKETVALUE']" type="raster" symbology="fair_market" transparency="40" />
         </Children>
       </Node>
