@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
   <Name>RVD</Name>
   <ProjectType>RVD</ProjectType>
   <Node xpathlabel="Name">
@@ -7,7 +8,7 @@
       <Node xpathlabel="Name" xpath="Realizations/RVD/Outputs/HTMLFile" type="file" />
       <Node label="Inputs" xpath="Realizations/RVD/Inputs">
         <Children>
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="vector" symbology="" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="" />
           <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="" />
           <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="" />
           <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="" />
@@ -33,7 +34,7 @@
               <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_VEGETATED']" type="raster" symbology="" />
               <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_CONVERSION']" type="raster" symbology="" />
               <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_LUI']" type="raster" symbology="" />
-
+              
             </Children>
           </Node>
           <Node label="Historic Vegetation">
@@ -45,7 +46,7 @@
               <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_CONVERSION']" type="raster" symbology="" />
             </Children>
           </Node>
-
+          
           <Node xpathlabel="Name" xpath="Raster[@id='RIPARIAN_ZONES']" type="raster" symbology="" />
           <Node xpathlabel="Name" xpath="Raster[@id='NATIVE_RIPARIAN_ZONES']" type="raster" symbology="" />
           <Node xpathlabel="Name" xpath="Raster[@id='VEGETATION_ZONES']" type="raster" symbology="" />
@@ -62,8 +63,10 @@
   </Node>
   <Views default="RVD_OUTPUT">
     <View name="RVD Output" id="RVD_OUTPUT">
-      <Layer id="rvd_output" />
-      <Layer id="conversion_type" />
+      <Layers>
+        <Layer id="rvd_output" />
+        <Layer id="conversion_type" />
+      </Layers>
     </View>
   </Views>
 </Project>

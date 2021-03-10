@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
+	<Name>RCA</Name>
+	<ProjectType>RCA</ProjectType>
+	<Node xpathlabel="Name" xpath="Realizations/RSContext">
+		<Children collapsed="false">
+			<Node label="Inputs">
+				<Children collapsed="true">
+					<Node label="Vegetation">
+						<Children>
+							<Node label="Existing Vegetation">
+								<Children collapsed="true">
+									<Node label="Veg Type - EVT Type" xpath="Realizations/RCA/Inputs/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Type" transparency="40" />
+									<Node label="Veg Type - EVT Name" xpath="Realizations/RCA/Inputs/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
+									<Node label="Veg Type - EVT Class" xpath="Realizations/RCA/Inputs/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
+								</Children>
+							</Node>
+							<Node label="Historic Vegetation">
+								<Children collapsed="true">
+									<Node label="Veg Type - BPS Type" xpath="Realizations/RCA/Inputs/Raster[@id='HISTORIC_VEGETATION']" type="raster" symbology="Historic_Veg_BPS_Type" transparency="40" />
+									<Node label="Veg Type - BPS Name" xpath="Realizations/RCA/Inputs/Raster[@id='HISTORIC_VEGETATION']" type="raster" symbology="Historic_Veg_BPS_Name" transparency="40" />
+								</Children>
+							</Node>
+						</Children>
+					</Node>
+					<Node label="Network">
+						<Children>
+							<Node label="Network" xpath="Realizations/RCA/Inputs/Vector[@id='NHD_FLOWLINES']" type="line" symbology="OldNetwork" />
+							<Node label="Flow Direction" xpath="Realizations/RCA/Inputs/Vector[@id='NHD_FLOWLINES']" type="line" symbology="FlowDirection" />
+						</Children>
+					</Node>
+					<Node label="Fragmented Valley Bottom">
+						<Children>
+							<Node label="Valley Bottom Outline" xpath="Realizations/RCA/Inputs/Vector[@id='FRAGMENTED_VALLEY_BOTTOM']" type="polygon" symbology="ValleyBottomOutline" />
+							<Node label="Fragemented Valley Bottom" xpath="Realizations/RCA/Inputs/Vector[@id='FRAGMENTED_VALLEY_BOTTOM']" type="polygon" symbology="FragmentedValleyBottom" />
+						</Children>
+					</Node>
+					<Node label="Topography">
+						<Children>
+							<Node label="Flow Accumulation (Sqkm)" xpath="Realizations/RCA/Inputs/Raster[@id='FLOW_ACCUMULATION']" type="raster" symbology="flow_accumulation" transparency="40" />
+							<Node label="DEM (10 m NED)" xpath="Realizations/RCA/Inputs/Raster[@id='NED_10M_DEM']" type="raster" symbology="dem" transparency="40" />
+						</Children>
+					</Node>
+					<Node label="Large River Polygon" xpath="Realizations/RCA/Inputs/Vector[@id='LARGE_RIVER_POLYGON']" type="polygon" symbology="LargeRiverPolygon" />
+					<Node label="Precipitation" xpath="Realizations/RCA/Inputs/Raster[@id='PRECIPITATION']" type="raster" symbology="mean_annual_precip" transparency="40" />
+				</Children>
+			</Node>
+			<Node label="Intermediates">
+				<Children collapsed="true">
+					<Node label="Bankfull Channel Intermediates">
+						<Children>
+							<Node label="Precipitation By Reach" xpath="Realizations/RCA/Outputs/Vector[@id='BANKFULL_WIDTHS_NETWORK']" type="line" symbology="PrecipitationByReach" />
+							<Node label="Upstream Drainage Area" xpath="Realizations/RCA/Intermediates/Vector[@id='BANKFULL_WIDTHS_NETWORK']" type="line" symbology="upstreamdrainagearea" />
+						</Children>
+					</Node>
+					<Node label="Confinement Intermediates">
+						<Children>
+							<Node label="Valley Bottom Width Polygons" xpath="Realizations/RCA/Intermediates/Vector[@id='VALLEY_BOTTOM_WIDTH']" type="line" symbology="ValleyBottomWidthPolygons" />
+							<Node label="Bankfull Channel Width Polygons" xpath="Realizations/RCA/Intermediates/Vector[@id='BANKFULL_CHANNEL_WIDTH']" type="line" symbology="BankfullChannelWidthPolygons" />
+						</Children>
+					</Node>
+					<Node label="Thiesessen Polygons">
+						<Children>
+							<Node label="Clipped Thiessen Polygons" xpath="Realizations/RCA/Intermediates/Vector[@id='CLIPPED_THIESSEN_POLYGONS']" type="polygon" symbology="ClippedThiessenPolygons" />
+						</Children>
+					</Node>
+					<Node label="RCA Intermediates">
+						<Children>
+							<Node label="Vegetated">
+								<Children>
+									<Node label="Vegetation Remaining" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_CONDITION_ASSESMENT']" type="line" symbology="VegetationRemaining" />
+									<Node label="Proportion Currently Vegetated" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_CONDITION_ASSESMENT']" type="line" symbology="ProportionCurrentlyVegetated" />
+									<Node label="Proportion Historically Vegetated" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_CONDITION_ASSESMENT']" type="line" symbology="ProportionHistoricallyVegetated" />
+								</Children>
+							</Node>
+							<Node label="Connectivity">
+								<Children>
+									<Node label="Floodplain Connectivity" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_CONDITION_ASSESMENT']" type="line" symbology="FloodplainConnectivity" />
+									<Node label="Floodplain Connectivity Raster" xpath="Realizations/RCA/Intermediates/Raster[@id='FLOODPLAIN_CONNECTIVITY']" type="raster" symbology="FloodplainConnectivityRaster" transparency="40" />
+								</Children>
+							</Node>
+							<Node label="Land Use Intensity" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_CONDITION_ASSESMENT']" type="line" symbology="LandUseIntensity" />
+						</Children>
+					</Node>
+					<Node label="RVD Intermediates">
+						<Children>
+							<Node label="Riparian Corridor" xpath="Realizations/RCA/Intermediates/Raster[@id='RIPARIAN_CORRIDOR']" type="raster" symbology="RiparianCorridor" transparency="40" />
+							<Node label="Riparian Conversion Raster" xpath="Realizations/RCA/Intermediates/Raster[@id='CONVERSION_RASTER']" type="raster" symbology="RiparianConversionType" transparency="40" />
+						</Children>
+					</Node>
+				</Children>
+			</Node>
+			<Node label="Outputs">
+				<Children collapsed="true">
+					<Node label="Riparian Condition Assesment" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_CONDITION_ASSESMENT']" type="line" symbology="RCA" />
+					<Node label="Riparian Vegetation Departure">
+						<Children>
+							<Node label="Riparian Vegetation Departure" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_VEGETATION_DEPARTURE']" type="line" symbology="RiparianVegetationDeparture" />
+							<Node label="Riparian Conversion Type" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_VEGETATION_DEPARTURE']" type="line" symbology="RiparianConversionType" />
+							<Node label="Native Riparian Departure" xpath="Realizations/RCA/Outputs/Vector[@id='RIPARIAN_VEGETATION_DEPARTURE']" type="line" symbology="NativeRiparianVegetationDeparture" />
+						</Children>
+					</Node>
+					<Node label="Confinement">
+						<Children>
+							<Node label="Confinement Ratio" xpath="Realizations/RCA/Outputs/Vector[@id='CONFINEMENT_NETWORK']" type="line" symbology="ConfinementRatio" />
+						</Children>
+					</Node>
+					<Node label="Bankfull Channel">
+						<Children>
+							<Node label="Bankfull Channel Network" xpath="Realizations/RCA/Outputs/Vector[@id='BANKFULL_WIDTHS_NETWORK']" type="line" symbology="BankfullChannelNetwork" />
+							<Node label="Bankfull Channel Polygon" xpath="Realizations/RCA/Outputs/Vector[@id='BANKFULL_CHANNELL_POLYGON']" type="polygon" symbology="BankfullChannelPolygon" />
+						</Children>
+					</Node>
+				</Children>
+			</Node>
+		</Children>
+	</Node>
+</Project>

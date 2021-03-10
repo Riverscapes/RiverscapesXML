@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
   <Name>Inundation Mapper</Name>
   <ProjectType>Inundation</ProjectType>
   <Node xpathlabel="Name">
@@ -11,27 +12,27 @@
               <Children>
                 <Node label="Channels">
                   <Children>
-                    <Node label="Main Thalwegs" xpath="Inputs/Vector[@id='DCE_01_thalwegs']" type="vector" symbology="Thalweg_main" />
-                    <Node label="All Thalwegs" xpath="Inputs/Vector[@id='DCE_01_thalwegs']" type="vector" symbology="Thalwegs" />
+                    <Node label="Main Thalwegs" xpath="Inputs/Vector[@id='DCE_01_thalwegs']" type="line" symbology="Thalweg_main" />
+                    <Node label="All Thalwegs" xpath="Inputs/Vector[@id='DCE_01_thalwegs']" type="line" symbology="Thalwegs" />
                   </Children>
                 </Node>
                 <Node label="Dam Crests">
                   <Children>
-                    <Node label="Dam State" xpath="Inputs/Vector[@id='DCE_01_damcrests']" type="vector" symbology="dam_state" />
-                    <Node label="Crest Type" xpath="Inputs/Vector[@id='DCE_01_damcrests']" type="vector" symbology="crests_type" />
+                    <Node label="Dam State" xpath="Inputs/Vector[@id='DCE_01_damcrests']" type="line" symbology="dam_state" />
+                    <Node label="Crest Type" xpath="Inputs/Vector[@id='DCE_01_damcrests']" type="line" symbology="crests_type" />
                   </Children>
                 </Node>
                 <Node label="Inundation">
                   <Children>
-                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="vector" symbology="inundation_types" />
-                    <Node label="Wetted Extent" xpath="Inputs/Vector[@id='DCE_01_inun']" type="vector" symbology="wetted_extent" />
+                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="line" symbology="inundation_types" />
+                    <Node label="Wetted Extent" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="wetted_extent" />
                     <Node label="Inundation Type Distribution" xpath="Outputs/PDF" type="file" />
                   </Children>
                 </Node>
                 <Node label="Error">
                   <Children>
-                    <Node label="Max Inundation" xpath="Inputs/Vector[@id='Max01']" type="vector" symbology="inundation_types" />
-                    <Node label="Min Inundation" xpath="Inputs/Vector[@id='Min01']" type="vector" symbology="inundation_types" />
+                    <Node label="Max Inundation" xpath="Inputs/Vector[@id='Max01']" type="line" symbology="inundation_types" />
+                    <Node label="Min Inundation" xpath="Inputs/Vector[@id='Min01']" type="line" symbology="inundation_types" />
                   </Children>
                 </Node>
               </Children>
@@ -39,8 +40,8 @@
           </Repeater>
           <Node label="Riverscape">
             <Children>
-              <Node xpathlabel="Name" xpath="Realizations/InundationContext/Inputs/Vector[@id='vbCL_01']" type="vector" symbology="" />
-              <Node xpathlabel="Name" xpath="Realizations/InundationContext/Inputs/Vector[@id='VB_01']" type="vector" symbology="valley_bottom" id="VB_poly" />
+              <Node xpathlabel="Name" xpath="Realizations/InundationContext/Inputs/Vector[@id='vbCL_01']" type="line" symbology="" />
+              <Node xpathlabel="Name" xpath="Realizations/InundationContext/Inputs/Vector[@id='VB_01']" type="line" symbology="valley_bottom" id="VB_poly" />
             </Children>
           </Node>
         </Children>
@@ -55,10 +56,10 @@
           </Node>
           <Node label="Context">
             <Children>
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='BRAT']" type="vector" symbology="BRAT" id="BRAT"/>
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VBET']" type="vector" symbology="VBET" id="vbet" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='BRAT']" type="line" symbology="BRAT" id="BRAT"/>
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VBET']" type="polygon" symbology="VBET" id="vbet" />
               <Node xpathlabel="Name" xpath="Inputs/DEM[@id='DEM']" type="raster" symbology="DEM" transparency="60" id="dem"/>
-              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="vector" symbology="hillshade" id="hillshade" />
+              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
             </Children>
           </Node>
         </Children>
@@ -75,15 +76,19 @@
   </Node>
   <Views default="WATERSHED_CONTEXT">
     <View name="Site Extent" id="SITE_EXTENT">
-      <Layer id="ap02" />
-      <Layer id="VB_poly" />
+      <Layers>
+        <Layer id="ap02" />
+        <Layer id="VB_poly" />
+      </Layers>
     </View>
     <View name="Watershed Context" id="WATERSHED_CONTEXT">
-      <Layer id="hillshade" />
-      <Layer id="dem" />
-      <Layer id="vbet" />
-      <Layer id="VB_poly" />
-      <Layer id="brat" />
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="dem" />
+        <Layer id="vbet" />
+        <Layer id="VB_poly" />
+        <Layer id="brat" />
+      </Layers>
     </View>
   </Views>
 </Project>

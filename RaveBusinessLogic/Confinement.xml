@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+  <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
+    <Name>Confinement</Name>
+    <ProjectType>CONFINEMENT</ProjectType>
+    <Node xpathlabel="Name">
+      <Children collapsed="false">
+        <Node xpathlabel="Name" xpath="Realizations/Confinement/Outputs/HTMLFile" type="file" />
+        <Node label="Outputs">
+          <Children>
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_MARGINS']" type="line" id="confinement_margins" symbology="confinement_margins" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
+            <Node label="Constriction Ratio" xpath="Realizations/Confinement/Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_BUFFERS']" type="line" id="confinement_buffer" symbology="" />
+          </Children>
+        </Node>
+        <Node label="Inputs">
+          <Children>
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="" />
+          </Children>
+        </Node>
+        <Node label="Intermediates">
+          <Children>
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Intermediates/Geopackage/Layers/Vector[@id='SPLIT_POINTS']" type="point" symbology="" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Intermediates/Geopackage/Layers/Vector[@id='FLOWLINE_SEGMENTS']" type="line" symbology="" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Intermediates/Geopackage/Layers/Vector[@id='ERROR_POLYLINES']" type="line" symbology="" />
+            <Node xpathlabel="Name" xpath="Realizations/Confinement/Intermediates/Geopackage/Layers/Vector[@id='ERROR_POLYGONS']" type="polygon" symbology="" />
+          </Children>
+        </Node>
+      </Children>
+    </Node>
+    <Views default="CONFINEMENT_RATIO"> 
+      <View name="Confinement Ratio by Stream Segment" id="CONFINEMENT_RATIO"> 
+        <Layers>
+          <Layer id="confining_poly" />
+          <Layer id="confinement_ratio" />
+        </Layers>
+      </View>
+      <View name="Constriction Ratio by Stream Segment" id="CONSTRICTION_RATIO"> 
+        <Layers>
+          <Layer id="confining_poly" />
+          <Layer id="constriction_ratio" />
+        </Layers>
+        </View>
+      <View name="Confinement Type by Stream Segment" id="CONFINEMENT_TYPE"> 
+        <Layers>
+          <Layer id="confining_poly" />
+          <Layer id="confinement_raw" /> 
+        </Layers>
+      </View>
+    </Views> 
+  </Project>

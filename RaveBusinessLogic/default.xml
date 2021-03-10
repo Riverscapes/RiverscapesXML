@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <Name>Default</Name>
-  <ProjectType>Default</ProjectType>
-  <Node xpathlabel="Name">
-    <Children>
-      <Repeater label="Realizations" xpath="Realizations/*">
-        <!--This is a template for how each realization should render-->
-        <Node xpathlabel="Name">
-          <Children collapsed="false">
-            <Node label="Inputs" xpath="Inputs">
-              <Children>
-                <Repeater label="Raster Layers" xpath="//Raster">
-                  <Node xpathlabel="Name" type="raster" symbology="" />
-                </Repeater>
-                <Repeater label="Vector Layers" xpath="//Vector">
-                  <Node xpathlabel="Name" type="vector" symbology="" />
-                </Repeater>
-                <Repeater label="Image Layers" xpath="//Image">
-                  <Node xpathlabel="Name" type="file" />
-                </Repeater>
-              </Children>
-            </Node>
-          </Children>
-        </Node>
-      </Repeater>
-    </Children>
-  </Node>
-</Project>
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+  <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
+    <Name>Default</Name>
+    <ProjectType>Default</ProjectType>
+    <Node xpathlabel="Name">
+      <Children>
+        <Repeater label="Realizations" xpath="Realizations/*">
+          <!--This is a template for how each realization should render-->
+          <Node xpathlabel="Name">
+            <Children collapsed="false">
+              <Node label="Inputs" xpath="Inputs">
+                <Children>
+                  <Repeater label="Raster Layers" xpath="//Raster">
+                    <Node xpathlabel="Name" type="raster" symbology="" />
+                  </Repeater>
+                  <Repeater label="Vector Layers" xpath="//Vector">
+                    <!-- TODO: this is a problem we need to address -->
+                    <Node xpathlabel="Name" type="polygon" symbology="" />
+                  </Repeater>
+                  <Repeater label="Image Layers" xpath="//Image">
+                    <Node xpathlabel="Name" type="file" />
+                  </Repeater>
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+        </Repeater>
+      </Children>
+    </Node>
+  </Project>

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-    <Name>Electrical Conductivity</Name>
-    <ProjectType>EC</ProjectType>
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
+    <Name>Solar Insolation</Name>
+    <ProjectType>Solar</ProjectType>
     <Node xpathlabel="Name">
         <Children>
-            <Repeater label="Realizations" xpath="Realizations/EC">
+            <Repeater label="Realizations" xpath="Realizations/Solar">
                 <!-- this is a template for how each realization should render-->
                 <Node xpathlabel="Name">
                     <Children collapsed="false">
                         <Node label="Inputs" xpath="Inputs">
                             <Children>
+                                <Repeater label="Rasters" xpath="Raster">
+                                    <Node xpathlabel="Name" xpath="Raster" type="raster" symbology="" />
+                                </Repeater>
                                 <Repeater label="Vectors" xpath="Vector">
-                                    <Node xpathlabel="Name" xpath="Vector" type="vector" symbology="" />
+                                    <Node xpathlabel="Name" xpath="Vector" type="line" symbology="" />
                                 </Repeater>
                             </Children>
                         </Node>
@@ -19,7 +23,8 @@
                             <Children>
                                 <Node label="Outputs" xpath="Analysis/Outputs">
                                     <Children>
-                                        <Node xpathlabel="Name" xpath="Vector" type="vector" symbology="Conductivity" />
+                                        <Node xpathlabel="Name" xpath="Raster" type="raster" symbology="Solar_Raster" />
+                                        <Node xpathlabel="Name" xpath="Vector" type="line" symbology="Solar_Vector" />
                                     </Children>
                                 </Node>
                             </Children>
