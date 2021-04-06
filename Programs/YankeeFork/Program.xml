@@ -19,6 +19,12 @@
       <Collection id="COL_SITE" name="Site">
         <AllowRegex pattern=".*" />
       </Collection>
+      <Collection id="COL_VISIT" name="Visit">
+        <AllowRegex pattern="^[0-9]{2,6}$" />
+      </Collection>
+      <Collection id="COL_YEAR" name="Year">
+        <AllowRegex pattern="^[0-9]{4}$" />
+      </Collection>      
     </Collections>
 
     <!--Groups are a lot simpler than collections. They can only be a single folder-->
@@ -26,11 +32,15 @@
       <Group id="GRP_BASE" name="CHaMP" folder="CHaMP" />
       <Group id="GRP_WATERSHED" name="Watershed" folder="Watershed" />
       <Group id="GRP_SITE" name="Site" folder="Site" />
+      <Group id="GRP_YEAR" name="Year" folder="Year" />
     </Groups>
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
     <Products>
+      <!--Site-level products-->      
       <Product id="GCD" name="GCD" folder="GCD" url="" />
+      <!--Visit-level products-->
+      <Product id="Topo" name="Topo" folder="Topo" url="" />
     </Products>
   </Definitions>
 
@@ -49,6 +59,13 @@
           <Group ref="GRP_SITE">
             <Collection ref="COL_SITE">
               <Product ref="GCD" />
+              <Group ref="GRP_YEAR">
+                <Collection ref="COL_YEAR">
+                  <Collection ref="COL_VISIT">
+                    <Product ref="Topo" />
+                  </Collection>
+                </Collection>
+              </Group>
             </Collection>
           </Group>
         </Collection>
