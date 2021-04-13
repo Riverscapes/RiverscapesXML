@@ -9,7 +9,6 @@
 		{
 			"path": "Programs"
 		},
-
 		{
 			"path": "python"
 		},
@@ -18,5 +17,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "python/.venv_rsxml/bin/python"
+	}
 }
