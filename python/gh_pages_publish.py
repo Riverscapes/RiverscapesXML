@@ -33,7 +33,8 @@ def build_index():
     """
     output = {}
     for folder in FOLDERS:
-        files = glob.glob(os.path.join('.', folder, '**', '**', '*.*'))
+        files = glob.glob(os.path.join(
+            '.', folder, '**', '*.*'), recursive=True)
         for fl in files:
             if os.path.isfile(fl):
                 relp = os.path.relpath(fl)
