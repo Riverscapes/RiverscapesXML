@@ -8,6 +8,9 @@ import shutil
 FOLDERS = [
     'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic'
 ]
+FILES = [
+    'BaseMaps.xml'
+]
 PUBLIC_DIR = 'PUBLIC'
 INDEX_JSON = 'index.json'
 INDEX_HTML = 'index.html'
@@ -43,6 +46,12 @@ def build_index():
     if os.path.isfile(INDEX_JSON):
         os.remove(INDEX_JSON)
 
+    # Basemaps is a special case
+    for fl in FILES:
+        if os.path.isfile(fl):
+            relp = os.path.relpath(fl)
+            output[relp] = md5(fl)
+
     with open(INDEX_JSON, 'w') as indf:
         json.dump(output, indf, sort_keys=True, indent=4)
 
@@ -66,6 +75,11 @@ def prep_copy():
         src = os.path.join('.', folder)
         dst = os.path.join('.', PUBLIC_DIR, folder)
         shutil.copytree(src, dst)
+
+    for fl in FILES:
+        src = os.path.join('.', fl)
+        dst = os.path.join('.', PUBLIC_DIR, fl)
+        shutil.copy(src, dst)
 
 
 if __name__ == '__main__':
