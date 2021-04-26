@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Cutsom Github Pages Build (with md5 digest)
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -31,7 +31,7 @@ jobs:
       - name: Build public site
         run: |
           python python/gh_pages_publish.py
-          
+
       # Custom Jekyll
       - name: Deploy to GitHub Pages
         if: success()
