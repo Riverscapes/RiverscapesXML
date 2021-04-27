@@ -50,6 +50,7 @@ def build_index():
                 output[relp] = md5(fl)
 
     if os.path.isfile(INDEX_JSON):
+        logging.warning('Removing file: {}'.format(INDEX_JSON))
         os.remove(INDEX_JSON)
 
     # Basemaps is a special case
@@ -59,6 +60,7 @@ def build_index():
             output[relp] = md5(fl)
 
     with open(INDEX_JSON, 'w') as indf:
+        logging.info('Writing {}'.format(INDEX_JSON))
         json.dump(output, indf, sort_keys=True, indent=4)
 
     logging.info('  complete.')
