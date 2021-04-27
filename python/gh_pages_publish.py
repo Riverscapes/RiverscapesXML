@@ -12,6 +12,7 @@ FOLDERS = [
     'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic'
 ]
 FILES = [
+    'CNAME',
     'BaseMaps.xml'
 ]
 PUBLIC_DIR = 'PUBLIC'
