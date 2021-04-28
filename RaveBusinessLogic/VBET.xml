@@ -10,19 +10,19 @@
           <Node label="Outputs" xpath="Outputs">
             <Children>
               <!-- Old shapefiles - Remove when no longer needed  -->
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
               <Node xpathlabel="Name" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet" />
-
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" id="vbet50" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_80']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet" />
+              
               <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_80']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" id="vbet50" symbology="vbet" />
 
               <Node xpathlabel="Name" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" />
             </Children>
@@ -76,19 +76,19 @@
           <Node label="Raw VBET Threshold Polygons">
             <Children>
               <!-- Shapefiles -->
-              <Node label="50% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
-              <Node label="60% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
-              <Node label="70% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_70']" type="polygon" symbology="threshold_70" />
-              <Node label="80% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_80']" type="polygon" symbology="threshold_80" />
-              <Node label="90% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_90']" type="polygon" symbology="threshold_90" />
               <Node label="100% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_100']" type="polygon" symbology="threshold_100" />
+              <Node label="90% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_90']" type="polygon" symbology="threshold_90" />
+              <Node label="80% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_80']" type="polygon" symbology="threshold_80" />
+              <Node label="70% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_70']" type="polygon" symbology="threshold_70" />
+              <Node label="60% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
+              <Node label="50% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
 
-              <Node label="50% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
-              <Node label="60% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
-              <Node label="70% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_70']" type="polygon" symbology="threshold_70" />
-              <Node label="80% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_80']" type="polygon" symbology="threshold_80" />
-              <Node label="90% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_90']" type="polygon" symbology="threshold_90" />
               <Node label="100% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_100']" type="polygon" symbology="threshold_100" />
+              <Node label="90% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_90']" type="polygon" symbology="threshold_90" />
+              <Node label="80% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_80']" type="polygon" symbology="threshold_80" />
+              <Node label="70% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_70']" type="polygon" symbology="threshold_70" />
+              <Node label="60% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
+              <Node label="50% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
 
               <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" />
             </Children>
