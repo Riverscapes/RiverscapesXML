@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
   <Name>Yankee Fork</Name>
@@ -7,7 +7,7 @@
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
     <Meta name="access">PRIVATE</Meta>
-    <Meta name="projectXSDs">http://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
+    <Meta name="projectXSDs">https://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
   </MetaData>
 
   <Definitions>
@@ -24,7 +24,7 @@
       </Collection>
       <Collection id="COL_YEAR" name="Year">
         <AllowRegex pattern="^[0-9]{4}$" />
-      </Collection>      
+      </Collection>
     </Collections>
 
     <!--Groups are a lot simpler than collections. They can only be a single folder-->
@@ -37,7 +37,7 @@
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
     <Products>
-      <!--Site-level products-->      
+      <!--Site-level products-->
       <Product id="GCD" name="GCD" folder="GCD" url="" />
       <!--Visit-level products-->
       <Product id="Topo" name="Topo" folder="Topo" url="" />
