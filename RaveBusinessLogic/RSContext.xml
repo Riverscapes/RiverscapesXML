@@ -5,11 +5,11 @@
   <ProjectType>RSContext</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/RSContext">
     <Children collapsed="false">
-      <Node xpathlabel="Name" xpath="Realizations/RSContext/HTMLFile[@id='REPORT']" type="file" />
+      <Node xpathlabel="Name" xpath="HTMLFile[@id='REPORT']" type="file" />
       <Node label="Transportation Local">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Realizations/RSContext/Vector[@id='Roads']" type="line" symbology="roads" />
-          <Node xpathlabel="Name" xpath="Realizations/RSContext/Vector[@id='Rail']" type="line" symbology="railroads" />
+          <Node xpathlabel="Name" xpath="Vector[@id='Roads']" type="line" symbology="roads" />
+          <Node xpathlabel="Name" xpath="Vector[@id='Rail']" type="line" symbology="railroads" />
         </Children>
       </Node>
       <Node label="Hydrology">
