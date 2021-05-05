@@ -90,7 +90,7 @@
               <Node label="60% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
               <Node label="50% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
 
-              <Node xpathlabel="Name" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" />
+              <!-- <Node xpathlabel="Name" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" /> -->
             </Children>
           </Node>
         </Children>
