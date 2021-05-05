@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/Landfire.xsd">
+	<Name>National Landfire Datasets</Name>
+	<ProjectType>Landfire</ProjectType>
+	<MetaData>
+		<Meta name="dateCreated">2019-09-13T16:42:24.610951</Meta>
+	</MetaData>
+	<Realizations>
+		<Landfire dateCreated="2019-09-13T16:42:24.619206" guid="957159b2-af34-4be6-a317-4fccd1789cca" id="Landfire" productVersion="1.4">
+			<Name>LandFire Version 1.4</Name>
+			<Raster guid="05ea9da4-5fa7-4ebc-a454-7784cca1c72c" id="EVT140">
+				<Name>Existing Vegetation Type</Name>
+				<Path>us_140evt.tif</Path>
+			</Raster>
+			<Raster guid="3e894b73-1a82-4afd-8166-f87381765e8e" id="BPS140">
+				<Name>Biophysical Settings</Name>
+				<Path>us_140bps.tif</Path>
+			</Raster>
+		</Landfire>
+	</Realizations>
+</Project>

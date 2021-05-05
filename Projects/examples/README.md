@@ -1,0 +1,1 @@
+Everything file in this folder must correspond to an XSD file in name

@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/pyBRAT.xsd">
+	<Name>py</Name>
+	<ProjectType>pyBRAT</ProjectType>
+	<MetaData>
+		<Meta name="dateCreated">2020-10-24T19:12:47.377177</Meta>
+		<Meta name="ModelVersion">4.0.5</Meta>
+		<Meta name="date_created">1603584767</Meta>
+		<Meta name="HUC8">py</Meta>
+		<Meta name="pyBRAT Version">4.0.5</Meta>
+		<Meta name="watershed">py</Meta>
+	</MetaData>
+	<Realizations>
+		<pyBRAT id="NEED pyBRAT ID" dateCreated="2020-10-24T19:12:47.391139" guid="cfc984ef-1656-11eb-86fc-484d7ed4fa8d" productVersion="4.0.5">
+			<Name>py</Name>
+			<Inputs>
+				<Vector guid="cfc9abe5-1656-11eb-a335-484d7ed4fa8d" id="EXISTING_VEGETATION">
+					<Name>Existing Vegetation</Name>
+					<Path>COULD NOT FIND ['EVT', 'Existing']</Path>
+				</Vector>
+				<Vector guid="cfcaec63-1656-11eb-ab1f-484d7ed4fa8d" id="HISTORIC_VEGETATION">
+					<Name>Historic Vegetation</Name>
+					<Path>COULD NOT FIND ['BPS', 'Historic']</Path>
+				</Vector>
+				<Vector guid="cfcbd504-1656-11eb-a455-484d7ed4fa8d" id="NHD_FLOWLINES">
+					<Name>NHD Flowlines</Name>
+					<Path>COULD NOT FIND ['NHD', 'Reaches']</Path>
+				</Vector>
+				<Vector guid="cfcc98e3-1656-11eb-bf9a-484d7ed4fa8d" id="NED_10M_DEM">
+					<Name>NED 10m DEM</Name>
+					<Path>COULD NOT FIND ['DEM', '10m']</Path>
+				</Vector>
+				<Vector guid="cfcd715a-1656-11eb-bb06-484d7ed4fa8d" id="DRAINAGE_AREA_IN_SQKM">
+					<Name>Drainage Area in sqkm</Name>
+					<Path>COULD NOT FIND ['DrainArea']</Path>
+				</Vector>
+				<Vector guid="cfce343a-1656-11eb-9bfc-484d7ed4fa8d" id="DEM_HILLSHADE">
+					<Name>DEM Hillshade</Name>
+					<Path>COULD NOT FIND ['Hillshade']</Path>
+				</Vector>
+				<Vector guid="cfcf18da-1656-11eb-b52b-484d7ed4fa8d" id="SLOPE_RASTER">
+					<Name>Slope Raster</Name>
+					<Path>COULD NOT FIND ['Slope']</Path>
+				</Vector>
+				<Vector guid="cfd002b5-1656-11eb-b9ba-484d7ed4fa8d" id="VALLEY_BOTTOM">
+					<Name>Valley Bottom</Name>
+					<Path>COULD NOT FIND ['ValleyBottom', 'Provisional']</Path>
+				</Vector>
+				<Vector guid="cfd0c579-1656-11eb-ac73-484d7ed4fa8d" id="ROADS">
+					<Name>Roads</Name>
+					<Path>COULD NOT FIND ['roads']</Path>
+				</Vector>
+				<Vector guid="cfd1b05b-1656-11eb-adef-484d7ed4fa8d" id="RAILS">
+					<Name>Rails</Name>
+					<Path>COULD NOT FIND ['rails']</Path>
+				</Vector>
+				<Vector guid="cfd29a18-1656-11eb-a427-484d7ed4fa8d" id="CANALS">
+					<Name>Canals</Name>
+					<Path>COULD NOT FIND ['Canals']</Path>
+				</Vector>
+				<Vector guid="cfd383d7-1656-11eb-a58c-484d7ed4fa8d" id="POINTS_OF_DIVERSION">
+					<Name>Points of Diversion</Name>
+					<Path>COULD NOT FIND ['diversion']</Path>
+				</Vector>
+				<Vector guid="cfd49508-1656-11eb-a049-484d7ed4fa8d" id="LAND_USE_RASTER">
+					<Name>Land Use Raster</Name>
+					<Path>COULD NOT FIND ['land_use', 'landuse', 'EVT', 'Existing']</Path>
+				</Vector>
+				<Vector guid="cfd642ab-1656-11eb-820d-484d7ed4fa8d" id="LAND_OWNERSHIP_RASTER">
+					<Name>land Ownership Raster</Name>
+					<Path>COULD NOT FIND ['Ownership', 'SurfaceManagement', 'Agency']</Path>
+				</Vector>
+				<Vector guid="cfd72c0d-1656-11eb-9edc-484d7ed4fa8d" id="NHD_FLOWLINES_PERENNIAL">
+					<Name>NHD Flowlines (Perennial)</Name>
+					<Path>COULD NOT FIND ['NHD_24k_perennial', 'Perennial']</Path>
+				</Vector>
+				<Vector guid="cfd83cc2-1656-11eb-9fee-484d7ed4fa8d" id="BEAVER_DAMS">
+					<Name>Beaver Dams</Name>
+					<Path>COULD NOT FIND ['Dams', 'BeaverDams', 'Beaver_Dams']</Path>
+				</Vector>
+			</Inputs>
+			<Outputs>
+				<Vector guid="cfd94e98-1656-11eb-a78d-484d7ed4fa8d" id="DATA_VALIDATION">
+					<Name>Data Validation</Name>
+					<Path>COULD NOT FIND ['Data_Validation', 'Validation']</Path>
+				</Vector>
+				<Vector guid="cfda5e2e-1656-11eb-8ae8-484d7ed4fa8d" id="DATA_VALIDATION_PERENNIAL">
+					<Name>Data Validation (Perennial)</Name>
+					<Path>COULD NOT FIND ['Data_Validation_Perennial']</Path>
+				</Vector>
+				<Vector guid="cfdb6ee2-1656-11eb-9fa2-484d7ed4fa8d" id="BRAT_TABLE">
+					<Name>BRAT Table</Name>
+					<Path>COULD NOT FIND ['BRAT_Table']</Path>
+				</Vector>
+				<Vector guid="cfdca834-1656-11eb-99c9-484d7ed4fa8d" id="BRAT_TABLE_PERENNIAL">
+					<Name>BRAT Table (Perennial)</Name>
+					<Path>COULD NOT FIND ['BRAT_Table_Perennial']</Path>
+				</Vector>
+				<Vector guid="cfddba23-1656-11eb-b410-484d7ed4fa8d" id="COMBINED_CAPACITY">
+					<Name>Combined Capacity</Name>
+					<Path>COULD NOT FIND ['Combined_Capacity', 'Capacity']</Path>
+				</Vector>
+				<Vector guid="cfdf1879-1656-11eb-9073-484d7ed4fa8d" id="COMBINED_CAPACITY_PERENNIAL">
+					<Name>Combined Capacity (Perennial)</Name>
+					<Path>COULD NOT FIND ['Combined_Capacity_Perennial']</Path>
+				</Vector>
+				<Vector guid="cfe04fa5-1656-11eb-84bc-484d7ed4fa8d" id="CONSERVATION_RESTORATION">
+					<Name>Conservation Restoration</Name>
+					<Path>COULD NOT FIND ['Conservation_Restoration']</Path>
+				</Vector>
+				<Vector guid="cfe171ed-1656-11eb-9aa3-484d7ed4fa8d" id="CONSERVATION_RESTORATION_PERENNIAL">
+					<Name>Conservation Restoration (Perennial)</Name>
+					<Path>COULD NOT FIND ['Conservation_Restoration_Perennial']</Path>
+				</Vector>
+			</Outputs>
+		</pyBRAT>
+	</Realizations>
+</Project>

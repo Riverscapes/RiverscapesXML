@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/FHM.xsd">
+	<Name>CBW05583-090282</Name>
+	<ProjectType>FHM</ProjectType>
+	<MetaData>
+		<Meta name="CreatedOn">2017-09-08T20:01:15</Meta>
+		<Meta name="Region">CRB</Meta>
+		<Meta name="Site">CBW05583-090282</Meta>
+		<Meta name="Watershed">UpperGrandeRonde</Meta>
+	</MetaData>
+
+	<Realizations>
+		<FHM dateCreated="2017-09-08T20:01:15" guid="06C4CFF5-56F0-473D-95F1-8E516ECD150D" id="S0002_28816" productVersion="0.0.1">
+			<Name/>
+			<MetaData>
+				<Meta name="Visit">2142</Meta>
+				<Meta name="Discharge">S0002_28816</Meta>
+			</MetaData>
+			<Inputs>
+				<Cover id="2014_VISIT_2142_S0002_28816_CoverIndex">
+					<Name>2014 Visit 2142 S0002_28816 Cover Index</Name>
+					<Path>2014\VISIT_2142\S0002_28816\Inputs\CoverIndex\CoverIndex.tif</Path>
+				</Cover>
+				<Substrate id="2014_VISIT_2142_S0002_28816_Substrate">
+					<Name>2014 Visit 2142 S0002_28816 Substrate</Name>
+					<Path>2014\VISIT_2142\S0002_28816\Inputs\GrainSize\D50.tif</Path>
+				</Substrate>
+				<Velocity id="2014_VISIT_2142_S0002_28816_Velocity">
+					<Name>2014 Visit 2142 S0002_28816 Velocity</Name>
+					<Path>2014\VISIT_2142\S0002_28816\Inputs\Hydraulics\Vel.tif</Path>
+				</Velocity>
+				<Depth id="2014_VISIT_2142_S0002_28816_Depth">
+					<Name>2014 Visit 2142 S0002_28816 Depth</Name>
+					<Path>2014\VISIT_2142\S0002_28816\Inputs\Hydraulics\Depth.tif</Path>
+				</Depth>
+			</Inputs>
+			<Analyses>
+				<Analysis>
+					<Name>2014 Visit 2142 S0002_28816 Chinook Spawner</Name>
+					<Models>
+						<FIS>
+							<FISFile>2014\VISIT_2142\S0002_28816\Analyses\FIS\Chinook\Spawner\Run_01\FISModel\FuzzyChinookSpawner_DVSC.fis</FISFile>
+							<MetaData>
+								<Meta name="Species">Chinook</Meta>
+								<Meta name="LifeStage">Spawner</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Chinook\Spawner\Run_01\FuzzyHQ.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</FIS>
+						<HSI>
+							<MetaData>
+								<Meta name="Species">Chinook</Meta>
+								<Meta name="LifeStage">Spawner</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Chinook\Spawner\Run_01\HSI.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</HSI>
+					</Models>
+				</Analysis>
+				<Analysis>
+					<Name>2014 Visit 2142 S0002_28816 Steelhead Spawner</Name>
+					<Models>
+						<FIS>
+							<FISFile>2014\VISIT_2142\S0002_28816\Analyses\FIS\Steelhead\Spawner\Run_01\FISModel\FuzzySteelheadSpawner_DVSC.fis</FISFile>
+							<MetaData>
+								<Meta name="Species">Steelhead</Meta>
+								<Meta name="LifeStage">Spawner</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Steelhead\Spawner\Run_01\FuzzyHQ.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</FIS>
+						<HSI>
+							<MetaData>
+								<Meta name="Species">Steelhead</Meta>
+								<Meta name="LifeStage">Spawner</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Steelhead\Spawner\Run_01\HSI.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</HSI>
+					</Models>
+				</Analysis>
+				<Analysis>
+					<Name>2014 Visit 2142 S0002_28816 Chinook Juvenile</Name>
+					<Models>
+						<FIS>
+							<MetaData>
+								<Meta name="Species">Chinook</Meta>
+								<Meta name="LifeStage">Juvenile</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Chinook\Juvenile\Run_01\FuzzyHQ.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</FIS>
+						<HSI>
+							<MetaData>
+								<Meta name="Species">Chinook</Meta>
+								<Meta name="LifeStage">Juvenile</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Chinook\Juvenile\Run_01\HSI.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</HSI>
+					</Models>
+				</Analysis>
+				<Analysis>
+					<Name>2014 Visit 2142 S0002_28816 Steelhead Juvenile</Name>
+					<Models>
+						<FIS>
+							<MetaData>
+								<Meta name="Species">Steelhead</Meta>
+								<Meta name="LifeStage">Juvenile</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Steelhead\Juvenile\Run_01\FuzzyHQ.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</FIS>
+						<HSI>
+							<MetaData>
+								<Meta name="Species">Steelhead</Meta>
+								<Meta name="LifeStage">Juvenile</Meta>
+							</MetaData>
+							<Outputs>
+								<Raster id="">
+									<Name>Fish Habitat</Name>
+									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Steelhead\Juvenile\Run_01\HSI.tif</Path>
+									<MetaData>
+										<Meta name="Type"/>
+									</MetaData>
+								</Raster>
+							</Outputs>
+							<Metrics>
+								<Metric name="WUA">0.0</Metric>
+							</Metrics>
+						</HSI>
+					</Models>
+				</Analysis>
+			</Analyses>
+		</FHM>
+	</Realizations>
+</Project>

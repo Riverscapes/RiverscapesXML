@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/QRF.xsd">
+	<Name>
+		Quantile Regression Forest - Carrying Capacity
+	</Name>
+	<ProjectType>
+		QRF
+	</ProjectType>
+	<MetaData>
+		<Meta name="HUCID">
+			17
+		</Meta>
+		<Meta name="Region">
+			CRB
+		</Meta>
+	</MetaData>
+	<Inputs>
+
+		<CSV guid="1200dd00-8dd5-11e7-a4d0-3c0754144692" id="FishData">
+			<Name>
+				Fish Data
+			</Name>
+			<Path>
+				Inputs/FishData.csv
+			</Path>
+			<MetaData>
+				<Meta name="Description">
+					Juvenile fish or redd density, in units of fish (or redds) per meter, by species, lifestage, sitename and year.
+				</Meta>
+			</MetaData>
+		</CSV>
+
+		<CSV guid="18c7c540-8dd5-11e7-a4d0-3c0754144692" id="HabitatData">
+			<Name>
+				Habitat Data
+			</Name>
+			<Path>
+				Inputs/HabitatData.csv
+			</Path>
+			<MetaData>
+				<Meta name="Description">
+					Habitat metrics collected by CHaMP for each site visit.
+				</Meta>
+			</MetaData>
+		</CSV>
+
+		<CSV guid="10ec0352-579a-11e7-b5b4-3c0754144692" id="GAA">
+			<Name>
+				GAA
+			</Name>
+			<Path>
+				Inputs/IC_Sites_withMetrics_20151016.csv
+			</Path>
+			<MetaData>
+				<Meta name="Description">
+					Globally Available Attributes from all master sample sites
+				</Meta>
+			</MetaData>
+		</CSV>
+
+	</Inputs>
+
+	<Realizations>
+
+		<QRF promoted="true" id="ChnkParr_20170830" dateCreated="2017-08-30T17:13:05" productVersion="1.0.0" guid="c98d05f4-579b-11e7-b5b4-3c0754144692">
+			<Name>
+				Chinook Parr
+			</Name>
+			<MetaData>
+				<Meta name="Species">
+					Spring/Summer Chinook
+				</Meta>
+				<Meta name="LifeStage">
+					Summer Parr
+				</Meta>
+				<Meta name="Response">
+					Fish per m
+				</Meta>
+			</MetaData>
+			<Inputs>
+				<CSV ref="FishData"/>
+				<CSV ref="HabitatData"/>
+				<CSV ref="GAA"/>
+				<CSV guid="edb3d92e-8dda-11e7-b4ec-3c0754144692" id="SelMetrics_ChnkParr">
+					<Name>
+						Habitat Metrics
+					</Name>
+					<Path>
+						ChnkParr/Inputs/SelectedMetrics.csv
+					</Path>
+					<MetaData>
+						<Meta name="Description">
+							Selected CHaMP habitat metrics for QRF analysis
+						</Meta>
+					</MetaData>
+				</CSV>
+			</Inputs>
+
+			<Analyses>
+				<Analysis>
+					<Name>
+						QRF Analysis
+					</Name>
+					<Outputs>
+						<CSV guid="f2750a44-579f-11e7-b5b4-3c0754144692" id="CHaMPVisitCap_ChnkParr">
+							<Name>
+								CHaMP Visit Capacity
+							</Name>
+							<Path>
+								ChnkParr/Outputs/CHaMP_Visits_ChnkParrCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="0c008fba-57a0-11e7-b5b4-3c0754144692" id="CHaMPSiteCap_ChnkParr">
+							<Name>
+								CHaMP Site Capacity
+							</Name>
+							<Path>
+								ChnkParr/Outputs/CHaMP_Sites_ChnkParrCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="1784b55a-57a0-11e7-b5b4-3c0754144692" id="AllSitesCapPerM_ChnkParr">
+							<Name>
+								Master Sample Site Linear Capacity
+							</Name>
+							<Path>
+								ChnkParr/Outputs/Chnk_Cap_QRF_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="2cc275c4-57a0-11e7-b5b4-3c0754144692" id="AllSitesCapPerM2_ChnkParr">
+							<Name>
+								Master Sample Site Areal Capacity
+							</Name>
+							<Path>
+								ChnkParr/Outputs/Chnk_Cap_QRF_perM2_20170830.csv
+							</Path>
+						</CSV>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+		</QRF>
+
+		<QRF promoted="true" id="ChnkRedds_20170830" dateCreated="2017-08-30T17:14:47" productVersion="1.0.0" guid="7043f814-8de1-11e7-b4ec-3c0754144692">
+			<Name>
+				Chinook Redds
+			</Name>
+			<MetaData>
+				<Meta name="Species">
+					Spring/Summer Chinook
+				</Meta>
+				<Meta name="LifeStage">
+					Summer Parr
+				</Meta>
+				<Meta name="Response">
+					Redds per m
+				</Meta>
+			</MetaData>
+			<Inputs>
+				<CSV ref="FishData"/>
+				<CSV ref="HabitatData"/>
+				<CSV ref="GAA"/>
+				<CSV guid="7dc02878-8de1-11e7-b4ec-3c0754144692" id="SelMetrics_ChnkRedds">
+					<Name>
+						Habitat Metrics
+					</Name>
+					<Path>
+						ChnkRedds/Inputs/SelectedMetrics.csv
+					</Path>
+					<MetaData>
+						<Meta name="Description">
+							Selected CHaMP habitat metrics for QRF analysis
+						</Meta>
+					</MetaData>
+				</CSV>
+			</Inputs>
+
+			<Analyses>
+				<Analysis>
+					<Name>
+						QRF Analysis
+					</Name>
+					<Outputs>
+						<CSV guid="ad9a2b8e-8de1-11e7-b4ec-3c0754144692" id="CHaMPVisitCap_ChnkRedds">
+							<Name>
+								CHaMP Visit Capacity
+							</Name>
+							<Path>
+								ChnkRedds/Outputs/CHaMP_Visits_ChnkReddsCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="b756e59a-8de1-11e7-b4ec-3c0754144692" id="CHaMPSiteCap_ChnkRedds">
+							<Name>
+								CHaMP Site Capacity
+							</Name>
+							<Path>
+								ChnkRedds/Outputs/CHaMP_Sites_ChnkReddsCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="c0c5f6de-8de1-11e7-b4ec-3c0754144692" id="AllSitesCapPerM_ChnkRedds">
+							<Name>
+								Master Sample Site Linear Capacity
+							</Name>
+							<Path>
+								ChnkRedds/Outputs/Chnk_Cap_QRF_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="cba64cfc-8de1-11e7-b4ec-3c0754144692" id="AllSitesCapPerM2_ChnkRedds">
+							<Name>
+								Master Sample Site Areal Capacity
+							</Name>
+							<Path>
+								ChnkRedds/Outputs/Chnk_Cap_QRF_perM2_20170830.csv
+							</Path>
+						</CSV>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+		</QRF>
+
+		<QRF promoted="true" id="SthdJuv_20170830" dateCreated="2017-08-30T17:21:00" productVersion="1.0.0" guid="5f47bb44-8de2-11e7-b4ec-3c0754144692">
+			<Name>
+				Steelhead Juveniles
+			</Name>
+			<MetaData>
+				<Meta name="Species">
+					Summer Steelhead
+				</Meta>
+				<Meta name="LifeStage">
+					Summer Juveniles
+				</Meta>
+				<Meta name="Response">
+					Fish per m
+				</Meta>
+			</MetaData>
+			<Inputs>
+				<CSV ref="FishData"/>
+				<CSV ref="HabitatData"/>
+				<CSV ref="GAA"/>
+				<CSV guid="670de6dc-8de2-11e7-b4ec-3c0754144692" id="SelMetrics_SthdJuv">
+					<Name>
+						Habitat Metrics
+					</Name>
+					<Path>
+						SthdJuv/Inputs/SelectedMetrics.csv
+					</Path>
+					<MetaData>
+						<Meta name="Description">
+							Selected CHaMP habitat metrics for QRF analysis
+						</Meta>
+					</MetaData>
+				</CSV>
+			</Inputs>
+
+			<Analyses>
+				<Analysis>
+					<Name>
+						QRF Analysis
+					</Name>
+					<Outputs>
+						<CSV guid="6e4398a2-8de2-11e7-b4ec-3c0754144692" id="CHaMPVisitCap_SthdJuv">
+							<Name>
+								CHaMP Visit Capacity
+							</Name>
+							<Path>
+								SthdJuv/Outputs/CHaMP_Visits_SthdJuvCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="773c3c66-8de2-11e7-b4ec-3c0754144692" id="CHaMPSiteCap_SthdJuv">
+							<Name>
+								CHaMP Site Capacity
+							</Name>
+							<Path>
+								SthdJuv/Outputs/CHaMP_Sites_SthdJuvCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="7df7b0b2-8de2-11e7-b4ec-3c0754144692" id="AllSitesCapPerM_SthdJuv">
+							<Name>
+								Master Sample Site Linear Capacity
+							</Name>
+							<Path>
+								SthdJuv/Outputs/Sthd_Cap_QRF_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="84e46898-8de2-11e7-b4ec-3c0754144692" id="AllSitesCapPerM2_SthdJuv">
+							<Name>
+								Master Sample Site Areal Capacity
+							</Name>
+							<Path>
+								SthdJuv/Outputs/Sthd_Cap_QRF_perM2_20170830.csv
+							</Path>
+						</CSV>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+		</QRF>
+
+		<QRF promoted="true" id="SthdRedds_20170830" dateCreated="2017-08-30T17:21:24" productVersion="1.0.0" guid="8d5ea8da-8de2-11e7-b4ec-3c0754144692">
+			<Name>
+				Steelhead Redds
+			</Name>
+			<MetaData>
+				<Meta name="Species">
+					Summer Steelhead
+				</Meta>
+				<Meta name="LifeStage">
+					Redds
+				</Meta>
+				<Meta name="Response">
+					Redds per m
+				</Meta>
+			</MetaData>
+			<Inputs>
+				<CSV ref="FishData"/>
+				<CSV ref="HabitatData"/>
+				<CSV ref="GAA"/>
+				<CSV guid="95d5635a-8de2-11e7-b4ec-3c0754144692" id="SelMetrics_SthdRedds">
+					<Name>
+						Habitat Metrics
+					</Name>
+					<Path>
+						SthdRedds/Inputs/SelectedMetrics.csv
+					</Path>
+					<MetaData>
+						<Meta name="Description">
+							Selected CHaMP habitat metrics for QRF analysis
+						</Meta>
+					</MetaData>
+				</CSV>
+			</Inputs>
+
+			<Analyses>
+				<Analysis>
+					<Name>
+						QRF Analysis
+					</Name>
+					<Outputs>
+						<CSV guid="a18cda7a-8de2-11e7-b4ec-3c0754144692" id="CHaMPVisitCap_SthdRedds">
+							<Name>
+								CHaMP Visit Capacity
+							</Name>
+							<Path>
+								SthdRedds/Outputs/CHaMP_Visits_SthdReddsCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="aaafa65a-8de2-11e7-b4ec-3c0754144692" id="CHaMPSiteCap_SthdRedds">
+							<Name>
+								CHaMP Site Capacity
+							</Name>
+							<Path>
+								SthdRedds/Outputs/CHaMP_Sites_SthdReddsCap_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="b1611f88-8de2-11e7-b4ec-3c0754144692" id="AllSitesCapPerM_SthdRedds">
+							<Name>
+								Master Sample Site Linear Capacity
+							</Name>
+							<Path>
+								SthdRedds/Outputs/Sthd_Cap_QRF_perM_20170830.csv
+							</Path>
+						</CSV>
+						<CSV guid="b9c0c2dc-8de2-11e7-b4ec-3c0754144692" id="AllSitesCapPerM2_SthdRedds">
+							<Name>
+								Master Sample Site Areal Capacity
+							</Name>
+							<Path>
+								SthdRedds/Outputs/Sthd_Cap_QRF_perM2_20170830.csv
+							</Path>
+						</CSV>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+		</QRF>
+
+	</Realizations>
+</Project>

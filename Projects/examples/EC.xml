@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:noNamespaceSchemaLocation="../XSD/V1/EC.xsd">
+	<Name>
+		Lower John Day Conductivity
+	</Name>
+	<ProjectType>
+		EC
+	</ProjectType>
+	<MetaData>
+		<Meta name="HUCID">
+			17070204
+		</Meta>
+		<Meta name="Region">
+			CRB
+		</Meta>
+		<Meta name="Watershed">
+			Lower John Day
+		</Meta>
+		<Meta name="Model">
+			rf17bCnd9
+		</Meta>
+	</MetaData>
+	<Inputs/>
+	<Realizations>
+		<EC dateCreated="2017-05-04T19:33:47.730000" guid="A1BB5C7F-BBF2-494A-ADE0-3B14FD0C2A96" id="run201705030744" productVersion="0.5.3">
+			<Name>
+				Run 01
+			</Name>
+			<MetaData>
+				<Meta name="Operator">
+					SFR_Admin
+				</Meta>
+				<Meta name="ComputerID">
+					SFR_Processor
+				</Meta>
+				<Meta name="Polystat Start Time">
+					2017-05-03T07:44:16.490000
+				</Meta>
+				<Meta name="Polystat Stop Time">
+					2017-05-04T19:33:47.730000
+				</Meta>
+				<Meta name="Predict Start Time">
+					2017-05-04T21:39:14.538000
+				</Meta>
+				<Meta name="Predict Stop Time">
+					2017-05-04T21:39:28.966000
+				</Meta>
+			</MetaData>
+			<Parameters>
+				<Param name="Environmental Parameter Workspace">
+					C:\SFR\Jesse\ISEMP\Data\Conductivity\params03
+				</Param>
+			</Parameters>
+			<Inputs>
+				<Vector guid="52561D12-503D-4E9C-B3D4-58C76396D4D3">
+					<Name>
+						Catchment Area Polygons
+					</Name>
+					<Path>
+						Realizations\run201705030744\Inputs\catch_ply_noErrors.shp
+					</Path>
+				</Vector>
+				<Vector guid="76257D85-98F2-4FBA-A216-FA8ADD077B46">
+					<Name>
+						Segmented Stream Network
+					</Name>
+					<Path>
+						Realizations\run201705030744\Inputs\seg_1000m_20161130.shp
+					</Path>
+				</Vector>
+				<DataTable ref="PARAM_TABLE"/>
+			</Inputs>
+			<Analyses>
+				<Analysis>
+					<Outputs>
+						<DataTable guid="D24DDB93-1BAB-4B55-A5DC-F4199E5452F9" id="PARAM_TABLE">
+							<Name>
+								Environmental Parameter Table
+							</Name>
+							<Path>
+								Realizations\run201705030744\PreprocessOutput\cond_params.dbf
+							</Path>
+						</DataTable>
+						<Vector guid="EA17E14E-AD11-447F-8B1B-81546943A61E" id="PRED">
+							<Name>
+								Predicted Electrical Conductivity
+							</Name>
+							<Path>
+								Realizations\run201705030744\PredictOutput\pred_cond_20170504.shp
+							</Path>
+						</Vector>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+		</EC>
+	</Realizations>
+</Project>

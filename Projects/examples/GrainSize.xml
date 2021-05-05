@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/GrainSize.xsd">
+    <Name>GrainSizeProject</Name>
+    <ProjectType>GrainSize</ProjectType>
+    <MetaData>
+        <Meta name="CreatedOn">2018-05-10T15:56:06.734000</Meta>
+    </MetaData>
+    <Realizations>
+        <GrainSize id="" dateCreated="2018-05-10T15:56:06.734000" guid="DD5B05CE-E5B5-4AF1-A541-11B4F8CA3727" productVersion="0.0.1">
+            <Name>GrainSizeRealization</Name>
+            <Inputs>
+                <DEM>
+                    <Name>NED_DEM_10m_17060103.tif</Name>
+                    <Path>01_Inputs\01_DEM\NED_DEM_10m_17060103.tif</Path>
+                </DEM>
+                <StreamNetwork>
+                    <Name>NHD_24K_17060103_Perennial.shp</Name>
+                    <Path>01_Inputs\02_StreamNetwork\NHD_24K_17060103_Perennial.shp</Path>
+                </StreamNetwork>
+                <Precipitation>
+                    <Name>wa_id_or_precip.shp</Name>
+                    <Path>01_Inputs\03_Precipitation\wa_id_or_precip.shp</Path>
+                </Precipitation>
+                <OtherValues>
+                    <Name>OtherValues.txt</Name>
+                    <Path>01_Inputs\04_OtherValues\OtherValues.txt</Path>
+                </OtherValues>
+            </Inputs>
+            <Analyses>
+                <Analysis>
+                    <Name>Output_1</Name>
+                    <Outputs>
+                        <StreamNetwork>
+                            <Name>GrainSize.lyr</Name>
+                            <Path>02_Analyses\Output_1\GrainSize.lyr</Path>
+                        </StreamNetwork>
+                    </Outputs>
+                </Analysis>
+            </Analyses>
+        </GrainSize>
+    </Realizations>
+</Project>
