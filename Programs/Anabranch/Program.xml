@@ -30,6 +30,7 @@
     <Products>
       <Product id="NationalDatasets" name="National Datasets" folder="nationaldatasets" url="" />
       <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
+      <Product id="HAND" name="HAND Models" folder="HAND" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
       <Product id="fmLTPBR" name="fmLTPBR" folder="fmLTPBR" url="" />
@@ -54,6 +55,7 @@
       <Collection ref="COL_HUC">
         <Product ref="fmLTPBR" />
         <Product ref="BRAT" />
+        <Product ref="HAND" />
         <Product ref="VBET" />
         <Product ref="RSContext" />
         <Product ref="Confinement" />
