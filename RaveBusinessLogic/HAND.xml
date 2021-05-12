@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>VBET</Name>
+    <ProjectType>VBET</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/HAND">
+        <Children collapsed="false">
+            <Node label="Outputs">
+                <Children collapsed="true">
+                    <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                </Children>
+            </Node>
+            <Node label="Inputs">
+                <Children collapsed="true">
+                    <Node label="Hydrography">
+                        <Children collapsed="true">
+                            <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='HAND_NETWORK']" type="line" symbology="" />
+                            <Node label="Full NHD HR+ Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
+                            <Node label="Perrenial Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdperrenial" />
+                            <Node label="Intermittent Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdintermittent" />
+                            <Node label="Ephemeral Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdephemeral" />
+                            <Node label="Network - Upstream Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="polygon" symbology="upstreamdrainagearea" />
+                            <Node label="River Polygons (NHD Area)" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
+                        </Children>
+                    </Node>
+                    <Node label="Topography">
+                        <Children collapsed='true'>
+                            <Node label="Slope Analysis" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
+                            <Node label="Height Above Nearest Drainage" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                            <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <!-- <Node label="Intermediates">
+                <Children collapsed="true">
+
+
+                </Children>
+            </Node> -->
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="VBET Default View" id="DEFAULT">
+            <Layers>
+                <Layer id="hillshade" />
+                <Layer id="vbet50" />
+            </Layers>
+        </View>
+    </Views>
+</Project>  
