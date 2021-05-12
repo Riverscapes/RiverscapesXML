@@ -24,6 +24,8 @@
               <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
               <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" id="vbet50" symbology="vbet" />
 
+              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_CENTERLINES_50]" type="line" symbology="" />
+
               <Node xpathlabel="Name" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" />
             </Children>
           </Node>
@@ -41,6 +43,7 @@
               <Node label="Ephemeral Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdephemeral" />
               <Node label="Network - Upstream Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="polygon" symbology="upstreamdrainagearea" />
               <Node label="River Polygons (NHD Area)" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
+              <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CATCHMENTS']" type="polygon" symbology="" />
               <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='CHANNEL_BUFFER_RASTER']" type="raster" symbology="" />
               <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='FLOW_AREA_RASTER']" type="raster" symbology="" />
             </Children>
@@ -56,6 +59,20 @@
       </Node>
       <Node label="Intermediates">
         <Children collapsed="true">
+          <Node label="Thiessen Reach Areas">
+            <Children collapsed="true">
+              <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='THIESSEN_POINTS']" type="point" symbology=""/>
+              <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='THIESSEN_AREAS']" type="polygon" symbology=""/>
+            </Children>
+          </Node>
+          <Node label="Drainage Area Zones">
+            <Children collapsed="true">
+              <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='DA_ZONES']" type="polygon" symbology=""/>
+              <Repeater label="Drainage Area Rasters" xpath="Intermediates/Raster[contains(@id, 'DA_ZONE_')]">
+                <Node xpathlabel="Name" type="raster" symbology="" transparency="40" />
+              </Repeater>
+            </Children>
+          </Node>
           <Node label="Evidence Rasters">
             <Children collapsed='true'>
               <Node xpathlabel="Name" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
