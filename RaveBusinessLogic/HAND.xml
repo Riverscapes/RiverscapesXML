@@ -5,46 +5,32 @@
     <ProjectType>VBET</ProjectType>
     <Node xpathlabel="Name" xpath="Realizations/HAND">
         <Children collapsed="false">
-            <Node label="Outputs">
+            <Node label="Outputs" xpath="Outputs">
                 <Children collapsed="true">
-                    <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                    <Node label="Height Above Nearest Drainage" xpath="Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" id="hand" />
+                    <Node xpathlabel="Name" xpath="HTMLFile[@id='REPORT']" type="file" />
                 </Children>
             </Node>
             <Node label="Inputs">
                 <Children collapsed="true">
-                    <Node label="Hydrography">
-                        <Children collapsed="true">
-                            <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='HAND_NETWORK']" type="line" symbology="" />
-                            <Node label="Full NHD HR+ Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
-                            <Node label="Perrenial Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdperrenial" />
-                            <Node label="Intermittent Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdintermittent" />
-                            <Node label="Ephemeral Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdephemeral" />
-                            <Node label="Network - Upstream Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="polygon" symbology="upstreamdrainagearea" />
-                            <Node label="River Polygons (NHD Area)" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
-                        </Children>
-                    </Node>
-                    <Node label="Topography">
-                        <Children collapsed='true'>
-                            <Node label="Slope Analysis" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
-                            <Node label="Height Above Nearest Drainage" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
-                            <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
-                        </Children>
-                    </Node>
+                    <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='HAND_NETWORK']" type="line" symbology="" />
+                    <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='DEM_MASK_POLY']" type="polygon" symbology="" />
+                    <Node label="Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
+                    <Node label="Waterbody Polygon" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
+                    <Node xpathlabel="Name" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="" id="dem" transparency="40" />
+                    <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='DEM_MASKED']" type="raster" symbology="dem" id="dem_masked" transparency="40" />
+                    <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
                 </Children>
             </Node>
-            <!-- <Node label="Intermediates">
-                <Children collapsed="true">
-
-
-                </Children>
-            </Node> -->
         </Children>
     </Node>
     <Views default="DEFAULT">
-        <View name="VBET Default View" id="DEFAULT">
+        <View name="HAND Default View" id="DEFAULT">
             <Layers>
+                <Layer id="hand" />
+                <Layer id="dem" />
+                <Layer id="dem_masked" />
                 <Layer id="hillshade" />
-                <Layer id="vbet50" />
             </Layers>
         </View>
     </Views>
