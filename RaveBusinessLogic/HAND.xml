@@ -18,10 +18,12 @@
                     <Node label="Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
                     <Node label="Waterbody Polygon" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
                     <Node xpathlabel="Name" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="" id="dem" transparency="40" />
-                    <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='DEM_MASKED']" type="raster" symbology="dem" id="dem_masked" transparency="40" />
                     <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
                 </Children>
             </Node>
+            <Repeater label="Intermediates" xpath="Intermediates/Raster">
+                <Node xpathlabel="Name" type="raster" symbology="" />
+            </Repeater>
         </Children>
     </Node>
     <Views default="DEFAULT">
@@ -29,7 +31,6 @@
             <Layers>
                 <Layer id="hand" />
                 <Layer id="dem" />
-                <Layer id="dem_masked" />
                 <Layer id="hillshade" />
             </Layers>
         </View>
