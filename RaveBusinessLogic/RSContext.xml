@@ -16,7 +16,7 @@
         <Children collapsed="false">
           <Node label="Hydrography (NHD HR+)">
             <Children collapsed="true">
-              <Node label="Perrenial Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" />
+              <Node label="Perennial Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" />
               <Node label="Intermittent Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" />
               <Node label="Ephemeral Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdephemeral" />
               <Node label="Network - Upstream Drainage Area" xpath="Vector[@id='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
