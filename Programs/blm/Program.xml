@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
-  <Name>Bureau of Land Management</Name>
+  <Name>BLM Montana and Dakotas</Name>
   <MachineName>BLM</MachineName>
 
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
-    <Meta name="access">PUBLIC</Meta>
+    <Meta name="access">PRIVATE</Meta>
     <Meta name="projectXSDs">https://xml.riverscapes.xyz/Projects/XSD/V1</Meta>
   </MetaData>
 
@@ -26,7 +26,13 @@
 
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
     <Products>
-      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
+      <Product id="pyBRAT" name="pyBRAT Models" folder="pyBRAT" url="" />
+      <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
+      <Product id="HAND" name="HAND Models" folder="HAND" url="" />
+      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
+      <Product id="RVD" name="Riparian Vegetation Departure" folder="RVD" url="" />
+      <Product id="Confinement" name="Confinement" folder="Confinement" url="" />
     </Products>
   </Definitions>
 
@@ -41,7 +47,13 @@
   <Hierarchy>
     <Group ref="GRP_HUC8">
       <Collection ref="COL_HUC8">
+        <Product ref="pyBRAT" />
+        <Product ref="BRAT" />
+        <Product ref="HAND" />
+        <Product ref="VBET" />
         <Product ref="RSContext" />
+        <Product ref="Confinement" />
+        <Product ref="RVD" />
       </Collection>
     </Group>
   </Hierarchy>
