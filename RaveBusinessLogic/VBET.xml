@@ -78,6 +78,7 @@
             <Children collapsed='true'>
               <Node label="Slope Analysis" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
               <Node label="Height Above Nearest Drainage" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+              <Node label="Digital Elevation Model" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
               <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
             </Children>
           </Node>
