@@ -9,6 +9,7 @@
         <Children>
           <Node label="Outputs" xpath="Outputs">
             <Children>
+              <Node label="Likelihood of Being a Valley Bottom Raster" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLiklihood" transparency="40" />
               <!-- Old shapefiles - Remove when no longer needed  -->
               <Node xpathlabel="Name" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet" />
               <Node xpathlabel="Name" xpath="Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
