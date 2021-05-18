@@ -9,27 +9,52 @@
         <Children>
           <Node label="Outputs" xpath="Outputs">
             <Children>
-              <Node label="Likelihood of Being a Valley Bottom Raster" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLiklihood" transparency="40" />
-              <!-- Old shapefiles - Remove when no longer needed  -->
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet" />
-
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_90']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_80']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_60']" type="polygon" symbology="vbet" />
-              <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" id="vbet50" symbology="vbet" />
-
               <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_CENTERLINES_50']" type="line" symbology="" />
+              <Node label="Likelihood of Being a Valley Bottom Raster" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLiklihood" transparency="40" />
+              <Node label ="Hollow Valley Bottom Outlines" id="vbetoutlines">
+                <Children>
+                                <!-- Old shapefiles - Remove when no longer needed  -->
+                <Node label="Estimated Active Channel" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet100outline" />
+                <Node label="Highly Likely Active Floodplain" xpath="Vector[@id='VBET_90']" type="polygon" symbology="vbet90outline" />
+                <Node label="Likely Active Floodplain" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet80outline" />
+                <Node label="Possible Active Floodplain" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" />
+                <Node label="Possible Inactive Floodplain" xpath="Vector[@id='VBET_60']" type="polygon" symbology="vbet60outline" />
+                <Node label="Plausible Valley Bottom Extent" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet50outline" />
+  
+                <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet100outline" id="vbet100outline" />
+                <Node label="Highly Likely Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_90']" type="polygon" symbology="vbet90outline" />
+                <Node label="Likely Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_80']" type="polygon" symbology="vbet80outline" />
+                <Node label="Possible Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" />
+                <Node label="Possible Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_60']" type="polygon" symbology="vbet60outline" />
+                <Node label="Plausible Valley Bottom Extent" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" id="vbet50outline" symbology="vbet50outline"  />
+  
+                
+                </Children>
+              </Node>
+            
+            
+            <Node label ="Transparent Valley Bottoms" id="vbettransparent">
+              <Children>
+                <!-- Old shapefiles - Remove when no longer needed  -->
+                <Node label="Estimated Active Channel" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet100" transparency="10" />
+                <Node label="Highly Likely Active Floodplain" xpath="Vector[@id='VBET_90']" type="polygon" symbology="vbet90" transparency="40" />
+                <Node label="Likely Active Floodplain" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet80" transparency="40" />
+                <Node label="Possible Active Floodplain" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet70" transparency="40" />
+                <Node label="Possible Inactive Floodplain" xpath="Vector[@id='VBET_60']" type="polygon" symbology="vbet60" transparency="40" />
+                <Node label="Plausible Valley Bottom Extent" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet50" transparency="40" />
+                                  
+                <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet100" transparency="10" />
+                <Node label="Highly Likely Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_90']" type="polygon" symbology="vbet90" transparency="40" />
+                <Node label="Likely Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_80']" type="polygon" symbology="vbet80" transparency="40" />
+                <Node label="Possible Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet70" transparency="40" />
+                <Node label="Possible Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_60']" type="polygon" symbology="vbet60" transparency="40" />
+                <Node label="Plausible Valley Bottom Extent" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" id="vbet50" symbology="vbet50" transparency="40" />
+              </Children>
+            </Node>
 
-              <Node xpathlabel="Name" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" />
-            </Children>
+          </Children>
           </Node>
+        
         </Children>
       </Node>
       <Node label="Inputs">
