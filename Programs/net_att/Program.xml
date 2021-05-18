@@ -27,6 +27,7 @@
     <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
     <Products>
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
+      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
     </Products>
   </Definitions>
 
@@ -42,6 +43,7 @@
     <Group ref="GRP_HUC8">
       <Collection ref="COL_HUC8">
         <Product ref="RSContext" />
+        <Product ref="VBET" />
       </Collection>
     </Group>
   </Hierarchy>
