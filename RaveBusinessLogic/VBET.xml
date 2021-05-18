@@ -145,8 +145,30 @@
     <View name="VBET Default View" id="DEFAULT">
       <Layers>
         <Layer id="hillshade" />
-        <Layer id="vbet50" />
+        <Layer id="vbet50outline" />
+        <Layer id="vbet100outline" />
       </Layers>
     </View>
+    <View name="VBET Inputs" id="Inputs">
+      <Layers>
+        <Layer id="dem" />
+        <Layer id="hillshade" />
+        <Layer id="network" />
+      </Layers>
+    </View>
+    <!--- <View name="VBET Outlines" id="Outlines">
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="vbetoutlines" />
+      </Layers>
+    </View>
+    <View name="VBET Transparent" id="Transparent">
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="vbettransparent" />
+      </Layers>
+      </View> -->
   </Views>
+  
+
 </Project>
