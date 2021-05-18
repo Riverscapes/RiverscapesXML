@@ -62,7 +62,7 @@
           <Node label="Hydrography">
             <Children collapsed="true">
               <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_NETWORK']" type="line" symbology="" />
-              <Node label="VBET Network with Bankfull" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_NETWORK']" type="line" symbology="bankfull_flowlines" />
+              <Node label="VBET Network with Bankfull" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_NETWORK']" type="line" id="network" symbology="bankfull_flowlines" />
               <Node label="Full NHD HR+ Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
               <Node label="Perennial Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdperrenial" />
               <Node label="Intermittent Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdintermittent" />
