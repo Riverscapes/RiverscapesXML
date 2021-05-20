@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BaseMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./BaseMaps.xsd">
   <Region name="United States">
+      <GroupLayer name=" Google">
+      <Layer name="Google Imagery" url="https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}">
+        <Metadata>
+          <Meta name="Description">Google Imagery</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
     <GroupLayer name="USGS Hydrography">
       <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
         <Metadata>
