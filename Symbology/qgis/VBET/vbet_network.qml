@@ -34,7 +34,7 @@
             <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
             <Option name="draw_inside_polygon" type="QString" value="0"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="line_color" type="QString" value="79,203,207,255"/>
+            <Option name="line_color" type="QString" value="23,44,160,255"/>
             <Option name="line_style" type="QString" value="solid"/>
             <Option name="line_width" type="QString" value="0.26"/>
             <Option name="line_width_unit" type="QString" value="MM"/>
@@ -56,7 +56,7 @@
           <prop k="dash_pattern_offset_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="bevel"/>
-          <prop k="line_color" v="79,203,207,255"/>
+          <prop k="line_color" v="23,44,160,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="0.26"/>
           <prop k="line_width_unit" v="MM"/>
@@ -91,6 +91,7 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory backgroundAlpha="255" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" enabled="0" showAxis="1" sizeType="MM" maxScaleDenominator="1e+08" spacing="5" minimumSize="0" rotationOffset="270" penWidth="0" sizeScale="3x:0,0,0,0,0,0" opacity="1" width="15" lineSizeType="MM" labelPlacementMethod="XHeight" diagramOrientation="Up" height="15" minScaleDenominator="0" direction="0" spacingUnit="MM" backgroundColor="#ffffff" penColor="#000000" penAlpha="255" scaleBasedVisibility="0" scaleDependency="Area">
       <fontProperties description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute field="" color="#000000" label=""/>
       <axisSymbol>
         <symbol name="" force_rhr="0" type="line" clip_to_extent="1" alpha="1">
           <data_defined_properties>
