@@ -10,7 +10,7 @@
           <Node label="Outputs" xpath="Outputs">
             <Children>
               <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VBET_CENTERLINES_50']" type="line" symbology="" />
-              <Node label="Likelihood of Being a Valley Bottom Raster" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLiklihood" transparency="40" />
+              <Node label="Likelihood of Being a Valley Bottom Raster" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" />
               <Node label ="Hollow Valley Bottom Outlines" id="vbetoutlines">
                 <Children>
                                 <!-- Old shapefiles - Remove when no longer needed  -->
