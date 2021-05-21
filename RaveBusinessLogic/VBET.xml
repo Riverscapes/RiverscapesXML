@@ -104,7 +104,7 @@
             <Children collapsed='true'>
               <Node xpathlabel="Name" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
               <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
-              <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='CHANNEL_DISTANCE']" type="raster" symbology="" />
+              <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='CHANNEL_DISTANCE']" type="raster" symbology="channeldistance" />
               <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='FLOW_AREA_DISTANCE']" type="raster" symbology="" />
             </Children>
           </Node>
