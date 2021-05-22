@@ -1,64 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<BaseMaps>
+<BaseMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./BaseMaps.xsd">
   <Region name="United States">
     <GroupLayer name="USGS Hydrography">
-      <Layer name="Watershed Boundary Dataset" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
+      <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS HUC Watershed Boundaries</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Drainage Network NHD" url="https://hydro.nationalmap.gov:443/arcgis/services/nhd/MapServer/WmsServer?">
+      <Layer name="Drainage Network NHD" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/nhd/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS National Hydrologic Dataset - Drainage Network</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="USGS Topography">
-      <Layer name="Topo Base Map" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSTopo/MapServer/WmsServer?">
+      <Layer name="Topo Base Map" type="wms" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSTopo/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS Top Map Base Layer</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Shaded Relief" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSShadedReliefOnly/MapServer/WmsServer?">
+      <Layer name="Shaded Relief" type="wms" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSShadedReliefOnly/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS shaded relief</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Contours" url="https://carto.nationalmap.gov:443/arcgis/services/contours/MapServer/WmsServer?">
+      <Layer name="Contours" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/contours/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS NED Contours</Meta>
         </Metadata>
       </Layer>
-      <Layer name="NED 3DEPE" url="https://elevation.nationalmap.gov:443/arcgis/services/3DEPElevation/ImageServer/WMSServer">
+      <Layer name="NED 3DEPE" type="wms" url="https://elevation.nationalmap.gov:443/arcgis/services/3DEPElevation/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">High Resolution Topography from USGS </Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="Cartographic Basics">
-      <Layer name="Boundaries" url="https://carto.nationalmap.gov:443/arcgis/services/govunits/MapServer/WmsServer?">
+      <Layer name="Boundaries" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/govunits/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">Governmetnal Unit Boundaries</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Geographic Place Names" url="https://carto.nationalmap.gov:443/arcgis/services/geonames/MapServer/WmsServer?">
+      <Layer name="Geographic Place Names" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/geonames/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">Place Names</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Transporation" url="https://carto.nationalmap.gov:443/arcgis/services/transportation/MapServer/WmsServer?">
+      <Layer name="Transporation" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/transportation/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS Roads and Railroads</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="Imagery">
-      <Layer name="NAIP" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
+      <Layer name="NAIP" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">NAIP Imagery</Meta>
         </Metadata>
       </Layer>
-      <Layer name="NAIP Plus" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPPlus/MapServer/WmsServer?">
+      <Layer name="NAIP Plus" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPPlus/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">NAIP Plus Imagery</Meta>
         </Metadata>

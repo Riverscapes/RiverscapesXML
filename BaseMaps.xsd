@@ -1,0 +1,60 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BaseMaps" type="BaseMapsType"/>
+  
+  <!-- Metadata is just a standard type with key/value paris-->
+  <xs:complexType name="MetaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element type="MetaType" name="Meta"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:simpleType name="lyrTilesType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="wms" />
+      <xs:enumeration value="tms" />
+      <xs:enumeration value="xyz" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+
+  <!-- Layers have a few attributes and contain metadata -->
+  <xs:complexType name="LayerType">
+    <xs:sequence>
+      <xs:element type="MetadataType" name="Metadata"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+    <xs:attribute type="lyrTilesType" name="type" use="required"/>
+    <xs:attribute type="xs:string" name="url" use="required"/>
+  </xs:complexType>
+
+  <!-- Groups contain layers -->
+  <xs:complexType name="GroupLayerType">
+    <xs:sequence>
+      <xs:element type="LayerType" name="Layer" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+  </xs:complexType>
+
+  <!-- Regions contain Groups -->
+  <xs:complexType name="RegionType">
+    <xs:sequence>
+      <xs:element type="GroupLayerType" name="GroupLayer" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+
+  <!-- Basemaps contain Regions -->
+  <xs:complexType name="BaseMapsType">
+    <xs:sequence>
+      <xs:element type="RegionType" name="Region"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
