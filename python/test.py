@@ -1,15 +1,16 @@
 import unittest
 import json
-import sys
+# import sys
+# import csv
 import os
-from validate import get_xml, get_xmls, get_xsd, validate_xml, validate_xsd
-from copy import deepcopy
+from validate import get_xml, collect_files, get_xsd, validate_web_vector_json, validate_xml
 
 # We do this mapping because we want the current version's XML tested against the corrent
 # version's XSD. 
 XML_DIGEST = [
     {'xml': './Programs/**/*.xml', 'xsd': './Program.xsd'},
-    {'xml': './RaveBusinessLogic/*.xml', 'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'}
+    {'xml': './RaveBusinessLogic/*.xml', 'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
+    {'xml': './BaseMaps.xml', 'xsd': './BaseMaps.xsd'}
 ]
 
 class TestLambdaFunc(unittest.TestCase):
@@ -25,7 +26,8 @@ class TestLambdaFunc(unittest.TestCase):
     def test_xmls(self):
         errors = []
         for xml_dig in XML_DIGEST:
-            xml_paths = get_xmls(xml_dig['xml'])
+            print("\nTesting XML Files with pattern {}:\n===================================".format(xml_dig['xml']))
+            xml_paths = collect_files(xml_dig['xml'])
             try:
                 xsd_file = get_xsd(xml_dig['xsd'])
             except Exception as e:
@@ -38,16 +40,54 @@ class TestLambdaFunc(unittest.TestCase):
                         errors.append([xml_path, str(errs)])
                 except Exception as e:
                     errors.append([xml_path, str(e)])
+                print("Tested XML: {}".format(xml_path))
 
         self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
 
+    def test_validateJSON(self):
+        """We have some JSON in the system that needs validating
+        """
+        errors = []
+        json_paths = collect_files('./Symbology/web/**/*.json')
+        print("\nTesting Web Symbologies:\n========================")
+        for json_path in json_paths:
+            try:
+                with open(json_path, 'r') as f:
+                    json_file = json.load(f)
+                result, errs = validate_web_vector_json(json_file)
+                if not result:
+                    errors.append([json_path, str(errs)])
+            except Exception as e:
+                errors.append([json_path, str(e)])
+            print("Tested web symbology: {}".format(json_path))
+
+        self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
+
+    # TODO: COLOR RAMPS ARE MORE COMPLICATED THAN JUST A CSV
+    # def test_validateRamp(self):
+    #     """CSV Ramps follow a very particular type
+    #     """        
+    #     errors = []
+    #     csv_paths = collect_files('./Symbology/web/**/*.txt')
+    #     for csv_path in csv_paths:
+    #         try:
+    #             with open(csv_path, 'r') as data:
+    #                 csv_lines = [l for l in csv.reader(data)]
+    #             result, errs = validate_ramp(csv_lines)
+    #             if not result:
+    #                 errors.append([csv_path, str(errs)])
+    #         except Exception as e:
+    #             errors.append([csv_path, 'Error parsing CSV: {}'.format(str(e))])
+
+    #     self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
 
     def test_allProjectxmls(self):
-        """Project XMLs need to be handled differently because each one has a differnt XSD file
+        """Project XMLs need to be handled differently because each one has a different XSD file
         """
-        xmls = get_xmls('./Projects/examples/*.xml')
+        xmls = collect_files('./Projects/examples/*.xml')
         errors = []
         tested_xsds = []
+        print("\nTesting Project XMLS:\n========================")
         for xml_path in xmls:
             basename = os.path.basename(os.path.splitext(xml_path)[0])
             xsd_path='Projects/XSD/V1/{}.xsd'.format(basename)
@@ -67,7 +107,7 @@ class TestLambdaFunc(unittest.TestCase):
                 errors.append([basename, str(e)])
         self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
         for xsd_path in tested_xsds:
-            print("Tested: {}".format(xsd_path))
+            print("Tested project xml: {}".format(xsd_path))
 
 
 if __name__ == '__main__':

@@ -1,0 +1,18 @@
+[
+  {
+      "id": "bratreachgeometry-bv59z4",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "bratReachGeometry-bv59z4",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 100%, 44%)", "line-width": 10}
+  },
+  {
+      "id": "bratreachgeometry-bv59z4 copy",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "bratReachGeometry-bv59z4",
+      "layout": {"text-field": ["get", "NHDPlusID"]},
+      "paint": {"text-color": "hsl(0, 0%, 100%)"}
+  }
+]
