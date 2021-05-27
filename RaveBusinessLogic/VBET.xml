@@ -113,7 +113,7 @@
           </Repeater>
           <Node label="Combined Evidence Rasters">
             <Children>
-              <Node label="Channel Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_CHANNEL']" type="raster" symbology="" transparency="40" />
+              <Node label="Channel Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_CHANNEL']" type="raster" symbology="channelevidence" transparency="40" />
               <Node label="Topographic Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="" transparency="40" />
             </Children>
           </Node>
