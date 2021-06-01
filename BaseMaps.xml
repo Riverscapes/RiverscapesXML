@@ -7,6 +7,16 @@
           <Meta name="Description">Google Imagery</Meta>
         </Metadata>
       </Layer>
+      <Layer name="Google Terrain" type="xyz" url="https://mt1.google.com/vt/lyrs=y&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Terrain</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Google Maps" type="xyz" url="https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Maps</Meta>
+        </Metadata>
+      </Layer>
     </GroupLayer>
     <GroupLayer name="USGS Hydrography">
       <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
