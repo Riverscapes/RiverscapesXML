@@ -45,7 +45,7 @@
     <GroupLayer name="Cartographic Basics">
       <Layer name="Boundaries" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/govunits/MapServer/WmsServer?">
         <Metadata>
-          <Meta name="Description">Governmetnal Unit Boundaries</Meta>
+          <Meta name="Description">Governmental Unit Boundaries</Meta>
         </Metadata>
       </Layer>
       <Layer name="Geographic Place Names" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/geonames/MapServer/WmsServer?">
