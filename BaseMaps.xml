@@ -7,7 +7,7 @@
           <Meta name="Description">Google Imagery</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Google Terrain" type="xyz" url="https://mt1.google.com/vt/lyrs=y&amp;x={x}&amp;y={y}&amp;z={z}">
+      <Layer name="Google Terrain" type="xyz" url="https://mt1.google.com/vt/lyrs=t&amp;x={x}&amp;y={y}&amp;z={z}">
         <Metadata>
           <Meta name="Description">Google Terrain</Meta>
         </Metadata>
