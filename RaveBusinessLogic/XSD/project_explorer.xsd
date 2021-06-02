@@ -22,6 +22,7 @@
       <xs:enumeration value="polygon" />
       <xs:enumeration value="raster" />
       <xs:enumeration value="file" />
+      <xs:enumeration value="report" />
       <xs:enumeration value="tin" />
     </xs:restriction>
   </xs:simpleType>
