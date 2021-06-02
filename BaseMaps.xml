@@ -19,7 +19,7 @@
       </Layer>
     </GroupLayer>
     <GroupLayer name="Bing Maps">
-      <Layer name="Bing Aerial Imagery" type="xyz" url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
+      <Layer name="Bing Aerial Imagery" type="tms" url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
         <Metadata>
           <Meta name="Description">Bing Aerial Imagery</Meta>
         </Metadata>
