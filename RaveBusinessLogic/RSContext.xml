@@ -5,7 +5,7 @@
   <ProjectType>RSContext</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/RSContext">
     <Children collapsed="false">
-      <Node xpathlabel="Name" xpath="HTMLFile[@id='REPORT']" type="file" />
+      <Node xpathlabel="Name" xpath="HTMLFile[@id='REPORT']" type="report" />
       <Node label="Transportation Local">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="Vector[@id='Roads']" type="line" symbology="roads" />

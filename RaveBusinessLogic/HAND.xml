@@ -8,7 +8,7 @@
             <Node label="Outputs" xpath="Outputs">
                 <Children collapsed="true">
                     <Node label="Height Above Nearest Drainage" xpath="Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" id="hand" />
-                    <Node xpathlabel="Name" xpath="HTMLFile[@id='REPORT']" type="file" />
+                    <Node xpathlabel="Name" xpath="HTMLFile[@id='REPORT']" type="report" />
                 </Children>
             </Node>
             <Node label="Inputs">
