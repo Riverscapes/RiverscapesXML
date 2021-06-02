@@ -18,6 +18,13 @@
         </Metadata>
       </Layer>
     </GroupLayer>
+    <GroupLayer name="Bing Maps">
+      <Layer name="Bing Aerial Imagery" type="xyz" url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
+        <Metadata>
+          <Meta name="Description">Bing Aerial Imagery</Meta>
+        </Metadata>
+      </Layer>
+      </GroupLayer>
     <GroupLayer name="USGS Hydrography">
       <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
         <Metadata>
