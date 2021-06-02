@@ -12,21 +12,21 @@
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_MARGINS']" type="line" id="confinement_margins" symbology="confinement_margins" />
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
           <Node label="Constriction Ratio" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
-          <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_BUFFERS']" type="line" id="confinement_buffer" symbology="" />
+          <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_BUFFERS']" type="line" id="confinement_buffer" symbology="confinement_buffer" />
         </Children>
       </Node>
       <Node label="Inputs">
         <Children>
           <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="" />
-          <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="" />
+          <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="confining_poly" />
         </Children>
       </Node>
       <Node label="Intermediates">
         <Children>
-          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='SPLIT_POINTS']" type="point" symbology="" />
-          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='FLOWLINE_SEGMENTS']" type="line" symbology="" />
-          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='ERROR_POLYLINES']" type="line" symbology="" />
-          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='ERROR_POLYGONS']" type="polygon" symbology="" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='SPLIT_POINTS']" type="point" symbology="split_points" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='FLOWLINE_SEGMENTS']" type="line" symbology="flowline_segments" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='ERROR_POLYLINES']" type="line" symbology="error_polylines" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@id='ERROR_POLYGONS']" type="polygon" symbology="error_polygons" />
         </Children>
       </Node>
     </Children>
