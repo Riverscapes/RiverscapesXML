@@ -14,15 +14,15 @@
   </temporal>
   <renderer-v2 enableorderby="0" type="categorizedSymbol" symbollevels="0" forceraster="0" attr="ADMIN_AGEN">
     <categories>
-      <category label="Fish and Wildlife Service" value="FWS" symbol="0" render="true"/>
-      <category label="Other" value="UND" symbol="1" render="true"/>
-      <category label="US Army Corps of Engineers" value="USACE" symbol="2" render="true"/>
-      <category label="US Forest Service" value="USFS" symbol="3" render="true"/>
-      <category label="Private" value="PVT" symbol="4" render="true"/>
-      <category label="National Park Service" value="NPS" symbol="5" render="true"/>
-      <category label="Bureau of Land Management" value="BLM" symbol="6" render="true"/>
-      <category label="Bureau of Indian Affairs" value="BIA" symbol="7" render="true"/>
-      <category label="State" value="ST" symbol="8" render="true"/>
+      <category label="Private" value="PVT" symbol="1" render="true"/>
+      <category label="National Park Service" value="NPS" symbol="2" render="true"/>
+      <category label="Fish and Wildlife Service" value="FWS" symbol="3" render="true"/>
+      <category label="US Forest Service" value="USFS" symbol="4" render="true"/>
+      <category label="Other" value="UND" symbol="5" render="true"/>
+      <category label="State" value="ST" symbol="6" render="true"/>
+      <category label="Bureau of Land Management" value="BLM" symbol="7" render="true"/>
+      <category label="Bureau of Indian Affairs" value="BIA" symbol="8" render="true"/>
+      <category label="US Army Corps of Engineers" value="USACE" symbol="9" render="true"/>
     </categories>
     <symbols>
       <symbol name="0" force_rhr="0" type="fill" alpha="1" clip_to_extent="1">
