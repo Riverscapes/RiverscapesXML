@@ -8,7 +8,7 @@
       <Node label="Outputs" xpath="Realizations/BRAT/Outputs">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="SQLiteDB" type="file" />
-          <Node xpathlabel="Name" xpath="HTMLFile" type="file" />
+          <Node xpathlabel="Name" xpath="HTMLFile" type="report" />
           <Node label="Capacity" id="capacity">
             <Children>
               <Node label="Existing Dam Capacity" xpath="Vector" type="line" symbology="oCC_EX" />

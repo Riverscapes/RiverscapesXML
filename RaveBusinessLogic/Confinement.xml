@@ -5,7 +5,7 @@
   <ProjectType>CONFINEMENT</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Confinement">
     <Children collapsed="false">
-      <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="file" />
+      <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs">
         <Children>
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />

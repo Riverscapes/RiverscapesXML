@@ -5,7 +5,7 @@
   <ProjectType>RVD</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/RVD">
     <Children collapsed="false">
-      <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="file" />
+      <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Inputs" xpath="Inputs">
         <Children>
           <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="" />
