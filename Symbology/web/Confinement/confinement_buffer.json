@@ -1,0 +1,13 @@
+[
+    {
+        "id": "confinement-buffer-dt9i2g",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "confinement_buffer-dt9i2g",
+        "layout": {},
+        "paint": {
+            "fill-color": "hsl(268, 29%, 60%)",
+            "fill-outline-color": "#000000"
+        }
+    }
+]
