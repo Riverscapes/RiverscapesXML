@@ -1,0 +1,10 @@
+[
+    {
+        "id": "flowlines-cwdhi5",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "flowlines-cwdhi5",
+        "layout": {},
+        "paint": {"line-color": "hsl(209, 88%, 48%)"}
+    }
+]
