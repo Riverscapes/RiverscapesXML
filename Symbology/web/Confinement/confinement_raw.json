@@ -1,0 +1,24 @@
+[
+    {
+        "id": "confinement-raw-0utorb",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "confinement_raw-0utorb",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "match",
+                ["get", "Confinement_Type"],
+                ["Both"],
+                "hsl(8, 100%, 50%)",
+                ["Left"],
+                "hsl(235, 86%, 55%)",
+                ["Right"],
+                "hsl(313, 71%, 39%)",
+                ["None"],
+                "hsl(178, 64%, 34%)",
+                "#000000"
+            ]
+        }
+    }
+]
