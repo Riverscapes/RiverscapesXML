@@ -17,7 +17,7 @@
       </Node>
       <Node label="Inputs">
         <Children>
-          <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="" />
+          <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flowlines" />
           <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="confining_poly" />
         </Children>
       </Node>
