@@ -1,0 +1,13 @@
+[
+    {
+        "id": "error-polylines-546s2i",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "error_polylines-546s2i",
+        "layout": {},
+        "paint": {
+            "line-dasharray": [1, 1],
+            "line-color": "hsl(356, 76%, 49%)"
+        }
+    }
+]
