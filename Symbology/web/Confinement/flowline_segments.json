@@ -1,0 +1,10 @@
+[
+    {
+        "id": "flowline-segments-6juroz",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "flowline_segments-6juroz",
+        "layout": {},
+        "paint": {"line-color": "hsl(1, 92%, 79%)", "line-width": 5}
+    }
+]
