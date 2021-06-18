@@ -3,7 +3,7 @@ import json
 # import sys
 # import csv
 import os
-from validate import get_xml, collect_files, get_xsd, validate_web_vector_json, validate_xml
+from validate import get_xml, collect_files, get_xsd, validate_web_vector_json, validate_xml, validate_qramp
 
 # We do this mapping because we want the current version's XML tested against the corrent
 # version's XSD. 
@@ -65,23 +65,22 @@ class TestLambdaFunc(unittest.TestCase):
 
         self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
 
-    # TODO: COLOR RAMPS ARE MORE COMPLICATED THAN JUST A CSV
-    # def test_validateRamp(self):
-    #     """CSV Ramps follow a very particular type
-    #     """        
-    #     errors = []
-    #     csv_paths = collect_files('./Symbology/web/**/*.txt')
-    #     for csv_path in csv_paths:
-    #         try:
-    #             with open(csv_path, 'r') as data:
-    #                 csv_lines = [l for l in csv.reader(data)]
-    #             result, errs = validate_ramp(csv_lines)
-    #             if not result:
-    #                 errors.append([csv_path, str(errs)])
-    #         except Exception as e:
-    #             errors.append([csv_path, 'Error parsing CSV: {}'.format(str(e))])
+    def test_validateRamp(self):
+        """QGIS Color Ramps follow a very particular type
+        """        
+        errors = []
+        ramp_paths = collect_files('./Symbology/web/**/*.txt')
+        for ramp_path in ramp_paths:
+            try:
+                with open(ramp_path, 'r') as data:
+                    ramp_file = data.read()
+                result, errs = validate_qramp(ramp_file)
+                if not result:
+                    errors.append([ramp_path, str(errs)])
+            except Exception as e:
+                errors.append([ramp_path, 'Error parsing QGIS Color Ramp: {}'.format(str(e))])
 
-    #     self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
+        self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
 
     def test_allProjectxmls(self):
         """Project XMLs need to be handled differently because each one has a different XSD file
