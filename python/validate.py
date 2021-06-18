@@ -1,7 +1,8 @@
 import glob
+from jsonschema.exceptions import ValidationError
 from lxml import etree
 import json
-
+import jsonschema
 
 def get_xsd(xsd_path):
     """We need to replace the absolute XSD reference by hand so this is where that happens
@@ -40,17 +41,20 @@ def validate_xsd(xsd_str: str):
     errors = list(parser.error_log)
     return errors
 
-def validate_web_vector_json(json_obj: list) -> bool:
+def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
     result = True
-    errors = []
-    if not isinstance(json_obj, list):
+    errors = []    
+    try:
+        jsonschema.validate(json_obj, schema)
+    except ValidationError as e:
+        errors.append("JSON Did not validate against schema: {}".format(e.message))
+        return False, errors
+
+    if len(json_obj['layerStyles']) <1:
         result = False
-        errors.append('Json root object must be an array')
-    elif len(json_obj) <1:
-        result = False
-        errors.append('Symbology array cannot be empty')
+        errors.append('layerStyles array cannot be empty')
     else:
-        for o in json_obj:
+        for o in json_obj['layerStyles']:
             # Check that we have all the right keys
             for k in ['id', 'type', 'source', 'source-layer', 'layout', 'paint']:
                 if k not in o:
@@ -64,9 +68,9 @@ def validate_web_vector_json(json_obj: list) -> bool:
                         errors.append('You cannot use mapbox layers: {}'.format(json.dumps(o)))
                     elif o['type'] == 'raster':
                         result = False
-                        errors.append('Found a raster in your symbology. This is not allowed: {}'.format(json.dumps(o)))
+                        errors.append('Found a raster in your VECTOR symbology. This is not allowed: {}'.format(json.dumps(o)))
             if result is True:
-                unique_sources = list(dict.fromkeys([k['source-layer'] for k in json_obj]))
+                unique_sources = list(dict.fromkeys([k['source-layer'] for k in json_obj['layerStyles']]))
                 if len(unique_sources) != 1:
                     result = False
                     errors.append('You cannot consume from multiple sources: {}'.format(unique_sources))

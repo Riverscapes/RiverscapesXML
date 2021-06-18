@@ -1,10 +1,18 @@
-[
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [ "hsl(209, 88%, 48%)", "Flowlines"]
+  ],
+  "layerStyles": [
     {
-        "id": "flowlines-cwdhi5",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "flowlines-cwdhi5",
-        "layout": {},
-        "paint": {"line-color": "hsl(209, 88%, 48%)"}
+      "id": "flowlines-cwdhi5",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "flowlines-cwdhi5",
+      "layout": {},
+      "paint": {
+        "line-color": "hsl(209, 88%, 48%)"
+      }
     }
-]
+  ]
+}

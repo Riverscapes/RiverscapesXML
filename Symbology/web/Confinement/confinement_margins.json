@@ -1,24 +1,30 @@
-[
-    {
-        "id": "confinement-ratio-3oldrq",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "confinement_ratio-3oldrq",
-        "layout": {},
-        "paint": {
-            "line-color": [
-                "step",
-                ["get", "Confinement_Ratio"],
-                "hsl(116, 57%, 39%)",
-                0.1,
-                "hsl(108, 87%, 59%)",
-                0.5,
-                "hsl(29, 100%, 50%)",
-                0.85,
-                "hsl(8, 100%, 50%)",
-                1.0000000000002822,
-                "hsl(8, 100%, 50%)"
-            ]
+{
+    "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+    "legend": [
+        ["hsl(116, 57%, 39%)", "0.1"],
+        ["hsl(108, 87%, 59%)", "0.5"],
+        ["hsl(29, 100%, 50%)", "0.85"],
+        ["hsl(8, 100%, 50%)", "1.0"]
+    ],
+    "layerStyles": [
+        {
+            "id": "confinement-ratio-3oldrq",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "confinement_ratio-3oldrq",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "step",
+                    ["get", "Confinement_Ratio"],
+                    "hsl(116, 57%, 39%)", 0.1,
+                    "hsl(108, 87%, 59%)", 0.5,
+                    "hsl(29, 100%, 50%)", 0.85,
+                    "hsl(8, 100%, 50%)", 1.0,
+                    "hsl(8, 100%, 50%)"
+                ]
+            }
         }
-    }
-]
+    ]
+}
+
