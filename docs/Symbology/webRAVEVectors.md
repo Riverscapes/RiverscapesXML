@@ -1,6 +1,6 @@
 # WebRAVE Vector Symbology files
 
-The WebRave vector symbology format has evolved a bit. Here's an example.
+The WebRave vector symbology format has evolved a bit. Here's an example of what we need now:
 
 ``` json
 {
@@ -31,10 +31,9 @@ The WebRave vector symbology format has evolved a bit. Here's an example.
       }
   ]
 }
-
 ```
 
-Let's talk about the overall scructure
+Let's summarize this overall scructure. There are 3 parts to this file:
 
 ``` JSON
 {
@@ -160,6 +159,28 @@ In this case my new JSON file looks something like this:
 }
 ```
 
+## Building the Legend Table Object
+
+``` json
+{
+  "legend": [
+    ["hsl(116, 57%, 39%)", "legend table layer 1"],
+    ["hsl(108, 87%, 59%)", "legend table layer 1"],
+    ["hsl(29, 100%, 50%)", "legend table layer 1"]
+  ]
+```
+
+The structure is pretty simple. It's a double array and the inner array is made up of two string values: A color string and a label string.
+
+The color string is any CSS-valid color value string ([more about what's allowed in css here](https://www.w3schools.com/cssref/css_colors_legal.asp)). You can use:
+
+* Hexadecimal colors: `#FF0000`
+* Hexadecimal colors with transparency: `#FF000055`
+* RGB colors: `rgb(255,0,0)`
+* RGBA colors: `rgba(255,0,0, 100)`
+* HSL colors: `hsl(116, 57%, 39%)`
+* HSLA colors: `hsla(116, 57%, 39%, 0.2)`
+* Predefined/Cross-browser color names: `red`
 
 ## File naming
 
