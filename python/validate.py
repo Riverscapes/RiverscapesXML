@@ -88,13 +88,20 @@ def validate_qramp(qramp: str):
     if len(lines) < 3:
         errors.append('Ramp file was missing the minimum number of lines (3)')
         return False, errors
-    if lines[0].rstrip != "# QGIS Generated Color Map Export File":
-        errors.append('Missing the header line: "# QGIS Generated Color Map Export File". This is probabyl not a QGIS exported color ramp')
-    if "INTERPOLATION:" not in lines[1]: 
-        errors.append('Missing the intepolation type on line 2: "INTERPOLATED:[DISCRETE|INTERPOLATED|EXACT]". This is probabyl not a QGIS exported color ramp')
-    
-    pat = "^(.+?),(.+?),(.+?),(.+?),(.+?),(.+)$"
+
     result = True
+
+    if lines[0].rstrip() != "# QGIS Generated Color Map Export File":
+        errors.append('Missing the header line: "# QGIS Generated Color Map Export File". This is probabyl not a QGIS exported color ramp')
+        result = False
+    if "INTERPOLATION:" not in lines[1]:
+        errors.append('Missing the intepolation type on line 2: "INTERPOLATED:[DISCRETE|INTERPOLATED|EXACT]". This is probabyl not a QGIS exported color ramp')
+        result = False
+    if lines[1].split(':')[1] not in ['DISCRETE', 'EXACT', 'INTERPOLATED']:
+        errors.append("Interpolation value must be one of: 'DISCRETE', 'EXACT', 'INTERPOLATED'. Got: {}".format(lines[1]))
+        result = False
+
+    pat = "^(.+?),(.+?),(.+?),(.+?),(.+?),(.+)$"
     for cline in lines[2:]:
         # Blank lines are allowed at the end of the file
         # TODO: right now we're just ignoring blank lines anywhere
