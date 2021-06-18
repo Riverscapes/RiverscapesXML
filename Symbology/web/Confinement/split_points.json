@@ -1,10 +1,16 @@
-[
-    {
-        "id": "split-points-61tz45",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "split_points-61tz45",
-        "layout": {},
-        "paint": {}
-    }
-]
+{
+    "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+    "legend": [
+        ["rgba(0,0,0,255)", "split points"]
+    ],
+    "layerStyles":[
+        {
+            "id": "split-points-61tz45",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "split_points-61tz45",
+            "layout": {},
+            "paint": {}
+        }
+    ]
+  }

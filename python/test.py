@@ -49,12 +49,14 @@ class TestLambdaFunc(unittest.TestCase):
         """
         errors = []
         json_paths = collect_files('./Symbology/web/**/*.json')
+        with open('./Symbology/web/vector.schema.json') as f:
+            schema = json.load(f)
         print("\nTesting Web Symbologies:\n========================")
         for json_path in json_paths:
             try:
                 with open(json_path, 'r') as f:
                     json_file = json.load(f)
-                result, errs = validate_web_vector_json(json_file)
+                result, errs = validate_web_vector_json(json_file, schema)
                 if not result:
                     errors.append([json_path, str(errs)])
             except Exception as e:

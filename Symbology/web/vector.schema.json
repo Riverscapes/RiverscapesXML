@@ -12,7 +12,7 @@
         ]
       }
     },
-    "style": {
+    "layerStyles": {
       "type": "array",
       "items": [
         {
@@ -51,6 +51,6 @@
   },
   "required": [
     "legend",
-    "style"
+    "layerStyles"
   ]
 }
