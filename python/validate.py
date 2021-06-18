@@ -2,6 +2,7 @@ import glob
 from jsonschema.exceptions import ValidationError
 from lxml import etree
 import json
+import re
 import jsonschema
 
 def get_xsd(xsd_path):
@@ -76,17 +77,33 @@ def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
                     errors.append('You cannot consume from multiple sources: {}'.format(unique_sources))
     return result, errors
 
-# TODO: COLOR RAMPS ARE MORE COMPLICATED THAN JUST A CSV
-# def validate_ramp_txt(ramp: list):
-#     result = True
-#     errors = []
-#     if not isinstance(ramp, list):
-#         result = False
-#         errors.append('Ramp must be a valid CSV file')
-#     elif len(ramp) <2:
-#         result = False
-#         errors.append('Ramp object must have at least 2 rows')
-#     pass
+def validate_qramp(qramp: str):
+
+    errors = []
+    # Let's get the dealbreakers out of the way
+    if len(qramp) < 0:
+        errors.append('Ramp file was empty')
+        return False, errors
+    lines = qramp.split('\n')
+    if len(lines) < 3:
+        errors.append('Ramp file was missing the minimum number of lines (3)')
+        return False, errors
+    if lines[0].rstrip != "# QGIS Generated Color Map Export File":
+        errors.append('Missing the header line: "# QGIS Generated Color Map Export File". This is probabyl not a QGIS exported color ramp')
+    if "INTERPOLATION:" not in lines[1]: 
+        errors.append('Missing the intepolation type on line 2: "INTERPOLATED:[DISCRETE|INTERPOLATED|EXACT]". This is probabyl not a QGIS exported color ramp')
+    
+    pat = "^(.+?),(.+?),(.+?),(.+?),(.+?),(.+)$"
+    result = True
+    for cline in lines[2:]:
+        # Blank lines are allowed at the end of the file
+        # TODO: right now we're just ignoring blank lines anywhere
+        if len(cline.strip()) == 0: continue
+        if not re.match(pat, cline):
+            errors.append('Value line did not match the pattern: "{}". Got: {}'.format(pat, cline))
+            result=False
+
+    return result, errors
 
 if __name__ == '__main__':
 
