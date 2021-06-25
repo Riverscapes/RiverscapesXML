@@ -16,7 +16,7 @@
         <Children collapsed="false">
           <Node label="Hydrography (NHD HR+)">
             <Children collapsed="true">
-              <Node label="Perennial Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" />
+              <Node label="Perennial Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial"/>
               <Node label="Intermittent Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" />
               <Node label="Ephemeral Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdephemeral" />
               <Node label="Network - Upstream Drainage Area" xpath="Vector[@id='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
@@ -46,7 +46,7 @@
               <Node label="Region - 2-Digit HUC" xpath="Vector[@id='WBDHU2']" type="polygon" symbology="wbdhu2" />
               <Node label="Subregion - 4-Digit HUC" xpath="Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
               <Node label="Basin - 6-Digit HUC" xpath="Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
-              <Node label="Sub-Basin - 8-Digit HUC" xpath="Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" />
+              <Node label="Sub-Basin - 8-Digit HUC" xpath="Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8"/>
               <Node label="Watersheds - 10-Digit HUC" xpath="Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" />
               <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Vector[@id='WBDHU12']" type="polygon" symbology="wbdhu12" />
             </Children>
@@ -96,7 +96,7 @@
       </Node>
       <Node label="Topography and Derivatives">
         <Children collapsed="true">
-          <Node label="DEM (10 m NED)" xpath="DEM" type="raster" symbology="dem" transparency="40" />
+          <Node label="DEM (10 m NED)" xpath="DEM" type="raster" symbology="dem" transparency="40" id="dem" />
           <Node label="Slope Analysis" xpath="Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
           <Node xpathlabel="Name" xpath="Raster[@id='FA']" type="raster" symbology="flow_accumulation" transparency="40" />
           <Node label="Drainage Area" xpath="Raster[@id='DA']" type="raster" symbology="drainage_area" transparency="40" />
@@ -105,9 +105,24 @@
       </Node>
       <Node label="Hillshade">
         <Children collapsed="false">
-          <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="" />
+          <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="" id="hs"/>
         </Children>
       </Node>
     </Children>
   </Node>
+    <Views default="Default">
+    <View name="Default View" id="Default">
+      <Layers>
+        <Layer id="huc8" />
+        <Layer id="perrenial" />
+        <Layer id="hs" />
+      </Layers>
+    </View>
+      <View name="Topography View" id="Topography">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="dem" />
+        <Layer id="hs" />
+      </Layers>
+    </View>
 </Project>
