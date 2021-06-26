@@ -2,24 +2,25 @@
 name: Symbology Curation
 about: This issue template is for requesting additions or changes to business logic
   and symbology.
-title: Symbology for xxxxx Layer(s) in yyyy Project Type
+title: Symbology for xxxxx Layer in yyyy Project Type
 labels: symbology
 assignees: ''
 
 ---
 
 ## Specification
-*Project Type*:  `e.g. Riverscapes Context` (replace)
-*Layers*:
-- Layer 1 name  (reference line in business logic if possible - e.g. https://github.com/Riverscapes/RiverscapesXML/blob/85df57997cbcd5927b2cc78c361936b3bed01ea7/RaveBusinessLogic/RSContext.xml#L19)
-- Layer 2 
+*Project Type*:  `e.g. Riverscapes Context` 
+*Layer(s)*:
+Layer 1 name  (reference line in business logic if possible - e.g. :
+https://github.com/Riverscapes/RiverscapesXML/blob/85df57997cbcd5927b2cc78c361936b3bed01ea7/RaveBusinessLogic/RSContext.xml#L19
+
 *Type(s)* - Raster or Vector
 
 ## Description and/or Explanation of Need
-Lorem ipsum
+Lorem ipsum 
 
-## Examples of Inspiration
-Drag and paste in here any examples or screen shots of what you want this to look like.
+## Example(s) of Inspiration
+Optional: Drag and paste in here any examples or screen shots of what you want this to look like 
 
 -------
 ## To-Do 
