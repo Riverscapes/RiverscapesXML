@@ -1,9 +1,10 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" maxScale="0" minScale="1e+08" version="3.16.5-Hannover" hasScaleBasedVisibilityFlag="0">
+<qgis version="3.18.3-Zürich" minScale="1e+08" styleCategories="AllStyleCategories" maxScale="0" hasScaleBasedVisibilityFlag="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
+    <Private>0</Private>
   </flags>
   <temporal enabled="0" mode="0" fetchMode="0">
     <fixedRange>
@@ -12,13 +13,16 @@
     </fixedRange>
   </temporal>
   <customproperties>
-    <property key="identify/format" value="Value"/>
+    <property value="false" key="WMSBackgroundLayer"/>
+    <property value="false" key="WMSPublishDataSourceUrl"/>
+    <property value="0" key="embeddedWidgets/count"/>
+    <property value="Value" key="identify/format"/>
   </customproperties>
   <pipe>
     <provider>
-      <resampling enabled="false" zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" zoomedOutResamplingMethod="nearestNeighbour"/>
+      <resampling enabled="false" maxOversampling="2" zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour"/>
     </provider>
-    <rasterrenderer type="singlebandpseudocolor" classificationMin="0" band="1" classificationMax="931.0211792" alphaBand="-1" nodataColor="" opacity="0.7">
+    <rasterrenderer alphaBand="-1" opacity="0.6" classificationMin="0" classificationMax="361.6794739" type="singlebandpseudocolor" nodataColor="" band="1">
       <rasterTransparency/>
       <minMaxOrigin>
         <limits>MinMax</limits>
@@ -29,31 +33,53 @@
         <stdDevFactor>2</stdDevFactor>
       </minMaxOrigin>
       <rastershader>
-        <colorrampshader maximumValue="931.02117920000001" colorRampType="DISCRETE" classificationMode="2" clip="0" labelPrecision="1" minimumValue="0">
-          <colorramp name="[source]" type="gradient">
-            <prop v="215,25,28,255" k="color1"/>
-            <prop v="43,131,186,255" k="color2"/>
+        <colorrampshader clip="0" minimumValue="0" classificationMode="2" maximumValue="361.6794739" labelPrecision="0" colorRampType="DISCRETE">
+          <colorramp type="gradient" name="[source]">
+            <Option type="Map">
+              <Option value="0,77,168,255" type="QString" name="color1"/>
+              <Option value="252,252,252,255" type="QString" name="color2"/>
+              <Option value="0" type="QString" name="discrete"/>
+              <Option value="gradient" type="QString" name="rampType"/>
+              <Option value="0.00069122;38,115,0,255:0.00138244;121,172,96,255:0.00276488;127,189,93,255:0.00552976;147,219,94,255:0.00829464;195,252,91,255:0.0110595;214,255,132,255:0.0138244;237,255,176,255:0.0276488;255,248,199,255:0.069122;255,229,158,255:0.138244;242,171,0,255:0.276488;145,133,104,255:0.69122;156,156,156,255" type="QString" name="stops"/>
+            </Option>
+            <prop v="0,77,168,255" k="color1"/>
+            <prop v="252,252,252,255" k="color2"/>
             <prop v="0" k="discrete"/>
             <prop v="gradient" k="rampType"/>
-            <prop v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255" k="stops"/>
+            <prop v="0.00069122;38,115,0,255:0.00138244;121,172,96,255:0.00276488;127,189,93,255:0.00552976;147,219,94,255:0.00829464;195,252,91,255:0.0110595;214,255,132,255:0.0138244;237,255,176,255:0.0276488;255,248,199,255:0.069122;255,229,158,255:0.138244;242,171,0,255:0.276488;145,133,104,255:0.69122;156,156,156,255" k="stops"/>
           </colorramp>
-          <item color="#79ac60" alpha="255" label="&lt;= 0.5" value="0.5"/>
-          <item color="#7fbd5d" alpha="255" label="0.5 - 1.0" value="1"/>
-          <item color="#93db5e" alpha="255" label="1.0 - 2.0" value="2"/>
-          <item color="#c3fc5b" alpha="255" label="2.0 - 3.0" value="3"/>
-          <item color="#d6ff84" alpha="255" label="3.0 - 4.0" value="4"/>
-          <item color="#edffb0" alpha="255" label="4.0 - 5.0" value="5"/>
-          <item color="#fff8c7" alpha="255" label="5 - 10" value="10"/>
-          <item color="#ffe59e" alpha="255" label="10 - 25" value="25"/>
-          <item color="#f2ab00" alpha="255" label="25 - 50" value="50"/>
-          <item color="#918568" alpha="255" label="50 - 100" value="100"/>
-          <item color="#9c9c9c" alpha="255" label="100- 250" value="250"/>
-          <item color="#fcfcfc" alpha="255" label="> 250" value="inf"/>
+          <item color="#004da8" value="0" alpha="255" label="0 (Active Channel)"/>
+          <item color="#267300" value="0.25" alpha="255" label="0.00 - 0.25 m"/>
+          <item color="#79ac60" value="0.5" alpha="255" label="0.25 - 0.50 m"/>
+          <item color="#7fbd5d" value="1" alpha="255" label="0.50 - 1.00 m"/>
+          <item color="#93db5e" value="2" alpha="255" label="1 - 2 m"/>
+          <item color="#c3fc5b" value="3" alpha="255" label="2 - 3 m"/>
+          <item color="#d6ff84" value="4" alpha="255" label="3 - 4 m"/>
+          <item color="#edffb0" value="5" alpha="255" label="4 - 5 m"/>
+          <item color="#fff8c7" value="10" alpha="255" label="5 - 10 m"/>
+          <item color="#ffe59e" value="25" alpha="255" label="10 - 25 m"/>
+          <item color="#f2ab00" value="50" alpha="255" label="25 - 50 m"/>
+          <item color="#918568" value="100" alpha="255" label="50 - 100 m"/>
+          <item color="#9c9c9c" value="250" alpha="255" label="100- 250 m"/>
+          <item color="#fcfcfc" value="inf" alpha="255" label="> 250 m"/>
+          <rampLegendSettings minimumLabel="" prefix="" suffix="" maximumLabel="" orientation="2" useContinuousLegend="1" direction="0">
+            <numericFormat id="basic">
+              <Option type="Map">
+                <Option value="" type="QChar" name="decimal_separator"/>
+                <Option value="6" type="int" name="decimals"/>
+                <Option value="0" type="int" name="rounding_type"/>
+                <Option value="false" type="bool" name="show_plus"/>
+                <Option value="true" type="bool" name="show_thousand_separator"/>
+                <Option value="false" type="bool" name="show_trailing_zeros"/>
+                <Option value="" type="QChar" name="thousand_separator"/>
+              </Option>
+            </numericFormat>
+          </rampLegendSettings>
         </colorrampshader>
       </rastershader>
     </rasterrenderer>
-    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
-    <huesaturation colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255" saturation="0" colorizeOn="0"/>
+    <brightnesscontrast gamma="1" contrast="0" brightness="0"/>
+    <huesaturation grayscaleMode="0" colorizeStrength="100" saturation="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128"/>
     <rasterresampler maxOversampling="2"/>
     <resamplingStage>resamplingFilter</resamplingStage>
   </pipe>
