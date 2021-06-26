@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.  Including a video is super helpful (post it to YouTube and use this syntax to "embed it": `[![Alt-text](https://img.youtube.com/vi/YTID.jpg)](https://www.youtube.com/watch?v=YTID)` and substitute the YouTube video ID for `YTID`)
+A clear and concise description of what the bug is.  Including a video is super helpful (post it to YouTube and use this syntax to "embed it": [![Alt-text](https://img.youtube.com/vi/YTID/0.jpg)](https://www.youtu.be/watch?v=YTID){:target="_blank"} and [substitute the YouTube video ID](https://riverscapes.xyz/Tools/Technical_Reference/Documentation_Standards/WebSites/Common.html#markdown-alternative) for `YTID`)
 
 **To Reproduce**
 Steps to reproduce the behavior:
