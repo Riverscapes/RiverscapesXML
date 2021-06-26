@@ -42,3 +42,7 @@ Instructions for tasks:
 - [ ] Make pull request for just WebRAVE changes. Choose appropriate reviewer(s)
 - [ ] Author or Update any project type documentation
 - [ ] Update or Add Project Views to Reflect Changes (if necc.)
+- [ ] After pull request(s) merged, test in updated qRAVE
+- [ ] After pull request(s) merged, test in updated ArcRAVE
+- [ ] After pull request(s) merged, test in updated WebRAVE
+- [ ] Delete local branch(es) you used for your pull request(s)
