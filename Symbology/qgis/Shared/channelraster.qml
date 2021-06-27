@@ -33,7 +33,7 @@
         <stdDevFactor>2</stdDevFactor>
       </minMaxOrigin>
       <colorPalette>
-        <paletteEntry color="#004da8" value="1" alpha="255" label="0"/>
+        <paletteEntry color="#004da8" value="1" alpha="255" label="Channel"/>
       </colorPalette>
       <colorramp type="randomcolors" name="[source]">
         <Option/>
