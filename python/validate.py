@@ -1,4 +1,5 @@
 import glob
+from io import BytesIO
 from jsonschema.exceptions import ValidationError
 from lxml import etree
 import json
@@ -22,7 +23,7 @@ def collect_files(dir_glob):
     return xml_files
 
 def get_xml(xml_path):
-    with open(xml_path) as xsd_file:
+    with open(xml_path, 'rb') as xsd_file:
         xml = xsd_file.read()
     return xml
 
@@ -31,7 +32,7 @@ def validate_xml(xml_str: str, xsd_str: str):
     xmlschema_doc = etree.fromstring(xsd_str, parser=parser)
     xmlschema = etree.XMLSchema(xmlschema_doc)
 
-    xml_doc = etree.fromstring(xml_str.encode('utf-8'), parser=parser)
+    xml_doc = etree.parse(BytesIO(xml_str), parser=parser)
     result = xmlschema.validate(xml_doc)
 
     return result, xmlschema.error_log
