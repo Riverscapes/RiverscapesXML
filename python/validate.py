@@ -28,7 +28,7 @@ def get_xml(xml_path):
     return xml
 
 def validate_xml(xml_str: str, xsd_str: str):
-    parser = etree.XMLParser(ns_clean=True, recover=True, encoding='utf-8')
+    parser = etree.XMLParser(ns_clean=True, recover=False, encoding='utf-8')
     xmlschema_doc = etree.fromstring(xsd_str, parser=parser)
     xmlschema = etree.XMLSchema(xmlschema_doc)
 
@@ -38,7 +38,7 @@ def validate_xml(xml_str: str, xsd_str: str):
     return result, xmlschema.error_log
 
 def validate_xsd(xsd_str: str):
-    parser = etree.XMLParser(ns_clean=True, recover=True, encoding='utf-8')
+    parser = etree.XMLParser(ns_clean=True, recover=False, encoding='utf-8')
     etree.fromstring(xsd_str, parser=parser)
     errors = list(parser.error_log)
     return errors
