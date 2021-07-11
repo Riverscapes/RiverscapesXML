@@ -15,7 +15,7 @@
   <renderer-v2 enableorderby="0" graduatedMethod="GraduatedColor" type="graduatedSymbol" attr="mCC_HPE_CT" symbollevels="0" forceraster="0">
     <ranges>
       <range render="true" symbol="0" lower="0.000000000000000" upper="0.000000000000000" label="No Dams"/>
-      <range render="true" symbol="1" lower="0.000000000000000" upper="1.000001000000000" label="Single Dams"/>
+      <range render="true" symbol="1" lower="0.000000000000000" upper="1.000001000000000" label="Single Dam"/>
       <range render="true" symbol="2" lower="1.000001000000000" upper="3.000001000000000" label="Small Complex (1-3 dams)"/>
       <range render="true" symbol="3" lower="3.000001000000000" upper="5.000001000000000" label="Medium Complex (3-5 dams)"/>
       <range render="true" symbol="4" lower="5.000001000000000" upper="100.000000000000000" label="Large Complex (>5 dams)"/>
@@ -482,7 +482,7 @@
     </colorramp>
     <classificationMethod id="Quantile">
       <symmetricMode enabled="0" astride="0" symmetrypoint="0"/>
-      <labelFormat trimtrailingzeroes="1" labelprecision="3" format="%1 - %2"/>
+      <labelFormat trimtrailingzeroes="1" labelprecision="4" format="%1 - %2"/>
       <parameters>
         <Option/>
       </parameters>
@@ -504,6 +504,7 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory spacing="5" penWidth="0" width="15" rotationOffset="270" scaleDependency="Area" showAxis="1" lineSizeType="MM" minimumSize="0" labelPlacementMethod="XHeight" spacingUnitScale="3x:0,0,0,0,0,0" barWidth="5" opacity="1" spacingUnit="MM" enabled="0" backgroundColor="#ffffff" maxScaleDenominator="1e+08" height="15" penAlpha="255" diagramOrientation="Up" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" direction="0" backgroundAlpha="255" scaleBasedVisibility="0" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0">
       <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+      <attribute label="" field="" color="#000000"/>
       <axisSymbol>
         <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="line" name="">
           <data_defined_properties>
