@@ -20,18 +20,18 @@
 
     <xs:complexType name="RealizationsType">
         <xs:choice maxOccurs="unbounded">
-            <xs:element type="HANDType" name="HAND" maxOccurs="unbounded" minOccurs="0" />
+            <xs:element type="ChannelAreaType" name="ChannelArea" maxOccurs="unbounded" minOccurs="0" />
         </xs:choice>
     </xs:complexType>
 
 
     <!-- =========================================================================
   
-  Project: HAND
+  Project: ChannelArea
   
   ============================================================================== -->
 
-    <xs:complexType name="HANDType" mixed="true">
+    <xs:complexType name="ChannelAreaType" mixed="true">
         <xs:complexContent>
             <xs:extension base="RealizationType">
                 <xs:sequence>
