@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/ChannelArea.xsd">
+	<Name>Channel Area for HUC 17060304</Name>
+	<ProjectType>ChannelArea</ProjectType>
+	<MetaData>
+		<Meta name="ModelVersion">0.0.1</Meta>
+		<Meta name="dateCreated">2021-07-16T14:31:02.517145</Meta>
+		<Meta name="HUC8">17060304</Meta>
+		<Meta name="HUC">17060304</Meta>
+		<Meta name="ChannelAreaVersion">0.0.1</Meta>
+		<Meta name="ChannelAreaTimestamp">1626471062</Meta>
+		<Meta name="Runner">VSCode</Meta>
+		<Meta name="Bankfull Equation">0.177 * (a ** 0.397) * (p ** 0.453)</Meta>
+		<Meta name="Reach Codes">['46003', '46006', '46007']</Meta>
+		<Meta name="ProcTimeS">21.58</Meta>
+		<Meta name="ProcTimeHuman">21.6 seconds</Meta>
+	</MetaData>
+	<Realizations>
+		<ChannelArea id="ChannelArea" dateCreated="2021-07-16T14:31:02.547495" guid="1eb5ff3a-e67d-11eb-a954-f40f243c4b95" productVersion="0.0.1">
+			<Name>Channel Area for HUC 17060304</Name>
+			<Inputs>
+				<Geopackage guid="5b7cd971-9b75-44de-aff8-676761fedb33" id="INPUTS">
+					<Name>Inputs</Name>
+					<Path>inputs/inputs.gpkg</Path>
+					<Layers>
+						<Vector guid="05181910-dff5-4ecc-8753-d642533f8660" id="FLOWLINES">
+							<Name>NHD Flowlines</Name>
+							<Path>flowlines</Path>
+						</Vector>
+						<Vector guid="8a56ee03-fc0f-4cad-bcfc-e11ee67b2529" id="FLOWAREAS">
+							<Name>NHD Flow Areas</Name>
+							<Path>flowareas</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Inputs>
+			<Intermediates>
+				<Geopackage guid="a1991ad1-b083-45f9-b771-a05cda9b33a0" id="Intermediates">
+					<Name>Intermediates</Name>
+					<Path>intermediates/intermediates.gpkg</Path>
+					<Layers>
+						<Vector guid="bb0e71aa-1257-4cf7-9389-5863130891c1" id="FLOW_AREA_NO_ISLANDS">
+							<Name>Flow Areas No Islands</Name>
+							<Path>flow_area_no_islands</Path>
+						</Vector>
+						<Vector guid="3ef87afd-b594-4b40-9e47-7db7b00dab25" id="BANKFULL_NETWORK">
+							<Name>Bankfull Network</Name>
+							<Path>bankfull_network</Path>
+						</Vector>
+						<Vector guid="a0cb6017-6711-4399-bc73-4fdd2037a645" id="BANKFULL_POLYGONS">
+							<Name>Bankfull Polygons</Name>
+							<Path>bankfull_polygons</Path>
+						</Vector>
+						<Vector guid="d0db1ed8-49db-49d5-8a7c-2b4bf1028bd0" id="DIFFERENCE_POLYGONS">
+							<Name>Difference Polygons</Name>
+							<Path>difference_polygons</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Intermediates>
+			<Outputs>
+				<Geopackage guid="e8e16854-7227-4115-ad9f-60a46e4cb669" id="OUTPUTS">
+					<Name>VBET</Name>
+					<Path>outputs/channel_area.gpkg</Path>
+					<Layers>
+						<Vector guid="4dd547ef-14cc-4e83-92d0-7219d89ffa92" id="CHANNEL_AREA">
+							<Name>Channel Area Polygons</Name>
+							<Path>channel_areas</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+				<HTMLFile guid="4f0c92e4-f51a-4f0d-80c3-814a8d6fe871" id="REPORT">
+					<Name>RSContext Report</Name>
+					<Path>outputs/channel_area.html</Path>
+				</HTMLFile>
+			</Outputs>
+		</ChannelArea>
+	</Realizations>
+</Project>
