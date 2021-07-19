@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>Channel Area</Name>
+    <ProjectType>ChannelArea</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/ChannelArea">
+        <Children collapsed="false">
+            <Node label="Outputs" xpath="Outputs">
+                <Children collapsed="true">
+                  <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="line" id="channel_area" symbology="ChannelArea" />
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="Channel Area" id="DEFAULT">
+            <Layers>
+                <Layer id="channel_area" />
+            </Layers>
+        </View>
+    </Views>
+</Project>  
