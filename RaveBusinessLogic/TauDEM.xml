@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>TauDEM</Name>
+    <ProjectType>TauDEM</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/TauDEM">
+        <Children collapsed="false">
+            <Node label="Outputs" xpath="Outputs">
+                <Children collapsed="true">
+                  <Node label="DINFFLOWDIR_SLP Raster" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinf_slp" transparency="40"/>
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="TauDEM" id="DEFAULT">
+            <Layers>
+                <Layer id="dinf_slp" />
+            </Layers>
+        </View>
+    </Views>
+</Project>  
