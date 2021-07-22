@@ -32,7 +32,8 @@
       <Product id="pyBRAT" name="pyBRAT 3.x Models" folder="pyBRAT" url="" />
       <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
       <Product id="HAND" name="HAND Models" folder="HAND" url="" />
-      <Product id="ChannelArea" name="ChannelArea Models" folder="HAND" url="" />
+      <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
+      <Product id="TauDEM" name="ChannelArea Models" folder="TauDEM" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
       <Product id="fmLTPBR" name="fmLTPBR" folder="fmLTPBR" url="" />
@@ -60,6 +61,7 @@
         <Product ref="BRAT" />
         <Product ref="HAND" />
         <Product ref="ChannelArea" />
+        <Product ref="TauDEM" />
         <Product ref="VBET" />
         <Product ref="RSContext" />
         <Product ref="Confinement" />
