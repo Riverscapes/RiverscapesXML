@@ -60,8 +60,8 @@
               <Node label="High Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SP2" />
               <Node label="Base Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SPLow" />
 
-              <Node label="High Flow Stream Power" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SP2" />
-              <Node label="Base Flow Stream Power" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SPLow" />
+              <Node label="High Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SP2" />
+              <Node label="Base Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SPLow" />
             </Children>
           </Node>
           <Node label="Overall Vegetation Dam Capacity">
