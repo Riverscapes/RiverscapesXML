@@ -31,6 +31,8 @@
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
       <Product id="HAND" name="HAND Models" folder="HAND" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
+      <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
       <Product id="RVD" name="Riparian Vegetation Departure" folder="RVD" url="" />
       <Product id="Confinement" name="Confinement" folder="Confinement" url="" />
@@ -54,6 +56,8 @@
         <Product ref="BRAT" />
         <Product ref="VBET" />
         <Product ref="HAND" />
+        <Product ref="ChannelArea" />
+        <Product ref="TauDEM" />
         <Product ref="RSContext" />
         <Product ref="Confinement" />
         <Product ref="RVD" />
