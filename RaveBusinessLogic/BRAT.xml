@@ -49,9 +49,9 @@
           <Node label="Topographic Index">
             <Children>
               <Node label="Slope" xpath="Vector" type="line" symbology="iGeo_Slope" />
-              <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_DA" />
+              <Node label="Drainage Area" xpath="Vector" type="line" symbology="iGeo_DA" />
 
-              <Node label="Slope" xpath="Vector" type="line" symbology="iGeo_Slope" />
+              <Node label="Slope" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_Slope" />
               <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_DA" />
             </Children>
           </Node>
