@@ -1,30 +1,36 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingHints="1" version="3.12.1-București" labelsEnabled="1" simplifyMaxScale="1" simplifyLocal="1" readOnly="0" maxScale="0" simplifyAlgorithm="0" simplifyDrawingTol="1" styleCategories="AllStyleCategories" minScale="100000000" hasScaleBasedVisibilityFlag="0">
+<qgis maxScale="0" styleCategories="AllStyleCategories" simplifyLocal="1" version="3.16.8-Hannover" simplifyAlgorithm="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" minScale="100000000" labelsEnabled="1" simplifyDrawingHints="1" simplifyDrawingTol="1" readOnly="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
+  <temporal enabled="0" fixedDuration="0" endField="LoadDate" startExpression="" mode="0" durationField="" startField="LoadDate" endExpression="" accumulate="0" durationUnit="min">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
+  <renderer-v2 symbollevels="0" type="singleSymbol" enableorderby="0" forceraster="0">
     <symbols>
-      <symbol name="0" type="fill" clip_to_extent="1" force_rhr="0" alpha="1">
-        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+      <symbol force_rhr="0" clip_to_extent="1" type="fill" alpha="1" name="0">
+        <layer enabled="1" pass="0" locked="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="190,207,80,0" k="color"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="0,0" k="offset"/>
           <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
           <prop v="MM" k="offset_unit"/>
-          <prop v="227,26,28,255" k="outline_color"/>
+          <prop v="115,38,0,255" k="outline_color"/>
           <prop v="solid" k="outline_style"/>
-          <prop v="1.75" k="outline_width"/>
-          <prop v="Pixel" k="outline_width_unit"/>
+          <prop v="3" k="outline_width"/>
+          <prop v="Point" k="outline_width_unit"/>
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -35,12 +41,12 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontItalic="0" fontWordSpacing="0" namedStyle="Regular" fontCapitals="0" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" multilineHeight="1" fontSize="10" isExpression="1" fontKerning="1" fieldName=" &quot;Name&quot;   +  '\n'  +   &quot;HUC2&quot; " textOrientation="horizontal" fontUnderline="0" fontStrikeout="0" useSubstitutions="0" fontSizeUnit="Point" fontFamily="MS Shell Dlg 2" textOpacity="1" textColor="255,255,255,255" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0">
-        <text-buffer bufferColor="255,255,255,255" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferOpacity="1" bufferBlendMode="0" bufferDraw="0" bufferNoFill="1" bufferSizeUnits="MM"/>
-        <text-mask maskEnabled="1" maskType="0" maskJoinStyle="128" maskSize="1.5" maskSizeUnits="MM" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1"/>
-        <background shapeBorderColor="128,128,128,255" shapeBlendMode="0" shapeOffsetUnit="MM" shapeBorderWidthUnit="MM" shapeType="0" shapeDraw="0" shapeSVGFile="" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeSizeUnit="MM" shapeRotation="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeBorderWidth="0" shapeRadiiY="0" shapeJoinStyle="64" shapeOpacity="1" shapeRotationType="0" shapeRadiiUnit="MM" shapeOffsetY="0" shapeOffsetX="0" shapeFillColor="255,255,255,255" shapeSizeX="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0">
-          <symbol name="markerSymbol" type="marker" clip_to_extent="1" force_rhr="0" alpha="1">
-            <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+      <text-style namedStyle="Regular" fontStrikeout="0" fontWordSpacing="0" fontUnderline="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" textColor="255,255,255,255" capitalization="0" fontWeight="50" fontSize="10" fontItalic="0" useSubstitutions="0" fieldName=" &quot;Name&quot;   +  '\n'  +   &quot;HUC2&quot; " fontLetterSpacing="0" textOrientation="horizontal" fontKerning="1" fontSizeUnit="Point" fontFamily="MS Shell Dlg 2" textOpacity="1" isExpression="1" allowHtml="0" blendMode="0" previewBkgrdColor="255,255,255,255" multilineHeight="1">
+        <text-buffer bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferNoFill="1" bufferOpacity="1" bufferJoinStyle="128"/>
+        <text-mask maskSize="1.5" maskEnabled="1" maskType="0" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskJoinStyle="128" maskSizeUnits="MM"/>
+        <background shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidth="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRotation="0" shapeRadiiY="0" shapeBorderColor="128,128,128,255" shapeBlendMode="0" shapeSizeType="0" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOpacity="1" shapeBorderWidthUnit="MM" shapeSizeY="0" shapeSVGFile="" shapeSizeUnit="MM" shapeDraw="0" shapeType="0" shapeRotationType="0" shapeRadiiX="0" shapeJoinStyle="64" shapeOffsetUnit="MM" shapeSizeX="0" shapeOffsetY="0">
+          <symbol force_rhr="0" clip_to_extent="1" type="marker" alpha="1" name="markerSymbol">
+            <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
               <prop v="0" k="angle"/>
               <prop v="255,158,23,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
@@ -61,54 +67,55 @@
               <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </background>
-        <shadow shadowOpacity="0.7" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowOffsetAngle="135" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowUnder="0" shadowRadiusUnit="MM" shadowOffsetUnit="MM" shadowOffsetGlobal="1" shadowBlendMode="6" shadowDraw="1"/>
+        <shadow shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowOffsetAngle="135" shadowDraw="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOpacity="0.69999999999999996" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowScale="100" shadowRadius="1.5" shadowOffsetUnit="MM"/>
         <dd_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format autoWrapLength="0" addDirectionSymbol="0" decimals="3" useMaxLineLengthForAutoWrap="1" multilineAlign="1" formatNumbers="0" wrapChar="" rightDirectionSymbol=">" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" plussign="0"/>
-      <placement xOffset="0" overrunDistance="0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" priority="5" geometryGenerator="" repeatDistanceUnits="MM" geometryGeneratorEnabled="0" distUnits="MM" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" fitInPolygonOnly="0" placementFlags="10" preserveRotation="1" centroidInside="0" overrunDistanceUnit="MM" layerType="PolygonGeometry" dist="0" placement="0" maxCurvedCharAngleOut="-25" offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" rotationAngle="0" quadOffset="4" maxCurvedCharAngleIn="25" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" centroidWhole="0"/>
-      <rendering obstacleFactor="1" obstacle="1" minFeatureSize="0" labelPerPart="0" drawLabels="1" zIndex="0" displayAll="0" scaleMin="0" fontMaxPixelSize="10000" obstacleType="1" maxNumLabels="2000" limitNumLabels="0" mergeLines="0" scaleVisibility="0" upsidedownLabels="0" scaleMax="0" fontLimitPixelSize="0" fontMinPixelSize="3"/>
+      <text-format rightDirectionSymbol=">" multilineAlign="1" leftDirectionSymbol="&lt;" autoWrapLength="0" wrapChar="" addDirectionSymbol="0" plussign="0" placeDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" formatNumbers="0" reverseDirectionSymbol="0" decimals="3"/>
+      <placement repeatDistanceUnits="MM" geometryGeneratorType="PointGeometry" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" lineAnchorPercent="0.5" maxCurvedCharAngleIn="25" geometryGeneratorEnabled="0" centroidInside="0" repeatDistance="0" preserveRotation="1" placement="0" distUnits="MM" overrunDistanceUnit="MM" lineAnchorType="0" maxCurvedCharAngleOut="-25" xOffset="0" overrunDistance="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" quadOffset="4" dist="0" priority="5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" distMapUnitScale="3x:0,0,0,0,0,0" centroidWhole="0" rotationAngle="0" polygonPlacementFlags="2" layerType="PolygonGeometry" offsetType="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" fitInPolygonOnly="0" geometryGenerator="" yOffset="0"/>
+      <rendering fontLimitPixelSize="0" displayAll="0" maxNumLabels="2000" fontMinPixelSize="3" zIndex="0" obstacleFactor="1" drawLabels="1" scaleMin="0" labelPerPart="0" mergeLines="0" minFeatureSize="0" limitNumLabels="0" upsidedownLabels="0" scaleMax="0" obstacleType="1" scaleVisibility="0" obstacle="1" fontMaxPixelSize="10000"/>
       <dd_properties>
         <Option type="Map">
-          <Option name="name" value="" type="QString"/>
+          <Option type="QString" value="" name="name"/>
           <Option name="properties"/>
-          <Option name="type" value="collection" type="QString"/>
+          <Option type="QString" value="collection" name="type"/>
         </Option>
       </dd_properties>
       <callout type="simple">
         <Option type="Map">
-          <Option name="anchorPoint" value="pole_of_inaccessibility" type="QString"/>
-          <Option name="ddProperties" type="Map">
-            <Option name="name" value="" type="QString"/>
+          <Option type="QString" value="pole_of_inaccessibility" name="anchorPoint"/>
+          <Option type="Map" name="ddProperties">
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
-          <Option name="drawToAllParts" value="false" type="bool"/>
-          <Option name="enabled" value="1" type="QString"/>
-          <Option name="lineSymbol" value="&lt;symbol name=&quot;symbol&quot; type=&quot;line&quot; clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot;>&lt;layer enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString"/>
-          <Option name="minLength" value="0" type="double"/>
-          <Option name="minLengthMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
-          <Option name="minLengthUnit" value="MM" type="QString"/>
-          <Option name="offsetFromAnchor" value="0" type="double"/>
-          <Option name="offsetFromAnchorMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
-          <Option name="offsetFromAnchorUnit" value="MM" type="QString"/>
-          <Option name="offsetFromLabel" value="0" type="double"/>
-          <Option name="offsetFromLabelMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
-          <Option name="offsetFromLabelUnit" value="MM" type="QString"/>
+          <Option type="bool" value="false" name="drawToAllParts"/>
+          <Option type="QString" value="1" name="enabled"/>
+          <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
+          <Option type="QString" value="&lt;symbol force_rhr=&quot;0&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; alpha=&quot;1&quot; name=&quot;symbol&quot;>&lt;layer enabled=&quot;1&quot; pass=&quot;0&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+          <Option type="double" value="0" name="minLength"/>
+          <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
+          <Option type="QString" value="MM" name="minLengthUnit"/>
+          <Option type="double" value="0" name="offsetFromAnchor"/>
+          <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale"/>
+          <Option type="QString" value="MM" name="offsetFromAnchorUnit"/>
+          <Option type="double" value="0" name="offsetFromLabel"/>
+          <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale"/>
+          <Option type="QString" value="MM" name="offsetFromLabelUnit"/>
         </Option>
       </callout>
     </settings>
@@ -121,17 +128,21 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" diagramOrientation="Up" showAxis="1" direction="0" labelPlacementMethod="XHeight" minimumSize="0" height="15" maxScaleDenominator="1e+08" width="15" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" penAlpha="255" spacingUnit="MM" backgroundAlpha="255" barWidth="5" backgroundColor="#ffffff" penWidth="0" rotationOffset="270" enabled="0" spacing="5" opacity="1" scaleBasedVisibility="0" sizeType="MM" penColor="#000000">
-      <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
-      <attribute field="" label="" color="#000000"/>
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory backgroundAlpha="255" minimumSize="0" maxScaleDenominator="1e+08" sizeType="MM" penAlpha="255" opacity="1" sizeScale="3x:0,0,0,0,0,0" enabled="0" minScaleDenominator="0" backgroundColor="#ffffff" spacing="5" width="15" diagramOrientation="Up" penWidth="0" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" showAxis="1" scaleDependency="Area" rotationOffset="270" direction="0" height="15" lineSizeType="MM" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" barWidth="5">
+      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute color="#000000" field="" label=""/>
       <axisSymbol>
-        <symbol name="" type="line" clip_to_extent="1" force_rhr="0" alpha="1">
-          <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+        <symbol force_rhr="0" clip_to_extent="1" type="line" alpha="1" name="">
+          <layer enabled="1" pass="0" locked="0" class="SimpleLine">
+            <prop v="0" k="align_dash_pattern"/>
             <prop v="square" k="capstyle"/>
             <prop v="5;2" k="customdash"/>
             <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
             <prop v="MM" k="customdash_unit"/>
+            <prop v="0" k="dash_pattern_offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+            <prop v="MM" k="dash_pattern_offset_unit"/>
             <prop v="0" k="draw_inside_polygon"/>
             <prop v="bevel" k="joinstyle"/>
             <prop v="35,35,35,255" k="line_color"/>
@@ -142,13 +153,14 @@
             <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
             <prop v="MM" k="offset_unit"/>
             <prop v="0" k="ring_filter"/>
+            <prop v="0" k="tweak_dash_pattern_on_corners"/>
             <prop v="0" k="use_custom_dash"/>
             <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
+                <Option type="QString" value="" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -156,120 +168,120 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings obstacle="0" placement="1" zIndex="0" linePlacementFlags="18" dist="0" showAll="1" priority="0">
+  <DiagramLayerSettings dist="0" zIndex="0" obstacle="0" placement="1" linePlacementFlags="18" showAll="1" priority="0">
     <properties>
       <Option type="Map">
-        <Option name="name" value="" type="QString"/>
+        <Option type="QString" value="" name="name"/>
         <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
+        <Option type="QString" value="collection" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
   <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration type="Map">
-      <Option name="QgsGeometryGapCheck" type="Map">
-        <Option name="allowedGapsBuffer" value="0" type="double"/>
-        <Option name="allowedGapsEnabled" value="false" type="bool"/>
-        <Option name="allowedGapsLayer" value="" type="QString"/>
+      <Option type="Map" name="QgsGeometryGapCheck">
+        <Option type="double" value="0" name="allowedGapsBuffer"/>
+        <Option type="bool" value="false" name="allowedGapsEnabled"/>
+        <Option type="QString" value="" name="allowedGapsLayer"/>
       </Option>
     </checkConfiguration>
   </geometryOptions>
+  <legend type="default-vector"/>
   <referencedLayers/>
-  <referencingLayers/>
   <fieldConfiguration>
-    <field name="TNMID">
+    <field configurationFlags="None" name="TNMID">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="MetaSource">
+    <field configurationFlags="None" name="MetaSource">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="SourceData">
+    <field configurationFlags="None" name="SourceData">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="SourceOrig">
+    <field configurationFlags="None" name="SourceOrig">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="SourceFeat">
+    <field configurationFlags="None" name="SourceFeat">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="LoadDate">
+    <field configurationFlags="None" name="LoadDate">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="AreaSqKm">
+    <field configurationFlags="None" name="AreaSqKm">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="AreaAcres">
+    <field configurationFlags="None" name="AreaAcres">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="GNIS_ID">
+    <field configurationFlags="None" name="GNIS_ID">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="Name">
+    <field configurationFlags="None" name="Name">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="States">
+    <field configurationFlags="None" name="States">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="HUC2">
+    <field configurationFlags="None" name="HUC2">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="Shape_Leng">
+    <field configurationFlags="None" name="Shape_Leng">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="Shape_Area">
+    <field configurationFlags="None" name="Shape_Area">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -278,23 +290,21 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="TNMID" name="" index="0"/>
-    <alias field="MetaSource" name="" index="1"/>
-    <alias field="SourceData" name="" index="2"/>
-    <alias field="SourceOrig" name="" index="3"/>
-    <alias field="SourceFeat" name="" index="4"/>
-    <alias field="LoadDate" name="" index="5"/>
-    <alias field="AreaSqKm" name="" index="6"/>
-    <alias field="AreaAcres" name="" index="7"/>
-    <alias field="GNIS_ID" name="" index="8"/>
-    <alias field="Name" name="" index="9"/>
-    <alias field="States" name="" index="10"/>
-    <alias field="HUC2" name="" index="11"/>
-    <alias field="Shape_Leng" name="" index="12"/>
-    <alias field="Shape_Area" name="" index="13"/>
+    <alias index="0" field="TNMID" name=""/>
+    <alias index="1" field="MetaSource" name=""/>
+    <alias index="2" field="SourceData" name=""/>
+    <alias index="3" field="SourceOrig" name=""/>
+    <alias index="4" field="SourceFeat" name=""/>
+    <alias index="5" field="LoadDate" name=""/>
+    <alias index="6" field="AreaSqKm" name=""/>
+    <alias index="7" field="AreaAcres" name=""/>
+    <alias index="8" field="GNIS_ID" name=""/>
+    <alias index="9" field="Name" name=""/>
+    <alias index="10" field="States" name=""/>
+    <alias index="11" field="HUC2" name=""/>
+    <alias index="12" field="Shape_Leng" name=""/>
+    <alias index="13" field="Shape_Area" name=""/>
   </aliases>
-  <excludeAttributesWMS/>
-  <excludeAttributesWFS/>
   <defaults>
     <default field="TNMID" expression="" applyOnUpdate="0"/>
     <default field="MetaSource" expression="" applyOnUpdate="0"/>
@@ -312,58 +322,58 @@
     <default field="Shape_Area" expression="" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint field="TNMID" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="MetaSource" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="SourceData" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="SourceOrig" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="SourceFeat" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="LoadDate" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="AreaSqKm" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="AreaAcres" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="GNIS_ID" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="Name" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="States" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="HUC2" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="Shape_Leng" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
-    <constraint field="Shape_Area" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+    <constraint unique_strength="0" field="TNMID" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="MetaSource" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="SourceData" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="SourceOrig" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="SourceFeat" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="LoadDate" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="AreaSqKm" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="AreaAcres" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="GNIS_ID" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="Name" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="States" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="HUC2" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="Shape_Leng" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="Shape_Area" notnull_strength="0" exp_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="TNMID" exp="" desc=""/>
-    <constraint field="MetaSource" exp="" desc=""/>
-    <constraint field="SourceData" exp="" desc=""/>
-    <constraint field="SourceOrig" exp="" desc=""/>
-    <constraint field="SourceFeat" exp="" desc=""/>
-    <constraint field="LoadDate" exp="" desc=""/>
-    <constraint field="AreaSqKm" exp="" desc=""/>
-    <constraint field="AreaAcres" exp="" desc=""/>
-    <constraint field="GNIS_ID" exp="" desc=""/>
-    <constraint field="Name" exp="" desc=""/>
-    <constraint field="States" exp="" desc=""/>
-    <constraint field="HUC2" exp="" desc=""/>
-    <constraint field="Shape_Leng" exp="" desc=""/>
-    <constraint field="Shape_Area" exp="" desc=""/>
+    <constraint desc="" field="TNMID" exp=""/>
+    <constraint desc="" field="MetaSource" exp=""/>
+    <constraint desc="" field="SourceData" exp=""/>
+    <constraint desc="" field="SourceOrig" exp=""/>
+    <constraint desc="" field="SourceFeat" exp=""/>
+    <constraint desc="" field="LoadDate" exp=""/>
+    <constraint desc="" field="AreaSqKm" exp=""/>
+    <constraint desc="" field="AreaAcres" exp=""/>
+    <constraint desc="" field="GNIS_ID" exp=""/>
+    <constraint desc="" field="Name" exp=""/>
+    <constraint desc="" field="States" exp=""/>
+    <constraint desc="" field="HUC2" exp=""/>
+    <constraint desc="" field="Shape_Leng" exp=""/>
+    <constraint desc="" field="Shape_Area" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
-      <column name="TNMID" type="field" hidden="0" width="-1"/>
-      <column name="MetaSource" type="field" hidden="0" width="-1"/>
-      <column name="SourceData" type="field" hidden="0" width="-1"/>
-      <column name="SourceOrig" type="field" hidden="0" width="-1"/>
-      <column name="SourceFeat" type="field" hidden="0" width="-1"/>
-      <column name="LoadDate" type="field" hidden="0" width="-1"/>
-      <column name="AreaSqKm" type="field" hidden="0" width="-1"/>
-      <column name="AreaAcres" type="field" hidden="0" width="-1"/>
-      <column name="GNIS_ID" type="field" hidden="0" width="-1"/>
-      <column name="Name" type="field" hidden="0" width="-1"/>
-      <column name="States" type="field" hidden="0" width="-1"/>
-      <column name="Shape_Leng" type="field" hidden="0" width="-1"/>
-      <column name="Shape_Area" type="field" hidden="0" width="-1"/>
-      <column type="actions" hidden="1" width="-1"/>
-      <column name="HUC2" type="field" hidden="0" width="-1"/>
+      <column hidden="0" type="field" width="-1" name="TNMID"/>
+      <column hidden="0" type="field" width="-1" name="MetaSource"/>
+      <column hidden="0" type="field" width="-1" name="SourceData"/>
+      <column hidden="0" type="field" width="-1" name="SourceOrig"/>
+      <column hidden="0" type="field" width="-1" name="SourceFeat"/>
+      <column hidden="0" type="field" width="-1" name="LoadDate"/>
+      <column hidden="0" type="field" width="-1" name="AreaSqKm"/>
+      <column hidden="0" type="field" width="-1" name="AreaAcres"/>
+      <column hidden="0" type="field" width="-1" name="GNIS_ID"/>
+      <column hidden="0" type="field" width="-1" name="Name"/>
+      <column hidden="0" type="field" width="-1" name="States"/>
+      <column hidden="0" type="field" width="-1" name="Shape_Leng"/>
+      <column hidden="0" type="field" width="-1" name="Shape_Area"/>
+      <column hidden="1" type="actions" width="-1"/>
+      <column hidden="0" type="field" width="-1" name="HUC2"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -395,47 +405,48 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field name="AreaAcres" editable="1"/>
-    <field name="AreaSqKm" editable="1"/>
-    <field name="GNIS_ID" editable="1"/>
-    <field name="HUC10" editable="1"/>
-    <field name="HUC2" editable="1"/>
-    <field name="HUC8" editable="1"/>
-    <field name="HUMod" editable="1"/>
-    <field name="HUType" editable="1"/>
-    <field name="LoadDate" editable="1"/>
-    <field name="MetaSource" editable="1"/>
-    <field name="Name" editable="1"/>
-    <field name="Shape_Area" editable="1"/>
-    <field name="Shape_Leng" editable="1"/>
-    <field name="SourceData" editable="1"/>
-    <field name="SourceFeat" editable="1"/>
-    <field name="SourceOrig" editable="1"/>
-    <field name="States" editable="1"/>
-    <field name="TNMID" editable="1"/>
+    <field editable="1" name="AreaAcres"/>
+    <field editable="1" name="AreaSqKm"/>
+    <field editable="1" name="GNIS_ID"/>
+    <field editable="1" name="HUC10"/>
+    <field editable="1" name="HUC2"/>
+    <field editable="1" name="HUC8"/>
+    <field editable="1" name="HUMod"/>
+    <field editable="1" name="HUType"/>
+    <field editable="1" name="LoadDate"/>
+    <field editable="1" name="MetaSource"/>
+    <field editable="1" name="Name"/>
+    <field editable="1" name="Shape_Area"/>
+    <field editable="1" name="Shape_Leng"/>
+    <field editable="1" name="SourceData"/>
+    <field editable="1" name="SourceFeat"/>
+    <field editable="1" name="SourceOrig"/>
+    <field editable="1" name="States"/>
+    <field editable="1" name="TNMID"/>
   </editable>
   <labelOnTop>
-    <field name="AreaAcres" labelOnTop="0"/>
-    <field name="AreaSqKm" labelOnTop="0"/>
-    <field name="GNIS_ID" labelOnTop="0"/>
-    <field name="HUC10" labelOnTop="0"/>
-    <field name="HUC2" labelOnTop="0"/>
-    <field name="HUC8" labelOnTop="0"/>
-    <field name="HUMod" labelOnTop="0"/>
-    <field name="HUType" labelOnTop="0"/>
-    <field name="LoadDate" labelOnTop="0"/>
-    <field name="MetaSource" labelOnTop="0"/>
-    <field name="Name" labelOnTop="0"/>
-    <field name="Shape_Area" labelOnTop="0"/>
-    <field name="Shape_Leng" labelOnTop="0"/>
-    <field name="SourceData" labelOnTop="0"/>
-    <field name="SourceFeat" labelOnTop="0"/>
-    <field name="SourceOrig" labelOnTop="0"/>
-    <field name="States" labelOnTop="0"/>
-    <field name="TNMID" labelOnTop="0"/>
+    <field labelOnTop="0" name="AreaAcres"/>
+    <field labelOnTop="0" name="AreaSqKm"/>
+    <field labelOnTop="0" name="GNIS_ID"/>
+    <field labelOnTop="0" name="HUC10"/>
+    <field labelOnTop="0" name="HUC2"/>
+    <field labelOnTop="0" name="HUC8"/>
+    <field labelOnTop="0" name="HUMod"/>
+    <field labelOnTop="0" name="HUType"/>
+    <field labelOnTop="0" name="LoadDate"/>
+    <field labelOnTop="0" name="MetaSource"/>
+    <field labelOnTop="0" name="Name"/>
+    <field labelOnTop="0" name="Shape_Area"/>
+    <field labelOnTop="0" name="Shape_Leng"/>
+    <field labelOnTop="0" name="SourceData"/>
+    <field labelOnTop="0" name="SourceFeat"/>
+    <field labelOnTop="0" name="SourceOrig"/>
+    <field labelOnTop="0" name="States"/>
+    <field labelOnTop="0" name="TNMID"/>
   </labelOnTop>
+  <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>Name</previewExpression>
+  <previewExpression>"Name"</previewExpression>
   <mapTip></mapTip>
   <layerGeometryType>2</layerGeometryType>
 </qgis>
