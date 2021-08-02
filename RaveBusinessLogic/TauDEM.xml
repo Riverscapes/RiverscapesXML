@@ -7,7 +7,7 @@
         <Children collapsed="false">
              <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
-                  <Node label="DEM" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+                  <Node label="DEM" xpath="Geopackage/Layers/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
                   <Node xpathlabel="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
                   <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
                 </Children>
@@ -22,7 +22,7 @@
             </Node>
             <Node label="Outputs" xpath="Outputs">
                 <Children collapsed="false">
-                    <Node label="TauDEM D-Inf Flow Directions Slope" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                    <Node label="TauDEM D-Inf Flow Directions Slope" xpath="Intermediates/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="hand" transparency="40" />
                     <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
                     <Node label="TWI Raster" xpath="Intermediates/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
                 </Children>
@@ -32,7 +32,7 @@
     <Views default="DEFAULT">
         <View name="TauDEM" id="DEFAULT">
             <Layers>
-                <Layer id="dinf_slp" />
+                <Layer id="DINFFLOWDIR_SLP" />
             </Layers>
         </View>
     </Views>
