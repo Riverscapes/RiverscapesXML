@@ -8,10 +8,10 @@
       <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="file" />
       <Node label="Outputs">
         <Children collapsed="false">
-          <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />
+          <Node label="Raw Confinement" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_MARGINS']" type="line" id="confinement_margins" symbology="confinement_margins" />
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
-          <Node label="Constriction Ratio" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
+          <Node label="Constriction Proportion" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_BUFFERS']" type="line" id="confinement_buffer" symbology="confinement_buffer" />
         </Children>
       </Node>
