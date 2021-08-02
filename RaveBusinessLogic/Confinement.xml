@@ -39,7 +39,7 @@
         <Layer id="confining_poly" />
       </Layers>
     </View>
-    <View name="Constriction Ratio by Stream Segment" id="CONSTRICTION_RATIO">
+    <View name="Proportion Constricted by Stream Segment" id="CONSTRICTION_RATIO">
       <Layers>
         <Layer id="constriction_ratio" />
         <Layer id="confining_poly" />
