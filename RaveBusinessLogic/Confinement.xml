@@ -8,8 +8,8 @@
       <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="file" />
       <Node label="Outputs">
         <Children collapsed="false">
-          <Node label="Raw Confinement" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />
-          <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_MARGINS']" type="line" id="confinement_margins" symbology="confinement_margins" />
+          <Node label="Confinement Type" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />
+          <Node label="Confining Margins" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_MARGINS']" type="line" id="confinement_margins" symbology="confinement_margins" />
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
           <Node label="Constriction Proportion" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RATIO']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
           <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_BUFFERS']" type="line" id="confinement_buffer" symbology="confinement_buffer" />
@@ -18,7 +18,7 @@
       <Node label="Context (Inputs)">
         <Children collapsed="true">
             <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flowlines" />
-            <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
+            <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
         </Children>
       </Node>
       <Node label="Calculations (Intermediates)">
