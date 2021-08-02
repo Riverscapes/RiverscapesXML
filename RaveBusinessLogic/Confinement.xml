@@ -35,20 +35,20 @@
   <Views default="CONFINEMENT_RATIO">
     <View name="Confinement Ratio by Stream Segment" id="CONFINEMENT_RATIO">
       <Layers>
-        <Layer id="confining_poly" />
         <Layer id="confinement_ratio" />
+        <Layer id="confining_poly" />
       </Layers>
     </View>
     <View name="Constriction Ratio by Stream Segment" id="CONSTRICTION_RATIO">
       <Layers>
-        <Layer id="confining_poly" />
         <Layer id="constriction_ratio" />
+        <Layer id="confining_poly" />
       </Layers>
     </View>
     <View name="Confinement Type by Stream Segment" id="CONFINEMENT_TYPE">
       <Layers>
-        <Layer id="confining_poly" />
         <Layer id="confinement_raw" />
+        <Layer id="confining_poly" />
       </Layers>
     </View>
   </Views>
