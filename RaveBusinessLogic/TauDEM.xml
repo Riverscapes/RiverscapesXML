@@ -5,9 +5,26 @@
     <ProjectType>TauDEM</ProjectType>
     <Node xpathlabel="Name" xpath="Realizations/TauDEM">
         <Children collapsed="false">
-            <Node label="Outputs" xpath="Outputs">
+             <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
-                  <Node label="DINFFLOWDIR_SLP Raster" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinf_slp" transparency="40"/>
+                  <Node label="DEM" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+                  <Node xpathlabel="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
+                  <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
+                </Children>
+            </Node>
+            <Node label="Intermediates" xpath="Intermediates">
+                <Children collapsed="true">
+                    <Node label="Rasterized Channel" xpath="Intermediates/Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="rasterized_channel" transparency="40" />
+                    <Node label="TauDEM Pitfill" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="pitfill" transparency="40" />
+                    <Node label="TauDEM D-Inf Flow Directions" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
+                    <Node label="TauDEM D-Inf Contributing Area" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" />
+                </Children>
+            </Node>
+            <Node label="Outputs" xpath="Outputs">
+                <Children collapsed="false">
+                    <Node label="TauDEM D-Inf Flow Directions Slope" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                    <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                    <Node label="TWI Raster" xpath="Intermediates/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
                 </Children>
             </Node>
         </Children>
