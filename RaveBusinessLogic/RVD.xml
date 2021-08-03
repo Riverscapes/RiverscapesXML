@@ -8,12 +8,12 @@
       <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Inputs" xpath="Inputs">
         <Children>
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="" />
-          <Node xpathlabel="Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="" />
-          <Node xpathlabel="Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="flowarea" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="waterbody" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="valley_bottom" />
+          <Node xpathlabel="Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="existing_veg" />
+          <Node xpathlabel="Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="historic_veg" />
         </Children>
       </Node>
       <Node label="Intermediates" xpath="Intermediates">
@@ -29,20 +29,20 @@
           <Node label="Existing Vegetation">
             <Children collapsed="true">
               <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_RAW']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_RIPARIAN']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_NATIVE_RIPARIAN']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_VEGETATED']" type="raster" symbology="" />
+              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_RIPARIAN']" type="raster" symbology="ExistingVegRiparian" />
+              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_NATIVE_RIPARIAN']" type="raster" symbology="ExistingVegNativeRiparian" />
+              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_VEGETATED']" type="raster" symbology="ExistingVegetated" />
               <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_CONVERSION']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_LUI']" type="raster" symbology="" />
+              <Node xpathlabel="Name" xpath="Raster[@id='EXISTING_LUI']" type="raster" symbology="LandUseIntensity" />
 
             </Children>
           </Node>
           <Node label="Historic Vegetation">
             <Children collapsed="true">
               <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_RAW']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_RIPARIAN']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_NATIVE_RIPARIAN']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_VEGETATED']" type="raster" symbology="" />
+              <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_RIPARIAN']" type="raster" symbology="HistoricVegRiparian" />
+              <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_NATIVE_RIPARIAN']" type="raster" symbology="HistoricVegNativeRiparian" />
+              <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_VEGETATED']" type="raster" symbology="HistoricVegetated" />
               <Node xpathlabel="Name" xpath="Raster[@id='HISTORIC_CONVERSION']" type="raster" symbology="" />
             </Children>
           </Node>
