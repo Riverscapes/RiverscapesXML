@@ -24,13 +24,13 @@
           </Node>
           <Node label="Management">
             <Children collapsed="true">
-              <Node label="Unsuitable or Limited Opportunities" xpath="Vector" type="line" symbology="oPBRC_UD" />
-              <Node label="Risk of Undesirable Dams" xpath="Vector" type="line" symbology="oPBRC_UI" />
-              <Node label="Restoration or Conservation Opportunities" xpath="Vector" type="line" symbology="oPBRC_CR" />
+              <Node label="Unsuitable or Limited Opportunities" xpath="Vector" type="line" symbology="oPBRC_UD" id="limited" />
+              <Node label="Risk of Undesirable Dams" xpath="Vector" type="line" symbology="oPBRC_UI" id ="risk" />
+              <Node label="Restoration or Conservation Opportunities" xpath="Vector" type="line" symbology="oPBRC_CR" id="opportunity" />
 
-              <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="limitation" />
-              <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="risk" />
-              <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="opportunity" />
+              <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="limitation" id="limited" />
+              <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="risk" id="risk" />
+              <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="opportunity" id="opportunity" />
             </Children>
           </Node>
         </Children>
@@ -48,20 +48,20 @@
           </Node>
           <Node label="Topographic Index">
             <Children>
-              <Node label="Slope" xpath="Vector" type="line" symbology="iGeo_Slope" />
-              <Node label="Drainage Area" xpath="Vector" type="line" symbology="iGeo_DA" />
+              <Node label="Slope" xpath="Vector" type="line" symbology="iGeo_Slope" id="slope" />
+              <Node label="Drainage Area" xpath="Vector" type="line" symbology="iGeo_DA" id="DA" />
 
-              <Node label="Slope" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_Slope" />
-              <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_DA" />
+              <Node label="Slope" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_Slope" id="slope" />
+              <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_DA" id="DA" />
             </Children>
           </Node>
           <Node label="Hydrology">
             <Children>
-              <Node label="High Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SP2" />
-              <Node label="Base Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SPLow" />
+              <Node label="High Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SP2" id="flow_high" />
+              <Node label="Base Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SPLow" id="flow_base" />
 
-              <Node label="High Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SP2" />
-              <Node label="Base Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SPLow" />
+              <Node label="High Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SP2" id="flow_high" />
+              <Node label="Base Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SPLow" id="flow_base" />
             </Children>
           </Node>
           <Node label="Overall Vegetation Dam Capacity">
@@ -162,10 +162,59 @@
       </Layers>
     </View>
     <View name="BRAT Historic Capacity" id="BRAT_hisOutputs">
-      <Description>This view is blah blah blah</Description>
+      <Description>This view is the historic dam capacity</Description>
       <Layers>
         <Layer id="hillshade" />
         <Layer id="his_capacity" />
+      </Layers>
+    </View>
+    <View name="BRAT Limited Opportunities" id="BRAT_limited">
+      <Description>This view shows unsuitable or limited opportunities</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="limited" />
+      </Layers>
+    </View>
+    <View name="BRAT Risk of Undesireable Dams" id="BRAT_risk">
+      <Description>This view shows risk of undesireable dams</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="risk" />
+      </Layers>
+    </View>
+    <View name="BRAT Restoration or Conservation" id="BRAT_opportunity">
+      <Description>This view shows restoration/conservation opportunities</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="opportunity" />
+      </Layers>
+    </View>
+    <View name="BRAT Slope" id="BRAT_slope">
+      <Description>This view shows network slope</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="slope" />
+      </Layers>
+    </View>
+    <View name="BRAT Drainage Area" id="BRAT_DA">
+      <Description>This view shows drainage area</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="DA" />
+      </Layers>
+    </View>
+    <View name="BRAT High Flow" id="BRAT_highflow">
+      <Description>This view shows high flow stream power</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="flow_high" />
+      </Layers>
+    </View>
+    <View name="BRAT Base Flow" id="BRAT_baseflow">
+      <Description>This view shows base flow stream power</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="flow_base" />
       </Layers>
     </View>
   </Views>
