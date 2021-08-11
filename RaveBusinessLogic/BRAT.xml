@@ -11,11 +11,6 @@
           <Node xpathlabel="Name" xpath="HTMLFile" type="report" />
           <Node label="Capacity">
             <Children>
-              <Node label="Existing Dam Capacity" xpath="Vector" type="line" symbology="oCC_EX" id="ex_capacity" />
-              <Node label="Existing Dam Size" xpath="Vector" type="line" symbology="mCC_EX_CT" />
-              <Node label="Historic Dam Capacity" xpath="Vector" type="line" symbology="oCC_HPE" id="his_capacity" />
-              <Node label="Historic Dam Size" xpath="Vector" type="line" symbology="mCC_HPE_CT" />
-
               <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_EX" id="ex_capacity" />
               <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="mCC_EX_CT" />
               <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_HPE" id ="his_capacity"/>
@@ -24,10 +19,6 @@
           </Node>
           <Node label="Management">
             <Children collapsed="true">
-              <Node label="Unsuitable or Limited Opportunities" xpath="Vector" type="line" symbology="oPBRC_UD" id="limited" />
-              <Node label="Risk of Undesirable Dams" xpath="Vector" type="line" symbology="oPBRC_UI" id ="risk" />
-              <Node label="Restoration or Conservation Opportunities" xpath="Vector" type="line" symbology="oPBRC_CR" id="opportunity" />
-
               <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="limitation" id="limited" />
               <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="risk" id="risk" />
               <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="opportunity" id="opportunity" />
@@ -39,36 +30,24 @@
         <Children collapsed="true">
           <Node label="Network">
             <Children>
-              <Node label="Perennial" xpath="Vector" type="line" symbology="IsPeren" />
-              <Node label="Zero or Null Drainage Area" xpath="Vector" type="line" symbology="null_da" />
-
               <Node label="Perennial" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="IsPeren" />
               <Node label="Zero or Null Drainage Area" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="null_da" />
             </Children>
           </Node>
           <Node label="Topographic Index">
             <Children>
-              <Node label="Slope" xpath="Vector" type="line" symbology="iGeo_Slope" id="slope" />
-              <Node label="Drainage Area" xpath="Vector" type="line" symbology="iGeo_DA" id="DA" />
-
               <Node label="Slope" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_Slope" id="slope" />
               <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iGeo_DA" id="DA" />
             </Children>
           </Node>
           <Node label="Hydrology">
             <Children>
-              <Node label="High Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SP2" id="flow_high" />
-              <Node label="Base Flow Stream Power" xpath="Vector" type="line" symbology="iHyd_SPLow" id="flow_base" />
-
               <Node label="High Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SP2" id="flow_high" />
               <Node label="Base Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iHyd_SPLow" id="flow_base" />
             </Children>
           </Node>
           <Node label="Overall Vegetation Dam Capacity">
             <Children>
-              <Node label="Existing Veg Dam Building Capacity" xpath="Vector" type="line" symbology="oVC_EX" />
-              <Node label="Historic Veg Dam Building Capacity" xpath="Vector" type="line" symbology="oVC_HPE" />
-
               <Node label="Existing Veg Dam Building Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oVC_EX" />
               <Node label="Historic Veg Dam Building Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oVC_HPE" />
             </Children>
@@ -81,18 +60,6 @@
           </Node>
           <Node label="Anthropogenic Intermediates">
             <Children>
-              <Node label="Priority Beaver Translocation Areas" xpath="Vector" type="line" symbology="iPC_Privat" />
-              <Node label="Land Ownership per Reach" xpath="Vector" type="line" symbology="ADMIN_AGEN" />
-              <Node label="Land Use Intensity" xpath="Vector" type="line" symbology="iPC_LU" />
-              <Node label="Distance to Nearest Infrastructure" xpath="Vector" type="line" symbology="oPC_Dist" />
-              <Node label="Distance to Railroad" xpath="Vector" type="line" symbology="iPC_Rail" />
-              <Node label="Distance to Railroad in Valley Bottom" xpath="Vector" type="line" symbology="iPC_RailVB" />
-              <Node label="Distance to Road" xpath="Vector" type="line" symbology="iPC_Road" />
-              <Node label="Distance to Road Crossing" xpath="Vector" type="line" symbology="iPC_RoadX" />
-              <Node label="Distance to Road in Valley Bottom" xpath="Vector" type="line" symbology="iPC_RoadVB" />
-              <Node label="Distance to Points of Diversion" xpath="Vector" type="line" symbology="iPC_DivPts" />
-              <Node label="Distance to Canals/Ditches" xpath="Vector" type="line" symbology="iPC_Canal" />
-
               <Node label="Priority Beaver Translocation Areas" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_Privat" />
               <Node label="Land Ownership per Reach" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="ADMIN_AGEN" />
               <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_LU" />
@@ -112,11 +79,6 @@
         <Children collapsed="true">
           <Node label="Network">
             <Children>
-              <Node label="Network" xpath="Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
-              <Node label="Flow Direction" xpath="Vector[@id='FLOWLINES']" type="line" symbology="FlowDirection" />
-              <Node label="River Polygons (NHD Area)" xpath="Vector[@id='FLOW_AREA']" type="polygon" symbology="FlowArea" />
-              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Vector[@id='WATERBODIES']" type="polygon" symbology="Waterbodies" />
-
               <Node label="Network" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
               <Node label="Flow Direction" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="FlowDirection" />
               <Node label="River Polygons (NHD Area)" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="FlowArea" />
