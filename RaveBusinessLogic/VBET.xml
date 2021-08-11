@@ -69,9 +69,6 @@
               <Node label="Ephemeral Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="nhdephemeral" />
               <Node label="Network - Upstream Drainage Network" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="polygon" symbology="upstreamdrainagearea" />
               <Node label="River Polygons (NHD Area)" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
-              <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CATCHMENTS']" type="polygon" symbology="" />
-              <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='CHANNEL_BUFFER_RASTER']" type="raster" symbology="" />
-              <Node xpathlabel="Name" xpath="Intermediates/Raster[@id='FLOW_AREA_RASTER']" type="raster" symbology="" />
             </Children>
           </Node>
           <Node label="Topography">
@@ -79,7 +76,7 @@
               <Node label="Slope Analysis" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
               <Node label="Height Above Nearest Drainage" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
               <Node label="Digital Elevation Model" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
-              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="" id="hillshade" />
+              <Node label="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
             </Children>
           </Node>
         </Children>
@@ -99,7 +96,7 @@
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
               <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
               <Node label="TWI Raster" xpath="Intermediates/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
-              <Node label="Channel Area" xpath="Intermediates/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" symbology="Channel_area" transparency="40" />
+              <Node label="Rasterized Channel Area" xpath="Intermediates/Vector[@id='RASTERIZED_CHANNEL']" type="polygon" symbology="rasterized_channel" transparency="40" />
             </Children>
           </Node>
           <Node label="Normalized Evidence Rasters">
@@ -107,6 +104,7 @@
               <Node label="Normalized Slope Raster" xpath="Intermediates/Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
               <Node label="Normalized HAND Raster" xpath="Intermediates/Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
               <Node label="Normalized TWI Raster" xpath="Intermediates/Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
+              <Node label="Normalized Channel Raster" xpath="" type="raster" symbology="norm_channel" transparency="40" />
               <Node label="Combined Topographic Evidence Raster" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" />
               </Children>
           </Node>
