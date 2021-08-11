@@ -8,32 +8,59 @@
              <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
                   <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
-                  <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                   <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
+                  <Node label="Drainage Input(s)">
+                    <Children>
+                        <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
+                        <Node label="Channel Line Network" xpath="" type="line" id ="" symbology="" />
+                    </Children>
+                    </Node>
                 </Children>
             </Node>
             <Node label="Intermediates" xpath="Intermediates">
                 <Children collapsed="true">
                     <Node label="Rasterized Channel" xpath="Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="rasterized_channel" transparency="40" />
-                    <Node label="TauDEM Pitfill" xpath="Raster[@id='PITFILL']" type="raster" symbology="pitfill" transparency="40" />
-                    <Node label="TauDEM D-Inf Flow Directions" xpath="Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
-                    <Node label="TauDEM D-Inf Contributing Area" xpath="Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" />
                 </Children>
             </Node>
             <Node label="Outputs" xpath="Outputs">
                 <Children collapsed="false">
-                    <Node label="TauDEM D-Inf Flow Directions Slope" xpath="Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
-                    <Node label="HAND Raster" xpath="Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
-                    <Node label="TWI Raster" xpath="Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+                    <Node label="TauDEM Outputs">
+                        <Children>
+                            <Node label="Basic Grid Analysis">
+                                <Children>
+                                    <Node label="Pitfill" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
+                                    <Node label="Flow Directions (D∞)" xpath="Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
+                                    <Node label="Contributing Area (D∞)" xpath="Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" />
+                                </Children>
+                            </Node>
+                            <Node label="Specialized Grid Analysis">
+                                <Children>
+                                    <Node label="TWI" xpath="Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+                                    <Node label="HAND" xpath="Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                                </Children>
+                            </Node>
+                            <Node label="TauDEM Outputs">
+                                <Children>
+                                    <Node label="D∞ Slope" xpath="Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
+                                    <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+                                </Children>
+                            </Node>
+                        </Children>
+                    <Node label="GDAL Outputs">
+                        <Children>
+                            <Node label="Slope Analysis (D8)" xpath="" type="raster" symbology="" transparency="" id="d8_slope" />
+                        </Children>
+                    </Node> 
+                    </Node>
                 </Children>
             </Node>
         </Children>
     </Node>
     <Views default="DEFAULT">
-        <View name="TauDEM Default View" id="DEFAULT">
+        <View name="Default View" id="DEFAULT">
             <Layers>
                 <Layer id="DINFFLOWDIR_SLP" />
             </Layers>
         </View>
     </Views>
-</Project>
+</Project>  
