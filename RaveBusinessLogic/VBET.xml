@@ -15,8 +15,8 @@
                 <Children>
                                 <!-- Old shapefiles - Remove when no longer needed  -->
                 <Node label="Estimated Active Channel" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet100outline" />
-                <Node label="Estimated Active Floodplain" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet80outline" />
-                <Node label="Estimated Inactive Floodplain" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" />
+                <Node label="Estimated Active Floodplain" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" />
+                <Node label="Estimated Inactive Floodplain" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet50outline" />
                 <Node label="Plausible Valley Bottom Extent" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet50outline" />
                 </Children>
               </Node>
@@ -25,8 +25,8 @@
               <Children>
                 <!-- Old shapefiles - Remove when no longer needed  -->
                 <Node label="Estimated Active Channel" xpath="Vector[@id='VBET_100']" type="polygon" symbology="vbet100" transparency="10" />
-                <Node label="Estimated Active Floodplain" xpath="Vector[@id='VBET_80']" type="polygon" symbology="vbet80" transparency="40" />
-                <Node label="Estimated Inactive Floodplain" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet70" transparency="40" />
+                <Node label="Estimated Active Floodplain" xpath="Vector[@id='VBET_70']" type="polygon" symbology="vbet70" transparency="40" />
+                <Node label="Estimated Inactive Floodplain" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet50" transparency="40" />
                 <Node label="Plausible Valley Bottom Extent" xpath="Vector[@id='VBET_50']" type="polygon" symbology="vbet50" transparency="40" />               
                </Children>
             </Node>
