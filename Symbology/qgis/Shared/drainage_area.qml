@@ -1,28 +1,17 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<<<<<<< HEAD
 <qgis maxScale="0" minScale="1e+08" version="3.16.8-Hannover" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories">
-=======
-<qgis styleCategories="AllStyleCategories" version="3.20.0-Odense" maxScale="0" minScale="0" hasScaleBasedVisibilityFlag="0">
->>>>>>> 3f5296e (Authored .qml for Topography inputs)
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
-<<<<<<< HEAD
   </flags>
   <temporal fetchMode="0" enabled="0" mode="0">
-=======
-    <Private>0</Private>
-  </flags>
-  <temporal fetchMode="0" mode="0" enabled="0">
->>>>>>> 3f5296e (Authored .qml for Topography inputs)
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
   <customproperties>
-<<<<<<< HEAD
     <property value="false" key="WMSBackgroundLayer"/>
     <property value="false" key="WMSPublishDataSourceUrl"/>
     <property value="0" key="embeddedWidgets/count"/>
@@ -34,15 +23,6 @@
     </provider>
     <rasterrenderer classificationMin="2.1731e-11" type="singlebandpseudocolor" alphaBand="-1" opacity="0.6" nodataColor="" classificationMax="1.85366e-09" band="1">
       <rasterTransparency/>
-=======
-    <Option/>
-  </customproperties>
-  <pipe>
-    <provider>
-      <resampling zoomedInResamplingMethod="nearestNeighbour" zoomedOutResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2"/>
-    </provider>
-    <rasterrenderer opacity="1" nodataColor="" classificationMin="8.57272863577342e-15" classificationMax="8.1995577582582e-10" type="singlebandpseudocolor" band="1" alphaBand="-1">
->>>>>>> 3f5296e (Authored .qml for Topography inputs)
       <minMaxOrigin>
         <limits>None</limits>
         <extent>WholeRaster</extent>
@@ -52,7 +32,6 @@
         <stdDevFactor>2</stdDevFactor>
       </minMaxOrigin>
       <rastershader>
-<<<<<<< HEAD
         <colorrampshader clip="0" colorRampType="INTERPOLATED" classificationMode="1" maximumValue="1.85366e-09" minimumValue="2.1731000000000001e-11" labelPrecision="4">
           <colorramp name="[source]" type="gradient">
             <prop k="color1" v="0,32,77,255"/>
@@ -72,47 +51,6 @@
     </rasterrenderer>
     <brightnesscontrast contrast="0" gamma="1" brightness="0"/>
     <huesaturation colorizeOn="0" colorizeGreen="128" grayscaleMode="0" saturation="0" colorizeBlue="128" colorizeStrength="100" colorizeRed="255"/>
-=======
-        <colorrampshader minimumValue="8.5727286357734152e-15" classificationMode="1" maximumValue="8.1995577582581982e-10" labelPrecision="6" colorRampType="INTERPOLATED" clip="0">
-          <colorramp name="[source]" type="gradient">
-            <Option type="Map">
-              <Option value="130,130,130,255" name="color1" type="QString"/>
-              <Option value="11,44,122,255" name="color2" type="QString"/>
-              <Option value="0" name="discrete" type="QString"/>
-              <Option value="gradient" name="rampType" type="QString"/>
-              <Option value="0.2;237,161,19,255:0.4;255,255,0,255:0.6;0,219,0,255:0.8;32,153,143,255" name="stops" type="QString"/>
-            </Option>
-            <prop v="130,130,130,255" k="color1"/>
-            <prop v="11,44,122,255" k="color2"/>
-            <prop v="0" k="discrete"/>
-            <prop v="gradient" k="rampType"/>
-            <prop v="0.2;237,161,19,255:0.4;255,255,0,255:0.6;0,219,0,255:0.8;32,153,143,255" k="stops"/>
-          </colorramp>
-          <item color="#828282" value="8.57272863577342e-15" label="8.57e-15" alpha="255"/>
-          <item color="#eda113" value="1.63998013348073e-10" label="1.64e-10" alpha="255"/>
-          <item color="#ffff00" value="3.27987453967509e-10" label="3.28e-10" alpha="255"/>
-          <item color="#00db00" value="4.91976894586946e-10" label="4.92e-10" alpha="255"/>
-          <item color="#20998f" value="6.55966335206383e-10" label="6.56e-10" alpha="255"/>
-          <item color="#0b2c7a" value="8.1995577582582e-10" label="8.2e-10" alpha="255"/>
-          <rampLegendSettings direction="0" suffix="" maximumLabel="" minimumLabel="" orientation="2" useContinuousLegend="1" prefix="">
-            <numericFormat id="basic">
-              <Option type="Map">
-                <Option value="" name="decimal_separator" type="QChar"/>
-                <Option value="6" name="decimals" type="int"/>
-                <Option value="0" name="rounding_type" type="int"/>
-                <Option value="false" name="show_plus" type="bool"/>
-                <Option value="true" name="show_thousand_separator" type="bool"/>
-                <Option value="false" name="show_trailing_zeros" type="bool"/>
-                <Option value="" name="thousand_separator" type="QChar"/>
-              </Option>
-            </numericFormat>
-          </rampLegendSettings>
-        </colorrampshader>
-      </rastershader>
-    </rasterrenderer>
-    <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
-    <huesaturation grayscaleMode="0" colorizeRed="255" colorizeOn="0" colorizeBlue="128" saturation="0" colorizeGreen="128" colorizeStrength="100"/>
->>>>>>> 3f5296e (Authored .qml for Topography inputs)
     <rasterresampler maxOversampling="2"/>
     <resamplingStage>resamplingFilter</resamplingStage>
   </pipe>
