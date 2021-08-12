@@ -30,7 +30,7 @@
         <Children collapsed="true">
           <Node label="Perennial">
             <Children>
-              <Node label="Perennial" xpath="Vector[@id='PEREN_INT']" type="line" symbology="IsPeren" />
+              <Node label="Perennial" xpath="Vector[@id='FULL_INT']" type="line" symbology="IsPeren" />
             </Children>
           </Node>
           <Node label="Topographic Index">
