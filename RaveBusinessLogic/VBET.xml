@@ -12,15 +12,16 @@
           <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_filled" transparency="40" /> -->              
           <Node label="Valley Bottom Geomorphic Units">
             <Children>
-              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet100outline" />
-              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" />
-              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" symbology="vbet50outline" />      
+              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet100outline" id="vbet100outline"/>
+              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" id="vbet70outline"/>
+              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" symbology="vbet50outline" id="vbet50outline"/>      
             </Children>
           </Node>
         </Children>
       </Node>
       <Node label="Inputs" xpath="Inputs">
           <Children>
+            <!-- <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" /> -->
             <Node label="NHD Flow Areas" xpath="Geopackage/Layers/Vector[@id='FLOW_AREAS']" type="polygon" symbology="nhdarea" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
             <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
@@ -31,18 +32,18 @@
           <Node label="Evidence Rasters">
             <Children>
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
-              <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+              <Node label="HAND Raster" xpath="Inputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
               <Node label="TWI Raster" xpath="Inputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
               <!-- <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="rasterized_channel" transparency="40" /> -->
             </Children>
           </Node>
-          <Node label="Normalized Evidence Rasters">
+          <Node label="Normalized Evidence Rasters" xpath="Intermediates">
             <Children>
               <Node label="Normalized Slope Evidence" xpath="Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
               <Node label="Normalized HAND Evidence" xpath="Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
               <Node label="Normalized TWI Evidence" xpath="Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
               <!-- =<Node label="Normalized Channel Evidence" xpath="" type="raster" symbology="norm_channel" transparency="40" /> -->
-              <Node label="Combined Topographic Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" />
+              <Node label="Combined Topographic Evidence" xpath="Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" />
             </Children>
           </Node>
         </Children>
@@ -61,7 +62,7 @@
       <Layers>
         <Layer id="dem" />
         <Layer id="hillshade" />
-        <Layer id="network" />
+        <!-- Layer id="channel_area" /> -->
       </Layers>
     </View>
   </Views>
