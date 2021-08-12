@@ -8,10 +8,10 @@
       <Node label="Outputs" xpath="Outputs">
         <Children>
           <Node label="Likelihood of Valley Bottom" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" />
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_filled" transparency="40" />               
+          <!-- <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_filled" transparency="40" /> -->              
           <Node label="Valley Bottom Geomorphic Units">
-            <Children collapsed="false">
+            <Children>
               <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_100']" type="polygon" symbology="vbet100outline" />
               <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_70']" type="polygon" symbology="vbet70outline" />
               <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='VBET_50']" type="polygon" symbology="vbet50outline" />      
@@ -19,61 +19,36 @@
           </Node>
         </Children>
       </Node>
-    </Children>
-    <Children collapsed="false">
       <Node label="Inputs" xpath="Inputs">
-              <Node label="River Polygons (NHD Area)" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="nhdarea" />
-              <Node label="Digital Elevation Model" xpath="Inputs/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
-              <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+          <Children>
+            <Node label="NHD Flow Areas" xpath="Geopackage/Layers/Vector[@id='FLOW_AREAS']" type="polygon" symbology="nhdarea" />
+            <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+            <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+          </Children>
       </Node>
-    </Children>
-    <Children collapsed='true'>
-      <Node label="Intermediates" xpath="Intermediates" >
-        <Children collapsed='true'>
-          <Node label="Drainage Area Zones">
-            <Children collapsed='true'>
-              <Node label="Drainage Area Zones" xpath="Intermediates/Geopackage/Layers/Vector[@id='DA_ZONES']" type="polygon" symbology="da_zones" />
-            </Children>
-          </Node>
+      <Node label="Intermediates">
+        <Children>
           <Node label="Evidence Rasters">
-            <Children collapsed='true'>
+            <Children>
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
               <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
-              <Node label="TWI Raster" xpath="Intermediates/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
-              <Node label="Rasterized Channel Area" xpath="Intermediates/Vector[@id='RASTERIZED_CHANNEL']" type="polygon" symbology="rasterized_channel" transparency="40" />
+              <Node label="TWI Raster" xpath="Inputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+              <!-- <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="rasterized_channel" transparency="40" /> -->
             </Children>
           </Node>
           <Node label="Normalized Evidence Rasters">
-            <Children collapsed='true'>
-              <Node label="Normalized Slope Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
-              <Node label="Normalized HAND Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
-              <Node label="Normalized TWI Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
-              <Node label="Normalized Channel Evidence" xpath="" type="raster" symbology="norm_channel" transparency="40" />
+            <Children>
+              <Node label="Normalized Slope Evidence" xpath="Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
+              <Node label="Normalized HAND Evidence" xpath="Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
+              <Node label="Normalized TWI Evidence" xpath="Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
+              <!-- =<Node label="Normalized Channel Evidence" xpath="" type="raster" symbology="norm_channel" transparency="40" /> -->
               <Node label="Combined Topographic Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" />
-              </Children>
+            </Children>
           </Node>
         </Children>
       </Node>
     </Children>
   </Node>
-
-  <!-- Old shapefiles - Remove when no longer needed  -->
-              <Node label="100% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_100']" type="polygon" symbology="threshold_100" />
-              <Node label="90% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_90']" type="polygon" symbology="threshold_90" />
-              <Node label="80% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_80']" type="polygon" symbology="threshold_80" />
-              <Node label="70% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_70']" type="polygon" symbology="threshold_70" />
-              <Node label="60% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
-              <Node label="50% Threshold Raw VBET" xpath="Intermediates/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
-
-              <Node label="100% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_100']" type="polygon" symbology="threshold_100" />
-              <Node label="90% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_90']" type="polygon" symbology="threshold_90" />
-              <Node label="80% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_80']" type="polygon" symbology="threshold_80" />
-              <Node label="70% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_70']" type="polygon" symbology="threshold_70" />
-              <Node label="60% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_60']" type="polygon" symbology="threshold_60" />
-              <Node label="50% Threshold Raw VBET" xpath="Intermediates/Geopackage/Layers/Vector[@id='THRESH_50']" type="polygon" symbology="threshold_50" />
-
-              <!-- <Node xpathlabel="Name" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="" /> -->
-
   <Views default="DEFAULT">
     <View name="VBET Default View" id="DEFAULT">
       <Layers>
@@ -89,17 +64,5 @@
         <Layer id="network" />
       </Layers>
     </View>
-    <!--- <View name="VBET Outlines" id="Outlines">
-      <Layers>
-        <Layer id="hillshade" />
-        <Layer id="vbetoutlines" />
-      </Layers>
-    </View>
-    <View name="VBET Transparent" id="Transparent">
-      <Layers>
-        <Layer id="hillshade" />
-        <Layer id="vbettransparent" />
-      </Layers>
-      </View> -->
   </Views>
 </Project>
