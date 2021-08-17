@@ -62,7 +62,7 @@
       <Layers>
         <Layer id="dem" />
         <Layer id="hillshade" />
-        Layer id="channel_area_polygons" />
+        <Layer id="channel_area_polygons" />
       </Layers>
     </View>
   </Views>
