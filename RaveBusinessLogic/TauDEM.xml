@@ -37,11 +37,13 @@
                             </Node>
                         </Children>
                     </Node>
+                    <!-- commenting out GDAL unit nodes ready
                     <Node label="GDAL Outputs">
                         <Children>
-                            <!-- Node label="Slope Analysis (D8)" xpath="" type="raster" symbology="" transparency="" id="d8_slope" /> -->
+                             Node label="Slope Analysis (D8)" xpath="" type="raster" symbology="" transparency="" id="d8_slope" />
                         </Children>
-                    </Node> 
+                    </Node>
+                -->
                 </Children>
             </Node>
         </Children>
