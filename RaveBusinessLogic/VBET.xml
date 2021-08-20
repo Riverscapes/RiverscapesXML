@@ -8,8 +8,8 @@
     <Children collapsed="false">
       <Node label="Outputs" xpath="Outputs">
         <Children>
-          <Node label="Likelihood of Valley Bottom" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" />
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_hollow" />               
+          <Node label="Likelihood of being Valley Bottom" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="LVBET" />
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_hollow" id="vbet_extent_hollow" />               
           <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet_extent_filled" transparency="40" />              
           <Node label="Valley Bottom Geomorphic Units">
             <Children>
