@@ -7,8 +7,9 @@
         <Children collapsed="false">
              <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
-                  <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
                   <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
+                  <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+                  <Node label="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                 </Children>
             </Node>
             <Node label="Intermediates" xpath="Intermediates">
@@ -21,7 +22,6 @@
                     <Node label="TauDEM Outputs">
                         <Children collapsed="false">
                             <Node label="Slope Analysis (D∞)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
-                            <Node label="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                             <Node label="Basic Grid Analysis">
                                 <Children collapsed="true">
                                     <Node label="Pitfill DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
