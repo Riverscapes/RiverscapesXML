@@ -42,7 +42,7 @@
               <Node label="Normalized Slope Evidence" xpath="Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
               <Node label="Normalized HAND Evidence" xpath="Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
               <Node label="Normalized TWI Evidence" xpath="Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
-              <Node label="Combined Topographic Evidence" xpath="Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" />
+              <Node label="Combined Topographic Evidence" xpath="Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" id="norm_topo" />
             </Children>
           </Node>
         </Children>
@@ -64,11 +64,17 @@
         <Layer id="vbet_inactive_floodplain" />
       </Layers>
     </View>
+    <View name="Normalized Evidence" id="Norm">
+      <Layers>
+        <Layer id="norm_topo" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
     <View name="VBET Inputs" id="Inputs">
       <Layers>
+        <Layer id="channel_area_polygons" />
         <Layer id="dem" />
         <Layer id="hillshade" />
-        <Layer id="channel_area_polygons" />
       </Layers>
     </View>
   </Views>
