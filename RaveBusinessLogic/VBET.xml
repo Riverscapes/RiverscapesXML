@@ -13,9 +13,9 @@
           <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
           <Node label="Valley Bottom Geomorphic Units">
             <Children>
-              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='vbet_channel_area']" type="polygon" symbology="vbet_channel_area" />                        
-              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='vbet_active_floodplain']" type="polygon" symbology="active_floodplain" id="vbet70outline"/>
-              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='vbet_inactive_floodplain']" type="polygon" symbology="inactive_floodplain" id="vbet50outline"/>      
+              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_CHANNEL_AREA']" type="polygon" symbology="vbet_channel_area" />                        
+              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="active_floodplain" id="vbet70outline"/>
+              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="inactive_floodplain" id="vbet50outline"/>      
             </Children>
           </Node>
         </Children>
