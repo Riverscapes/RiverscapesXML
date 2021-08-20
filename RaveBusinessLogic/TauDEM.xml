@@ -67,7 +67,7 @@
         </View>
         <View name="Inputs" id="In">
             <Layers>
-                <Layer id="channel" />
+                <Layer id="channel_area" />
                 <Layer id="dem" />
                 <Layer id="hillshade" />
             </Layers>
