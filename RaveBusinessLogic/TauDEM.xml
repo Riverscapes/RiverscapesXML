@@ -9,7 +9,7 @@
                 <Children collapsed="true">
                   <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon"  symbology="ChannelArea" id="channel_area" />
                   <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
-                  <Node label="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+                  <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                 </Children>
             </Node>
             <Node label="Intermediates" xpath="Intermediates">
