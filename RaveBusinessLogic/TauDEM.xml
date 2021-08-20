@@ -7,7 +7,7 @@
         <Children collapsed="false">
              <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
-                  <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
+                  <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" id="channel" />
                   <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
                   <Node label="DEM Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                 </Children>
@@ -26,13 +26,13 @@
                                 <Children collapsed="true">
                                     <Node label="Pitfill DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
                                     <Node label="D∞ Flow Directions (D∞)" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
-                                    <Node label="D∞ Contributing Area (D∞)" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" />
+                                    <Node label="D∞ Contributing Area (D∞)" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" id="ca"/>
                                 </Children>
                             </Node>
                             <Node label="Specialized Grid Analysis">
                                 <Children collapsed="false">
-                                    <Node label="TWI - Topographic Wetness Index " xpath="Outputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
-                                    <Node label="HAND - Height Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                                    <Node label="TWI - Topographic Wetness Index " xpath="Outputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" id="twi" />
+                                    <Node label="HAND - Height Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" id="hand" />
                                 </Children>
                             </Node>
                         </Children>
@@ -47,9 +47,29 @@
         </Children>
     </Node>
     <Views default="DEFAULT">
-        <View name="TauDEM Default View" id="DEFAULT">
+        <View name="HAND" id="DEFAULT">
             <Layers>
-                <Layer id="DINFFLOWDIR_SLP" />
+                <Layer id="" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+        <View name="TWI" id="TopoWet">
+            <Layers>
+                <Layer id="twi" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+        <View name="Contributing Area" id="CA">
+            <Layers>
+                <Layer id="ca" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+        <View name="Inputs" id="In">
+            <Layers>
+                <Layer id="channel" />
+                <Layer id="dem" />
+                <Layer id="hillshade" />
             </Layers>
         </View>
     </Views>
