@@ -13,9 +13,9 @@
           <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
           <Node label="Valley Bottom Geomorphic Units">
             <Children>
-              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_CHANNEL_AREA']" type="polygon" symbology="vbet_channel_area" />                        
-              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="active_floodplain" id="vbet70outline"/>
-              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="inactive_floodplain" id="vbet50outline"/>      
+              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_CHANNEL_AREA']" type="polygon" symbology="vbet_channel_area" id="vbet_channel_area" />                        
+              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" id="vbet_active_floodplain"/>
+              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" id="vbet_inactive_floodplain"/>      
             </Children>
           </Node>
         </Children>
@@ -50,11 +50,18 @@
     </Children>
   </Node>
   <Views default="DEFAULT">
-    <View name="VBET Output" id="DEFAULT">
+    <View name="Primary Output" id="DEFAULT">
       <Layers>
         <Layer id="likevbet" />
         <Layer id="vbet_extent_hollow" />
         <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
+      <Layers>
+        <Layer id="vbet_channel_area" />
+        <Layer id="vbet_active_floodplain" />
+        <Layer id="vbet_inactive_floodplain" />
       </Layers>
     </View>
     <View name="VBET Inputs" id="Inputs">
