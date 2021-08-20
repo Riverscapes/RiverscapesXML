@@ -8,6 +8,7 @@
              <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
                   <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon"  symbology="ChannelArea" id="channel_area" />
+                  <Node label="Channel Line Input" xpath="Geopackage/Layers/Vector[@id='CHANNEL_LINES']" type="line" symbology="channel_line_network" id="channel_line" />
                   <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
                   <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                 </Children>
@@ -67,6 +68,7 @@
         </View>
         <View name="Inputs" id="In">
             <Layers>
+                <Layer id="channel_line" />
                 <Layer id="channel_area" />
                 <Layer id="dem" />
                 <Layer id="hillshade" />
