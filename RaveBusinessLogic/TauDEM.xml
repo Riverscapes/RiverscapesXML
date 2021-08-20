@@ -25,14 +25,14 @@
                             <Node label="Basic Grid Analysis">
                                 <Children collapsed="true">
                                     <Node label="Pitfill DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
-                                    <Node label="Flow Directions (D∞)" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
-                                    <Node label="Contributing Area (D∞)" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" />
+                                    <Node label="D∞ Flow Directions (D∞)" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
+                                    <Node label="D∞ Contributing Area (D∞)" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" />
                                 </Children>
                             </Node>
                             <Node label="Specialized Grid Analysis">
                                 <Children collapsed="false">
-                                    <Node label="TWI" xpath="Outputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
-                                    <Node label="HAND" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                                    <Node label="TWI - Topographic Wetness Index " xpath="Outputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+                                    <Node label="HAND - Heign Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
                                 </Children>
                             </Node>
                         </Children>
