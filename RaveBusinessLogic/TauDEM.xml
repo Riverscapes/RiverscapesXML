@@ -21,7 +21,7 @@
                 <Children collapsed="false">
                     <Node label="TauDEM Outputs">
                         <Children collapsed="false">
-                            <Node label="Slope Analysis (D∞)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
+                            <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
                             <Node label="Basic Grid Analysis">
                                 <Children collapsed="true">
                                     <Node label="Pitfill DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
@@ -37,13 +37,11 @@
                             </Node>
                         </Children>
                     </Node>
-                    <!-- commenting out GDAL unit nodes ready
                     <Node label="GDAL Outputs">
                         <Children>
-                             Node label="Slope Analysis (D8)" xpath="" type="raster" symbology="" transparency="" id="d8_slope" />
+                             <Node label="D8 Slope Analysis (degrees)" xpath="Outputs/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
                         </Children>
                     </Node>
-                -->
                 </Children>
             </Node>
         </Children>
