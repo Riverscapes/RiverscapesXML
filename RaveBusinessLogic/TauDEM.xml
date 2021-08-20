@@ -49,7 +49,7 @@
     <Views default="DEFAULT">
         <View name="HAND" id="DEFAULT">
             <Layers>
-                <Layer id="" />
+                <Layer id="hand" />
                 <Layer id="hillshade" />
             </Layers>
         </View>
