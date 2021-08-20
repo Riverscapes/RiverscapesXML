@@ -32,7 +32,7 @@
                             <Node label="Specialized Grid Analysis">
                                 <Children collapsed="false">
                                     <Node label="TWI - Topographic Wetness Index " xpath="Outputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
-                                    <Node label="HAND - Heign Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+                                    <Node label="HAND - Height Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
                                 </Children>
                             </Node>
                         </Children>
