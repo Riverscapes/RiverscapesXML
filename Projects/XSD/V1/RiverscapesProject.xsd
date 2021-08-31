@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
 
   <!-- =========================================================================
   
@@ -33,6 +32,7 @@
       <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
       <xs:element type="ParametersType" name="Parameters" minOccurs="0" maxOccurs="1" />
+      <xs:element type="SimpleFileType" name="LogFile" minOccurs="0" maxOccurs="1" />
       <!-- <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
       <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" maxOccurs="1" />
       <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" maxOccurs="1" /> -->
@@ -203,16 +203,16 @@
         <xs:sequence>
           <xs:element type="GeopackageLayersType" name="Layers" />
         </xs:sequence>
-    </xs:extension>
+      </xs:extension>
     </xs:complexContent>
   </xs:complexType>
 
   <xs:complexType name="GeopackageLayersType">
-  <xs:choice maxOccurs="unbounded" minOccurs="0">
-    <xs:element type="RasterType" name="Raster" />
-    <xs:element type="VectorType" name="Vector" />
-  </xs:choice>
-</xs:complexType>
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="RasterType" name="Raster" />
+      <xs:element type="VectorType" name="Vector" />
+    </xs:choice>
+  </xs:complexType>
 
 
   <!-- DEMs extend rasters -->
@@ -228,7 +228,6 @@
       <xs:extension base="ContextLayerType" />
     </xs:complexContent>
   </xs:complexType>
-
 
 
   <!-- =========================================================================
