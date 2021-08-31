@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/RSContext.xsd">
 	<!-- xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd" -->
 	<Name>Riverscapes Context for HUC 17010216</Name>
@@ -10,6 +10,10 @@
 	<Realizations>
 		<RSContext dateCreated="2019-09-12T16:42:24.619206" guid="f8c8efcc-d5b6-11e9-be3c-acde48001122" id="RSContext1" productVersion="4.0.0">
 			<Name>Riverscapes Context for HUC 17010216</Name>
+			<LogFile>
+				<Name>RSContext Log file</Name>
+				<Path>RSContext.log</Path>
+			</LogFile>
 			<DEM guid="f8c94260-d5b6-11e9-be3c-acde48001122" id="DEM">
 				<Name>NED 10m DEM</Name>
 				<Path>dem.tif</Path>
@@ -115,7 +119,7 @@
 						<Path>network_intersected_300m</Path>
 					</Vector>
 				</Layers>
-			</Geopackage>			
+			</Geopackage>
 			<Vector guid="ffe5d3ce-d5b6-11e9-be3c-acde48001122" id="ROADS">
 				<Name>Roads</Name>
 				<Path>ntd/roads.shp</Path>
@@ -131,7 +135,7 @@
 			<HTMLFile guid="f0830596-2b64-11eb-8a40-f40f243c4b95" id="REPORT">
 				<Name>RSContext Report</Name>
 				<Path>rs_context.html</Path>
-			</HTMLFile>			
+			</HTMLFile>
 		</RSContext>
 	</Realizations>
 </Project>
