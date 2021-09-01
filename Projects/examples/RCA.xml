@@ -1,136 +1,91 @@
-<?xml version="1.0" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-				 xsi:noNamespaceSchemaLocation="../XSD/V1/RCA.xsd">
-
-	<Name>logan_rca</Name>
-	<ProjectType>RCA</ProjectType>
-	<MetaData>
-		<Meta name="HUCID">16010203</Meta>
-		<Meta name="Region">GSL</Meta>
-		<Meta name="Watershed">Little Bear-Logan</Meta>
-	</MetaData>
-	<Inputs>
-		<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E" id="EXCOV1">
-			<Name>Existing Cover</Name>
-			<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/US_140EVT/us_140evt</Path>
-		</Raster>
-		<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E" id="HISTCOV1">
-			<Name>Historic Cover</Name>
-			<Path>01_Inputs/02_Hist_Cov/Hist_Cov_1/US_130BPS/us_130bps</Path>
-		</Raster>
-		<Vector guid="5D74C6CD-21F0-4439-9A62-6883A926803E" id="NETWORK1">
-			<Name>Segmented Network</Name>
-			<Path>01_Inputs/03_Network/Network_1/NHD_Little_Bear_Logan_500m.shp</Path>
-		</Vector>
-		<Vector guid="5D74C6CD-21F0-4439-9A62-6883A926803E" id="VALLEY1">
-			<Name>Fragmented Valley Bottom</Name>
-			<Path>01_Inputs/04_Frag_Valley/Frag_Valley_1/Logan_FP_Connectivity.shp</Path>
-		</Vector>
-		<Vector guid="5D74C6CD-21F0-4439-9A62-6883A926803E" id="LRP1">
-			<Name>Large River Polygon</Name>
-			<Path>01_Inputs/05_LRP/LRP_1/Logan_LRP.shp</Path>
-		</Vector>
-	</Inputs>
-	<Realizations>
-		<RCA dateCreated="2017-01-18 12:08:45" id="" guid="5D74C6CD-21F0-4439-9A62-6883A926803E" productVersion="1.0">
-			<Name>RCA Realization 1</Name>
-			<Parameters>
-				<Param name="width_thresh">140</Param>
-			</Parameters>
-			<Inputs>
-				<ExistingVegetation>
-						<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E">
-							<Name>Existing Riparian</Name>
-							<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Ex_Riparian.tif</Path>
-						</Raster>
-						<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E">
-							<Name>Existing Vegetation Cover</Name>
-							<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Ex_Veg_Cover.tif</Path>
-						</Raster>
-						<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E">
-							<Name>Land Use Intensity</Name>
-							<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Land_Use_Intensity.tif</Path>
-						</Raster>
-				</ExistingVegetation>
-				<HistoricVegetation>
-						<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E">
-							<Name>Historic Riparian</Name>
-							<Path>01_Inputs/02_Hist_Cov/Hist_Cov_1/Hist_Rasters/Hist_Riparian.tif</Path>
-						</Raster>
-						<Raster guid="5D74C6CD-21F0-4439-9A62-6883A926803E">
-							<Name>Historic Vegetation Cover</Name>
-							<Path>/Hist_Rasters/Hist_Veg_Cover.tif</Path>
-						</Raster>
-				</HistoricVegetation>
-				<DrainageNetworks>
-					<Network ref="NETWORK1">
-						<ThiessenPolygons guid="5D74C6CD-21F0-4439-9A62-6883A926803E">
-							<Name>Thiessen Polygons</Name>
-							<Path>/Thiessen/Thiessen_Valley.shp</Path>
-						</ThiessenPolygons>
-					</Network>
-				</DrainageNetworks>
-				<LargeRiverPolygon ref="LRP1"/>
-			</Inputs>
-			<Analyses>
-				<Analysis>
-					<Name>Analysis</Name>
-					<Outputs>
-						<Vector>
-							<Name>RCA</Name>
-							<Path>02_Analyses/Output_1/logan_rca.shp</Path>
-						</Vector>
-					</Outputs>
-				</Analysis>
-			</Analyses>
-		</RCA>
-		<RCA dateCreated="2017-01-18 12:13:57" id="rca1" productVersion="1.0" guid="">
-			<Name>RCA Realization 2</Name>
-			<Parameters>
-				<Param name="width_thresh">100</Param>
-			</Parameters>
-			<Inputs>
-				<ExistingVegetation>
-						<Raster>
-							<Name>Existing Riparian</Name>
-							<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Ex_Riparian.tif</Path>
-						</Raster>
-						<Raster>
-							<Name>Existing Vegetation Cover</Name>
-							<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Ex_Veg_Cover.tif</Path>
-						</Raster>
-						<Raster>
-							<Name>Land Use Intensity</Name>
-							<Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Land_Use_Intensity.tif</Path>
-						</Raster>
-				</ExistingVegetation>
-				<HistoricVegetation>
-						<Raster>
-							<Name>Historic Vegetation Cover</Name>
-							<Path>01_Inputs/02_Hist_Cov/Hist_Cov_1/Hist_Rasters/Hist_Veg_Cover.tif</Path>
-						</Raster>
-				</HistoricVegetation>
-				<DrainageNetworks>
-					<Network ref="NETWORK1">
-						<ThiessenPolygons>
-							<Name>Thiessen Polygons</Name>
-							<Path>01_Inputs/03_Network/Network_1/Thiessen/Thiessen_Valley.shp</Path>
-						</ThiessenPolygons>
-					</Network>
-				</DrainageNetworks>
-				<LargeRiverPolygon ref="LRP1"/>
-			</Inputs>
-			<Analyses>
-				<Analysis>
-					<Name>Analysis</Name>
-					<Outputs>
-						<Vector>
-							<Name>RCA Output</Name>
-							<Path>02_Analyses/Output_2/logan_rca.shp</Path>
-						</Vector>
-					</Outputs>
-				</Analysis>
-			</Analyses>
-		</RCA>
-	</Realizations>
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/RCA.xsd">
+    <Name>Et_Al_Lochsa_RCA</Name>
+    <ProjectType>RCA</ProjectType>
+    <MetaData>
+        <Meta name="HUC">17060303</Meta>
+        <Meta name="Region">CRB</Meta>
+        <Meta name="Watershed">Lochsa</Meta>
+    </MetaData>
+    <Inputs>
+        <Raster guid="F44A55AE-C98D-4DCE-88F3-32C3962E2D73" id="EXCOV1">
+            <Name>Existing Cover</Name>
+            <Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/US_140EVT/us_140evt_Clip.tif</Path>
+        </Raster>
+        <Raster guid="9828BED9-D197-4764-9A31-894E5670E4F2" id="HISTCOV1">
+            <Name>Historic Cover</Name>
+            <Path>01_Inputs/02_Hist_Cov/Hist_Cov_1/US_140BPS/us_140bps_Clip.tif</Path>
+        </Raster>
+        <Vector guid="A8D0CDAD-0592-4C82-B16F-E7FC24F2D515" id="NETWORK1">
+            <Name>Segmented Network</Name>
+            <Path>01_Inputs/03_Network/Network_1/NHD_24k_17060303_Perennial_500m.shp</Path>
+        </Vector>
+        <Vector guid="51CF2A4E-5506-4AB7-9D1F-BCFE70D5F96A" id="VALLEY1">
+            <Name>Fragmented Valley Bottom</Name>
+            <Path>01_Inputs/04_Frag_Valley/Frag_Valley_1/17060303_FP_Connectivity.shp</Path>
+        </Vector>
+        <Vector guid="17D44D10-51E2-4451-9FD9-C032C63FB626" id="LRP1">
+            <Name>Large River Polygon</Name>
+            <Path>01_Inputs/05_LRP/LRP_1/NHD_Area.shp</Path>
+        </Vector>
+    </Inputs>
+    <Realizations>
+        <RCA dateCreated="2017-07-18 11:53:16" guid="30CC3957-7225-4ABF-8B9D-B13C19CA7ACA" id="RZ1" productVersion="1.0.8" promoted="true">
+            <Name>RCA Realization 1</Name>
+            <Parameters>
+                <Param name="width_thresh">120</Param>
+            </Parameters>
+            <Inputs>
+                <ExistingVegetation ref="EXCOV1">
+                    <ExistingRasters>
+                        <Raster guid="D39CD01F-157C-41DE-A9D6-3C78AEB3491F">
+                            <Name>Existing Riparian</Name>
+                            <Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Ex_Riparian.tif</Path>
+                        </Raster>
+                        <Raster guid="421015CA-F7F3-44DA-B02C-8D7B57182269">
+                            <Name>Existing Vegetation Cover</Name>
+                            <Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Ex_Veg_Cover.tif</Path>
+                        </Raster>
+                        <Raster guid="9B290A1C-E5D6-4203-80A7-04076158B8F8">
+                            <Name>Land Use Intensity</Name>
+                            <Path>01_Inputs/01_Ex_Cov/Ex_Cov_1/Ex_Rasters/Land_Use_Intensity.tif</Path>
+                        </Raster>
+                    </ExistingRasters>
+                </ExistingVegetation>
+                <HistoricVegetation ref="HISTCOV1">
+                    <HistoricRasters>
+                        <Raster guid="D6E5EC3C-5ADB-4809-BB1D-73B573BE7118">
+                            <Name>Historic Riparian</Name>
+                            <Path>01_Inputs/02_Hist_Cov/Hist_Cov_1/Hist_Rasters/Hist_Riparian.tif</Path>
+                        </Raster>
+                        <Raster guid="085E703B-FB2A-4119-9E37-41FF2B1ECD4D">
+                            <Name>Historic Vegetation Cover</Name>
+                            <Path>/Hist_Rasters/Hist_Veg_Cover.tif</Path>
+                        </Raster>
+                    </HistoricRasters>
+                </HistoricVegetation>
+                <DrainageNetworks>
+                    <Network ref="NETWORK1">
+                        <ThiessenPolygons guid="7B4254E1-27A0-4C84-A011-816EF947C254">
+                            <Name>Thiessen Polygons</Name>
+                            <Path>/Thiessen/Thiessen_Valley.shp</Path>
+                        </ThiessenPolygons>
+                    </Network>
+                </DrainageNetworks>
+                <FragmentedValleyBottom ref="VALLEY1" />
+                <LargeRiverPolygon ref="LRP1" />
+            </Inputs>
+            <Analyses>
+                <Analysis>
+                    <Name>RCA Analysis</Name>
+                    <Outputs>
+                        <Vector guid="998DD458-90AD-453F-92F9-93D8E9D80E15">
+                            <Name>RCA</Name>
+                            <Path>02_Analyses/Output_1/17060303_RCA_120.shp</Path>
+                        </Vector>
+                    </Outputs>
+                </Analysis>
+            </Analyses>
+        </RCA>
+    </Realizations>
 </Project>

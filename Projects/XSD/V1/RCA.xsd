@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
 
   <!-- This file contains all the things Riverscapes projects have in common -->
@@ -54,11 +54,15 @@
   </xs:complexType>
 
   <xs:complexType name="RCAVegetationType" mixed="true">
-    <xs:sequence>
-      <xs:element type="RasterType" name="Raster" maxOccurs="unbounded" />
-    </xs:sequence>
+    <xs:complexContent>
+      <xs:extension base="RasterType">
+        <xs:choice>
+          <xs:element type="DataSetContainerType" name="ExistingRasters" minOccurs="0" maxOccurs="1" />
+          <xs:element type="DataSetContainerType" name="HistoricRasters" minOccurs="0" maxOccurs="1" />
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
-
 
   <xs:complexType name="RCADrainageNetworksType" mixed="true">
     <xs:sequence>
