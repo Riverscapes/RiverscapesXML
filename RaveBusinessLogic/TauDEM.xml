@@ -22,6 +22,7 @@
                 <Children collapsed="false">
                     <Node label="TauDEM Outputs">
                         <Children collapsed="false">
+                            <Node label="TauDEM Report" xpath="HTMLFile[@id='REPORT']" type="file" />
                             <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
                             <Node label="Basic Grid Analysis">
                                 <Children collapsed="true">
