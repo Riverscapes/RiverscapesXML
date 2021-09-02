@@ -11,7 +11,7 @@
 
 	<Realizations>
 		<FHM dateCreated="2017-09-08T20:01:15" guid="06C4CFF5-56F0-473D-95F1-8E516ECD150D" id="S0002_28816" productVersion="0.0.1">
-			<Name/>
+			<Name />
 			<MetaData>
 				<!-- YOu don't need to use them -->
 				<Meta name="Visit">2142</Meta>
@@ -20,9 +20,9 @@
 				<!-- These are the core ones -->
 				<Meta name="parentId" type="guid">06C4CFF5-56F0-473D-95F1-8E516ECD150D</Meta>
 				<Meta name="url" type="url">http://thing.com</Meta>
-				<Meta name="icon" type="imgurl">http://thing.com/image.png</Meta>
+				<Meta name="icon" type="image">http://thing.com/image.png</Meta>
 				<Meta name="createdDate" type="isodate">2017-09-08T20:01:15</Meta>
-				<Meta name="fPath" type="path">path/to/file.tif</Meta>
+				<Meta name="fPath" type="filepath">path/to/file.tif</Meta>
 				<Meta name="createdDate" type="timestamp"></Meta>
 				<Meta name="valueValue" type="float">2.34234</Meta>
 				<Meta name="valueValue2" type="int">121242</Meta>
@@ -37,7 +37,7 @@
 The following should be **rendered** like markdown with [links](http://google.com) etc.
 					]]>
 				</Meta>
-			</MetaData> 
+			</MetaData>
 			<Inputs>
 				<Cover id="2014_VISIT_2142_S0002_28816_CoverIndex">
 					<Name>2014 Visit 2142 S0002_28816 Cover Index</Name>
@@ -71,7 +71,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Chinook\Spawner\Run_01\FuzzyHQ.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -89,7 +89,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Chinook\Spawner\Run_01\HSI.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -113,7 +113,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Steelhead\Spawner\Run_01\FuzzyHQ.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -131,7 +131,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Steelhead\Spawner\Run_01\HSI.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -154,7 +154,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Chinook\Juvenile\Run_01\FuzzyHQ.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -172,7 +172,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Chinook\Juvenile\Run_01\HSI.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -195,7 +195,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\FIS\Steelhead\Juvenile\Run_01\FuzzyHQ.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>
@@ -213,7 +213,7 @@ The following should be **rendered** like markdown with [links](http://google.co
 									<Name>Fish Habitat</Name>
 									<Path>2014\VISIT_2142\S0002_28816\Analyses\HSI\Steelhead\Juvenile\Run_01\HSI.tif</Path>
 									<MetaData>
-										<Meta name="Type"/>
+										<Meta name="Type" />
 									</MetaData>
 								</Raster>
 							</Outputs>

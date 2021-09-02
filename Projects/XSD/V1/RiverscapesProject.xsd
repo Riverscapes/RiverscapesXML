@@ -66,8 +66,9 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="guid" />
       <xs:enumeration value="url" />
-      <xs:enumeration value="path" />
-      <xs:enumeration value="imgurl" />
+      <xs:enumeration value="filepath" />
+      <xs:enumeration value="image" />
+      <xs:enumeration value="video" />
       <xs:enumeration value="isodate" />
       <xs:enumeration value="timestamp" />
       <xs:enumeration value="float" />
