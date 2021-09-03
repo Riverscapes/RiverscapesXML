@@ -1,0 +1,71 @@
+[
+    {
+        "id": "None - 0 dams ",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "oCC_EX-bmdfb2",
+        "minzoom": 11,
+        "filter": [
+            "all",
+            [">=", ["get", "oCC_EX"], 0],
+            ["<=", ["get", "oCC_EX"], 1e-7]
+        ],
+        "paint": {"line-color": "hsl(0, 100%, 48%)"}
+    },
+    {
+        "id": "Rare - 0-1 dams per km",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "oCC_EX-bmdfb2",
+        "minzoom": 11,
+        "filter": [
+            "all",
+            [">=", ["get", "oCC_EX"], 0.000001],
+            ["<=", ["get", "oCC_EX"], 1.00001]
+        ],
+        "layout": {},
+        "paint": {"line-color": "hsl(40, 100%, 50%)"}
+    },
+    {
+        "id": "Occasional - 1-5 dams per km",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "oCC_EX-bmdfb2",
+        "minzoom": 11,
+        "filter": [
+            "all",
+            [">=", ["get", "oCC_EX"], 1.00001],
+            ["<=", ["get", "oCC_EX"], 5.00001]
+        ],
+        "layout": {},
+        "paint": {"line-color": "hsl(60, 100%, 48%)"}
+    },
+    {
+        "id": "Frequent - 5-15 dams per km",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "oCC_EX-bmdfb2",
+        "minzoom": 11,
+        "filter": [
+            "all",
+            [">=", ["get", "oCC_EX"], 5.00001],
+            ["<=", ["get", "oCC_EX"], 15.00001]
+        ],
+        "layout": {},
+        "paint": {"line-color": "hsl(100, 99%, 45%)"}
+    },
+    {
+        "id": "Pervasive - 15-40 dams per km",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "oCC_EX-bmdfb2",
+        "minzoom": 11,
+        "filter": [
+            "all",
+            [">=", ["get", "oCC_EX"], 15.00001],
+            ["<=", ["get", "oCC_EX"], 40]
+        ],
+        "layout": {},
+        "paint": {"line-color": "hsl(216, 100%, 45%)", "line-width": 1.25}
+    }
+]
