@@ -1,0 +1,36 @@
+{
+    "$schema": "https://xml.riverscapes.xyz/Symbology/webRAVEVector.schema.json",
+    "legend": [],
+    "layerStyles": [
+        {
+            "id": "46006 - Perennial",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "perennial-cweh7a",
+            "minzoom": 10,
+            "filter": ["match", ["get", "FCode"], [46006], true, false],
+            "layout": {},
+            "paint": {"line-color": "hsl(213, 100%, 33%)"}
+        },
+        {
+            "id": "33400 - Connector",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "perennial-cweh7a",
+            "minzoom": 10,
+            "filter": ["match", ["get", "FCode"], [33400], true, false],
+            "layout": {},
+            "paint": {"line-color": "hsl(213, 100%, 33%)", "line-width": 0.5}
+        },
+        {
+            "id": "55800 - Artificial Path",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "perennial-cweh7a",
+            "minzoom": 10,
+            "filter": ["match", ["get", "FCode"], [55800], true, false],
+            "layout": {},
+            "paint": {"line-color": "hsl(220, 100%, 23%)"}
+        }
+    ]
+  }
