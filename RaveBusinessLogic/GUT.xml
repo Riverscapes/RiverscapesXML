@@ -130,8 +130,8 @@
 													<Node label="Tier 3 In Channel Sub GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Orientation" transparency="40" />
 													<Node label="Tier 3 In Channel Sub GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Position" transparency="40" />
 													<Node xpathlabel="" xpath="Outputs/Tier3[@id='Tier3_1']" type="polygon" symbology="out_Tier3_GeomorphicUnit" transparency="40" />
-													<Node xpathlabel="Tier 3 In Channel GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Orientation" transparency="40" />
-													<Node xpathlabel="Tier 3 In Channel GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Position" transparency="40" />
+													<Node label="Tier 3 In Channel GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Orientation" transparency="40" />
+													<Node label="Tier 3 In Channel GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Position" transparency="40" />
 												</Children>
 											</Node>
 										</Children>
