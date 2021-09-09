@@ -71,7 +71,6 @@
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
       <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
-      <Product id="HAND" name="HAND Models" folder="HAND" url="" />
 
     </Products>
   </Definitions>
@@ -116,7 +115,6 @@
           <Product ref="BRAT" />
           <Product ref="CHAMPMETRICS" />
           <Product ref="VBET" />
-          <Product ref="HAND" />
           <Product ref="RSContext" />
         </Collection>
       </Group>
