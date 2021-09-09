@@ -1,0 +1,10 @@
+[
+    {
+        "id": "nhdflowareas-cf12tk",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "NHDFlowareas-cf12tk",
+        "layout": {},
+        "paint": {"fill-color": "hsl(184, 69%, 62%)"}
+    }
+]
