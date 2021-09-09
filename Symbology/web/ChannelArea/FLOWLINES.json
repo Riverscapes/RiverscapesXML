@@ -1,0 +1,10 @@
+[
+    {
+        "id": "nhdflowlines-086nsm",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "NHDFlowlines-086nsm",
+        "layout": {},
+        "paint": {"line-color": "hsl(231, 77%, 55%)", "line-width": 1.74}
+    }
+]
