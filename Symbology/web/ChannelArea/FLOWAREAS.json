@@ -1,4 +1,9 @@
-[
+{
+    "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+    "legend": [
+      ["hsl(184, 69%, 62%)", "NHD Flowareas"]
+    ],
+    "layerStyles": [
     {
         "id": "nhdflowareas-cf12tk",
         "type": "fill",
@@ -7,4 +12,4 @@
         "layout": {},
         "paint": {"fill-color": "hsl(184, 69%, 62%)"}
     }
-]
+]}
