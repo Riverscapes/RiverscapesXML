@@ -41,7 +41,7 @@
                     </Node>
                     <Node label="GDAL Outputs">
                         <Children>
-                             <Node label="D8 Slope Analysis (degrees)" xpath="Intermediates/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
+                             <Node label="D8 Slope Analysis (degrees)" xpath="Outputs/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
                         </Children>
                     </Node>
                 </Children>
