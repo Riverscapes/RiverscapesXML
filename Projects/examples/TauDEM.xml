@@ -1,136 +1,164 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/TauDEM.xsd">
-<Name>TauDEM project for HUC 17060304</Name>
+	<Name>TauDEM project for HUC 05020004</Name>
 	<ProjectType>TauDEM</ProjectType>
-	<MetaData>
+	<Warehouse><Meta name="id">562eff1a-0eb4-4726-acd3-c71d43834570</Meta><Meta name="user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta><Meta name="program">Anabranch</Meta><Meta name="tags">Fall2021RSTools</Meta></Warehouse><MetaData>
 		<Meta name="ModelVersion">0.0.1</Meta>
-		<Meta name="dateCreated">2021-07-22T17:00:31.061683</Meta>
-		<Meta name="HUC8">17060304</Meta>
-		<Meta name="HUC">17060304</Meta>
+		<Meta name="dateCreated" type="isodate">2021-09-03T23:00:28.344208</Meta>
+		<Meta name="HUC8">05020004</Meta>
+		<Meta name="HUC">05020004</Meta>
 		<Meta name="TauDEMProjectVersion">0.0.1</Meta>
-		<Meta name="TauDEMTimestamp">1626973231</Meta>
-		<Meta name="TauDEM_SoftwareVerseion">5.3.7</Meta>
+		<Meta name="TauDEMTimestamp" type="timestamp">1630710028</Meta>
+		<Meta name="TauDEM_SoftwareVersion">5.3.7</Meta>
 		<Meta name="TauDEM_Credits">Copyright (C) 2010-2015 David Tarboton, Utah State University</Meta>
-		<Meta name="TauDEM_Licence">https://hydrology.usu.edu/taudem/taudem5/GPLv3license.txt</Meta>
-		<Meta name="TauDEM_URL">https://hydrology.usu.edu/taudem/taudem5/index.html</Meta>
+		<Meta name="TauDEM_Licence" type="url">https://hydrology.usu.edu/taudem/taudem5/GPLv3license.txt</Meta>
+		<Meta name="TauDEM_URL" type="url">https://hydrology.usu.edu/taudem/taudem5/index.html</Meta>
 		<Meta name="Runner">Cybercastor</Meta>
+		<Meta name="ProcTimeS" type="int">2038.03</Meta>
+		<Meta name="ProcTimeHuman">33:58.03409290313721 minutes</Meta>
 	</MetaData>
 	<Realizations>
-		<TauDEM id="TauDEM" dateCreated="2021-07-22T17:00:31.154672" guid="52869a1e-eb0e-11eb-9662-0242ac110002" productVersion="0.0.1">
-			<Name>TauDEM project for HUC 17060304</Name>
+		<TauDEM id="TauDEM" dateCreated="2021-09-03T23:00:28.348535" guid="4e3237be-8c9a-4ed5-b7ad-c48ce9fca449" productVersion="0.0.1">
+			<Name>TauDEM project for HUC 05020004</Name>
+			<LogFile guid="f6d09bdf-eee0-4899-a4ec-d05742b0cae5" id="LOGFILE">
+				<Name>Log</Name>
+				<Path>taudem.log</Path>
+			</LogFile>
 			<Inputs>
-				<Raster guid="4e82a0e5-55d7-4298-8e57-4bc645a52b66" id="DEM">
+				<Raster guid="f1bebcd2-42f2-4f77-ad3a-b6e92dfc8850" id="DEM">
 					<Name>DEM</Name>
 					<Path>inputs/dem.tif</Path>
 					<MetaData>
-						<Meta name="_rs_wh_id">e1a8fae1-9357-47d9-9a0f-18fc3a52619b</Meta>
-						<Meta name="_rs_wh_user">d6c0ff26-8550-4f80-b9ea-6cc1e70a1c4d</Meta>
+						<Meta name="_rs_wh_id">9271c418-d7a8-4a7c-b264-9fbf1816d4ad</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
 						<Meta name="_rs_wh_program">Anabranch</Meta>
-						<Meta name="_rs_wh_tags">TEST,Jul21</Meta>
+						<Meta name="_rs_wh_tags">Fall2021RSTools</Meta>
 						<Meta name="_rs_prj_ModelVersion">1.1.3</Meta>
-						<Meta name="_rs_prj_dateCreated">2021-07-22T16:11:25.647779</Meta>
-						<Meta name="_rs_prj_HUC8">17060304</Meta>
-						<Meta name="_rs_prj_HUC">17060304</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-03T20:59:23.572869</Meta>
+						<Meta name="_rs_prj_HUC8">05020004</Meta>
+						<Meta name="_rs_prj_HUC">05020004</Meta>
 						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
-						<Meta name="_rs_prj_Watershed">Middle Fork Clearwater</Meta>
-						<Meta name="_rs_prj_mean_annual_precipitation_mm">842.3529488517745</Meta>
-						<Meta name="_rs_prj_ProcTimeS">412.75</Meta>
-						<Meta name="_rs_prj_ProcTimeHuman">6:52.74838209152222 minutes</Meta>
-						<Meta name="_rs_lyr_num_rasters">4</Meta>
-						<Meta name="_rs_lyr_origin_urls">[&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n46w117/USGS_13_n46w117.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n47w117/USGS_13_n47w117.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n47w116/USGS_13_n47w116.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n46w116/USGS_13_n46w116.tif&quot;]</Meta>
+						<Meta name="_rs_prj_Watershed">Cheat</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">1330.4602179836513</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">1932.81</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">32:12.805959224700928 minutes</Meta>
+						<Meta name="_rs_lyr_Description">National Elevation Dataset (NED) Digital Elevation Models (DEM). These DEMs are downloaded from Science Base and mosaiced into a single 10m DEM that covers the riverscapes context project extent.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#DEM</Meta>
+						<Meta name="_rs_lyr_num_rasters" type="int">11</Meta>
+						<Meta name="_rs_lyr_origin_urls" type="json">["https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w080/USGS_13_n40w080.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w080/USGS_13_n40w080_20210630.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w081/USGS_13_n39w081_20210204.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w080/USGS_13_n39w080_20210111.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w081/USGS_13_n40w081_20210630.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w080/USGS_13_n39w080_20210204.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w080/USGS_13_n39w080.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w081/USGS_13_n39w081.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w081/USGS_13_n39w081_20210111.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w081/USGS_13_n40w081.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w080/USGS_13_n40w080_20210111.tif"]</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">DEM</Meta>
-						<Meta name="_rs_lyr_guid">34dbfe28-1f6d-47db-acc4-3aa3dcc58890</Meta>
-						<Meta name="_rs_lyr_path">topography/dem.tif</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">2b776df3-a2a3-42e1-8bdc-2f9267a75422</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/dem.tif</Meta>
 					</MetaData>
 				</Raster>
-				<Raster guid="bd39964c-320f-447c-bd9e-ceddb98b70a8" id="HILLSHADE">
-					<Name>DEM Hillshade</Name>
-					<Path>inputs/dem_hillshade.tif</Path>
-					<MetaData>
-						<Meta name="_rs_wh_id">e1a8fae1-9357-47d9-9a0f-18fc3a52619b</Meta>
-						<Meta name="_rs_wh_user">d6c0ff26-8550-4f80-b9ea-6cc1e70a1c4d</Meta>
-						<Meta name="_rs_wh_program">Anabranch</Meta>
-						<Meta name="_rs_wh_tags">TEST,Jul21</Meta>
-						<Meta name="_rs_prj_ModelVersion">1.1.3</Meta>
-						<Meta name="_rs_prj_dateCreated">2021-07-22T16:11:25.647779</Meta>
-						<Meta name="_rs_prj_HUC8">17060304</Meta>
-						<Meta name="_rs_prj_HUC">17060304</Meta>
-						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
-						<Meta name="_rs_prj_Watershed">Middle Fork Clearwater</Meta>
-						<Meta name="_rs_prj_mean_annual_precipitation_mm">842.3529488517745</Meta>
-						<Meta name="_rs_prj_ProcTimeS">412.75</Meta>
-						<Meta name="_rs_prj_ProcTimeHuman">6:52.74838209152222 minutes</Meta>
-						<Meta name="_rs_prj_projType">RSContext</Meta>
-						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
-						<Meta name="_rs_lyr_guid">b726778a-e0bf-430d-94a7-9c0b261a4d2d</Meta>
-						<Meta name="_rs_lyr_path">topography/dem_hillshade.tif</Meta>
-					</MetaData>
-				</Raster>
-				<Geopackage guid="15600e98-717b-423f-a52e-bf020654007e" id="INPUTS">
+				<Geopackage guid="5c305d21-9513-4388-82be-17e96a6c599c" id="INPUTS">
 					<Name>Inputs</Name>
 					<Path>inputs/hand_inputs.gpkg</Path>
 					<Layers>
-						<Vector guid="e0d4c45f-2ef8-499c-9f21-1e49c1896dbd" id="CHANNEL_AREA">
+						<Vector guid="64804046-a613-4c72-bff1-7b2ea176307e" id="CHANNEL_AREA">
 							<Name>Channel Area Polygons</Name>
 							<Path>channel_area</Path>
 							<MetaData>
-								<Meta name="_rs_wh_id">6982da1e-4e89-460b-95f3-0c170ea05a37</Meta>
-								<Meta name="_rs_wh_user">d6c0ff26-8550-4f80-b9ea-6cc1e70a1c4d</Meta>
+								<Meta name="_rs_wh_id">365ba8f7-a1df-4db2-b090-c46abcbb5a21</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
 								<Meta name="_rs_wh_program">Anabranch</Meta>
-								<Meta name="_rs_wh_tags">TEST,Jul21</Meta>
+								<Meta name="_rs_wh_tags">Fall2021RSTools</Meta>
 								<Meta name="_rs_prj_ModelVersion">0.0.1</Meta>
-								<Meta name="_rs_prj_dateCreated">2021-07-22T16:18:25.977766</Meta>
-								<Meta name="_rs_prj_HUC8">17060304</Meta>
-								<Meta name="_rs_prj_HUC">17060304</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-03T22:14:46.641396</Meta>
+								<Meta name="_rs_prj_HUC8">05020004</Meta>
+								<Meta name="_rs_prj_HUC">05020004</Meta>
 								<Meta name="_rs_prj_ChannelAreaVersion">0.0.1</Meta>
-								<Meta name="_rs_prj_ChannelAreaTimestamp">1626970705</Meta>
+								<Meta name="_rs_prj_ChannelAreaTimestamp" type="timestamp">1630707286</Meta>
 								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
 								<Meta name="_rs_prj_Bankfull Equation">0.177 * (a ** 0.397) * (p ** 0.453)</Meta>
-								<Meta name="_rs_prj_Reach Codes">['46003', '46006', '46007']</Meta>
-								<Meta name="_rs_prj_ProcTimeS">26.21</Meta>
-								<Meta name="_rs_prj_ProcTimeHuman">26.2 seconds</Meta>
+								<Meta name="_rs_prj_flowline Reach Codes">['33400', '46000', '46003', '46006', '46007', '']</Meta>
+								<Meta name="_rs_prj_flowarea Reach Codes">['53700', '46100', '48400', '31800', '34300', '34305', '34306', '4600', '46003', '46006', '46007', '']</Meta>
+								<Meta name="_rs_prj_waterbody Reach Codes">['49300', '3900', '39001', '39004', '39005', '39006', '39009', '39010', '39011', '39012', '43600', '43601', '43603', '43604', '43605', '43606', '43607', '43608', '43609', '43610', '43611', '43612', '43613', '43614', '43615', '43618', '43619', '43621', '43623', '43624', '43625', '43626', '46600', '46601', '46602', '']</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">112.34</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">1:52.34295845031738 minutes</Meta>
 								<Meta name="_rs_prj_projType">ChannelArea</Meta>
 								<Meta name="_rs_lyr_id">CHANNEL_AREA</Meta>
-								<Meta name="_rs_lyr_guid">6ac159b1-0d98-45a1-a2d3-a7c92d52fc7f</Meta>
-								<Meta name="_rs_lyr_path">channel_areas</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">f19fad88-067f-4e34-be2a-f09c8a916a9c</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">channel_area</Meta>
 							</MetaData>
 						</Vector>
 					</Layers>
 				</Geopackage>
+				<Raster guid="502da2f3-67ff-4179-a320-6d4a327817cd" id="HILLSHADE">
+					<Name>DEM Hillshade</Name>
+					<Path>inputs/dem_hillshade.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">9271c418-d7a8-4a7c-b264-9fbf1816d4ad</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Fall2021RSTools</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.1.3</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-03T20:59:23.572869</Meta>
+						<Meta name="_rs_prj_HUC8">05020004</Meta>
+						<Meta name="_rs_prj_HUC">05020004</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">Cheat</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">1330.4602179836513</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">1932.81</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">32:12.805959224700928 minutes</Meta>
+						<Meta name="_rs_lyr_Description">Hillshade raster generated using the gdal_dem tool specifying the hillshade option.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HILLSHADE</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">a6867263-0d79-413a-ab22-a0310d33b71c</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/dem_hillshade.tif</Meta>
+					</MetaData>
+				</Raster>
 			</Inputs>
 			<Intermediates>
-				<Raster guid="34a3656a-6c92-44e0-8029-c1f25b0ee678" id="RASTERIZED_CHANNEL">
+				<Raster guid="13508fc4-0d77-4ce9-9446-b1c880e16e12" id="RASTERIZED_CHANNEL">
 					<Name>Rasterized Channel</Name>
 					<Path>intermediates/rasterized_channel.tif</Path>
 				</Raster>
-				<Raster guid="b202ed17-c80a-4b59-aac7-0ffca7dbacb8" id="PITFILL">
+				<Raster guid="85e3e0f8-2ccf-425f-a896-c78e285118f9" id="PITFILL">
 					<Name>TauDEM Pitfill</Name>
 					<Path>intermediates/pitfill.tif</Path>
 				</Raster>
-				<Raster guid="febf28c9-529e-4422-ba45-575b54d5aafd" id="DINFFLOWDIR_ANG">
+				<Raster guid="8bbcdd62-ab35-4797-8a36-1027b9e45582" id="DINFFLOWDIR_ANG">
 					<Name>TauDEM D-Inf Flow Directions</Name>
 					<Path>intermediates/dinfflowdir_ang.tif</Path>
 				</Raster>
-				<Raster guid="d27b2142-908e-4d99-a1f3-34a4ddc92c9e" id="AREADINF_SCA">
+				<Raster guid="d1042b1e-8caa-4f08-a253-b8c38d27e4e0" id="AREADINF_SCA">
 					<Name>TauDEM D-Inf Contributing Area</Name>
 					<Path>intermediates/areadinf_sca.tif</Path>
 				</Raster>
+				<Raster guid="c0adf824-e5a5-4136-92db-05229bfaa289" id="D8FLOWDIR_P">
+					<Name>TauDEM D8 Flow Directions</Name>
+					<Path>intermediates/d8flowdir_p.tif</Path>
+				</Raster>
+				<Raster guid="74863c94-9543-40fb-9ef7-f8796118fd3a" id="D8FLOWDIR_SD8">
+					<Name>TauDEM D8 Flow Direction Slope</Name>
+					<Path>intermediates/d8flowdir_sd8.tif</Path>
+				</Raster>
 			</Intermediates>
 			<Outputs>
-				<Raster guid="066fe34c-1d07-4176-a6a2-539e7a7f8e9e" id="DINFFLOWDIR_SLP">
+				<Raster guid="64f65ae1-80fc-4225-b33b-c68b17f8b1e7" id="GDAL_SLOPE">
+					<Name>Slope raster (GDAL)</Name>
+					<Path>outputs/gdal_slope.tif</Path>
+				</Raster>
+				<Raster guid="5a290ebc-4de7-4d17-8682-19e2209cd1c9" id="DINFFLOWDIR_SLP">
 					<Name>TauDEM D-Inf Flow Directions Slope</Name>
 					<Path>outputs/dinfflowdir_slp.tif</Path>
 				</Raster>
-				<Raster guid="c84a1cf5-91d4-417d-a42d-bee7f1c9f6c0" id="HAND_RASTER">
+				<Raster guid="b3cfd6fd-d5c1-4f95-bbc6-b4d2ccfa235f" id="HAND_RASTER">
 					<Name>Hand Raster</Name>
 					<Path>outputs/HAND.tif</Path>
 				</Raster>
-				<Raster guid="e01612ee-a500-466d-9f64-c0d43131c511" id="TWI_RASTER">
+				<Raster guid="7c72352b-595b-4eab-abc3-2936275ca584" id="TWI_RASTER">
 					<Name>TWI Raster</Name>
 					<Path>outputs/twi.tif</Path>
 				</Raster>
-				<HTMLFile guid="11d47789-8e7c-4391-a1e4-32372e1cf423" id="REPORT">
+				<Raster guid="be79f25c-5a82-4e5e-ab20-54bc5a9f61a2" id="SLOPEAVEDOWN_SLPD">
+					<Name>TauDEM Slope Average Down</Name>
+					<Path>outputs/slopeavedown_slpd.tif</Path>
+				</Raster>
+				<HTMLFile guid="447681b4-4b01-411e-84e6-46cd250b7128" id="REPORT">
 					<Name>RSContext Report</Name>
 					<Path>outputs/hand.html</Path>
 				</HTMLFile>
