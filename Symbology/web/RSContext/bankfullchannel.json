@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(351, 76%, 80%)", "Bankfull Channel"]
+  ],
+  "layerStyles": [
+    {
+        "id": "BankfullChannel",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "bankfullchannel-4r52fz",
+        "layout": {},
+        "paint": {
+            "fill-color": "hsl(351, 76%, 80%)",
+            "fill-outline-color": "hsl(0, 0%, 4%)"
+        }
+    }
+  ]
+}

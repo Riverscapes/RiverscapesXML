@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(40, 100%, 45%)", "46007 - Ephemeral"]
+  ],
+  "layerStyles": [
+    {
+        "id": "46007 - Ephemeral",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "intermittent-126k30",
+        "filter": ["match", ["get", "FCode"], [46007], true, false],
+        "layout": {},
+        "paint": {
+            "line-dasharray": [3, 1, 1, 1, 1, 1],
+            "line-color": "hsl(40, 100%, 45%)"
+        }
+    }
+  ]
+}
