@@ -25,7 +25,7 @@
                             <Node label="TauDEM Report" xpath="HTMLFile[@id='REPORT']" type="file" />
                             <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
                             <Node label="Basic Grid Analysis">
-                                <Children collapsed="true">
+                                <Children collapsed="false">
                                     <Node label="Pit-filled DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
                                     <Node label="D∞ Flow Directions (bearing)" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
                                     <Node label="D∞ Contributing Area" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" id="ca"/>
@@ -41,7 +41,7 @@
                     </Node>
                     <Node label="GDAL Outputs">
                         <Children>
-                             <Node label="D8 Slope Analysis (degrees)" xpath="Outputs/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
+                             <Node label="D8 Slope Analysis (degrees)" xpath="Intermediates/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
                         </Children>
                     </Node>
                 </Children>
