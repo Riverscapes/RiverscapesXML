@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(195, 78%, 77%)", "Lakes, Rivers, Ponds, and Waterbodies"]
+  ],
+  "layerStyles": [
+    {
+        "id": "lakespondswaterbodies-a5e5uj",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "lakespondswaterbodies-a5e5uj",
+        "layout": {},
+        "paint": {
+            "fill-color": "hsl(195, 78%, 77%)",
+            "fill-outline-color": "hsl(227, 81%, 59%)"
+        }
+    }
+  ]
+}

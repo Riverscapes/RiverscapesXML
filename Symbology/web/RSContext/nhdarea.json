@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(213, 100%, 33%)", "River Polygons (NHD Area)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "River Polygons - NHD Area",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "Riverpolygons-bdelud",
+        "layout": {},
+        "paint": {"fill-color": "hsl(213, 100%, 33%)"}
+    }
+  ]
+}

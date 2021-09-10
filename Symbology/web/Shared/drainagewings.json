@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(40, 100%, 50%)", "Drainage Wings"]
+  ],
+  "layerStyles": [
+    {
+        "id": "drainagewings-6t0t6a",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "drainagewings-6t0t6a",
+        "minzoom": 12,
+        "layout": {},
+        "paint": {
+            "fill-color": "hsla(40, 100%, 50%, 0)",
+            "fill-outline-color": "hsl(40, 100%, 50%)"
+        }
+    }
+  ]
+}
