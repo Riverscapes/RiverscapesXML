@@ -2,7 +2,7 @@
 <Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
 
   <Name>Upper Klamath - USFWS</Name>
-  <MachineName>USFWS</MachineName>
+  <MachineName>UKUSFWS</MachineName>
 
   <MetaData>
     <Meta name="projectFile">project.rs.xml</Meta>
