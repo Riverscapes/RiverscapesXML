@@ -44,6 +44,8 @@
 
   <!-- RCA Inputs -->
   <xs:complexType name="RCAInputs">
+    <xs:complexContent>
+      <xs:extension base="DataSetContainerType">    
     <xs:sequence>
       <xs:element type="RCAVegetationType" name="ExistingVegetation" />
       <xs:element type="RCAVegetationType" name="HistoricVegetation" />
@@ -51,6 +53,8 @@
       <xs:element type="VectorType" name="FragmentedValleyBottom" minOccurs="0" />
       <xs:element type="VectorType" name="LargeRiverPolygon" minOccurs="0" />
     </xs:sequence>
+    </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
 
   <xs:complexType name="RCAVegetationType" mixed="true">
@@ -90,13 +94,7 @@
   <xs:complexType name="RCAAnalysisType">
     <xs:sequence>
       <xs:element type="xs:string" name="Name" />
-      <xs:element type="RCAOutputsType" name="Outputs" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="RCAOutputsType">
-    <xs:sequence>
-      <xs:element type="VectorType" name="Vector" />
+      <xs:element type="DataSetContainerType" name="Outputs" />
     </xs:sequence>
   </xs:complexType>
 
