@@ -16,7 +16,7 @@
 										<Node label="Bankfull Cross Sections QA/QC " xpath="CrossSections[@id='BFXS']" type="line" symbology="XS_qaqc" />
 										<Node label="Bankfull Cross Sections Type" xpath="CrossSections[@id='BFXS']" type="line" symbology="XS_type" />
 										<Node xpathlabel="Name" xpath="Extent[@id='BFEX']" type="polygon" symbology="in_BankfullExtent" />
-										<Node xpathlabel="Name" xpath="Islands[@id='BFI']" type="polygon" symbology="bfIlsands" />
+										<Node xpathlabel="Name" xpath="Islands[@id='BFI']" type="polygon" symbology="bfIslands" />
 									</Children>
 								</Node>
 								<Node label="Wetted Extent">
