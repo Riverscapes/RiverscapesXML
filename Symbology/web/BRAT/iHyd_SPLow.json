@@ -1,0 +1,36 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 33%)", "0 - 160 Can Build Dam"],
+    ["hsl(60, 100%, 48%)", "160 - 185 Probably Can Build Dam"],
+    ["hsl(0, 100%, 48%)",">185 Cannot Build Dam"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Base Flow Stream Power - watts",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "interpolate",
+              ["linear"],
+              ["get", "iHyd_SPLow"],
+              0,
+              "hsl(100, 100%, 33%)",
+              160,
+              "hsl(100, 100%, 33%)",
+              160.0001,
+              "hsl(60, 100%, 48%)",
+              185,
+              "hsl(60, 100%, 48%)",
+              185.0001,
+              "hsl(0, 100%, 48%)",
+              2259,
+              "hsl(0, 100%, 48%)"
+          ]
+      }
+  }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(8, 100%, 50%)", "Immediately Adjacent (0 - 30 m)"],
+    ["hsl(36, 100%, 50%)", "Within Normal Forage Range (30 - 100 m)"],
+    ["hsl(60, 100%, 50%)","Within Plausible Forage range (100 - 300 m)"],
+    ["hsl(77, 100%, 34%)","Outside Range of Concern (300 m - 1 km)"],
+    ["hsl(120, 100%, 19%)","Not Close (> 1 km)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Distance to Canals/Ditches",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "step",
+              ["get", "iPC_Canal"],
+              0,
+              "hsl(8, 100%, 50%)",
+              30,
+              "hsl(8, 100%, 50%)",
+              30.00001,
+              "hsl(36, 100%, 50%)",
+              100,
+              "hsl(36, 100%, 50%)",
+              100.00001,
+              "hsl(60, 100%, 50%)",
+              300,
+              "hsl(60, 100%, 50%)",
+              300.00001,
+              "hsl(77, 100%, 34%)",
+              1000,
+              "hsl(77, 100%, 34%)",
+              1000.00001,
+              "hsl(120, 100%, 19%)",
+              1000000,
+              "hsl(120, 100%, 19%)"
+          ]
+      }
+  }
+  ]
+}
