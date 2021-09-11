@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(120, 100%, 33%)", "Easiest - Low-Hanging Fruit"],
+    ["hsl(194, 100%, 50%)", "Straight Forward - Quick Return"],
+    ["hsl(194, 100%, 73%)","Strategic - Long-Term Investment"],
+    ["hsl(0, 0%, 73%","Other"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Restoration or Conservation Opportunities",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Opportunity"],
+              ["Easiest - Low-Hanging Fruit"],
+              "hsl(120, 100%, 33%)",
+              ["Straight Forward - Quick Return"],
+              "hsl(194, 100%, 50%)",
+              ["Strategic - Long-Term Investment"],
+              "hsl(194, 100%, 73%)",
+              ["NA"],
+              "hsl(0, 0%, 73%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}
