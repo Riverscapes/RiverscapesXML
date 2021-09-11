@@ -1,0 +1,36 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 88%)", "Negligible Risk"],
+    ["hsl(194, 100%, 50%)", "Minor Risk"],
+    ["hsl(314, 100%, 73%)", "Some Risk"],
+    ["hsl(54, 100%, 45%)","Considerable Risk"],
+    ["hsl(0, 100%, 45%)","Major Risk"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Risk of Undesireable Dams",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Risk"],
+              ["Negligible Risk"],
+              "hsl(0, 0%, 88%)",
+              ["Minor Risk"],
+              "hsl(194, 100%, 50%)",
+              ["Some Risk"],
+              "hsl(314, 100%, 73%)",
+              ["Considerable Risk"],
+              "hsl(54, 100%, 45%)",
+              ["Major Risk"],
+              "hsl(0, 100%, 45%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}
