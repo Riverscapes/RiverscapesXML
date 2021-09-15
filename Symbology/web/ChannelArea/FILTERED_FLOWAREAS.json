@@ -1,0 +1,17 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(162, 74%, 55%)", "NHD Flow Areas (Filtered)"],
+    ["hsl(Item2COlorHERE)", "WebRave Legend Item2"]
+  ],
+  "layerStyles": [
+        {
+            "id": "nhdflowareas-filtered-buldzo",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "NHDFlowareas_filtered-buldzo",
+            "layout": {},
+            "paint": {"fill-color": "hsl(162, 74%, 55%)"}
+        }
+    ]
+}
