@@ -1,0 +1,16 @@
+{
+    "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+    "legend": [
+      ["hsl(159, 44%, 50%)", "Flow Areas, No Islands"]
+    ],
+    "layerStyles": [
+            {
+                "id": "flowareas-noislands-98psiw",
+                "type": "fill",
+                "source": "composite",
+                "source-layer": "Flowareas_noislands-98psiw",
+                "layout": {},
+                "paint": {"fill-color": "hsl(159, 44%, 50%)"}
+            }
+        ]
+  }
