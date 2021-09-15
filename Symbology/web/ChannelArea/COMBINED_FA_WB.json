@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(217, 77%, 75%)", "Combined Flow Areas and Waterbodies"],
+  ],
+  "layerStyles": [
+        {
+            "id": "combinedflowareaswaterbodies-857596",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "CombinedFlowAreasWaterbodies-857596",
+            "layout": {},
+            "paint": {"fill-color": "hsl(217, 77%, 75%)"}
+        }
+    ]
+}
