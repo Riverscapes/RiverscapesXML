@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(205, 56%, 36%)", "NHD Waterbody areas"]
+  ],
+  "layerStyles": [
+        {
+            "id": "nhdwaterbodyareas-52pr3u",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "NHDWaterbodyAreas-52pr3u",
+            "layout": {},
+            "paint": {"fill-color": "hsl(205, 56%, 36%)"}
+        }
+    ]
+}
