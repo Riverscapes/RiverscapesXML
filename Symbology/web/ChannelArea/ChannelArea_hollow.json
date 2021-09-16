@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 99%)", "Channel Area (hollow)"]
+  ],
+  "layerStyles": [
+        {
+            "id": "channelarea-hollow-25wlpy",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "ChannelArea_hollow-25wlpy",
+            "layout": {},
+            "paint": {
+                "fill-outline-color": "hsl(0, 0%, 99%)",
+                "fill-color": "hsla(0, 0%, 0%, 0)"
+            }
+        }
+    ]
+}
