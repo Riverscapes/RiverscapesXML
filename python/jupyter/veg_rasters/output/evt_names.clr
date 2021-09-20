@@ -1,0 +1,838 @@
+7008	203	255	171	7008: North Pacific Oak Woodland
+7009	192	255	138	7009: Northwestern Great Plains Aspen Forest and Parkland
+7010	180	255	148	7010: Northern Rocky Mountain Western Larch Savanna
+7011	192	255	138	7011: Rocky Mountain Aspen Forest and Woodland
+7012	171	255	138	7012: Rocky Mountain Bigtooth Maple Ravine Woodland
+7013	6	53	122	7013: Western Great Plains Dry Bur Oak Forest and Woodland
+7014	145	255	115	7014: Central and Southern California Mixed Evergreen Woodland
+7015	135	255	105	7015: California Coastal Redwood Forest
+7016	121	255	94	7016: Colorado Plateau Pinyon-Juniper Woodland
+7017	108	255	82	7017: Columbia Plateau Western Juniper Woodland and Savanna
+7018	96	255	71	7018: East Cascades Mesic Montane Mixed-Conifer Forest and Woodland
+7019	78	255	59	7019: Great Basin Pinyon-Juniper Woodland
+7020	63	255	46	7020: Inter-Mountain Basins Subalpine Limber-Bristlecone Pine Woodland
+7021	42	255	31	7021: Klamath-Siskiyou Lower Montane Serpentine Mixed Conifer Woodland
+7022	224	252	192	7022: Klamath-Siskiyou Upper Montane Serpentine Mixed Conifer Woodland
+7023	0	237	0	7023: Madrean Encinal
+7024	0	237	0	7024: Madrean Lower Montane Pine-Oak Forest and Woodland
+7025	121	255	94	7025: Madrean Pinyon-Juniper Woodland
+7026	0	237	0	7026: Madrean Upper Montane Conifer-Oak Forest and Woodland
+7027	0	222	0	7027: Mediterranean California Dry-Mesic Mixed Conifer Forest and Woodland
+7028	0	204	0	7028: Mediterranean California Mesic Mixed Conifer Forest and Woodland
+7029	0	189	0	7029: Mediterranean California Mixed Oak Woodland
+7030	0	189	0	7030: Mediterranean California Lower Montane Conifer Forest and Woodland
+7031	0	173	0	7031: California Montane Jeffrey Pine-(Ponderosa Pine) Woodland
+7032	0	158	0	7032: Mediterranean California Red Fir Forest
+7033	0	145	0	7033: Mediterranean California Subalpine Woodland
+7034	224	252	192	7034: Mediterranean California Mesic Serpentine Woodland
+7035	0	130	0	7035: North Pacific Dry Douglas-fir-(Madrone) Forest and Woodland
+7036	0	117	0	7036: North Pacific Seasonal Sitka Spruce Forest
+7037	0	105	0	7037: North Pacific Maritime Dry-Mesic Douglas-fir-Western Hemlock Forest
+7038	0	92	0	7038: North Pacific Maritime Mesic Subalpine Parkland
+7039	0	105	0	7039: North Pacific Maritime Mesic-Wet Douglas-fir-Western Hemlock Forest
+7041	0	92	0	7041: North Pacific Mountain Hemlock Forest
+7042	0	71	0	7042: North Pacific Mesic Western Hemlock-Silver Fir Forest
+7043	0	61	0	7043: Mediterranean California Mixed Evergreen Forest
+7044	0	92	0	7044: Northern California Mesic Subalpine Woodland
+7045	0	51	0	7045: Northern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest
+7046	191	255	233	7046: Northern Rocky Mountain Subalpine Woodland and Parkland
+7047	96	255	71	7047: Northern Rocky Mountain Mesic Montane Mixed Conifer Forest
+7048	182	250	227	7048: Northwestern Great Plains Highland White Spruce Woodland
+7049	174	245	224	7049: Rocky Mountain Foothill Limber Pine-Juniper Woodland
+7050	163	240	219	7050: Rocky Mountain Lodgepole Pine Forest
+7051	0	51	0	7051: Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland
+7052	0	204	0	7052: Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland
+7053	214	255	181	7053: Northern Rocky Mountain Ponderosa Pine Woodland and Savanna
+7054	214	255	181	7054: Southern Rocky Mountain Ponderosa Pine Woodland
+7055	236	252	204	7055: Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland
+7056	236	252	204	7056: Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland
+7057	63	255	46	7057: Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland
+7058	163	240	219	7058: Sierra Nevada Subalpine Lodgepole Pine Forest and Woodland
+7059	121	255	94	7059: Southern Rocky Mountain Pinyon-Juniper Woodland
+7060	214	255	181	7060: East Cascades Ponderosa Pine Forest and Woodland
+7061	192	255	138	7061: Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland
+7062	155	235	216	7062: Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland
+7063	146	232	215	7063: North Pacific Broadleaf Landslide Forest
+7064	204	182	135	7064: Colorado Plateau Mixed Low Sagebrush Shrubland
+7065	199	176	129	7065: Columbia Plateau Scabland Shrubland
+7066	194	170	126	7066: Inter-Mountain Basins Mat Saltbush Shrubland
+7067	255	211	119	7067: Mediterranean California Alpine Fell-Field
+7068	181	156	114	7068: North Pacific Dry and Mesic Alpine Dwarf-Shrubland
+7069	181	156	114	7069: North Pacific Dry and Mesic Alpine Fell-field or Meadow
+7070	171	145	106	7070: Rocky Mountain Alpine Dwarf-Shrubland
+7071	255	211	119	7071: Sierra Nevada Alpine Dwarf-Shrubland
+7072	204	182	135	7072: Wyoming Basins Dwarf Sagebrush Shrubland and Steppe
+7073	166	139	107	7073: Baja Semi-Desert Coastal Succulent Scrub
+7074	161	134	96	7074: Chihuahuan Creosotebush Desert Scrub
+7075	156	128	92	7075: Chihuahuan Mixed Salt Desert Scrub
+7076	150	123	89	7076: Chihuahuan Stabilized Coppice Dune and Sand Flat Scrub
+7077	145	117	84	7077: Chihuahuan Succulent Desert Scrub
+7078	140	112	80	7078: Colorado Plateau Blackbrush-Mormon-tea Shrubland
+7079	135	106	76	7079: Great Basin Xeric Mixed Sagebrush Shrubland
+7080	130	101	72	7080: Inter-Mountain Basins Big Sagebrush Shrubland
+7081	156	128	92	7081: Inter-Mountain Basins Mixed Salt Desert Scrub
+7082	140	112	80	7082: Mojave Mid-Elevation Mixed Desert Scrub
+7083	128	97	69	7083: North Pacific Avalanche Chute Shrubland
+7084	128	97	69	7084: North Pacific Montane Shrubland
+7085	122	93	65	7085: Northwestern Great Plains Shrubland
+7086	117	87	61	7086: Rocky Mountain Lower Montane-Foothill Shrubland
+7087	161	134	96	7087: Sonora-Mojave Creosotebush-White Bursage Desert Scrub
+7088	156	128	92	7088: Sonora-Mojave Mixed Salt Desert Scrub
+7090	161	134	96	7090: Sonoran Granite Outcrop Desert Scrub
+7091	161	134	96	7091: Sonoran Mid-Elevation Desert Scrub
+7092	166	139	107	7092: Southern California Coastal Scrub
+7093	112	82	57	7093: Southern Colorado Plateau Sand Shrubland
+7094	112	82	57	7094: Western Great Plains Sandhill Steppe
+7096	107	77	54	7096: California Maritime Chaparral
+7097	59	30	19	7097: California Mesic Chaparral
+7098	66	37	24	7098: California Montane Woodland and Chaparral
+7099	66	37	24	7099: California Xeric Serpentine Chaparral
+7100	74	44	29	7100: Chihuahuan Mixed Desert and Thornscrub
+7101	145	117	84	7101: Madrean Oriental Chaparral
+7102	121	255	94	7102: Colorado Plateau Pinyon-Juniper Shrubland
+7103	89	59	40	7103: Great Basin Semi-Desert Chaparral
+7104	89	59	40	7104: Mogollon Chaparral
+7105	99	69	47	7105: Northern and Central California Dry-Mesic Chaparral
+7106	117	87	61	7106: Northern Rocky Mountain Montane-Foothill Deciduous Shrubland
+7107	245	175	54	7107: Rocky Mountain Gambel Oak-Mixed Montane Shrubland
+7108	89	59	40	7108: Sonora-Mojave Semi-Desert Chaparral
+7109	242	168	48	7109: Sonoran Paloverde-Mixed Cacti Desert Scrub
+7110	99	69	47	7110: Southern California Dry-Mesic Chaparral
+7111	150	123	89	7111: Western Great Plains Mesquite Shrubland
+7112	138	227	212	7112: California Central Valley Mixed Oak Savanna
+7113	131	222	110	7113: California Coastal Live Oak Woodland and Savanna
+7114	121	217	207	7114: California Lower Montane Foothill Pine Woodland and Savanna
+7115	78	255	59	7115: Inter-Mountain Basins Juniper Savanna
+7116	145	117	84	7116: Madrean Juniper Savanna
+7117	214	255	181	7117: Southern Rocky Mountain Ponderosa Pine Savanna
+7118	131	222	110	7118: Southern California Oak Woodland and Savanna
+7119	121	255	94	7119: Southern Rocky Mountain Juniper Woodland and Savanna
+7120	203	255	171	7120: Willamette Valley Upland Prairie
+7121	255	204	51	7121: Apacherian-Chihuahuan Semi-Desert Shrub-Steppe
+7122	255	204	51	7122: Chihuahuan Gypsophilous Grassland and Steppe
+7123	199	176	129	7123: Columbia Plateau Steppe and Grassland
+7124	135	106	76	7124: Columbia Plateau Low Sagebrush Steppe
+7125	230	151	41	7125: Inter-Mountain Basins Big Sagebrush Steppe
+7126	219	140	37	7126: Inter-Mountain Basins Montane Sagebrush Steppe
+7127	130	101	72	7127: Inter-Mountain Basins Semi-Desert Shrub-Steppe
+7128	201	116	30	7128: Northern California Coastal Scrub
+7129	255	235	153	7129: California Central Valley and Southern Coastal Grassland
+7130	255	235	153	7130: California Mesic Serpentine Grassland
+7131	255	248	148	7131: California Northern Coastal Grassland
+7132	255	241	140	7132: Central Mixedgrass Prairie Grassland
+7133	255	233	135	7133: Chihuahuan Sandy Plains Semi-Desert Grassland
+7134	255	226	130	7134: Columbia Basin Foothill and Canyon Dry Grassland
+7135	255	200	125	7135: Inter-Mountain Basins Semi-Desert Grassland
+7136	255	211	119	7136: Mediterranean California Alpine Dry Tundra
+7137	255	205	112	7137: Mediterranean California Subalpine Meadow
+7138	255	198	107	7138: North Pacific Montane Grassland
+7139	255	191	102	7139: Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland
+7140	255	184	97	7140: Northern Rocky Mountain Subalpine-Upper Montane Grassland
+7141	255	176	92	7141: Northwestern Great Plains Mixedgrass Prairie
+7142	255	198	107	7142: Columbia Basin Palouse Prairie
+7143	171	145	106	7143: Rocky Mountain Alpine Fell-Field
+7144	171	145	106	7144: Rocky Mountain Alpine Turf
+7145	255	163	82	7145: Rocky Mountain Subalpine-Montane Mesic Meadow
+7146	171	145	106	7146: Southern Rocky Mountain Montane-Subalpine Grassland
+7147	255	157	77	7147: Western Great Plains Foothill and Piedmont Grassland
+7148	255	148	71	7148: Western Great Plains Sand Prairie
+7149	255	142	66	7149: Western Great Plains Shortgrass Prairie
+7150	255	137	64	7150: Western Great Plains Tallgrass Prairie
+7151	81	180	141	7151: California Central Valley Riparian Woodland
+7152	81	180	141	7152: California Central Valley Riparian Shrubland
+7153	194	170	126	7153: Inter-Mountain Basins Greasewood Flat
+7156	67	162	181	7156: North Pacific Lowland Riparian Forest
+7157	67	162	181	7157: North Pacific Lowland Riparian Shrubland
+7158	67	162	181	7158: North Pacific Montane Riparian Woodland
+7159	67	162	181	7159: North Pacific Montane Riparian Shrubland
+7161	4	45	117	7161: Northern Rocky Mountain Conifer Swamp
+7165	55	146	173	7165: Northern Rocky Mountain Foothill Conifer Wooded Steppe
+7166	0	51	0	7166: Middle Rocky Mountain Montane Douglas-fir Forest and Woodland
+7167	163	240	219	7167: Rocky Mountain Poor-Site Lodgepole Pine Forest
+7168	128	97	69	7168: Northern Rocky Mountain Avalanche Chute Shrubland
+7169	128	97	69	7169: Northern Rocky Mountain Subalpine Deciduous Shrubland
+7170	224	252	192	7170: Klamath-Siskiyou Xeromorphic Serpentine Savanna
+7171	255	114	48	7171: North Pacific Alpine and Subalpine Dry Grassland
+7172	0	204	0	7172: Sierran-Intermontane Desert Western White Pine-White Fir Woodland
+7173	163	240	219	7173: North Pacific Wooded Volcanic Flowage
+7174	0	71	0	7174: North Pacific Dry-Mesic Silver Fir-Western Hemlock-Douglas-fir Forest
+7177	224	252	192	7177: California Coastal Closed-Cone Conifer Forest and Woodland
+7178	4	45	117	7178: North Pacific Hypermaritime Western Red-cedar-Western Hemlock Forest
+7179	214	255	181	7179: Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna
+7191	255	68	25	7191: Recently Logged-Herb and Grass Cover
+7192	255	68	25	7192: Recently Logged-Shrub Cover
+7193	255	68	25	7193: Recently Logged-Tree Cover
+7195	255	59	20	7195: Recently Burned-Herb and Grass Cover
+7196	255	59	20	7196: Recently Burned-Shrub Cover
+7197	255	59	20	7197: Recently Burned-Tree Cover
+7198	255	68	25	7198: Recently Disturbed Other-Herb and Grass Cover
+7199	255	68	25	7199: Recently Disturbed Other-Shrub Cover
+7200	255	68	25	7200: Recently Disturbed Other-Tree Cover
+7207	255	241	140	7207: Central Mixedgrass Prairie Shrubland
+7234	224	252	192	7234: Mediterranean California Mesic Serpentine Chaparral
+7238	174	245	224	7238: Laurentian-Acadian Northern Oak Forest
+7239	174	245	224	7239: Laurentian-Acadian Northern Pine-(Oak) Forest
+7240	0	92	0	7240: Laurentian-Acadian Hardwood Forest
+7241	0	92	0	7241: Laurentian-Acadian Pine-Hemlock-Hardwood Forest
+7242	174	245	224	7242: Laurentian Oak Barrens
+7243	174	245	224	7243: Laurentian Pine-Oak Barrens
+7247	82	52	34	7247: Southern Appalachian Grass Bald
+7248	255	98	41	7248: Northern Atlantic Coastal Plain Dune and Swale Grassland
+7249	91	195	199	7249: Atlantic Coastal Plain Peatland Pocosin and Canebrake Shrubland
+7250	155	235	216	7250: Inter-Mountain Basins Curl-leaf Mountain Mahogany Shrubland
+7256	255	204	51	7256: Apacherian-Chihuahuan Semi-Desert Grassland
+7260	0	189	0	7260: Mediterranean California Lower Montane Black Oak Forest and Woodland
+7261	0	189	0	7261: Mediterranean California Lower Montane Black Oak-Conifer Forest and Woodland
+7262	214	255	181	7262: East Cascades Oak Forest and Woodland
+7263	214	255	181	7263: East Cascades Oak-Ponderosa Pine Forest and Woodland
+7264	121	217	207	7264: California Lower Montane Blue Oak Woodland and Savanna
+7265	121	217	207	7265: California Lower Montane Blue Oak-Foothill Pine Woodland and Savanna
+7268	192	255	138	7268: Eastern Great Plains Tallgrass Aspen Shrubland
+7270	224	252	192	7270: Klamath-Siskiyou Xeromorphic Serpentine Chaparral
+7272	50	137	168	7272: Eastern Boreal Floodplain Shrubland
+7286	85	187	194	7286: Paleozoic Plateau Bluff and Talus Herbaceous
+7290	44	127	163	7290: North-Central Oak Barrens Herbaceous
+7291	255	153	0	7291: Central Interior Highlands Calcareous Glade and Barrens Herbaceous
+7292	0	0	255	7292: Open Water
+7295	230	232	250	7295: Quarries-Strip Mines-Gravel Pits-Well and Wind Pads
+7296	255	122	143	7296: Developed-Low Intensity
+7297	253	44	79	7297: Developed-Medium Intensity
+7298	173	0	28	7298: Developed-High Intensity
+7299	0	0	0	7299: Developed-Roads
+7301	192	255	138	7301: Laurentian-Acadian Sub-boreal Aspen-Birch Forest
+7302	171	255	138	7302: Laurentian-Acadian Northern Hardwoods Forest
+7303	85	187	194	7303: Northeastern Interior Dry-Mesic Oak Forest
+7304	85	187	194	7304: Ozark-Ouachita Dry-Mesic Oak Forest
+7305	13	69	133	7305: Southern Interior Low Plateau Dry-Mesic Oak Forest
+7306	85	187	194	7306: East Gulf Coastal Plain Northern Loess Plain Oak-Hickory Upland
+7307	85	187	194	7307: East Gulf Coastal Plain Northern Dry Upland Hardwood Forest
+7308	85	187	194	7308: Crosstimbers Oak Forest and Woodland
+7309	216	216	191	7309: Southern Appalachian Northern Hardwood Forest
+7310	85	187	194	7310: North-Central Interior Dry-Mesic Oak Forest and Woodland
+7311	85	187	194	7311: North-Central Interior Dry Oak Forest and Woodland
+7312	85	187	194	7312: Ouachita Montane Oak Forest
+7313	0	92	0	7313: North-Central Interior Beech-Maple Forest
+7314	171	255	138	7314: North-Central Interior Maple-Basswood Forest
+7315	13	69	133	7315: Southern Appalachian Oak Forest
+7316	85	187	194	7316: Southern Piedmont Mesic Forest
+7317	13	69	133	7317: Allegheny-Cumberland Dry Oak Forest and Woodland
+7318	18	76	135	7318: Southern and Central Appalachian Cove Forest
+7320	85	187	194	7320: Central and Southern Appalachian Montane Oak Forest
+7321	0	38	115	7321: South-Central Interior Mesophytic Forest
+7322	85	187	194	7322: Crowley's Ridge Mesic Loess Slope Forest
+7323	145	255	115	7323: West Gulf Coastal Plain Mesic Hardwood Forest
+7324	85	187	194	7324: Northern Atlantic Coastal Plain Hardwood Forest
+7325	159	255	128	7325: East Gulf Coastal Plain Northern Mesic Hardwood Slope Forest
+7326	85	187	194	7326: South-Central Interior / Upper Coastal Plain Flatwoods
+7327	85	187	194	7327: East Gulf Coastal Plain Northern Loess Bluff Forest
+7328	100	204	206	7328: Southern Coastal Plain Limestone Forest
+7329	100	204	206	7329: East Gulf Coastal Plain Southern Loess Bluff Forest
+7330	145	255	115	7330: Southern Coastal Plain Dry Upland Hardwood Forest
+7331	192	255	138	7331: Eastern Great Plains Tallgrass Aspen Forest and Woodland
+7333	60	113	126	7333: South Florida Hardwood Hammock
+7334	85	187	194	7334: Ozark-Ouachita Mesic Hardwood Forest
+7335	145	255	115	7335: Southern Atlantic Coastal Plain Dry and Dry-Mesic Oak Forest
+7336	60	113	126	7336: Southwest Florida Maritime Hammock
+7337	60	113	126	7337: Southeast Florida Maritime Hammock
+7338	145	255	115	7338: Central and South Texas Coastal Fringe Forest and Woodland
+7339	145	255	115	7339: West Gulf Coastal Plain Chenier and Upper Texas Coastal Fringe Forest and Woodland
+7340	82	52	34	7340: Appalachian Shale Barrens
+7342	85	187	194	7342: Piedmont Hardpan Woodland and Forest
+7343	145	255	115	7343: Southern Atlantic Coastal Plain Mesic Hardwood Forest
+7346	116	214	204	7346: Atlantic Coastal Plain Fall-line Sandhills Longleaf Pine Woodland
+7347	116	214	204	7347: Atlantic Coastal Plain Upland Longleaf Pine Woodland
+7348	116	214	204	7348: West Gulf Coastal Plain Upland Longleaf Pine Forest and Woodland
+7349	116	214	204	7349: East Gulf Coastal Plain Interior Upland Longleaf Pine Woodland
+7350	159	255	128	7350: Central and Southern Appalachian Spruce-Fir Forest
+7351	116	214	204	7351: Southeastern Interior Longleaf Pine Woodland
+7352	13	69	133	7352: Southern Appalachian Montane Pine Forest and Woodland
+7353	10	61	128	7353: Southern Appalachian Low-Elevation Pine Forest
+7355	116	214	204	7355: Northern Atlantic Coastal Plain Pitch Pine Barrens
+7356	116	214	204	7356: Florida Longleaf Pine Sandhill
+7357	145	255	115	7357: Southern Coastal Plain Mesic Slope Forest
+7358	85	187	194	7358: Bastrop Lost Pines Forest and Woodland
+7360	13	69	133	7360: South Florida Pine Rockland
+7361	107	209	206	7361: Central Atlantic Coastal Plain Maritime Forest
+7362	174	245	224	7362: Laurentian-Acadian Northern Pine Forest
+7363	255	153	0	7363: Central Interior Highlands Dry Acidic Glade and Barrens
+7364	85	187	194	7364: Ozark-Ouachita Dry Oak Woodland
+7366	0	92	0	7366: Laurentian-Acadian Pine-Hemlock Forest
+7367	116	214	190	7367: Ozark-Ouachita Shortleaf Pine Forest and Woodland
+7368	159	255	128	7368: Southern Piedmont Dry Pine Forest
+7369	13	69	133	7369: Central Appalachian Dry Pine Forest
+7370	0	38	115	7370: Appalachian Hemlock Forest
+7371	145	255	115	7371: West Gulf Coastal Plain Pine Forest
+7372	116	214	190	7372: East Gulf Coastal Plain Interior Shortleaf Pine Forest
+7375	0	38	115	7375: Eastern Serpentine Woodland
+7376	85	187	194	7376: Southern Ridge and Valley / Cumberland Dry Calcareous Forest
+7377	13	69	133	7377: Central Appalachian Pine Rocky Woodland
+7378	116	214	190	7378: West Gulf Coastal Plain Sandhill Shortleaf Pine Forest and Woodland
+7379	145	255	115	7379: Northern Atlantic Coastal Plain Maritime Forest
+7380	107	209	206	7380: East Gulf Coastal Plain Maritime Forest
+7381	85	187	194	7381: Lower Mississippi River Dune Woodland and Forest
+7382	107	209	206	7382: Southern Atlantic Coastal Plain Maritime Forest
+7383	34	109	153	7383: Edwards Plateau Limestone Savanna and Woodland
+7384	145	255	115	7384: Mississippi Delta Maritime Forest
+7385	128	97	69	7385: Great Plains Wooded Draw and Ravine Woodland
+7387	145	255	115	7387: Florida Peninsula Inland Scrub Shrubland
+7388	145	255	115	7388: Southern Atlantic Coastal Plain Xeric River Dune
+7390	82	52	34	7390: Tamaulipan Mixed Deciduous Thornscrub
+7391	82	52	34	7391: Tamaulipan Mesquite Upland Woodland
+7392	82	52	34	7392: Tamaulipan Calcareous Thornscrub
+7393	34	109	153	7393: Edwards Plateau Limestone Shrubland
+7394	6	53	122	7394: North-Central Interior Oak Savanna
+7395	44	127	163	7395: North-Central Oak Barrens Woodland
+7396	128	97	69	7396: Great Plains Wooded Draw and Ravine Shrubland
+7397	82	52	34	7397: Nashville Basin Limestone Glade and Woodland
+7398	82	52	34	7398: Cumberland Sandstone Glade and Barrens
+7400	82	52	34	7400: Central Appalachian Alkaline Glade and Woodland
+7401	255	153	0	7401: Central Interior Highlands Calcareous Glade and Barrens Woodland
+7403	116	214	204	7403: West Gulf Coastal Plain Catahoula Barrens
+7405	255	153	0	7405: West Gulf Coastal Plain Nepheline Syenite Glade
+7406	159	255	128	7406: Southern Piedmont Dry Oak Forest
+7407	174	245	224	7407: Laurentian Pine Barrens
+7408	82	52	34	7408: Alabama Ketona Glade and Woodland
+7409	216	216	191	7409: Great Lakes Alvar
+7410	34	109	153	7410: Llano Uplift Acidic Forest and Woodland
+7411	255	92	38	7411: Great Lakes Wet-Mesic Lakeplain Prairie
+7412	255	137	64	7412: North-Central Interior Sand and Gravel Tallgrass Prairie
+7413	82	52	34	7413: Bluegrass Savanna and Woodland Prairie
+7414	82	52	34	7414: Southern Appalachian Shrub Bald
+7415	255	153	0	7415: Arkansas Valley Prairie
+7416	82	52	34	7416: Western Highland Rim Prairie and Barrens
+7417	82	52	34	7417: Eastern Highland Rim Prairie and Barrens
+7418	82	52	34	7418: Pennyroyal Karst Plain Prairie and Barrens
+7419	82	52	34	7419: Southern Ridge and Valley Patch Prairie
+7420	255	137	64	7420: Northern Tallgrass Prairie
+7421	255	137	64	7421: Central Tallgrass Prairie
+7422	255	148	71	7422: Texas Blackland Tallgrass Prairie
+7423	255	137	64	7423: Southeastern Great Plains Tallgrass Prairie
+7424	255	153	0	7424: East-Central Texas Plains Xeric Sandyland
+7425	116	214	204	7425: Florida Dry Prairie Grassland
+7426	255	153	0	7426: Southern Atlantic Coastal Plain Dune and Maritime Grassland
+7428	255	148	71	7428: West Gulf Coastal Plain Northern Calcareous Prairie
+7429	255	148	71	7429: West Gulf Coastal Plain Southern Calcareous Prairie
+7430	0	38	115	7430: Southern Coastal Plain Blackland Prairie
+7431	255	153	0	7431: Southwest Florida Dune and Coastal Grassland
+7434	255	137	64	7434: Texas-Louisiana Coastal Prairie
+7435	255	153	0	7435: East Gulf Coastal Plain Dune and Coastal Grassland
+7436	255	98	41	7436: Northern Atlantic Coastal Plain Dune and Swale Shrubland
+7437	255	153	0	7437: Texas Coast Dune and Coastal Grassland
+7438	82	52	34	7438: Tamaulipan Savanna Grassland
+7439	255	171	87	7439: Tamaulipan Lomas
+7441	82	52	34	7441: Bluegrass Savanna and Woodland
+7442	255	153	0	7442: Arkansas Valley Prairie and Woodland
+7444	50	137	168	7444: Eastern Boreal Floodplain Woodland
+7445	91	195	199	7445: South Florida Dwarf Cypress Savanna
+7446	116	214	204	7446: South Florida Pine Flatwoods
+7447	91	195	199	7447: South Florida Cypress Dome
+7448	159	255	128	7448: Southern Piedmont Dry Oak-(Pine) Forest
+7449	116	214	204	7449: Central Atlantic Coastal Plain Wet Longleaf Pine Savanna and Flatwoods
+7450	116	214	204	7450: Southern Atlantic Coastal Plain Wet Pine Savanna and Flatwoods
+7451	116	214	204	7451: West Gulf Coastal Plain Wet Longleaf Pine Savanna and Flatwoods
+7452	91	195	199	7452: Atlantic Coastal Plain Peatland Pocosin and Canebrake Woodland
+7453	116	214	204	7453: Central Florida Pine Flatwoods
+7454	116	214	204	7454: East Gulf Coastal Plain Near-Coast Pine Flatwoods
+7455	100	204	206	7455: East Gulf Coastal Plain Southern Loblolly Flatwoods
+7456	116	214	204	7456: Northern Atlantic Coastal Plain Pitch Pine Lowland
+7457	145	255	115	7457: South-Central Interior / Upper Coastal Plain Wet Flatwoods
+7458	145	255	115	7458: West Gulf Coastal Plain Pine Flatwoods
+7459	91	195	199	7459: Atlantic Coastal Plain Clay-Based Carolina Bay Wetland
+7460	91	195	199	7460: Southern Coastal Plain Nonriverine Cypress Dome
+7461	216	216	191	7461: Southern Coastal Plain Seepage Swamp and Baygall Woodland
+7462	216	216	191	7462: West Gulf Coastal Plain Seepage Swamp and Baygall Woodland
+7463	13	69	133	7463: Central Appalachian Dry Oak Forest
+7466	174	245	224	7466: Great Lakes Wooded Dune and Swale
+7467	6	53	122	7467: Tamaulipan Floodplain Woodland
+7468	216	216	191	7468: Atlantic Coastal Plain Streamhead Seepage Swamp-Pocosin-Baygall Woodland
+7469	216	216	191	7469: Atlantic Coastal Plain Streamhead Seepage Swamp-Pocosin-Baygall Shrubland
+7471	60	113	126	7471: Southwest Florida Coastal Strand Shrubland
+7472	60	113	126	7472: Southeast Florida Coastal Strand Shrubland
+7473	216	216	191	7473: West Gulf Coastal Plain Seepage Swamp and Baygall Shrubland
+7474	6	53	122	7474: Tamaulipan Floodplain Shrubland
+7475	6	53	122	7475: Tamaulipan Floodplain Herbaceous 
+7476	6	53	122	7476: Tamaulipan Riparian Woodland
+7481	50	137	168	7481: Laurentian-Acadian Alkaline Conifer-Hardwood Swamp
+7482	91	195	199	7482: Great Plains Prairie Pothole
+7483	255	153	0	7483: South Florida Everglades Sawgrass Marsh
+7484	255	153	0	7484: South Florida Wet Marl Prairie
+7485	255	153	0	7485: East Gulf Coastal Plain Wet Prairie
+7486	255	153	0	7486: Texas Saline Coastal Prairie
+7487	255	137	64	7487: Texas-Louisiana Coastal Prairie Pondshore
+7488	91	195	199	7488: Eastern Great Plains Wet Meadow-Prairie-Marsh
+7489	255	153	0	7489: Floridian Highlands Freshwater Marsh
+7500	100	100	100	7500: South Texas Salt and Brackish Tidal Flat
+7501	216	216	191	7501: Southern Atlantic Coastal Plain Nonriverine Swamp and Wet Hardwood Forest
+7502	13	69	133	7502: Central Appalachian Dry Oak-Pine Forest
+7503	255	204	51	7503: Chihuahuan Loamy Plains Desert Grassland
+7504	255	204	51	7504: Chihuahuan-Sonoran Desert Bottomland and Swale Grassland
+7505	85	187	194	7505: Ouachita Novaculite Glade and Woodland
+7506	145	255	115	7506: West Gulf Coastal Plain Nonriverine Wet Hardwood Flatwoods
+7507	116	214	190	7507: Ozark-Ouachita Shortleaf Pine-Bluestem Woodland
+7509	85	187	194	7509: Mississippi River Alluvial Plain Dry-Mesic Loess Slope Forest
+7510	116	214	190	7510: Crowley's Ridge Sand Forest
+7511	0	38	115	7511: Appalachian Northern Hardwood Forest
+7512	0	38	115	7512: Appalachian (Hemlock)-Northern Hardwood Forest
+7513	145	255	115	7513: Lower Mississippi River Flatwoods
+7514	255	153	0	7514: Central Florida Herbaceous Pondshore
+7515	255	153	0	7515: Southern Coastal Plain Herbaceous Seep and Bog
+7516	255	153	0	7516: Atlantic Coastal Plain Sandhill Seep
+7517	85	187	194	7517: Paleozoic Plateau Bluff and Talus Woodland
+7518	145	255	115	7518: North-Central Interior Wet Flatwoods
+7519	85	187	194	7519: East-Central Texas Plains Post Oak Savanna and Woodland
+7522	240	165	46	7522: Northern Atlantic Coastal Plain Heathland
+7523	34	109	153	7523: Edwards Plateau Dry-Mesic Slope Forest and Woodland
+7524	34	109	153	7524: Edwards Plateau Mesic Canyon
+7525	6	53	122	7525: Edwards Plateau Riparian Forest and Woodland
+7527	116	214	190	7527: East Gulf Coastal Plain Interior Oak Forest
+7545	116	214	204	7545: East Gulf Coastal Plain Near-Coast Pine Wet Flatwoods
+7546	116	214	190	7546: East Gulf Coastal Plain Interior Shortleaf Pine-Oak Forest
+7547	116	214	204	7547: Central Florida Pine Wet Flatwoods
+7548	116	214	204	7548: South Florida Pine Wet Flatwoods
+7556	13	69	133	7556: Central Appalachian Oak Rocky Woodland
+7557	13	69	133	7557: Central Appalachian Pine-Oak Rocky Woodland
+7560	82	52	34	7560: Tamaulipan Mesquite Upland Scrub
+7561	34	109	153	7561: Llano Uplift Acidic Herbaceous Glade
+7562	6	53	122	7562: Tamaulipan Riparian Shrubland
+7563	6	53	122	7563: Edwards Plateau Riparian Shrubland
+7564	6	53	122	7564: Edwards Plateau Riparian Herbaceous
+7565	145	255	115	7565: Florida Peninsula Inland Scrub Woodland
+7566	116	214	204	7566: Florida Dry Prairie Shruband
+7567	0	38	115	7567: Southern Coastal Plain Blackland Prairie Woodland
+7571	216	216	191	7571: Southern Coastal Plain Seepage Swamp and Baygall Shrubland
+7573	6	53	122	7573: Tamaulipan Riparian Herbaceous
+7578	255	153	0	7578: East Gulf Coastal Plain Wet Savanna
+7582	116	214	190	7582: Ozark-Ouachita Oak Forest and Woodland
+7583	116	214	190	7583: Ozark-Ouachita Shortleaf Pine-Oak Forest and Woodland
+7584	145	255	115	7584: West Gulf Coastal Plain Hardwood Forest
+7585	145	255	115	7585: West Gulf Coastal Plain Pine-Hardwood Forest
+7586	116	214	190	7586: West Gulf Coastal Plain Sandhill Oak Forest and Woodland
+7587	116	214	190	7587: West Gulf Coastal Plain Sandhill Oak and Shortleaf Pine Forest and Woodland
+7588	100	204	206	7588: East Gulf Coastal Plain Southern Hardwood Flatwoods
+7589	100	204	206	7589: East Gulf Coastal Plain Southern Loblolly-Hardwood Flatwoods
+7590	145	255	115	7590: West Gulf Coastal Plain Hardwood Flatwoods
+7591	145	255	115	7591: West Gulf Coastal Plain Pine-Hardwood Flatwoods
+7662	255	153	0	7662: Temperate Pacific Freshwater Emergent Marsh
+7663	166	76	17	7663: North Pacific Shrub Swamp
+7668	255	153	10	7668: Temperate Pacific Tidal Salt and Brackish Marsh
+7733	100	100	100	7733: North Pacific Montane Massive Bedrock-Cliff and Talus
+7734	100	100	100	7734: North Pacific Alpine and Subalpine Bedrock and Scree
+7735	159	161	240	7735: North American Glacier and Ice Field
+7861	91	195	199	7861: Caribbean Coastal Mangrove
+7867	91	195	199	7867: Caribbean Estuary Mangrove
+7900	112	68	137	7900: Western Cool Temperate Urban Deciduous Forest
+7901	170	102	205	7901: Western Cool Temperate Urban Evergreen Forest
+7902	194	158	215	7902: Western Cool Temperate Urban Mixed Forest
+7903	202	122	245	7903: Western Cool Temperate Urban Herbaceous
+7904	207	171	215	7904: Western Cool Temperate Urban Shrubland
+7905	112	68	137	7905: Eastern Cool Temperate Urban Deciduous Forest
+7906	170	102	205	7906: Eastern Cool Temperate Urban Evergreen Forest
+7907	194	158	215	7907: Eastern Cool Temperate Urban Mixed Forest
+7908	202	122	245	7908: Eastern Cool Temperate Urban Herbaceous
+7909	207	171	215	7909: Eastern Cool Temperate Urban Shrubland
+7910	112	68	137	7910: Western Warm Temperate Urban Deciduous Forest
+7911	170	102	205	7911: Western Warm Temperate Urban Evergreen Forest
+7912	194	158	215	7912: Western Warm Temperate Urban Mixed Forest
+7913	202	122	245	7913: Western Warm Temperate Urban Herbaceous
+7914	207	171	215	7914: Western Warm Temperate Urban Shrubland
+7915	112	68	137	7915: Eastern Warm Temperate Urban Deciduous Forest
+7916	170	102	205	7916: Eastern Warm Temperate Urban Evergreen Forest
+7917	194	158	215	7917: Eastern Warm Temperate Urban Mixed Forest
+7918	202	122	245	7918: Eastern Warm Temperate Urban Herbaceous
+7919	207	171	215	7919: Eastern Warm Temperate Urban Shrubland
+7920	64	61	168	7920: Western Cool Temperate Developed Ruderal Deciduous Forest
+7921	102	119	205	7921: Western Cool Temperate Developed Ruderal Evergreen Forest
+7922	68	79	137	7922: Western Cool Temperate Developed Ruderal Mixed Forest
+7923	158	170	215	7923: Western Cool Temperate Developed Ruderal Shrubland
+7924	122	142	245	7924: Western Cool Temperate Developed Ruderal Grassland
+7925	64	61	168	7925: Western Warm Temperate Developed Ruderal Deciduous Forest
+7926	102	119	205	7926: Western Warm Temperate Developed Ruderal Evergreen Forest
+7927	68	79	137	7927: Western Warm Temperate Developed Ruderal Mixed Forest
+7928	158	170	215	7928: Western Warm Temperate Developed Ruderal Shrubland
+7929	122	142	245	7929: Western Warm Temperate Developed Ruderal Grassland
+7930	64	61	168	7930: Eastern Cool Temperate Developed Ruderal Deciduous Forest
+7931	102	119	205	7931: Eastern Cool Temperate Developed Ruderal Evergreen Forest
+7932	68	79	137	7932: Eastern Cool Temperate Developed Ruderal Mixed Forest
+7933	158	170	215	7933: Eastern Cool Temperate Developed Ruderal Shrubland
+7934	122	142	245	7934: Eastern Cool Temperate Developed Ruderal Grassland
+7935	64	61	168	7935: Eastern Warm Temperate Developed Ruderal Deciduous Forest
+7936	102	119	205	7936: Eastern Warm Temperate Developed Ruderal Evergreen Forest
+7937	68	79	137	7937: Eastern Warm Temperate Developed Ruderal Mixed Forest
+7938	158	170	215	7938: Eastern Warm Temperate Developed Ruderal Shrubland
+7939	122	142	245	7939: Eastern Warm Temperate Developed Ruderal Grassland
+7940	68	79	137	7940: Western Cool Temperate Developed Ruderal Deciduous Forested Wetland
+7941	68	79	137	7941: Western Cool Temperate Developed Ruderal Evergreen Forested Wetland
+7942	68	79	137	7942: Western Cool Temperate Developed Ruderal Mixed Forested Wetland
+7943	158	170	215	7943: Western Cool Temperate Developed Ruderal Shrub Wetland
+7944	122	142	245	7944: Western Cool Temperate Developed Ruderal Herbaceous Wetland
+7945	68	79	137	7945: Western Warm Temperate Developed Ruderal Deciduous Forested Wetland
+7946	68	79	137	7946: Western Warm Temperate Developed Ruderal Evergreen Forested Wetland
+7947	68	79	137	7947: Western Warm Temperate Developed Ruderal Mixed Forested Wetland
+7948	158	170	215	7948: Western Warm Temperate Developed Ruderal Shrub Wetland
+7949	122	142	245	7949: Western Warm Temperate Developed Ruderal Herbaceous Wetland
+7950	68	79	137	7950: Eastern Cool Temperate Developed Ruderal Deciduous Forested Wetland
+7951	68	79	137	7951: Eastern Cool Temperate Developed Ruderal Evergreen Forested Wetland
+7952	68	79	137	7952: Eastern Cool Temperate Developed Ruderal Mixed Forested Wetland
+7953	158	170	215	7953: Eastern Cool Temperate Developed Ruderal Shrub Wetland
+7954	122	142	245	7954: Eastern Cool Temperate Developed Ruderal Herbaceous Wetland
+7955	68	79	137	7955: Eastern Warm Temperate Developed Ruderal Deciduous Forested Wetland
+7956	68	79	137	7956: Eastern Warm Temperate Developed Ruderal Evergreen Forested Wetland
+7957	68	79	137	7957: Eastern Warm Temperate Developed Ruderal Mixed Forested Wetland
+7958	158	170	215	7958: Eastern Warm Temperate Developed Ruderal Shrub Wetland
+7959	122	142	245	7959: Eastern Warm Temperate Developed Ruderal Herbaceous Wetland
+7960	210	28	94	7960: Western Cool Temperate Orchard
+7961	168	0	132	7961: Western Cool Temperate Vineyard
+7962	210	28	119	7962: Western Cool Temperate Bush fruit and berries
+7963	255	245	140	7963: Western Cool Temperate Row Crop - Close Grown Crop
+7964	250	255	119	7964: Western Cool Temperate Row Crop
+7965	255	237	119	7965: Western Cool Temperate Close Grown Crop
+7966	255	255	119	7966: Western Cool Temperate Fallow/Idle Cropland
+7967	227	212	28	7967: Western Cool Temperate Pasture and Hayland
+7968	250	227	163	7968: Western Cool Temperate Wheat
+7970	210	28	94	7970: Eastern Cool Temperate Orchard
+7971	168	0	132	7971: Eastern Cool Temperate Vineyard
+7972	210	28	119	7972: Eastern Cool Temperate Bush fruit and berries
+7973	255	245	140	7973: Eastern Cool Temperate Row Crop - Close Grown Crop
+7974	250	255	119	7974: Eastern Cool Temperate Row Crop
+7975	255	237	119	7975: Eastern Cool Temperate Close Grown Crop
+7976	255	255	119	7976: Eastern Cool Temperate Fallow/Idle Cropland
+7977	227	212	28	7977: Eastern Cool Temperate Pasture and Hayland
+7978	250	227	163	7978: Eastern Cool Temperate Wheat
+7979	210	255	237	7979: Eastern Cool Temperate Aquaculture
+7980	210	28	94	7980: Western Warm Temperate Orchard
+7981	168	0	132	7981: Western Warm Temperate Vineyard
+7982	210	28	119	7982: Western Warm Temperate Bush fruit and berries
+7983	255	245	140	7983: Western Warm Temperate Row Crop - Close Grown Crop
+7984	250	255	119	7984: Western Warm Temperate Row Crop
+7985	255	237	119	7985: Western Warm Temperate Close Grown Crop
+7986	255	255	119	7986: Western Warm Temperate Fallow/Idle Cropland
+7987	227	212	28	7987: Western Warm Temperate Pasture and Hayland
+7988	250	227	163	7988: Western Warm Temperate Wheat
+7989	210	255	237	7989: Western Warm Temperate Aquaculture
+7990	210	28	94	7990: Eastern Warm Temperate Orchard
+7991	168	0	132	7991: Eastern Warm Temperate Vineyard
+7992	210	28	119	7992: Eastern Warm Temperate Bush fruit and berries
+7993	255	245	140	7993: Eastern Warm Temperate Row Crop - Close Grown Crop
+7994	250	255	119	7994: Eastern Warm Temperate Row Crop
+7995	255	237	119	7995: Eastern Warm Temperate Close Grown Crop
+7996	255	255	119	7996: Eastern Warm Temperate Fallow/Idle Cropland
+7997	227	212	28	7997: Eastern Warm Temperate Pasture and Hayland
+7998	250	227	163	7998: Eastern Warm Temperate Wheat
+7999	210	255	237	7999: Eastern Warm Temperate Aquaculture
+9001	100	100	100	9001: Colorado Plateau Mixed Bedrock Canyon and Tableland
+9002	73	171	186	9002: Columbia Basin Foothill Riparian Woodland
+9003	73	171	186	9003: Great Basin Foothill and Lower Montane Riparian Woodland
+9004	100	100	100	9004: Inter-Mountain Basins Active and Stabilized Dune
+9005	250	100	56	9005: Inter-Mountain Basins Alkaline Closed Depression
+9006	100	100	100	9006: Inter-Mountain Basins Cliff and Canyon
+9008	100	100	100	9008: Inter-Mountain Basins Playa
+9009	100	100	100	9009: Inter-Mountain Basins Shale Badland
+9010	100	100	100	9010: Inter-Mountain Basins Wash
+9011	250	100	56	9011: North American Arid West Emergent Marsh
+9012	73	171	186	9012: Northern Rocky Mountain Lower Montane Riparian Woodland
+9014	6	53	122	9014: Northwestern Great Plains Floodplain Forest and Woodland
+9015	6	53	122	9015: Northwestern Great Plains Riparian Forest 
+9016	100	100	100	9016: Rocky Mountain Alpine Bedrock and Scree
+9017	184	96	24	9017: Rocky Mountain Alpine-Montane Wet Meadow
+9018	100	100	100	9018: Rocky Mountain Cliff Canyon and Massive Bedrock
+9019	73	171	186	9019: Rocky Mountain Lower Montane-Foothill Riparian Woodland
+9021	184	96	24	9021: Rocky Mountain Subalpine-Montane Riparian Shrubland
+9022	184	96	24	9022: Rocky Mountain Subalpine-Montane Riparian Woodland
+9023	100	100	100	9023: Western Great Plains Badlands
+9024	100	100	100	9024: Western Great Plains Cliff and Outcrop
+9025	255	137	64	9025: Western Great Plains Closed Depression Wetland
+9026	6	53	122	9026: Western Great Plains Floodplain Forest and Woodland
+9027	255	137	64	9027: Western Great Plains Open Freshwater Depression Wetland
+9028	6	53	122	9028: Western Great Plains Riparian Woodland
+9029	255	137	64	9029: Western Great Plains Saline Depression Wetland
+9030	184	96	24	9030: Columbia Plateau Silver Sagebrush Seasonally Flooded Shrub-Steppe
+9032	100	100	100	9032: Columbia Plateau Ash and Tuff Badland
+9033	100	100	100	9033: Inter-Mountain Basins Volcanic Rock and Cinder Land
+9034	81	180	141	9034: North American Warm Desert Riparian Woodland
+9035	81	180	141	9035: North American Warm Desert Lower Montane Riparian Woodland
+9041	145	255	115	9041: Atlantic Coastal Plain Blackwater Stream Floodplain Forest
+9042	145	255	115	9042: Atlantic Coastal Plain Brownwater Stream Floodplain Forest
+9044	255	153	0	9044: Atlantic Coastal Plain Embayed Region Tidal Freshwater Marsh
+9045	255	153	0	9045: Atlantic Coastal Plain Embayed Region Tidal Salt and Brackish Marsh
+9047	255	153	0	9047: Atlantic Coastal Plain Indian River Lagoon Tidal Marsh
+9050	145	255	115	9050: Atlantic Coastal Plain Small Blackwater River Floodplain Forest
+9051	145	255	115	9051: Atlantic Coastal Plain Small Brownwater River Floodplain Forest
+9055	186	163	119	9055: Boreal-Laurentian Bog
+9056	186	163	119	9056: Boreal-Laurentian Conifer Acidic Swamp and Treed Poor Fen
+9057	255	92	38	9057: Boreal-Laurentian-Acadian Acidic Basin Fen
+9059	0	92	0	9059: Central Appalachian River Floodplain Forest
+9060	0	92	0	9060: Central Appalachian Stream and Riparian Woodland
+9061	100	100	100	9061: Central Atlantic Coastal Plain Sandy Beach
+9062	100	100	100	9062: Central California Coast Ranges Cliff and Canyon
+9063	255	153	0	9063: Central Florida Wet Prairie and Herbaceous Seep
+9064	100	100	100	9064: Central Interior Acidic Cliff and Talus
+9065	100	100	100	9065: Central Interior Calcareous Cliff and Talus
+9066	0	92	0	9066: Central Interior Highlands and Appalachian Sinkhole and Depression Pond
+9068	145	255	115	9068: Central Texas Coastal Prairie Riparian Forest
+9069	145	255	115	9069: Central Texas Coastal Prairie River Floodplain Forest
+9071	145	255	115	9071: Columbia Bottomlands Forest and Woodland
+9073	100	100	100	9073: Cumberland Acidic Cliff and Rockhouse
+9075	0	92	0	9075: Cumberland Seepage Forest
+9077	255	153	0	9077: East Gulf Coastal Plain Depression Pondshore
+9080	216	216	191	9080: East Gulf Coastal Plain Freshwater Tidal Wooded Swamp
+9082	145	255	115	9082: East Gulf Coastal Plain Large River Floodplain Forest
+9083	216	216	191	9083: East Gulf Coastal Plain Northern Seepage Swamp
+9085	145	255	115	9085: East Gulf Coastal Plain Small Stream and River Floodplain Forest
+9088	174	245	224	9088: Laurentian-Acadian Sub-boreal Dry-Mesic Pine-Black Spruce Forest
+9089	182	250	227	9089: Laurentian-Acadian Sub-boreal Mesic Balsam Fir-Spruce Forest
+9091	100	100	100	9091: Edwards Plateau Cliff
+9092	6	53	122	9092: Edwards Plateau Floodplain Terrace Forest and Woodland
+9094	255	153	0	9094: Florida Big Bend Fresh and Oligohaline Tidal Marsh
+9095	255	153	0	9095: Florida Big Bend Salt and Brackish Tidal Marsh
+9097	100	100	100	9097: Florida Panhandle Beach Vegetation
+9098	255	153	0	9098: Florida River Floodplain Marsh
+9099	100	100	100	9099: Great Lakes Acidic Rocky Shore and Cliff
+9100	100	100	100	9100: Great Lakes Alkaline Rocky Shore and Cliff
+9101	100	100	100	9101: Great Lakes Dune
+9102	255	92	38	9102: Great Lakes Freshwater Estuary and Delta
+9103	100	100	100	9103: Gulf Coast Chenier Plain Beach
+9104	255	153	0	9104: Gulf Coast Chenier Plain Fresh and Oligohaline Tidal Marsh
+9105	255	153	0	9105: Gulf Coast Chenier Plain Salt and Brackish Tidal Marsh
+9106	0	92	0	9106: High Allegheny Wetland
+9110	100	100	100	9110: Klamath-Siskiyou Cliff and Outcrop
+9111	174	245	224	9111: Laurentian Acidic Rocky Outcrop Woodland
+9112	174	245	224	9112: Laurentian Jack Pine-Red Pine Forest
+9113	100	100	100	9113: Laurentian-Acadian Acidic Cliff and Talus
+9114	255	92	38	9114: Laurentian-Acadian Alkaline Fen
+9115	100	100	100	9115: Laurentian-Acadian Calcareous Cliff and Talus
+9117	50	137	168	9117: Laurentian-Acadian Floodplain Forest
+9118	255	92	38	9118: Laurentian-Acadian Freshwater Marsh
+9119	100	100	100	9119: Laurentian-Acadian Lakeshore Beach
+9120	255	92	38	9120: Laurentian-Acadian Wet Meadow
+9121	145	117	84	9121: Llano Estacado Caprock Escarpment and Breaks Shrubland and Steppe
+9122	100	100	100	9122: Louisiana Beach
+9125	100	100	100	9125: Mediterranean California Alpine Bedrock and Scree
+9126	100	100	100	9126: Mediterranean California Coastal Bluff
+9129	81	180	141	9129: Mediterranean California Foothill and Lower Montane Riparian Woodland
+9130	100	100	100	9130: Mediterranean California Northern Coastal Dune
+9133	81	180	141	9133: Mediterranean California Serpentine Foothill and Lower Montane Riparian Woodland and Seep
+9134	100	100	100	9134: Mediterranean California Southern Coastal Dune
+9136	255	153	0	9136: Mississippi Delta Fresh and Oligohaline Tidal Marsh
+9137	255	153	0	9137: Mississippi Delta Salt and Brackish Tidal Marsh
+9138	216	216	191	9138: Mississippi River Bottomland Depression
+9139	100	204	206	9139: Mississippi River High Floodplain (Bottomland) Forest
+9140	120	200	120	9140: Mississippi River Low Floodplain (Bottomland) Forest
+9141	25	160	180	9141: Mississippi River Riparian Forest
+9142	255	153	0	9142: Mississippi Sound Fresh and Oligohaline Tidal Marsh
+9143	255	153	0	9143: Mississippi Sound Salt and Brackish Tidal Marsh
+9145	100	100	100	9145: North American Warm Desert Active and Stabilized Dune
+9146	100	100	100	9146: North American Warm Desert Badland
+9147	100	100	100	9147: North American Warm Desert Bedrock Cliff and Outcrop
+9148	81	180	141	9148: North American Warm Desert Cienega
+9150	100	100	100	9150: North American Warm Desert Pavement
+9151	100	100	100	9151: North American Warm Desert Playa
+9152	81	180	141	9152: North American Warm Desert Riparian Mesquite Bosque Woodland
+9153	100	100	100	9153: North American Warm Desert Volcanic Rockland
+9154	81	180	141	9154: North American Warm Desert Wash Woodland
+9160	100	100	100	9160: North Pacific Active Volcanic Rock and Cinder Land
+9165	67	162	181	9165: North Pacific Hardwood-Conifer Swamp
+9166	82	52	34	9166: North Pacific Herbaceous Bald and Bluff
+9167	201	116	30	9167: North Pacific Hypermaritime Herbaceous Headland
+9170	0	130	0	9170: North Pacific Lowland Mixed Hardwood-Conifer Forest
+9171	100	100	100	9171: North Pacific Maritime Coastal Sand Dune and Strand
+9173	100	100	100	9173: North-Central Appalachian Acidic Cliff and Talus
+9174	0	92	0	9174: North-Central Appalachian Acidic Swamp
+9175	100	100	100	9175: North-Central Appalachian Circumneutral Cliff and Talus
+9176	91	195	199	9176: North-Central Appalachian Seepage Fen
+9177	0	92	0	9177: North-Central Interior and Appalachian Acidic Peatland Woodland
+9178	0	92	0	9178: North-Central Interior and Appalachian Rich Swamp
+9179	0	92	0	9179: North-Central Interior Floodplain Forest
+9180	91	195	199	9180: North-Central Interior Freshwater Marsh
+9181	85	187	194	9181: North-Central Interior Quartzite Glade
+9182	91	195	199	9182: North-Central Interior Shrub Alkaline Fen
+9183	91	195	199	9183: North-Central Interior Shrub Swamp
+9187	216	216	191	9187: Northern Atlantic Coastal Plain Basin Peat Swamp
+9188	216	216	191	9188: Northern Atlantic Coastal Plain Basin Swamp and Wet Hardwood Forest
+9189	255	153	0	9189: Northern Atlantic Coastal Plain Brackish Tidal Marsh
+9190	145	255	115	9190: Northern Atlantic Coastal Plain Calcareous Ravine
+9191	255	153	0	9191: Northern Atlantic Coastal Plain Fresh and Oligohaline Tidal Marsh
+9192	145	255	115	9192: Northern Atlantic Coastal Plain Pond
+9193	100	100	100	9193: Northern Atlantic Coastal Plain Sandy Beach
+9195	0	92	0	9195: Northern Atlantic Coastal Plain Riparian and Floodplain Forest
+9197	255	153	0	9197: Northern Atlantic Coastal Plain Tidal Salt Marsh
+9198	216	216	191	9198: Northern Atlantic Coastal Plain Tidal Swamp
+9202	255	92	38	9202: Northern Great Lakes Coastal Marsh
+9203	255	92	38	9203: Northern Great Lakes Interdunal Wetland
+9207	0	92	0	9207: Ozark-Ouachita Riparian Forest
+9208	116	214	204	9208: Panhandle Florida Limestone Glade
+9209	0	92	0	9209: Piedmont Seepage Wetland
+9210	145	255	115	9210: Piedmont Upland Depression Swamp
+9211	145	255	115	9211: Red River Large Floodplain Forest
+9213	100	100	100	9213: Sierra Nevada Cliff and Canyon
+9216	91	195	199	9216: South Florida Bayhead Swamp
+9218	91	195	199	9218: South Florida Hydric Hammock
+9220	145	255	115	9220: South Florida Pond-apple/Popash Slough
+9221	100	100	100	9221: South Florida Shell Hash Beach
+9222	145	255	115	9222: South Florida Slough Gator Hole and Willow Head Herbaceous
+9223	0	92	0	9223: South-Central Interior Large Floodplain Forest
+9224	0	92	0	9224: South-Central Interior Small Stream and Riparian Forest
+9226	100	100	100	9226: Southeast Florida Beach
+9227	100	100	100	9227: Southeastern Coastal Plain Cliff
+9228	255	153	0	9228: Southeastern Coastal Plain Interdunal Wetland
+9229	91	195	199	9229: Southeastern Coastal Plain Natural Lakeshore
+9230	0	92	0	9230: Southeastern Great Plains Floodplain Forest and Woodland
+9231	0	92	0	9231: Southeastern Great Plains Riparian Forest and Woodland
+9232	0	92	0	9232: Southern and Central Appalachian Bog and Fen
+9233	0	38	115	9233: Southern and Central Appalachian Mafic Glade and Barrens
+9234	100	100	100	9234: Southern Appalachian Granitic Dome
+9235	100	100	100	9235: Southern Appalachian Montane Cliff and Talus
+9237	91	195	199	9237: Southern Appalachian Seepage Wetland
+9239	255	153	0	9239: Southern Atlantic Coastal Plain Depression Pondshore
+9240	100	100	100	9240: Southern Atlantic Coastal Plain Florida Beach
+9241	255	153	0	9241: Southern Atlantic Coastal Plain Fresh and Oligohaline Tidal Marsh
+9242	145	255	115	9242: Southern Atlantic Coastal Plain Large River Floodplain Forest
+9243	255	153	0	9243: Southern Atlantic Coastal Plain Salt and Brackish Tidal Marsh
+9244	100	100	100	9244: Southern Atlantic Coastal Plain Sea Island Beach
+9245	216	216	191	9245: Southern Atlantic Coastal Plain Tidal Wooded Swamp
+9246	100	100	100	9246: Southern California Coast Ranges Cliff and Canyon
+9247	145	255	115	9247: Southern Coastal Plain Blackwater River Floodplain Forest
+9248	216	216	191	9248: Southern Coastal Plain Hydric Hammock
+9249	216	216	191	9249: Southern Coastal Plain Nonriverine Basin Swamp
+9250	145	255	115	9250: Southern Coastal Plain Oak Dome and Hammock
+9251	100	100	100	9251: Southern Coastal Plain Sinkhole
+9256	0	38	115	9256: Southern Piedmont Glade and Barrens
+9257	100	100	100	9257: Southern Piedmont Granite Flatrock and Outcrop
+9258	0	92	0	9258: Southern Piedmont Large Floodplain Forest
+9259	0	92	0	9259: Southern Piedmont Small Floodplain and Riparian Forest
+9260	0	38	115	9260: Southern Ridge and Valley Calcareous Glade and Woodland
+9261	91	195	199	9261: Southern Ridge and Valley Seepage Fen
+9262	100	100	100	9262: Southwest Florida Beach
+9265	100	100	100	9265: Southwestern Great Plains Canyon
+9266	91	195	199	9266: Tamaulipan Closed Depression Wetland Woodland
+9268	6	53	122	9268: Tamaulipan Ramadero
+9270	82	52	34	9270: Tamaulipan Saline Thornscrub
+9272	255	127	59	9272: Temperate Pacific Subalpine-Montane Wet Meadow
+9273	100	100	100	9273: Texas Coast Beach
+9274	255	153	0	9274: Texas Coast Fresh and Oligohaline Tidal Marsh
+9275	255	153	0	9275: Texas Coast Salt and Brackish Tidal Marsh
+9282	145	255	115	9282: West Gulf Coastal Plain Large River Floodplain Forest
+9283	216	216	191	9283: West Gulf Coastal Plain Near-Coast Large River Swamp
+9284	145	255	115	9284: West Gulf Coastal Plain Small Stream and River Forest
+9288	85	187	194	9288: Northeastern Interior Calcareous Oak Forest
+9289	0	237	0	9289: Madrean Mesic Canyon Forest and Woodland
+9290	100	100	100	9290: Southeastern Great Plains Cliff
+9295	174	245	224	9295: Laurentian-Acadian Sub-boreal Dry-Mesic Pine-Black Spruce-Hardwood Forest
+9301	255	105	46	9301: California Ruderal Grassland and Meadow
+9302	255	59	20	9302: Californian Ruderal Forest
+9304	158	67	14	9304: Caribbean Forest Plantation
+9307	255	105	46	9307: Great Basin & Intermountain Introduced Annual and Biennial Forbland
+9308	255	105	46	9308: Great Basin & Intermountain Introduced Annual Grassland
+9309	255	105	46	9309: Great Basin & Intermountain Introduced Perennial Grassland and Forbland
+9310	255	105	46	9310: North American Warm Desert Ruderal & Planted Scrub
+9311	255	105	46	9311: North Pacific Maritime Coastal Sand Dune Ruderal Scrub
+9312	158	67	14	9312: Northeastern North American Temperate Forest Plantation
+9313	255	105	46	9313: Northern & Central Exotic Ruderal Forest
+9314	255	105	46	9314: Northern & Central Native Ruderal Flooded & Swamp Forest
+9315	255	105	46	9315: Northern & Central Native Ruderal Forest
+9316	255	105	46	9316: Northern & Central Plains Ruderal & Planted Shrubland
+9317	255	105	46	9317: Northern & Central Ruderal Shrubland
+9318	255	105	46	9318: Northern & Central Ruderal Wet Meadow & Marsh
+9319	255	105	46	9319: Southeastern Exotic Ruderal Forest
+9320	0	132	168	9320: Southeastern Native Ruderal Flooded & Swamp Forest
+9321	255	105	46	9321: Southeastern Native Ruderal Forest
+9322	158	67	14	9322: Southeastern North American Temperate Forest Plantation
+9323	255	105	46	9323: Southeastern Ruderal Shrubland
+9324	255	105	46	9324: Southeastern Ruderal Wet Meadow & Marsh
+9325	255	105	46	9325: Great Plains Comanchian Ruderal Shrubland
+9326	255	105	46	9326: Southern Vancouverian Lowland Ruderal Shrubland
+9327	255	105	46	9327: Interior West Ruderal Riparian Forest
+9328	255	105	46	9328: Interior Western North American Temperate Ruderal Shrubland
+9329	255	105	46	9329: Western North American Ruderal Wet Shrubland
+9332	0	132	168	9332: Southeastern Exotic Ruderal Flooded & Swamp Forest
+9336	255	105	46	9336: Great Basin & Intermountain Ruderal Shrubland
+9337	255	105	46	9337: California Ruderal Scrub
+9502	73	171	186	9502: Columbia Basin Foothill Riparian Shrubland
+9503	73	171	186	9503: Great Basin Foothill and Lower Montane Riparian Shrubland
+9504	73	171	186	9504: Columbia Basin Foothill Riparian Herbaceous
+9505	73	171	186	9505: Great Basin Foothill and Lower Montane Riparian Herbaceous
+9512	73	171	186	9512: Northern Rocky Mountain Lower Montane Riparian Shrubland
+9513	6	53	122	9513: Northwestern Great Plains Floodplain Shrubland
+9514	6	53	122	9514: Northwestern Great Plains Floodplain Herbaceous
+9515	6	53	122	9515: Northwestern Great Plains Riparian Shrubland
+9516	6	53	122	9516: Northwestern Great Plains Riparian Herbaceous
+9519	73	171	186	9519: Rocky Mountain Lower Montane-Foothill Riparian Shrubland
+9526	6	53	122	9526: Western Great Plains Floodplain Shrubland
+9527	6	53	122	9527: Western Great Plains Floodplain Herbaceous
+9528	6	53	122	9528: Western Great Plains Riparian Shrubland
+9529	6	53	122	9529: Western Great Plains Riparian Herbaceous
+9533	81	180	141	9533: North American Warm Desert Riparian Herbaceous
+9534	81	180	141	9534: North American Warm Desert Riparian Shrubland
+9535	81	180	141	9535: North American Warm Desert Lower Montane Riparian Shrubland
+9541	145	255	115	9541: Atlantic Coastal Plain Blackwater Stream Floodplain Shrubland
+9542	145	255	115	9542: Atlantic Coastal Plain Blackwater Stream Floodplain Herbaceous
+9559	0	92	0	9559: Central Appalachian River Floodplain Shrubland
+9560	0	92	0	9560: Central Appalachian Stream and Riparian Shrubland
+9561	0	92	0	9561: Central Appalachian River Floodplain Herbaceous
+9562	0	92	0	9562: Central Appalachian Stream and Riparian Herbaceous
+9568	145	255	115	9568: Central Texas Coastal Prairie Riparian Shrubland
+9569	145	255	115	9569: Central Texas Coastal Prairie River Floodplain Shrubland
+9570	145	255	115	9570: Central Texas Coastal Prairie Riparian Herbaceous
+9571	145	255	115	9571: Central Texas Coastal Prairie River Floodplain Herbaceous
+9582	145	255	115	9582: East Gulf Coastal Plain Large River Floodplain Shrubland
+9583	145	255	115	9583: East Gulf Coastal Plain Large River Floodplain Herbaceous
+9585	145	255	115	9585: East Gulf Coastal Plain Small Stream and River Floodplain Shrubland
+9586	145	255	115	9586: East Gulf Coastal Plain Small Stream and River Floodplain Herbaceous
+9592	6	53	122	9592: Edwards Plateau Floodplain Terrace Shrubland
+9593	6	53	122	9593: Edwards Plateau Floodplain Terrace Herbaceous
+9601	255	98	41	9601: Great Lakes Dune Grassland
+9604	255	153	0	9604: Gulf Coast Chenier Plain Fresh and Oligohaline Tidal Marsh Shrubland
+9605	255	153	0	9605: Gulf Coast Chenier Plain Salt and Brackish Tidal Marsh Shrubland
+9611	174	245	224	9611: Laurentian Acidic Rocky Outcrop Shrubland
+9617	50	137	168	9617: Laurentian-Acadian Floodplain Shrubland
+9620	255	92	38	9620: Laurentian-Acadian Shrub Swamp
+9629	81	180	141	9629: Mediterranean California Foothill and Lower Montane Riparian Shrubland
+9633	81	180	141	9633: Mediterranean California Serpentine Foothill and Lower Montane Riparian Shrubland and Seep
+9639	100	204	206	9639: Mississippi River High Floodplain (Bottomland) Shrubland
+9640	120	200	120	9640: Mississippi River Low Floodplain (Bottomland) Shrubland
+9641	100	204	206	9641: Mississippi River High Floodplain (Bottomland) Herbaceous
+9642	120	200	120	9642: Mississippi River Low Floodplain (Bottomland) Herbaceous
+9652	81	180	141	9652: North American Warm Desert Riparian Mesquite Bosque Shrubland
+9654	81	180	141	9654: North American Warm Desert Wash Shrubland
+9667	201	116	30	9667: North Pacific Hypermaritime Shrub Headland
+9677	0	92	0	9677: North-Central Interior and Appalachian Acidic Peatland Shrubland
+9679	0	92	0	9679: North-Central Interior Floodplain Shrubland
+9682	91	195	199	9682: North-Central Interior Graminoid Alkaline Fen
+9683	91	195	199	9683: North-Central Interior Wet Meadow
+9695	0	92	0	9695: Northern Atlantic Coastal Plain Riparian and Floodplain Shrubland
+9696	0	92	0	9696: Northern Atlantic Coastal Plain Riparian and Floodplain Herbaceous
+9707	0	92	0	9707: Ozark-Ouachita Riparian Shrubland
+9708	0	92	0	9708: Ozark-Ouachita Riparian Herbaceous
+9722	145	255	115	9722: South Florida Slough Gator Hole and Willow Head Woodland
+9723	0	92	0	9723: South-Central Interior Large Floodplain Shrubland
+9724	0	92	0	9724: South-Central Interior Small Stream and Riparian Shrubland
+9725	0	92	0	9725: South-Central Interior Large Floodplain Herbaceous
+9726	0	92	0	9726: South-Central Interior Small Stream and Riparian Herbaceous
+9730	0	92	0	9730: Southeastern Great Plains Floodplain Shrubland
+9731	0	92	0	9731: Southeastern Great Plains Riparian Shrubland
+9732	0	92	0	9732: Southeastern Great Plains Floodplain Herbaceous
+9733	0	92	0	9733: Southeastern Great Plains Riparian Herbaceous
+9742	145	255	115	9742: Southern Atlantic Coastal Plain Large River Floodplain Shrubland
+9743	145	255	115	9743: Southern Atlantic Coastal Plain Large River Floodplain Herbaceous
+9758	0	92	0	9758: Southern Piedmont Large Floodplain Shrubland
+9759	0	92	0	9759: Southern Piedmont Small Floodplain and Riparian Shrubland
+9760	0	92	0	9760: Southern Piedmont Large Floodplain Herbaceous
+9761	0	92	0	9761: Southern Piedmont Small Floodplain and Riparian Herbaceous
+9766	91	195	199	9766: Tamaulipan Closed Depression Wetland Shrubland
+9774	255	153	0	9774: Texas Coast Fresh and Oligohaline Tidal Marsh Shrubland
+9775	255	153	0	9775: Texas Coast Salt and Brackish Tidal Marsh Shrubland
+9782	145	255	115	9782: West Gulf Coastal Plain Large River Floodplain Shrubland
+9783	145	255	115	9783: West Gulf Coastal Plain Large River Floodplain Herbaceous
+9784	145	255	115	9784: West Gulf Coastal Plain Small Stream and River Shrubland
+9785	145	255	115	9785: West Gulf Coastal Plain Small Stream and River Herbaceous
+9810	255	105	46	9810: North American Warm Desert Ruderal & Planted Grassland
+9811	255	105	46	9811: North Pacific Maritime Coastal Sand Dune Ruderal Herb Vegetation
+9816	255	105	46	9816: Northern & Central Plains Ruderal & Planted Grassland
+9817	255	105	46	9817: Northern & Central Ruderal Meadow
+9823	255	105	46	9823: Southeastern Ruderal Grassland
+9825	255	105	46	9825: Great Plains Comanchian Ruderal Grassland
+9826	255	105	46	9826: Southern Vancouverian Lowland Ruderal Grassland
+9827	255	105	46	9827: Interior West Ruderal Riparian Scrub
+9828	255	105	46	9828: Interior Western North American Temperate Ruderal Grassland
+9829	255	105	46	9829: Western North American Ruderal Wet Meadow & Marsh
+9993	255	153	0	9993: West Gulf Coastal Plain Flatwoods Pond
+9994	255	153	0	9994: West Gulf Coastal Plain Herbaceous Seep and Bog
