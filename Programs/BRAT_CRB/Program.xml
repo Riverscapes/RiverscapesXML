@@ -35,6 +35,8 @@
       <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
+      <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
+      <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
       <Product id="LST" name="Land Surface Temperature" folder="LST" url="" />
     </Products>
   </Definitions>
@@ -61,6 +63,8 @@
         <Product ref="BRAT" />
         <Product ref="VBET" />
         <Product ref="RSContext" />
+        <Product ref="ChannelArea" />
+        <Product ref="TauDEM" />
       </Collection>
     </Group>
   </Hierarchy>

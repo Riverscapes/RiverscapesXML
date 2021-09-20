@@ -30,6 +30,8 @@
       <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
+      <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
+      <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
       <Product id="RVD" name="Riparian Vegetation Departure" folder="RVD" url="" />
       <Product id="Confinement" name="Confinement" folder="Confinement" url="" />
     </Products>
@@ -50,6 +52,8 @@
         <Product ref="BRAT" />
         <Product ref="VBET" />
         <Product ref="RSContext" />
+        <Product ref="ChannelArea" />
+        <Product ref="TauDEM" />
         <Product ref="Confinement" />
         <Product ref="RVD" />
       </Collection>

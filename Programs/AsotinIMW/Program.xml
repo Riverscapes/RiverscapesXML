@@ -70,8 +70,9 @@
       <Product id="CHAMPMETRICS" name="CHaMP Metrics" folder="CHaMPMetrics" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
-      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
-
+      <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
+      <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
+      <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
     </Products>
   </Definitions>
 
@@ -116,6 +117,8 @@
           <Product ref="CHAMPMETRICS" />
           <Product ref="VBET" />
           <Product ref="RSContext" />
+          <Product ref="ChannelArea" />
+          <Product ref="TauDEM" />
         </Collection>
       </Group>
     </Group>
