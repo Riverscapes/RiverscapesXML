@@ -1,13 +1,13 @@
 {
-  "Sparse tree canopy": [0,0,0], 
-  "Closed tree canopy": [0,0,0], 
-  "Herbaceous - shrub-steppe": [0,0,0], 
-  "Open tree canopy": [0,0,0], 
-  "Herbaceous - grassland": [0,0,0], 
-  "Shrubland": [0,0,0], 
-  "Sparsely vegetated": [0,0,0], 
-  "Dwarf-shrubland": [0,0,0], 
-  "No Dominant Lifeform": [0,0,0], 
-  "Non-vegetated": [0,0,0],
-  "Open Tree Canopy": [0,0,0]
+  "Sparse tree canopy": [55,146,173], 
+  "Closed tree canopy": [0,51,0], 
+  "Herbaceous - shrub-steppe": [199,176,129], 
+  "Herbaceous - grassland": [255,226,130], 
+  "Shrubland": [130,101,72], 
+  "Sparsely vegetated": [100,100,100], 
+  "Dwarf-shrubland": [199,176,129], 
+  "No Dominant Lifeform": [255,122,143], 
+  "Non-vegetated": [0,0,255],
+  "Open tree canopy": [180,255,148], 
+  "Open Tree Canopy": [180,255,148]
 }
