@@ -99,9 +99,9 @@
         <paletteEntry color="#ffffff" value="442" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="443" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="444" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="445" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="446" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="447" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="445" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="446" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="447" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="448" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="449" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="450" alpha="255" label="Non-Riparian"/>
@@ -135,9 +135,9 @@
         <paletteEntry color="#ffffff" value="478" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="479" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="480" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="481" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="482" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="483" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="481" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="482" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="483" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="484" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="485" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="486" alpha="255" label="Non-Riparian"/>
@@ -175,10 +175,10 @@
         <paletteEntry color="#ffffff" value="518" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="519" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="520" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="521" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="522" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="523" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="524" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="521" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="522" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="523" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="524" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="525" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="526" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="527" alpha="255" label="Non-Riparian"/>
@@ -199,8 +199,8 @@
         <paletteEntry color="#ffffff" value="542" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="543" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="544" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="545" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="546" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="545" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="546" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="547" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="548" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="549" alpha="255" label="Non-Riparian"/>
@@ -227,8 +227,8 @@
         <paletteEntry color="#ffffff" value="570" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="571" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="572" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="573" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="574" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="573" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="574" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="575" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="576" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="577" alpha="255" label="Non-Riparian"/>
@@ -271,9 +271,9 @@
         <paletteEntry color="#ffffff" value="614" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="615" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="616" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="617" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="617" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="618" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="619" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="619" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="620" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="621" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="622" alpha="255" label="Non-Riparian"/>
@@ -307,9 +307,9 @@
         <paletteEntry color="#ffffff" value="650" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="651" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="652" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="653" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="654" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="655" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="653" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="654" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="655" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="656" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="657" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="658" alpha="255" label="Non-Riparian"/>
@@ -336,9 +336,9 @@
         <paletteEntry color="#ffffff" value="679" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="680" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="681" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="682" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="683" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="684" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="682" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="683" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="684" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="685" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="686" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="687" alpha="255" label="Non-Riparian"/>
@@ -366,8 +366,8 @@
         <paletteEntry color="#ffffff" value="709" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="710" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="711" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="712" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="713" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="712" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="713" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="714" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="715" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="716" alpha="255" label="Non-Riparian"/>
@@ -403,11 +403,11 @@
         <paletteEntry color="#ffffff" value="746" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="747" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="748" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="749" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="750" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="751" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="752" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="753" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="749" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="750" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="751" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="752" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="753" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="754" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="755" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="756" alpha="255" label="Non-Riparian"/>
@@ -434,11 +434,11 @@
         <paletteEntry color="#ffffff" value="777" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="778" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="779" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="780" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="781" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="782" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="783" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="784" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="780" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="781" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="782" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="783" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="784" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="785" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="786" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="787" alpha="255" label="Non-Riparian"/>
@@ -492,12 +492,12 @@
         <paletteEntry color="#ffffff" value="835" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="836" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="837" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="838" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="838" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="839" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="840" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="841" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="842" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="843" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="840" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="841" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="842" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="843" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="844" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="845" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="846" alpha="255" label="Non-Riparian"/>
@@ -527,11 +527,11 @@
         <paletteEntry color="#ffffff" value="870" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="871" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="872" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="873" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="874" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="875" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="873" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="874" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="875" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="876" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="877" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="877" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="878" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="879" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="880" alpha="255" label="Non-Riparian"/>
@@ -559,8 +559,8 @@
         <paletteEntry color="#ffffff" value="902" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="903" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="904" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="905" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="906" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="905" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="906" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="907" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="908" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="909" alpha="255" label="Non-Riparian"/>
@@ -578,9 +578,9 @@
         <paletteEntry color="#ffffff" value="921" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="922" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="923" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="924" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="925" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="926" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="924" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="925" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="926" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="927" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="928" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="929" alpha="255" label="Non-Riparian"/>
@@ -612,10 +612,10 @@
         <paletteEntry color="#ffffff" value="955" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="956" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="957" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="958" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="959" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="960" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="961" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="958" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="959" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="960" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="961" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="962" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="963" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="964" alpha="255" label="Non-Riparian"/>
@@ -657,9 +657,9 @@
         <paletteEntry color="#ffffff" value="1000" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1001" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1002" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1003" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1004" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1005" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1003" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1004" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1005" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1006" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1007" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1008" alpha="255" label="Non-Riparian"/>
@@ -697,8 +697,8 @@
         <paletteEntry color="#ffffff" value="1040" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1041" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1042" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1043" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1044" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1043" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1044" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1045" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1046" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1047" alpha="255" label="Non-Riparian"/>
@@ -728,9 +728,9 @@
         <paletteEntry color="#ffffff" value="1071" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1072" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1073" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1074" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1075" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1076" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1074" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1075" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1076" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1077" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1078" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1079" alpha="255" label="Non-Riparian"/>
@@ -762,9 +762,9 @@
         <paletteEntry color="#ffffff" value="1105" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1106" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1107" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1108" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1109" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1110" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1108" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1109" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1110" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1111" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1112" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1113" alpha="255" label="Non-Riparian"/>
@@ -797,7 +797,7 @@
         <paletteEntry color="#ffffff" value="1140" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1141" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1142" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1143" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1143" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1144" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1145" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1146" alpha="255" label="Non-Riparian"/>
@@ -832,8 +832,8 @@
         <paletteEntry color="#ffffff" value="1175" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1176" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1177" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1178" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1179" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1178" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1179" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1180" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1181" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1182" alpha="255" label="Non-Riparian"/>
@@ -866,10 +866,10 @@
         <paletteEntry color="#ffffff" value="1209" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1210" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1211" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1212" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1213" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1214" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1215" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1212" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1213" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1214" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1215" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1216" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1217" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1218" alpha="255" label="Non-Riparian"/>
@@ -898,9 +898,9 @@
         <paletteEntry color="#ffffff" value="1241" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1242" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1243" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1244" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1245" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1246" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1244" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1245" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1246" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1247" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1248" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1249" alpha="255" label="Non-Riparian"/>
@@ -928,9 +928,9 @@
         <paletteEntry color="#ffffff" value="1271" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1272" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1273" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1274" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1275" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1276" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1274" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1275" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1276" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1277" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1278" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1279" alpha="255" label="Non-Riparian"/>
@@ -941,12 +941,12 @@
         <paletteEntry color="#ffffff" value="1284" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1285" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1286" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1287" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1287" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1288" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1289" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1290" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1291" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1292" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1292" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1293" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1294" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1295" alpha="255" label="Non-Riparian"/>
@@ -958,18 +958,18 @@
         <paletteEntry color="#ffffff" value="1301" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1302" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1303" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1304" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1305" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1306" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1307" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1308" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1309" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1310" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1311" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1312" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1304" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1305" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1306" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1307" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1308" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1309" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1310" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1311" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1312" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1313" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1314" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1315" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1314" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1315" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1316" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1317" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1318" alpha="255" label="Non-Riparian"/>
@@ -980,18 +980,18 @@
         <paletteEntry color="#ffffff" value="1323" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1324" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1325" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1326" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1327" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1328" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1329" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1330" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1331" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1332" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1333" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1334" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1335" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1336" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1337" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1326" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1327" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1328" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1329" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1330" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1331" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1332" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1333" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1334" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1335" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1336" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1337" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1338" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1339" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1340" alpha="255" label="Non-Riparian"/>
@@ -1027,8 +1027,8 @@
         <paletteEntry color="#ffffff" value="1370" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1371" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1372" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1373" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1374" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1373" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1374" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1375" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1376" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1377" alpha="255" label="Non-Riparian"/>
@@ -1052,10 +1052,10 @@
         <paletteEntry color="#ffffff" value="1395" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1396" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1397" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1398" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1399" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1398" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1399" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1400" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1401" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1401" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1402" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1403" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1404" alpha="255" label="Non-Riparian"/>
@@ -1072,10 +1072,10 @@
         <paletteEntry color="#ffffff" value="1415" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1416" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1417" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1418" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1419" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1418" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1419" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1420" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1421" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1421" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1422" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1423" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1424" alpha="255" label="Non-Riparian"/>
@@ -1083,10 +1083,10 @@
         <paletteEntry color="#ffffff" value="1426" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1427" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1428" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1429" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1429" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1430" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1431" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1432" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1431" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1432" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1433" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1434" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1435" alpha="255" label="Non-Riparian"/>
@@ -1098,12 +1098,12 @@
         <paletteEntry color="#ffffff" value="1441" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1442" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1443" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1444" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1444" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1445" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1446" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1447" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1448" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1449" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1446" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1447" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1448" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1449" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1450" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1451" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1452" alpha="255" label="Non-Riparian"/>
@@ -1114,16 +1114,16 @@
         <paletteEntry color="#ffffff" value="1457" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1458" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1459" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1460" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1461" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1462" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1463" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1464" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1465" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1466" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1467" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1468" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1469" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1460" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1461" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1462" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1463" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1464" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1465" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1466" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1467" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1468" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1469" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1470" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1471" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1472" alpha="255" label="Non-Riparian"/>
@@ -1153,9 +1153,9 @@
         <paletteEntry color="#ffffff" value="1496" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1497" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1498" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1499" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1500" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1501" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1499" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1500" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1501" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1502" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1503" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1504" alpha="255" label="Non-Riparian"/>
@@ -1164,12 +1164,12 @@
         <paletteEntry color="#ffffff" value="1507" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1508" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1509" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1510" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1510" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1511" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1512" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1513" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1514" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1515" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1512" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1513" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1514" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1515" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1516" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1517" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1518" alpha="255" label="Non-Riparian"/>
@@ -1181,9 +1181,9 @@
         <paletteEntry color="#ffffff" value="1524" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1525" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1526" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1527" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1528" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1529" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1527" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1528" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1529" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1530" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1531" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1532" alpha="255" label="Non-Riparian"/>
@@ -1204,15 +1204,15 @@
         <paletteEntry color="#ffffff" value="1575" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1576" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1577" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1578" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1579" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1580" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1581" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1582" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1583" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1584" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1585" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1586" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1578" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1579" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1580" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1581" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1582" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1583" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1584" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1585" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1586" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1587" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1588" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1589" alpha="255" label="Non-Riparian"/>
@@ -1232,14 +1232,14 @@
         <paletteEntry color="#ffffff" value="1603" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1604" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1605" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1606" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1607" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1608" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1609" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1610" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1611" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1612" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1613" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1606" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1607" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1608" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1609" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1610" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1611" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1612" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1613" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1614" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1615" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1616" alpha="255" label="Non-Riparian"/>
@@ -1256,22 +1256,22 @@
         <paletteEntry color="#ffffff" value="1627" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1628" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1629" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1630" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1630" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1631" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1632" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1633" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1634" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1635" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1636" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1637" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1638" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1639" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1640" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1641" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1634" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1635" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1636" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1637" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1638" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1639" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1640" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1641" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1642" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1643" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1644" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1645" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1645" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1646" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1647" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1648" alpha="255" label="Non-Riparian"/>
@@ -1281,14 +1281,14 @@
         <paletteEntry color="#ffffff" value="1652" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1653" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1654" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1655" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1656" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1655" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1656" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1657" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1658" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1658" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1659" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1660" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1661" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1662" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1662" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1663" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1664" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1665" alpha="255" label="Non-Riparian"/>
@@ -1297,9 +1297,9 @@
         <paletteEntry color="#ffffff" value="1668" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1669" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1670" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1671" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1671" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1672" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1673" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1673" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1674" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1675" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1676" alpha="255" label="Non-Riparian"/>
@@ -1312,17 +1312,17 @@
         <paletteEntry color="#ffffff" value="1683" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1684" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1685" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1686" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1686" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1687" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1688" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1689" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1690" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1691" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1690" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1691" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1692" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1693" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1694" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1695" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1696" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1696" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1697" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1698" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1699" alpha="255" label="Non-Riparian"/>
@@ -1334,10 +1334,10 @@
         <paletteEntry color="#ffffff" value="1705" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1706" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1707" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1708" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1709" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1710" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1711" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1708" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1709" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1710" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1711" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1712" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1713" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1714" alpha="255" label="Non-Riparian"/>
@@ -1347,8 +1347,8 @@
         <paletteEntry color="#ffffff" value="1718" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1719" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1720" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1721" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1722" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1721" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1722" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1723" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1724" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1725" alpha="255" label="Non-Riparian"/>
@@ -1358,14 +1358,14 @@
         <paletteEntry color="#ffffff" value="1729" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1730" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1731" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1732" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1733" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1734" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1732" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1733" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1734" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1735" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1736" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1737" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1738" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1739" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1739" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1740" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1741" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1742" alpha="255" label="Non-Riparian"/>
@@ -1381,14 +1381,14 @@
         <paletteEntry color="#ffffff" value="1752" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1753" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1754" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1755" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1756" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1757" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1758" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1759" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1755" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1756" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1757" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1758" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1759" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1760" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1761" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1762" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1762" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1763" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1764" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1765" alpha="255" label="Non-Riparian"/>
@@ -1402,13 +1402,13 @@
         <paletteEntry color="#ffffff" value="1773" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1774" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1775" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1776" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1777" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1778" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1779" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1780" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1781" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1782" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1776" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1777" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1778" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1779" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1780" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1781" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1782" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1783" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1784" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1785" alpha="255" label="Non-Riparian"/>
@@ -1418,17 +1418,17 @@
         <paletteEntry color="#ffffff" value="1789" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1790" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1791" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1792" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1793" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1794" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1795" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1796" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1797" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1798" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1799" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1792" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1793" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1794" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1795" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1796" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1797" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1798" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1799" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1800" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1801" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1802" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1801" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1802" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1803" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1804" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1805" alpha="255" label="Non-Riparian"/>
@@ -1438,8 +1438,8 @@
         <paletteEntry color="#ffffff" value="1809" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1810" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1811" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1812" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1813" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1812" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1813" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1814" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1815" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1816" alpha="255" label="Non-Riparian"/>
@@ -1453,8 +1453,8 @@
         <paletteEntry color="#ffffff" value="1824" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1825" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1826" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1827" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1828" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1827" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1828" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1829" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1830" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1831" alpha="255" label="Non-Riparian"/>
@@ -1464,8 +1464,8 @@
         <paletteEntry color="#ffffff" value="1835" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1836" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1837" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1838" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1839" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1838" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1839" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1840" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1841" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1842" alpha="255" label="Non-Riparian"/>
@@ -1484,18 +1484,18 @@
         <paletteEntry color="#ffffff" value="1855" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1856" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1857" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1858" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1859" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1860" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1861" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1862" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1863" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1864" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1865" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1866" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1867" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1858" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1859" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1860" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1861" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1862" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1863" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1864" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1865" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1866" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1867" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1868" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1869" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1869" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1870" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1871" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1872" alpha="255" label="Non-Riparian"/>
@@ -1513,9 +1513,9 @@
         <paletteEntry color="#ffffff" value="1884" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1885" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1886" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1887" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1888" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1889" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1887" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1888" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1889" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1890" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1891" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1892" alpha="255" label="Non-Riparian"/>
@@ -1526,14 +1526,14 @@
         <paletteEntry color="#ffffff" value="1897" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1898" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1899" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1900" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1901" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1902" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1903" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1904" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1905" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1906" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1907" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1900" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1901" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1902" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1903" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1904" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1905" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1906" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1907" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1908" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1909" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1910" alpha="255" label="Non-Riparian"/>
@@ -1541,10 +1541,10 @@
         <paletteEntry color="#ffffff" value="1912" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1913" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1914" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1915" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1916" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1917" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1918" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1915" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1916" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1917" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1918" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1919" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1920" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1921" alpha="255" label="Non-Riparian"/>
@@ -1559,16 +1559,16 @@
         <paletteEntry color="#ffffff" value="1930" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1931" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1932" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1933" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1934" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1935" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1936" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1937" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1938" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1939" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1940" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1933" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1934" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1935" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1936" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1937" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1938" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1939" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1940" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1941" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1942" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1942" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1943" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1944" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1945" alpha="255" label="Non-Riparian"/>
@@ -1582,27 +1582,27 @@
         <paletteEntry color="#ffffff" value="1953" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1954" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1955" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1956" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1957" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1958" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1959" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1960" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1961" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1962" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1956" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1957" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1958" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1959" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1960" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1961" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1962" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1963" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1964" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1964" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1965" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1966" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1967" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1968" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1969" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1970" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1970" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1971" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1972" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1973" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1974" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1975" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1976" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1973" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1974" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1975" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1976" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="1977" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1978" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1979" alpha="255" label="Non-Riparian"/>
@@ -1618,14 +1618,14 @@
         <paletteEntry color="#ffffff" value="1989" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1990" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="1991" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="1992" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1993" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1994" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1995" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1996" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1997" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1998" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="1999" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1992" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1993" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1994" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1995" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1996" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1997" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1998" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="1999" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2000" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2001" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2002" alpha="255" label="Non-Riparian"/>
@@ -1638,9 +1638,9 @@
         <paletteEntry color="#ffffff" value="2009" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2010" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2011" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2012" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2013" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2014" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2012" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2013" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2014" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2015" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2016" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2017" alpha="255" label="Non-Riparian"/>
@@ -1653,14 +1653,14 @@
         <paletteEntry color="#ffffff" value="2024" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2025" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2026" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2027" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2027" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2028" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2029" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2030" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2031" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2032" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2033" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2034" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2031" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2032" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2033" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2034" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2035" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2036" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2037" alpha="255" label="Non-Riparian"/>
@@ -1674,8 +1674,8 @@
         <paletteEntry color="#ffffff" value="2045" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2046" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2047" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2048" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2049" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2048" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2049" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2050" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2051" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2052" alpha="255" label="Non-Riparian"/>
@@ -1684,15 +1684,15 @@
         <paletteEntry color="#ffffff" value="2055" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2056" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2057" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2058" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2058" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2059" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2060" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2061" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2062" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2063" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2064" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2064" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2065" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2066" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2066" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2067" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2068" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2069" alpha="255" label="Non-Riparian"/>
@@ -1710,12 +1710,12 @@
         <paletteEntry color="#ffffff" value="2081" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2082" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2083" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2084" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2085" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2086" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2087" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2088" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2089" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2084" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2085" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2086" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2087" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2088" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2089" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2090" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2091" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2092" alpha="255" label="Non-Riparian"/>
@@ -1739,10 +1739,10 @@
         <paletteEntry color="#ffffff" value="2110" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2111" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2112" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2113" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2114" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2115" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2116" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2113" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2114" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2115" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2116" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2117" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2118" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2119" alpha="255" label="Non-Riparian"/>
@@ -1752,11 +1752,11 @@
         <paletteEntry color="#ffffff" value="2123" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2124" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2125" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2126" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2127" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2128" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2126" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2127" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2128" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2129" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2130" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2130" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2131" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2132" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2133" alpha="255" label="Non-Riparian"/>
@@ -1778,13 +1778,13 @@
         <paletteEntry color="#ffffff" value="2149" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2150" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2151" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2152" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2153" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2154" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2155" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2156" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2157" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2158" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2152" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2153" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2154" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2155" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2156" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2157" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2158" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2159" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2160" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2161" alpha="255" label="Non-Riparian"/>
@@ -1799,18 +1799,18 @@
         <paletteEntry color="#ffffff" value="2170" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2171" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2172" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2173" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2173" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2174" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2175" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2176" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2177" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2178" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2179" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2179" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2180" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2181" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2182" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2183" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2184" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2183" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2184" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2185" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2186" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2187" alpha="255" label="Non-Riparian"/>
@@ -1838,18 +1838,18 @@
         <paletteEntry color="#ffffff" value="2209" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2210" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2211" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2212" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2212" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2213" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2214" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2215" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2216" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2217" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2218" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2219" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2219" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2220" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2221" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2222" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2223" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2222" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2223" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2224" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2225" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2226" alpha="255" label="Non-Riparian"/>
@@ -1867,7 +1867,7 @@
         <paletteEntry color="#ffffff" value="2238" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2239" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2240" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2241" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2241" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2242" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2243" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2244" alpha="255" label="Non-Riparian"/>
@@ -1888,10 +1888,10 @@
         <paletteEntry color="#ffffff" value="2259" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2260" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2261" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2262" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2262" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2263" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2264" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2265" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2265" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2266" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2267" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2268" alpha="255" label="Non-Riparian"/>
@@ -1909,11 +1909,11 @@
         <paletteEntry color="#ffffff" value="2280" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2281" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2282" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2283" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2283" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2284" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2285" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2286" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2287" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2287" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2288" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2289" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2290" alpha="255" label="Non-Riparian"/>
@@ -1934,11 +1934,11 @@
         <paletteEntry color="#ffffff" value="2306" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2307" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2308" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2309" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2309" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2310" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2311" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2312" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2313" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2313" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2314" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2315" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2316" alpha="255" label="Non-Riparian"/>
@@ -1958,11 +1958,11 @@
         <paletteEntry color="#ffffff" value="2330" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2331" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2332" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2333" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2333" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2334" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2335" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2336" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2337" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2337" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2338" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2339" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2340" alpha="255" label="Non-Riparian"/>
@@ -1977,19 +1977,19 @@
         <paletteEntry color="#ffffff" value="2349" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2350" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2351" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2352" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2352" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2353" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2354" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2355" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2356" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2357" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2358" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2359" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2359" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2360" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2361" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2362" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2363" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2364" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2363" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2364" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2365" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2366" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2367" alpha="255" label="Non-Riparian"/>
@@ -2012,13 +2012,13 @@
         <paletteEntry color="#ffffff" value="2384" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2385" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2386" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2387" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2387" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2388" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2389" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2390" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2391" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2392" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2393" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2393" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2394" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2395" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2396" alpha="255" label="Non-Riparian"/>
@@ -2053,13 +2053,13 @@
         <paletteEntry color="#ffffff" value="2426" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2427" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2428" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2429" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2429" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2430" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2431" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2432" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2433" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2434" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2435" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2435" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2436" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2437" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2438" alpha="255" label="Non-Riparian"/>
@@ -2080,12 +2080,12 @@
         <paletteEntry color="#ffffff" value="2454" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2455" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2456" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2457" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2457" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2458" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2459" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2460" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2461" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2462" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2462" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2463" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2464" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2465" alpha="255" label="Non-Riparian"/>
@@ -2097,9 +2097,9 @@
         <paletteEntry color="#ffffff" value="2472" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2473" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2474" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2476" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2476" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2477" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2478" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2478" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2479" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2480" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2481" alpha="255" label="Non-Riparian"/>
@@ -2128,9 +2128,9 @@
         <paletteEntry color="#ffffff" value="2504" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2505" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2506" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2508" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2509" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2510" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2508" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2509" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2510" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2511" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2512" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2513" alpha="255" label="Non-Riparian"/>
@@ -2143,22 +2143,22 @@
         <paletteEntry color="#ffffff" value="2520" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2521" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2522" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2523" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2523" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2524" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2525" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2526" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2525" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2526" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2527" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2528" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2529" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2530" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2531" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2532" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2532" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2533" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2534" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2535" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2535" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2536" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2537" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2538" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2538" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2539" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2540" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2541" alpha="255" label="Non-Riparian"/>
@@ -2175,17 +2175,17 @@
         <paletteEntry color="#ffffff" value="2552" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2553" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2554" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2555" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2555" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2556" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2557" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2558" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2560" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2561" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2562" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2563" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2564" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2561" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2562" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2563" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2564" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2565" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2566" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2566" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2567" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2568" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2569" alpha="255" label="Non-Riparian"/>
@@ -2203,10 +2203,10 @@
         <paletteEntry color="#ffffff" value="2581" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2582" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2584" alpha="255" label="Non-Riparian"/>
-        <paletteEntry color="#00ff00" value="2585" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2586" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2587" alpha="255" label="Riparian"/>
-        <paletteEntry color="#00ff00" value="2588" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2585" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2586" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2587" alpha="255" label="Riparian"/>
+        <paletteEntry color="#38A800" value="2588" alpha="255" label="Riparian"/>
         <paletteEntry color="#ffffff" value="2589" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2590" alpha="255" label="Non-Riparian"/>
         <paletteEntry color="#ffffff" value="2591" alpha="255" label="Non-Riparian"/>
