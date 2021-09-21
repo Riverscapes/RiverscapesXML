@@ -1,840 +1,840 @@
 # QGIS Generated Color Map Export File
 INTERPOLATION:DISCRETE
-7008,180,255,148,Open tree canopy
-7009,180,255,148,Open tree canopy
-7010,180,255,148,Open tree canopy
-7011,180,255,148,Open tree canopy
-7012,180,255,148,Open tree canopy
-7013,180,255,148,Open tree canopy
-7014,180,255,148,Open tree canopy
-7015,180,255,148,Open tree canopy
-7016,180,255,148,Open tree canopy
-7017,180,255,148,Open tree canopy
-7018,0,51,0,Closed tree canopy
-7019,180,255,148,Open tree canopy
-7020,180,255,148,Open tree canopy
-7021,180,255,148,Open tree canopy
-7022,180,255,148,Open tree canopy
-7023,180,255,148,Open tree canopy
-7024,180,255,148,Open tree canopy
-7025,180,255,148,Open tree canopy
-7026,180,255,148,Open tree canopy
-7027,180,255,148,Open tree canopy
-7028,0,51,0,Closed tree canopy
-7029,180,255,148,Open tree canopy
-7030,180,255,148,Open tree canopy
-7031,180,255,148,Open tree canopy
-7032,180,255,148,Open tree canopy
-7033,180,255,148,Open tree canopy
-7034,180,255,148,Open tree canopy
-7035,0,51,0,Closed tree canopy
-7036,0,51,0,Closed tree canopy
-7037,0,51,0,Closed tree canopy
-7038,180,255,148,Open tree canopy
-7039,0,51,0,Closed tree canopy
-7041,0,51,0,Closed tree canopy
-7042,0,51,0,Closed tree canopy
-7043,0,51,0,Closed tree canopy
-7044,180,255,148,Open tree canopy
-7045,0,51,0,Closed tree canopy
-7046,180,255,148,Open tree canopy
-7047,0,51,0,Closed tree canopy
-7048,180,255,148,Open tree canopy
-7049,180,255,148,Open tree canopy
-7050,0,51,0,Closed tree canopy
-7051,0,51,0,Closed tree canopy
-7052,0,51,0,Closed tree canopy
-7053,180,255,148,Open tree canopy
-7054,180,255,148,Open tree canopy
-7055,0,51,0,Closed tree canopy
-7056,0,51,0,Closed tree canopy
-7057,180,255,148,Open tree canopy
-7058,0,51,0,Closed tree canopy
-7059,180,255,148,Open tree canopy
-7060,180,255,148,Open tree canopy
-7061,180,255,148,Open tree canopy
-7062,180,255,148,Open tree canopy
-7063,0,51,0,Closed tree canopy
-7064,199,176,129,Dwarf-shrubland
-7065,199,176,129,Dwarf-shrubland
-7066,199,176,129,Dwarf-shrubland
-7067,199,176,129,Dwarf-shrubland
-7068,199,176,129,Dwarf-shrubland
-7069,199,176,129,Dwarf-shrubland
-7070,199,176,129,Dwarf-shrubland
-7071,199,176,129,Dwarf-shrubland
-7072,199,176,129,Dwarf-shrubland
-7073,130,101,72,Shrubland
-7074,130,101,72,Shrubland
-7075,130,101,72,Shrubland
-7076,130,101,72,Shrubland
-7077,130,101,72,Shrubland
-7078,130,101,72,Shrubland
-7079,130,101,72,Shrubland
-7080,130,101,72,Shrubland
-7081,130,101,72,Shrubland
-7082,130,101,72,Shrubland
-7083,130,101,72,Shrubland
-7084,130,101,72,Shrubland
-7085,130,101,72,Shrubland
-7086,130,101,72,Shrubland
-7087,130,101,72,Shrubland
-7088,130,101,72,Shrubland
-7090,130,101,72,Shrubland
-7091,130,101,72,Shrubland
-7092,130,101,72,Shrubland
-7093,130,101,72,Shrubland
-7094,130,101,72,Shrubland
-7096,130,101,72,Shrubland
-7097,130,101,72,Shrubland
-7098,130,101,72,Shrubland
-7099,130,101,72,Shrubland
-7100,130,101,72,Shrubland
-7101,130,101,72,Shrubland
-7102,130,101,72,Shrubland
-7103,130,101,72,Shrubland
-7104,130,101,72,Shrubland
-7105,130,101,72,Shrubland
-7106,130,101,72,Shrubland
-7107,130,101,72,Shrubland
-7108,130,101,72,Shrubland
-7109,130,101,72,Shrubland
-7110,130,101,72,Shrubland
-7111,130,101,72,Shrubland
-7112,55,146,173,Sparse tree canopy
-7113,55,146,173,Sparse tree canopy
-7114,55,146,173,Sparse tree canopy
-7115,55,146,173,Sparse tree canopy
-7116,55,146,173,Sparse tree canopy
-7117,55,146,173,Sparse tree canopy
-7118,55,146,173,Sparse tree canopy
-7119,55,146,173,Sparse tree canopy
-7120,55,146,173,Sparse tree canopy
-7121,199,176,129,Herbaceous - shrub-steppe
-7122,199,176,129,Herbaceous - shrub-steppe
-7123,199,176,129,Herbaceous - shrub-steppe
-7124,199,176,129,Herbaceous - shrub-steppe
-7125,199,176,129,Herbaceous - shrub-steppe
-7126,199,176,129,Herbaceous - shrub-steppe
-7127,199,176,129,Herbaceous - shrub-steppe
-7128,199,176,129,Herbaceous - shrub-steppe
-7129,255,226,130,Herbaceous - grassland
-7130,255,226,130,Herbaceous - grassland
-7131,255,226,130,Herbaceous - grassland
-7132,255,226,130,Herbaceous - grassland
-7133,255,226,130,Herbaceous - grassland
-7134,255,226,130,Herbaceous - grassland
-7135,255,226,130,Herbaceous - grassland
-7136,255,226,130,Herbaceous - grassland
-7137,255,226,130,Herbaceous - grassland
-7138,255,226,130,Herbaceous - grassland
-7139,255,226,130,Herbaceous - grassland
-7140,255,226,130,Herbaceous - grassland
-7141,255,226,130,Herbaceous - grassland
-7142,255,226,130,Herbaceous - grassland
-7143,255,226,130,Herbaceous - grassland
-7144,255,226,130,Herbaceous - grassland
-7145,255,226,130,Herbaceous - grassland
-7146,255,226,130,Herbaceous - grassland
-7147,255,226,130,Herbaceous - grassland
-7148,255,226,130,Herbaceous - grassland
-7149,255,226,130,Herbaceous - grassland
-7150,255,226,130,Herbaceous - grassland
-7151,180,255,148,Open tree canopy
-7152,180,255,148,Open tree canopy
-7153,130,101,72,Shrubland
-7156,180,255,148,Open tree canopy
-7157,180,255,148,Open tree canopy
-7158,180,255,148,Open tree canopy
-7159,180,255,148,Open tree canopy
-7161,0,51,0,Closed tree canopy
-7165,55,146,173,Sparse tree canopy
-7166,0,51,0,Closed tree canopy
-7167,0,51,0,Closed tree canopy
-7168,130,101,72,Shrubland
-7169,130,101,72,Shrubland
-7170,55,146,173,Sparse tree canopy
-7171,255,226,130,Herbaceous - grassland
-7172,180,255,148,Open tree canopy
-7173,180,255,148,Open tree canopy
-7174,0,51,0,Closed tree canopy
-7177,0,51,0,Closed tree canopy
-7178,0,51,0,Closed tree canopy
-7179,180,255,148,Open tree canopy
-7191,255,226,130,Herbaceous - grassland
-7192,130,101,72,Shrubland
-7193,180,255,148,Open tree canopy
-7195,255,226,130,Herbaceous - grassland
-7196,130,101,72,Shrubland
-7197,180,255,148,Open tree canopy
-7198,255,226,130,Herbaceous - grassland
-7199,130,101,72,Shrubland
-7200,180,255,148,Open tree canopy
-7207,255,226,130,Herbaceous - grassland
-7234,180,255,148,Open tree canopy
-7238,0,51,0,Closed tree canopy
-7239,0,51,0,Closed tree canopy
-7240,0,51,0,Closed tree canopy
-7241,0,51,0,Closed tree canopy
-7242,55,146,173,Sparse tree canopy
-7243,55,146,173,Sparse tree canopy
-7247,255,226,130,Herbaceous - grassland
-7248,255,226,130,Herbaceous - grassland
-7249,130,101,72,Shrubland
-7250,180,255,148,Open tree canopy
-7256,199,176,129,Herbaceous - shrub-steppe
-7260,180,255,148,Open tree canopy
-7261,180,255,148,Open tree canopy
-7262,180,255,148,Open tree canopy
-7263,180,255,148,Open tree canopy
-7264,55,146,173,Sparse tree canopy
-7265,55,146,173,Sparse tree canopy
-7268,180,255,148,Open tree canopy
-7270,55,146,173,Sparse tree canopy
-7272,180,255,148,Open tree canopy
-7286,180,255,148,Open tree canopy
-7290,55,146,173,Sparse tree canopy
-7291,55,146,173,Sparse tree canopy
-7292,0,0,255,Non-vegetated
-7295,0,0,255,Non-vegetated
-7296,255,122,143,No Dominant Lifeform
-7297,255,122,143,No Dominant Lifeform
-7298,255,122,143,No Dominant Lifeform
-7299,255,122,143,No Dominant Lifeform
-7301,0,51,0,Closed tree canopy
-7302,0,51,0,Closed tree canopy
-7303,0,51,0,Closed tree canopy
-7304,0,51,0,Closed tree canopy
-7305,0,51,0,Closed tree canopy
-7306,0,51,0,Closed tree canopy
-7307,0,51,0,Closed tree canopy
-7308,180,255,148,Open tree canopy
-7309,0,51,0,Closed tree canopy
-7310,0,51,0,Closed tree canopy
-7311,180,255,148,Open tree canopy
-7312,0,51,0,Closed tree canopy
-7313,0,51,0,Closed tree canopy
-7314,0,51,0,Closed tree canopy
-7315,0,51,0,Closed tree canopy
-7316,0,51,0,Closed tree canopy
-7317,0,51,0,Closed tree canopy
-7318,0,51,0,Closed tree canopy
-7320,0,51,0,Closed tree canopy
-7321,0,51,0,Closed tree canopy
-7322,0,51,0,Closed tree canopy
-7323,0,51,0,Closed tree canopy
-7324,0,51,0,Closed tree canopy
-7325,0,51,0,Closed tree canopy
-7326,0,51,0,Closed tree canopy
-7327,0,51,0,Closed tree canopy
-7328,0,51,0,Closed tree canopy
-7329,0,51,0,Closed tree canopy
-7330,0,51,0,Closed tree canopy
-7331,180,255,148,Open tree canopy
-7333,0,51,0,Closed tree canopy
-7334,0,51,0,Closed tree canopy
-7335,0,51,0,Closed tree canopy
-7336,0,51,0,Closed tree canopy
-7337,0,51,0,Closed tree canopy
-7338,180,255,148,Open tree canopy
-7339,0,51,0,Closed tree canopy
-7340,180,255,148,Open tree canopy
-7342,180,255,148,Open tree canopy
-7343,0,51,0,Closed tree canopy
-7346,180,255,148,Open tree canopy
-7347,180,255,148,Open tree canopy
-7348,180,255,148,Open tree canopy
-7349,180,255,148,Open tree canopy
-7350,0,51,0,Closed tree canopy
-7351,180,255,148,Open tree canopy
-7352,180,255,148,Open tree canopy
-7353,0,51,0,Closed tree canopy
-7355,180,255,148,Open tree canopy
-7356,180,255,148,Open tree canopy
-7357,0,51,0,Closed tree canopy
-7358,180,255,148,Open tree canopy
-7360,0,51,0,Closed tree canopy
-7361,0,51,0,Closed tree canopy
-7362,0,51,0,Closed tree canopy
-7363,180,255,148,Open tree canopy
-7364,180,255,148,Open tree canopy
-7366,0,51,0,Closed tree canopy
-7367,0,51,0,Closed tree canopy
-7368,0,51,0,Closed tree canopy
-7369,0,51,0,Closed tree canopy
-7370,0,51,0,Closed tree canopy
-7371,0,51,0,Closed tree canopy
-7372,0,51,0,Closed tree canopy
-7375,180,255,148,Open tree canopy
-7376,0,51,0,Closed tree canopy
-7377,180,255,148,Open tree canopy
-7378,0,51,0,Closed tree canopy
-7379,0,51,0,Closed tree canopy
-7380,0,51,0,Closed tree canopy
-7381,180,255,148,Open tree canopy
-7382,0,51,0,Closed tree canopy
-7383,0,51,0,Closed tree canopy
-7384,0,51,0,Closed tree canopy
-7385,180,255,148,Open tree canopy
-7387,130,101,72,Shrubland
-7388,130,101,72,Shrubland
-7390,130,101,72,Shrubland
-7391,130,101,72,Shrubland
-7392,130,101,72,Shrubland
-7393,130,101,72,Shrubland
-7394,55,146,173,Sparse tree canopy
-7395,55,146,173,Sparse tree canopy
-7396,130,101,72,Shrubland
-7397,55,146,173,Sparse tree canopy
-7398,55,146,173,Sparse tree canopy
-7400,55,146,173,Sparse tree canopy
-7401,55,146,173,Sparse tree canopy
-7403,55,146,173,Sparse tree canopy
-7405,55,146,173,Sparse tree canopy
-7406,0,51,0,Closed tree canopy
-7407,55,146,173,Sparse tree canopy
-7408,55,146,173,Sparse tree canopy
-7409,199,176,129,Herbaceous - shrub-steppe
-7410,255,226,130,Herbaceous - grassland
-7411,255,226,130,Herbaceous - grassland
-7412,255,226,130,Herbaceous - grassland
-7413,255,226,130,Herbaceous - grassland
-7414,255,226,130,Herbaceous - grassland
-7415,255,226,130,Herbaceous - grassland
-7416,255,226,130,Herbaceous - grassland
-7417,255,226,130,Herbaceous - grassland
-7418,255,226,130,Herbaceous - grassland
-7419,255,226,130,Herbaceous - grassland
-7420,255,226,130,Herbaceous - grassland
-7421,255,226,130,Herbaceous - grassland
-7422,255,226,130,Herbaceous - grassland
-7423,255,226,130,Herbaceous - grassland
-7424,255,226,130,Herbaceous - grassland
-7425,255,226,130,Herbaceous - grassland
-7426,255,226,130,Herbaceous - grassland
-7428,255,226,130,Herbaceous - grassland
-7429,255,226,130,Herbaceous - grassland
-7430,255,226,130,Herbaceous - grassland
-7431,255,226,130,Herbaceous - grassland
-7434,255,226,130,Herbaceous - grassland
-7435,255,226,130,Herbaceous - grassland
-7436,255,226,130,Herbaceous - grassland
-7437,255,226,130,Herbaceous - grassland
-7438,255,226,130,Herbaceous - grassland
-7439,255,226,130,Herbaceous - grassland
-7441,255,226,130,Herbaceous - grassland
-7442,255,226,130,Herbaceous - grassland
-7444,180,255,148,Open tree canopy
-7445,180,255,148,Open tree canopy
-7446,180,255,148,Open tree canopy
-7447,180,255,148,Open tree canopy
-7448,0,51,0,Closed tree canopy
-7449,180,255,148,Open tree canopy
-7450,180,255,148,Open tree canopy
-7451,180,255,148,Open tree canopy
-7452,130,101,72,Shrubland
-7453,180,255,148,Open tree canopy
-7454,180,255,148,Open tree canopy
-7455,180,255,148,Open tree canopy
-7456,180,255,148,Open tree canopy
-7457,180,255,148,Open tree canopy
-7458,180,255,148,Open tree canopy
-7459,180,255,148,Open tree canopy
-7460,180,255,148,Open tree canopy
-7461,180,255,148,Open tree canopy
-7462,180,255,148,Open tree canopy
-7463,0,51,0,Closed tree canopy
-7466,180,255,148,Open tree canopy
-7467,180,255,148,Open tree canopy
-7468,180,255,148,Open tree canopy
-7469,180,255,148,Open tree canopy
-7471,0,51,0,Closed tree canopy
-7472,0,51,0,Closed tree canopy
-7473,180,255,148,Open tree canopy
-7474,180,255,148,Open tree canopy
-7475,180,255,148,Open tree canopy
-7476,180,255,148,Open tree canopy
-7481,130,101,72,Shrubland
-7482,255,226,130,Herbaceous - grassland
-7483,255,226,130,Herbaceous - grassland
-7484,255,226,130,Herbaceous - grassland
-7485,255,226,130,Herbaceous - grassland
-7486,255,226,130,Herbaceous - grassland
-7487,255,226,130,Herbaceous - grassland
-7488,255,226,130,Herbaceous - grassland
-7489,255,226,130,Herbaceous - grassland
-7500,100,100,100,Sparsely vegetated
-7501,180,255,148,Open tree canopy
-7502,0,51,0,Closed tree canopy
-7503,255,226,130,Herbaceous - grassland
-7504,255,226,130,Herbaceous - grassland
-7505,180,255,148,Open tree canopy
-7506,180,255,148,Open tree canopy
-7507,180,255,148,Open tree canopy
-7509,0,51,0,Closed tree canopy
-7510,180,255,148,Open tree canopy
-7511,0,51,0,Closed tree canopy
-7512,0,51,0,Closed tree canopy
-7513,180,255,148,Open tree canopy
-7514,255,226,130,Herbaceous - grassland
-7515,255,226,130,Herbaceous - grassland
-7516,255,226,130,Herbaceous - grassland
-7517,180,255,148,Open tree canopy
-7518,0,51,0,Closed tree canopy
-7519,180,255,148,Open tree canopy
-7522,130,101,72,Shrubland
-7523,0,51,0,Closed tree canopy
-7524,0,51,0,Closed tree canopy
-7525,0,51,0,Closed tree canopy
-7527,0,51,0,Closed tree canopy
-7545,180,255,148,Open tree canopy
-7546,0,51,0,Closed tree canopy
-7547,180,255,148,Open tree canopy
-7548,180,255,148,Open tree canopy
-7556,180,255,148,Open tree canopy
-7557,180,255,148,Open tree canopy
-7560,130,101,72,Shrubland
-7561,255,226,130,Herbaceous - grassland
-7562,180,255,148,Open tree canopy
-7563,130,101,72,Shrubland
-7564,255,226,130,Herbaceous - grassland
-7565,130,101,72,Shrubland
-7566,255,226,130,Herbaceous - grassland
-7567,255,226,130,Herbaceous - grassland
-7571,180,255,148,Open tree canopy
-7573,180,255,148,Open tree canopy
-7578,255,226,130,Herbaceous - grassland
-7582,0,51,0,Closed tree canopy
-7583,0,51,0,Closed tree canopy
-7584,0,51,0,Closed tree canopy
-7585,0,51,0,Closed tree canopy
-7586,0,51,0,Closed tree canopy
-7587,0,51,0,Closed tree canopy
-7588,180,255,148,Open tree canopy
-7589,180,255,148,Open tree canopy
-7590,180,255,148,Open tree canopy
-7591,180,255,148,Open tree canopy
-7662,255,226,130,Herbaceous - grassland
-7663,130,101,72,Shrubland
-7668,255,226,130,Herbaceous - grassland
-7733,100,100,100,Sparsely vegetated
-7734,100,100,100,Sparsely vegetated
-7735,0,0,255,Non-vegetated
-7861,180,255,148,Open tree canopy
-7867,180,255,148,Open tree canopy
-7900,180,255,148,Open tree canopy
-7901,180,255,148,Open tree canopy
-7902,180,255,148,Open tree canopy
-7903,255,226,130,Herbaceous - grassland
-7904,130,101,72,Shrubland
-7905,180,255,148,Open tree canopy
-7906,180,255,148,Open tree canopy
-7907,180,255,148,Open tree canopy
-7908,255,226,130,Herbaceous - grassland
-7909,130,101,72,Shrubland
-7910,180,255,148,Open tree canopy
-7911,180,255,148,Open tree canopy
-7912,180,255,148,Open tree canopy
-7913,255,226,130,Herbaceous - grassland
-7914,130,101,72,Shrubland
-7915,180,255,148,Open tree canopy
-7916,180,255,148,Open tree canopy
-7917,180,255,148,Open tree canopy
-7918,255,226,130,Herbaceous - grassland
-7919,130,101,72,Shrubland
-7920,180,255,148,Open tree canopy
-7921,180,255,148,Open tree canopy
-7922,180,255,148,Open tree canopy
-7923,130,101,72,Shrubland
-7924,255,226,130,Herbaceous - grassland
-7925,180,255,148,Open tree canopy
-7926,180,255,148,Open tree canopy
-7927,180,255,148,Open tree canopy
-7928,130,101,72,Shrubland
-7929,255,226,130,Herbaceous - grassland
-7930,180,255,148,Open tree canopy
-7931,180,255,148,Open tree canopy
-7932,180,255,148,Open tree canopy
-7933,130,101,72,Shrubland
-7934,255,226,130,Herbaceous - grassland
-7935,180,255,148,Open tree canopy
-7936,180,255,148,Open tree canopy
-7937,180,255,148,Open tree canopy
-7938,130,101,72,Shrubland
-7939,255,226,130,Herbaceous - grassland
-7940,180,255,148,Open tree canopy
-7941,180,255,148,Open tree canopy
-7942,180,255,148,Open tree canopy
-7943,130,101,72,Shrubland
-7944,255,226,130,Herbaceous - grassland
-7945,180,255,148,Open tree canopy
-7946,180,255,148,Open tree canopy
-7947,180,255,148,Open tree canopy
-7948,130,101,72,Shrubland
-7949,255,226,130,Herbaceous - grassland
-7950,180,255,148,Open tree canopy
-7951,180,255,148,Open tree canopy
-7952,180,255,148,Open tree canopy
-7953,130,101,72,Shrubland
-7954,255,226,130,Herbaceous - grassland
-7955,180,255,148,Open tree canopy
-7956,180,255,148,Open tree canopy
-7957,180,255,148,Open tree canopy
-7958,130,101,72,Shrubland
-7959,255,226,130,Herbaceous - grassland
-7960,180,255,148,Open tree canopy
-7961,130,101,72,Shrubland
-7962,130,101,72,Shrubland
-7963,255,226,130,Herbaceous - grassland
-7964,255,226,130,Herbaceous - grassland
-7965,255,226,130,Herbaceous - grassland
-7966,255,226,130,Herbaceous - grassland
-7967,255,226,130,Herbaceous - grassland
-7968,255,226,130,Herbaceous - grassland
-7970,180,255,148,Open tree canopy
-7971,130,101,72,Shrubland
-7972,130,101,72,Shrubland
-7973,255,226,130,Herbaceous - grassland
-7974,255,226,130,Herbaceous - grassland
-7975,255,226,130,Herbaceous - grassland
-7976,255,226,130,Herbaceous - grassland
-7977,255,226,130,Herbaceous - grassland
-7978,255,226,130,Herbaceous - grassland
-7979,255,226,130,Herbaceous - grassland
-7980,180,255,148,Open tree canopy
-7981,130,101,72,Shrubland
-7982,130,101,72,Shrubland
-7983,255,226,130,Herbaceous - grassland
-7984,255,226,130,Herbaceous - grassland
-7985,255,226,130,Herbaceous - grassland
-7986,255,226,130,Herbaceous - grassland
-7987,255,226,130,Herbaceous - grassland
-7988,255,226,130,Herbaceous - grassland
-7989,255,226,130,Herbaceous - grassland
-7990,180,255,148,Open tree canopy
-7991,130,101,72,Shrubland
-7992,130,101,72,Shrubland
-7993,255,226,130,Herbaceous - grassland
-7994,255,226,130,Herbaceous - grassland
-7995,255,226,130,Herbaceous - grassland
-7996,255,226,130,Herbaceous - grassland
-7997,255,226,130,Herbaceous - grassland
-7998,255,226,130,Herbaceous - grassland
-7999,255,226,130,Herbaceous - grassland
-9001,100,100,100,Sparsely vegetated
-9002,180,255,148,Open tree canopy
-9003,180,255,148,Open tree canopy
-9004,100,100,100,Sparsely vegetated
-9005,255,226,130,Herbaceous - grassland
-9006,100,100,100,Sparsely vegetated
-9008,100,100,100,Sparsely vegetated
-9009,100,100,100,Sparsely vegetated
-9010,100,100,100,Sparsely vegetated
-9011,255,226,130,Herbaceous - grassland
-9012,180,255,148,Open tree canopy
-9014,180,255,148,Open tree canopy
-9015,180,255,148,Open tree canopy
-9016,100,100,100,Sparsely vegetated
-9017,255,226,130,Herbaceous - grassland
-9018,100,100,100,Sparsely vegetated
-9019,180,255,148,Open tree canopy
-9021,130,101,72,Shrubland
-9022,130,101,72,Shrubland
-9023,100,100,100,Sparsely vegetated
-9024,100,100,100,Sparsely vegetated
-9025,255,226,130,Herbaceous - grassland
-9026,180,255,148,Open tree canopy
-9027,255,226,130,Herbaceous - grassland
-9028,180,255,148,Open tree canopy
-9029,255,226,130,Herbaceous - grassland
-9030,180,255,148,Open tree canopy
-9032,100,100,100,Sparsely vegetated
-9033,100,100,100,Sparsely vegetated
-9034,180,255,148,Open tree canopy
-9035,180,255,148,Open tree canopy
-9041,180,255,148,Open tree canopy
-9042,180,255,148,Open tree canopy
-9044,255,226,130,Herbaceous - grassland
-9045,255,226,130,Herbaceous - grassland
-9047,255,226,130,Herbaceous - grassland
-9050,180,255,148,Open tree canopy
-9051,180,255,148,Open tree canopy
-9055,130,101,72,Shrubland
-9056,130,101,72,Shrubland
-9057,255,226,130,Herbaceous - grassland
-9059,180,255,148,Open tree canopy
-9060,180,255,148,Open tree canopy
-9061,100,100,100,Sparsely vegetated
-9062,100,100,100,Sparsely vegetated
-9063,255,226,130,Herbaceous - grassland
-9064,100,100,100,Sparsely vegetated
-9065,100,100,100,Sparsely vegetated
-9066,180,255,148,Open tree canopy
-9068,180,255,148,Open tree canopy
-9069,180,255,148,Open tree canopy
-9071,180,255,148,Open tree canopy
-9073,100,100,100,Sparsely vegetated
-9075,180,255,148,Open tree canopy
-9077,255,226,130,Herbaceous - grassland
-9080,180,255,148,Open tree canopy
-9082,180,255,148,Open tree canopy
-9083,180,255,148,Open tree canopy
-9085,180,255,148,Open tree canopy
-9088,0,51,0,Closed tree canopy
-9089,0,51,0,Closed tree canopy
-9091,100,100,100,Sparsely vegetated
-9092,180,255,148,Open tree canopy
-9094,255,226,130,Herbaceous - grassland
-9095,255,226,130,Herbaceous - grassland
-9097,100,100,100,Sparsely vegetated
-9098,255,226,130,Herbaceous - grassland
-9099,100,100,100,Sparsely vegetated
-9100,100,100,100,Sparsely vegetated
-9101,100,100,100,Sparsely vegetated
-9102,255,226,130,Herbaceous - grassland
-9103,100,100,100,Sparsely vegetated
-9104,255,226,130,Herbaceous - grassland
-9105,255,226,130,Herbaceous - grassland
-9106,180,255,148,Open tree canopy
-9110,100,100,100,Sparsely vegetated
-9111,55,146,173,Sparse tree canopy
-9112,55,146,173,Sparse tree canopy
-9113,100,100,100,Sparsely vegetated
-9114,255,226,130,Herbaceous - grassland
-9115,100,100,100,Sparsely vegetated
-9117,180,255,148,Open tree canopy
-9118,255,226,130,Herbaceous - grassland
-9119,100,100,100,Sparsely vegetated
-9120,255,226,130,Herbaceous - grassland
-9121,130,101,72,Shrubland
-9122,100,100,100,Sparsely vegetated
-9125,100,100,100,Sparsely vegetated
-9126,100,100,100,Sparsely vegetated
-9129,180,255,148,Open tree canopy
-9130,100,100,100,Sparsely vegetated
-9133,180,255,148,Open tree canopy
-9134,100,100,100,Sparsely vegetated
-9136,255,226,130,Herbaceous - grassland
-9137,255,226,130,Herbaceous - grassland
-9138,180,255,148,Open tree canopy
-9139,180,255,148,Open tree canopy
-9140,180,255,148,Open tree canopy
-9141,180,255,148,Open tree canopy
-9142,255,226,130,Herbaceous - grassland
-9143,255,226,130,Herbaceous - grassland
-9145,100,100,100,Sparsely vegetated
-9146,100,100,100,Sparsely vegetated
-9147,100,100,100,Sparsely vegetated
-9148,180,255,148,Open tree canopy
-9150,100,100,100,Sparsely vegetated
-9151,100,100,100,Sparsely vegetated
-9152,180,255,148,Open tree canopy
-9153,100,100,100,Sparsely vegetated
-9154,180,255,148,Open tree canopy
-9160,100,100,100,Sparsely vegetated
-9165,180,255,148,Open tree canopy
-9166,255,226,130,Herbaceous - grassland
-9167,199,176,129,Herbaceous - shrub-steppe
-9170,0,51,0,Closed tree canopy
-9171,100,100,100,Sparsely vegetated
-9173,100,100,100,Sparsely vegetated
-9174,180,255,148,Open tree canopy
-9175,100,100,100,Sparsely vegetated
-9176,255,226,130,Herbaceous - grassland
-9177,180,255,148,Open tree canopy
-9178,180,255,148,Open tree canopy
-9179,180,255,148,Open tree canopy
-9180,255,226,130,Herbaceous - grassland
-9181,0,51,0,Closed tree canopy
-9182,255,226,130,Herbaceous - grassland
-9183,255,226,130,Herbaceous - grassland
-9187,180,255,148,Open tree canopy
-9188,180,255,148,Open tree canopy
-9189,255,226,130,Herbaceous - grassland
-9190,180,255,148,Open tree canopy
-9191,255,226,130,Herbaceous - grassland
-9192,180,255,148,Open tree canopy
-9193,100,100,100,Sparsely vegetated
-9195,180,255,148,Open tree canopy
-9197,255,226,130,Herbaceous - grassland
-9198,180,255,148,Open tree canopy
-9202,255,226,130,Herbaceous - grassland
-9203,255,226,130,Herbaceous - grassland
-9207,180,255,148,Open tree canopy
-9208,55,146,173,Sparse tree canopy
-9209,180,255,148,Open tree canopy
-9210,180,255,148,Open tree canopy
-9211,180,255,148,Open tree canopy
-9213,100,100,100,Sparsely vegetated
-9216,180,255,148,Open tree canopy
-9218,180,255,148,Open tree canopy
-9220,180,255,148,Open tree canopy
-9221,100,100,100,Sparsely vegetated
-9222,180,255,148,Open tree canopy
-9223,180,255,148,Open tree canopy
-9224,180,255,148,Open tree canopy
-9226,100,100,100,Sparsely vegetated
-9227,100,100,100,Sparsely vegetated
-9228,255,226,130,Herbaceous - grassland
-9229,180,255,148,Open tree canopy
-9230,180,255,148,Open tree canopy
-9231,180,255,148,Open tree canopy
-9232,180,255,148,Open tree canopy
-9233,180,255,148,Open tree canopy
-9234,100,100,100,Sparsely vegetated
-9235,100,100,100,Sparsely vegetated
-9237,255,226,130,Herbaceous - grassland
-9239,255,226,130,Herbaceous - grassland
-9240,100,100,100,Sparsely vegetated
-9241,255,226,130,Herbaceous - grassland
-9242,180,255,148,Open tree canopy
-9243,255,226,130,Herbaceous - grassland
-9244,100,100,100,Sparsely vegetated
-9245,180,255,148,Open tree canopy
-9246,100,100,100,Sparsely vegetated
-9247,180,255,148,Open tree canopy
-9248,180,255,148,Open tree canopy
-9249,180,255,148,Open tree canopy
-9250,0,51,0,Closed tree canopy
-9251,100,100,100,Sparsely vegetated
-9256,180,255,148,Open tree canopy
-9257,100,100,100,Sparsely vegetated
-9258,180,255,148,Open tree canopy
-9259,180,255,148,Open tree canopy
-9260,180,255,148,Open tree canopy
-9261,255,226,130,Herbaceous - grassland
-9262,100,100,100,Sparsely vegetated
-9265,100,100,100,Sparsely vegetated
-9266,255,226,130,Herbaceous - grassland
-9268,180,255,148,Open tree canopy
-9270,130,101,72,Shrubland
-9272,255,226,130,Herbaceous - grassland
-9273,100,100,100,Sparsely vegetated
-9274,255,226,130,Herbaceous - grassland
-9275,255,226,130,Herbaceous - grassland
-9282,180,255,148,Open tree canopy
-9283,180,255,148,Open tree canopy
-9284,180,255,148,Open tree canopy
-9288,0,51,0,Closed tree canopy
-9289,180,255,148,Open tree canopy
-9290,100,100,100,Sparsely vegetated
-9295,0,51,0,Closed tree canopy
-9301,255,226,130,Herbaceous - grassland
-9302,180,255,148,Open tree canopy
-9304,0,51,0,Closed tree canopy
-9307,255,226,130,Herbaceous - grassland
-9308,255,226,130,Herbaceous - grassland
-9309,255,226,130,Herbaceous - grassland
-9310,130,101,72,Shrubland
-9311,130,101,72,Shrubland
-9312,180,255,148,Open Tree Canopy
-9313,0,51,0,Closed tree canopy
-9314,0,51,0,Closed tree canopy
-9315,180,255,148,Open tree canopy
-9316,130,101,72,Shrubland
-9317,130,101,72,Shrubland
-9318,255,226,130,Herbaceous - grassland
-9319,180,255,148,Open tree canopy
-9320,180,255,148,Open tree canopy
-9321,180,255,148,Open tree canopy
-9322,0,51,0,Closed tree canopy
-9323,130,101,72,Shrubland
-9324,255,226,130,Herbaceous - grassland
-9325,130,101,72,Shrubland
-9326,130,101,72,Shrubland
-9327,180,255,148,Open tree canopy
-9328,130,101,72,Shrubland
-9329,255,226,130,Herbaceous - grassland
-9332,180,255,148,Open tree canopy
-9336,130,101,72,Shrubland
-9337,130,101,72,Shrubland
-9502,180,255,148,Open tree canopy
-9503,180,255,148,Open tree canopy
-9504,180,255,148,Open tree canopy
-9505,180,255,148,Open tree canopy
-9512,180,255,148,Open tree canopy
-9513,180,255,148,Open tree canopy
-9514,180,255,148,Open tree canopy
-9515,180,255,148,Open tree canopy
-9516,180,255,148,Open tree canopy
-9519,180,255,148,Open tree canopy
-9526,180,255,148,Open tree canopy
-9527,180,255,148,Open tree canopy
-9528,180,255,148,Open tree canopy
-9529,180,255,148,Open tree canopy
-9533,180,255,148,Open tree canopy
-9534,180,255,148,Open tree canopy
-9535,180,255,148,Open tree canopy
-9541,180,255,148,Open tree canopy
-9542,180,255,148,Open tree canopy
-9559,180,255,148,Open tree canopy
-9560,180,255,148,Open tree canopy
-9561,180,255,148,Open tree canopy
-9562,180,255,148,Open tree canopy
-9568,180,255,148,Open tree canopy
-9569,180,255,148,Open tree canopy
-9570,180,255,148,Open tree canopy
-9571,180,255,148,Open tree canopy
-9582,180,255,148,Open tree canopy
-9583,180,255,148,Open tree canopy
-9585,180,255,148,Open tree canopy
-9586,180,255,148,Open tree canopy
-9592,130,101,72,Shrubland
-9593,255,226,130,Herbaceous - grassland
-9601,255,226,130,Herbaceous - grassland
-9604,255,226,130,Herbaceous - grassland
-9605,255,226,130,Herbaceous - grassland
-9611,55,146,173,Sparse tree canopy
-9617,180,255,148,Open tree canopy
-9620,255,226,130,Herbaceous - grassland
-9629,180,255,148,Open tree canopy
-9633,180,255,148,Open tree canopy
-9639,180,255,148,Open tree canopy
-9640,180,255,148,Open tree canopy
-9641,180,255,148,Open tree canopy
-9642,180,255,148,Open tree canopy
-9652,180,255,148,Open tree canopy
-9654,180,255,148,Open tree canopy
-9667,199,176,129,Herbaceous - shrub-steppe
-9677,180,255,148,Open tree canopy
-9679,180,255,148,Open tree canopy
-9682,255,226,130,Herbaceous - grassland
-9683,255,226,130,Herbaceous - grassland
-9695,180,255,148,Open tree canopy
-9696,180,255,148,Open tree canopy
-9707,180,255,148,Open tree canopy
-9708,180,255,148,Open tree canopy
-9722,180,255,148,Open tree canopy
-9723,180,255,148,Open tree canopy
-9724,180,255,148,Open tree canopy
-9725,180,255,148,Open tree canopy
-9726,180,255,148,Open tree canopy
-9730,130,101,72,Shrubland
-9731,130,101,72,Shrubland
-9732,255,226,130,Herbaceous - grassland
-9733,255,226,130,Herbaceous - grassland
-9742,180,255,148,Open tree canopy
-9743,180,255,148,Open tree canopy
-9758,180,255,148,Open tree canopy
-9759,180,255,148,Open tree canopy
-9760,180,255,148,Open tree canopy
-9761,180,255,148,Open tree canopy
-9766,255,226,130,Herbaceous - grassland
-9774,255,226,130,Herbaceous - grassland
-9775,255,226,130,Herbaceous - grassland
-9782,180,255,148,Open tree canopy
-9783,180,255,148,Open tree canopy
-9784,180,255,148,Open tree canopy
-9785,180,255,148,Open tree canopy
-9810,255,226,130,Herbaceous - grassland
-9811,255,226,130,Herbaceous - grassland
-9816,255,226,130,Herbaceous - grassland
-9817,255,226,130,Herbaceous - grassland
-9823,255,226,130,Herbaceous - grassland
-9825,255,226,130,Herbaceous - grassland
-9826,255,226,130,Herbaceous - grassland
-9827,130,101,72,Shrubland
-9828,255,226,130,Herbaceous - grassland
-9829,255,226,130,Herbaceous - grassland
-9993,255,226,130,Herbaceous - grassland
-9994,255,226,130,Herbaceous - grassland
+7008,180,255,148,255,Open tree canopy
+7009,180,255,148,255,Open tree canopy
+7010,180,255,148,255,Open tree canopy
+7011,180,255,148,255,Open tree canopy
+7012,180,255,148,255,Open tree canopy
+7013,180,255,148,255,Open tree canopy
+7014,180,255,148,255,Open tree canopy
+7015,180,255,148,255,Open tree canopy
+7016,180,255,148,255,Open tree canopy
+7017,180,255,148,255,Open tree canopy
+7018,0,51,0,255,Closed tree canopy
+7019,180,255,148,255,Open tree canopy
+7020,180,255,148,255,Open tree canopy
+7021,180,255,148,255,Open tree canopy
+7022,180,255,148,255,Open tree canopy
+7023,180,255,148,255,Open tree canopy
+7024,180,255,148,255,Open tree canopy
+7025,180,255,148,255,Open tree canopy
+7026,180,255,148,255,Open tree canopy
+7027,180,255,148,255,Open tree canopy
+7028,0,51,0,255,Closed tree canopy
+7029,180,255,148,255,Open tree canopy
+7030,180,255,148,255,Open tree canopy
+7031,180,255,148,255,Open tree canopy
+7032,180,255,148,255,Open tree canopy
+7033,180,255,148,255,Open tree canopy
+7034,180,255,148,255,Open tree canopy
+7035,0,51,0,255,Closed tree canopy
+7036,0,51,0,255,Closed tree canopy
+7037,0,51,0,255,Closed tree canopy
+7038,180,255,148,255,Open tree canopy
+7039,0,51,0,255,Closed tree canopy
+7041,0,51,0,255,Closed tree canopy
+7042,0,51,0,255,Closed tree canopy
+7043,0,51,0,255,Closed tree canopy
+7044,180,255,148,255,Open tree canopy
+7045,0,51,0,255,Closed tree canopy
+7046,180,255,148,255,Open tree canopy
+7047,0,51,0,255,Closed tree canopy
+7048,180,255,148,255,Open tree canopy
+7049,180,255,148,255,Open tree canopy
+7050,0,51,0,255,Closed tree canopy
+7051,0,51,0,255,Closed tree canopy
+7052,0,51,0,255,Closed tree canopy
+7053,180,255,148,255,Open tree canopy
+7054,180,255,148,255,Open tree canopy
+7055,0,51,0,255,Closed tree canopy
+7056,0,51,0,255,Closed tree canopy
+7057,180,255,148,255,Open tree canopy
+7058,0,51,0,255,Closed tree canopy
+7059,180,255,148,255,Open tree canopy
+7060,180,255,148,255,Open tree canopy
+7061,180,255,148,255,Open tree canopy
+7062,180,255,148,255,Open tree canopy
+7063,0,51,0,255,Closed tree canopy
+7064,199,176,129,255,Dwarf-shrubland
+7065,199,176,129,255,Dwarf-shrubland
+7066,199,176,129,255,Dwarf-shrubland
+7067,199,176,129,255,Dwarf-shrubland
+7068,199,176,129,255,Dwarf-shrubland
+7069,199,176,129,255,Dwarf-shrubland
+7070,199,176,129,255,Dwarf-shrubland
+7071,199,176,129,255,Dwarf-shrubland
+7072,199,176,129,255,Dwarf-shrubland
+7073,130,101,72,255,Shrubland
+7074,130,101,72,255,Shrubland
+7075,130,101,72,255,Shrubland
+7076,130,101,72,255,Shrubland
+7077,130,101,72,255,Shrubland
+7078,130,101,72,255,Shrubland
+7079,130,101,72,255,Shrubland
+7080,130,101,72,255,Shrubland
+7081,130,101,72,255,Shrubland
+7082,130,101,72,255,Shrubland
+7083,130,101,72,255,Shrubland
+7084,130,101,72,255,Shrubland
+7085,130,101,72,255,Shrubland
+7086,130,101,72,255,Shrubland
+7087,130,101,72,255,Shrubland
+7088,130,101,72,255,Shrubland
+7090,130,101,72,255,Shrubland
+7091,130,101,72,255,Shrubland
+7092,130,101,72,255,Shrubland
+7093,130,101,72,255,Shrubland
+7094,130,101,72,255,Shrubland
+7096,130,101,72,255,Shrubland
+7097,130,101,72,255,Shrubland
+7098,130,101,72,255,Shrubland
+7099,130,101,72,255,Shrubland
+7100,130,101,72,255,Shrubland
+7101,130,101,72,255,Shrubland
+7102,130,101,72,255,Shrubland
+7103,130,101,72,255,Shrubland
+7104,130,101,72,255,Shrubland
+7105,130,101,72,255,Shrubland
+7106,130,101,72,255,Shrubland
+7107,130,101,72,255,Shrubland
+7108,130,101,72,255,Shrubland
+7109,130,101,72,255,Shrubland
+7110,130,101,72,255,Shrubland
+7111,130,101,72,255,Shrubland
+7112,55,146,173,255,Sparse tree canopy
+7113,55,146,173,255,Sparse tree canopy
+7114,55,146,173,255,Sparse tree canopy
+7115,55,146,173,255,Sparse tree canopy
+7116,55,146,173,255,Sparse tree canopy
+7117,55,146,173,255,Sparse tree canopy
+7118,55,146,173,255,Sparse tree canopy
+7119,55,146,173,255,Sparse tree canopy
+7120,55,146,173,255,Sparse tree canopy
+7121,199,176,129,255,Herbaceous - shrub-steppe
+7122,199,176,129,255,Herbaceous - shrub-steppe
+7123,199,176,129,255,Herbaceous - shrub-steppe
+7124,199,176,129,255,Herbaceous - shrub-steppe
+7125,199,176,129,255,Herbaceous - shrub-steppe
+7126,199,176,129,255,Herbaceous - shrub-steppe
+7127,199,176,129,255,Herbaceous - shrub-steppe
+7128,199,176,129,255,Herbaceous - shrub-steppe
+7129,255,226,130,255,Herbaceous - grassland
+7130,255,226,130,255,Herbaceous - grassland
+7131,255,226,130,255,Herbaceous - grassland
+7132,255,226,130,255,Herbaceous - grassland
+7133,255,226,130,255,Herbaceous - grassland
+7134,255,226,130,255,Herbaceous - grassland
+7135,255,226,130,255,Herbaceous - grassland
+7136,255,226,130,255,Herbaceous - grassland
+7137,255,226,130,255,Herbaceous - grassland
+7138,255,226,130,255,Herbaceous - grassland
+7139,255,226,130,255,Herbaceous - grassland
+7140,255,226,130,255,Herbaceous - grassland
+7141,255,226,130,255,Herbaceous - grassland
+7142,255,226,130,255,Herbaceous - grassland
+7143,255,226,130,255,Herbaceous - grassland
+7144,255,226,130,255,Herbaceous - grassland
+7145,255,226,130,255,Herbaceous - grassland
+7146,255,226,130,255,Herbaceous - grassland
+7147,255,226,130,255,Herbaceous - grassland
+7148,255,226,130,255,Herbaceous - grassland
+7149,255,226,130,255,Herbaceous - grassland
+7150,255,226,130,255,Herbaceous - grassland
+7151,180,255,148,255,Open tree canopy
+7152,180,255,148,255,Open tree canopy
+7153,130,101,72,255,Shrubland
+7156,180,255,148,255,Open tree canopy
+7157,180,255,148,255,Open tree canopy
+7158,180,255,148,255,Open tree canopy
+7159,180,255,148,255,Open tree canopy
+7161,0,51,0,255,Closed tree canopy
+7165,55,146,173,255,Sparse tree canopy
+7166,0,51,0,255,Closed tree canopy
+7167,0,51,0,255,Closed tree canopy
+7168,130,101,72,255,Shrubland
+7169,130,101,72,255,Shrubland
+7170,55,146,173,255,Sparse tree canopy
+7171,255,226,130,255,Herbaceous - grassland
+7172,180,255,148,255,Open tree canopy
+7173,180,255,148,255,Open tree canopy
+7174,0,51,0,255,Closed tree canopy
+7177,0,51,0,255,Closed tree canopy
+7178,0,51,0,255,Closed tree canopy
+7179,180,255,148,255,Open tree canopy
+7191,255,226,130,255,Herbaceous - grassland
+7192,130,101,72,255,Shrubland
+7193,180,255,148,255,Open tree canopy
+7195,255,226,130,255,Herbaceous - grassland
+7196,130,101,72,255,Shrubland
+7197,180,255,148,255,Open tree canopy
+7198,255,226,130,255,Herbaceous - grassland
+7199,130,101,72,255,Shrubland
+7200,180,255,148,255,Open tree canopy
+7207,255,226,130,255,Herbaceous - grassland
+7234,180,255,148,255,Open tree canopy
+7238,0,51,0,255,Closed tree canopy
+7239,0,51,0,255,Closed tree canopy
+7240,0,51,0,255,Closed tree canopy
+7241,0,51,0,255,Closed tree canopy
+7242,55,146,173,255,Sparse tree canopy
+7243,55,146,173,255,Sparse tree canopy
+7247,255,226,130,255,Herbaceous - grassland
+7248,255,226,130,255,Herbaceous - grassland
+7249,130,101,72,255,Shrubland
+7250,180,255,148,255,Open tree canopy
+7256,199,176,129,255,Herbaceous - shrub-steppe
+7260,180,255,148,255,Open tree canopy
+7261,180,255,148,255,Open tree canopy
+7262,180,255,148,255,Open tree canopy
+7263,180,255,148,255,Open tree canopy
+7264,55,146,173,255,Sparse tree canopy
+7265,55,146,173,255,Sparse tree canopy
+7268,180,255,148,255,Open tree canopy
+7270,55,146,173,255,Sparse tree canopy
+7272,180,255,148,255,Open tree canopy
+7286,180,255,148,255,Open tree canopy
+7290,55,146,173,255,Sparse tree canopy
+7291,55,146,173,255,Sparse tree canopy
+7292,0,0,255,255,Non-vegetated
+7295,0,0,255,255,Non-vegetated
+7296,255,122,143,255,No Dominant Lifeform
+7297,255,122,143,255,No Dominant Lifeform
+7298,255,122,143,255,No Dominant Lifeform
+7299,255,122,143,255,No Dominant Lifeform
+7301,0,51,0,255,Closed tree canopy
+7302,0,51,0,255,Closed tree canopy
+7303,0,51,0,255,Closed tree canopy
+7304,0,51,0,255,Closed tree canopy
+7305,0,51,0,255,Closed tree canopy
+7306,0,51,0,255,Closed tree canopy
+7307,0,51,0,255,Closed tree canopy
+7308,180,255,148,255,Open tree canopy
+7309,0,51,0,255,Closed tree canopy
+7310,0,51,0,255,Closed tree canopy
+7311,180,255,148,255,Open tree canopy
+7312,0,51,0,255,Closed tree canopy
+7313,0,51,0,255,Closed tree canopy
+7314,0,51,0,255,Closed tree canopy
+7315,0,51,0,255,Closed tree canopy
+7316,0,51,0,255,Closed tree canopy
+7317,0,51,0,255,Closed tree canopy
+7318,0,51,0,255,Closed tree canopy
+7320,0,51,0,255,Closed tree canopy
+7321,0,51,0,255,Closed tree canopy
+7322,0,51,0,255,Closed tree canopy
+7323,0,51,0,255,Closed tree canopy
+7324,0,51,0,255,Closed tree canopy
+7325,0,51,0,255,Closed tree canopy
+7326,0,51,0,255,Closed tree canopy
+7327,0,51,0,255,Closed tree canopy
+7328,0,51,0,255,Closed tree canopy
+7329,0,51,0,255,Closed tree canopy
+7330,0,51,0,255,Closed tree canopy
+7331,180,255,148,255,Open tree canopy
+7333,0,51,0,255,Closed tree canopy
+7334,0,51,0,255,Closed tree canopy
+7335,0,51,0,255,Closed tree canopy
+7336,0,51,0,255,Closed tree canopy
+7337,0,51,0,255,Closed tree canopy
+7338,180,255,148,255,Open tree canopy
+7339,0,51,0,255,Closed tree canopy
+7340,180,255,148,255,Open tree canopy
+7342,180,255,148,255,Open tree canopy
+7343,0,51,0,255,Closed tree canopy
+7346,180,255,148,255,Open tree canopy
+7347,180,255,148,255,Open tree canopy
+7348,180,255,148,255,Open tree canopy
+7349,180,255,148,255,Open tree canopy
+7350,0,51,0,255,Closed tree canopy
+7351,180,255,148,255,Open tree canopy
+7352,180,255,148,255,Open tree canopy
+7353,0,51,0,255,Closed tree canopy
+7355,180,255,148,255,Open tree canopy
+7356,180,255,148,255,Open tree canopy
+7357,0,51,0,255,Closed tree canopy
+7358,180,255,148,255,Open tree canopy
+7360,0,51,0,255,Closed tree canopy
+7361,0,51,0,255,Closed tree canopy
+7362,0,51,0,255,Closed tree canopy
+7363,180,255,148,255,Open tree canopy
+7364,180,255,148,255,Open tree canopy
+7366,0,51,0,255,Closed tree canopy
+7367,0,51,0,255,Closed tree canopy
+7368,0,51,0,255,Closed tree canopy
+7369,0,51,0,255,Closed tree canopy
+7370,0,51,0,255,Closed tree canopy
+7371,0,51,0,255,Closed tree canopy
+7372,0,51,0,255,Closed tree canopy
+7375,180,255,148,255,Open tree canopy
+7376,0,51,0,255,Closed tree canopy
+7377,180,255,148,255,Open tree canopy
+7378,0,51,0,255,Closed tree canopy
+7379,0,51,0,255,Closed tree canopy
+7380,0,51,0,255,Closed tree canopy
+7381,180,255,148,255,Open tree canopy
+7382,0,51,0,255,Closed tree canopy
+7383,0,51,0,255,Closed tree canopy
+7384,0,51,0,255,Closed tree canopy
+7385,180,255,148,255,Open tree canopy
+7387,130,101,72,255,Shrubland
+7388,130,101,72,255,Shrubland
+7390,130,101,72,255,Shrubland
+7391,130,101,72,255,Shrubland
+7392,130,101,72,255,Shrubland
+7393,130,101,72,255,Shrubland
+7394,55,146,173,255,Sparse tree canopy
+7395,55,146,173,255,Sparse tree canopy
+7396,130,101,72,255,Shrubland
+7397,55,146,173,255,Sparse tree canopy
+7398,55,146,173,255,Sparse tree canopy
+7400,55,146,173,255,Sparse tree canopy
+7401,55,146,173,255,Sparse tree canopy
+7403,55,146,173,255,Sparse tree canopy
+7405,55,146,173,255,Sparse tree canopy
+7406,0,51,0,255,Closed tree canopy
+7407,55,146,173,255,Sparse tree canopy
+7408,55,146,173,255,Sparse tree canopy
+7409,199,176,129,255,Herbaceous - shrub-steppe
+7410,255,226,130,255,Herbaceous - grassland
+7411,255,226,130,255,Herbaceous - grassland
+7412,255,226,130,255,Herbaceous - grassland
+7413,255,226,130,255,Herbaceous - grassland
+7414,255,226,130,255,Herbaceous - grassland
+7415,255,226,130,255,Herbaceous - grassland
+7416,255,226,130,255,Herbaceous - grassland
+7417,255,226,130,255,Herbaceous - grassland
+7418,255,226,130,255,Herbaceous - grassland
+7419,255,226,130,255,Herbaceous - grassland
+7420,255,226,130,255,Herbaceous - grassland
+7421,255,226,130,255,Herbaceous - grassland
+7422,255,226,130,255,Herbaceous - grassland
+7423,255,226,130,255,Herbaceous - grassland
+7424,255,226,130,255,Herbaceous - grassland
+7425,255,226,130,255,Herbaceous - grassland
+7426,255,226,130,255,Herbaceous - grassland
+7428,255,226,130,255,Herbaceous - grassland
+7429,255,226,130,255,Herbaceous - grassland
+7430,255,226,130,255,Herbaceous - grassland
+7431,255,226,130,255,Herbaceous - grassland
+7434,255,226,130,255,Herbaceous - grassland
+7435,255,226,130,255,Herbaceous - grassland
+7436,255,226,130,255,Herbaceous - grassland
+7437,255,226,130,255,Herbaceous - grassland
+7438,255,226,130,255,Herbaceous - grassland
+7439,255,226,130,255,Herbaceous - grassland
+7441,255,226,130,255,Herbaceous - grassland
+7442,255,226,130,255,Herbaceous - grassland
+7444,180,255,148,255,Open tree canopy
+7445,180,255,148,255,Open tree canopy
+7446,180,255,148,255,Open tree canopy
+7447,180,255,148,255,Open tree canopy
+7448,0,51,0,255,Closed tree canopy
+7449,180,255,148,255,Open tree canopy
+7450,180,255,148,255,Open tree canopy
+7451,180,255,148,255,Open tree canopy
+7452,130,101,72,255,Shrubland
+7453,180,255,148,255,Open tree canopy
+7454,180,255,148,255,Open tree canopy
+7455,180,255,148,255,Open tree canopy
+7456,180,255,148,255,Open tree canopy
+7457,180,255,148,255,Open tree canopy
+7458,180,255,148,255,Open tree canopy
+7459,180,255,148,255,Open tree canopy
+7460,180,255,148,255,Open tree canopy
+7461,180,255,148,255,Open tree canopy
+7462,180,255,148,255,Open tree canopy
+7463,0,51,0,255,Closed tree canopy
+7466,180,255,148,255,Open tree canopy
+7467,180,255,148,255,Open tree canopy
+7468,180,255,148,255,Open tree canopy
+7469,180,255,148,255,Open tree canopy
+7471,0,51,0,255,Closed tree canopy
+7472,0,51,0,255,Closed tree canopy
+7473,180,255,148,255,Open tree canopy
+7474,180,255,148,255,Open tree canopy
+7475,180,255,148,255,Open tree canopy
+7476,180,255,148,255,Open tree canopy
+7481,130,101,72,255,Shrubland
+7482,255,226,130,255,Herbaceous - grassland
+7483,255,226,130,255,Herbaceous - grassland
+7484,255,226,130,255,Herbaceous - grassland
+7485,255,226,130,255,Herbaceous - grassland
+7486,255,226,130,255,Herbaceous - grassland
+7487,255,226,130,255,Herbaceous - grassland
+7488,255,226,130,255,Herbaceous - grassland
+7489,255,226,130,255,Herbaceous - grassland
+7500,100,100,100,255,Sparsely vegetated
+7501,180,255,148,255,Open tree canopy
+7502,0,51,0,255,Closed tree canopy
+7503,255,226,130,255,Herbaceous - grassland
+7504,255,226,130,255,Herbaceous - grassland
+7505,180,255,148,255,Open tree canopy
+7506,180,255,148,255,Open tree canopy
+7507,180,255,148,255,Open tree canopy
+7509,0,51,0,255,Closed tree canopy
+7510,180,255,148,255,Open tree canopy
+7511,0,51,0,255,Closed tree canopy
+7512,0,51,0,255,Closed tree canopy
+7513,180,255,148,255,Open tree canopy
+7514,255,226,130,255,Herbaceous - grassland
+7515,255,226,130,255,Herbaceous - grassland
+7516,255,226,130,255,Herbaceous - grassland
+7517,180,255,148,255,Open tree canopy
+7518,0,51,0,255,Closed tree canopy
+7519,180,255,148,255,Open tree canopy
+7522,130,101,72,255,Shrubland
+7523,0,51,0,255,Closed tree canopy
+7524,0,51,0,255,Closed tree canopy
+7525,0,51,0,255,Closed tree canopy
+7527,0,51,0,255,Closed tree canopy
+7545,180,255,148,255,Open tree canopy
+7546,0,51,0,255,Closed tree canopy
+7547,180,255,148,255,Open tree canopy
+7548,180,255,148,255,Open tree canopy
+7556,180,255,148,255,Open tree canopy
+7557,180,255,148,255,Open tree canopy
+7560,130,101,72,255,Shrubland
+7561,255,226,130,255,Herbaceous - grassland
+7562,180,255,148,255,Open tree canopy
+7563,130,101,72,255,Shrubland
+7564,255,226,130,255,Herbaceous - grassland
+7565,130,101,72,255,Shrubland
+7566,255,226,130,255,Herbaceous - grassland
+7567,255,226,130,255,Herbaceous - grassland
+7571,180,255,148,255,Open tree canopy
+7573,180,255,148,255,Open tree canopy
+7578,255,226,130,255,Herbaceous - grassland
+7582,0,51,0,255,Closed tree canopy
+7583,0,51,0,255,Closed tree canopy
+7584,0,51,0,255,Closed tree canopy
+7585,0,51,0,255,Closed tree canopy
+7586,0,51,0,255,Closed tree canopy
+7587,0,51,0,255,Closed tree canopy
+7588,180,255,148,255,Open tree canopy
+7589,180,255,148,255,Open tree canopy
+7590,180,255,148,255,Open tree canopy
+7591,180,255,148,255,Open tree canopy
+7662,255,226,130,255,Herbaceous - grassland
+7663,130,101,72,255,Shrubland
+7668,255,226,130,255,Herbaceous - grassland
+7733,100,100,100,255,Sparsely vegetated
+7734,100,100,100,255,Sparsely vegetated
+7735,0,0,255,255,Non-vegetated
+7861,180,255,148,255,Open tree canopy
+7867,180,255,148,255,Open tree canopy
+7900,180,255,148,255,Open tree canopy
+7901,180,255,148,255,Open tree canopy
+7902,180,255,148,255,Open tree canopy
+7903,255,226,130,255,Herbaceous - grassland
+7904,130,101,72,255,Shrubland
+7905,180,255,148,255,Open tree canopy
+7906,180,255,148,255,Open tree canopy
+7907,180,255,148,255,Open tree canopy
+7908,255,226,130,255,Herbaceous - grassland
+7909,130,101,72,255,Shrubland
+7910,180,255,148,255,Open tree canopy
+7911,180,255,148,255,Open tree canopy
+7912,180,255,148,255,Open tree canopy
+7913,255,226,130,255,Herbaceous - grassland
+7914,130,101,72,255,Shrubland
+7915,180,255,148,255,Open tree canopy
+7916,180,255,148,255,Open tree canopy
+7917,180,255,148,255,Open tree canopy
+7918,255,226,130,255,Herbaceous - grassland
+7919,130,101,72,255,Shrubland
+7920,180,255,148,255,Open tree canopy
+7921,180,255,148,255,Open tree canopy
+7922,180,255,148,255,Open tree canopy
+7923,130,101,72,255,Shrubland
+7924,255,226,130,255,Herbaceous - grassland
+7925,180,255,148,255,Open tree canopy
+7926,180,255,148,255,Open tree canopy
+7927,180,255,148,255,Open tree canopy
+7928,130,101,72,255,Shrubland
+7929,255,226,130,255,Herbaceous - grassland
+7930,180,255,148,255,Open tree canopy
+7931,180,255,148,255,Open tree canopy
+7932,180,255,148,255,Open tree canopy
+7933,130,101,72,255,Shrubland
+7934,255,226,130,255,Herbaceous - grassland
+7935,180,255,148,255,Open tree canopy
+7936,180,255,148,255,Open tree canopy
+7937,180,255,148,255,Open tree canopy
+7938,130,101,72,255,Shrubland
+7939,255,226,130,255,Herbaceous - grassland
+7940,180,255,148,255,Open tree canopy
+7941,180,255,148,255,Open tree canopy
+7942,180,255,148,255,Open tree canopy
+7943,130,101,72,255,Shrubland
+7944,255,226,130,255,Herbaceous - grassland
+7945,180,255,148,255,Open tree canopy
+7946,180,255,148,255,Open tree canopy
+7947,180,255,148,255,Open tree canopy
+7948,130,101,72,255,Shrubland
+7949,255,226,130,255,Herbaceous - grassland
+7950,180,255,148,255,Open tree canopy
+7951,180,255,148,255,Open tree canopy
+7952,180,255,148,255,Open tree canopy
+7953,130,101,72,255,Shrubland
+7954,255,226,130,255,Herbaceous - grassland
+7955,180,255,148,255,Open tree canopy
+7956,180,255,148,255,Open tree canopy
+7957,180,255,148,255,Open tree canopy
+7958,130,101,72,255,Shrubland
+7959,255,226,130,255,Herbaceous - grassland
+7960,180,255,148,255,Open tree canopy
+7961,130,101,72,255,Shrubland
+7962,130,101,72,255,Shrubland
+7963,255,226,130,255,Herbaceous - grassland
+7964,255,226,130,255,Herbaceous - grassland
+7965,255,226,130,255,Herbaceous - grassland
+7966,255,226,130,255,Herbaceous - grassland
+7967,255,226,130,255,Herbaceous - grassland
+7968,255,226,130,255,Herbaceous - grassland
+7970,180,255,148,255,Open tree canopy
+7971,130,101,72,255,Shrubland
+7972,130,101,72,255,Shrubland
+7973,255,226,130,255,Herbaceous - grassland
+7974,255,226,130,255,Herbaceous - grassland
+7975,255,226,130,255,Herbaceous - grassland
+7976,255,226,130,255,Herbaceous - grassland
+7977,255,226,130,255,Herbaceous - grassland
+7978,255,226,130,255,Herbaceous - grassland
+7979,255,226,130,255,Herbaceous - grassland
+7980,180,255,148,255,Open tree canopy
+7981,130,101,72,255,Shrubland
+7982,130,101,72,255,Shrubland
+7983,255,226,130,255,Herbaceous - grassland
+7984,255,226,130,255,Herbaceous - grassland
+7985,255,226,130,255,Herbaceous - grassland
+7986,255,226,130,255,Herbaceous - grassland
+7987,255,226,130,255,Herbaceous - grassland
+7988,255,226,130,255,Herbaceous - grassland
+7989,255,226,130,255,Herbaceous - grassland
+7990,180,255,148,255,Open tree canopy
+7991,130,101,72,255,Shrubland
+7992,130,101,72,255,Shrubland
+7993,255,226,130,255,Herbaceous - grassland
+7994,255,226,130,255,Herbaceous - grassland
+7995,255,226,130,255,Herbaceous - grassland
+7996,255,226,130,255,Herbaceous - grassland
+7997,255,226,130,255,Herbaceous - grassland
+7998,255,226,130,255,Herbaceous - grassland
+7999,255,226,130,255,Herbaceous - grassland
+9001,100,100,100,255,Sparsely vegetated
+9002,180,255,148,255,Open tree canopy
+9003,180,255,148,255,Open tree canopy
+9004,100,100,100,255,Sparsely vegetated
+9005,255,226,130,255,Herbaceous - grassland
+9006,100,100,100,255,Sparsely vegetated
+9008,100,100,100,255,Sparsely vegetated
+9009,100,100,100,255,Sparsely vegetated
+9010,100,100,100,255,Sparsely vegetated
+9011,255,226,130,255,Herbaceous - grassland
+9012,180,255,148,255,Open tree canopy
+9014,180,255,148,255,Open tree canopy
+9015,180,255,148,255,Open tree canopy
+9016,100,100,100,255,Sparsely vegetated
+9017,255,226,130,255,Herbaceous - grassland
+9018,100,100,100,255,Sparsely vegetated
+9019,180,255,148,255,Open tree canopy
+9021,130,101,72,255,Shrubland
+9022,130,101,72,255,Shrubland
+9023,100,100,100,255,Sparsely vegetated
+9024,100,100,100,255,Sparsely vegetated
+9025,255,226,130,255,Herbaceous - grassland
+9026,180,255,148,255,Open tree canopy
+9027,255,226,130,255,Herbaceous - grassland
+9028,180,255,148,255,Open tree canopy
+9029,255,226,130,255,Herbaceous - grassland
+9030,180,255,148,255,Open tree canopy
+9032,100,100,100,255,Sparsely vegetated
+9033,100,100,100,255,Sparsely vegetated
+9034,180,255,148,255,Open tree canopy
+9035,180,255,148,255,Open tree canopy
+9041,180,255,148,255,Open tree canopy
+9042,180,255,148,255,Open tree canopy
+9044,255,226,130,255,Herbaceous - grassland
+9045,255,226,130,255,Herbaceous - grassland
+9047,255,226,130,255,Herbaceous - grassland
+9050,180,255,148,255,Open tree canopy
+9051,180,255,148,255,Open tree canopy
+9055,130,101,72,255,Shrubland
+9056,130,101,72,255,Shrubland
+9057,255,226,130,255,Herbaceous - grassland
+9059,180,255,148,255,Open tree canopy
+9060,180,255,148,255,Open tree canopy
+9061,100,100,100,255,Sparsely vegetated
+9062,100,100,100,255,Sparsely vegetated
+9063,255,226,130,255,Herbaceous - grassland
+9064,100,100,100,255,Sparsely vegetated
+9065,100,100,100,255,Sparsely vegetated
+9066,180,255,148,255,Open tree canopy
+9068,180,255,148,255,Open tree canopy
+9069,180,255,148,255,Open tree canopy
+9071,180,255,148,255,Open tree canopy
+9073,100,100,100,255,Sparsely vegetated
+9075,180,255,148,255,Open tree canopy
+9077,255,226,130,255,Herbaceous - grassland
+9080,180,255,148,255,Open tree canopy
+9082,180,255,148,255,Open tree canopy
+9083,180,255,148,255,Open tree canopy
+9085,180,255,148,255,Open tree canopy
+9088,0,51,0,255,Closed tree canopy
+9089,0,51,0,255,Closed tree canopy
+9091,100,100,100,255,Sparsely vegetated
+9092,180,255,148,255,Open tree canopy
+9094,255,226,130,255,Herbaceous - grassland
+9095,255,226,130,255,Herbaceous - grassland
+9097,100,100,100,255,Sparsely vegetated
+9098,255,226,130,255,Herbaceous - grassland
+9099,100,100,100,255,Sparsely vegetated
+9100,100,100,100,255,Sparsely vegetated
+9101,100,100,100,255,Sparsely vegetated
+9102,255,226,130,255,Herbaceous - grassland
+9103,100,100,100,255,Sparsely vegetated
+9104,255,226,130,255,Herbaceous - grassland
+9105,255,226,130,255,Herbaceous - grassland
+9106,180,255,148,255,Open tree canopy
+9110,100,100,100,255,Sparsely vegetated
+9111,55,146,173,255,Sparse tree canopy
+9112,55,146,173,255,Sparse tree canopy
+9113,100,100,100,255,Sparsely vegetated
+9114,255,226,130,255,Herbaceous - grassland
+9115,100,100,100,255,Sparsely vegetated
+9117,180,255,148,255,Open tree canopy
+9118,255,226,130,255,Herbaceous - grassland
+9119,100,100,100,255,Sparsely vegetated
+9120,255,226,130,255,Herbaceous - grassland
+9121,130,101,72,255,Shrubland
+9122,100,100,100,255,Sparsely vegetated
+9125,100,100,100,255,Sparsely vegetated
+9126,100,100,100,255,Sparsely vegetated
+9129,180,255,148,255,Open tree canopy
+9130,100,100,100,255,Sparsely vegetated
+9133,180,255,148,255,Open tree canopy
+9134,100,100,100,255,Sparsely vegetated
+9136,255,226,130,255,Herbaceous - grassland
+9137,255,226,130,255,Herbaceous - grassland
+9138,180,255,148,255,Open tree canopy
+9139,180,255,148,255,Open tree canopy
+9140,180,255,148,255,Open tree canopy
+9141,180,255,148,255,Open tree canopy
+9142,255,226,130,255,Herbaceous - grassland
+9143,255,226,130,255,Herbaceous - grassland
+9145,100,100,100,255,Sparsely vegetated
+9146,100,100,100,255,Sparsely vegetated
+9147,100,100,100,255,Sparsely vegetated
+9148,180,255,148,255,Open tree canopy
+9150,100,100,100,255,Sparsely vegetated
+9151,100,100,100,255,Sparsely vegetated
+9152,180,255,148,255,Open tree canopy
+9153,100,100,100,255,Sparsely vegetated
+9154,180,255,148,255,Open tree canopy
+9160,100,100,100,255,Sparsely vegetated
+9165,180,255,148,255,Open tree canopy
+9166,255,226,130,255,Herbaceous - grassland
+9167,199,176,129,255,Herbaceous - shrub-steppe
+9170,0,51,0,255,Closed tree canopy
+9171,100,100,100,255,Sparsely vegetated
+9173,100,100,100,255,Sparsely vegetated
+9174,180,255,148,255,Open tree canopy
+9175,100,100,100,255,Sparsely vegetated
+9176,255,226,130,255,Herbaceous - grassland
+9177,180,255,148,255,Open tree canopy
+9178,180,255,148,255,Open tree canopy
+9179,180,255,148,255,Open tree canopy
+9180,255,226,130,255,Herbaceous - grassland
+9181,0,51,0,255,Closed tree canopy
+9182,255,226,130,255,Herbaceous - grassland
+9183,255,226,130,255,Herbaceous - grassland
+9187,180,255,148,255,Open tree canopy
+9188,180,255,148,255,Open tree canopy
+9189,255,226,130,255,Herbaceous - grassland
+9190,180,255,148,255,Open tree canopy
+9191,255,226,130,255,Herbaceous - grassland
+9192,180,255,148,255,Open tree canopy
+9193,100,100,100,255,Sparsely vegetated
+9195,180,255,148,255,Open tree canopy
+9197,255,226,130,255,Herbaceous - grassland
+9198,180,255,148,255,Open tree canopy
+9202,255,226,130,255,Herbaceous - grassland
+9203,255,226,130,255,Herbaceous - grassland
+9207,180,255,148,255,Open tree canopy
+9208,55,146,173,255,Sparse tree canopy
+9209,180,255,148,255,Open tree canopy
+9210,180,255,148,255,Open tree canopy
+9211,180,255,148,255,Open tree canopy
+9213,100,100,100,255,Sparsely vegetated
+9216,180,255,148,255,Open tree canopy
+9218,180,255,148,255,Open tree canopy
+9220,180,255,148,255,Open tree canopy
+9221,100,100,100,255,Sparsely vegetated
+9222,180,255,148,255,Open tree canopy
+9223,180,255,148,255,Open tree canopy
+9224,180,255,148,255,Open tree canopy
+9226,100,100,100,255,Sparsely vegetated
+9227,100,100,100,255,Sparsely vegetated
+9228,255,226,130,255,Herbaceous - grassland
+9229,180,255,148,255,Open tree canopy
+9230,180,255,148,255,Open tree canopy
+9231,180,255,148,255,Open tree canopy
+9232,180,255,148,255,Open tree canopy
+9233,180,255,148,255,Open tree canopy
+9234,100,100,100,255,Sparsely vegetated
+9235,100,100,100,255,Sparsely vegetated
+9237,255,226,130,255,Herbaceous - grassland
+9239,255,226,130,255,Herbaceous - grassland
+9240,100,100,100,255,Sparsely vegetated
+9241,255,226,130,255,Herbaceous - grassland
+9242,180,255,148,255,Open tree canopy
+9243,255,226,130,255,Herbaceous - grassland
+9244,100,100,100,255,Sparsely vegetated
+9245,180,255,148,255,Open tree canopy
+9246,100,100,100,255,Sparsely vegetated
+9247,180,255,148,255,Open tree canopy
+9248,180,255,148,255,Open tree canopy
+9249,180,255,148,255,Open tree canopy
+9250,0,51,0,255,Closed tree canopy
+9251,100,100,100,255,Sparsely vegetated
+9256,180,255,148,255,Open tree canopy
+9257,100,100,100,255,Sparsely vegetated
+9258,180,255,148,255,Open tree canopy
+9259,180,255,148,255,Open tree canopy
+9260,180,255,148,255,Open tree canopy
+9261,255,226,130,255,Herbaceous - grassland
+9262,100,100,100,255,Sparsely vegetated
+9265,100,100,100,255,Sparsely vegetated
+9266,255,226,130,255,Herbaceous - grassland
+9268,180,255,148,255,Open tree canopy
+9270,130,101,72,255,Shrubland
+9272,255,226,130,255,Herbaceous - grassland
+9273,100,100,100,255,Sparsely vegetated
+9274,255,226,130,255,Herbaceous - grassland
+9275,255,226,130,255,Herbaceous - grassland
+9282,180,255,148,255,Open tree canopy
+9283,180,255,148,255,Open tree canopy
+9284,180,255,148,255,Open tree canopy
+9288,0,51,0,255,Closed tree canopy
+9289,180,255,148,255,Open tree canopy
+9290,100,100,100,255,Sparsely vegetated
+9295,0,51,0,255,Closed tree canopy
+9301,255,226,130,255,Herbaceous - grassland
+9302,180,255,148,255,Open tree canopy
+9304,0,51,0,255,Closed tree canopy
+9307,255,226,130,255,Herbaceous - grassland
+9308,255,226,130,255,Herbaceous - grassland
+9309,255,226,130,255,Herbaceous - grassland
+9310,130,101,72,255,Shrubland
+9311,130,101,72,255,Shrubland
+9312,180,255,148,255,Open Tree Canopy
+9313,0,51,0,255,Closed tree canopy
+9314,0,51,0,255,Closed tree canopy
+9315,180,255,148,255,Open tree canopy
+9316,130,101,72,255,Shrubland
+9317,130,101,72,255,Shrubland
+9318,255,226,130,255,Herbaceous - grassland
+9319,180,255,148,255,Open tree canopy
+9320,180,255,148,255,Open tree canopy
+9321,180,255,148,255,Open tree canopy
+9322,0,51,0,255,Closed tree canopy
+9323,130,101,72,255,Shrubland
+9324,255,226,130,255,Herbaceous - grassland
+9325,130,101,72,255,Shrubland
+9326,130,101,72,255,Shrubland
+9327,180,255,148,255,Open tree canopy
+9328,130,101,72,255,Shrubland
+9329,255,226,130,255,Herbaceous - grassland
+9332,180,255,148,255,Open tree canopy
+9336,130,101,72,255,Shrubland
+9337,130,101,72,255,Shrubland
+9502,180,255,148,255,Open tree canopy
+9503,180,255,148,255,Open tree canopy
+9504,180,255,148,255,Open tree canopy
+9505,180,255,148,255,Open tree canopy
+9512,180,255,148,255,Open tree canopy
+9513,180,255,148,255,Open tree canopy
+9514,180,255,148,255,Open tree canopy
+9515,180,255,148,255,Open tree canopy
+9516,180,255,148,255,Open tree canopy
+9519,180,255,148,255,Open tree canopy
+9526,180,255,148,255,Open tree canopy
+9527,180,255,148,255,Open tree canopy
+9528,180,255,148,255,Open tree canopy
+9529,180,255,148,255,Open tree canopy
+9533,180,255,148,255,Open tree canopy
+9534,180,255,148,255,Open tree canopy
+9535,180,255,148,255,Open tree canopy
+9541,180,255,148,255,Open tree canopy
+9542,180,255,148,255,Open tree canopy
+9559,180,255,148,255,Open tree canopy
+9560,180,255,148,255,Open tree canopy
+9561,180,255,148,255,Open tree canopy
+9562,180,255,148,255,Open tree canopy
+9568,180,255,148,255,Open tree canopy
+9569,180,255,148,255,Open tree canopy
+9570,180,255,148,255,Open tree canopy
+9571,180,255,148,255,Open tree canopy
+9582,180,255,148,255,Open tree canopy
+9583,180,255,148,255,Open tree canopy
+9585,180,255,148,255,Open tree canopy
+9586,180,255,148,255,Open tree canopy
+9592,130,101,72,255,Shrubland
+9593,255,226,130,255,Herbaceous - grassland
+9601,255,226,130,255,Herbaceous - grassland
+9604,255,226,130,255,Herbaceous - grassland
+9605,255,226,130,255,Herbaceous - grassland
+9611,55,146,173,255,Sparse tree canopy
+9617,180,255,148,255,Open tree canopy
+9620,255,226,130,255,Herbaceous - grassland
+9629,180,255,148,255,Open tree canopy
+9633,180,255,148,255,Open tree canopy
+9639,180,255,148,255,Open tree canopy
+9640,180,255,148,255,Open tree canopy
+9641,180,255,148,255,Open tree canopy
+9642,180,255,148,255,Open tree canopy
+9652,180,255,148,255,Open tree canopy
+9654,180,255,148,255,Open tree canopy
+9667,199,176,129,255,Herbaceous - shrub-steppe
+9677,180,255,148,255,Open tree canopy
+9679,180,255,148,255,Open tree canopy
+9682,255,226,130,255,Herbaceous - grassland
+9683,255,226,130,255,Herbaceous - grassland
+9695,180,255,148,255,Open tree canopy
+9696,180,255,148,255,Open tree canopy
+9707,180,255,148,255,Open tree canopy
+9708,180,255,148,255,Open tree canopy
+9722,180,255,148,255,Open tree canopy
+9723,180,255,148,255,Open tree canopy
+9724,180,255,148,255,Open tree canopy
+9725,180,255,148,255,Open tree canopy
+9726,180,255,148,255,Open tree canopy
+9730,130,101,72,255,Shrubland
+9731,130,101,72,255,Shrubland
+9732,255,226,130,255,Herbaceous - grassland
+9733,255,226,130,255,Herbaceous - grassland
+9742,180,255,148,255,Open tree canopy
+9743,180,255,148,255,Open tree canopy
+9758,180,255,148,255,Open tree canopy
+9759,180,255,148,255,Open tree canopy
+9760,180,255,148,255,Open tree canopy
+9761,180,255,148,255,Open tree canopy
+9766,255,226,130,255,Herbaceous - grassland
+9774,255,226,130,255,Herbaceous - grassland
+9775,255,226,130,255,Herbaceous - grassland
+9782,180,255,148,255,Open tree canopy
+9783,180,255,148,255,Open tree canopy
+9784,180,255,148,255,Open tree canopy
+9785,180,255,148,255,Open tree canopy
+9810,255,226,130,255,Herbaceous - grassland
+9811,255,226,130,255,Herbaceous - grassland
+9816,255,226,130,255,Herbaceous - grassland
+9817,255,226,130,255,Herbaceous - grassland
+9823,255,226,130,255,Herbaceous - grassland
+9825,255,226,130,255,Herbaceous - grassland
+9826,255,226,130,255,Herbaceous - grassland
+9827,130,101,72,255,Shrubland
+9828,255,226,130,255,Herbaceous - grassland
+9829,255,226,130,255,Herbaceous - grassland
+9993,255,226,130,255,Herbaceous - grassland
+9994,255,226,130,255,Herbaceous - grassland

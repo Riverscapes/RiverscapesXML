@@ -122,7 +122,7 @@ def validate_qramp(qramp: str):
             "Interpolation value must be one of: 'DISCRETE', 'EXACT', 'INTERPOLATED'. Got: {}".format(lines[1]))
         result = False
 
-    pat = "^(.+?),(.+?),(.+?),(.+?),(.+?),(.+)$"
+    pat = "^(.+),([0-9]{1,3},){4}(.+)$"
     for cline in lines[2:]:
         # Blank lines are allowed at the end of the file
         # TODO: right now we're just ignoring blank lines anywhere
