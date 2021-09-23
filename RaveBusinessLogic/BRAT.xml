@@ -24,6 +24,7 @@
               <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="opportunity" id="opportunity" />
             </Children>
           </Node>
+          <Node label="BRAT Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
       <Node label="Intermediates" xpath="Realizations/BRAT/Outputs">
@@ -73,6 +74,7 @@
               <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_Canal" />
             </Children>
           </Node>
+          <Node label="BRAT Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
       <Node label="Inputs" xpath="Realizations/BRAT/Inputs">
@@ -111,6 +113,7 @@
               <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
             </Children>
           </Node>
+          <Node label="BRAT Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
     </Children>
