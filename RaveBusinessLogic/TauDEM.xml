@@ -11,6 +11,7 @@
                   <Node label="Channel Line Input" xpath="Geopackage/Layers/Vector[@id='CHANNEL_LINES']" type="line" symbology="channel_line_network" id="channel_line" />
                   <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
                   <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+                  <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
                 </Children>
             </Node>
             <Node label="Intermediates" xpath="Intermediates">
