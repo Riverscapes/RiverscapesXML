@@ -22,7 +22,7 @@
     <provider>
       <resampling maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
     </provider>
-    <rasterrenderer classificationMin="0" type="singlebandpseudocolor" band="1" nodataColor="" classificationMax="30" opacity="0.6" alphaBand="-1">
+    <rasterrenderer classificationMin="0" type="singlebandpseudocolor" band="1" nodataColor="" classificationMax="30" opacity="0.4" alphaBand="-1">
       <rasterTransparency/>
       <minMaxOrigin>
         <limits>None</limits>
