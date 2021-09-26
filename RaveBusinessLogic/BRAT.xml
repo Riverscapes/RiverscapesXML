@@ -117,6 +117,7 @@
           <Node label="BRAT Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
+      <Node label="Log File" xpath="Realizations/BRAT/LogFile" type="file" />
     </Children>
   </Node>
   <Views default="BRAT_exOutputs">
