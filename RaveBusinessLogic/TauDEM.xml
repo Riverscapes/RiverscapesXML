@@ -46,6 +46,7 @@
                     </Node>
                 </Children>
             </Node>
+            <Node label="Log File" xpath="LogFile" type="file" />
         </Children>
     </Node>
     <Views default="DEFAULT">
