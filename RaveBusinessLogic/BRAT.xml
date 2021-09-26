@@ -8,6 +8,7 @@
       <Node label="Project Report"  xpath="Realizations/BRAT/Outputs/HTMLFile" type="report" />
       <Node label="Outputs" xpath="Realizations/BRAT/Outputs">
         <Children collapsed="true">
+          <!-- The SQLite DB is no longer present, but left this for some of the legacy projects. TODO - Remove when all sqlBRAT projects replaced.-->
           <Node xpathlabel="Name" xpath="SQLiteDB" type="file" />
           <Node label="Capacity">
             <Children>
