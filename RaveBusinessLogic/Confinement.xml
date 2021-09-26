@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
   <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>Confinement</Name>
   <ProjectType>CONFINEMENT</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Confinement">
     <Children collapsed="false">
-      <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="report" />
+      <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs">
         <Children collapsed="false">
           <Node label="Confinement Type" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@id='CONFINEMENT_RAW']" type="line" id="confinement_raw" symbology="confinement_raw" />
