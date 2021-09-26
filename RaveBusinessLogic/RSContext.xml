@@ -8,8 +8,8 @@
       <Node label="Project Report" xpath="HTMLFile[@id='REPORT']" type="report" />
       <Node label="Transportation Local">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Vector[@id='Roads']" type="line" symbology="roads" />
-          <Node xpathlabel="Name" xpath="Vector[@id='Rail']" type="line" symbology="railroads" />
+          <Node xpathlabel="Name" xpath="Vector[@id='Roads']" type="line" symbology="roads" id="roads" />
+          <Node xpathlabel="Name" xpath="Vector[@id='Rail']" type="line" symbology="railroads" id="railroads"/>
         </Children>
       </Node>
       <Node label="Hydrology">
@@ -112,21 +112,28 @@
           <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
         </Children>
       </Node>
+      <Node label="Log File" xpath="LogFile" type="file" />
     </Children>
   </Node>
   <Views default="Default">
-    <View name="Default View" id="Default">
+    <View name="Hydrology" id="Default">
       <Layers>
         <Layer id="huc8" />
         <Layer id="perrenial" />
         <Layer id="hs" />
       </Layers>
     </View>
-    <View name="Topography View" id="Topography">
+    <View name="Topography" id="Topography">
       <Layers>
         <Layer id="perrenial" />
         <Layer id="dem" />
         <Layer id="hs" />
+      </Layers>
+    </View>
+    <View name="Transportation" id="Transportation">
+      <Layers>
+        <Layer id="roads" />
+        <Layer id="railroads" />
       </Layers>
     </View>
   </Views>
