@@ -1,0 +1,15 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(180, 75%, 79%)", "Canals and Ditches"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Canals and Ditches",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "canals-0b4qbw",
+      "paint": {"line-color": "hsl(180, 75%, 79%)"}
+  }
+  ]
+}
