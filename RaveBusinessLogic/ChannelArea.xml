@@ -11,6 +11,7 @@
                   <Node label="NHD Flowlines" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" id="flowlines" symbology="FLOWLINES" />
                   <Node label="NHD Flow Areas" xpath="Geopackage/Layers/Vector[@id='FLOWAREAS']" type="polygon" id="flowareas" symbology="FLOWAREAS" />
                   <Node label="NHD Waterbody Areas" xpath="Geopackage/Layers/Vector[@id='WATER_BODIES']" type="polygon" id="waterbodies" symbology="WATER_BODIES" />
+                  <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
                 </Children>
             </Node>
             <Node label="Intermediates" xpath="Intermediates">
@@ -22,13 +23,14 @@
                   <Node label="Bankfull Network" xpath="Geopackage/Layers/Vector[@id='BANKFULL_NETWORK']" type="polygon" id="bankfull_network" symbology="BANKFULL_NETWORK" />
                   <Node label="Bankfull Polygons" xpath="Geopackage/Layers/Vector[@id='BANKFULL_POLYGONS']" type="polygon" id="bankfull_polygons" symbology="BANKFULL_POLYGONS" />
                   <Node label="Difference Polygons" xpath="Geopackage/Layers/Vector[@id='DIFFERENCE_POLYGONS']" type="polygon" id="difference_polygons" symbology="DIFFERENCE_POLYGONS" />
+                  <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
                 </Children>
             </Node>
             <Node label="Outputs" xpath="Outputs">
                 <Children collapsed="false">
                   <Node label="Channel Area (hollow)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea_hollow" />
                   <Node label="Channel Area (filled)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
-                  <Node label="Channel Area Project Report" xpath="HTMLFile[@id='REPORT']" type="report" />  
+                  <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
                 </Children>
             </Node>
             <Node label="Log File" xpath="LogFile" type="file" />
