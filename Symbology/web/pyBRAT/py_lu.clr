@@ -1,0 +1,6 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:DISCRETE
+0,0,97,0,255,Not,Developed
+0.33,164,196,0,255,Agriculture:,Lower,Intensity
+0.66,255,187,0,255,Agriculture:,Higher,Intensity
+1,255,38,0,255,Developed/Urban
