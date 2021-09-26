@@ -5,8 +5,7 @@
     <ProjectType>ChannelArea</ProjectType>
     <Node xpathlabel="Name" xpath="Realizations/ChannelArea">
         <Children collapsed="false">
-            
-            
+            <Node label="Project Report" xpath="Outputs/HTMLFile[@id='REPORT']" type="report" />  
             <Node label="Inputs" xpath="Inputs">
                 <Children collapsed="true">
                   <Node label="NHD Flowlines" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" id="flowlines" symbology="FLOWLINES" />
@@ -32,7 +31,7 @@
                   <Node label="Channel Area Project Report" xpath="HTMLFile[@id='REPORT']" type="report" />  
                 </Children>
             </Node>
-            <Node label="Channel Area Log File" xpath="LogFile" type="file" />
+            <Node label="Log File" xpath="LogFile" type="file" />
         </Children>
     </Node>
     <Views default="DEFAULT">
