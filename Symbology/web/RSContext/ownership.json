@@ -1,0 +1,48 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(60, 100%, 87%)", "Private"],
+    ["hsl(120, 66%, 28%)", "National Park Service"],
+    ["hsl(193, 100%, 77%)", "Fish and Wildlife Service"],
+    ["hsl(120, 29%, 58%)", "US Forest Service"],
+    ["hsl(60, 100%, 74%)", "Other"],
+    ["hsl(211, 59%, 65%)", "State"],
+    ["hsl(40, 100%, 33%)", "Bureau of Land Management"],
+    ["hsl(164, 100%, 45%)", "Bureau of Indian Affairs"],
+    ["hsl(40, 85%, 65%)", "Bureau of Reclamation"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Land Ownership",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Ownership-969qco",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "ADMIN_AGEN"],
+              ["PVT"],
+              "hsl(60, 100%, 87%)",
+              ["NPS"],
+              "hsl(120, 66%, 28%)",
+              ["FWS"],
+              "hsl(193, 100%, 77%)",
+              ["USFS"],
+              "hsl(120, 29%, 58%)",
+              ["UND"],
+              "hsl(60, 100%, 74%)",
+              ["ST"],
+              "hsl(211, 59%, 65%)",
+              ["BLM"],
+              "hsl(40, 100%, 33%)",
+              ["BIA"],
+              "hsl(164, 100%, 45%)",
+              ["USBR"],
+              "hsl(40, 85%, 65%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

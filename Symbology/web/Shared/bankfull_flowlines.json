@@ -1,0 +1,53 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+  ],
+  "layerStyles": [
+    {
+      "id": "Estimated Bankfull Width (m) ",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Network-7yq1zj",
+      "layout": {},
+      "paint": {
+          "line-width": [
+              "interpolate",
+              ["linear"],
+              ["get", "BFwidth"],
+              0,
+              0.25,
+              1,
+              0.25,
+              1.00001,
+              0.5,
+              2,
+              0.5,
+              2.00001,
+              0.75,
+              5,
+              0.75,
+              5.00001,
+              1,
+              10,
+              1,
+              10.00001,
+              1.25,
+              25,
+              1.25,
+              25.00001,
+              1.5,
+              500,
+              1.5
+          ]
+      }
+  },
+  {
+      "id": "Estimated Bankfull Width - color",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Network-7yq1zj",
+      "layout": {},
+      "paint": {"line-color": "hsl(216, 100%, 45%)"}
+  }
+  ]
+}
