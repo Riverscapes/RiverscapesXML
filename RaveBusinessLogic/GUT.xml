@@ -40,7 +40,7 @@
 									<Children collapsed="true">
 										<Node xpathlabel="Name" xpath="Detrended" type="raster" symbology="detrendDEM" transparency="40" />
 										<Node xpathlabel="Name" xpath="DEM" type="raster" symbology="dem" transparency="40" />
-										<Node xpathlabel="Name" xpath="DEMHillshade" type="raster" symbology="" />
+										<Node xpathlabel="Name" xpath="DEMHillshade" type="raster" symbology="hillshade" />
 									</Children>
 								</Node>
 							</Children>

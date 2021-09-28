@@ -120,7 +120,7 @@
               <Node label="Flow Accumulation" xpath="Raster[@id='DR']" type="raster" symbology="py_flow_accumulation" transparency="40" />
               <Node label="Slope" xpath="Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
               <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" />
-              <Node label="Hillshade" xpath="Raster[@id='HS']" type="raster" symbology="Hillshade" id="hillshade" />
+              <Node label="Hillshade" xpath="Raster[@id='HS']" type="raster" symbology="hillshade" id="hillshade" />
             </Children>
           </Node>
         </Children>

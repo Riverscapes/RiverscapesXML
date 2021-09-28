@@ -110,7 +110,7 @@
       </Node>
       <Node label="Hillshade">
         <Children collapsed="false">
-          <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="" id="hs" />
+          <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
         </Children>
       </Node>
     </Children>
