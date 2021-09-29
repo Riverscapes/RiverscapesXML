@@ -61,7 +61,7 @@ def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
         jsonschema.validate(json_obj, schema)
     except ValidationError as e:
         errors.append(
-            "JSON Did not validate against schema: {}".format(e.message))
+            "JSON Did not validate against schema: '{}' in object: {}".format(e.message, e.instance))
         return False, errors
 
     if len(json_obj['layerStyles']) < 1:
@@ -70,21 +70,17 @@ def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
     else:
         for o in json_obj['layerStyles']:
             # Check that we have all the right keys
-            for k in ['id', 'type', 'source', 'source-layer', 'layout', 'paint']:
-                if k not in o:
+            if result is True:
+                # Check for non-vector types
+                # Check for mapbox stock layers
+                if 'mapbox://' in o['source']:
                     result = False
-                    errors.append('Symbology is missing key: {}'.format(k))
-                if result is True:
-                    # Check for non-vector types
-                    # Check for mapbox stock layers
-                    if 'mapbox://' in o['source']:
-                        result = False
-                        errors.append(
-                            'You cannot use mapbox layers: {}'.format(json.dumps(o)))
-                    elif o['type'] == 'raster':
-                        result = False
-                        errors.append(
-                            'Found a raster in your VECTOR symbology. This is not allowed: {}'.format(json.dumps(o)))
+                    errors.append(
+                        'You cannot use mapbox layers: {}'.format(json.dumps(o)))
+                elif o['type'] == 'raster':
+                    result = False
+                    errors.append(
+                        'Found a raster in your VECTOR symbology. This is not allowed: {}'.format(json.dumps(o)))
             if result is True:
                 unique_sources = list(dict.fromkeys(
                     [k['source-layer'] for k in json_obj['layerStyles']]))
