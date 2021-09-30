@@ -1,0 +1,40 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(8, 100%, 50%)", "Both"],
+    ["hsl(235, 87%, 56%)", "Left"],
+    ["hsl(314, 71%, 39%)", "Right"],
+    ["hsl(178, 64%, 35%)", "None"]
+  ],
+  "layerStyles": [
+        {
+            "id": "confinement-type-1r4d3g",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "confinement_type-1r4d3g",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "Confinement_Type"],
+                    ["None"],
+                    "hsl(178, 64%, 35%)",
+                    ["Right"],
+                    "hsl(314, 71%, 39%)",
+                    ["Left"],
+                    "hsl(235, 87%, 56%)",
+                    ["Both"],
+                    "hsl(8, 100%, 50%)",
+                    "#000000"
+                ],
+                "line-width": [
+                    "match",
+                    ["get", "Confinement_Type"],
+                    ["Both"],
+                    2.5,
+                    1
+                ]
+            }
+        }
+    ]
+}
