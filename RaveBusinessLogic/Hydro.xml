@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>CHaMP Delft3D Hydraulic Model</Name>
   <ProjectType>Hydro</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Hydro">
     <Children collapsed="false">
-
       <Node label="Hydarulic Simulation(s)" xpath="Analyses/Analysis/Outputs">
         <Children collapsed="true">
           <Node label="Meta Data">
@@ -29,12 +27,8 @@
               <Node label="Water Depth (model vs surveyed)" xpath="Raster[@id='WSE']" type="raster" symbology="depthError" transparency="40" />
             </Children>
           </Node>
-
-
         </Children>
       </Node>
-
-
     </Children>
   </Node>
 </Project>

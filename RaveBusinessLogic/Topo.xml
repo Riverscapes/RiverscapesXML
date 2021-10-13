@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>CHaMP Topo</Name>
   <ProjectType>topo</ProjectType>
   <Node xpathlabel="Name">
@@ -30,7 +29,7 @@
               </Node>
             </Children>
           </Node>
-
+          
           <Node label="Topographic Survey Data" xpath="Realizations/SurveyData">
             <Children collapsed="true">
               <Node xpathlabel="Name" xpath="SurveyExtents/Vector[@id='survey_extent']" type="polygon" symbology="SurveyExtent" />
@@ -42,7 +41,7 @@
               <Node xpathlabel="Name" xpath="Vector[@id='error_points']" type="point" symbology="pts_error" />
             </Children>
           </Node>
-
+          
           <Node label="Topographic Derivatives" xpath="Realizations/Topography/TIN">
             <Children collapsed="true">
               <Node label="DEM Error Model">
@@ -69,7 +68,7 @@
                   <Node xpathlabel="Name" xpath="Thalweg" type="line" symbology="thalweg" />
                 </Children>
               </Node>
-
+              
               <Node label="Mapping">
                 <Children collapsed="true">
                   <Node label="Cross Sections, Profiles and Extents">
@@ -94,12 +93,12 @@
                       </Node>
                     </Children>
                   </Node>
-
+                  
                 </Children>
               </Node>
             </Children>
           </Node>
-
+          
           <Node label="Topography" xpath="Realizations/Topography">
             <Children collapsed="false">
               <Node label="TINs">
@@ -113,7 +112,7 @@
                   <Node xpathlabel="Name" xpath="TIN/Detrended" type="raster" symbology="detrendDEM" transparency="40" />
                   <Node xpathlabel="Name" xpath="TIN/DEM" type="raster" symbology="DEM" transparency="40" />
                   <Node xpathlabel="Name" xpath="TIN/DEMHillshade" type="raster" symbology="hillshade" />
-
+                  
                 </Children>
               </Node>
             </Children>
@@ -132,7 +131,7 @@
           <Node label="Survey Quality QA/QC">
             <Children>
               <Node label="Survey Quality SQLite Database" xpath="Inputs/SurveyQualityDB" type="file" />
-
+              
             </Children>
           </Node>
         </Children>

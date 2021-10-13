@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>Confinement</Name>
   <ProjectType>CONFINEMENT</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Confinement">
@@ -27,15 +26,15 @@
       </Node>
       <Node label="Inputs">
         <Children collapsed="true">
-            <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flowlines" />
-            <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
-            <Node label="Inputs Geopackage (SQLite Database)" xpath="Inputs/Geopackage" type="file" /> 
-          </Children>
+          <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flowlines" />
+          <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@id='CONFINING_POLYGON']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
+          <Node label="Inputs Geopackage (SQLite Database)" xpath="Inputs/Geopackage" type="file" /> 
+        </Children>
       </Node>
       <Node label="Log File" xpath="LogFile" type="file" />
     </Children>
   </Node>
-
+  
   <Views default="CONFINEMENT_RATIO">
     <View name="Confinement Ratio by Stream Segment" id="CONFINEMENT_RATIO">
       <Layers>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
-    <!-- Testing update -->
   <Name>VBET</Name>
   <ProjectType>VBET</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/VBET">
@@ -48,51 +46,52 @@
             <Children collapsed="true">
               <!-- This is waiting for next round to be exposed in projects.
                 <Node label="Catchment Wings" xpath="Layers/Vector[@id='CATCHMENTS_DISSOLVED']" type="polygon" /> -->
-              <Node label="Catchment Wing Stream Order" xpath="Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
-              <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
-            </Children>
-          </Node>
-          
-        </Children>
-      </Node>
-      <Node label="Inputs" xpath="Inputs">
+                <Node label="Catchment Wing Stream Order" xpath="Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
+                <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
+              </Children>
+            </Node>
+            
+          </Children>
+        </Node>
+        <Node label="Inputs" xpath="Inputs">
           <Children collapsed="true">
             <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" id="channel_area_polygons" symbology="ChannelArea" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
             <Node label="DEM Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
             <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
           </Children>     
-      </Node>
-      <Node label="Log File" xpath="LogFile" type="file" />
-    </Children>
-  </Node>
-  <Views default="DEFAULT">
-    <View name="Primary Output" id="DEFAULT">
-      <Layers>
-        <Layer id="vbet_extent_hollow" />
-        <Layer id="likevbet" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
-    <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
-      <Layers>
-        <Layer id="vbet_channel_area" />
-        <Layer id="vbet_active_floodplain" />
-        <Layer id="vbet_inactive_floodplain" />
-      </Layers>
-    </View>
-    <View name="Normalized Evidence" id="Norm">
-      <Layers>
-        <Layer id="norm_topo" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
-    <View name="VBET Inputs" id="Inputs">
-      <Layers>
-        <Layer id="channel_area_polygons" />
-        <Layer id="dem" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
-  </Views>
-</Project>
+        </Node>
+        <Node label="Log File" xpath="LogFile" type="file" />
+      </Children>
+    </Node>
+    <Views default="DEFAULT">
+      <View name="Primary Output" id="DEFAULT">
+        <Layers>
+          <Layer id="vbet_extent_hollow" />
+          <Layer id="likevbet" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
+        <Layers>
+          <Layer id="vbet_channel_area" />
+          <Layer id="vbet_active_floodplain" />
+          <Layer id="vbet_inactive_floodplain" />
+        </Layers>
+      </View>
+      <View name="Normalized Evidence" id="Norm">
+        <Layers>
+          <Layer id="norm_topo" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="VBET Inputs" id="Inputs">
+        <Layers>
+          <Layer id="channel_area_polygons" />
+          <Layer id="dem" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+    </Views>
+  </Project>
+  
