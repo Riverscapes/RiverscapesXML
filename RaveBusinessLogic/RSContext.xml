@@ -43,12 +43,12 @@
           </Node>
           <Node label="Watershed Boundaries (HUCs)">
             <Children collapsed="true">
-              <Node label="Region - 2-Digit HUC" xpath="Vector[@id='WBDHU2']" type="polygon" symbology="wbdhu2" />
-              <Node label="Subregion - 4-Digit HUC" xpath="Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
-              <Node label="Basin - 6-Digit HUC" xpath="Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
-              <Node label="Sub-Basin - 8-Digit HUC" xpath="Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
-              <Node label="Watersheds - 10-Digit HUC" xpath="Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" />
               <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Vector[@id='WBDHU12']" type="polygon" symbology="wbdhu12" />
+              <Node label="Watersheds - 10-Digit HUC" xpath="Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" />
+              <Node label="Sub-Basin - 8-Digit HUC" xpath="Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
+              <Node label="Basin - 6-Digit HUC" xpath="Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
+              <Node label="Subregion - 4-Digit HUC" xpath="Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
+              <Node label="Region - 2-Digit HUC" xpath="Vector[@id='WBDHU2']" type="polygon" symbology="wbdhu2" />
             </Children>
           </Node>
         </Children>
