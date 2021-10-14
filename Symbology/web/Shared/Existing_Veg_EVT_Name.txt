@@ -1,5 +1,5 @@
 # QGIS Generated Color Map Export File
-INTERPOLATION:DISCRETE
+INTERPOLATION:EXACT
 7008,203,255,171,255,North Pacific Oak Woodland
 7009,192,255,138,255,Northwestern Great Plains Aspen Forest and Parkland
 7010,180,255,148,255,Northern Rocky Mountain Western Larch Savanna
