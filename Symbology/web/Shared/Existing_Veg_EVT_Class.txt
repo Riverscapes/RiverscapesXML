@@ -1,5 +1,5 @@
 # QGIS Generated Color Map Export File
-INTERPOLATION:DISCRETE
+INTERPOLATION:EXACT
 7008,180,255,148,255,Open tree canopy
 7009,180,255,148,255,Open tree canopy
 7010,180,255,148,255,Open tree canopy
