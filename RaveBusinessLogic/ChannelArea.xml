@@ -7,7 +7,7 @@
       <Node label="Project Report" xpath="Outputs/HTMLFile[@id='REPORT']" type="report" />
       <Node label="Outputs" xpath="Outputs">
         <Children collapsed="false">
-          <Node label="Channel Area (hollow)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea_hollow" />
+          <Node label="Channel Area (hollow)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area_hollow" symbology="ChannelArea_hollow" />
           <Node label="Channel Area (filled)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
           <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
@@ -39,6 +39,7 @@
     <View name="Channel Area" id="DEFAULT">
       <Layers>
         <Layer id="channel_area" />
+        <Layer id="channel_area_hollow" />
       </Layers>
     </View>
   </Views>
