@@ -1,41 +1,16 @@
 {
-    "version": 8,
-    "name": "Valley Bottom (py_valley_bottom)",
-    "metadata": {
-        "mapbox:autocomposite": true,
-        "mapbox:type": "template",
-        "mapbox:sdk-support": {
-            "android": "10.0.0",
-            "ios": "10.0.0",
-            "js": "2.3.0"
-        },
-        "mapbox:groups": {},
-        "mapbox:uiParadigm": "layers"
-    },
-    "center": [0, 2.842170943040401e-14],
-    "zoom": 0.9038818252781893,
-    "bearing": 0,
-    "pitch": 0,
-    "sources": {
-        "composite": {"url": "mapbox://cashe93.co33wwb5", "type": "vector"}
-    },
-    "sprite": "mapbox://sprites/cashe93/cku0icmov14bo18ou0m33lv42/draft",
-    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
-    "layers": [
-        {
-            "id": "Valley Bottom",
-            "type": "line",
-            "source": "composite",
-            "source-layer": "valley_bottom-crmmq9",
-            "layout": {},
-            "paint": {"line-color": "hsl(100, 100%, 23%)"}
-        }
-    ],
-    "created": "2021-09-26T00:52:54.420Z",
-    "modified": "2021-09-26T01:30:27.753Z",
-    "id": "cku0icmov14bo18ou0m33lv42",
-    "owner": "cashe93",
-    "visibility": "private",
-    "protected": false,
-    "draft": true
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 23%)", "Valley Bottom"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Valley Bottom",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "valley_bottom-crmmq9",
+      "layout": {},
+      "paint": {"line-color": "hsl(100, 100%, 23%)"}
+  }
+  ]
 }
