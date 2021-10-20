@@ -87,7 +87,6 @@
           <Meta name="Description">NAIP Plus Imagery</Meta>
         </Metadata>
       </Layer>
-      </Layer>
       <Layer name="ESA World Imagery" type="wms" url="https://services.terrascope.be/wms/v2">
         <Metadata>
           <Meta name="Description">European Space Agency World Viewer Data</Meta>
