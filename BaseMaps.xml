@@ -24,7 +24,7 @@
           <Meta name="Description">Bing Aerial Imagery</Meta>
         </Metadata>
       </Layer>
-      </GroupLayer>
+    </GroupLayer>
     <GroupLayer name="USGS Hydrography">
       <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
         <Metadata>
@@ -85,6 +85,12 @@
       <Layer name="NAIP Plus" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPPlus/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">NAIP Plus Imagery</Meta>
+        </Metadata>
+      </Layer>
+      </Layer>
+      <Layer name="ESA World Imagery" type="wms" url="https://services.terrascope.be/wms/v2">
+        <Metadata>
+          <Meta name="Description">European Space Agency World Viewer Data</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
