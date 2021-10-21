@@ -18,7 +18,6 @@
           "line-color": [
               "step",
               ["get", "iPC_RoadVB"],
-              0,
               "hsl(8, 100%, 50%)",
               30,
               "hsl(8, 100%, 50%)",
