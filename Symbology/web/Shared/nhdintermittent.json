@@ -9,7 +9,6 @@
       "type": "line",
       "source": "composite",
       "source-layer": "intermittent-126k30",
-      "minzoom": 10,
       "filter": ["match", ["get", "FCode"], [46003], true, false],
       "layout": {},
       "paint": {

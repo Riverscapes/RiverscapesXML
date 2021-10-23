@@ -13,7 +13,6 @@
       "type": "line",
       "source": "composite",
       "source-layer": "oCC_EX-bmdfb2",
-      "minzoom": 11,
       "layout": {},
       "paint": {
           "line-width": 1.25,

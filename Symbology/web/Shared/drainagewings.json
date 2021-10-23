@@ -9,7 +9,6 @@
         "type": "fill",
         "source": "composite",
         "source-layer": "drainagewings-6t0t6a",
-        "minzoom": 12,
         "layout": {},
         "paint": {
             "fill-color": "hsla(40, 100%, 50%, 0)",
