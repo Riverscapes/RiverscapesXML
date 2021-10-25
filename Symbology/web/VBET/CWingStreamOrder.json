@@ -1,73 +1,85 @@
-[
-    {
-        "id": "cwingstreamorder_outline",
-        "type": "fill",
-        "source": "composite",
-        "source-layer": "CWingStreamOrder-5qg91k",
-        "layout": {},
-        "paint": {
-            "fill-color": "hsla(0, 0%, 0%, 0)",
-            "fill-outline-color": "hsl(351, 64%, 4%)"
-        }
-    },
-    {
-        "id": "cwingstreamorder_labels",
-        "type": "symbol",
-        "source": "composite",
-        "source-layer": "CWingStreamOrder-5qg91k",
-        "layout": {
-            "text-field": [
-                "step",
-                ["get", "StreamOrde"],
-                "1",
-                2,
-                "2",
-                3,
-                "3",
-                4,
-                "4",
-                5,
-                "5",
-                6,
-                "6",
-                7,
-                "7"
-            ],
-            "text-font": [
-                "Open Sans Condensed Bold",
-                "Arial Unicode MS Regular"
-            ],
-            "text-size": 8
+{
+    "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+    "legend": [
+      ["hsl(0, 0%, 59%)", "1"],
+      ["hsl(268, 49%, 27%)", "2"],
+      ["hsl(233, 55%, 56%)", "3"],
+      ["hsl(201, 67%, 64%)", "4"],
+      ["hsl(180, 67%, 67%)", "5"],
+      ["hsl(153, 43%, 84%)", "6"],
+      ["hsl(138, 9%, 96%)", "7"]
+    ],
+    "layerStyles": [
+        {
+            "id": "cwingstreamorder_outline",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "CWingStreamOrder-5qg91k",
+            "layout": {},
+            "paint": {
+                "fill-color": "hsla(0, 0%, 0%, 0)",
+                "fill-outline-color": "hsl(351, 64%, 4%)"
+            }
         },
-        "paint": {"text-color": "hsl(0, 2%, 100%)"}
-    },
-    {
-        "id": "cwingstreamorder_color",
-        "type": "fill",
-        "source": "composite",
-        "source-layer": "CWingStreamOrder-5qg91k",
-        "layout": {},
-        "paint": {
-            "fill-color": [
-                "match",
-                ["get", "StreamOrde"],
-                [1],
-                "hsl(0, 0%, 59%)",
-                [2],
-                "hsl(268, 49%, 27%)",
-                [3],
-                "hsl(233, 55%, 56%)",
-                [4],
-                "hsl(201, 67%, 64%)",
-                [5],
-                "hsl(180, 67%, 67%)",
-                [6],
-                "hsl(153, 43%, 84%)",
-                [7],
-                "hsl(138, 9%, 96%)",
-                "hsla(0, 0%, 0%, 0)"
-            ],
-            "fill-opacity": 0.2
+        {
+            "id": "cwingstreamorder_labels",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "CWingStreamOrder-5qg91k",
+            "layout": {
+                "text-field": [
+                    "step",
+                    ["get", "StreamOrde"],
+                    "1",
+                    2,
+                    "2",
+                    3,
+                    "3",
+                    4,
+                    "4",
+                    5,
+                    "5",
+                    6,
+                    "6",
+                    7,
+                    "7"
+                ],
+                "text-font": [
+                    "Open Sans Condensed Bold",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 8
+            },
+            "paint": {"text-color": "hsl(0, 2%, 100%)"}
+        },
+        {
+            "id": "cwingstreamorder_color",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "CWingStreamOrder-5qg91k",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "StreamOrde"],
+                    [1],
+                    "hsl(0, 0%, 59%)",
+                    [2],
+                    "hsl(268, 49%, 27%)",
+                    [3],
+                    "hsl(233, 55%, 56%)",
+                    [4],
+                    "hsl(201, 67%, 64%)",
+                    [5],
+                    "hsl(180, 67%, 67%)",
+                    [6],
+                    "hsl(153, 43%, 84%)",
+                    [7],
+                    "hsl(138, 9%, 96%)",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "fill-opacity": 0.2
+            }
         }
-    }
-]
+    ]
+  }
