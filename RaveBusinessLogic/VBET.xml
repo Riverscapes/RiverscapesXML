@@ -27,11 +27,11 @@
       <Node label="Intermediates">
         <Children collapsed="true">
           <Node label="Evidence Rasters">
-            <Children collapsed="true">
+            <Children collapsed="false">
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
               <Node label="HAND Raster" xpath="Inputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
               <Node label="TWI Raster" xpath="Inputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
-              <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="rasterized_channel" transparency="40" />
+              <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='CHANNEL_AREA_RASTER']" type="raster" symbology="rasterized_channel" transparency="40" />
             </Children>
           </Node>
           <Node label="Normalized Evidence Rasters" xpath="Intermediates">
