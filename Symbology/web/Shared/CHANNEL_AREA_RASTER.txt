@@ -1,0 +1,4 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:DISCRETE
+0,236,244,252,255, Non-channel
+1,8,48,107,255, Channel
