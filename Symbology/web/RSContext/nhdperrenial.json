@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(213, 100%, 33%))", "Perennial"],
+    ["hsl(213, 100%, 33%)", "Connector (thin)"],
+    ["hsl(220, 100%, 23%)","Artificial Path"]
+  ],
+  "layerStyles": [
+    {
+      "id": "perennial drainage network",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "NHD_flowline-6tver9",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "FCode"],
+              [46006],
+              "hsl(213, 100%, 33%)",
+              [33400],
+              "hsl(213, 100%, 33%)",
+              [55800],
+              "hsl(220, 100%, 23%)",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+          "line-width": ["match", ["get", "FCode"], [33400], 0.5, 1]
+      }
+  }
+  ]
+}
