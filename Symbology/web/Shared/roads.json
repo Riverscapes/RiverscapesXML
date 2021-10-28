@@ -1,0 +1,68 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 52%, 34%)", "Expressway"],
+    ["hsl(0, 48%, 60%)", "Secondary Hwy"],
+    ["hsl(120, 0%, 43%)", "Local Connector"],
+    ["hsl(0, 0%, 61%)", "Local Road"],
+    ["hsl(0, 48%, 60%)", "Ramp"],
+    ["hsla(0, 0%, 0%, 0)", "4WD (dashed)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "4WD",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Transportation-01o5gm",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "TNMFRC"],
+              [6],
+              "#000000",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+          "line-gap-width": ["match", ["get", "TNMFRC"], [6], 2, 0],
+          "line-dasharray": [4, 5]
+      }
+  },
+  {
+      "id": "Roads",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Transportation-01o5gm",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "TNMFRC"],
+              [1],
+              "hsl(0, 52%, 34%)",
+              [2],
+              "hsl(0, 48%, 60%)",
+              [3],
+              "hsl(120, 0%, 43%)",
+              [4],
+              "hsl(0, 0%, 61%)",
+              [5],
+              "hsl(0, 48%, 60%)",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+          "line-width": [
+              "match",
+              ["get", "TNMFRC"],
+              [1],
+              2.5,
+              [2],
+              1.75,
+              [3],
+              1.5,
+              [5],
+              0.75,
+              1
+          ]
+      }
+  }
+  ]
+}
