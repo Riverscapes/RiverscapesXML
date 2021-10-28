@@ -29,7 +29,7 @@
               <Node label="Estimated Bankfull">
                 <Children>
                   <Node label="Estimated Bankfull Width (m)" xpath="Geopackage/Layers/Vector[@id='NETWORK']" type="line" symbology="bankfull_flowlines" />
-                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='BANKFULL_CHANNEL']" type="polygon" symbology="bankfull_channel" />
+                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='BANKFULL_CHANNEL']" type="polygon" symbology="ChannelArea" />
                   <!-- <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='COMPOSITE_CHANNEL_AREA']" type="polygon" symbology="bankfull_nhd"/> -->
                 </Children>
               </Node>
