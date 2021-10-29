@@ -5,15 +5,15 @@
   ],
   "layerStyles": [
     {
-        "id": "vbet-extent-hollow-2nztj2",
-        "type": "fill",
+        "id": "vbet-extent-hollow-2nztj2 copy",
+        "type": "line",
         "source": "composite",
         "source-layer": "vbet_extent_hollow-2nztj2",
         "layout": {},
         "paint": {
-            "fill-color": "hsla(0, 0%, 0%, 0)",
-            "fill-outline-color": "hsl(0, 0%, 100%)"
+            "line-dasharray": [1, 2],
+            "line-color": "hsl(0, 0%, 100%)"
         }
     }
-  ]
+]
 }
