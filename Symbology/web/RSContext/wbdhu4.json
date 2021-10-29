@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 23%)", "Subregion-4-Digit HUC"]
+  ],
+  "layerStyles": [
+    {
+      "id": "huc4-3z13nu",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "HUC4-3z13nu",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 100%, 23%)", "line-width": 2.5}
+  },
+  {
+      "id": "huc4-3z13nu copy",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "HUC4-3z13nu",
+      "layout": {"text-field": ["to-string", ["get", "HUC4"]]},
+      "paint": {}
+  }
+  ]
+}

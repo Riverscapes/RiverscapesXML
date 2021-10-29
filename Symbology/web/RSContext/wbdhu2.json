@@ -1,0 +1,25 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(Item1COlorHERE)", "WebRave Legend Item1"],
+    ["hsl(Item2COlorHERE)", "WebRave Legend Item2"]
+  ],
+  "layerStyles": [
+    {
+      "id": "huc2-3hc6dg",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "HUC2-3hc6dg",
+      "layout": {},
+      "paint": {"line-color": "hsl(20, 100%, 23%)", "line-width": 3}
+  },
+  {
+      "id": "huc2-3hc6dg copy",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "HUC2-3hc6dg",
+      "layout": {"text-field": ["to-string", ["get", "HUC2"]]},
+      "paint": {}
+  }
+  ]
+}
