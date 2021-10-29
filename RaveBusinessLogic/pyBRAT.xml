@@ -23,6 +23,11 @@
               <Node label="Restoration or Conservation Opportunities" xpath="Vector[@id='OPPORTUNITY']" type="line" symbology="oPBRC_CR" id="opportunity" />
             </Children>
           </Node>
+          <Node label="Validation">
+            <Children collapsed="true">
+              <Node label="Data Capture Validation" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="" id="data_val"/>
+            </Children>
+          </Node>
         </Children>
       </Node>
       <Node label="Intermediates" xpath="Realizations/pyBRAT/Intermediates">
