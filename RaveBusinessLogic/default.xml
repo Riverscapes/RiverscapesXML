@@ -23,12 +23,8 @@
                 </Repeater>
               </Children>
             </Node>
-            <Node label="Hillshade">
-              <Children collapsed="true">
-                <Node label="DEM" xpath="//DEM" type="raster" symbology="dem" transparency="40" id="dem" />
-                <Node xpathlabel="Name" xpath="//Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
-              </Children>
-            </Node>
+            <Node label="DEM" xpath="//DEM" type="raster" symbology="dem" transparency="40" id="dem" />
+            <Node xpathlabel="Name" xpath="//Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
             <Node label="Project Report" xpath="//HTMLFile[@id='REPORT']" type="report" />
             <Node label="Log File" xpath="//LogFile" type="file" />
           </Children>
