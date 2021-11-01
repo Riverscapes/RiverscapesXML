@@ -36,7 +36,7 @@
                 </Node>
                 <Node label="Intermediates" xpath="Intermediates">
                     <Children collapsed="true">
-                        <Node label="Rasterized Channel" xpath="Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="rasterizedchannel" transparency="40" />
+                        <Node label="Rasterized Channel" xpath="Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="CHANNEL_AREA_RASTER" transparency="40" />
                     </Children>
                 </Node>
                 <Node label="Inputs" xpath="Inputs">
