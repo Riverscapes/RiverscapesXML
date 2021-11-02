@@ -1,0 +1,46 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 50%)", "0 - 25%"],
+    ["hsl(30, 100%, 50%)", "25 - 50%"],
+    ["hsl(60, 100%, 45%)", "50 - 75%"],
+    ["hsl(100, 100%, 33%)", "75 - 100%"],
+    ["hsl(216, 100%, 45%)", ">100%"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Percent of Historic Dam Capacity Remaining",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Validation-3jzs8o",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "interpolate",
+              ["linear"],
+              ["get", "mCC_EXvHPE"],
+              0,
+              "hsl(0, 100%, 50%)",
+              0.25,
+              "hsl(0, 100%, 50%)",
+              0.250001,
+              "hsl(30, 100%, 50%)",
+              0.5,
+              "hsl(30, 100%, 50%)",
+              0.50001,
+              "hsl(60, 100%, 45%)",
+              0.75,
+              "hsl(60, 100%, 45%)",
+              0.750001,
+              "hsl(100, 100%, 33%)",
+              1,
+              "hsl(100, 100%, 33%)",
+              1.0001,
+              "hsl(216, 100%, 45%)",
+              10000.000,
+              "hsl(216, 100%, 45%)"
+          ]
+      }
+  }
+  ]
+}
