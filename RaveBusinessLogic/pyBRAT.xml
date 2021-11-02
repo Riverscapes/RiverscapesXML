@@ -25,7 +25,9 @@
           </Node>
           <Node label="Validation">
             <Children collapsed="true">
-              <Node label="Data Capture Validation" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="" id="data_val"/>
+              <Node label="Predicted Dam Density vs. Surveyed Dam Density" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="predicted_surveyed" id=""/>
+              <Node label="Percent of Historic Dam Capacity Remaining" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="percent_remaining" id=""/>
+              <Node label="Current Beaver Dam Management Strategies" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="current_strategies" id=""/>
             </Children>
           </Node>
         </Children>

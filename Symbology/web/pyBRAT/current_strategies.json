@@ -1,0 +1,36 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(216, 100%, 45%)", "Immediate - Potential Beaver Translocation"],
+    ["hsl(284, 100%, 45%)", "Immediate - Beaver Conservation"],
+    ["hsl(100, 100%, 33%)", "Mid Term - Process-based Riparian Vegetation Restoration"],
+    ["hsl(60, 100%, 45%)", "Long Term - Riparian Vegetation Reestablishment"],
+    ["hsl(180, 0%, 45%)","Low Capacity Habitat"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Current Beaver Dam Management Strategies",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Validation-3jzs8o",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "ConsVRest"],
+              ["Immediate - Potential Beaver Translocation"],
+              "hsl(216, 100%, 45%)",
+              ["Immediate - Beaver Conservation"],
+              "hsl(284, 100%, 45%)",
+              ["Mid Term - Process-based Riparian Vegetation Restoration"],
+              "hsl(100, 100%, 33%)",
+              ["Long Term - Riparian Vegetation Reestablishment"],
+              "hsl(60, 100%, 45%)",
+              ["Low Capacity Habitat"],
+              "hsl(180, 0%, 45%)",
+              "hsla(0, 0%, 0%, 0)"
+          ]
+      }
+  }
+  ]
+}
