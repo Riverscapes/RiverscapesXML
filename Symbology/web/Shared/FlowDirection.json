@@ -1,8 +1,7 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["▶", "Downstream"],
-    ["◀", "Upstream"]
+    ["0,0%,0%", "Flow Direction"]
   ],
   "layerStyles": [
     {
@@ -27,7 +26,8 @@
               [0],
               "◀",
               ""
-          ]
+          ],
+          "symbol-placement": "line-center"
       },
       "paint": {}
   }
