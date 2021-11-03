@@ -28,26 +28,6 @@
       }
   },
   {
-      "id": "Labels",
-      "type": "symbol",
-      "source": "composite",
-      "source-layer": "roads-788wh3",
-      "layout": {
-          "text-field": [
-              "match",
-              ["get", "RTTYP"],
-              ["I"],
-              "Interstate",
-              ["U"],
-              "U.S.",
-              ["S"],
-              "State Recognized",
-              ""
-          ]
-      },
-      "paint": {}
-  },
-  {
       "id": "Line Widths",
       "type": "line",
       "source": "composite",
