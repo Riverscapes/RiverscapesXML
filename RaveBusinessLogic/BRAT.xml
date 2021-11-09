@@ -11,11 +11,11 @@
           <Node xpathlabel="Name" xpath="SQLiteDB" type="file" />
           <Node label="Capacity">
             <Children>
-              <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_EX" id="ex_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
-              <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="mCC_EX_CT" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />
-              <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_HPE" id ="his_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
-              <Node label="Historic Dam Size" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="mCC_HPE_CT" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
-              <Node label = "Capacity for Enitre Network (overestimate including non-perennial) ">
+              <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_EX_filtered" id="ex_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+              <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="mCC_EX_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />
+              <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_HPE_filtered" id ="his_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+              <Node label="Historic Dam Size" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="mCC_HPE_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+              <Node label="Capacity for Enitre Network (overestimate including non-perennial) ">
                 <Children>
                   <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oCC_EX"  />
                   <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="mCC_EX_CT"  />

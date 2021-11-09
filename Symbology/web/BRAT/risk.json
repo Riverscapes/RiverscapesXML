@@ -26,7 +26,14 @@
                 ["Considerable Risk"],
                 "hsl(0, 100%, 45%)",
                 "hsl(178, 4%, 100%)"
-            ]
+              ],
+              "line-opacity": [
+                  "match",
+                  ["get", "ReachCode"],
+                  [46006, 33600, 55800],
+                  0,
+                  1
+              ]
         }
     }
   ]
