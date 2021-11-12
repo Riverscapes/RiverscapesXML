@@ -74,7 +74,7 @@
                   </Node>
                   <Node label="Slope">
                     <Children>
-                      <Node xpathlabel="Name" xpath="Slope[@id='ICDEMSLOPE']" type="raster" symbology="raster_slope" transparency="40" />
+                      <Node xpathlabel="Name" xpath="Slope[@id='ICDEMSLOPE']" type="raster" symbology="ev_DEMSlope_Raster" transparency="40" />
                       <Node xpathlabel="Name" xpath="Raster[@id='ID']" type="raster" symbology="ev_bsSD" transparency="40" />
                       <Node xpathlabel="Name" xpath="Slope[@id='BFSLOPE']" type="raster" symbology="raster_slope" transparency="40" />
                       <Node xpathlabel="Name" xpath="Raster[@id='ID_2']" type="raster" symbology="raster_slope" transparency="40" />
