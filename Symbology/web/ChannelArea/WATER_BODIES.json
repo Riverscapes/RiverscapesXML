@@ -1,16 +1,48 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
-  "legend": [
-    ["hsl(205, 56%, 36%)", "NHD Waterbody areas"]
-  ],
-  "layerStyles": [
+    "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+    "legend": [
+        ["hsl(196, 76%, 61%)", "39004, 39009, 39011 - Lake/Pond (perrenial)"],
+        ["hsl(196, 71%, 74%)", "39001 - Lake/Pond (intermittent)"],
+        ["hsl(64, 66%, 56%)", "43601, 43604, 43610, 43612, 43613 - Reservoir"],
+        ["hsl(131, 59%, 52%)", "46600 - Swamp/Marsh"],
+        ["hsl(19, 50%, 96%)", "36100 - Playa"],
+        ["hsl(158, 25%, 100%)", "37800 - Ice Mass"]
+    ],
+    "layerStyles": [
         {
-            "id": "nhdwaterbodyareas-52pr3u",
+            "id": "waterbodiesnovember-8awwio",
             "type": "fill",
             "source": "composite",
-            "source-layer": "NHDWaterbodyAreas-52pr3u",
+            "source-layer": "WaterbodiesNOVEMBER-8awwio",
             "layout": {},
-            "paint": {"fill-color": "hsl(205, 56%, 36%)"}
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "FCode"],
+                    [39004, 39009, 39011], 
+                    "hsl(196, 76%, 61%)",
+                    [39001], 
+                    "hsl(196, 71%, 74%)",
+                    [43601, 43604, 43610, 43612, 43613],
+                    "hsl(64, 66%, 56%)",
+                    [46600],
+                    "hsl(131, 59%, 52%)",
+                    [36100],
+                    "hsl(19, 50%, 96%)",
+                    [37800],
+                    "hsl(158, 25%, 100%)",
+                [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "FCode"],
+                    39001,
+                    "#000000",
+                    46600,
+                    "#000000"
+                ]
+            ],
+            "fill-opacity": ["match", ["get", "FCode"], [39001], 0.73, 1]
         }
+    }
     ]
-}
+  }
