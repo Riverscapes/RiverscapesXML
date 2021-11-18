@@ -90,7 +90,7 @@
           <Node label="Network">
             <Children>
               <Node label="Network" xpath="Vector[@id='FLOWLINES']" type="line" symbology="py_flow_lines" />
-              <Node label="Flow Direction" xpath="Vector[@id='FLOWLINES']" type="line" symbology="FlowDirection" />
+              <Node label="Flow Direction" xpath="Vector[@id='FLOWLINES']" type="line" symbology="py_FlowDirection" />
             </Children>
           </Node>
           <Node label="Anthropogenic Layers">
