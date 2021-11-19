@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>RVD</Name>
   <ProjectType>RVD</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/RVD">
     <Children collapsed="false">
       <Node xpathlabel="Name" xpath="Outputs/HTMLFile" type="report" />
-      <Node label="Inputs" xpath="Inputs">
+      <Node label="Outputs" xpath="Outputs">
         <Children>
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="OldNetwork" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="LargeRiverPolygon" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="waterbody" />
-          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="valley_btm" />
-          <Node xpathlabel="Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Name" />
-          <Node xpathlabel="Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="Historic_Veg_BPS_Name" />
+          <Node label="Riparian Departure" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="line" id="rvd_output" symbology="RiparianVegetationDeparture" />
+          <Node label="Conversion Type" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="line" id="conversion_type" symbology="RiparianConversionType" />
         </Children>
       </Node>
       <Node label="Intermediates" xpath="Intermediates">
@@ -53,10 +48,14 @@
           <Node xpathlabel="Name" xpath="Raster[@id='VEGETATION_CONVERSION']" type="raster" symbology="ConversionRaster" />
         </Children>
       </Node>
-      <Node label="Outputs" xpath="Outputs">
+      <Node label="Inputs" xpath="Inputs">
         <Children>
-          <Node label="Riparian Departure" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="line" id="rvd_output" symbology="RiparianVegetationDeparture" />
-          <Node label="Conversion Type" xpath="Geopackage/Layers/Vector[@id='SEGMENTED']" type="line" id="conversion_type" symbology="RiparianConversionType" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" symbology="flow_lines" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA']" type="polygon" symbology="FlowArea" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="WATER_BODIES" />
+          <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="valley_btm" />
+          <Node xpathlabel="Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="ExistingVegetated" />
+          <Node xpathlabel="Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="HistoricVegetated" />
         </Children>
       </Node>
     </Children>
