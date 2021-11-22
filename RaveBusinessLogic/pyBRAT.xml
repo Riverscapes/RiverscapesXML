@@ -102,7 +102,7 @@
               <Node label="Land Ownership" xpath="Vector[@id='OWNERSHIP']" type="polygon" symbology="py_ownership" transparency="40" />
               <Node label="Valley Bottom Extent (Hollow)" xpath="Vector[@id='VALLEY']" type="polygon" symbology="vbet68_hollow" />
               <Node label="Valley Bottom Extent (Filled)" xpath="Vector[@id='VALLEY']" type="polygon" symbology="vbet68_filled" />
-              <Node label="Land Use" xpath="Raster[@id='LU']" type="raster" symbology="py_lu" />
+              <Node label="Land Use" xpath="Raster[@id='LU']" type="raster" symbology="py_lu" transparency="40"/>
             </Children>
           </Node>
           <Node label="Vegetation">
