@@ -95,6 +95,18 @@
               <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Geopackage/Layers/Vector[@id='WATERBODIES']" type="polygon" symbology="Waterbodies" />
             </Children>
           </Node>
+          <Node label ="Anthropogenic Layers">
+            <Children>
+              <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@id='CANALS']" type="line" symbology="canals_ditches"/>
+              <Node label="Railroads" xpath="Geopackage/Layers/Vector[@id='RAIL']" type="line" symbology="railroads"/>
+              <Node label="Roads" xpath="Geopackage/Layers/Vector[@id='ROADS']" type="line" symbology="roads"/>
+              <!-- <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@id='OWNERSHIP']" type="polygon" symbology="ownership"/> -->
+              <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_hollow"/>
+              <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_filled"/>
+              <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use"/>
+
+            </Children>
+          </Node>
           <Node label="Vegetation">
             <Children>
               <Node label="Existing Vegetation" id="vegetation">
