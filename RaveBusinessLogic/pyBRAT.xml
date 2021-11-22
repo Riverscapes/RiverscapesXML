@@ -64,7 +64,7 @@
           </Node>
           <Node label="Anthropogenic Intermediates">
             <Children>
-              <Node label="Priority Beaver Translocation Areas" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Privat" />
+              <!-- <Node label="Priority Beaver Translocation Areas" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Privat" /> -->
               <Node label="Land Ownership per Reach" xpath="Vector[@id='FULL_INT']" type="line" symbology="PY_ADMIN" />
               <Node label="Land Use Intensity" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_LU" />
               <Node label="Distance to Nearest Infrastructure" xpath="Vector[@id='FULL_INT']" type="line" symbology="oPC_Dist" />
