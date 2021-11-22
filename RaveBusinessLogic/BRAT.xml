@@ -103,8 +103,7 @@
               <!-- <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@id='OWNERSHIP']" type="polygon" symbology="ownership"/> -->
               <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_hollow"/>
               <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_filled"/>
-              <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use"/>
-
+              <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use" transparency="40"/>
             </Children>
           </Node>
           <Node label="Vegetation">
