@@ -82,12 +82,12 @@
               <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_Canal" />
             </Children>
           </Node>
-          <Node label="Buffers">
+          <!-- <Node label="Buffers">
             <Children>
               <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF30']" type="polygon" symbology="buf30"/>
               <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF100']" type="polygon" symbology="buf100"/>
             </Children>
-          </Node>
+          </Node> -->
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
