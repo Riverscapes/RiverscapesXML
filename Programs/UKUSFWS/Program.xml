@@ -30,6 +30,7 @@
       <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
       <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
       <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
+      <Product id="pyBRAT" name="pyBRAT 3.x Models" folder="pyBRAT" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
       <Product id="RVD" name="Riparian Vegetation Departure" folder="RVD" url="" />
       <Product id="Confinement" name="Confinement" folder="Confinement" url="" />      
@@ -51,6 +52,7 @@
         <Product ref="ChannelArea" />
         <Product ref="TauDEM" />
         <Product ref="BRAT" />
+        <Product ref="pyBRAT" />
         <Product ref="VBET" />
         <Product ref="RVD" />
         <Product ref="Confinement" />
