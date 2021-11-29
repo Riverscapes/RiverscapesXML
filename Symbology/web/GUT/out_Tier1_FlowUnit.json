@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(216, 100%, 45%)", "Submerged"],
+    ["hsl(100, 100%, 23%)", "Emergent"],
+    ["hsl(19, 34%, 40%)", "High"]
+  ],
+  "layerStyles": [
+    {
+        "id": "out-tier1-flowunit-7pafkk copy",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "out_Tier1_FlowUnit-7pafkk",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "match",
+                ["get", "FlowUnit"],
+                ["Submerged"],
+                "hsl(216, 100%, 45%)",
+                ["Emergent"],
+                "hsl(100, 100%, 23%)",
+                ["High"],
+                "hsl(19, 34%, 40%)",
+                "#000000"
+            ]
+        }
+    }
+  ]
+}
