@@ -17,7 +17,7 @@
       "paint": {
           "line-color": [
               "step",
-              ["get", "oVC_Hpe"],
+              ["get", "oVC_HPE"],
               "hsl(0, 100%, 48%)",
               0.000001,
               "hsl(40, 100%, 50%)",
