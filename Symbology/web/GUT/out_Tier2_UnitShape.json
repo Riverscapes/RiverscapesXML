@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(202, 66%, 43%)", "Concavity"],
+    ["hsl(38, 96%, 54%)", "Convexity"],
+    ["hsl(57, 93%, 53%)", "Planar"]
+  ],
+  "layerStyles": [
+    {
+        "id": "tier2-6ve9tm",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "Tier2-6ve9tm",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "match",
+                ["get", "UnitShape"],
+                ["Concavity"],
+                "hsl(202, 66%, 43%)",
+                ["Convexity"],
+                "hsl(38, 96%, 54%)",
+                ["Planar"],
+                "hsl(57, 93%, 53%)",
+                "#000000"
+            ]
+        }
+    }
+  ]
+}

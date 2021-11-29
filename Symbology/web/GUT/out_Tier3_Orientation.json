@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(60, 94%, 69%)", "Diagonal"],
+    ["hsl(200, 67%, 47%)", "Longitudinal"],
+    ["hsl(359, 87%, 49%)", "Transverse"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tier3-orient-440k40",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Tier3_Orient-440k40",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "OrientCat"],
+              ["Diagonal"],
+              "hsl(60, 94%, 69%)",
+              ["Longitudinal"],
+              "hsl(200, 67%, 47%)",
+              ["Transverse"],
+              "hsl(359, 87%, 49%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}
