@@ -52,9 +52,10 @@
       <xs:element type="GeopackageType" name="Geopackage" minOccurs="1" maxOccurs="1"/>
     </xs:choice>
   </xs:complexType>  
-
+  
   <xs:complexType name="BRATIntermediatesType" mixed="true">
     <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element type="GeopackageType" name="Geopackage" />
       <xs:element type="VectorType" name="Vector" />
       <xs:element type="RasterType" name="Raster" />
     </xs:choice>
