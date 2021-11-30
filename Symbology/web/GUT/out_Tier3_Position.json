@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(200, 67%, 47%)", "Channel Spanning"],
+    ["hsl(77, 46%, 69%)", "Margin Attached"],
+    ["hsl(36, 97%, 63%)", "Margin Detached"],
+    ["hsl(0, 83%, 50%)", "Mid Channel"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tier3-orient-440k40",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Tier3_Orient-440k40",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "Position"],
+              ["Channel Spanning"],
+              "hsl(200, 67%, 47%)",
+              ["Margin Attached"],
+              "hsl(77, 46%, 69%)",
+              ["Margin Detached"],
+              "hsl(36, 97%, 63%)",
+              ["Mid Channel"],
+              "hsl(0, 83%, 50%)"
+          ]
+      }
+  }
+  ]
+}

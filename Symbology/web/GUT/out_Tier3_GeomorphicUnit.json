@@ -1,0 +1,62 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(240, 100%, 0%)", "Bank"],
+    ["hsl(213, 100%, 33%)", "Pool"],
+    ["hsl(214, 100%, 50%)", "Pond"],
+    ["hsl(213, 100%, 73%)", "Pocket Pool"],
+    ["hsl(186, 100%, 50%)", "Chute"],
+    ["hsl(160, 51%, 60%)", "Rapid"],
+    ["hsl(158, 34%, 40%)", "Cascade"],
+    ["hsl(60, 100%, 45%)", "Glide-Run"],
+    ["hsl(40, 100%, 45%)", "Riffle"],
+    ["hsl(19, 42%, 73%)", "Step"],
+    ["hsl(19, 34%, 40%)", "Mid Channel Bar"],
+    ["hsl(0, 100%, 33%)", "Margin Attached Bar"],
+    ["hsl(0, 100%, 23%)", "Barface"],
+    ["hsl(0, 0%, 80%)", "Transition"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tier3-ck4bw8",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Tier3-ck4bw8",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "GU"],
+              ["Bank"],
+              "hsl(240, 100%, 0%)",
+              ["Pool"],
+              "hsl(213, 100%, 33%)",
+              ["Pond"],
+              "hsl(214, 100%, 50%)",
+              ["Pocket Pool"],
+              "hsl(213, 100%, 73%)",
+              ["Chute"],
+              "hsl(186, 100%, 50%)",
+              ["Rapid"],
+              "hsl(160, 51%, 60%)",
+              ["Cascade"],
+              "hsl(158, 34%, 40%)",
+              ["Glide-Run"],
+              "hsl(60, 100%, 45%)",
+              ["Riffle"],
+              "hsl(40, 100%, 45%)",
+              ["Step"],
+              "hsl(19, 42%, 73%)",
+              ["Mid Channel Bar"],
+              "hsl(19, 34%, 40%)",
+              ["Margin Attached Bar"],
+              "hsl(0, 100%, 33%)",
+              ["Barface"],
+              "hsl(0, 100%, 23%)",
+              ["Transition"],
+              "hsl(0, 0%, 80%)"
+          ]
+      }
+  }
+  ]
+}
