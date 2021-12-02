@@ -17,7 +17,7 @@
           <Node label="Hydrography (NHD HR+)">
             <Children collapsed="true">
               <Node label="Perennial Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial" />
-              <Node label="Intermittent Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" />
+              <Node label="Intermittent Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
               <Node label="Ephemeral Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="nhdephemeral" />
               <Node label="Network - Upstream Drainage Area" xpath="Vector[@id='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
               <Node label="Full NHD HR+ Drainage Network" xpath="Vector[@id='NHDFlowline']" type="line" symbology="flow_lines" />
@@ -44,7 +44,7 @@
           <Node label="Watershed Boundaries (HUCs)">
             <Children collapsed="true">
               <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Vector[@id='WBDHU12']" type="polygon" symbology="wbdhu12" />
-              <Node label="Watersheds - 10-Digit HUC" xpath="Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" />
+              <Node label="Watersheds - 10-Digit HUC" xpath="Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" id="huc10" />
               <Node label="Sub-Basin - 8-Digit HUC" xpath="Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
               <Node label="Basin - 6-Digit HUC" xpath="Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
               <Node label="Subregion - 4-Digit HUC" xpath="Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
@@ -73,7 +73,7 @@
       </Node>
       <Node label="Land Management">
         <Children collapsed="true">
-          <Node label="Land Ownership" xpath="Vector[@id='Ownership']" type="polygon" symbology="ownership" transparency="40" />
+          <Node label="Land Ownership" xpath="Vector[@id='Ownership']" type="polygon" symbology="ownership" transparency="40" id="owner" />
           <Node label="Fair Market Value" xpath="Raster[@id='FAIRMARKETVALUE']" type="raster" symbology="fair_market" transparency="40" />
         </Children>
       </Node>
@@ -83,7 +83,7 @@
             <Children collapsed="true">
               <Node label="Existing Vegetation">
                 <Children>
-                  <Node label="Veg Type - EVT Class" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
+                  <Node label="Veg Type - EVT Class" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" id="exveg" />
                   <Node label="Veg Type - EVT Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
                   <Node label="Veg Type - EVT Riparian" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Riparian" transparency="40" />
                 </Children>
@@ -118,9 +118,9 @@
   <Views default="Default">
     <View name="Hydrology" id="Default">
       <Layers>
-        <Layer id="huc8" />
         <Layer id="perrenial" />
-        <Layer id="hs" />
+        <Layer id="intermittent" />
+        <Layer id="huc10" /> <!-- A test to see if we like it and to see if we avoid the webrave problem of green fill with HUC8-->
       </Layers>
     </View>
     <View name="Topography" id="Topography">
@@ -134,6 +134,20 @@
       <Layers>
         <Layer id="roads" />
         <Layer id="railroads" />
+      </Layers>
+    </View>
+    <View name="Existing Vegetation" id="veg">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="intermittent" />
+        <Layer id="exveg" /> 
+      </Layers>
+    </View>
+    <View name="Land Ownership" id="land">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="intermittent" />
+        <Layer id="owner" /> 
       </Layers>
     </View>
   </Views>
