@@ -69,7 +69,7 @@
           </Node>
           <Node label="Anthropogenic Intermediates">
             <Children>
-              <Node label="Priority Beaver Translocation Areas" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_Privat" />
+              <!-- <Node label="Priority Beaver Translocation Areas" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_Privat" /> -->
               <Node label="Land Ownership per Reach" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="ADMIN_AGEN" />
               <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_LU" />
               <Node label="Distance to Nearest Infrastructure" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="oPC_Dist" />
