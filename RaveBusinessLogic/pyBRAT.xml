@@ -32,55 +32,61 @@
           </Node>
         </Children>
       </Node>
-      <Node label="Intermediates" xpath="Realizations/pyBRAT/Intermediates">
+      <Node label="Intermediates" xpath="Realizations/pyBRAT">
         <Children collapsed="true">
           <Node label="Perennial">
             <Children>
-              <Node label="Perennial" xpath="Vector[@id='FULL_INT']" type="line" symbology="IsPeren" />
+              <Node label="Perennial" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="IsPeren" />
             </Children>
           </Node>
           <Node label="Topographic Index">
             <Children>
-              <Node label="Slope" xpath="Vector[@id='FULL_INT']" type="line" symbology="iGeo_Slope" id="slope" />
-              <Node label="Drainage Area" xpath="Vector[@id='FULL_INT']" type="line" symbology="iGeo_DA" id="DA" />
+              <Node label="Slope" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iGeo_Slope" id="slope" />
+              <Node label="Drainage Area" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iGeo_DA" id="DA" />
             </Children>
           </Node>
           <Node label="Anabranch Handler">
             <Children>
-              <Node label="Anabranch Types" xpath="Vector[@id='FULL_INT']" type="line" symbology="IsMainCH" />
+              <Node label="Anabranch Types" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="IsMainCH" />
             </Children>
           </Node>
           <Node label="Hydrology">
             <Children>
-              <Node label="High Flow Stream Power" xpath="Vector[@id='FULL_INT']" type="line" symbology="iHyd_SP2" id="flow_high" />
-              <Node label="Base Flow Stream Power" xpath="Vector[@id='FULL_INT']" type="line" symbology="iHyd_SPLow" id="flow_base" />
+              <Node label="High Flow Stream Power" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iHyd_SP2" id="flow_high" />
+              <Node label="Base Flow Stream Power" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iHyd_SPLow" id="flow_base" />
             </Children>
           </Node>
           <Node label="Overall Vegetation Dam Capacity">
             <Children>
-              <Node label="Existing Veg Dam Building Capacity" xpath="Vector[@id='FULL_INT']" type="line" symbology="oVC_EX" />
-              <Node label="Historic Veg Dam Building Capacity" xpath="Vector[@id='FULL_INT']" type="line" symbology="oVC_HPE" />
+              <Node label="Existing Veg Dam Building Capacity" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="oVC_EX" />
+              <Node label="Historic Veg Dam Building Capacity" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="oVC_HPE" />
+            </Children>
+          </Node>
+          <Node label="Vegetation Suitability">
+            <Children>
+              <Node label="Existing Vegetation Suitability" xpath="Inputs/Raster[@id='EXVEG']" type="raster" symbology="py_VEG_CODE" transparency="40" />
+              <Node label="Historic Vegetation Suitability" xpath="Inputs/Raster[@id='HISTVEG']" type="raster" symbology="py_VEG_CODE" transparency="40" />
             </Children>
           </Node>
           <Node label="Anthropogenic Intermediates">
             <Children>
               <!-- <Node label="Priority Beaver Translocation Areas" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Privat" /> -->
-              <Node label="Land Ownership per Reach" xpath="Vector[@id='FULL_INT']" type="line" symbology="PY_ADMIN" />
-              <Node label="Land Use Intensity" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_LU" />
-              <Node label="Distance to Nearest Infrastructure" xpath="Vector[@id='FULL_INT']" type="line" symbology="oPC_Dist" />
+              <Node label="Land Ownership per Reach" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="PY_ADMIN" />
+              <Node label="Land Use Intensity" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_LU" />
+              <Node label="Distance to Nearest Infrastructure" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="oPC_Dist" />
               <Node label="Distance to Railroad" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Rail" />
-              <Node label="Distance to Railroad in Valley Bottom" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_RailVB" />
-              <Node label="Distance to Road" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Road" />
-              <Node label="Distance to Road Crossing" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_RoadX" />
-              <Node label="Distance to Road in Valley Bottom" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_RoadVB" />
-              <Node label="Distance to Points of Diversion" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_DivPts" />
-              <Node label="Distance to Canals/Ditches" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Canal" />
+              <Node label="Distance to Railroad in Valley Bottom" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_RailVB" />
+              <Node label="Distance to Road" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_Road" />
+              <Node label="Distance to Road Crossing" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_RoadX" />
+              <Node label="Distance to Road in Valley Bottom" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_RoadVB" />
+              <Node label="Distance to Points of Diversion" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_DivPts" />
+              <Node label="Distance to Canals/Ditches" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_Canal" />
             </Children>
           </Node>
           <Node label="Buffers">
             <Children>
-              <Node label="30m Buffer" xpath="Vector[@id='BUF_30']" type="polygon" symbology="buf30" />
-              <Node label="100m Buffer" xpath="Vector[@id='BUF_100']" type="polygon" symbology="buf100" />
+              <Node label="30m Buffer" xpath="Intermediates/Vector[@id='BUF_30']" type="polygon" symbology="buf30" />
+              <Node label="100m Buffer" xpath="Intermediates/Vector[@id='BUF_100']" type="polygon" symbology="buf100" />
             </Children>
           </Node>
         </Children>
