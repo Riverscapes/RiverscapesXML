@@ -126,6 +126,7 @@
     <View name="Topography" id="Topography">
       <Layers>
         <Layer id="perrenial" />
+        <Layer id="intermittent" />
         <Layer id="dem" />
         <Layer id="hs" />
       </Layers>
