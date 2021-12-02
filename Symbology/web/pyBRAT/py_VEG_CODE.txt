@@ -1,0 +1,7 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+4,0,97,0,102,Preferred
+3,122,171,0,102,Suitable
+2,255,255,0,102,Moderately Suitable
+1,255,153,0,102,Barely Suitable
+0,255,34,0,102,Unsuitable
