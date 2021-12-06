@@ -93,5 +93,12 @@
         </Metadata>
       </Layer>
     </GroupLayer>
+    <GroupLayer name="Geology">
+      <Layer name="SGMC Geology" type="wms" url="https://www.sciencebase.gov/arcgis/services/Catalog/5888bf4fe4b05ccb964bab9d/MapServer/WMSServer">
+        <Metadata>
+          <Meta name="Description">A compilation of state geologic maps</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
   </Region>
 </BaseMaps>
