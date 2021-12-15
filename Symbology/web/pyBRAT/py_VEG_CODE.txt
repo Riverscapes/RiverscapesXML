@@ -1,28 +1,30 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
 11,0,97,0,102,Preferred
 12,255,34,0,102,Unsuitable
 31,255,34,0,102,Unsuitable
-381,255,255,0,102,Moderately,Suitable
+381,255,255,0,102,Moderately Suitable
 383,255,34,0,102,Unsuitable
 384,255,34,0,102,Unsuitable
 385,255,34,0,102,Unsuitable
-386,255,153,0,102,Barely,Suitable
-387,255,153,0,102,Barely,Suitable
-388,255,153,0,102,Barely,Suitable
+386,255,153,0,102,Barely Suitable
+387,255,153,0,102,Barely Suitable
+388,255,153,0,102,Barely Suitable
 389,255,34,0,102,Unsuitable
-390,255,255,0,102,Moderately,Suitable
+390,255,255,0,102,Moderately Suitable
 391,122,171,0,102,Suitable
 392,255,34,0,102,Unsuitable
-393,255,153,0,102,Barely,Suitable
+393,255,153,0,102,Barely Suitable
 394,255,34,0,102,Unsuitable
 395,255,34,0,102,Unsuitable
-396,255,153,0,102,Barely,Suitable
+396,255,153,0,102,Barely Suitable
 397,255,34,0,102,Unsuitable
 398,255,34,0,102,Unsuitable
-399,255,255,0,102,Moderately,Suitable
+399,255,255,0,102,Moderately Suitable
 400,255,34,0,102,Unsuitable
-401,255,153,0,102,Barely,Suitable
+401,255,153,0,102,Barely Suitable
 402,255,34,0,102,Unsuitable
-403,255,255,0,102,Moderately,Suitable
+403,255,255,0,102,Moderately Suitable
 404,255,34,0,102,Unsuitable
 405,255,34,0,102,Unsuitable
 406,255,34,0,102,Unsuitable
@@ -36,592 +38,592 @@
 414,255,34,0,102,Unsuitable
 415,255,34,0,102,Unsuitable
 416,0,97,0,102,Preferred
-417,255,255,0,102,Moderately,Suitable
-418,255,255,0,102,Moderately,Suitable
-419,255,255,0,102,Moderately,Suitable
-420,255,255,0,102,Moderately,Suitable
-421,255,255,0,102,Moderately,Suitable
+417,255,255,0,102,Moderately Suitable
+418,255,255,0,102,Moderately Suitable
+419,255,255,0,102,Moderately Suitable
+420,255,255,0,102,Moderately Suitable
+421,255,255,0,102,Moderately Suitable
 422,122,171,0,102,Suitable
-423,255,255,0,102,Moderately,Suitable
-424,255,255,0,102,Moderately,Suitable
-425,255,255,0,102,Moderately,Suitable
-426,255,255,0,102,Moderately,Suitable
-427,255,153,0,102,Barely,Suitable
-428,255,153,0,102,Barely,Suitable
-429,255,255,0,102,Moderately,Suitable
-430,255,255,0,102,Moderately,Suitable
+423,255,255,0,102,Moderately Suitable
+424,255,255,0,102,Moderately Suitable
+425,255,255,0,102,Moderately Suitable
+426,255,255,0,102,Moderately Suitable
+427,255,153,0,102,Barely Suitable
+428,255,153,0,102,Barely Suitable
+429,255,255,0,102,Moderately Suitable
+430,255,255,0,102,Moderately Suitable
 431,122,171,0,102,Suitable
-432,255,255,0,102,Moderately,Suitable
-433,255,153,0,102,Barely,Suitable
-434,255,153,0,102,Barely,Suitable
-435,255,255,0,102,Moderately,Suitable
-436,255,255,0,102,Moderately,Suitable
-437,255,153,0,102,Barely,Suitable
-438,255,153,0,102,Barely,Suitable
-439,255,153,0,102,Barely,Suitable
-440,255,153,0,102,Barely,Suitable
-441,255,153,0,102,Barely,Suitable
-442,255,153,0,102,Barely,Suitable
+432,255,255,0,102,Moderately Suitable
+433,255,153,0,102,Barely Suitable
+434,255,153,0,102,Barely Suitable
+435,255,255,0,102,Moderately Suitable
+436,255,255,0,102,Moderately Suitable
+437,255,153,0,102,Barely Suitable
+438,255,153,0,102,Barely Suitable
+439,255,153,0,102,Barely Suitable
+440,255,153,0,102,Barely Suitable
+441,255,153,0,102,Barely Suitable
+442,255,153,0,102,Barely Suitable
 443,0,97,0,102,Preferred
-444,255,153,0,102,Barely,Suitable
+444,255,153,0,102,Barely Suitable
 445,0,97,0,102,Preferred
 446,0,97,0,102,Preferred
 447,0,97,0,102,Preferred
 448,0,97,0,102,Preferred
-449,255,255,0,102,Moderately,Suitable
-450,255,255,0,102,Moderately,Suitable
+449,255,255,0,102,Moderately Suitable
+450,255,255,0,102,Moderately Suitable
 451,255,34,0,102,Unsuitable
 452,255,34,0,102,Unsuitable
 453,0,97,0,102,Preferred
 454,0,97,0,102,Preferred
-455,255,255,0,102,Moderately,Suitable
-456,255,255,0,102,Moderately,Suitable
-457,255,255,0,102,Moderately,Suitable
-458,255,255,0,102,Moderately,Suitable
-459,255,255,0,102,Moderately,Suitable
+455,255,255,0,102,Moderately Suitable
+456,255,255,0,102,Moderately Suitable
+457,255,255,0,102,Moderately Suitable
+458,255,255,0,102,Moderately Suitable
+459,255,255,0,102,Moderately Suitable
 460,122,171,0,102,Suitable
 461,122,171,0,102,Suitable
-462,255,255,0,102,Moderately,Suitable
-463,255,255,0,102,Moderately,Suitable
-464,255,255,0,102,Moderately,Suitable
+462,255,255,0,102,Moderately Suitable
+463,255,255,0,102,Moderately Suitable
+464,255,255,0,102,Moderately Suitable
 465,122,171,0,102,Suitable
-466,255,255,0,102,Moderately,Suitable
-467,255,153,0,102,Barely,Suitable
-468,255,255,0,102,Moderately,Suitable
-469,255,153,0,102,Barely,Suitable
+466,255,255,0,102,Moderately Suitable
+467,255,153,0,102,Barely Suitable
+468,255,255,0,102,Moderately Suitable
+469,255,153,0,102,Barely Suitable
 470,122,171,0,102,Suitable
-471,255,255,0,102,Moderately,Suitable
-472,255,153,0,102,Barely,Suitable
-473,255,255,0,102,Moderately,Suitable
-474,255,255,0,102,Moderately,Suitable
-475,255,153,0,102,Barely,Suitable
-476,255,153,0,102,Barely,Suitable
-477,255,153,0,102,Barely,Suitable
-478,255,153,0,102,Barely,Suitable
-479,255,255,0,102,Moderately,Suitable
-480,255,153,0,102,Barely,Suitable
+471,255,255,0,102,Moderately Suitable
+472,255,153,0,102,Barely Suitable
+473,255,255,0,102,Moderately Suitable
+474,255,255,0,102,Moderately Suitable
+475,255,153,0,102,Barely Suitable
+476,255,153,0,102,Barely Suitable
+477,255,153,0,102,Barely Suitable
+478,255,153,0,102,Barely Suitable
+479,255,255,0,102,Moderately Suitable
+480,255,153,0,102,Barely Suitable
 481,0,97,0,102,Preferred
 482,0,97,0,102,Preferred
 483,0,97,0,102,Preferred
 484,0,97,0,102,Preferred
 485,122,171,0,102,Suitable
-486,255,255,0,102,Moderately,Suitable
-487,255,255,0,102,Moderately,Suitable
+486,255,255,0,102,Moderately Suitable
+487,255,255,0,102,Moderately Suitable
 488,255,34,0,102,Unsuitable
 489,255,34,0,102,Unsuitable
 490,255,34,0,102,Unsuitable
-491,255,255,0,102,Moderately,Suitable
-492,255,255,0,102,Moderately,Suitable
-493,255,255,0,102,Moderately,Suitable
-494,255,255,0,102,Moderately,Suitable
-495,255,255,0,102,Moderately,Suitable
+491,255,255,0,102,Moderately Suitable
+492,255,255,0,102,Moderately Suitable
+493,255,255,0,102,Moderately Suitable
+494,255,255,0,102,Moderately Suitable
+495,255,255,0,102,Moderately Suitable
 496,122,171,0,102,Suitable
-497,255,255,0,102,Moderately,Suitable
-498,255,255,0,102,Moderately,Suitable
-499,255,255,0,102,Moderately,Suitable
-500,255,153,0,102,Barely,Suitable
-501,255,153,0,102,Barely,Suitable
+497,255,255,0,102,Moderately Suitable
+498,255,255,0,102,Moderately Suitable
+499,255,255,0,102,Moderately Suitable
+500,255,153,0,102,Barely Suitable
+501,255,153,0,102,Barely Suitable
 502,122,171,0,102,Suitable
-503,255,153,0,102,Barely,Suitable
-504,255,153,0,102,Barely,Suitable
-505,255,153,0,102,Barely,Suitable
+503,255,153,0,102,Barely Suitable
+504,255,153,0,102,Barely Suitable
+505,255,153,0,102,Barely Suitable
 506,255,34,0,102,Unsuitable
-507,255,255,0,102,Moderately,Suitable
-508,255,153,0,102,Barely,Suitable
-509,255,153,0,102,Barely,Suitable
+507,255,255,0,102,Moderately Suitable
+508,255,153,0,102,Barely Suitable
+509,255,153,0,102,Barely Suitable
 510,122,171,0,102,Suitable
 511,255,34,0,102,Unsuitable
-512,255,153,0,102,Barely,Suitable
-513,255,255,0,102,Moderately,Suitable
-514,255,255,0,102,Moderately,Suitable
-515,255,255,0,102,Moderately,Suitable
-516,255,153,0,102,Barely,Suitable
+512,255,153,0,102,Barely Suitable
+513,255,255,0,102,Moderately Suitable
+514,255,255,0,102,Moderately Suitable
+515,255,255,0,102,Moderately Suitable
+516,255,153,0,102,Barely Suitable
 517,255,34,0,102,Unsuitable
-518,255,153,0,102,Barely,Suitable
-519,255,153,0,102,Barely,Suitable
-520,255,153,0,102,Barely,Suitable
+518,255,153,0,102,Barely Suitable
+519,255,153,0,102,Barely Suitable
+520,255,153,0,102,Barely Suitable
 521,0,97,0,102,Preferred
 522,0,97,0,102,Preferred
 523,0,97,0,102,Preferred
 524,0,97,0,102,Preferred
 525,255,34,0,102,Unsuitable
-526,255,255,0,102,Moderately,Suitable
-527,255,255,0,102,Moderately,Suitable
+526,255,255,0,102,Moderately Suitable
+527,255,255,0,102,Moderately Suitable
 528,255,34,0,102,Unsuitable
 529,255,34,0,102,Unsuitable
-530,255,255,0,102,Moderately,Suitable
-531,255,255,0,102,Moderately,Suitable
-532,255,255,0,102,Moderately,Suitable
+530,255,255,0,102,Moderately Suitable
+531,255,255,0,102,Moderately Suitable
+532,255,255,0,102,Moderately Suitable
 533,255,34,0,102,Unsuitable
 534,255,34,0,102,Unsuitable
-535,255,153,0,102,Barely,Suitable
+535,255,153,0,102,Barely Suitable
 536,255,34,0,102,Unsuitable
 537,255,34,0,102,Unsuitable
-538,255,153,0,102,Barely,Suitable
+538,255,153,0,102,Barely Suitable
 539,255,34,0,102,Unsuitable
 540,255,34,0,102,Unsuitable
-541,255,255,0,102,Moderately,Suitable
-542,255,153,0,102,Barely,Suitable
+541,255,255,0,102,Moderately Suitable
+542,255,153,0,102,Barely Suitable
 543,255,34,0,102,Unsuitable
-544,255,153,0,102,Barely,Suitable
+544,255,153,0,102,Barely Suitable
 545,255,34,0,102,Unsuitable
 546,255,34,0,102,Unsuitable
 547,122,171,0,102,Suitable
-548,255,255,0,102,Moderately,Suitable
-549,255,255,0,102,Moderately,Suitable
-550,255,255,0,102,Moderately,Suitable
-551,255,255,0,102,Moderately,Suitable
-552,255,255,0,102,Moderately,Suitable
+548,255,255,0,102,Moderately Suitable
+549,255,255,0,102,Moderately Suitable
+550,255,255,0,102,Moderately Suitable
+551,255,255,0,102,Moderately Suitable
+552,255,255,0,102,Moderately Suitable
 553,122,171,0,102,Suitable
-554,255,255,0,102,Moderately,Suitable
-555,255,255,0,102,Moderately,Suitable
-556,255,255,0,102,Moderately,Suitable
-557,255,255,0,102,Moderately,Suitable
-558,255,255,0,102,Moderately,Suitable
-559,255,255,0,102,Moderately,Suitable
-560,255,255,0,102,Moderately,Suitable
+554,255,255,0,102,Moderately Suitable
+555,255,255,0,102,Moderately Suitable
+556,255,255,0,102,Moderately Suitable
+557,255,255,0,102,Moderately Suitable
+558,255,255,0,102,Moderately Suitable
+559,255,255,0,102,Moderately Suitable
+560,255,255,0,102,Moderately Suitable
 561,255,34,0,102,Unsuitable
-562,255,153,0,102,Barely,Suitable
-563,255,153,0,102,Barely,Suitable
-564,255,153,0,102,Barely,Suitable
-565,255,153,0,102,Barely,Suitable
+562,255,153,0,102,Barely Suitable
+563,255,153,0,102,Barely Suitable
+564,255,153,0,102,Barely Suitable
+565,255,153,0,102,Barely Suitable
 566,122,171,0,102,Suitable
 567,122,171,0,102,Suitable
-568,255,153,0,102,Barely,Suitable
-569,255,153,0,102,Barely,Suitable
-570,255,153,0,102,Barely,Suitable
-571,255,153,0,102,Barely,Suitable
-572,255,153,0,102,Barely,Suitable
+568,255,153,0,102,Barely Suitable
+569,255,153,0,102,Barely Suitable
+570,255,153,0,102,Barely Suitable
+571,255,153,0,102,Barely Suitable
+572,255,153,0,102,Barely Suitable
 573,0,97,0,102,Preferred
-574,255,153,0,102,Barely,Suitable
-575,255,255,0,102,Moderately,Suitable
-576,255,255,0,102,Moderately,Suitable
+574,255,153,0,102,Barely Suitable
+575,255,255,0,102,Moderately Suitable
+576,255,255,0,102,Moderately Suitable
 577,255,34,0,102,Unsuitable
 578,255,34,0,102,Unsuitable
 579,0,97,0,102,Preferred
-580,255,255,0,102,Moderately,Suitable
-581,255,255,0,102,Moderately,Suitable
-582,255,255,0,102,Moderately,Suitable
-583,255,255,0,102,Moderately,Suitable
-584,255,255,0,102,Moderately,Suitable
-585,255,255,0,102,Moderately,Suitable
+580,255,255,0,102,Moderately Suitable
+581,255,255,0,102,Moderately Suitable
+582,255,255,0,102,Moderately Suitable
+583,255,255,0,102,Moderately Suitable
+584,255,255,0,102,Moderately Suitable
+585,255,255,0,102,Moderately Suitable
 586,122,171,0,102,Suitable
-587,255,255,0,102,Moderately,Suitable
-588,255,255,0,102,Moderately,Suitable
-589,255,255,0,102,Moderately,Suitable
-590,255,255,0,102,Moderately,Suitable
-591,255,255,0,102,Moderately,Suitable
-592,255,153,0,102,Barely,Suitable
-593,255,255,0,102,Moderately,Suitable
-594,255,255,0,102,Moderately,Suitable
-595,255,255,0,102,Moderately,Suitable
-596,255,255,0,102,Moderately,Suitable
-597,255,255,0,102,Moderately,Suitable
+587,255,255,0,102,Moderately Suitable
+588,255,255,0,102,Moderately Suitable
+589,255,255,0,102,Moderately Suitable
+590,255,255,0,102,Moderately Suitable
+591,255,255,0,102,Moderately Suitable
+592,255,153,0,102,Barely Suitable
+593,255,255,0,102,Moderately Suitable
+594,255,255,0,102,Moderately Suitable
+595,255,255,0,102,Moderately Suitable
+596,255,255,0,102,Moderately Suitable
+597,255,255,0,102,Moderately Suitable
 598,122,171,0,102,Suitable
-599,255,255,0,102,Moderately,Suitable
-600,255,153,0,102,Barely,Suitable
-601,255,153,0,102,Barely,Suitable
-602,255,255,0,102,Moderately,Suitable
-603,255,255,0,102,Moderately,Suitable
-604,255,153,0,102,Barely,Suitable
-605,255,153,0,102,Barely,Suitable
-606,255,153,0,102,Barely,Suitable
-607,255,153,0,102,Barely,Suitable
-608,255,153,0,102,Barely,Suitable
-609,255,153,0,102,Barely,Suitable
-610,255,153,0,102,Barely,Suitable
+599,255,255,0,102,Moderately Suitable
+600,255,153,0,102,Barely Suitable
+601,255,153,0,102,Barely Suitable
+602,255,255,0,102,Moderately Suitable
+603,255,255,0,102,Moderately Suitable
+604,255,153,0,102,Barely Suitable
+605,255,153,0,102,Barely Suitable
+606,255,153,0,102,Barely Suitable
+607,255,153,0,102,Barely Suitable
+608,255,153,0,102,Barely Suitable
+609,255,153,0,102,Barely Suitable
+610,255,153,0,102,Barely Suitable
 611,122,171,0,102,Suitable
-612,255,255,0,102,Moderately,Suitable
-613,255,255,0,102,Moderately,Suitable
-614,255,153,0,102,Barely,Suitable
-615,255,153,0,102,Barely,Suitable
-616,255,153,0,102,Barely,Suitable
+612,255,255,0,102,Moderately Suitable
+613,255,255,0,102,Moderately Suitable
+614,255,153,0,102,Barely Suitable
+615,255,153,0,102,Barely Suitable
+616,255,153,0,102,Barely Suitable
 617,0,97,0,102,Preferred
-618,255,153,0,102,Barely,Suitable
+618,255,153,0,102,Barely Suitable
 619,0,97,0,102,Preferred
 620,255,34,0,102,Unsuitable
 621,255,34,0,102,Unsuitable
 622,0,97,0,102,Preferred
-623,255,255,0,102,Moderately,Suitable
-624,255,255,0,102,Moderately,Suitable
-625,255,255,0,102,Moderately,Suitable
-626,255,255,0,102,Moderately,Suitable
-627,255,255,0,102,Moderately,Suitable
-628,255,255,0,102,Moderately,Suitable
-629,255,255,0,102,Moderately,Suitable
-630,255,255,0,102,Moderately,Suitable
-631,255,255,0,102,Moderately,Suitable
-632,255,255,0,102,Moderately,Suitable
+623,255,255,0,102,Moderately Suitable
+624,255,255,0,102,Moderately Suitable
+625,255,255,0,102,Moderately Suitable
+626,255,255,0,102,Moderately Suitable
+627,255,255,0,102,Moderately Suitable
+628,255,255,0,102,Moderately Suitable
+629,255,255,0,102,Moderately Suitable
+630,255,255,0,102,Moderately Suitable
+631,255,255,0,102,Moderately Suitable
+632,255,255,0,102,Moderately Suitable
 633,122,171,0,102,Suitable
-634,255,255,0,102,Moderately,Suitable
-635,255,153,0,102,Barely,Suitable
-636,255,255,0,102,Moderately,Suitable
-637,255,255,0,102,Moderately,Suitable
-638,255,153,0,102,Barely,Suitable
+634,255,255,0,102,Moderately Suitable
+635,255,153,0,102,Barely Suitable
+636,255,255,0,102,Moderately Suitable
+637,255,255,0,102,Moderately Suitable
+638,255,153,0,102,Barely Suitable
 639,122,171,0,102,Suitable
-640,255,153,0,102,Barely,Suitable
-641,255,153,0,102,Barely,Suitable
-642,255,255,0,102,Moderately,Suitable
-643,255,255,0,102,Moderately,Suitable
-644,255,153,0,102,Barely,Suitable
-645,255,153,0,102,Barely,Suitable
-646,255,153,0,102,Barely,Suitable
-647,255,153,0,102,Barely,Suitable
-648,255,153,0,102,Barely,Suitable
-649,255,153,0,102,Barely,Suitable
-650,255,153,0,102,Barely,Suitable
-651,255,255,0,102,Moderately,Suitable
-652,255,153,0,102,Barely,Suitable
+640,255,153,0,102,Barely Suitable
+641,255,153,0,102,Barely Suitable
+642,255,255,0,102,Moderately Suitable
+643,255,255,0,102,Moderately Suitable
+644,255,153,0,102,Barely Suitable
+645,255,153,0,102,Barely Suitable
+646,255,153,0,102,Barely Suitable
+647,255,153,0,102,Barely Suitable
+648,255,153,0,102,Barely Suitable
+649,255,153,0,102,Barely Suitable
+650,255,153,0,102,Barely Suitable
+651,255,255,0,102,Moderately Suitable
+652,255,153,0,102,Barely Suitable
 653,0,97,0,102,Preferred
 654,0,97,0,102,Preferred
 655,0,97,0,102,Preferred
 656,0,97,0,102,Preferred
-657,255,255,0,102,Moderately,Suitable
-658,255,255,0,102,Moderately,Suitable
-659,255,255,0,102,Moderately,Suitable
+657,255,255,0,102,Moderately Suitable
+658,255,255,0,102,Moderately Suitable
+659,255,255,0,102,Moderately Suitable
 660,255,34,0,102,Unsuitable
-661,255,255,0,102,Moderately,Suitable
-662,255,255,0,102,Moderately,Suitable
-663,255,255,0,102,Moderately,Suitable
-664,255,255,0,102,Moderately,Suitable
-665,255,255,0,102,Moderately,Suitable
-666,255,255,0,102,Moderately,Suitable
+661,255,255,0,102,Moderately Suitable
+662,255,255,0,102,Moderately Suitable
+663,255,255,0,102,Moderately Suitable
+664,255,255,0,102,Moderately Suitable
+665,255,255,0,102,Moderately Suitable
+666,255,255,0,102,Moderately Suitable
 667,122,171,0,102,Suitable
-668,255,153,0,102,Barely,Suitable
-669,255,255,0,102,Moderately,Suitable
-670,255,153,0,102,Barely,Suitable
+668,255,153,0,102,Barely Suitable
+669,255,255,0,102,Moderately Suitable
+670,255,153,0,102,Barely Suitable
 671,122,171,0,102,Suitable
-672,255,153,0,102,Barely,Suitable
-673,255,153,0,102,Barely,Suitable
-674,255,255,0,102,Moderately,Suitable
-675,255,255,0,102,Moderately,Suitable
-676,255,153,0,102,Barely,Suitable
-677,255,153,0,102,Barely,Suitable
-678,255,153,0,102,Barely,Suitable
-679,255,153,0,102,Barely,Suitable
-680,255,153,0,102,Barely,Suitable
-681,255,153,0,102,Barely,Suitable
+672,255,153,0,102,Barely Suitable
+673,255,153,0,102,Barely Suitable
+674,255,255,0,102,Moderately Suitable
+675,255,255,0,102,Moderately Suitable
+676,255,153,0,102,Barely Suitable
+677,255,153,0,102,Barely Suitable
+678,255,153,0,102,Barely Suitable
+679,255,153,0,102,Barely Suitable
+680,255,153,0,102,Barely Suitable
+681,255,153,0,102,Barely Suitable
 682,0,97,0,102,Preferred
 683,0,97,0,102,Preferred
 684,0,97,0,102,Preferred
-685,255,255,0,102,Moderately,Suitable
+685,255,255,0,102,Moderately Suitable
 686,0,97,0,102,Preferred
 687,122,171,0,102,Suitable
-688,255,255,0,102,Moderately,Suitable
-689,255,255,0,102,Moderately,Suitable
-690,255,255,0,102,Moderately,Suitable
-691,255,255,0,102,Moderately,Suitable
+688,255,255,0,102,Moderately Suitable
+689,255,255,0,102,Moderately Suitable
+690,255,255,0,102,Moderately Suitable
+691,255,255,0,102,Moderately Suitable
 692,122,171,0,102,Suitable
-693,255,255,0,102,Moderately,Suitable
-694,255,255,0,102,Moderately,Suitable
-695,255,255,0,102,Moderately,Suitable
-696,255,153,0,102,Barely,Suitable
-697,255,255,0,102,Moderately,Suitable
-698,255,255,0,102,Moderately,Suitable
-699,255,153,0,102,Barely,Suitable
+693,255,255,0,102,Moderately Suitable
+694,255,255,0,102,Moderately Suitable
+695,255,255,0,102,Moderately Suitable
+696,255,153,0,102,Barely Suitable
+697,255,255,0,102,Moderately Suitable
+698,255,255,0,102,Moderately Suitable
+699,255,153,0,102,Barely Suitable
 700,122,171,0,102,Suitable
 701,122,171,0,102,Suitable
-702,255,255,0,102,Moderately,Suitable
-703,255,153,0,102,Barely,Suitable
-704,255,255,0,102,Moderately,Suitable
-705,255,153,0,102,Barely,Suitable
-706,255,153,0,102,Barely,Suitable
-707,255,153,0,102,Barely,Suitable
-708,255,153,0,102,Barely,Suitable
-709,255,153,0,102,Barely,Suitable
+702,255,255,0,102,Moderately Suitable
+703,255,153,0,102,Barely Suitable
+704,255,255,0,102,Moderately Suitable
+705,255,153,0,102,Barely Suitable
+706,255,153,0,102,Barely Suitable
+707,255,153,0,102,Barely Suitable
+708,255,153,0,102,Barely Suitable
+709,255,153,0,102,Barely Suitable
 710,0,97,0,102,Preferred
-711,255,153,0,102,Barely,Suitable
+711,255,153,0,102,Barely Suitable
 712,0,97,0,102,Preferred
 713,0,97,0,102,Preferred
 714,0,97,0,102,Preferred
-715,255,255,0,102,Moderately,Suitable
-716,255,255,0,102,Moderately,Suitable
+715,255,255,0,102,Moderately Suitable
+716,255,255,0,102,Moderately Suitable
 717,255,34,0,102,Unsuitable
 718,255,34,0,102,Unsuitable
 719,255,34,0,102,Unsuitable
-720,255,255,0,102,Moderately,Suitable
-721,255,255,0,102,Moderately,Suitable
-722,255,255,0,102,Moderately,Suitable
-723,255,255,0,102,Moderately,Suitable
-724,255,255,0,102,Moderately,Suitable
-725,255,255,0,102,Moderately,Suitable
-726,255,255,0,102,Moderately,Suitable
-727,255,255,0,102,Moderately,Suitable
-728,255,255,0,102,Moderately,Suitable
-729,255,255,0,102,Moderately,Suitable
-730,255,255,0,102,Moderately,Suitable
-731,255,255,0,102,Moderately,Suitable
-732,255,255,0,102,Moderately,Suitable
-733,255,255,0,102,Moderately,Suitable
-734,255,255,0,102,Moderately,Suitable
-735,255,255,0,102,Moderately,Suitable
+720,255,255,0,102,Moderately Suitable
+721,255,255,0,102,Moderately Suitable
+722,255,255,0,102,Moderately Suitable
+723,255,255,0,102,Moderately Suitable
+724,255,255,0,102,Moderately Suitable
+725,255,255,0,102,Moderately Suitable
+726,255,255,0,102,Moderately Suitable
+727,255,255,0,102,Moderately Suitable
+728,255,255,0,102,Moderately Suitable
+729,255,255,0,102,Moderately Suitable
+730,255,255,0,102,Moderately Suitable
+731,255,255,0,102,Moderately Suitable
+732,255,255,0,102,Moderately Suitable
+733,255,255,0,102,Moderately Suitable
+734,255,255,0,102,Moderately Suitable
+735,255,255,0,102,Moderately Suitable
 736,122,171,0,102,Suitable
-737,255,153,0,102,Barely,Suitable
-738,255,153,0,102,Barely,Suitable
-739,255,255,0,102,Moderately,Suitable
-740,255,255,0,102,Moderately,Suitable
-741,255,153,0,102,Barely,Suitable
-742,255,153,0,102,Barely,Suitable
-743,255,255,0,102,Moderately,Suitable
-744,255,153,0,102,Barely,Suitable
-745,255,153,0,102,Barely,Suitable
-746,255,255,0,102,Moderately,Suitable
-747,255,153,0,102,Barely,Suitable
-748,255,153,0,102,Barely,Suitable
+737,255,153,0,102,Barely Suitable
+738,255,153,0,102,Barely Suitable
+739,255,255,0,102,Moderately Suitable
+740,255,255,0,102,Moderately Suitable
+741,255,153,0,102,Barely Suitable
+742,255,153,0,102,Barely Suitable
+743,255,255,0,102,Moderately Suitable
+744,255,153,0,102,Barely Suitable
+745,255,153,0,102,Barely Suitable
+746,255,255,0,102,Moderately Suitable
+747,255,153,0,102,Barely Suitable
+748,255,153,0,102,Barely Suitable
 749,0,97,0,102,Preferred
 750,0,97,0,102,Preferred
 751,122,171,0,102,Suitable
 752,122,171,0,102,Suitable
 753,0,97,0,102,Preferred
-754,255,255,0,102,Moderately,Suitable
-755,255,255,0,102,Moderately,Suitable
-756,255,153,0,102,Barely,Suitable
-757,255,255,0,102,Moderately,Suitable
-758,255,255,0,102,Moderately,Suitable
-759,255,255,0,102,Moderately,Suitable
+754,255,255,0,102,Moderately Suitable
+755,255,255,0,102,Moderately Suitable
+756,255,153,0,102,Barely Suitable
+757,255,255,0,102,Moderately Suitable
+758,255,255,0,102,Moderately Suitable
+759,255,255,0,102,Moderately Suitable
 760,122,171,0,102,Suitable
-761,255,255,0,102,Moderately,Suitable
-762,255,255,0,102,Moderately,Suitable
-763,255,255,0,102,Moderately,Suitable
-764,255,255,0,102,Moderately,Suitable
-765,255,255,0,102,Moderately,Suitable
+761,255,255,0,102,Moderately Suitable
+762,255,255,0,102,Moderately Suitable
+763,255,255,0,102,Moderately Suitable
+764,255,255,0,102,Moderately Suitable
+765,255,255,0,102,Moderately Suitable
 766,122,171,0,102,Suitable
-767,255,255,0,102,Moderately,Suitable
-768,255,255,0,102,Moderately,Suitable
-769,255,255,0,102,Moderately,Suitable
-770,255,255,0,102,Moderately,Suitable
-771,255,255,0,102,Moderately,Suitable
-772,255,255,0,102,Moderately,Suitable
-773,255,255,0,102,Moderately,Suitable
-774,255,255,0,102,Moderately,Suitable
-775,255,255,0,102,Moderately,Suitable
+767,255,255,0,102,Moderately Suitable
+768,255,255,0,102,Moderately Suitable
+769,255,255,0,102,Moderately Suitable
+770,255,255,0,102,Moderately Suitable
+771,255,255,0,102,Moderately Suitable
+772,255,255,0,102,Moderately Suitable
+773,255,255,0,102,Moderately Suitable
+774,255,255,0,102,Moderately Suitable
+775,255,255,0,102,Moderately Suitable
 776,0,97,0,102,Preferred
-777,255,255,0,102,Moderately,Suitable
-778,255,153,0,102,Barely,Suitable
-779,255,153,0,102,Barely,Suitable
+777,255,255,0,102,Moderately Suitable
+778,255,153,0,102,Barely Suitable
+779,255,153,0,102,Barely Suitable
 780,0,97,0,102,Preferred
 781,0,97,0,102,Preferred
 782,122,171,0,102,Suitable
 783,122,171,0,102,Suitable
 784,122,171,0,102,Suitable
-785,255,255,0,102,Moderately,Suitable
-786,255,255,0,102,Moderately,Suitable
+785,255,255,0,102,Moderately Suitable
+786,255,255,0,102,Moderately Suitable
 787,255,34,0,102,Unsuitable
 788,255,34,0,102,Unsuitable
 789,255,34,0,102,Unsuitable
-790,255,255,0,102,Moderately,Suitable
+790,255,255,0,102,Moderately Suitable
 791,0,97,0,102,Preferred
-792,255,255,0,102,Moderately,Suitable
+792,255,255,0,102,Moderately Suitable
 793,122,171,0,102,Suitable
-794,255,255,0,102,Moderately,Suitable
-795,255,255,0,102,Moderately,Suitable
-796,255,255,0,102,Moderately,Suitable
-797,255,255,0,102,Moderately,Suitable
-798,255,255,0,102,Moderately,Suitable
+794,255,255,0,102,Moderately Suitable
+795,255,255,0,102,Moderately Suitable
+796,255,255,0,102,Moderately Suitable
+797,255,255,0,102,Moderately Suitable
+798,255,255,0,102,Moderately Suitable
 799,122,171,0,102,Suitable
-800,255,255,0,102,Moderately,Suitable
-801,255,255,0,102,Moderately,Suitable
-802,255,255,0,102,Moderately,Suitable
-803,255,255,0,102,Moderately,Suitable
-804,255,153,0,102,Barely,Suitable
-805,255,255,0,102,Moderately,Suitable
-806,255,255,0,102,Moderately,Suitable
-807,255,255,0,102,Moderately,Suitable
+800,255,255,0,102,Moderately Suitable
+801,255,255,0,102,Moderately Suitable
+802,255,255,0,102,Moderately Suitable
+803,255,255,0,102,Moderately Suitable
+804,255,153,0,102,Barely Suitable
+805,255,255,0,102,Moderately Suitable
+806,255,255,0,102,Moderately Suitable
+807,255,255,0,102,Moderately Suitable
 808,122,171,0,102,Suitable
-809,255,255,0,102,Moderately,Suitable
-810,255,255,0,102,Moderately,Suitable
-811,255,255,0,102,Moderately,Suitable
-812,255,255,0,102,Moderately,Suitable
-813,255,255,0,102,Moderately,Suitable
-814,255,255,0,102,Moderately,Suitable
-815,255,255,0,102,Moderately,Suitable
-816,255,255,0,102,Moderately,Suitable
-817,255,255,0,102,Moderately,Suitable
-818,255,255,0,102,Moderately,Suitable
-819,255,255,0,102,Moderately,Suitable
-820,255,255,0,102,Moderately,Suitable
-821,255,255,0,102,Moderately,Suitable
+809,255,255,0,102,Moderately Suitable
+810,255,255,0,102,Moderately Suitable
+811,255,255,0,102,Moderately Suitable
+812,255,255,0,102,Moderately Suitable
+813,255,255,0,102,Moderately Suitable
+814,255,255,0,102,Moderately Suitable
+815,255,255,0,102,Moderately Suitable
+816,255,255,0,102,Moderately Suitable
+817,255,255,0,102,Moderately Suitable
+818,255,255,0,102,Moderately Suitable
+819,255,255,0,102,Moderately Suitable
+820,255,255,0,102,Moderately Suitable
+821,255,255,0,102,Moderately Suitable
 822,122,171,0,102,Suitable
-823,255,153,0,102,Barely,Suitable
-824,255,255,0,102,Moderately,Suitable
-825,255,153,0,102,Barely,Suitable
-826,255,153,0,102,Barely,Suitable
-827,255,153,0,102,Barely,Suitable
-828,255,153,0,102,Barely,Suitable
-829,255,153,0,102,Barely,Suitable
+823,255,153,0,102,Barely Suitable
+824,255,255,0,102,Moderately Suitable
+825,255,153,0,102,Barely Suitable
+826,255,153,0,102,Barely Suitable
+827,255,153,0,102,Barely Suitable
+828,255,153,0,102,Barely Suitable
+829,255,153,0,102,Barely Suitable
 830,122,171,0,102,Suitable
-831,255,255,0,102,Moderately,Suitable
-832,255,153,0,102,Barely,Suitable
-833,255,153,0,102,Barely,Suitable
-834,255,255,0,102,Moderately,Suitable
-835,255,255,0,102,Moderately,Suitable
-836,255,153,0,102,Barely,Suitable
-837,255,153,0,102,Barely,Suitable
+831,255,255,0,102,Moderately Suitable
+832,255,153,0,102,Barely Suitable
+833,255,153,0,102,Barely Suitable
+834,255,255,0,102,Moderately Suitable
+835,255,255,0,102,Moderately Suitable
+836,255,153,0,102,Barely Suitable
+837,255,153,0,102,Barely Suitable
 838,0,97,0,102,Preferred
-839,255,153,0,102,Barely,Suitable
+839,255,153,0,102,Barely Suitable
 840,0,97,0,102,Preferred
 841,0,97,0,102,Preferred
 842,0,97,0,102,Preferred
 843,0,97,0,102,Preferred
-844,255,255,0,102,Moderately,Suitable
-845,255,255,0,102,Moderately,Suitable
-846,255,153,0,102,Barely,Suitable
-847,255,153,0,102,Barely,Suitable
-848,255,255,0,102,Moderately,Suitable
-849,255,255,0,102,Moderately,Suitable
-850,255,255,0,102,Moderately,Suitable
-851,255,255,0,102,Moderately,Suitable
+844,255,255,0,102,Moderately Suitable
+845,255,255,0,102,Moderately Suitable
+846,255,153,0,102,Barely Suitable
+847,255,153,0,102,Barely Suitable
+848,255,255,0,102,Moderately Suitable
+849,255,255,0,102,Moderately Suitable
+850,255,255,0,102,Moderately Suitable
+851,255,255,0,102,Moderately Suitable
 852,255,34,0,102,Unsuitable
 853,0,97,0,102,Preferred
-854,255,255,0,102,Moderately,Suitable
-855,255,255,0,102,Moderately,Suitable
-856,255,255,0,102,Moderately,Suitable
-857,255,255,0,102,Moderately,Suitable
-858,255,255,0,102,Moderately,Suitable
-859,255,255,0,102,Moderately,Suitable
-860,255,255,0,102,Moderately,Suitable
+854,255,255,0,102,Moderately Suitable
+855,255,255,0,102,Moderately Suitable
+856,255,255,0,102,Moderately Suitable
+857,255,255,0,102,Moderately Suitable
+858,255,255,0,102,Moderately Suitable
+859,255,255,0,102,Moderately Suitable
+860,255,255,0,102,Moderately Suitable
 861,122,171,0,102,Suitable
-862,255,153,0,102,Barely,Suitable
-863,255,153,0,102,Barely,Suitable
-864,255,255,0,102,Moderately,Suitable
-865,255,255,0,102,Moderately,Suitable
-866,255,255,0,102,Moderately,Suitable
-867,255,153,0,102,Barely,Suitable
-868,255,153,0,102,Barely,Suitable
-869,255,153,0,102,Barely,Suitable
-870,255,153,0,102,Barely,Suitable
-871,255,153,0,102,Barely,Suitable
-872,255,153,0,102,Barely,Suitable
+862,255,153,0,102,Barely Suitable
+863,255,153,0,102,Barely Suitable
+864,255,255,0,102,Moderately Suitable
+865,255,255,0,102,Moderately Suitable
+866,255,255,0,102,Moderately Suitable
+867,255,153,0,102,Barely Suitable
+868,255,153,0,102,Barely Suitable
+869,255,153,0,102,Barely Suitable
+870,255,153,0,102,Barely Suitable
+871,255,153,0,102,Barely Suitable
+872,255,153,0,102,Barely Suitable
 873,0,97,0,102,Preferred
 874,0,97,0,102,Preferred
 875,0,97,0,102,Preferred
 876,122,171,0,102,Suitable
-877,255,153,0,102,Barely,Suitable
+877,255,153,0,102,Barely Suitable
 878,255,34,0,102,Unsuitable
 879,0,97,0,102,Preferred
-880,255,255,0,102,Moderately,Suitable
-881,255,255,0,102,Moderately,Suitable
-882,255,255,0,102,Moderately,Suitable
-883,255,255,0,102,Moderately,Suitable
-884,255,255,0,102,Moderately,Suitable
-885,255,255,0,102,Moderately,Suitable
-886,255,255,0,102,Moderately,Suitable
+880,255,255,0,102,Moderately Suitable
+881,255,255,0,102,Moderately Suitable
+882,255,255,0,102,Moderately Suitable
+883,255,255,0,102,Moderately Suitable
+884,255,255,0,102,Moderately Suitable
+885,255,255,0,102,Moderately Suitable
+886,255,255,0,102,Moderately Suitable
 887,122,171,0,102,Suitable
-888,255,255,0,102,Moderately,Suitable
-889,255,153,0,102,Barely,Suitable
-890,255,153,0,102,Barely,Suitable
-891,255,255,0,102,Moderately,Suitable
-892,255,255,0,102,Moderately,Suitable
-893,255,153,0,102,Barely,Suitable
+888,255,255,0,102,Moderately Suitable
+889,255,153,0,102,Barely Suitable
+890,255,153,0,102,Barely Suitable
+891,255,255,0,102,Moderately Suitable
+892,255,255,0,102,Moderately Suitable
+893,255,153,0,102,Barely Suitable
 894,122,171,0,102,Suitable
-895,255,255,0,102,Moderately,Suitable
+895,255,255,0,102,Moderately Suitable
 896,122,171,0,102,Suitable
-897,255,255,0,102,Moderately,Suitable
+897,255,255,0,102,Moderately Suitable
 898,122,171,0,102,Suitable
 899,255,34,0,102,Unsuitable
-900,255,153,0,102,Barely,Suitable
-901,255,153,0,102,Barely,Suitable
-902,255,153,0,102,Barely,Suitable
-903,255,153,0,102,Barely,Suitable
-904,255,153,0,102,Barely,Suitable
+900,255,153,0,102,Barely Suitable
+901,255,153,0,102,Barely Suitable
+902,255,153,0,102,Barely Suitable
+903,255,153,0,102,Barely Suitable
+904,255,153,0,102,Barely Suitable
 905,0,97,0,102,Preferred
 906,0,97,0,102,Preferred
 907,122,171,0,102,Suitable
 908,255,34,0,102,Unsuitable
 909,255,34,0,102,Unsuitable
 910,122,171,0,102,Suitable
-911,255,255,0,102,Moderately,Suitable
+911,255,255,0,102,Moderately Suitable
 912,122,171,0,102,Suitable
-913,255,255,0,102,Moderately,Suitable
-914,255,255,0,102,Moderately,Suitable
-915,255,255,0,102,Moderately,Suitable
-916,255,153,0,102,Barely,Suitable
-917,255,153,0,102,Barely,Suitable
-918,255,153,0,102,Barely,Suitable
-919,255,153,0,102,Barely,Suitable
+913,255,255,0,102,Moderately Suitable
+914,255,255,0,102,Moderately Suitable
+915,255,255,0,102,Moderately Suitable
+916,255,153,0,102,Barely Suitable
+917,255,153,0,102,Barely Suitable
+918,255,153,0,102,Barely Suitable
+919,255,153,0,102,Barely Suitable
 920,122,171,0,102,Suitable
 921,122,171,0,102,Suitable
-922,255,153,0,102,Barely,Suitable
-923,255,153,0,102,Barely,Suitable
+922,255,153,0,102,Barely Suitable
+923,255,153,0,102,Barely Suitable
 924,0,97,0,102,Preferred
 925,0,97,0,102,Preferred
-926,255,153,0,102,Barely,Suitable
+926,255,153,0,102,Barely Suitable
 927,255,34,0,102,Unsuitable
 928,122,171,0,102,Suitable
-929,255,255,0,102,Moderately,Suitable
-930,255,255,0,102,Moderately,Suitable
-931,255,255,0,102,Moderately,Suitable
-932,255,255,0,102,Moderately,Suitable
+929,255,255,0,102,Moderately Suitable
+930,255,255,0,102,Moderately Suitable
+931,255,255,0,102,Moderately Suitable
+932,255,255,0,102,Moderately Suitable
 933,122,171,0,102,Suitable
-934,255,255,0,102,Moderately,Suitable
-935,255,255,0,102,Moderately,Suitable
-936,255,153,0,102,Barely,Suitable
-937,255,255,0,102,Moderately,Suitable
-938,255,153,0,102,Barely,Suitable
-939,255,153,0,102,Barely,Suitable
-940,255,153,0,102,Barely,Suitable
-941,255,255,0,102,Moderately,Suitable
+934,255,255,0,102,Moderately Suitable
+935,255,255,0,102,Moderately Suitable
+936,255,153,0,102,Barely Suitable
+937,255,255,0,102,Moderately Suitable
+938,255,153,0,102,Barely Suitable
+939,255,153,0,102,Barely Suitable
+940,255,153,0,102,Barely Suitable
+941,255,255,0,102,Moderately Suitable
 942,255,34,0,102,Unsuitable
-943,255,153,0,102,Barely,Suitable
-944,255,153,0,102,Barely,Suitable
-945,255,153,0,102,Barely,Suitable
-946,255,153,0,102,Barely,Suitable
-947,255,153,0,102,Barely,Suitable
+943,255,153,0,102,Barely Suitable
+944,255,153,0,102,Barely Suitable
+945,255,153,0,102,Barely Suitable
+946,255,153,0,102,Barely Suitable
+947,255,153,0,102,Barely Suitable
 948,255,34,0,102,Unsuitable
-949,255,153,0,102,Barely,Suitable
+949,255,153,0,102,Barely Suitable
 950,122,171,0,102,Suitable
 951,122,171,0,102,Suitable
 952,122,171,0,102,Suitable
 953,122,171,0,102,Suitable
-954,255,153,0,102,Barely,Suitable
-955,255,153,0,102,Barely,Suitable
-956,255,153,0,102,Barely,Suitable
-957,255,153,0,102,Barely,Suitable
+954,255,153,0,102,Barely Suitable
+955,255,153,0,102,Barely Suitable
+956,255,153,0,102,Barely Suitable
+957,255,153,0,102,Barely Suitable
 958,0,97,0,102,Preferred
 959,0,97,0,102,Preferred
 960,0,97,0,102,Preferred
-961,255,153,0,102,Barely,Suitable
+961,255,153,0,102,Barely Suitable
 962,255,34,0,102,Unsuitable
 963,255,34,0,102,Unsuitable
 964,255,34,0,102,Unsuitable
 965,0,97,0,102,Preferred
 966,122,171,0,102,Suitable
-967,255,255,0,102,Moderately,Suitable
-968,255,255,0,102,Moderately,Suitable
+967,255,255,0,102,Moderately Suitable
+968,255,255,0,102,Moderately Suitable
 969,255,34,0,102,Unsuitable
-970,255,255,0,102,Moderately,Suitable
-971,255,255,0,102,Moderately,Suitable
+970,255,255,0,102,Moderately Suitable
+971,255,255,0,102,Moderately Suitable
 972,122,171,0,102,Suitable
-973,255,255,0,102,Moderately,Suitable
-974,255,255,0,102,Moderately,Suitable
-975,255,255,0,102,Moderately,Suitable
+973,255,255,0,102,Moderately Suitable
+974,255,255,0,102,Moderately Suitable
+975,255,255,0,102,Moderately Suitable
 976,255,34,0,102,Unsuitable
 977,122,171,0,102,Suitable
 978,122,171,0,102,Suitable
-979,255,255,0,102,Moderately,Suitable
-980,255,153,0,102,Barely,Suitable
-981,255,153,0,102,Barely,Suitable
+979,255,255,0,102,Moderately Suitable
+980,255,153,0,102,Barely Suitable
+981,255,153,0,102,Barely Suitable
 982,255,34,0,102,Unsuitable
-983,255,255,0,102,Moderately,Suitable
-984,255,255,0,102,Moderately,Suitable
-985,255,153,0,102,Barely,Suitable
+983,255,255,0,102,Moderately Suitable
+984,255,255,0,102,Moderately Suitable
+985,255,153,0,102,Barely Suitable
 986,122,171,0,102,Suitable
 987,255,34,0,102,Unsuitable
-988,255,255,0,102,Moderately,Suitable
-989,255,153,0,102,Barely,Suitable
+988,255,255,0,102,Moderately Suitable
+989,255,153,0,102,Barely Suitable
 990,122,171,0,102,Suitable
 991,122,171,0,102,Suitable
-992,255,255,0,102,Moderately,Suitable
-993,255,255,0,102,Moderately,Suitable
-994,255,255,0,102,Moderately,Suitable
-995,255,255,0,102,Moderately,Suitable
-996,255,153,0,102,Barely,Suitable
-997,255,153,0,102,Barely,Suitable
-998,255,153,0,102,Barely,Suitable
-999,255,153,0,102,Barely,Suitable
+992,255,255,0,102,Moderately Suitable
+993,255,255,0,102,Moderately Suitable
+994,255,255,0,102,Moderately Suitable
+995,255,255,0,102,Moderately Suitable
+996,255,153,0,102,Barely Suitable
+997,255,153,0,102,Barely Suitable
+998,255,153,0,102,Barely Suitable
+999,255,153,0,102,Barely Suitable
 1000,0,97,0,102,Preferred
-1001,255,153,0,102,Barely,Suitable
-1002,255,153,0,102,Barely,Suitable
+1001,255,153,0,102,Barely Suitable
+1002,255,153,0,102,Barely Suitable
 1003,0,97,0,102,Preferred
 1004,0,97,0,102,Preferred
 1005,0,97,0,102,Preferred
@@ -629,208 +631,208 @@
 1007,255,34,0,102,Unsuitable
 1008,255,34,0,102,Unsuitable
 1009,0,97,0,102,Preferred
-1010,255,255,0,102,Moderately,Suitable
+1010,255,255,0,102,Moderately Suitable
 1011,255,34,0,102,Unsuitable
-1012,255,255,0,102,Moderately,Suitable
-1013,255,255,0,102,Moderately,Suitable
-1014,255,255,0,102,Moderately,Suitable
-1015,255,255,0,102,Moderately,Suitable
-1016,255,255,0,102,Moderately,Suitable
-1017,255,255,0,102,Moderately,Suitable
+1012,255,255,0,102,Moderately Suitable
+1013,255,255,0,102,Moderately Suitable
+1014,255,255,0,102,Moderately Suitable
+1015,255,255,0,102,Moderately Suitable
+1016,255,255,0,102,Moderately Suitable
+1017,255,255,0,102,Moderately Suitable
 1018,255,34,0,102,Unsuitable
 1019,122,171,0,102,Suitable
 1020,122,171,0,102,Suitable
 1021,255,34,0,102,Unsuitable
-1022,255,255,0,102,Moderately,Suitable
-1023,255,153,0,102,Barely,Suitable
+1022,255,255,0,102,Moderately Suitable
+1023,255,153,0,102,Barely Suitable
 1024,255,34,0,102,Unsuitable
-1025,255,255,0,102,Moderately,Suitable
-1026,255,153,0,102,Barely,Suitable
+1025,255,255,0,102,Moderately Suitable
+1026,255,153,0,102,Barely Suitable
 1027,255,34,0,102,Unsuitable
 1028,122,171,0,102,Suitable
 1029,255,34,0,102,Unsuitable
-1030,255,255,0,102,Moderately,Suitable
+1030,255,255,0,102,Moderately Suitable
 1031,255,34,0,102,Unsuitable
-1032,255,153,0,102,Barely,Suitable
+1032,255,153,0,102,Barely Suitable
 1033,122,171,0,102,Suitable
-1034,255,255,0,102,Moderately,Suitable
-1035,255,255,0,102,Moderately,Suitable
-1036,255,255,0,102,Moderately,Suitable
-1037,255,255,0,102,Moderately,Suitable
-1038,255,153,0,102,Barely,Suitable
+1034,255,255,0,102,Moderately Suitable
+1035,255,255,0,102,Moderately Suitable
+1036,255,255,0,102,Moderately Suitable
+1037,255,255,0,102,Moderately Suitable
+1038,255,153,0,102,Barely Suitable
 1039,255,34,0,102,Unsuitable
-1040,255,153,0,102,Barely,Suitable
-1041,255,153,0,102,Barely,Suitable
-1042,255,153,0,102,Barely,Suitable
+1040,255,153,0,102,Barely Suitable
+1041,255,153,0,102,Barely Suitable
+1042,255,153,0,102,Barely Suitable
 1043,0,97,0,102,Preferred
 1044,0,97,0,102,Preferred
 1045,255,34,0,102,Unsuitable
 1046,255,34,0,102,Unsuitable
 1047,255,34,0,102,Unsuitable
 1048,0,97,0,102,Preferred
-1049,255,255,0,102,Moderately,Suitable
-1050,255,255,0,102,Moderately,Suitable
-1051,255,255,0,102,Moderately,Suitable
-1052,255,255,0,102,Moderately,Suitable
-1053,255,255,0,102,Moderately,Suitable
-1054,255,255,0,102,Moderately,Suitable
-1055,255,255,0,102,Moderately,Suitable
-1056,255,255,0,102,Moderately,Suitable
-1057,255,255,0,102,Moderately,Suitable
-1058,255,255,0,102,Moderately,Suitable
-1059,255,255,0,102,Moderately,Suitable
-1060,255,255,0,102,Moderately,Suitable
-1061,255,255,0,102,Moderately,Suitable
-1062,255,153,0,102,Barely,Suitable
-1063,255,153,0,102,Barely,Suitable
-1064,255,153,0,102,Barely,Suitable
-1065,255,153,0,102,Barely,Suitable
-1066,255,153,0,102,Barely,Suitable
-1067,255,153,0,102,Barely,Suitable
-1068,255,255,0,102,Moderately,Suitable
-1069,255,255,0,102,Moderately,Suitable
-1070,255,153,0,102,Barely,Suitable
-1071,255,153,0,102,Barely,Suitable
-1072,255,153,0,102,Barely,Suitable
-1073,255,153,0,102,Barely,Suitable
+1049,255,255,0,102,Moderately Suitable
+1050,255,255,0,102,Moderately Suitable
+1051,255,255,0,102,Moderately Suitable
+1052,255,255,0,102,Moderately Suitable
+1053,255,255,0,102,Moderately Suitable
+1054,255,255,0,102,Moderately Suitable
+1055,255,255,0,102,Moderately Suitable
+1056,255,255,0,102,Moderately Suitable
+1057,255,255,0,102,Moderately Suitable
+1058,255,255,0,102,Moderately Suitable
+1059,255,255,0,102,Moderately Suitable
+1060,255,255,0,102,Moderately Suitable
+1061,255,255,0,102,Moderately Suitable
+1062,255,153,0,102,Barely Suitable
+1063,255,153,0,102,Barely Suitable
+1064,255,153,0,102,Barely Suitable
+1065,255,153,0,102,Barely Suitable
+1066,255,153,0,102,Barely Suitable
+1067,255,153,0,102,Barely Suitable
+1068,255,255,0,102,Moderately Suitable
+1069,255,255,0,102,Moderately Suitable
+1070,255,153,0,102,Barely Suitable
+1071,255,153,0,102,Barely Suitable
+1072,255,153,0,102,Barely Suitable
+1073,255,153,0,102,Barely Suitable
 1074,0,97,0,102,Preferred
 1075,0,97,0,102,Preferred
 1076,0,97,0,102,Preferred
 1077,255,34,0,102,Unsuitable
 1078,0,97,0,102,Preferred
 1079,122,171,0,102,Suitable
-1080,255,255,0,102,Moderately,Suitable
-1081,255,255,0,102,Moderately,Suitable
-1082,255,255,0,102,Moderately,Suitable
-1083,255,255,0,102,Moderately,Suitable
-1084,255,255,0,102,Moderately,Suitable
-1085,255,255,0,102,Moderately,Suitable
-1086,255,255,0,102,Moderately,Suitable
+1080,255,255,0,102,Moderately Suitable
+1081,255,255,0,102,Moderately Suitable
+1082,255,255,0,102,Moderately Suitable
+1083,255,255,0,102,Moderately Suitable
+1084,255,255,0,102,Moderately Suitable
+1085,255,255,0,102,Moderately Suitable
+1086,255,255,0,102,Moderately Suitable
 1087,122,171,0,102,Suitable
-1088,255,255,0,102,Moderately,Suitable
-1089,255,153,0,102,Barely,Suitable
-1090,255,255,0,102,Moderately,Suitable
-1091,255,255,0,102,Moderately,Suitable
-1092,255,153,0,102,Barely,Suitable
-1093,255,153,0,102,Barely,Suitable
-1094,255,255,0,102,Moderately,Suitable
+1088,255,255,0,102,Moderately Suitable
+1089,255,153,0,102,Barely Suitable
+1090,255,255,0,102,Moderately Suitable
+1091,255,255,0,102,Moderately Suitable
+1092,255,153,0,102,Barely Suitable
+1093,255,153,0,102,Barely Suitable
+1094,255,255,0,102,Moderately Suitable
 1095,255,34,0,102,Unsuitable
-1096,255,153,0,102,Barely,Suitable
-1097,255,153,0,102,Barely,Suitable
+1096,255,153,0,102,Barely Suitable
+1097,255,153,0,102,Barely Suitable
 1098,122,171,0,102,Suitable
-1099,255,153,0,102,Barely,Suitable
-1100,255,255,0,102,Moderately,Suitable
-1101,255,153,0,102,Barely,Suitable
-1102,255,255,0,102,Moderately,Suitable
-1103,255,255,0,102,Moderately,Suitable
-1104,255,153,0,102,Barely,Suitable
-1105,255,153,0,102,Barely,Suitable
+1099,255,153,0,102,Barely Suitable
+1100,255,255,0,102,Moderately Suitable
+1101,255,153,0,102,Barely Suitable
+1102,255,255,0,102,Moderately Suitable
+1103,255,255,0,102,Moderately Suitable
+1104,255,153,0,102,Barely Suitable
+1105,255,153,0,102,Barely Suitable
 1106,0,97,0,102,Preferred
-1107,255,153,0,102,Barely,Suitable
+1107,255,153,0,102,Barely Suitable
 1108,0,97,0,102,Preferred
 1109,0,97,0,102,Preferred
 1110,0,97,0,102,Preferred
 1111,255,34,0,102,Unsuitable
 1112,255,34,0,102,Unsuitable
 1113,0,97,0,102,Preferred
-1114,255,255,0,102,Moderately,Suitable
+1114,255,255,0,102,Moderately Suitable
 1115,255,34,0,102,Unsuitable
 1116,255,34,0,102,Unsuitable
-1117,255,255,0,102,Moderately,Suitable
-1118,255,255,0,102,Moderately,Suitable
-1119,255,255,0,102,Moderately,Suitable
-1120,255,255,0,102,Moderately,Suitable
-1121,255,255,0,102,Moderately,Suitable
-1122,255,255,0,102,Moderately,Suitable
+1117,255,255,0,102,Moderately Suitable
+1118,255,255,0,102,Moderately Suitable
+1119,255,255,0,102,Moderately Suitable
+1120,255,255,0,102,Moderately Suitable
+1121,255,255,0,102,Moderately Suitable
+1122,255,255,0,102,Moderately Suitable
 1123,122,171,0,102,Suitable
-1124,255,255,0,102,Moderately,Suitable
-1125,255,153,0,102,Barely,Suitable
+1124,255,255,0,102,Moderately Suitable
+1125,255,153,0,102,Barely Suitable
 1126,255,34,0,102,Unsuitable
-1127,255,255,0,102,Moderately,Suitable
-1128,255,153,0,102,Barely,Suitable
+1127,255,255,0,102,Moderately Suitable
+1128,255,153,0,102,Barely Suitable
 1129,255,34,0,102,Unsuitable
-1130,255,255,0,102,Moderately,Suitable
-1131,255,153,0,102,Barely,Suitable
+1130,255,255,0,102,Moderately Suitable
+1131,255,153,0,102,Barely Suitable
 1132,122,171,0,102,Suitable
-1133,255,255,0,102,Moderately,Suitable
-1134,255,255,0,102,Moderately,Suitable
-1135,255,255,0,102,Moderately,Suitable
+1133,255,255,0,102,Moderately Suitable
+1134,255,255,0,102,Moderately Suitable
+1135,255,255,0,102,Moderately Suitable
 1136,255,34,0,102,Unsuitable
-1137,255,153,0,102,Barely,Suitable
-1138,255,255,0,102,Moderately,Suitable
+1137,255,153,0,102,Barely Suitable
+1138,255,255,0,102,Moderately Suitable
 1139,255,34,0,102,Unsuitable
-1140,255,153,0,102,Barely,Suitable
-1141,255,255,0,102,Moderately,Suitable
-1142,255,153,0,102,Barely,Suitable
+1140,255,153,0,102,Barely Suitable
+1141,255,255,0,102,Moderately Suitable
+1142,255,153,0,102,Barely Suitable
 1143,0,97,0,102,Preferred
 1144,255,34,0,102,Unsuitable
 1145,255,34,0,102,Unsuitable
 1146,0,97,0,102,Preferred
-1147,255,255,0,102,Moderately,Suitable
-1148,255,255,0,102,Moderately,Suitable
-1149,255,153,0,102,Barely,Suitable
-1150,255,255,0,102,Moderately,Suitable
-1151,255,255,0,102,Moderately,Suitable
-1152,255,255,0,102,Moderately,Suitable
-1153,255,255,0,102,Moderately,Suitable
-1154,255,255,0,102,Moderately,Suitable
-1155,255,255,0,102,Moderately,Suitable
-1156,255,255,0,102,Moderately,Suitable
+1147,255,255,0,102,Moderately Suitable
+1148,255,255,0,102,Moderately Suitable
+1149,255,153,0,102,Barely Suitable
+1150,255,255,0,102,Moderately Suitable
+1151,255,255,0,102,Moderately Suitable
+1152,255,255,0,102,Moderately Suitable
+1153,255,255,0,102,Moderately Suitable
+1154,255,255,0,102,Moderately Suitable
+1155,255,255,0,102,Moderately Suitable
+1156,255,255,0,102,Moderately Suitable
 1157,122,171,0,102,Suitable
 1158,255,34,0,102,Unsuitable
-1159,255,255,0,102,Moderately,Suitable
-1160,255,153,0,102,Barely,Suitable
-1161,255,255,0,102,Moderately,Suitable
-1162,255,153,0,102,Barely,Suitable
+1159,255,255,0,102,Moderately Suitable
+1160,255,153,0,102,Barely Suitable
+1161,255,255,0,102,Moderately Suitable
+1162,255,153,0,102,Barely Suitable
 1163,122,171,0,102,Suitable
-1164,255,255,0,102,Moderately,Suitable
+1164,255,255,0,102,Moderately Suitable
 1165,122,171,0,102,Suitable
-1166,255,255,0,102,Moderately,Suitable
-1167,255,255,0,102,Moderately,Suitable
+1166,255,255,0,102,Moderately Suitable
+1167,255,255,0,102,Moderately Suitable
 1168,255,34,0,102,Unsuitable
-1169,255,255,0,102,Moderately,Suitable
-1170,255,255,0,102,Moderately,Suitable
+1169,255,255,0,102,Moderately Suitable
+1170,255,255,0,102,Moderately Suitable
 1171,255,34,0,102,Unsuitable
-1172,255,153,0,102,Barely,Suitable
-1173,255,153,0,102,Barely,Suitable
-1174,255,153,0,102,Barely,Suitable
-1175,255,153,0,102,Barely,Suitable
-1176,255,153,0,102,Barely,Suitable
-1177,255,153,0,102,Barely,Suitable
+1172,255,153,0,102,Barely Suitable
+1173,255,153,0,102,Barely Suitable
+1174,255,153,0,102,Barely Suitable
+1175,255,153,0,102,Barely Suitable
+1176,255,153,0,102,Barely Suitable
+1177,255,153,0,102,Barely Suitable
 1178,0,97,0,102,Preferred
 1179,0,97,0,102,Preferred
 1180,255,34,0,102,Unsuitable
 1181,0,97,0,102,Preferred
-1182,255,255,0,102,Moderately,Suitable
-1183,255,255,0,102,Moderately,Suitable
+1182,255,255,0,102,Moderately Suitable
+1183,255,255,0,102,Moderately Suitable
 1184,255,34,0,102,Unsuitable
 1185,255,34,0,102,Unsuitable
-1186,255,255,0,102,Moderately,Suitable
+1186,255,255,0,102,Moderately Suitable
 1187,255,34,0,102,Unsuitable
-1188,255,255,0,102,Moderately,Suitable
-1189,255,255,0,102,Moderately,Suitable
-1190,255,255,0,102,Moderately,Suitable
-1191,255,255,0,102,Moderately,Suitable
-1192,255,255,0,102,Moderately,Suitable
+1188,255,255,0,102,Moderately Suitable
+1189,255,255,0,102,Moderately Suitable
+1190,255,255,0,102,Moderately Suitable
+1191,255,255,0,102,Moderately Suitable
+1192,255,255,0,102,Moderately Suitable
 1193,122,171,0,102,Suitable
 1194,255,34,0,102,Unsuitable
-1195,255,255,0,102,Moderately,Suitable
-1196,255,153,0,102,Barely,Suitable
-1197,255,153,0,102,Barely,Suitable
+1195,255,255,0,102,Moderately Suitable
+1196,255,153,0,102,Barely Suitable
+1197,255,153,0,102,Barely Suitable
 1198,255,34,0,102,Unsuitable
 1199,255,34,0,102,Unsuitable
 1200,255,34,0,102,Unsuitable
-1201,255,255,0,102,Moderately,Suitable
-1202,255,153,0,102,Barely,Suitable
+1201,255,255,0,102,Moderately Suitable
+1202,255,153,0,102,Barely Suitable
 1203,122,171,0,102,Suitable
 1204,255,34,0,102,Unsuitable
-1205,255,255,0,102,Moderately,Suitable
-1206,255,255,0,102,Moderately,Suitable
-1207,255,255,0,102,Moderately,Suitable
-1208,255,153,0,102,Barely,Suitable
+1205,255,255,0,102,Moderately Suitable
+1206,255,255,0,102,Moderately Suitable
+1207,255,255,0,102,Moderately Suitable
+1208,255,153,0,102,Barely Suitable
 1209,255,34,0,102,Unsuitable
-1210,255,153,0,102,Barely,Suitable
-1211,255,153,0,102,Barely,Suitable
+1210,255,153,0,102,Barely Suitable
+1211,255,153,0,102,Barely Suitable
 1212,255,34,0,102,Unsuitable
 1213,0,97,0,102,Preferred
 1214,0,97,0,102,Preferred
@@ -839,82 +841,82 @@
 1217,255,34,0,102,Unsuitable
 1218,0,97,0,102,Preferred
 1219,122,171,0,102,Suitable
-1220,255,255,0,102,Moderately,Suitable
-1221,255,255,0,102,Moderately,Suitable
-1222,255,255,0,102,Moderately,Suitable
-1223,255,255,0,102,Moderately,Suitable
-1224,255,255,0,102,Moderately,Suitable
-1225,255,255,0,102,Moderately,Suitable
-1226,255,255,0,102,Moderately,Suitable
-1227,255,255,0,102,Moderately,Suitable
-1228,255,255,0,102,Moderately,Suitable
+1220,255,255,0,102,Moderately Suitable
+1221,255,255,0,102,Moderately Suitable
+1222,255,255,0,102,Moderately Suitable
+1223,255,255,0,102,Moderately Suitable
+1224,255,255,0,102,Moderately Suitable
+1225,255,255,0,102,Moderately Suitable
+1226,255,255,0,102,Moderately Suitable
+1227,255,255,0,102,Moderately Suitable
+1228,255,255,0,102,Moderately Suitable
 1229,122,171,0,102,Suitable
-1230,255,255,0,102,Moderately,Suitable
-1231,255,255,0,102,Moderately,Suitable
-1232,255,255,0,102,Moderately,Suitable
-1233,255,153,0,102,Barely,Suitable
+1230,255,255,0,102,Moderately Suitable
+1231,255,255,0,102,Moderately Suitable
+1232,255,255,0,102,Moderately Suitable
+1233,255,153,0,102,Barely Suitable
 1234,122,171,0,102,Suitable
 1235,122,171,0,102,Suitable
-1236,255,153,0,102,Barely,Suitable
-1237,255,153,0,102,Barely,Suitable
-1238,255,255,0,102,Moderately,Suitable
-1239,255,255,0,102,Moderately,Suitable
-1240,255,153,0,102,Barely,Suitable
-1241,255,153,0,102,Barely,Suitable
-1242,255,153,0,102,Barely,Suitable
-1243,255,153,0,102,Barely,Suitable
+1236,255,153,0,102,Barely Suitable
+1237,255,153,0,102,Barely Suitable
+1238,255,255,0,102,Moderately Suitable
+1239,255,255,0,102,Moderately Suitable
+1240,255,153,0,102,Barely Suitable
+1241,255,153,0,102,Barely Suitable
+1242,255,153,0,102,Barely Suitable
+1243,255,153,0,102,Barely Suitable
 1244,0,97,0,102,Preferred
 1245,0,97,0,102,Preferred
 1246,0,97,0,102,Preferred
 1247,255,34,0,102,Unsuitable
 1248,255,34,0,102,Unsuitable
 1249,0,97,0,102,Preferred
-1250,255,255,0,102,Moderately,Suitable
-1251,255,255,0,102,Moderately,Suitable
-1252,255,255,0,102,Moderately,Suitable
-1253,255,255,0,102,Moderately,Suitable
-1254,255,255,0,102,Moderately,Suitable
-1255,255,255,0,102,Moderately,Suitable
-1256,255,255,0,102,Moderately,Suitable
+1250,255,255,0,102,Moderately Suitable
+1251,255,255,0,102,Moderately Suitable
+1252,255,255,0,102,Moderately Suitable
+1253,255,255,0,102,Moderately Suitable
+1254,255,255,0,102,Moderately Suitable
+1255,255,255,0,102,Moderately Suitable
+1256,255,255,0,102,Moderately Suitable
 1257,122,171,0,102,Suitable
-1258,255,255,0,102,Moderately,Suitable
-1259,255,153,0,102,Barely,Suitable
-1260,255,255,0,102,Moderately,Suitable
-1261,255,153,0,102,Barely,Suitable
-1262,255,153,0,102,Barely,Suitable
-1263,255,153,0,102,Barely,Suitable
-1264,255,255,0,102,Moderately,Suitable
-1265,255,255,0,102,Moderately,Suitable
-1266,255,255,0,102,Moderately,Suitable
-1267,255,153,0,102,Barely,Suitable
-1268,255,153,0,102,Barely,Suitable
-1269,255,153,0,102,Barely,Suitable
-1270,255,153,0,102,Barely,Suitable
-1271,255,153,0,102,Barely,Suitable
-1272,255,153,0,102,Barely,Suitable
-1273,255,153,0,102,Barely,Suitable
+1258,255,255,0,102,Moderately Suitable
+1259,255,153,0,102,Barely Suitable
+1260,255,255,0,102,Moderately Suitable
+1261,255,153,0,102,Barely Suitable
+1262,255,153,0,102,Barely Suitable
+1263,255,153,0,102,Barely Suitable
+1264,255,255,0,102,Moderately Suitable
+1265,255,255,0,102,Moderately Suitable
+1266,255,255,0,102,Moderately Suitable
+1267,255,153,0,102,Barely Suitable
+1268,255,153,0,102,Barely Suitable
+1269,255,153,0,102,Barely Suitable
+1270,255,153,0,102,Barely Suitable
+1271,255,153,0,102,Barely Suitable
+1272,255,153,0,102,Barely Suitable
+1273,255,153,0,102,Barely Suitable
 1274,0,97,0,102,Preferred
 1275,0,97,0,102,Preferred
 1276,0,97,0,102,Preferred
-1277,255,255,0,102,Moderately,Suitable
-1278,255,255,0,102,Moderately,Suitable
-1279,255,255,0,102,Moderately,Suitable
+1277,255,255,0,102,Moderately Suitable
+1278,255,255,0,102,Moderately Suitable
+1279,255,255,0,102,Moderately Suitable
 1280,122,171,0,102,Suitable
 1281,255,34,0,102,Unsuitable
-1282,255,153,0,102,Barely,Suitable
-1283,255,255,0,102,Moderately,Suitable
-1284,255,153,0,102,Barely,Suitable
-1285,255,153,0,102,Barely,Suitable
-1286,255,153,0,102,Barely,Suitable
+1282,255,153,0,102,Barely Suitable
+1283,255,255,0,102,Moderately Suitable
+1284,255,153,0,102,Barely Suitable
+1285,255,153,0,102,Barely Suitable
+1286,255,153,0,102,Barely Suitable
 1287,0,97,0,102,Preferred
-1288,255,255,0,102,Moderately,Suitable
-1289,255,255,0,102,Moderately,Suitable
+1288,255,255,0,102,Moderately Suitable
+1289,255,255,0,102,Moderately Suitable
 1290,122,171,0,102,Suitable
-1291,255,153,0,102,Barely,Suitable
-1292,255,153,0,102,Barely,Suitable
-1293,255,255,0,102,Moderately,Suitable
+1291,255,153,0,102,Barely Suitable
+1292,255,153,0,102,Barely Suitable
+1293,255,255,0,102,Moderately Suitable
 1294,255,34,0,102,Unsuitable
-1295,255,255,0,102,Moderately,Suitable
+1295,255,255,0,102,Moderately Suitable
 1296,255,34,0,102,Unsuitable
 1297,255,34,0,102,Unsuitable
 1298,255,34,0,102,Unsuitable
@@ -923,87 +925,87 @@
 1301,255,34,0,102,Unsuitable
 1302,255,34,0,102,Unsuitable
 1303,255,34,0,102,Unsuitable
-1304,255,153,0,102,Barely,Suitable
-1305,255,153,0,102,Barely,Suitable
-1306,255,153,0,102,Barely,Suitable
+1304,255,153,0,102,Barely Suitable
+1305,255,153,0,102,Barely Suitable
+1306,255,153,0,102,Barely Suitable
 1307,255,34,0,102,Unsuitable
 1308,255,34,0,102,Unsuitable
 1309,255,34,0,102,Unsuitable
 1310,0,97,0,102,Preferred
 1311,255,34,0,102,Unsuitable
 1312,255,34,0,102,Unsuitable
-1313,255,153,0,102,Barely,Suitable
+1313,255,153,0,102,Barely Suitable
 1314,255,34,0,102,Unsuitable
 1315,255,34,0,102,Unsuitable
-1316,255,255,0,102,Moderately,Suitable
-1317,255,255,0,102,Moderately,Suitable
+1316,255,255,0,102,Moderately Suitable
+1317,255,255,0,102,Moderately Suitable
 1318,255,34,0,102,Unsuitable
 1319,255,34,0,102,Unsuitable
 1320,255,34,0,102,Unsuitable
 1321,255,34,0,102,Unsuitable
 1322,255,34,0,102,Unsuitable
-1323,255,153,0,102,Barely,Suitable
+1323,255,153,0,102,Barely Suitable
 1324,255,34,0,102,Unsuitable
-1325,255,153,0,102,Barely,Suitable
+1325,255,153,0,102,Barely Suitable
 1326,255,34,0,102,Unsuitable
-1327,255,153,0,102,Barely,Suitable
-1328,255,153,0,102,Barely,Suitable
+1327,255,153,0,102,Barely Suitable
+1328,255,153,0,102,Barely Suitable
 1329,255,34,0,102,Unsuitable
 1330,255,34,0,102,Unsuitable
 1331,255,34,0,102,Unsuitable
 1332,255,34,0,102,Unsuitable
-1333,255,255,0,102,Moderately,Suitable
+1333,255,255,0,102,Moderately Suitable
 1334,255,34,0,102,Unsuitable
 1335,255,34,0,102,Unsuitable
 1336,255,34,0,102,Unsuitable
 1337,255,34,0,102,Unsuitable
 1338,255,34,0,102,Unsuitable
-1339,255,255,0,102,Moderately,Suitable
+1339,255,255,0,102,Moderately Suitable
 1340,255,34,0,102,Unsuitable
 1341,255,34,0,102,Unsuitable
-1342,255,255,0,102,Moderately,Suitable
-1343,255,255,0,102,Moderately,Suitable
-1344,255,255,0,102,Moderately,Suitable
-1345,255,255,0,102,Moderately,Suitable
-1346,255,255,0,102,Moderately,Suitable
+1342,255,255,0,102,Moderately Suitable
+1343,255,255,0,102,Moderately Suitable
+1344,255,255,0,102,Moderately Suitable
+1345,255,255,0,102,Moderately Suitable
+1346,255,255,0,102,Moderately Suitable
 1347,122,171,0,102,Suitable
 1348,255,34,0,102,Unsuitable
-1349,255,153,0,102,Barely,Suitable
+1349,255,153,0,102,Barely Suitable
 1350,255,34,0,102,Unsuitable
-1351,255,255,0,102,Moderately,Suitable
-1352,255,153,0,102,Barely,Suitable
-1353,255,153,0,102,Barely,Suitable
+1351,255,255,0,102,Moderately Suitable
+1352,255,153,0,102,Barely Suitable
+1353,255,153,0,102,Barely Suitable
 1354,255,34,0,102,Unsuitable
 1355,255,34,0,102,Unsuitable
 1356,255,34,0,102,Unsuitable
 1357,255,34,0,102,Unsuitable
 1358,255,34,0,102,Unsuitable
-1359,255,153,0,102,Barely,Suitable
+1359,255,153,0,102,Barely Suitable
 1360,122,171,0,102,Suitable
 1361,255,34,0,102,Unsuitable
 1362,255,34,0,102,Unsuitable
-1363,255,255,0,102,Moderately,Suitable
+1363,255,255,0,102,Moderately Suitable
 1364,255,34,0,102,Unsuitable
-1365,255,153,0,102,Barely,Suitable
-1366,255,153,0,102,Barely,Suitable
-1367,255,153,0,102,Barely,Suitable
-1368,255,153,0,102,Barely,Suitable
-1369,255,153,0,102,Barely,Suitable
-1370,255,153,0,102,Barely,Suitable
-1371,255,153,0,102,Barely,Suitable
-1372,255,153,0,102,Barely,Suitable
+1365,255,153,0,102,Barely Suitable
+1366,255,153,0,102,Barely Suitable
+1367,255,153,0,102,Barely Suitable
+1368,255,153,0,102,Barely Suitable
+1369,255,153,0,102,Barely Suitable
+1370,255,153,0,102,Barely Suitable
+1371,255,153,0,102,Barely Suitable
+1372,255,153,0,102,Barely Suitable
 1373,255,34,0,102,Unsuitable
 1374,0,97,0,102,Preferred
-1375,255,153,0,102,Barely,Suitable
-1376,255,153,0,102,Barely,Suitable
+1375,255,153,0,102,Barely Suitable
+1376,255,153,0,102,Barely Suitable
 1377,255,34,0,102,Unsuitable
 1378,255,34,0,102,Unsuitable
-1379,255,255,0,102,Moderately,Suitable
-1380,255,255,0,102,Moderately,Suitable
-1381,255,255,0,102,Moderately,Suitable
+1379,255,255,0,102,Moderately Suitable
+1380,255,255,0,102,Moderately Suitable
+1381,255,255,0,102,Moderately Suitable
 1382,255,34,0,102,Unsuitable
-1383,255,153,0,102,Barely,Suitable
-1384,255,153,0,102,Barely,Suitable
+1383,255,153,0,102,Barely Suitable
+1384,255,153,0,102,Barely Suitable
 1385,255,34,0,102,Unsuitable
 1386,122,171,0,102,Suitable
 1387,255,34,0,102,Unsuitable
@@ -1011,32 +1013,32 @@
 1389,255,34,0,102,Unsuitable
 1390,255,34,0,102,Unsuitable
 1391,255,34,0,102,Unsuitable
-1392,255,255,0,102,Moderately,Suitable
+1392,255,255,0,102,Moderately Suitable
 1393,255,34,0,102,Unsuitable
-1394,255,153,0,102,Barely,Suitable
-1395,255,153,0,102,Barely,Suitable
-1396,255,153,0,102,Barely,Suitable
-1397,255,153,0,102,Barely,Suitable
+1394,255,153,0,102,Barely Suitable
+1395,255,153,0,102,Barely Suitable
+1396,255,153,0,102,Barely Suitable
+1397,255,153,0,102,Barely Suitable
 1398,255,34,0,102,Unsuitable
 1399,0,97,0,102,Preferred
 1400,255,34,0,102,Unsuitable
 1401,255,34,0,102,Unsuitable
-1402,255,153,0,102,Barely,Suitable
-1403,255,153,0,102,Barely,Suitable
-1404,255,153,0,102,Barely,Suitable
-1405,255,255,0,102,Moderately,Suitable
-1406,255,255,0,102,Moderately,Suitable
-1407,255,255,0,102,Moderately,Suitable
-1408,255,153,0,102,Barely,Suitable
+1402,255,153,0,102,Barely Suitable
+1403,255,153,0,102,Barely Suitable
+1404,255,153,0,102,Barely Suitable
+1405,255,255,0,102,Moderately Suitable
+1406,255,255,0,102,Moderately Suitable
+1407,255,255,0,102,Moderately Suitable
+1408,255,153,0,102,Barely Suitable
 1409,122,171,0,102,Suitable
 1410,255,34,0,102,Unsuitable
 1411,122,171,0,102,Suitable
 1412,255,34,0,102,Unsuitable
-1413,255,255,0,102,Moderately,Suitable
-1414,255,153,0,102,Barely,Suitable
-1415,255,153,0,102,Barely,Suitable
-1416,255,153,0,102,Barely,Suitable
-1417,255,153,0,102,Barely,Suitable
+1413,255,255,0,102,Moderately Suitable
+1414,255,153,0,102,Barely Suitable
+1415,255,153,0,102,Barely Suitable
+1416,255,153,0,102,Barely Suitable
+1417,255,153,0,102,Barely Suitable
 1418,0,97,0,102,Preferred
 1419,0,97,0,102,Preferred
 1420,255,34,0,102,Unsuitable
@@ -1045,42 +1047,42 @@
 1423,255,34,0,102,Unsuitable
 1424,255,34,0,102,Unsuitable
 1425,255,34,0,102,Unsuitable
-1426,255,153,0,102,Barely,Suitable
-1427,255,153,0,102,Barely,Suitable
-1428,255,153,0,102,Barely,Suitable
+1426,255,153,0,102,Barely Suitable
+1427,255,153,0,102,Barely Suitable
+1428,255,153,0,102,Barely Suitable
 1429,0,97,0,102,Preferred
 1430,255,34,0,102,Unsuitable
 1431,255,34,0,102,Unsuitable
 1432,255,34,0,102,Unsuitable
-1433,255,153,0,102,Barely,Suitable
-1434,255,153,0,102,Barely,Suitable
-1435,255,255,0,102,Moderately,Suitable
+1433,255,153,0,102,Barely Suitable
+1434,255,153,0,102,Barely Suitable
+1435,255,255,0,102,Moderately Suitable
 1436,255,34,0,102,Unsuitable
 1437,255,34,0,102,Unsuitable
-1438,255,255,0,102,Moderately,Suitable
+1438,255,255,0,102,Moderately Suitable
 1439,255,34,0,102,Unsuitable
-1440,255,153,0,102,Barely,Suitable
-1441,255,153,0,102,Barely,Suitable
-1442,255,153,0,102,Barely,Suitable
-1443,255,153,0,102,Barely,Suitable
-1444,255,153,0,102,Barely,Suitable
-1445,255,255,0,102,Moderately,Suitable
+1440,255,153,0,102,Barely Suitable
+1441,255,153,0,102,Barely Suitable
+1442,255,153,0,102,Barely Suitable
+1443,255,153,0,102,Barely Suitable
+1444,255,153,0,102,Barely Suitable
+1445,255,255,0,102,Moderately Suitable
 1446,0,97,0,102,Preferred
 1447,255,34,0,102,Unsuitable
 1448,255,34,0,102,Unsuitable
 1449,255,34,0,102,Unsuitable
-1450,255,255,0,102,Moderately,Suitable
+1450,255,255,0,102,Moderately Suitable
 1451,255,34,0,102,Unsuitable
 1452,255,34,0,102,Unsuitable
-1453,255,255,0,102,Moderately,Suitable
+1453,255,255,0,102,Moderately Suitable
 1454,255,34,0,102,Unsuitable
 1455,255,34,0,102,Unsuitable
 1456,255,34,0,102,Unsuitable
 1457,255,34,0,102,Unsuitable
 1458,255,34,0,102,Unsuitable
-1459,255,153,0,102,Barely,Suitable
-1460,255,153,0,102,Barely,Suitable
-1461,255,153,0,102,Barely,Suitable
+1459,255,153,0,102,Barely Suitable
+1460,255,153,0,102,Barely Suitable
+1461,255,153,0,102,Barely Suitable
 1462,255,34,0,102,Unsuitable
 1463,255,34,0,102,Unsuitable
 1464,255,34,0,102,Unsuitable
@@ -1088,171 +1090,171 @@
 1466,255,34,0,102,Unsuitable
 1467,255,34,0,102,Unsuitable
 1468,255,34,0,102,Unsuitable
-1469,255,255,0,102,Moderately,Suitable
+1469,255,255,0,102,Moderately Suitable
 1470,255,34,0,102,Unsuitable
 1471,255,34,0,102,Unsuitable
-1472,255,255,0,102,Moderately,Suitable
+1472,255,255,0,102,Moderately Suitable
 1473,122,171,0,102,Suitable
 1474,255,34,0,102,Unsuitable
-1475,255,255,0,102,Moderately,Suitable
-1476,255,255,0,102,Moderately,Suitable
-1477,255,255,0,102,Moderately,Suitable
-1478,255,255,0,102,Moderately,Suitable
-1479,255,255,0,102,Moderately,Suitable
-1480,255,255,0,102,Moderately,Suitable
-1481,255,255,0,102,Moderately,Suitable
-1482,255,255,0,102,Moderately,Suitable
-1483,255,153,0,102,Barely,Suitable
-1484,255,153,0,102,Barely,Suitable
+1475,255,255,0,102,Moderately Suitable
+1476,255,255,0,102,Moderately Suitable
+1477,255,255,0,102,Moderately Suitable
+1478,255,255,0,102,Moderately Suitable
+1479,255,255,0,102,Moderately Suitable
+1480,255,255,0,102,Moderately Suitable
+1481,255,255,0,102,Moderately Suitable
+1482,255,255,0,102,Moderately Suitable
+1483,255,153,0,102,Barely Suitable
+1484,255,153,0,102,Barely Suitable
 1485,122,171,0,102,Suitable
 1486,255,34,0,102,Unsuitable
 1487,255,34,0,102,Unsuitable
-1488,255,153,0,102,Barely,Suitable
+1488,255,153,0,102,Barely Suitable
 1489,255,34,0,102,Unsuitable
-1490,255,255,0,102,Moderately,Suitable
-1491,255,255,0,102,Moderately,Suitable
+1490,255,255,0,102,Moderately Suitable
+1491,255,255,0,102,Moderately Suitable
 1492,255,34,0,102,Unsuitable
-1493,255,153,0,102,Barely,Suitable
-1494,255,153,0,102,Barely,Suitable
-1495,255,153,0,102,Barely,Suitable
-1496,255,153,0,102,Barely,Suitable
-1497,255,153,0,102,Barely,Suitable
-1498,255,153,0,102,Barely,Suitable
+1493,255,153,0,102,Barely Suitable
+1494,255,153,0,102,Barely Suitable
+1495,255,153,0,102,Barely Suitable
+1496,255,153,0,102,Barely Suitable
+1497,255,153,0,102,Barely Suitable
+1498,255,153,0,102,Barely Suitable
 1499,0,97,0,102,Preferred
 1500,0,97,0,102,Preferred
 1501,255,34,0,102,Unsuitable
-1502,255,153,0,102,Barely,Suitable
-1503,255,153,0,102,Barely,Suitable
-1504,255,255,0,102,Moderately,Suitable
+1502,255,153,0,102,Barely Suitable
+1503,255,153,0,102,Barely Suitable
+1504,255,255,0,102,Moderately Suitable
 1505,255,34,0,102,Unsuitable
 1506,255,34,0,102,Unsuitable
-1507,255,255,0,102,Moderately,Suitable
+1507,255,255,0,102,Moderately Suitable
 1508,255,34,0,102,Unsuitable
-1509,255,153,0,102,Barely,Suitable
-1510,255,153,0,102,Barely,Suitable
-1511,255,255,0,102,Moderately,Suitable
+1509,255,153,0,102,Barely Suitable
+1510,255,153,0,102,Barely Suitable
+1511,255,255,0,102,Moderately Suitable
 1512,0,97,0,102,Preferred
 1513,255,34,0,102,Unsuitable
 1514,255,34,0,102,Unsuitable
 1515,255,34,0,102,Unsuitable
 1516,255,34,0,102,Unsuitable
 1517,255,34,0,102,Unsuitable
-1518,255,255,0,102,Moderately,Suitable
+1518,255,255,0,102,Moderately Suitable
 1519,255,34,0,102,Unsuitable
 1520,255,34,0,102,Unsuitable
 1521,255,34,0,102,Unsuitable
-1522,255,255,0,102,Moderately,Suitable
+1522,255,255,0,102,Moderately Suitable
 1523,255,34,0,102,Unsuitable
-1524,255,153,0,102,Barely,Suitable
-1525,255,153,0,102,Barely,Suitable
-1526,255,255,0,102,Moderately,Suitable
+1524,255,153,0,102,Barely Suitable
+1525,255,153,0,102,Barely Suitable
+1526,255,255,0,102,Moderately Suitable
 1527,0,97,0,102,Preferred
 1528,255,34,0,102,Unsuitable
 1529,255,34,0,102,Unsuitable
 1530,255,34,0,102,Unsuitable
 1531,255,34,0,102,Unsuitable
-1532,255,153,0,102,Barely,Suitable
-1561,255,255,0,102,Moderately,Suitable
-1562,255,255,0,102,Moderately,Suitable
+1532,255,153,0,102,Barely Suitable
+1561,255,255,0,102,Moderately Suitable
+1562,255,255,0,102,Moderately Suitable
 1563,255,34,0,102,Unsuitable
 1564,255,34,0,102,Unsuitable
 1565,255,34,0,102,Unsuitable
 1566,255,34,0,102,Unsuitable
 1567,255,34,0,102,Unsuitable
-1568,255,255,0,102,Moderately,Suitable
-1569,255,255,0,102,Moderately,Suitable
+1568,255,255,0,102,Moderately Suitable
+1569,255,255,0,102,Moderately Suitable
 1570,255,34,0,102,Unsuitable
 1571,255,34,0,102,Unsuitable
 1572,255,34,0,102,Unsuitable
 1573,255,34,0,102,Unsuitable
 1574,255,34,0,102,Unsuitable
-1575,255,153,0,102,Barely,Suitable
-1576,255,153,0,102,Barely,Suitable
+1575,255,153,0,102,Barely Suitable
+1576,255,153,0,102,Barely Suitable
 1577,255,34,0,102,Unsuitable
 1578,255,34,0,102,Unsuitable
 1579,0,97,0,102,Preferred
 1580,0,97,0,102,Preferred
 1581,255,34,0,102,Unsuitable
 1582,255,34,0,102,Unsuitable
-1583,255,255,0,102,Moderately,Suitable
+1583,255,255,0,102,Moderately Suitable
 1584,255,34,0,102,Unsuitable
 1585,255,34,0,102,Unsuitable
 1586,255,34,0,102,Unsuitable
 1587,255,34,0,102,Unsuitable
-1588,255,255,0,102,Moderately,Suitable
-1589,255,255,0,102,Moderately,Suitable
+1588,255,255,0,102,Moderately Suitable
+1589,255,255,0,102,Moderately Suitable
 1590,255,34,0,102,Unsuitable
 1591,255,34,0,102,Unsuitable
 1592,255,34,0,102,Unsuitable
 1593,255,34,0,102,Unsuitable
 1594,255,34,0,102,Unsuitable
 1595,255,34,0,102,Unsuitable
-1596,255,255,0,102,Moderately,Suitable
-1597,255,255,0,102,Moderately,Suitable
-1598,255,255,0,102,Moderately,Suitable
+1596,255,255,0,102,Moderately Suitable
+1597,255,255,0,102,Moderately Suitable
+1598,255,255,0,102,Moderately Suitable
 1599,255,34,0,102,Unsuitable
 1600,255,34,0,102,Unsuitable
 1601,255,34,0,102,Unsuitable
 1602,255,34,0,102,Unsuitable
-1603,255,153,0,102,Barely,Suitable
-1604,255,153,0,102,Barely,Suitable
+1603,255,153,0,102,Barely Suitable
+1604,255,153,0,102,Barely Suitable
 1605,255,34,0,102,Unsuitable
 1606,0,97,0,102,Preferred
 1607,0,97,0,102,Preferred
 1608,255,34,0,102,Unsuitable
 1609,255,34,0,102,Unsuitable
-1610,255,255,0,102,Moderately,Suitable
+1610,255,255,0,102,Moderately Suitable
 1611,255,34,0,102,Unsuitable
 1612,255,34,0,102,Unsuitable
 1613,255,34,0,102,Unsuitable
-1614,255,255,0,102,Moderately,Suitable
-1615,255,255,0,102,Moderately,Suitable
+1614,255,255,0,102,Moderately Suitable
+1615,255,255,0,102,Moderately Suitable
 1616,255,34,0,102,Unsuitable
 1617,255,34,0,102,Unsuitable
 1618,255,34,0,102,Unsuitable
 1619,255,34,0,102,Unsuitable
 1620,255,34,0,102,Unsuitable
-1621,255,255,0,102,Moderately,Suitable
+1621,255,255,0,102,Moderately Suitable
 1622,255,34,0,102,Unsuitable
-1623,255,255,0,102,Moderately,Suitable
-1624,255,255,0,102,Moderately,Suitable
-1625,255,255,0,102,Moderately,Suitable
+1623,255,255,0,102,Moderately Suitable
+1624,255,255,0,102,Moderately Suitable
+1625,255,255,0,102,Moderately Suitable
 1626,255,34,0,102,Unsuitable
 1627,255,34,0,102,Unsuitable
 1628,255,34,0,102,Unsuitable
 1629,255,34,0,102,Unsuitable
-1630,255,153,0,102,Barely,Suitable
-1631,255,153,0,102,Barely,Suitable
-1632,255,153,0,102,Barely,Suitable
+1630,255,153,0,102,Barely Suitable
+1631,255,153,0,102,Barely Suitable
+1632,255,153,0,102,Barely Suitable
 1633,255,34,0,102,Unsuitable
 1634,255,34,0,102,Unsuitable
 1635,0,97,0,102,Preferred
 1636,0,97,0,102,Preferred
 1637,255,34,0,102,Unsuitable
 1638,255,34,0,102,Unsuitable
-1639,255,255,0,102,Moderately,Suitable
+1639,255,255,0,102,Moderately Suitable
 1640,255,34,0,102,Unsuitable
 1641,255,34,0,102,Unsuitable
 1642,255,34,0,102,Unsuitable
-1643,255,153,0,102,Barely,Suitable
-1644,255,153,0,102,Barely,Suitable
+1643,255,153,0,102,Barely Suitable
+1644,255,153,0,102,Barely Suitable
 1645,0,97,0,102,Preferred
 1646,255,34,0,102,Unsuitable
-1647,255,255,0,102,Moderately,Suitable
+1647,255,255,0,102,Moderately Suitable
 1648,255,34,0,102,Unsuitable
 1649,255,34,0,102,Unsuitable
-1650,255,255,0,102,Moderately,Suitable
+1650,255,255,0,102,Moderately Suitable
 1651,255,34,0,102,Unsuitable
 1652,255,34,0,102,Unsuitable
-1653,255,153,0,102,Barely,Suitable
-1654,255,153,0,102,Barely,Suitable
+1653,255,153,0,102,Barely Suitable
+1654,255,153,0,102,Barely Suitable
 1655,0,97,0,102,Preferred
 1656,255,34,0,102,Unsuitable
 1657,255,34,0,102,Unsuitable
 1658,255,34,0,102,Unsuitable
 1659,255,34,0,102,Unsuitable
-1660,255,153,0,102,Barely,Suitable
-1661,255,153,0,102,Barely,Suitable
+1660,255,153,0,102,Barely Suitable
+1661,255,153,0,102,Barely Suitable
 1662,0,97,0,102,Preferred
 1663,255,34,0,102,Unsuitable
 1664,255,34,0,102,Unsuitable
@@ -1260,58 +1262,58 @@
 1666,255,34,0,102,Unsuitable
 1667,255,34,0,102,Unsuitable
 1668,255,34,0,102,Unsuitable
-1669,255,153,0,102,Barely,Suitable
-1670,255,153,0,102,Barely,Suitable
+1669,255,153,0,102,Barely Suitable
+1670,255,153,0,102,Barely Suitable
 1671,0,97,0,102,Preferred
 1672,255,34,0,102,Unsuitable
 1673,255,34,0,102,Unsuitable
 1674,255,34,0,102,Unsuitable
 1675,255,34,0,102,Unsuitable
 1676,0,97,0,102,Preferred
-1677,255,153,0,102,Barely,Suitable
-1678,255,153,0,102,Barely,Suitable
+1677,255,153,0,102,Barely Suitable
+1678,255,153,0,102,Barely Suitable
 1679,255,34,0,102,Unsuitable
-1680,255,153,0,102,Barely,Suitable
-1681,255,153,0,102,Barely,Suitable
-1682,255,153,0,102,Barely,Suitable
-1683,255,153,0,102,Barely,Suitable
-1684,255,153,0,102,Barely,Suitable
-1685,255,153,0,102,Barely,Suitable
+1680,255,153,0,102,Barely Suitable
+1681,255,153,0,102,Barely Suitable
+1682,255,153,0,102,Barely Suitable
+1683,255,153,0,102,Barely Suitable
+1684,255,153,0,102,Barely Suitable
+1685,255,153,0,102,Barely Suitable
 1686,0,97,0,102,Preferred
-1687,255,255,0,102,Moderately,Suitable
+1687,255,255,0,102,Moderately Suitable
 1688,255,34,0,102,Unsuitable
-1689,255,153,0,102,Barely,Suitable
+1689,255,153,0,102,Barely Suitable
 1690,0,97,0,102,Preferred
 1691,255,34,0,102,Unsuitable
 1692,255,34,0,102,Unsuitable
 1693,255,34,0,102,Unsuitable
-1694,255,153,0,102,Barely,Suitable
-1695,255,153,0,102,Barely,Suitable
+1694,255,153,0,102,Barely Suitable
+1695,255,153,0,102,Barely Suitable
 1696,0,97,0,102,Preferred
 1697,255,34,0,102,Unsuitable
 1698,255,34,0,102,Unsuitable
-1699,255,255,0,102,Moderately,Suitable
-1700,255,255,0,102,Moderately,Suitable
+1699,255,255,0,102,Moderately Suitable
+1700,255,255,0,102,Moderately Suitable
 1701,255,34,0,102,Unsuitable
 1702,255,34,0,102,Unsuitable
-1703,255,255,0,102,Moderately,Suitable
+1703,255,255,0,102,Moderately Suitable
 1704,255,34,0,102,Unsuitable
 1705,255,34,0,102,Unsuitable
-1706,255,153,0,102,Barely,Suitable
-1707,255,153,0,102,Barely,Suitable
+1706,255,153,0,102,Barely Suitable
+1707,255,153,0,102,Barely Suitable
 1708,0,97,0,102,Preferred
 1709,255,34,0,102,Unsuitable
 1710,0,97,0,102,Preferred
 1711,255,34,0,102,Unsuitable
-1712,255,153,0,102,Barely,Suitable
+1712,255,153,0,102,Barely Suitable
 1713,255,34,0,102,Unsuitable
 1714,255,34,0,102,Unsuitable
 1715,255,34,0,102,Unsuitable
 1716,255,34,0,102,Unsuitable
 1717,0,97,0,102,Preferred
-1718,255,153,0,102,Barely,Suitable
-1719,255,153,0,102,Barely,Suitable
-1720,255,153,0,102,Barely,Suitable
+1718,255,153,0,102,Barely Suitable
+1719,255,153,0,102,Barely Suitable
+1720,255,153,0,102,Barely Suitable
 1721,0,97,0,102,Preferred
 1722,0,97,0,102,Preferred
 1723,255,34,0,102,Unsuitable
@@ -1321,53 +1323,53 @@
 1727,255,34,0,102,Unsuitable
 1728,255,34,0,102,Unsuitable
 1729,255,34,0,102,Unsuitable
-1730,255,153,0,102,Barely,Suitable
-1731,255,153,0,102,Barely,Suitable
+1730,255,153,0,102,Barely Suitable
+1731,255,153,0,102,Barely Suitable
 1732,0,97,0,102,Preferred
 1733,255,34,0,102,Unsuitable
 1734,255,34,0,102,Unsuitable
-1735,255,153,0,102,Barely,Suitable
+1735,255,153,0,102,Barely Suitable
 1736,255,34,0,102,Unsuitable
 1737,255,34,0,102,Unsuitable
 1738,255,34,0,102,Unsuitable
 1739,255,34,0,102,Unsuitable
-1740,255,255,0,102,Moderately,Suitable
+1740,255,255,0,102,Moderately Suitable
 1741,255,34,0,102,Unsuitable
 1742,255,34,0,102,Unsuitable
-1743,255,255,0,102,Moderately,Suitable
-1744,255,255,0,102,Moderately,Suitable
+1743,255,255,0,102,Moderately Suitable
+1744,255,255,0,102,Moderately Suitable
 1745,255,34,0,102,Unsuitable
 1746,255,34,0,102,Unsuitable
 1747,255,34,0,102,Unsuitable
-1748,255,153,0,102,Barely,Suitable
-1749,255,153,0,102,Barely,Suitable
-1750,255,153,0,102,Barely,Suitable
-1751,255,153,0,102,Barely,Suitable
+1748,255,153,0,102,Barely Suitable
+1749,255,153,0,102,Barely Suitable
+1750,255,153,0,102,Barely Suitable
+1751,255,153,0,102,Barely Suitable
 1752,255,34,0,102,Unsuitable
-1753,255,153,0,102,Barely,Suitable
-1754,255,153,0,102,Barely,Suitable
+1753,255,153,0,102,Barely Suitable
+1754,255,153,0,102,Barely Suitable
 1755,255,34,0,102,Unsuitable
 1756,0,97,0,102,Preferred
 1757,255,34,0,102,Unsuitable
 1758,0,97,0,102,Preferred
 1759,255,34,0,102,Unsuitable
-1760,255,153,0,102,Barely,Suitable
+1760,255,153,0,102,Barely Suitable
 1761,255,34,0,102,Unsuitable
 1762,255,34,0,102,Unsuitable
 1763,255,34,0,102,Unsuitable
-1764,255,255,0,102,Moderately,Suitable
-1765,255,255,0,102,Moderately,Suitable
+1764,255,255,0,102,Moderately Suitable
+1765,255,255,0,102,Moderately Suitable
 1766,255,34,0,102,Unsuitable
 1767,255,34,0,102,Unsuitable
 1768,255,34,0,102,Unsuitable
-1769,255,255,0,102,Moderately,Suitable
+1769,255,255,0,102,Moderately Suitable
 1770,255,34,0,102,Unsuitable
 1771,255,34,0,102,Unsuitable
 1772,255,34,0,102,Unsuitable
 1773,255,34,0,102,Unsuitable
 1774,255,34,0,102,Unsuitable
-1775,255,255,0,102,Moderately,Suitable
-1776,255,255,0,102,Moderately,Suitable
+1775,255,255,0,102,Moderately Suitable
+1776,255,255,0,102,Moderately Suitable
 1777,255,34,0,102,Unsuitable
 1778,255,34,0,102,Unsuitable
 1779,255,34,0,102,Unsuitable
@@ -1376,22 +1378,22 @@
 1782,255,34,0,102,Unsuitable
 1783,255,34,0,102,Unsuitable
 1784,255,34,0,102,Unsuitable
-1785,255,255,0,102,Moderately,Suitable
+1785,255,255,0,102,Moderately Suitable
 1786,255,34,0,102,Unsuitable
 1787,255,34,0,102,Unsuitable
 1788,255,34,0,102,Unsuitable
 1789,255,34,0,102,Unsuitable
 1790,255,34,0,102,Unsuitable
-1791,255,153,0,102,Barely,Suitable
-1792,255,153,0,102,Barely,Suitable
-1793,255,255,0,102,Moderately,Suitable
+1791,255,153,0,102,Barely Suitable
+1792,255,153,0,102,Barely Suitable
+1793,255,255,0,102,Moderately Suitable
 1794,255,34,0,102,Unsuitable
 1795,255,34,0,102,Unsuitable
 1796,255,34,0,102,Unsuitable
 1797,0,97,0,102,Preferred
 1798,255,34,0,102,Unsuitable
 1799,255,34,0,102,Unsuitable
-1800,255,153,0,102,Barely,Suitable
+1800,255,153,0,102,Barely Suitable
 1801,255,34,0,102,Unsuitable
 1802,255,34,0,102,Unsuitable
 1803,255,34,0,102,Unsuitable
@@ -1405,14 +1407,14 @@
 1811,255,34,0,102,Unsuitable
 1812,0,97,0,102,Preferred
 1813,255,34,0,102,Unsuitable
-1814,255,255,0,102,Moderately,Suitable
+1814,255,255,0,102,Moderately Suitable
 1815,255,34,0,102,Unsuitable
 1816,255,34,0,102,Unsuitable
 1817,255,34,0,102,Unsuitable
 1818,255,34,0,102,Unsuitable
 1819,255,34,0,102,Unsuitable
 1820,255,34,0,102,Unsuitable
-1821,255,255,0,102,Moderately,Suitable
+1821,255,255,0,102,Moderately Suitable
 1822,255,34,0,102,Unsuitable
 1823,255,34,0,102,Unsuitable
 1824,255,34,0,102,Unsuitable
@@ -1421,8 +1423,8 @@
 1827,0,97,0,102,Preferred
 1828,255,34,0,102,Unsuitable
 1829,255,34,0,102,Unsuitable
-1830,255,255,0,102,Moderately,Suitable
-1831,255,255,0,102,Moderately,Suitable
+1830,255,255,0,102,Moderately Suitable
+1831,255,255,0,102,Moderately Suitable
 1832,255,34,0,102,Unsuitable
 1833,255,34,0,102,Unsuitable
 1834,255,34,0,102,Unsuitable
@@ -1433,9 +1435,9 @@
 1839,255,34,0,102,Unsuitable
 1840,255,34,0,102,Unsuitable
 1841,255,34,0,102,Unsuitable
-1842,255,255,0,102,Moderately,Suitable
+1842,255,255,0,102,Moderately Suitable
 1843,255,34,0,102,Unsuitable
-1844,255,255,0,102,Moderately,Suitable
+1844,255,255,0,102,Moderately Suitable
 1845,255,34,0,102,Unsuitable
 1846,255,34,0,102,Unsuitable
 1847,255,34,0,102,Unsuitable
@@ -1443,13 +1445,13 @@
 1849,255,34,0,102,Unsuitable
 1850,255,34,0,102,Unsuitable
 1851,255,34,0,102,Unsuitable
-1852,255,255,0,102,Moderately,Suitable
+1852,255,255,0,102,Moderately Suitable
 1853,255,34,0,102,Unsuitable
 1854,255,34,0,102,Unsuitable
 1855,255,34,0,102,Unsuitable
 1856,255,34,0,102,Unsuitable
 1857,255,34,0,102,Unsuitable
-1858,255,153,0,102,Barely,Suitable
+1858,255,153,0,102,Barely Suitable
 1859,255,34,0,102,Unsuitable
 1860,255,34,0,102,Unsuitable
 1861,0,97,0,102,Preferred
@@ -1460,7 +1462,7 @@
 1866,255,34,0,102,Unsuitable
 1867,255,34,0,102,Unsuitable
 1868,255,34,0,102,Unsuitable
-1869,255,255,0,102,Moderately,Suitable
+1869,255,255,0,102,Moderately Suitable
 1870,255,34,0,102,Unsuitable
 1871,255,34,0,102,Unsuitable
 1872,255,34,0,102,Unsuitable
@@ -1469,26 +1471,26 @@
 1875,255,34,0,102,Unsuitable
 1876,255,34,0,102,Unsuitable
 1877,255,34,0,102,Unsuitable
-1878,255,255,0,102,Moderately,Suitable
+1878,255,255,0,102,Moderately Suitable
 1879,255,34,0,102,Unsuitable
 1880,255,34,0,102,Unsuitable
 1881,255,34,0,102,Unsuitable
 1882,255,34,0,102,Unsuitable
-1883,255,255,0,102,Moderately,Suitable
+1883,255,255,0,102,Moderately Suitable
 1884,255,34,0,102,Unsuitable
 1885,255,34,0,102,Unsuitable
 1886,255,34,0,102,Unsuitable
 1887,0,97,0,102,Preferred
 1888,255,34,0,102,Unsuitable
 1889,255,34,0,102,Unsuitable
-1890,255,255,0,102,Moderately,Suitable
+1890,255,255,0,102,Moderately Suitable
 1891,255,34,0,102,Unsuitable
 1892,255,34,0,102,Unsuitable
 1893,255,34,0,102,Unsuitable
-1894,255,255,0,102,Moderately,Suitable
+1894,255,255,0,102,Moderately Suitable
 1895,255,34,0,102,Unsuitable
-1896,255,255,0,102,Moderately,Suitable
-1897,255,255,0,102,Moderately,Suitable
+1896,255,255,0,102,Moderately Suitable
+1897,255,255,0,102,Moderately Suitable
 1898,255,34,0,102,Unsuitable
 1899,255,34,0,102,Unsuitable
 1900,0,97,0,102,Preferred
@@ -1496,31 +1498,31 @@
 1902,0,97,0,102,Preferred
 1903,255,34,0,102,Unsuitable
 1904,255,34,0,102,Unsuitable
-1905,255,255,0,102,Moderately,Suitable
+1905,255,255,0,102,Moderately Suitable
 1906,255,34,0,102,Unsuitable
 1907,255,34,0,102,Unsuitable
-1908,255,153,0,102,Barely,Suitable
+1908,255,153,0,102,Barely Suitable
 1909,255,34,0,102,Unsuitable
 1910,255,34,0,102,Unsuitable
 1911,255,34,0,102,Unsuitable
 1912,255,34,0,102,Unsuitable
 1913,255,34,0,102,Unsuitable
-1914,255,255,0,102,Moderately,Suitable
+1914,255,255,0,102,Moderately Suitable
 1915,0,97,0,102,Preferred
 1916,255,34,0,102,Unsuitable
 1917,255,34,0,102,Unsuitable
 1918,255,34,0,102,Unsuitable
-1919,255,153,0,102,Barely,Suitable
-1920,255,255,0,102,Moderately,Suitable
+1919,255,153,0,102,Barely Suitable
+1920,255,255,0,102,Moderately Suitable
 1921,255,34,0,102,Unsuitable
-1922,255,255,0,102,Moderately,Suitable
+1922,255,255,0,102,Moderately Suitable
 1923,255,34,0,102,Unsuitable
 1924,255,34,0,102,Unsuitable
-1925,255,255,0,102,Moderately,Suitable
+1925,255,255,0,102,Moderately Suitable
 1926,255,34,0,102,Unsuitable
-1927,255,255,0,102,Moderately,Suitable
-1928,255,255,0,102,Moderately,Suitable
-1929,255,255,0,102,Moderately,Suitable
+1927,255,255,0,102,Moderately Suitable
+1928,255,255,0,102,Moderately Suitable
+1929,255,255,0,102,Moderately Suitable
 1930,255,34,0,102,Unsuitable
 1931,255,34,0,102,Unsuitable
 1932,255,34,0,102,Unsuitable
@@ -1532,17 +1534,17 @@
 1938,255,34,0,102,Unsuitable
 1939,255,34,0,102,Unsuitable
 1940,255,34,0,102,Unsuitable
-1941,255,153,0,102,Barely,Suitable
+1941,255,153,0,102,Barely Suitable
 1942,255,34,0,102,Unsuitable
-1943,255,255,0,102,Moderately,Suitable
+1943,255,255,0,102,Moderately Suitable
 1944,255,34,0,102,Unsuitable
 1945,255,34,0,102,Unsuitable
 1946,255,34,0,102,Unsuitable
-1947,255,255,0,102,Moderately,Suitable
+1947,255,255,0,102,Moderately Suitable
 1948,255,34,0,102,Unsuitable
-1949,255,255,0,102,Moderately,Suitable
-1950,255,255,0,102,Moderately,Suitable
-1951,255,255,0,102,Moderately,Suitable
+1949,255,255,0,102,Moderately Suitable
+1950,255,255,0,102,Moderately Suitable
+1951,255,255,0,102,Moderately Suitable
 1952,255,34,0,102,Unsuitable
 1953,255,34,0,102,Unsuitable
 1954,255,34,0,102,Unsuitable
@@ -1554,31 +1556,31 @@
 1960,255,34,0,102,Unsuitable
 1961,255,34,0,102,Unsuitable
 1962,255,34,0,102,Unsuitable
-1963,255,153,0,102,Barely,Suitable
+1963,255,153,0,102,Barely Suitable
 1964,255,34,0,102,Unsuitable
 1965,255,34,0,102,Unsuitable
 1966,255,34,0,102,Unsuitable
 1967,255,34,0,102,Unsuitable
 1968,255,34,0,102,Unsuitable
 1969,255,34,0,102,Unsuitable
-1970,255,153,0,102,Barely,Suitable
-1971,255,153,0,102,Barely,Suitable
-1972,255,153,0,102,Barely,Suitable
+1970,255,153,0,102,Barely Suitable
+1971,255,153,0,102,Barely Suitable
+1972,255,153,0,102,Barely Suitable
 1973,0,97,0,102,Preferred
 1974,255,34,0,102,Unsuitable
-1975,255,153,0,102,Barely,Suitable
+1975,255,153,0,102,Barely Suitable
 1976,255,34,0,102,Unsuitable
-1977,255,153,0,102,Barely,Suitable
-1978,255,255,0,102,Moderately,Suitable
-1979,255,255,0,102,Moderately,Suitable
+1977,255,153,0,102,Barely Suitable
+1978,255,255,0,102,Moderately Suitable
+1979,255,255,0,102,Moderately Suitable
 1980,255,34,0,102,Unsuitable
 1981,255,34,0,102,Unsuitable
 1982,255,34,0,102,Unsuitable
-1983,255,255,0,102,Moderately,Suitable
+1983,255,255,0,102,Moderately Suitable
 1984,255,34,0,102,Unsuitable
-1985,255,255,0,102,Moderately,Suitable
-1986,255,255,0,102,Moderately,Suitable
-1987,255,255,0,102,Moderately,Suitable
+1985,255,255,0,102,Moderately Suitable
+1986,255,255,0,102,Moderately Suitable
+1987,255,255,0,102,Moderately Suitable
 1988,255,34,0,102,Unsuitable
 1989,255,34,0,102,Unsuitable
 1990,255,34,0,102,Unsuitable
@@ -1588,11 +1590,11 @@
 1994,255,34,0,102,Unsuitable
 1995,255,34,0,102,Unsuitable
 1996,255,34,0,102,Unsuitable
-1997,255,153,0,102,Barely,Suitable
-1998,255,153,0,102,Barely,Suitable
-1999,255,255,0,102,Moderately,Suitable
+1997,255,153,0,102,Barely Suitable
+1998,255,153,0,102,Barely Suitable
+1999,255,255,0,102,Moderately Suitable
 2000,255,34,0,102,Unsuitable
-2001,255,255,0,102,Moderately,Suitable
+2001,255,255,0,102,Moderately Suitable
 2002,255,34,0,102,Unsuitable
 2003,255,34,0,102,Unsuitable
 2004,255,34,0,102,Unsuitable
@@ -1600,7 +1602,7 @@
 2006,255,34,0,102,Unsuitable
 2007,255,34,0,102,Unsuitable
 2008,255,34,0,102,Unsuitable
-2009,255,255,0,102,Moderately,Suitable
+2009,255,255,0,102,Moderately Suitable
 2010,255,34,0,102,Unsuitable
 2011,255,34,0,102,Unsuitable
 2012,0,97,0,102,Preferred
@@ -1613,59 +1615,59 @@
 2019,255,34,0,102,Unsuitable
 2020,255,34,0,102,Unsuitable
 2021,255,34,0,102,Unsuitable
-2022,255,153,0,102,Barely,Suitable
+2022,255,153,0,102,Barely Suitable
 2023,255,34,0,102,Unsuitable
 2024,255,34,0,102,Unsuitable
 2025,255,34,0,102,Unsuitable
 2026,255,34,0,102,Unsuitable
-2027,255,153,0,102,Barely,Suitable
-2028,255,153,0,102,Barely,Suitable
-2029,255,153,0,102,Barely,Suitable
-2030,255,153,0,102,Barely,Suitable
+2027,255,153,0,102,Barely Suitable
+2028,255,153,0,102,Barely Suitable
+2029,255,153,0,102,Barely Suitable
+2030,255,153,0,102,Barely Suitable
 2031,255,34,0,102,Unsuitable
 2032,0,97,0,102,Preferred
 2033,0,97,0,102,Preferred
 2034,255,34,0,102,Unsuitable
 2035,255,34,0,102,Unsuitable
-2036,255,153,0,102,Barely,Suitable
+2036,255,153,0,102,Barely Suitable
 2037,255,34,0,102,Unsuitable
 2038,255,34,0,102,Unsuitable
 2039,255,34,0,102,Unsuitable
 2040,255,34,0,102,Unsuitable
 2041,255,34,0,102,Unsuitable
-2042,255,255,0,102,Moderately,Suitable
+2042,255,255,0,102,Moderately Suitable
 2043,255,34,0,102,Unsuitable
 2044,255,34,0,102,Unsuitable
-2045,255,153,0,102,Barely,Suitable
-2046,255,153,0,102,Barely,Suitable
-2047,255,153,0,102,Barely,Suitable
+2045,255,153,0,102,Barely Suitable
+2046,255,153,0,102,Barely Suitable
+2047,255,153,0,102,Barely Suitable
 2048,0,97,0,102,Preferred
 2049,0,97,0,102,Preferred
 2050,255,34,0,102,Unsuitable
-2051,255,153,0,102,Barely,Suitable
+2051,255,153,0,102,Barely Suitable
 2052,255,34,0,102,Unsuitable
 2053,255,34,0,102,Unsuitable
-2054,255,153,0,102,Barely,Suitable
-2055,255,153,0,102,Barely,Suitable
-2056,255,153,0,102,Barely,Suitable
-2057,255,153,0,102,Barely,Suitable
+2054,255,153,0,102,Barely Suitable
+2055,255,153,0,102,Barely Suitable
+2056,255,153,0,102,Barely Suitable
+2057,255,153,0,102,Barely Suitable
 2058,0,97,0,102,Preferred
 2059,255,34,0,102,Unsuitable
 2060,255,34,0,102,Unsuitable
 2061,255,34,0,102,Unsuitable
-2062,255,153,0,102,Barely,Suitable
-2063,255,153,0,102,Barely,Suitable
+2062,255,153,0,102,Barely Suitable
+2063,255,153,0,102,Barely Suitable
 2064,0,97,0,102,Preferred
 2065,255,34,0,102,Unsuitable
-2066,255,153,0,102,Barely,Suitable
+2066,255,153,0,102,Barely Suitable
 2067,255,34,0,102,Unsuitable
 2068,255,34,0,102,Unsuitable
-2069,255,255,0,102,Moderately,Suitable
+2069,255,255,0,102,Moderately Suitable
 2070,255,34,0,102,Unsuitable
 2071,255,34,0,102,Unsuitable
 2072,255,34,0,102,Unsuitable
-2073,255,255,0,102,Moderately,Suitable
-2074,255,153,0,102,Barely,Suitable
+2073,255,255,0,102,Moderately Suitable
+2074,255,153,0,102,Barely Suitable
 2075,255,34,0,102,Unsuitable
 2076,255,34,0,102,Unsuitable
 2077,255,34,0,102,Unsuitable
@@ -1674,7 +1676,7 @@
 2080,255,34,0,102,Unsuitable
 2081,255,34,0,102,Unsuitable
 2082,255,34,0,102,Unsuitable
-2083,255,153,0,102,Barely,Suitable
+2083,255,153,0,102,Barely Suitable
 2084,0,97,0,102,Preferred
 2085,255,34,0,102,Unsuitable
 2086,0,97,0,102,Preferred
@@ -1682,17 +1684,17 @@
 2088,255,34,0,102,Unsuitable
 2089,255,34,0,102,Unsuitable
 2090,255,34,0,102,Unsuitable
-2091,255,153,0,102,Barely,Suitable
+2091,255,153,0,102,Barely Suitable
 2092,255,34,0,102,Unsuitable
 2093,255,34,0,102,Unsuitable
-2094,255,255,0,102,Moderately,Suitable
+2094,255,255,0,102,Moderately Suitable
 2095,255,34,0,102,Unsuitable
 2096,255,34,0,102,Unsuitable
 2097,255,34,0,102,Unsuitable
 2098,255,34,0,102,Unsuitable
 2099,255,34,0,102,Unsuitable
-2100,255,255,0,102,Moderately,Suitable
-2101,255,255,0,102,Moderately,Suitable
+2100,255,255,0,102,Moderately Suitable
+2101,255,255,0,102,Moderately Suitable
 2102,255,34,0,102,Unsuitable
 2103,255,34,0,102,Unsuitable
 2104,255,34,0,102,Unsuitable
@@ -1703,7 +1705,7 @@
 2109,255,34,0,102,Unsuitable
 2110,255,34,0,102,Unsuitable
 2111,255,34,0,102,Unsuitable
-2112,255,153,0,102,Barely,Suitable
+2112,255,153,0,102,Barely Suitable
 2113,0,97,0,102,Preferred
 2114,255,34,0,102,Unsuitable
 2115,255,34,0,102,Unsuitable
@@ -1714,12 +1716,12 @@
 2120,255,34,0,102,Unsuitable
 2121,255,34,0,102,Unsuitable
 2122,255,34,0,102,Unsuitable
-2123,255,153,0,102,Barely,Suitable
-2124,255,153,0,102,Barely,Suitable
-2125,255,153,0,102,Barely,Suitable
+2123,255,153,0,102,Barely Suitable
+2124,255,153,0,102,Barely Suitable
+2125,255,153,0,102,Barely Suitable
 2126,0,97,0,102,Preferred
 2127,0,97,0,102,Preferred
-2128,255,255,0,102,Moderately,Suitable
+2128,255,255,0,102,Moderately Suitable
 2129,255,34,0,102,Unsuitable
 2130,255,34,0,102,Unsuitable
 2131,255,34,0,102,Unsuitable
@@ -1729,32 +1731,32 @@
 2135,255,34,0,102,Unsuitable
 2136,255,34,0,102,Unsuitable
 2137,255,34,0,102,Unsuitable
-2138,255,255,0,102,Moderately,Suitable
-2139,255,255,0,102,Moderately,Suitable
+2138,255,255,0,102,Moderately Suitable
+2139,255,255,0,102,Moderately Suitable
 2140,255,34,0,102,Unsuitable
 2141,255,34,0,102,Unsuitable
-2142,255,255,0,102,Moderately,Suitable
+2142,255,255,0,102,Moderately Suitable
 2143,255,34,0,102,Unsuitable
 2144,255,34,0,102,Unsuitable
 2145,255,34,0,102,Unsuitable
-2146,255,153,0,102,Barely,Suitable
+2146,255,153,0,102,Barely Suitable
 2147,255,34,0,102,Unsuitable
-2148,255,153,0,102,Barely,Suitable
-2149,255,153,0,102,Barely,Suitable
-2150,255,153,0,102,Barely,Suitable
-2151,255,255,0,102,Moderately,Suitable
+2148,255,153,0,102,Barely Suitable
+2149,255,153,0,102,Barely Suitable
+2150,255,153,0,102,Barely Suitable
+2151,255,255,0,102,Moderately Suitable
 2152,0,97,0,102,Preferred
 2153,255,34,0,102,Unsuitable
 2154,0,97,0,102,Preferred
 2155,0,97,0,102,Preferred
 2156,0,97,0,102,Preferred
 2157,255,34,0,102,Unsuitable
-2158,255,153,0,102,Barely,Suitable
-2159,255,255,0,102,Moderately,Suitable
+2158,255,153,0,102,Barely Suitable
+2159,255,255,0,102,Moderately Suitable
 2160,255,34,0,102,Unsuitable
 2161,255,34,0,102,Unsuitable
 2162,255,34,0,102,Unsuitable
-2163,255,255,0,102,Moderately,Suitable
+2163,255,255,0,102,Moderately Suitable
 2164,255,34,0,102,Unsuitable
 2165,255,34,0,102,Unsuitable
 2166,255,34,0,102,Unsuitable
@@ -1762,8 +1764,8 @@
 2168,255,34,0,102,Unsuitable
 2169,255,34,0,102,Unsuitable
 2170,255,34,0,102,Unsuitable
-2171,255,255,0,102,Moderately,Suitable
-2172,255,255,0,102,Moderately,Suitable
+2171,255,255,0,102,Moderately Suitable
+2172,255,255,0,102,Moderately Suitable
 2173,255,34,0,102,Unsuitable
 2174,255,34,0,102,Unsuitable
 2175,255,34,0,102,Unsuitable
@@ -1778,7 +1780,7 @@
 2184,255,34,0,102,Unsuitable
 2185,255,34,0,102,Unsuitable
 2186,255,34,0,102,Unsuitable
-2187,255,255,0,102,Moderately,Suitable
+2187,255,255,0,102,Moderately Suitable
 2188,255,34,0,102,Unsuitable
 2189,255,34,0,102,Unsuitable
 2190,255,34,0,102,Unsuitable
@@ -1790,8 +1792,8 @@
 2196,255,34,0,102,Unsuitable
 2197,255,34,0,102,Unsuitable
 2198,255,34,0,102,Unsuitable
-2199,255,255,0,102,Moderately,Suitable
-2200,255,255,0,102,Moderately,Suitable
+2199,255,255,0,102,Moderately Suitable
+2200,255,255,0,102,Moderately Suitable
 2201,255,34,0,102,Unsuitable
 2202,255,34,0,102,Unsuitable
 2203,255,34,0,102,Unsuitable
@@ -1799,10 +1801,10 @@
 2205,255,34,0,102,Unsuitable
 2206,255,34,0,102,Unsuitable
 2207,255,34,0,102,Unsuitable
-2208,255,255,0,102,Moderately,Suitable
-2209,255,255,0,102,Moderately,Suitable
-2210,255,255,0,102,Moderately,Suitable
-2211,255,255,0,102,Moderately,Suitable
+2208,255,255,0,102,Moderately Suitable
+2209,255,255,0,102,Moderately Suitable
+2210,255,255,0,102,Moderately Suitable
+2211,255,255,0,102,Moderately Suitable
 2212,255,34,0,102,Unsuitable
 2213,255,34,0,102,Unsuitable
 2214,255,34,0,102,Unsuitable
@@ -1819,7 +1821,7 @@
 2225,255,34,0,102,Unsuitable
 2226,255,34,0,102,Unsuitable
 2227,255,34,0,102,Unsuitable
-2228,255,255,0,102,Moderately,Suitable
+2228,255,255,0,102,Moderately Suitable
 2229,255,34,0,102,Unsuitable
 2230,255,34,0,102,Unsuitable
 2231,255,34,0,102,Unsuitable
@@ -1827,7 +1829,7 @@
 2233,255,34,0,102,Unsuitable
 2234,255,34,0,102,Unsuitable
 2235,255,34,0,102,Unsuitable
-2236,255,153,0,102,Barely,Suitable
+2236,255,153,0,102,Barely Suitable
 2237,255,34,0,102,Unsuitable
 2238,255,34,0,102,Unsuitable
 2239,255,34,0,102,Unsuitable
@@ -1843,7 +1845,7 @@
 2249,255,34,0,102,Unsuitable
 2250,255,34,0,102,Unsuitable
 2251,255,34,0,102,Unsuitable
-2252,255,255,0,102,Moderately,Suitable
+2252,255,255,0,102,Moderately Suitable
 2253,255,34,0,102,Unsuitable
 2254,255,34,0,102,Unsuitable
 2255,255,34,0,102,Unsuitable
@@ -1851,8 +1853,8 @@
 2257,255,34,0,102,Unsuitable
 2258,255,34,0,102,Unsuitable
 2259,255,34,0,102,Unsuitable
-2260,255,255,0,102,Moderately,Suitable
-2261,255,255,0,102,Moderately,Suitable
+2260,255,255,0,102,Moderately Suitable
+2261,255,255,0,102,Moderately Suitable
 2262,255,34,0,102,Unsuitable
 2263,255,34,0,102,Unsuitable
 2264,255,34,0,102,Unsuitable
@@ -1861,7 +1863,7 @@
 2267,255,34,0,102,Unsuitable
 2268,255,34,0,102,Unsuitable
 2269,255,34,0,102,Unsuitable
-2270,255,255,0,102,Moderately,Suitable
+2270,255,255,0,102,Moderately Suitable
 2271,255,34,0,102,Unsuitable
 2272,255,34,0,102,Unsuitable
 2273,255,34,0,102,Unsuitable
@@ -1871,7 +1873,7 @@
 2277,255,34,0,102,Unsuitable
 2278,255,34,0,102,Unsuitable
 2279,255,34,0,102,Unsuitable
-2280,255,153,0,102,Barely,Suitable
+2280,255,153,0,102,Barely Suitable
 2281,255,34,0,102,Unsuitable
 2282,255,34,0,102,Unsuitable
 2283,255,34,0,102,Unsuitable
@@ -1887,7 +1889,7 @@
 2294,255,34,0,102,Unsuitable
 2295,255,34,0,102,Unsuitable
 2296,255,34,0,102,Unsuitable
-2297,255,255,0,102,Moderately,Suitable
+2297,255,255,0,102,Moderately Suitable
 2298,255,34,0,102,Unsuitable
 2299,255,34,0,102,Unsuitable
 2300,255,34,0,102,Unsuitable
@@ -1913,7 +1915,7 @@
 2320,255,34,0,102,Unsuitable
 2321,255,34,0,102,Unsuitable
 2322,255,34,0,102,Unsuitable
-2323,255,255,0,102,Moderately,Suitable
+2323,255,255,0,102,Moderately Suitable
 2324,255,34,0,102,Unsuitable
 2325,255,34,0,102,Unsuitable
 2326,255,34,0,102,Unsuitable
@@ -1935,13 +1937,13 @@
 2342,255,34,0,102,Unsuitable
 2343,255,34,0,102,Unsuitable
 2344,255,34,0,102,Unsuitable
-2345,255,255,0,102,Moderately,Suitable
+2345,255,255,0,102,Moderately Suitable
 2346,255,34,0,102,Unsuitable
 2347,255,34,0,102,Unsuitable
 2348,255,34,0,102,Unsuitable
 2349,255,34,0,102,Unsuitable
-2350,255,255,0,102,Moderately,Suitable
-2351,255,255,0,102,Moderately,Suitable
+2350,255,255,0,102,Moderately Suitable
+2351,255,255,0,102,Moderately Suitable
 2352,255,34,0,102,Unsuitable
 2353,255,34,0,102,Unsuitable
 2354,255,34,0,102,Unsuitable
@@ -1961,7 +1963,7 @@
 2368,255,34,0,102,Unsuitable
 2369,255,34,0,102,Unsuitable
 2370,255,34,0,102,Unsuitable
-2371,255,255,0,102,Moderately,Suitable
+2371,255,255,0,102,Moderately Suitable
 2372,255,34,0,102,Unsuitable
 2373,255,34,0,102,Unsuitable
 2374,255,34,0,102,Unsuitable
@@ -1973,7 +1975,7 @@
 2380,255,34,0,102,Unsuitable
 2381,255,34,0,102,Unsuitable
 2382,255,34,0,102,Unsuitable
-2383,255,153,0,102,Barely,Suitable
+2383,255,153,0,102,Barely Suitable
 2384,255,34,0,102,Unsuitable
 2385,255,34,0,102,Unsuitable
 2386,255,34,0,102,Unsuitable
@@ -1996,12 +1998,12 @@
 2404,255,34,0,102,Unsuitable
 2405,255,34,0,102,Unsuitable
 2406,255,34,0,102,Unsuitable
-2407,255,255,0,102,Moderately,Suitable
-2408,255,255,0,102,Moderately,Suitable
-2409,255,255,0,102,Moderately,Suitable
+2407,255,255,0,102,Moderately Suitable
+2408,255,255,0,102,Moderately Suitable
+2409,255,255,0,102,Moderately Suitable
 2410,255,34,0,102,Unsuitable
 2411,255,34,0,102,Unsuitable
-2412,255,255,0,102,Moderately,Suitable
+2412,255,255,0,102,Moderately Suitable
 2413,255,34,0,102,Unsuitable
 2414,255,34,0,102,Unsuitable
 2415,255,34,0,102,Unsuitable
@@ -2013,7 +2015,7 @@
 2421,255,34,0,102,Unsuitable
 2422,255,34,0,102,Unsuitable
 2423,255,34,0,102,Unsuitable
-2424,255,153,0,102,Barely,Suitable
+2424,255,153,0,102,Barely Suitable
 2425,255,34,0,102,Unsuitable
 2426,255,34,0,102,Unsuitable
 2427,255,34,0,102,Unsuitable
@@ -2033,17 +2035,17 @@
 2442,255,34,0,102,Unsuitable
 2443,255,34,0,102,Unsuitable
 2444,255,34,0,102,Unsuitable
-2445,255,255,0,102,Moderately,Suitable
-2446,255,255,0,102,Moderately,Suitable
+2445,255,255,0,102,Moderately Suitable
+2446,255,255,0,102,Moderately Suitable
 2447,255,34,0,102,Unsuitable
-2448,255,255,0,102,Moderately,Suitable
+2448,255,255,0,102,Moderately Suitable
 2449,255,34,0,102,Unsuitable
 2450,255,34,0,102,Unsuitable
 2451,255,34,0,102,Unsuitable
 2452,255,34,0,102,Unsuitable
 2453,255,34,0,102,Unsuitable
 2454,255,34,0,102,Unsuitable
-2455,255,153,0,102,Barely,Suitable
+2455,255,153,0,102,Barely Suitable
 2456,255,34,0,102,Unsuitable
 2457,0,97,0,102,Preferred
 2458,255,34,0,102,Unsuitable
@@ -2058,19 +2060,19 @@
 2468,255,34,0,102,Unsuitable
 2469,255,34,0,102,Unsuitable
 2470,255,34,0,102,Unsuitable
-2471,255,255,0,102,Moderately,Suitable
-2472,255,255,0,102,Moderately,Suitable
+2471,255,255,0,102,Moderately Suitable
+2472,255,255,0,102,Moderately Suitable
 2473,255,34,0,102,Unsuitable
 2474,255,34,0,102,Unsuitable
 2476,255,34,0,102,Unsuitable
 2477,255,34,0,102,Unsuitable
 2478,255,34,0,102,Unsuitable
 2479,255,34,0,102,Unsuitable
-2480,255,255,0,102,Moderately,Suitable
+2480,255,255,0,102,Moderately Suitable
 2481,255,34,0,102,Unsuitable
 2482,255,34,0,102,Unsuitable
 2483,255,34,0,102,Unsuitable
-2484,255,255,0,102,Moderately,Suitable
+2484,255,255,0,102,Moderately Suitable
 2485,255,34,0,102,Unsuitable
 2486,255,34,0,102,Unsuitable
 2487,255,34,0,102,Unsuitable
@@ -2096,14 +2098,14 @@
 2508,255,34,0,102,Unsuitable
 2509,255,34,0,102,Unsuitable
 2510,255,34,0,102,Unsuitable
-2511,255,153,0,102,Barely,Suitable
-2512,255,255,0,102,Moderately,Suitable
-2513,255,255,0,102,Moderately,Suitable
+2511,255,153,0,102,Barely Suitable
+2512,255,255,0,102,Moderately Suitable
+2513,255,255,0,102,Moderately Suitable
 2514,255,34,0,102,Unsuitable
 2515,255,34,0,102,Unsuitable
 2516,255,34,0,102,Unsuitable
-2517,255,255,0,102,Moderately,Suitable
-2518,255,255,0,102,Moderately,Suitable
+2517,255,255,0,102,Moderately Suitable
+2518,255,255,0,102,Moderately Suitable
 2519,255,34,0,102,Unsuitable
 2520,255,34,0,102,Unsuitable
 2521,255,34,0,102,Unsuitable
@@ -2128,14 +2130,14 @@
 2540,255,34,0,102,Unsuitable
 2541,255,34,0,102,Unsuitable
 2542,255,34,0,102,Unsuitable
-2543,255,255,0,102,Moderately,Suitable
+2543,255,255,0,102,Moderately Suitable
 2544,255,34,0,102,Unsuitable
 2545,255,34,0,102,Unsuitable
 2546,255,34,0,102,Unsuitable
 2547,255,34,0,102,Unsuitable
 2548,255,34,0,102,Unsuitable
 2549,255,34,0,102,Unsuitable
-2550,255,255,0,102,Moderately,Suitable
+2550,255,255,0,102,Moderately Suitable
 2551,0,97,0,102,Preferred
 2552,255,34,0,102,Unsuitable
 2553,255,34,0,102,Unsuitable
@@ -2151,13 +2153,13 @@
 2564,255,34,0,102,Unsuitable
 2565,255,34,0,102,Unsuitable
 2566,255,34,0,102,Unsuitable
-2567,255,255,0,102,Moderately,Suitable
+2567,255,255,0,102,Moderately Suitable
 2568,255,34,0,102,Unsuitable
 2569,255,34,0,102,Unsuitable
 2570,255,34,0,102,Unsuitable
 2571,255,34,0,102,Unsuitable
-2572,255,255,0,102,Moderately,Suitable
-2573,255,255,0,102,Moderately,Suitable
+2572,255,255,0,102,Moderately Suitable
+2573,255,255,0,102,Moderately Suitable
 2574,255,34,0,102,Unsuitable
 2575,255,34,0,102,Unsuitable
 2576,255,34,0,102,Unsuitable
@@ -2174,7 +2176,7 @@
 2588,255,34,0,102,Unsuitable
 2589,0,97,0,102,Preferred
 2590,255,34,0,102,Unsuitable
-2591,255,255,0,102,Moderately,Suitable
+2591,255,255,0,102,Moderately Suitable
 2592,255,34,0,102,Unsuitable
 2593,255,34,0,102,Unsuitable
 2594,255,34,0,102,Unsuitable
@@ -2191,207 +2193,207 @@
 2605,255,34,0,102,Unsuitable
 2606,255,34,0,102,Unsuitable
 2607,255,34,0,102,Unsuitable
-2608,255,153,0,102,Barely,Suitable
-2609,255,153,0,102,Barely,Suitable
+2608,255,153,0,102,Barely Suitable
+2609,255,153,0,102,Barely Suitable
 2610,255,34,0,102,Unsuitable
-2611,255,153,0,102,Barely,Suitable
-2612,255,153,0,102,Barely,Suitable
-2613,255,153,0,102,Barely,Suitable
+2611,255,153,0,102,Barely Suitable
+2612,255,153,0,102,Barely Suitable
+2613,255,153,0,102,Barely Suitable
 2614,255,34,0,102,Unsuitable
 2615,255,34,0,102,Unsuitable
 2616,255,34,0,102,Unsuitable
 2617,255,34,0,102,Unsuitable
-7008,255,255,0,102,Moderately,Suitable
+7008,255,255,0,102,Moderately Suitable
 7009,122,171,0,102,Suitable
-7010,255,255,0,102,Moderately,Suitable
+7010,255,255,0,102,Moderately Suitable
 7011,0,97,0,102,Preferred
 7012,122,171,0,102,Suitable
-7013,255,255,0,102,Moderately,Suitable
-7014,255,255,0,102,Moderately,Suitable
-7015,255,255,0,102,Moderately,Suitable
-7016,255,255,0,102,Moderately,Suitable
-7017,255,255,0,102,Moderately,Suitable
+7013,255,255,0,102,Moderately Suitable
+7014,255,255,0,102,Moderately Suitable
+7015,255,255,0,102,Moderately Suitable
+7016,255,255,0,102,Moderately Suitable
+7017,255,255,0,102,Moderately Suitable
 7018,122,171,0,102,Suitable
-7019,255,255,0,102,Moderately,Suitable
-7020,255,255,0,102,Moderately,Suitable
-7021,255,255,0,102,Moderately,Suitable
-7022,255,255,0,102,Moderately,Suitable
+7019,255,255,0,102,Moderately Suitable
+7020,255,255,0,102,Moderately Suitable
+7021,255,255,0,102,Moderately Suitable
+7022,255,255,0,102,Moderately Suitable
 7023,255,34,0,102,Unsuitable
-7024,255,255,0,102,Moderately,Suitable
-7025,255,255,0,102,Moderately,Suitable
-7026,255,255,0,102,Moderately,Suitable
-7027,255,255,0,102,Moderately,Suitable
-7028,255,255,0,102,Moderately,Suitable
+7024,255,255,0,102,Moderately Suitable
+7025,255,255,0,102,Moderately Suitable
+7026,255,255,0,102,Moderately Suitable
+7027,255,255,0,102,Moderately Suitable
+7028,255,255,0,102,Moderately Suitable
 7029,122,171,0,102,Suitable
-7030,255,255,0,102,Moderately,Suitable
-7031,255,255,0,102,Moderately,Suitable
-7032,255,255,0,102,Moderately,Suitable
-7033,255,255,0,102,Moderately,Suitable
-7034,255,255,0,102,Moderately,Suitable
-7035,255,255,0,102,Moderately,Suitable
-7036,255,255,0,102,Moderately,Suitable
+7030,255,255,0,102,Moderately Suitable
+7031,255,255,0,102,Moderately Suitable
+7032,255,255,0,102,Moderately Suitable
+7033,255,255,0,102,Moderately Suitable
+7034,255,255,0,102,Moderately Suitable
+7035,255,255,0,102,Moderately Suitable
+7036,255,255,0,102,Moderately Suitable
 7037,122,171,0,102,Suitable
-7038,255,255,0,102,Moderately,Suitable
-7039,255,255,0,102,Moderately,Suitable
-7041,255,255,0,102,Moderately,Suitable
-7042,255,255,0,102,Moderately,Suitable
-7043,255,255,0,102,Moderately,Suitable
-7044,255,255,0,102,Moderately,Suitable
-7045,255,255,0,102,Moderately,Suitable
-7046,255,255,0,102,Moderately,Suitable
-7047,255,255,0,102,Moderately,Suitable
-7048,255,255,0,102,Moderately,Suitable
-7049,255,255,0,102,Moderately,Suitable
-7050,255,255,0,102,Moderately,Suitable
-7051,255,255,0,102,Moderately,Suitable
-7052,255,255,0,102,Moderately,Suitable
-7053,255,255,0,102,Moderately,Suitable
-7054,255,255,0,102,Moderately,Suitable
-7055,255,255,0,102,Moderately,Suitable
-7056,255,255,0,102,Moderately,Suitable
-7057,255,255,0,102,Moderately,Suitable
-7058,255,255,0,102,Moderately,Suitable
-7059,255,255,0,102,Moderately,Suitable
+7038,255,255,0,102,Moderately Suitable
+7039,255,255,0,102,Moderately Suitable
+7041,255,255,0,102,Moderately Suitable
+7042,255,255,0,102,Moderately Suitable
+7043,255,255,0,102,Moderately Suitable
+7044,255,255,0,102,Moderately Suitable
+7045,255,255,0,102,Moderately Suitable
+7046,255,255,0,102,Moderately Suitable
+7047,255,255,0,102,Moderately Suitable
+7048,255,255,0,102,Moderately Suitable
+7049,255,255,0,102,Moderately Suitable
+7050,255,255,0,102,Moderately Suitable
+7051,255,255,0,102,Moderately Suitable
+7052,255,255,0,102,Moderately Suitable
+7053,255,255,0,102,Moderately Suitable
+7054,255,255,0,102,Moderately Suitable
+7055,255,255,0,102,Moderately Suitable
+7056,255,255,0,102,Moderately Suitable
+7057,255,255,0,102,Moderately Suitable
+7058,255,255,0,102,Moderately Suitable
+7059,255,255,0,102,Moderately Suitable
 7060,122,171,0,102,Suitable
 7061,122,171,0,102,Suitable
-7062,255,255,0,102,Moderately,Suitable
+7062,255,255,0,102,Moderately Suitable
 7063,122,171,0,102,Suitable
-7064,255,153,0,102,Barely,Suitable
-7065,255,153,0,102,Barely,Suitable
-7066,255,153,0,102,Barely,Suitable
-7067,255,153,0,102,Barely,Suitable
-7068,255,153,0,102,Barely,Suitable
-7069,255,153,0,102,Barely,Suitable
-7070,255,153,0,102,Barely,Suitable
-7071,255,153,0,102,Barely,Suitable
-7072,255,255,0,102,Moderately,Suitable
+7064,255,153,0,102,Barely Suitable
+7065,255,153,0,102,Barely Suitable
+7066,255,153,0,102,Barely Suitable
+7067,255,153,0,102,Barely Suitable
+7068,255,153,0,102,Barely Suitable
+7069,255,153,0,102,Barely Suitable
+7070,255,153,0,102,Barely Suitable
+7071,255,153,0,102,Barely Suitable
+7072,255,255,0,102,Moderately Suitable
 7073,255,34,0,102,Unsuitable
-7074,255,153,0,102,Barely,Suitable
-7075,255,153,0,102,Barely,Suitable
-7076,255,153,0,102,Barely,Suitable
-7077,255,153,0,102,Barely,Suitable
+7074,255,153,0,102,Barely Suitable
+7075,255,153,0,102,Barely Suitable
+7076,255,153,0,102,Barely Suitable
+7077,255,153,0,102,Barely Suitable
 7078,255,34,0,102,Unsuitable
-7079,255,153,0,102,Barely,Suitable
-7080,255,255,0,102,Moderately,Suitable
-7081,255,153,0,102,Barely,Suitable
-7082,255,153,0,102,Barely,Suitable
-7083,255,255,0,102,Moderately,Suitable
-7084,255,255,0,102,Moderately,Suitable
-7085,255,153,0,102,Barely,Suitable
+7079,255,153,0,102,Barely Suitable
+7080,255,255,0,102,Moderately Suitable
+7081,255,153,0,102,Barely Suitable
+7082,255,153,0,102,Barely Suitable
+7083,255,255,0,102,Moderately Suitable
+7084,255,255,0,102,Moderately Suitable
+7085,255,153,0,102,Barely Suitable
 7086,122,171,0,102,Suitable
-7087,255,153,0,102,Barely,Suitable
-7088,255,153,0,102,Barely,Suitable
-7090,255,153,0,102,Barely,Suitable
-7091,255,153,0,102,Barely,Suitable
-7092,255,153,0,102,Barely,Suitable
+7087,255,153,0,102,Barely Suitable
+7088,255,153,0,102,Barely Suitable
+7090,255,153,0,102,Barely Suitable
+7091,255,153,0,102,Barely Suitable
+7092,255,153,0,102,Barely Suitable
 7093,255,34,0,102,Unsuitable
 7094,255,34,0,102,Unsuitable
 7096,255,34,0,102,Unsuitable
-7097,255,153,0,102,Barely,Suitable
-7098,255,153,0,102,Barely,Suitable
-7099,255,153,0,102,Barely,Suitable
+7097,255,153,0,102,Barely Suitable
+7098,255,153,0,102,Barely Suitable
+7099,255,153,0,102,Barely Suitable
 7100,255,34,0,102,Unsuitable
 7101,255,34,0,102,Unsuitable
-7102,255,255,0,102,Moderately,Suitable
-7103,255,153,0,102,Barely,Suitable
-7104,255,153,0,102,Barely,Suitable
-7105,255,153,0,102,Barely,Suitable
+7102,255,255,0,102,Moderately Suitable
+7103,255,153,0,102,Barely Suitable
+7104,255,153,0,102,Barely Suitable
+7105,255,153,0,102,Barely Suitable
 7106,122,171,0,102,Suitable
 7107,122,171,0,102,Suitable
-7108,255,153,0,102,Barely,Suitable
-7109,255,153,0,102,Barely,Suitable
-7110,255,153,0,102,Barely,Suitable
+7108,255,153,0,102,Barely Suitable
+7109,255,153,0,102,Barely Suitable
+7110,255,153,0,102,Barely Suitable
 7111,255,34,0,102,Unsuitable
 7112,122,171,0,102,Suitable
-7113,255,255,0,102,Moderately,Suitable
-7114,255,255,0,102,Moderately,Suitable
-7115,255,255,0,102,Moderately,Suitable
-7116,255,255,0,102,Moderately,Suitable
-7117,255,255,0,102,Moderately,Suitable
-7118,255,255,0,102,Moderately,Suitable
-7119,255,255,0,102,Moderately,Suitable
-7120,255,153,0,102,Barely,Suitable
-7121,255,153,0,102,Barely,Suitable
-7122,255,153,0,102,Barely,Suitable
-7123,255,153,0,102,Barely,Suitable
-7124,255,153,0,102,Barely,Suitable
-7125,255,255,0,102,Moderately,Suitable
-7126,255,255,0,102,Moderately,Suitable
-7127,255,255,0,102,Moderately,Suitable
-7128,255,153,0,102,Barely,Suitable
-7129,255,153,0,102,Barely,Suitable
-7130,255,153,0,102,Barely,Suitable
-7131,255,153,0,102,Barely,Suitable
-7132,255,153,0,102,Barely,Suitable
-7133,255,153,0,102,Barely,Suitable
-7134,255,153,0,102,Barely,Suitable
-7135,255,153,0,102,Barely,Suitable
-7136,255,153,0,102,Barely,Suitable
-7137,255,153,0,102,Barely,Suitable
-7138,255,153,0,102,Barely,Suitable
-7139,255,153,0,102,Barely,Suitable
-7140,255,153,0,102,Barely,Suitable
-7141,255,153,0,102,Barely,Suitable
-7142,255,153,0,102,Barely,Suitable
-7143,255,153,0,102,Barely,Suitable
-7144,255,153,0,102,Barely,Suitable
-7145,255,153,0,102,Barely,Suitable
-7146,255,153,0,102,Barely,Suitable
-7147,255,153,0,102,Barely,Suitable
-7148,255,153,0,102,Barely,Suitable
-7149,255,153,0,102,Barely,Suitable
-7150,255,153,0,102,Barely,Suitable
+7113,255,255,0,102,Moderately Suitable
+7114,255,255,0,102,Moderately Suitable
+7115,255,255,0,102,Moderately Suitable
+7116,255,255,0,102,Moderately Suitable
+7117,255,255,0,102,Moderately Suitable
+7118,255,255,0,102,Moderately Suitable
+7119,255,255,0,102,Moderately Suitable
+7120,255,153,0,102,Barely Suitable
+7121,255,153,0,102,Barely Suitable
+7122,255,153,0,102,Barely Suitable
+7123,255,153,0,102,Barely Suitable
+7124,255,153,0,102,Barely Suitable
+7125,255,255,0,102,Moderately Suitable
+7126,255,255,0,102,Moderately Suitable
+7127,255,255,0,102,Moderately Suitable
+7128,255,153,0,102,Barely Suitable
+7129,255,153,0,102,Barely Suitable
+7130,255,153,0,102,Barely Suitable
+7131,255,153,0,102,Barely Suitable
+7132,255,153,0,102,Barely Suitable
+7133,255,153,0,102,Barely Suitable
+7134,255,153,0,102,Barely Suitable
+7135,255,153,0,102,Barely Suitable
+7136,255,153,0,102,Barely Suitable
+7137,255,153,0,102,Barely Suitable
+7138,255,153,0,102,Barely Suitable
+7139,255,153,0,102,Barely Suitable
+7140,255,153,0,102,Barely Suitable
+7141,255,153,0,102,Barely Suitable
+7142,255,153,0,102,Barely Suitable
+7143,255,153,0,102,Barely Suitable
+7144,255,153,0,102,Barely Suitable
+7145,255,153,0,102,Barely Suitable
+7146,255,153,0,102,Barely Suitable
+7147,255,153,0,102,Barely Suitable
+7148,255,153,0,102,Barely Suitable
+7149,255,153,0,102,Barely Suitable
+7150,255,153,0,102,Barely Suitable
 7151,0,97,0,102,Preferred
 7152,0,97,0,102,Preferred
-7153,255,153,0,102,Barely,Suitable
+7153,255,153,0,102,Barely Suitable
 7156,0,97,0,102,Preferred
 7157,0,97,0,102,Preferred
 7158,0,97,0,102,Preferred
 7159,0,97,0,102,Preferred
 7161,0,97,0,102,Preferred
-7165,255,255,0,102,Moderately,Suitable
-7166,255,255,0,102,Moderately,Suitable
-7167,255,255,0,102,Moderately,Suitable
+7165,255,255,0,102,Moderately Suitable
+7166,255,255,0,102,Moderately Suitable
+7167,255,255,0,102,Moderately Suitable
 7168,122,171,0,102,Suitable
 7169,122,171,0,102,Suitable
 7170,255,34,0,102,Unsuitable
-7171,255,153,0,102,Barely,Suitable
-7172,255,255,0,102,Moderately,Suitable
-7173,255,255,0,102,Moderately,Suitable
-7174,255,255,0,102,Moderately,Suitable
-7177,255,255,0,102,Moderately,Suitable
-7178,255,255,0,102,Moderately,Suitable
-7179,255,255,0,102,Moderately,Suitable
-7191,255,153,0,102,Barely,Suitable
-7192,255,153,0,102,Barely,Suitable
-7193,255,153,0,102,Barely,Suitable
-7195,255,153,0,102,Barely,Suitable
-7196,255,153,0,102,Barely,Suitable
-7197,255,153,0,102,Barely,Suitable
+7171,255,153,0,102,Barely Suitable
+7172,255,255,0,102,Moderately Suitable
+7173,255,255,0,102,Moderately Suitable
+7174,255,255,0,102,Moderately Suitable
+7177,255,255,0,102,Moderately Suitable
+7178,255,255,0,102,Moderately Suitable
+7179,255,255,0,102,Moderately Suitable
+7191,255,153,0,102,Barely Suitable
+7192,255,153,0,102,Barely Suitable
+7193,255,153,0,102,Barely Suitable
+7195,255,153,0,102,Barely Suitable
+7196,255,153,0,102,Barely Suitable
+7197,255,153,0,102,Barely Suitable
 7198,255,34,0,102,Unsuitable
-7199,255,153,0,102,Barely,Suitable
-7200,255,153,0,102,Barely,Suitable
+7199,255,153,0,102,Barely Suitable
+7200,255,153,0,102,Barely Suitable
 7207,255,34,0,102,Unsuitable
-7234,255,153,0,102,Barely,Suitable
+7234,255,153,0,102,Barely Suitable
 7238,255,34,0,102,Unsuitable
 7239,255,34,0,102,Unsuitable
-7240,255,255,0,102,Moderately,Suitable
-7241,255,255,0,102,Moderately,Suitable
+7240,255,255,0,102,Moderately Suitable
+7241,255,255,0,102,Moderately Suitable
 7242,255,34,0,102,Unsuitable
 7243,255,34,0,102,Unsuitable
 7247,255,34,0,102,Unsuitable
-7248,255,153,0,102,Barely,Suitable
-7249,255,153,0,102,Barely,Suitable
-7250,255,255,0,102,Moderately,Suitable
-7256,255,153,0,102,Barely,Suitable
-7260,255,255,0,102,Moderately,Suitable
-7261,255,255,0,102,Moderately,Suitable
-7262,255,255,0,102,Moderately,Suitable
-7263,255,255,0,102,Moderately,Suitable
+7248,255,153,0,102,Barely Suitable
+7249,255,153,0,102,Barely Suitable
+7250,255,255,0,102,Moderately Suitable
+7256,255,153,0,102,Barely Suitable
+7260,255,255,0,102,Moderately Suitable
+7261,255,255,0,102,Moderately Suitable
+7262,255,255,0,102,Moderately Suitable
+7263,255,255,0,102,Moderately Suitable
 7264,122,171,0,102,Suitable
-7265,255,255,0,102,Moderately,Suitable
+7265,255,255,0,102,Moderately Suitable
 7268,255,34,0,102,Unsuitable
-7270,255,153,0,102,Barely,Suitable
+7270,255,153,0,102,Barely Suitable
 7272,0,97,0,102,Preferred
 7286,255,34,0,102,Unsuitable
 7290,255,34,0,102,Unsuitable
@@ -2403,81 +2405,81 @@
 7298,255,34,0,102,Unsuitable
 7299,255,34,0,102,Unsuitable
 7301,255,34,0,102,Unsuitable
-7302,255,255,0,102,Moderately,Suitable
+7302,255,255,0,102,Moderately Suitable
 7303,122,171,0,102,Suitable
 7304,255,34,0,102,Unsuitable
 7305,255,34,0,102,Unsuitable
-7306,255,153,0,102,Barely,Suitable
-7307,255,255,0,102,Moderately,Suitable
-7308,255,255,0,102,Moderately,Suitable
-7309,255,255,0,102,Moderately,Suitable
-7310,255,255,0,102,Moderately,Suitable
-7311,255,255,0,102,Moderately,Suitable
+7306,255,153,0,102,Barely Suitable
+7307,255,255,0,102,Moderately Suitable
+7308,255,255,0,102,Moderately Suitable
+7309,255,255,0,102,Moderately Suitable
+7310,255,255,0,102,Moderately Suitable
+7311,255,255,0,102,Moderately Suitable
 7312,255,34,0,102,Unsuitable
 7313,255,34,0,102,Unsuitable
 7314,255,34,0,102,Unsuitable
 7315,122,171,0,102,Suitable
-7316,255,255,0,102,Moderately,Suitable
-7317,255,255,0,102,Moderately,Suitable
-7318,255,255,0,102,Moderately,Suitable
+7316,255,255,0,102,Moderately Suitable
+7317,255,255,0,102,Moderately Suitable
+7318,255,255,0,102,Moderately Suitable
 7320,122,171,0,102,Suitable
 7321,255,34,0,102,Unsuitable
-7322,255,153,0,102,Barely,Suitable
-7323,255,255,0,102,Moderately,Suitable
-7324,255,255,0,102,Moderately,Suitable
-7325,255,255,0,102,Moderately,Suitable
-7326,255,153,0,102,Barely,Suitable
-7327,255,255,0,102,Moderately,Suitable
-7328,255,255,0,102,Moderately,Suitable
-7329,255,255,0,102,Moderately,Suitable
-7330,255,255,0,102,Moderately,Suitable
-7331,255,255,0,102,Moderately,Suitable
-7333,255,255,0,102,Moderately,Suitable
-7334,255,255,0,102,Moderately,Suitable
+7322,255,153,0,102,Barely Suitable
+7323,255,255,0,102,Moderately Suitable
+7324,255,255,0,102,Moderately Suitable
+7325,255,255,0,102,Moderately Suitable
+7326,255,153,0,102,Barely Suitable
+7327,255,255,0,102,Moderately Suitable
+7328,255,255,0,102,Moderately Suitable
+7329,255,255,0,102,Moderately Suitable
+7330,255,255,0,102,Moderately Suitable
+7331,255,255,0,102,Moderately Suitable
+7333,255,255,0,102,Moderately Suitable
+7334,255,255,0,102,Moderately Suitable
 7335,122,171,0,102,Suitable
 7336,255,34,0,102,Unsuitable
 7337,255,34,0,102,Unsuitable
-7338,255,255,0,102,Moderately,Suitable
-7339,255,255,0,102,Moderately,Suitable
+7338,255,255,0,102,Moderately Suitable
+7339,255,255,0,102,Moderately Suitable
 7340,255,34,0,102,Unsuitable
 7342,122,171,0,102,Suitable
-7343,255,255,0,102,Moderately,Suitable
-7346,255,255,0,102,Moderately,Suitable
-7347,255,255,0,102,Moderately,Suitable
-7348,255,255,0,102,Moderately,Suitable
-7349,255,255,0,102,Moderately,Suitable
-7350,255,255,0,102,Moderately,Suitable
-7351,255,255,0,102,Moderately,Suitable
-7352,255,255,0,102,Moderately,Suitable
-7353,255,153,0,102,Barely,Suitable
+7343,255,255,0,102,Moderately Suitable
+7346,255,255,0,102,Moderately Suitable
+7347,255,255,0,102,Moderately Suitable
+7348,255,255,0,102,Moderately Suitable
+7349,255,255,0,102,Moderately Suitable
+7350,255,255,0,102,Moderately Suitable
+7351,255,255,0,102,Moderately Suitable
+7352,255,255,0,102,Moderately Suitable
+7353,255,153,0,102,Barely Suitable
 7355,255,34,0,102,Unsuitable
 7356,255,34,0,102,Unsuitable
-7357,255,255,0,102,Moderately,Suitable
-7358,255,255,0,102,Moderately,Suitable
+7357,255,255,0,102,Moderately Suitable
+7358,255,255,0,102,Moderately Suitable
 7360,255,34,0,102,Unsuitable
-7361,255,255,0,102,Moderately,Suitable
-7362,255,153,0,102,Barely,Suitable
+7361,255,255,0,102,Moderately Suitable
+7362,255,153,0,102,Barely Suitable
 7363,255,34,0,102,Unsuitable
-7364,255,255,0,102,Moderately,Suitable
-7366,255,255,0,102,Moderately,Suitable
-7367,255,255,0,102,Moderately,Suitable
-7368,255,255,0,102,Moderately,Suitable
-7369,255,255,0,102,Moderately,Suitable
-7370,255,255,0,102,Moderately,Suitable
-7371,255,153,0,102,Barely,Suitable
-7372,255,153,0,102,Barely,Suitable
-7375,255,255,0,102,Moderately,Suitable
+7364,255,255,0,102,Moderately Suitable
+7366,255,255,0,102,Moderately Suitable
+7367,255,255,0,102,Moderately Suitable
+7368,255,255,0,102,Moderately Suitable
+7369,255,255,0,102,Moderately Suitable
+7370,255,255,0,102,Moderately Suitable
+7371,255,153,0,102,Barely Suitable
+7372,255,153,0,102,Barely Suitable
+7375,255,255,0,102,Moderately Suitable
 7376,255,34,0,102,Unsuitable
-7377,255,153,0,102,Barely,Suitable
-7378,255,255,0,102,Moderately,Suitable
-7379,255,255,0,102,Moderately,Suitable
+7377,255,153,0,102,Barely Suitable
+7378,255,255,0,102,Moderately Suitable
+7379,255,255,0,102,Moderately Suitable
 7380,122,171,0,102,Suitable
-7381,255,255,0,102,Moderately,Suitable
-7382,255,255,0,102,Moderately,Suitable
-7383,255,255,0,102,Moderately,Suitable
-7384,255,255,0,102,Moderately,Suitable
+7381,255,255,0,102,Moderately Suitable
+7382,255,255,0,102,Moderately Suitable
+7383,255,255,0,102,Moderately Suitable
+7384,255,255,0,102,Moderately Suitable
 7385,122,171,0,102,Suitable
-7387,255,153,0,102,Barely,Suitable
+7387,255,153,0,102,Barely Suitable
 7390,255,34,0,102,Unsuitable
 7391,255,34,0,102,Unsuitable
 7392,255,34,0,102,Unsuitable
@@ -2485,183 +2487,183 @@
 7394,122,171,0,102,Suitable
 7395,255,34,0,102,Unsuitable
 7396,255,34,0,102,Unsuitable
-7397,255,255,0,102,Moderately,Suitable
+7397,255,255,0,102,Moderately Suitable
 7398,255,34,0,102,Unsuitable
-7400,255,255,0,102,Moderately,Suitable
+7400,255,255,0,102,Moderately Suitable
 7401,255,34,0,102,Unsuitable
 7403,255,34,0,102,Unsuitable
 7405,255,34,0,102,Unsuitable
 7406,122,171,0,102,Suitable
 7407,255,34,0,102,Unsuitable
-7408,255,255,0,102,Moderately,Suitable
+7408,255,255,0,102,Moderately Suitable
 7409,255,34,0,102,Unsuitable
-7410,255,255,0,102,Moderately,Suitable
-7411,255,153,0,102,Barely,Suitable
-7412,255,153,0,102,Barely,Suitable
-7413,255,153,0,102,Barely,Suitable
+7410,255,255,0,102,Moderately Suitable
+7411,255,153,0,102,Barely Suitable
+7412,255,153,0,102,Barely Suitable
+7413,255,153,0,102,Barely Suitable
 7414,255,34,0,102,Unsuitable
-7415,255,153,0,102,Barely,Suitable
+7415,255,153,0,102,Barely Suitable
 7416,255,34,0,102,Unsuitable
 7417,255,34,0,102,Unsuitable
 7418,255,34,0,102,Unsuitable
 7419,255,34,0,102,Unsuitable
-7420,255,153,0,102,Barely,Suitable
-7421,255,153,0,102,Barely,Suitable
-7422,255,153,0,102,Barely,Suitable
-7423,255,153,0,102,Barely,Suitable
+7420,255,153,0,102,Barely Suitable
+7421,255,153,0,102,Barely Suitable
+7422,255,153,0,102,Barely Suitable
+7423,255,153,0,102,Barely Suitable
 7424,255,34,0,102,Unsuitable
-7425,255,153,0,102,Barely,Suitable
-7426,255,153,0,102,Barely,Suitable
-7428,255,153,0,102,Barely,Suitable
-7429,255,153,0,102,Barely,Suitable
+7425,255,153,0,102,Barely Suitable
+7426,255,153,0,102,Barely Suitable
+7428,255,153,0,102,Barely Suitable
+7429,255,153,0,102,Barely Suitable
 7430,255,34,0,102,Unsuitable
-7431,255,153,0,102,Barely,Suitable
-7434,255,153,0,102,Barely,Suitable
-7435,255,153,0,102,Barely,Suitable
-7436,255,153,0,102,Barely,Suitable
-7437,255,153,0,102,Barely,Suitable
-7438,255,153,0,102,Barely,Suitable
+7431,255,153,0,102,Barely Suitable
+7434,255,153,0,102,Barely Suitable
+7435,255,153,0,102,Barely Suitable
+7436,255,153,0,102,Barely Suitable
+7437,255,153,0,102,Barely Suitable
+7438,255,153,0,102,Barely Suitable
 7439,255,34,0,102,Unsuitable
-7441,255,255,0,102,Moderately,Suitable
-7442,255,255,0,102,Moderately,Suitable
+7441,255,255,0,102,Moderately Suitable
+7442,255,255,0,102,Moderately Suitable
 7444,255,34,0,102,Unsuitable
 7445,255,34,0,102,Unsuitable
-7446,255,153,0,102,Barely,Suitable
+7446,255,153,0,102,Barely Suitable
 7447,255,34,0,102,Unsuitable
 7448,122,171,0,102,Suitable
-7449,255,153,0,102,Barely,Suitable
-7450,255,153,0,102,Barely,Suitable
-7451,255,153,0,102,Barely,Suitable
-7452,255,255,0,102,Moderately,Suitable
-7453,255,153,0,102,Barely,Suitable
-7454,255,153,0,102,Barely,Suitable
-7455,255,153,0,102,Barely,Suitable
+7449,255,153,0,102,Barely Suitable
+7450,255,153,0,102,Barely Suitable
+7451,255,153,0,102,Barely Suitable
+7452,255,255,0,102,Moderately Suitable
+7453,255,153,0,102,Barely Suitable
+7454,255,153,0,102,Barely Suitable
+7455,255,153,0,102,Barely Suitable
 7456,255,34,0,102,Unsuitable
-7457,255,153,0,102,Barely,Suitable
-7458,255,153,0,102,Barely,Suitable
-7459,255,153,0,102,Barely,Suitable
+7457,255,153,0,102,Barely Suitable
+7458,255,153,0,102,Barely Suitable
+7459,255,153,0,102,Barely Suitable
 7460,255,34,0,102,Unsuitable
 7461,255,34,0,102,Unsuitable
 7462,255,34,0,102,Unsuitable
 7463,122,171,0,102,Suitable
 7466,255,34,0,102,Unsuitable
 7467,255,34,0,102,Unsuitable
-7468,255,255,0,102,Moderately,Suitable
-7469,255,153,0,102,Barely,Suitable
-7471,255,153,0,102,Barely,Suitable
-7472,255,153,0,102,Barely,Suitable
+7468,255,255,0,102,Moderately Suitable
+7469,255,153,0,102,Barely Suitable
+7471,255,153,0,102,Barely Suitable
+7472,255,153,0,102,Barely Suitable
 7473,255,34,0,102,Unsuitable
 7474,0,97,0,102,Preferred
 7475,122,171,0,102,Suitable
 7476,0,97,0,102,Preferred
-7481,255,255,0,102,Moderately,Suitable
-7482,255,153,0,102,Barely,Suitable
-7483,255,153,0,102,Barely,Suitable
-7484,255,153,0,102,Barely,Suitable
-7485,255,153,0,102,Barely,Suitable
-7486,255,153,0,102,Barely,Suitable
+7481,255,255,0,102,Moderately Suitable
+7482,255,153,0,102,Barely Suitable
+7483,255,153,0,102,Barely Suitable
+7484,255,153,0,102,Barely Suitable
+7485,255,153,0,102,Barely Suitable
+7486,255,153,0,102,Barely Suitable
 7487,255,34,0,102,Unsuitable
 7488,255,34,0,102,Unsuitable
 7489,255,34,0,102,Unsuitable
-7500,255,153,0,102,Barely,Suitable
-7501,255,255,0,102,Moderately,Suitable
+7500,255,153,0,102,Barely Suitable
+7501,255,255,0,102,Moderately Suitable
 7502,122,171,0,102,Suitable
-7503,255,153,0,102,Barely,Suitable
-7504,255,153,0,102,Barely,Suitable
-7505,255,255,0,102,Moderately,Suitable
-7506,255,255,0,102,Moderately,Suitable
+7503,255,153,0,102,Barely Suitable
+7504,255,153,0,102,Barely Suitable
+7505,255,255,0,102,Moderately Suitable
+7506,255,255,0,102,Moderately Suitable
 7507,255,34,0,102,Unsuitable
-7509,255,255,0,102,Moderately,Suitable
-7510,255,153,0,102,Barely,Suitable
-7511,255,255,0,102,Moderately,Suitable
-7512,255,255,0,102,Moderately,Suitable
-7513,255,153,0,102,Barely,Suitable
+7509,255,255,0,102,Moderately Suitable
+7510,255,153,0,102,Barely Suitable
+7511,255,255,0,102,Moderately Suitable
+7512,255,255,0,102,Moderately Suitable
+7513,255,153,0,102,Barely Suitable
 7514,255,34,0,102,Unsuitable
 7515,255,34,0,102,Unsuitable
 7516,255,34,0,102,Unsuitable
 7517,255,34,0,102,Unsuitable
-7518,255,153,0,102,Barely,Suitable
-7519,255,255,0,102,Moderately,Suitable
-7522,255,153,0,102,Barely,Suitable
-7523,255,255,0,102,Moderately,Suitable
+7518,255,153,0,102,Barely Suitable
+7519,255,255,0,102,Moderately Suitable
+7522,255,153,0,102,Barely Suitable
+7523,255,255,0,102,Moderately Suitable
 7524,255,34,0,102,Unsuitable
-7525,255,255,0,102,Moderately,Suitable
+7525,255,255,0,102,Moderately Suitable
 7527,122,171,0,102,Suitable
-7545,255,153,0,102,Barely,Suitable
+7545,255,153,0,102,Barely Suitable
 7546,122,171,0,102,Suitable
-7547,255,153,0,102,Barely,Suitable
-7548,255,153,0,102,Barely,Suitable
-7556,255,153,0,102,Barely,Suitable
-7557,255,153,0,102,Barely,Suitable
+7547,255,153,0,102,Barely Suitable
+7548,255,153,0,102,Barely Suitable
+7556,255,153,0,102,Barely Suitable
+7557,255,153,0,102,Barely Suitable
 7560,255,34,0,102,Unsuitable
 7561,255,34,0,102,Unsuitable
 7562,0,97,0,102,Preferred
 7563,0,97,0,102,Preferred
 7564,0,97,0,102,Preferred
-7565,255,255,0,102,Moderately,Suitable
-7566,255,153,0,102,Barely,Suitable
-7567,255,255,0,102,Moderately,Suitable
+7565,255,255,0,102,Moderately Suitable
+7566,255,153,0,102,Barely Suitable
+7567,255,255,0,102,Moderately Suitable
 7571,255,34,0,102,Unsuitable
 7573,0,97,0,102,Preferred
-7578,255,153,0,102,Barely,Suitable
-7582,255,255,0,102,Moderately,Suitable
-7583,255,255,0,102,Moderately,Suitable
-7584,255,255,0,102,Moderately,Suitable
-7585,255,255,0,102,Moderately,Suitable
-7586,255,255,0,102,Moderately,Suitable
-7587,255,255,0,102,Moderately,Suitable
-7588,255,255,0,102,Moderately,Suitable
-7589,255,255,0,102,Moderately,Suitable
-7590,255,255,0,102,Moderately,Suitable
-7591,255,255,0,102,Moderately,Suitable
+7578,255,153,0,102,Barely Suitable
+7582,255,255,0,102,Moderately Suitable
+7583,255,255,0,102,Moderately Suitable
+7584,255,255,0,102,Moderately Suitable
+7585,255,255,0,102,Moderately Suitable
+7586,255,255,0,102,Moderately Suitable
+7587,255,255,0,102,Moderately Suitable
+7588,255,255,0,102,Moderately Suitable
+7589,255,255,0,102,Moderately Suitable
+7590,255,255,0,102,Moderately Suitable
+7591,255,255,0,102,Moderately Suitable
 7662,122,171,0,102,Suitable
 7663,255,34,0,102,Unsuitable
 7668,255,34,0,102,Unsuitable
 7733,255,34,0,102,Unsuitable
 7734,255,34,0,102,Unsuitable
 7735,255,34,0,102,Unsuitable
-7861,255,153,0,102,Barely,Suitable
+7861,255,153,0,102,Barely Suitable
 7867,255,34,0,102,Unsuitable
 7900,122,171,0,102,Suitable
-7901,255,255,0,102,Moderately,Suitable
-7902,255,255,0,102,Moderately,Suitable
-7903,255,153,0,102,Barely,Suitable
-7904,255,153,0,102,Barely,Suitable
+7901,255,255,0,102,Moderately Suitable
+7902,255,255,0,102,Moderately Suitable
+7903,255,153,0,102,Barely Suitable
+7904,255,153,0,102,Barely Suitable
 7905,122,171,0,102,Suitable
-7906,255,255,0,102,Moderately,Suitable
-7907,255,255,0,102,Moderately,Suitable
-7908,255,153,0,102,Barely,Suitable
-7909,255,153,0,102,Barely,Suitable
+7906,255,255,0,102,Moderately Suitable
+7907,255,255,0,102,Moderately Suitable
+7908,255,153,0,102,Barely Suitable
+7909,255,153,0,102,Barely Suitable
 7910,122,171,0,102,Suitable
-7911,255,255,0,102,Moderately,Suitable
-7912,255,255,0,102,Moderately,Suitable
-7913,255,153,0,102,Barely,Suitable
-7914,255,153,0,102,Barely,Suitable
+7911,255,255,0,102,Moderately Suitable
+7912,255,255,0,102,Moderately Suitable
+7913,255,153,0,102,Barely Suitable
+7914,255,153,0,102,Barely Suitable
 7915,122,171,0,102,Suitable
-7916,255,255,0,102,Moderately,Suitable
-7917,255,255,0,102,Moderately,Suitable
-7918,255,153,0,102,Barely,Suitable
-7919,255,153,0,102,Barely,Suitable
+7916,255,255,0,102,Moderately Suitable
+7917,255,255,0,102,Moderately Suitable
+7918,255,153,0,102,Barely Suitable
+7919,255,153,0,102,Barely Suitable
 7920,122,171,0,102,Suitable
-7921,255,255,0,102,Moderately,Suitable
-7922,255,255,0,102,Moderately,Suitable
-7923,255,153,0,102,Barely,Suitable
-7924,255,153,0,102,Barely,Suitable
+7921,255,255,0,102,Moderately Suitable
+7922,255,255,0,102,Moderately Suitable
+7923,255,153,0,102,Barely Suitable
+7924,255,153,0,102,Barely Suitable
 7925,122,171,0,102,Suitable
-7926,255,255,0,102,Moderately,Suitable
-7927,255,255,0,102,Moderately,Suitable
-7928,255,153,0,102,Barely,Suitable
-7929,255,153,0,102,Barely,Suitable
+7926,255,255,0,102,Moderately Suitable
+7927,255,255,0,102,Moderately Suitable
+7928,255,153,0,102,Barely Suitable
+7929,255,153,0,102,Barely Suitable
 7930,122,171,0,102,Suitable
-7931,255,255,0,102,Moderately,Suitable
-7932,255,255,0,102,Moderately,Suitable
-7933,255,153,0,102,Barely,Suitable
-7934,255,153,0,102,Barely,Suitable
+7931,255,255,0,102,Moderately Suitable
+7932,255,255,0,102,Moderately Suitable
+7933,255,153,0,102,Barely Suitable
+7934,255,153,0,102,Barely Suitable
 7935,122,171,0,102,Suitable
-7936,255,255,0,102,Moderately,Suitable
-7937,255,255,0,102,Moderately,Suitable
-7938,255,153,0,102,Barely,Suitable
-7939,255,153,0,102,Barely,Suitable
+7936,255,255,0,102,Moderately Suitable
+7937,255,255,0,102,Moderately Suitable
+7938,255,153,0,102,Barely Suitable
+7939,255,153,0,102,Barely Suitable
 7940,122,171,0,102,Suitable
 7941,122,171,0,102,Suitable
 7942,0,97,0,102,Preferred
@@ -2682,44 +2684,44 @@
 7957,122,171,0,102,Suitable
 7958,122,171,0,102,Suitable
 7959,122,171,0,102,Suitable
-7960,255,255,0,102,Moderately,Suitable
-7961,255,153,0,102,Barely,Suitable
+7960,255,255,0,102,Moderately Suitable
+7961,255,153,0,102,Barely Suitable
 7962,255,34,0,102,Unsuitable
-7963,255,153,0,102,Barely,Suitable
-7964,255,153,0,102,Barely,Suitable
-7965,255,153,0,102,Barely,Suitable
-7966,255,153,0,102,Barely,Suitable
-7967,255,153,0,102,Barely,Suitable
-7968,255,153,0,102,Barely,Suitable
-7970,255,255,0,102,Moderately,Suitable
-7971,255,153,0,102,Barely,Suitable
+7963,255,153,0,102,Barely Suitable
+7964,255,153,0,102,Barely Suitable
+7965,255,153,0,102,Barely Suitable
+7966,255,153,0,102,Barely Suitable
+7967,255,153,0,102,Barely Suitable
+7968,255,153,0,102,Barely Suitable
+7970,255,255,0,102,Moderately Suitable
+7971,255,153,0,102,Barely Suitable
 7972,255,34,0,102,Unsuitable
-7973,255,153,0,102,Barely,Suitable
-7974,255,153,0,102,Barely,Suitable
-7975,255,153,0,102,Barely,Suitable
-7976,255,153,0,102,Barely,Suitable
-7977,255,153,0,102,Barely,Suitable
-7978,255,153,0,102,Barely,Suitable
+7973,255,153,0,102,Barely Suitable
+7974,255,153,0,102,Barely Suitable
+7975,255,153,0,102,Barely Suitable
+7976,255,153,0,102,Barely Suitable
+7977,255,153,0,102,Barely Suitable
+7978,255,153,0,102,Barely Suitable
 7979,255,34,0,102,Unsuitable
-7980,255,255,0,102,Moderately,Suitable
-7981,255,153,0,102,Barely,Suitable
+7980,255,255,0,102,Moderately Suitable
+7981,255,153,0,102,Barely Suitable
 7982,255,34,0,102,Unsuitable
-7983,255,153,0,102,Barely,Suitable
-7984,255,153,0,102,Barely,Suitable
-7985,255,153,0,102,Barely,Suitable
-7986,255,153,0,102,Barely,Suitable
-7987,255,153,0,102,Barely,Suitable
-7988,255,153,0,102,Barely,Suitable
+7983,255,153,0,102,Barely Suitable
+7984,255,153,0,102,Barely Suitable
+7985,255,153,0,102,Barely Suitable
+7986,255,153,0,102,Barely Suitable
+7987,255,153,0,102,Barely Suitable
+7988,255,153,0,102,Barely Suitable
 7989,255,34,0,102,Unsuitable
-7990,255,255,0,102,Moderately,Suitable
-7991,255,153,0,102,Barely,Suitable
+7990,255,255,0,102,Moderately Suitable
+7991,255,153,0,102,Barely Suitable
 7992,255,34,0,102,Unsuitable
-7993,255,153,0,102,Barely,Suitable
-7994,255,153,0,102,Barely,Suitable
-7995,255,153,0,102,Barely,Suitable
-7996,255,153,0,102,Barely,Suitable
-7997,255,153,0,102,Barely,Suitable
-7998,255,153,0,102,Barely,Suitable
+7993,255,153,0,102,Barely Suitable
+7994,255,153,0,102,Barely Suitable
+7995,255,153,0,102,Barely Suitable
+7996,255,153,0,102,Barely Suitable
+7997,255,153,0,102,Barely Suitable
+7998,255,153,0,102,Barely Suitable
 7999,255,34,0,102,Unsuitable
 9001,255,34,0,102,Unsuitable
 9002,0,97,0,102,Preferred
@@ -2727,12 +2729,12 @@
 9004,255,34,0,102,Unsuitable
 9005,122,171,0,102,Suitable
 9006,255,34,0,102,Unsuitable
-9008,255,153,0,102,Barely,Suitable
+9008,255,153,0,102,Barely Suitable
 9009,255,34,0,102,Unsuitable
 9010,255,34,0,102,Unsuitable
 9011,122,171,0,102,Suitable
 9012,0,97,0,102,Preferred
-9014,255,255,0,102,Moderately,Suitable
+9014,255,255,0,102,Moderately Suitable
 9015,122,171,0,102,Suitable
 9016,255,34,0,102,Unsuitable
 9017,0,97,0,102,Preferred
@@ -2743,30 +2745,30 @@
 9023,255,34,0,102,Unsuitable
 9024,255,34,0,102,Unsuitable
 9025,255,34,0,102,Unsuitable
-9026,255,255,0,102,Moderately,Suitable
+9026,255,255,0,102,Moderately Suitable
 9027,255,34,0,102,Unsuitable
 9028,0,97,0,102,Preferred
 9029,255,34,0,102,Unsuitable
 9030,0,97,0,102,Preferred
-9032,255,153,0,102,Barely,Suitable
+9032,255,153,0,102,Barely Suitable
 9033,255,34,0,102,Unsuitable
 9034,0,97,0,102,Preferred
 9035,0,97,0,102,Preferred
-9041,255,255,0,102,Moderately,Suitable
-9042,255,255,0,102,Moderately,Suitable
+9041,255,255,0,102,Moderately Suitable
+9042,255,255,0,102,Moderately Suitable
 9044,255,34,0,102,Unsuitable
 9045,255,34,0,102,Unsuitable
 9047,255,34,0,102,Unsuitable
-9050,255,255,0,102,Moderately,Suitable
-9051,255,255,0,102,Moderately,Suitable
+9050,255,255,0,102,Moderately Suitable
+9051,255,255,0,102,Moderately Suitable
 9055,255,34,0,102,Unsuitable
 9056,255,34,0,102,Unsuitable
 9057,255,34,0,102,Unsuitable
-9059,255,255,0,102,Moderately,Suitable
-9060,255,255,0,102,Moderately,Suitable
+9059,255,255,0,102,Moderately Suitable
+9060,255,255,0,102,Moderately Suitable
 9061,255,34,0,102,Unsuitable
 9062,255,34,0,102,Unsuitable
-9063,255,153,0,102,Barely,Suitable
+9063,255,153,0,102,Barely Suitable
 9064,255,34,0,102,Unsuitable
 9065,255,34,0,102,Unsuitable
 9066,255,34,0,102,Unsuitable
@@ -2774,19 +2776,19 @@
 9069,255,34,0,102,Unsuitable
 9071,0,97,0,102,Preferred
 9073,255,34,0,102,Unsuitable
-9075,255,153,0,102,Barely,Suitable
+9075,255,153,0,102,Barely Suitable
 9077,255,34,0,102,Unsuitable
-9080,255,255,0,102,Moderately,Suitable
+9080,255,255,0,102,Moderately Suitable
 9082,122,171,0,102,Suitable
 9083,255,34,0,102,Unsuitable
 9085,122,171,0,102,Suitable
-9088,255,255,0,102,Moderately,Suitable
-9089,255,255,0,102,Moderately,Suitable
+9088,255,255,0,102,Moderately Suitable
+9089,255,255,0,102,Moderately Suitable
 9091,255,34,0,102,Unsuitable
-9092,255,255,0,102,Moderately,Suitable
+9092,255,255,0,102,Moderately Suitable
 9094,255,34,0,102,Unsuitable
 9095,255,34,0,102,Unsuitable
-9097,255,153,0,102,Barely,Suitable
+9097,255,153,0,102,Barely Suitable
 9098,255,34,0,102,Unsuitable
 9099,255,34,0,102,Unsuitable
 9100,255,34,0,102,Unsuitable
@@ -2798,7 +2800,7 @@
 9106,255,34,0,102,Unsuitable
 9110,255,34,0,102,Unsuitable
 9111,255,34,0,102,Unsuitable
-9112,255,153,0,102,Barely,Suitable
+9112,255,153,0,102,Barely Suitable
 9113,255,34,0,102,Unsuitable
 9114,255,34,0,102,Unsuitable
 9115,255,34,0,102,Unsuitable
@@ -2806,7 +2808,7 @@
 9118,255,34,0,102,Unsuitable
 9119,255,34,0,102,Unsuitable
 9120,0,97,0,102,Preferred
-9121,255,153,0,102,Barely,Suitable
+9121,255,153,0,102,Barely Suitable
 9122,255,34,0,102,Unsuitable
 9125,255,34,0,102,Unsuitable
 9126,255,34,0,102,Unsuitable
@@ -2817,8 +2819,8 @@
 9136,255,34,0,102,Unsuitable
 9137,255,34,0,102,Unsuitable
 9138,255,34,0,102,Unsuitable
-9139,255,255,0,102,Moderately,Suitable
-9140,255,255,0,102,Moderately,Suitable
+9139,255,255,0,102,Moderately Suitable
+9140,255,255,0,102,Moderately Suitable
 9141,122,171,0,102,Suitable
 9142,255,34,0,102,Unsuitable
 9143,255,34,0,102,Unsuitable
@@ -2832,10 +2834,10 @@
 9153,255,34,0,102,Unsuitable
 9154,255,34,0,102,Unsuitable
 9160,255,34,0,102,Unsuitable
-9165,255,255,0,102,Moderately,Suitable
+9165,255,255,0,102,Moderately Suitable
 9166,255,34,0,102,Unsuitable
 9167,255,34,0,102,Unsuitable
-9170,255,255,0,102,Moderately,Suitable
+9170,255,255,0,102,Moderately Suitable
 9171,255,34,0,102,Unsuitable
 9173,255,34,0,102,Unsuitable
 9174,255,34,0,102,Unsuitable
@@ -2849,7 +2851,7 @@
 9182,255,34,0,102,Unsuitable
 9183,255,34,0,102,Unsuitable
 9187,255,34,0,102,Unsuitable
-9188,255,255,0,102,Moderately,Suitable
+9188,255,255,0,102,Moderately Suitable
 9189,255,34,0,102,Unsuitable
 9190,255,34,0,102,Unsuitable
 9191,255,34,0,102,Unsuitable
@@ -2861,7 +2863,7 @@
 9202,255,34,0,102,Unsuitable
 9203,255,34,0,102,Unsuitable
 9207,122,171,0,102,Suitable
-9208,255,153,0,102,Barely,Suitable
+9208,255,153,0,102,Barely Suitable
 9209,255,34,0,102,Unsuitable
 9210,255,34,0,102,Unsuitable
 9211,255,34,0,102,Unsuitable
@@ -2870,15 +2872,15 @@
 9218,255,34,0,102,Unsuitable
 9220,255,34,0,102,Unsuitable
 9221,255,34,0,102,Unsuitable
-9222,255,153,0,102,Barely,Suitable
+9222,255,153,0,102,Barely Suitable
 9223,255,34,0,102,Unsuitable
 9224,122,171,0,102,Suitable
 9226,255,34,0,102,Unsuitable
 9227,255,34,0,102,Unsuitable
 9228,255,34,0,102,Unsuitable
 9229,255,34,0,102,Unsuitable
-9230,255,255,0,102,Moderately,Suitable
-9231,255,255,0,102,Moderately,Suitable
+9230,255,255,0,102,Moderately Suitable
+9231,255,255,0,102,Moderately Suitable
 9232,255,34,0,102,Unsuitable
 9233,255,34,0,102,Unsuitable
 9234,255,34,0,102,Unsuitable
@@ -2889,18 +2891,18 @@
 9242,122,171,0,102,Suitable
 9243,255,34,0,102,Unsuitable
 9244,255,34,0,102,Unsuitable
-9245,255,153,0,102,Barely,Suitable
+9245,255,153,0,102,Barely Suitable
 9246,255,34,0,102,Unsuitable
 9247,122,171,0,102,Suitable
 9248,255,34,0,102,Unsuitable
 9249,255,34,0,102,Unsuitable
-9250,255,153,0,102,Barely,Suitable
+9250,255,153,0,102,Barely Suitable
 9251,255,34,0,102,Unsuitable
 9256,255,34,0,102,Unsuitable
 9257,255,34,0,102,Unsuitable
 9258,122,171,0,102,Suitable
 9259,122,171,0,102,Suitable
-9260,255,255,0,102,Moderately,Suitable
+9260,255,255,0,102,Moderately Suitable
 9261,255,34,0,102,Unsuitable
 9262,255,34,0,102,Unsuitable
 9265,255,34,0,102,Unsuitable
@@ -2915,37 +2917,37 @@
 9283,255,34,0,102,Unsuitable
 9284,255,34,0,102,Unsuitable
 9288,122,171,0,102,Suitable
-9289,255,255,0,102,Moderately,Suitable
+9289,255,255,0,102,Moderately Suitable
 9290,255,34,0,102,Unsuitable
-9295,255,255,0,102,Moderately,Suitable
-9301,255,153,0,102,Barely,Suitable
+9295,255,255,0,102,Moderately Suitable
+9301,255,153,0,102,Barely Suitable
 9302,255,34,0,102,Unsuitable
-9304,255,255,0,102,Moderately,Suitable
-9307,255,153,0,102,Barely,Suitable
-9308,255,153,0,102,Barely,Suitable
-9309,255,153,0,102,Barely,Suitable
-9310,255,153,0,102,Barely,Suitable
+9304,255,255,0,102,Moderately Suitable
+9307,255,153,0,102,Barely Suitable
+9308,255,153,0,102,Barely Suitable
+9309,255,153,0,102,Barely Suitable
+9310,255,153,0,102,Barely Suitable
 9311,255,34,0,102,Unsuitable
 9312,255,34,0,102,Unsuitable
 9313,255,34,0,102,Unsuitable
 9314,255,34,0,102,Unsuitable
 9315,255,34,0,102,Unsuitable
-9316,255,153,0,102,Barely,Suitable
-9317,255,153,0,102,Barely,Suitable
-9318,255,255,0,102,Moderately,Suitable
+9316,255,153,0,102,Barely Suitable
+9317,255,153,0,102,Barely Suitable
+9318,255,255,0,102,Moderately Suitable
 9319,255,34,0,102,Unsuitable
 9320,255,34,0,102,Unsuitable
 9321,255,34,0,102,Unsuitable
 9322,255,34,0,102,Unsuitable
-9323,255,153,0,102,Barely,Suitable
-9324,255,255,0,102,Moderately,Suitable
-9325,255,153,0,102,Barely,Suitable
-9326,255,153,0,102,Barely,Suitable
+9323,255,153,0,102,Barely Suitable
+9324,255,255,0,102,Moderately Suitable
+9325,255,153,0,102,Barely Suitable
+9326,255,153,0,102,Barely Suitable
 9327,122,171,0,102,Suitable
-9328,255,153,0,102,Barely,Suitable
+9328,255,153,0,102,Barely Suitable
 9329,122,171,0,102,Suitable
 9332,255,34,0,102,Unsuitable
-9336,255,153,0,102,Barely,Suitable
+9336,255,153,0,102,Barely Suitable
 9337,255,34,0,102,Unsuitable
 9502,0,97,0,102,Preferred
 9503,0,97,0,102,Preferred
@@ -2964,34 +2966,34 @@
 9533,0,97,0,102,Preferred
 9534,0,97,0,102,Preferred
 9535,0,97,0,102,Preferred
-9541,255,153,0,102,Barely,Suitable
-9542,255,153,0,102,Barely,Suitable
-9559,255,153,0,102,Barely,Suitable
-9560,255,153,0,102,Barely,Suitable
-9561,255,153,0,102,Barely,Suitable
-9562,255,153,0,102,Barely,Suitable
+9541,255,153,0,102,Barely Suitable
+9542,255,153,0,102,Barely Suitable
+9559,255,153,0,102,Barely Suitable
+9560,255,153,0,102,Barely Suitable
+9561,255,153,0,102,Barely Suitable
+9562,255,153,0,102,Barely Suitable
 9568,0,97,0,102,Preferred
 9569,0,97,0,102,Preferred
 9570,0,97,0,102,Preferred
 9571,122,171,0,102,Suitable
-9582,255,153,0,102,Barely,Suitable
-9583,255,153,0,102,Barely,Suitable
-9585,255,153,0,102,Barely,Suitable
-9586,255,153,0,102,Barely,Suitable
+9582,255,153,0,102,Barely Suitable
+9583,255,153,0,102,Barely Suitable
+9585,255,153,0,102,Barely Suitable
+9586,255,153,0,102,Barely Suitable
 9592,255,34,0,102,Unsuitable
 9593,255,34,0,102,Unsuitable
-9601,255,153,0,102,Barely,Suitable
+9601,255,153,0,102,Barely Suitable
 9604,255,34,0,102,Unsuitable
-9605,255,153,0,102,Barely,Suitable
+9605,255,153,0,102,Barely Suitable
 9611,255,34,0,102,Unsuitable
 9617,0,97,0,102,Preferred
 9620,255,34,0,102,Unsuitable
 9629,0,97,0,102,Preferred
 9633,255,34,0,102,Unsuitable
-9639,255,153,0,102,Barely,Suitable
-9640,255,153,0,102,Barely,Suitable
-9641,255,153,0,102,Barely,Suitable
-9642,255,153,0,102,Barely,Suitable
+9639,255,153,0,102,Barely Suitable
+9640,255,153,0,102,Barely Suitable
+9641,255,153,0,102,Barely Suitable
+9642,255,153,0,102,Barely Suitable
 9652,255,34,0,102,Unsuitable
 9654,255,34,0,102,Unsuitable
 9667,255,34,0,102,Unsuitable
@@ -3001,11 +3003,11 @@ INTERPOLATION:EXACT
 9679,0,97,0,102,Preferred
 9682,255,34,0,102,Unsuitable
 9683,0,97,0,102,Preferred
-9695,255,153,0,102,Barely,Suitable
-9696,255,153,0,102,Barely,Suitable
+9695,255,153,0,102,Barely Suitable
+9696,255,153,0,102,Barely Suitable
 9707,0,97,0,102,Preferred
 9708,0,97,0,102,Preferred
-9722,255,255,0,102,Moderately,Suitable
+9722,255,255,0,102,Moderately Suitable
 9723,0,97,0,102,Preferred
 9724,0,97,0,102,Preferred
 9725,122,171,0,102,Suitable
@@ -3014,28 +3016,28 @@ INTERPOLATION:EXACT
 9731,0,97,0,102,Preferred
 9732,122,171,0,102,Suitable
 9733,0,97,0,102,Preferred
-9742,255,153,0,102,Barely,Suitable
-9743,255,153,0,102,Barely,Suitable
-9758,255,153,0,102,Barely,Suitable
-9759,255,153,0,102,Barely,Suitable
-9760,255,153,0,102,Barely,Suitable
-9761,255,153,0,102,Barely,Suitable
+9742,255,153,0,102,Barely Suitable
+9743,255,153,0,102,Barely Suitable
+9758,255,153,0,102,Barely Suitable
+9759,255,153,0,102,Barely Suitable
+9760,255,153,0,102,Barely Suitable
+9761,255,153,0,102,Barely Suitable
 9766,255,34,0,102,Unsuitable
 9774,255,34,0,102,Unsuitable
-9775,255,153,0,102,Barely,Suitable
+9775,255,153,0,102,Barely Suitable
 9782,0,97,0,102,Preferred
 9783,122,171,0,102,Suitable
 9784,255,34,0,102,Unsuitable
 9785,255,34,0,102,Unsuitable
-9810,255,153,0,102,Barely,Suitable
+9810,255,153,0,102,Barely Suitable
 9811,255,34,0,102,Unsuitable
-9816,255,153,0,102,Barely,Suitable
+9816,255,153,0,102,Barely Suitable
 9817,255,34,0,102,Unsuitable
-9823,255,153,0,102,Barely,Suitable
-9825,255,153,0,102,Barely,Suitable
-9826,255,153,0,102,Barely,Suitable
+9823,255,153,0,102,Barely Suitable
+9825,255,153,0,102,Barely Suitable
+9826,255,153,0,102,Barely Suitable
 9827,122,171,0,102,Suitable
-9828,255,153,0,102,Barely,Suitable
-9829,255,255,0,102,Moderately,Suitable
-9993,255,153,0,102,Barely,Suitable
+9828,255,153,0,102,Barely Suitable
+9829,255,255,0,102,Moderately Suitable
+9993,255,153,0,102,Barely Suitable
 9994,255,34,0,102,Unsuitable
