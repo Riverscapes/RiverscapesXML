@@ -7,23 +7,24 @@
   ],
   "layerStyles": [
     {
-        "id": "tier2-6ve9tm",
-        "type": "fill",
-        "source": "composite",
-        "source-layer": "Tier2-6ve9tm",
-        "layout": {},
-        "paint": {
-            "fill-color": [
-                "match",
-                ["get", "UnitShape"],
-                ["Concavity"],
-                "hsl(202, 66%, 43%)",
-                ["Convexity"],
-                "hsl(38, 96%, 54%)",
-                ["Planar"],
-                "hsl(57, 93%, 53%)"
-            ]
-        }
-    }
+      "id": "tier2-discrete-c0dnpo",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Tier2_discrete-c0dnpo",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "UnitShape"],
+              ["Concavity"],
+              "hsl(202, 66%, 43%)",
+              ["Convexity"],
+              "hsl(38, 96%, 54%)",
+              ["Planar"],
+              "hsl(57, 93%, 53%)",
+              "#000000"
+          ]
+      }
+  }
   ]
 }
