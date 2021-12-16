@@ -2998,8 +2998,6 @@ INTERPOLATION:EXACT
 9654,255,34,0,102,Unsuitable
 9667,255,34,0,102,Unsuitable
 9677,255,34,0,102,Unsuitable
-# QGIS Generated Color Map Export File
-INTERPOLATION:EXACT
 9679,0,97,0,102,Preferred
 9682,255,34,0,102,Unsuitable
 9683,0,97,0,102,Preferred
