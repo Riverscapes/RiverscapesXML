@@ -35,8 +35,8 @@
               </Node>
               <Node label="Segmented Hydrography">
                 <Children>
-                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='NETWORK300M']" type="line" symbology="" />
-                  <Node xpathlabel="Name" xpath="Geopackage[@id='NHD']/Layers/Vector[@id='NETWORK300MCROSSINGS']" type="line" symbology="" />
+                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='NETWORK300M']" type="line" symbology="300_seg" />
+                  <Node xpathlabel="Name" xpath="Geopackage[@id='NHD']/Layers/Vector[@id='NETWORK300MCROSSINGS']" type="line" symbology="300_seg_X" />
                 </Children>
               </Node>
             </Children>
