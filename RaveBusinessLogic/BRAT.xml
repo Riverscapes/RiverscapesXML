@@ -82,12 +82,12 @@
               <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@id='BRAT_RESULTS']" type="line" symbology="iPC_Canal" />
             </Children>
           </Node>
-          <!-- <Node label="Buffers">
+          <Node label="Buffers">
             <Children>
               <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF30']" type="polygon" symbology="buf30"/>
               <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF100']" type="polygon" symbology="buf100"/>
             </Children>
-          </Node> -->
+          </Node>
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
@@ -106,7 +106,7 @@
               <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@id='CANALS']" type="line" symbology="canals_ditches"/>
               <Node label="Railroads" xpath="Geopackage/Layers/Vector[@id='RAIL']" type="line" symbology="railroads"/>
               <Node label="Roads" xpath="Geopackage/Layers/Vector[@id='ROADS']" type="line" symbology="roads"/>
-              <!-- <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@id='OWNERSHIP']" type="polygon" symbology="ownership"/> -->
+              <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@id='OWNERSHIP']" type="polygon" symbology="ownership"/>
               <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_hollow"/>
               <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_filled"/>
               <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use" transparency="40"/>
