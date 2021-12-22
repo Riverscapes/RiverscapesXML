@@ -84,8 +84,8 @@
           </Node>
           <Node label="Buffers">
             <Children>
-              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF30']" type="polygon" symbology="buf30"/>
-              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF100']" type="polygon" symbology="buf100"/>
+              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@id='30M_BUFFER']" type="polygon" symbology="buf30"/>
+              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@id='100M_BUFFER']" type="polygon" symbology="buf100"/>
             </Children>
           </Node>
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
