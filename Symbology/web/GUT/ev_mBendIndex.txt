@@ -1,0 +1,5 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:DISCRETE
+-0.05,194,82,60,255,< -0.05 (Inside of Bend)
+0.05,225,225,225,255,-0.05 - 0.05 (Straight)
+0.79474061727523804,11,44,122,255,> 0.05 (Outside of Bend)

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(37, 35%, 40%)", "Channel Edge Polygon"]
+  ],
+  "layerStyles": [
+    {
+      "id": "bfslopecat-c739cc",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "bfSlopeCat-c739cc",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+            {
+              "id": "ev-channeledge-appo2b",
+              "type": "fill",
+              "source": "composite",
+              "source-layer": "ev_channelEdge-appo2b",
+              "layout": {},
+              "paint": {"fill-color": "hsl(37, 35%, 40%)"}
+          }
+  ]
+}

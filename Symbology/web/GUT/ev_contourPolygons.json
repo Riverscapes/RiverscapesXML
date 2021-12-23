@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 88%", "Contour Polygons_Thalweg"]
+  ],
+  "layerStyles": [
+    {
+      "id": "ev-contourpolygons-0sa70g",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "ev_contourPolygons-0sa70g",
+      "layout": {},
+      "paint": {"fill-color": "hsl(0, 0%, 88%)"}
+  },
+  {
+      "id": "ev-contourpolygons-0sa70g (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ev_contourPolygons-0sa70g",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 0%, 51%)", "line-width": 0.5}
+  }
+  ]
+}
