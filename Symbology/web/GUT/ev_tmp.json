@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(200, 67%, 47%)", "Bowl Transition"],
+    ["hsl(359, 87%, 49%)", "Trough"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tmp-d3jk7d",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "tmp-d3jk7d",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "UnitForm"],
+              ["Bowl Transition"],
+              "hsl(200, 67%, 47%)",
+              ["Trough"],
+              "hsl(359, 87%, 49%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}
