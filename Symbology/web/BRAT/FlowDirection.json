@@ -1,0 +1,35 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 5%)", "Flow Direction"]
+  ],
+  "layerStyles": [
+    {
+      "id": "flowdirection - arrow",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "FlowDirection-9jd0p5",
+      "layout": {
+          "text-field": [
+              "match",
+              ["get", "FlowDir"],
+              [1],
+              "▶",
+              0,
+              "◀",
+              ""
+          ],
+          "symbol-placement": "line-center"
+      },
+      "paint": {}
+  },
+  {
+      "id": "flowdirection - line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "FlowDirection-9jd0p5",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 0%, 5%)"}
+  }
+  ]
+}
