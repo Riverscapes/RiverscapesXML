@@ -84,8 +84,8 @@
           </Node>
           <Node label="Buffers">
             <Children>
-              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF30']" type="polygon" symbology="buf30"/>
-              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@id='BUF100']" type="polygon" symbology="buf100"/>
+              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@id='30M_BUFFER']" type="polygon" symbology="buf30"/>
+              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@id='100M_BUFFER']" type="polygon" symbology="buf100"/>
             </Children>
           </Node>
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
@@ -109,7 +109,7 @@
               <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@id='OWNERSHIP']" type="polygon" symbology="ownership"/>
               <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_hollow"/>
               <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_filled"/>
-              <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use" transparency="40"/>
+              <!-- <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use" transparency="40"/> -->
             </Children>
           </Node>
           <Node label="Vegetation">
