@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 45%)", "High"],
+    ["hsl(60, 94%, 69%)", "Moderate"],
+    ["hsl(196, 100%, 45%)", "Low"]
+  ],
+  "layerStyles": [
+    {
+      "id": "bfslopecat-c739cc",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "bfSlopeCat-c739cc",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "bfSlopeCat"],
+              ["High"],
+              "hsl(0, 100%, 45%)",
+              ["Moderate"],
+              "hsl(60, 94%, 69%)",
+              ["Low"],
+              "hsl(196, 100%, 45%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

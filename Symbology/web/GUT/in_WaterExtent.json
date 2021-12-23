@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(213, 100%, 73%)", "Wetted Extent"]
+  ],
+  "layerStyles": [
+    {
+      "id": "waterextent-60cmkw",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "WaterExtent-60cmkw",
+      "layout": {},
+      "paint": {"fill-color": "hsl(213, 100%, 73%)"}
+  }
+  ]
+}
