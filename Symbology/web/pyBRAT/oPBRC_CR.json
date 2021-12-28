@@ -3,7 +3,7 @@
   "legend": [
     ["hsl(100, 100%, 33%)", "Easiest - Low Hanging Fruit"],
     ["hsl(200, 67%, 47%)", "Straight Forward - Quick Return"],
-    ["hsl(166, 100%, 50%)","Strategic - Long-Term Investment"],
+    ["hsl(53, 100%, 45%)","Strategic - Long-Term Investment"],
     ["hsl(0, 0%, 65%)","Other"]
   ],
   "layerStyles": [
@@ -22,7 +22,7 @@
                 ["Straight Forward - Quick Return"],
                 "hsl(200, 67%, 47%)",
                 ["Strategic - Long-Term Investment"],
-                "hsl(166, 100%, 50%)",
+                "hsl(53, 100%, 45%)",
                 ["NA"],
                 "hsl(0, 0%, 65%)",
                 "#000000"
