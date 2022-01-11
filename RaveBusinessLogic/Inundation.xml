@@ -63,12 +63,12 @@
           </Node>
         </Children>
       </Node>
-      <Node label="Summary Comparisons">
+      <Node label="Summary Comparisons" xpath="Realizations/InundationCD/Outputs">
         <Children>
-          <Repeater xpath="Realizations/InundationCD/Outputs/PDF">
+          <Repeater label="Summary Metrics (PDFs)" xpath="PDF">
             <Node xpathlabel="Name" type="file" />
           </Repeater>
-          <Node label="Summary Metrics" xpath="Realizations/InundationCD/CSV" type="file" />
+          <Node label="Summary Metrics (CSV)" xpath="CSV" type="file" />
         </Children>
       </Node>
     </Children>
