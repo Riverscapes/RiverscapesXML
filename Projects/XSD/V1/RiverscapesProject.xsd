@@ -15,6 +15,7 @@
       <xs:element type="MetaDataType" name="Warehouse" minOccurs="0" maxOccurs="1" />
       <xs:element type="MetaDataType" name="MetaData" minOccurs="1" maxOccurs="1" />
       <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
+      <xs:element type="ProjectBoundsType" name="ProjectBounds" minOccurs="0" maxOccurs="1" />
       <!-- <xs:element type="RealizationsBaseType" name="Realizations" minOccurs="1" maxOccurs="1" /> -->
     </xs:sequence>
   </xs:complexType>
@@ -24,7 +25,6 @@
       <xs:element type="RealizationType" name="Realization" maxOccurs="unbounded" minOccurs="0" />
     </xs:choice>
   </xs:complexType> -->
-
 
   <!-- A Project can have realizations -->
   <xs:complexType name="RealizationType" mixed="true">
@@ -253,8 +253,32 @@
 
   <!-- =========================================================================
   
-  Realizations: This is where things get custom for each type of thing.
+  Project Bounds: We introduced these to add a geospatial element to our projects
   
   ============================================================================== -->
+
+  <xs:complexType name="ProjectBoundsType" mixed="true">
+    <xs:sequence>
+      <xs:element type="CentroidType" name="Centroid" minOccurs="1" maxOccurs="1" />
+      <xs:element type="BoundingBoxType" name="BoundingBox" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="Path" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CentroidType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Lat" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="Lng" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BoundingBoxType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="MinLat" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="MinLng" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="MaxLat" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="MaxLng" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
 
 </xs:schema>
