@@ -3,6 +3,9 @@
   <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/XSD/V1/Project.xsd"> -->
     <Name>VBET for HUC 16010202</Name>
     <ProjectType>VBET</ProjectType>
+    <Warehouse>
+      <Meta name="user">Someuser</Meta>
+    </Warehouse>
     <MetaData>
       <Meta name="ModelVersion">4.0.0</Meta>
       <Meta name="dateCreated">2020-05-20T09:11:08.986395</Meta>
@@ -11,6 +14,24 @@
       <Meta name="VBETVersion">4.0.0</Meta>
       <Meta name="VBETTimestamp">1589991068</Meta>
     </MetaData>
+    <Inputs>
+
+    </Inputs>
+
+    <ProjectBounds>
+      <Centroid>
+        <Lat>43.03677585761058</Lat>
+        <Lng>-105.46875</Lng>
+      </Centroid>
+      <BoundingBox>
+        <MinLat>38.58252615935333</MinLat>
+        <MinLng>-115.13671875</MinLng>
+        <MaxLat>46.6795944656402</MaxLat>
+        <MaxLng>-96.0205078125</MaxLng>
+      </BoundingBox>
+      <Path>some_file_name.geojson</Path>
+    </ProjectBounds>
+
     <Realizations>
       <VBET dateCreated="2020-05-20T09:11:08.995308" guid="8423deca-9ab4-11ea-81d8-acde48001122" id="VBET" productVersion="4.0.0">
         <Name>VBET for HUC 16010202</Name>
