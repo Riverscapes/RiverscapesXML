@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(240, 100%, 0%)", "Channel Units (Field)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "channelunits-2qacdr",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ChannelUnits-2qacdr",
+      "layout": {},
+      "paint": {}
+  },
+  {
+      "id": "channelunits-2qacdr (1)",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "ChannelUnits-2qacdr",
+      "layout": {
+          "text-field": ["to-string", ["get", "UnitNumber"]],
+          "text-font": [
+              "Arial Unicode MS Regular",
+              "Arial Unicode MS Regular"
+          ],
+          "text-size": 12
+      },
+      "paint": {}
+  }
+  ]
+}
