@@ -22,7 +22,8 @@
               "hsl(166, 100%, 50%)",
               "hsl(0, 0%, 61%)"
           ],
-          "line-dasharray": [8, 2, 2, 2]
+          "line-dasharray": [4, 1, 1, 1],
+          "line-width": 2.5
       }
   }
   ]
