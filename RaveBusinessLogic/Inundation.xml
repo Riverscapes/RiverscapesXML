@@ -39,7 +39,7 @@
           </Repeater>
           <Node label="Riverscape" xpath="Realizations/InundationContext">
             <Children>
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='vbCL_01']" type="line" symbology="" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='vbCL_01']" type="line" symbology="VB_Centerline" />
               <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VB_01']" type="line" symbology="valley_bottom" id="VB_poly" />
             </Children>
           </Node>
