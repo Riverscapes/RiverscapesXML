@@ -55,10 +55,10 @@
           </Node>
           <Node label="Context">
             <Children>
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='BRAT']" type="line" symbology="BRAT" id="BRAT" />
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VBET']" type="polygon" symbology="VBET" id="vbet" />
-              <Node xpathlabel="Name" xpath="Inputs/DEM[@id='DEM']" type="raster" symbology="DEM" transparency="60" id="dem" />
-              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='BRAT']" type="line" symbology="oCC_EX" id="BRAT" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VBET']" type="polygon" symbology="vbet68_filled" id="vbet" />
+              <Node xpathlabel="Name" xpath="Inputs/DEM[@id='DEM']" type="raster" symbology="dem" transparency="60" id="dem" />
+              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
             </Children>
           </Node>
         </Children>
