@@ -1,0 +1,25 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(196, 100%, 45%)", "Main Thalweg"]
+  ],
+  "layerStyles": [
+    {
+      "id": "mainthalweg-3gqgw1",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "MainThalweg-3gqgw1",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "type"],
+              ["main"],
+              "hsl(196, 100%, 45%)",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+          "line-width": 3
+      }
+  }
+  ]
+}

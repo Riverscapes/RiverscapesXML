@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(214, 100%, 50%)", "Intact"],
+    ["hsl(60, 100%, 50%)", "Breached"],
+    ["hsl(0, 100%, 50%)", "Blown-out"]
+  ],
+  "layerStyles": [
+    {
+      "id": "damstate-3yafqs",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "damstate-3yafqs",
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "dam_state"],
+              ["blown-out"],
+              "hsl(0, 100%, 50%)",
+              ["breached"],
+              "hsl(60, 100%, 50%)",
+              ["intact"],
+              "hsl(214, 100%, 50%)",
+              "#000000"
+          ],
+          "line-width": 3,
+          "line-dasharray": [1, 1]
+      }
+  }
+  ]
+}
