@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 45%)", "Valley Bottom Centerline"]
+  ],
+  "layerStyles": [
+    {
+      "id": "vb-cl-c4wxv6",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "VB_CL-c4wxv6",
+      "layout": {},
+      "paint": {
+          "line-width": 3,
+          "line-color": "hsl(100, 100%, 45%)",
+          "line-dasharray": [2.5, 1.5]
+      }
+  }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(196, 100%, 45%)", "Main"],
+    ["hsl(213, 100%, 33%)", "Anabranch"],
+    ["hsl(286, 100%, 73%)", "Split"],
+    ["hsl(314, 100%, 73%)", "Other"]
+  ],
+  "layerStyles": [
+    {
+      "id": "thalwegs-cyr85i",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Thalwegs-cyr85i",
+      "layout": {},
+      "paint": {
+          "line-width": [
+              "match",
+              ["get", "type"],
+              ["main"],
+              3,
+              ["anabranch"],
+              1.5,
+              ["split"],
+              2,
+              1
+          ],
+          "line-color": [
+              "match",
+              ["get", "type"],
+              ["main"],
+              "hsl(196, 100%, 45%)",
+              ["anabranch"],
+              "hsl(213, 100%, 33%)",
+              ["split"],
+              "hsl(286, 100%, 73%)",
+              "hsl(314, 100%, 73%)"
+          ]
+      }
+  }
+  ]
+}
