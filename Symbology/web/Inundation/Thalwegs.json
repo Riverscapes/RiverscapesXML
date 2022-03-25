@@ -4,27 +4,19 @@
     ["hsl(196, 100%, 45%)", "Main"],
     ["hsl(213, 100%, 33%)", "Anabranch"],
     ["hsl(286, 100%, 73%)", "Split"],
-    ["hsl(314, 100%, 73%)", "Other"]
+    ["hsl(167, 100%, 33%)", "Braid"],
+    ["hsl(164, 100%, 45%)", "Chute"],
+    ["hsl(194, 100%, 73%)", "Return"]
+    ["hsl(314, 100%, 50%)", "Other"]
   ],
   "layerStyles": [
     {
-      "id": "thalwegs-cyr85i",
+      "id": "thalwegs-all-c7d2z1",
       "type": "line",
       "source": "composite",
-      "source-layer": "Thalwegs-cyr85i",
+      "source-layer": "Thalwegs_all-c7d2z1",
       "layout": {},
       "paint": {
-          "line-width": [
-              "match",
-              ["get", "type"],
-              ["main"],
-              3,
-              ["anabranch"],
-              1.5,
-              ["split"],
-              2,
-              1
-          ],
           "line-color": [
               "match",
               ["get", "type"],
@@ -34,7 +26,30 @@
               "hsl(213, 100%, 33%)",
               ["split"],
               "hsl(286, 100%, 73%)",
-              "hsl(314, 100%, 73%)"
+              ["braid"],
+              "hsl(167, 100%, 33%)",
+              ["chute"],
+              "hsl(164, 100%, 45%)",
+              ["return"],
+              "hsl(194, 100%, 73%)",
+              "hsl(314, 100%, 50%)"
+          ],
+          "line-width": [
+              "match",
+              ["get", "type"],
+              ["main"],
+              3,
+              ["anabranch"],
+              2,
+              ["split"],
+              2.75,
+              ["braid"],
+              2.75,
+              ["chute"],
+              1.5,
+              ["return"],
+              1.5,
+              1
           ]
       }
   }
