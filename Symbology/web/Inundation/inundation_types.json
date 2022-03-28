@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(214, 100%, 50%)", "Ponded"],
+    ["hsl(314, 100%, 50%)", "Free Flowing"],
+    ["hsl(164, 100%, 45%)", "Overflow"]
+  ],
+  "layerStyles": [
+    {
+        "id": "inundation-types-cxo7nq",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "Inundation_Types-cxo7nq",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "match",
+                ["get", "type"],
+                ["free_flowing"],
+                "hsl(314, 100%, 50%)",
+                ["ponded"],
+                "hsl(214, 100%, 50%)",
+                ["overflow"],
+                "hsl(164, 100%, 45%)",
+                "hsl(137, 71%, 89%)"
+            ]
+        }
+    }
+  ]
+}
