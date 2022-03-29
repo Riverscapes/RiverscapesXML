@@ -1,7 +1,7 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(60, 100%, 50%)", "Valley Bottom"],
+    ["hsl(60, 100%, 50%)", "Valley Bottom"]
   ],
   "layerStyles": [
   {
