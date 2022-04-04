@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Sprague River PBR Planning Model</Name>
+    <ProjectType>PBR_Model</ProjectType>
+    <MetaData>
+        <Meta name="HUCID">18010202</Meta>
+        <Meta name="Watershed">Sprague</Meta>
+    </MetaData>
+    <Realizations>
+        <PBR>
+            <Name>PBR Realization 1</Name>
+            <Inputs>
+                <Vector guid="259d4f7c-47b8-44de-8fac-9a8fb5b60fc0" id="VALLEY">
+                    <Name>Valley Bottom</Name>
+                    <Path>01_Valley_Bottom/valley_bottom.shp</Path>
+                </Vector>
+                <Vector guid="f16c8a5b-9b77-4dfe-9c9f-6a06fe242e83" id="VB_ACCESS">
+                    <Name>Accessible and Inaccessible Floodplain</Name>
+                    <Path>01_Valley_Bottom/accessible_inaccessible.shp</Path>
+                </Vector>
+                <Vector guid="e9096f16-1a95-4b5a-8d20-069083feffe4" id="VB_ACCESS_SEG">
+                    <Name>Accessible and Inaccessible Floodplain 500m</Name>
+                    <Path>01_Valley_Bottom/accessible_inaccessible_500m.shp</Path>
+                </Vector>
+                <Vector guid="1be5f303-3635-42de-a409-50d24d67533b" id="RVD">
+                    <Name>RCAT Riparian Vegetation Departure</Name>
+                    <Path>02_Vegetation/RVD.shp</Path>
+                </Vector>
+                <Vector guid="78010e12-fe96-4271-9916-0c989159a244" id="VEG_2000">
+                    <Name>Sprague River Vegetation Map (for year 2000)</Name>
+                    <Path>02_Vegetation/Sprague_Veg_2000.shp</Path>
+                </Vector>
+                <Vector guid="242ae2fc-4371-41eb-aed8-6c906ec5ed3b" id="ACTIVE_CHANNEL">
+                    <Name>Pre-Restoration Space (Active Channel)</Name>
+                    <Path>03_Pre_Restoration/active_channel.shp</Path>
+                </Vector>
+                <Vector guid="d369b4de-1975-4f80-807a-094a835a571a" id="BRAT_NETWORK">
+                    <Name>BRAT Output</Name>
+                    <Path>04_BRAT_Outputs/BRAT_network.shp</Path>
+                </Vector>
+                <Vector guid="c1938aa9-f1e1-4859-beb5-e3080484dbee" id="BRIDGE">
+                    <Name>Bridges</Name>
+                    <Path>05_Restoration/01_Infrastructure/bridges.shp</Path>
+                </Vector>
+                <Vector guid="21b653aa-5445-4567-999b-c6047284a20d" id="CANAL">
+                    <Name>Canals</Name>
+                    <Path>05_Restoration/01_Infrastructure/canals.shp</Path>
+                </Vector>
+                <Vector guid="3c2d8a46-4d08-4a49-b0d1-96f38e27ab19" id="DAM">
+                    <Name>Dams</Name>
+                    <Path>05_Restoration/01_Infrastructure/dams.shp</Path>
+                </Vector>
+                <Vector guid="ee639c24-3f07-4581-9bb9-435087508fcc" id="DIVERSION">
+                    <Name>Diversions</Name>
+                    <Path>05_Restoration/01_Infrastructure/Diversion_Inf.shp</Path>
+                </Vector>
+                <Vector guid="a9a8fd39-7384-488c-8ca4-24faf8157c7b" id="IRRIGATION">
+                    <Name>Irrigation Ditches</Name>
+                    <Path>05_Restoration/01_Infrastructure/irrigation_ditches.shp</Path>
+                </Vector>
+                <Vector guid="22a79e3b-9224-4ad9-b661-ef5f8180cad6" id="LEVEE">
+                    <Name>Levees</Name>
+                    <Path>05_Restoration/01_Infrastructure/Levee.shp</Path>
+                </Vector>
+                <Vector guid="dcdbc684-f741-4e70-a0ec-b6421f95466e" id="RAIL">
+                    <Name>Railroads</Name>
+                    <Path>05_Restoration/01_Infrastructure/rail.shp</Path>
+                </Vector>
+                <Vector guid="5d15fa2c-9e88-429c-bf17-2e890fe4f4a1" id="ROAD">
+                    <Name>Roads</Name>
+                    <Path>05_Restoration/01_Infrastructure/road.shp</Path>
+                </Vector>
+                <Raster guid="1be324f0-ff6c-4b1c-b3f9-ac60dc22a46b" id="HAND">
+                    <Name>Height Above Nearest Drainage (HAND)</Name>
+                    <Path>06_HAND/HAND.tif/</Path>
+                </Raster>
+            </Inputs>
+            <Analyses>
+                <Vector guid="aa6fc055-d747-48fb-b0ed-284d86ce690e" id="REARING_HAB">
+                    <Name>Off-Channel Rearing Habitat</Name>
+                    <Path>05_Restoration/02_Restoration_Space/Off_Channel_Rearing_Habitat.shp</Path>
+                </Vector>
+                <Vector guid="07e4a008-a580-4b9f-bb56-949791ae788d" id="WFC">
+                    <Name>Wetland Floodplain Coridor</Name>
+                    <Path>05_Restoration/02_Restoration_Space/wetland_floodplain_corridor.shp</Path>
+                </Vector>
+            </Analyses>
+        </PBR>
+    </Realizations>
+</Project>
