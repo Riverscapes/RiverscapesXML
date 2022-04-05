@@ -6,23 +6,22 @@
   ],
   "layerStyles": [
     {
-        "id": "cresttype-1sei67",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "cresttype-1sei67",
-        "layout": {"visibility": "none"},
-        "paint": {
-            "line-color": [
-                "match",
-                ["get", "crest_type"],
-                ["active"],
-                "hsl(100, 100%, 50%)",
-                ["inactive"],
-                "hsl(0, 100%, 50%)",
-                "#000000"
-            ],
-            "line-width": 3
-        }
-    }
+      "id": "cresttype-1sei67",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "cresttype-1sei67",
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "crest_type"],
+              ["active"],
+              "hsl(100, 100%, 50%)",
+              ["inactive"],
+              "hsl(0, 100%, 50%)",
+              "#000000"
+          ],
+          "line-width": 3
+      }
+  }
   ]
 }
