@@ -1,0 +1,44 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 70%)", "No Historic Riparian Vegetation Detected"],
+    ["hsl(0, 100%, 50%)", "Large Departure: >66%"],
+    ["hsl(60, 100%, 48%)", "Significant Departure: 33% to 66%"],
+    ["hsl(84, 100%, 48%)", "Minor Departure: 10% to 33%"],
+    ["hsl(100, 100%, 33%)", "Negligible Departure: <10%"]
+  ],
+  "layerStyles": [
+    {
+      "id": "rcat-85m74d",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "RCAT-85m74d",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "interpolate",
+              ["linear"],
+              ["get", "RIPAR_DEP"],
+              -9999,
+              "hsl(0, 0%, 70%)",
+              -9998.999999,
+              "hsl(0, 100%, 50%)",
+              0.333333,
+              "hsl(0, 100%, 50%)",
+              0.333334,
+              "hsl(60, 100%, 48%)",
+              0.666667,
+              "hsl(60, 100%, 48%)",
+              0.666668,
+              "hsl(84, 100%, 48%)",
+              0.9,
+              "hsl(84, 100%, 48%)",
+              0.900001,
+              "hsl(100, 100%, 33%)",
+              10000000000,
+              "hsl(100, 100%, 33%)"
+          ]
+      }
+  }
+  ]
+}

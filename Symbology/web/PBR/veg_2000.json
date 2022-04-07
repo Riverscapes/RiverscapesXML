@@ -1,0 +1,37 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(41, 100%, 87%)", "Bare"],
+    ["hsl(101, 100%, 87%)", "Herbaceous"],
+    ["hsl(100, 72%, 55%)", "Short Woody"],
+    ["hsl(100, 97%, 28%)", "Tall Woody"],
+    ["hsl(0, 0%, 51%)", "Other"]
+  
+  ],
+  "layerStyles": [
+    {
+      "id": "veg-2000",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Veg_2000-d0m1vy",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "SUBTYPE"],
+              [43],
+              "hsl(41, 100%, 87%)",
+              [42],
+              "hsl(101, 100%, 87%)",
+              [41],
+              "hsl(100, 72%, 55%)",
+              [40],
+              "hsl(100, 97%, 28%)",
+              [44],
+              "hsl(0, 0%, 51%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}
