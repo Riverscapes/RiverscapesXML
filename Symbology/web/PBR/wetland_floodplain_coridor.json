@@ -1,0 +1,17 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(Item1COlorHERE)", "WebRave Legend Item1"],
+    ["hsl(Item2COlorHERE)", "WebRave Legend Item2"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Riparian Wetland Coridor",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "off_habit-8qzfes",
+      "layout": {},
+      "paint": {"fill-color": "hsl(80, 100%, 45%)"}
+  }
+  ]
+}

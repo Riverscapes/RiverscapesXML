@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 87%)", "Inaccessible"],
+    ["hsl(120, 29%, 57%)", "Accessible"]
+  ],
+  "layerStyles": [
+    {
+      "id": "valley-bottom-3ne47n",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Valley_Bottom-3ne47n",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "Connected"],
+              0,
+              "hsl(0, 100%, 87%)",
+              [1],
+              "hsl(120, 29%, 57%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

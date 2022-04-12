@@ -31,7 +31,7 @@
                     <Node label="Capacity and Management">
                         <Children collapsed="true">
                             <Node label="BRAT Existing Capacity" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="oCC_EX" id="ex_cap"/>
-                            <Node label="BRAT Restoration or Conservation Opportunities" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="opportunity" id="con_res"/>
+                            <Node label="BRAT Restoration or Conservation Opportunities" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="opportunity_1" id="con_res"/>
                         </Children>
                     </Node>
                     <Node label="Valley Bottom Fragmentation">
@@ -40,11 +40,11 @@
                             <Node label="Accessible and Inaccessible Valley Bottom 500m" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS_SEG']" type="polygon" symbology="VB_access" id="500_vb" transparency="40"/>
                             <Node label="Infrastructure">
                                 <Children collapsed="false">
-                                    <Node label="Rail" xpath="Realizations/PBR/Inputs/Vector[@id='RAIL']" type="line" symbology="rail" id="rail"/>
-                                    <Node label="Road" xpath="Realizations/PBR/Inputs/Vector[@id='ROAD']" type="line" symbology="road" id="rd"/>
+                                    <Node label="Rail" xpath="Realizations/PBR/Inputs/Vector[@id='RAIL']" type="line" symbology="railroads" id="rail"/>
+                                    <Node label="Road" xpath="Realizations/PBR/Inputs/Vector[@id='ROAD']" type="line" symbology="roads" id="rd"/>
                                     <Node label="Bridges" xpath="Realizations/PBR/Inputs/Vector[@id='BRIDGE']" type="line" symbology="bridges" id="bridge"/>
                                     <Node label="Levees" xpath="Realizations/PBR/Inputs/Vector[@id='LEVEE']" type="line" symbology="Levee" id="lev"/>
-                                    <Node label="Canals" xpath="Realizations/PBR/Inputs/Vector[@id='CANAL']" type="line" symbology="canals" id="canal"/>
+                                    <Node label="Canals" xpath="Realizations/PBR/Inputs/Vector[@id='CANAL']" type="line" symbology="canals_ditches" id="canal"/>
                                     <Node label="Dams" xpath="Realizations/PBR/Inputs/Vector[@id='DAM']" type="line" symbology="dams" id="dam"/>
                                     <Node label="Diversions" xpath="Realizations/PBR/Inputs/Vector[@id='DIVERSION']" type="line" symbology="diversion" id="div"/>
                                     <Node label="Irrigation Ditches" xpath="Realizations/PBR/Inputs/Vector[@id='IRRIGATION']" type="line" symbology="irrigation_ditches" id="ditch"/>
@@ -55,7 +55,7 @@
                     <Node label="Potential Post-Restoration Space">
                         <Children collapsed="true">
                             <Node label="Off-Channel Rearing Habitat" xpath="Realizations/PBR/Analyses/Vector[@id='REARING_HAB']" type="polygon" symbology="off_habit" id="rearing_hab" transparency="40"/>
-                            <Node label="Riparian Wetaland Corridor" xpath="Realizations/PBR/Analyses/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40"/>
+                            <Node label="Riparian Wetland Coridor" xpath="Realizations/PBR/Analyses/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_coridor" id="wetland" transparency="40"/>
                         </Children>
                     </Node>
                     <Node label="Height Above Nearest Drainage (HAND)">
