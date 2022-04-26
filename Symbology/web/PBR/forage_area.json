@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(23, 36%, 56%)", "Forage Area"]
+  ],
+  "layerStyles": [
+    {
+      "id": "forage-8k1nur",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Forage-8k1nur",
+      "layout": {},
+      "paint": {"fill-color": "hsl(23, 36%, 56%)"}
+  }
+  ]
+}

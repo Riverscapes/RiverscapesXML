@@ -19,6 +19,7 @@
             <Node label="Pre-Treatment Process Space">
                 <Children collapsed="true">
                     <Node label="Pre-Restoration Space (Active Channel)" xpath="Realizations/PBR/Inputs/Vector[@id='ACTIVE_CHANNEL']" type="polygon" symbology="ChannelArea" id="active_chan" transparency="20"/>
+                    <Node label="Forage Area" xpath="Realizations/PBR/Inputs/Vector[@id='FORAGE']" type="polygon" symbology="forage" id="forage_area" transparency="40"/>
                 </Children>
             </Node>
             <Node label="Risks">
