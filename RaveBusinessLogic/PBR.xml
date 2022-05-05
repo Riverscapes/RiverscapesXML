@@ -18,11 +18,10 @@
             </Node>
             <Node label="Pre-Treatment Process Space">
                 <Children collapsed="true">
-                    <Node label="Pre-Restoration Space (Active Channel)" xpath="Realizations/PBR/Inputs/Vector[@id='ACTIVE_CHANNEL']" type="polygon" symbology="ChannelArea" id="active_chan" transparency="20"/>
-                    <Node label="Forage Area" xpath="Realizations/PBR/Inputs/Vector[@id='FORAGE']" type="polygon" symbology="forage" id="forage_area" transparency="40"/>
+                    <Node label="Pre-Restoration Space (Active Channel)" xpath="Realizations/PBR/Inputs/Vector[@id='ACTIVE_CHANNEL']" type="polygon" symbology="ChannelArea" id="active_chan"/>
                 </Children>
             </Node>
-            <Node label="Risks">
+            <Node label="Restoration Limitations - Infrastructure Constrained Reaches">
                 <Children collapsed="true">
                     <Node label="BRAT Risk of Undesirable Dams" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="risk" id="risk"/>
                 </Children>
@@ -32,13 +31,11 @@
                     <Node label="Capacity and Management">
                         <Children collapsed="true">
                             <Node label="BRAT Existing Capacity" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="oCC_EX" id="ex_cap"/>
-                            <Node label="BRAT Restoration or Conservation Opportunities" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="opportunity_1" id="con_res"/>
+                            <Node label="Channel Spanning Structures Appropriate" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="opportunity_1" id="con_res"/>
                         </Children>
                     </Node>
                     <Node label="Valley Bottom Fragmentation">
                         <Children collapsed="true">
-                            <Node label="Accessible and Inaccessible Valley Bottom" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS']" type="polygon" symbology="VB_access" id="frag_vb" transparency="40"/>
-                            <Node label="Accessible and Inaccessible Valley Bottom 500m" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS_SEG']" type="polygon" symbology="VB_access" id="500_vb" transparency="40"/>
                             <Node label="Infrastructure">
                                 <Children collapsed="false">
                                     <Node label="Rail" xpath="Realizations/PBR/Inputs/Vector[@id='RAIL']" type="line" symbology="railroads" id="rail"/>
@@ -51,12 +48,15 @@
                                     <Node label="Irrigation Ditches" xpath="Realizations/PBR/Inputs/Vector[@id='IRRIGATION']" type="line" symbology="irrigation_ditches" id="ditch"/>
                                 </Children>
                             </Node>
+                            <Node label="Accessible and Inaccessible Valley Bottom" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS']" type="polygon" symbology="VB_access" id="frag_vb" transparency="40"/>
+                            <Node label="Accessible and Inaccessible Valley Bottom 500m" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS_SEG']" type="polygon" symbology="VB_access" id="500_vb" transparency="40"/>
                         </Children>
                     </Node>
                     <Node label="Potential Post-Restoration Space">
                         <Children collapsed="true">
                             <Node label="Off-Channel Rearing Habitat" xpath="Realizations/PBR/Analyses/Vector[@id='REARING_HAB']" type="polygon" symbology="off_habit" id="rearing_hab" transparency="40"/>
                             <Node label="Riparian Wetland Corridor" xpath="Realizations/PBR/Analyses/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40"/>
+                            <Node label="Forage Area" xpath="Realizations/PBR/Inputs/Vector[@id='FORAGE']" type="polygon" symbology="forage_area" id="forage" transparency="40"/>
                         </Children>
                     </Node>
                     <Node label="Topography">
