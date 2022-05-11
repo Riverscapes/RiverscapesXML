@@ -23,6 +23,7 @@ def pre_fix_paths() -> str:
   pass
 
 def main():
+  translate_path = ""
   print('HELLO')
   print (translate_path('I am '))
   pass
