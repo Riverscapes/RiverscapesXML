@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd"> -->
-  <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
     <Name>GUT</Name>
     <ProjectType>GUT</ProjectType>
     <Node xpathlabel="Name">
@@ -50,7 +50,7 @@
                             <Node xpathlabel="Name" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_SubGU" transparency="40" />
                             <Node label="Tier 3 In Channel Sub GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Orientation" transparency="40" />
                             <Node label="Tier 3 In Channel Sub GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Position" transparency="40" />
-                            <Node xpathlabel="EMPTYLABEL" xpath="Outputs/Tier3[@id='Tier3_1']" type="polygon" symbology="out_Tier3_GeomorphicUnit" transparency="40" />
+                            <Node xpathlabel="" xpath="Outputs/Tier3[@id='Tier3_1']" type="polygon" symbology="out_Tier3_GeomorphicUnit" transparency="40" />
                             <Node label="Tier 3 In Channel GU Orientation (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Orientation" transparency="40" />
                             <Node label="Tier 3 In Channel GU Position (Raw)" xpath="Outputs/Tier3[@id='Tier3_3']" type="polygon" symbology="out_Tier3_Position" transparency="40" />
                           </Children>
@@ -66,7 +66,7 @@
                     <Children>
                       
                       <Node xpathlabel="Name" xpath="DEM[@id='DEMSMOOTH']" type="raster" symbology="dem" transparency="40" />
-                      <Node xpathlabel="Name" xpath="Raster[@id='ID_5']" type="raster" symbology="dem" transparency="40" id="demRaster"/>
+                      <Node xpathlabel="Name" xpath="Raster[@id='ID_5']" type="raster" symbology="dem" transparency="40" />
                       <Node xpathlabel="Name" xpath="Vector[@id='ID_3']" type="point" symbology="ev_contourNodes" />
                       <Node xpathlabel="Name" xpath="Vector[@id='ID_4']" type="polygon" symbology="ev_contourPolygons" transparency="40" />
                       <Node xpathlabel="Name" xpath="Vector[@id='ID_5']" type="line" symbology="ev_Contours" />
@@ -144,12 +144,5 @@
         </Repeater>
       </Children>
     </Node>
-    <Views default="DEFAULT">
-      <View name="Default View" id="DEFAULT">
-        <Layers>
-          <Layer id="demRaster"/>
-        </Layers>
-      </View>
-    </Views>
   </Project>
   
