@@ -12,6 +12,7 @@ def migrate_xml_file(in_path:str, out_path:str) -> str:
   return in_path + " hello"
 
 def main():
+  translate_path = ""
   print('HELLO')
   print (translate_path('I am '))
   pass
