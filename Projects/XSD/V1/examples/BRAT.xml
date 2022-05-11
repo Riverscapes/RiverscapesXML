@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-										xsi:noNamespaceSchemaLocation="../XSD/V1/BRAT.xsd">
+										xsi:noNamespaceSchemaLocation="../BRAT.xsd">
 	<Name>BRAT for HUC 17060304</Name>
 	<ProjectType>BRAT</ProjectType>
 	<MetaData>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="../XSD/V1/GCD.xsd">
+  xsi:noNamespaceSchemaLocation="../GCD.xsd">
 
   <Name>ENT00001Mad23</Name>
   <ProjectType>GCD</ProjectType>

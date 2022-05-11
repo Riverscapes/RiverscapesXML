@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="../XSD/V1/GNAT.xsd">
+  xsi:noNamespaceSchemaLocation="../GNAT.xsd">
 
     <Name>My GNAT Project!!</Name>
     <ProjectType>GNAT</ProjectType>

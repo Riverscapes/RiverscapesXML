@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation="../XSD/V1/fmLTPBR.xsd">
+xsi:noNamespaceSchemaLocation="../fmLTPBR.xsd">
 	<Name>Bear Creek Hydrologic Enhancement</Name>
 	<ProjectType>fmLTPBR</ProjectType>
 	<MetaData>

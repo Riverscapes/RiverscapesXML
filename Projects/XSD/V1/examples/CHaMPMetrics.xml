@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-				 xsi:noNamespaceSchemaLocation="../XSD/V1/CHaMPMetrics.xsd">
+				 xsi:noNamespaceSchemaLocation="../CHaMPMetrics.xsd">
 	<Name>CHaMP Site Metrics</Name>
 	<ProjectType>CHAMPMETRICS</ProjectType>
 	<Warehouse>

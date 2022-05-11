@@ -1,5 +1,5 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="../XSD/V1/PBR.xsd">
+xsi:noNamespaceSchemaLocation="../PBR.xsd">
 <Name>Sprague_River_PBR_Planning_Model</Name>
 <ProjectType>PBR</ProjectType>
 <MetaData>

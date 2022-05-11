@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/NationalDatasets.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../NationalDatasets.xsd">
 	<Name>National Datasets</Name>
 	<ProjectType>NationalDatasets</ProjectType>
 	<Warehouse><Meta name="id">2fbd8852-4601-41ff-b644-9f90b594d0b8</Meta><Meta name="user">eeb79d24-68b5-405a-be55-8e23fdf929dc</Meta><Meta name="program">BRAT_CRB</Meta></Warehouse><MetaData>

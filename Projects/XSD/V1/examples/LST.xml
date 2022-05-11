@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/LST.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../LST.xsd">
 	<Name>Land Surface Temperature for HUC 1702</Name>
 	<ProjectType>LST</ProjectType>
 	<MetaData>
