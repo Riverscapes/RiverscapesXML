@@ -1,0 +1,379 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Riverscapes/RiverscapesXML/RSWarehouseNEXT/Projects/XSD/V1/RiverscapesProjects2.xsd">
+	<Name>BRAT for HUC 16050304</Name>
+	<ProjectType>BRAT</ProjectType>
+	<!-- apiUrl is taken from examples/VBET.xml May not be correct-->
+	<Warehouse id="63bfb8e2-b9c3-49e1-861e-1e97d7455a5a" apiUrl="https://12312312.amazon.ca/api/prod"></Warehouse>
+	<MetaData>
+		<Meta name="ModelVersion">4.3.0</Meta>
+		<Meta name="dateCreated" type="isodate">2021-09-13T18:05:52.241097</Meta>
+		<Meta name="HUC8">16050304</Meta>
+		<Meta name="HUC">16050304</Meta>
+		<Meta name="BRATBuildVersion">4.3.0</Meta>
+		<Meta name="BRATBuildTimestamp">1631556352</Meta>
+		<Meta name="Runner">Cybercastor</Meta>
+		<Meta name="BRAT_Build_DateTime">2021-09-13T18:06:03.266026</Meta>
+		<Meta name="Streamside_Buffer">30.0</Meta>
+		<Meta name="Riparian_Buffer">100.0</Meta>
+		<Meta name="Reach_Codes">33400,33600,33601,33603,46000,46003,46006,46007,55800</Meta>
+		<Meta name="Canal_Codes">33600,33601,33603</Meta>
+		<Meta name="Max_Waterbody">0.001</Meta>
+		<Meta name="Elevation_Buffer">100.0</Meta>
+		<Meta name="gdal_srs_proj4">+proj=longlat +datum=WGS84 +no_defs</Meta>
+		<Meta name="gdal_srs_axis_mapping_strategy">0</Meta>
+		<Meta name="Watershed">Walker Lake</Meta>
+		<Meta name="BratBuildProcTimeS" type="int">943.98</Meta>
+		<Meta name="BratBuildProcTimeHuman">15:43 minutes</Meta>
+		<Meta name="BRATRunVersion">4.3.0</Meta>
+		<Meta name="BRATRunTimestamp" type="timestamp">1631557304</Meta>
+		<Meta name="BratRunProcTimeS" type="int">196.96</Meta>
+		<Meta name="BratRunProcTimeHuman">3:16 minutes</Meta>
+	</MetaData>
+	<ProjectBounds>
+		<Centroid>
+			<Lat>38.528908069922934</Lat>
+			<Lng>-118.60960419803286</Lng>
+		</Centroid>
+		<BoundingBox>
+			<MinLat>38.10684594444518</MinLat>
+			<MinLng>-118.85150761104612</MinLng>
+			<MaxLat>38.849453807743636</MaxLat>
+			<MaxLng>-118.30313087628299</MaxLng>
+		</BoundingBox>
+		<Path>project_bounds.geojson</Path>
+	</ProjectBounds>
+	<Realizations>
+		<Realization id="BRAT" dateCreated="2021-09-13T18:05:52.244153" productVersion="4.3.0">
+			<Name>BRAT for HUC 16050304</Name>
+			<LogFile id="LOGFILE">
+				<Name>Log</Name>
+				<Path>brat_build.log</Path>
+			</LogFile>
+			<Inputs>
+				<DEM id="DEM">
+					<Name>NED 10m DEM</Name>
+					<Path>inputs/dem.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+						<Meta name="_rs_prj_HUC8">16050304</Meta>
+						<Meta name="_rs_prj_HUC">16050304</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+						<Meta name="_rs_lyr_Description">National Elevation Dataset (NED) Digital Elevation Models (DEM). These DEMs are downloaded from Science Base and mosaiced into a single 10m DEM that covers the riverscapes context project extent.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#DEM</Meta>
+						<Meta name="_rs_lyr_num_rasters" type="int">1</Meta>
+						<Meta name="_rs_lyr_origin_urls" type="json">[&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w119/USGS_13_n39w119.tif&quot;]</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">DEM</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">756e8dfc-ee0b-4d92-9a50-aaeab7cac6f2</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/dem.tif</Meta>
+					</MetaData>
+				</DEM>
+				<Raster id="EXVEG">
+					<Name>Existing Vegetation</Name>
+					<Path>inputs/existing_veg.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+						<Meta name="_rs_prj_HUC8">16050304</Meta>
+						<Meta name="_rs_prj_HUC">16050304</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+						<Meta name="_rs_lyr_Description">LandFire LF REMAP 2019 Existing Vegetation Type (EVT) Raster.The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#EXVEG</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">EXVEG</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">0b75edf1-6921-4af0-9dbd-11279a5673af</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">vegetation/existing_veg.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="HISTVEG">
+					<Name>Historic Vegetation</Name>
+					<Path>inputs/historic_veg.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+						<Meta name="_rs_prj_HUC8">16050304</Meta>
+						<Meta name="_rs_prj_HUC">16050304</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+						<Meta name="_rs_lyr_Description">LandFire LF REMAP 2019 Historic Biophysical Settings (BPS) Raster. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HISTVEG</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">HISTVEG</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">e9b9c301-69b1-4842-9734-ee33056c9d90</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">vegetation/historic_veg.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="HILLSHADE">
+					<Name>DEM Hillshade</Name>
+					<Path>inputs/dem_hillshade.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+						<Meta name="_rs_prj_HUC8">16050304</Meta>
+						<Meta name="_rs_prj_HUC">16050304</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+						<Meta name="_rs_lyr_Description">Hillshade raster generated using the gdal_dem tool specifying the hillshade option.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HILLSHADE</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">78b4112a-1224-45a4-b8cb-a5cd9bb02939</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/dem_hillshade.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="SLOPE">
+					<Name>Slope Raster</Name>
+					<Path>inputs/slope.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+						<Meta name="_rs_prj_HUC8">16050304</Meta>
+						<Meta name="_rs_prj_HUC">16050304</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+						<Meta name="_rs_lyr_Description">Slope raster generated using gdal_dem tool specifying the slope option. Units are in percent.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#SLOPE</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">SLOPE</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">3bebd7f4-49c1-4a1f-af19-17102b8c6446</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/slope.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Geopackage id="INPUTS">
+					<Name>Confinement</Name>
+					<Path>inputs/inputs.gpkg</Path>
+					<Layers>
+						<Vector lyrName="flowlines">
+							<Name>Segmented Flowlines</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+								<Meta name="_rs_lyr_origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">NHDFlowline</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">aa1023bc-9488-49c9-b51d-41e9643b8697</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">hydrology/NHDFlowline.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="flowareas">
+							<Name>NHD Flow Area</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+								<Meta name="_rs_lyr_origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">NHDArea</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">2c651779-64e5-4b3f-8871-1df8fdf575b2</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">hydrology/NHDArea.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="waterbodies">
+							<Name>NHD Waterbody</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+								<Meta name="_rs_lyr_origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">NHDWaterbody</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">e906c4f8-636d-4835-bb89-545d9456db8b</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">hydrology/NHDWaterbody.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="valley_bottom">
+							<Name>Valley Bottom</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">7e0ddb2c-0521-4611-aa0a-c1ae3c36320d</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">0.4.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-13T17:19:32.312134</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_VBETVersion">0.4.0</Meta>
+								<Meta name="_rs_prj_VBETTimestamp" type="timestamp">1631553572</Meta>
+								<Meta name="_rs_prj_Scenario Name">UPDATED_TESTING</Meta>
+								<Meta name="_rs_prj_FlowlineType">NHD</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">318.97</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">5:18 minutes</Meta>
+								<Meta name="_rs_prj_projType">VBET</Meta>
+								<Meta name="_rs_lyr_id">VBET_68</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">e9ef58af-a4d2-425c-82a2-cace2d1e30c3</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">vbet_68</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="roads">
+							<Name>Roads</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+								<Meta name="_rs_lyr_Nevada" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Nevada_State_Shape.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">Roads</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">e521da4f-44d2-4567-94d2-86e0e1440ca9</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">transportation/roads.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="rail">
+							<Name>Rail</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+								<Meta name="_rs_lyr_Nevada" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Nevada_State_Shape.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">Rail</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">9eff0a35-abac-4dd9-8d48-25c62f58ea55</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">transportation/railways.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="canals">
+							<Name>Canals</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">3d2ab499-568b-4007-b37a-25a241c1622e</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:36.966632</Meta>
+								<Meta name="_rs_prj_HUC8">16050304</Meta>
+								<Meta name="_rs_prj_HUC">16050304</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">Walker Lake</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">202.21576663452265</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
+								<Meta name="_rs_lyr_Nevada" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Nevada_State_Shape.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">Canals</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">97854dfe-8eff-4665-83ef-98b7d1ec5121</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">transportation/canals.shp</Meta>
+							</MetaData>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Inputs>
+			<Intermediates>
+				<Raster id="EXVEG_SUIT">
+					<Name>Existing Vegetation</Name>
+					<Path>intermediates/existing_veg_suitability.tif</Path>
+				</Raster>
+				<Raster id="HISTVEG_SUIT">
+					<Name>Historic Vegetation</Name>
+					<Path>intermediates/historic_veg_suitability.tif</Path>
+				</Raster>
+			</Intermediates>
+			<Outputs>
+				<Geopackage id="OUTPUTS">
+					<Name>BRAT</Name>
+					<Path>outputs/brat.gpkg</Path>
+					<Layers>
+						<Vector lyrName="ReachGeometry">
+							<Name>BRAT Geometry</Name>
+						</Vector>
+						<Vector lyrName="vwReaches">
+							<Name>BRAT</Name>
+						</Vector>
+					</Layers>
+				</Geopackage>
+				<HTMLFile id="BRAT_RUN_REPORT">
+					<Name>BRAT Report</Name>
+					<Path>outputs/brat.html</Path>
+				</HTMLFile>
+			</Outputs>
+		</Realization>
+	</Realizations>
+</Project>
