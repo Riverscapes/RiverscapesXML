@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/V1/ChannelArea.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../ChannelArea.xsd">
 	<Name>Channel Area for HUC 17060304</Name>
 	<ProjectType>ChannelArea</ProjectType>
 	<MetaData>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="../XSD/V1/Inundation.xsd">
+xsi:noNamespaceSchemaLocation="../Inundation.xsd">
 <Name>Inundation Mapper</Name>
 <ProjectType>Inundation</ProjectType>
 <MetaData>

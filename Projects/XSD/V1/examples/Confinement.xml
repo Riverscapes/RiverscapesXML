@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:noNamespaceSchemaLocation="../XSD/V1/Confinement.xsd">
+  xsi:noNamespaceSchemaLocation="../Confinement.xsd">
     <Name>Confinement for HUC 17060304</Name>
     <ProjectType>Confinement</ProjectType>
     <MetaData>

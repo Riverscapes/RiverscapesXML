@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">
+         xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
 
   <Name>RiverStylesProject1</Name>
   <ProjectType>RiverStyles</ProjectType>

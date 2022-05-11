@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="../XSD/V1/Hydro.xsd">
+  xsi:noNamespaceSchemaLocation="../Hydro.xsd">
 
   <Name>My Hydraulic Output</Name>
   <!--What's in a name. Do we need to decide on this?-->

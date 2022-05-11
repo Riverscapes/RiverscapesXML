@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../XSD/V1/GRTS.xsd">
+        xsi:noNamespaceSchemaLocation="../GRTS.xsd">
         <!--Move following line above line above and uncomment, comment out above line, for debugging-->
-        <!--xsi:noNamespaceSchemaLocation="../XSD/V1/Project.xsd">-->
+        <!--xsi:noNamespaceSchemaLocation="../Project.xsd">-->
 
     <Name>GRTS Rollups</Name>
     <!--What's in a name. Do we need to decide on this?-->

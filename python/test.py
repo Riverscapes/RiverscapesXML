@@ -93,31 +93,39 @@ class TestLambdaFunc(unittest.TestCase):
     def test_allProjectxmls(self):
         """Project XMLs need to be handled differently because each one has a different XSD file
         """
-        xmls = collect_files('./Projects/examples/*.xml')
-        errors = []
-        tested_xsds = []
-        print("\nTesting Project XMLS:\n========================")
-        for xml_path in xmls:
-            basename = os.path.basename(os.path.splitext(xml_path)[0])
-            xsd_path = 'Projects/XSD/V1/{}.xsd'.format(basename)
 
-            xml_file = get_xml(xml_path)
-            try:
-                # If there's no XSD for this project then just skip it for now
-                # This is because we can create example XMLS that do other things
-                if not os.path.isfile(xsd_path):
-                    continue
-                tested_xsds.append(xsd_path)
-                xsd_file = get_xsd(xsd_path)
-                result, errs = validate_xml(xml_file, xsd_file)
-                if not result:
-                    errors.append([xml_path, str(errs)])
-            except Exception as e:
-                errors.append([xml_path, str(e)])
-        self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(
-            self.err_helper(errors)))
-        for xsd_path in tested_xsds:
-            print("Tested project xml: {}".format(xsd_path))
+        for ver in ['V1', 'V2']:  
+          errors = []
+          tested_xsds = []
+          print("\nTesting Project XMLS {}:\n========================".format(ver))
+          xmls = collect_files('./Projects/XSD/{}/examples/*.xml'.format(ver))          
+          for xml_path in xmls:
+              basename = os.path.basename(os.path.splitext(xml_path)[0])
+              if (ver == 'V1'):
+                xsd_path = 'Projects/XSD/{}/{}.xsd'.format(ver, basename)
+              else:
+                xsd_path = 'Projects/XSD/{}/RiverscapesProject.xsd'.format(ver, basename)
+              xml_file = get_xml(xml_path)
+              try:
+                  # If there's no XSD for this project then just skip it for now
+                  # This is because we can create example XMLS that do other things
+                  print("Tested project xml: {}".format(xml_path))
+                  if not os.path.isfile(xsd_path):
+                      continue
+                  tested_xsds.append(xsd_path)
+                  xsd_file = get_xsd(xsd_path)
+                  result, errs = validate_xml(xml_file, xsd_file)
+                  if not result:
+                      errors.append([xml_path, str(errs)])
+              except Exception as e:
+                  errors.append([xml_path, str(e)])
+
+          print("\nTesting Project XSDs {}:\n========================".format(ver))
+          self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(
+              self.err_helper(errors)))
+          for xsd_path in tested_xsds:
+              print("Tested project xsd: {}".format(xsd_path))
+
 
 
 if __name__ == '__main__':
