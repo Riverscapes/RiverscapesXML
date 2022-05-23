@@ -54,8 +54,8 @@
                     </Node>
                     <Node label="Potential Post-Restoration Space">
                         <Children collapsed="true">
-                            <Node label="Off-Channel Rearing Habitat" xpath="Realizations/PBR/Analyses/Vector[@id='REARING_HAB']" type="polygon" symbology="off_habit" id="rearing_hab" transparency="40"/>
-                            <Node label="Riparian Wetland Corridor" xpath="Realizations/PBR/Analyses/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40"/>
+                            <Node label="Off-Channel Rearing Habitat" xpath="Realizations/PBR/Analyses/Analysis/Outputs/Vector[@id='REARING_HAB']" type="polygon" symbology="off_habit" id="rearing_hab" transparency="40"/>
+                            <Node label="Riparian Wetland Corridor" xpath="Realizations/PBR/Analyses/Analysis/Outputs/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40"/>
                             <Node label="Forage Area" xpath="Realizations/PBR/Inputs/Vector[@id='FORAGE']" type="polygon" symbology="forage_area" id="forage" transparency="40"/>
                         </Children>
                     </Node>
@@ -69,7 +69,7 @@
             </Node>
             <Node label="Summary Statistics">
                 <Children collapsed="true">
-                    <Node label="PBR Summary Stats" xpath="Realizations/PBR/Analyses/CSV[@id='SUM_STAT']" type="file" />
+                    <Node label="PBR Summary Stats" xpath="Realizations/PBR/Analyses/Analysis/Ouputs/CSV[@id='SUM_STAT']" type="file" />
                 </Children>
             </Node>
        </Children>
