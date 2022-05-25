@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProjects.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
 
   <Name>GUT for Site ASW00001-CC-F3 P2BR</Name>
   <ProjectType>GUT</ProjectType>

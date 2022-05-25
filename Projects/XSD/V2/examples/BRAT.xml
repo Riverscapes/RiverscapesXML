@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Riverscapes/RiverscapesXML/RSWarehouseNEXT/Projects/XSD/V1/RiverscapesProjects2.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
 	<Name>BRAT for HUC 16050304</Name>
 	<ProjectType>BRAT</ProjectType>
 	<!-- apiUrl is taken from examples/VBET.xml May not be correct-->

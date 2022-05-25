@@ -447,6 +447,7 @@
       <xs:enumeration value="isodate" />
       <xs:enumeration value="timestamp" />
       <xs:enumeration value="float" />
+      <xs:enumeration value="boolean" />
       <xs:enumeration value="int" />
       <xs:enumeration value="richtext" />
       <xs:enumeration value="markdown" />
