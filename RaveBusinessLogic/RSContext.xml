@@ -104,7 +104,6 @@
           <Node label="Slope Analysis" xpath="Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
           <Node xpathlabel="Name" xpath="Raster[@id='FA']" type="raster" symbology="flow_accumulation" transparency="40" />
           <Node label="Drainage Area" xpath="Raster[@id='DA']" type="raster" symbology="drainage_area" transparency="40" />
-          <Node label="Detrended DEM (HAND - Height Above Nearest Drainage)" xpath="Raster[@id='HAND']" type="raster" symbology="hand" transparency="40" />
         </Children>
       </Node>
       <Node label="Hillshade">
