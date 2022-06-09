@@ -74,17 +74,17 @@
             <Meta name="LifeStage">Spawner</Meta>
           </MetaData>
           <Products>
-            <File id="FISFile">
+            <File id="FISFile2">
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Chinook/Spawner/Run_01/FISModel/FuzzySteelheadSpawner_DVSC.fis</Path>
             </File>
-            <Raster id="raster_01">
+            <Raster id="raster_012">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Steelhead/Spawner/Run_01/FuzzyHQ.tif</Path>
               <MetaData>
                 <Meta name="Type"/>
               </MetaData>
             </Raster>
-            <Raster id="raster_02">
+            <Raster id="raster_022">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/HSI/Steelhead/Spawner/Run_01/HSI.tif</Path>
               <MetaData>
@@ -103,17 +103,17 @@
             <Meta name="LifeStage">Juvenile</Meta>
           </MetaData>
 					<Products>
-            <File id="FISFile">
+            <File id="FISFile3">
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Chinook/Spawner/Run_01/FISModel/Juvenile_DVSC.fis</Path>
             </File>
-            <Raster id="raster_01">
+            <Raster id="raster_013">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Chinook/Juvenile/Run_01/FuzzyHQ.tif</Path>
               <MetaData>
                 <Meta name="Type"/>
               </MetaData>
             </Raster>
-            <Raster id="raster_02">
+            <Raster id="raster_023">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/HSI/Chinook/Juvenile/Run_01/HSI.tif</Path>
               <MetaData>
@@ -132,14 +132,14 @@
             <Meta name="LifeStage">Juvenile</Meta>
           </MetaData>
 					<Products>
-            <Raster id="raster_01">
+            <Raster id="raster_014">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Steelhead/Juvenile/Run_01/FuzzyHQ.tif</Path>
               <MetaData>
                 <Meta name="Type"/>
               </MetaData>
             </Raster>
-            <Raster id="raster_02">
+            <Raster id="raster_024">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/HSI/Steelhead/Juvenile/Run_01/HSI.tif</Path>
               <MetaData>

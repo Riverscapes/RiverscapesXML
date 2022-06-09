@@ -141,7 +141,7 @@
           <Name>Channel Units</Name>
           <Path>Topography/TIN0001/ChannelUnits.shp</Path>
         </Vector>
-        <TIN id="TIN">
+        <TIN id="TIN2">
           <Name>Water Surface TIN</Name>
           <Path>Topography/TIN0001/wsTIN</Path>
           <MetaData>
@@ -256,7 +256,7 @@
           <Name>Detrended</Name>
           <Path>Topography/TIN0001/Detrended.tif</Path>
         </DEM>
-        <Vector  id="ChannelUnits">
+        <Vector  id="ChannelUnits2">
           <Name>Channel Units</Name>
           <Path>Topography/TIN0001/Channel_Units.shp</Path>
         </Vector>

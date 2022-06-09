@@ -213,37 +213,37 @@
         <Analysis id="ANALYSIS02">
           <Name>Run_01</Name>
           <Configuration>
-            <ConfigFile id="ID1">
+            <ConfigFile id="ID2">
               <Name>Configuration Settings</Name>
               <Path>2012/Output/GUT_2.1/Run_01/configSettings.txt</Path>
             </ConfigFile>
           </Configuration>
           <Products>
-            <Vector id="Tier1" type="tier1">
+            <Vector id="Tier11" type="tier1">
               <Name>Tier 1</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier1.shp</Path>
             </Vector>
-            <Vector id="Tier2" type="tier2">
+            <Vector id="Tier23" type="tier2">
               <Name>Tier 2</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
             </Vector>
-            <Vector id="Tier22" type="tier2">
+            <Vector id="Tier223" type="tier2">
               <Name> Tier 2 - Discrete</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
             </Vector>
-            <Vector id="Tier3" type="tier3">
+            <Vector id="Tier33" type="tier3">
               <Name>Tier 3 In Channel Geomorphic Units</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
             </Vector>
-            <Vector id="Tier3_1" type="tier3">
+            <Vector id="Tier3_13" type="tier3">
               <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
             </Vector>
-            <Vector id="Tier3_2" type="tier3">
+            <Vector id="Tier3_23" type="tier3">
               <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
             </Vector>
-            <Vector id="Tier3_3" type="tier3">
+            <Vector id="Tier3_33" type="tier3">
               <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
               <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
             </Vector>
