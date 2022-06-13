@@ -158,10 +158,16 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
     <!-- CHANGE: no project-specific tag name here GUIDs are gone --> 
     <Realization id="REALIZATION1" dateCreated="2021-10-02T16:48:48.772237" productVersion="0.1.2">
       <Name>VBET for HUC 16050301</Name>
-      <LogFile id="LOGFILE">
-        <Name>Log</Name>
-        <Path>vbet.log</Path>
-      </LogFile>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+      </Logs>
       <Inputs>
         <!-- CHANGE: THis is how we reference datasets internally now 
             All our mapping and RAVE tools need to be smart enough to go find
@@ -319,10 +325,16 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
     </Realization>
     <Realization id="REALIZATION2" dateCreated="2021-10-02T16:48:48.772237" productVersion="0.5.0">
       <Name>VBET for HUC 16050301</Name>
-      <LogFile id="LOGFILE">
-        <Name>Log</Name>
-        <Path>vbet.log</Path>
-      </LogFile>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+      </Logs>
       <Inputs>
         <CommonDatasetRef ref="SLP_01" />
         <Raster id="SLOPE_RASTER2" />

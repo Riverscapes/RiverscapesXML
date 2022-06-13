@@ -45,10 +45,16 @@
 	<Realizations>
 		<Realization id="BRAT" dateCreated="2021-09-13T18:05:52.244153" productVersion="4.3.0">
 			<Name>BRAT for HUC 16050304</Name>
-			<LogFile id="LOGFILE">
-				<Name>Log</Name>
-				<Path>brat_build.log</Path>
-			</LogFile>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>brat_build.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>brat_build.log</Path>
+        </LogFile>
+      </Logs>
 			<Inputs>
 				<DEM id="DEM">
 					<Name>NED 10m DEM</Name>

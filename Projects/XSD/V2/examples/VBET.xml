@@ -37,10 +37,16 @@
 	<Realizations>
 		<Realization id="VBET" dateCreated="2021-10-02T16:48:50.457945" productVersion="0.5.0">
 			<Name>VBET for HUC 16050302</Name>
-			<LogFile id="LOGFILE">
-				<Name>Log</Name>
-				<Path>vbet.log</Path>
-			</LogFile>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+      </Logs>
 			<Inputs>
 				<Raster id="SLOPE_RASTER">
 					<Name>Slope Raster</Name>

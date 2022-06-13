@@ -76,7 +76,14 @@
 
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
       <xs:element type="ParametersType" name="Parameters" minOccurs="0" maxOccurs="1" />
-      <xs:element type="SimpleFileType" name="LogFile" minOccurs="0" maxOccurs="1" />
+
+      <xs:element name="Logs" maxOccurs="1" minOccurs="0">
+        <xs:complexType>
+          <xs:choice maxOccurs="unbounded">
+            <xs:element type="SimpleFileType" name="LogFile" />
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
 
       <xs:element type="DataSetContainerType" name="Datasets" minOccurs="0" maxOccurs="1" />
       
@@ -201,6 +208,7 @@
       <xs:element type="SimpleFileType" name="PDF" />
       <xs:element type="SimpleFileType" name="HTMLFile" />
       <xs:element type="SimpleFileType" name="ZipFile" />
+      <xs:element type="SimpleFileType" name="LogFile" />
       <!-- Last resort catch-all for anything we don't support -->
       <xs:element type="SimpleFileType" name="File" />
     </xs:choice>
@@ -427,7 +435,7 @@
 
   <xs:simpleType name="ExternalReferenceType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9a-zA-Z-]{36,}/[A-Za-z0-9_-]{3,64}/[A-Za-z0-9_-]{3,64}" />
+      <xs:pattern value="[0-9a-zA-Z-]{36,}(\/[A-Za-z0-9_-]{3,64}){2,6}" />
     </xs:restriction>
   </xs:simpleType>
 
