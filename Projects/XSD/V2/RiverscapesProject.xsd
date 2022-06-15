@@ -223,7 +223,7 @@
       <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
       <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />      
 
-      <xs:element type="UnixPathType" name="Path" minOccurs="0" maxOccurs="1" />
+      <xs:element type="UnixPathType" name="Path" minOccurs="1" maxOccurs="1" />
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute type="ProjectIdType" name="id" use="required" />

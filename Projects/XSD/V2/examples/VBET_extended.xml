@@ -337,7 +337,6 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
       </Logs>
       <Inputs>
         <CommonDatasetRef ref="SLP_01" />
-        <Raster id="SLOPE_RASTER2" />
         <Raster id="HAND_RASTER">
           <Name>Hand Raster</Name>
           <Path>inputs/HAND.tif</Path>
