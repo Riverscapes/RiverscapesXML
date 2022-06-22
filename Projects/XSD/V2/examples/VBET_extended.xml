@@ -67,13 +67,13 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
   <CommonDatasets>
 
     <!-- CHANGE: Note the external reference in the form: WH_GUID/REALIZATION_ID/DATASET_ID -->
-    <Raster id="SLP_01" type="slope_raster" extRef="badfe8c1-0342-4876-8fac-b2eb5493a90f/REALIZATION1/SLOPE">
+    <Raster id="SLP_01" type="slope_raster" extRef="badfe8c1-0342-4876-8fac-b2eb5493a90f:Project/REALIZATION1/SLOPE#thing">
       <Name>Slope Raster</Name>
       <Path>inputs/slope.tif</Path>
       <MetaData></MetaData>
     </Raster>
 
-    <Geopackage id="INPUT4" extRef="badfe8c1-0342-4876-8fac-b2eb5493a90f/REALIZATION1/SEGMENTATION">
+    <Geopackage id="INPUT4" extRef="badfe8c1-0342-4876-8fac-b2eb5493a90f:Project/REALIZATION/SEGMENTATION">
       <Name>Inputs</Name>
       <Summary></Summary>
       <Description></Description>

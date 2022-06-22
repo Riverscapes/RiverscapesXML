@@ -435,7 +435,7 @@
 
   <xs:simpleType name="ExternalReferenceType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9a-zA-Z-]{36,}(/[A-Za-z0-9_-]{3,64}){2,6}" />
+      <xs:pattern value="[0-9a-zA-Z-]{36,}:Project/[A-Za-z0-9_/#-]+" />
     </xs:restriction>
   </xs:simpleType>
 
