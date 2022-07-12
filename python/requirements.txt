@@ -1,6 +1,6 @@
 autopep8==1.5.2
 jsonschema==3.2.0
-lxml==4.6.5
+lxml==4.9.1
 pycodestyle==2.6.0
 pylint==2.5.2
 requests==2.25.1
