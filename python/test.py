@@ -11,6 +11,8 @@ XML_DIGEST = [
     {'xml': './Programs/**/*.xml', 'xsd': './Program.xsd'},
     {'xml': './RaveBusinessLogic/*.xml',
         'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
+    {'xml': './RaveBusinessLogic/V2/*.xml',
+        'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
     {'xml': './BaseMaps.xml', 'xsd': './BaseMaps.xsd'}
 ]
 
