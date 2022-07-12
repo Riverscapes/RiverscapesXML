@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>GPP</Name>
+  <ProjectType>GPP</ProjectType>
+  <Node xpathlabel="Name">
+    <Children>
+      <Repeater label="Realizations" xpath="Realizations/GPP">
+        <!-- this is a template for how each realization should render-->
+        <Node xpathlabel="Name">
+          <Children collapsed="false">
+            <Repeater label="Inputs" xpath="Inputs/*">
+              <Node xpathlabel="Name" xpath="Vector" type="line" symbology="vector_GPP" />
+            </Repeater>
+            <Repeater label="Analysis" xpath="Analyses/Analysis/Outputs/Vector">
+              <Node xpathlabel="Name" xpath="Vector" type="line" symbology="vector_GPP" />
+            </Repeater>
+          </Children>
+        </Node>
+      </Repeater>
+    </Children>
+  </Node>
+</Project>

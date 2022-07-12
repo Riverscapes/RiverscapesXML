@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>PRB_Planning</Name>
+    <ProjectType>PBR</ProjectType>
+    <Node label="Sprague River PBR Planning Model">
+     <Children collapsed="false">
+            <Node label="Valley Bottom">
+                <Children collapsed="true">
+                    <Node label="VBET Valley Bottom (filled)" xpath="Realizations/PBR/Inputs/Vector[@id='VALLEY']" type="polygon" symbology="vbet68_filled" id="vb"/>
+                    <Node label="VBET Valley Bottom (hollow)" xpath="Realizations/PBR/Inputs/Vector[@id='VALLEY']" type="polygon" symbology="vbet68_hollow" id="vb"/>
+                </Children>
+            </Node>
+            <Node label="Current Riparian Condition">
+                <Children collapsed="true">
+                    <Node label="Vegetation Map (Existing for year 2000)" xpath="Realizations/PBR/Inputs/Vector[@id='VEG_2000']" type="polygon" symbology="veg_2000" id="veg_map" transparency="40"/>
+                    <Node label="RCAT Riparian Vegetation Departure (RVD)" xpath="Realizations/PBR/Inputs/Vector[@id='RVD']" type="line" symbology="RVD" id="rvd" transparency="40"/>
+                </Children>
+            </Node>
+            <Node label="Pre-Treatment Process Space">
+                <Children collapsed="true">
+                    <Node label="Pre-Restoration Space (Active Channel)" xpath="Realizations/PBR/Inputs/Vector[@id='ACTIVE_CHANNEL']" type="polygon" symbology="ChannelArea" id="active_chan"/>
+                </Children>
+            </Node>
+            <Node label="Restoration Limitations - Infrastructure Constrained Reaches">
+                <Children collapsed="true">
+                    <Node label="BRAT Risk of Undesirable Dams" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="risk" id="risk"/>
+                </Children>
+            </Node>
+            <Node label= "Restoration Space">
+                <Children collapsed="true">
+                    <Node label="Capacity and Management">
+                        <Children collapsed="true">
+                            <Node label="BRAT Existing Capacity" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="oCC_EX" id="ex_cap"/>
+                            <Node label="Channel Spanning Structures Appropriate" xpath="Realizations/PBR/Inputs/Vector[@id='BRAT_NETWORK']" type="line" symbology="opportunity_1" id="con_res"/>
+                        </Children>
+                    </Node>
+                    <Node label="Valley Bottom Fragmentation">
+                        <Children collapsed="true">
+                            <Node label="Infrastructure">
+                                <Children collapsed="false">
+                                    <Node label="Rail" xpath="Realizations/PBR/Inputs/Vector[@id='RAIL']" type="line" symbology="railroads" id="rail"/>
+                                    <Node label="Road" xpath="Realizations/PBR/Inputs/Vector[@id='ROAD']" type="line" symbology="roads" id="rd"/>
+                                    <Node label="Bridges" xpath="Realizations/PBR/Inputs/Vector[@id='BRIDGE']" type="line" symbology="bridges" id="bridge"/>
+                                    <Node label="Levees" xpath="Realizations/PBR/Inputs/Vector[@id='LEVEE']" type="line" symbology="Levee" id="lev"/>
+                                    <Node label="Canals" xpath="Realizations/PBR/Inputs/Vector[@id='CANAL']" type="line" symbology="canals_ditches" id="canal"/>
+                                    <Node label="Dams" xpath="Realizations/PBR/Inputs/Vector[@id='DAM']" type="line" symbology="dams" id="dam"/>
+                                    <Node label="Diversions" xpath="Realizations/PBR/Inputs/Vector[@id='DIVERSION']" type="line" symbology="diversion" id="div"/>
+                                    <Node label="Irrigation Ditches" xpath="Realizations/PBR/Inputs/Vector[@id='IRRIGATION']" type="line" symbology="irrigation_ditches" id="ditch"/>
+                                </Children>
+                            </Node>
+                            <Node label="Accessible and Inaccessible Valley Bottom" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS']" type="polygon" symbology="VB_access" id="frag_vb" transparency="40"/>
+                            <Node label="Accessible and Inaccessible Valley Bottom 500m" xpath="Realizations/PBR/Inputs/Vector[@id='VB_ACCESS_SEG']" type="polygon" symbology="VB_access" id="500_vb" transparency="40"/>
+                        </Children>
+                    </Node>
+                    <Node label="Potential Post-Restoration Space">
+                        <Children collapsed="true">
+                            <Node label="Off-Channel Rearing Habitat" xpath="Realizations/PBR/Analyses/Analysis/Outputs/Vector[@id='REARING_HAB']" type="polygon" symbology="off_habit" id="rearing_hab" transparency="40"/>
+                            <Node label="Riparian Wetland Corridor" xpath="Realizations/PBR/Analyses/Analysis/Outputs/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40"/>
+                            <Node label="Forage Area" xpath="Realizations/PBR/Inputs/Vector[@id='FORAGE']" type="polygon" symbology="forage_area" id="forage" transparency="40"/>
+                        </Children>
+                    </Node>
+                    <Node label="Topography">
+                        <Children collapsed="true">
+                            <Node label="HAND Raster" xpath="Realizations/PBR/Inputs/Raster[@id='HAND']" type="raster" symbology="hand" id="height" transparency="40"/>
+                            <Node label="Hillshade" xpath="Realizations/PBR/Inputs/Raster[@id='HS']" type="raster" symbology="Hillshade" id="hs" transparency="40"/>
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Summary Statistics">
+                <Children collapsed="true">
+                    <Node label="PBR Summary Stats" xpath="Realizations/PBR/Analyses/Analysis/Ouputs/CSV[@id='SUM_STAT']" type="file" />
+                </Children>
+            </Node>
+       </Children>
+    </Node>
+    <Views default="VB_Access">
+        <View name="Valley Bottom Accessibility" id="VB_Access">
+            <Description> Valley bottom accessibility and infrastructure layers</Description>
+            <Layers>
+                <Layer id="hs" />
+                <Layer id="frag_vb" />
+                <Layer id="rail" />
+                <Layer id="rd" />
+                <Layer id="lev" />
+                <Layer id="canal" />
+                <Layer id="dam" />
+                <Layer id="bridge" />
+                <Layer id="div" />
+                <Layer id="ditch" />
+            </Layers>
+        </View>
+        <View name="Pre to Post-Restoration Space" id="Restoration">
+            <Description>Pre-restoration space and the potential post-restoration space </Description>
+            <Layers>
+                <Layer id="hs" />
+                <Layer id="wetland" />
+                <Layer id="rearing_hab" />
+                <Layer id="active_chan" />
+            </Layers>
+        </View>
+        <View name ="BRAT Existing Dam Capacity" id="Capacity">
+            <Description>BRAT existing capacity output</Description>
+            <Layers>
+                <Layer id="hs" />
+                <Layer id="ex_cap" />
+            </Layers>
+        </View>
+        <View name="Vegetation Context" id="Veg">
+            <Description>Categorized raster polygon from year 2000 and Riparian Vegetation Departure output</Description>
+            <Layers>
+                <Layer id="hs" />
+                <Layer id="veg_map" />
+                <Layer id="rvd" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
