@@ -2,7 +2,7 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
   <Name>Confinement</Name>
   <ProjectType>CONFINEMENT</ProjectType>
-  <Node xpathlabel="Name" xpath="Realizations/Confinement">
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs">

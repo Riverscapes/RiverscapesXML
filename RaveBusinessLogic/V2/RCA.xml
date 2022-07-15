@@ -4,7 +4,7 @@
   <ProjectType>RCA</ProjectType>
   <Node xpathlabel="Name">
     <Children>
-      <Repeater label="Realizations" xpath="Realizations/RCA">  
+      <Repeater label="Realizations" xpath="Realizations/Realization">  
         <Node xpathlabel="Name">
           <Children collapsed="false">
             <Node label="Outputs">
@@ -113,7 +113,7 @@
                   </Children>
                 </Node>
                 <Node label="Large River Polygon" xpath="Inputs/Vector[@id='LARGE_RIVER_POLYGON']" type="polygon" symbology="LargeRiverPolygon" />
-                <Node label="Precipitation" xpath="Realizations/RCA/Inputs/Raster[@id='PRECIPITATION']" type="raster" symbology="mean_annual_precip" transparency="40" />
+                <Node label="Precipitation" xpath="Realizations/Realization/Inputs/Raster[@id='PRECIPITATION']" type="raster" symbology="mean_annual_precip" transparency="40" />
               </Children>
             </Node>
           </Children>

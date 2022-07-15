@@ -3,7 +3,7 @@
     <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
         <Name>TauDEM</Name>
         <ProjectType>TauDEM</ProjectType>
-        <Node xpathlabel="Name" xpath="Realizations/TauDEM">
+        <Node xpathlabel="Name" xpath="Realizations/Realization">
             <Children collapsed="false">
                 <Node label="Project Report"  xpath="Outputs/HTMLFile" type="report" />
                 <Node label="Outputs">
@@ -41,8 +41,8 @@
                 </Node>
                 <Node label="Inputs" xpath="Inputs">
                     <Children collapsed="true">
-                        <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon"  symbology="ChannelArea" id="channel_area" />
-                        <Node label="Channel Line Input" xpath="Geopackage/Layers/Vector[@id='CHANNEL_LINES']" type="line" symbology="channel_line_network" id="channel_line" />
+                        <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@lyrname='CHANNEL_AREA']" type="polygon"  symbology="ChannelArea" id="channel_area" />
+                        <Node label="Channel Line Input" xpath="Geopackage/Layers/Vector[@lyrname='CHANNEL_LINES']" type="line" symbology="channel_line_network" id="channel_line" />
                         <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
                         <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
                     </Children>

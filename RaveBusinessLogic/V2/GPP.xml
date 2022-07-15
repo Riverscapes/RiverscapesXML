@@ -4,7 +4,7 @@
   <ProjectType>GPP</ProjectType>
   <Node xpathlabel="Name">
     <Children>
-      <Repeater label="Realizations" xpath="Realizations/GPP">
+      <Repeater label="Realizations" xpath="Realizations/Realization">
         <!-- this is a template for how each realization should render-->
         <Node xpathlabel="Name">
           <Children collapsed="false">

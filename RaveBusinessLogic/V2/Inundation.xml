@@ -6,7 +6,7 @@
     <Children>
       <Node label="Mapping" id="mapping">
         <Children>
-          <Repeater label="DCEs" xpath="Realizations/InundationDCE">
+          <Repeater label="DCEs" xpath="Realizations/Realization">
             <Node xpathlabel="Name">
               <Children>
                 <Node label="Channels">
@@ -37,7 +37,7 @@
               </Children>
             </Node>
           </Repeater>
-          <Node label="Riverscape" xpath="Realizations/InundationContext">
+          <Node label="Riverscape" xpath="Realizations/Realization">
             <Children>
               <Node xpathlabel="Name" xpath="Inputs/Vector[@id='vbCL_01']" type="line" symbology="VB_Centerline" />
               <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VB_01']" type="line" symbology="valley_bottom" id="VB_poly" />
@@ -63,7 +63,7 @@
           </Node>
         </Children>
       </Node>
-      <Node label="Summary Comparisons" xpath="Realizations/InundationCD/Outputs">
+      <Node label="Summary Comparisons" xpath="Realizations/Realization/Outputs">
         <Children>
           <Repeater label="Summary Metrics (PDFs)" xpath="PDF">
             <Node xpathlabel="Name" type="file" />

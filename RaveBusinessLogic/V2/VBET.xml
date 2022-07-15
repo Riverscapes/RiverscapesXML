@@ -2,22 +2,22 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
   <Name>VBET</Name>
   <ProjectType>VBET</ProjectType>
-  <Node xpathlabel="Name" xpath="Realizations/VBET">
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs" xpath="Outputs">
         <Children collapsed="true">
           <!-- These are the names from pre https://github.com/Riverscapes/riverscapes-tools/issues/427 fixes -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrname='VBET_68']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrname='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
           <!-- These are the new naming convention -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />   
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrname='VBET_FULL']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrname='VBET_FULL']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />   
           <Node label="Valley Bottom Geomorphic Units">
             <Children collapsed="false">
-              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_CHANNEL_AREA']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
-              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
-              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
+              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@lyrname='VBET_CHANNEL_AREA']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@lyrname='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@lyrname='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
           </Node>
           <Node label="Likelihood of being Valley Bottom" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
@@ -46,7 +46,7 @@
             <Children collapsed="true">
               <!-- This is waiting for next round to be exposed in projects.
                 <Node label="Catchment Wings" xpath="Layers/Vector[@id='CATCHMENTS_DISSOLVED']" type="polygon" /> -->
-                <Node label="Catchment Wing Stream Order" xpath="Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
+                <Node label="Catchment Wing Stream Order" xpath="Geopackage/Layers/Vector[@lyrname='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
                 <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
               </Children>
             </Node>
@@ -55,7 +55,7 @@
         </Node>
         <Node label="Inputs" xpath="Inputs">
           <Children collapsed="true">
-            <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" id="channel_area_polygons" symbology="ChannelArea" />
+            <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@lyrname='CHANNEL_AREA_POLYGONS']" type="polygon" id="channel_area_polygons" symbology="ChannelArea" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
             <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
           </Children>     
