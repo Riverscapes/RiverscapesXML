@@ -5,7 +5,7 @@
     <ProjectType>GUT</ProjectType>
     <Node xpathlabel="Name">
       <Children>
-        <Repeater label="Realizations" xpath="Realizations/GUT">
+        <Repeater label="Realizations" xpath="Realizations/Realization">
           <Node xpathlabel="Name">
             <Children collapsed="true">
               <Repeater label="Analyses" xpath="Analyses/Analysis">

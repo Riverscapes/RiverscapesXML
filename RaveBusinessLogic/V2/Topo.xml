@@ -6,7 +6,7 @@
     <Children collapsed="false">
       <Node label="Topos">
         <Children>
-          <Node label="Auxiliary Survey Data" xpath="Realizations/Topography/TIN">
+          <Node label="Auxiliary Survey Data" xpath="Realizations/Realization/TIN">
             <Children collapsed="true">
               <Node label="Channel Units">
                 <Children>
@@ -30,7 +30,7 @@
             </Children>
           </Node>
           
-          <Node label="Topographic Survey Data" xpath="Realizations/SurveyData">
+          <Node label="Topographic Survey Data" xpath="Realizations/Realization">
             <Children collapsed="true">
               <Node xpathlabel="Name" xpath="SurveyExtents/Vector[@id='survey_extent']" type="polygon" symbology="SurveyExtent" />
               <Node xpathlabel="Name" xpath="Vector[@id='breaklines']" type="line" symbology="breaklines" />
@@ -42,7 +42,7 @@
             </Children>
           </Node>
           
-          <Node label="Topographic Derivatives" xpath="Realizations/Topography/TIN">
+          <Node label="Topographic Derivatives" xpath="Realizations/Realization/TIN">
             <Children collapsed="true">
               <Node label="DEM Error Model">
                 <Children>
@@ -99,7 +99,7 @@
             </Children>
           </Node>
           
-          <Node label="Topography" xpath="Realizations/Topography">
+          <Node label="Topography" xpath="Realizations/Realization">
             <Children collapsed="false">
               <Node label="TINs">
                 <Children>

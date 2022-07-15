@@ -2,7 +2,7 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
   <Name>CHaMP Delft3D Hydraulic Model</Name>
   <ProjectType>Hydro</ProjectType>
-  <Node xpathlabel="Name" xpath="Realizations/Hydro">
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
       <Node label="Hydarulic Simulation(s)" xpath="Analyses/Analysis/Outputs">
         <Children collapsed="true">

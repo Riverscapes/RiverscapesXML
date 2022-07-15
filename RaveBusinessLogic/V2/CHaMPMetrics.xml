@@ -4,7 +4,7 @@
   <ProjectType>CHAMPMetrics</ProjectType>
   <Node xpathlabel="Name">
     <Children collapsed="false">
-      <Node label="Outputs" xpath="Realizations/Metrics/Analyses/Analysis/Outputs">
+      <Node label="Outputs" xpath="Realizations/Realization/Analyses/Analysis/Outputs">
         <Children>
           <Node label="CHaMP Metrics" xpath="Vector" type="point" />
         </Children>

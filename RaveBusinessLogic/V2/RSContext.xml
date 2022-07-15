@@ -3,7 +3,7 @@
   <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>Riverscapes Context</Name>
   <ProjectType>RSContext</ProjectType>
-  <Node xpathlabel="Name" xpath="Realizations/RSContext">
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
       <Node label="Project Report" xpath="HTMLFile[@id='REPORT']" type="report" />
       <Node label="Transportation Local">
@@ -28,14 +28,14 @@
               <Node label="Pipes and Ditches" xpath="Vector[@id='NHDFlowline']" type="line" symbology="pipes" />
               <Node label="Estimated Bankfull">
                 <Children>
-                  <Node label="Estimated Bankfull Width (m)" xpath="Geopackage/Layers/Vector[@id='NETWORK']" type="line" symbology="bankfull_flowlines" />
-                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='BANKFULL_CHANNEL']" type="polygon" symbology="ChannelArea" />
-                  <!-- <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='COMPOSITE_CHANNEL_AREA']" type="polygon" symbology="bankfull_nhd"/> -->
+                  <Node label="Estimated Bankfull Width (m)" xpath="Geopackage/Layers/Vector[@lyrname='NETWORK']" type="line" symbology="bankfull_flowlines" />
+                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@lyrname='BANKFULL_CHANNEL']" type="polygon" symbology="ChannelArea" />
+                  <!-- <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@lyrname='COMPOSITE_CHANNEL_AREA']" type="polygon" symbology="bankfull_nhd"/> -->
                 </Children>
               </Node>
               <Node label="Segmented Hydrography">
                 <Children>
-                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@id='NETWORK300M']" type="line" symbology="300_seg" />
+                  <Node xpathlabel="Name" xpath="Geopackage/Layers/Vector[@lyrname='NETWORK300M']" type="line" symbology="300_seg" />
                   <Node xpathlabel="Name" xpath="Geopackage[@id='NHD']/Layers/Vector[@id='NETWORK300MCROSSINGS']" type="line" symbology="300_seg_X" />
                 </Children>
               </Node>

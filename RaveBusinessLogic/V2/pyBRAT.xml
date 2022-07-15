@@ -4,7 +4,7 @@
   <ProjectType>pyBRAT</ProjectType>
   <Node xpathlabel="Name">
     <Children collapsed="false">
-      <Node label="Outputs" xpath="Realizations/pyBRAT/Analyses/Analysis/Outputs">
+      <Node label="Outputs" xpath="Realizations/Realization/Analyses/Analysis/Outputs">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="SQLiteDB" type="file" />
           <Node xpathlabel="Name" xpath="HTMLFile" type="report" />
@@ -32,7 +32,7 @@
           </Node>
         </Children>
       </Node>
-      <Node label="Intermediates" xpath="Realizations/pyBRAT">
+      <Node label="Intermediates" xpath="Realizations/Realization">
         <Children collapsed="true">
           <Node label="Perennial">
             <Children>
@@ -91,7 +91,7 @@
           </Node>
         </Children>
       </Node>
-      <Node label="Inputs" xpath="Realizations/pyBRAT/Inputs">
+      <Node label="Inputs" xpath="Realizations/Realization/Inputs">
         <Children collapsed="true">
           <Node label="Network">
             <Children>
