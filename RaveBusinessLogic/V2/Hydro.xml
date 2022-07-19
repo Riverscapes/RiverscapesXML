@@ -4,7 +4,7 @@
   <ProjectType>Hydro</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
-      <Node label="Hydarulic Simulation(s)" xpath="Analyses/Analysis/Outputs">
+      <Node label="Hydarulic Simulation(s)" xpath="Analyses/Analysis/Products">
         <Children collapsed="true">
           <Node label="Meta Data">
             <Children collapsed="true">

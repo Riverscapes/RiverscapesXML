@@ -64,8 +64,8 @@
           </Node>
           <Node label="Vegetation Suitability">
             <Children>
-              <Node label="Existing Vegetation Suitability" xpath="../Intermediates/Raster[@id='EXVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
-              <Node label="Historic Vegetation Suitability" xpath="../Intermediates/Raster[@id='HISTVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
+              <Node label="Existing Vegetation Suitability" xpath="Intermediates/Raster[@id='EXVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
+              <Node label="Historic Vegetation Suitability" xpath="Intermediates/Raster[@id='HISTVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
             </Children>
           </Node>
           <Node label="Anthropogenic Intermediates">
@@ -85,8 +85,8 @@
           </Node>
           <Node label="Buffers">
             <Children>
-              <Node label="30m Buffer" xpath="../Intermediates/Geopackage/Layers/Vector[@id='30M_BUFFER']" type="polygon" symbology="buf30"/>
-              <Node label="100m Buffer" xpath="../Intermediates/Geopackage/Layers/Vector[@id='100M_BUFFER']" type="polygon" symbology="buf100"/>
+              <Node label="30m Buffer" xpath="Intermediates/Geopackage/Layers/Vector[@id='30M_BUFFER']" type="polygon" symbology="buf30"/>
+              <Node label="100m Buffer" xpath="Intermediates/Geopackage/Layers/Vector[@id='100M_BUFFER']" type="polygon" symbology="buf100"/>
             </Children>
           </Node>
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
