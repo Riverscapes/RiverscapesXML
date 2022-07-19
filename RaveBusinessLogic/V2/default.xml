@@ -11,22 +11,22 @@
           <Children collapsed="false">
             <Node label="Inputs" xpath="Inputs">
               <Children>
-                <Repeater label="Raster Layers" xpath="//Raster">
+                <Repeater label="Raster Layers" xpath="Raster">
                   <Node xpathlabel="Name" type="raster" symbology="raster" />
                 </Repeater>
-                <Repeater label="Vector Layers" xpath="//Vector">
+                <Repeater label="Vector Layers" xpath="Vector">
                   <!-- TODO: this is a problem we need to address -->
                   <Node xpathlabel="Name" type="polygon" symbology="" />
                 </Repeater>
-                <Repeater label="Image Layers" xpath="//Image">
+                <Repeater label="Image Layers" xpath="Image">
                   <Node xpathlabel="Name" type="file" />
                 </Repeater>
               </Children>
             </Node>
-            <Node label="DEM" xpath="//DEM" type="raster" symbology="dem" transparency="40" id="dem" />
-            <Node xpathlabel="Name" xpath="//Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
-            <Node label="Project Report" xpath="//HTMLFile[@id='REPORT']" type="report" />
-            <Node label="Log File" xpath="//LogFile" type="file" />
+            <Node label="DEM" xpath="DEM" type="raster" symbology="dem" transparency="40" id="dem" />
+            <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
+            <Node label="Project Report" xpath="HTMLFile[@id='REPORT']" type="report" />
+            <Node label="Log File" xpath="LogFile" type="file" />
           </Children>
         </Node>
       </Repeater>
