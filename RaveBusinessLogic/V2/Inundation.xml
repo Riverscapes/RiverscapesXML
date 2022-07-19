@@ -6,7 +6,7 @@
     <Children>
       <Node label="Mapping" id="mapping">
         <Children>
-          <Repeater label="DCEs" xpath="Realizations/Realization">
+          <Repeater label="DCEs" xpath="Realizations/InundationDCE">
             <Node xpathlabel="Name">
               <Children>
                 <Node label="Channels">
@@ -49,21 +49,21 @@
         <Children>
           <Node label="Basemap">
             <Children>
-              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='AP_01']" type="raster" id="ap01" />
-              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='AP_02']" type="raster" id="ap02" />
+              <Node xpathlabel="Name" xpath="CommonDatasets/Raster[@id='AP_01']" type="raster" id="ap01" />
+              <Node xpathlabel="Name" xpath="CommonDatasets/Raster[@id='AP_02']" type="raster" id="ap02" />
             </Children>
           </Node>
           <Node label="Context">
             <Children>
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='BRAT']" type="line" symbology="oCC_EX" id="BRAT" />
-              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VBET']" type="polygon" symbology="vbet68_filled" id="vbet" />
-              <Node xpathlabel="Name" xpath="Inputs/DEM[@id='DEM']" type="raster" symbology="dem" transparency="60" id="dem" />
-              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
+              <Node xpathlabel="Name" xpath="CommonDatasets/Vector[@id='BRAT']" type="line" symbology="oCC_EX" id="BRAT" />
+              <Node xpathlabel="Name" xpath="CommonDatasets/Vector[@id='VBET']" type="polygon" symbology="vbet68_filled" id="vbet" />
+              <Node xpathlabel="Name" xpath="CommonDatasets/DEM[@id='DEM']" type="raster" symbology="dem" transparency="60" id="dem" />
+              <Node xpathlabel="Name" xpath="CommonDatasets/Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
             </Children>
           </Node>
         </Children>
       </Node>
-      <Node label="Summary Comparisons" xpath="Realizations/Realization/Outputs">
+      <Node label="Summary Comparisons" xpath="Realizations/Realization[@id='DCE_0102CD']/Outputs">
         <Children>
           <Repeater label="Summary Metrics (PDFs)" xpath="PDF">
             <Node xpathlabel="Name" type="file" />
