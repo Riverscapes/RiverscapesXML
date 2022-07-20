@@ -11,7 +11,7 @@
             <Repeater label="Inputs" xpath="Inputs/*">
               <Node xpathlabel="Name" xpath="Vector" type="line" symbology="vector_GPP" />
             </Repeater>
-            <Repeater label="Analysis" xpath="Analyses/Analysis/Outputs/Vector">
+            <Repeater label="Analysis" xpath="Analyses/Analysis/Products/Vector">
               <Node xpathlabel="Name" xpath="Vector" type="line" symbology="vector_GPP" />
             </Repeater>
           </Children>

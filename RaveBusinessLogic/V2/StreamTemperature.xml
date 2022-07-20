@@ -10,7 +10,7 @@
           <Children collapsed="false">
             <Node label="Analyses" xpath="Analyses">
               <Children>
-                <Node label="Outputs" xpath="Analysis/Outputs">
+                <Node label="Outputs" xpath="Analysis/Products">
                   <Children>
                     <Node xpathlabel="Name" xpath="Vector" type="line" symbology="StreamTemp" />
                   </Children>

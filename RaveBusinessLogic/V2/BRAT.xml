@@ -10,56 +10,56 @@
           <Node xpathlabel="Name" xpath="SQLiteDB" type="file" />
           <Node label="Capacity">
             <Children>
-              <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oCC_EX_filtered" id="ex_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
-              <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="mCC_EX_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />
-              <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oCC_HPE_filtered" id ="his_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
-              <Node label="Historic Dam Size" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="mCC_HPE_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+              <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_EX_filtered" id="ex_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+              <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_EX_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />
+              <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_HPE_filtered" id ="his_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+              <Node label="Historic Dam Size" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_HPE_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
               <Node label="Capacity for Entire Network (overestimate including non-perennial) ">
                 <Children>
-                  <Node label="Existing Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oCC_EX"  />
-                  <Node label="Existing Dam Size (All)" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="mCC_EX_CT"  />
-                  <Node label="Historic Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oCC_HPE" />
-                  <Node label="Historic Dam Size (All)" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="mCC_HPE_CT"  />
+                  <Node label="Existing Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_EX"  />
+                  <Node label="Existing Dam Size (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_EX_CT"  />
+                  <Node label="Historic Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_HPE" />
+                  <Node label="Historic Dam Size (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_HPE_CT"  />
                 </Children>
               </Node>
             </Children>
           </Node>
           <Node label="Management">
             <Children collapsed="true">
-              <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="limitation" id="limited" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
-              <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="risk" id="risk" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
-              <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="opportunity" id="opportunity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 "/>
+              <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="limitation" id="limited" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+              <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="risk" id="risk" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+              <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="opportunity" id="opportunity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 "/>
             </Children>
           </Node>
           <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
-          <Node label="Project Report"  xpath="Realizations/Realization/Outputs/HTMLFile" type="report" />
+          <Node label="Project Report"  xpath="HTMLFile" type="report" />
 
         </Children>
       </Node>
-      <Node label="Intermediates" xpath="Realizations/Realization/Outputs">
+      <Node label="Intermediates" xpath="Realizations/Realization">
         <Children collapsed="true">
           <Node label="Network">
             <Children>
-              <Node label="Perennial" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="IsPeren" />
-              <Node label="Zero or Null Drainage Area" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="null_da" />
+              <Node label="Perennial" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="IsPeren" />
+              <Node label="Zero or Null Drainage Area" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="null_da" />
             </Children>
           </Node>
           <Node label="Topographic Index">
             <Children>
-              <Node label="Slope" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iGeo_Slope" id="slope" />
-              <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iGeo_DA" id="DA" />
+              <Node label="Slope" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iGeo_Slope" id="slope" />
+              <Node label="Drainage Area" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iGeo_DA" id="DA" />
             </Children>
           </Node>
           <Node label="Hydrology">
             <Children>
-              <Node label="High Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iHyd_SP2" id="flow_high" />
-              <Node label="Base Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iHyd_SPLow" id="flow_base" />
+              <Node label="High Flow Stream Power (watts)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iHyd_SP2" id="flow_high" />
+              <Node label="Base Flow Stream Power (watts)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iHyd_SPLow" id="flow_base" />
             </Children>
           </Node>
           <Node label="Overall Vegetation Dam Capacity">
             <Children>
-              <Node label="Existing Veg Dam Building Capacity" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oVC_EX" />
-              <Node label="Historic Veg Dam Building Capacity" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oVC_HPE" />
+              <Node label="Existing Veg Dam Building Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oVC_EX" />
+              <Node label="Historic Veg Dam Building Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oVC_HPE" />
             </Children>
           </Node>
           <Node label="Vegetation Suitability">
@@ -70,23 +70,23 @@
           </Node>
           <Node label="Anthropogenic Intermediates">
             <Children>
-              <!-- <Node label="Priority Beaver Translocation Areas" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_Privat" /> -->
-              <Node label="Land Ownership per Reach" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="ADMIN_AGEN" />
-              <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_LU" />
-              <Node label="Distance to Nearest Infrastructure" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="oPC_Dist" />
-              <Node label="Distance to Railroad" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_Rail" />
-              <Node label="Distance to Railroad in Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_RailVB" />
-              <Node label="Distance to Road" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_Road" />
-              <Node label="Distance to Road Crossing" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_RoadX" />
-              <Node label="Distance to Road in Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_RoadVB" />
-              <Node label="Distance to Points of Diversion" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_DivPts" />
-              <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@lyrname='BRAT_RESULTS']" type="line" symbology="iPC_Canal" />
+              <!-- <Node label="Priority Beaver Translocation Areas" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Privat" /> -->
+              <Node label="Land Ownership per Reach" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="ADMIN_AGEN" />
+              <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU" />
+              <Node label="Distance to Nearest Infrastructure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oPC_Dist" />
+              <Node label="Distance to Railroad" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Rail" />
+              <Node label="Distance to Railroad in Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RailVB" />
+              <Node label="Distance to Road" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Road" />
+              <Node label="Distance to Road Crossing" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RoadX" />
+              <Node label="Distance to Road in Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RoadVB" />
+              <Node label="Distance to Points of Diversion" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_DivPts" />
+              <Node label="Distance to Canals/Ditches" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Canal" />
             </Children>
           </Node>
           <Node label="Buffers">
             <Children>
-              <Node label="30m Buffer" xpath="Intermediates/Geopackage/Layers/Vector[@id='30M_BUFFER']" type="polygon" symbology="buf30"/>
-              <Node label="100m Buffer" xpath="Intermediates/Geopackage/Layers/Vector[@id='100M_BUFFER']" type="polygon" symbology="buf100"/>
+              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='30M_BUFFER']" type="polygon" symbology="buf30"/>
+              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='buffer_100m']" type="polygon" symbology="buf100"/>
             </Children>
           </Node>
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
@@ -96,20 +96,20 @@
         <Children collapsed="true">
           <Node label="Network">
             <Children>
-              <Node label="Network" xpath="Geopackage/Layers/Vector[@lyrname='FLOWLINES']" type="line" symbology="flow_lines" />
-              <Node label="Flow Direction" xpath="Geopackage/Layers/Vector[@lyrname='FLOWLINES']" type="line" symbology="FlowDirection" />
-              <Node label="River Polygons (NHD Area)" xpath="Geopackage/Layers/Vector[@lyrname='FLOW_AREA']" type="polygon" symbology="FlowArea" />
-              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Geopackage/Layers/Vector[@lyrname='WATERBODIES']" type="polygon" symbology="Waterbodies" />
+              <Node label="Network" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flow_lines" />
+              <Node label="Flow Direction" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="FlowDirection" />
+              <Node label="River Polygons (NHD Area)" xpath="Geopackage/Layers/Vector[@lyrName='flowareas']" type="polygon" symbology="FlowArea" />
+              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Geopackage/Layers/Vector[@lyrName='waterbodies']" type="polygon" symbology="Waterbodies" />
             </Children>
           </Node>
           <Node label ="Anthropogenic Layers">
             <Children>
-              <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@lyrname='CANALS']" type="line" symbology="canals_ditches"/>
-              <Node label="Railroads" xpath="Geopackage/Layers/Vector[@lyrname='RAIL']" type="line" symbology="railroads"/>
-              <Node label="Roads" xpath="Geopackage/Layers/Vector[@lyrname='ROADS']" type="line" symbology="roads"/>
-              <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@lyrname='OWNERSHIP']" type="polygon" symbology="ownership" transparency="40"/>
-              <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrname='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_hollow"/>
-              <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrname='VALLEY_BOTTOM']" type="polygon" symbology="vbet68_filled"/>
+              <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@lyrName='canals']" type="line" symbology="canals_ditches"/>
+              <Node label="Railroads" xpath="Geopackage/Layers/Vector[@lyrName='rail']" type="line" symbology="railroads"/>
+              <Node label="Roads" xpath="Geopackage/Layers/Vector[@lyrName='roads']" type="line" symbology="roads"/>
+              <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@lyrName='OWNERSHIP']" type="polygon" symbology="ownership" transparency="40"/>
+              <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_hollow"/>
+              <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled"/>
               <!-- <Node label="Land Use" xpath="Raster[@id='EXVEG']" type="raster" symbology="land_use" transparency="40"/> -->
             </Children>
           </Node>
@@ -142,7 +142,7 @@
           <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
-      <Node label="Log File" xpath="Realizations/Realization/LogFile" type="file" />
+      <Node label="Log File" xpath="Realizations/Realization/Logs/LogFile" type="file" />
     </Children>
   </Node>
   <Views default="BRAT_exOutputs">
