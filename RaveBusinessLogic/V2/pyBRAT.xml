@@ -4,30 +4,30 @@
   <ProjectType>pyBRAT</ProjectType>
   <Node xpathlabel="Name">
     <Children collapsed="false">
-      <Node label="Outputs" xpath="Realizations/Realization/Analyses/Analysis/Outputs">
+      <Node label="Outputs" xpath="Realizations/Realization/Analyses/Analysis">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="SQLiteDB" type="file" />
           <Node xpathlabel="Name" xpath="HTMLFile" type="report" />
           <Node label="Capacity">
             <Children>
-              <Node label="Existing Dam Capacity" xpath="Vector[@id='COMBINED_CAPACITY']" type="line" symbology="oCC_EX" id="ex_capacity" />
-              <Node label="Existing Dam Size" xpath="Vector[@id='COMBINED_CAPACITY']" type="line" symbology="mCC_EX_CT" />
-              <Node label="Historic Dam Capacity" xpath="Vector[@id='COMBINED_CAPACITY']" type="line" symbology="oCC_HPE" id ="his_capacity"/>
-              <Node label="Historic Dam Size" xpath="Vector[@id='COMBINED_CAPACITY']" type="line" symbology="mCC_HPE_CT" />
+              <Node label="Existing Dam Capacity" xpath="Products/Vector[@id='COMBINED_CAPACITY']" type="line" symbology="oCC_EX" id="ex_capacity" />
+              <Node label="Existing Dam Size" xpath="Products/Vector[@id='COMBINED_CAPACITY']" type="line" symbology="mCC_EX_CT" />
+              <Node label="Historic Dam Capacity" xpath="Products/Vector[@id='COMBINED_CAPACITY']" type="line" symbology="oCC_HPE" id ="his_capacity"/>
+              <Node label="Historic Dam Size" xpath="Products/Vector[@id='COMBINED_CAPACITY']" type="line" symbology="mCC_HPE_CT" />
             </Children>
           </Node>
           <Node label="Management">
             <Children collapsed="true">
-              <Node label="Unsuitable or Limited Opportunities" xpath="Vector[@id='OPPORTUNITY']" type="line" symbology="oPBRC_UD" id="limited" />
+              <Node label="Unsuitable or Limited Opportunities" xpath="Products/Vector[@id='OPPORTUNITY']" type="line" symbology="oPBRC_UD" id="limited" />
               <Node label="Risk of Undesirable Dams" xpath="Vector[@id='RISK']" type="line" symbology="oPBRC_UI" id="risk" />
-              <Node label="Restoration or Conservation Opportunities" xpath="Vector[@id='OPPORTUNITY']" type="line" symbology="oPBRC_CR" id="opportunity" />
+              <Node label="Restoration or Conservation Opportunities" xpath="Products/Vector[@id='OPPORTUNITY']" type="line" symbology="oPBRC_CR" id="opportunity" />
             </Children>
           </Node>
           <Node label="Validation">
             <Children collapsed="true">
-              <Node label="Predicted Dam Density vs. Surveyed Dam Density" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="predicted_surveyed" id=""/>
-              <Node label="Percent of Historic Dam Capacity Remaining" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="percent_remaining" id=""/>
-              <Node label="Current Beaver Dam Management Strategies" xpath="Vector[@id='DATA_VALIDATION']" type="line" symbology="current_strategies" id=""/>
+              <Node label="Predicted Dam Density vs. Surveyed Dam Density" xpath="Products/Vector[@id='DATA_VALIDATION']" type="line" symbology="predicted_surveyed" id=""/>
+              <Node label="Percent of Historic Dam Capacity Remaining" xpath="Products/Vector[@id='DATA_VALIDATION']" type="line" symbology="percent_remaining" id=""/>
+              <Node label="Current Beaver Dam Management Strategies" xpath="Products/Vector[@id='DATA_VALIDATION']" type="line" symbology="current_strategies" id=""/>
             </Children>
           </Node>
         </Children>
@@ -74,7 +74,7 @@
               <Node label="Land Ownership per Reach" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="PY_ADMIN" />
               <Node label="Land Use Intensity" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_LU" />
               <Node label="Distance to Nearest Infrastructure" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="oPC_Dist" />
-              <Node label="Distance to Railroad" xpath="Vector[@id='FULL_INT']" type="line" symbology="iPC_Rail" />
+              <Node label="Distance to Railroad" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_Rail" />
               <Node label="Distance to Railroad in Valley Bottom" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_RailVB" />
               <Node label="Distance to Road" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_Road" />
               <Node label="Distance to Road Crossing" xpath="Intermediates/Vector[@id='FULL_INT']" type="line" symbology="iPC_RoadX" />
@@ -103,12 +103,12 @@
             <Children>
               <Node label="Provisional Points of Diversion" xpath="Vector[@id='DIVERSION_PTS']" type="point" symbology="py_div_point" />
               <Node label="Canals and Ditches" xpath="Vector[@id='CANAL']" type="line" symbology="canals_ditches" />
-              <Node label="Railroads" xpath="Vector[@id='RR']" type="line" symbology="railroads" />
+              <Node label="Railroads" xpath="Vector[@id='layer_RR']" type="line" symbology="railroads" />
               <Node label="Roads" xpath="Vector[@id='ROAD']" type="line" symbology="py_roads" />
               <Node label="Land Ownership" xpath="Vector[@id='OWNERSHIP']" type="polygon" symbology="ownership" transparency="40" />
               <Node label="Valley Bottom Extent (Hollow)" xpath="Vector[@id='VALLEY']" type="polygon" symbology="vbet68_hollow" />
               <Node label="Valley Bottom Extent (Filled)" xpath="Vector[@id='VALLEY']" type="polygon" symbology="vbet68_filled" />
-              <Node label="Land Use" xpath="Raster[@id='LU']" type="raster" symbology="py_lu" transparency="40"/>
+              <Node label="Land Use" xpath="Raster[@id='layer_LU']" type="raster" symbology="py_lu" transparency="40"/>
             </Children>
           </Node>
           <Node label="Vegetation">
@@ -130,10 +130,10 @@
           </Node>
           <Node label="Topography">
             <Children>
-              <Node label="Flow Accumulation" xpath="Raster[@id='DR']" type="raster" symbology="py_flow_accumulation" transparency="40" />
+              <Node label="Flow Accumulation" xpath="Raster[@id='layer_DR']" type="raster" symbology="py_flow_accumulation" transparency="40" />
               <Node label="Slope" xpath="Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
               <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" />
-              <Node label="Hillshade" xpath="Raster[@id='HS']" type="raster" symbology="hillshade" id="hillshade" />
+              <Node label="Hillshade" xpath="Raster[@id='layer_HS']" type="raster" symbology="hillshade" id="hillshade" />
             </Children>
           </Node>
         </Children>

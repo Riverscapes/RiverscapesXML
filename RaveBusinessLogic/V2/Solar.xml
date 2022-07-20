@@ -20,7 +20,7 @@
             </Node>
             <Node label="Analyses" xpath="Analyses">
               <Children>
-                <Node label="Outputs" xpath="Analysis/Outputs">
+                <Node label="Outputs" xpath="Analysis/Products">
                   <Children>
                     <Node xpathlabel="Name" xpath="Raster" type="raster" symbology="Solar_Raster" />
                     <Node xpathlabel="Name" xpath="Vector" type="line" symbology="Solar_Vector" />
