@@ -81,9 +81,9 @@
                   <Children>
                     <Node label="Existing Vegetation">
                       <Children collapsed="true">
-                        <Node label="Veg Type - EVT Type" xpath="Inputs/ExistingVegetation/ExistingRasters/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Type" transparency="40" />
-                        <Node label="Veg Type - EVT Name" xpath="Inputs/ExistingVegetation/ExistingRasters/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
-                        <Node label="Veg Type - EVT Class" xpath="Inputs/ExistingVegetation/ExistingRasters/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
+                        <Node label="Veg Type - EVT Type" xpath="Inputs/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Type" transparency="40" />
+                        <Node label="Veg Type - EVT Name" xpath="Inputs/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
+                        <Node label="Veg Type - EVT Class" xpath="Inputs/Raster[@id='EXISTING_VEGETATION']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
                       </Children>
                     </Node>
                     <Node label="Historic Vegetation">
