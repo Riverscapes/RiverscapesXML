@@ -1,0 +1,10 @@
+autopep8==1.5.2
+inquirer==2.10.0
+jsonschema==3.2.0
+lxml==4.9.1
+pycodestyle==2.6.0
+pylint==2.5.2
+requests==2.25.1
+termcolor==1.1.0
+toml==0.10.1
+urllib3==1.26.5
