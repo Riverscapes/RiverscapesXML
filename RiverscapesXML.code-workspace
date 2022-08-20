@@ -13,13 +13,42 @@
 			"path": "Programs"
 		},
 		{
+      "name": "🔧 Python Scripts",
 			"path": "python"
 		},
 		{
-			"name": "RiverscapesXML",
+      "name": "🏠 ROOT",
 			"path": "."
 		}
 	],
 	"settings": {
+    "[python]": {
+      "editor.tabSize": 4,
+      "editor.formatOnSave": true,
+    },
+    "python.linting.pylintArgs": [
+      "--extension-pkg-whitelist=sqlite3",
+      "--extension-pkg-allow-list=sqlite3",
+      "--ignore=E501",
+      "--max-line-length=240"    
+    ],  
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleArgs": [
+      "--ignore=E501",
+      "--max-line-length=240"
+    ],
+    "python.formatting.autopep8Args": [
+      "--ignore=E501",
+      "--max-line-length=240"
+    ],
+    "python.pythonPath": "{workspaceFolder}/python/.venv/bin/python3",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true,
+    "python.autoComplete.showAdvancedMembers": false,
+    "python.testing.pytestEnabled": true,
+    "jest.showTerminalOnLaunch": false
 	}
 }
