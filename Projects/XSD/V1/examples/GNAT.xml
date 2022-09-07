@@ -1,104 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../GNAT.xsd">
-
-    <Name>My GNAT Project!!</Name>
-    <ProjectType>GNAT</ProjectType>
-
-    <MetaData>
-        <Meta name="Region">CRB</Meta>
-        <Meta name="Watershed">Middle Fork John Day</Meta>
-        <Meta name="Operator">KMW</Meta>
-    </MetaData>
-
-    <Inputs>
-        <Vector id="MFJD_NHD_v02" guid="">
-            <Name>MFJD NHD v02</Name>
-            <Path>Inputs/MFJD_NHD_V2_219324985344.shp</Path>
-            <MetaData>
-                <Meta name="origPath">C://Dataset.shp</Meta>
-                <Meta name="sourceType">NHD+V02</Meta>
-                <Meta name="networkScale">1:24K</Meta>
-            </MetaData>
-        </Vector>
-    </Inputs>
-
-    <Realizations>
-        <GNAT guid=""
-              id="gnatproject1"
-              dateCreated=""
-              productVersion="">
-            <Name>My First GNATwork</Name>
-            <MetaData>
-                <Meta name="User">Jean</Meta>
-            </MetaData>
-
-            <Inputs>
-                <Vector ref="MFJD_NHD_v02"/>
-            </Inputs>
-
-            <Outputs>
-                <GNATNetwork>
-                    <Name>MFJD_20170212</Name>
-                    <Path>Output/My_First_GNATwork/MFJD_20170212.shp</Path>
-                </GNATNetwork>
-                <GNATNetworkTable>
-                    <Name>MFJD_2017021_NetworkTable</Name>
-                    <Path>Output/My_First_GNATwork/MFJD_20170212_NetworkTable.dbf</Path>
-                </GNATNetworkTable>
-            </Outputs>
-
-            <Analyses>
-                <SegmentedNetwork>
-
-                    <Name>My Segmented Network 1000m</Name>
-
-                    <MetaData>
-                        <Meta name="thing">value</Meta>
-                    </MetaData>
-
-                    <Params>
-                        <Param name="fieldSegID">SegID</Param>
-                        <Param name="dissolveOption">Stream Branches</Param>
-                        <Param name="segmentationDistance">1000</Param>
-                        <Param name="segmentationDirection">"Move Upstream"</Param>
-                        <Param name="remainderOption">Proportional</Param>
-                    </Params>
-
-                    <Outputs>
-                        <GNATNetwork>
-                            <Name>MFJD_20170212_Seg1000</Name>
-                            <Path>Output/My_First_GNATwork/MFJD_20170212_Seg1000.shp</Path>
-                        </GNATNetwork>
-                        <GNATNetworkTable>
-                            <Name>MFJD_2017021_Seg1000_NetworkTable</Name>
-                            <Path>Output/My_First_GNATwork/MFJD_20170212_Seg1000_NetworkTable.dbf</Path>
-                        </GNATNetworkTable>
-                    </Outputs>
-                </SegmentedNetwork>
-                <BranchNetwork>
-
-                    <Name>My Stream Branch Network</Name>
-
-                    <MetaData>
-                        <Meta name="thing">value</Meta>
-                    </MetaData>
-
-                    <Params>
-                        <Param name="fieldBranchID">SegID</Param>
-                    </Params>
-                    <Outputs>
-                        <GNATNetwork>
-                            <Name>MFJD_20170212_Branch</Name>
-                            <Path>Output/My_First_GNATwork/MFJD_20170212_Branch.shp</Path>
-                        </GNATNetwork>
-                        <GNATNetworkTable>
-                            <Name>MFJD_2017021_Seg1000_NetworkTable</Name>
-                            <Path>Output/My_First_GNATwork/MFJD_20170212_Branch_NetworkTable.dbf</Path>
-                        </GNATNetworkTable>
-                    </Outputs>
-                </BranchNetwork>
-            </Analyses>
-        </GNAT>
-    </Realizations>
+	<Name>GNAT for HUC 17060304</Name>
+	<ProjectType>GNAT</ProjectType>
+	<MetaData>
+		<Meta name="ModelVersion">0.1.7</Meta>
+		<Meta name="dateCreated" type="isodate">2022-09-06T16:50:09.633400</Meta>
+		<Meta name="HUC8">17060304</Meta>
+		<Meta name="HUC">17060304</Meta>
+		<Meta name="GNATVersion">0.1.7</Meta>
+		<Meta name="GNATTimestamp" type="timestamp">1662508209</Meta>
+	</MetaData>
+	<Realizations>
+		<GNAT id="GNAT" dateCreated="2022-09-06T16:50:09.641478" guid="0df32424-d1b5-4c88-bda4-179cac5b58f6" productVersion="0.1.7">
+			<Name>GNAT for HUC 17060304</Name>
+			<LogFile guid="39e59626-06e2-4b67-92f3-f56cd83bd7e1" id="LOGFILE">
+				<Name>Log</Name>
+				<Path>gnat.log</Path>
+			</LogFile>
+			<Inputs>
+				<Raster guid="9bbf691b-a1d3-451c-928e-732956729b36" id="DEM">
+					<Name>DEM</Name>
+					<Path>inputs/dem.tif</Path>
+				</Raster>
+				<Geopackage guid="f43500e0-c3c2-4f21-aec0-6ebd33377ce5" id="INPUTS">
+					<Name>Inputs</Name>
+					<Path>inputs/inputs.gpkg</Path>
+					<Layers>
+						<Vector guid="0627a2ab-223e-45fa-8fa2-1b62883321f3" id="FLOWLINES">
+							<Name>Flowlines</Name>
+							<Path>flowlines</Path>
+						</Vector>
+						<Vector guid="36986578-e543-4580-a317-d43d235c8c53" id="CHANNEL_AREA">
+							<Name>Channel_Area</Name>
+							<Path>vbet_segments</Path>
+						</Vector>
+						<Vector guid="4cb45b16-fc79-41c3-be21-8a5ca40bf261" id="CONFINING_POLYGON">
+							<Name>Confining Polygon</Name>
+							<Path>points</Path>
+						</Vector>
+						<Vector guid="d9d2fc5a-ea3c-46f5-9e86-fbd93aad87d4" id="VBET_CENTERLINE">
+							<Name>VBET Centerline</Name>
+							<Path>vbet_centerlines</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Inputs>
+			<Intermediates/>
+			<Outputs>
+				<Geopackage guid="b085a7cd-2f92-41c7-8b57-919d1a5d0d1c" id="GNAT_OUTPUTS">
+					<Name>GNAT</Name>
+					<Path>outputs/gnat.gpkg</Path>
+					<Layers>
+						<Vector guid="4262a623-0de2-4bda-b26c-ad2bfeaa7c9e" id="POINT_METRICS">
+							<Name>Point Metrics</Name>
+							<Path>vw_point_metrics</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Outputs>
+		</GNAT>
+	</Realizations>
 </Project>

@@ -36,6 +36,7 @@
       <xs:extension base="RealizationType">
         <xs:sequence>
           <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" />
+          <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" />
           <xs:element type="GNATOutputsType" name="Outputs" minOccurs="0" />
           <xs:element type="GNATAnalysesType" name="Analyses" minOccurs="0" />
         </xs:sequence>
@@ -46,8 +47,9 @@
 
   <xs:complexType name="GNATOutputsType">
     <xs:sequence>
-      <xs:element type="VectorType" name="GNATNetwork" />
-      <xs:element type="VectorType" name="GNATNetworkTable" />
+      <xs:element type="GeopackageType" name="Geopackage" minOccurs="0"/>
+      <xs:element type="VectorType" name="GNATNetwork" minOccurs="0"/>
+      <xs:element type="VectorType" name="GNATNetworkTable" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
