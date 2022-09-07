@@ -32,6 +32,7 @@
       <Product id="pyBRAT" name="pyBRAT 3.x Models" folder="pyBRAT" url="" />
       <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
       <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="GNAT" name="Geomorphic Network and Analysis Tool (GNAT)" folder="GNAT" url="" />
       <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
       <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
       <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
@@ -59,6 +60,7 @@
         <Product ref="pyBRAT" />
         <Product ref="BRAT" />
         <Product ref="VBET" />
+        <Product ref="GNAT" />
         <Product ref="RSContext" />
         <Product ref="ChannelArea" />
         <Product ref="TauDEM" />
