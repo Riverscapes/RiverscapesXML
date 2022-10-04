@@ -26,7 +26,7 @@ def get_suffix(path_str: str):
         raise Exception('fiding suffix for file: {}'.format(path_str))
 
 
-def get_project_datasets(project_path, project):
+def get_project_datasets(project_path):
     """_summary_
 
     Args:
@@ -159,7 +159,8 @@ def match_files_with_datasets_pid(conn, curs, project):
     ds_rel_path = ""
 
     # 1. Get all the files for this project
-    curs.execute("SELECT * FROM projectFiles WHERE projectId = ?", [project["id"]])
+    curs.execute("SELECT * FROM projectFiles WHERE projectId = ?",
+                 [project["id"]])
     proj_files = curs.fetchall()
 
     # Get all the Datasets from the XML for this project
@@ -213,8 +214,10 @@ def match_files_with_datasets_pid(conn, curs, project):
                     break
                 else:
                     ds_rel_path_l = ds_rel_path.lower()
-                    ds_ext = ds_rel_path_l[ds_rel_path_l.find(".") + 1:len(ds_rel_path_l)]
-                    f_ext = file_rel_path_l[file_rel_path_l.find(".") + 1:len(file_rel_path_l)]
+                    ds_ext = ds_rel_path_l[ds_rel_path_l.find(
+                        ".") + 1:len(ds_rel_path_l)]
+                    f_ext = file_rel_path_l[file_rel_path_l.find(
+                        ".") + 1:len(file_rel_path_l)]
 
                     if file_rel_path_l == ds_rel_path_l:
                         match_count += 1
@@ -244,9 +247,11 @@ def match_files_with_datasets_pid(conn, curs, project):
                         error_msg_arr.append("FILE_IN_DIFFERENT_DIR")
                         break
 
-            deduped_ds_matches = list(dict.fromkeys([row['id'] for row in dataset_matches]))
+            deduped_ds_matches = list(dict.fromkeys(
+                [row['id'] for row in dataset_matches]))
             if len(deduped_ds_matches) > 1:
-                error_msg_arr.append(f"DUPLICATE_DATASETS::{':'.join(deduped_ds_matches)}")
+                error_msg_arr.append(
+                    f"DUPLICATE_DATASETS::{':'.join(deduped_ds_matches)}")
             elif found_match is True:
                 ds_id = deduped_ds_matches[0]
                 new_path = f"{dataset_matches[0]['xPath']}.{suffix}"
@@ -255,8 +260,10 @@ def match_files_with_datasets_pid(conn, curs, project):
         if not found_match and not is_ignored:
             in_proj_files_but_not_in_datasets_count += 1
 
-        error_msg = ','.join(list(dict.fromkeys(error_msg_arr))) if len(error_msg_arr) > 0 else None
-        status_msg = ','.join(list(dict.fromkeys(status_arr))) if len(status_arr) > 0 else None
+        error_msg = ','.join(list(dict.fromkeys(error_msg_arr))) if len(
+            error_msg_arr) > 0 else None
+        status_msg = ','.join(list(dict.fromkeys(status_arr))) if len(
+            status_arr) > 0 else None
 
         curs.execute("""
             UPDATE projectFiles SET
@@ -295,7 +302,8 @@ def match_datasets_with_files(conn, curs, project):
     not_found = []
 
     # Get all project files for a project
-    curs.execute("SELECT * FROM projectFiles where projectId = ?", [project["id"]])
+    curs.execute("SELECT * FROM projectFiles where projectId = ?",
+                 [project["id"]])
     project_files = curs.fetchall()
 
     # Get all datasets for a project
@@ -304,10 +312,12 @@ def match_datasets_with_files(conn, curs, project):
 
     for _idx, ds in enumerate(datasets):
         found_match = False
-        ds_rel_path = ds['localPath'].replace("\\", "/").replace(" ", "_").lower()
+        ds_rel_path = ds['localPath'].replace(
+            "\\", "/").replace(" ", "_").lower()
 
         for _idy, proj_file in enumerate(project_files):
-            pf_rel_path = proj_file['relPath'].replace("\\", "/").replace(" ", "_").lower()
+            pf_rel_path = proj_file['relPath'].replace(
+                "\\", "/").replace(" ", "_").lower()
             if ds_rel_path == pf_rel_path:
                 proj_files_id_link.append([ds['id'], proj_file['id']])
                 match_count += 1
@@ -340,7 +350,8 @@ def match_datasets_with_files(conn, curs, project):
             not_found += ds_rel_path
 
         if len(errors) > 0:
-            error_msg = ','.join(list(dict.fromkeys(errors))) if len(errors) > 0 else None
+            error_msg = ','.join(list(dict.fromkeys(errors))
+                                 ) if len(errors) > 0 else None
             curs.execute("""
                 UPDATE datasets SET
                     error = ?,
@@ -364,7 +375,8 @@ def add_link_to_db(db_links, curs):
     """
     log = Logger('add_link_to_db')
     for i in range(len(db_links)):
-        qry = "UPDATE projectFiles SET dataset_id = " + db_links[i][1] + " WHERE id = " + db_links[i][0]
+        qry = "UPDATE projectFiles SET dataset_id = " + \
+            db_links[i][1] + " WHERE id = " + db_links[i][0]
         log.info(qry)
         curs.execute(qry)
 
@@ -386,11 +398,13 @@ def comment_out_missing_files(conn, curs, wh_xml):
     ds_with_no_f = list(curs.fetchall())
 
     for j in enumerate(ds_with_no_f):
-        xml_path = os.path.join(wh_xml, ds_with_no_f[j]['guid'], "project.rs.xml")
+        xml_path = os.path.join(
+            wh_xml, ds_with_no_f[j]['guid'], "project.rs.xml")
         log.info(str(j + 1) + "/" + str(proj_len), xml_path)
         xml_tree = etree.parse(xml_path)
 
-        x = xml_tree.xpath("//" + ds_with_no_f[j]["xmlNodeTag"] + "[@id='" + ds_with_no_f[j]["xmlId"] + "']")
+        x = xml_tree.xpath(
+            "//" + ds_with_no_f[j]["xmlNodeTag"] + "[@id='" + ds_with_no_f[j]["xmlId"] + "']")
         if len(x) == 0:
             pass
         elif len(x) > 1:
@@ -399,7 +413,8 @@ def comment_out_missing_files(conn, curs, wh_xml):
 
             outer_dir = result[3][result[3].find("#") + 1:len(result[3])]
 
-            x = xml_tree.xpath("//" + "Realization" + "[@id='" + outer_dir + "']/" + result[4] + "/" + ds_with_no_f[j]["xmlNodeTag"] + "[@id='" + ds_with_no_f[j]["xmlId"] + "']")
+            x = xml_tree.xpath("//" + "Realization" + "[@id='" + outer_dir + "']/" + result[4] +
+                               "/" + ds_with_no_f[j]["xmlNodeTag"] + "[@id='" + ds_with_no_f[j]["xmlId"] + "']")
             if len(x) != 1:
                 pass
             else:
@@ -430,10 +445,12 @@ def create_db_copy(db_rel_old_path: str, reset: bool = False):
     log = Logger('create_db_copy')
 
     if 'DATA_XML' not in os.environ or len(os.environ['DATA_XML']) < 5 or not os.path.isdir(os.environ['DATA_XML']):
-        raise Exception('environment value DATA_XML was not a valid folder:' + os.environ['DATA_XML'])
+        raise Exception(
+            'environment value DATA_XML was not a valid folder:' + os.environ['DATA_XML'])
 
     db_old_path = os.path.join(os.environ['DATA_XML'], db_rel_old_path)
-    db_path_new = os.path.join(os.environ['DATA_XML'], f"{os.path.basename(db_rel_old_path)}_MIGRATION.sqlite")
+    db_path_new = os.path.join(
+        os.environ['DATA_XML'], f"{os.path.basename(db_rel_old_path)}_MIGRATION.sqlite")
 
     if (os.path.isfile(db_path_new) and reset is True):
         log.info('file detected and reset is True. Deleting migration sqliteDB')
@@ -451,7 +468,8 @@ def create_db_copy(db_rel_old_path: str, reset: bool = False):
 
     # Some of the data is dirty and we need to clean it
     for subst in ['Solar', 'EC', 'QRF']:
-        curs.execute("UPDATE projects SET projType = ? WHERE projType LIKE ?", [subst, '%' + subst + '%'])
+        curs.execute("UPDATE projects SET projType = ? WHERE projType LIKE ?", [
+                     subst, '%' + subst + '%'])
         conn.commit()
     # If we've explicitly asked for a reset then nullify the apporpriate columns
     if reset is True:
@@ -503,13 +521,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('db_path', help='Original DB', type=str)
     parser.add_argument('migrated_xml_folder', help='Original DB', type=str)
-    parser.add_argument('--reset', help='(optional) reset the migration and start over from scratch', action='store_true', default=False)
+    parser.add_argument('--reset', help='(optional) reset the migration and start over from scratch',
+                        action='store_true', default=False)
 
     args = parser.parse_args()
     # Make a new copy of the Database so we don't affect the original
-    new_warehouse_xml = os.path.join(os.environ['DATA_XML'], f"{os.path.basename(args.db_path)}_MIGRATION")
+    new_warehouse_xml = os.path.join(
+        os.environ['DATA_XML'], f"{os.path.basename(args.db_path)}_MIGRATION")
 
-    db_path_new = create_db_copy(os.path.join(os.environ['DATA_XML'], args.db_path), os.path.join(os.environ['DATA_XML'], args.db_path))
+    db_path_new = create_db_copy(os.path.join(
+        os.environ['DATA_XML'], args.db_path), os.path.join(os.environ['DATA_XML'], args.db_path))
 
     conn = sqlite3.connect(db_path_new)
     conn.row_factory = dict_factory
@@ -522,9 +543,11 @@ def main():
 
     for _idx, project in enumerate(projects):
         log.info(f"List: {_idx+1}/{len(projects)}")
-        project_xml_path = os.path.join(new_warehouse_xml, project['guid'], "project.rs.xml")
+        project_xml_path = os.path.join(
+            new_warehouse_xml, project['guid'], "project.rs.xml")
         try:
-            new_entry_data[project['id']] = get_project_datasets(project_xml_path, project["id"], len(new_entry_data) + 1, project['guid'])
+            new_entry_data[project['id']] = get_project_datasets(
+                project_xml_path, project["id"], len(new_entry_data) + 1, project['guid'])
         except Exception as ex:
             log.error("Failed to gather row data: " + str(ex))
 
