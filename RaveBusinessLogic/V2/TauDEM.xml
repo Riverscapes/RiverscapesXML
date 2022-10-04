@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>TauDEM</Name>
+    <ProjectType>TauDEM</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
+            <Node label="Outputs">
+                <Children collapsed="false">
+                    <Node label="TauDEM Outputs">
+                        <Children collapsed="false">
+                            <Node label="TauDEM Report" xpath="HTMLFile[@id='REPORT']" type="file" />
+                            <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
+                            <Node label="Basic Grid Analysis">
+                                <Children collapsed="false">
+                                    <Node label="Pit-filled DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
+                                    <Node label="D∞ Flow Directions (bearing)" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
+                                    <Node label="D∞ Contributing Area" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" id="ca" />
+                                </Children>
+                            </Node>
+                            <Node label="Specialized Grid Analysis">
+                                <Children collapsed="false">
+                                    <Node label="TWI - Topographic Wetness Index " xpath="Outputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" id="twi" />
+                                    <Node label="HAND - Height Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" id="hand" />
+                                </Children>
+                            </Node>
+                        </Children>
+                    </Node>
+                    <Node label="GDAL Outputs">
+                        <Children>
+                            <Node label="D8 Slope Analysis (degrees)" xpath="Outputs/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Intermediates" xpath="Intermediates">
+                <Children collapsed="true">
+                    <Node label="Rasterized Channel" xpath="Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="CHANNEL_AREA_RASTER" transparency="40" />
+                </Children>
+            </Node>
+            <Node label="Inputs" xpath="Inputs">
+                <Children collapsed="true">
+                    <Node label="Channel Area" xpath="Geopackage/Layers/Vector[@lyrName='channel_area']" type="polygon" symbology="ChannelArea" id="channel_area" />
+                    <Node label="Channel Line Input" xpath="Geopackage/Layers/Vector[@lyrName='CHANNEL_LINES']" type="line" symbology="channel_line_network" id="channel_line" />
+                    <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+                    <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
+                </Children>
+            </Node>
+            <Node label="Hillshade">
+                <Children collapsed="true">
+                    <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+                </Children>
+            </Node>
+            <Node label="Log File" xpath="Logs/LogFile" type="file" />
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="HAND" id="DEFAULT">
+            <Layers>
+                <Layer id="hand" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+        <View name="TWI" id="TopoWet">
+            <Layers>
+                <Layer id="twi" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+        <View name="Contributing Area" id="CA">
+            <Layers>
+                <Layer id="ca" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+        <View name="Inputs" id="In">
+            <Layers>
+                <Layer id="channel_line" />
+                <Layer id="channel_area" />
+                <Layer id="dem" />
+                <Layer id="hillshade" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
+    
