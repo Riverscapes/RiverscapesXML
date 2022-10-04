@@ -1,5 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
     ["hsl(0, 100%, 45%)", "Considerable Risk"],
     ["hsl(40, 100%, 50%)", "Some Risk"],

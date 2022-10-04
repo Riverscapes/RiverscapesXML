@@ -1,5 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
     ["hsl(30, 2%, 50%)", "No surveyed dams"],
     ["hsl(0, 100%, 45%)", "More surveyed dams than predicted capacity"],

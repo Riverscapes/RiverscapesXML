@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="../pyBRAT.xsd">
-<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.xyz/Projects/pyBRAT.xsd"> -->
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/pyBRAT.xsd"> -->
   <Name>Idaho_BRAT HUC 17040206 Batch 01</Name>
   <ProjectType>BRAT</ProjectType>
   <MetaData>

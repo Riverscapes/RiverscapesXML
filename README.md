@@ -3,7 +3,7 @@
 This repo contains all the master XML that controls the riverscapes warehouse
 
 All documentation for how to use this should be at 
-<https://riverscapes.xyz/Tools/Technical_Reference/Documentation_Standards/Riverscapes_Projects/Project/projectxml.html>
+<https://riverscapes.net/Tools/Technical_Reference/Documentation_Standards/Riverscapes_Projects/Project/projectxml.html>
 
 ## Contents
 

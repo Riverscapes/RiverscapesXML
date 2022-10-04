@@ -4,7 +4,7 @@ The WebRave vector symbology format has evolved a bit. Here's an example of what
 
 ``` json
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/webRAVEVector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
   "legend": [
     ["hsl(116, 57%, 39%)", "legend table layer 1"],
     ["hsl(108, 87%, 59%)", "legend table layer 1"],
@@ -37,7 +37,7 @@ Let's summarize this overall scructure. There are 3 parts to this file:
 
 ``` JSON
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/webRAVEVector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
   "legend": [],
   "layerStyles": []
 }
@@ -134,7 +134,7 @@ In this case my new JSON file looks something like this:
 
 ```json
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/webRAVEVector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
   "legend": [],
   "layerStyles": [
       {

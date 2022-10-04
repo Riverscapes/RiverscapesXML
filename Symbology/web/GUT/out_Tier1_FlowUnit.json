@@ -1,5 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/webRAVEVector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
   "legend": [
     ["hsl(216, 100%, 45%)", "Submerged"],
     ["hsl(100, 100%, 23%)", "Emergent"],

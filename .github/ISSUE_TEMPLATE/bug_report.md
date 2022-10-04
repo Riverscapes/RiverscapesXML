@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.  Including a video is super helpful (post it to YouTube and use this syntax to "embed it": [![Alt-text](https://img.youtube.com/vi/YTID/0.jpg)](https://www.youtu.be/watch?v=YTID){:target="_blank"} and [substitute the YouTube video ID](https://riverscapes.xyz/Tools/Technical_Reference/Documentation_Standards/WebSites/Common.html#markdown-alternative) for `YTID`)
+A clear and concise description of what the bug is.  Including a video is super helpful (post it to YouTube and use this syntax to "embed it": [![Alt-text](https://img.youtube.com/vi/YTID/0.jpg)](https://www.youtu.be/watch?v=YTID){:target="_blank"} and [substitute the YouTube video ID](https://riverscapes.net/Tools/Technical_Reference/Documentation_Standards/WebSites/Common.html#markdown-alternative) for `YTID`)
 
 **To Reproduce**
 Steps to reproduce the behavior:
@@ -30,7 +30,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Riverscape Project (please complete the following information if relevent):**
  - Type: [e.g. RSContext]
- - Warehouse Link: [e.g. [3801fe70-9fbc-4f1a-ae35-6aa0e065d9da](https://data.riverscapes.xyz/#/BLM/3801fe70-9fbc-4f1a-ae35-6aa0e065d9da)]
+ - Warehouse Link: [e.g. [3801fe70-9fbc-4f1a-ae35-6aa0e065d9da](https://data.riverscapes.net/#/BLM/3801fe70-9fbc-4f1a-ae35-6aa0e065d9da)]
  - Layers Impacted [e.g. DEM, Roads]
 
 
