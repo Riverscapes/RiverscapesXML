@@ -66,7 +66,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">825.87</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">13:45 minutes</Meta>
 						<Meta name="_rs_lyr_Description">Slope raster generated using gdal_dem tool specifying the slope option. Units are in percent.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#SLOPE</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SLOPE</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">SLOPE</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">ab88f2d1-7e7e-4a82-bc8f-fe2ddcf21fa7</Meta>
@@ -145,7 +145,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">825.87</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">13:45 minutes</Meta>
 						<Meta name="_rs_lyr_Description">Hillshade raster generated using the gdal_dem tool specifying the hillshade option.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HILLSHADE</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HILLSHADE</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">74e947da-ff53-41bc-b10f-8d89b18b900b</Meta>

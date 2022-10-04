@@ -74,7 +74,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
 						<Meta name="_rs_lyr_Description">National Elevation Dataset (NED) Digital Elevation Models (DEM). These DEMs are downloaded from Science Base and mosaiced into a single 10m DEM that covers the riverscapes context project extent.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#DEM</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#DEM</Meta>
 						<Meta name="_rs_lyr_num_rasters" type="int">1</Meta>
 						<Meta name="_rs_lyr_origin_urls" type="json">[&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w119/USGS_13_n39w119.tif&quot;]</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
@@ -101,7 +101,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
 						<Meta name="_rs_lyr_Description">LandFire LF REMAP 2019 Existing Vegetation Type (EVT) Raster.The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#EXVEG</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#EXVEG</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">EXVEG</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">0b75edf1-6921-4af0-9dbd-11279a5673af</Meta>
@@ -126,7 +126,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
 						<Meta name="_rs_lyr_Description">LandFire LF REMAP 2019 Historic Biophysical Settings (BPS) Raster. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HISTVEG</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HISTVEG</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">HISTVEG</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">e9b9c301-69b1-4842-9734-ee33056c9d90</Meta>
@@ -151,7 +151,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
 						<Meta name="_rs_lyr_Description">Hillshade raster generated using the gdal_dem tool specifying the hillshade option.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HILLSHADE</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HILLSHADE</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">78b4112a-1224-45a4-b8cb-a5cd9bb02939</Meta>
@@ -176,7 +176,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">527.17</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">8:47 minutes</Meta>
 						<Meta name="_rs_lyr_Description">Slope raster generated using gdal_dem tool specifying the slope option. Units are in percent.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#SLOPE</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SLOPE</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">SLOPE</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">3bebd7f4-49c1-4a1f-af19-17102b8c6446</Meta>

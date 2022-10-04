@@ -1,5 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
     ["hsl(34, 100%, 66%)", "Bureau of Indian Affairs (BIA)"],
     ["hsl(49, 100%, 77%)", "Bureau of Land Management (BLM)"],

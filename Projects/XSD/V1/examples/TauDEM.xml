@@ -43,7 +43,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">1932.81</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">32:12.805959224700928 minutes</Meta>
 						<Meta name="_rs_lyr_Description">National Elevation Dataset (NED) Digital Elevation Models (DEM). These DEMs are downloaded from Science Base and mosaiced into a single 10m DEM that covers the riverscapes context project extent.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#DEM</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#DEM</Meta>
 						<Meta name="_rs_lyr_num_rasters" type="int">11</Meta>
 						<Meta name="_rs_lyr_origin_urls" type="json">["https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w080/USGS_13_n40w080.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w080/USGS_13_n40w080_20210630.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w081/USGS_13_n39w081_20210204.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w080/USGS_13_n39w080_20210111.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w081/USGS_13_n40w081_20210630.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w080/USGS_13_n39w080_20210204.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w080/USGS_13_n39w080.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w081/USGS_13_n39w081.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n39w081/USGS_13_n39w081_20210111.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w081/USGS_13_n40w081.tif", "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/n40w080/USGS_13_n40w080_20210111.tif"]</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
@@ -103,7 +103,7 @@
 						<Meta name="_rs_prj_ProcTimeS" type="int">1932.81</Meta>
 						<Meta name="_rs_prj_ProcTimeHuman">32:12.805959224700928 minutes</Meta>
 						<Meta name="_rs_lyr_Description">Hillshade raster generated using the gdal_dem tool specifying the hillshade option.</Meta>
-						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.xyz/rscontext/data.html#HILLSHADE</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HILLSHADE</Meta>
 						<Meta name="_rs_prj_projType">RSContext</Meta>
 						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
 						<Meta name="_rs_lyr_guid" type="guid">a6867263-0d79-413a-ab22-a0310d33b71c</Meta>

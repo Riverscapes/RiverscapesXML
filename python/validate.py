@@ -16,7 +16,7 @@ def get_xsd(xsd_path):
         xsd = xsd_file.read()
 
     # Admitedly this is a bit hack-y but it works for now so....
-    xsd = xsd.replace('http://xml.riverscapes.xyz/', './')
+    xsd = xsd.replace('http://xml.riverscapes.net/', './')
     xsd_encoded = bytes(xsd, encoding='utf-8')
     errors = validate_xsd(xsd_encoded)
     if len(errors) > 0:

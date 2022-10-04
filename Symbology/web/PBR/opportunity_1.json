@@ -1,5 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
     ["hsl(120, 100%, 33%)", "Easiest - Low-Hanging Fruit"],
     ["hsl(194, 100%, 50%)", "Straight Forward - Quick Return"],

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
     ["hsl(8, 100%, 50%)", "Immediately Adjacent (0 - 30 m)"],
     ["hsl(36, 100%, 50%)", "Within Normal Forage Range (30 - 100 m)"],
