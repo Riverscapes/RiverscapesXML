@@ -1021,7 +1021,7 @@ def insert_bounds_make_geojson(tree, db_info, new_xml_path):
 def format_project(element):
     if element.tag == "Project":
         NS_XSI = "{http://www.w3.org/2001/XMLSchema-instance}"
-        element.attrib[NS_XSI + "noNamespaceSchemaLocation"] = "https://xml.riverscapes.xyz/Projects/XSD/V2/RiverscapesProject.xsd"
+        element.attrib[NS_XSI + "noNamespaceSchemaLocation"] = "https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd"
 
 
 def format_warehouse(elem):
