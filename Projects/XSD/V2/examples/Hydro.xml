@@ -57,10 +57,6 @@
           <Meta name="run_type">NA</Meta>
           <Meta name="qa_status">pass</Meta>
         </MetaData>
-        <Parameters>
-          <Param name="surveyed_discharge">TRUE</Param>
-          <!--We need to discuss the other parameters that should go here-->
-        </Parameters>
         
         <Inputs>
           <CommonDatasetRef ref="DEM1"/>

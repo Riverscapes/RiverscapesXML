@@ -75,7 +75,6 @@
       <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
 
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
-      <xs:element type="ParametersType" name="Parameters" minOccurs="0" maxOccurs="1" />
 
       <xs:element name="Logs" maxOccurs="1" minOccurs="0">
         <xs:complexType>
@@ -153,12 +152,6 @@
         <xs:attribute type="MetaKeyValueType" name="type" use="optional" />
       </xs:extension>
     </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:complexType name="ParametersType">
-    <xs:sequence>
-      <xs:element type="ParamType" name="Param" maxOccurs="unbounded" minOccurs="0" />
-    </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="MetricType">
@@ -330,7 +323,7 @@
 
 
   <xs:complexType name="QAQCEventsType">
-    <xs:choice maxOccurs="unbounded">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="QAQCEventType" name="QAQCEvent" />
     </xs:choice>
   </xs:complexType>
