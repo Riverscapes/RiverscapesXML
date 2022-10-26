@@ -69,12 +69,24 @@
           <Node label="Level 1 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_1" transparency="40" />
           <Node label="Level 2 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_2" transparency="40" />
           <Node label="Level 3 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_3" transparency="40" />
+          <Node label="Level 4 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_4" transparency="40" />
+        </Children>
+      </Node>
+      <Node label="Geology">
+        <Children collapsed="true">
+          <Node label="Geology" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geology" />
         </Children>
       </Node>
       <Node label="Land Management">
         <Children collapsed="true">
           <Node label="Land Ownership" xpath="Datasets/Vector[@id='Ownership']" type="polygon" symbology="ownership" transparency="40" id="owner" />
           <Node label="Fair Market Value" xpath="Datasets/Raster[@id='FAIRMARKETVALUE']" type="raster" symbology="fair_market" transparency="40" />
+        </Children>
+      </Node>
+      <Node label="Political Boundaries">
+        <Children collapsed="true">
+          <Node label="State Boundaries" xpath="Datasets/Vector[@id='States']" type="polygon" symbology="states" />
+          <Node label="County Boundaries" xpath="Datasets/Vector[@id='Counties']" type="polygon" symbology="counties" />
         </Children>
       </Node>
       <Node label="LANDFIRE">
@@ -85,6 +97,8 @@
                 <Children>
                   <Node label="Veg Type - EVT Class" xpath="Datasets/Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" id="exveg" />
                   <Node label="Veg Type - EVT Name" xpath="Datasets/Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
+                  <Node label="Veg Cover - EVC" xpath="Datasets/Raster[@id='VEGCOVER']" type="raster" symbology="Veg_Cover" transparency="40" />
+                  <Node label="Veg Height - EVH" xpath="Datasets/Raster[@id='VEGHEIGHT']" type="raster" symbology="Veg_Height" transparency="40" />
                   <Node label="Veg Type - EVT Riparian" xpath="Datasets/Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Riparian" transparency="40" />
                 </Children>
               </Node>
@@ -96,6 +110,34 @@
               </Node>
             </Children>
           </Node>
+          <Node label="Disturbance">
+            <Children collapsed="true">
+              <Node label="Historic Disturbance - HDst" xpath="Datasets/Raster[@id='HDIST']" type="raster" symbology="Historic_Disturbance" transparency="40" />
+              <Node label="Fuel Disturbance - FDst" xpath="Datasets/Raster[@id='FDIST']" type="raster" symbology="Fuel_Disturbance" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Fuel">
+            <Children collapsed="true">
+              <Node label="Fuel Characteristic Classification - FCCS" xpath="Datasets/Raster[@id='FCCS']" type="raster" symbology="fccs" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Vegetation Condition">
+            <Children collapsed="true">
+              <Node label="Vegetation Condition" xpath="Datasets/Raster[@id='VEGCONDITION']" type="raster" symbology="Vegetation_Condition" transparency="40" />
+              <Node label="Vegetation Departure" xpath="Datasets/Raster[@id='VEGDEPARTURE']" type="raster" symbology="Vegetation_Departure" transparency="40" />
+              <Node label="Succession Classes" xpath="Datasets/Raster[@id='SCLASS']" type="raster" symbology="Succession_Classes" transparency="40" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Surface Water">
+        <Children collapsed="true">
+          <Node label="Surface Water Occurrence" xpath="Datasets/Raster[@id='Occurrence']" type="raster" symbology="sw_occurrence" transparency="40" />
+          <Node label="Surface Water Change" xpath="Datasets/Raster[@id='Change']" type="raster" symbology="sw_change" transparency="40" />
+          <Node label="Surface Water Seasonality" xpath="Datasets/Raster[@id='Seasonality']" type="raster" symbology="sw_seasonality" transparency="40" />
+          <Node label="Surface Water Recurrence" xpath="Datasets/Raster[@id='Recurrence']" type="raster" symbology="sw_recurrence" transparency="40" />
+          <Node label="Surface Water Transitions" xpath="Datasets/Raster[@id='Transitions']" type="raster" symbology="sw_transitions" transparency="40" />
+          <Node label="Surface Water Maximum Extent" xpath="Datasets/Raster[@id='Extent']" type="raster" symbology="sw_extent" transparency="40" />
         </Children>
       </Node>
       <Node label="Topography and Derivatives">
