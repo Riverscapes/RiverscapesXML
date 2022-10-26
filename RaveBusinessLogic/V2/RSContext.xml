@@ -142,10 +142,8 @@
       </Node>
       <Node label="Topography and Derivatives">
         <Children collapsed="true">
-          <Node label="DEM (10 m NED)" xpath="Datasets/DEM" type="raster" symbology="dem" transparency="40" id="dem" />
+          <Node label="DEM (10 m NED)" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
           <Node label="Slope Analysis" xpath="Datasets/Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
-          <Node xpathlabel="Name" xpath="Datasets/Raster[@id='layer_FA']" type="raster" symbology="flow_accumulation" transparency="40" />
-          <Node label="Drainage Area" xpath="Datasets/Raster[@id='layer_DA']" type="raster" symbology="drainage_area" transparency="40" />
         </Children>
       </Node>
       <Node label="Hillshade">
