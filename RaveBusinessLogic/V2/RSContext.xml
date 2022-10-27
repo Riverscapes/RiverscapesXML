@@ -26,13 +26,6 @@
               <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Vector[@id='NHDWaterbody']" type="polygon" symbology="waterbody" />
               <Node label="Canals and Ditches" xpath="Datasets/Vector[@id='Canals']" type="line" symbology="canals_ditches" />
               <Node label="Pipes and Ditches" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="pipes" />
-              <Node label="Estimated Bankfull">
-                <Children>
-                  <Node label="Estimated Bankfull Width (m)" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='network']" type="line" symbology="bankfull_flowlines" />
-                  <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='bankfull']" type="polygon" symbology="ChannelArea" />
-                  <!-- <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='COMPOSITE_CHANNEL_AREA']" type="polygon" symbology="bankfull_nhd"/> -->
-                </Children>
-              </Node>
               <Node label="Segmented Hydrography">
                 <Children>
                   <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='network_300m']" type="line" symbology="300_seg" />
@@ -128,16 +121,6 @@
               <Node label="Succession Classes" xpath="Datasets/Raster[@id='SCLASS']" type="raster" symbology="Succession_Classes" transparency="40" />
             </Children>
           </Node>
-        </Children>
-      </Node>
-      <Node label="Surface Water">
-        <Children collapsed="true">
-          <Node label="Surface Water Occurrence" xpath="Datasets/Raster[@id='Occurrence']" type="raster" symbology="sw_occurrence" transparency="40" />
-          <Node label="Surface Water Change" xpath="Datasets/Raster[@id='Change']" type="raster" symbology="sw_change" transparency="40" />
-          <Node label="Surface Water Seasonality" xpath="Datasets/Raster[@id='Seasonality']" type="raster" symbology="sw_seasonality" transparency="40" />
-          <Node label="Surface Water Recurrence" xpath="Datasets/Raster[@id='Recurrence']" type="raster" symbology="sw_recurrence" transparency="40" />
-          <Node label="Surface Water Transitions" xpath="Datasets/Raster[@id='Transitions']" type="raster" symbology="sw_transitions" transparency="40" />
-          <Node label="Surface Water Maximum Extent" xpath="Datasets/Raster[@id='Extent']" type="raster" symbology="sw_extent" transparency="40" />
         </Children>
       </Node>
       <Node label="Topography and Derivatives">
