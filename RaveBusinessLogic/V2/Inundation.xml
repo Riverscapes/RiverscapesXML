@@ -23,7 +23,7 @@
                 </Node>
                 <Node label="Inundation">
                   <Children>
-                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="line" symbology="inundation_types" />
+                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="inundation_types" />
                     <Node label="Wetted Extent" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="wetted_extent" />
                     <Node label="Inundation Type Distribution" xpath="Outputs/PDF" type="file" />
                   </Children>
