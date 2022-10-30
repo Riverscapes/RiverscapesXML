@@ -23,7 +23,7 @@
                 </Node>
                 <Node label="Inundation">
                   <Children>
-                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="inundation_types" />
+                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="inundation_types" id="InundatonTypes" />
                     <Node label="Wetted Extent" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="wetted_extent" />
                     <Node label="Inundation Type Distribution" xpath="Outputs/PDF" type="file" />
                   </Children>
@@ -73,10 +73,17 @@
       </Node>
     </Children>
   </Node>
-  <Views default="WATERSHED_CONTEXT">
+<Views default="INNUNDATION">
+    <View name="Inundation Outputs" id="INNUNDATION">
+      <Layers>
+        <Layer id="InundatonTypes" />
+        <Layer id="VB_poly" />
+        <Layer id="ap01" />
+      </Layers>  
+    </View>
     <View name="Site Extent" id="SITE_EXTENT">
       <Layers>
-        <Layer id="ap02" />
+        <Layer id="ap01" />
         <Layer id="VB_poly" />
       </Layers>
     </View>
