@@ -16,16 +16,16 @@
         <Children collapsed="false">
           <Node label="Hydrography (NHD HR+)">
             <Children collapsed="true">
-              <Node label="Perennial Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial" />
-              <Node label="Intermittent Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
-              <Node label="Ephemeral Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="nhdephemeral" />
-              <Node label="Network - Upstream Drainage Area" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
-              <Node label="Full NHD HR+ Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="flow_lines" />
-              <Node label="Drainage Wings" xpath="Datasets/Vector[@id='NHDPlusCatchment']" type="polygon" symbology="drainagewings" />
-              <Node label="River Polygons (NHD Area)" xpath="Datasets/Vector[@id='NHDArea']" type="polygon" symbology="nhdarea" />
-              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Vector[@id='NHDWaterbody']" type="polygon" symbology="waterbody" />
+              <Node label="Perennial Drainage Network" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial" />
+              <Node label="Intermittent Drainage Network" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
+              <Node label="Ephemeral Drainage Network" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdephemeral" />
+              <Node label="Network - Upstream Drainage Area" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
+              <Node label="Full NHD HR+ Drainage Network" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines" />
+              <Node label="Drainage Wings" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDPlusCatchment']" type="polygon" symbology="drainagewings" />
+              <Node label="River Polygons (NHD Area)" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDArea']" type="polygon" symbology="nhdarea" />
+              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDWaterbody']" type="polygon" symbology="waterbody" />
               <Node label="Canals and Ditches" xpath="Datasets/Vector[@id='Canals']" type="line" symbology="canals_ditches" />
-              <Node label="Pipes and Ditches" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="pipes" />
+              <Node label="Pipes and Ditches" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="pipes" />
               <Node label="Segmented Hydrography">
                 <Children>
                   <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='network_300m']" type="line" symbology="300_seg" />
@@ -36,12 +36,12 @@
           </Node>
           <Node label="Watershed Boundaries (HUCs)">
             <Children collapsed="true">
-              <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Datasets/Vector[@id='WBDHU12']" type="polygon" symbology="wbdhu12" />
-              <Node label="Watersheds - 10-Digit HUC" xpath="Datasets/Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" id="huc10" />
-              <Node label="Sub-Basin - 8-Digit HUC" xpath="Datasets/Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
-              <Node label="Basin - 6-Digit HUC" xpath="Datasets/Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
-              <Node label="Subregion - 4-Digit HUC" xpath="Datasets/Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
-              <Node label="Region - 2-Digit HUC" xpath="Datasets/Vector[@id='WBDHU2']" type="polygon" symbology="wbdhu2" />
+              <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='WBDHU12']" type="polygon" symbology="wbdhu12" />
+              <Node label="Watersheds - 10-Digit HUC" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='WBDHU10']" type="polygon" symbology="wbdhu10" id="huc10" />
+              <Node label="Sub-Basin - 8-Digit HUC" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
+              <Node label="Basin - 6-Digit HUC" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='WBDHU6']" type="polygon" symbology="wbdhu6" />
+              <Node label="Subregion - 4-Digit HUC" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='WBDHU4']" type="polygon" symbology="wbdhu4" />
+              <Node label="Region - 2-Digit HUC" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='WBDHU2']" type="polygon" symbology="wbdhu2" />
             </Children>
           </Node>
         </Children>
