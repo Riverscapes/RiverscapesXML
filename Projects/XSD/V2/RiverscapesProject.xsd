@@ -304,6 +304,7 @@
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="GeopackageDatasetType" name="Raster" />
       <xs:element type="GeopackageDatasetType" name="Vector" />
+      <xs:element type="GeopackageDatasetType" name="DataTable" />
     </xs:choice>
   </xs:complexType>
 
