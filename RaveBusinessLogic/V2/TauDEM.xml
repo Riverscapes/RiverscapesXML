@@ -14,7 +14,7 @@
                             <Node label="Basic Grid Analysis">
                                 <Children collapsed="false">
                                     <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
-                                    <Node label="Contributing Drainage Area" xpath="Outputs/Raster[@id='AREADINF_SCA']" type="raster" symbology="" transparency="40" />
+                                    <Node label="Contributing Drainage Area" xpath="Outputs/Raster[@id='AREADINF_SCA']" type="raster" symbology="" transparency="40" id="ca" />
                                 </Children>
                             </Node>
                             <Node label="Specialized Grid Analysis">
@@ -23,6 +23,11 @@
                                     <Node label="HAND - Height Above Nearest Drainage" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" id="hand" />
                                 </Children>
                             </Node>
+                        </Children>
+                    </Node>
+                    <Node label="GDAL Outputs">
+                        <Children collapsed="false">
+                            <Node label="D8 Slope Analysis (degrees)" xpath="Outputs/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
                         </Children>
                     </Node>
                 </Children>
