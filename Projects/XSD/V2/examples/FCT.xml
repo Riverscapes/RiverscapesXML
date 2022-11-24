@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd">
+	<Name>FCT Data XXXXXXXXX</Name>
+	<ProjectType>FCT</ProjectType>
+	<MetaData>
+		<Meta name="ModelVersion">0.0.0</Meta>
+		<Meta name="dateCreated" type="isodate">2021-09-13T18:05:52.241097</Meta>
+	</MetaData>
+	<ProjectBounds>
+		<Centroid>
+			<Lat>38.528908069922934</Lat>
+			<Lng>-118.60960419803286</Lng>
+		</Centroid>
+		<BoundingBox>
+			<MinLat>38.10684594444518</MinLat>
+			<MinLng>-118.85150761104612</MinLng>
+			<MaxLat>38.849453807743636</MaxLat>
+			<MaxLng>-118.30313087628299</MaxLng>
+		</BoundingBox>
+		<Path>project_bounds.geojson</Path>
+	</ProjectBounds>
+	<Realizations>
+		<Realization id="FCT" dateCreated="2021-09-13T18:05:52.244153" productVersion="0.0.0">
+			<Name>FCT Data XXXXXXXXX</Name>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>brat_build.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>brat_build.log</Path>
+        </LogFile>
+      </Logs>
+			<Inputs>
+				<DEM id="DEM">
+					<Name>NED 10m DEM</Name>
+					<Path>inputs/dem.tif</Path>
+					<MetaData>
+						<Meta name="metakey">some value</Meta>
+					</MetaData>
+				</DEM>
+			</Inputs>
+			<Intermediates>
+			</Intermediates>
+			<Outputs>
+			</Outputs>
+		</Realization>
+	</Realizations>
+</Project>

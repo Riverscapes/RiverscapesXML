@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Fluvial Corridor Toolbox</Name>
+  <ProjectType>FCT</ProjectType>
+  <Node xpathlabel="Name">
+    <Children>
+      <Repeater label="Realizations" xpath="Realizations/Realization">
+        <!-- this is a template for how each realization should render-->
+        <Node xpathlabel="Name">
+          <Children collapsed="false">
+            <Node label="Inputs" xpath="Inputs">
+              <Children>
+                <Repeater label="Vectors" xpath="Vector">
+                  <Node xpathlabel="Name" xpath="Vector" type="line" symbology="" />
+                </Repeater>
+              </Children>
+            </Node>
+            <Node label="Inputs" xpath="Inputs">
+              <Children>
+                <Repeater label="DEM Layers" xpath="DEM">
+                  <Node xpathlabel="Name" type="raster" symbology="dem" />
+                </Repeater>                
+                <Repeater label="Raster Layers" xpath="Raster">
+                  <Node xpathlabel="Name" type="raster" symbology="raster" />
+                </Repeater>
+                <Repeater label="Vector Layers" xpath="Vector">
+                  <!-- TODO: this is a problem we need to address -->
+                  <Node xpathlabel="Name" type="polygon" symbology="" />
+                </Repeater>
+                <Repeater label="Image Layers" xpath="Image">
+                  <Node xpathlabel="Name" type="file" />
+                </Repeater>
+              </Children>
+            </Node>
+          </Children>
+        </Node>
+      </Repeater>
+    </Children>
+  </Node>
+</Project>
