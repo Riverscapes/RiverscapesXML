@@ -26,6 +26,11 @@
       </Node>
       <Node label="Intermediates">
         <Children collapsed="true">
+          <Node label="Sample Frames">
+            <Children collapsed="false">
+              <Node label="Centerline of Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='VBET_CENTERLINES']" type="polyline" symbology="CL_vb" />
+            </Children>
+          </Node>
           <Node label="Evidence Rasters">
             <Children collapsed="false">
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
