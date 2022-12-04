@@ -29,12 +29,17 @@
           </Node>
           <Node label="Sample Frames">
             <Children collapsed="true">
-              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="IGO" />
-              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="line" symbology="CL_vb" />
-              <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" />
+              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="IGO" id="IGO" />
+              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="line" symbology="CL_vb" id="CL" />
+              <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" id="DGO" />
             </Children>
           </Node>
-          <Node label="Likelihood of being Valley Bottom" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
+          <Node label="Moving Window Metrics (IGO)">
+            <Children collapsed="true">
+              <Node label="Est. Prop. of VB Inactive" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_Inactive"  />
+            </Children>
+          </Node>
+          <Node label="Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
           <Node label="Outputs Geopackage (SQLite Database)" xpath="Outputs/Geopackage" type="file" />
         </Children>
       </Node>
@@ -89,9 +94,16 @@
     <Views default="DEFAULT">
       <View name="Primary Output" id="DEFAULT">
         <Layers>
+          <Layer id="streamnames" />
           <Layer id="vbet_extent_hollow" />
           <Layer id="likevbet" />
           <Layer id="hillshade" />
+        </Layers>
+      </View>
+       <View name="Estimated Active vs. Inactive" id="ActiveEstimate">
+        <Layers>
+          <Layer id="vbet_active_vb" />
+          <Layer id="vbet_inactive_vb" />
         </Layers>
       </View>
       <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
@@ -105,6 +117,13 @@
         <Layers>
           <Layer id="norm_topo" />
           <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="Sample Frames" id="Sample">
+        <Layers>
+          <Layer id="IGO" />
+          <Layer id="DGO" />
+          <Layer id="CL" />
         </Layers>
       </View>
       <View name="VBET Inputs" id="Inputs">
