@@ -28,7 +28,9 @@
         <Children collapsed="true">
           <Node label="Sample Frames">
             <Children collapsed="false">
-              <Node label="Centerline of Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='VBET_CENTERLINES']" type="polyline" symbology="CL_vb" />
+              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="polyline" symbology="IGO" />
+              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="polyline" symbology="CL_vb" />
+              <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" />
             </Children>
           </Node>
           <Node label="Evidence Rasters">
