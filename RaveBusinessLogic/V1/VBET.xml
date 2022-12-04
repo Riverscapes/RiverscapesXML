@@ -5,34 +5,41 @@
   <Node xpathlabel="Name" xpath="Realizations/VBET">
     <Children collapsed="false">
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
-      <Node label="Outputs" xpath="Outputs">
+      <Node label="Outputs">
         <Children collapsed="true">
           <!-- These are the names from pre https://github.com/Riverscapes/riverscapes-tools/issues/427 fixes -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
           <!-- These are the new naming convention -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
           <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />   
-          <Node label="Valley Bottom Geomorphic Units">
-            <Children collapsed="false">
-              <Node label="Estimated Active Channel" xpath="Geopackage/Layers/Vector[@id='VBET_CHANNEL_AREA']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
-              <Node label="Estimated Active Floodplain" xpath="Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
-              <Node label="Estimated Inactive Floodplain" xpath="Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
+          <Node label="Estimated Active/Inactive">
+            <Children collapsed="true">
+              <Node label="Estimated Active Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_IA']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Inactive Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
           </Node>
-          <Node label="Likelihood of being Valley Bottom" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
-          <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
+          
+          <Node label="Valley Bottom Geomorphic Units">
+            <Children collapsed="true">
+              <Node label="Estimated Active Channel" xpath="Inputs/Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Inactive Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
+            </Children>
+          </Node>
+          <Node label="Sample Frames">
+            <Children collapsed="true">
+              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="IGO" />
+              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="line" symbology="CL_vb" />
+              <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" />
+            </Children>
+          </Node>
+          <Node label="Likelihood of being Valley Bottom" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
+          <Node label="Outputs Geopackage (SQLite Database)" xpath="Outputs/Geopackage" type="file" />
         </Children>
       </Node>
       <Node label="Intermediates">
         <Children collapsed="true">
-          <Node label="Sample Frames">
-            <Children collapsed="false">
-              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="polyline" symbology="IGO" />
-              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="polyline" symbology="CL_vb" />
-              <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" />
-            </Children>
-          </Node>
           <Node label="Evidence Rasters">
             <Children collapsed="false">
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
