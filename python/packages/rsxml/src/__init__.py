@@ -5,6 +5,7 @@ from src.dotenv import *
 from src.util import *
 from src.rspaths import *
 from src.validation import *
+from src.etag import calculate_etag
 
 # Logging tools
 from src.logging.logger import *
