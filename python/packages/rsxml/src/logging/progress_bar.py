@@ -70,10 +70,10 @@ class ProgressBar:
                 writestr = ""
 
                 if self.byte_format:
-                    writestr = f"        PROGRESS: {sizeof_fmt(self.progress)} / {sizeof_fmt(self.total)}    {self.text}     (Ellapsed: {duration})\n"
+                    writestr = f"        PROGRESS: {sizeof_fmt(self.progress)} / {sizeof_fmt(self.total)}    {self.text}     (elapsed: {duration})\n"
                 else:
                     pct_done = int(100 * (self.progress / self.total))
-                    writestr = f"        PROGRESS: {self.progress:,} / {self.total:,}  ({pct_done}%)  {self.text}     (Ellapsed: {duration})\n"
+                    writestr = f"        PROGRESS: {self.progress:,} / {self.total:,}  ({pct_done}%)  {self.text}     (elapsed: {duration})\n"
                 sys.stdout.write(writestr)
                 sys.stdout.flush()
             return
@@ -88,9 +88,9 @@ class ProgressBar:
             linebar = '=' * done
             spacepad = ' ' * (50 - done)
             if self.byte_format:
-                writestr = f"\r[{linebar}{spacepad}]  {sizeof_fmt(self.progress)} / {sizeof_fmt(self.total)}  {self.text} (Ellapsed: {duration})     \n"
+                writestr = f"\r[{linebar}{spacepad}]  {sizeof_fmt(self.progress)} / {sizeof_fmt(self.total)}  {self.text} (elapsed: {duration})     \n"
             else:
-                writestr = f"\r[{linebar}{spacepad}]  {self.progress:,} / {self.total:,}  {self.text} (Ellapsed: {duration})     \n"
+                writestr = f"\r[{linebar}{spacepad}]  {self.progress:,} / {self.total:,}  {self.text} (elapsed: {duration})     \n"
 
             if len(writestr) > t_size.columns - 1:
                 writestr = writestr[0:t_size.columns - 4] + '   \n'

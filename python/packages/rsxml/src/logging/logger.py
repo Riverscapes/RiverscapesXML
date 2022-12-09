@@ -37,7 +37,7 @@ class _LoggerSingleton:
             self.handler = None
             self.logger = logging.getLogger("LOGGER")
 
-        def setup(self, log_path=None, verbose=False):
+        def setup(self, log_path=None, verbose=False, log_level: str = None):
             """_summary_
 
             Args:
@@ -46,6 +46,9 @@ class _LoggerSingleton:
             """
             self.initialized = True
             self.verbose = verbose
+
+            if verbose is True and log_level is not None:
+                raise ValueError("Cannot set both verbose and log_level")
 
             loglevel = logging.INFO if not verbose else logging.DEBUG
 
@@ -99,7 +102,7 @@ class _LoggerSingleton:
                 msg_arr = [
                     spcrbar, f'{buffer_str}{message}{buffer_str}', spcrbar, ' '
                 ]
-                msg = '\n'.join(['[info] [{method}] {m}' for m in msg_arr])
+                msg = '\n'.join([f'[info] [{method}] {m}' for m in msg_arr])
             else:
                 txtmsg = message
                 msg = f'[{severity}] [{method}] {message}'
@@ -178,6 +181,14 @@ class Logger():
         """
         return self.instance.verbose
 
+    def setlevel(self, log_level: str):
+        """Set the level of the logger
+
+        Args:
+            level (_type_): _description_
+        """
+        self.instance.logger.setLevel(logging.getLevelName(log_level))
+
     def debug(self, *args):
         """
         This works a little differently. You can basically throw anything you want into it.
@@ -215,6 +226,15 @@ class Logger():
             exception (_type_, optional): _description_. Defaults to None.
         """
         self.instance.logprint(message, self.method, "error", exception)
+
+    def critical(self, message, exception=None):
+        """_summary_
+
+        Args:
+            message (_type_): _description_
+            exception (_type_, optional): _description_. Defaults to None.
+        """
+        self.instance.logprint(message, self.method, "critical", exception)
 
     def warning(self, message, exception=None):
         """_summary_

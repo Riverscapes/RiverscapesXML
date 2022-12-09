@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd">
+  <Name>Testing Project</Name>
+  <ProjectType>Topo</ProjectType>
+  <MetaData>
+    <Meta name="CreatedOn">2017-06-12T09:17:56.2655460-07:00</Meta>
+    <Meta name="Site">Test Site</Meta>
+    <Meta name="Visit">1</Meta>
+    <Meta name="Year">2017</Meta>
+    <Meta name="Watershed">Asotin</Meta>
+    <Meta name="StreamName">Test Stream</Meta>
+    <Meta name="Program">CHaMP</Meta>
+    <Meta name="Protocol">CHaMP 2017</Meta>
+    <Meta name="Organization">North Arrow Research Ltd.</Meta>
+    <Meta name="SurveyCrew">Philip et al.</Meta>
+    <Meta name="VisitType">Repeat</Meta>
+    <Meta name="SpatialReferenceName">UTM Zone 10N (NAD83)</Meta>
+    <Meta name="SpatialReferenceID">26910</Meta>
+    <Meta name="ValidationStatus">Unknown</Meta>
+    <Moota name="Moota">Moota</Moota>
+  </MetaData>
+  <CommonDatasets>
+    <SurveyQualityDB id="SurveyQualityDB" >
+      <Name>Survey Quality Database</Name>
+      <Path>Inputs/SurveyQuality.sqlite</Path>
+    </SurveyQualityDB>
+    <InstrumentFile id="RawFile" >
+      <Name>Instrument File</Name>
+      <Path>Inputs/InstrumentFile.mjf</Path>
+      <MetaData>
+        <Meta name="Type">Raw File</Meta>
+        <Meta name="InstrumentType">TopCon</Meta>
+        <Meta name="InstrumentModel">TopCon Magnet v2.5.1</Meta>
+        <Meta name="SurveyDates">2015-09-09,2015-09-10</Meta>
+        <Meta name="SurveyStartDate">2015-09-09</Meta>
+        <Meta name="SurveyEndDate">2015-09-10</Meta>
+      </MetaData>
+    </InstrumentFile>
+    <AuxInstrumentFile id="AuxFile" >
+      <Name>Auxilliary Instrument File</Name>
+      <Path>Inputs/AuxInstrumentFile.RAW</Path>
+    </AuxInstrumentFile>
+    <Vector id="QaQcPoints" >
+      <Name>QaQc Raw Points</Name>
+      <Path>Inputs/QaQcPoints.shp</Path>
+    </Vector>
+    <Vector id="  BreaklineDXF" >
+      <Name>Breaklines</Name>
+      <Path>Inputs/Breaklines.dxf</Path>
+      <MetaData>
+        <Meta name="FeatureClassName">Polyline</Meta>
+      </MetaData>
+    </Vector>
+    <CSV id="channelunitcsv" >
+      <Name>Channel Units CSV</Name>
+      <Path>Inputs/ChannelUnits.csv</Path>
+    </CSV>
+  </CommonDatasets>
+  <Realizations>
+    <Realization id="SURVEYDATA_PROJECTED" productVersion="7.0.16" dateCreated="2017-06-12T09:18:37.4523082-07:00">
+      <Name>Survey Data Projected</Name>
+      <MetaData>
+        <Meta name="type">projected</Meta>
+      </MetaData>
+      <Inputs>
+        <Vector id="topo_points" >
+          <Name>Topo Points</Name>
+          <Path>SurveyData/Topo_Points.shp</Path>
+        </Vector>
+        <Vector id="control_points" >
+          <Name>Control Points</Name>
+          <Path>SurveyData/Control_Points.shp</Path>
+        </Vector>
+        <Vector id="error_points" >
+          <Name>Error Points</Name>
+          <Path>SurveyData/Error_Points.shp</Path>
+        </Vector>
+        <Vector id="eow_points" >
+          <Name>Edge of Water Points</Name>
+          <Path>SurveyData/EdgeOfWater_Points.shp</Path>
+        </Vector>
+        <Vector id="breaklines" >
+          <Name>Breaklines</Name>
+          <Path>SurveyData/Breaklines.shp</Path>
+        </Vector>
+        <Vector id="stream_features" >
+          <Name>Stream Features</Name>
+          <Path>SurveyData/Stream_Features.shp</Path>
+        </Vector>
+        <Vector id="survey_extent">
+          <Name>Survey Extent</Name>
+          <Path>SurveyData/SurveyExtents/SurveyExtent.shp</Path>
+          <MetaData>
+            <Meta name="active" type="boolean">true</Meta>
+          </MetaData>
+        </Vector>
+      </Inputs>
+    </Realization>
+    <Realization id="topotin1" productVersion="7.0.16" dateCreated="2017-06-12T09:19:17.3902112-07:00" >
+      <Name>Topography Realization 1</Name>
+      <MetaData>
+        <Meta name="active" type="boolean">false</Meta>
+      </MetaData>
+      <Inputs>
+        <TIN id="TIN">
+          <Name>TopoTIN</Name>
+          <Path>Topography/TIN0001/TopoTIN</Path>
+        </TIN>
+      </Inputs>
+      <Outputs>
+        <Vector type="extent" id="wetted_extent" >
+          <Name>WExtent</Name>
+          <Path>Topography/TIN0001/Stages/Wetted/WExtent.shp</Path>
+          <MetaData>
+            <Meta name="stage">wetted</Meta>
+          </MetaData>
+        </Vector>
+        <DEM id="DEM" >
+          <Name>DEM</Name>
+          <Path>Topography/TIN0001/DEM.tif</Path>
+          <MetaData>
+            <Meta name="top">5284053</Meta>
+            <Meta name="left">701666</Meta>
+            <Meta name="bottom">5283720</Meta>
+            <Meta name="right">701877</Meta>
+            <Meta name="cellsize">0.1</Meta>
+          </MetaData>
+        </DEM>
+        <HillShade id="Hillshade" >
+          <Name>Hillshade</Name>
+          <Path>Topography/TIN0001/Hillshade.tif</Path>
+        </HillShade>
+        <DEM id="Detrended" >
+          <Name>Detrended</Name>
+          <Path>Topography/TIN0001/Detrended.tif</Path>
+        </DEM>
+        <Vector id="Vector" >
+          <Name>Channel Units</Name>
+          <Path>Topography/TIN0001/Channel_Units_Field.shp</Path>
+        </Vector>
+        <Vector id="ChannelUnits" >
+          <Name>Channel Units</Name>
+          <Path>Topography/TIN0001/ChannelUnits.shp</Path>
+        </Vector>
+        <TIN id="TIN2">
+          <Name>Water Surface TIN</Name>
+          <Path>Topography/TIN0001/wsTIN</Path>
+          <MetaData>
+            <Meta name="active" type="boolean">true</Meta>
+          </MetaData>
+        </TIN>
+        <DEM id="WaterSurfaceDEM" >
+          <Name>Water Surface DEM</Name>
+          <Path>Topography/TIN0001/WSEDEM.tif</Path>
+        </DEM>
+        <Raster id="WaterDepth" >
+          <Name>Water Depth</Name>
+          <Path>Topography/TIN0001/Water_Depth.tif</Path>
+        </Raster>
+      </Outputs>
+    </Realization>
+    <Realization id="topotin2" productVersion="7.0.16" dateCreated="2017-06-12T09:19:17.3902112-07:00" >
+      <Name>Topography Realization 2</Name>
+      <MetaData>
+        <Meta name="active" type="boolean">false</Meta>
+      </MetaData>
+      <Inputs>
+        <TIN id="TIN" >
+          <Name>TopoTIN2</Name>
+          <Path>Topography/TIN0002/TopoTIN</Path>
+        </TIN>  
+      </Inputs>
+    </Realization>
+    <Realization id="topotin3" productVersion="7.0.16" dateCreated="2017-06-12T09:19:17.3902112-07:00" >
+      <Name>Topography Realization 3</Name>
+      <MetaData>
+        <Meta name="active" type="boolean">false</Meta>
+      </MetaData>
+      <Inputs>
+        <TIN id="TIN">
+          <Name>TopoTIN5</Name>
+          <Path>Topography/TIN0003/TopoTIN</Path>
+        </TIN>  
+      </Inputs>
+    </Realization>
+    <Realization id="topotin4" productVersion="7.0.16" dateCreated="2017-06-12T09:19:17.3902112-07:00" >
+      <Name>Topography Realization 4</Name>
+      <MetaData>
+        <Meta name="active" type="boolean">false</Meta>
+      </MetaData>
+      <Inputs>
+        <TIN id="TIN" >
+          <Name>TopoTIN6</Name>
+          <Path>Topography/TIN0004/TopoTIN</Path>
+        </TIN>
+      </Inputs>
+    </Realization>
+    <Realization id="topotin5" productVersion="7.0.16" dateCreated="2017-06-12T09:19:17.3902112-07:00" >
+      <Name>Topography Realization 5</Name>
+      <MetaData>
+        <Meta name="active" type="boolean">true</Meta>
+      </MetaData>
+      <Inputs>
+        <TIN id="topoTINtin4">
+          <Name>TopoTIN4</Name>
+          <Path>Topography/TIN0005/TopoTIN</Path>
+        </TIN>
+      </Inputs>
+    </Realization>
+    <Realization id="topotin6" productVersion="7.0.16" dateCreated="2017-06-12T09:19:17.3902112-07:00" >
+      <Name>Topography Realization 6</Name>
+      <MetaData>
+        <Meta name="active" type="boolean">true</Meta>
+      </MetaData>
+      <Inputs>
+        <TIN id="TIN">
+          <Name>TopoTIN</Name>
+          <Path>Topography/TIN0001/TIN</Path>
+        </TIN>
+      </Inputs>
+      <Outputs>
+        <HillShade id="Hillshade">
+          <Name>Hillshade</Name>
+          <Path>Topography/TIN0001/Hillshade.tif</Path>
+        </HillShade>
+        <Vector  id="thalweg">
+          <Name>Thalweg</Name>
+          <Path>Topography/TIN0001/Thalweg.shp</Path>
+        </Vector>
+        <Vector id="ChannelUnits">
+          <Name>Channel Units</Name>
+          <Path>Topography/TIN0001/Channel_Units_Field.shp</Path>
+        </Vector>
+        <TIN id="WaterSurfaceTIN">
+          <Name>Water Surface TIN</Name>
+          <Path>Topography/TIN0001/WSETIN</Path>
+          <MetaData>
+            <Meta name="active">true</Meta>
+          </MetaData>
+        </TIN>
+        <Raster id="WaterDepth">
+          <Name>Water Depth</Name>
+          <Path>Topography/TIN0001/Water_Depth.tif</Path>
+        </Raster>
+        <DEM  id="DEM">
+          <Name>DEM</Name>
+          <Path>Topography/TIN0001/DEM.tif</Path>
+          <MetaData>
+            <Meta name="left">475928.0</Meta>
+            <Meta name="top">5125893.0</Meta>
+            <Meta name="right">476076.0</Meta>
+            <Meta name="bottom">5125809.0</Meta>
+            <Meta name="cellsize">0.1</Meta>
+          </MetaData>
+        </DEM>
+        <DEM  id="Detrended">
+          <Name>Detrended</Name>
+          <Path>Topography/TIN0001/Detrended.tif</Path>
+        </DEM>
+        <Vector  id="ChannelUnits2">
+          <Name>Channel Units</Name>
+          <Path>Topography/TIN0001/Channel_Units.shp</Path>
+        </Vector>
+        <Raster  id="WaterSurfaceDEM">
+          <Name>Water Surface DEM</Name>
+          <Path>Topography/TIN0001/WSEDEM.tif</Path>
+        </Raster>        
+        <Vector  id="bankfull_crosssections">
+          <Name>BCrossSections</Name>
+          <Path>Topography/TIN0001/Stages/Bankfull/BCrossSections.shp</Path>
+          <MetaData>
+            <Meta name="stage">bankfull</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="bankfull_islands">
+          <Name>BIslands</Name>
+          <Path>Topography/TIN0001/Stages/Bankfull/BIslands.shp</Path>
+          <MetaData>
+            <Meta name="stage">bankfull</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="wetted_extent">
+          <Name>WExtent</Name>
+          <Path>Topography/TIN0001/Stages/Wetted/WExtent.shp</Path>
+          <MetaData>
+            <Meta name="stage">wetted</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="wetted_crosssections">
+          <Name>WCrossSections</Name>
+          <Path>Topography/TIN0001/Stages/Wetted/WCrossSections.shp</Path>
+          <MetaData>
+            <Meta name="stage">wetted</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="bankfull_extent">
+          <Name>BExtent</Name>
+          <Path>Topography/TIN0001/Stages/Bankfull/BExtent.shp</Path>
+          <MetaData>
+            <Meta name="stage">bankfull</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="wetted_centerline">
+          <Name>WCenterline</Name>
+          <Path>Topography/TIN0001/Stages/Wetted/WCenterline.shp</Path>
+          <MetaData>
+            <Meta name="stage">wetted</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="bankfull_centerline">
+          <Name>BCenterline</Name>
+          <Path>Topography/TIN0001/Stages/Bankfull/BCenterline.shp</Path>
+          <MetaData>
+            <Meta name="stage">bankfull</Meta>
+          </MetaData>
+        </Vector>
+        <Vector  id="wetted_islands">
+          <Name>WIslands</Name>
+          <Path>Topography/TIN0001/Stages/Wetted/WIslands.shp</Path>
+          <MetaData>
+            <Meta name="stage">wetted</Meta>
+          </MetaData>          
+        </Vector>
+        <Raster  id="Slope">
+          <Name>AssocSlope</Name>
+          <Path>Topography/TIN0001/AssocSurfaces/AssocSlope.tif</Path>
+          <notInProject>true</notInProject>
+        </Raster>
+        <Raster  id="PointQuality3D">
+          <Name>Raster</Name>
+          <Path>Topography/TIN0001/AssocSurfaces/Assoc3DPQ.tif</Path>
+        </Raster>
+        <Raster  id="InterpolationError">
+          <Name>AssocIErr</Name>
+          <Path>Topography/TIN0001/AssocSurfaces/AssocIErr.tif</Path>
+        </Raster>
+        <Raster  id="PointDensity">
+          <Name>AssocPDensity</Name>
+          <Path>Topography/TIN0001/AssocSurfaces/AssocPDensity.tif</Path>
+        </Raster>
+      </Outputs>
+    </Realization>
+  </Realizations>
+</Project>

@@ -108,9 +108,9 @@ class TimerBuckets(TimerBucketsBorg):
         if self.active is False:
             return
         if self.key is not None:
-            self.timers[self.key] += self.timer.ellapsed()
-            self.total += self.timer.ellapsed()
-            self.tick_total += self.timer.ellapsed()
+            self.timers[self.key] += self.timer.elapsed()
+            self.total += self.timer.elapsed()
+            self.tick_total += self.timer.elapsed()
 
     def generate_table(self) -> Tuple(List[str, str], List):
         """ return something we can either write to a CSV or to a SQLite DB
