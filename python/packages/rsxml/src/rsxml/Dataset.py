@@ -11,7 +11,8 @@ from typing import List
 import xml.etree.cElementTree as ET
 
 from .RSObj import RSObj
-from .common import MetaData, GeoPackageDatasetTypes
+from .common import GeoPackageDatasetTypes
+from .MetaData import MetaData
 
 
 class Dataset(RSObj):
@@ -91,6 +92,26 @@ class Dataset(RSObj):
         ET.SubElement(xml_node, 'Name').text = self.name
         ET.SubElement(xml_node, 'Path').text = self.path
         return xml_node
+
+
+class Log(Dataset):
+    """_summary_
+
+    Args:
+        Dataset (_type_): _description_
+    """
+
+    def __init__(self, xml_id: str,
+                 name: str,
+                 path: str,
+                 ext_ref: str = None,
+                 summary: str = None,
+                 description: str = None,
+                 citation: str = None,
+                 meta_data: MetaData = None
+                 ) -> None:
+
+        super().__init__(xml_id, name, path, 'Log', ext_ref, summary, description, citation, meta_data)
 
 
 class Geopackage(Dataset):

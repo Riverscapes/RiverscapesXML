@@ -12,7 +12,7 @@ from datetime import date
 import xml.etree.cElementTree as ET
 
 from .RSObj import RSObj
-from .common import MetaData
+from .MetaData import MetaData
 
 
 class QAQCEvent(RSObj):

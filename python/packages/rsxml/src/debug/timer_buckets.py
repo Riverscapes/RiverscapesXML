@@ -1,7 +1,8 @@
+"""_summary_"""
 from __future__ import annotations
-from typing import Dict, List, Tuple
-from src.timer import Timer
 import csv
+from typing import Dict, List, Tuple
+from .timer import Timer
 
 
 class TimerBucketsBorg:

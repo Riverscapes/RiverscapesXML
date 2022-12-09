@@ -69,6 +69,11 @@ class Analysis(RSObj):
                         )
 
     def to_xml(self) -> ET.Element:
+        """_summary_
+
+        Returns:
+            ET.Element: _description_
+        """
         xml_node = super().to_xml()
 
         xml_node.append(self.metrics.to_xml())

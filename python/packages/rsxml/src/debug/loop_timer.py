@@ -4,7 +4,7 @@ import sys
 import time
 import shutil
 import os
-from logger import Logger
+from src.logging.logger import Logger
 
 # Set if this environment variable is set don't show any UI
 NO_UI = os.environ.get('NO_UI') is not None
