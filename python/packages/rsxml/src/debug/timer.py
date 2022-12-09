@@ -26,9 +26,9 @@ class Timer:
         Returns:
             str: _description_
         """
-        return pretty_duration(self.ellapsed())
+        return pretty_duration(self.elapsed())
 
-    def ellapsed(self) -> int:
+    def elapsed(self) -> int:
         """_summary_
 
         Returns:
@@ -43,7 +43,11 @@ class TimerWaypoints:
     """
 
     def __init__(self):
-        """_summary_
+        """
+        Timer Waypoints
+
+        Waypoints are a way to track the time between two points in your code.
+        Think of them like lap markers        
         """
         self.timer = Timer()
         self.timers = []
@@ -55,9 +59,9 @@ class TimerWaypoints:
         Args:
             key (str): _description_
         """
-        ellapsed = self.timer.ellapsed()
-        self.timers.append((key, ellapsed))
-        self.total_time += ellapsed
+        elapsed = self.timer.elapsed()
+        self.timers.append((key, elapsed))
+        self.total_time += elapsed
         self.timer.reset()
 
     def toString(self) -> str:
@@ -66,8 +70,10 @@ class TimerWaypoints:
         Returns:
             str: _description_
         """
-        return '-----------------------------------\n' \
-            + '\n'.join([f'{x}: {round(ell)} seconds' for x, ell in self.timers]) \
-            + '\n-----------------------------------\n' \
-            + f'total: {round(self.total_time, 3)} seconds' \
-            '\n-----------------------------------\n'
+        spacer = "   "
+        return f'\n{spacer}-----------------------------------' \
+            + f"\n{spacer}" \
+            + f'\n{spacer}'.join([f'  {x}: {round(ell)} seconds' for x, ell in self.timers]) + '\n' \
+            + f'{spacer}-----------------------------------\n' \
+            + f'{spacer}  total: {round(self.total_time, 3)} seconds\n' \
+              f'{spacer}-----------------------------------\n'

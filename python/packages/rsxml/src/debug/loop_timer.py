@@ -14,10 +14,10 @@ class LoopTimer:
     """Timer is good for figuring out how long loops are running
     """
 
-    def __init__(self, name, logger=Logger("TIMER"), use_ms=False, timer=500):
+    def __init__(self, name, logger=Logger("TIMER"), use_ms=False, interval=500):
         self.use_ms = use_ms
         self.logger = logger
-        self.timer = 20000 if NO_UI else timer
+        self.interval = 20000 if NO_UI else interval
         self.start = time.time()
         self.name = name
         self.lastupdate = time.time()
@@ -57,10 +57,10 @@ class LoopTimer:
                 avg = avg * 1000
             self.logger.debug(f"{self.name}{middle_str}:: Count: {self.ticks:,}, Total Time: {self.total:f}s, Average: {avg:f}{unit}")
         else:
-            ellapsed = time.time() - self.start
+            elapsed = time.time() - self.start
             if use_ms or self.use_ms:
-                ellapsed = ellapsed * 1000
-            self.logger.debug("{self.name}{middle_str}::{ellapsed:f}{unit}")
+                elapsed = elapsed * 1000
+            self.logger.debug("{self.name}{middle_str}::{elapsed:f}{unit}")
 
     def erase(self):
         """Erase one line of output
@@ -81,7 +81,7 @@ class LoopTimer:
         middle_str = f"::{mid_str}" if mid_str else ""
         since_last = 1000 * (time.time() - self.lastupdate)
         unit = "ms" if self.use_ms else "s"
-        if self.ticks > 0 and since_last > self.timer:
+        if self.ticks > 0 and since_last > self.interval:
             self.erase()
             avg = self.total / self.ticks
             if self.use_ms:

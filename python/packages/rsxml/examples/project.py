@@ -1,3 +1,5 @@
+# in your code you woulf write:
+# from riverscapes import rsxml
 from src.rsxml import Project, MetaData, Meta, ProjectBounds, Coords, BoundingBox, Dataset, GeoPackageDatasetTypes, Realization
 from datetime import date
 
@@ -53,7 +55,7 @@ if __name__ == '__main__':
             ds_type='CSV',
             ext_ref='test2.gpkg',
             summary='This is a test dataset 2',
-            description='This is a test dataset 2',
+            description='This is a test dataset 2'
         )
     )
 

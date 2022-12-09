@@ -16,7 +16,7 @@
       ".vscode/*.py"
     ],
     "python.linting.pylintArgs": [
-      "--extension-pkg-whitelist=sqlite3,math",
+      "--extension-pkg-whitelist=sqlite3,math,lxml",
       "--ignore=E501",
       "--max-line-length=240"
     ],  

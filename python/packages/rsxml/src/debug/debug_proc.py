@@ -8,9 +8,12 @@ from time import sleep
 # Make sure this module doesn't crash if these aren't installed.
 try:
     import psutil
+except ImportError:
+    psutil = None
+try:
     import matplotlib.pyplot as plt
 except ImportError:
-    pass
+    plt = None
 from src.logging.logger import Logger
 
 # https://medium.com/survata-engineering-blog/monitoring-memory-usage-of-a-running-python-program-49f027e3d1ba

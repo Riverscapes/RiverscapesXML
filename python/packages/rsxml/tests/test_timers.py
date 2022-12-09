@@ -223,4 +223,4 @@ class TimerTests(unittest.TestCase):
         tmr = Timer()
         sleep(0.001)
 
-        self.assertGreater(tmr.ellapsed(), 0.001)
+        self.assertGreater(tmr.elapsed(), 0.001)
