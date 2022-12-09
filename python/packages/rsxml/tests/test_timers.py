@@ -6,8 +6,8 @@ import sqlite3
 import os
 from time import sleep
 from tempfile import NamedTemporaryFile
-from src import TimerBuckets
-from src.timer_buckets import TimerBucketsBorg
+from src.debug import TimerBuckets, Timer
+from src.debug.timer_buckets import TimerBucketsBorg
 
 
 class TimerTests(unittest.TestCase):
@@ -216,3 +216,11 @@ class TimerTests(unittest.TestCase):
             self.assertListEqual(rows, [
                 (0, 2, 'DUMB', 0.0, 0.0, 0.0
                  )])
+
+    def test_timer(self):
+        """Test the Timer class"""
+
+        tmr = Timer()
+        sleep(0.001)
+
+        self.assertGreater(tmr.ellapsed(), 0.001)

@@ -2,8 +2,8 @@ import sys
 import time
 import shutil
 import os
-from logger import Logger
-from util import sizeof_fmt, pretty_duration
+from src.logging.logger import Logger
+from src.util import sizeof_fmt, pretty_duration
 
 # Set if this environment variable is set don't show any UI
 NO_UI = os.environ.get('NO_UI') is not None

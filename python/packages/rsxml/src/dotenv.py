@@ -1,3 +1,4 @@
+"""Parse a .env file and return a dictionary of the values"""
 import codecs
 from typing import Dict
 import re

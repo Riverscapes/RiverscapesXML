@@ -1,6 +1,6 @@
 from __future__ import annotations
 import time
-from .util import pretty_duration
+from src.util import pretty_duration
 
 
 class Timer:

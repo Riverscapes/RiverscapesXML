@@ -10,7 +10,7 @@ from __future__ import annotations
 from typing import List
 import xml.etree.cElementTree as ET
 
-from .common import MetaData
+from .MetaData import MetaData
 from .RSObj import RSObj
 from .ProjectBounds import ProjectBounds
 from .Realization import Realization

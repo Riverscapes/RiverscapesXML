@@ -5,12 +5,13 @@ import os
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
+# Make sure this module doesn't crash if these aren't installed.
 try:
     import psutil
     import matplotlib.pyplot as plt
 except ImportError:
     pass
-from src.logger import Logger
+from src.logging.logger import Logger
 
 # https://medium.com/survata-engineering-blog/monitoring-memory-usage-of-a-running-python-program-49f027e3d1ba
 

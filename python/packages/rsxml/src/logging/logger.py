@@ -16,7 +16,7 @@ from pprint import pformat
 # Colored is optional
 try:
     from termcolor import colored
-except ImportError as e:
+except ImportError as err:
     colored = None
 
 # Set if this environment variable is set don't show any UI
