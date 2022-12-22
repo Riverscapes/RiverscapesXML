@@ -43,8 +43,8 @@
                     <Node label="Diversions" xpath="Geopackage/Layers/Vector[@lyrName='diversions']" type="point" symbology="" />
                     <Node label="Stream Crossings" xpath="Geopackage/Layers/Vector[@lyrName='road_crossings']" type="point" symbology="" />
                     <Node label="Private Land" xpath="Geopackage/Layers/Vector[@lyrName='private_land']" type="polygon" symbology="" />
-                    <Node label="Railroads Within the Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='rail_valleybottom']" type="line" symbology="" />
-                    <Node label="Roads Within the Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='road_valleybottom']" type="line" symbology="" />
+                    <Node label="Railroads Within the Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='rail_valleybottom']" type="line" symbology="railroads" />
+                    <Node label="Roads Within the Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='road_valleybottom']" type="line" symbology="roads" />
                 </Children>
             </Node>
             <Node label="Inputs" xpath="Realizations/Realization/Inputs">
@@ -61,11 +61,17 @@
                             <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@lyrName='canals']" type="line" symbology="canals_ditches" />
                             <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@lyrName='ownership']" type="polygon" symbology="ownership" transparency="40" />
                             <Node label="Roads" xpath="Geopackage/Layers/Vector[@lyrName='roads']" type="line" symbology="roads" />
+                            <Node label="Railroads" xpath="Geopackage/Layers/Vector[@lyrName='rails']" type="line" symbology="railroads" />
                         </Children>
                     </Node>
                     <Node label="Valley Bottom">
                         <Children>
                             <Node label="Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled" />
+                        </Children>
+                    </Node>
+                    <Node label="Land Cover">
+                        <Children>
+                            <Node label="Existing Vegetation (Land Cover)" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
                         </Children>
                     </Node>
                 </Children>
