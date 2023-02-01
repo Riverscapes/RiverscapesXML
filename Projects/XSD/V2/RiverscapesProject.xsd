@@ -59,8 +59,7 @@
     </xs:keyref>
   </xs:element>
 
-  <!--Realizations
-  Must have an Analysis-->
+  <!-- The warehouse tag indicates how this project is stored in the warehouse -->
   <xs:complexType name="WarehouseType" mixed="true">
     <xs:attribute type="GUIDType" name="id" use="required" />
     <xs:attribute type="WarehouseUrlType" name="apiUrl" use="required" />
@@ -249,6 +248,7 @@
       </xs:element>
     </xs:all>
     <xs:attribute type="ProjectIdType" name="id" use="required" />
+    <!-- Types are useful to have another attribute other than "id" to xpath search. This is mainly for business logic-->
     <xs:attribute type="xs:string" name="type" use="optional" />
     <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
 
