@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
 
   <Name>VBET for HUC 16050301</Name>
@@ -7,11 +7,13 @@
   <!-- CHANGE: Collapsed down to one element. This is the only usable GUID now in the project
         The apiUrl is going to be important later when we want our tools to connect to it.
   -->
-  <Warehouse id="badfe8c1-0342-4876-8fac-b2eb5493a90f" apiUrl="https://12312312.amazon.ca/api/prod"/>
+  <Warehouse id="badfe8c1-0342-4876-8fac-b2eb5493a90f" apiUrl="https://12312312.amazon.ca/api/prod" />
   <Summary>This is a project that does things I care about </Summary>
   <Description></Description>
   <!-- simply replace ]]> with ]]]]><![CDATA[> -->
-  <Citation><![CDATA[Storrie, P. D., and Randall, R. (2007). Graphic Universe: Beowulf. Minneapolis: Lerner Publishing Group. Retrieved from NetLibrary. 8 July 2009.]]></Citation>
+  <Citation>
+    <![CDATA[Storrie, P. D., and Randall, R. (2007). Graphic Universe: Beowulf. Minneapolis: Lerner Publishing Group. Retrieved from NetLibrary. 8 July 2009.]]>
+  </Citation>
 
   <MetaData>
     <Meta name="ModelVersion">0.5.0</Meta>
@@ -32,34 +34,39 @@
   <QAQCEvents>
 
     <!-- Here is some automated testing we do in Cybercastor -->
-    <QAQCEvent state="passed" datePerformed="2022-04-11T17:56:39Z">
-      <Name>Manual Calibration</Name>
-      <PerformedBy>Cybercastor Automation</PerformedBy>
+    <QAQCEvent state="passed" dateCreated="2022-04-11T17:56:39Z" performedBy="Cybercastor Automation">
+      <name>Manual Calibration</name>
       <Summary>Automated Project QC Testing</Summary>
+      <Description></Description>
+      <Citation></Citation>
+      <MetaData></MetaData>
+      <Links>
+        <URL text="" />
+      </Links>
     </QAQCEvent>
 
     <!-- Here is the same event from before but passed -->
-    <QAQCEvent state="failed" datePerformed="2022-04-11T17:56:39Z">
-      <Name>Manual Calibration</Name>
-      <PerformedBy>John Johnson</PerformedBy>
+    <QAQCEvent state="failed" dateCreated="2022-04-11T17:56:39Z" performedBy="John Johnson">
+      <name>Manual Calibration</name>
       <Summary>Failed to load layer X (see github link)</Summary>
-      <Description><![CDATA[ This is a long-form commment deserunt elit ut nisi veniam pariatur eu excepteur in. Adipisicing ea qui id do incididunt deserunt sint est ullamco consectetur eu deserunt laboris excepteur. Consectetur nulla deserunt amet velit. Pariatur incididunt esse nulla nisi elit deserunt. Ad non ex aliqua officia et excepteur dolore Lorem veniam duis. Et amet nostrud exercitation do Lorem. Laborum fugiat ipsum labore eiusmod aliqua qui et dolore ipsum laboris ut.
+      <Description>
+        <![CDATA[ This is a long-form commment deserunt elit ut nisi veniam pariatur eu excepteur in. Adipisicing ea qui id do incididunt deserunt sint est ullamco consectetur eu deserunt laboris excepteur. Consectetur nulla deserunt amet velit. Pariatur incididunt esse nulla nisi elit deserunt. Ad non ex aliqua officia et excepteur dolore Lorem veniam duis. Et amet nostrud exercitation do Lorem. Laborum fugiat ipsum labore eiusmod aliqua qui et dolore ipsum laboris ut.
 
 Esse officia minim mollit nulla pariatur ut ipsum do qui est et ea esse minim. Duis commodo laboris sint enim qui esse ipsum in. Officia sunt tempor fugiat fugiat culpa elit elit. Mollit nostrud ea cupidatat fugiat adipisicing reprehenderit.
 
-Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt officia sunt. Occaecat aliqua sunt reprehenderit sit sit duis mollit irure tempor elit aute proident quis consequat. Est deserunt occaecat deserunt non tempor irure ut ea pariatur ullamco non irure consectetur.]]></Description>
-      <Links>
-        <URL text="github Link">https://github.com/Riverscapes/RiverscapesXML/issues/410</URL>
-      </Links>
+Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt officia sunt. Occaecat aliqua sunt reprehenderit sit sit duis mollit irure tempor elit aute proident quis consequat. Est deserunt occaecat deserunt non tempor irure ut ea pariatur ullamco non irure consectetur.]]>
+      </Description>
       <MetaData>
         <Meta name="SOMEKEY">SOMEVALUE</Meta>
       </MetaData>
+      <Links>
+        <URL text="github Link">https://github.com/Riverscapes/RiverscapesXML/issues/410</URL>
+      </Links>
     </QAQCEvent>
-    
+
     <!-- Here is the same event from before but passed -->
-    <QAQCEvent state="passed" datePerformed="2022-04-13T18:56:39Z">
-      <Name>Manual Calibration</Name>
-      <PerformedBy>John Johnson</PerformedBy>
+    <QAQCEvent state="passed" dateCreated="2022-04-13T18:56:39Z" performedBy="John Johnson">
+      <name>Manual Calibration</name>
       <Summary>This was a task of calibration performed by someone</Summary>
     </QAQCEvent>
   </QAQCEvents>
@@ -86,7 +93,7 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
       <MetaData>
         <Meta ext="warehouse" name="id" type="hidden">ae316b03-1e5d-4dec-896a-9139b7b707a8</Meta>
         <Meta ext="warehouse" name="apiUrl" type="hidden">https://12312312.amazon.ca/api/prod</Meta>
-     
+
         <Meta ext="project" name="ModelVersion">1.2.0</Meta>
         <Meta ext="project" name="dateCreated" type="isodate">2021-09-10T18:32:47.801646</Meta>
         <Meta ext="project" name="HUC8">16050301</Meta>
@@ -127,7 +134,7 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
             <Meta ext="dataset" name="guid" type="guid">ba029937-9eca-4e69-b9fc-d7fd6895fdc3</Meta>
             <Meta ext="dataset" name="path" type="filepath">hydrology/NHDFlowline.shp</Meta>
 
-            <!-- HEre is metadata that is specific to only this layer --> 
+            <!-- HEre is metadata that is specific to only this layer -->
             <Meta name="localContext" type="json">This is some local context</Meta>
           </MetaData>
         </Vector>
@@ -156,7 +163,7 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
   </ProjectBounds>
 
   <Realizations>
-    <!-- CHANGE: no project-specific tag name here GUIDs are gone --> 
+    <!-- CHANGE: no project-specific tag name here GUIDs are gone -->
     <Realization id="REALIZATION1" dateCreated="2021-10-02T16:48:48.772237" productVersion="0.1.2">
       <Name>VBET for HUC 16050301</Name>
       <Logs>
@@ -213,6 +220,8 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
             -->
             <Vector lyrName="flowlines" type="flowlines">
               <Name>NHD Flowlines</Name>
+              <Citation></Citation>
+
             </Vector>
             <Vector lyrName="flowareas" type="flowareas">
               <Name>NHD Flow Areas</Name>

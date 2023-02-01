@@ -1,25 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "RaveBusinessLogic"
-		},
-		{
-			"path": "Projects"
-		},
-		{
-			"path": "Symbology"
-		},
-		{
-			"path": "Programs"
-		},
-		{
       "name": "📦 rsxml",
 			"path": "python/packages/rsxml"
 		},
-		{
-      "name": "🔧 Python Scripts",
-			"path": "python"
-		},
+		// {
+    //   "name": "🔧 Python Scripts",
+		// 	"path": "python"
+		// },
 		{
       "name": "🏠 ROOT",
 			"path": "."
