@@ -414,10 +414,12 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Note that we allow whitespace "\s*" before and after paths. we need to make sure this
+  is stripped out in any parsers -->
   <xs:simpleType name="UnixPathType">
     <xs:restriction base="xs:string">
       <xs:maxLength value="256" />
-      <xs:pattern value="([A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+" />
+      <xs:pattern value="\s*([A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\s*" />
     </xs:restriction>
   </xs:simpleType>
 

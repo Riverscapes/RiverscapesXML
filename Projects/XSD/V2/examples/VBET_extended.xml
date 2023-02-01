@@ -151,7 +151,8 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
       <MaxLat>46.6795944656402</MaxLat>
       <MaxLng>-96.0205078125</MaxLng>
     </BoundingBox>
-    <Path>some_file_name.geojson</Path>
+    <Path>
+      some_file_name.geojson</Path>
   </ProjectBounds>
 
   <Realizations>
