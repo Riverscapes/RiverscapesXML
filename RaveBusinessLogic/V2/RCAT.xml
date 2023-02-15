@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>Riparian Condition Assessment Tool</Name>
+    <ProjectType>RCAT</ProjectType>
+    <Node xpathlabel="Name">
+        <Children collapsed="false">
+            <Node label="Outputs" xpath="Realizations/Realization/Outputs">
+                <Children collapsed="false">
+                    <Node label="IGOs">
+                        <Children>
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="igo_rcat_condition" />
+                        </Children>
+                    </Node>
+                    <Node label="Reaches">
+                        <Children>
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reaches_rcat_condition" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Intermediates" xpath="Realizations/Realization">
+                <Children collapsed="true">
+                    <Node label="IGOs">
+                        <Children>
+                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="igo_rvd"/>
+                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="igo_lui"/>
+                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="igo_fpaccess"/>
+                        </Children>
+                    </Node>
+                    <Node label="Reaches">
+                        <Children>
+                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reaches_rvd"/>
+                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reaches_lui"/>
+                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reaches_fpaccess"/>
+                        </Children>
+                    </Node>
+                    <Node label="Rasters">
+                        <Children>
+                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Existing_Veg_EVT_Riparian"/>
+                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Historic_Veg_BPS_Riparian"/>
+                            <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Existing_Veg_EVT_Vegetated"/>
+                            <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Historic_Veg_BPS_Vegetated"/>
+                            <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="riparian_conversion"/>
+                            <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="fpaccess"/>
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Inputs" xpath="Realizations/Realization/Inputs">
+                <Children collapsed="true">
+                    <Node label="Sampling Units">
+                        <Children>
+                            <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='reaches']" type="line" symbology="flow_lines" />
+                            <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="" />
+                            <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="" />
+                        </Children>
+                    </Node>
+                    <Node label="Anthropogenic Datasets">
+                        <Children>
+                            <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@lyrName='canals']" type="line" symbology="canals_ditches" />
+                            <Node label="Roads" xpath="Geopackage/Layers/Vector[@lyrName='roads']" type="line" symbology="roads" />
+                            <Node label="Railroads" xpath="Geopackage/Layers/Vector[@lyrName='rails']" type="line" symbology="railroads" />
+                        </Children>
+                    </Node>
+                    <Node label="Valley Bottom">
+                        <Children>
+                            <Node label="Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled" />
+                        </Children>
+                    </Node>
+                    <Node label="Vegetation">
+                        <Children>
+                            <Node label="Existing Vegetation" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
+                            <Node label="Historic Vegetation" xpath="Raster[@id='HISTVEG']" type="raster" symbology="Historic_Veg_BPS_Class" transparency="40" />
+                        </Children>
+                    </Node>
+                    <Node label="Digital Elevation Model">
+                        <Children>
+                            <Node label="Pit-filled DEM" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+</Project>
