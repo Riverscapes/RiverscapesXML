@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
+
+	<Name>VBET for HUC 16050302</Name>
+	<ProjectType>VBET</ProjectType>
+	<!-- apiUrl is taken from examples/VBET.xml May not be correct-->
+	<Warehouse id="9ab6591c-35e6-4f2f-ba59-3e380ebe7dd5" apiUrl="https://12312312.amazon.ca/api/prod" />
+
+	<MetaData>
+		<Meta name="ModelVersion">0.5.0</Meta>
+		<Meta name="dateCreated" type="isodate">2021-10-02T16:48:50.453850</Meta>
+		<Meta name="HUC8">16050302</Meta>
+		<Meta name="HUC">16050302</Meta>
+		<Meta name="VBETVersion">0.5.0</Meta>
+		<Meta name="VBETTimestamp" type="timestamp">1633193330</Meta>
+		<Meta name="Scenario Name">UPDATED_TESTING</Meta>
+		<Meta name="FlowlineType">NHD</Meta>
+		<Meta name="VBET_Active_Floodplain_Threshold" type="int">90</Meta>
+		<Meta name="VBET_Inactive_Floodplain_Threshold" type="int">68</Meta>
+		<Meta name="Runner">Cybercastor</Meta>
+		<Meta name="ProcTimeS" type="int">4448.01</Meta>
+		<Meta name="ProcTimeHuman">1:14 hours</Meta>
+	</MetaData>
+	<ProjectBounds>
+		<Centroid>
+			<Lat>38.62946923964231</Lat>
+			<Lng>-119.39145634259572</Lng>
+		</Centroid>
+		<BoundingBox>
+			<MinLat>38.136962745750814</MinLat>
+			<MinLng>-119.6514817853824</MinLng>
+			<MaxLat>39.08131524527749</MaxLat>
+			<MaxLng>-119.09312486523874</MaxLng>
+		</BoundingBox>
+		<Path>project_bounds.geojson</Path>
+	</ProjectBounds>
+	<Realizations>
+		<Realization id="VBET" dateCreated="2021-10-02T16:48:50.457945" productVersion="0.5.0">
+			<Name>VBET for HUC 16050302</Name>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+      </Logs>
+			<Inputs>
+				<Raster id="SLOPE_RASTER">
+					<Name>Slope Raster</Name>
+					<Path>inputs/slope.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">5ac1978a-3480-4486-a4c0-4713d6702e08</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:42.673983</Meta>
+						<Meta name="_rs_prj_HUC8">16050302</Meta>
+						<Meta name="_rs_prj_HUC">16050302</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">West Walker</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">466.3188374125874</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">825.87</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">13:45 minutes</Meta>
+						<Meta name="_rs_lyr_Description">Slope raster generated using gdal_dem tool specifying the slope option. Units are in percent.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SLOPE</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">SLOPE</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">ab88f2d1-7e7e-4a82-bc8f-fe2ddcf21fa7</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/slope.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="HAND_RASTER">
+					<Name>Hand Raster</Name>
+					<Path>inputs/HAND.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">0c690ffe-36f7-4a6c-95da-302ea3586220</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.0.1</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-30T18:37:54.998185</Meta>
+						<Meta name="_rs_prj_HUC8">16050302</Meta>
+						<Meta name="_rs_prj_HUC">16050302</Meta>
+						<Meta name="_rs_prj_TauDEMProjectVersion">1.0.1</Meta>
+						<Meta name="_rs_prj_TauDEMTimestamp" type="timestamp">1633027074</Meta>
+						<Meta name="_rs_prj_TauDEM_SoftwareVersion">5.3.7</Meta>
+						<Meta name="_rs_prj_TauDEM_Credits">Copyright (C) 2010-2015 David Tarboton, Utah State University</Meta>
+						<Meta name="_rs_prj_TauDEM_Licence" type="url">https://hydrology.usu.edu/taudem/taudem5/GPLv3license.txt</Meta>
+						<Meta name="_rs_prj_TauDEM_URL" type="url">https://hydrology.usu.edu/taudem/taudem5/index.html</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">4166.50</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">1:09 hours</Meta>
+						<Meta name="_rs_prj_projType">TauDEM</Meta>
+						<Meta name="_rs_lyr_id">HAND_RASTER</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">04655bf5-819f-4d32-b44b-870ad066529c</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">outputs/HAND.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="TWI_RASTER">
+					<Name>Topographic Wetness Index (TWI) Raster</Name>
+					<Path>inputs/twi.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">0c690ffe-36f7-4a6c-95da-302ea3586220</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.0.1</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-30T18:37:54.998185</Meta>
+						<Meta name="_rs_prj_HUC8">16050302</Meta>
+						<Meta name="_rs_prj_HUC">16050302</Meta>
+						<Meta name="_rs_prj_TauDEMProjectVersion">1.0.1</Meta>
+						<Meta name="_rs_prj_TauDEMTimestamp" type="timestamp">1633027074</Meta>
+						<Meta name="_rs_prj_TauDEM_SoftwareVersion">5.3.7</Meta>
+						<Meta name="_rs_prj_TauDEM_Credits">Copyright (C) 2010-2015 David Tarboton, Utah State University</Meta>
+						<Meta name="_rs_prj_TauDEM_Licence" type="url">https://hydrology.usu.edu/taudem/taudem5/GPLv3license.txt</Meta>
+						<Meta name="_rs_prj_TauDEM_URL" type="url">https://hydrology.usu.edu/taudem/taudem5/index.html</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">4166.50</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">1:09 hours</Meta>
+						<Meta name="_rs_prj_projType">TauDEM</Meta>
+						<Meta name="_rs_lyr_id">TWI_RASTER</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">2a08aa22-d7b2-402a-ba07-6d8cb1c84170</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">outputs/twi.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="HILLSHADE">
+					<Name>DEM Hillshade</Name>
+					<Path>inputs/dem_hillshade.tif</Path>
+					<MetaData>
+						<Meta name="_rs_wh_id">5ac1978a-3480-4486-a4c0-4713d6702e08</Meta>
+						<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+						<Meta name="_rs_wh_program">Anabranch</Meta>
+						<Meta name="_rs_wh_tags">Store</Meta>
+						<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+						<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:42.673983</Meta>
+						<Meta name="_rs_prj_HUC8">16050302</Meta>
+						<Meta name="_rs_prj_HUC">16050302</Meta>
+						<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+						<Meta name="_rs_prj_Watershed">West Walker</Meta>
+						<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">466.3188374125874</Meta>
+						<Meta name="_rs_prj_ProcTimeS" type="int">825.87</Meta>
+						<Meta name="_rs_prj_ProcTimeHuman">13:45 minutes</Meta>
+						<Meta name="_rs_lyr_Description">Hillshade raster generated using the gdal_dem tool specifying the hillshade option.</Meta>
+						<Meta name="_rs_lyr_DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HILLSHADE</Meta>
+						<Meta name="_rs_prj_projType">RSContext</Meta>
+						<Meta name="_rs_lyr_id">HILLSHADE</Meta>
+						<Meta name="_rs_lyr_guid" type="guid">74e947da-ff53-41bc-b10f-8d89b18b900b</Meta>
+						<Meta name="_rs_lyr_path" type="filepath">topography/dem_hillshade.tif</Meta>
+					</MetaData>
+				</Raster>
+				<Raster id="DEM">
+					<Name>DEM</Name>
+					<Path>inputs/dem.tif</Path>
+				</Raster>
+				<Geopackage id="INPUTS">
+					<Name>Inputs</Name>
+					<Path>inputs/vbet_inputs.gpkg</Path>
+					<Layers>
+						<Vector lyrName="flowlines">
+							<Name>NHD Flowlines</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">5ac1978a-3480-4486-a4c0-4713d6702e08</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:42.673983</Meta>
+								<Meta name="_rs_prj_HUC8">16050302</Meta>
+								<Meta name="_rs_prj_HUC">16050302</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">West Walker</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">466.3188374125874</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">825.87</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">13:45 minutes</Meta>
+								<Meta name="_rs_lyr_origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">NHDFlowline</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">2da6764a-7674-4242-8c4e-3ec276cfae96</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">hydrology/NHDFlowline.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="flowareas">
+							<Name>NHD Flow Areas</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">5ac1978a-3480-4486-a4c0-4713d6702e08</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.2.0</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-10T18:32:42.673983</Meta>
+								<Meta name="_rs_prj_HUC8">16050302</Meta>
+								<Meta name="_rs_prj_HUC">16050302</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_Watershed">West Walker</Meta>
+								<Meta name="_rs_prj_mean_annual_precipitation_mm" type="float">466.3188374125874</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">825.87</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">13:45 minutes</Meta>
+								<Meta name="_rs_lyr_origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+								<Meta name="_rs_prj_projType">RSContext</Meta>
+								<Meta name="_rs_lyr_id">NHDArea</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">a8f2f882-483f-44bf-af59-1eccd137a0df</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">hydrology/NHDArea.shp</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="Flowlines_VAA">
+							<Name>NHD Flowlines with Attributes</Name>
+						</Vector>
+						<Vector lyrName="channel_area_polygons">
+							<Name>Channel Area Polygons</Name>
+							<MetaData>
+								<Meta name="_rs_wh_id">0c690ffe-36f7-4a6c-95da-302ea3586220</Meta>
+								<Meta name="_rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_wh_tags">Store</Meta>
+								<Meta name="_rs_prj_ModelVersion">1.0.1</Meta>
+								<Meta name="_rs_prj_dateCreated" type="isodate">2021-09-30T18:37:54.998185</Meta>
+								<Meta name="_rs_prj_HUC8">16050302</Meta>
+								<Meta name="_rs_prj_HUC">16050302</Meta>
+								<Meta name="_rs_prj_TauDEMProjectVersion">1.0.1</Meta>
+								<Meta name="_rs_prj_TauDEMTimestamp" type="timestamp">1633027074</Meta>
+								<Meta name="_rs_prj_TauDEM_SoftwareVersion">5.3.7</Meta>
+								<Meta name="_rs_prj_TauDEM_Credits">Copyright (C) 2010-2015 David Tarboton, Utah State University</Meta>
+								<Meta name="_rs_prj_TauDEM_Licence" type="url">https://hydrology.usu.edu/taudem/taudem5/GPLv3license.txt</Meta>
+								<Meta name="_rs_prj_TauDEM_URL" type="url">https://hydrology.usu.edu/taudem/taudem5/index.html</Meta>
+								<Meta name="_rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_prj_ProcTimeS" type="int">4166.50</Meta>
+								<Meta name="_rs_prj_ProcTimeHuman">1:09 hours</Meta>
+								<Meta name="_rs_lyr__rs_wh_id">ec10ccfc-b1a6-4106-84a5-e25fe488f9c7</Meta>
+								<Meta name="_rs_lyr__rs_wh_user">21c4df56-9365-4bf2-910a-41c9dedaf35c</Meta>
+								<Meta name="_rs_lyr__rs_wh_program">Anabranch</Meta>
+								<Meta name="_rs_lyr__rs_wh_tags">Store</Meta>
+								<Meta name="_rs_lyr__rs_prj_ModelVersion">1.1.0</Meta>
+								<Meta name="_rs_lyr__rs_prj_dateCreated" type="isodate">2021-09-30T18:16:45.021783</Meta>
+								<Meta name="_rs_lyr__rs_prj_HUC8">16050302</Meta>
+								<Meta name="_rs_lyr__rs_prj_HUC">16050302</Meta>
+								<Meta name="_rs_lyr__rs_prj_ChannelAreaVersion">1.1.0</Meta>
+								<Meta name="_rs_lyr__rs_prj_ChannelAreaTimestamp" type="timestamp">1633025805</Meta>
+								<Meta name="_rs_lyr__rs_prj_Runner">Cybercastor</Meta>
+								<Meta name="_rs_lyr__rs_prj_Bankfull Equation">0.177 * (a ** 0.397) * (p ** 0.453)</Meta>
+								<Meta name="_rs_lyr__rs_prj_Bankfull Parameter: a">TotDASqKm</Meta>
+								<Meta name="_rs_lyr__rs_prj_Bankfull Parameter: p">46.63188374125874</Meta>
+								<Meta name="_rs_lyr__rs_prj_flowline Reach Codes">['33400', '46000', '46003', '46006', '46007', '']</Meta>
+								<Meta name="_rs_lyr__rs_prj_flowarea Reach Codes">['53700', '46100', '48400', '31800', '34300', '34305', '34306', '4600', '46003', '46006', '46007', '']</Meta>
+								<Meta name="_rs_lyr__rs_prj_waterbody Reach Codes">['49300', '3900', '39001', '39004', '39005', '39006', '39009', '39010', '39011', '39012', '43600', '43601', '43603', '43604', '43605', '43606', '43607', '43608', '43609', '43610', '43611', '43612', '43613', '43614', '43615', '43618', '43619', '43621', '43623', '43624', '43625', '43626', '46600', '46601', '46602', '']</Meta>
+								<Meta name="_rs_lyr__rs_prj_ProcTimeS" type="int">29.31</Meta>
+								<Meta name="_rs_lyr__rs_prj_ProcTimeHuman">29.0 seconds</Meta>
+								<Meta name="_rs_lyr__rs_prj_projType">ChannelArea</Meta>
+								<Meta name="_rs_lyr__rs_lyr_id">CHANNEL_AREA</Meta>
+								<Meta name="_rs_lyr__rs_lyr_guid" type="guid">b306b6b3-06c4-4bca-8d84-c4f7eee571c5</Meta>
+								<Meta name="_rs_lyr__rs_lyr_path" type="filepath">channel_area</Meta>
+								<Meta name="_rs_prj_projType">TauDEM</Meta>
+								<Meta name="_rs_lyr_id">CHANNEL_AREA</Meta>
+								<Meta name="_rs_lyr_guid" type="guid">dab82a8f-5bab-4cde-9605-60e10175061a</Meta>
+								<Meta name="_rs_lyr_path" type="filepath">channel_area</Meta>
+							</MetaData>
+						</Vector>
+						<Vector lyrName="catchments">
+							<Name>NHD Catchments</Name>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Inputs>
+			<Intermediates>
+				<Raster id="CHANNEL_AREA_RASTER">
+					<Name>Channel Area Raster</Name>
+					<Path>intermediates/channelarea.tif</Path>
+				</Raster>
+				<Raster id="TRANSFORM_ZONE_SLOPE">
+					<Name>Transform Zones for Slope</Name>
+					<Path>intermediates/slope_transform_zones.tif</Path>
+				</Raster>
+				<Raster id="TRANSFORM_ZONE_HAND">
+					<Name>Transform Zones for HAND</Name>
+					<Path>intermediates/hand_transform_zones.tif</Path>
+				</Raster>
+				<Raster id="TRANSFORM_ZONE_TWI">
+					<Name>Transform Zones for TWI</Name>
+					<Path>intermediates/twi_transform_zones.tif</Path>
+				</Raster>
+				<Raster id="NORMALIZED_SLOPE">
+					<Name>Normalized Slope</Name>
+					<Path>intermediates/nLoE_Slope.tif</Path>
+				</Raster>
+				<Raster id="NORMALIZED_HAND">
+					<Name>Normalized HAND</Name>
+					<Path>intermediates/nLoE_Hand.tif</Path>
+				</Raster>
+				<Raster id="NORMALIZED_TWI">
+					<Name>Normalized Topographic Wetness Index (TWI)</Name>
+					<Path>intermediates/nLoE_TWI.tif</Path>
+				</Raster>
+				<Raster id="EVIDENCE_TOPO">
+					<Name>Topo Evidence</Name>
+					<Path>intermediates/Topographic_Evidence.tif</Path>
+				</Raster>
+				<Raster id="EVIDENCE_CHANNEL">
+					<Name>Channel Evidence</Name>
+					<Path>intermediates/Channel_Evidence.tif</Path>
+				</Raster>
+				<Geopackage id="Intermediates">
+					<Name>Intermediates</Name>
+					<Path>intermediates/vbet_intermediates.gpkg</Path>
+					<Layers>
+						<Vector lyrName="vbet_network">
+							<Name>VBET Network</Name>
+						</Vector>
+						<Vector lyrName="transform_zones">
+							<Name>Transform Zones</Name>
+						</Vector>
+						<Vector lyrName="ThiessenPoints">
+							<Name>Thiessen Reach Points</Name>
+						</Vector>
+						<Vector lyrName="ThiessenPolygonsDissolved">
+							<Name>Thiessen Reach Areas</Name>
+						</Vector>
+						<Vector lyrName="thresh_90">
+							<Name>Raw Threshold at 90%</Name>
+						</Vector>
+						<Vector lyrName="thresh_68">
+							<Name>Raw Threshold at 68%</Name>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Intermediates>
+			<Outputs>
+				<Raster id="VBET_EVIDENCE">
+					<Name>VBET Evidence Raster</Name>
+					<Path>outputs/VBET_Evidence.tif</Path>
+				</Raster>
+				<Geopackage id="VBET_OUTPUTS">
+					<Name>VBET</Name>
+					<Path>outputs/vbet.gpkg</Path>
+					<Layers>
+						<Vector lyrName="vbet_full">
+							<Name>VBET Full Extent</Name>
+						</Vector>
+						<Vector lyrName="vbet_ia">
+							<Name>VBET Inactive/Active Boundary</Name>
+						</Vector>
+						<Vector lyrName="vbet_channel_area">
+							<Name>VBET Channel Area</Name>
+						</Vector>
+						<Vector lyrName="active_floodplain">
+							<Name>Active Floodplain</Name>
+						</Vector>
+						<Vector lyrName="inactive_floodplain">
+							<Name>Inactive Floodplain</Name>
+						</Vector>
+					</Layers>
+				</Geopackage>
+				<HTMLFile id="REPORT">
+					<Name>RSContext Report</Name>
+					<Path>outputs/vbet.html</Path>
+				</HTMLFile>
+			</Outputs>
+		</Realization>
+	</Realizations>
+</Project>

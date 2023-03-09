@@ -1,0 +1,39 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 23%)", "Very Low"],
+    ["hsl(70, 100%, 38%)", "Low"],
+    ["hsl(44, 100%, 50%)","Moderate"],
+    ["hsl(9, 100%, 50%)","High"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Land Use Intensity ",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "step",
+              ["get", "iPC_LU"],
+              "hsl(100, 100%, 23%)",
+              0.0001,
+              "hsl(100, 100%, 23%)",
+              0.00010001,
+              "hsl(70, 100%, 38%)",
+              33,
+              "hsl(70, 100%, 38%)",
+              33.000001,
+              "hsl(44, 100%, 50%)",
+              66,
+              "hsl(44, 100%, 50%)",
+              66.00001,
+              "hsl(9, 100%, 50%)",
+              100,
+              "hsl(9, 100%, 50%)"
+          ]
+      }
+  }
+  ]
+}

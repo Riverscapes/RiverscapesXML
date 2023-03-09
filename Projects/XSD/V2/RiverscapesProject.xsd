@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+
+  <!-- This is the very top level -->
+  <xs:element name="Project">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
+        <xs:element type="xs:string" name="ProjectType" minOccurs="1" maxOccurs="1" />
+        <xs:element type="WarehouseType" name="Warehouse" minOccurs="0" maxOccurs="1" />
+
+        <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
+        <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
+        <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
+
+        <xs:element type="MetaDataType" name="MetaData" minOccurs="1" maxOccurs="1" />
+        
+        <xs:element type="QAQCEventsType" name="QAQCEvents" minOccurs="0" maxOccurs="1" />
+
+        <xs:element type="DataSetContainerType" name="CommonDatasets" minOccurs="0" maxOccurs="1">
+          <xs:unique name="UniqueIdsInsideCommonDatasets">
+            <xs:selector xpath=".//*" />
+            <xs:field xpath="@id" />
+          </xs:unique>    
+        </xs:element>
+        <xs:element type="ProjectBoundsType" name="ProjectBounds" minOccurs="0" maxOccurs="1" />
+        <xs:element name="Realizations" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element type="RealizationType" name="Realization" maxOccurs="unbounded" minOccurs="0">
+                <xs:unique name="UniqueIdsInsideRealization">
+                  <xs:selector xpath=".//*" />
+                  <xs:field xpath="@id" />
+                </xs:unique>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- Realization IDs must be unique -->
+    <xs:unique name="UniqueRealizationId">
+      <xs:selector xpath="Realizations/Realization" />
+      <xs:field xpath="@id" />
+    </xs:unique>
+
+    <!-- Input keys are referenceable -->
+    <xs:keyref name="InputIdRef" refer="UniqueIdsInsideCommonDatasets">
+      <xs:selector xpath=".//CommonDatasets" />
+      <xs:field xpath="@ref" />
+    </xs:keyref>
+  </xs:element>
+
+  <!--Realizations Must have an Analysis-->
+  <xs:complexType name="WarehouseType" mixed="true">
+    <xs:attribute type="GUIDType" name="id" use="required" />
+    <xs:attribute type="WarehouseUrlType" name="apiUrl" use="required" />
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Common Elements:
+  - All projects must have the Following:
+  
+  ============================================================================== -->
+
+  <!-- A Project can have realizations -->
+  <xs:complexType name="RealizationType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
+
+      <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
+
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+
+      <xs:element name="Logs" maxOccurs="1" minOccurs="0">
+        <xs:complexType>
+          <xs:choice maxOccurs="unbounded">
+            <xs:element type="SimpleFileType" name="LogFile" />
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element type="DataSetContainerType" name="Datasets" minOccurs="0" maxOccurs="1" />
+      
+      <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
+      <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" maxOccurs="1" />
+      <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" maxOccurs="1" />
+      <xs:element type="AnalysesType" name="Analyses" minOccurs="0" maxOccurs="1">
+        <xs:unique name="UniqueIdsInsideAnalyses">
+          <xs:selector xpath="./*" />
+          <xs:field xpath="@id" />
+        </xs:unique>
+      </xs:element>
+
+    </xs:sequence>
+    <xs:attribute type="ProjectIdType" name="id" use="required" />
+    <xs:attribute type="xs:string" name="dateCreated" use="required" />
+    <xs:attribute type="VersionType" name="productVersion" use="required" />
+  </xs:complexType>
+
+  <!--Realizations can have an Analyses-->
+  <xs:complexType name="AnalysesType" mixed="true">
+    <xs:sequence>
+      <xs:element name="Analysis" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element type="xs:string" name="Name" minOccurs="0" />
+
+            <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
+            <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
+            <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />            
+
+            <xs:element type="MetricsType" name="Metrics" minOccurs="0" />
+            <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+            <xs:element type="DataSetContainerType" name="Configuration" minOccurs="0" maxOccurs="1" />
+            <xs:element type="DataSetContainerType" name="Products" minOccurs="0" maxOccurs="1" />
+          </xs:sequence>
+          <xs:attribute type="ProjectIdType" name="id" use="required" />
+        </xs:complexType>
+        <xs:unique name="UniqueProductIdsInsideAnalyses">
+          <xs:selector xpath="./Products/*" />
+          <xs:field xpath="@id" />
+        </xs:unique>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MetaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required" />
+        <xs:attribute type="MetaKeyValueType" name="type" use="optional" />
+        <xs:attribute type="MetaKeySrcType" name="ext" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MetaDataType">
+    <xs:sequence>
+      <xs:element type="MetaType" name="Meta" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParamType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required" />
+        <xs:attribute type="MetaKeyValueType" name="type" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MetricType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="MetricsType">
+    <xs:sequence>
+      <xs:element type="MetricType" name="Metric" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Datasets: Inputs, Outputs, files etc....
+  
+  ============================================================================== -->
+
+  <!-- Let's define our Input/Output Containers and what they can contain -->
+  <xs:complexType name="DataSetContainerType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <!-- References can also be used here -->
+      <xs:element type="CommonDatasetsRefType" name="CommonDatasetRef" />
+
+      <!-- A scalar value is possible as an input or an output but use <Params> if you can -->
+      <xs:element type="RasterType" name="Raster" />
+      <xs:element type="VectorType" name="Vector" />
+      <xs:element type="GeopackageType" name="Geopackage" />
+      <xs:element type="TINType" name="TIN" />
+      <xs:element type="DEMType" name="DEM" />
+      <xs:element type="HillShadeType" name="HillShade" />
+      <xs:element type="SimpleFileType" name="ConfigFile" />
+      <xs:element type="SimpleFileType" name="CSV" />
+      <xs:element type="SimpleFileType" name="Image" />
+      <xs:element type="SimpleFileType" name="Video" />
+      <xs:element type="SimpleFileType" name="DataTable" />
+      <xs:element type="SimpleFileType" name="Database" />
+      <xs:element type="SimpleFileType" name="SurveyQualityDB" />
+      <xs:element type="SimpleFileType" name="InstrumentFile" />
+      <xs:element type="SimpleFileType" name="AuxInstrumentFile" />
+      <xs:element type="SimpleFileType" name="MSAccessDB" />
+      <xs:element type="SimpleFileType" name="SQLiteDB" />
+      <xs:element type="SimpleFileType" name="PDF" />
+      <xs:element type="SimpleFileType" name="HTMLFile" />
+      <xs:element type="SimpleFileType" name="ZipFile" />
+      <xs:element type="SimpleFileType" name="LogFile" />
+      <!-- Last resort catch-all for anything we don't support -->
+      <xs:element type="SimpleFileType" name="File" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- The base type  -->
+  <xs:complexType name="DatasetType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="0" maxOccurs="1" />
+
+      <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />      
+
+      <xs:element type="UnixPathType" name="Path" minOccurs="1" maxOccurs="1" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute type="ProjectIdType" name="id" use="required" />
+    <xs:attribute type="xs:string" name="type" use="optional" />
+    <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
+  </xs:complexType>
+
+  <!-- Geopackage layers cannot reference external projects -->
+  <xs:complexType name="GeopackageDatasetType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="0" maxOccurs="1" />
+
+      <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />      
+
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="lyrName" use="required" />
+    <xs:attribute type="xs:string" name="type" use="optional" />
+    <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
+  </xs:complexType>
+
+
+  <xs:complexType name="CommonDatasetsRefType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="0" maxOccurs="1" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="ref" use="required" />
+  </xs:complexType>
+  <!-- Now some Subtypes -->
+  <xs:complexType name="GeoSpatialType">
+    <xs:complexContent>
+      <xs:extension base="DatasetType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ContextLayerType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="DatasetType">
+        <xs:sequence>
+          <xs:element type="xs:string" name="URL" default="http://" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="SimpleFileType">
+    <xs:complexContent>
+      <xs:extension base="DatasetType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Here are the GeoSpatial Types They are explicitly defined in case we need to extend them later -->
+  <xs:complexType name="RasterType">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TINType">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="VectorType">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="GeopackageType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="GeoSpatialType">
+        <xs:sequence>
+          <xs:element type="GeopackageLayersType" name="Layers" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="GeopackageLayersType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="GeopackageDatasetType" name="Raster" />
+      <xs:element type="GeopackageDatasetType" name="Vector" />
+      <xs:element type="GeopackageDatasetType" name="DataTable" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- DEMs extend rasters -->
+  <xs:complexType name="DEMType">
+    <xs:complexContent>
+      <xs:extension base="RasterType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Here are our context layers -->
+  <xs:complexType name="HillShadeType">
+    <xs:complexContent>
+      <xs:extension base="ContextLayerType" />
+    </xs:complexContent>
+  </xs:complexType>
+
+
+  <xs:complexType name="QAQCEventsType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="QAQCEventType" name="QAQCEvent" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="QAQCEventType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="PerformedBy" minOccurs="0" maxOccurs="1" />
+
+      <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
+
+      <xs:element name="Links" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:choice maxOccurs="unbounded">
+            <xs:element name="URL">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="text" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+              </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute type="QAQCState" name="state" />
+    <xs:attribute type="xs:string" name="datePerformed" />
+  </xs:complexType>
+
+
+
+  <!-- =========================================================================
+  
+  Project Bounds: We introduced these to add a geospatial element to our projects
+  
+  ============================================================================== -->
+
+  <xs:complexType name="ProjectBoundsType" mixed="true">
+    <xs:sequence>
+      <xs:element type="CentroidType" name="Centroid" minOccurs="1" maxOccurs="1" />
+      <xs:element type="BoundingBoxType" name="BoundingBox" minOccurs="1" maxOccurs="1" />
+      <xs:element type="UnixPathType" name="Path" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CentroidType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Lat" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="Lng" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BoundingBoxType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="MinLat" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="MinLng" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="MaxLat" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="MaxLng" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <!-- =========================================================================
+  
+  Simple types so we can validate better
+  
+  ============================================================================== -->
+
+  <!-- Generic constraints on IDs -->
+  <xs:simpleType name="ProjectIdType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3" />
+      <xs:maxLength value="64" />
+      <xs:pattern value="[A-Za-z0-9_-]+" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="GUIDType">
+    <xs:restriction base="xs:string">
+      <xs:length value="36" />
+      <xs:pattern value="[0-9a-zA-Z-]+" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Note that we allow whitespace "\s*" before and after paths. we need to make sure this
+  is stripped out in any parsers -->
+  <xs:simpleType name="UnixPathType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="256" />
+      <xs:pattern value="\s*([A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\s*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="VersionType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]+\.[0-9]+\.[0-9]+[a-z-]*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ExternalReferenceType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9a-zA-Z-]{36,}:Project/[A-Za-z0-9_/#-]+" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="WarehouseUrlType">
+    <xs:restriction base="xs:anyURI">
+      <xs:pattern value="https?://.+" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- The type of string in the <Meta> tag. These are optional -->
+  <xs:simpleType name="MetaKeyValueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="guid" />
+      <xs:enumeration value="url" />
+      <xs:enumeration value="filepath" />
+      <xs:enumeration value="image" />
+      <xs:enumeration value="video" />
+      <xs:enumeration value="isodate" />
+      <xs:enumeration value="timestamp" />
+      <xs:enumeration value="float" />
+      <xs:enumeration value="boolean" />
+      <xs:enumeration value="int" />
+      <xs:enumeration value="richtext" />
+      <xs:enumeration value="markdown" />
+      <xs:enumeration value="json" />
+      <!-- Hidden just means this is rarely useful to humans so never render it directly 
+            (it's not secret or private)
+      -->
+      <xs:enumeration value="hidden" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="QAQCState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="passed" />
+      <xs:enumeration value="failed" />
+      <xs:enumeration value="provisional" />
+    </xs:restriction>
+  </xs:simpleType>  
+
+  <xs:simpleType name="MetaKeySrcType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="warehouse" />
+      <xs:enumeration value="project" />
+      <xs:enumeration value="dataset" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

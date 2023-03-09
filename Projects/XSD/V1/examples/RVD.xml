@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RVD.xsd">
+	<Name>RVD for HUC 17060304</Name>
+	<ProjectType>RVD</ProjectType>
+	<MetaData>
+		<Meta name="ModelVersion">0.1.0</Meta>
+		<Meta name="dateCreated">2020-12-08T17:54:22.995649</Meta>
+		<Meta name="HUC8">17060304</Meta>
+		<Meta name="RVDVersion">0.1.0</Meta>
+		<Meta name="RVDTimestamp">1607478863</Meta>
+		<Meta name="Watershed">Middle Fork Clearwater</Meta>
+	</MetaData>
+	<Realizations>
+		<RVD id="RVD1" dateCreated="2020-12-08T17:54:23.005166" guid="75a38402-39c1-11eb-972f-acde48001122" productVersion="0.1.0">
+			<Name>RVD for HUC 17060304</Name>
+			<Inputs>
+				<Raster guid="75b4dac2-39c1-11eb-972f-acde48001122" id="EXVEG">
+					<Name>Existing Vegetation</Name>
+					<Path>inputs/existing_veg.tif</Path>
+				</Raster>
+				<Raster guid="75cc3c62-39c1-11eb-972f-acde48001122" id="HISTVEG">
+					<Name>Historic Vegetation</Name>
+					<Path>inputs/historic_veg.tif</Path>
+				</Raster>
+				<Geopackage guid="7c73dcd2-39c1-11eb-972f-acde48001122" id="INPUTS">
+					<Name>Confinement</Name>
+					<Path>inputs/inputs.gpkg</Path>
+					<Layers>
+						<Vector guid="7c74c64c-39c1-11eb-972f-acde48001122" id="FLOWLINES">
+							<Name>Segmented Flowlines</Name>
+							<Path>flowlines</Path>
+						</Vector>
+						<Vector guid="7c75b156-39c1-11eb-972f-acde48001122" id="FLOW_AREA">
+							<Name>NHD Flow Area</Name>
+							<Path>flowareas</Path>
+						</Vector>
+						<Vector guid="7c76b3da-39c1-11eb-972f-acde48001122" id="WATERBODIES">
+							<Name>NHD Waterbody</Name>
+							<Path>waterbodies</Path>
+						</Vector>
+						<Vector guid="7c77bd52-39c1-11eb-972f-acde48001122" id="VALLEY_BOTTOM">
+							<Name>Valley Bottom</Name>
+							<Path>valley_bottom</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Inputs>
+			<Intermediates>
+				<Geopackage guid="543adea4-39c2-11eb-972f-acde48001122" id="INTERMEDIATES">
+					<Name>Intermediates</Name>
+					<Path>intermediates/intermediates.gpkg</Path>
+					<Layers>
+						<Vector guid="543c8f74-39c2-11eb-972f-acde48001122" id="CLEANED">
+							<Name>Cleaned Network</Name>
+							<Path>intermediate_nhd_network</Path>
+						</Vector>
+						<Vector guid="543e3022-39c2-11eb-972f-acde48001122" id="NETWORK">
+							<Name>Network</Name>
+							<Path>network</Path>
+						</Vector>
+						<Vector guid="543fa204-39c2-11eb-972f-acde48001122" id="THIESSEN">
+							<Name>Network</Name>
+							<Path>thiessen</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+			</Intermediates>
+			<Outputs>
+				<Geopackage guid="54418f42-39c2-11eb-972f-acde48001122" id="OUTPUTS">
+					<Name>RVD</Name>
+					<Path>outputs/RVD.gpkg</Path>
+					<Layers>
+						<Vector guid="544423c4-39c2-11eb-972f-acde48001122" id="SEGMENTED">
+							<Name>RVD</Name>
+							<Path>Reaches</Path>
+						</Vector>
+					</Layers>
+				</Geopackage>
+				<HTMLFile guid="54467688-39c2-11eb-972f-acde48001122" id="RVD_REPORT">
+					<Name>RVD Report</Name>
+					<Path>outputs/rvd.html</Path>
+				</HTMLFile>
+			</Outputs>
+		</RVD>
+	</Realizations>
+</Project>

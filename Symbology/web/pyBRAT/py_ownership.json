@@ -1,0 +1,45 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsla(43, 100%, 50%)", "Bureau of Indian Affairs (BIA)"],
+    ["hsla(56, 82%, 60%)", "Bureau of Land Management (BLM)"],
+    ["hsla(60, 100%, 85%)", "Bureau of Reclamation (BOR)"],
+    ["hsla(338, 90%, 85%)", "Department of Defense (DOD)"],
+    ["hsla(19, 42%, 73%)", "Other Federal Agencies"],
+    ["hsla(0, 0%, 80%)", "Private or Unknown"],
+    ["hsla(120, 29%, 57%)", "US Forest Service (USFS)"],
+    ["hsla(109, 49%, 85%)", "Other"]
+    
+  
+  ],
+  "layerStyles": [
+    {
+      "id": "Land Ownership",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "land_ownership-5gpnpp",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "AGENCY_SYM"],
+              ["BIA"],
+              "hsla(43, 100%, 50%)",
+              ["BLM"],
+              "hsla(56, 82%, 60%)",
+              ["BOR"],
+              "hsla(60, 100%, 85%)",
+              ["DOD"],
+              "hsla(338, 90%, 85%)",
+              ["OTHFED"],
+              "hsla(19, 42%, 73%)",
+              ["PRIUNK"],
+              "hsla(0, 0%, 80%)",
+              ["USFS"],
+              "hsla(120, 29%, 57%)",
+              "hsla(109, 49%, 85%)"
+          ]
+      }
+  }
+  ]
+}

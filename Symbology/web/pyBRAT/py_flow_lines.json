@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(206, 98%, 51%)", "Network"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Network",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "flowline-b9b8na",
+      "layout": {},
+      "paint": {"line-color": "hsl(206, 98%, 51%)"}
+  }
+  ]
+}

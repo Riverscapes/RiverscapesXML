@@ -1,0 +1,70 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(240, 100%, 0%)", "Bank"],
+    ["hsl(0, 0%, 41%)", "Cutbank"],
+    ["hsl(213, 100%, 33%)", "Pool"],
+    ["hsl(220, 100%, 23%)", "Beaver Pond"],
+    ["hsl(194, 100%, 73%)", "Plunge Pool"],
+    ["hsl(60, 100%, 45%)", "Run"],
+    ["hsl(60, 100%, 73%)", "Glide"],
+    ["hsl(40, 100%, 45%)", "Riffle"],
+    ["hsl(40, 51%, 60%)", "Bench"],
+    ["hsl(0, 100%, 23%)", "Barface"],
+    ["hsl(20, 100%, 23%)", "Counterpoint Bar"],
+    ["hsl(0, 34%, 40%)", "Diagonal Bar"],
+    ["hsl(19, 34%, 40%)", "Longitudinal Bar"],
+    ["hsl(0, 100%, 33%)", "Lateral Bar"],
+    ["hsl(0, 51%, 60%)", "Lobate Bar"],
+    ["hsl(0, 42%, 73%)", "Point Bar"],
+    ["hsl(0, 0%, 88%)", "Other"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tier3subgu-8zr7ae",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Tier3subGU-8zr7ae",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "SubGU"],
+              ["Bank"],
+              "hsl(240, 100%, 0%)",
+              ["Cutbank"],
+              "hsl(0, 0%, 41%)",
+              ["Pool"],
+              "hsl(213, 100%, 33%)",
+              ["Beaver Pond"],
+              "hsl(220, 100%, 23%)",
+              ["Plunge Pool"],
+              "hsl(194, 100%, 73%)",
+              ["Run"],
+              "hsl(60, 100%, 45%)",
+              ["Glide"],
+              "hsl(60, 100%, 73%)",
+              ["Riffle"],
+              "hsl(40, 100%, 45%)",
+              ["Bench"],
+              "hsl(40, 51%, 60%)",
+              ["Barface"],
+              "hsl(0, 100%, 23%)",
+              ["Counterpoint Bar"],
+              "hsl(20, 100%, 23%)",
+              ["Diagonal Bar"],
+              "hsl(0, 34%, 40%)",
+              ["Longitudinal Bar"],
+              "hsl(19, 34%, 40%)",
+              ["Lateral Bar"],
+              "hsl(0, 100%, 33%)",
+              ["Lobate Bar"],
+              "hsl(0, 51%, 60%)",
+              ["Point Bar"],
+              "hsl(0, 42%, 73%)",
+              "hsl(0, 0%, 88%)"
+          ]
+      }
+  }
+  ]
+}

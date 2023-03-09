@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(359, 87%, 49%)", "Non-Perennial"],
+    ["hsl(200, 67%, 47%)", "Perennial"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Perennial",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "IsPeren"],
+              0,
+              "hsl(359, 87%, 49%)",
+              [1],
+              "hsl(200, 67%, 47%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

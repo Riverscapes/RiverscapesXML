@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Program xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Program.xsd">
+
+  <Name>US Forest Service PIBO</Name>
+  <MachineName>USFS_PIBO</MachineName>
+
+  <MetaData>
+    <Meta name="projectFile">project.rs.xml</Meta>
+    <Meta name="access">PRIVATE</Meta>
+    <Meta name="projectXSDs">https://xml.riverscapes.net/Projects/XSD/V1</Meta>
+  </MetaData>
+
+
+  <Definitions>
+    <!--Here's where we say what's allowed for each collection. Can be a list or a regex-->
+    <Collections>
+      <Collection id="COL_HUC" name="HUC">
+        <AllowRegex pattern="^([0-9]{8}|[0-9]{10}|[0-9]{12})$" />
+      </Collection>
+
+    </Collections>
+
+    <!--Groups are a lot simpler than collections. They can only be a single folder-->
+    <Groups>
+      <Group id="GRP_HUC" name="HUC" folder="HUC" />
+    </Groups>
+
+    <!--Products for now just need ref, name and folder (url is optional and leads to a wiki)-->
+    <Products>
+      <Product id="RSContext" name="Riverscapes Context" folder="RSContext" url="" />
+      <Product id="ChannelArea" name="ChannelArea Models" folder="ChannelArea" url="" />
+      <Product id="TauDEM" name="TauDEM Models" folder="TauDEM" url="" />
+      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
+      <Product id="BRAT" name="BRAT Models" folder="BRAT" url="" />
+      <Product id="Inundation" name="RIM Models" folder="RIM" url="" />
+    </Products>
+  </Definitions>
+
+  <!-- Here's where we specify the actual structure
+    Reminder:
+      - Collection: Repeating folders (e.g. Asotin, Lemhi
+      - Group: Single folder with an explicit name (e.g. Topography)
+     Rules:
+      - Only one collection is allowed at any level
+      - Collections cannot be mixed with groups or products
+  -->
+  <Hierarchy>
+    <Group ref="GRP_HUC">
+      <Collection ref="COL_HUC">
+        <Product ref="RSContext" />
+        <Product ref="ChannelArea" />
+        <Product ref="TauDEM" />
+        <Product ref="VBET" />
+        <Product ref="BRAT" />
+        <Product ref="Inundation" />
+      </Collection>
+    </Group>
+  </Hierarchy>
+</Program>

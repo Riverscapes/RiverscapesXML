@@ -1,0 +1,46 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+    "legend": [
+        ["hsl(178, 78%, 35%)", "46006 - Perrenial"],
+        ["hsl(34, 97%, 71%)", "48400 - Wash"],
+        ["hsl(0, 0%, 0%)", "34306 - Dam/Weir"],
+        ["hsl(178, 223%, 138%)", "53700 - Area of Complex Channels"],
+        ["hsl(197, 24%, 240%)", "43100 - Rapids"],
+        ["hsl(91, 38%, 87%)", "40307 - Inundation Area"],
+        ["hsl(200, 48%, 87%)", "45500 - Spillway"],
+        ["hsl(29, 43%, 62%)", "33600 - Canal/Ditch"]
+    ],
+    "layerStyles":
+        [
+            {
+                "id": "nhdflowareasnovember-a4jlrn",
+                "type": "fill",
+                "source": "composite",
+                "source-layer": "nhdflowareasNOVEMBER-a4jlrn",
+                "layout": {},
+                "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "FCode"],
+                    [46006],
+                    "hsl(178, 64%, 35%)",
+                    [48400],
+                    "hsl(34, 97%, 71%)",
+                    [34306],
+                    "hsl(0, 0%, 0%)",
+                    [53700],
+                    "hsl(178, 223%, 138%)",
+                    [43100],
+                    "hsl(197, 24%, 240%)",
+                    [40307],
+                    "hsl(91, 38%, 87%)",
+                    [45500],
+                    "hsl(200, 48%, 87%)",
+                    [33600],
+                    "hsl(29, 43%, 62%))",
+                    "#000000"
+                ]
+            }
+        }
+    ]
+}

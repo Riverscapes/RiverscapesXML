@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../StreamTemperature.xsd">
+
+  <Name>potential_stream_temperature_project</Name>
+  <ProjectType>STREAMTEMPPOTMEAN</ProjectType>
+
+  <MetaData>
+    <!--This first metadata exists only to place this project in the riverscapes project-->
+    <Meta name="description">Summer mean and max potential stream temperature derived from potential riparian vegetation height</Meta>
+    <Meta name="HUCID">17060201</Meta>
+		<Meta name="Region">CRB</Meta>
+    <Meta name="Watershed">Yankee Fork</Meta>
+    <Meta name="Year">2015</Meta>
+  </MetaData>
+
+    <Inputs></Inputs>
+
+ <Realizations>
+    <StreamTemperature guid="8d3a474d-e43f-46ef-9795-4c35cf8556c6" id="streamtemp" dateCreated="2017-12-04" productVersion="1.0">
+      <Name>Potential Stream Temperature for Yankee Fork 2015</Name>
+
+      <MetaData>
+        <!--This next metadata relates to this particular realization-->
+        <Meta name="Current_vegetation_dataset">https://www.usna.edu/Users/oceano/pguth/md_help/html/nbcd.htm</Meta>
+        <Meta name="Potential_vegetation_dataset">https://www.landfire.gov/NationalProductDescriptions24.php</Meta>
+        <Meta name="Current_temperature_estimates">https://github.com/SouthForkResearch/StreamTemperature/wiki</Meta>
+        <Meta name="Code_wiki">https://github.com/SouthForkResearch/StreamTemperature/wiki</Meta>
+      </MetaData>
+
+    <Analyses>
+      <Analysis>
+        <Name>Stream Temp Analysis</Name>
+          <Outputs>
+
+             <Vector id="network">
+              <Name>Network_estimate_shapefile</Name>
+              <Path>YF_2015_Pot_Mn_temp.shp</Path>
+              <MetaData>
+                <Meta name="description">Shapefile of network with summer mean mean and max mean potential temperature estimates</Meta>
+              </MetaData>
+            </Vector>
+
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </StreamTemperature>
+  </Realizations>
+</Project>

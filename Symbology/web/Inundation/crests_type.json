@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 50%)", "Active"],
+    ["hsl(0, 100%, 50%)", "Inactive"]
+  ],
+  "layerStyles": [
+    {
+      "id": "cresttype-1sei67",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "cresttype-1sei67",
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "crest_type"],
+              ["active"],
+              "hsl(100, 100%, 50%)",
+              ["inactive"],
+              "hsl(0, 100%, 50%)",
+              "#000000"
+          ],
+          "line-width": 3
+      }
+  }
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+  <Name>Default</Name>
+  <ProjectType>Default</ProjectType>
+  <Node xpathlabel="Name">
+    <Children>
+      <Repeater label="Realizations" xpath="Realizations/Realization/*">
+        <!--This is a template for how each realization should render-->
+        <Node xpathlabel="Name">
+          <Children collapsed="false">
+            <Node label="Inputs" xpath="Inputs">
+              <Children>
+                <Repeater label="Raster Layers" xpath="Raster">
+                  <Node xpathlabel="Name" type="raster" symbology="raster" />
+                </Repeater>
+                <Repeater label="Vector Layers" xpath="Vector">
+                  <!-- TODO: this is a problem we need to address -->
+                  <Node xpathlabel="Name" type="polygon" symbology="" />
+                </Repeater>
+                <Repeater label="Image Layers" xpath="Image">
+                  <Node xpathlabel="Name" type="file" />
+                </Repeater>
+              </Children>
+            </Node>
+            <Node label="DEM" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+            <Node xpathlabel="Name" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
+            <Node label="Project Report" xpath="HTMLFile[@id='REPORT']" type="report" />
+            <Node label="Log File" xpath="Logs/LogFile" type="file" />
+          </Children>
+        </Node>
+      </Repeater>
+    </Children>
+  </Node>
+</Project>

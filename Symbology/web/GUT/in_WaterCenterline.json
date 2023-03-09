@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(167, 100%, 33%)", "Main"],
+    ["hsl(166, 100%, 50%)", "Side"],
+    ["hsl(0, 0%, 61%)", "Other or No Label"]
+  ],
+  "layerStyles": [
+    {
+      "id": "watercenterline-bcwkgv",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "watercenterline-bcwkgv",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Channel"],
+              ["Main"],
+              "hsl(167, 100%, 33%)",
+              ["Side"],
+              "hsl(166, 100%, 50%)",
+              "hsl(0, 0%, 61%)"
+          ],
+          "line-dasharray": [4, 1, 1, 1],
+          "line-width": 2.5
+      }
+  }
+  ]
+}

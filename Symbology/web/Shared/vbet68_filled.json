@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(118, 58%, 69%)", "Valley Bottom Extent (Filled)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vbet-extent-filled-392cvr",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "vbet_extent_filled-392cvr",
+        "layout": {},
+        "paint": {
+            "fill-color": "hsl(118, 58%, 69%)",
+            "fill-opacity": 0.6,
+            "fill-outline-color": "hsla(0, 0%, 0%, 0)"
+        }
+    }
+  ]
+}

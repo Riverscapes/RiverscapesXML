@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../fmLTPBR.xsd">
+	<Name>Bear Creek Hydrologic Enhancement</Name>
+	<ProjectType>fmLTPBR</ProjectType>
+	<MetaData>
+		<!-- We encourage modelversion and dateCreated as pseudo-mandatory metadata on the project -->
+		<Meta name="ModelVersion">4.0.1</Meta>
+		<!-- PLease use ISO 8601 compliant date format so we can parse it easily -->
+		<Meta name="dateCreated">2020-06-11T10:56:53.576247</Meta>
+		<!-- Everything else is up to you -->
+		<Meta name="pk">A4774065-5C52-4897-80B6-B779B09556D3</Meta>
+		<Meta name="Name">Bear Creek Hydrologic Enhancement</Meta>
+		<Meta name="SubWatershed">Lower John Day</Meta>
+		<Meta name="Affiliation">Mid John Day - Bridge Creek Watershed Council</Meta>
+		<Meta name="Description">Bear Creek restoration actions will work to address watershed impairments that stem from historic land-use (e.g. overgrazing, channelization, beaver eradication, fire suppression and juniper proliferation) and have resulted in altered hydrologic and riparian function, reduced geomorphic complexity, and ultimately a decrease in ESA salmonid habitat quantity and quality.</Meta>
+		<Meta name="calc_CountComplex">10</Meta>
+		<Meta name="calc_CountPhase">3</Meta>
+		<Meta name="calc_CountReach">4</Meta>
+		<Meta name="calc_CountReachControl">0</Meta>
+		<Meta name="calc_CountReachTreatment">4</Meta>
+		<Meta name="calc_CountStructureType">6</Meta>
+		<Meta name="calc_LengthControlKM">0</Meta>
+		<Meta name="calc_LengthTotalKM">1.09</Meta>
+		<Meta name="calc_LengthTreatmentKM">1.09</Meta>
+		<Meta name="calc_SumStructures">84</Meta>
+	</MetaData>
+	<Realizations>
+		<FMLTPBR dateCreated="2020-06-11T10:56:53.601035" guid="c87e2a6d-2056-4669-82af-8ba3de489e10" id="fmLTPBR1" productVersion="4.0.1">
+			<Name>Give the realization a good name if possible</Name>
+			<Outputs>
+				<Geopackage guid="ec8525a0-e8dc-465b-9281-d9317321c163" id="LTPBR">
+					<Name>LTPBR Geopackage</Name>
+					<MetaData>
+						<Meta name="somekey">somevalue</Meta>
+					</MetaData>
+					<Layers>
+						<Vector>
+							<Name>Active Channels</Name>
+							<Path>active_channels</Path>
+							<MetaData>
+								<Meta name="somekey">only if you need it</Meta>
+							</MetaData>
+						</Vector>
+						<Vector>
+							<Name>Active Floodplains</Name>
+							<Path>active_floodplains</Path>
+						</Vector>						
+						<Vector>
+							<Name>Complexes</Name>
+							<Path>complexes</Path>
+						</Vector>
+						<Vector>
+							<Name>Meta</Name>
+							<Path>meta</Path>
+						</Vector>
+						<Vector>
+							<Name>Reaches</Name>
+							<Path>reaches</Path>
+						</Vector>						
+						<Vector>
+							<Name>Recovery Potentials</Name>
+							<Path>recovery_potentials</Path>
+						</Vector>
+						<Vector>
+							<Name>Structures</Name>
+							<Path>structures</Path>
+						</Vector>						
+						<Vector>
+							<Name>Structure Points</Name>
+							<Path>structures_pts</Path>
+						</Vector>						
+						<Vector>
+							<Name>Valley Bottoms</Name>
+							<Path>valley_bottoms</Path>
+						</Vector>						
+					</Layers>
+				</Geopackage>
+			</Outputs>
+		</FMLTPBR>
+	</Realizations>
+</Project>

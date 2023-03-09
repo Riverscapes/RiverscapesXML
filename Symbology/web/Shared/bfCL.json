@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(210, 100%, 44%)", "Main"],
+    ["hsl(20, 100%, 50%)", "Side"],
+    ["hsl(0, 0%, 61%)", "Other or No Label"]
+  ],
+  "layerStyles": [
+    {
+      "id": "bfcl-6cqanp",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "bfCL-6cqanp",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Channel"],
+              ["Main"],
+              "hsl(210, 100%, 44%)",
+              ["Side"],
+              "hsl(20, 100%, 50%)",
+              "hsl(0, 0%, 61%)"
+          ],
+          "line-width": 2.5,
+          "line-dasharray": [4, 1, 1, 1]
+      }
+  }
+  ]
+}

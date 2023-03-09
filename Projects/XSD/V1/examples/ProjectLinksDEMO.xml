@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
+
+  <Name>MAtt Project 1</Name>
+  <ProjectType>MATTPROJECT</ProjectType>
+
+    <MetaData>
+      <Meta name="SomeKey">SomeVal</Meta>
+    </MetaData>
+
+    <Inputs>
+      <!--
+
+      Project Reference Hierarchy (As it stands)
+
+       GeoSpatialType
+        - Raster
+        - Vector
+
+       SimpleFile
+
+      -->
+
+
+      <!--HERE ARE SOME PROJECT LINK CASES WE NEED TO COVER-->
+
+      <!--Case 1: Internally referenced file -->
+      <!--Case 2: Non local file... will get copied into the project and appear like this too -->
+      <Vector id="valleybottom01">
+        <Name>USal_valley_bottom</Name>
+        <Path>valley_bottom_polygon_01/USal_valleybottom.shp</Path>
+        <MetaData>
+          <Meta name="origin">/inputs/confinements/valley_bottom_polygon/valley_bottom_polygon_01/USal_valleybottom.shp</Meta>
+        </MetaData>
+      </Vector>
+
+      <!--Case 2: Externally referenced Path-->
+      <Vector id="valleybottom01" guid="ASDFASDFSADFSD-234SDFSDF-12312ASDFASD">
+        <Name>USal_valley_bottom</Name>
+        <!-- Path is preferred to be Local but Absolute paths WILL work (necessary for projects on
+              different physical drives -->
+        <Path>inputs/confinements/valley_bottom_polygon/valley_bottom_polygon_01/USal_valleybottom.shp</Path>
+        <!-- Project prefers relative path but CAN be absolute -->
+        <Project>../some/../other/path/Sample_VBET_Project_FOLDER/</Project>
+      </Vector>
+
+
+
+      <!-- Context Layers -->
+      <Raster id="" guid="">
+        <Name>Some Raster File</Name>
+        <Path>path/to/some/raster.tif</Path>
+      </Raster>
+
+      <Vector id="ecoregions01" guid="">
+        <Name>Eco Regions</Name>
+        <Path>analyses/context/layers/UpperSalmon_eco_L4.shp</Path>
+      </Vector>
+
+      <DEM>
+        <Name>The DEM</Name>
+        <Path>/some/path/to/dem.tif</Path>
+        <MetaData>
+          <Meta name="meta1key">meta1Val</Meta>
+        </MetaData>
+      </DEM>
+
+
+    </Inputs>
+
+
+    <Realizations>
+      <RiverStyles promoted="1" id="" dateCreated="" productVersion="" guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
+        <Name>USal_confinement_500m</Name>
+
+        <Parameters>
+          <Param name="segmentation_distance">500</Param>
+        </Parameters>
+
+        <!--Inputs refer to the files defined at the top of the file-->
+        <Inputs>
+          <DrainageNetworks guid="241cdf2a-a397-4fd7-acd2-de0869ed4662">
+            <Network ref="drainageNetwork01">
+              <Buffers>
+                <Buffer ref="USal_500m"/>
+              </Buffers>
+              <ValleyBottom ref="valleybottom01"/>
+            </Network>
+          </DrainageNetworks>
+        </Inputs>
+<Analyses></Analyses>
+        <Analysis>
+          <Confinements>
+            <Confinement>
+              <Name>USal_confinement_500m</Name>
+              <Path>analyses/confinements/confinement_01/USal_Confinement_500m.shp</Path>
+              <MetaData>
+                <Meta name="segmentation_distance">500</Meta>
+              </MetaData>
+            </Confinement>
+          </Confinements>
+          <RiverStyleReach>
+            <ManualCrossChecks>
+              <ManualCrossCheck>
+                <Path>analyses/river_styles/manual_crosschecks/manual_crosscheck_01/USal_River_Styles.shp</Path>
+              </ManualCrossCheck>
+            </ManualCrossChecks>
+          </RiverStyleReach>
+        </Analysis>
+
+      </RiverStyles>
+
+    </Realizations>
+
+</Project>

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(60, 100%, 75%)", "Fines (< 2 mm)"],
+    ["hsl(52, 96%, 70%)", "Very Fine Gravel (2 - 4 mm"],
+    ["hsl(45, 94%, 66%)", "Fine Gravel (4 - 8 mm"],
+    ["hsl(41, 92%, 62%)", "Medium Gravel (8 - 16 mm)"],
+    ["hsl(37, 88%, 56%)", "Coarse Gravel (16 - 32 mm)"],
+    ["hsl(31, 74%, 47%)", "Very Coarse Gravel (32 - 64 mm)"],
+    ["hsl(25, 80%, 38%)", "Coasest Gravel (64 - 128m)"],
+    ["hsl(17, 86%, 29%)", "Cobble (128 - 256 mm)"],
+    ["hsl(0, 100%, 21%)", "Boulder (> 256 mm)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "channelunitsfield2-aubsg2",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "ChannelUnitsFIeld2-aubsg2",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "step",
+              ["get", "Shape_Area"],
+              "hsl(60, 100%, 75%)",
+              2,
+              "hsl(52, 96%, 70%)",
+              4,
+              "hsl(45, 94%, 66%)",
+              8,
+              "hsl(41, 92%, 62%)",
+              16,
+              "hsl(37, 88%, 56%)",
+              32,
+              "hsl(31, 74%, 47%)",
+              64,
+              "hsl(25, 80%, 38%)",
+              128,
+              "hsl(17, 86%, 29%)",
+              256,
+              "hsl(0, 100%, 21%)",
+              435.589074704,
+              "hsl(0, 100%, 21%)"
+          ]
+      }
+  },
+  {
+      "id": "channelunitsfield2-aubsg2 (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ChannelUnitsFIeld2-aubsg2",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 0%, 43%)"}
+  }
+  ]
+}

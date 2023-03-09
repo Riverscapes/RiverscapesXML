@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 0%)", "Bridges"]
+  ],
+  "layerStyles": [
+    {
+        "id": "lines-6mv5xk copy",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "Lines-6mv5xk",
+        "layout": {"text-field": "≍", "text-size": 25},
+        "paint": {}
+    }
+  ]
+}

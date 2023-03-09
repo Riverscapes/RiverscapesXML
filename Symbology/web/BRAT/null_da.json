@@ -1,0 +1,26 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 48%)", "0"],
+    ["hsl(60, 100%, 48%)", "NULL"]
+  ],
+  "layerStyles": [
+    {
+      "id": "null-zero-aticpm",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Null_zero-aticpm",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "case",
+              ["==", ["get", "Orig_DA"], 0],
+              "hsl(0, 100%, 48%)",
+              [">", ["get", "Orig_DA"], 0],
+              "hsla(0, 0%, 0%, 0)",
+              "hsl(60, 100%, 48%)"
+          ]
+      }
+  }
+  ]
+}

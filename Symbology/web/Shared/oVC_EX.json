@@ -1,0 +1,42 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 48%)", "None: 0 dams"],
+    ["hsl(40, 100%, 50%)", "Rare: 0 - 1 dams/km (0 - 2 dams/mi)"],
+    ["hsl(60, 100%, 48%)","Occasional: 1 - 5 dams/km (2 - 8 dams/mi)"],
+    ["hsl(100, 100%, 45%)","Frequent: 5 - 15 dams/km (8 - 24 dams/mi)"],
+    ["hsl(216, 100%, 45%)","Pervasive: 15 - 40 dams/km (24 - 64 dams/mi)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Existing Veg Dam Building Capacity",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "step",
+              ["get", "oVC_EX"],
+              "hsl(0, 100%, 48%)",
+              0.000001,
+              "hsl(40, 100%, 50%)",
+              1,
+              "hsl(40, 100%, 50%)",
+              1.000001,
+              "hsl(60, 100%, 48%)",
+              5,
+              "hsl(60, 100%, 48%)",
+              5.000001,
+              "hsl(100, 100%, 45%)",
+              15,
+              "hsl(100, 100%, 45%)",
+              15.000001,
+              "hsl(216, 100%, 45%)",
+              40,
+              "hsl(216, 100%, 45%)"
+          ]
+      }
+  }
+  ]
+}

@@ -1,0 +1,840 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+7008,39,117,0,255,Not Developed
+7009,39,117,0,255,Not Developed
+7010,39,117,0,255,Not Developed
+7011,39,117,0,255,Not Developed
+7012,39,117,0,255,Not Developed
+7013,39,117,0,255,Not Developed
+7014,39,117,0,255,Not Developed
+7015,39,117,0,255,Not Developed
+7016,39,117,0,255,Not Developed
+7017,39,117,0,255,Not Developed
+7018,39,117,0,255,Not Developed
+7019,39,117,0,255,Not Developed
+7020,39,117,0,255,Not Developed
+7021,39,117,0,255,Not Developed
+7022,39,117,0,255,Not Developed
+7023,39,117,0,255,Not Developed
+7024,39,117,0,255,Not Developed
+7025,39,117,0,255,Not Developed
+7026,39,117,0,255,Not Developed
+7027,39,117,0,255,Not Developed
+7028,39,117,0,255,Not Developed
+7029,39,117,0,255,Not Developed
+7030,39,117,0,255,Not Developed
+7031,39,117,0,255,Not Developed
+7032,39,117,0,255,Not Developed
+7033,39,117,0,255,Not Developed
+7034,39,117,0,255,Not Developed
+7035,39,117,0,255,Not Developed
+7036,39,117,0,255,Not Developed
+7037,39,117,0,255,Not Developed
+7038,39,117,0,255,Not Developed
+7039,39,117,0,255,Not Developed
+7041,39,117,0,255,Not Developed
+7042,39,117,0,255,Not Developed
+7043,39,117,0,255,Not Developed
+7044,39,117,0,255,Not Developed
+7045,39,117,0,255,Not Developed
+7046,39,117,0,255,Not Developed
+7047,39,117,0,255,Not Developed
+7048,39,117,0,255,Not Developed
+7049,39,117,0,255,Not Developed
+7050,39,117,0,255,Not Developed
+7051,39,117,0,255,Not Developed
+7052,39,117,0,255,Not Developed
+7053,39,117,0,255,Not Developed
+7054,39,117,0,255,Not Developed
+7055,39,117,0,255,Not Developed
+7056,39,117,0,255,Not Developed
+7057,39,117,0,255,Not Developed
+7058,39,117,0,255,Not Developed
+7059,39,117,0,255,Not Developed
+7060,39,117,0,255,Not Developed
+7061,39,117,0,255,Not Developed
+7062,39,117,0,255,Not Developed
+7063,39,117,0,255,Not Developed
+7064,39,117,0,255,Not Developed
+7065,39,117,0,255,Not Developed
+7066,39,117,0,255,Not Developed
+7067,39,117,0,255,Not Developed
+7068,39,117,0,255,Not Developed
+7069,39,117,0,255,Not Developed
+7070,39,117,0,255,Not Developed
+7071,39,117,0,255,Not Developed
+7072,39,117,0,255,Not Developed
+7073,39,117,0,255,Not Developed
+7074,39,117,0,255,Not Developed
+7075,39,117,0,255,Not Developed
+7076,39,117,0,255,Not Developed
+7077,39,117,0,255,Not Developed
+7078,39,117,0,255,Not Developed
+7079,39,117,0,255,Not Developed
+7080,39,117,0,255,Not Developed
+7081,39,117,0,255,Not Developed
+7082,39,117,0,255,Not Developed
+7083,39,117,0,255,Not Developed
+7084,39,117,0,255,Not Developed
+7085,39,117,0,255,Not Developed
+7086,39,117,0,255,Not Developed
+7087,39,117,0,255,Not Developed
+7088,39,117,0,255,Not Developed
+7090,39,117,0,255,Not Developed
+7091,39,117,0,255,Not Developed
+7092,39,117,0,255,Not Developed
+7093,39,117,0,255,Not Developed
+7094,39,117,0,255,Not Developed
+7096,39,117,0,255,Not Developed
+7097,39,117,0,255,Not Developed
+7098,39,117,0,255,Not Developed
+7099,39,117,0,255,Not Developed
+7100,39,117,0,255,Not Developed
+7101,39,117,0,255,Not Developed
+7102,39,117,0,255,Not Developed
+7103,39,117,0,255,Not Developed
+7104,39,117,0,255,Not Developed
+7105,39,117,0,255,Not Developed
+7106,39,117,0,255,Not Developed
+7107,39,117,0,255,Not Developed
+7108,39,117,0,255,Not Developed
+7109,39,117,0,255,Not Developed
+7110,39,117,0,255,Not Developed
+7111,39,117,0,255,Not Developed
+7112,39,117,0,255,Not Developed
+7113,39,117,0,255,Not Developed
+7114,39,117,0,255,Not Developed
+7115,39,117,0,255,Not Developed
+7116,39,117,0,255,Not Developed
+7117,39,117,0,255,Not Developed
+7118,39,117,0,255,Not Developed
+7119,39,117,0,255,Not Developed
+7120,39,117,0,255,Not Developed
+7121,39,117,0,255,Not Developed
+7122,39,117,0,255,Not Developed
+7123,39,117,0,255,Not Developed
+7124,39,117,0,255,Not Developed
+7125,39,117,0,255,Not Developed
+7126,39,117,0,255,Not Developed
+7127,39,117,0,255,Not Developed
+7128,39,117,0,255,Not Developed
+7129,39,117,0,255,Not Developed
+7130,39,117,0,255,Not Developed
+7131,39,117,0,255,Not Developed
+7132,39,117,0,255,Not Developed
+7133,39,117,0,255,Not Developed
+7134,39,117,0,255,Not Developed
+7135,39,117,0,255,Not Developed
+7136,39,117,0,255,Not Developed
+7137,39,117,0,255,Not Developed
+7138,39,117,0,255,Not Developed
+7139,39,117,0,255,Not Developed
+7140,39,117,0,255,Not Developed
+7141,39,117,0,255,Not Developed
+7142,39,117,0,255,Not Developed
+7143,39,117,0,255,Not Developed
+7144,39,117,0,255,Not Developed
+7145,39,117,0,255,Not Developed
+7146,39,117,0,255,Not Developed
+7147,39,117,0,255,Not Developed
+7148,39,117,0,255,Not Developed
+7149,39,117,0,255,Not Developed
+7150,39,117,0,255,Not Developed
+7151,39,117,0,255,Not Developed
+7152,39,117,0,255,Not Developed
+7153,39,117,0,255,Not Developed
+7156,39,117,0,255,Not Developed
+7157,39,117,0,255,Not Developed
+7158,39,117,0,255,Not Developed
+7159,39,117,0,255,Not Developed
+7161,39,117,0,255,Not Developed
+7165,39,117,0,255,Not Developed
+7166,39,117,0,255,Not Developed
+7167,39,117,0,255,Not Developed
+7168,39,117,0,255,Not Developed
+7169,39,117,0,255,Not Developed
+7170,39,117,0,255,Not Developed
+7171,39,117,0,255,Not Developed
+7172,39,117,0,255,Not Developed
+7173,39,117,0,255,Not Developed
+7174,39,117,0,255,Not Developed
+7177,39,117,0,255,Not Developed
+7178,39,117,0,255,Not Developed
+7179,39,117,0,255,Not Developed
+7191,39,117,0,255,Not Developed
+7192,39,117,0,255,Not Developed
+7193,39,117,0,255,Not Developed
+7195,39,117,0,255,Not Developed
+7196,39,117,0,255,Not Developed
+7197,39,117,0,255,Not Developed
+7198,39,117,0,255,Not Developed
+7199,39,117,0,255,Not Developed
+7200,39,117,0,255,Not Developed
+7207,39,117,0,255,Not Developed
+7234,39,117,0,255,Not Developed
+7238,39,117,0,255,Not Developed
+7239,39,117,0,255,Not Developed
+7240,39,117,0,255,Not Developed
+7241,39,117,0,255,Not Developed
+7242,39,117,0,255,Not Developed
+7243,39,117,0,255,Not Developed
+7247,39,117,0,255,Not Developed
+7248,39,117,0,255,Not Developed
+7249,39,117,0,255,Not Developed
+7250,39,117,0,255,Not Developed
+7256,39,117,0,255,Not Developed
+7260,39,117,0,255,Not Developed
+7261,39,117,0,255,Not Developed
+7262,39,117,0,255,Not Developed
+7263,39,117,0,255,Not Developed
+7264,39,117,0,255,Not Developed
+7265,39,117,0,255,Not Developed
+7268,39,117,0,255,Not Developed
+7270,39,117,0,255,Not Developed
+7272,39,117,0,255,Not Developed
+7286,39,117,0,255,Not Developed
+7290,39,117,0,255,Not Developed
+7291,39,117,0,255,Not Developed
+7292,39,117,0,255,Not Developed
+7295,39,117,0,255,Not Developed
+7296,255,38,0,255,Developed/Urban
+7297,255,38,0,255,Developed/Urban
+7298,255,38,0,255,Developed/Urban
+7299,255,38,0,255,Developed/Urban
+7301,39,117,0,255,Not Developed
+7302,39,117,0,255,Not Developed
+7303,39,117,0,255,Not Developed
+7304,39,117,0,255,Not Developed
+7305,39,117,0,255,Not Developed
+7306,39,117,0,255,Not Developed
+7307,39,117,0,255,Not Developed
+7308,39,117,0,255,Not Developed
+7309,39,117,0,255,Not Developed
+7310,39,117,0,255,Not Developed
+7311,39,117,0,255,Not Developed
+7312,39,117,0,255,Not Developed
+7313,39,117,0,255,Not Developed
+7314,39,117,0,255,Not Developed
+7315,39,117,0,255,Not Developed
+7316,39,117,0,255,Not Developed
+7317,39,117,0,255,Not Developed
+7318,39,117,0,255,Not Developed
+7320,39,117,0,255,Not Developed
+7321,39,117,0,255,Not Developed
+7322,39,117,0,255,Not Developed
+7323,39,117,0,255,Not Developed
+7324,39,117,0,255,Not Developed
+7325,39,117,0,255,Not Developed
+7326,39,117,0,255,Not Developed
+7327,39,117,0,255,Not Developed
+7328,39,117,0,255,Not Developed
+7329,39,117,0,255,Not Developed
+7330,39,117,0,255,Not Developed
+7331,39,117,0,255,Not Developed
+7333,39,117,0,255,Not Developed
+7334,39,117,0,255,Not Developed
+7335,39,117,0,255,Not Developed
+7336,39,117,0,255,Not Developed
+7337,39,117,0,255,Not Developed
+7338,39,117,0,255,Not Developed
+7339,39,117,0,255,Not Developed
+7340,39,117,0,255,Not Developed
+7342,39,117,0,255,Not Developed
+7343,39,117,0,255,Not Developed
+7346,39,117,0,255,Not Developed
+7347,39,117,0,255,Not Developed
+7348,39,117,0,255,Not Developed
+7349,39,117,0,255,Not Developed
+7350,39,117,0,255,Not Developed
+7351,39,117,0,255,Not Developed
+7352,39,117,0,255,Not Developed
+7353,39,117,0,255,Not Developed
+7355,39,117,0,255,Not Developed
+7356,39,117,0,255,Not Developed
+7357,39,117,0,255,Not Developed
+7358,39,117,0,255,Not Developed
+7360,39,117,0,255,Not Developed
+7361,39,117,0,255,Not Developed
+7362,39,117,0,255,Not Developed
+7363,39,117,0,255,Not Developed
+7364,39,117,0,255,Not Developed
+7366,39,117,0,255,Not Developed
+7367,39,117,0,255,Not Developed
+7368,39,117,0,255,Not Developed
+7369,39,117,0,255,Not Developed
+7370,39,117,0,255,Not Developed
+7371,39,117,0,255,Not Developed
+7372,39,117,0,255,Not Developed
+7375,39,117,0,255,Not Developed
+7376,39,117,0,255,Not Developed
+7377,39,117,0,255,Not Developed
+7378,39,117,0,255,Not Developed
+7379,39,117,0,255,Not Developed
+7380,39,117,0,255,Not Developed
+7381,39,117,0,255,Not Developed
+7382,39,117,0,255,Not Developed
+7383,39,117,0,255,Not Developed
+7384,39,117,0,255,Not Developed
+7385,39,117,0,255,Not Developed
+7387,39,117,0,255,Not Developed
+7388,39,117,0,255,Not Developed
+7390,39,117,0,255,Not Developed
+7391,39,117,0,255,Not Developed
+7392,39,117,0,255,Not Developed
+7393,39,117,0,255,Not Developed
+7394,39,117,0,255,Not Developed
+7395,39,117,0,255,Not Developed
+7396,39,117,0,255,Not Developed
+7397,39,117,0,255,Not Developed
+7398,39,117,0,255,Not Developed
+7400,39,117,0,255,Not Developed
+7401,39,117,0,255,Not Developed
+7403,39,117,0,255,Not Developed
+7405,39,117,0,255,Not Developed
+7406,39,117,0,255,Not Developed
+7407,39,117,0,255,Not Developed
+7408,39,117,0,255,Not Developed
+7409,39,117,0,255,Not Developed
+7410,39,117,0,255,Not Developed
+7411,39,117,0,255,Not Developed
+7412,39,117,0,255,Not Developed
+7413,39,117,0,255,Not Developed
+7414,39,117,0,255,Not Developed
+7415,39,117,0,255,Not Developed
+7416,39,117,0,255,Not Developed
+7417,39,117,0,255,Not Developed
+7418,39,117,0,255,Not Developed
+7419,39,117,0,255,Not Developed
+7420,39,117,0,255,Not Developed
+7421,39,117,0,255,Not Developed
+7422,39,117,0,255,Not Developed
+7423,39,117,0,255,Not Developed
+7424,39,117,0,255,Not Developed
+7425,39,117,0,255,Not Developed
+7426,39,117,0,255,Not Developed
+7428,39,117,0,255,Not Developed
+7429,39,117,0,255,Not Developed
+7430,39,117,0,255,Not Developed
+7431,39,117,0,255,Not Developed
+7434,39,117,0,255,Not Developed
+7435,39,117,0,255,Not Developed
+7436,39,117,0,255,Not Developed
+7437,39,117,0,255,Not Developed
+7438,39,117,0,255,Not Developed
+7439,39,117,0,255,Not Developed
+7441,39,117,0,255,Not Developed
+7442,39,117,0,255,Not Developed
+7444,39,117,0,255,Not Developed
+7445,39,117,0,255,Not Developed
+7446,39,117,0,255,Not Developed
+7447,39,117,0,255,Not Developed
+7448,39,117,0,255,Not Developed
+7449,39,117,0,255,Not Developed
+7450,39,117,0,255,Not Developed
+7451,39,117,0,255,Not Developed
+7452,39,117,0,255,Not Developed
+7453,39,117,0,255,Not Developed
+7454,39,117,0,255,Not Developed
+7455,39,117,0,255,Not Developed
+7456,39,117,0,255,Not Developed
+7457,39,117,0,255,Not Developed
+7458,39,117,0,255,Not Developed
+7459,39,117,0,255,Not Developed
+7460,39,117,0,255,Not Developed
+7461,39,117,0,255,Not Developed
+7462,39,117,0,255,Not Developed
+7463,39,117,0,255,Not Developed
+7466,39,117,0,255,Not Developed
+7467,39,117,0,255,Not Developed
+7468,39,117,0,255,Not Developed
+7469,39,117,0,255,Not Developed
+7471,39,117,0,255,Not Developed
+7472,39,117,0,255,Not Developed
+7473,39,117,0,255,Not Developed
+7474,39,117,0,255,Not Developed
+7475,39,117,0,255,Not Developed
+7476,39,117,0,255,Not Developed
+7481,39,117,0,255,Not Developed
+7482,39,117,0,255,Not Developed
+7483,39,117,0,255,Not Developed
+7484,39,117,0,255,Not Developed
+7485,39,117,0,255,Not Developed
+7486,39,117,0,255,Not Developed
+7487,39,117,0,255,Not Developed
+7488,39,117,0,255,Not Developed
+7489,39,117,0,255,Not Developed
+7500,39,117,0,255,Not Developed
+7501,39,117,0,255,Not Developed
+7502,39,117,0,255,Not Developed
+7503,39,117,0,255,Not Developed
+7504,39,117,0,255,Not Developed
+7505,39,117,0,255,Not Developed
+7506,39,117,0,255,Not Developed
+7507,39,117,0,255,Not Developed
+7509,39,117,0,255,Not Developed
+7510,39,117,0,255,Not Developed
+7511,39,117,0,255,Not Developed
+7512,39,117,0,255,Not Developed
+7513,39,117,0,255,Not Developed
+7514,39,117,0,255,Not Developed
+7515,39,117,0,255,Not Developed
+7516,39,117,0,255,Not Developed
+7517,39,117,0,255,Not Developed
+7518,39,117,0,255,Not Developed
+7519,39,117,0,255,Not Developed
+7522,39,117,0,255,Not Developed
+7523,39,117,0,255,Not Developed
+7524,39,117,0,255,Not Developed
+7525,39,117,0,255,Not Developed
+7527,39,117,0,255,Not Developed
+7545,39,117,0,255,Not Developed
+7546,39,117,0,255,Not Developed
+7547,39,117,0,255,Not Developed
+7548,39,117,0,255,Not Developed
+7556,39,117,0,255,Not Developed
+7557,39,117,0,255,Not Developed
+7560,39,117,0,255,Not Developed
+7561,39,117,0,255,Not Developed
+7562,39,117,0,255,Not Developed
+7563,39,117,0,255,Not Developed
+7564,39,117,0,255,Not Developed
+7565,39,117,0,255,Not Developed
+7566,39,117,0,255,Not Developed
+7567,39,117,0,255,Not Developed
+7571,39,117,0,255,Not Developed
+7573,39,117,0,255,Not Developed
+7578,39,117,0,255,Not Developed
+7582,39,117,0,255,Not Developed
+7583,39,117,0,255,Not Developed
+7584,39,117,0,255,Not Developed
+7585,39,117,0,255,Not Developed
+7586,39,117,0,255,Not Developed
+7587,39,117,0,255,Not Developed
+7588,39,117,0,255,Not Developed
+7589,39,117,0,255,Not Developed
+7590,39,117,0,255,Not Developed
+7591,39,117,0,255,Not Developed
+7662,39,117,0,255,Not Developed
+7663,39,117,0,255,Not Developed
+7668,39,117,0,255,Not Developed
+7733,39,117,0,255,Not Developed
+7734,39,117,0,255,Not Developed
+7735,39,117,0,255,Not Developed
+7861,39,117,0,255,Not Developed
+7867,39,117,0,255,Not Developed
+7900,255,38,0,255,Developed/Urban
+7901,255,38,0,255,Developed/Urban
+7902,255,38,0,255,Developed/Urban
+7903,255,38,0,255,Developed/Urban
+7904,255,38,0,255,Developed/Urban
+7905,255,38,0,255,Developed/Urban
+7906,255,38,0,255,Developed/Urban
+7907,255,38,0,255,Developed/Urban
+7908,255,38,0,255,Developed/Urban
+7909,255,38,0,255,Developed/Urban
+7910,255,38,0,255,Developed/Urban
+7911,255,38,0,255,Developed/Urban
+7912,255,38,0,255,Developed/Urban
+7913,255,38,0,255,Developed/Urban
+7914,255,38,0,255,Developed/Urban
+7915,255,38,0,255,Developed/Urban
+7916,255,38,0,255,Developed/Urban
+7917,255,38,0,255,Developed/Urban
+7918,255,38,0,255,Developed/Urban
+7919,255,38,0,255,Developed/Urban
+7920,255,38,0,255,Developed/Urban
+7921,255,38,0,255,Developed/Urban
+7922,255,38,0,255,Developed/Urban
+7923,255,38,0,255,Developed/Urban
+7924,255,38,0,255,Developed/Urban
+7925,255,38,0,255,Developed/Urban
+7926,255,38,0,255,Developed/Urban
+7927,255,38,0,255,Developed/Urban
+7928,255,38,0,255,Developed/Urban
+7929,255,38,0,255,Developed/Urban
+7930,255,38,0,255,Developed/Urban
+7931,255,38,0,255,Developed/Urban
+7932,255,38,0,255,Developed/Urban
+7933,255,38,0,255,Developed/Urban
+7934,255,38,0,255,Developed/Urban
+7935,255,38,0,255,Developed/Urban
+7936,255,38,0,255,Developed/Urban
+7937,255,38,0,255,Developed/Urban
+7938,255,38,0,255,Developed/Urban
+7939,255,38,0,255,Developed/Urban
+7940,39,117,0,255,Not Developed
+7941,39,117,0,255,Not Developed
+7942,39,117,0,255,Not Developed
+7943,39,117,0,255,Not Developed
+7944,39,117,0,255,Not Developed
+7945,39,117,0,255,Not Developed
+7946,39,117,0,255,Not Developed
+7947,39,117,0,255,Not Developed
+7948,39,117,0,255,Not Developed
+7949,39,117,0,255,Not Developed
+7950,39,117,0,255,Not Developed
+7951,39,117,0,255,Not Developed
+7952,39,117,0,255,Not Developed
+7953,39,117,0,255,Not Developed
+7954,39,117,0,255,Not Developed
+7955,39,117,0,255,Not Developed
+7956,39,117,0,255,Not Developed
+7957,39,117,0,255,Not Developed
+7958,39,117,0,255,Not Developed
+7959,39,117,0,255,Not Developed
+7960,255,187,0,255,Agriculture: Higher Intensity
+7961,255,187,0,255,Agriculture: Higher Intensity
+7962,255,187,0,255,Agriculture: Higher Intensity
+7963,255,187,0,255,Agriculture: Higher Intensity
+7964,255,187,0,255,Agriculture: Higher Intensity
+7965,255,187,0,255,Agriculture: Higher Intensity
+7966,161,194,0,255,Agriculture: Lower Intensity
+7967,161,194,0,255,Agriculture: Lower Intensity
+7968,255,187,0,255,Agriculture: Higher Intensity
+7970,255,187,0,255,Agriculture: Higher Intensity
+7971,255,187,0,255,Agriculture: Higher Intensity
+7972,255,187,0,255,Agriculture: Higher Intensity
+7973,255,187,0,255,Agriculture: Higher Intensity
+7974,255,187,0,255,Agriculture: Higher Intensity
+7975,255,187,0,255,Agriculture: Higher Intensity
+7976,161,194,0,255,Agriculture: Lower Intensity
+7977,161,194,0,255,Agriculture: Lower Intensity
+7978,255,187,0,255,Agriculture: Higher Intensity
+7979,39,117,0,255,Not Developed
+7980,255,187,0,255,Agriculture: Higher Intensity
+7981,255,187,0,255,Agriculture: Higher Intensity
+7982,255,187,0,255,Agriculture: Higher Intensity
+7983,255,187,0,255,Agriculture: Higher Intensity
+7984,255,187,0,255,Agriculture: Higher Intensity
+7985,255,187,0,255,Agriculture: Higher Intensity
+7986,161,194,0,255,Agriculture: Lower Intensity
+7987,161,194,0,255,Agriculture: Lower Intensity
+7988,255,187,0,255,Agriculture: Higher Intensity
+7989,39,117,0,255,Not Developed
+7990,255,187,0,255,Agriculture: Higher Intensity
+7991,255,187,0,255,Agriculture: Higher Intensity
+7992,255,187,0,255,Agriculture: Higher Intensity
+7993,255,187,0,255,Agriculture: Higher Intensity
+7994,255,187,0,255,Agriculture: Higher Intensity
+7995,255,187,0,255,Agriculture: Higher Intensity
+7996,161,194,0,255,Agriculture: Lower Intensity
+7997,161,194,0,255,Agriculture: Lower Intensity
+7998,255,187,0,255,Agriculture: Higher Intensity
+7999,39,117,0,255,Not Developed
+9001,39,117,0,255,Not Developed
+9002,39,117,0,255,Not Developed
+9003,39,117,0,255,Not Developed
+9004,39,117,0,255,Not Developed
+9005,39,117,0,255,Not Developed
+9006,39,117,0,255,Not Developed
+9008,39,117,0,255,Not Developed
+9009,39,117,0,255,Not Developed
+9010,39,117,0,255,Not Developed
+9011,39,117,0,255,Not Developed
+9012,39,117,0,255,Not Developed
+9014,39,117,0,255,Not Developed
+9015,39,117,0,255,Not Developed
+9016,39,117,0,255,Not Developed
+9017,39,117,0,255,Not Developed
+9018,39,117,0,255,Not Developed
+9019,39,117,0,255,Not Developed
+9021,39,117,0,255,Not Developed
+9022,39,117,0,255,Not Developed
+9023,39,117,0,255,Not Developed
+9024,39,117,0,255,Not Developed
+9025,39,117,0,255,Not Developed
+9026,39,117,0,255,Not Developed
+9027,39,117,0,255,Not Developed
+9028,39,117,0,255,Not Developed
+9029,39,117,0,255,Not Developed
+9030,39,117,0,255,Not Developed
+9032,39,117,0,255,Not Developed
+9033,39,117,0,255,Not Developed
+9034,39,117,0,255,Not Developed
+9035,39,117,0,255,Not Developed
+9041,39,117,0,255,Not Developed
+9042,39,117,0,255,Not Developed
+9044,39,117,0,255,Not Developed
+9045,39,117,0,255,Not Developed
+9047,39,117,0,255,Not Developed
+9050,39,117,0,255,Not Developed
+9051,39,117,0,255,Not Developed
+9055,39,117,0,255,Not Developed
+9056,39,117,0,255,Not Developed
+9057,39,117,0,255,Not Developed
+9059,39,117,0,255,Not Developed
+9060,39,117,0,255,Not Developed
+9061,39,117,0,255,Not Developed
+9062,39,117,0,255,Not Developed
+9063,39,117,0,255,Not Developed
+9064,39,117,0,255,Not Developed
+9065,39,117,0,255,Not Developed
+9066,39,117,0,255,Not Developed
+9068,39,117,0,255,Not Developed
+9069,39,117,0,255,Not Developed
+9071,39,117,0,255,Not Developed
+9073,39,117,0,255,Not Developed
+9075,39,117,0,255,Not Developed
+9077,39,117,0,255,Not Developed
+9080,39,117,0,255,Not Developed
+9082,39,117,0,255,Not Developed
+9083,39,117,0,255,Not Developed
+9085,39,117,0,255,Not Developed
+9088,39,117,0,255,Not Developed
+9089,39,117,0,255,Not Developed
+9091,39,117,0,255,Not Developed
+9092,39,117,0,255,Not Developed
+9094,39,117,0,255,Not Developed
+9095,39,117,0,255,Not Developed
+9097,39,117,0,255,Not Developed
+9098,39,117,0,255,Not Developed
+9099,39,117,0,255,Not Developed
+9100,39,117,0,255,Not Developed
+9101,39,117,0,255,Not Developed
+9102,39,117,0,255,Not Developed
+9103,39,117,0,255,Not Developed
+9104,39,117,0,255,Not Developed
+9105,39,117,0,255,Not Developed
+9106,39,117,0,255,Not Developed
+9110,39,117,0,255,Not Developed
+9111,39,117,0,255,Not Developed
+9112,39,117,0,255,Not Developed
+9113,39,117,0,255,Not Developed
+9114,39,117,0,255,Not Developed
+9115,39,117,0,255,Not Developed
+9117,39,117,0,255,Not Developed
+9118,39,117,0,255,Not Developed
+9119,39,117,0,255,Not Developed
+9120,39,117,0,255,Not Developed
+9121,39,117,0,255,Not Developed
+9122,39,117,0,255,Not Developed
+9125,39,117,0,255,Not Developed
+9126,39,117,0,255,Not Developed
+9129,39,117,0,255,Not Developed
+9130,39,117,0,255,Not Developed
+9133,39,117,0,255,Not Developed
+9134,39,117,0,255,Not Developed
+9136,39,117,0,255,Not Developed
+9137,39,117,0,255,Not Developed
+9138,39,117,0,255,Not Developed
+9139,39,117,0,255,Not Developed
+9140,39,117,0,255,Not Developed
+9141,39,117,0,255,Not Developed
+9142,39,117,0,255,Not Developed
+9143,39,117,0,255,Not Developed
+9145,39,117,0,255,Not Developed
+9146,39,117,0,255,Not Developed
+9147,39,117,0,255,Not Developed
+9148,39,117,0,255,Not Developed
+9150,39,117,0,255,Not Developed
+9151,39,117,0,255,Not Developed
+9152,39,117,0,255,Not Developed
+9153,39,117,0,255,Not Developed
+9154,39,117,0,255,Not Developed
+9160,39,117,0,255,Not Developed
+9165,39,117,0,255,Not Developed
+9166,39,117,0,255,Not Developed
+9167,39,117,0,255,Not Developed
+9170,39,117,0,255,Not Developed
+9171,39,117,0,255,Not Developed
+9173,39,117,0,255,Not Developed
+9174,39,117,0,255,Not Developed
+9175,39,117,0,255,Not Developed
+9176,39,117,0,255,Not Developed
+9177,39,117,0,255,Not Developed
+9178,39,117,0,255,Not Developed
+9179,39,117,0,255,Not Developed
+9180,39,117,0,255,Not Developed
+9181,39,117,0,255,Not Developed
+9182,39,117,0,255,Not Developed
+9183,39,117,0,255,Not Developed
+9187,39,117,0,255,Not Developed
+9188,39,117,0,255,Not Developed
+9189,39,117,0,255,Not Developed
+9190,39,117,0,255,Not Developed
+9191,39,117,0,255,Not Developed
+9192,39,117,0,255,Not Developed
+9193,39,117,0,255,Not Developed
+9195,39,117,0,255,Not Developed
+9197,39,117,0,255,Not Developed
+9198,39,117,0,255,Not Developed
+9202,39,117,0,255,Not Developed
+9203,39,117,0,255,Not Developed
+9207,39,117,0,255,Not Developed
+9208,39,117,0,255,Not Developed
+9209,39,117,0,255,Not Developed
+9210,39,117,0,255,Not Developed
+9211,39,117,0,255,Not Developed
+9213,39,117,0,255,Not Developed
+9216,39,117,0,255,Not Developed
+9218,39,117,0,255,Not Developed
+9220,39,117,0,255,Not Developed
+9221,39,117,0,255,Not Developed
+9222,39,117,0,255,Not Developed
+9223,39,117,0,255,Not Developed
+9224,39,117,0,255,Not Developed
+9226,39,117,0,255,Not Developed
+9227,39,117,0,255,Not Developed
+9228,39,117,0,255,Not Developed
+9229,39,117,0,255,Not Developed
+9230,39,117,0,255,Not Developed
+9231,39,117,0,255,Not Developed
+9232,39,117,0,255,Not Developed
+9233,39,117,0,255,Not Developed
+9234,39,117,0,255,Not Developed
+9235,39,117,0,255,Not Developed
+9237,39,117,0,255,Not Developed
+9239,39,117,0,255,Not Developed
+9240,39,117,0,255,Not Developed
+9241,39,117,0,255,Not Developed
+9242,39,117,0,255,Not Developed
+9243,39,117,0,255,Not Developed
+9244,39,117,0,255,Not Developed
+9245,39,117,0,255,Not Developed
+9246,39,117,0,255,Not Developed
+9247,39,117,0,255,Not Developed
+9248,39,117,0,255,Not Developed
+9249,39,117,0,255,Not Developed
+9250,39,117,0,255,Not Developed
+9251,39,117,0,255,Not Developed
+9256,39,117,0,255,Not Developed
+9257,39,117,0,255,Not Developed
+9258,39,117,0,255,Not Developed
+9259,39,117,0,255,Not Developed
+9260,39,117,0,255,Not Developed
+9261,39,117,0,255,Not Developed
+9262,39,117,0,255,Not Developed
+9265,39,117,0,255,Not Developed
+9266,39,117,0,255,Not Developed
+9268,39,117,0,255,Not Developed
+9270,39,117,0,255,Not Developed
+9272,39,117,0,255,Not Developed
+9273,39,117,0,255,Not Developed
+9274,39,117,0,255,Not Developed
+9275,39,117,0,255,Not Developed
+9282,39,117,0,255,Not Developed
+9283,39,117,0,255,Not Developed
+9284,39,117,0,255,Not Developed
+9288,39,117,0,255,Not Developed
+9289,39,117,0,255,Not Developed
+9290,39,117,0,255,Not Developed
+9295,39,117,0,255,Not Developed
+9301,39,117,0,255,Not Developed
+9302,39,117,0,255,Not Developed
+9304,255,187,0,255,Agriculture: Higher Intensity
+9307,39,117,0,255,Not Developed
+9308,39,117,0,255,Not Developed
+9309,39,117,0,255,Not Developed
+9310,39,117,0,255,Not Developed
+9311,39,117,0,255,Not Developed
+9312,255,187,0,255,Agriculture: Higher Intensity
+9313,39,117,0,255,Not Developed
+9314,39,117,0,255,Not Developed
+9315,39,117,0,255,Not Developed
+9316,39,117,0,255,Not Developed
+9317,39,117,0,255,Not Developed
+9318,39,117,0,255,Not Developed
+9319,39,117,0,255,Not Developed
+9320,39,117,0,255,Not Developed
+9321,39,117,0,255,Not Developed
+9322,255,187,0,255,Agriculture: Higher Intensity
+9323,39,117,0,255,Not Developed
+9324,39,117,0,255,Not Developed
+9325,39,117,0,255,Not Developed
+9326,39,117,0,255,Not Developed
+9327,39,117,0,255,Not Developed
+9328,39,117,0,255,Not Developed
+9329,39,117,0,255,Not Developed
+9332,39,117,0,255,Not Developed
+9336,39,117,0,255,Not Developed
+9337,39,117,0,255,Not Developed
+9502,39,117,0,255,Not Developed
+9503,39,117,0,255,Not Developed
+9504,39,117,0,255,Not Developed
+9505,39,117,0,255,Not Developed
+9512,39,117,0,255,Not Developed
+9513,39,117,0,255,Not Developed
+9514,39,117,0,255,Not Developed
+9515,39,117,0,255,Not Developed
+9516,39,117,0,255,Not Developed
+9519,39,117,0,255,Not Developed
+9526,39,117,0,255,Not Developed
+9527,39,117,0,255,Not Developed
+9528,39,117,0,255,Not Developed
+9529,39,117,0,255,Not Developed
+9533,39,117,0,255,Not Developed
+9534,39,117,0,255,Not Developed
+9535,39,117,0,255,Not Developed
+9541,39,117,0,255,Not Developed
+9542,39,117,0,255,Not Developed
+9559,39,117,0,255,Not Developed
+9560,39,117,0,255,Not Developed
+9561,39,117,0,255,Not Developed
+9562,39,117,0,255,Not Developed
+9568,39,117,0,255,Not Developed
+9569,39,117,0,255,Not Developed
+9570,39,117,0,255,Not Developed
+9571,39,117,0,255,Not Developed
+9582,39,117,0,255,Not Developed
+9583,39,117,0,255,Not Developed
+9585,39,117,0,255,Not Developed
+9586,39,117,0,255,Not Developed
+9592,39,117,0,255,Not Developed
+9593,39,117,0,255,Not Developed
+9601,39,117,0,255,Not Developed
+9604,39,117,0,255,Not Developed
+9605,39,117,0,255,Not Developed
+9611,39,117,0,255,Not Developed
+9617,39,117,0,255,Not Developed
+9620,39,117,0,255,Not Developed
+9629,39,117,0,255,Not Developed
+9633,39,117,0,255,Not Developed
+9639,39,117,0,255,Not Developed
+9640,39,117,0,255,Not Developed
+9641,39,117,0,255,Not Developed
+9642,39,117,0,255,Not Developed
+9652,39,117,0,255,Not Developed
+9654,39,117,0,255,Not Developed
+9667,39,117,0,255,Not Developed
+9677,39,117,0,255,Not Developed
+9679,39,117,0,255,Not Developed
+9682,39,117,0,255,Not Developed
+9683,39,117,0,255,Not Developed
+9695,39,117,0,255,Not Developed
+9696,39,117,0,255,Not Developed
+9707,39,117,0,255,Not Developed
+9708,39,117,0,255,Not Developed
+9722,39,117,0,255,Not Developed
+9723,39,117,0,255,Not Developed
+9724,39,117,0,255,Not Developed
+9725,39,117,0,255,Not Developed
+9726,39,117,0,255,Not Developed
+9730,39,117,0,255,Not Developed
+9731,39,117,0,255,Not Developed
+9732,39,117,0,255,Not Developed
+9733,39,117,0,255,Not Developed
+9742,39,117,0,255,Not Developed
+9743,39,117,0,255,Not Developed
+9758,39,117,0,255,Not Developed
+9759,39,117,0,255,Not Developed
+9760,39,117,0,255,Not Developed
+9761,39,117,0,255,Not Developed
+9766,39,117,0,255,Not Developed
+9774,39,117,0,255,Not Developed
+9775,39,117,0,255,Not Developed
+9782,39,117,0,255,Not Developed
+9783,39,117,0,255,Not Developed
+9784,39,117,0,255,Not Developed
+9785,39,117,0,255,Not Developed
+9810,39,117,0,255,Not Developed
+9811,39,117,0,255,Not Developed
+9816,39,117,0,255,Not Developed
+9817,39,117,0,255,Not Developed
+9823,39,117,0,255,Not Developed
+9825,39,117,0,255,Not Developed
+9826,39,117,0,255,Not Developed
+9827,39,117,0,255,Not Developed
+9828,39,117,0,255,Not Developed
+9829,39,117,0,255,Not Developed
+9993,39,117,0,255,Not Developed
+9994,39,117,0,255,Not Developed

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VBET.xsd">
+  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/NorthArrowResearch/riverscapes-programs/master/Projects/BRAT/Project.xsd"> -->
+    <Name>VBET for HUC 16010202</Name>
+    <ProjectType>VBET</ProjectType>
+    <Warehouse>
+      <Meta name="user">Someuser</Meta>
+    </Warehouse>
+    <MetaData>
+      <Meta name="ModelVersion">4.0.0</Meta>
+      <Meta name="dateCreated">2020-05-20T09:11:08.986395</Meta>
+      <Meta name="dateCreated">2020-05-20T09:11:08.992855</Meta>
+      <Meta name="HUC8">16010202</Meta>
+      <Meta name="VBETVersion">4.0.0</Meta>
+      <Meta name="VBETTimestamp">1589991068</Meta>
+    </MetaData>
+    <Inputs>
+
+    </Inputs>
+
+    <ProjectBounds>
+      <Centroid>
+        <Lat>43.03677585761058</Lat>
+        <Lng>-105.46875</Lng>
+      </Centroid>
+      <BoundingBox>
+        <MinLat>38.58252615935333</MinLat>
+        <MinLng>-115.13671875</MinLng>
+        <MaxLat>46.6795944656402</MaxLat>
+        <MaxLng>-96.0205078125</MaxLng>
+      </BoundingBox>
+      <Path>some_file_name.geojson</Path>
+    </ProjectBounds>
+
+    <Realizations>
+      <VBET dateCreated="2020-05-20T09:11:08.995308" guid="8423deca-9ab4-11ea-81d8-acde48001122" id="VBET" productVersion="4.0.0">
+        <Name>VBET for HUC 16010202</Name>
+        <Inputs>
+          <Raster guid="860cfd8e-9ab4-11ea-81d8-acde48001122" id="SLOPE_RASTER">
+            <Name>Slope Raster</Name>
+            <Path>inputs/slope.tif</Path>
+          </Raster>
+          <Raster guid="87c2bcea-9ab4-11ea-81d8-acde48001122" id="HAND_RASTER">
+            <Name>Hand Raster</Name>
+            <Path>inputs/hand.tif</Path>
+          </Raster>
+          <Raster guid="8856bc4c-9ab4-11ea-81d8-acde48001122" id="HILLSHADE">
+            <Name>DEM Hillshade</Name>
+            <Path>inputs/dem_hillshade.tif</Path>
+          </Raster>
+          <Vector guid="8c7620ec-9ab4-11ea-81d8-acde48001122" id="FLOWLINES">
+            <Name>NHD Flowlines</Name>
+            <Path>inputs/flowlines.shp</Path>
+          </Vector>
+          <Vector guid="8c7c43d2-9ab4-11ea-81d8-acde48001122" id="FLOW_AREA">
+            <Name>NHD Flow Areas</Name>
+            <Path>inputs/flow_areas.shp</Path>
+          </Vector>
+        </Inputs>
+        <Intermediates>
+          <Vector guid="8ec40e22-9ab4-11ea-81d8-acde48001122" id="VBET_NETWORK">
+            <Name>VBET Network</Name>
+            <Path>intermediates/vbet_network.shp</Path>
+          </Vector>
+          <Raster guid="9f6d35e6-9ab4-11ea-81d8-acde48001122" id="CHANNEL_RASTER">
+            <Name>Channel Raster</Name>
+            <Path>inputs/channel.tif</Path>
+          </Raster>
+          <Vector guid="15adb9a6-9ab5-11ea-81d8-acde48001122" id="THRESH_50">
+            <Name>Threshold at 50%</Name>
+            <Path>intermediates/thresh_50.shp</Path>
+          </Vector>
+          <Vector guid="86c70d4a-9ab5-11ea-81d8-acde48001122" id="THRESH_60">
+            <Name>Threshold at 60%</Name>
+            <Path>intermediates/thresh_60.shp</Path>
+          </Vector>
+          <Vector guid="f50958c6-9ab5-11ea-81d8-acde48001122" id="THRESH_70">
+            <Name>Threshold at 70%</Name>
+            <Path>intermediates/thresh_70.shp</Path>
+          </Vector>
+          <Vector guid="2c6f9bcc-9ab6-11ea-81d8-acde48001122" id="THRESH_80">
+            <Name>Threshold at 80%</Name>
+            <Path>intermediates/thresh_80.shp</Path>
+          </Vector>
+          <Vector guid="54861460-9ab6-11ea-81d8-acde48001122" id="THRESH_90">
+            <Name>Threshold at 90%</Name>
+            <Path>intermediates/thresh_90.shp</Path>
+          </Vector>
+          <Vector guid="6e871f76-9ab6-11ea-81d8-acde48001122" id="THRESH_100">
+            <Name>Threshold at 100%</Name>
+            <Path>intermediates/thresh_100.shp</Path>
+          </Vector>
+        </Intermediates>
+        <Outputs>
+          <Vector guid="24c661a4-9ab5-11ea-81d8-acde48001122" id="VBET_50">
+            <Name>VBET 50%</Name>
+            <Path>outputs/vbet_50.shp</Path>
+          </Vector>
+          <Vector guid="9a6cdfdc-9ab5-11ea-81d8-acde48001122" id="VBET_60">
+            <Name>VBET 60%</Name>
+            <Path>outputs/vbet_60.shp</Path>
+          </Vector>
+          <Vector guid="03cc6060-9ab6-11ea-81d8-acde48001122" id="VBET_70">
+            <Name>VBET 70%</Name>
+            <Path>outputs/vbet_70.shp</Path>
+          </Vector>
+          <Vector guid="364300d0-9ab6-11ea-81d8-acde48001122" id="VBET_80">
+            <Name>VBET 80%</Name>
+            <Path>outputs/vbet_80.shp</Path>
+          </Vector>
+          <Vector guid="61412c6c-9ab6-11ea-81d8-acde48001122" id="VBET_90">
+            <Name>VBET 90%</Name>
+            <Path>outputs/vbet_90.shp</Path>
+          </Vector>
+          <Vector guid="71e9f774-9ab6-11ea-81d8-acde48001122" id="VBET_100">
+            <Name>VBET 100%</Name>
+            <Path>outputs/vbet_100.shp</Path>
+          </Vector>
+        </Outputs>
+      </VBET>
+    </Realizations>
+  </Project>

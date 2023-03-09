@@ -1,0 +1,42 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(27, 95%, 59%)", "Anthropogenically Limited"],
+    ["hsl(196, 100%, 45%)", "Stream Power Limited"],
+    ["hsl(0, 100%, 50%)", "Slope Limited"],
+    ["hsl(300, 100%, 50%)", "Potential Reservoir or Landuse Change"],
+    ["hsl(100, 100%, 29%)", "Naturally Vegetation Limited"],
+    ["hsl(138, 100%, 34%)", "Stream Size Limited"],
+    ["hsl(0, 0%, 65%)", "Dam Building Possible"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Unsuitable or Limited Opportunities",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "opportunity_risk-de2ipp",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "oPBRC_UD"],
+              ["Anthropogenically Limited"],
+              "hsl(27, 95%, 59%)",
+              ["Stream Power Limited"],
+              "hsl(196, 100%, 45%)",
+              ["Slope Limited"],
+              "hsl(0, 100%, 50%)",
+              ["Potential Reservoir or Landuse"],
+              "hsl(300, 100%, 50%)",
+              ["Naturally Vegetation Limited"],
+              "hsl(100, 100%, 29%)",
+              ["...TBD..."],
+              "hsl(138, 100%, 34%)",
+              ["Dam Building Possible"],
+              "hsl(0, 0%, 65%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

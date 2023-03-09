@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [ "hsl(1, 92%, 79%)", "flowline segments" ]
+  ],
+  "layerStyles": [
+    {
+      "id": "flowline-segments-6juroz",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "flowline_segments-6juroz",
+      "layout": {},
+      "paint": {
+        "line-color": "hsl(1, 92%, 79%)",
+        "line-width": 5
+      }
+    }
+  ]
+}

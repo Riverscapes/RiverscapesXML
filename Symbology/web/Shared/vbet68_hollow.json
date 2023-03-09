@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 100%)", "Valley Bottom Extent (Hollow)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vbet-extent-hollow-2nztj2 copy",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "vbet_extent_hollow-2nztj2",
+        "layout": {},
+        "paint": {
+            "line-dasharray": [1, 2],
+            "line-color": "hsl(0, 0%, 100%)"
+        }
+    }
+]
+}

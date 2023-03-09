@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Inundation Mapper</Name>
+  <ProjectType>Inundation</ProjectType>
+  <Node xpathlabel="Name">
+    <Children>
+      <Node label="Mapping" id="mapping">
+        <Children>
+          <Repeater label="DCEs" xpath="Realizations/InundationDCE">
+            <Node xpathlabel="Name">
+              <Children>
+                <Node label="Channels">
+                  <Children>
+                    <Node label="Main Thalwegs" xpath="Inputs/Vector[@id='DCE_01_thalwegs']" type="line" symbology="Thalweg_main" />
+                    <Node label="All Thalwegs" xpath="Inputs/Vector[@id='DCE_01_thalwegs']" type="line" symbology="Thalwegs" />
+                  </Children>
+                </Node>
+                <Node label="Dam Crests">
+                  <Children>
+                    <Node label="Dam State" xpath="Inputs/Vector[@id='DCE_01_damcrests']" type="line" symbology="dam_state" />
+                    <Node label="Crest Type" xpath="Inputs/Vector[@id='DCE_01_damcrests']" type="line" symbology="crests_type" />
+                  </Children>
+                </Node>
+                <Node label="Inundation">
+                  <Children>
+                    <Node label="Inundation Types" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="inundation_types" id="InundatonTypes" />
+                    <Node label="Wetted Extent" xpath="Inputs/Vector[@id='DCE_01_inun']" type="polygon" symbology="wetted_extent" />
+                    <Node label="Inundation Type Distribution" xpath="Outputs/PDF" type="file" />
+                  </Children>
+                </Node>
+                <Node label="Error">
+                  <Children>
+                    <Node label="Max Inundation" xpath="Inputs/Vector[@id='Max01']" type="line" symbology="inundation_types" />
+                    <Node label="Min Inundation" xpath="Inputs/Vector[@id='Min01']" type="line" symbology="inundation_types" />
+                  </Children>
+                </Node>
+              </Children>
+            </Node>
+          </Repeater>
+          <Node label="Riverscape" xpath="Realizations/InundationContext">
+            <Children>
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='vbCL_01']" type="line" symbology="VB_Centerline" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VB_01']" type="line" symbology="valley_bottom" id="VB_poly" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Inputs">
+        <Children>
+          <Node label="Basemap">
+            <Children>
+              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='AP_01']" type="raster" id="ap01" />
+              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='AP_02']" type="raster" id="ap02" />
+            </Children>
+          </Node>
+          <Node label="Context">
+            <Children>
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='BRAT']" type="line" symbology="oCC_EX" id="BRAT" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='VBET']" type="polygon" symbology="vbet68_filled" id="vbet" />
+              <Node xpathlabel="Name" xpath="Inputs/DEM[@id='DEM']" type="raster" symbology="dem" transparency="60" id="dem" />
+              <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Summary Comparisons" xpath="Realizations/InundationCD/Outputs">
+        <Children>
+          <Repeater label="Summary Metrics (PDFs)" xpath="PDF">
+            <Node xpathlabel="Name" type="file" />
+          </Repeater>
+          <Node label="Summary Metrics (CSV)" xpath="CSV" type="file" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+<Views default="INNUNDATION">
+    <View name="Inundation Outputs" id="INNUNDATION">
+      <Layers>
+        <Layer id="InundatonTypes" />
+        <Layer id="VB_poly" />
+        <Layer id="ap01" />
+      </Layers>  
+    </View>
+    <View name="Site Extent" id="SITE_EXTENT">
+      <Layers>
+        <Layer id="ap01" />
+        <Layer id="VB_poly" />
+      </Layers>
+    </View>
+    <View name="Watershed Context" id="WATERSHED_CONTEXT">
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="dem" />
+        <Layer id="vbet" />
+        <Layer id="VB_poly" />
+        <Layer id="brat" />
+      </Layers>
+    </View>
+  </Views>
+</Project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Stream Temperature</Name>
+  <ProjectType>STREAMTEMPMEAN</ProjectType>
+  <Node xpathlabel="Name">
+    <Children>
+      <Repeater label="Realizations" xpath="Realizations/StreamTemperature">
+        <!-- this is a template for how each realization should render-->
+        <Node xpathlabel="Name">
+          <Children collapsed="false">
+            <Node label="Analyses" xpath="Analyses">
+              <Children>
+                <Node label="Outputs" xpath="Analysis/Outputs">
+                  <Children>
+                    <Node xpathlabel="Name" xpath="Vector" type="line" symbology="StreamTemp" />
+                  </Children>
+                </Node>
+              </Children>
+            </Node>
+          </Children>
+        </Node>
+      </Repeater>
+    </Children>
+  </Node>
+</Project>

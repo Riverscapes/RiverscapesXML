@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(40, 100%, 45%)", "High"],
+    ["hsl(60, 100%, 45%)", "Moderate"],
+    ["hsl(196, 100%, 45%)", "Low"]
+  ],
+  "layerStyles": [
+    {
+      "id": "bs-sdcat-bfg7g0",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "bs_SDCat-bfg7g0",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "GRIDCODE"],
+              [3],
+              "hsl(40, 100%, 45%)",
+              [2],
+              "hsl(60, 100%, 45%)",
+              [1],
+              "hsl(196, 100%, 45%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

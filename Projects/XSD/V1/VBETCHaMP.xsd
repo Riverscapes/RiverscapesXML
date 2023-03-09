@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+
+  <!-- This file contains all the things Riverscapes projects have in common -->
+  <!-- IT MUST BE AN ABSOLUTE URI. You can make it temporarily reference a local path but don't commit it that way. -->
+  <xs:include schemaLocation="http://xml.riverscapes.net/Projects/XSD/V1/RiverscapesProject.xsd" />
+
+  <xs:element name="Project" type="ProjectType" />
+
+
+  <!-- Top Leve item: Here's where the overall project gets extended -->
+  <xs:complexType name="ProjectType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="ProjectBaseType">
+        <xs:sequence>
+        <xs:element type="RealizationsType" name="Realizations" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RealizationsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="VBETType" name="VBET" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Project: VBET
+  
+  ============================================================================== -->
+
+  <xs:complexType name="VBETType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:sequence>
+          <xs:element type="VBETInputType" name="Inputs" minOccurs="0" />
+          <xs:element type="VBETAnalysesType" name="Analyses" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="VBETInputType">
+    <xs:sequence>
+      <xs:element type="VBETInputTopographyType" name="Topography" />
+      <xs:element type="VBETInputDrainageType" name="DrainageNetworks" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VBETInputTopographyType">
+    <xs:sequence>
+      <xs:element type="DEMType" name="DEM" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="DEMType" name="Flow" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element type="DEMType" name="Slope" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VBETInputDrainageType">
+    <xs:sequence>
+      <xs:element type="VBETInputDrainageNetworkType" name="Network" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VBETInputDrainageNetworkType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="VectorType">
+        <xs:sequence>
+          <xs:element type="VBETBufferType" name="Buffers" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="VBETBufferType">
+    <xs:sequence>
+      <xs:element type="VectorType" name="Buffer" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VBETAnalysesType">
+    <xs:sequence>
+      <xs:element type="VBETAnalysisType" name="Analysis" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VBETAnalysisType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" />
+      <xs:element type="DataSetContainerType" name="Outputs" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+</xs:schema>

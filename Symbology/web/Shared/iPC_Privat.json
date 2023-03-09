@@ -1,0 +1,34 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(9, 100%, 50%)", "Within range of established colony (0 - 1.5 km)"],
+    ["hsl(60, 100%, 50%)", "Within range of post-translocation movements (1.5 - 12 km)"],
+    ["hsl(100, 100%, 45%)","Beaver less likely to move this far (> 12 km)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Priority Beaver Translocation Areas",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "step",
+              ["get", "iPC_Privat"],
+              "hsl(9, 100%, 50%)",
+              1500,
+              "hsl(9, 100%, 50%)",
+              1500.00001,
+              "hsl(60, 100%, 50%)",
+              12000,
+              "hsl(60, 100%, 50%)",
+              12000.00001,
+              "hsl(100, 100%, 45%)",
+              100000,
+              "hsl(100, 100%, 45%)"
+          ]
+      }
+  }
+  ]
+}

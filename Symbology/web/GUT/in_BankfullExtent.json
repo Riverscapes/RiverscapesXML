@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(20, 100%, 23%)", "Bankfull Extent"]
+  ],
+  "layerStyles": [
+    {
+      "id": "bankfulextent-34r8zr",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BankfulExtent-34r8zr",
+      "layout": {},
+      "paint": {"line-width": 2, "line-color": "hsl(20, 100%, 23%)"}
+  }
+  ]
+}

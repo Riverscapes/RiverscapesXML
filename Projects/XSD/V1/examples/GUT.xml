@@ -1,0 +1,1059 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../GUT.xsd">
+  <Name>GUT for Site ASW00001-CC-F3 P2BR</Name>
+  <ProjectType>GUT</ProjectType>
+  <MetaData>
+    <Meta name="ModelVersion">2.1</Meta>
+    <Meta name="dateCreated">2020-06-02T15:55:42.941125</Meta>
+    <Meta name="SiteName">ASW00001-CC-F3 P2BR</Meta>
+    <Meta name="StreamName">Charley Creek</Meta>
+    <Meta name="HUC8">17060103</Meta>
+    <Meta name="Watershed">Asotin</Meta>
+  </MetaData>
+  <Realizations>
+    <GUT dateCreated="2020-06-02T15:55:42.993753" guid="2ff0ce7e-a524-11ea-b6de-f40f243c4b95" id="GUT_2012" productVersion="2.1">
+      <Name>2012</Name>
+      <Inputs>
+        <Centerline guid="2ff0d1bc-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+          <Name>Bankfull Centerline</Name>
+          <Path>2012/Inputs/BCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="2ff0d694-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2012/Inputs/BCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="2ff0db12-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+          <Name>Bankfull Extent</Name>
+          <Path>2012/Inputs/BExtent.shp</Path>
+        </Extent>
+        <Islands guid="2ff0dfb8-a524-11ea-b6de-f40f243c4b95" id="BFI">
+          <Name>Bankfull Islands</Name>
+          <Path>2012/Inputs/BIslands.shp</Path>
+        </Islands>
+        <ChannelUnits guid="2ff0e4a4-a524-11ea-b6de-f40f243c4b95" id="CU">
+          <Name>Channel Units</Name>
+          <Path>2012/Inputs/Channel_Units.shp</Path>
+        </ChannelUnits>
+        <ChannelUnits guid="2ff0e9d6-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2012/Inputs/Channel_Units_Field.shp</Path>
+        </ChannelUnits>
+        <DEM guid="2ff0ef26-a524-11ea-b6de-f40f243c4b95" id="DEM">
+          <Name>DEM</Name>
+          <Path>2012/Inputs/DEM.tif</Path>
+        </DEM>
+        <Thalweg guid="2ff0f4bc-a524-11ea-b6de-f40f243c4b95" id="TH">
+          <Name>Thalweg</Name>
+          <Path>2012/Inputs/Thalweg.shp</Path>
+        </Thalweg>
+        <Centerline guid="2ff0faa2-a524-11ea-b6de-f40f243c4b95" id="WCL">
+          <Name>Wetted Centerline</Name>
+          <Path>2012/Inputs/WCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="2ff100ba-a524-11ea-b6de-f40f243c4b95" id="WXS">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2012/Inputs/WCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="2ff10722-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+          <Name>Wetted Extent</Name>
+          <Path>2012/Inputs/WExtent.shp</Path>
+        </Extent>
+        <Islands guid="2ff10dda-a524-11ea-b6de-f40f243c4b95" id="WI">
+          <Name>Wetted Islands</Name>
+          <Path>2012/Inputs/WIslands.shp</Path>
+        </Islands>
+      </Inputs>
+      <EvidenceLayers>
+        <Raster guid="2ff11be0-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Raster</Name>
+          <Path>2012/EvidenceLayers/bedSlopeSD.tif</Path>
+        </Raster>
+        <Vector guid="2ff125e0-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Category Shapefile</Name>
+          <Path>2012/EvidenceLayers/bedslopesd_cat.shp</Path>
+        </Vector>
+        <Raster guid="2ff12dc4-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2012/EvidenceLayers/bfCh.tif</Path>
+        </Raster>
+        <Slope guid="2ff1359e-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+          <Name>Bankfull Surface Slope Raster</Name>
+          <Path>2012/EvidenceLayers/bfSlope.tif</Path>
+        </Slope>
+        <Raster guid="2ff13dbe-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>bfSlope_Percent.tif</Name>
+          <Path>2012/EvidenceLayers/bfSlope_Percent.tif</Path>
+        </Raster>
+        <Raster guid="2ff1462e-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>bfSlope_Percent_Smooth.tif</Name>
+          <Path>2012/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
+        </Raster>
+        <Slope guid="2ff14ebc-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+          <Name>Smoothed Bankfull Surface Slope Raster</Name>
+          <Path>2012/EvidenceLayers/bfSlope_Smooth.tif</Path>
+        </Slope>
+        <Vector guid="2ff15790-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
+          <Path>2012/EvidenceLayers/bfslope_smooth_cat.shp</Path>
+        </Vector>
+        <Vector guid="2ff1629e-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2012/EvidenceLayers/channelEdge.shp</Path>
+        </Vector>
+        <Raster guid="2ff1775c-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2012/EvidenceLayers/chMargin.tif</Path>
+        </Raster>
+        <Vector guid="2ff19322-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>contourNodes_Thalweg.shp</Name>
+          <Path>2012/EvidenceLayers/contourNodes_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="2ff1ad1c-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>contourPolygons_Thalweg.shp</Name>
+          <Path>2012/EvidenceLayers/contourPolygons_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="2ff1cb30-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2012/EvidenceLayers/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM guid="2ff1f088-a524-11ea-b6de-f40f243c4b95" id="DEMSMOOTH">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2012/EvidenceLayers/DEM_mean.tif</Path>
+        </DEM>
+        <Raster guid="2ff20488-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2012/EvidenceLayers/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster guid="2ff21626-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2012/EvidenceLayers/mBendIndex.tif</Path>
+        </Raster>
+        <Raster guid="2ff22530-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2012/EvidenceLayers/normFill.tif</Path>
+        </Raster>
+        <Vector guid="2ff2316a-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2012/EvidenceLayers/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster guid="2ff23dc2-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2012/EvidenceLayers/resDepth.tif</Path>
+        </Raster>
+        <Raster guid="2ff24e5c-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2012/EvidenceLayers/resTopo.tif</Path>
+        </Raster>
+        <Slope guid="2ff25e4c-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+          <Name>In-Channel DEM Slope Raster</Name>
+          <Path>2012/EvidenceLayers/slope_inCh_DEM.tif</Path>
+        </Slope>
+        <Vector guid="2ff26c84-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2012/EvidenceLayers/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector guid="2ff27a80-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2012/EvidenceLayers/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector guid="2ff28be2-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2012/EvidenceLayers/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector guid="2ff299a2-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2012/EvidenceLayers/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </EvidenceLayers>
+      <Analyses>
+        <Analysis>
+          <Name>Run_01</Name>
+          <GUTConfig guid="2ff2b2e8-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2012/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="2ff2cbd4-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="2ff2dbce-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="2ff2ebaa-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="2ff2fbae-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff30bee-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff31d1e-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff33f56-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </GUT>
+    <GUT dateCreated="2020-06-02T15:55:43.010685" guid="2ff3635a-a524-11ea-b6de-f40f243c4b95" id="GUT_2013" productVersion="2.1">
+      <Name>2013</Name>
+      <Inputs>
+        <Centerline guid="2ff374ee-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+          <Name>Bankfull Centerline</Name>
+          <Path>2013/Inputs/BCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="2ff385d8-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2013/Inputs/BCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="2ff396cc-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+          <Name>Bankfull Extent</Name>
+          <Path>2013/Inputs/BExtent.shp</Path>
+        </Extent>
+        <Islands guid="2ff3ab30-a524-11ea-b6de-f40f243c4b95" id="BFI">
+          <Name>Bankfull Islands</Name>
+          <Path>2013/Inputs/BIslands.shp</Path>
+        </Islands>
+        <ChannelUnits guid="2ff3bd1e-a524-11ea-b6de-f40f243c4b95" id="CU">
+          <Name>Channel Units</Name>
+          <Path>2013/Inputs/Channel_Units.shp</Path>
+        </ChannelUnits>
+        <ChannelUnits guid="2ff3cec6-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2013/Inputs/Channel_Units_Field.shp</Path>
+        </ChannelUnits>
+        <DEM guid="2ff3e0dc-a524-11ea-b6de-f40f243c4b95" id="DEM">
+          <Name>DEM</Name>
+          <Path>2013/Inputs/DEM.tif</Path>
+        </DEM>
+        <Thalweg guid="2ff3f306-a524-11ea-b6de-f40f243c4b95" id="TH">
+          <Name>Thalweg</Name>
+          <Path>2013/Inputs/Thalweg.shp</Path>
+        </Thalweg>
+        <Centerline guid="2ff40580-a524-11ea-b6de-f40f243c4b95" id="WCL">
+          <Name>Wetted Centerline</Name>
+          <Path>2013/Inputs/WCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="2ff41836-a524-11ea-b6de-f40f243c4b95" id="WXS">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2013/Inputs/WCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="2ff42b1e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+          <Name>Wetted Extent</Name>
+          <Path>2013/Inputs/WExtent.shp</Path>
+        </Extent>
+        <Islands guid="2ff43e4c-a524-11ea-b6de-f40f243c4b95" id="WI">
+          <Name>Wetted Islands</Name>
+          <Path>2013/Inputs/WIslands.shp</Path>
+        </Islands>
+      </Inputs>
+      <EvidenceLayers>
+        <Raster guid="2ff45ecc-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Raster</Name>
+          <Path>2013/EvidenceLayers/bedSlopeSD.tif</Path>
+        </Raster>
+        <Vector guid="2ff473c6-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Category Shapefile</Name>
+          <Path>2013/EvidenceLayers/bedslopesd_cat.shp</Path>
+        </Vector>
+        <Raster guid="2ff4882a-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2013/EvidenceLayers/bfCh.tif</Path>
+        </Raster>
+        <Slope guid="2ff49cb6-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+          <Name>Bankfull Surface Slope Raster</Name>
+          <Path>2013/EvidenceLayers/bfSlope.tif</Path>
+        </Slope>
+        <Raster guid="2ff4b16a-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>bfSlope_Percent.tif</Name>
+          <Path>2013/EvidenceLayers/bfSlope_Percent.tif</Path>
+        </Raster>
+        <Raster guid="2ff4c664-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>bfSlope_Percent_Smooth.tif</Name>
+          <Path>2013/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
+        </Raster>
+        <Slope guid="2ff4dcb2-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+          <Name>Smoothed Bankfull Surface Slope Raster</Name>
+          <Path>2013/EvidenceLayers/bfSlope_Smooth.tif</Path>
+        </Slope>
+        <Vector guid="2ff4f346-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
+          <Path>2013/EvidenceLayers/bfslope_smooth_cat.shp</Path>
+        </Vector>
+        <Vector guid="2ff50a3e-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2013/EvidenceLayers/channelEdge.shp</Path>
+        </Vector>
+        <Raster guid="2ff52aaa-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2013/EvidenceLayers/chMargin.tif</Path>
+        </Raster>
+        <Vector guid="2ff55a7a-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>contourNodes_Thalweg.shp</Name>
+          <Path>2013/EvidenceLayers/contourNodes_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="2ff58a04-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>contourPolygons_Thalweg.shp</Name>
+          <Path>2013/EvidenceLayers/contourPolygons_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="2ff5a304-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2013/EvidenceLayers/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM guid="2ff5bb8c-a524-11ea-b6de-f40f243c4b95" id="DEMSMOOTH">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2013/EvidenceLayers/DEM_mean.tif</Path>
+        </DEM>
+        <Raster guid="2ff5d446-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2013/EvidenceLayers/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster guid="2ff5ed3c-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2013/EvidenceLayers/mBendIndex.tif</Path>
+        </Raster>
+        <Raster guid="2ff60682-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2013/EvidenceLayers/normFill.tif</Path>
+        </Raster>
+        <Vector guid="2ff61fe6-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2013/EvidenceLayers/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster guid="2ff6399a-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2013/EvidenceLayers/resDepth.tif</Path>
+        </Raster>
+        <Raster guid="2ff653a8-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2013/EvidenceLayers/resTopo.tif</Path>
+        </Raster>
+        <Slope guid="2ff66dca-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+          <Name>In-Channel DEM Slope Raster</Name>
+          <Path>2013/EvidenceLayers/slope_inCh_DEM.tif</Path>
+        </Slope>
+        <Vector guid="2ff68a30-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2013/EvidenceLayers/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector guid="2ff6ced2-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2013/EvidenceLayers/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector guid="2ff6f560-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>tmp_onEdge_buffer.shp</Name>
+          <Path>2013/EvidenceLayers/tmp_onEdge_buffer.shp</Path>
+        </Vector>
+        <Raster guid="2ff7119e-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_outChEdgeRas.tif</Name>
+          <Path>2013/EvidenceLayers/tmp_outChEdgeRas.tif</Path>
+        </Raster>
+        <Vector guid="2ff72da0-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_planeflowtype.shp</Name>
+          <Path>2013/EvidenceLayers/tmp_planeflowtype.shp</Path>
+        </Vector>
+        <Vector guid="2ff74b28-a524-11ea-b6de-f40f243c4b95" id="ID_11">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2013/EvidenceLayers/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector guid="2ff768ba-a524-11ea-b6de-f40f243c4b95" id="ID_12">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2013/EvidenceLayers/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </EvidenceLayers>
+      <Analyses>
+        <Analysis>
+          <Name>Run_01</Name>
+          <GUTConfig guid="2ff79fc4-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2013/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="2ff7c5e4-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="2ff7e362-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="2ff801b2-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="2ff821b0-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff840c8-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff8866e-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff8a6a8-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+        <Analysis>
+          <Name>Run_bp65</Name>
+          <GUTConfig guid="2ff8d90c-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2013/Output/GUT_2.1/Run_bp65/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="2ff9024c-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="2ff92218-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="2ff94252-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="2ff962a0-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff9878a-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff9a936-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="2ff9caf6-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </GUT>
+    <GUT dateCreated="2020-06-02T15:55:43.053537" guid="2ff9ed38-a524-11ea-b6de-f40f243c4b95" id="GUT_2014" productVersion="2.1">
+      <Name>2014</Name>
+      <Inputs>
+        <Centerline guid="2ffa1556-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+          <Name>Bankfull Centerline</Name>
+          <Path>2014/Inputs/BCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="2ffa64de-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2014/Inputs/BCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="2ffa896e-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+          <Name>Bankfull Extent</Name>
+          <Path>2014/Inputs/BExtent.shp</Path>
+        </Extent>
+        <Islands guid="2ffaad68-a524-11ea-b6de-f40f243c4b95" id="BFI">
+          <Name>Bankfull Islands</Name>
+          <Path>2014/Inputs/BIslands.shp</Path>
+        </Islands>
+        <ChannelUnits guid="2ffad158-a524-11ea-b6de-f40f243c4b95" id="CU">
+          <Name>Channel Units</Name>
+          <Path>2014/Inputs/Channel_Units.shp</Path>
+        </ChannelUnits>
+        <ChannelUnits guid="2ffaf570-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2014/Inputs/Channel_Units_Field.shp</Path>
+        </ChannelUnits>
+        <DEM guid="2ffb19ba-a524-11ea-b6de-f40f243c4b95" id="DEM">
+          <Name>DEM</Name>
+          <Path>2014/Inputs/DEM.tif</Path>
+        </DEM>
+        <Thalweg guid="2ffb3e36-a524-11ea-b6de-f40f243c4b95" id="TH">
+          <Name>Thalweg</Name>
+          <Path>2014/Inputs/Thalweg.shp</Path>
+        </Thalweg>
+        <Centerline guid="2ffb6320-a524-11ea-b6de-f40f243c4b95" id="WCL">
+          <Name>Wetted Centerline</Name>
+          <Path>2014/Inputs/WCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="2ffb8832-a524-11ea-b6de-f40f243c4b95" id="WXS">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2014/Inputs/WCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="2ffbb92e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+          <Name>Wetted Extent</Name>
+          <Path>2014/Inputs/WExtent.shp</Path>
+        </Extent>
+        <Islands guid="2ffc1cf2-a524-11ea-b6de-f40f243c4b95" id="WI">
+          <Name>Wetted Islands</Name>
+          <Path>2014/Inputs/WIslands.shp</Path>
+        </Islands>
+      </Inputs>
+      <EvidenceLayers>
+        <Raster guid="2ffc4eca-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Raster</Name>
+          <Path>2014/EvidenceLayers/bedSlopeSD.tif</Path>
+        </Raster>
+        <Vector guid="2ffc7486-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Category Shapefile</Name>
+          <Path>2014/EvidenceLayers/bedslopesd_cat.shp</Path>
+        </Vector>
+        <Raster guid="2ffc9a6a-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2014/EvidenceLayers/bfCh.tif</Path>
+        </Raster>
+        <Slope guid="2ffcc328-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+          <Name>Bankfull Surface Slope Raster</Name>
+          <Path>2014/EvidenceLayers/bfSlope.tif</Path>
+        </Slope>
+        <Raster guid="2ffce9d4-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>bfSlope_Percent.tif</Name>
+          <Path>2014/EvidenceLayers/bfSlope_Percent.tif</Path>
+        </Raster>
+        <Raster guid="2ffd13c8-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>bfSlope_Percent_Smooth.tif</Name>
+          <Path>2014/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
+        </Raster>
+        <Slope guid="2ffd3b5a-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+          <Name>Smoothed Bankfull Surface Slope Raster</Name>
+          <Path>2014/EvidenceLayers/bfSlope_Smooth.tif</Path>
+        </Slope>
+        <Vector guid="2ffd62d8-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
+          <Path>2014/EvidenceLayers/bfslope_smooth_cat.shp</Path>
+        </Vector>
+        <Vector guid="2ffda752-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2014/EvidenceLayers/channelEdge.shp</Path>
+        </Vector>
+        <Raster guid="2ffdd0c4-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2014/EvidenceLayers/chMargin.tif</Path>
+        </Raster>
+        <Vector guid="2ffdf946-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>contourNodes_Thalweg.shp</Name>
+          <Path>2014/EvidenceLayers/contourNodes_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="2ffe21c8-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>contourPolygons_Thalweg.shp</Name>
+          <Path>2014/EvidenceLayers/contourPolygons_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="2ffe4d6a-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2014/EvidenceLayers/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM guid="2ffe7772-a524-11ea-b6de-f40f243c4b95" id="DEMSMOOTH">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2014/EvidenceLayers/DEM_mean.tif</Path>
+        </DEM>
+        <Raster guid="2ffea4cc-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2014/EvidenceLayers/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster guid="2ffecf42-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2014/EvidenceLayers/mBendIndex.tif</Path>
+        </Raster>
+        <Raster guid="2ffef9f4-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2014/EvidenceLayers/normFill.tif</Path>
+        </Raster>
+        <Vector guid="2fff24f6-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2014/EvidenceLayers/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster guid="2fff890a-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2014/EvidenceLayers/resDepth.tif</Path>
+        </Raster>
+        <Raster guid="2fffced8-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2014/EvidenceLayers/resTopo.tif</Path>
+        </Raster>
+        <Slope guid="2fffff3e-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+          <Name>In-Channel DEM Slope Raster</Name>
+          <Path>2014/EvidenceLayers/slope_inCh_DEM.tif</Path>
+        </Slope>
+        <Vector guid="30002dd8-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2014/EvidenceLayers/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector guid="300059b6-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2014/EvidenceLayers/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector guid="300093b8-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2014/EvidenceLayers/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector guid="3000c09a-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2014/EvidenceLayers/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </EvidenceLayers>
+      <Analyses>
+        <Analysis>
+          <Name>Run_01</Name>
+          <GUTConfig guid="30016f0e-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2014/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="3001b3e2-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="3001f500-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="300223a4-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="3002541e-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="3002d9e8-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="300318e0-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="30037204-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </GUT>
+    <GUT dateCreated="2020-06-02T15:55:43.117699" guid="3003b7be-a524-11ea-b6de-f40f243c4b95" id="GUT_2015" productVersion="2.1">
+      <Name>2015</Name>
+      <Inputs>
+        <Centerline guid="3003e5ea-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+          <Name>Bankfull Centerline</Name>
+          <Path>2015/Inputs/BCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="300415c4-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2015/Inputs/BCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="3004458a-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+          <Name>Bankfull Extent</Name>
+          <Path>2015/Inputs/BExtent.shp</Path>
+        </Extent>
+        <ChannelUnits guid="3004ae26-a524-11ea-b6de-f40f243c4b95" id="CU">
+          <Name>Channel Units</Name>
+          <Path>2015/Inputs/Channel_Units.shp</Path>
+        </ChannelUnits>
+        <ChannelUnits guid="3004ec74-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2015/Inputs/Channel_Units_Field.shp</Path>
+        </ChannelUnits>
+        <DEM guid="30051da2-a524-11ea-b6de-f40f243c4b95" id="DEM">
+          <Name>DEM</Name>
+          <Path>2015/Inputs/DEM.tif</Path>
+        </DEM>
+        <Thalweg guid="30054fe8-a524-11ea-b6de-f40f243c4b95" id="TH">
+          <Name>Thalweg</Name>
+          <Path>2015/Inputs/Thalweg.shp</Path>
+        </Thalweg>
+        <Centerline guid="30058120-a524-11ea-b6de-f40f243c4b95" id="WCL">
+          <Name>Wetted Centerline</Name>
+          <Path>2015/Inputs/WCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="3005b262-a524-11ea-b6de-f40f243c4b95" id="WXS">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2015/Inputs/WCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="3005e3fe-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+          <Name>Wetted Extent</Name>
+          <Path>2015/Inputs/WExtent.shp</Path>
+        </Extent>
+      </Inputs>
+      <EvidenceLayers>
+        <Raster guid="30065a82-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Raster</Name>
+          <Path>2015/EvidenceLayers/bedSlopeSD.tif</Path>
+        </Raster>
+        <Vector guid="30069272-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Category Shapefile</Name>
+          <Path>2015/EvidenceLayers/bedslopesd_cat.shp</Path>
+        </Vector>
+        <Raster guid="3006c60c-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2015/EvidenceLayers/bfCh.tif</Path>
+        </Raster>
+        <Slope guid="3006f906-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+          <Name>Bankfull Surface Slope Raster</Name>
+          <Path>2015/EvidenceLayers/bfSlope.tif</Path>
+        </Slope>
+        <Raster guid="30072c50-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>bfSlope_Percent.tif</Name>
+          <Path>2015/EvidenceLayers/bfSlope_Percent.tif</Path>
+        </Raster>
+        <Raster guid="30075fa4-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>bfSlope_Percent_Smooth.tif</Name>
+          <Path>2015/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
+        </Raster>
+        <Slope guid="300793a2-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+          <Name>Smoothed Bankfull Surface Slope Raster</Name>
+          <Path>2015/EvidenceLayers/bfSlope_Smooth.tif</Path>
+        </Slope>
+        <Vector guid="3007c836-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
+          <Path>2015/EvidenceLayers/bfslope_smooth_cat.shp</Path>
+        </Vector>
+        <Vector guid="3008018e-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2015/EvidenceLayers/channelEdge.shp</Path>
+        </Vector>
+        <Raster guid="30085b34-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2015/EvidenceLayers/chMargin.tif</Path>
+        </Raster>
+        <Vector guid="30089108-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>contourNodes_Thalweg.shp</Name>
+          <Path>2015/EvidenceLayers/contourNodes_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="3008cb78-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>contourPolygons_Thalweg.shp</Name>
+          <Path>2015/EvidenceLayers/contourPolygons_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="300901ce-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2015/EvidenceLayers/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM guid="30093748-a524-11ea-b6de-f40f243c4b95" id="DEMSMOOTH">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2015/EvidenceLayers/DEM_mean.tif</Path>
+        </DEM>
+        <Raster guid="30096cea-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2015/EvidenceLayers/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster guid="3009f458-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2015/EvidenceLayers/mBendIndex.tif</Path>
+        </Raster>
+        <Raster guid="300a2c70-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2015/EvidenceLayers/normFill.tif</Path>
+        </Raster>
+        <Vector guid="300a637a-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2015/EvidenceLayers/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster guid="300a9ac0-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2015/EvidenceLayers/resDepth.tif</Path>
+        </Raster>
+        <Raster guid="300ad206-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2015/EvidenceLayers/resTopo.tif</Path>
+        </Raster>
+        <Slope guid="300b0a3c-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+          <Name>In-Channel DEM Slope Raster</Name>
+          <Path>2015/EvidenceLayers/slope_inCh_DEM.tif</Path>
+        </Slope>
+        <Vector guid="300b9876-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2015/EvidenceLayers/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector guid="300bd17e-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2015/EvidenceLayers/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector guid="300c0a22-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>tmp_onEdge_buffer.shp</Name>
+          <Path>2015/EvidenceLayers/tmp_onEdge_buffer.shp</Path>
+        </Vector>
+        <Raster guid="300c4a28-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_outChEdgeRas.tif</Name>
+          <Path>2015/EvidenceLayers/tmp_outChEdgeRas.tif</Path>
+        </Raster>
+        <Vector guid="300c8632-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_planeflowtype.shp</Name>
+          <Path>2015/EvidenceLayers/tmp_planeflowtype.shp</Path>
+        </Vector>
+        <Vector guid="300cc02a-a524-11ea-b6de-f40f243c4b95" id="ID_11">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2015/EvidenceLayers/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector guid="300d23c6-a524-11ea-b6de-f40f243c4b95" id="ID_12">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2015/EvidenceLayers/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </EvidenceLayers>
+      <Analyses>
+        <Analysis>
+          <Name>Run_01</Name>
+          <GUTConfig guid="300d97f2-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2015/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="300dead6-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="300e27da-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="300e640c-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="300ea688-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="300f1578-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="300f525e-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="300f9430-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </GUT>
+    <GUT dateCreated="2020-06-02T15:55:43.197048" guid="300fd332-a524-11ea-b6de-f40f243c4b95" id="GUT_2017" productVersion="2.1">
+      <Name>2017</Name>
+      <Inputs>
+        <Centerline guid="30100f3c-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+          <Name>Bankfull Centerline</Name>
+          <Path>2017/Inputs/BCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="30108d54-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2017/Inputs/BCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="3010ccc4-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+          <Name>Bankfull Extent</Name>
+          <Path>2017/Inputs/BExtent.shp</Path>
+        </Extent>
+        <DEM guid="30110a68-a524-11ea-b6de-f40f243c4b95" id="DEM">
+          <Name>DEM</Name>
+          <Path>2017/Inputs/DEM.tif</Path>
+        </DEM>
+        <Thalweg guid="301151bc-a524-11ea-b6de-f40f243c4b95" id="TH">
+          <Name>Thalweg</Name>
+          <Path>2017/Inputs/Thalweg.shp</Path>
+        </Thalweg>
+        <Centerline guid="30119028-a524-11ea-b6de-f40f243c4b95" id="WCL">
+          <Name>Wetted Centerline</Name>
+          <Path>2017/Inputs/WCenterline.shp</Path>
+        </Centerline>
+        <CrossSections guid="3011d204-a524-11ea-b6de-f40f243c4b95" id="WXS">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2017/Inputs/WCrossSections.shp</Path>
+        </CrossSections>
+        <Extent guid="30121a8e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+          <Name>Wetted Extent</Name>
+          <Path>2017/Inputs/WExtent.shp</Path>
+        </Extent>
+      </Inputs>
+      <EvidenceLayers>
+        <Raster guid="30128776-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Raster</Name>
+          <Path>2017/EvidenceLayers/bedSlopeSD.tif</Path>
+        </Raster>
+        <Vector guid="3012c72c-a524-11ea-b6de-f40f243c4b95" id="ID">
+          <Name>Bed Slope Standard Deviation Category Shapefile</Name>
+          <Path>2017/EvidenceLayers/bedslopesd_cat.shp</Path>
+        </Vector>
+        <Raster guid="30130c1e-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2017/EvidenceLayers/bfCh.tif</Path>
+        </Raster>
+        <Slope guid="30134d3c-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+          <Name>Bankfull Surface Slope Raster</Name>
+          <Path>2017/EvidenceLayers/bfSlope.tif</Path>
+        </Slope>
+        <Raster guid="30138d4c-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>bfSlope_Percent.tif</Name>
+          <Path>2017/EvidenceLayers/bfSlope_Percent.tif</Path>
+        </Raster>
+        <Raster guid="3013ddce-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>bfSlope_Percent_Smooth.tif</Name>
+          <Path>2017/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
+        </Raster>
+        <Slope guid="30144e58-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+          <Name>Smoothed Bankfull Surface Slope Raster</Name>
+          <Path>2017/EvidenceLayers/bfSlope_Smooth.tif</Path>
+        </Slope>
+        <Vector guid="301490d4-a524-11ea-b6de-f40f243c4b95" id="ID_1">
+          <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
+          <Path>2017/EvidenceLayers/bfslope_smooth_cat.shp</Path>
+        </Vector>
+        <Vector guid="3014d29c-a524-11ea-b6de-f40f243c4b95" id="ID_2">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2017/EvidenceLayers/channelEdge.shp</Path>
+        </Vector>
+        <Raster guid="3015145a-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2017/EvidenceLayers/chMargin.tif</Path>
+        </Raster>
+        <Vector guid="30156b30-a524-11ea-b6de-f40f243c4b95" id="ID_3">
+          <Name>contourNodes_Thalweg.shp</Name>
+          <Path>2017/EvidenceLayers/contourNodes_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="3015d80e-a524-11ea-b6de-f40f243c4b95" id="ID_4">
+          <Name>contourPolygons_Thalweg.shp</Name>
+          <Path>2017/EvidenceLayers/contourPolygons_Thalweg.shp</Path>
+        </Vector>
+        <Vector guid="30161da0-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2017/EvidenceLayers/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM guid="301661d4-a524-11ea-b6de-f40f243c4b95" id="DEMSMOOTH">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2017/EvidenceLayers/DEM_mean.tif</Path>
+        </DEM>
+        <Raster guid="3016a5ea-a524-11ea-b6de-f40f243c4b95" id="ID_5">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2017/EvidenceLayers/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster guid="3016ea0a-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2017/EvidenceLayers/mBendIndex.tif</Path>
+        </Raster>
+        <Raster guid="301731d6-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2017/EvidenceLayers/normFill.tif</Path>
+        </Raster>
+        <Vector guid="30179bb2-a524-11ea-b6de-f40f243c4b95" id="ID_6">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2017/EvidenceLayers/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster guid="3017e14e-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2017/EvidenceLayers/resDepth.tif</Path>
+        </Raster>
+        <Raster guid="30182be0-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2017/EvidenceLayers/resTopo.tif</Path>
+        </Raster>
+        <Slope guid="3018715e-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+          <Name>In-Channel DEM Slope Raster</Name>
+          <Path>2017/EvidenceLayers/slope_inCh_DEM.tif</Path>
+        </Slope>
+        <Vector guid="3018be0c-a524-11ea-b6de-f40f243c4b95" id="ID_7">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2017/EvidenceLayers/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector guid="301928f6-a524-11ea-b6de-f40f243c4b95" id="ID_8">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2017/EvidenceLayers/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector guid="30199ea8-a524-11ea-b6de-f40f243c4b95" id="ID_9">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2017/EvidenceLayers/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector guid="3019e5fc-a524-11ea-b6de-f40f243c4b95" id="ID_10">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2017/EvidenceLayers/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </EvidenceLayers>
+      <Analyses>
+        <Analysis>
+          <Name>Run_01</Name>
+          <GUTConfig guid="301a767a-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2017/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="301b0892-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="301b51ee-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="301b9a1e-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="301bedf2-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="301c39d8-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="301ca9f4-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="301cf49a-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+        <Analysis>
+          <Name>Run_bp65</Name>
+          <GUTConfig guid="301d7c76-a524-11ea-b6de-f40f243c4b95" id="ID">
+            <Name>Configuration Settings</Name>
+            <Path>2017/Output/GUT_2.1/Run_bp65/configSettings.txt</Path>
+          </GUTConfig>
+          <Outputs>
+            <Tier1 guid="301ddf18-a524-11ea-b6de-f40f243c4b95" id="Tier1">
+              <Name>Tier 1</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier1.shp</Path>
+            </Tier1>
+            <Tier2 guid="301e3c6a-a524-11ea-b6de-f40f243c4b95" id="Tier2">
+              <Name>Tier 2</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier2_InChannel.shp</Path>
+            </Tier2>
+            <Tier2 guid="301e9764-a524-11ea-b6de-f40f243c4b95" id="Tier2_1">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier2_InChannel_Discrete.shp</Path>
+            </Tier2>
+            <Tier3 guid="301eef48-a524-11ea-b6de-f40f243c4b95" id="Tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU.shp</Path>
+            </Tier3>
+            <Tier3 guid="301f83cc-a524-11ea-b6de-f40f243c4b95" id="Tier3_1">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU_Raw.shp</Path>
+            </Tier3>
+            <Tier3 guid="301ffa78-a524-11ea-b6de-f40f243c4b95" id="Tier3_2">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU.shp</Path>
+            </Tier3>
+            <Tier3 guid="302047d0-a524-11ea-b6de-f40f243c4b95" id="Tier3_3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Tier3>
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </GUT>
+  </Realizations>
+</Project>

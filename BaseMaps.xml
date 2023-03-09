@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BaseMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./BaseMaps.xsd">
+  <Region name="United States">
+    <GroupLayer name="Google">
+      <Layer name="Google Imagery" type="xyz" url="https://mt1.google.com/vt/lyrs=s&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Imagery</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Google Terrain" type="xyz" url="https://mt1.google.com/vt/lyrs=p&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Terrain</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Google Maps" type="xyz" url="https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Maps</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="Bing Maps">
+      <Layer name="Bing Aerial Imagery" type="xyz" url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
+        <Metadata>
+          <Meta name="Description">Bing Aerial Imagery</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="USGS Hydrography">
+      <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">USGS HUC Watershed Boundaries</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Drainage Network NHD" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/nhd/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">USGS National Hydrologic Dataset - Drainage Network</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="USGS Topography">
+      <Layer name="Topo Base Map" type="wms" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSTopo/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">USGS Top Map Base Layer</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Shaded Relief" type="wms" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSShadedReliefOnly/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">USGS shaded relief</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Contours" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/contours/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">USGS NED Contours</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NED 3DEPE" type="wms" url="https://elevation.nationalmap.gov:443/arcgis/services/3DEPElevation/ImageServer/WMSServer">
+        <Metadata>
+          <Meta name="Description">High Resolution Topography from USGS </Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="Cartographic Basics">
+      <Layer name="Boundaries" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/govunits/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">Governmental Unit Boundaries</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Geographic Place Names" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/geonames/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">Place Names</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Transporation" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/transportation/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">USGS Roads and Railroads</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="Imagery">
+      <Layer name="NAIP" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
+        <Metadata>
+          <Meta name="Description">NAIP Imagery</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NAIP Plus" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPPlus/MapServer/WmsServer?">
+        <Metadata>
+          <Meta name="Description">NAIP Plus Imagery</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="ESA World Imagery" type="wms" url="https://services.terrascope.be/wms/v2">
+        <Metadata>
+          <Meta name="Description">European Space Agency World Viewer Data</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="Geology">
+      <Layer name="SGMC Geology" type="wms" url="https://www.sciencebase.gov/arcgis/services/Catalog/5888bf4fe4b05ccb964bab9d/MapServer/WMSServer">
+        <Metadata>
+          <Meta name="Description">A compilation of state geologic maps</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+  </Region>
+</BaseMaps>

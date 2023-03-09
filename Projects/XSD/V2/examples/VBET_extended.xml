@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
+
+  <Name>VBET for HUC 16050301</Name>
+  <ProjectType>VBET</ProjectType>
+
+  <!-- CHANGE: Collapsed down to one element. This is the only usable GUID now in the project
+        The apiUrl is going to be important later when we want our tools to connect to it.
+  -->
+  <Warehouse id="badfe8c1-0342-4876-8fac-b2eb5493a90f" apiUrl="https://12312312.amazon.ca/api/prod"/>
+  <Summary>This is a project that does things I care about </Summary>
+  <Description></Description>
+  <!-- simply replace ]]> with ]]]]><![CDATA[> -->
+  <Citation><![CDATA[Storrie, P. D., and Randall, R. (2007). Graphic Universe: Beowulf. Minneapolis: Lerner Publishing Group. Retrieved from NetLibrary. 8 July 2009.]]></Citation>
+
+  <MetaData>
+    <Meta name="ModelVersion">0.5.0</Meta>
+    <Meta name="dateCreated" type="isodate">2021-10-02T16:48:48.768081</Meta>
+    <Meta name="HUC8">16050301</Meta>
+    <Meta name="HUC">16050301</Meta>
+    <Meta name="VBETVersion">0.5.0</Meta>
+    <Meta name="VBETTimestamp" type="timestamp">1633193328</Meta>
+    <Meta name="Scenario Name">UPDATED_TESTING</Meta>
+    <Meta name="FlowlineType">NHD</Meta>
+    <Meta name="VBET_Active_Floodplain_Threshold" type="int">90</Meta>
+    <Meta name="VBET_Inactive_Floodplain_Threshold" type="int">68</Meta>
+    <Meta name="Runner">Cybercastor</Meta>
+    <Meta name="ProcTimeS" type="int">5347.23</Meta>
+    <Meta name="ProcTimeHuman">1:29 hours</Meta>
+  </MetaData>
+
+  <QAQCEvents>
+
+    <!-- Here is some automated testing we do in Cybercastor -->
+    <QAQCEvent state="passed" datePerformed="2022-04-11T17:56:39Z">
+      <Name>Manual Calibration</Name>
+      <PerformedBy>Cybercastor Automation</PerformedBy>
+      <Summary>Automated Project QC Testing</Summary>
+    </QAQCEvent>
+
+    <!-- Here is the same event from before but passed -->
+    <QAQCEvent state="failed" datePerformed="2022-04-11T17:56:39Z">
+      <Name>Manual Calibration</Name>
+      <PerformedBy>John Johnson</PerformedBy>
+      <Summary>Failed to load layer X (see github link)</Summary>
+      <Description><![CDATA[ This is a long-form commment deserunt elit ut nisi veniam pariatur eu excepteur in. Adipisicing ea qui id do incididunt deserunt sint est ullamco consectetur eu deserunt laboris excepteur. Consectetur nulla deserunt amet velit. Pariatur incididunt esse nulla nisi elit deserunt. Ad non ex aliqua officia et excepteur dolore Lorem veniam duis. Et amet nostrud exercitation do Lorem. Laborum fugiat ipsum labore eiusmod aliqua qui et dolore ipsum laboris ut.
+
+Esse officia minim mollit nulla pariatur ut ipsum do qui est et ea esse minim. Duis commodo laboris sint enim qui esse ipsum in. Officia sunt tempor fugiat fugiat culpa elit elit. Mollit nostrud ea cupidatat fugiat adipisicing reprehenderit.
+
+Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt officia sunt. Occaecat aliqua sunt reprehenderit sit sit duis mollit irure tempor elit aute proident quis consequat. Est deserunt occaecat deserunt non tempor irure ut ea pariatur ullamco non irure consectetur.]]></Description>
+      <Links>
+        <URL text="github Link">https://github.com/Riverscapes/RiverscapesXML/issues/410</URL>
+      </Links>
+      <MetaData>
+        <Meta name="SOMEKEY">SOMEVALUE</Meta>
+      </MetaData>
+    </QAQCEvent>
+    
+    <!-- Here is the same event from before but passed -->
+    <QAQCEvent state="passed" datePerformed="2022-04-13T18:56:39Z">
+      <Name>Manual Calibration</Name>
+      <PerformedBy>John Johnson</PerformedBy>
+      <Summary>This was a task of calibration performed by someone</Summary>
+    </QAQCEvent>
+  </QAQCEvents>
+
+  <CommonDatasets>
+
+    <!-- CHANGE: Note the external reference in the form: WH_GUID/REALIZATION_ID/DATASET_ID -->
+    <Raster id="SLP_01" type="slope_raster" extRef="badfe8c1-0342-4876-8fac-b2eb5493a90f:Project/REALIZATION1/SLOPE#thing">
+      <Name>Slope Raster</Name>
+      <Path>inputs/slope.tif</Path>
+      <MetaData></MetaData>
+    </Raster>
+
+    <Geopackage id="INPUT4" extRef="badfe8c1-0342-4876-8fac-b2eb5493a90f:Project/REALIZATION/SEGMENTATION">
+      <Name>Inputs</Name>
+      <Summary></Summary>
+      <Description></Description>
+      <Citation></Citation>
+
+      <Path>inputs/vbet_inputs.gpkg</Path>
+      <!-- CHANGE: Metadata still gets imported but more intelligently now 
+            The ext= attribute tells us where the metadata originated in the original project
+      -->
+      <MetaData>
+        <Meta ext="warehouse" name="id" type="hidden">ae316b03-1e5d-4dec-896a-9139b7b707a8</Meta>
+        <Meta ext="warehouse" name="apiUrl" type="hidden">https://12312312.amazon.ca/api/prod</Meta>
+     
+        <Meta ext="project" name="ModelVersion">1.2.0</Meta>
+        <Meta ext="project" name="dateCreated" type="isodate">2021-09-10T18:32:47.801646</Meta>
+        <Meta ext="project" name="HUC8">16050301</Meta>
+        <Meta ext="project" name="HUC">16050301</Meta>
+        <Meta ext="project" name="Runner">Cybercastor</Meta>
+        <Meta ext="project" name="Watershed">East Walker</Meta>
+        <Meta ext="project" name="mean_annual_precipitation_mm" type="float">385.0832162162162</Meta>
+        <Meta ext="project" name="ProcTimeS" type="int">990.65</Meta>
+        <Meta ext="project" name="ProcTimeHuman">16:30 minutes</Meta>
+        <Meta ext="project" name="projType">RSContext</Meta>
+      </MetaData>
+      <Layers>
+        <Vector lyrName="flowlines">
+          <Name>NHD Flowlines</Name>
+          <MetaData>
+            <Meta ext="dataset" name="id">NHDFlowline</Meta>
+            <Meta ext="dataset" name="guid" type="guid">ba029937-9eca-4e69-b9fc-d7fd6895fdc3</Meta>
+            <Meta ext="dataset" name="path" type="filepath">hydrology/NHDFlowline.shp</Meta>
+          </MetaData>
+        </Vector>
+        <Vector lyrName="flowareas">
+          <Name>NHD Flow Areas</Name>
+          <MetaData>
+            <Meta ext="dataset" name="origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+            <Meta ext="dataset" name="id">NHDArea</Meta>
+            <Meta ext="dataset" name="guid" type="guid">ecb94aa4-9a9e-49ec-ac42-a00418c58a83</Meta>
+            <Meta ext="dataset" name="path" type="filepath">hydrology/NHDArea.shp</Meta>
+          </MetaData>
+        </Vector>
+        <Vector lyrName="Flowlines_VAA">
+          <Name>NHD Flowlines with Attributes</Name>
+        </Vector>
+        <Vector lyrName="channel_area_polygons">
+          <Name>Channel Area Polygons</Name>
+          <MetaData>
+            <Meta ext="dataset" name="origin_url" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1605_HU4_GDB.zip</Meta>
+            <Meta ext="dataset" name="id">NHDFlowline</Meta>
+            <Meta ext="dataset" name="guid" type="guid">ba029937-9eca-4e69-b9fc-d7fd6895fdc3</Meta>
+            <Meta ext="dataset" name="path" type="filepath">hydrology/NHDFlowline.shp</Meta>
+
+            <!-- HEre is metadata that is specific to only this layer --> 
+            <Meta name="localContext" type="json">This is some local context</Meta>
+          </MetaData>
+        </Vector>
+        <Vector lyrName="catchments">
+          <Name>NHD Catchments</Name>
+        </Vector>
+      </Layers>
+    </Geopackage>
+  </CommonDatasets>
+
+
+  <!-- CHANGE: here is our ProjectBounds for geospatial searching and map display -->
+  <ProjectBounds>
+    <Centroid>
+      <Lat>43.03677585761058</Lat>
+      <Lng>-105.46875</Lng>
+    </Centroid>
+    <BoundingBox>
+      <MinLat>38.58252615935333</MinLat>
+      <MinLng>-115.13671875</MinLng>
+      <MaxLat>46.6795944656402</MaxLat>
+      <MaxLng>-96.0205078125</MaxLng>
+    </BoundingBox>
+    <Path>
+      some_file_name.geojson</Path>
+  </ProjectBounds>
+
+  <Realizations>
+    <!-- CHANGE: no project-specific tag name here GUIDs are gone --> 
+    <Realization id="REALIZATION1" dateCreated="2021-10-02T16:48:48.772237" productVersion="0.1.2">
+      <Name>VBET for HUC 16050301</Name>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+      </Logs>
+      <Inputs>
+        <!-- CHANGE: THis is how we reference datasets internally now 
+            All our mapping and RAVE tools need to be smart enough to go find
+            the referenced layer above in the <CommonDatasets> element and
+            substitute in where appropriate.
+
+            Name and MetaData are optional so it could just look like 
+            <CommonDatasetRef ref="SLP_01" />
+
+            This thing doesn't need an id since it will not be stored inside the realization
+        -->
+        <CommonDatasetRef ref="SLP_01">
+          <Name>My other name for a slope raster</Name>
+          <MetaData>
+            <Meta name="hello">value</Meta>
+          </MetaData>
+        </CommonDatasetRef>
+        <Raster id="HAND_RASTER">
+          <Name>Hand Raster</Name>
+          <Path>inputs/HAND.tif</Path>
+        </Raster>
+        <Raster id="TWI_RASTER">
+          <Name>Topographic Wetness Index (TWI) Raster</Name>
+          <Path>inputs/twi.tif</Path>
+        </Raster>
+        <Raster id="HILLSHADE">
+          <Name>DEM Hillshade</Name>
+          <Path>inputs/dem_hillshade.tif</Path>
+        </Raster>
+        <Raster id="DEM">
+          <Name>DEM</Name>
+          <Path>inputs/dem.tif</Path>
+        </Raster>
+        <!-- CHANGE: Geopackages got some love so they are more concise and specific -->
+        <Geopackage id="INPUTS">
+          <Name>Inputs</Name>
+          <Path>inputs/vbet_inputs.gpkg</Path>
+          <Layers>
+            <!-- CHANGE: What's going on here? Why the duplication? 
+              type="" is an optional field we can use so that changing the name
+              of the layer doesn't break the businesslogic of the thing it's referencing
+            -->
+            <Vector lyrName="flowlines" type="flowlines">
+              <Name>NHD Flowlines</Name>
+            </Vector>
+            <Vector lyrName="flowareas" type="flowareas">
+              <Name>NHD Flow Areas</Name>
+            </Vector>
+            <Vector lyrName="Flowlines_VAA" type="Flowlines_VAA">
+              <Name>NHD Flowlines with Attributes</Name>
+            </Vector>
+            <Vector lyrName="channel_area_polygons" type="channel_area_polygons">
+              <Name>Channel Area Polygons</Name>
+            </Vector>
+            <Vector lyrName="catchments" type="catchments">
+              <Name>NHD Catchments</Name>
+            </Vector>
+          </Layers>
+        </Geopackage>
+      </Inputs>
+      <Intermediates>
+        <!-- CHANGE: type added here too for businesslogic folks -->
+        <Raster id="CHANNEL_AREA_RASTER" type="ChannelRaster">
+          <Name>Channel Area Raster</Name>
+          <Path>intermediates/channelarea.tif</Path>
+        </Raster>
+        <Raster id="TRANSFORM_ZONE_SLOPE">
+          <Name>Transform Zones for Slope</Name>
+          <Path>intermediates/slope_transform_zones.tif</Path>
+        </Raster>
+        <Raster id="TRANSFORM_ZONE_HAND">
+          <Name>Transform Zones for HAND</Name>
+          <Path>intermediates/hand_transform_zones.tif</Path>
+        </Raster>
+        <Raster id="TRANSFORM_ZONE_TWI">
+          <Name>Transform Zones for TWI</Name>
+          <Path>intermediates/twi_transform_zones.tif</Path>
+        </Raster>
+        <Raster id="NORMALIZED_SLOPE">
+          <Name>Normalized Slope</Name>
+          <Path>intermediates/nLoE_Slope.tif</Path>
+        </Raster>
+        <Raster id="NORMALIZED_HAND">
+          <Name>Normalized HAND</Name>
+          <Path>intermediates/nLoE_Hand.tif</Path>
+        </Raster>
+        <Raster id="NORMALIZED_TWI">
+          <Name>Normalized Topographic Wetness Index (TWI)</Name>
+          <Path>intermediates/nLoE_TWI.tif</Path>
+        </Raster>
+        <Raster id="EVIDENCE_TOPO">
+          <Name>Topo Evidence</Name>
+          <Path>intermediates/Topographic_Evidence.tif</Path>
+        </Raster>
+        <Raster id="EVIDENCE_CHANNEL">
+          <Name>Channel Evidence</Name>
+          <Path>intermediates/Channel_Evidence.tif</Path>
+        </Raster>
+        <Geopackage id="Intermediates">
+          <Name>Intermediates</Name>
+          <Path>intermediates/vbet_intermediates.gpkg</Path>
+          <Layers>
+            <Vector lyrName="vbet_network">
+              <Name>VBET Network</Name>
+            </Vector>
+            <Vector lyrName="transform_zones">
+              <Name>Transform Zones</Name>
+            </Vector>
+            <Vector lyrName="ThiessenPoints">
+              <Name>Thiessen Reach Points</Name>
+            </Vector>
+            <Vector lyrName="ThiessenPolygonsDissolved">
+              <Name>Thiessen Reach Areas</Name>
+            </Vector>
+            <Vector lyrName="thresh_90">
+              <Name>Raw Threshold at 90%</Name>
+            </Vector>
+            <Vector lyrName="thresh_68">
+              <Name>Raw Threshold at 68%</Name>
+            </Vector>
+          </Layers>
+        </Geopackage>
+      </Intermediates>
+      <Outputs>
+        <Raster id="VBET_EVIDENCE">
+          <Name>VBET Evidence Raster</Name>
+          <Path>outputs/VBET_Evidence.tif</Path>
+        </Raster>
+        <Geopackage id="VBET_OUTPUTS">
+          <Name>VBET</Name>
+          <Path>outputs/vbet.gpkg</Path>
+          <Layers>
+            <Vector lyrName="vbet_full">
+              <Name>VBET Full Extent</Name>
+            </Vector>
+            <Vector lyrName="vbet_ia">
+              <Name>VBET Inactive/Active Boundary</Name>
+            </Vector>
+            <Vector lyrName="vbet_channel_area">
+              <Name>VBET Channel Area</Name>
+            </Vector>
+            <Vector lyrName="active_floodplain">
+              <Name>Active Floodplain</Name>
+            </Vector>
+            <Vector lyrName="inactive_floodplain">
+              <Name>Inactive Floodplain</Name>
+            </Vector>
+          </Layers>
+        </Geopackage>
+        <HTMLFile id="REPORT">
+          <Name>RSContext Report</Name>
+          <Path>outputs/vbet.html</Path>
+        </HTMLFile>
+      </Outputs>
+    </Realization>
+    <Realization id="REALIZATION2" dateCreated="2021-10-02T16:48:48.772237" productVersion="0.5.0">
+      <Name>VBET for HUC 16050301</Name>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+        <LogFile id="LOGFILE2">
+          <Name>Log</Name>
+          <Path>vbet.log</Path>
+        </LogFile>
+      </Logs>
+      <Inputs>
+        <CommonDatasetRef ref="SLP_01" />
+        <Raster id="HAND_RASTER">
+          <Name>Hand Raster</Name>
+          <Path>inputs/HAND.tif</Path>
+        </Raster>
+        <Raster id="TWI_RASTER">
+          <Name>Topographic Wetness Index (TWI) Raster</Name>
+          <Path>inputs/twi.tif</Path>
+        </Raster>
+        <Raster id="HILLSHADE">
+          <Name>DEM Hillshade</Name>
+          <Path>inputs/dem_hillshade.tif</Path>
+        </Raster>
+        <Raster id="DEM">
+          <Name>DEM</Name>
+          <Path>inputs/dem.tif</Path>
+        </Raster>
+        <Geopackage id="INPUTS">
+          <Name>Inputs</Name>
+          <Path>inputs/vbet_inputs.gpkg</Path>
+          <Layers>
+            <Vector lyrName="flowlines">
+              <Name>NHD Flowlines</Name>
+            </Vector>
+            <Vector lyrName="flowareas">
+              <Name>NHD Flow Areas</Name>
+            </Vector>
+            <Vector lyrName="Flowlines_VAA">
+              <Name>NHD Flowlines with Attributes</Name>
+            </Vector>
+            <Vector lyrName="channel_area_polygons">
+              <Name>Channel Area Polygons</Name>
+            </Vector>
+            <Vector lyrName="catchments">
+              <Name>NHD Catchments</Name>
+            </Vector>
+          </Layers>
+        </Geopackage>
+      </Inputs>
+      <Intermediates>
+        <Raster id="CHANNEL_AREA_RASTER">
+          <Name>Channel Area Raster</Name>
+          <Path>intermediates/channelarea.tif</Path>
+        </Raster>
+        <Raster id="TRANSFORM_ZONE_SLOPE">
+          <Name>Transform Zones for Slope</Name>
+          <Path>intermediates/slope_transform_zones.tif</Path>
+        </Raster>
+        <Raster id="TRANSFORM_ZONE_HAND">
+          <Name>Transform Zones for HAND</Name>
+          <Path>intermediates/hand_transform_zones.tif</Path>
+        </Raster>
+        <Raster id="TRANSFORM_ZONE_TWI">
+          <Name>Transform Zones for TWI</Name>
+          <Path>intermediates/twi_transform_zones.tif</Path>
+        </Raster>
+        <Raster id="NORMALIZED_SLOPE">
+          <Name>Normalized Slope</Name>
+          <Path>intermediates/nLoE_Slope.tif</Path>
+        </Raster>
+        <Raster id="NORMALIZED_HAND">
+          <Name>Normalized HAND</Name>
+          <Path>intermediates/nLoE_Hand.tif</Path>
+        </Raster>
+        <Raster id="NORMALIZED_TWI">
+          <Name>Normalized Topographic Wetness Index (TWI)</Name>
+          <Path>intermediates/nLoE_TWI.tif</Path>
+        </Raster>
+        <Raster id="EVIDENCE_TOPO">
+          <Name>Topo Evidence</Name>
+          <Path>intermediates/Topographic_Evidence.tif</Path>
+        </Raster>
+        <Raster id="EVIDENCE_CHANNEL">
+          <Name>Channel Evidence</Name>
+          <Path>intermediates/Channel_Evidence.tif</Path>
+        </Raster>
+        <Geopackage id="Intermediates">
+          <Name>Intermediates</Name>
+          <Path>intermediates/vbet_intermediates.gpkg</Path>
+          <Layers>
+            <Vector lyrName="vbet_network">
+              <Name>VBET Network</Name>
+            </Vector>
+            <Vector lyrName="transform_zones">
+              <Name>Transform Zones</Name>
+            </Vector>
+            <Vector lyrName="ThiessenPoints">
+              <Name>Thiessen Reach Points</Name>
+            </Vector>
+            <Vector lyrName="ThiessenPolygonsDissolved">
+              <Name>Thiessen Reach Areas</Name>
+            </Vector>
+            <Vector lyrName="thresh_90">
+              <Name>Raw Threshold at 90%</Name>
+            </Vector>
+            <Vector lyrName="thresh_68">
+              <Name>Raw Threshold at 68%</Name>
+            </Vector>
+          </Layers>
+        </Geopackage>
+      </Intermediates>
+      <Outputs>
+        <Raster id="VBET_EVIDENCE">
+          <Name>VBET Evidence Raster</Name>
+          <Path>outputs/VBET_Evidence.tif</Path>
+        </Raster>
+        <Geopackage id="VBET_OUTPUTS">
+          <Name>VBET</Name>
+          <Path>outputs/vbet.gpkg</Path>
+          <Layers>
+            <Vector lyrName="vbet_full">
+              <Name>VBET Full Extent</Name>
+            </Vector>
+            <Vector lyrName="vbet_ia">
+              <Name>VBET Inactive/Active Boundary</Name>
+            </Vector>
+            <Vector lyrName="vbet_channel_area">
+              <Name>VBET Channel Area</Name>
+            </Vector>
+            <Vector lyrName="active_floodplain">
+              <Name>Active Floodplain</Name>
+            </Vector>
+            <Vector lyrName="inactive_floodplain">
+              <Name>Inactive Floodplain</Name>
+            </Vector>
+          </Layers>
+        </Geopackage>
+        <HTMLFile id="REPORT">
+          <Name>RSContext Report</Name>
+          <Path>outputs/vbet.html</Path>
+        </HTMLFile>
+      </Outputs>
+    </Realization>
+  </Realizations>
+</Project>

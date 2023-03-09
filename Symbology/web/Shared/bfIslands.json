@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 33%)", "Bankfull Islands"]
+  ],
+  "layerStyles": [
+    {
+      "id": "bfislands-72i4vw",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "bfislands-72i4vw",
+      "layout": {},
+      "paint": {"fill-color": "hsl(100, 100%, 33%)"}
+  }
+  ]
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:noNamespaceSchemaLocation="../Solar.xsd">
+	<Name>
+		Lower John Day Solar 2015
+	</Name>
+	<ProjectType>
+		Solar
+	</ProjectType>
+	<MetaData>
+		<Meta name="HUCID">
+			17070204
+		</Meta>
+		<Meta name="Region">
+			CRB
+		</Meta>
+		<Meta name="Watershed">
+			Lower John Day
+		</Meta>
+	</MetaData>
+	<Inputs>
+		<Raster guid="9001F2D1-BD21-47C1-A44E-454BBFD4723B" id="DEM">
+			<Name>
+				Bare earth DEM raster dataset
+			</Name>
+			<Path>
+				ProjectInputs\dem_10m_ljd.tif
+			</Path>
+		</Raster>
+	</Inputs>
+	<Realizations>
+		<Solar dateCreated="2016-12-12T10:11:03.000000" guid="6F39634A-8342-4252-9913-2B4544970492" id="run201612121011" productVersion="0.5.1">
+			<Name>
+				NBCD-2016-182-183
+			</Name>
+			<MetaData>
+				<Meta name="Operator">
+					jlangdon
+				</Meta>
+				<Meta name="ComputerID">
+					SFR
+				</Meta>
+				<Meta name="solar_raster Start Time">
+					2016-12-12T10:11:03.000000
+				</Meta>
+				<Meta name="solar_raster Stop Time">
+					2016-12-15T02:20:36.000000
+				</Meta>
+				<Meta name="solar_vector Start Time">
+				</Meta>
+				<Meta name="solar_vector Stop Time">
+				</Meta>
+			</MetaData>
+			<Parameters>
+				<Param name="Time configuration">
+					MultiDays   2015  182  243
+				</Param>
+				<Param name="Day interval">
+					7
+				</Param>
+				<Param name="Hour interval">
+					2
+				</Param>
+			</Parameters>
+			<Inputs>
+				<Raster ref="DEM"/>
+				<Raster guid="CB364E3A-EA3C-4DF5-8512-CF8E5B7B20F7">
+					<Name>
+						Vegetation height raster dataset
+					</Name>
+					<Path>
+						Realizations\run201612121011\Inputs\nbcd_baw.tif
+					</Path>
+				</Raster>
+				<Vector guid="A801E441-B6F0-4547-A15F-BF8C710E48A9">
+					<Name>
+						Stream network polyline feature class
+					</Name>
+					<Path>
+						Realizations\run201612121011\Inputs\seg_200m_20161130.shp
+					</Path>
+				</Vector>
+				<Vector guid="1F3E899A-555C-470B-AE21-42F84B74A49C">
+					<Name>
+						Stream area polygon feature class
+					</Name>
+					<Path>
+						Realizations\run201612121011\Inputs\NHDArea_LJD.shp
+					</Path>
+				</Vector>
+				<Raster ref="SOL_RAS"/>
+			</Inputs>
+			<Analyses>
+				<Analysis>
+					<Outputs>
+						<Raster guid="1F670899-66B0-4BBB-BC1A-772A56D5A440" id="SOL_RAS">
+							<Name>
+								Solar insolation raster dataset
+							</Name>
+							<Path>
+								Realizations\run201612121011\SolarRasterOutput\area_solar.tif
+							</Path>
+						</Raster>
+						<Vector guid="FEC4703F-7D24-4B4E-BE56-CF8F84C1B467" id="PRED_SOLAR">
+							<Name>
+								Output polyline feature with solar values
+							</Name>
+							<Path>
+								Realizations\run201612121011\SolarVectorOutput\solar_lowerJD_20161212.shp
+							</Path>
+						</Vector>
+					</Outputs>
+				</Analysis>
+			</Analyses>
+		</Solar>
+	</Realizations>
+</Project>

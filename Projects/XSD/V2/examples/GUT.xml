@@ -1,0 +1,1117 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
+
+  <Name>GUT for Site ASW00001-CC-F3 P2BR</Name>
+  <ProjectType>GUT</ProjectType>
+
+  <Warehouse id="badfe8c1-0342-4876-8fac-b2eb5493a90f" apiUrl="https://12312312.amazon.ca/api/prod"/>
+
+  <MetaData>
+    <Meta name="ModelVersion">2.1</Meta>
+    <Meta name="dateCreated">2020-06-02T15:55:42.941125</Meta>
+    <Meta name="SiteName">ASW00001-CC-F3 P2BR</Meta>
+    <Meta name="StreamName">Charley Creek</Meta>
+    <Meta name="HUC8">17060103</Meta>
+    <Meta name="Watershed">Asotin</Meta>
+  </MetaData>
+  
+  <Realizations>
+    <Realization dateCreated="2020-06-02T15:55:42.993753"  id="GUT_2012" productVersion="2.1.0">
+      <Name>2012</Name>
+      <Inputs>
+        <Vector id="BFCL_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2012/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFXS_LAYER">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2012/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFEX_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2012/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFI_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2012/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="CU_LAYER">
+          <Name>Channel Units</Name>
+          <Path>2012/Inputs/Channel_Units.shp</Path>
+        </Vector>
+        <Vector id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2012/Inputs/Channel_Units_Field.shp</Path>
+        </Vector>
+        <DEM  id="DEM_LAYER">
+          <Name>DEM</Name>
+          <Path>2012/Inputs/DEM.tif</Path>
+        </DEM>
+        <Vector id="TH_LAYER">
+          <Name>Vector</Name>
+          <Path>2012/Inputs/Vector.shp</Path>
+        </Vector>
+        <Vector id="WCL_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2012/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WXS_LAYER">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2012/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WEEX_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2012/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WI_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2012/Inputs/WVector.shp</Path>
+        </Vector>
+      </Inputs>
+      <Intermediates>
+        <Raster  id="STDDEV_RASTER">
+          <Name>Bed Raster Standard Deviation Raster</Name>
+          <Path>2012/Intermediates/bedRasterSD.tif</Path>
+        </Raster>
+        <Vector id="STDDEV_VECTOR">
+          <Name>Bed Raster Standard Deviation Category Shapefile</Name>
+          <Path>2012/Intermediates/bedRastersd_cat.shp</Path>
+        </Vector>
+        <Raster  id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2012/Intermediates/bfCh.tif</Path>
+        </Raster>
+        <Raster  id="BFSRaster_LAYER">
+          <Name>Bankfull Surface Raster Raster</Name>
+          <Path>2012/Intermediates/bfRaster.tif</Path>
+        </Raster>
+        <Raster  id="ID_2">
+          <Name>bfRaster_Percent.tif</Name>
+          <Path>2012/Intermediates/bfRaster_Percent.tif</Path>
+        </Raster>
+        <Raster  id="ID_3">
+          <Name>bfRaster_Percent_Smooth.tif</Name>
+          <Path>2012/Intermediates/bfRaster_Percent_Smooth.tif</Path>
+        </Raster>
+        <Raster  id="BFSSSMOOTH_LAYER">
+          <Name>Smoothed Bankfull Surface Raster Raster</Name>
+          <Path>2012/Intermediates/bfRaster_Smooth.tif</Path>
+        </Raster>
+        <Vector id="ID_11">
+          <Name>Smoothed Bankfull Surface Raster Cateogry Polygon</Name>
+          <Path>2012/Intermediates/bfRaster_smooth_cat.shp</Path>
+        </Vector>
+        <Vector id="ID_21">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2012/Intermediates/channelEdge.shp</Path>
+        </Vector>
+        <Raster  id="ID_41">
+          <Name>Channel Margin Raster</Name>
+          <Path>2012/Intermediates/chMargin.tif</Path>
+        </Raster>
+        <Vector id="ID_31">
+          <Name>contourNodes_Vector.shp</Name>
+          <Path>2012/Intermediates/contourNodes_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_4">
+          <Name>contourPolygons_Vector.shp</Name>
+          <Path>2012/Intermediates/contourPolygons_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2012/Intermediates/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM  id="DEMSMOOTH_LAYER">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2012/Intermediates/DEM_mean.tif</Path>
+        </DEM>
+        <Raster  id="ID_51">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2012/Intermediates/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster  id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2012/Intermediates/mBendIndex.tif</Path>
+        </Raster>
+        <Raster  id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2012/Intermediates/normFill.tif</Path>
+        </Raster>
+        <Vector id="ID_61">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2012/Intermediates/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster  id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2012/Intermediates/resDepth.tif</Path>
+        </Raster>
+        <Raster  id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2012/Intermediates/resTopo.tif</Path>
+        </Raster>
+        <Raster  id="ICDEMRaster_LAYER">
+          <Name>In-Channel DEM Raster Raster</Name>
+          <Path>2012/Intermediates/Raster_inCh_DEM.tif</Path>
+        </Raster>
+        <Vector id="ID_71">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2012/Intermediates/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector id="ID_81">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2012/Intermediates/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector id="ID_91">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2012/Intermediates/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector id="ID_10">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2012/Intermediates/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </Intermediates>
+      <Analyses>
+        <Analysis id="ANALYSIS01">
+          <Name>Run_01</Name>
+          <Configuration>
+            <ConfigFile id="ID1">
+              <Name>Configuration Settings</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier1" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier22" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+        <Analysis id="ANALYSIS02">
+          <Name>Run_01</Name>
+          <Configuration>
+            <ConfigFile id="ID2">
+              <Name>Configuration Settings</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier11" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier23" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier223" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier33" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_13" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_23" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_33" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2012/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>        
+      </Analyses>
+    </Realization>
+    <Realization dateCreated="2020-06-02T15:55:43.010685"  id="GUT_2013" productVersion="2.1.0">
+      <Name>2013</Name>
+      <Inputs>
+        <Vector id="BFCL_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2013/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFXS_LAYER">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2013/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFEX_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2013/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFI_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2013/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="CU_LAYER">
+          <Name>Channel Units</Name>
+          <Path>2013/Inputs/Channel_Units.shp</Path>
+        </Vector>
+        <Vector id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2013/Inputs/Channel_Units_Field.shp</Path>
+        </Vector>
+        <DEM  id="DEM_LAYER">
+          <Name>DEM</Name>
+          <Path>2013/Inputs/DEM.tif</Path>
+        </DEM>
+        <Vector id="TH_LAYER">
+          <Name>Vector</Name>
+          <Path>2013/Inputs/Vector.shp</Path>
+        </Vector>
+        <Vector id="WCL_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2013/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WXS_LAYER">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2013/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WEEX_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2013/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WI_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2013/Inputs/WVector.shp</Path>
+        </Vector>
+      </Inputs>
+      <Intermediates>
+        <Raster  id="ID_LAYER">
+          <Name>Bed Raster Standard Deviation Raster</Name>
+          <Path>2013/Intermediates/bedRasterSD.tif</Path>
+        </Raster>
+        <Vector id="ID_LAYER213">
+          <Name>Bed Raster Standard Deviation Category Shapefile</Name>
+          <Path>2013/Intermediates/bedRastersd_cat.shp</Path>
+        </Vector>
+        <Raster  id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2013/Intermediates/bfCh.tif</Path>
+        </Raster>
+        <Raster  id="BFSRaster_LAYER">
+          <Name>Bankfull Surface Raster Raster</Name>
+          <Path>2013/Intermediates/bfRaster.tif</Path>
+        </Raster>
+        <Raster  id="ID_2">
+          <Name>bfRaster_Percent.tif</Name>
+          <Path>2013/Intermediates/bfRaster_Percent.tif</Path>
+        </Raster>
+        <Raster  id="ID_3">
+          <Name>bfRaster_Percent_Smooth.tif</Name>
+          <Path>2013/Intermediates/bfRaster_Percent_Smooth.tif</Path>
+        </Raster>
+        <Raster  id="BFSSSMOOTH_LAYER">
+          <Name>Smoothed Bankfull Surface Raster Raster</Name>
+          <Path>2013/Intermediates/bfRaster_Smooth.tif</Path>
+        </Raster>
+        <Vector id="ID_141212">
+          <Name>Smoothed Bankfull Surface Raster Cateogry Polygon</Name>
+          <Path>2013/Intermediates/bfRaster_smooth_cat.shp</Path>
+        </Vector>
+        <Vector id="ID_2142312">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2013/Intermediates/channelEdge.shp</Path>
+        </Vector>
+        <Raster  id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2013/Intermediates/chMargin.tif</Path>
+        </Raster>
+        <Vector id="ID_312412412">
+          <Name>contourNodes_Vector.shp</Name>
+          <Path>2013/Intermediates/contourNodes_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_412341231">
+          <Name>contourPolygons_Vector.shp</Name>
+          <Path>2013/Intermediates/contourPolygons_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2013/Intermediates/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM  id="DEMSMOOTH_LAYER">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2013/Intermediates/DEM_mean.tif</Path>
+        </DEM>
+        <Raster  id="ID_5124124">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2013/Intermediates/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster  id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2013/Intermediates/mBendIndex.tif</Path>
+        </Raster>
+        <Raster  id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2013/Intermediates/normFill.tif</Path>
+        </Raster>
+        <Vector id="ID_6123123">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2013/Intermediates/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster  id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2013/Intermediates/resDepth.tif</Path>
+        </Raster>
+        <Raster  id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2013/Intermediates/resTopo.tif</Path>
+        </Raster>
+        <Raster  id="ICDEMRaster_LAYER">
+          <Name>In-Channel DEM Raster Raster</Name>
+          <Path>2013/Intermediates/Raster_inCh_DEM.tif</Path>
+        </Raster>
+        <Vector id="ID_7124123">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2013/Intermediates/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector id="ID_8124124">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2013/Intermediates/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector id="ID_912412">
+          <Name>tmp_onEdge_buffer.shp</Name>
+          <Path>2013/Intermediates/tmp_onEdge_buffer.shp</Path>
+        </Vector>
+        <Raster  id="ID_10">
+          <Name>tmp_outChEdgeRas.tif</Name>
+          <Path>2013/Intermediates/tmp_outChEdgeRas.tif</Path>
+        </Raster>
+        <Vector id="ID_1012412">
+          <Name>tmp_planeflowtype.shp</Name>
+          <Path>2013/Intermediates/tmp_planeflowtype.shp</Path>
+        </Vector>
+        <Vector id="ID_11">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2013/Intermediates/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector id="ID_12">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2013/Intermediates/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </Intermediates>
+      <Analyses>
+        <Analysis id="ANALYSIS01">
+          <Name>Run_01</Name>
+          <Configuration>
+            <ConfigFile  id="ID_LAYER123123">
+              <Name>Configuration Settings</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier1" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier2_1" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+        <Analysis id="ANALYSIS02">
+          <Name>Run_bp65</Name>
+          <Configuration>
+            <ConfigFile  id="ID_LAYER1231231">
+              <Name>Configuration Settings</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier132f2" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2f2f2f" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier2_1sdfs" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3fw2edf" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1f2dfsqadx" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2ask82dq" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3fsdf9" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2013/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+      </Analyses>
+    </Realization>
+    <Realization dateCreated="2020-06-02T15:55:43.053537"  id="GUT_2014" productVersion="2.1.0">
+      <Name>2014</Name>
+      <Inputs>
+        <Vector id="BFCL_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2014/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFXS_LAYER">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2014/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFEX_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2014/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFI_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2014/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="CU_LAYER">
+          <Name>Channel Units</Name>
+          <Path>2014/Inputs/Channel_Units.shp</Path>
+        </Vector>
+        <Vector id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2014/Inputs/Channel_Units_Field.shp</Path>
+        </Vector>
+        <DEM  id="DEM_LAYER">
+          <Name>DEM</Name>
+          <Path>2014/Inputs/DEM.tif</Path>
+        </DEM>
+        <Vector id="TH_LAYER">
+          <Name>Vector</Name>
+          <Path>2014/Inputs/Vector.shp</Path>
+        </Vector>
+        <Vector id="WCL_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2014/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WXS_LAYER">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2014/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WEEX_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2014/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WI_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2014/Inputs/WVector.shp</Path>
+        </Vector>
+      </Inputs>
+      <Intermediates>
+        <Raster  id="ID_LAYER">
+          <Name>Bed Raster Standard Deviation Raster</Name>
+          <Path>2014/Intermediates/bedRasterSD.tif</Path>
+        </Raster>
+        <Vector id="ID_LAYER223123">
+          <Name>Bed Raster Standard Deviation Category Shapefile</Name>
+          <Path>2014/Intermediates/bedRastersd_cat.shp</Path>
+        </Vector>
+        <Raster  id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2014/Intermediates/bfCh.tif</Path>
+        </Raster>
+        <Raster  id="BFSRaster_LAYER">
+          <Name>Bankfull Surface Raster Raster</Name>
+          <Path>2014/Intermediates/bfRaster.tif</Path>
+        </Raster>
+        <Raster  id="ID_2">
+          <Name>bfRaster_Percent.tif</Name>
+          <Path>2014/Intermediates/bfRaster_Percent.tif</Path>
+        </Raster>
+        <Raster  id="ID_3">
+          <Name>bfRaster_Percent_Smooth.tif</Name>
+          <Path>2014/Intermediates/bfRaster_Percent_Smooth.tif</Path>
+        </Raster>
+        <Raster  id="BFSSSMOOTH_LAYER">
+          <Name>Smoothed Bankfull Surface Raster Raster</Name>
+          <Path>2014/Intermediates/bfRaster_Smooth.tif</Path>
+        </Raster>
+        <Vector id="ID_1775d">
+          <Name>Smoothed Bankfull Surface Raster Cateogry Polygon</Name>
+          <Path>2014/Intermediates/bfRaster_smooth_cat.shp</Path>
+        </Vector>
+        <Vector id="ID_2d2gt2d">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2014/Intermediates/channelEdge.shp</Path>
+        </Vector>
+        <Raster  id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2014/Intermediates/chMargin.tif</Path>
+        </Raster>
+        <Vector id="ID_3f23r2">
+          <Name>contourNodes_Vector.shp</Name>
+          <Path>2014/Intermediates/contourNodes_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_4f2dfs">
+          <Name>contourPolygons_Vector.shp</Name>
+          <Path>2014/Intermediates/contourPolygons_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2014/Intermediates/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM  id="DEMSMOOTH_LAYER">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2014/Intermediates/DEM_mean.tif</Path>
+        </DEM>
+        <Raster  id="ID_5fdsfd">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2014/Intermediates/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster  id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2014/Intermediates/mBendIndex.tif</Path>
+        </Raster>
+        <Raster  id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2014/Intermediates/normFill.tif</Path>
+        </Raster>
+        <Vector id="ID_6sdfsd">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2014/Intermediates/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster  id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2014/Intermediates/resDepth.tif</Path>
+        </Raster>
+        <Raster  id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2014/Intermediates/resTopo.tif</Path>
+        </Raster>
+        <Raster  id="ICDEMRaster_LAYER">
+          <Name>In-Channel DEM Raster Raster</Name>
+          <Path>2014/Intermediates/Raster_inCh_DEM.tif</Path>
+        </Raster>
+        <Vector id="ID_7sdfsd">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2014/Intermediates/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector id="ID_8sdf">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2014/Intermediates/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector id="ID_9fsdfs">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2014/Intermediates/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector id="ID_10">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2014/Intermediates/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </Intermediates>
+      <Analyses>
+        <Analysis id="ANALYSIS01">
+          <Name>Run_01</Name>
+          <Configuration>
+            <ConfigFile  id="Config_id123">
+              <Name>Configuration Settings</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier1" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier2_1" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2014/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+      </Analyses>
+    </Realization>
+    <Realization dateCreated="2020-06-02T15:55:43.117699"  id="GUT_2015" productVersion="2.1.0">
+      <Name>2015</Name>
+      <Inputs>
+        <Vector id="BFCL_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2015/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFXS_LAYER">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2015/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFEX_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2015/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="CU2312">
+          <Name>Channel Units</Name>
+          <Path>2015/Inputs/Channel_Units.shp</Path>
+        </Vector>
+        <Vector id="CU_1">
+          <Name>Channel Units (Field)</Name>
+          <Path>2015/Inputs/Channel_Units_Field.shp</Path>
+        </Vector>
+        <DEM  id="DEM_LAYER">
+          <Name>DEM</Name>
+          <Path>2015/Inputs/DEM.tif</Path>
+        </DEM>
+        <Vector id="TH4232">
+          <Name>Vector</Name>
+          <Path>2015/Inputs/Vector.shp</Path>
+        </Vector>
+        <Vector id="WCL_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2015/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WXS_LAYER">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2015/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WEEX_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2015/Inputs/WVector.shp</Path>
+        </Vector>
+      </Inputs>
+      <Intermediates>
+        <Raster  id="ID_LAYER">
+          <Name>Bed Raster Standard Deviation Raster</Name>
+          <Path>2015/Intermediates/bedRasterSD.tif</Path>
+        </Raster>
+        <Vector id="ID_LAYER1231242">
+          <Name>Bed Raster Standard Deviation Category Shapefile</Name>
+          <Path>2015/Intermediates/bedRastersd_cat.shp</Path>
+        </Vector>
+        <Raster  id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2015/Intermediates/bfCh.tif</Path>
+        </Raster>
+        <Raster  id="BFSRaster_LAYER">
+          <Name>Bankfull Surface Raster Raster</Name>
+          <Path>2015/Intermediates/bfRaster.tif</Path>
+        </Raster>
+        <Raster  id="ID_2">
+          <Name>bfRaster_Percent.tif</Name>
+          <Path>2015/Intermediates/bfRaster_Percent.tif</Path>
+        </Raster>
+        <Raster  id="ID_3">
+          <Name>bfRaster_Percent_Smooth.tif</Name>
+          <Path>2015/Intermediates/bfRaster_Percent_Smooth.tif</Path>
+        </Raster>
+        <Raster  id="BFSSSMOOTH_LAYER">
+          <Name>Smoothed Bankfull Surface Raster Raster</Name>
+          <Path>2015/Intermediates/bfRaster_Smooth.tif</Path>
+        </Raster>
+        <Vector id="ID_1222">
+          <Name>Smoothed Bankfull Surface Raster Cateogry Polygon</Name>
+          <Path>2015/Intermediates/bfRaster_smooth_cat.shp</Path>
+        </Vector>
+        <Vector id="ID_23333">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2015/Intermediates/channelEdge.shp</Path>
+        </Vector>
+        <Raster  id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2015/Intermediates/chMargin.tif</Path>
+        </Raster>
+        <Vector id="ID_34444">
+          <Name>contourNodes_Vector.shp</Name>
+          <Path>2015/Intermediates/contourNodes_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_45555">
+          <Name>contourPolygons_Vector.shp</Name>
+          <Path>2015/Intermediates/contourPolygons_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2015/Intermediates/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM  id="DEMSMOOTH_LAYER">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2015/Intermediates/DEM_mean.tif</Path>
+        </DEM>
+        <Raster  id="ID_56666">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2015/Intermediates/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster  id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2015/Intermediates/mBendIndex.tif</Path>
+        </Raster>
+        <Raster  id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2015/Intermediates/normFill.tif</Path>
+        </Raster>
+        <Vector id="ID_6777">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2015/Intermediates/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster  id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2015/Intermediates/resDepth.tif</Path>
+        </Raster>
+        <Raster  id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2015/Intermediates/resTopo.tif</Path>
+        </Raster>
+        <Raster  id="ICDEMRaster_LAYER">
+          <Name>In-Channel DEM Raster Raster</Name>
+          <Path>2015/Intermediates/Raster_inCh_DEM.tif</Path>
+        </Raster>
+        <Vector id="ID_7888">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2015/Intermediates/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector id="ID_8999">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2015/Intermediates/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector id="ID_91231231234">
+          <Name>tmp_onEdge_buffer.shp</Name>
+          <Path>2015/Intermediates/tmp_onEdge_buffer.shp</Path>
+        </Vector>
+        <Raster  id="ID_10">
+          <Name>tmp_outChEdgeRas.tif</Name>
+          <Path>2015/Intermediates/tmp_outChEdgeRas.tif</Path>
+        </Raster>
+        <Vector id="ID_103232">
+          <Name>tmp_planeflowtype.shp</Name>
+          <Path>2015/Intermediates/tmp_planeflowtype.shp</Path>
+        </Vector>
+        <Vector id="ID_11">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2015/Intermediates/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector id="ID_12">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2015/Intermediates/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </Intermediates>
+      <Analyses>
+        <Analysis id="ANALYSIS01">
+          <Name>Run_01</Name>
+          <Configuration>
+            <ConfigFile  id="ID2343423">
+              <Name>Configuration Settings</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier1" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier2_1" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2015/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+      </Analyses>
+    </Realization>
+    <Realization dateCreated="2020-06-02T15:55:43.197048"  id="GUT_2017" productVersion="2.1.0">
+      <Name>2017</Name>
+      <Inputs>
+        <Vector id="BFCL_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2017/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFXS_LAYER">
+          <Name>Bankfull Cross Sections</Name>
+          <Path>2017/Inputs/BVector.shp</Path>
+        </Vector>
+        <Vector id="BFEX_LAYER">
+          <Name>Bankfull Vector</Name>
+          <Path>2017/Inputs/BVector.shp</Path>
+        </Vector>
+        <DEM  id="DEM_LAYER">
+          <Name>DEM</Name>
+          <Path>2017/Inputs/DEM.tif</Path>
+        </DEM>
+        <Vector id="TH5234234">
+          <Name>Vector</Name>
+          <Path>2017/Inputs/Vector.shp</Path>
+        </Vector>
+        <Vector id="WCL_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2017/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WXS_LAYER">
+          <Name>Wetted Cross Sections</Name>
+          <Path>2017/Inputs/WVector.shp</Path>
+        </Vector>
+        <Vector id="WEEX_LAYER">
+          <Name>Wetted Vector</Name>
+          <Path>2017/Inputs/WVector.shp</Path>
+        </Vector>
+      </Inputs>
+      <Intermediates>
+        <Raster  id="ID_LAYER">
+          <Name>Bed Raster Standard Deviation Raster</Name>
+          <Path>2017/Intermediates/bedRasterSD.tif</Path>
+        </Raster>
+        <Vector id="ID_LAYER51331">
+          <Name>Bed Raster Standard Deviation Category Shapefile</Name>
+          <Path>2017/Intermediates/bedRastersd_cat.shp</Path>
+        </Vector>
+        <Raster  id="ID_1">
+          <Name>Bankfull Channel Raster</Name>
+          <Path>2017/Intermediates/bfCh.tif</Path>
+        </Raster>
+        <Raster  id="BFSRaster_LAYER">
+          <Name>Bankfull Surface Raster Raster</Name>
+          <Path>2017/Intermediates/bfRaster.tif</Path>
+        </Raster>
+        <Raster  id="ID_2">
+          <Name>bfRaster_Percent.tif</Name>
+          <Path>2017/Intermediates/bfRaster_Percent.tif</Path>
+        </Raster>
+        <Raster  id="ID_3">
+          <Name>bfRaster_Percent_Smooth.tif</Name>
+          <Path>2017/Intermediates/bfRaster_Percent_Smooth.tif</Path>
+        </Raster>
+        <Raster  id="BFSSSMOOTH_LAYER">
+          <Name>Smoothed Bankfull Surface Raster Raster</Name>
+          <Path>2017/Intermediates/bfRaster_Smooth.tif</Path>
+        </Raster>
+        <Vector id="ID_11231">
+          <Name>Smoothed Bankfull Surface Raster Cateogry Polygon</Name>
+          <Path>2017/Intermediates/bfRaster_smooth_cat.shp</Path>
+        </Vector>
+        <Vector id="ID_25235">
+          <Name>Channel Edge Polygon</Name>
+          <Path>2017/Intermediates/channelEdge.shp</Path>
+        </Vector>
+        <Raster  id="ID_4">
+          <Name>Channel Margin Raster</Name>
+          <Path>2017/Intermediates/chMargin.tif</Path>
+        </Raster>
+        <Vector id="ID_3234212">
+          <Name>contourNodes_Vector.shp</Name>
+          <Path>2017/Intermediates/contourNodes_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_452342">
+          <Name>contourPolygons_Vector.shp</Name>
+          <Path>2017/Intermediates/contourPolygons_Vector.shp</Path>
+        </Vector>
+        <Vector id="ID_5">
+          <Name>DEM Contour Lines</Name>
+          <Path>2017/Intermediates/DEM_Contours.shp</Path>
+        </Vector>
+        <DEM  id="DEMSMOOTH_LAYER">
+          <Name>Smoothed DEM Raster</Name>
+          <Path>2017/Intermediates/DEM_mean.tif</Path>
+        </DEM>
+        <Raster  id="ID_512312">
+          <Name>Smoothed In-Channel DEM Raster</Name>
+          <Path>2017/Intermediates/inCh_DEM.tif</Path>
+        </Raster>
+        <Raster  id="ID_6">
+          <Name>Meander Bend Index</Name>
+          <Path>2017/Intermediates/mBendIndex.tif</Path>
+        </Raster>
+        <Raster  id="ID_7">
+          <Name>normFill.tif</Name>
+          <Path>2017/Intermediates/normFill.tif</Path>
+        </Raster>
+        <Vector id="ID_6882">
+          <Name>potentialRiffCrests.shp</Name>
+          <Path>2017/Intermediates/potentialRiffCrests.shp</Path>
+        </Vector>
+        <Raster  id="ID_8">
+          <Name>Residual Pool Depth Raster</Name>
+          <Path>2017/Intermediates/resDepth.tif</Path>
+        </Raster>
+        <Raster  id="ID_9">
+          <Name>Residual Topography Raster</Name>
+          <Path>2017/Intermediates/resTopo.tif</Path>
+        </Raster>
+        <Raster  id="ICDEMRaster_LAYER">
+          <Name>In-Channel DEM Raster Raster</Name>
+          <Path>2017/Intermediates/Raster_inCh_DEM.tif</Path>
+        </Raster>
+        <Vector id="ID_73112">
+          <Name>tmp_bowltrans.shp</Name>
+          <Path>2017/Intermediates/tmp_bowltrans.shp</Path>
+        </Vector>
+        <Vector id="ID_8423234">
+          <Name>tmp_bowltrans_postgu.shp</Name>
+          <Path>2017/Intermediates/tmp_bowltrans_postgu.shp</Path>
+        </Vector>
+        <Vector id="ID_9112231">
+          <Name>tmp_units_t2_elim_lyr_select.shp</Name>
+          <Path>2017/Intermediates/tmp_units_t2_elim_lyr_select.shp</Path>
+        </Vector>
+        <Vector id="ID_10">
+          <Name>tmp_units_t2_elim_lyr_select2.shp</Name>
+          <Path>2017/Intermediates/tmp_units_t2_elim_lyr_select2.shp</Path>
+        </Vector>
+      </Intermediates>
+      <Analyses>
+        <Analysis id="ANALYSIS01">
+          <Name>Run_01</Name>
+          <Configuration>
+            <ConfigFile id="ID12312312">
+              <Name>Configuration Settings</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier1" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier2_1" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_01/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+        <Analysis id="ANALYSIS02">
+          <Name>Run_bp65</Name>
+          <Configuration>
+            <ConfigFile  id="ID_LAYER319472">
+              <Name>Configuration Settings</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/configSettings.txt</Path>
+            </ConfigFile>
+          </Configuration>
+          <Products>
+            <Vector id="Tier1523" type="tier1">
+              <Name>Tier 1</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier1.shp</Path>
+            </Vector>
+            <Vector id="Tier2523" type="tier2">
+              <Name>Tier 2</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier2_InChannel.shp</Path>
+            </Vector>
+            <Vector id="Tier2_1234" type="tier2">
+              <Name> Tier 2 - Discrete</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier2_InChannel_Discrete.shp</Path>
+            </Vector>
+            <Vector id="Tier3232" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_1523" type="tier3">
+              <Name>Tier 3 In Channel Geomorphic Units Raw</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_GU_Raw.shp</Path>
+            </Vector>
+            <Vector id="Tier3_2928" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU.shp</Path>
+            </Vector>
+            <Vector id="Tier3_3234" type="tier3">
+              <Name>Tier 3 In Channel Sub Geomorphic Units</Name>
+              <Path>2017/Output/GUT_2.1/Run_bp65/Tier3_InChannel_subGU_Raw.shp</Path>
+            </Vector>
+          </Products>
+        </Analysis>
+      </Analyses>
+    </Realization>
+  </Realizations>
+</Project>

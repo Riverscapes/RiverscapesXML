@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 23%)", "Valley Bottom"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Valley Bottom",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "valley_bottom-crmmq9",
+      "layout": {},
+      "paint": {"line-color": "hsl(100, 100%, 23%)"}
+  }
+  ]
+}

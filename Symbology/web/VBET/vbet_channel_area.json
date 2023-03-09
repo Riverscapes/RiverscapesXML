@@ -1,0 +1,23 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+    "legend": [
+      ["hsl(206, 70%, 72%)", "Estimated Active Channel"]
+    ],
+    "layerStyles": [
+      {
+          "id": "vbet-active-channel-outline",
+          "type": "line",
+          "source": "composite",
+          "source-layer": "vbet_active_channel-cd8gcb",
+          "paint": {}
+      },
+      {
+          "id": "vbet-active-channel-fill",
+          "type": "fill",
+          "source": "composite",
+          "source-layer": "vbet_active_channel-cd8gcb",
+          "layout": {},
+          "paint": {"fill-color": "hsl(206, 70%, 72%)", "fill-opacity": 0.7}
+      }
+  ]
+  }

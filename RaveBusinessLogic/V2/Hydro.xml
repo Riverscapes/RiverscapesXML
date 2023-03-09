@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>CHaMP Delft3D Hydraulic Model</Name>
+  <ProjectType>Hydro</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Hydarulic Simulation(s)" xpath="Analyses/Analysis/Products">
+        <Children collapsed="true">
+          <Node label="Meta Data">
+            <Children collapsed="true">
+              <Node xpathlabel="Name" xpath="CSV[@id='metadata1']" type="file" />
+              <Node xpathlabel="Name" xpath="CSV[@id='demgridresults1']" type="file" />
+            </Children>
+          </Node>
+          <Node label="Outputs">
+            <Children collapsed="false">
+              <Node label="Water Depth" xpath="Raster[@id='Depth']" type="raster" symbology="wDepth" transparency="40" />
+              <Node label="Velocity Magnitude" xpath="Raster[@id='Velocity_Magnitude']" type="raster" symbology="velocityMag" transparency="40" />
+              <Node label="Velocity Vectors" xpath="Vector[@id='OUTPUTS_SHP']" type="line" symbology="velocityVec" />
+              <Node label="Water Surface Elevation" xpath="Raster[@id='WSE']" type="raster" symbology="wsDEM" transparency="40" />
+              <Node label="Flow Direction" xpath="Raster[@id='Direction']" type="raster" symbology="flowdir" transparency="40" />
+              <Node label="Bed Elevation" xpath="Raster[@id='BedLevel']" type="raster" symbology="DEM" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Validation Comparison">
+            <Children>
+              <Node label="Water Depth (model vs surveyed)" xpath="Raster[@id='WSE']" type="raster" symbology="depthError" transparency="40" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>

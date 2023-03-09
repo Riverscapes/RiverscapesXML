@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
+  
+  <Name>My Hydraulic Output</Name>
+  <!--What's in a name. Do we need to decide on this?-->
+  <ProjectType>Hydro</ProjectType>
+  
+  <Warehouse id="2be158c5-4993-458f-a353-1935f970742d" apiUrl="https://12312312.amazon.ca/api/prod" />
+  <MetaData>
+    <!--This first metadata exists only to place this project in the riverscapes project-->
+    <Meta name="Year">2011</Meta>
+    <Meta name="Watershed">JohnDay</Meta>
+    <Meta name="Visit">369</Meta>
+    <Meta name="Site">CBW05583-086002</Meta>
+    <Meta name="Flow">S0000_0285</Meta>
+  </MetaData>
+  
+  <!-- Inputs must have unique Ids that can be referenced in realizations I'm keeping
+    legible here so that it's readable in the realiations the GUID is to keep things unique-->
+    <CommonDatasets>
+      <CSV id="DEM1" >
+        <Name>DEM</Name>
+        <Path>DEM.csv</Path>
+        <MetaData>
+          <Meta name="Project">../HydroModelInputs/artifacts</Meta>
+        </MetaData>
+      </CSV>
+      <CSV id="WSEDEM1" >
+        <Name>WSEDEM</Name>
+        <Path>WSEDEM.csv</Path>
+        <MetaData>
+          <Meta name="Project">../HydroModelInputs/artifacts</Meta>
+        </MetaData>
+      </CSV>
+      <CSV id="THALWEG1" >
+        <Name>Thalweg</Name>
+        <Path>Thalweg.csv</Path>
+        <MetaData>
+          <Meta name="Project">../HydroModelInputs/artifacts</Meta>
+        </MetaData>
+      </CSV>
+    </CommonDatasets>
+    
+    <Realizations>
+      <Realization id="hydro1" dateCreated="2017-07-31T19:13:33" productVersion="1.1.1">
+        <Name>Hydraulic Model Run1</Name>
+        
+        <MetaData>
+          <!--This next metadata relates to this particular realization-->
+          <Meta name="model">delft3D</Meta>
+          <Meta name="run_datetime">2017-07-31 19:13:33</Meta>
+          <Meta name="delft3d_version">5.01.00.2163</Meta>
+          <Meta name="rbt_version">unknown</Meta>
+          <Meta name="preprocessing_version">1.1</Meta>
+          <Meta name="postprocessing_version">1.1</Meta>
+          <Meta name="operator">Matt Nahorniak</Meta>
+          <Meta name="run_type">NA</Meta>
+          <Meta name="qa_status">pass</Meta>
+        </MetaData>
+        
+        <Inputs>
+          <CommonDatasetRef ref="DEM1"/>
+          <CommonDatasetRef ref="WSEDEM1"/>
+          <CommonDatasetRef ref="THALWEG1"/>
+        </Inputs>
+        
+        <Analyses>
+          <Analysis id="Analysis_01">
+            <Name>Hydraulic Analysis</Name>
+            
+            <Metrics>
+              <Metric name="d84">80</Metric>
+              <Metric name="surface_roughness">0.48</Metric>
+              <Metric name="measured_discharge">0.0285</Metric>
+              <Metric name="modeled_discharge">0.0285</Metric>
+              <Metric name="deltabc">0</Metric>
+              <Metric name="downstream_boundary">-3.5766666666666</Metric>
+              <Metric name="trim_length">2</Metric>
+              <Metric name="inlet">south</Metric>
+              <Metric name="outlet">north</Metric>
+              <Metric name="hev">0.01</Metric>
+              <Metric name="left_reference">4932868</Metric>
+              <Metric name="top_reference">376912.6</Metric>
+              <Metric name="computational_grid_spacing">0.1</Metric>
+            </Metrics>
+            
+            <Products>
+              <CSV  id="metadata1">
+                <Name>MetaData</Name>
+                <Path>Meta_Data.csv</Path>
+              </CSV>
+              <CSV  id="demgridresults1">
+                <Name>DEM Grid Results</Name>
+                <Path>dem_grid_results.csv</Path>
+              </CSV>
+            </Products>
+          </Analysis>
+        </Analyses>
+    </Realization>
+  </Realizations>
+</Project>

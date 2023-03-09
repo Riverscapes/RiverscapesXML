@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 0%)", "Interstate, State Recognized, U.S."],
+    ["hsl(55, 100%, 27%)", "Other"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Roads",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "roads-788wh3",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "RTTYP"],
+              ["I"],
+              "hsl(0, 0%, 0%)",
+              ["M"],
+              "hsl(0, 0%, 0%)",
+              ["S"],
+              "hsl(0, 0%, 0%)",
+              ["U"],
+              "hsl(0, 0%, 0%)",
+              "hsl(55, 100%, 27%)"
+          ]
+      }
+  },
+  {
+      "id": "Line Widths",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "roads-788wh3",
+      "layout": {},
+      "paint": {
+          "line-width": [
+              "match",
+              ["get", "RTTYP"],
+              ["I", "U"],
+              2.8,
+              ["S"],
+              1,
+              ["M"],
+              0.5,
+              0.25
+          ]
+      }
+  }
+  ]
+}

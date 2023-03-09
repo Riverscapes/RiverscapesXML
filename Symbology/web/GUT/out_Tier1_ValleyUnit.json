@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(195, 78%, 77%)", "In-Channel"],
+    ["hsl(120, 29%, 57%)", "Out-of-Channel"]
+  ],
+  "layerStyles": [
+    {
+      "id": "out-tier1-flowunit-7pafkk",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "out_Tier1_FlowUnit-7pafkk",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "ValleyUnit"],
+              ["In-Channel"],
+              "hsl(195, 78%, 77%)",
+              ["Out-of-Channel"],
+              "hsl(120, 29%, 57%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

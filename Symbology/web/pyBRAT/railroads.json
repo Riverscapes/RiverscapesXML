@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+  ],
+  "layerStyles": [
+    {
+      "id": "railroads center",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "railroads-c99s64",
+      "layout": {},
+      "paint": {}
+  },
+  {
+      "id": "Railroads",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "railroads-c99s64",
+      "layout": {"line-cap": "square"},
+      "paint": {
+          "line-dasharray": [2, 6],
+          "line-gap-width": 3,
+          "line-width": 3
+      }
+  }
+  ]
+}

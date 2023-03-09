@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Channel Area</Name>
+  <ProjectType>ChannelArea</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/ChannelArea">
+    <Children collapsed="false">
+      <Node label="Project Report" xpath="Outputs/HTMLFile[@id='REPORT']" type="report" />
+      <Node label="Outputs" xpath="Outputs">
+        <Children collapsed="false">
+          <Node label="Channel Area (hollow)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area_hollow" symbology="ChannelArea_hollow" />
+          <Node label="Channel Area (filled)" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA']" type="polygon" id="channel_area" symbology="ChannelArea" />
+          <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
+        </Children>
+      </Node>
+      <Node label="Intermediates" xpath="Intermediates">
+        <Children collapsed="true">
+          <Node label="NHD Waterbodies (Filtered)" xpath="Geopackage/Layers/Vector[@id='FILTERED_WATERBODY']" type="polygon" id="waterbody_filtered" symbology="FILTERED_WATERBODY" />
+          <Node label="NHD Flow Areas (Filtered)" xpath="Geopackage/Layers/Vector[@id='FILTERED_FLOWAREAS']" type="polygon" id="flowarea_filtered" symbology="FILTERED_FLOWAREAS" />
+          <Node label="Flow Areas, No Islands" xpath="Geopackage/Layers/Vector[@id='FLOW_AREA_NO_ISLANDS']" type="polygon" id="flowarea_no_islands" symbology="FLOW_AREA_NO_ISLANDS" />
+          <Node label="Combined Flow Areas and Waterbodies" xpath="Geopackage/Layers/Vector[@id='COMBINED_FA_WB']" type="polygon" id="combined_fa_wb" symbology="COMBINED_FA_WB" />
+          <Node label="Bankfull Network" xpath="Geopackage/Layers/Vector[@id='BANKFULL_NETWORK']" type="polygon" id="bankfull_network" symbology="BANKFULL_NETWORK" />
+          <Node label="Bankfull Polygons" xpath="Geopackage/Layers/Vector[@id='BANKFULL_POLYGONS']" type="polygon" id="bankfull_polygons" symbology="BANKFULL_POLYGONS" />
+          <Node label="Difference Polygons" xpath="Geopackage/Layers/Vector[@id='DIFFERENCE_POLYGONS']" type="polygon" id="difference_polygons" symbology="DIFFERENCE_POLYGONS" />
+          <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="Inputs">
+        <Children collapsed="true">
+          <Node label="NHD Flowlines" xpath="Geopackage/Layers/Vector[@id='FLOWLINES']" type="line" id="flowlines" symbology="FLOWLINES" />
+          <Node label="NHD Flow Areas" xpath="Geopackage/Layers/Vector[@id='FLOWAREAS']" type="polygon" id="flowareas" symbology="FLOWAREAS" />
+          <Node label="NHD Waterbody Areas" xpath="Geopackage/Layers/Vector[@id='WATER_BODIES']" type="polygon" id="waterbodies" symbology="WATER_BODIES" />
+          <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
+        </Children>
+      </Node>
+      <Node label="Log File" xpath="LogFile" type="file" />
+    </Children>
+  </Node>
+  <Views default="DEFAULT">
+    <View name="Channel Area" id="DEFAULT">
+      <Layers>
+        <Layer id="channel_area" />
+        <Layer id="channel_area_hollow" />
+      </Layers>
+    </View>
+  </Views>
+</Project>  

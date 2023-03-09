@@ -1,0 +1,28 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0,0%,0%)", "Flow Direction"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Flow",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Network-7yq1zj",
+      "layout": {},
+      "paint": {}
+  },
+  {
+      "id": "Direction",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "Network-7yq1zj",
+      "layout": {
+          "text-field": "▶",
+          "symbol-placement": "line-center",
+          "text-size": 20
+      },
+      "paint": {}
+  }
+  ]
+}

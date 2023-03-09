@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="../pyBRAT.xsd">
+<!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/pyBRAT.xsd"> -->
+  <Name>Idaho_BRAT HUC 17040206 Batch 01</Name>
+  <ProjectType>BRAT</ProjectType>
+  <MetaData>
+    <Meta name="HUCID">17040206</Meta>
+    <Meta name="Watershed">AmericanFalls</Meta>
+    <Meta name="Batch">01</Meta>
+    <Meta name="BatchDescriptin">This batch describes the running of the tool for ...... blah blah blah</Meta>    
+  </MetaData>
+  <Realizations>
+    <pyBRAT productVersion="3.0.21" dateCreated="2019-05-19T16:27:20.860000" guid="1A274B27-B1B4-4782-A343-0B7C9251EF40" id="RZ1">
+      <Name>BRAT Realization 1</Name>
+      <MetaData>
+        <Meta name="description">Idaho_BRAT</Meta>
+      </MetaData>
+      <Inputs>
+        <Raster guid="27478DE5-B46C-45CB-ADA8-F2D118421529" id="EXVEG_01">
+          <Name>Existing Vegetation</Name>
+          <Path>Inputs/01_Vegetation/01_ExistingVegetation/Ex_Veg_01/LANDFIRE_200EVT.tif</Path>
+        </Raster>
+        <Raster guid="6EE705F5-E729-4168-81DC-0BF454CB91FA" id="HISTVEG_01">
+          <Name>Historic Vegetation</Name>
+          <Path>Inputs/01_Vegetation/02_HistoricVegetation/Hist_Veg_01/LANDFIRE_200BPS.tif</Path>
+        </Raster>
+        <Vector guid="8DBB0566-8DF2-473D-9EA1-7425B098C86B" id="NETWORK_01">
+          <Name>Segmented Network</Name>
+          <Path>Inputs/02_Network/Network_01/NHD_24k_300mReaches.shp</Path>
+        </Vector>
+        <Raster guid="AB3E9EED-DBB7-4812-B30A-1E7BA9CBF87E" id="DEM_01">
+          <Name>DEM</Name>
+          <Path>Inputs/03_Topography/DEM_01/NED_DEM_10m_17040206.tif</Path>
+        </Raster>
+        <Raster guid="19296B55-48BD-4573-987C-027A31DD163B" id="LU_01">
+          <Name>Land Use</Name>
+          <Path>Inputs/04_Anthropogenic/05_LandUse/Land_Use_01/LANDFIRE_200EVT.tif</Path>
+        </Raster>
+        <Vector guid="859C3E67-4630-41C9-92CB-2A327E1A4A7C" id="VALLEY_01">
+          <Name>Valley Bottom</Name>
+          <Path>Inputs/04_Anthropogenic/01_ValleyBottom/Valley_01/Provisional_ValleyBottom_Unedited.shp</Path>
+        </Vector>
+        <Vector guid="A69BF4AE-B5C3-4016-844D-45B4AD4AD251" id="ROAD_01">
+          <Name>Roads</Name>
+          <Path>Inputs/04_Anthropogenic/02_Roads/Roads_01/tl_2018_roads.shp</Path>
+        </Vector>
+        <Vector guid="A811EB7C-12B7-43E1-B3F7-3A74EE1914FD" id="RR_01">
+          <Name>Railroads</Name>
+          <Path>Inputs/04_Anthropogenic/03_Railroads/Railroads_01/tl_2018_us_rails.shp</Path>
+        </Vector>
+        <Vector guid="00DB6082-ACEA-422F-A3DC-F23221798EBE" id="CANAL_01">
+          <Name>Canals</Name>
+          <Path>Inputs/04_Anthropogenic/04_Canals/Canals_01/NHDCanalsDitches.shp</Path>
+        </Vector>
+        <Vector guid="0A8CEFE5-4FBF-4D33-8A0D-9ABD9E995DE7" id="OWNERSHIP_01">
+          <Name>Ownership</Name>
+          <Path>Inputs/04_Anthropogenic/06_LandOwnership/Land_Ownership_01/NationalSurfaceManagementAgency.shp</Path>
+        </Vector>
+        <Vector guid="104BA274-B569-4E96-B2FC-D6C15285FA82" id="PERENNIAL_STREAM_01">
+          <Name>Perennial Stream</Name>
+          <Path>Inputs/05_PerennialStream/PerennialStream_01/NHD_24k_Perennial.shp</Path>
+        </Vector>
+        <Raster guid="E5F1AEF7-B917-46D8-AF1B-B5DC4EDE2EFB" id="DR1">
+          <Name>Drainage Area</Name>
+          <Path>Inputs/03_Topography/DEM_01/Flow/DrainArea_sqkm.tif</Path>
+        </Raster>
+        <Vector guid="7FDD19E5-1301-4F8C-A342-523B9BFA75D6">
+          <Name>30m Buffer</Name>
+          <Path>Outputs/Output_01/01_Intermediates/01_Buffers/buffer_30m.shp</Path>
+        </Vector>
+        <Vector guid="97C58752-80EF-42FF-9D31-D1BD1C706034">
+          <Name>100m Buffer</Name>
+          <Path>Outputs/Output_01/01_Intermediates/01_Buffers/buffer_100m.shp</Path>
+        </Vector>
+      </Inputs>
+      <Intermediates>
+          <Vector guid="9DC9AA99-1C6E-4CD8-A33B-B6D6F5874F6C">
+            <Name>BRAT Input Table</Name>
+            <Path>Outputs/Output_01/01_Intermediates/BRAT_Table.shp</Path>
+          </Vector>
+      </Intermediates>
+      <Analyses>
+        <Analysis>
+          <Name>BRAT Analysis</Name>
+          <Outputs>
+            <Vector guid="5CAE7AC9-3EB6-4DB6-906C-8712EB29E7D1">
+              <Name>BRAT Capacity Output</Name>
+              <Path>Outputs/Output_01/02_Analyses/Combined_Capacity_Model.shp</Path>
+            </Vector>
+            <Vector guid="683EBC9E-114F-4BCD-93EE-DDF6E4929680">
+              <Name>BRAT Conservation and Restoration Output</Name>
+              <Path>Outputs/Output_01/02_Analyses/Conservation_Restoration_Model.shp</Path>
+            </Vector>
+            <Vector guid="B4460089-D487-4C74-9181-A7BCDC6AD796">
+              <Name>BRAT Conservation and Restoration Output</Name>
+              <Path>Outputs/Output_01/02_Analyses/Conservation_Restoration_Model.shp</Path>
+            </Vector>
+            <Vector guid="5B713F4B-9AFA-4CEF-9487-11D0F98201A8">
+              <Name>BRAT Conservation and Restoration Output</Name>
+              <Path>Outputs/Output_01/02_Analyses/Conservation_Restoration_Model.shp</Path>
+            </Vector>
+          </Outputs>
+        </Analysis>
+        <Analysis>
+          <Name>BRAT Analysis</Name>
+          <Outputs>
+            <Vector guid="CF5D242F-1614-4C71-8326-9F4D5151971A">
+              <Name>BRAT Capacity Output</Name>
+              <Path>Outputs/Output_01/02_Analyses/Combined_Capacity_Model.shp</Path>
+            </Vector>
+          </Outputs>
+        </Analysis>
+        <Analysis>
+          <Name>BRAT Analysis</Name>
+          <Outputs>
+            <Vector guid="79FB9ED1-98E0-4CB7-B3A1-0BDB12BC113A">
+              <Name>BRAT Capacity Output</Name>
+              <Path>Outputs/Output_01/02_Analyses/Combined_Capacity_Model.shp</Path>
+            </Vector>
+          </Outputs>
+        </Analysis>
+      </Analyses>
+    </pyBRAT>
+  </Realizations>
+</Project>

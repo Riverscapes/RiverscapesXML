@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [ "hsl(200, 51%, 77%)", "Constriction Ratio" ]
+  ],
+  "layerStyles": [
+    {
+      "id": "constriction-ratio-bxinm7",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "constriction_ratio-bxinm7",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "step",
+          [ "get", "Constriction_Ratio" ],
+          "hsl(200, 51%, 77%)", 1,
+          "hsl(0, 100%, 50%)"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(41, 100%, 87%)", "Wetted Islands"]
+  ],
+  "layerStyles": [
+    {
+      "id": "wetislands-396qo9",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "wetislands-396qo9",
+      "layout": {},
+      "paint": {"fill-color": "hsl(41, 100%, 87%)"}
+  }
+  ]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
+
+  <Name>VBET for HUC 16050301</Name>
+  <ProjectType>VBET</ProjectType>
+
+  <Warehouse id="badfe8c1-0342-4876-8fac-b2eb5493a90f" apiUrl="https://12312312.amazon.ca/api/prod"/>
+  <Summary></Summary>
+  <Description></Description>
+  <Citation></Citation>
+
+  <MetaData>
+    <Meta name="ModelVersion">0.5.0</Meta>
+  </MetaData>
+
+  <QAQCEvents>
+  </QAQCEvents>
+
+  <CommonDatasets>
+  </CommonDatasets>
+
+
+  <!-- CHANGE: here is our ProjectBounds for geospatial searching and map display -->
+  <ProjectBounds>
+    <Centroid>
+      <Lat>43.03677585761058</Lat>
+      <Lng>-105.46875</Lng>
+    </Centroid>
+    <BoundingBox>
+      <MinLat>38.58252615935333</MinLat>
+      <MinLng>-115.13671875</MinLng>
+      <MaxLat>46.6795944656402</MaxLat>
+      <MaxLng>-96.0205078125</MaxLng>
+    </BoundingBox>
+    <Path>some_file_name.geojson</Path>
+  </ProjectBounds>
+
+  <Realizations>
+    <Realization id="REALIZATION1" dateCreated="2021-10-02T16:48:48.772237" productVersion="0.1.2">
+      <Name></Name>
+    </Realization>
+  </Realizations>
+</Project>

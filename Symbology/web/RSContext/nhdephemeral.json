@@ -1,0 +1,25 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(40, 100%, 45%)", "Ephemeral - 46007"]
+  ],
+  "layerStyles": [
+    {
+        "id": "Ephemeral Drainage Network",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "NHD_flowline-6tver9",
+        "layout": {},
+        "paint": {
+            "line-dasharray": [1, 2],
+            "line-color": [
+                "match",
+                ["get", "FCode"],
+                [46007],
+                "hsl(40, 100%, 45%)",
+                "hsla(40, 0%, 0%, 0)"
+            ]
+        }
+    }
+  ]
+}

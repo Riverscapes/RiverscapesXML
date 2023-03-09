@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 31%)", "DEM Contour Lines"]
+  ],
+  "layerStyles": [
+    {
+      "id": "ev-countour-3a9kcq",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ev_Countour-3a9kcq",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 0%, 31%)"}
+  }
+  ]
+}

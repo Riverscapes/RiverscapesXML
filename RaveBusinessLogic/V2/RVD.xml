@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>RVD</Name>
+  <ProjectType>RVD</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Project Report" xpath="Realizations/Realization/Outputs/HTMLFile" type="report" />
+      <Node label="Outputs" xpath="Realizations/Realization/Outputs">
+        <Children collapsed="true">
+          <Node label="Riparian Departure" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="rvd_output" symbology="RiparianVegetationDeparture" />
+          <Node label="Conversion Type" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="conversion_type" symbology="RiparianConversionType" />
+        </Children>
+      </Node>
+      <Node label="Intermediates" xpath="Realizations/Realization/Intermediates">
+        <Children collapsed="true">
+          <Node label="Thiessen Polygons">
+            <Children collapsed="true">
+              <Node label="Thiessen Polygons" xpath="Geopackage/Layers/Vector[@lyrName='Thiessen']" type="polygon" symbology="thiessen_polygon" />
+              <Node label="Thiessen Points" xpath="Geopackage/Layers/Vector[@lyrName='Thiessen_Points']" type="polygon" symbology="thiessen_point" />
+              <Node label="Thiessen Polygons (Dissolved)" xpath="Geopackage/Layers/Vector[@lyrName='ThiessenPolygonsDissolved']" type="polygon" symbology="thiessen_dissolved" />
+              <Node label="Thiessen Polygons (Raw)" xpath="Geopackage/Layers/Vector[@lyrName='ThiessenPolygonsRaw']" type="polygon" symbology="thiessen_raw" />
+            </Children>
+          </Node>
+          <Node label="Existing Vegetation">
+            <Children collapsed="true">
+              <Node label="Existing Riparian" xpath="Raster[@id='EXISTING_RIPARIAN']" type="raster" symbology="ExistingVegRiparian" />
+              <Node label="Existing Native Riparian" xpath="Raster[@id='EXISTING_NATIVE_RIPARIAN']" type="raster" symbology="ExistingVegNativeRiparian" />
+              <Node label="Existing Vegetated" xpath="Raster[@id='EXISTING_VEGETATED']" type="raster" symbology="ExistingVegetated" />
+              <Node label="Vegetation Conversion" xpath="Raster[@id='EXISTING_CONVERSION']" type="raster" symbology="Existing_Vegetation_Conversion" />
+              <Node label="Land Use Intensity" xpath="Raster[@id='EXISTING_LUI']" type="raster" symbology="LandUseRaster" />
+            </Children>
+          </Node>
+          <Node label="Historic Vegetation">
+            <Children collapsed="true">
+              <Node label="Historic Riparian" xpath="Raster[@id='HISTORIC_RIPARIAN']" type="raster" symbology="HistoricVegRiparian" />
+              <Node label="Historic Native Riparian" xpath="Raster[@id='HISTORIC_NATIVE_RIPARIAN']" type="raster" symbology="HistoricVegNativeRiparian" />
+              <Node label="Historic Vegetated" xpath="Raster[@id='HISTORIC_VEGETATED']" type="raster" symbology="HistoricVegetated" />
+            </Children>
+          </Node>
+
+          <Node label="Riparian Zones" xpath="Raster[@id='RIPARIAN_ZONES']" type="raster" symbology="RiparianCorridor" />
+          <Node label="Native Riparian Zones" xpath="Raster[@id='NATIVE_RIPARIAN_ZONES']" type="raster" symbology="ExistingVegNativeRiparian" />
+          <Node label="Vegetation Zones" xpath="Raster[@id='VEGETATION_ZONES']" type="raster" symbology="ExistingVegetated" />
+          <Node label="Vegetation Conversion" xpath="Raster[@id='VEGETATION_CONVERSION']" type="raster" symbology="ConversionRaster" />
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="Realizations/Realization/Inputs">
+        <Children collapsed="true">
+          <Node label="Network">
+            <Children collapsed="true">
+              <Node label="Network" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="OldNetwork" />
+              <Node label="River Polygons (NHD Area)" xpath="Geopackage/Layers/Vector[@lyrName='flowareas']" type="polygon" symbology="LargeRiverPolygon" />
+              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Geopackage/Layers/Vector[@lyrName='waterbodies']" type="polygon" symbology="waterbody" />
+            </Children>
+          </Node>
+          <Node label="Valley Bottom">
+            <Children collapsed="true">
+              <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_hollow" />
+              <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled" />
+            </Children>
+          </Node>
+          <Node label="Vegetation">
+            <Children collapsed="true">
+              <Node label="Veg Type - EVT Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Name" />
+              <Node label="Veg Type - BPS Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="Historic_Veg_BPS_Name" />  
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+  <Views default="RVD_OUTPUT">
+    <View name="RVD Output" id="RVD_OUTPUT">
+      <Layers>
+        <Layer id="rvd_output" />
+        <Layer id="conversion_type" />
+      </Layers>
+    </View>
+  </Views>
+</Project>

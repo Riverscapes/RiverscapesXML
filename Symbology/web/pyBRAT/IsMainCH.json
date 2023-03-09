@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(60, 100%, 50%)", "Side Channel"],
+    ["hsl(216, 100%, 45%)", "Main Channel"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Anabranch Types",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "full_int-36fokv",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "IsMainCh"],
+              0,
+              "hsl(60, 100%, 50%)",
+              [1],
+              "hsl(216, 100%, 45%)",
+              "#000000"
+          ]
+      }
+  }
+  ]
+}

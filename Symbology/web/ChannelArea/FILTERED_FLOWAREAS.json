@@ -1,0 +1,36 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+    "legend": [
+        ["hsl(178, 78%, 35%)", "46006 - Perrenial"],
+        ["hsl(34, 97%, 71%)", "48400 - Wash"],
+        ["hsl(0, 0%, 0%)", "34306 - Dam/Weir"],
+        ["hsl(178, 223%, 138%)", "53700 - Area of Complex Channels"],
+        ["hsl(197, 24%, 240%)", "43100 - Rapids"]
+    ],
+    "layerStyles":[
+        {
+            "id": "filteredflowareas-1xfmi5",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "filteredflowareas-1xfmi5",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "FCode"],
+                    [46006],
+                    "hsl(178, 64%, 35%)",
+                    [48400],
+                    "hsl(34, 97%, 71%)",
+                    [34306],
+                    "hsl(0, 0%, 0%)",
+                    [53700],
+                    "hsl(178, 223%, 138%)",
+                    [43100],
+                    "hsl(197, 24%, 240%)",
+                    "#000000"
+                ]
+            }
+        }
+    ]
+}

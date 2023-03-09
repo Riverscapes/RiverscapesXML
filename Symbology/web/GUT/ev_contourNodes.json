@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(213, 100%, 33%)", "Contour Nodes_Thalweg"]
+  ],
+  "layerStyles": [
+    {
+      "id": "ev-countournodes-d4ipe4",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "ev_countourNodes-d4ipe4",
+      "layout": {},
+      "paint": {
+          "circle-radius": 3.5,
+          "circle-color": "hsl(213, 100%, 33%)"
+      }
+  }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(213, 100%, 33%)", "Bowl"],
+    ["hsl(196, 100%, 45%)", "Bowl Transition"],
+    ["hsl(194, 100%, 73%)", "Trough"],
+    ["hsl(60, 100%, 45%)", "Plane"],
+    ["hsl(0, 100%, 75%)", "Mound Transition"],
+    ["hsl(40, 100%, 45%)", "Saddle"],
+    ["hsl(0, 100%, 33%)", "Mound"],
+    ["hsl(240, 100%, 0%)", "Wall"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tier2-6ve9tm",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Tier2-6ve9tm",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "UnitForm"],
+              ["Bowl"],
+              "hsl(213, 100%, 33%)",
+              ["Bowl Transition"],
+              "hsl(196, 100%, 45%)",
+              ["Trough"],
+              "hsl(194, 100%, 73%)",
+              ["Plane"],
+              "hsl(60, 100%, 45%)",
+              ["Mound Transition"],
+              "hsl(0, 100%, 75%)",
+              ["Saddle"],
+              "hsl(40, 100%, 45%)",
+              ["Mound"],
+              "hsl(0, 100%, 33%)",
+              "#000000"
+          ]
+      }
+  }
+  ]        
+}

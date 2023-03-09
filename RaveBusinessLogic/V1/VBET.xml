@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>VBET</Name>
+  <ProjectType>VBET</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/VBET">
+    <Children collapsed="false">
+      <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
+      <Node label="Outputs">
+        <Children collapsed="true">
+          <!-- These are the names from pre https://github.com/Riverscapes/riverscapes-tools/issues/427 fixes -->
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_68']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
+          <!-- These are the new naming convention -->
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />   
+          <Node label="Estimated Active/Inactive">
+            <Children collapsed="true">
+              <Node label="Estimated Active Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_IA']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_vb"/>
+              <Node label="Estimated Inactive Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_vb"/>      
+            </Children>
+          </Node>
+          
+          <Node label="Valley Bottom Geomorphic Units">
+            <Children collapsed="true">
+              <Node label="Estimated Active Channel" xpath="Inputs/Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Inactive Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
+            </Children>
+          </Node>
+          <Node label="Sample Frames">
+            <Children collapsed="true">
+              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="IGO" id="IGO" />
+              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="line" symbology="CL_vb" id="CL" />
+              <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" id="DGO" />
+            </Children>
+          </Node>
+          <Node label="Moving Window Metrics (IGO)">
+            <Children collapsed="true">
+              <Node label="Est. Prop. of VB Active Channel" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_ActiveChannel"  />
+              <Node label="Est. Prop. of VB Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_ActiveFloodplain"  />
+              <Node label="Est. Prop. of VB Inactive" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_Inactive"  />
+              <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Width"  />
+              <Node label="Moving Window Distance Size" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_MovingWindowDist"  />
+            </Children>
+          </Node>
+          <Node label="Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
+          <Node label="Outputs Geopackage (SQLite Database)" xpath="Outputs/Geopackage" type="file" />
+        </Children>
+      </Node>
+      <Node label="Intermediates">
+        <Children collapsed="true">
+          <Node label="Evidence Rasters">
+            <Children collapsed="false">
+              <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
+              <Node label="Composite HAND Raster" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+              <Node label="TWI Raster" xpath="Inputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+             <!-- Not being output as it needs to be a composite if we want it.
+               <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='CHANNEL_AREA_RASTER']" type="raster" symbology="CHANNEL_AREA_RASTER" transparency="40" /> -->
+            </Children>
+          </Node>
+          <Node label="Normalized Evidence Rasters">
+            <Children collapsed="false">
+              <Node label="Normalized Slope Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
+              <Node label="Normalized HAND Evidence" xpath="Outputs/Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
+              <Node label="Normalized TWI Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
+              <Node label="Combined Topographic Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" id="norm_topo" />
+            </Children>
+          </Node>
+          <Node label="Transform Zones" >
+            <Children collapsed="true">
+                <Node label="Catchment Wing Stream Order" xpath="Intermediates/Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
+                <Node label="Slope Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_SLOPE']" type="raster" symbology="tzone" transparency='30' />
+                <Node label="HAND Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_HAND']" type="raster" symbology="tzone" transparency='30' />
+                <Node label="TWI Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_TWI']" type="raster" symbology="tzone" transparency='30' />
+                <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" />
+              </Children>
+            </Node>
+            
+          </Children>
+        </Node>
+        <Node label="Inputs" xpath="Inputs">
+          <Children collapsed="true">
+            <Node label="Stream Names" xpath="Geopackage/Layers/Vector[@id='FLOWLINES_VAA']" type="line" symbology="streamnames" id="streamnames"  />
+            <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" id="channel_area_polygons" symbology="ChannelArea" />
+            <Node label="Channel Network Levelpaths" xpath="Geopackage/Layers/Vector[@id='FLOWLINES_VAA']" type="line" id="channel_levelpath" symbology="levelpath" />
+            <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+            <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
+          </Children>     
+        </Node>
+        <Node label="Hillshade">
+          <Children collapsed="true">
+            <Node xpathlabel="Name" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
+          </Children>
+        </Node>
+        <Node label="Log File" xpath="LogFile" type="file" />
+      </Children>
+    </Node>
+    <Views default="DEFAULT">
+      <View name="Primary Output" id="DEFAULT">
+        <Layers>
+          <Layer id="streamnames" />
+          <Layer id="vbet_extent_hollow" />
+          <Layer id="likevbet" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+       <View name="Estimated Active vs. Inactive" id="ActiveEstimate">
+        <Layers>
+          <Layer id="vbet_active_vb" />
+          <Layer id="vbet_inactive_vb" />
+        </Layers>
+      </View>
+      <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
+        <Layers>
+          <Layer id="vbet_channel_area" />
+          <Layer id="vbet_active_floodplain" />
+          <Layer id="vbet_inactive_floodplain" />
+        </Layers>
+      </View>
+      <View name="Normalized Evidence" id="Norm">
+        <Layers>
+          <Layer id="norm_topo" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="Sample Frames" id="Sample">
+        <Layers>
+          <Layer id="IGO" />
+          <Layer id="DGO" />
+          <Layer id="CL" />
+        </Layers>
+      </View>
+      <View name="VBET Inputs" id="Inputs">
+        <Layers>
+          <Layer id="channel_area_polygons" />
+          <Layer id="dem" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+    </Views>
+  </Project>
+  

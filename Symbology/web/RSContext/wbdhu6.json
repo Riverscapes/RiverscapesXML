@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 33%)", "Basin-6-Digit HUC"]
+  ],
+  "layerStyles": [
+    {
+      "id": "huc6-2hkkdg",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "HUC6-2hkkdg",
+      "layout": {},
+      "paint": {"line-color": "hsl(0, 100%, 33%)", "line-width": 2}
+  },
+  {
+      "id": "huc6-2hkkdg copy",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "HUC6-2hkkdg",
+      "layout": {"text-field": ["to-string", ["get", "HUC6"]]},
+      "paint": {}
+  }
+  ]
+}

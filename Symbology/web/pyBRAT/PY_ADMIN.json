@@ -1,0 +1,46 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hslhsl(39, 100%, 75%)", "Bureau of Land Management (BLM)"],
+    ["hsl(100, 100%, 23%)", "US Fish and Wildlife Service (USFWS)"],
+    ["hsl(193, 100%, 33%)", "Local"],
+    ["hsl(0, 0%, 0%)", "Unknown"],
+    ["hsl(299, 100%, 31%)", "Private"],
+    ["hsl(0, 0%, 61%)", "Undetermined"],
+    ["hsl(60, 100%, 45%)", "Bureau of Reclamation (BOR)"],
+    ["hsl(80, 100%, 33%)", "US Forest Service (USFS)"],
+    ["hsl(0, 2%, 92%)", "Private or Undetermined"]
+  ],
+  "layerStyles": [
+    {
+      "id": "land-per-reach-bebtx5",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Land_per_Reach-bebtx5",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "ADMIN_AGEN"],
+              ["BLM"],
+              "hsl(39, 100%, 75%)",
+              ["FWS"],
+              "hsl(100, 100%, 23%)",
+              ["LG"],
+              "hsl(193, 100%, 33%)",
+              ["None"],
+              "hsl(0, 0%, 0%)",
+              ["PVT"],
+              "hsl(299, 100%, 31%)",
+              ["UND"],
+              "hsl(0, 0%, 61%)",
+              ["USBR"],
+              "hsl(60, 100%, 45%)",
+              ["USFS"],
+              "hsl(80, 100%, 33%)",
+              "hsl(0, 2%, 92%)"
+          ]
+      }
+  }
+  ]
+}

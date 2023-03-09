@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(286, 100%, 50%)", "Provisional Points of Diversion"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Provisional Points of Diversion",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "div_pts-0awujl",
+      "layout": {},
+      "paint": {"circle-color": "hsl(286, 100%, 50%)"}
+  },
+  {
+      "id": "Diversion Point outline",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "div_pts-0awujl",
+      "layout": {},
+      "paint": {
+          "circle-color": "hsla(0, 0%, 0%, 0)",
+          "circle-stroke-width": 1
+      }
+  }
+  ]
+}

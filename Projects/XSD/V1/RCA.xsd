@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+
+  <!-- This file contains all the things Riverscapes projects have in common -->
+  <!-- IT MUST BE AN ABSOLUTE URI. You can make it temporarily reference a local path but don't commit it that way. -->
+  <xs:include schemaLocation="http://xml.riverscapes.net/Projects/XSD/V1/RiverscapesProject.xsd" />
+
+  <xs:element name="Project" type="ProjectType" />
+
+
+  <!-- Top Leve item: Here's where the overall project gets extended -->
+  <xs:complexType name="ProjectType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="ProjectBaseType">
+        <xs:sequence>
+          <xs:element type="RealizationsType" name="Realizations" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RealizationsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="RCAType" name="RCA" maxOccurs="unbounded" minOccurs="0" />
+    </xs:choice>
+  </xs:complexType>
+
+  <!-- =========================================================================
+  
+  Project: RCA
+  
+  ============================================================================== -->
+
+  <xs:complexType name="RCAType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RealizationType">
+        <xs:sequence>
+          <xs:element type="RCAInputs" name="Inputs" minOccurs="0" />
+          <xs:element type="RCAAnalysesType" name="Analyses" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- RCA Inputs -->
+  <xs:complexType name="RCAInputs">
+    <xs:complexContent>
+      <xs:extension base="DataSetContainerType">    
+    <xs:sequence>
+      <xs:element type="RCAVegetationType" name="ExistingVegetation" />
+      <xs:element type="RCAVegetationType" name="HistoricVegetation" />
+      <xs:element type="RCADrainageNetworksType" name="DrainageNetworks" />
+      <xs:element type="VectorType" name="FragmentedValleyBottom" minOccurs="0" />
+      <xs:element type="VectorType" name="LargeRiverPolygon" minOccurs="0" />
+    </xs:sequence>
+    </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RCAVegetationType" mixed="true">
+    <xs:complexContent>
+      <xs:extension base="RasterType">
+        <xs:choice>
+          <xs:element type="DataSetContainerType" name="ExistingRasters" minOccurs="0" maxOccurs="1" />
+          <xs:element type="DataSetContainerType" name="HistoricRasters" minOccurs="0" maxOccurs="1" />
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RCADrainageNetworksType" mixed="true">
+    <xs:sequence>
+      <xs:element name="Network">
+        <xs:complexType mixed="true">
+          <xs:complexContent>
+            <xs:extension base="RasterType">
+              <xs:sequence>
+                <xs:element type="VectorType" name="ThiessenPolygons" />
+              </xs:sequence>
+            </xs:extension>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--Analysis and Outputs-->
+  <xs:complexType name="RCAAnalysesType">
+    <xs:sequence>
+      <xs:element type="RCAAnalysisType" name="Analysis" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RCAAnalysisType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" />
+      <xs:element type="DataSetContainerType" name="Outputs" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

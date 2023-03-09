@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [ "hsl(268, 29%, 60%)", "Confinement Buffer" ]
+  ],
+  "layerStyles": [
+    {
+      "id": "confinement-buffer-dt9i2g",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "confinement_buffer-dt9i2g",
+      "layout": {},
+      "paint": {
+        "fill-color": "hsl(268, 29%, 60%)",
+        "fill-outline-color": "#000000"
+      }
+    }
+  ]
+}

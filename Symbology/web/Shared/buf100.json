@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(65, 94%, 54%)", "100m Buffer"]
+  ],
+  "layerStyles": [
+    {
+      "id": "100m Buffer",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "buf100-90uqzg",
+      "layout": {},
+      "paint": {"line-color": "hsl(65, 94%, 54%)", "line-width": 1.5}
+  }
+  ]
+}

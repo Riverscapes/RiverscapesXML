@@ -1,0 +1,4 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:DISCRETE
+0,171,205,102,255,Floodplain
+1,0,169,230,255,Active Channel

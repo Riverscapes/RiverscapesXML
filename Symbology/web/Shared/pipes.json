@@ -1,0 +1,80 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsla(0, 0%, 0%, 0)", "Pipes"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Pipes",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "NHD_flowline-6tver9",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "FCode"],
+              [
+                  42800,
+                  42801,
+                  42802,
+                  42803,
+                  42804,
+                  42805,
+                  42806,
+                  42807,
+                  42808,
+                  42809,
+                  42810,
+                  42811,
+                  42812,
+                  42813,
+                  42814,
+                  42815,
+                  42816
+              ],
+              "#000000",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+          "line-width": 3,
+          "line-dasharray": [1, 2]
+      }
+  },
+  {
+      "id": "Pipes outline",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "NHD_flowline-6tver9",
+      "layout": {},
+      "paint": {
+          "line-width": ["match", ["get", "FCode"], [33400], 0.5, 1],
+          "line-color": [
+              "match",
+              ["get", "FCode"],
+              [
+                  42800,
+                  42801,
+                  42802,
+                  42803,
+                  42804,
+                  42805,
+                  42806,
+                  42807,
+                  42808,
+                  42809,
+                  42810,
+                  42811,
+                  42812,
+                  42813,
+                  42814,
+                  42815,
+                  42816
+              ],
+              "#000000",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+          "line-gap-width": 3
+      }
+  }
+  ]
+}
