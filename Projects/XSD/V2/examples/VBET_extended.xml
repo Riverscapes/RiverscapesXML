@@ -32,16 +32,16 @@
   <QAQCEvents>
 
     <!-- Here is some automated testing we do in Cybercastor -->
-    <QAQCEvent state="passed" dateCreated="2022-04-11T17:56:39Z">
-      <name>Manual Calibration</name>
-      <performedBy>Cybercastor Automation</performedBy>
+    <QAQCEvent state="passed" datePerformed="2022-04-11T17:56:39Z">
+      <Name>Manual Calibration</Name>
+      <PerformedBy>Cybercastor Automation</PerformedBy>
       <Summary>Automated Project QC Testing</Summary>
     </QAQCEvent>
 
     <!-- Here is the same event from before but passed -->
-    <QAQCEvent state="failed" dateCreated="2022-04-11T17:56:39Z">
-      <name>Manual Calibration</name>
-      <performedBy>John Johnson</performedBy>
+    <QAQCEvent state="failed" datePerformed="2022-04-11T17:56:39Z">
+      <Name>Manual Calibration</Name>
+      <PerformedBy>John Johnson</PerformedBy>
       <Summary>Failed to load layer X (see github link)</Summary>
       <Description><![CDATA[ This is a long-form commment deserunt elit ut nisi veniam pariatur eu excepteur in. Adipisicing ea qui id do incididunt deserunt sint est ullamco consectetur eu deserunt laboris excepteur. Consectetur nulla deserunt amet velit. Pariatur incididunt esse nulla nisi elit deserunt. Ad non ex aliqua officia et excepteur dolore Lorem veniam duis. Et amet nostrud exercitation do Lorem. Laborum fugiat ipsum labore eiusmod aliqua qui et dolore ipsum laboris ut.
 
@@ -57,9 +57,9 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
     </QAQCEvent>
     
     <!-- Here is the same event from before but passed -->
-    <QAQCEvent state="passed" dateCreated="2022-04-13T18:56:39Z">
-      <name>Manual Calibration</name>
-      <performedBy>John Johnson</performedBy>
+    <QAQCEvent state="passed" datePerformed="2022-04-13T18:56:39Z">
+      <Name>Manual Calibration</Name>
+      <PerformedBy>John Johnson</PerformedBy>
       <Summary>This was a task of calibration performed by someone</Summary>
     </QAQCEvent>
   </QAQCEvents>
@@ -151,7 +151,8 @@ Ex labore minim ea magna minim reprehenderit ullamco labore exercitation ea sunt
       <MaxLat>46.6795944656402</MaxLat>
       <MaxLng>-96.0205078125</MaxLng>
     </BoundingBox>
-    <Path>some_file_name.geojson</Path>
+    <Path>
+      some_file_name.geojson</Path>
   </ProjectBounds>
 
   <Realizations>

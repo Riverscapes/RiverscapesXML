@@ -331,8 +331,8 @@
 
   <xs:complexType name="QAQCEventType" mixed="true">
     <xs:sequence>
-      <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1" />
-      <xs:element type="xs:string" name="performedBy" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
+      <xs:element type="xs:string" name="PerformedBy" minOccurs="0" maxOccurs="1" />
 
       <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
       <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
@@ -356,7 +356,7 @@
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute type="QAQCState" name="state" />
-    <xs:attribute type="xs:string" name="dateCreated" />
+    <xs:attribute type="xs:string" name="datePerformed" />
   </xs:complexType>
 
 
@@ -414,10 +414,12 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Note that we allow whitespace "\s*" before and after paths. we need to make sure this
+  is stripped out in any parsers -->
   <xs:simpleType name="UnixPathType">
     <xs:restriction base="xs:string">
       <xs:maxLength value="256" />
-      <xs:pattern value="([A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+" />
+      <xs:pattern value="\s*([A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\s*" />
     </xs:restriction>
   </xs:simpleType>
 
