@@ -7,7 +7,7 @@
             <Node label="Outputs" xpath="Realizations/Realization/Outputs">
                 <Children collapsed="true">
                     <Node label="IGO Outputs">
-                        <Children>
+                        <Children collapsed="true">
                             <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Road Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
@@ -22,7 +22,7 @@
                         </Children>
                     </Node>
                     <Node label="Reach Outputs">
-                        <Children>
+                        <Children collapsed="true">
                             <Node label="Land Ownership per Reach" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="ADMIN_AGEN" />
                             <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU" />
                             <Node label="Distance to Nearest Infrastructure" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oPC_Dist" />
@@ -50,14 +50,14 @@
             <Node label="Inputs" xpath="Realizations/Realization/Inputs">
                 <Children collapsed="true">
                     <Node label="Sampling Units">
-                        <Children>
+                        <Children collapsed="true">
                             <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flow_lines" />
                             <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="" />
                             <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="" />
                         </Children>
                     </Node>
                     <Node label="Anthropogenic Datasets">
-                        <Children>
+                        <Children collapsed="true">
                             <Node label="Canals and Ditches" xpath="Geopackage/Layers/Vector[@lyrName='canals']" type="line" symbology="canals_ditches" />
                             <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@lyrName='ownership']" type="polygon" symbology="ownership" transparency="40" />
                             <Node label="Roads" xpath="Geopackage/Layers/Vector[@lyrName='roads']" type="line" symbology="roads" />
@@ -65,12 +65,12 @@
                         </Children>
                     </Node>
                     <Node label="Valley Bottom">
-                        <Children>
+                        <Children collapsed="true">
                             <Node label="Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled" />
                         </Children>
                     </Node>
                     <Node label="Land Cover">
-                        <Children>
+                        <Children collapsed="true">
                             <Node label="Existing Vegetation (Land Cover)" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
                         </Children>
                     </Node>
