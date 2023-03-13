@@ -4,9 +4,17 @@ name: Deploy to bucket on S3
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on:
+on: 
   push:
-    branches: [ master ]
+    branches: 
+      - master
+  workflow_dispatch:
+    branches:
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true    
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -35,9 +43,9 @@ jobs:
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_S3_BUCKET: ${{secrets.AWS_S3_BUCKET}}
+          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           AWS_REGION: 'us-west-2'   # optional: defaults to us-east-1
           SOURCE_DIR: 'PUBLIC'      # optional: defaults to entire repository
 
