@@ -41,7 +41,7 @@ jobs:
       # Use S3 syncing to deploy this to the appropriate bucket inside rs-web-monorepo VPC Stack
       - uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl public-read --follow-symlinks --delete
+          args: --delete --debug
         env:
           AWS_S3_BUCKET: ${{secrets.AWS_S3_BUCKET}}
           AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
