@@ -74,9 +74,6 @@
           <Node label="Transform Zones" >
             <Children collapsed="true">
                 <Node label="Catchment Wing Stream Order" xpath="Intermediates/Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
-                <Node label="Slope Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_SLOPE']" type="raster" symbology="tzone" transparency='30' />
-                <Node label="HAND Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_HAND']" type="raster" symbology="tzone" transparency='30' />
-                <Node label="TWI Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_TWI']" type="raster" symbology="tzone" transparency='30' />
                 <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" />
               </Children>
             </Node>
