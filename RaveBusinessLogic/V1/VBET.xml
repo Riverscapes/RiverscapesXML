@@ -52,18 +52,23 @@
           <Node label="Evidence Rasters">
             <Children collapsed="false">
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
-              <Node label="Composite HAND Raster" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
-              <Node label="TWI Raster" xpath="Inputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+              <Node label="Composite HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
              <!-- Not being output as it needs to be a composite if we want it.
                <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='CHANNEL_AREA_RASTER']" type="raster" symbology="CHANNEL_AREA_RASTER" transparency="40" /> -->
             </Children>
           </Node>
-          <Node label="Normalized Evidence Rasters">
+          <Node label="Transformed Evidence Rasters">
             <Children collapsed="false">
-              <Node label="Normalized Slope Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
-              <Node label="Normalized HAND Evidence" xpath="Outputs/Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
-              <Node label="Normalized TWI Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
-              <Node label="Combined Topographic Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" id="norm_topo" />
+              <Node label="Transformed Slope Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
+              <Node label="Transformed HAND Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Valley Bottom Rasters">
+            <Children collapsed="false">
+              <Node label="Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='VBET_ZONES']" type="raster" symbology="" transparency="40" />
+              <Node label="Estimated Active Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='ACTIVE_FP_ZONES']" type="raster" symbology="" transparency="40" />
+              <Node label="Estimated Inactive Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='INACTIVE_FP_ZONES']" type="raster" symbology="" transparency="40" />
+
             </Children>
           </Node>
           <Node label="Transform Zones" >
@@ -117,7 +122,7 @@
           <Layer id="vbet_inactive_floodplain" />
         </Layers>
       </View>
-      <View name="Normalized Evidence" id="Norm">
+      <View name="Transformed Evidence" id="Norm">
         <Layers>
           <Layer id="norm_topo" />
           <Layer id="hillshade" />
