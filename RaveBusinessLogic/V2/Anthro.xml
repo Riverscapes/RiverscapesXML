@@ -39,10 +39,10 @@
             </Node>
             <Node label="Intermediates" xpath="Realizations/Realization/Intermediates">
                 <Children collapsed="true">
-                    <Node label="Land Use Intensity Raster" xpath="Raster[@id='LUI']" type="raster" symbology="" />
-                    <Node label="Diversions" xpath="Geopackage/Layers/Vector[@lyrName='diversions']" type="point" symbology="" />
+                    <Node label="Land Use Intensity Raster" xpath="Raster[@id='LUI']" type="raster" symbology="LUIRaster" transparency="40" />
+                    <Node label="Diversions" xpath="Geopackage/Layers/Vector[@lyrName='diversions']" type="point" symbology="py_div_point" />
                     <Node label="Stream Crossings" xpath="Geopackage/Layers/Vector[@lyrName='road_crossings']" type="point" symbology="" />
-                    <Node label="Private Land" xpath="Geopackage/Layers/Vector[@lyrName='private_land']" type="polygon" symbology="" />
+                    <Node label="Private Land" xpath="Geopackage/Layers/Vector[@lyrName='private_land']" type="polygon" symbology="PVTLand" />
                     <Node label="Railroads Within the Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='rail_valleybottom']" type="line" symbology="railroads" />
                     <Node label="Roads Within the Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='road_valleybottom']" type="line" symbology="roads" />
                 </Children>
