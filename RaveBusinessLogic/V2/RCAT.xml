@@ -41,7 +41,7 @@
                             <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Existing_Veg_EVT_Vegetated"/>
                             <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Historic_Veg_BPS_Vegetated"/>
                             <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology=""/>
-                            <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology=""/>
+                            <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="FPAccess_Raster" transparency="40"/>
                         </Children>
                     </Node>
                 </Children>
