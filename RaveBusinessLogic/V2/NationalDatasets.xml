@@ -5,7 +5,7 @@
   <ProjectType>NationalDatasets</ProjectType>
   <Node xpathlabel="Name">
     <Children>
-      <Repeater label="Realizations" xpath="Realizations/Realization/*">
+      <Repeater label="Realizations" xpath="Realizations/Realization">
         <!--This is a template for how each realization should render-->
         <Node xpathlabel="Name">
           <Children collapsed="false">
