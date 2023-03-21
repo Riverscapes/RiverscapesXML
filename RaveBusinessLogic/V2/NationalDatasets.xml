@@ -9,7 +9,7 @@
         <!--This is a template for how each realization should render-->
         <Node xpathlabel="Name">
           <Children collapsed="false">
-            <Node label="Inputs" xpath="Inputs">
+            <Node label="Datasets" xpath="Datasets">
               <Children>
                 <Repeater label="Raster Layers" xpath="Raster">
                   <Node xpathlabel="Name" type="raster" symbology="raster" />
@@ -19,7 +19,7 @@
                   <Node xpathlabel="Name" type="polygon" symbology="" />
                 </Repeater>
               </Children>
-            </Node>
+            </Node>            
           </Children>
         </Node>
       </Repeater>
