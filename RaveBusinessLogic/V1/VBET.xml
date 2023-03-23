@@ -36,7 +36,7 @@
           </Node>
           <Node label="Moving Window Metrics (IGO)">
             <Children collapsed="true">
-              <Node label="Est. Prop. of VB Active Channel" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_ActiveChannel"  />
+              <Node label="Est. Prop. of VB Active Channel" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_activechannel"  />
               <Node label="Est. Prop. of VB Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_ActiveFloodplain"  />
               <Node label="Est. Prop. of VB Inactive" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Prop_Inactive"  />
               <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Width"  />
