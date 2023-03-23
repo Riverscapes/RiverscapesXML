@@ -115,8 +115,8 @@
       </View>
       <View name="Transformed Evidence Rasters" id="Norm">
         <Layers>
-          <Layer id="TRANSFORMED_SLOPE" />
-          <Layer id="TRANSFORMED_HAND" />
+          <Layer id="transformed_slope" />
+          <Layer id="transformed_hand" />
           <Layer id="hillshade" />
         </Layers>
       </View>
