@@ -113,13 +113,6 @@
           <Layer id="hillshade" />
         </Layers>
       </View>
-      <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
-        <Layers>
-          <Layer id="vbet_channel_area" />
-          <Layer id="vbet_active_floodplain" />
-          <Layer id="vbet_inactive_floodplain" />
-        </Layers>
-      </View>
       <View name="Transformed Evidence" id="Norm">
         <Layers>
           <Layer id="norm_topo" />
