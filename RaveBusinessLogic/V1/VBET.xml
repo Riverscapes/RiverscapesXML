@@ -110,6 +110,7 @@
         <Layers>
           <Layer id="vbet_active_vb" />
           <Layer id="vbet_inactive_vb" />
+          <Layer id="hillshade" />
         </Layers>
       </View>
       <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
