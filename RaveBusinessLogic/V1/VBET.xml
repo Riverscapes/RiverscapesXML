@@ -98,7 +98,7 @@
       </Children>
     </Node>
     <Views default="DEFAULT">
-      <View name="Primary Output" id="DEFAULT">
+      <View name="Primary Outputs" id="DEFAULT">
         <Layers>
           <Layer id="streamnames" />
           <Layer id="vbet_extent_hollow" />
