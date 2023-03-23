@@ -113,7 +113,7 @@
           <Layer id="hillshade" />
         </Layers>
       </View>
-      <View name="Transformed Evidence" id="Norm">
+      <View name="Transformed Evidence Rasters" id="Norm">
         <Layers>
           <Layer id="norm_topo" />
           <Layer id="hillshade" />
