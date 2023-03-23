@@ -16,39 +16,32 @@
         <Children collapsed="false">
           <Node label="Hydrography (NHD HR+)">
             <Children collapsed="true">
-              <Node label="Perennial Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial" />
-              <Node label="Intermittent Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
-              <Node label="Ephemeral Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="nhdephemeral" />
-              <Node label="Network - Upstream Drainage Area" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
-              <Node label="Full NHD HR+ Drainage Network" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="flow_lines" />
-              <Node label="Drainage Wings" xpath="Datasets/Vector[@id='NHDPlusCatchment']" type="polygon" symbology="drainagewings" />
-              <Node label="River Polygons (NHD Area)" xpath="Datasets/Vector[@id='NHDArea']" type="polygon" symbology="nhdarea" />
-              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Vector[@id='NHDWaterbody']" type="polygon" symbology="waterbody" />
+              <Node label="Perennial Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial" />
+              <Node label="Intermittent Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
+              <Node label="Ephemeral Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdephemeral" />
+              <Node label="Network - Upstream Drainage Area" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
+              <Node label="Full NHD HR+ Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines" />
+              <Node label="Drainage Wings" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDPlusCatchment']" type="polygon" symbology="drainagewings" />
+              <Node label="River Polygons (NHD Area)" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDArea']" type="polygon" symbology="nhdarea" />
+              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDWaterbody']" type="polygon" symbology="waterbody" />
               <Node label="Canals and Ditches" xpath="Datasets/Vector[@id='Canals']" type="line" symbology="canals_ditches" />
-              <Node label="Pipes and Ditches" xpath="Datasets/Vector[@id='NHDFlowline']" type="line" symbology="pipes" />
-              <Node label="Estimated Bankfull">
-                <Children>
-                  <Node label="Estimated Bankfull Width (m)" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='network']" type="line" symbology="bankfull_flowlines" />
-                  <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='bankfull']" type="polygon" symbology="ChannelArea" />
-                  <!-- <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='COMPOSITE_CHANNEL_AREA']" type="polygon" symbology="bankfull_nhd"/> -->
-                </Children>
-              </Node>
+              <Node label="Pipes and Ditches" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="pipes" />
               <Node label="Segmented Hydrography">
                 <Children>
-                  <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='network_300m']" type="line" symbology="300_seg" />
-                  <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='network_intersected_300m']" type="line" symbology="300_seg_X" />
+                  <Node xpathlabel="Name" xpath="Datasets/Geopackage[@id='HYDRODERIVATIVES']/Layers/Vector[@lyrName='network_300m']" type="line" symbology="300_seg" />
+                  <Node xpathlabel="Name" xpath="Datasets/Geopackage[@id='HYDRODERIVATIVES']/Layers/Vector[@lyrName='network_intersected_300m']" type="line" symbology="300_seg_X" />
                 </Children>
               </Node>
             </Children>
           </Node>
           <Node label="Watershed Boundaries (HUCs)">
             <Children collapsed="true">
-              <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Datasets/Vector[@id='WBDHU12']" type="polygon" symbology="wbdhu12" />
-              <Node label="Watersheds - 10-Digit HUC" xpath="Datasets/Vector[@id='WBDHU10']" type="polygon" symbology="wbdhu10" id="huc10" />
-              <Node label="Sub-Basin - 8-Digit HUC" xpath="Datasets/Vector[@id='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
-              <Node label="Basin - 6-Digit HUC" xpath="Datasets/Vector[@id='WBDHU6']" type="polygon" symbology="wbdhu6" />
-              <Node label="Subregion - 4-Digit HUC" xpath="Datasets/Vector[@id='WBDHU4']" type="polygon" symbology="wbdhu4" />
-              <Node label="Region - 2-Digit HUC" xpath="Datasets/Vector[@id='WBDHU2']" type="polygon" symbology="wbdhu2" />
+              <Node label="Sub-Watersheds - 12-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU12']" type="polygon" symbology="wbdhu12" />
+              <Node label="Watersheds - 10-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU10']" type="polygon" symbology="wbdhu10" id="huc10" />
+              <Node label="Sub-Basin - 8-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU8']" type="polygon" symbology="wbdhu8" id="huc8" />
+              <Node label="Basin - 6-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU6']" type="polygon" symbology="wbdhu6" />
+              <Node label="Subregion - 4-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU4']" type="polygon" symbology="wbdhu4" />
+              <Node label="Region - 2-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU2']" type="polygon" symbology="wbdhu2" />
             </Children>
           </Node>
         </Children>
@@ -69,12 +62,24 @@
           <Node label="Level 1 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_1" transparency="40" />
           <Node label="Level 2 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_2" transparency="40" />
           <Node label="Level 3 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_3" transparency="40" />
+          <Node label="Level 4 Ecoregions" xpath="Datasets/Vector[@id='Ecoregions']" type="polygon" symbology="ecoregions_4" transparency="40" />
+        </Children>
+      </Node>
+      <Node label="Geology">
+        <Children collapsed="true">
+          <Node label="Geology" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geology" />
         </Children>
       </Node>
       <Node label="Land Management">
         <Children collapsed="true">
           <Node label="Land Ownership" xpath="Datasets/Vector[@id='Ownership']" type="polygon" symbology="ownership" transparency="40" id="owner" />
           <Node label="Fair Market Value" xpath="Datasets/Raster[@id='FAIRMARKETVALUE']" type="raster" symbology="fair_market" transparency="40" />
+        </Children>
+      </Node>
+      <Node label="Political Boundaries">
+        <Children collapsed="true">
+          <Node label="State Boundaries" xpath="Datasets/Vector[@id='States']" type="polygon" symbology="states" />
+          <Node label="County Boundaries" xpath="Datasets/Vector[@id='Counties']" type="polygon" symbology="counties" />
         </Children>
       </Node>
       <Node label="LANDFIRE">
@@ -85,6 +90,8 @@
                 <Children>
                   <Node label="Veg Type - EVT Class" xpath="Datasets/Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" id="exveg" />
                   <Node label="Veg Type - EVT Name" xpath="Datasets/Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
+                  <Node label="Veg Cover - EVC" xpath="Datasets/Raster[@id='VEGCOVER']" type="raster" symbology="Veg_Cover" transparency="40" />
+                  <Node label="Veg Height - EVH" xpath="Datasets/Raster[@id='VEGHEIGHT']" type="raster" symbology="Veg_Height" transparency="40" />
                   <Node label="Veg Type - EVT Riparian" xpath="Datasets/Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Riparian" transparency="40" />
                 </Children>
               </Node>
@@ -96,14 +103,30 @@
               </Node>
             </Children>
           </Node>
+          <Node label="Disturbance">
+            <Children collapsed="true">
+              <Node label="Historic Disturbance - HDst" xpath="Datasets/Raster[@id='HDIST']" type="raster" symbology="Historic_Disturbance" transparency="40" />
+              <Node label="Fuel Disturbance - FDst" xpath="Datasets/Raster[@id='FDIST']" type="raster" symbology="Fuel_Disturbance" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Fuel">
+            <Children collapsed="true">
+              <Node label="Fuel Characteristic Classification - FCCS" xpath="Datasets/Raster[@id='FCCS']" type="raster" symbology="fccs" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Vegetation Condition">
+            <Children collapsed="true">
+              <Node label="Vegetation Condition" xpath="Datasets/Raster[@id='VEGCONDITION']" type="raster" symbology="Vegetation_Condition" transparency="40" />
+              <Node label="Vegetation Departure" xpath="Datasets/Raster[@id='VEGDEPARTURE']" type="raster" symbology="Vegetation_Departure" transparency="40" />
+              <Node label="Succession Classes" xpath="Datasets/Raster[@id='SCLASS']" type="raster" symbology="Succession_Classes" transparency="40" />
+            </Children>
+          </Node>
         </Children>
       </Node>
       <Node label="Topography and Derivatives">
         <Children collapsed="true">
-          <Node label="DEM (10 m NED)" xpath="Datasets/DEM" type="raster" symbology="dem" transparency="40" id="dem" />
+          <Node label="DEM (10 m NED)" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
           <Node label="Slope Analysis" xpath="Datasets/Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
-          <Node xpathlabel="Name" xpath="Datasets/Raster[@id='layer_FA']" type="raster" symbology="flow_accumulation" transparency="40" />
-          <Node label="Drainage Area" xpath="Datasets/Raster[@id='layer_DA']" type="raster" symbology="drainage_area" transparency="40" />
         </Children>
       </Node>
       <Node label="Hillshade">

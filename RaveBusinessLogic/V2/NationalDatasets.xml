@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+  <Name>National Datasets</Name>
+  <ProjectType>NationalDatasets</ProjectType>
+  <Node xpathlabel="Name">
+    <Children>
+      <Repeater label="Realizations" xpath="Realizations/Realization">
+        <!--This is a template for how each realization should render-->
+        <Node xpathlabel="Name">
+          <Children collapsed="false">
+            <Node label="Datasets" xpath="Datasets">
+              <Children>
+                <Repeater label="Raster Layers" xpath="Raster">
+                  <Node xpathlabel="Name" type="raster" symbology="raster" />
+                </Repeater>
+                <Repeater label="Vector Layers" xpath="Vector">
+                  <!-- TODO: this is a problem we need to address -->
+                  <Node xpathlabel="Name" type="polygon" symbology="" />
+                </Repeater>
+              </Children>
+            </Node>            
+          </Children>
+        </Node>
+      </Repeater>
+    </Children>
+  </Node>
+</Project>

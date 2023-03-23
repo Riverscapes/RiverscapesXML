@@ -21,7 +21,9 @@
   <CommonDatasets>
     <SurveyQualityDB id="SurveyQualityDB" >
       <Name>Survey Quality Database</Name>
-      <Path>Inputs/SurveyQuality.sqlite</Path>
+      <Path>
+        Inputs/SurveyQuality.sqlite
+      </Path>
     </SurveyQualityDB>
     <InstrumentFile id="RawFile" >
       <Name>Instrument File</Name>

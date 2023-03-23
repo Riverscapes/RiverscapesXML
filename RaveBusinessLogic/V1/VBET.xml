@@ -52,26 +52,28 @@
           <Node label="Evidence Rasters">
             <Children collapsed="false">
               <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
-              <Node label="Composite HAND Raster" xpath="Outputs/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
-              <Node label="TWI Raster" xpath="Inputs/Raster[@id='TWI_RASTER']" type="raster" symbology="twi" transparency="40" />
+              <Node label="Composite HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
              <!-- Not being output as it needs to be a composite if we want it.
                <Node label="Rasterized Channel Area" xpath="Intermediates/Raster[@id='CHANNEL_AREA_RASTER']" type="raster" symbology="CHANNEL_AREA_RASTER" transparency="40" /> -->
             </Children>
           </Node>
-          <Node label="Normalized Evidence Rasters">
+          <Node label="Transformed Evidence Rasters">
             <Children collapsed="false">
-              <Node label="Normalized Slope Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
-              <Node label="Normalized HAND Evidence" xpath="Outputs/Raster[@id='NORMALIZED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
-              <Node label="Normalized TWI Evidence" xpath="Intermediates/Raster[@id='NORMALIZED_TWI']" type="raster" symbology="norm_twi" transparency="40" />
-              <Node label="Combined Topographic Evidence" xpath="Intermediates/Raster[@id='EVIDENCE_TOPO']" type="raster" symbology="norm_topo" transparency="40" id="norm_topo" />
+              <Node label="Transformed Slope Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" id="transformed_slope" />
+              <Node label="Transformed HAND Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_HAND']" type="raster" symbology="norm_hand" transparency="40" id="transformed_hand" />
+            </Children>
+          </Node>
+          <Node label="Valley Bottom Rasters">
+            <Children collapsed="false">
+              <Node label="Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='VBET_ZONES']" type="raster" symbology="" transparency="40" />
+              <Node label="Estimated Active Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='ACTIVE_FP_ZONES']" type="raster" symbology="" transparency="40" />
+              <Node label="Estimated Inactive Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='INACTIVE_FP_ZONES']" type="raster" symbology="" transparency="40" />
+
             </Children>
           </Node>
           <Node label="Transform Zones" >
             <Children collapsed="true">
                 <Node label="Catchment Wing Stream Order" xpath="Intermediates/Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
-                <Node label="Slope Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_SLOPE']" type="raster" symbology="tzone" transparency='30' />
-                <Node label="HAND Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_HAND']" type="raster" symbology="tzone" transparency='30' />
-                <Node label="TWI Transform Zones" xpath="Intermediates/Raster[@id='TRANSFORM_ZONE_TWI']" type="raster" symbology="tzone" transparency='30' />
                 <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" />
               </Children>
             </Node>
@@ -96,7 +98,7 @@
       </Children>
     </Node>
     <Views default="DEFAULT">
-      <View name="Primary Output" id="DEFAULT">
+      <View name="Primary Outputs" id="DEFAULT">
         <Layers>
           <Layer id="streamnames" />
           <Layer id="vbet_extent_hollow" />
@@ -104,22 +106,17 @@
           <Layer id="hillshade" />
         </Layers>
       </View>
-       <View name="Estimated Active vs. Inactive" id="ActiveEstimate">
+       <View name="Estimated Active vs. Inactive Valley Bottom" id="ActiveEstimate">
         <Layers>
           <Layer id="vbet_active_vb" />
           <Layer id="vbet_inactive_vb" />
+          <Layer id="hillshade" />
         </Layers>
       </View>
-      <View name="Estimated Valley Bottom Geomorphic Units" id="GU">
+      <View name="Transformed Evidence Rasters" id="Norm">
         <Layers>
-          <Layer id="vbet_channel_area" />
-          <Layer id="vbet_active_floodplain" />
-          <Layer id="vbet_inactive_floodplain" />
-        </Layers>
-      </View>
-      <View name="Normalized Evidence" id="Norm">
-        <Layers>
-          <Layer id="norm_topo" />
+          <Layer id="transformed_slope" />
+          <Layer id="transformed_hand" />
           <Layer id="hillshade" />
         </Layers>
       </View>
@@ -128,6 +125,7 @@
           <Layer id="IGO" />
           <Layer id="DGO" />
           <Layer id="CL" />
+          <Layer id="hillshade" />
         </Layers>
       </View>
       <View name="VBET Inputs" id="Inputs">

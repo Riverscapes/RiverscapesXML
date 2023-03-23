@@ -11,12 +11,10 @@
                     <Node label="TauDEM Outputs">
                         <Children collapsed="false">
                             <Node label="TauDEM Report" xpath="HTMLFile[@id='REPORT']" type="file" />
-                            <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
                             <Node label="Basic Grid Analysis">
                                 <Children collapsed="false">
-                                    <Node label="Pit-filled DEM" xpath="Intermediates/Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
-                                    <Node label="D∞ Flow Directions (bearing)" xpath="Intermediates/Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
-                                    <Node label="D∞ Contributing Area" xpath="Intermediates/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" id="ca" />
+                                    <Node label="D∞ Slope Analysis (percent)" xpath="Outputs/Raster[@id='DINFFLOWDIR_SLP']" type="raster" symbology="dinfflowdir_slp" transparency="40" />
+                                    <Node label="Contributing Drainage Area" xpath="Outputs/Raster[@id='AREADINF_SCA']" type="raster" symbology="areadinf_sca" transparency="40" id="ca" />
                                 </Children>
                             </Node>
                             <Node label="Specialized Grid Analysis">
@@ -28,7 +26,7 @@
                         </Children>
                     </Node>
                     <Node label="GDAL Outputs">
-                        <Children>
+                        <Children collapsed="false">
                             <Node label="D8 Slope Analysis (degrees)" xpath="Outputs/Raster[@id='GDAL_SLOPE']" type="raster" symbology="slope" transparency="40" id="d8_slope" />
                         </Children>
                     </Node>
@@ -37,6 +35,8 @@
             <Node label="Intermediates" xpath="Intermediates">
                 <Children collapsed="true">
                     <Node label="Rasterized Channel" xpath="Raster[@id='RASTERIZED_CHANNEL']" type="raster" symbology="CHANNEL_AREA_RASTER" transparency="40" />
+                    <Node label="Pit-filled DEM" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
+                    <Node label="D∞ Flow Directions (bearing)" xpath="Raster[@id='DINFFLOWDIR_ANG']" type="raster" symbology="dinfflowdir_ang" transparency="40" />
                 </Children>
             </Node>
             <Node label="Inputs" xpath="Inputs">
