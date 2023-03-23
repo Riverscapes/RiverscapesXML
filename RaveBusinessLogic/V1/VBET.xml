@@ -40,7 +40,7 @@
               <Node label="Est. Prop. of VB Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_activefloodplain"  />
               <Node label="Est. Prop. of VB Inactive" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_inactivevb"  />
               <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Width"  />
-              <Node label="Moving Window Distance Size" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_MovingWindowDist"  />
+              <Node label="Moving Window Distance Size" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_moving_window_distance"  />
             </Children>
           </Node>
           <Node label="Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
