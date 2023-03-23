@@ -59,8 +59,8 @@
           </Node>
           <Node label="Transformed Evidence Rasters">
             <Children collapsed="false">
-              <Node label="Transformed Slope Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" />
-              <Node label="Transformed HAND Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_HAND']" type="raster" symbology="norm_hand" transparency="40" />
+              <Node label="Transformed Slope Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" id="transformed_slope" />
+              <Node label="Transformed HAND Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_HAND']" type="raster" symbology="norm_hand" transparency="40" id="transformed_hand" />
             </Children>
           </Node>
           <Node label="Valley Bottom Rasters">
