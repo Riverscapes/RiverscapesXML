@@ -106,7 +106,7 @@
           <Layer id="hillshade" />
         </Layers>
       </View>
-       <View name="Estimated Active vs. Inactive" id="ActiveEstimate">
+       <View name="Estimated Active vs. Inactive Valley Bottom" id="ActiveEstimate">
         <Layers>
           <Layer id="vbet_active_vb" />
           <Layer id="vbet_inactive_vb" />
