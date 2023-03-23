@@ -24,7 +24,7 @@
           </Node>
           <Node label="Validation Comparison">
             <Children>
-              <Node label="Water Depth (model vs surveyed)" xpath="Raster[@id='WSE']" type="raster" symbology="depthError" transparency="40" />
+              <Node label="Water Depth (model vs surveyed)" xpath="Raster[@id='Depth_Error']" type="raster" symbology="depthError" transparency="40" />
             </Children>
           </Node>
         </Children>
