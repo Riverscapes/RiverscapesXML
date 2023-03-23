@@ -125,6 +125,7 @@
           <Layer id="IGO" />
           <Layer id="DGO" />
           <Layer id="CL" />
+          <Layer id="hillshade" />
         </Layers>
       </View>
       <View name="VBET Inputs" id="Inputs">
