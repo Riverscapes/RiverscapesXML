@@ -13,7 +13,7 @@
                     </Node>
                     <Node label="Reaches">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="" />
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition" />
                         </Children>
                     </Node>
                 </Children>
