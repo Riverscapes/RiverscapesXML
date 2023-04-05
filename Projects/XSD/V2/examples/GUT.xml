@@ -11,8 +11,8 @@
     <Meta name="dateCreated">2020-06-02T15:55:42.941125</Meta>
     <Meta name="SiteName">ASW00001-CC-F3 P2BR</Meta>
     <Meta name="StreamName">Charley Creek</Meta>
-    <Meta name="HUC8">17060103</Meta>
-    <Meta name="Watershed">Asotin</Meta>
+    <Meta name="HUC8" locked="true">17060103</Meta>
+    <Meta name="Watershed" locked="false">Asotin</Meta>
   </MetaData>
   
   <Realizations>
