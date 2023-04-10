@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(206, 54%, 47%)", "Pre-Restoration Space (Active Channel)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "off-habit-8qzfes",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "off_habit-8qzfes",
+      "layout": {},
+      "paint": {"fill-color": "hsl(206, 54%, 47%)"}
+  }
+  ]
+}
