@@ -18,7 +18,7 @@
       </Node>
       <Node label="Pre-Treatment Process Space">
         <Children collapsed="true">
-          <Node label="Pre-Restoration Space (Active Channel)" xpath="Realizations/Realization/Inputs/Vector[@id='ACTIVE_CHANNEL']" type="polygon" symbology="ChannelArea" id="active_chan" />
+          <Node label="Pre-Restoration Space (Active Channel)" xpath="Realizations/Realization/Inputs/Vector[@id='ACTIVE_CHANNEL']" type="polygon" symbology="ActiveChannel" id="active_chan" transparency="40" />
         </Children>
       </Node>
       <Node label="Restoration Limitations - Infrastructure Constrained Reaches">
@@ -55,7 +55,7 @@
           <Node label="Potential Post-Restoration Space">
             <Children collapsed="true">
               <Node label="Off-Channel Rearing Habitat" xpath="Realizations/Realization/Analyses/Analysis/Products/Vector[@id='REARING_HAB']" type="polygon" symbology="off_habit" id="rearing_hab" transparency="40" />
-              <Node label="Riparian Wetland Corridor" xpath="Realizations/Realization/Analyses/Analysis/Products/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40" />
+              <Node label="River Wetland Corridor" xpath="Realizations/Realization/Analyses/Analysis/Products/Vector[@id='WFC']" type="polygon" symbology="wetland_floodplain_corridor" id="wetland" transparency="40" />
               <Node label="Forage Area" xpath="Realizations/Realization/Inputs/Vector[@id='FORAGE']" type="polygon" symbology="forage_area" id="forage" transparency="40" />
             </Children>
           </Node>
