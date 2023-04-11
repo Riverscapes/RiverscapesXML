@@ -13,7 +13,12 @@
         <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
         <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
 
-        <xs:element type="MetaDataType" name="MetaData" minOccurs="1" maxOccurs="1" />
+        <xs:element type="MetaDataType" name="MetaData" minOccurs="1" maxOccurs="1">
+          <xs:unique name="UniqueMetadataKeys">
+            <xs:selector xpath="./Meta" />
+            <xs:field xpath="@name" />
+          </xs:unique>
+        </xs:element>
         
         <xs:element type="QAQCEventsType" name="QAQCEvents" minOccurs="0" maxOccurs="1" />
 
@@ -21,7 +26,7 @@
           <xs:unique name="UniqueIdsInsideCommonDatasets">
             <xs:selector xpath=".//*" />
             <xs:field xpath="@id" />
-          </xs:unique>    
+          </xs:unique>
         </xs:element>
         <xs:element type="ProjectBoundsType" name="ProjectBounds" minOccurs="0" maxOccurs="1" />
         <xs:element name="Realizations" minOccurs="1" maxOccurs="1">
@@ -74,7 +79,13 @@
       <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
       <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
 
-      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1">
+        <xs:unique name="UniqueRealMetadataKeys">
+          <xs:selector xpath="./Meta" />
+          <!-- Choose the name attribute inside the <Meta> element -->
+          <xs:field xpath="@name" />
+        </xs:unique>
+      </xs:element>
 
       <xs:element name="Logs" maxOccurs="1" minOccurs="0">
         <xs:complexType>
@@ -115,7 +126,13 @@
             <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />            
 
             <xs:element type="MetricsType" name="Metrics" minOccurs="0" />
-            <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+            <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1">
+              <xs:unique name="UniqueAnalysisMetadataKeys">
+                <xs:selector xpath="./Meta" />
+                <!-- Choose the name attribute inside the <Meta> element -->
+                <xs:field xpath="@name" />
+              </xs:unique>
+            </xs:element>
             <xs:element type="DataSetContainerType" name="Configuration" minOccurs="0" maxOccurs="1" />
             <xs:element type="DataSetContainerType" name="Products" minOccurs="0" maxOccurs="1" />
           </xs:sequence>
@@ -142,9 +159,10 @@
 
   <xs:complexType name="MetaDataType">
     <xs:sequence>
-      <xs:element type="MetaType" name="Meta" maxOccurs="unbounded" minOccurs="0"></xs:element>
+      <xs:element type="MetaType" name="Meta" maxOccurs="unbounded" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
+
 
   <xs:complexType name="ParamType">
     <xs:simpleContent>
@@ -218,11 +236,18 @@
       <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />      
 
       <xs:element type="UnixPathType" name="Path" minOccurs="1" maxOccurs="1" />
-      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1">
+        <xs:unique name="UniqueDSMetadataKeys">
+          <xs:selector xpath="./Meta" />
+          <!-- Choose the name attribute inside the <Meta> element -->
+          <xs:field xpath="@name" />
+        </xs:unique>
+      </xs:element>        
     </xs:sequence>
     <xs:attribute type="ProjectIdType" name="id" use="required" />
     <xs:attribute type="xs:string" name="type" use="optional" />
     <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
+
   </xs:complexType>
 
   <!-- Geopackage layers cannot reference external projects -->
