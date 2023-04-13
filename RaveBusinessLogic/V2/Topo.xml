@@ -110,7 +110,7 @@
               <Node label="Digital Elevation Models">
                 <Children>
                   <Node xpathlabel="Name" xpath="TIN/Detrended" type="raster" symbology="detrendDEM" transparency="40" />
-                  <Node xpathlabel="Name" xpath="TIN/DEM" type="raster" symbology="DEM" transparency="40" />
+                  <Node xpathlabel="Name" xpath="TIN/DEM" type="raster" symbology="dem" transparency="40" />
                   <Node xpathlabel="Name" xpath="TIN/DEMHillshade" type="raster" symbology="hillshade" />
                   
                 </Children>
