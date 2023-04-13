@@ -19,7 +19,7 @@
               <Node label="Velocity Vectors" xpath="Vector[@id='OUTPUTS_SHP']" type="line" symbology="velocityVec" />
               <Node label="Water Surface Elevation" xpath="Raster[@id='WSE']" type="raster" symbology="wsDEM" transparency="40" />
               <Node label="Flow Direction" xpath="Raster[@id='Direction']" type="raster" symbology="flowdir" transparency="40" />
-              <Node label="Bed Elevation" xpath="Raster[@id='BedLevel']" type="raster" symbology="DEM" transparency="40" />
+              <Node label="Bed Elevation" xpath="Raster[@id='BedLevel']" type="raster" symbology="dem" transparency="40" />
             </Children>
           </Node>
           <Node label="Validation Comparison">
