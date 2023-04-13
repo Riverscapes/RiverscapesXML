@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsL="http://www.w3.org/2001/XMLSchema">
 
   <!-- This is the very top level TEST -->
   <xs:element name="Project">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
-        <xs:element type="xs:string" name="ProjectType" minOccurs="1" maxOccurs="1" />
-        <xs:element type="WarehouseType" name="Warehouse" minOccurs="0" maxOccurs="1" />
+      <xs:all>
+        <xs:element type="xs:string" name="Name" />
+        <xs:element type="xs:string" name="ProjectType" />
+        <xs:element type="WarehouseType" name="Warehouse" minOccurs="0" />
 
-        <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
-        <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
-        <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
+        <xs:element type="xs:string" name="Summary" minOccurs="0" />
+        <xs:element type="xs:string" name="Description" minOccurs="0" />
+        <xs:element type="xs:string" name="Citation" minOccurs="0" />
 
-        <xs:element type="MetaDataType" name="MetaData" minOccurs="1" maxOccurs="1">
+        <xs:element type="MetaDataType" name="MetaData">
           <xs:unique name="UniqueMetadataKeys">
             <xs:selector xpath="./Meta" />
             <xs:field xpath="@name" />
           </xs:unique>
         </xs:element>
-        
-        <xs:element type="QAQCEventsType" name="QAQCEvents" minOccurs="0" maxOccurs="1" />
 
-        <xs:element type="DataSetContainerType" name="CommonDatasets" minOccurs="0" maxOccurs="1">
+        <xs:element type="QAQCEventsType" name="QAQCEvents" minOccurs="0" />
+
+        <xs:element type="DataSetContainerType" name="CommonDatasets" minOccurs="0">
           <xs:unique name="UniqueIdsInsideCommonDatasets">
             <xs:selector xpath=".//*" />
             <xs:field xpath="@id" />
           </xs:unique>
         </xs:element>
-        <xs:element type="ProjectBoundsType" name="ProjectBounds" minOccurs="0" maxOccurs="1" />
-        <xs:element name="Realizations" minOccurs="1" maxOccurs="1">
+        <xs:element type="ProjectBoundsType" name="ProjectBounds" minOccurs="0" />
+        <xs:element name="Realizations">
           <xs:complexType>
             <xs:choice maxOccurs="unbounded">
-              <xs:element type="RealizationType" name="Realization" maxOccurs="unbounded" minOccurs="0">
+              <xs:element type="RealizationType" name="Realization" maxOccurs="unbounded"
+                minOccurs="0">
                 <xs:unique name="UniqueIdsInsideRealization">
                   <xs:selector xpath=".//*" />
                   <xs:field xpath="@id" />
@@ -41,7 +43,7 @@
             </xs:choice>
           </xs:complexType>
         </xs:element>
-      </xs:sequence>
+      </xs:all>
     </xs:complexType>
 
     <!-- Realization IDs must be unique -->
@@ -57,7 +59,8 @@
     </xs:keyref>
   </xs:element>
 
-  <!--Realizations Must have an Analysis-->
+  <!--Realizations
+  Must have an Analysis-->
   <xs:complexType name="WarehouseType" mixed="true">
     <xs:attribute type="GUIDType" name="id" use="required" />
     <xs:attribute type="WarehouseUrlType" name="apiUrl" use="required" />
@@ -72,14 +75,14 @@
 
   <!-- A Project can have realizations -->
   <xs:complexType name="RealizationType" mixed="true">
-    <xs:sequence>
-      <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
+    <xs:all>
+      <xs:element type="xs:string" name="Name" />
 
-      <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
-      <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
-      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
+      <xs:element type="xs:string" name="Summary" minOccurs="0" />
+      <xs:element type="xs:string" name="Description" minOccurs="0" />
+      <xs:element type="xs:string" name="Citation" minOccurs="0" />
 
-      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1">
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0">
         <xs:unique name="UniqueRealMetadataKeys">
           <xs:selector xpath="./Meta" />
           <!-- Choose the name attribute inside the <Meta> element -->
@@ -95,47 +98,48 @@
         </xs:complexType>
       </xs:element>
 
-      <xs:element type="DataSetContainerType" name="Datasets" minOccurs="0" maxOccurs="1" />
-      
-      <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" maxOccurs="1" />
-      <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" maxOccurs="1" />
-      <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" maxOccurs="1" />
-      <xs:element type="AnalysesType" name="Analyses" minOccurs="0" maxOccurs="1">
+      <xs:element type="DataSetContainerType" name="Datasets" minOccurs="0" />
+
+      <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" />
+      <xs:element type="DataSetContainerType" name="Intermediates" minOccurs="0" />
+      <xs:element type="DataSetContainerType" name="Outputs" minOccurs="0" />
+      <xs:element type="AnalysesType" name="Analyses" minOccurs="0">
         <xs:unique name="UniqueIdsInsideAnalyses">
           <xs:selector xpath="./*" />
           <xs:field xpath="@id" />
         </xs:unique>
       </xs:element>
 
-    </xs:sequence>
+    </xs:all>
     <xs:attribute type="ProjectIdType" name="id" use="required" />
     <xs:attribute type="xs:string" name="dateCreated" use="required" />
     <xs:attribute type="VersionType" name="productVersion" use="required" />
   </xs:complexType>
 
-  <!--Realizations can have an Analyses-->
+  <!--Realizations
+  can have an Analyses-->
   <xs:complexType name="AnalysesType" mixed="true">
     <xs:sequence>
       <xs:element name="Analysis" maxOccurs="unbounded" minOccurs="0">
         <xs:complexType mixed="true">
-          <xs:sequence>
+          <xs:all>
             <xs:element type="xs:string" name="Name" minOccurs="0" />
 
-            <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
-            <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
-            <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />            
+            <xs:element type="xs:string" name="Summary" minOccurs="0" />
+            <xs:element type="xs:string" name="Description" minOccurs="0" />
+            <xs:element type="xs:string" name="Citation" minOccurs="0" />
 
             <xs:element type="MetricsType" name="Metrics" minOccurs="0" />
-            <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1">
+            <xs:element type="MetaDataType" name="MetaData" minOccurs="0">
               <xs:unique name="UniqueAnalysisMetadataKeys">
                 <xs:selector xpath="./Meta" />
                 <!-- Choose the name attribute inside the <Meta> element -->
                 <xs:field xpath="@name" />
               </xs:unique>
             </xs:element>
-            <xs:element type="DataSetContainerType" name="Configuration" minOccurs="0" maxOccurs="1" />
-            <xs:element type="DataSetContainerType" name="Products" minOccurs="0" maxOccurs="1" />
-          </xs:sequence>
+            <xs:element type="DataSetContainerType" name="Configuration" minOccurs="0" />
+            <xs:element type="DataSetContainerType" name="Products" minOccurs="0" />
+          </xs:all>
           <xs:attribute type="ProjectIdType" name="id" use="required" />
         </xs:complexType>
         <xs:unique name="UniqueProductIdsInsideAnalyses">
@@ -228,22 +232,22 @@
 
   <!-- The base type  -->
   <xs:complexType name="DatasetType" mixed="true">
-    <xs:sequence>
-      <xs:element type="xs:string" name="Name" minOccurs="0" maxOccurs="1" />
+    <xs:all>
+      <xs:element type="xs:string" name="Name" minOccurs="0"  />
 
-      <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
-      <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
-      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />      
+      <xs:element type="xs:string" name="Summary" minOccurs="0"  />
+      <xs:element type="xs:string" name="Description" minOccurs="0"  />
+      <xs:element type="xs:string" name="Citation" minOccurs="0"  />
 
-      <xs:element type="UnixPathType" name="Path" minOccurs="1" maxOccurs="1" />
-      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1">
+      <xs:element type="UnixPathType" name="Path" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" >
         <xs:unique name="UniqueDSMetadataKeys">
           <xs:selector xpath="./Meta" />
           <!-- Choose the name attribute inside the <Meta> element -->
           <xs:field xpath="@name" />
         </xs:unique>
-      </xs:element>        
-    </xs:sequence>
+      </xs:element>
+    </xs:all>
     <xs:attribute type="ProjectIdType" name="id" use="required" />
     <xs:attribute type="xs:string" name="type" use="optional" />
     <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
@@ -252,15 +256,15 @@
 
   <!-- Geopackage layers cannot reference external projects -->
   <xs:complexType name="GeopackageDatasetType" mixed="true">
-    <xs:sequence>
+    <xs:all>
       <xs:element type="xs:string" name="Name" minOccurs="0" maxOccurs="1" />
 
       <xs:element type="xs:string" name="Summary" minOccurs="0" maxOccurs="1" />
       <xs:element type="xs:string" name="Description" minOccurs="0" maxOccurs="1" />
-      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />      
+      <xs:element type="xs:string" name="Citation" minOccurs="0" maxOccurs="1" />
 
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
-    </xs:sequence>
+    </xs:all>
     <xs:attribute type="xs:string" name="lyrName" use="required" />
     <xs:attribute type="xs:string" name="type" use="optional" />
     <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
@@ -268,10 +272,10 @@
 
 
   <xs:complexType name="CommonDatasetsRefType" mixed="true">
-    <xs:sequence>
+    <xs:all>
       <xs:element type="xs:string" name="Name" minOccurs="0" maxOccurs="1" />
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
-    </xs:sequence>
+    </xs:all>
     <xs:attribute type="xs:string" name="ref" use="required" />
   </xs:complexType>
   <!-- Now some Subtypes -->
@@ -282,13 +286,26 @@
   </xs:complexType>
 
   <xs:complexType name="ContextLayerType" mixed="true">
-    <xs:complexContent>
-      <xs:extension base="DatasetType">
-        <xs:sequence>
-          <xs:element type="xs:string" name="URL" default="http://" minOccurs="0" maxOccurs="1" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
+    <xs:all>
+      <xs:element type="xs:string" name="Name" minOccurs="0"  />
+
+      <xs:element type="xs:string" name="Summary" minOccurs="0"  />
+      <xs:element type="xs:string" name="Description" minOccurs="0"  />
+      <xs:element type="xs:string" name="Citation" minOccurs="0"  />
+
+      <xs:element type="UnixPathType" name="Path" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" >
+        <xs:unique name="UniqueDSCtxMetadataKeys">
+          <xs:selector xpath="./Meta" />
+          <!-- Choose the name attribute inside the <Meta> element -->
+          <xs:field xpath="@name" />
+        </xs:unique>
+      </xs:element>
+      <xs:element type="xs:string" name="URL" default="http://" minOccurs="0" />
+    </xs:all>
+    <xs:attribute type="ProjectIdType" name="id" use="required" />
+    <xs:attribute type="xs:string" name="type" use="optional" />
+    <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
   </xs:complexType>
 
   <xs:complexType name="SimpleFileType">
@@ -297,7 +314,8 @@
     </xs:complexContent>
   </xs:complexType>
 
-  <!-- Here are the GeoSpatial Types They are explicitly defined in case we need to extend them later -->
+  <!-- Here are the GeoSpatial Types They are explicitly defined in case we need to extend them
+  later -->
   <xs:complexType name="RasterType">
     <xs:complexContent>
       <xs:extension base="GeoSpatialType" />
@@ -317,13 +335,26 @@
   </xs:complexType>
 
   <xs:complexType name="GeopackageType" mixed="true">
-    <xs:complexContent>
-      <xs:extension base="GeoSpatialType">
-        <xs:sequence>
-          <xs:element type="GeopackageLayersType" name="Layers" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
+    <xs:all>
+      <xs:element type="xs:string" name="Name" minOccurs="0"  />
+
+      <xs:element type="xs:string" name="Summary" minOccurs="0"  />
+      <xs:element type="xs:string" name="Description" minOccurs="0"  />
+      <xs:element type="xs:string" name="Citation" minOccurs="0"  />
+
+      <xs:element type="UnixPathType" name="Path" />
+      <xs:element type="MetaDataType" name="MetaData" minOccurs="0" >
+      <xs:unique name="UniqueGPKGMetadataKeys">
+        <xs:selector xpath="./Meta" />
+        <!-- Choose the name attribute inside the <Meta> element -->
+        <xs:field xpath="@name" />
+      </xs:unique>
+      </xs:element>
+      <xs:element type="GeopackageLayersType" name="Layers" />
+    </xs:all>
+    <xs:attribute type="ProjectIdType" name="id" use="required" />
+    <xs:attribute type="xs:string" name="type" use="optional" />
+    <xs:attribute type="ExternalReferenceType" name="extRef" use="optional" />
   </xs:complexType>
 
   <xs:complexType name="GeopackageLayersType">
@@ -356,7 +387,7 @@
   </xs:complexType>
 
   <xs:complexType name="QAQCEventType" mixed="true">
-    <xs:sequence>
+    <xs:all>
       <xs:element type="xs:string" name="Name" minOccurs="1" maxOccurs="1" />
       <xs:element type="xs:string" name="PerformedBy" minOccurs="0" maxOccurs="1" />
 
@@ -375,16 +406,15 @@
                   </xs:extension>
                 </xs:simpleContent>
               </xs:complexType>
-              </xs:element>
+            </xs:element>
           </xs:choice>
         </xs:complexType>
       </xs:element>
       <xs:element type="MetaDataType" name="MetaData" minOccurs="0" maxOccurs="1" />
-    </xs:sequence>
+    </xs:all>
     <xs:attribute type="QAQCState" name="state" />
     <xs:attribute type="xs:string" name="datePerformed" />
   </xs:complexType>
-
 
 
   <!-- =========================================================================
@@ -394,27 +424,27 @@
   ============================================================================== -->
 
   <xs:complexType name="ProjectBoundsType" mixed="true">
-    <xs:sequence>
-      <xs:element type="CentroidType" name="Centroid" minOccurs="1" maxOccurs="1" />
-      <xs:element type="BoundingBoxType" name="BoundingBox" minOccurs="1" maxOccurs="1" />
-      <xs:element type="UnixPathType" name="Path" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
+    <xs:all>
+      <xs:element type="CentroidType" name="Centroid" />
+      <xs:element type="BoundingBoxType" name="BoundingBox" />
+      <xs:element type="UnixPathType" name="Path" />
+    </xs:all>
   </xs:complexType>
 
   <xs:complexType name="CentroidType" mixed="true">
-    <xs:sequence>
-      <xs:element type="xs:string" name="Lat" minOccurs="1" maxOccurs="1" />
-      <xs:element type="xs:string" name="Lng" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
+    <xs:all>
+      <xs:element type="xs:string" name="Lat" />
+      <xs:element type="xs:string" name="Lng" />
+    </xs:all>
   </xs:complexType>
 
   <xs:complexType name="BoundingBoxType" mixed="true">
-    <xs:sequence>
-      <xs:element type="xs:string" name="MinLat" minOccurs="1" maxOccurs="1" />
-      <xs:element type="xs:string" name="MinLng" minOccurs="1" maxOccurs="1" />
-      <xs:element type="xs:string" name="MaxLat" minOccurs="1" maxOccurs="1" />
-      <xs:element type="xs:string" name="MaxLng" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
+    <xs:all>
+      <xs:element type="xs:string" name="MinLat" />
+      <xs:element type="xs:string" name="MinLng" />
+      <xs:element type="xs:string" name="MaxLat" />
+      <xs:element type="xs:string" name="MaxLng" />
+    </xs:all>
   </xs:complexType>
 
 
@@ -496,7 +526,7 @@
       <xs:enumeration value="failed" />
       <xs:enumeration value="provisional" />
     </xs:restriction>
-  </xs:simpleType>  
+  </xs:simpleType>
 
   <xs:simpleType name="MetaKeySrcType">
     <xs:restriction base="xs:string">
