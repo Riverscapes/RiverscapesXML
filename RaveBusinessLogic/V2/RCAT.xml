@@ -8,7 +8,7 @@
                 <Children collapsed="false">
                     <Node label="IGOs">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="IGO" />
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo" />
                         </Children>
                     </Node>
                     <Node label="Reaches">
