@@ -13,18 +13,17 @@
           <!-- These are the new naming convention -->
           <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
           <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_FULL']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />   
-          <Node label="Estimated Active/Inactive">
+          <Node label="Categorized VBET (2-class)">
             <Children collapsed="true">
-              <Node label="Estimated Active Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_IA']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_vb"/>
-              <Node label="Estimated Inactive Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_vb"/>      
+              <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_IA']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_vb"/>
+              <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_vb"/>      
             </Children>
           </Node>
-          
-          <Node label="Valley Bottom Geomorphic Units">
+          <Node label="Categorized VBET (3-class)">
             <Children collapsed="true">
-              <Node label="Estimated Active Channel" xpath="Inputs/Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
-              <Node label="Estimated Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
-              <Node label="Estimated Inactive Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
+              <Node label="Estimated Channel (Channel Area Input)" xpath="Inputs/Geopackage/Layers/Vector[@id='CHANNEL_AREA_POLYGONS']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='ACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_active_floodplain" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='INACTIVE_FLOODPLAIN']" type="polygon" symbology="vbet_inactive_floodplain" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
           </Node>
           <Node label="Sample Frames">
@@ -32,18 +31,22 @@
               <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="IGO" id="IGO" />
               <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@id='VBET_CENTERLINES']" type="line" symbology="CL_vb" id="CL" />
               <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="DGO" id="DGO" />
+              <Node label="Est. Prop. of Channel (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="dgo_prop_activechannel" id="DGO" />
+              <Node label="Est. Prop. of VB Low-Lying (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="dgo_prop_activefloodplain" id="DGO" />
+              <Node label="Est. Prop. of VB Elevated (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@id='VBET_DGO_POLYGONS']" type="polygon" symbology="dgo_prop_inactivefloodplain" id="DGO" />
+
             </Children>
           </Node>
           <Node label="Moving Window Metrics (IGO)">
             <Children collapsed="true">
-              <Node label="Est. Prop. of VB Active Channel" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_activechannel"  />
-              <Node label="Est. Prop. of VB Active Floodplain" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_activefloodplain"  />
-              <Node label="Est. Prop. of VB Inactive" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_inactivevb"  />
+              <Node label="Est. Prop. of VB Channel" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_activechannel"  />
+              <Node label="Est. Prop. of VB Low-Lying" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_activefloodplain"  />
+              <Node label="Est. Prop. of VB Elevated" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_prop_inactivevb"  />
               <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="MetricVBET_Width"  />
               <Node label="Moving Window Distance Size" xpath="Outputs/Geopackage/Layers/Vector[@id='SEGMENTATION_POINTS']" type="point" symbology="metric_moving_window_distance"  />
             </Children>
           </Node>
-          <Node label="Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
+          <Node label="Relative Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
           <Node label="Outputs Geopackage (SQLite Database)" xpath="Outputs/Geopackage" type="file" />
         </Children>
       </Node>
@@ -65,15 +68,12 @@
           </Node>
           <Node label="Valley Bottom Rasters">
             <Children collapsed="false">
-              <Node label="Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='VBET_ZONES']" type="raster" symbology="" transparency="40" />
-              <Node label="Estimated Active Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='ACTIVE_FP_ZONES']" type="raster" symbology="" transparency="40" />
-              <Node label="Estimated Inactive Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='INACTIVE_FP_ZONES']" type="raster" symbology="" transparency="40" />
-
+              <Node label="Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='VBET_ZONES']" type="raster" symbology="levelpaths_unique" transparency="40" />
             </Children>
           </Node>
           <Node label="Transform Zones" >
             <Children collapsed="true">
-                <Node label="Catchment Wing Stream Order" xpath="Intermediates/Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
+                <Node label="Catchment Wing Drainage Area" xpath="Intermediates/Geopackage/Layers/Vector[@id='TRANSFORM_ZONES']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
                 <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" />
               </Children>
             </Node>
@@ -106,7 +106,7 @@
           <Layer id="hillshade" />
         </Layers>
       </View>
-       <View name="Estimated Active vs. Inactive Valley Bottom" id="ActiveEstimate">
+       <View name="Categorized VBET (2-class)" id="ActiveEstimate">
         <Layers>
           <Layer id="vbet_active_vb" />
           <Layer id="vbet_inactive_vb" />
