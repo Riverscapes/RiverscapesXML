@@ -5,6 +5,12 @@ This repo contains all the master XML that controls the riverscapes warehouse
 All documentation for how to use this should be at 
 <https://riverscapes.net/Tools/Technical_Reference/Documentation_Standards/Riverscapes_Projects/Project/projectxml.html>
 
+## Status
+
+[![Deployed to Web](https://github.com/Riverscapes/RiverscapesXML/actions/workflows/docs_publish.yml/badge.svg?branch=master)](https://github.com/Riverscapes/RiverscapesXML/actions/workflows/docs_publish.yml)
+
+[![XML Validation Test](https://github.com/Riverscapes/RiverscapesXML/actions/workflows/test.yml/badge.svg)](https://github.com/Riverscapes/RiverscapesXML/actions/workflows/test.yml)
+
 ## Contents
 
 `/Program.xsd` this is the main file that controls how all the programs are built. Be Very careful about changing it.
