@@ -5,31 +5,31 @@
   <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
-      <Node label="Outputs" xpath="Outputs">
+      <Node label="Outputs">
         <Children collapsed="true">
           <!-- These are the names from pre https://github.com/Riverscapes/riverscapes-tools/issues/427 fixes -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrName='vbet_ia']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrName='vbet_ia']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_ia']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_ia']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
           <!-- These are the new naming convention -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_filled" transparency="40" id="vbet_extent_filled" />   
+          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_hollow" id="vbet_extent_hollow" />               
+          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_filled" transparency="40" id="vbet_extent_filled" />   
           <Node label="Categorized VBET (2-class)">
             <Children collapsed="true">
-              <Node label="Estimated Low-Lying Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
-              <Node label="Estimated Elevated Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_vb"/>      
+              <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
+              <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_vb"/>      
             </Children>
           </Node>
           <Node label="Categorized VBET (3-class)">
             <Children collapsed="true">
-              <Node label="Estimated Channel (Channel Area Input)" xpath="Geopackage/Layers/Vector[@lyrName='vbet_channel_area']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
-              <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
-              <Node label="Estimated Elevated Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>      
+              <Node label="Estimated Channel (Channel Area Input)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_channel_area']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
           </Node>
           <Node label="Sample Frames">
             <Children collapsed="true">
-              <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo" id="IGO" />
-              <Node label="Centerline of Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='vbet_centerlines']" type="line" symbology="CL_vb" id="CL" />
+              <Node label="Integrated Geographic Objects (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo" id="IGO" />
+              <Node label="Centerline of Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_centerlines']" type="line" symbology="CL_vb" id="CL" />
               <Node label="Discrete Geographic Objects (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="DGO" id="DGO" />
             </Children>
           </Node>
@@ -42,23 +42,23 @@
           </Node>
           <Node label="Moving Window Metrics (IGO)" >
             <Children collapsed="true">
-              <Node label="Acres of VB per Mile" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="ac_vb_mile"  />
-              <Node label="Hectares of VB per Kilometer" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_vb_km"  />
-              <Node label="Est. Prop. of VB: Channel" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_channel"  />
-              <Node label="Est. Prop. of VB: Low-Lying" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_lowlying"  />
-              <Node label="Est. Prop. of VB: Elevated" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_elevated"  />
-              <Node label="Integrated VB Width" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="MetricVBET_Width"  />
-              <Node label="Moving Window Analysis Distance" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="metric_moving_window_distance"  />
+              <Node label="Acres of VB per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="ac_vb_mile"  />
+              <Node label="Hectares of VB per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_vb_km"  />
+              <Node label="Est. Prop. of VB: Channel" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_channel"  />
+              <Node label="Est. Prop. of VB: Low-Lying" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_lowlying"  />
+              <Node label="Est. Prop. of VB: Elevated" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_elevated"  />
+              <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="MetricVBET_Width"  />
+              <Node label="Moving Window Analysis Distance" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="metric_moving_window_distance"  />
               <Node label="Acres of Categorized VBET (2-class) per Mile">
                 <Children collapsed="true">
-                  <Node label="Acres of Estimated Low-Lying Valley Bottom per Mile" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="acres_vb_lowlying_mile" />
-                  <Node label="Acres of Estimated Elevated Valley Bottom per Mile" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="acres_vb_elevated_mile" />
+                  <Node label="Acres of Estimated Low-Lying Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="acres_vb_lowlying_mile" />
+                  <Node label="Acres of Estimated Elevated Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="acres_vb_elevated_mile" />
                 </Children>
               </Node>
               <Node label="Hectares of Categorized VBET (2-class) per Kilometer">
                 <Children collapsed="true">
-                  <Node label="Hectares of Estimated Low-Lying Valley Bottom per Kilometer" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_lowlying_km" />
-                  <Node label="Hectares of Estimated Elevated Valley Bottom per Kilometer" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_elevated_km" />
+                  <Node label="Hectares of Estimated Low-Lying Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_lowlying_km" />
+                  <Node label="Hectares of Estimated Elevated Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_elevated_km" />
                 </Children>
               </Node>
             </Children>
