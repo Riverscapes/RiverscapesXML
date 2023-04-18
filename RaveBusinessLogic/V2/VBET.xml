@@ -7,21 +7,17 @@
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs">
         <Children collapsed="true">
-          <!-- These are the names from pre https://github.com/Riverscapes/riverscapes-tools/issues/427 fixes -->
-          <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_ia']" type="polygon" symbology="vbet68_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_ia']" type="polygon" symbology="vbet68_filled" transparency="40" id="vbet_extent_filled" />              
-          <!-- These are the new naming convention -->
           <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_hollow" id="vbet_extent_hollow" />               
           <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_filled" transparency="40" id="vbet_extent_filled" />   
           <Node label="Categorized VBET (2-class)">
             <Children collapsed="true">
-              <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
+              <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_valley_bottom']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
               <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_vb"/>      
             </Children>
           </Node>
           <Node label="Categorized VBET (3-class)">
             <Children collapsed="true">
-              <Node label="Estimated Channel (Channel Area Input)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_channel_area']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Channel (Channel Area Input)" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
               <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
               <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
@@ -63,8 +59,7 @@
               </Node>
             </Children>
           </Node>
-          <Node label="Relative Likelihood of being Valley Bottom (composite)" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
-          <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
+          <Node label="Relative Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
         </Children>
       </Node>
       <Node label="Intermediates">
