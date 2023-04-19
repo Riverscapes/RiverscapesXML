@@ -91,7 +91,7 @@
           </Node>
         <Node label="Inputs" xpath="Inputs">
           <Children collapsed="true">
-            <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" id="channel_area_polygons" symbology="ChannelArea" />
+            <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" id="channel_area_polygons" symbology="vbet_channel_area" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
             <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
           </Children>     
