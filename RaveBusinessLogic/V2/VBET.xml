@@ -83,7 +83,7 @@
             </Node>
             <Node label="Transform Zones" >
               <Children collapsed="true">
-                  <Node label="Catchment Wing Drainage Area" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='transform_zones']" type="polygon" symbology="CWingStreamOrder" transparency="40" />
+                  <Node label="Catchment Wing Drainage Area" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='transform_zones']" type="polygon" symbology="catchment_wing_da" transparency="40" />
                   <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" />
                 </Children>
               </Node>             
