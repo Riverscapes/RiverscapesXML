@@ -38,23 +38,23 @@
           </Node>
           <Node label="Moving Window Metrics (IGO)" >
             <Children collapsed="true">
-              <Node label="Acres of VB per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="ac_vb_mile" transparency="40" />
-              <Node label="Hectares of VB per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_vb_km" transparency="40" />
-              <Node label="Est. Prop. of VB: Channel" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_channel" transparency="40" />
-              <Node label="Est. Prop. of VB: Low-Lying" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_lowlying" transparency="40"  />
-              <Node label="Est. Prop. of VB: Elevated" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="est_prop_vb_elevated" transparency="40" />
-              <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="MetricVBET_Width" transparency="40" />
-              <Node label="Moving Window Analysis Distance" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="metric_moving_window_distance" transparency="40" />
+              <Node label="Acres of VB per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_vb_mile" transparency="40" />
+              <Node label="Hectares of VB per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_vb_km" transparency="40" />
+              <Node label="Est. Prop. of VB: Channel" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_est_prop_vb_channel" transparency="40" />
+              <Node label="Est. Prop. of VB: Low-Lying" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_est_prop_vb_lowlying" transparency="40"  />
+              <Node label="Est. Prop. of VB: Elevated" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_est_prop_vb_elevated" transparency="40" />
+              <Node label="Integrated VB Width" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_integrated_vb_width" transparency="40" />
+              <Node label="Moving Window Analysis Distance" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_moving_window_distance" transparency="40" />
               <Node label="Acres of Categorized VBET (2-class) per Mile">
                 <Children collapsed="true">
-                  <Node label="Acres of Estimated Low-Lying Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="acres_vb_lowlying_mile" transparency="40" />
-                  <Node label="Acres of Estimated Elevated Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="acres_vb_elevated_mile" transparency="40" />
+                  <Node label="Acres of Estimated Low-Lying Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_lowlying_vb_mile" transparency="40" />
+                  <Node label="Acres of Estimated Elevated Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_elevated_vb_mile" transparency="40" />
                 </Children>
               </Node>
               <Node label="Hectares of Categorized VBET (2-class) per Kilometer">
                 <Children collapsed="true">
-                  <Node label="Hectares of Estimated Low-Lying Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_lowlying_km" transparency="40" />
-                  <Node label="Hectares of Estimated Elevated Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="hec_elevated_km" transparency="40" />
+                  <Node label="Hectares of Estimated Low-Lying Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_lowlying_vb_km" transparency="40" />
+                  <Node label="Hectares of Estimated Elevated Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_elevated_vb_km" transparency="40" />
                 </Children>
               </Node>
             </Children>
