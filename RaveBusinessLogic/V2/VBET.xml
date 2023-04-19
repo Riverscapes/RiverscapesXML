@@ -59,7 +59,7 @@
               </Node>
             </Children>
           </Node>
-          <Node label="Relative Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
+          <Node label="Relative Likelihood of being Valley Bottom (composite)" xpath="Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
         </Children>
       </Node>
       <Node label="Intermediates">
