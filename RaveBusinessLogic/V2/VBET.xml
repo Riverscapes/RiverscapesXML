@@ -17,7 +17,7 @@
           </Node>
           <Node label="Categorized VBET (3-class)">
             <Children collapsed="true">
-              <Node label="Estimated Channel (Channel Area Input)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_channel_area']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Channel (Channel Area Input)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
               <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
               <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
