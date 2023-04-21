@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>GNAT</Name>
+  <ProjectType>GNAT</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="true">
+      <Node label="Project Report" xpath="RME_OUTPUTS/HTMLFile" type="report" />
+      <Node label="Riverscape Metrics">
+          <Children collapsed="true">
+            <Node label="Physical Geography">
+                <Children collapsed="true">
+                    <Node label="Stream Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Stream_Grad" />
+                    <Node label="Valley Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Valley_Grad" />
+                    <Node label="Confluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Confluence_Count" />
+                    <Node label="Diffluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Diffluence_Count" />
+                </Children>
+            </Node>
+            <Node label="Stream Info">
+                <Children collapsed="true">          
+                    <Node label="Stream Order" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Stream_Order" />
+                    <Node label="Stream Type" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Stream_Type" />
+                    <Node label="Headwater" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Headwater" />
+                    <Node label="Stream Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Stream_Size" />
+                </Children>
+            </Node>
+            <Node label="Areas and Ratios">
+                <Children collapsed="true">
+                    <Node label="Active Floodplain Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Act_Fld_Area" />
+                    <Node label="Active Channel Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Act_Chan_Area" />
+                    <Node label="Integrated Width" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Integrated_Width" />
+                    <Node label="Active Channel Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Act_Chan_Ratio" />
+                    <Node label="Relative Flow Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="Rel_Flow_Length" />
+                </Children>
+            </Node>
+            <Node label="Sinuosities">
+                <Children collapsed="true">
+                    <Node label="Standard Sinuosities">
+                        <Children collapsed="true">
+                            <Node label="DGO Standard Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="DGO_Stand_Sin" />
+                            <Node label="IGO Standard Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="IGO_Stand_Sin" />
+                        </Children>
+                    </Node>
+                    <Node label="Standard Planform Sinuosities">
+                        <Children collapsed="true">
+                            <Node label="DGO Standard Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="DGO_Plan_Sin" />
+                            <Node label="IGO Standard Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="IGO_Plan_Sin" />
+                        </Children>
+                    </Node>
+                    <Node label="Standard Valley Bottom Sinuosities">
+                        <Children collapsed="true">
+                            <Node label="DGO Standard Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="DGO_Val_Sin" />
+                            <Node label="IGO Standard Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="IGO_Val_Sin" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Confinements">
+                <Children collapsed="true">
+                    <Node label="DGO Confinement" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="DGO_Confinement" />
+                    <Node label="IGO Total Confinement" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_point_metrics']" type="point" id="vw_point_metrics" symbology="IGO_Confinement" />
+                </Children>
+            </Node>
+            <Node label="Intermediates">
+                <Children collapsed="true">
+                    <Node label="Junction Points" xpath= "Intermediates/Geopackage/Layers/Vector[@lyrName='junction_points']" type="point" id="junction_points" symbology="Junc_Points" />
+                </Children>
+            </Node>
+            <Node label="Inputs">
+              <Children collapsed="true">
+                <Node label="Sample Frames">
+                    <Children collapsed="true">
+                      <Node label="Integrated Geographic Objects (IGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='points']" type="point" id="IGOs" symbology="igo" />
+                      <Node label="Centerlines" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='vbet_centerlines']" type="line" id="vbet_centerlines" symbology="CL_vb" />
+                      <Node label="Discrete Geographic Objects (DGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='vbet_segments']" type="polygon" id="vbet_segments" symbology="DGO" />
+                      <Node label="DEM" xpath="Raster[@lyrName='DEM']" type="raster" symbology="dem" transparency="40" id="DEM" />
+                    </Children>
+                </Node>
+                <Node label="NHD Flowlines" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" id="vw_point_metrics" symbology="flow_lines" />
+                <Node label="Roads" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='roads']" type="line" id="roads" symbology="roads" />
+                <Node label="Rails" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='rail']" type="line" id="rail" symbology="railroads" />
+              </Children>
+            </Node>
+          </Children>
+      </Node>
+      <Node label="Log File" xpath="LogFile" type="file" />
+    </Children>
+  </Node>
+  <Views default="DEFAULT">
+    <View name="QAQC view" id="DEFAULT">
+      <Layers>
+        <Layer id="vw_point_metrics"  />
+        <Layer id="VBET_SEGMENTS" />
+        <Layer id="DEM" />
+      </Layers>
+    </View>
+  </Views>
+</Project>
