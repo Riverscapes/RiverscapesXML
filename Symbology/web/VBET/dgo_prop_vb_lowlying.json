@@ -1,0 +1,31 @@
+        {
+            "id": "dgo-prop-vb-lowlying-b4q4d7",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_prop_vb_lowlying-b4q4d7",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "active_floodplain_prop"],
+                    0,
+                    "#fffb79",
+                    0.02,
+                    "rgba(247, 247, 141, 0.96)",
+                    0.05,
+                    "#eff3a0",
+                    0.1,
+                    "#e7efb4",
+                    0.15,
+                    "#dfeac7",
+                    0.25,
+                    "#abd49c",
+                    0.5,
+                    "#6cb861",
+                    0.75,
+                    "#2c9d26"
+                ],
+                "fill-opacity": 0.6
+            }
+        }
