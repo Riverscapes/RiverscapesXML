@@ -1,0 +1,8 @@
+        {
+            "id": "dgo-4tvdwc",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "DGO-4tvdwc",
+            "layout": {},
+            "paint": {"line-width": 2}
+        }
