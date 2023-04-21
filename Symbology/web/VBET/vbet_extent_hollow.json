@@ -1,0 +1,11 @@
+        {
+            "id": "vbet-extent-hollow-2nztj2 copy",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "vbet_extent_hollow-2nztj2",
+            "layout": {},
+            "paint": {
+                "line-dasharray": [1, 2],
+                "line-color": "hsl(309, 7%, 98%)"
+            }
+        }
