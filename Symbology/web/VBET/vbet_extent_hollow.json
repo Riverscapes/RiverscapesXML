@@ -1,11 +1,12 @@
         {
-            "id": "vbet-extent-hollow-2nztj2 copy",
-            "type": "line",
+            "id": "vbet-extent-filled",
+            "type": "fill",
             "source": "composite",
-            "source-layer": "vbet_extent_hollow-2nztj2",
+            "source-layer": "vbet_extent_filled-392cvr",
             "layout": {},
             "paint": {
-                "line-dasharray": [1, 2],
-                "line-color": "hsl(309, 7%, 98%)"
+                "fill-color": "hsl(118, 58%, 69%)",
+                "fill-opacity": 0.6,
+                "fill-outline-color": "hsla(0, 0%, 0%, 0)"
             }
         }
