@@ -1,0 +1,32 @@
+        {
+            "id": "dgo-prop-vb-channel-0el8ba",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_prop_vb_channel-0el8ba",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "active_channel_prop"],
+                    0,
+                    "#f7fbff",
+                    0.02,
+                    "#dceaf7",
+                    0.05,
+                    "#bed8ed",
+                    0.1,
+                    "#8fc2de",
+                    0.15,
+                    "#5ba3d0",
+                    0.25,
+                    "#3182be",
+                    0.5,
+                    "#105ca5",
+                    0.75,
+                    "#08306b"
+                ],
+                "fill-opacity": 0.6,
+                "fill-outline-color": "#000000"
+            }
+        }
