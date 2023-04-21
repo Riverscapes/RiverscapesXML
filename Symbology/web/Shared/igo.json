@@ -1,0 +1,12 @@
+{
+    "id": "igo-5mjhzy",
+    "type": "circle",
+    "source": "composite",
+    "source-layer": "igo-5mjhzy",
+    "layout": {},
+    "paint": {
+        "circle-color": "#dbd21e",
+        "circle-stroke-width": 1,
+        "circle-radius": 3
+    }
+}
