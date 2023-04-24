@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0,0%,0%)", "States (thick)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "political-boundaries-lines",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "political_boundaries-96q9y2",
+        "layout": {},
+        "paint": {"line-color": "hsl(0, 0%, 0%)", "line-width": 2}
+    },
+    {
+        "id": "political-boundaries-labels",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "political_boundaries-96q9y2",
+        "layout": {
+            "text-field": ["to-string", ["get", "NAME"]],
+            "text-font": [
+                "JetBrains Mono Regular",
+                "Arial Unicode MS Regular"
+            ]
+        },
+        "paint": {}
+    }
+  ]
+}
