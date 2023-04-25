@@ -2,6 +2,8 @@
 
 After a discussion from @joewheaton we decided to simplify the work necessary to bring our QML files from QRave into the web so we can have symbolized rasters in WebRAVE. @lauren-herbine and @shelbysawyer this might apply to you at some point
 
+The raster `.txt` format we are using is based on the `r.colors` spec and we use it when we run [gdalDem](https://gdal.org/programs/gdaldem.html) to "bake-in" the symbology. The spec for this file is compatible with both [`r.colors`](https://grass.osgeo.org/grass82/manuals/r.colors.html) and ESRI HDR color table files (.clr).
+
 So how do we convert our QML raster symbolization to color ramps for the web? It depends on the type of symbology you're using
 
 ## File naming
@@ -74,6 +76,46 @@ INTERPOLATION:INTERPOLATED
 2082.04432861328132276,115,77,0,255,Large
 2505.860595703125,255,255,255,255,Huge
 ```
+
+### Example: `dem.txt`
+
+Here's what the `dem.txt` file looks like:
+
+```txt
+ # QGIS Generated Color Map Export File
+INTERPOLATION:INTERPOLATED
+1129.3089599609375,255,235,176,255,1129
+1482.00189819335946595,38,115,0,255,1482
+1834.6948364257814319,115,77,0,255,1835
+2198.075439453125,255,255,255,255,2198
+```
+
+Note that even though the values of the raster are exact floats derived from the raster you were symbolizing they will be converted when symbolizing other rasterss. Since this labeled as `INTERPOLATION:INTERPOLATED` the values will be converted to a percent when the tiling happens. For the example above this will be converted into the following object at tile-time:
+
+```json
+{
+  "gdalDem": "0%,255,235,176,255\n33%,38,115,0,255\n66%,115,77,0,255\n100%,255,255,255,255\nnv,0,0,0,0",
+  "legend": [
+    ["rgba(255,235,176,255)","0%"],
+    ["rgba(38,115,0,255)","33%"],
+    ["rgba(115,77,0,255)","66%"],
+    ["rgba(255,255,255,255)","100%"]
+  ],
+  "rampType": "INTERPOLATED"
+}
+```
+
+The "legend" entry is what the legend inside the web viewer will say and the "gdalDem" entry is what we actually pass to the gdalDem command as a file:
+
+```csv
+0%,255,235,176,255
+33%,38,115,0,255
+66%,115,77,0,255
+100%,255,255,255,255
+nv,0,0,0,0
+```
+
+`nv` means nodata value and we set this automatically to allow transparency in the raster.
 
 ----------------------------------------------------------------------
 
