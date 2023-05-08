@@ -22,14 +22,14 @@
                 <Children collapsed="true">
                     <Node label="IGOs">
                         <Children collapsed="true">
-                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology=""/>
+                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo"/>
                             <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology=""/>
                             <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology=""/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
                         <Children collapsed="true">
-                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology=""/>
+                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="rvd"/>
                             <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU"/>
                             <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology=""/>
                         </Children>
