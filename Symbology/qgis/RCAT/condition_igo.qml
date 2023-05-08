@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" symbologyReferenceScale="-1" simplifyLocal="1" maxScale="0" simplifyMaxScale="1" minScale="0" version="3.28.1-Firenze" simplifyAlgorithm="0" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" readOnly="0" simplifyDrawingHints="0">
+<qgis styleCategories="AllStyleCategories" labelsEnabled="0" simplifyMaxScale="1" version="3.28.1-Firenze" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" maxScale="0" minScale="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" readOnly="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal endExpression="" durationField="" endField="" durationUnit="min" fixedDuration="0" mode="0" enabled="0" startField="" limitMode="0" startExpression="" accumulate="0">
+  <temporal startField="" endField="" endExpression="" durationUnit="min" mode="0" fixedDuration="0" enabled="0" accumulate="0" startExpression="" limitMode="0" durationField="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation respectLayerSymbol="1" extrusionEnabled="0" symbology="Line" binding="Centroid" zoffset="0" type="IndividualFeatures" clamping="Terrain" extrusion="0" showMarkerSymbolInSurfacePlots="0" zscale="1">
+  <elevation extrusionEnabled="0" zoffset="0" respectLayerSymbol="1" extrusion="0" clamping="Terrain" zscale="1" symbology="Line" showMarkerSymbolInSurfacePlots="0" type="IndividualFeatures" binding="Centroid">
     <data-defined-properties>
       <Option type="Map">
         <Option value="" name="name" type="QString"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol clip_to_extent="1" name="" is_animated="0" frame_rate="10" type="line" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="" alpha="1" type="line">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -29,7 +29,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleLine">
           <Option type="Map">
             <Option value="0" name="align_dash_pattern" type="QString"/>
             <Option value="square" name="capstyle" type="QString"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol clip_to_extent="1" name="" is_animated="0" frame_rate="10" type="fill" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -78,7 +78,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
             <Option value="196,60,57,255" name="color" type="QString"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol clip_to_extent="1" name="" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -111,7 +111,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -144,16 +144,16 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 referencescale="-1" graduatedMethod="GraduatedColor" forceraster="0" type="graduatedSymbol" attr="Condition" symbollevels="0" enableorderby="0">
+  <renderer-v2 symbollevels="0" attr="Condition" referencescale="-1" forceraster="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
     <ranges>
-      <range label="Very Poor &lt; 0.20" render="true" lower="0.000000000000000" upper="0.200000000000000" symbol="0"/>
-      <range label="Poor 0.20 - 0.40" render="true" lower="0.200000000000000" upper="0.400000000000000" symbol="1"/>
-      <range label="Moderate 0.40 - 0.65" render="true" lower="0.400001000000000" upper="0.650000000000000" symbol="2"/>
-      <range label="Good 0.65 - 0.85" render="true" lower="0.650001000000000" upper="0.850000000000000" symbol="3"/>
-      <range label="Intact > 0.85" render="true" lower="0.850001000000000" upper="1.000000000000000" symbol="4"/>
+      <range render="true" lower="0.000000000000000" label="Very Poor &lt; 0.20" upper="0.200000000000000" symbol="0"/>
+      <range render="true" lower="0.200000000000000" label="Poor 0.20 - 0.40" upper="0.400000000000000" symbol="1"/>
+      <range render="true" lower="0.400001000000000" label="Moderate 0.40 - 0.65" upper="0.650000000000000" symbol="2"/>
+      <range render="true" lower="0.650001000000000" label="Good 0.65 - 0.85" upper="0.850000000000000" symbol="3"/>
+      <range render="true" lower="0.850001000000000" label="Intact > 0.85" upper="1.000000000000000" symbol="4"/>
     </ranges>
     <symbols>
-      <symbol clip_to_extent="1" name="0" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="0" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -161,7 +161,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -189,7 +189,23 @@
               <Option name="properties" type="Map">
                 <Option name="size" type="Map">
                   <Option value="true" name="active" type="bool"/>
-                  <Option value="scale_linear(Condition, 0, 1, 2, 5)" name="expression" type="QString"/>
+                  <Option value="var('map_scale')" name="expression" type="QString"/>
+                  <Option name="transformer" type="Map">
+                    <Option name="d" type="Map">
+                      <Option name="curve" type="Map">
+                        <Option value="0,0.09166666666666666,0.32500000000000001,0.65416666666666667,1" name="x" type="QString"/>
+                        <Option value="0,0.23076923076923078,0.64835164835164838,0.90109890109890112,1" name="y" type="QString"/>
+                      </Option>
+                      <Option value="0.57" name="exponent" type="double"/>
+                      <Option value="1" name="maxSize" type="double"/>
+                      <Option value="100000" name="maxValue" type="double"/>
+                      <Option value="10" name="minSize" type="double"/>
+                      <Option value="1" name="minValue" type="double"/>
+                      <Option value="0" name="nullSize" type="double"/>
+                      <Option value="2" name="scaleType" type="int"/>
+                    </Option>
+                    <Option value="1" name="t" type="int"/>
+                  </Option>
                   <Option value="3" name="type" type="int"/>
                 </Option>
               </Option>
@@ -198,7 +214,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" name="1" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="1" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -206,7 +222,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -234,7 +250,23 @@
               <Option name="properties" type="Map">
                 <Option name="size" type="Map">
                   <Option value="true" name="active" type="bool"/>
-                  <Option value="scale_linear(Condition, 0, 1, 2, 5)" name="expression" type="QString"/>
+                  <Option value="var('map_scale')" name="expression" type="QString"/>
+                  <Option name="transformer" type="Map">
+                    <Option name="d" type="Map">
+                      <Option name="curve" type="Map">
+                        <Option value="0,0.09166666666666666,0.32500000000000001,0.65416666666666667,1" name="x" type="QString"/>
+                        <Option value="0,0.23076923076923078,0.64835164835164838,0.90109890109890112,1" name="y" type="QString"/>
+                      </Option>
+                      <Option value="0.57" name="exponent" type="double"/>
+                      <Option value="1" name="maxSize" type="double"/>
+                      <Option value="100000" name="maxValue" type="double"/>
+                      <Option value="10" name="minSize" type="double"/>
+                      <Option value="1" name="minValue" type="double"/>
+                      <Option value="0" name="nullSize" type="double"/>
+                      <Option value="2" name="scaleType" type="int"/>
+                    </Option>
+                    <Option value="1" name="t" type="int"/>
+                  </Option>
                   <Option value="3" name="type" type="int"/>
                 </Option>
               </Option>
@@ -243,7 +275,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" name="2" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="2" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -251,7 +283,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -279,7 +311,23 @@
               <Option name="properties" type="Map">
                 <Option name="size" type="Map">
                   <Option value="true" name="active" type="bool"/>
-                  <Option value="scale_linear(Condition, 0, 1, 2, 5)" name="expression" type="QString"/>
+                  <Option value="var('map_scale')" name="expression" type="QString"/>
+                  <Option name="transformer" type="Map">
+                    <Option name="d" type="Map">
+                      <Option name="curve" type="Map">
+                        <Option value="0,0.09166666666666666,0.32500000000000001,0.65416666666666667,1" name="x" type="QString"/>
+                        <Option value="0,0.23076923076923078,0.64835164835164838,0.90109890109890112,1" name="y" type="QString"/>
+                      </Option>
+                      <Option value="0.57" name="exponent" type="double"/>
+                      <Option value="1" name="maxSize" type="double"/>
+                      <Option value="100000" name="maxValue" type="double"/>
+                      <Option value="10" name="minSize" type="double"/>
+                      <Option value="1" name="minValue" type="double"/>
+                      <Option value="0" name="nullSize" type="double"/>
+                      <Option value="2" name="scaleType" type="int"/>
+                    </Option>
+                    <Option value="1" name="t" type="int"/>
+                  </Option>
                   <Option value="3" name="type" type="int"/>
                 </Option>
               </Option>
@@ -288,7 +336,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" name="3" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="3" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -296,7 +344,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -324,7 +372,23 @@
               <Option name="properties" type="Map">
                 <Option name="size" type="Map">
                   <Option value="true" name="active" type="bool"/>
-                  <Option value="scale_linear(Condition, 0, 1, 2, 5)" name="expression" type="QString"/>
+                  <Option value="var('map_scale')" name="expression" type="QString"/>
+                  <Option name="transformer" type="Map">
+                    <Option name="d" type="Map">
+                      <Option name="curve" type="Map">
+                        <Option value="0,0.09166666666666666,0.32500000000000001,0.65416666666666667,1" name="x" type="QString"/>
+                        <Option value="0,0.23076923076923078,0.64835164835164838,0.90109890109890112,1" name="y" type="QString"/>
+                      </Option>
+                      <Option value="0.57" name="exponent" type="double"/>
+                      <Option value="1" name="maxSize" type="double"/>
+                      <Option value="100000" name="maxValue" type="double"/>
+                      <Option value="10" name="minSize" type="double"/>
+                      <Option value="1" name="minValue" type="double"/>
+                      <Option value="0" name="nullSize" type="double"/>
+                      <Option value="2" name="scaleType" type="int"/>
+                    </Option>
+                    <Option value="1" name="t" type="int"/>
+                  </Option>
                   <Option value="3" name="type" type="int"/>
                 </Option>
               </Option>
@@ -333,7 +397,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" name="4" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="4" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -341,7 +405,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -368,8 +432,24 @@
               <Option value="" name="name" type="QString"/>
               <Option name="properties" type="Map">
                 <Option name="size" type="Map">
-                  <Option value="false" name="active" type="bool"/>
-                  <Option value="@zoom_level" name="expression" type="QString"/>
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="var('map_scale')" name="expression" type="QString"/>
+                  <Option name="transformer" type="Map">
+                    <Option name="d" type="Map">
+                      <Option name="curve" type="Map">
+                        <Option value="0,0.09166666666666666,0.32500000000000001,0.65416666666666667,1" name="x" type="QString"/>
+                        <Option value="0,0.23076923076923078,0.64835164835164838,0.90109890109890112,1" name="y" type="QString"/>
+                      </Option>
+                      <Option value="0.57" name="exponent" type="double"/>
+                      <Option value="1" name="maxSize" type="double"/>
+                      <Option value="100000" name="maxValue" type="double"/>
+                      <Option value="10" name="minSize" type="double"/>
+                      <Option value="1" name="minValue" type="double"/>
+                      <Option value="0" name="nullSize" type="double"/>
+                      <Option value="2" name="scaleType" type="int"/>
+                    </Option>
+                    <Option value="1" name="t" type="int"/>
+                  </Option>
                   <Option value="3" name="type" type="int"/>
                 </Option>
               </Option>
@@ -380,7 +460,7 @@
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol clip_to_extent="1" name="0" is_animated="0" frame_rate="10" type="marker" alpha="1" force_rhr="0">
+      <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="0" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -388,7 +468,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -428,7 +508,7 @@
     </source-symbol>
     <classificationMethod id="Custom">
       <symmetricMode symmetrypoint="0" enabled="0" astride="0"/>
-      <labelFormat trimtrailingzeroes="1" format="%1 - %2" labelprecision="4"/>
+      <labelFormat format="%1 - %2" labelprecision="4" trimtrailingzeroes="1"/>
       <parameters>
         <Option/>
       </parameters>
@@ -439,12 +519,12 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontKerning="1" forcedItalic="0" legendString="Aa" multilineHeightUnit="Percentage" fieldName="&quot;ConversionType&quot;" textOpacity="1" multilineHeight="1" fontSize="8" textColor="0,0,0,255" textOrientation="horizontal" forcedBold="0" allowHtml="0" fontFamily="Arial" fontSizeUnit="Point" fontItalic="0" namedStyle="" useSubstitutions="0" fontLetterSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0" fontUnderline="0" capitalization="0" fontStrikeout="0" previewBkgrdColor="255,255,255,255" isExpression="1" fontWeight="16" fontWordSpacing="0">
+      <text-style textOrientation="horizontal" previewBkgrdColor="255,255,255,255" fieldName="&quot;ConversionType&quot;" useSubstitutions="0" fontWordSpacing="0" fontUnderline="0" allowHtml="0" fontWeight="16" textOpacity="1" blendMode="0" namedStyle="" isExpression="1" fontFamily="Arial" fontSizeUnit="Point" forcedItalic="0" capitalization="0" fontSize="8" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" fontItalic="0" textColor="0,0,0,255" fontLetterSpacing="0" fontKerning="1" fontStrikeout="0" multilineHeightUnit="Percentage" legendString="Aa" forcedBold="0">
         <families/>
-        <text-buffer bufferDraw="0" bufferNoFill="1" bufferSize="2" bufferColor="255,255,255,255" bufferOpacity="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferSizeUnits="Point"/>
-        <text-mask maskSize="1.5" maskJoinStyle="128" maskOpacity="1" maskSizeUnits="MM" maskedSymbolLayers="" maskEnabled="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskType="0"/>
-        <background shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeRadiiY="0" shapeOffsetX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeRadiiUnit="MM" shapeJoinStyle="64" shapeRadiiX="0" shapeOffsetUnit="MM" shapeOpacity="1" shapeBlendMode="0" shapeRotationType="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeType="0" shapeRotation="0" shapeSizeY="0" shapeDraw="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSVGFile="" shapeBorderWidthUnit="MM">
-          <symbol clip_to_extent="1" name="fillSymbol" is_animated="0" frame_rate="10" type="fill" alpha="1" force_rhr="0">
+        <text-buffer bufferDraw="0" bufferSize="2" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSizeUnits="Point" bufferColor="255,255,255,255" bufferNoFill="1" bufferJoinStyle="128" bufferBlendMode="0"/>
+        <text-mask maskEnabled="0" maskSize="1.5" maskOpacity="1" maskSizeUnits="MM" maskType="0" maskJoinStyle="128" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0"/>
+        <background shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiUnit="MM" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeJoinStyle="64" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeOpacity="1" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeSizeY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeRotationType="0" shapeRadiiY="0" shapeSizeType="0" shapeRotation="0" shapeBorderWidth="0" shapeBorderWidthUnit="MM" shapeOffsetX="0" shapeSizeUnit="MM" shapeType="0" shapeOffsetUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0">
+          <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="fillSymbol" alpha="1" type="fill">
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" name="name" type="QString"/>
@@ -452,7 +532,7 @@
                 <Option value="collection" name="type" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+            <layer enabled="1" locked="0" pass="0" class="SimpleFill">
               <Option type="Map">
                 <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
                 <Option value="255,255,255,255" name="color" type="QString"/>
@@ -476,7 +556,7 @@
             </layer>
           </symbol>
         </background>
-        <shadow shadowScale="100" shadowBlendMode="6" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowOffsetDist="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowOffsetAngle="135" shadowOffsetGlobal="1" shadowRadius="1.5" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.69999999999999996" shadowOffsetUnit="MM" shadowDraw="0" shadowColor="0,0,0,255"/>
+        <shadow shadowOpacity="0.69999999999999996" shadowOffsetDist="1" shadowDraw="0" shadowOffsetUnit="MM" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowRadius="1.5" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100"/>
         <dd_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -486,9 +566,9 @@
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format useMaxLineLengthForAutoWrap="1" wrapChar="" addDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" decimals="3" placeDirectionSymbol="0" autoWrapLength="0" formatNumbers="0" plussign="0" reverseDirectionSymbol="0" leftDirectionSymbol="&lt;"/>
-      <placement xOffset="0" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorClipping="0" distUnits="Point" layerType="UnknownGeometry" geometryGeneratorType="PointGeometry" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" polygonPlacementFlags="2" overrunDistanceUnit="MM" rotationAngle="0" priority="10" geometryGenerator="" placement="6" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" dist="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" quadOffset="4" offsetType="1" placementFlags="10" yOffset="0" overrunDistance="0" centroidWhole="0" offsetUnits="MM" lineAnchorType="0" centroidInside="0" repeatDistance="0" fitInPolygonOnly="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleOut="-25" lineAnchorPercent="0.5" overlapHandling="PreventOverlap" maxCurvedCharAngleIn="25" lineAnchorTextPoint="FollowPlacement" rotationUnit="AngleDegrees"/>
-      <rendering scaleMin="0" scaleVisibility="0" unplacedVisibility="0" labelPerPart="0" zIndex="0" obstacleType="1" minFeatureSize="0" fontMaxPixelSize="10000" limitNumLabels="0" upsidedownLabels="0" fontLimitPixelSize="0" fontMinPixelSize="0" obstacleFactor="0" obstacle="0" scaleMax="0" mergeLines="0" maxNumLabels="2000" drawLabels="1"/>
+      <text-format addDirectionSymbol="0" autoWrapLength="0" multilineAlign="1" wrapChar="" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" decimals="3" formatNumbers="0" reverseDirectionSymbol="0" plussign="0" placeDirectionSymbol="0" rightDirectionSymbol=">"/>
+      <placement priority="10" distUnits="Point" repeatDistanceUnits="MM" geometryGeneratorEnabled="0" quadOffset="4" dist="0" offsetUnits="MM" lineAnchorTextPoint="FollowPlacement" placement="6" overlapHandling="PreventOverlap" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="1" layerType="UnknownGeometry" polygonPlacementFlags="2" preserveRotation="1" overrunDistance="0" maxCurvedCharAngleOut="-25" rotationAngle="0" distMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" lineAnchorPercent="0.5" centroidWhole="0" lineAnchorClipping="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" yOffset="0" geometryGenerator="" xOffset="0" maxCurvedCharAngleIn="25" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" fitInPolygonOnly="0" rotationUnit="AngleDegrees" placementFlags="10" geometryGeneratorType="PointGeometry" centroidInside="0" repeatDistance="0" overrunDistanceUnit="MM" lineAnchorType="0"/>
+      <rendering obstacleFactor="0" fontMinPixelSize="0" obstacle="0" scaleVisibility="0" drawLabels="1" fontLimitPixelSize="0" limitNumLabels="0" upsidedownLabels="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" scaleMax="0" fontMaxPixelSize="10000" scaleMin="0" minFeatureSize="0" obstacleType="1" mergeLines="0" unplacedVisibility="0"/>
       <dd_properties>
         <Option type="Map">
           <Option value="" name="name" type="QString"/>
@@ -514,7 +594,7 @@
           <Option value="false" name="drawToAllParts" type="bool"/>
           <Option value="0" name="enabled" type="QString"/>
           <Option value="point_on_exterior" name="labelAnchorPoint" type="QString"/>
-          <Option value="&lt;symbol clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; is_animated=&quot;0&quot; frame_rate=&quot;10&quot; type=&quot;line&quot; alpha=&quot;1&quot; force_rhr=&quot;0&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; class=&quot;SimpleLine&quot; enabled=&quot;1&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;0&quot; name=&quot;align_dash_pattern&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;square&quot; name=&quot;capstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;5;2&quot; name=&quot;customdash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;customdash_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;bevel&quot; name=&quot;joinstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;60,60,60,255&quot; name=&quot;line_color&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;solid&quot; name=&quot;line_style&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0.3&quot; name=&quot;line_width&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;line_width_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;ring_filter&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_end&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_start&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;use_custom_dash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
+          <Option value="&lt;symbol is_animated=&quot;0&quot; clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; name=&quot;symbol&quot; alpha=&quot;1&quot; type=&quot;line&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer enabled=&quot;1&quot; locked=&quot;0&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;0&quot; name=&quot;align_dash_pattern&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;square&quot; name=&quot;capstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;5;2&quot; name=&quot;customdash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;customdash_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;bevel&quot; name=&quot;joinstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;60,60,60,255&quot; name=&quot;line_color&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;solid&quot; name=&quot;line_style&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0.3&quot; name=&quot;line_width&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;line_width_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;ring_filter&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_end&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_start&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;use_custom_dash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
           <Option value="0" name="minLength" type="double"/>
           <Option value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale" type="QString"/>
           <Option value="MM" name="minLengthUnit" type="QString"/>
@@ -539,11 +619,11 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory penWidth="0" penAlpha="255" spacing="5" direction="0" labelPlacementMethod="XHeight" spacingUnitScale="3x:0,0,0,0,0,0" spacingUnit="MM" showAxis="1" opacity="1" maxScaleDenominator="0" penColor="#000000" diagramOrientation="Up" backgroundAlpha="255" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" minScaleDenominator="0" sizeType="MM" enabled="0" lineSizeType="MM" minimumSize="0" width="15" height="15" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" rotationOffset="270" scaleBasedVisibility="0">
-      <fontProperties style="" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" bold="0" strikethrough="0" italic="0"/>
-      <attribute color="#000000" label="" field="" colorOpacity="1"/>
+    <DiagramCategory opacity="1" spacingUnitScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" sizeType="MM" penColor="#000000" lineSizeType="MM" rotationOffset="270" penWidth="0" spacingUnit="MM" barWidth="5" minimumSize="0" penAlpha="255" enabled="0" minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="0" scaleDependency="Area" scaleBasedVisibility="0" direction="0" spacing="5" sizeScale="3x:0,0,0,0,0,0" showAxis="1" backgroundAlpha="255" width="15" backgroundColor="#ffffff" height="15" diagramOrientation="Up">
+      <fontProperties strikethrough="0" italic="0" bold="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+      <attribute colorOpacity="1" label="" color="#000000" field=""/>
       <axisSymbol>
-        <symbol clip_to_extent="1" name="" is_animated="0" frame_rate="10" type="line" alpha="1" force_rhr="0">
+        <symbol is_animated="0" clip_to_extent="1" force_rhr="0" frame_rate="10" name="" alpha="1" type="line">
           <data_defined_properties>
             <Option type="Map">
               <Option value="" name="name" type="QString"/>
@@ -551,7 +631,7 @@
               <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+          <layer enabled="1" locked="0" pass="0" class="SimpleLine">
             <Option type="Map">
               <Option value="0" name="align_dash_pattern" type="QString"/>
               <Option value="square" name="capstyle" type="QString"/>
@@ -593,7 +673,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings priority="0" zIndex="0" obstacle="0" linePlacementFlags="18" showAll="1" placement="0" dist="0">
+  <DiagramLayerSettings obstacle="0" placement="0" linePlacementFlags="18" showAll="1" priority="0" dist="0" zIndex="0">
     <properties>
       <Option type="Map">
         <Option value="" name="name" type="QString"/>
@@ -602,11 +682,11 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
     <field name="IGOID" configurationFlags="None">
@@ -835,140 +915,140 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="IGOID" name="" index="0"/>
-    <alias field="LevelPathI" name="" index="1"/>
-    <alias field="seg_distance" name="" index="2"/>
-    <alias field="stream_size" name="" index="3"/>
-    <alias field="LUI" name="" index="4"/>
-    <alias field="FloodplainAccess" name="" index="5"/>
-    <alias field="FromConifer" name="" index="6"/>
-    <alias field="FromDevegetated" name="" index="7"/>
-    <alias field="FromGrassShrubland" name="" index="8"/>
-    <alias field="FromDeciduous" name="" index="9"/>
-    <alias field="NoChange" name="" index="10"/>
-    <alias field="Deciduous" name="" index="11"/>
-    <alias field="GrassShrubland" name="" index="12"/>
-    <alias field="Devegetation" name="" index="13"/>
-    <alias field="Conifer" name="" index="14"/>
-    <alias field="Invasive" name="" index="15"/>
-    <alias field="Development" name="" index="16"/>
-    <alias field="Agriculture" name="" index="17"/>
-    <alias field="RiparianTotal" name="" index="18"/>
-    <alias field="ConversionID" name="" index="19"/>
-    <alias field="LevelID" name="" index="20"/>
-    <alias field="ExistingRiparianMean" name="" index="21"/>
-    <alias field="HistoricRiparianMean" name="" index="22"/>
-    <alias field="RiparianDeparture" name="" index="23"/>
-    <alias field="RiparianDepartureID" name="" index="24"/>
-    <alias field="ExistingNativeRiparianMean" name="" index="25"/>
-    <alias field="HistoricNativeRiparianMean" name="" index="26"/>
-    <alias field="NativeRiparianDeparture" name="" index="27"/>
-    <alias field="Condition" name="" index="28"/>
-    <alias field="ConversionCode" name="" index="29"/>
-    <alias field="ConversionType" name="" index="30"/>
-    <alias field="Departure" name="" index="31"/>
+    <alias name="" index="0" field="IGOID"/>
+    <alias name="" index="1" field="LevelPathI"/>
+    <alias name="" index="2" field="seg_distance"/>
+    <alias name="" index="3" field="stream_size"/>
+    <alias name="" index="4" field="LUI"/>
+    <alias name="" index="5" field="FloodplainAccess"/>
+    <alias name="" index="6" field="FromConifer"/>
+    <alias name="" index="7" field="FromDevegetated"/>
+    <alias name="" index="8" field="FromGrassShrubland"/>
+    <alias name="" index="9" field="FromDeciduous"/>
+    <alias name="" index="10" field="NoChange"/>
+    <alias name="" index="11" field="Deciduous"/>
+    <alias name="" index="12" field="GrassShrubland"/>
+    <alias name="" index="13" field="Devegetation"/>
+    <alias name="" index="14" field="Conifer"/>
+    <alias name="" index="15" field="Invasive"/>
+    <alias name="" index="16" field="Development"/>
+    <alias name="" index="17" field="Agriculture"/>
+    <alias name="" index="18" field="RiparianTotal"/>
+    <alias name="" index="19" field="ConversionID"/>
+    <alias name="" index="20" field="LevelID"/>
+    <alias name="" index="21" field="ExistingRiparianMean"/>
+    <alias name="" index="22" field="HistoricRiparianMean"/>
+    <alias name="" index="23" field="RiparianDeparture"/>
+    <alias name="" index="24" field="RiparianDepartureID"/>
+    <alias name="" index="25" field="ExistingNativeRiparianMean"/>
+    <alias name="" index="26" field="HistoricNativeRiparianMean"/>
+    <alias name="" index="27" field="NativeRiparianDeparture"/>
+    <alias name="" index="28" field="Condition"/>
+    <alias name="" index="29" field="ConversionCode"/>
+    <alias name="" index="30" field="ConversionType"/>
+    <alias name="" index="31" field="Departure"/>
   </aliases>
   <defaults>
-    <default field="IGOID" applyOnUpdate="0" expression=""/>
-    <default field="LevelPathI" applyOnUpdate="0" expression=""/>
-    <default field="seg_distance" applyOnUpdate="0" expression=""/>
-    <default field="stream_size" applyOnUpdate="0" expression=""/>
-    <default field="LUI" applyOnUpdate="0" expression=""/>
-    <default field="FloodplainAccess" applyOnUpdate="0" expression=""/>
-    <default field="FromConifer" applyOnUpdate="0" expression=""/>
-    <default field="FromDevegetated" applyOnUpdate="0" expression=""/>
-    <default field="FromGrassShrubland" applyOnUpdate="0" expression=""/>
-    <default field="FromDeciduous" applyOnUpdate="0" expression=""/>
-    <default field="NoChange" applyOnUpdate="0" expression=""/>
-    <default field="Deciduous" applyOnUpdate="0" expression=""/>
-    <default field="GrassShrubland" applyOnUpdate="0" expression=""/>
-    <default field="Devegetation" applyOnUpdate="0" expression=""/>
-    <default field="Conifer" applyOnUpdate="0" expression=""/>
-    <default field="Invasive" applyOnUpdate="0" expression=""/>
-    <default field="Development" applyOnUpdate="0" expression=""/>
-    <default field="Agriculture" applyOnUpdate="0" expression=""/>
-    <default field="RiparianTotal" applyOnUpdate="0" expression=""/>
-    <default field="ConversionID" applyOnUpdate="0" expression=""/>
-    <default field="LevelID" applyOnUpdate="0" expression=""/>
-    <default field="ExistingRiparianMean" applyOnUpdate="0" expression=""/>
-    <default field="HistoricRiparianMean" applyOnUpdate="0" expression=""/>
-    <default field="RiparianDeparture" applyOnUpdate="0" expression=""/>
-    <default field="RiparianDepartureID" applyOnUpdate="0" expression=""/>
-    <default field="ExistingNativeRiparianMean" applyOnUpdate="0" expression=""/>
-    <default field="HistoricNativeRiparianMean" applyOnUpdate="0" expression=""/>
-    <default field="NativeRiparianDeparture" applyOnUpdate="0" expression=""/>
-    <default field="Condition" applyOnUpdate="0" expression=""/>
-    <default field="ConversionCode" applyOnUpdate="0" expression=""/>
-    <default field="ConversionType" applyOnUpdate="0" expression=""/>
-    <default field="Departure" applyOnUpdate="0" expression=""/>
+    <default expression="" applyOnUpdate="0" field="IGOID"/>
+    <default expression="" applyOnUpdate="0" field="LevelPathI"/>
+    <default expression="" applyOnUpdate="0" field="seg_distance"/>
+    <default expression="" applyOnUpdate="0" field="stream_size"/>
+    <default expression="" applyOnUpdate="0" field="LUI"/>
+    <default expression="" applyOnUpdate="0" field="FloodplainAccess"/>
+    <default expression="" applyOnUpdate="0" field="FromConifer"/>
+    <default expression="" applyOnUpdate="0" field="FromDevegetated"/>
+    <default expression="" applyOnUpdate="0" field="FromGrassShrubland"/>
+    <default expression="" applyOnUpdate="0" field="FromDeciduous"/>
+    <default expression="" applyOnUpdate="0" field="NoChange"/>
+    <default expression="" applyOnUpdate="0" field="Deciduous"/>
+    <default expression="" applyOnUpdate="0" field="GrassShrubland"/>
+    <default expression="" applyOnUpdate="0" field="Devegetation"/>
+    <default expression="" applyOnUpdate="0" field="Conifer"/>
+    <default expression="" applyOnUpdate="0" field="Invasive"/>
+    <default expression="" applyOnUpdate="0" field="Development"/>
+    <default expression="" applyOnUpdate="0" field="Agriculture"/>
+    <default expression="" applyOnUpdate="0" field="RiparianTotal"/>
+    <default expression="" applyOnUpdate="0" field="ConversionID"/>
+    <default expression="" applyOnUpdate="0" field="LevelID"/>
+    <default expression="" applyOnUpdate="0" field="ExistingRiparianMean"/>
+    <default expression="" applyOnUpdate="0" field="HistoricRiparianMean"/>
+    <default expression="" applyOnUpdate="0" field="RiparianDeparture"/>
+    <default expression="" applyOnUpdate="0" field="RiparianDepartureID"/>
+    <default expression="" applyOnUpdate="0" field="ExistingNativeRiparianMean"/>
+    <default expression="" applyOnUpdate="0" field="HistoricNativeRiparianMean"/>
+    <default expression="" applyOnUpdate="0" field="NativeRiparianDeparture"/>
+    <default expression="" applyOnUpdate="0" field="Condition"/>
+    <default expression="" applyOnUpdate="0" field="ConversionCode"/>
+    <default expression="" applyOnUpdate="0" field="ConversionType"/>
+    <default expression="" applyOnUpdate="0" field="Departure"/>
   </defaults>
   <constraints>
-    <constraint field="IGOID" notnull_strength="1" unique_strength="1" constraints="3" exp_strength="0"/>
-    <constraint field="LevelPathI" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="seg_distance" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="stream_size" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="LUI" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="FloodplainAccess" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="FromConifer" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="FromDevegetated" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="FromGrassShrubland" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="FromDeciduous" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="NoChange" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Deciduous" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="GrassShrubland" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Devegetation" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Conifer" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Invasive" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Development" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Agriculture" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="RiparianTotal" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="ConversionID" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="LevelID" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="ExistingRiparianMean" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="HistoricRiparianMean" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="RiparianDeparture" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="RiparianDepartureID" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="ExistingNativeRiparianMean" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="HistoricNativeRiparianMean" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="NativeRiparianDeparture" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Condition" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="ConversionCode" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="ConversionType" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Departure" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
+    <constraint unique_strength="1" exp_strength="0" notnull_strength="1" constraints="3" field="IGOID"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="LevelPathI"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="seg_distance"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="stream_size"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="LUI"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="FloodplainAccess"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="FromConifer"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="FromDevegetated"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="FromGrassShrubland"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="FromDeciduous"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="NoChange"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Deciduous"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="GrassShrubland"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Devegetation"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Conifer"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Invasive"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Development"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Agriculture"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="RiparianTotal"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="ConversionID"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="LevelID"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="ExistingRiparianMean"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="HistoricRiparianMean"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="RiparianDeparture"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="RiparianDepartureID"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="ExistingNativeRiparianMean"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="HistoricNativeRiparianMean"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="NativeRiparianDeparture"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Condition"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="ConversionCode"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="ConversionType"/>
+    <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Departure"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" field="IGOID" exp=""/>
-    <constraint desc="" field="LevelPathI" exp=""/>
-    <constraint desc="" field="seg_distance" exp=""/>
-    <constraint desc="" field="stream_size" exp=""/>
-    <constraint desc="" field="LUI" exp=""/>
-    <constraint desc="" field="FloodplainAccess" exp=""/>
-    <constraint desc="" field="FromConifer" exp=""/>
-    <constraint desc="" field="FromDevegetated" exp=""/>
-    <constraint desc="" field="FromGrassShrubland" exp=""/>
-    <constraint desc="" field="FromDeciduous" exp=""/>
-    <constraint desc="" field="NoChange" exp=""/>
-    <constraint desc="" field="Deciduous" exp=""/>
-    <constraint desc="" field="GrassShrubland" exp=""/>
-    <constraint desc="" field="Devegetation" exp=""/>
-    <constraint desc="" field="Conifer" exp=""/>
-    <constraint desc="" field="Invasive" exp=""/>
-    <constraint desc="" field="Development" exp=""/>
-    <constraint desc="" field="Agriculture" exp=""/>
-    <constraint desc="" field="RiparianTotal" exp=""/>
-    <constraint desc="" field="ConversionID" exp=""/>
-    <constraint desc="" field="LevelID" exp=""/>
-    <constraint desc="" field="ExistingRiparianMean" exp=""/>
-    <constraint desc="" field="HistoricRiparianMean" exp=""/>
-    <constraint desc="" field="RiparianDeparture" exp=""/>
-    <constraint desc="" field="RiparianDepartureID" exp=""/>
-    <constraint desc="" field="ExistingNativeRiparianMean" exp=""/>
-    <constraint desc="" field="HistoricNativeRiparianMean" exp=""/>
-    <constraint desc="" field="NativeRiparianDeparture" exp=""/>
-    <constraint desc="" field="Condition" exp=""/>
-    <constraint desc="" field="ConversionCode" exp=""/>
-    <constraint desc="" field="ConversionType" exp=""/>
-    <constraint desc="" field="Departure" exp=""/>
+    <constraint exp="" desc="" field="IGOID"/>
+    <constraint exp="" desc="" field="LevelPathI"/>
+    <constraint exp="" desc="" field="seg_distance"/>
+    <constraint exp="" desc="" field="stream_size"/>
+    <constraint exp="" desc="" field="LUI"/>
+    <constraint exp="" desc="" field="FloodplainAccess"/>
+    <constraint exp="" desc="" field="FromConifer"/>
+    <constraint exp="" desc="" field="FromDevegetated"/>
+    <constraint exp="" desc="" field="FromGrassShrubland"/>
+    <constraint exp="" desc="" field="FromDeciduous"/>
+    <constraint exp="" desc="" field="NoChange"/>
+    <constraint exp="" desc="" field="Deciduous"/>
+    <constraint exp="" desc="" field="GrassShrubland"/>
+    <constraint exp="" desc="" field="Devegetation"/>
+    <constraint exp="" desc="" field="Conifer"/>
+    <constraint exp="" desc="" field="Invasive"/>
+    <constraint exp="" desc="" field="Development"/>
+    <constraint exp="" desc="" field="Agriculture"/>
+    <constraint exp="" desc="" field="RiparianTotal"/>
+    <constraint exp="" desc="" field="ConversionID"/>
+    <constraint exp="" desc="" field="LevelID"/>
+    <constraint exp="" desc="" field="ExistingRiparianMean"/>
+    <constraint exp="" desc="" field="HistoricRiparianMean"/>
+    <constraint exp="" desc="" field="RiparianDeparture"/>
+    <constraint exp="" desc="" field="RiparianDepartureID"/>
+    <constraint exp="" desc="" field="ExistingNativeRiparianMean"/>
+    <constraint exp="" desc="" field="HistoricNativeRiparianMean"/>
+    <constraint exp="" desc="" field="NativeRiparianDeparture"/>
+    <constraint exp="" desc="" field="Condition"/>
+    <constraint exp="" desc="" field="ConversionCode"/>
+    <constraint exp="" desc="" field="ConversionType"/>
+    <constraint exp="" desc="" field="Departure"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
@@ -976,39 +1056,39 @@
   </attributeactions>
   <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
     <columns>
-      <column name="IGOID" width="-1" type="field" hidden="0"/>
-      <column name="LevelPathI" width="-1" type="field" hidden="0"/>
-      <column name="seg_distance" width="-1" type="field" hidden="0"/>
-      <column name="stream_size" width="-1" type="field" hidden="0"/>
-      <column name="LUI" width="-1" type="field" hidden="0"/>
-      <column name="FloodplainAccess" width="-1" type="field" hidden="0"/>
-      <column name="FromConifer" width="-1" type="field" hidden="0"/>
-      <column name="FromDevegetated" width="-1" type="field" hidden="0"/>
-      <column name="FromGrassShrubland" width="-1" type="field" hidden="0"/>
-      <column name="FromDeciduous" width="-1" type="field" hidden="0"/>
-      <column name="NoChange" width="-1" type="field" hidden="0"/>
-      <column name="Deciduous" width="-1" type="field" hidden="0"/>
-      <column name="GrassShrubland" width="-1" type="field" hidden="0"/>
-      <column name="Devegetation" width="-1" type="field" hidden="0"/>
-      <column name="Conifer" width="-1" type="field" hidden="0"/>
-      <column name="Invasive" width="-1" type="field" hidden="0"/>
-      <column name="Development" width="-1" type="field" hidden="0"/>
-      <column name="Agriculture" width="-1" type="field" hidden="0"/>
-      <column name="RiparianTotal" width="-1" type="field" hidden="0"/>
-      <column name="ConversionID" width="-1" type="field" hidden="0"/>
-      <column name="LevelID" width="-1" type="field" hidden="0"/>
-      <column name="ExistingRiparianMean" width="-1" type="field" hidden="0"/>
-      <column name="HistoricRiparianMean" width="-1" type="field" hidden="0"/>
-      <column name="RiparianDeparture" width="-1" type="field" hidden="0"/>
-      <column name="RiparianDepartureID" width="-1" type="field" hidden="0"/>
-      <column name="ExistingNativeRiparianMean" width="-1" type="field" hidden="0"/>
-      <column name="HistoricNativeRiparianMean" width="-1" type="field" hidden="0"/>
-      <column name="NativeRiparianDeparture" width="-1" type="field" hidden="0"/>
-      <column name="Condition" width="-1" type="field" hidden="0"/>
-      <column name="ConversionCode" width="-1" type="field" hidden="0"/>
-      <column name="ConversionType" width="-1" type="field" hidden="0"/>
-      <column name="Departure" width="-1" type="field" hidden="0"/>
-      <column width="-1" type="actions" hidden="1"/>
+      <column hidden="0" name="IGOID" type="field" width="-1"/>
+      <column hidden="0" name="LevelPathI" type="field" width="-1"/>
+      <column hidden="0" name="seg_distance" type="field" width="-1"/>
+      <column hidden="0" name="stream_size" type="field" width="-1"/>
+      <column hidden="0" name="LUI" type="field" width="-1"/>
+      <column hidden="0" name="FloodplainAccess" type="field" width="-1"/>
+      <column hidden="0" name="FromConifer" type="field" width="-1"/>
+      <column hidden="0" name="FromDevegetated" type="field" width="-1"/>
+      <column hidden="0" name="FromGrassShrubland" type="field" width="-1"/>
+      <column hidden="0" name="FromDeciduous" type="field" width="-1"/>
+      <column hidden="0" name="NoChange" type="field" width="-1"/>
+      <column hidden="0" name="Deciduous" type="field" width="-1"/>
+      <column hidden="0" name="GrassShrubland" type="field" width="-1"/>
+      <column hidden="0" name="Devegetation" type="field" width="-1"/>
+      <column hidden="0" name="Conifer" type="field" width="-1"/>
+      <column hidden="0" name="Invasive" type="field" width="-1"/>
+      <column hidden="0" name="Development" type="field" width="-1"/>
+      <column hidden="0" name="Agriculture" type="field" width="-1"/>
+      <column hidden="0" name="RiparianTotal" type="field" width="-1"/>
+      <column hidden="0" name="ConversionID" type="field" width="-1"/>
+      <column hidden="0" name="LevelID" type="field" width="-1"/>
+      <column hidden="0" name="ExistingRiparianMean" type="field" width="-1"/>
+      <column hidden="0" name="HistoricRiparianMean" type="field" width="-1"/>
+      <column hidden="0" name="RiparianDeparture" type="field" width="-1"/>
+      <column hidden="0" name="RiparianDepartureID" type="field" width="-1"/>
+      <column hidden="0" name="ExistingNativeRiparianMean" type="field" width="-1"/>
+      <column hidden="0" name="HistoricNativeRiparianMean" type="field" width="-1"/>
+      <column hidden="0" name="NativeRiparianDeparture" type="field" width="-1"/>
+      <column hidden="0" name="Condition" type="field" width="-1"/>
+      <column hidden="0" name="ConversionCode" type="field" width="-1"/>
+      <column hidden="0" name="ConversionType" type="field" width="-1"/>
+      <column hidden="0" name="Departure" type="field" width="-1"/>
+      <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
