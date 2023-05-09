@@ -36,10 +36,10 @@
                     </Node>
                     <Node label="Rasters">
                         <Children collapsed="true">
-                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Existing_Veg_EVT_Riparian"/>
-                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Historic_Veg_BPS_Riparian"/>
-                            <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Existing_Veg_EVT_Vegetated"/>
-                            <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Historic_Veg_BPS_Vegetated"/>
+                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Existing_Rip" transparency="40"/>
+                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Historic_Rip" transparency="40"/>
+                            <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Existing_Veg" transparency="40"/>
+                            <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Historic_Veg" transparency="40"/>
                             <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology=""/>
                             <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="FPAccess_Raster" transparency="40"/>
                         </Children>
