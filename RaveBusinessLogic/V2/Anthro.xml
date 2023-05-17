@@ -15,8 +15,8 @@
                             <Node label="Railroad Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Canal Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Canal Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
-                            <Node label="Road Crossing Count" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
-                            <Node label="Road Crossing Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
+                            <Node label="Road Crossing Count" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="roadcross_count" />
+                            <Node label="Road Crossing Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="roadcross_density" />
                             <Node label="Diversion Point Count" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Diversion Point Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                         </Children>
