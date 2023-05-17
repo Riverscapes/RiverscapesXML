@@ -31,7 +31,7 @@
                         <Children collapsed="true">
                             <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="rvd"/>
                             <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU"/>
-                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology=""/>
+                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="FPAccess"/>
                         </Children>
                     </Node>
                     <Node label="Rasters">
