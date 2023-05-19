@@ -96,6 +96,8 @@
           </Node>
         <Node label="Inputs" xpath="Inputs">
           <Children collapsed="true">
+            <Node label="Stream Names" xpath="Geopackage/Layers/Vector[@lyrName='Flowlines_VAA']" type="line" symbology="streamnames" id="streamnames"  />
+            <Node label="Channel Network Levelpaths" xpath="Geopackage/Layers/Vector[@lyrName='Flowlines_VAA']" type="line" id="channel_levelpath" symbology="levelpath" />
             <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" id="channel_area_polygons" symbology="ChannelArea" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
             <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
