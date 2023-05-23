@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=58.0.4", "wheel>=0.37.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "rsxml"
+version = "{file = \"src/__version__.py\", key = \"__version__\"}"
+description = "Riverscapes XML helpers for use across Python3 open-source GIS Stack"
+authors = ["Matt Reimer <info@northarrowresearch.com>"]
+license = "MIT"
+homepage = "https://github.com/Riverscapes/RiverscapesXML"
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+semver = ">=2.10.2"
+argparse = "*"
+
+
+[build-system.sdist]
+formats = ["gztar", "zip"]
