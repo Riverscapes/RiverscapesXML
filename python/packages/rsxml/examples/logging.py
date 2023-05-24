@@ -1,4 +1,4 @@
-from src import Logger
+from rsxml import Logger
 import tempfile
 
 

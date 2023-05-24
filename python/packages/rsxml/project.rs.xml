@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd">
+    <Name>Test Project</Name>
+    <Description>This is a test project</Description>
+    <Citation>This is a citation</Citation>
+    <MetaData>
+        <Meta name="Test">Test Value</Meta>
+        <Meta name="Test2">Test Value 2</Meta>
+    </MetaData>
+    <ProjectType>VBET</ProjectType>
+    <QAQCEvents>
+        <QAQCEvent datePerformed="2021-01-01" state="passed">
+            <Name>Test QAQC Event</Name>
+            <Summary>This is a test QAQC event</Summary>
+            <Description>I did a thing and then a thing happened</Description>
+            <Citation>This is a citation</Citation>
+            <MetaData>
+                <Meta name="Test">Test Value</Meta>
+            </MetaData>
+            <PerformedBy>Larry the testing guy</PerformedBy>
+            <Links>
+                <URL text="link1">https://www.google.com</URL>
+                <URL text="link2">https://www.google.com</URL>
+            </Links>
+        </QAQCEvent>
+    </QAQCEvents>
+    <CommonDatasets>
+        <Vector id="test" extRef="f23b187a-537b-4dd0-8b71-4b7c4a6e9747:Project/Realizations/Realization#REALIZATION1/Datasets/Raster#DEM">
+            <Name>Test Dataset</Name>
+            <Summary>This is a test dataset</Summary>
+            <Description>This is a test dataset</Description>
+            <Path>test.gpkg</Path>
+        </Vector>
+    </CommonDatasets>
+    <ProjectBounds>
+        <Centroid>
+            <Lat>114.56</Lat>
+            <Lng>-21.23</Lng>
+        </Centroid>
+        <BoundingBox>
+            <MinLng>-22</MinLng>
+            <MinLat>-21</MinLat>
+            <MaxLng>114</MaxLng>
+            <MaxLat>116</MaxLat>
+        </BoundingBox>
+        <Path>project_bounds.json</Path>
+    </ProjectBounds>
+    <Realizations>
+        <Realization id="test" dateCreated="2021-01-01" productVersion="1.0.0">
+            <Name>Test Realization</Name>
+            <Summary>This is a test realization</Summary>
+            <Description>This is a test realization</Description>
+            <MetaData>
+                <Meta name="Test">Test Value</Meta>
+            </MetaData>
+            <Datasets>
+                <Vector id="ds1">
+                    <Name>Dataset1</Name>
+                    <Summary>This is a dataset</Summary>
+                    <Description>This is a dataset</Description>
+                    <Path>datasets/ds1.gpkg</Path>
+                </Vector>
+                <CSV id="test2" extRef="f23b187a-537b-4dd0-8b71-4b7c4a6e9747:Project/Realizations/Realization#REALIZATION1/Datasets/Raster#DEM">
+                    <Name>Test Dataset 2</Name>
+                    <Summary>This is a test dataset 2</Summary>
+                    <Description>This is a test dataset 2</Description>
+                    <Path>test2.gpkg</Path>
+                </CSV>
+            </Datasets>
+            <Inputs>
+                <Raster id="input1">
+                    <Name>InputDS1</Name>
+                    <Summary>This is a input dataset</Summary>
+                    <Description>This is a input dataset</Description>
+                    <Path>datasets/input1.tiff</Path>
+                </Raster>
+            </Inputs>
+            <Intermediates>
+                <Raster id="inter1">
+                    <Name>inter1DS</Name>
+                    <Summary>This is a input dataset</Summary>
+                    <Description>This is a input dataset</Description>
+                    <Path>datasets/inter1.tiff</Path>
+                </Raster>
+            </Intermediates>
+            <Outputs>
+                <Raster id="output1">
+                    <Name>OutputDS1</Name>
+                    <Summary>This is a input dataset</Summary>
+                    <Description>This is a input dataset</Description>
+                    <Path>datasets/output.tiff</Path>
+                </Raster>
+            </Outputs>
+            <Analyses>
+                <Analysis id="analysis1">
+                    <Name>Test Analysis</Name>
+                    <Metrics>
+                        <Metric name="Test">Test Value</Metric>
+                    </Metrics>
+                    <Configuration>
+                        <Vector id="conf1">
+                            <Name>Configuration Dataset</Name>
+                            <Summary>This is a conf dataset</Summary>
+                            <Description>This is a conf dataset</Description>
+                            <Path>analysis/conf.gpkg</Path>
+                        </Vector>
+                    </Configuration>
+                    <Products>
+                        <Vector id="prod1">
+                            <Name>Product Dataset</Name>
+                            <Summary>This is a prod dataset</Summary>
+                            <Description>This is a prod dataset</Description>
+                            <Path>products/prod.gpkg</Path>
+                        </Vector>
+                    </Products>
+                </Analysis>
+            </Analyses>
+        </Realization>
+    </Realizations>
+</Project>

@@ -1,8 +1,8 @@
 from time import sleep
 import tempfile
 import sqlite3
-from src.debug import Timer, LoopTimer, TimerBuckets, TimerWaypoints
-from src import Logger
+from rsxml.debug import Timer, LoopTimer, TimerBuckets, TimerWaypoints
+from rsxml import Logger
 
 
 def simple():

@@ -1,6 +1,6 @@
 from time import sleep
 import tempfile
-from src import Logger, debug
+from rsxml import Logger, debug
 
 
 def my_work_method(some_text_arg: str):

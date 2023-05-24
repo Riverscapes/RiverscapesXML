@@ -34,12 +34,13 @@
   <QAQCEvents>
 
     <!-- Here is some automated testing we do in Cybercastor -->
-    <QAQCEvent state="passed" dateCreated="2022-04-11T17:56:39Z" performedBy="Cybercastor Automation">
-      <name>Manual Calibration</name>
+    <QAQCEvent state="passed" datePerformed="2022-04-11T17:56:39Z">
+      <Name>Manual Calibration</Name>
       <Summary>Automated Project QC Testing</Summary>
       <Description></Description>
       <Citation></Citation>
       <MetaData></MetaData>
+      <PerformedBy>Larry</PerformedBy>
       <Links>
         <URL text="" />
       </Links>
