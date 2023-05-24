@@ -100,9 +100,10 @@ class Project(RSObj):
             meta_data=rsobj.meta_data,
             warehouse=Warehouse.from_xml(warehouse_find) if warehouse_find else None,
 
-            common_datasets=[Dataset.from_xml(dataset_node) for dataset_node in xml_node.find('CommonDatasets/*')],
-            realizations=[Realization.from_xml(realization_node) for realization_node in xml_node.find('Realizations/*')],
-            qaqc_events=[QAQCEvent.from_xml(qaqc_event_node) for qaqc_event_node in xml_node.find('QAQCEvents/*')]
+            # List comprehension on the result of find() will iterate over all the children of the node. Do not wildcard!
+            common_datasets=[Dataset.from_xml(dataset_node) for dataset_node in xml_node.find('CommonDatasets')],
+            realizations=[Realization.from_xml(realization_node) for realization_node in xml_node.find('Realizations')],
+            qaqc_events=[QAQCEvent.from_xml(qaqc_event_node) for qaqc_event_node in xml_node.find('QAQCEvents')]
         )
 
         return project
