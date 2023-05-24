@@ -38,7 +38,7 @@ if __name__ == '__main__':
         common_datasets=[
             Dataset(
                 xml_id='test',
-                name='Test Dataset',
+                name='Test Dataset 2',
                 path='test.gpkg',
                 ds_type=GeoPackageDatasetTypes.VECTOR,
                 ext_ref='f23b187a-537b-4dd0-8b71-4b7c4a6e9747:Project/Realizations/Realization#REALIZATION1/Datasets/Raster#DEM',

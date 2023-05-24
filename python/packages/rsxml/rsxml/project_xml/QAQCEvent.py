@@ -75,18 +75,19 @@ class QAQCEvent(RSObj):
         Returns:
             QAQCEvent: _description_
         """
-        rs_obj = super.from_xml(xml_node)
+        rs_obj = RSObj.from_xml(xml_node)
         date_performed = xml_node.get('datePerformed')
-        performed_by = xml_node.get('performedBy')
+        performed_by = xml_node.find('PerformedBy').text
         state = xml_node.get('state')
 
+        links = {}
         links_node = xml_node.find('Links')
         if links_node:
-            for link_node in links_node.findall('Link'):
-                xml_node.links[link_node.get('type')] = link_node.text
+            for link_node in links_node.findall('URL'):
+                links[link_node.get('text')] = link_node.text
 
         return QAQCEvent(
-            date_created=date_performed,
+            date_performed=date_performed,
             performed_by=performed_by,
             state=state,
             name=rs_obj.name,
@@ -94,7 +95,7 @@ class QAQCEvent(RSObj):
             description=rs_obj.description,
             citation=rs_obj.citation,
             meta_data=rs_obj.meta_data,
-            links=rs_obj.links,
+            links=links,
         )
 
     def to_xml(self) -> ET.Element:
