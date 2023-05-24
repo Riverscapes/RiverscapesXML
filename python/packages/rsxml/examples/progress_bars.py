@@ -1,6 +1,6 @@
 import random
 from time import sleep
-from src import ProgressBar, Logger
+from rsxml import ProgressBar, Logger
 
 
 def main():

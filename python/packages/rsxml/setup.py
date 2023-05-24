@@ -12,7 +12,7 @@ with open("README.md", "rb") as f:
 
 version = re.search(
     '^__version__\\s*=\\s*"(.*)"',
-    open('src/__version__.py', encoding='utf8').read(),
+    open('rsxml/__version__.py', encoding='utf8').read(),
     re.M
 ).group(1)
 
@@ -27,8 +27,9 @@ setup(
     author_email='info@northarrowresearch.com',
     install_requires=install_requires,
     url='https://github.com/Riverscapes/RiverscapesXML',
-    packages=find_packages('src'),  # Find packages under the 'src' directory
-    package_dir={'': 'src'},  # Specify that the package code is under 'src'
+    packages=[
+        'rsxml'
+    ],
     zip_safe=False,
     classifiers=[
         'License :: OSI Approved :: MIT License',

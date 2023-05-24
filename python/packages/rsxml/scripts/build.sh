@@ -4,7 +4,9 @@
 
 # remove old version
 rm -rf dist/*
+rm -fr build/*
 
 # build new version
 
 python setup.py sdist bdist_wheel
+twine upload dist/*

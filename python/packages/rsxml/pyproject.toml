@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.poetry]
 name = "rsxml"
-version = "{file = \"src/__version__.py\", key = \"__version__\"}"
+version = "{file = \"rsxml/__version__.py\", key = \"__version__\"}"
 description = "Riverscapes XML helpers for use across Python3 open-source GIS Stack"
 authors = ["Matt Reimer <info@northarrowresearch.com>"]
 license = "MIT"

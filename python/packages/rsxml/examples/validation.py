@@ -1,6 +1,6 @@
 import os
 import json
-from src import validate_project_file, Logger
+from rsxml import validate_project_file, Logger
 
 
 def main():
