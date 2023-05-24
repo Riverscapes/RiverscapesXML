@@ -22,7 +22,7 @@ setup(
     description='Riverscapes XML helpers for use across Python3 open-source GIS Stack',
     author='Matt Reimer',
     license='MIT',
-    python_requires='>=3.10.0',
+    python_requires='>=3.9.0',
     long_description=long_descr,
     author_email='info@northarrowresearch.com',
     install_requires=install_requires,
