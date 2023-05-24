@@ -149,4 +149,6 @@ if __name__ == '__main__':
     # Now open and parse it
     new_project = Project.load_project('project.rs.xml')
 
+    project.write()
+
     log.info('done')
