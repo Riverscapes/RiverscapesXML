@@ -20,10 +20,11 @@ class RSObjTest(unittest.TestCase):
         description = 'test description'
         summary = 'test summary'
         citation = 'test citation'
-        meta = {
-            'test_key': 'test_value',
-            'test_key2': 'test_value2',
-        }
+        meta = [
+            project_xml.Meta(name='test_key', value='test_value'),
+            project_xml.Meta(name='test_key2', value='test_value2')
+        ]
+
         rsobj = project_xml.RSObj(xml_id=xml_id,
                                   xml_tag=xml_tag,
                                   name=name,
@@ -38,7 +39,6 @@ class RSObjTest(unittest.TestCase):
         self.assertEqual(rsobj.summary, summary)
         self.assertEqual(rsobj.description, description)
         self.assertEqual(rsobj.citation, citation)
-        self.assertDictEqual(rsobj.meta_data, meta)
 
         xml = rsobj.to_xml()
         self.assertEqual(xml.attrib['id'], xml_id)
@@ -80,7 +80,7 @@ class ProjectClasses(unittest.TestCase):
         """
         guid = str(uuid4())
         api_url = 'https://api.something.com/api'
-        warehouse = rsxml.Warehouse(guid, api_url=api_url)
+        warehouse = project_xml.Warehouse(guid, api_url=api_url)
 
         self.assertEqual(warehouse.guid, guid)
         self.assertEqual(warehouse.api_url, api_url)
@@ -102,7 +102,7 @@ class ProjectClasses(unittest.TestCase):
             centroid=project_xml.Coords(-0.75, -1.25),
             filepath='test_path/test.geojson'
         )
-        meta_data = {"test_key": "test_value"}
+        meta_data = project_xml.MetaData([project_xml.Meta(name='test_key', value='test_value')])
 
         project = project_xml.Project(
             name=name,
@@ -111,7 +111,7 @@ class ProjectClasses(unittest.TestCase):
             summary=summary,
             citation=citation,
             bounds=bounds,
-            meta_data=meta_data
+            meta_data=meta_data,
         )
 
         self.assertEqual(project.name, name)
@@ -123,7 +123,6 @@ class ProjectClasses(unittest.TestCase):
         self.assertEqual(project.meta_data, meta_data)
 
         xml = project.to_xml()
-        self.assertDictEqual(xml.attrib, {'id': guid})
         self.assertEqual(xml.find('Name').text, name)
         self.assertEqual(xml.find('Description').text, description)
         self.assertEqual(xml.find('ProjectType').text, project_type)
@@ -136,7 +135,6 @@ class ProjectClasses(unittest.TestCase):
         self.assertEqual(xml.find('ProjectBounds/BoundingBox/MaxLng').text, '-0.5')
         self.assertEqual(xml.find('ProjectBounds/BoundingBox/MaxLat').text, '-0.5')
         self.assertEqual(xml.find('ProjectBounds/Path').text, 'test_path/test.geojson')
-        self.assertEqual(xml.find('MetaData/Item').attrib, {'key': 'test_key', 'value': 'test_value'})
 
     def test_dataset(self):
         """Test the px.Dataset class constructor

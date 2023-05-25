@@ -14,7 +14,7 @@ from rsxml.project_xml import (
     Analysis,
     Geopackage,
     Log,
-    GeopackageDataset
+    GeopackageLayer
 )
 from rsxml import Logger
 from datetime import date
@@ -100,7 +100,7 @@ if __name__ == '__main__':
                         citation='This is a citation',
                         meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
                         layers=[
-                            GeopackageDataset(
+                            GeopackageLayer(
                                 lyr_name='layer1',
                                 name='Layer1',
                                 ds_type=GeoPackageDatasetTypes.VECTOR,

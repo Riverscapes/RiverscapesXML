@@ -17,7 +17,7 @@ class DotEnvTest(unittest.TestCase):
         with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp:
             tmp.write('TEST_VAR=test_value\nTEST_VAR2=test_value2\n')
             tmp.close()
-            env = parse_dotenv(tmp.file.name)
+            env = parse_dotenv(tmp.name)
             self.assertEqual(env['TEST_VAR'], 'test_value')
             self.assertEqual(env['TEST_VAR2'], 'test_value2')
 
@@ -25,7 +25,7 @@ class DotEnvTest(unittest.TestCase):
         with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp:
             tmp.write('TEST_VARQ="test_value"\nTEST_VAR2Q=\'test_value2\'\n')
             tmp.close()
-            env = parse_dotenv(tmp.file.name)
+            env = parse_dotenv(tmp.name)
             self.assertEqual(env['TEST_VARQ'], 'test_value')
             self.assertEqual(env['TEST_VAR2Q'], 'test_value2')
 
@@ -33,7 +33,7 @@ class DotEnvTest(unittest.TestCase):
         with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp:
             tmp.write('TEST_VARSP= "test value "\n TEST_VAR2SP = \'   test value2\'\n')
             tmp.close()
-            env = parse_dotenv(tmp.file.name)
+            env = parse_dotenv(tmp.name)
             self.assertEqual(env['TEST_VARSP'], 'test value')
             self.assertEqual(env['TEST_VAR2SP'], 'test value2')
 
@@ -50,7 +50,7 @@ class DotEnvTest(unittest.TestCase):
             args.add_argument('--test-var2', type=str, default='{env:TEST_VAR2}')
 
             # Now parse the .env file and make sure we get the right values
-            env = parse_args_env(args, tmp.file.name, [
+            env = parse_args_env(args, tmp.name, [
                 '--test-var', '{env:TEST_VAR}',
                 '--test-var2', '{env:TEST_VAR2}'
             ])
