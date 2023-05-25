@@ -60,9 +60,9 @@ class QAQCEvent(RSObj):
         if state not in ALLOWED_STATES:
             raise ValueError(f'state must be one of {ALLOWED_STATES}')
 
-        self.performed_by = performed_by
+        self.performed_by = performed_by.strip() if performed_by else None
         self.date_performed = date_performed
-        self.state = state
+        self.state = state.strip() if state else None
         self.links = links if links else {}
 
     @staticmethod
