@@ -35,12 +35,12 @@ class RSObj:
             raise ValueError('name is mandatory')
 
         self.xml_tag = xml_tag
-        self.xml_id = xml_id
-        self.name = name
+        self.xml_id = xml_id.strip() if xml_id else None
+        self.name = name.strip() if name else None
 
-        self.summary = summary
-        self.description = description
-        self.citation = citation
+        self.summary = summary.strip() if summary else None
+        self.description = description.strip() if description else None
+        self.citation = citation.strip() if citation else None
         self.meta_data = meta_data
 
     @staticmethod

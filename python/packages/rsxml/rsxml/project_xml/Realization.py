@@ -60,7 +60,7 @@ class Realization(RSObj):
             raise ValueError('product_version must match the pattern: ' + versionPattern)
 
         self.date_created = date_created
-        self.product_version = product_version
+        self.product_version = product_version.strip() if product_version else None
 
         self.datasets = datasets if datasets else []
         self.logs = logs if logs else []

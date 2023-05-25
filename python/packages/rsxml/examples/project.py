@@ -1,6 +1,21 @@
 # in your code you woulf write:
 # from riverscapes import rsxml
-from rsxml.project_xml import Project, MetaData, Meta, ProjectBounds, Coords, BoundingBox, Dataset, GeoPackageDatasetTypes, Realization, QAQCEvent, Analysis
+from rsxml.project_xml import (
+    Project,
+    MetaData,
+    Meta,
+    ProjectBounds,
+    Coords,
+    BoundingBox,
+    Dataset,
+    GeoPackageDatasetTypes,
+    Realization,
+    QAQCEvent,
+    Analysis,
+    Geopackage,
+    Log,
+    GeopackageDataset
+)
 from rsxml import Logger
 from datetime import date
 
@@ -55,6 +70,18 @@ if __name__ == '__main__':
                 summary='This is a test realization',
                 description='This is a test realization',
                 meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
+                logs=[
+                    Log(
+                        xml_id='log_id',
+                        name='Test Log',
+                        path='test.log',
+                        ext_ref='f23b187a-537b-4dd0-8b71-4b7c4a6e9747:Project/Realizations/Realization#REALIZATION1/Datasets/Raster#DEM',
+                        summary='This is a test log',
+                        description='This is a test log',
+                        citation='This is a citation',
+                        meta_data=MetaData(values=[Meta('Test', 'Test Value')])
+                    )
+                ],
                 datasets=[
                     Dataset(
                         xml_id='ds1',
@@ -63,7 +90,28 @@ if __name__ == '__main__':
                         ds_type=GeoPackageDatasetTypes.VECTOR,
                         summary='This is a dataset',
                         description='This is a dataset',
+                    ),
+                    Geopackage(
+                        xml_id='ds2',
+                        name='Dataset2',
+                        path='datasets/ds2.gpkg',
+                        summary='This is a dataset',
+                        description='This is a dataset',
+                        citation='This is a citation',
+                        meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
+                        layers=[
+                            GeopackageDataset(
+                                lyr_name='layer1',
+                                name='Layer1',
+                                ds_type=GeoPackageDatasetTypes.VECTOR,
+                                 summary='This is a dataset',
+                                description='This is a dataset',
+                                citation='This is a citation',
+                                meta_data=MetaData(values=[Meta('Test', 'Test Value')])
+                            )
+                        ]
                     )
+
                 ],
                 inputs=[
                     Dataset(

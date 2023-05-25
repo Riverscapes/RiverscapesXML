@@ -56,8 +56,8 @@ class Project(RSObj):
                          mandatory_id=False  # projects don't need an ID
                          )
 
-        self.project_type = project_type
-        self.proj_path = proj_path
+        self.project_type = project_type.strip() if project_type else None
+        self.proj_path = proj_path.strip() if proj_path else None
         self.bounds = bounds
         self.warehouse = warehouse
         self.common_datasets = common_datasets if common_datasets else []
@@ -89,10 +89,16 @@ class Project(RSObj):
         """
         rsobj = RSObj.from_xml(xml_node)
         warehouse_find = xml_node.find('Warehouse')
+        project_bounds_find = xml_node.find('ProjectBounds')
+        if project_bounds_find is None:
+            log = Logger('Project')
+            log.warning("""WARNING: No ProjectBounds.
+                The project will load into the Riverscapes Data Exchange, but will be easier to discover if you add a ProjectBounds.""")
+
         project = Project(
             name=rsobj.name,
             project_type=xml_node.find('ProjectType').text,
-            bounds=ProjectBounds.from_xml(xml_node.find('ProjectBounds')),
+            bounds=ProjectBounds.from_xml(project_bounds_find) if project_bounds_find else None,
             proj_path=proj_path,
             summary=rsobj.summary,
             description=rsobj.description,

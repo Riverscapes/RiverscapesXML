@@ -59,9 +59,9 @@ class Dataset(RSObj):
         if ext_ref and not re.match(extRefPattern, ext_ref):
             raise ValueError(f'ExtRef must be a valid Riverscapes extRef for Dataset with a pattern: {extRefPattern}')
 
-        self.path = path
-        self.ds_type = ds_type
-        self.ext_ref = ext_ref
+        self.path = path.strip() if path else None
+        self.ds_type = ds_type.strip() if ds_type else None
+        self.ext_ref = ext_ref.strip() if ext_ref else None
 
     @staticmethod
     def from_xml(xml_node: ET.Element) -> Dataset:
@@ -120,7 +120,7 @@ class Log(Dataset):
                  meta_data: MetaData = None
                  ) -> None:
 
-        super().__init__(xml_id, name, path, 'Log', ext_ref, summary, description, citation, meta_data)
+        super().__init__(xml_id, name, path, 'LogFile', ext_ref, summary, description, citation, meta_data)
 
 
 class Geopackage(Dataset):
@@ -175,8 +175,10 @@ class Geopackage(Dataset):
 
     def to_xml(self) -> ET.Element:
         xml_node = super().to_xml()
+
+        layers_node = ET.SubElement(xml_node, 'Layers') if len(self.layers) > 0 else None
         for layer in self.layers:
-            xml_node.append(layer.to_xml())
+            layers_node.append(layer.to_xml())
         return xml_node
 
 
@@ -250,7 +252,7 @@ class GeopackageDataset(RSObj):
         Returns:
             ET.Element: _description_
         """
-        xml_node = super.to_xml()
+        xml_node = super().to_xml()
 
         xml_node.set('lyrName', self.lyr_name)
         if self.ext_ref:

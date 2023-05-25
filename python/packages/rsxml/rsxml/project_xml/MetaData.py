@@ -57,7 +57,8 @@ class MetaData():
             MetaData: _description_
         """
         container_tag = xml_node.tag
-        inner_tag = xml_node.find('*').tag
+        inner_tag_find = xml_node.find('*')
+        inner_tag = xml_node.find('*').tag if inner_tag_find is not None else None
 
         meta_data = MetaData(container_tag=container_tag, inner_tag=inner_tag)
 
