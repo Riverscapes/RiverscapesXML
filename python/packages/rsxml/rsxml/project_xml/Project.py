@@ -1,11 +1,9 @@
-"""_summary_
+"""
+Represents a project with associated metadata, bounds, datasets, and analysis.
 
-    Raises:
-        NotImplementedError: _description_
-
-    Returns:
-        _type_: _description_
-    """
+Use this class to instantiate a project with associated metadata, bounds, datasets, and analysis.
+You can then write the project to an XML file.
+"""
 from __future__ import annotations
 from typing import List
 import xml.etree.cElementTree as ET
@@ -21,7 +19,15 @@ from rsxml.logging.logger import Logger
 
 
 class Project(RSObj):
-    """_summary_
+    """
+    Represents a project with associated metadata, bounds, datasets, and analysis.
+
+    Attributes:
+        name (str): The name of the project.
+        metadata (MetaData): The metadata associated with the project.
+        bounds (ProjectBounds): The geographic bounds of the project.
+        datasets (List[Dataset]): The datasets associated with the project.
+        analysis (Analysis): The analysis performed on the project.
     """
     log = Logger('Project')
     prject_type: str
@@ -45,6 +51,23 @@ class Project(RSObj):
                  realizations: List[Realization] = None,
                  qaqc_events: List[QAQCEvent] = None,
                  ) -> None:
+        """
+        Initializes a Project instance.
+
+            Args:
+                name (str): The name of the project.
+                project_type (str): The type of the project.
+                bounds (ProjectBounds): The geographic bounds of the project.
+                proj_path (str, optional): The path to the project directory. Defaults to None.
+                summary (str, optional): A summary of the project. Defaults to None.
+                description (str, optional): A detailed description of the project. Defaults to None.
+                citation (str, optional): The citation information for the project. Defaults to None.
+                meta_data (MetaData, optional): The metadata associated with the project. Defaults to None.
+                warehouse (Warehouse, optional): The warehouse where project data is stored. Defaults to None.
+                common_datasets (List[Dataset], optional): The common datasets used in the project. Defaults to None.
+                realizations (List[Realization], optional): The realizations associated with the project. Defaults to None.
+                qaqc_events (List[QAQCEvent], optional): The QA/QC events related to the project. Defaults to None.
+        """
 
         super().__init__(xml_tag='Project',
                          xml_id=None,
@@ -66,27 +89,31 @@ class Project(RSObj):
 
     @staticmethod
     def load_project(xml_file_path: str) -> Project:
-        """_summary_
+        """
+        Loads a project from an XML file.
 
         Args:
-            xml_file (str): _description_
+            xml_file (str): Full, absolute path to the project XML file.
 
         Returns:
-            Project: _description_
+            Project: initialized project object
         """
         xml_node = ET.parse(xml_file_path).getroot()
         return Project.from_xml(xml_node, xml_file_path)
 
     @staticmethod
     def from_xml(xml_node: ET.Element, proj_path: str) -> Project:
-        """_summary_
+        """
+        Initializes a Project instance from an XML node.
+        Typically only used within the load_project method.
 
         Args:
-            xml_node (ET.Element): _description_
+            xml_node (ET.Element): Root node from project XML file.
 
         Returns:
-            Project: _description_
+            Project: loaded project object
         """
+
         rsobj = RSObj.from_xml(xml_node)
         warehouse_find = xml_node.find('Warehouse')
         project_bounds_find = xml_node.find('ProjectBounds')
@@ -115,10 +142,11 @@ class Project(RSObj):
         return project
 
     def to_xml(self) -> ET.Element:
-        """_summary_
+        """
+        Serialize an instance of this class to an XML node.
 
         Returns:
-            ET.Element: _description_
+            ET.Element: XML node representing this project.
         """
         xml_node = super().to_xml()
 
@@ -149,7 +177,9 @@ class Project(RSObj):
         return xml_node
 
     def write(self):
-        """_summary_
+        """
+        Serialize the project to an XML file on disk.
+        Call this method once you have finished modifying the project and want to save it to disk.
 
         https://stackoverflow.com/questions/28813876/how-do-i-get-pythons-elementtree-to-pretty-print-to-an-xml-file
         """
@@ -175,7 +205,9 @@ class Project(RSObj):
 
 
 class Warehouse:
-    """_summary_
+    """
+    Represents a Riverscapes Warehouse where the project is stored.
+    Only use this class if the project is already stored in a warehouse.
     """
     guid: str
     api_url: str
@@ -186,13 +218,14 @@ class Warehouse:
 
     @staticmethod
     def from_xml(xml_node: ET.Element) -> Warehouse:
-        """_summary_
+        """
+        Load an instance of this class from an XML node.
 
         Args:
-            xml_node (ET.Element): _description_
+            xml_node (ET.Element): XML node representing this warehouse.
 
         Returns:
-            Warehouse: _description_
+            Warehouse: Initialized warehouse object.
         """
         return Warehouse(
             guid=xml_node.attrib['id'],
@@ -200,10 +233,11 @@ class Warehouse:
         )
 
     def to_xml(self) -> ET.Element:
-        """_summary_
+        """
+        Serialize an instance of this class to an XML node.
 
         Returns:
-            str: _description_
+            str: XML node representing this warehouse, ready to be written to disk.
         """
         root = ET.Element('Warehouse')
         root.set('id', self.guid)

@@ -5,7 +5,14 @@ from rsxml.project_xml.common import Coords, BoundingBox
 
 
 class ProjectBounds:
-    """Generates the <ProjectBounds> tag for the project.xml file"""
+    """
+    Generates the <ProjectBounds> tag for the project.xml file
+
+    Project bounds describe the spatial extent of a riverscapes project. The centroid is the center of the project
+    and the bounding box is the minimum and maximum latitudes and longitudes of the project.
+    The path is the path to the geojson file that contains the project bounding polygon (typically
+    simplified to keep the file size small).
+    """
     centroid: Coords
     bounding_box: BoundingBox
     filepath: str
@@ -13,9 +20,27 @@ class ProjectBounds:
     def __init__(self, centroid: Coords,
                  bounding_box: BoundingBox,
                  filepath: str) -> None:
+        """
+        Initializes an instance of the ProjectBounds class.
+
+        Args:
+            centroid (Coords): The centroid coordinates of the object.
+            bounding_box (BoundingBox): The bounding box coordinates of the object.
+            filepath (str): The filepath associated with the object.
+
+        Returns:
+            None
+
+        Examples:
+            # Create an instance of the class
+            obj = ClassName(centroid=Coords(...),
+                            bounding_box=BoundingBox(...),
+                            filepath="path/to/file")
+        """
+
         self.centroid = centroid
         self.bounding_box = bounding_box
-        self.filepath = filepath
+        self.filepath = filepath.strip() if filepath else None
 
     @staticmethod
     def from_xml(xml_node: ET.Element) -> ProjectBounds:
@@ -49,10 +74,11 @@ class ProjectBounds:
         return ProjectBounds(centroid, bounding_box, filepath)
 
     def to_xml(self) -> ET.Element:
-        """_summary_
+        """
+        Serialize this class to XML for use in the project.xml file.
 
         Returns:
-            ET.Element: _description_
+            ET.Element: Serialized representation of this class as an XML element.
         """
         root = ET.Element('ProjectBounds')
         centroid = ET.SubElement(root, 'Centroid')

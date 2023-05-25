@@ -1,10 +1,6 @@
-"""_summary_
-
-    Raises:
-        NotImplementedError: _description_
-
-    Returns:
-        _type_: _description_
+"""
+Represents a Dataset in a Riverscapes Project XML file. 
+Datasets have subtypes of Geopackage or Log.
     """
 from __future__ import annotations
 from typing import List
@@ -22,10 +18,12 @@ pathPattern = r'([A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+'
 
 
 class Dataset(RSObj):
-    """_summary_
+    """
+    Datasets represent containers for data in a Riverscapes Project XML file.
+    They can be rasters, Shapefiles, Geopackages, log files or other types of data.
 
-    Args:
-        RSObj (_type_): _description_
+    ShapeFiles and rasters represent a single geospatial layer as one object.
+    However, Geopackages are containers for one or more geospatial layers.
     """
     path: str
     ds_type: str
@@ -42,6 +40,42 @@ class Dataset(RSObj):
                  citation: str = None,
                  meta_data: MetaData = None,
                  ) -> None:
+        """
+            Initializes a Dataset instance.
+
+            Args:
+                xml_id (str): The XML ID of the dataset.
+                name (str): The name of the dataset.
+                path (str): The path to the dataset.
+                ds_type (str): The type of the dataset.
+                ext_ref (str, optional): The external reference for the dataset. Defaults to None.
+                summary (str, optional): A summary of the dataset. Defaults to None.
+                description (str, optional): A detailed description of the dataset. Defaults to None.
+                citation (str, optional): The citation information for the dataset. Defaults to None.
+                meta_data (MetaData, optional): The metadata associated with the dataset. Defaults to None.
+
+            Returns:
+                None
+
+            Examples:
+                # Create a dataset instance with required attributes
+                dataset = Dataset(xml_id="12345",
+                                name="My Dataset",
+                                path="/path/to/dataset",
+                                ds_type="Type A")
+
+                # Create a dataset instance with additional optional attributes
+                dataset = Dataset(xml_id="12345",
+                                name="My Dataset",
+                                path="/path/to/dataset",
+                                ds_type="Type A",
+                                ext_ref="External Reference",
+                                summary="A summary of the dataset",
+                                description="A detailed description of the dataset",
+                                citation="Citation information",
+                                meta_data=MetaData(...))
+        """
+
         super().__init__(xml_tag=ds_type,
                          xml_id=xml_id,
                          name=name,
@@ -68,10 +102,10 @@ class Dataset(RSObj):
         """parse an xml node into a Dataset object
 
         Args:
-            xml_node (ET.Element): _description_
+            xml_node (ET.Element): XML node representing the Dataset
 
         Returns:
-            Dataset: _description_
+            Dataset: initialized dataset object from the XML node.
         """
         rsobj = RSObj.from_xml(xml_node)
 
@@ -89,10 +123,11 @@ class Dataset(RSObj):
         return dataset
 
     def to_xml(self) -> ET.Element:
-        """_summary_
+        """
+        Serialize this object to an XML node ready for writing to a file.
 
         Returns:
-            ET.Element: _description_
+            ET.Element: XML node representing this object.
         """
         xml_node = super().to_xml()
 
@@ -104,10 +139,8 @@ class Dataset(RSObj):
 
 
 class Log(Dataset):
-    """_summary_
-
-    Args:
-        Dataset (_type_): _description_
+    """
+    Inherits from Dataset and represents a log file in a Riverscapes Project XML file.
     """
 
     def __init__(self, xml_id: str,
@@ -119,28 +152,94 @@ class Log(Dataset):
                  citation: str = None,
                  meta_data: MetaData = None
                  ) -> None:
+        """
+        Initializes a Dataset instance.
+
+        Args:
+            xml_id (str): The XML ID of the dataset.
+            name (str): The name of the dataset.
+            path (str): The path to the dataset.
+            ext_ref (str, optional): The external reference for the dataset. Defaults to None.
+            summary (str, optional): A summary of the dataset. Defaults to None.
+            description (str, optional): A detailed description of the dataset. Defaults to None.
+            citation (str, optional): The citation information for the dataset. Defaults to None.
+            meta_data (MetaData, optional): The metadata associated with the dataset. Defaults to None.
+
+        Returns:
+            None
+
+        Examples:
+            # Create a dataset instance with required attributes
+            dataset = Dataset(xml_id="12345",
+                            name="My Dataset",
+                            path="/path/to/dataset")
+
+            # Create a dataset instance with additional optional attributes
+            dataset = Dataset(xml_id="12345",
+                            name="My Dataset",
+                            path="/path/to/dataset",
+                            ext_ref="External Reference",
+                            summary="A summary of the dataset",
+                            description="A detailed description of the dataset",
+                            citation="Citation information",
+                            meta_data=MetaData(...))
+        """
 
         super().__init__(xml_id, name, path, 'LogFile', ext_ref, summary, description, citation, meta_data)
 
 
 class Geopackage(Dataset):
-    """_summary_
-
-    Args:
-        Dataset (_type_): _description_
     """
-    layers: List[GeopackageDataset]
+    Inherits from Dataset and represents a geopackage in a Riverscapes Project XML file.
+    Geopackages can contain one or more geospatial layers
+    """
+    layers: List[GeopackageLayer]
 
     def __init__(self, xml_id: str,
                  name: str,
                  path: str,
-                 layers: List[GeopackageDataset],
+                 layers: List[GeopackageLayer],
                  ext_ref: str = None,
                  summary: str = None,
                  description: str = None,
                  citation: str = None,
                  meta_data: MetaData = None
                  ) -> None:
+        """
+        Initializes a Geopackage instance.
+
+        Args:
+            xml_id (str): The XML ID of the dataset.
+            name (str): The name of the dataset.
+            path (str): The path to the dataset.
+            layers (List[GeopackageDataset]): The layers associated with the dataset.
+            ext_ref (str, optional): The external reference for the dataset. Defaults to None.
+            summary (str, optional): A summary of the dataset. Defaults to None.
+            description (str, optional): A detailed description of the dataset. Defaults to None.
+            citation (str, optional): The citation information for the dataset. Defaults to None.
+            meta_data (MetaData, optional): The metadata associated with the dataset. Defaults to None.
+
+        Returns:
+            None
+
+        Examples:
+            # Create a dataset instance with required attributes
+            dataset = Dataset(xml_id="12345",
+                            name="My Dataset",
+                            path="/path/to/dataset",
+                            layers=[GeopackageDataset(...), GeopackageDataset(...)])
+
+            # Create a dataset instance with additional optional attributes
+            dataset = Dataset(xml_id="12345",
+                            name="My Dataset",
+                            path="/path/to/dataset",
+                            layers=[GeopackageDataset(...), GeopackageDataset(...)],
+                            ext_ref="External Reference",
+                            summary="A summary of the dataset",
+                            description="A detailed description of the dataset",
+                            citation="Citation information",
+                            meta_data=MetaData(...))
+        """
 
         super().__init__(xml_id, name, path, 'Geopackage', ext_ref, summary, description, citation, meta_data)
         self.layers = layers
@@ -159,7 +258,7 @@ class Geopackage(Dataset):
         layers = []
 
         for layer in xml_node.findall('GeopackageDataset'):
-            layers.append(GeopackageDataset.from_xml(layer))
+            layers.append(GeopackageLayer.from_xml(layer))
 
         geopackage = Geopackage(dataset.xml_id,
                                 dataset.name,
@@ -182,11 +281,9 @@ class Geopackage(Dataset):
         return xml_node
 
 
-class GeopackageDataset(RSObj):
-    """_summary_
-
-    Args:
-        RSObj (_type_): _description_
+class GeopackageLayer(RSObj):
+    """
+    Represents a layer within a Geopackage. Typically these are vector layers.
     """
     ds_type: GeoPackageDatasetTypes
     lyr_name: str
@@ -202,6 +299,38 @@ class GeopackageDataset(RSObj):
                  citation: str = None,
                  meta_data: MetaData = None,
                  ) -> None:
+        """
+        Initializes a GeoPackageDataset instance.
+
+        Args:
+            lyr_name (str): The name of the dataset layer.
+            name (str): The name of the dataset.
+            ds_type (GeoPackageDatasetTypes): The type of the dataset.
+            ext_ref (str, optional): The external reference for the dataset. Defaults to None.
+            summary (str, optional): A summary of the dataset. Defaults to None.
+            description (str, optional): A detailed description of the dataset. Defaults to None.
+            citation (str, optional): The citation information for the dataset. Defaults to None.
+            meta_data (MetaData, optional): The metadata associated with the dataset. Defaults to None.
+
+        Returns:
+            None
+
+        Examples:
+            # Create a GeoPackageDataset instance with required attributes
+            dataset = GeoPackageDataset(lyr_name="LayerName",
+                                        name="DatasetName",
+                                        ds_type=GeoPackageDatasetTypes.TYPE_A)
+
+            # Create a GeoPackageDataset instance with additional optional attributes
+            dataset = GeoPackageDataset(lyr_name="LayerName",
+                                        name="DatasetName",
+                                        ds_type=GeoPackageDatasetTypes.TYPE_A,
+                                        ext_ref="External Reference",
+                                        summary="A summary of the dataset",
+                                        description="A detailed description of the dataset",
+                                        citation="Citation information",
+                                        meta_data=MetaData(...))
+        """
 
         super().__init__(xml_tag=ds_type,
                          xml_id=None,
@@ -222,35 +351,33 @@ class GeopackageDataset(RSObj):
         self.ext_ref = ext_ref
 
     @staticmethod
-    def from_xml(xml_node: ET.Element) -> GeopackageDataset:
+    def from_xml(xml_node: ET.Element) -> GeopackageLayer:
         """parse an xml node into a Dataset object
 
         Args:
-            xml_node (ET.Element): _description_
-
-        Returns:
-            Dataset: _description_
+            xml_node (ET.Element): Node representing the layer in the XML
         """
         rsobj = RSObj.from_xml(xml_node)
         lyr_name = xml_node.get('lyrName')
 
         # if this is a dataset then the id will get picked up by the RSObj.from_xml
-        dataset = GeopackageDataset(lyr_name=lyr_name,
-                                    name=rsobj.name,
-                                    ds_type=xml_node.tag,
-                                    ext_ref=xml_node.get('extRef'),
-                                    summary=rsobj.summary,
-                                    description=rsobj.description,
-                                    citation=rsobj.citation,
-                                    meta_data=rsobj.meta_data
-                                    )
+        dataset = GeopackageLayer(lyr_name=lyr_name,
+                                  name=rsobj.name,
+                                  ds_type=xml_node.tag,
+                                  ext_ref=xml_node.get('extRef'),
+                                  summary=rsobj.summary,
+                                  description=rsobj.description,
+                                  citation=rsobj.citation,
+                                  meta_data=rsobj.meta_data
+                                  )
         return dataset
 
     def to_xml(self) -> ET.Element:
-        """_summary_
+        """
+        Serialize a GeopackageLayer object to an XML node
 
         Returns:
-            ET.Element: _description_
+            ET.Element: XML node representing the GeopackageLayer
         """
         xml_node = super().to_xml()
 

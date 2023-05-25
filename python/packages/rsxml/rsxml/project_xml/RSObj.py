@@ -1,12 +1,32 @@
-""" RSObj is a useful pattern for XML we generate often"""
+""" RSObj is a useful pattern for XML we generate often.
+Most of the XML we generate has the same structure:
+    <xml_tag>
+        <Name>name</Name>
+        <Summary>summary</Summary>
+        <Description>description</Description>
+        <Citation>citation</Citation>
+        <MetaData>
+            <Meta name="name" type="type">value</Meta>
+            <Meta name="name" type="type">value</Meta>
+            <Meta name="name" type="type">value</Meta>
+        </MetaData>
+    </xml_tag>
+
+RSObj is a class that can be inherited to create a class that can be
+instantiated with the above structure. It also has a static method
+from_xml that can be used to parse an XML node into an RSObj.
+"""
 from __future__ import annotations
+import abc
 import xml.etree.cElementTree as ET
 
-from rsxml.project_xml.MetaData import MetaData, MetaValue, Meta
+from rsxml.project_xml.MetaData import MetaData, Meta
 
 
-class RSObj:
-    """_summary_
+class RSObj (abc.ABC):
+    """
+    Abstract base class from which several other classes are derived.
+    This class is used as a pattern for XML we generate often.
     """
     xml_id: str
     name: str
@@ -26,6 +46,38 @@ class RSObj:
                  meta_data: MetaData = None,
                  mandatory_id: bool = True
                  ) -> None:
+        """
+        Initializes an instance of RSObj, the base class for several other types.
+
+        Args:
+            xml_tag (str): The XML tag associated with the instance.
+            xml_id (str): The XML ID of the instance.
+            name (str): The name of the instance.
+            summary (str, optional): A summary of the instance. Defaults to None.
+            description (str, optional): A detailed description of the instance. Defaults to None.
+            citation (str, optional): The citation information for the instance. Defaults to None.
+            meta_data (MetaData, optional): The metadata associated with the instance. Defaults to None.
+            mandatory_id (bool, optional): Flag indicating if the XML ID is mandatory. Defaults to True.
+
+        Returns:
+            None
+
+        Examples:
+            # Create an instance of the class with required attributes
+            instance = ClassName(xml_tag="tag",
+                                xml_id="12345",
+                                name="My Instance")
+
+            # Create an instance of the class with additional optional attributes
+            instance = ClassName(xml_tag="tag",
+                                xml_id="12345",
+                                name="My Instance",
+                                summary="A summary of the instance",
+                                description="A detailed description of the instance",
+                                citation="Citation information",
+                                meta_data=MetaData(...),
+                                mandatory_id=False)
+        """
 
         if mandatory_id and not xml_id:
             raise ValueError('xml_id is mandatory')
@@ -57,8 +109,8 @@ class RSObj:
         description_find = xml_node.find('Description')
         description = description_find.text if description_find is not None else None
 
-        citationFind = xml_node.find('Citation')
-        citation = citationFind.text if citationFind is not None else None
+        citation_find = xml_node.find('Citation')
+        citation = citation_find.text if citation_find is not None else None
 
         meta_data_find = xml_node.find('MetaData')
         meta_data = MetaData.from_xml(meta_data_find, xml_node) if meta_data_find is not None else None
@@ -77,7 +129,9 @@ class RSObj:
         )
 
     def to_xml(self) -> ET.Element:
-        """turns the object into an XML node"""
+        """
+         Serializes the object into an XML node
+        """
 
         xml_node = ET.Element(self.xml_tag)
 
@@ -92,9 +146,9 @@ class RSObj:
         if self.citation:
             ET.SubElement(xml_node, 'Citation').text = self.citation
 
-        if self.meta_data is not None and len(self.meta_data._values) > 0:
+        if self.meta_data is not None and len(self.meta_data) > 0:
             metadata_root = ET.SubElement(xml_node, 'MetaData')
-            for meta in self.meta_data._values:
+            for meta in self.meta_data:
                 meta_item = ET.SubElement(metadata_root, 'Meta')
                 meta_item.set('name', meta.name)
                 if meta.type:
