@@ -10,7 +10,7 @@
                         <Children collapsed="true">
                             <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Road Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
-                            <Node label="Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
+                            <Node label="Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_dens" />
                             <Node label="Railroad Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Railroad Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
                             <Node label="Canal Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
