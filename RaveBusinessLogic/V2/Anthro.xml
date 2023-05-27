@@ -8,7 +8,7 @@
                 <Children collapsed="true">
                     <Node label="IGO Outputs">
                         <Children collapsed="true">
-                            <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
+                            <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="LUI_IGO" />
                             <Node label="Road Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_len" />
                             <Node label="Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_dens" />
                             <Node label="Railroad Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rail_len" />
