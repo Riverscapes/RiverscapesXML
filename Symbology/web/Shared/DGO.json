@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(hsl(0, 0%, 0%)", "DGO"]
+  ],
+  "layerStyles": [
+    {
+      "id": "dgo-ajwz6t copy",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "DGO-ddzqcj",
+      "layout": {},
+      "paint": {"line-width": 2}
+  }
+  ]
+}

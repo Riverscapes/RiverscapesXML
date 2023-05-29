@@ -1,0 +1,16 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:INTERPOLATED
+-80,97,21,13,255,From Conifer
+-60,153,72,44,255,From Devegetated
+-50,196,106,49,255,From Grass/Shrubland
+0,178,178,178,255,Upland Conversion
+0.10000000000000001,222,167,80,255,No Change
+49,178,178,178,255,Upland Conversion
+50,196,186,92,255,Grass/Shrubland
+60,189,194,95,255,Devegetation
+80,154,171,79,255,Conifer
+97,123,148,64,255,Invasive
+98,91,125,49,255,Development
+99,66,107,37,255,Agriculture
+100,41,87,26,255,Non-Riparian Conversions 
+1000,16,69,16,255,Multiple Dominant
