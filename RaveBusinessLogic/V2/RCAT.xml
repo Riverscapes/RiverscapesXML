@@ -82,4 +82,13 @@
             </Node>
         </Children>
     </Node>
+    <Views default ="RCAT_Condition">
+     <View name="Riparian Condition" id="RCAT_Condition">
+      <Description>The view is the riparian condition ouptut from RCAT</Description>
+      <Layers>
+        <Layer id="dem"/>
+        <Layer id="rcat_condition"/>
+      </Layers>
+     </View>
+    </Views>
 </Project>
