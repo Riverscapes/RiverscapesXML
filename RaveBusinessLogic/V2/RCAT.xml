@@ -23,8 +23,8 @@
                     <Node label="IGOs">
                         <Children collapsed="true">
                             <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo"/>
-                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology=""/>
-                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology=""/>
+                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo"/>
+                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
@@ -40,7 +40,7 @@
                             <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40"/>
                             <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
-                            <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology=""/>
+                            <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="Veg_Conversion" transparency="40"/>
                             <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="FPAccess_Raster" transparency="40"/>
                         </Children>
                     </Node>
@@ -51,8 +51,8 @@
                     <Node label="Sampling Units">
                         <Children collapsed="true">
                             <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='reaches']" type="line" symbology="stream_reaches" />
-                            <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="" />
-                            <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="" />
+                            <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" />
+                            <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="DGO" />
                         </Children>
                     </Node>
                     <Node label="Anthropogenic Datasets">

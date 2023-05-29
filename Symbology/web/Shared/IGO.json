@@ -1,0 +1,59 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(57, 76%, 49%)", "IGO"]
+  ],
+  "layerStyles": [
+    {
+      "id": "igo-6dm17v",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "IGO-6dm17v",
+      "layout": {},
+      "paint": {
+          "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              1,
+              11,
+              2,
+              13.55,
+              3,
+              15,
+              4,
+              22,
+              5
+          ],
+          "circle-color": "hsl(57, 76%, 49%)"
+      }
+  },
+  {
+      "id": "igo-6dm17v copy",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "IGO-6dm17v",
+      "layout": {},
+      "paint": {
+          "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              1,
+              11,
+              2,
+              13.55,
+              3,
+              15,
+              4,
+              22,
+              5
+          ],
+          "circle-color": "hsla(0, 0%, 0%, 0)",
+          "circle-stroke-width": 1
+      }
+  }
+  ]
+}
