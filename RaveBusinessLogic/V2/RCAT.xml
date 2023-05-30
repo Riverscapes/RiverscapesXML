@@ -8,12 +8,12 @@
                 <Children collapsed="false">
                     <Node label="IGOs">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo" />
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo" id="rcat_condition_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition" />
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition" id="rcat_condition"/>
                         </Children>
                     </Node>
                 </Children>
@@ -22,16 +22,16 @@
                 <Children collapsed="true">
                     <Node label="IGOs">
                         <Children collapsed="true">
-                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo"/>
-                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo"/>
-                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo"/>
+                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo" id="rvd_igo"/>
+                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo" id="LUI_igo" />
+                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo" id="fpaccess_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
                         <Children collapsed="true">
-                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="rvd"/>
-                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU"/>
-                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="FPAccess"/>
+                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="rvd" id="rvd"/>
+                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU" id="LUI"/>
+                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="FPAccess" id="fpaccess"/>
                         </Children>
                     </Node>
                     <Node label="Rasters">
@@ -51,8 +51,8 @@
                     <Node label="Sampling Units">
                         <Children collapsed="true">
                             <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='reaches']" type="line" symbology="stream_reaches" />
-                            <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" />
-                            <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="DGO" />
+                            <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" id="igo" />
+                            <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="DGO" id="dgo" />
                         </Children>
                     </Node>
                     <Node label="Anthropogenic Datasets">
@@ -64,7 +64,7 @@
                     </Node>
                     <Node label="Valley Bottom">
                         <Children collapsed="true">
-                            <Node label="Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled" />
+                            <Node label="Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled" id="vb"/>
                         </Children>
                     </Node>
                     <Node label="Vegetation">
@@ -75,7 +75,7 @@
                     </Node>
                     <Node label="Digital Elevation Model">
                         <Children collapsed="true">
-                            <Node label="Pit-filled DEM" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" />
+                            <Node label="Pit-filled DEM" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" id="dem" />
                         </Children>
                     </Node>
                 </Children>
@@ -84,11 +84,28 @@
     </Node>
     <Views default ="RCAT_Condition">
      <View name="Riparian Condition" id="RCAT_Condition">
-      <Description>The view is the riparian condition ouptut from RCAT</Description>
+      <Description>This view is the riparian condition ouptut from RCAT</Description>
       <Layers>
         <Layer id="dem"/>
+        <Layer id="vb"/>
         <Layer id="rcat_condition"/>
       </Layers>
      </View>
+     <View name="DGOs and IGOs" id="DGO_IGO">
+      <Description>This view shows the IGOs and DGOs</Description>
+      <Layers>
+       <Layer id="dem"/>
+       <Layer id="dgo"/>
+       <Layer id="igo"/>
+      </Layers>
+     </View>
+     <view name="RVD" id="rvd_rip">
+      <Description>This view shows the riparian vegetation departure (RVD) output overlayed on the existing riprarian vegetation raster</Description>
+      <Layers>
+       <Layer id="dem"/>
+       <Layer id="evt_rip"/>
+       <Layer id="rvd"/>
+      </Layers>
+     </view>
     </Views>
 </Project>
