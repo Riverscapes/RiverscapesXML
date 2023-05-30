@@ -1,0 +1,316 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [ "hsl(31, 60%, 29%)", "Igneous and Sedimentary, undifferentiated" ],
+    [ "hsl(356, 100%, 88%)", "Igneous, intrusive" ],
+    [ "hsl(6, 100%, 55%)", "Igneous, volcanic" ],
+    [ "hsl(290, 33%, 62%)", "Melange" ],
+    [ "hsl(62, 50%, 45%)", "Metamorphic and Sedimentary, undifferentiated" ],
+    [ "hsl(125, 43%, 32%)", "Metamorphic, amphibolite" ],
+    [ "hsl(160, 58%, 44%)", "Metamorphic, carbonate" ],
+    [ "hsl(100, 50%, 56%)", "Metamorphic, gneiss" ],
+    [ "hsl(97, 52%, 53%)", "Metamorphic, granulite" ],
+    [ "hsl(87, 52%, 83%)", "Metamoprhic, igneous" ],
+    [ "hsl(311, 59%, 40%)", "Metamorphic, intrusive" ],
+    [ "hsl(356, 21%, 85%)", "Metamorphic, other" ],
+    [ "hsl(167, 6%, 70%)", "Metamorphic,schist" ],
+    [ "hsl(175, 6%, 39%)", "Metamorphic, sedimentary" ],
+    [ "hsl(35, 77%, 78%)", "Metamorphic, sedimentary clastic" ],
+    [ "hsl(253, 35%, 72%)", "Metamorphic, serpentinite" ],
+    [ "hsl(88, 53%, 53%)", "Metamorphic, undifferentiated" ],
+    [ "hsl(45, 42%, 51%)", "Sedimentary, clastic" ],
+    [ "hsl(216, 89%, 35%)", "Sedimentary, carbonate" ],
+    [ "hsl(323, 70%, 56%)", "Sedimentary, chemical" ],
+    [ "hsl(176, 34%, 64%)", "Sedimentary, evaporite" ],
+    [ "hsl(0, 0%, 5%)", "Sedimentary, iron formation, undifferentiated" ],
+    [ "hsl(28, 100%, 50%)", "Sedimentary, undifferentiated" ],
+    [ "hsl(279, 37%, 48%)", "Tectonite, undifferentiated" ],
+    [ "hsl(38, 100%, 75%)", "Unconsolidated and Sedimentary, undifferentiated" ],
+    [ "hsl(51, 100%, 88%)", "Unconsolidated, undifferentiated" ],
+    [ "hsl(192, 82%, 78%)", "Water" ]
+  ],
+  "layerStyles": [
+    {
+      "id": "geology-8o3qso",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "geology-8o3qso",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Water" ],
+            true,
+            false
+          ],
+          "hsl(192, 82%, 78%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Igneous, volcanic" ],
+            true,
+            false
+          ],
+          "hsl(6, 100%, 55%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Igneous and Sedimentary, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(31, 60%, 29%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Unconsolidated, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(51, 100%, 88%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, carbonate" ],
+            true,
+            false
+          ],
+          "hsl(216, 89%, 35%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(28, 100%, 50%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic and Sedimentary, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(62, 50%, 45%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Melange" ],
+            true,
+            false
+          ],
+          "hsl(290, 33%, 62%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Igneous, intrusive" ],
+            true,
+            false
+          ],
+          "hsl(356, 100%, 88%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, amphibolite" ],
+            true,
+            false
+          ],
+          "hsl(125, 43%, 32%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, carbonate" ],
+            true,
+            false
+          ],
+          "hsl(160, 58%, 44%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, gneiss" ],
+            true,
+            false
+          ],
+          "hsl(100, 50%, 56%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, granulite" ],
+            true,
+            false
+          ],
+          "hsl(97, 52%, 53%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, igneous" ],
+            true,
+            false
+          ],
+          "hsl(87, 52%, 83%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, intrusive" ],
+            true,
+            false
+          ],
+          "hsl(311, 59%, 40%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, other" ],
+            true,
+            false
+          ],
+          "hsl(356, 21%, 85%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, schist" ],
+            true,
+            false
+          ],
+          "hsl(167, 6%, 70%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, sedimentary" ],
+            true,
+            false
+          ],
+          "hsl(175, 6%, 39%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, sedimentary clastic" ],
+            true,
+            false
+          ],
+          "hsl(35, 77%, 78%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, serpentinite" ],
+            true,
+            false
+          ],
+          "hsl(253, 35%, 72%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Metamorphic, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(88, 53%, 53%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, clastic" ],
+            true,
+            false
+          ],
+          "hsl(45, 42%, 51%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, carbonate" ],
+            true,
+            false
+          ],
+          "hsl(216, 89%, 35%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, chemical" ],
+            true,
+            false
+          ],
+          "hsl(323, 70%, 56%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, evaporite" ],
+            true,
+            false
+          ],
+          "hsl(176, 34%, 64%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, iron formation, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(0, 0%, 5%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Sedimentary, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(28, 100%, 50%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Tectonite, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(279, 37%, 48%)",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Unconsolidated and Sedimentary, undifferentiated" ],
+            true,
+            false
+          ],
+          "hsl(38, 100%, 75%)",
+          "#000000"
+        ]
+      }
+    },
+    {
+      "id": "geology-8o3qso copy",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "geology-8o3qso",
+      "layout": {
+        "text-field": [
+          "case",
+          [
+            "match",
+            [ "get", "GENERALIZE" ],
+            [ "Water" ],
+            false,
+            true
+          ],
+          [
+            "to-string",
+            [ "get", "GENERALIZE" ]
+          ],
+          [
+            "to-string",
+            [ "get", "GENERALIZE" ]
+          ]
+        ],
+        "text-font": [ "Karla Regular", "Arial Unicode MS Regular" ],
+        "text-size": 10
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          [ "get", "GENERALIZE" ],
+          [ "Water" ],
+          "hsla(0, 0%, 0%, 0)",
+          "#000000"
+        ]
+      }
+    }
+  ]
+}
