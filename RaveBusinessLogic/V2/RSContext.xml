@@ -67,7 +67,7 @@
       </Node>
       <Node label="Geology">
         <Children collapsed="true">
-          <Node label="Geology" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geology" />
+          <Node label="Geology" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geology" transparency="40"/>
         </Children>
       </Node>
       <Node label="Land Management">
