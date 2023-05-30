@@ -99,13 +99,13 @@
        <Layer id="igo"/>
       </Layers>
      </View>
-     <view name="RVD" id="rvd_rip">
+     <View name="RVD" id="rvd_rip">
       <Description>This view shows the riparian vegetation departure (RVD) output overlayed on the existing riprarian vegetation raster</Description>
       <Layers>
        <Layer id="dem"/>
        <Layer id="evt_rip"/>
        <Layer id="rvd"/>
       </Layers>
-     </view>
+     </View>
     </Views>
 </Project>
