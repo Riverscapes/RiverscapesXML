@@ -41,7 +41,7 @@
             <Option type="QString" name="dash_pattern_offset_unit" value="MM"/>
             <Option type="QString" name="draw_inside_polygon" value="0"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
-            <Option type="QString" name="line_color" value="232,113,141,255"/>
+            <Option type="QString" name="line_color" value="225,89,137,255"/>
             <Option type="QString" name="line_style" value="solid"/>
             <Option type="QString" name="line_width" value="0.6"/>
             <Option type="QString" name="line_width_unit" value="MM"/>
@@ -81,12 +81,12 @@
         <layer locked="0" pass="0" enabled="1" class="SimpleFill">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="color" value="232,113,141,255"/>
+            <Option type="QString" name="color" value="225,89,137,255"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="offset" value="0,0"/>
             <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="offset_unit" value="MM"/>
-            <Option type="QString" name="outline_color" value="166,81,101,255"/>
+            <Option type="QString" name="outline_color" value="161,64,98,255"/>
             <Option type="QString" name="outline_style" value="solid"/>
             <Option type="QString" name="outline_width" value="0.2"/>
             <Option type="QString" name="outline_width_unit" value="MM"/>
@@ -115,14 +115,14 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="232,113,141,255"/>
+            <Option type="QString" name="color" value="225,89,137,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="diamond"/>
             <Option type="QString" name="offset" value="0,0"/>
             <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="offset_unit" value="MM"/>
-            <Option type="QString" name="outline_color" value="166,81,101,255"/>
+            <Option type="QString" name="outline_color" value="161,64,98,255"/>
             <Option type="QString" name="outline_style" value="solid"/>
             <Option type="QString" name="outline_width" value="0.2"/>
             <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -144,7 +144,7 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 type="graduatedSymbol" symbollevels="0" attr="DivPts_ct" forceraster="0" referencescale="-1" enableorderby="0" graduatedMethod="GraduatedColor">
+  <renderer-v2 type="graduatedSymbol" symbollevels="0" attr="Canal_dens" forceraster="0" referencescale="-1" enableorderby="0" graduatedMethod="GraduatedColor">
     <ranges>
       <range lower="0.000000000000000" upper="0.000000000000000" render="true" symbol="0" label="0 - 0"/>
       <range lower="0.000000000000000" upper="0.000000000000000" render="true" symbol="1" label="0 - 0"/>
@@ -165,7 +165,7 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="221,224,228,255"/>
+            <Option type="QString" name="color" value="232,209,159,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="circle"/>
@@ -193,8 +193,8 @@
                   <Option type="Map" name="transformer">
                     <Option type="Map" name="d">
                       <Option type="Map" name="curve">
-                        <Option type="QString" name="x" value="0,0.12037037037037036,0.31018518518518517,0.67592592592592593,1"/>
-                        <Option type="QString" name="y" value="0,0.24175824175824176,0.56043956043956045,0.80219780219780223,1"/>
+                        <Option type="QString" name="x" value="0,0.11574074074074074,0.34259259259259262,0.71296296296296291,1"/>
+                        <Option type="QString" name="y" value="0,0.23076923076923078,0.63736263736263732,0.86813186813186816,1"/>
                       </Option>
                       <Option type="double" name="exponent" value="0.57"/>
                       <Option type="double" name="maxSize" value="1"/>
@@ -226,7 +226,7 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="200,220,240,255"/>
+            <Option type="QString" name="color" value="228,184,146,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="circle"/>
@@ -254,8 +254,8 @@
                   <Option type="Map" name="transformer">
                     <Option type="Map" name="d">
                       <Option type="Map" name="curve">
-                        <Option type="QString" name="x" value="0,0.12037037037037036,0.31018518518518517,0.67592592592592593,1"/>
-                        <Option type="QString" name="y" value="0,0.24175824175824176,0.56043956043956045,0.80219780219780223,1"/>
+                        <Option type="QString" name="x" value="0,0.11574074074074074,0.34259259259259262,0.71296296296296291,1"/>
+                        <Option type="QString" name="y" value="0,0.23076923076923078,0.63736263736263732,0.86813186813186816,1"/>
                       </Option>
                       <Option type="double" name="exponent" value="0.57"/>
                       <Option type="double" name="maxSize" value="1"/>
@@ -287,7 +287,7 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="115,178,216,255"/>
+            <Option type="QString" name="color" value="224,159,134,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="circle"/>
@@ -315,8 +315,8 @@
                   <Option type="Map" name="transformer">
                     <Option type="Map" name="d">
                       <Option type="Map" name="curve">
-                        <Option type="QString" name="x" value="0,0.12037037037037036,0.31018518518518517,0.67592592592592593,1"/>
-                        <Option type="QString" name="y" value="0,0.24175824175824176,0.56043956043956045,0.80219780219780223,1"/>
+                        <Option type="QString" name="x" value="0,0.11574074074074074,0.34259259259259262,0.71296296296296291,1"/>
+                        <Option type="QString" name="y" value="0,0.23076923076923078,0.63736263736263732,0.86813186813186816,1"/>
                       </Option>
                       <Option type="double" name="exponent" value="0.57"/>
                       <Option type="double" name="maxSize" value="1"/>
@@ -348,7 +348,7 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="41,121,185,255"/>
+            <Option type="QString" name="color" value="220,134,121,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="circle"/>
@@ -376,8 +376,8 @@
                   <Option type="Map" name="transformer">
                     <Option type="Map" name="d">
                       <Option type="Map" name="curve">
-                        <Option type="QString" name="x" value="0,0.12037037037037036,0.31018518518518517,0.67592592592592593,1"/>
-                        <Option type="QString" name="y" value="0,0.24175824175824176,0.56043956043956045,0.80219780219780223,1"/>
+                        <Option type="QString" name="x" value="0,0.11574074074074074,0.34259259259259262,0.71296296296296291,1"/>
+                        <Option type="QString" name="y" value="0,0.23076923076923078,0.63736263736263732,0.86813186813186816,1"/>
                       </Option>
                       <Option type="double" name="exponent" value="0.57"/>
                       <Option type="double" name="maxSize" value="1"/>
@@ -409,7 +409,7 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="8,48,107,255"/>
+            <Option type="QString" name="color" value="216,108,108,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="circle"/>
@@ -437,8 +437,8 @@
                   <Option type="Map" name="transformer">
                     <Option type="Map" name="d">
                       <Option type="Map" name="curve">
-                        <Option type="QString" name="x" value="0,0.12037037037037036,0.31018518518518517,0.67592592592592593,1"/>
-                        <Option type="QString" name="y" value="0,0.24175824175824176,0.56043956043956045,0.80219780219780223,1"/>
+                        <Option type="QString" name="x" value="0,0.11574074074074074,0.34259259259259262,0.71296296296296291,1"/>
+                        <Option type="QString" name="y" value="0,0.23076923076923078,0.63736263736263732,0.86813186813186816,1"/>
                       </Option>
                       <Option type="double" name="exponent" value="0.57"/>
                       <Option type="double" name="maxSize" value="1"/>
@@ -472,7 +472,7 @@
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="141,90,153,255"/>
+            <Option type="QString" name="color" value="232,209,159,255"/>
             <Option type="QString" name="horizontal_anchor_point" value="1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="name" value="circle"/>
@@ -500,8 +500,8 @@
                   <Option type="Map" name="transformer">
                     <Option type="Map" name="d">
                       <Option type="Map" name="curve">
-                        <Option type="QString" name="x" value="0,0.12037037037037036,0.31018518518518517,0.67592592592592593,1"/>
-                        <Option type="QString" name="y" value="0,0.24175824175824176,0.56043956043956045,0.80219780219780223,1"/>
+                        <Option type="QString" name="x" value="0,0.11574074074074074,0.34259259259259262,0.71296296296296291,1"/>
+                        <Option type="QString" name="y" value="0,0.23076923076923078,0.63736263736263732,0.86813186813186816,1"/>
                       </Option>
                       <Option type="double" name="exponent" value="0.57"/>
                       <Option type="double" name="maxSize" value="1"/>
@@ -524,13 +524,12 @@
     </source-symbol>
     <colorramp type="gradient" name="[source]">
       <Option type="Map">
-        <Option type="QString" name="color1" value="247,251,255,255"/>
-        <Option type="QString" name="color2" value="8,48,107,255"/>
+        <Option type="QString" name="color1" value="232,209,159,255"/>
+        <Option type="QString" name="color2" value="216,108,108,255"/>
         <Option type="QString" name="direction" value="ccw"/>
         <Option type="QString" name="discrete" value="0"/>
         <Option type="QString" name="rampType" value="gradient"/>
         <Option type="QString" name="spec" value="rgb"/>
-        <Option type="QString" name="stops" value="0.13;222,235,247,255;rgb;ccw:0.26;198,219,239,255;rgb;ccw:0.39;158,202,225,255;rgb;ccw:0.52;107,174,214,255;rgb;ccw:0.65;66,146,198,255;rgb;ccw:0.78;33,113,181,255;rgb;ccw:0.9;8,81,156,255;rgb;ccw"/>
       </Option>
     </colorramp>
     <classificationMethod id="EqualInterval">
@@ -546,9 +545,6 @@
   </renderer-v2>
   <customproperties>
     <Option type="Map">
-      <Option type="List" name="dualview/previewExpressions">
-        <Option type="QString" value="&quot;Road_len&quot;"/>
-      </Option>
       <Option type="int" name="embeddedWidgets/count" value="0"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
@@ -560,7 +556,6 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory scaleBasedVisibility="0" direction="0" minScaleDenominator="0" maxScaleDenominator="1e+08" height="15" showAxis="1" lineSizeType="MM" labelPlacementMethod="XHeight" backgroundColor="#ffffff" spacing="5" penWidth="0" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" barWidth="5" scaleDependency="Area" minimumSize="0" backgroundAlpha="255" width="15" sizeType="MM" opacity="1" spacingUnit="MM" enabled="0" rotationOffset="270" penAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
       <fontProperties italic="0" style="" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" bold="0" underline="0"/>
-      <attribute colorOpacity="1" field="" label="" color="#000000"/>
       <axisSymbol>
         <symbol type="line" name="" alpha="1" is_animated="0" clip_to_extent="1" frame_rate="10" force_rhr="0">
           <data_defined_properties>
@@ -806,7 +801,7 @@
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="1" sortExpression="&quot;DivPts_ct&quot;">
+  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
     <columns>
       <column type="field" name="IGOID" hidden="0" width="-1"/>
       <column type="field" name="LevelPathI" hidden="0" width="-1"/>
