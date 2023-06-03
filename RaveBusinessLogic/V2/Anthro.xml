@@ -13,12 +13,12 @@
                             <Node label="Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_dens" />
                             <Node label="Railroad Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rail_len" />
                             <Node label="Railroad Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rail_dens" />
-                            <Node label="Canal Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
-                            <Node label="Canal Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
+                            <Node label="Canal Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="canal_length" />
+                            <Node label="Canal Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="canal_density" />
                             <Node label="Road Crossing Count" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="roadcross_count" />
                             <Node label="Road Crossing Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="roadcross_density" />
-                            <Node label="Diversion Point Count" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
-                            <Node label="Diversion Point Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="" />
+                            <Node label="Diversion Point Count" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="DivPts_ct" />
+                            <Node label="Diversion Point Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="DivPts_dens" />
                         </Children>
                     </Node>
                     <Node label="Reach Outputs">
