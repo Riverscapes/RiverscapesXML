@@ -2080,11 +2080,58 @@
         </dd_properties>
       </text-style>
       <content>
-        <item key="{e74d86e3-9d73-4340-b26f-625ff5072215}" value="Ku"/>
-        <item key="{13331e58-c769-431d-b61e-9fcc98d7d651}" value="Pgd"/>
-        <item key="{47f71936-b073-41e1-ac4d-2d4797d675a2}" value="Pmi"/>
-        <item key="{a7373632-8c3f-4b3c-b88b-c54424bb7b96}" value="Amd"/>
-        <item key="{eafcf023-e889-4265-a136-e68e98121e4c}" value="Agl"/>
+        <item key="{cdd3ca73-2349-4b38-90a0-49866f4d1d09}" value="MDcp"/>
+        <item key="{1bac28b8-44d0-4799-9262-dbfd38f58a31}" value="Pd"/>
+        <item key="{646b9acf-6913-4741-8094-ae22a5ed531b}" value="ALCA"/>
+        <item key="{07e1782e-048c-4969-ae4d-6a3a865bb4ad}" value="Ysg"/>
+        <item key="{556ddb61-d30e-40c1-b591-89bd2ccf4993}" value="MDa"/>
+        <item key="{c8ce797a-ef19-4a0e-8a14-e42ead5958a9}" value="Wp"/>
+        <item key="{3e7bb85a-946d-45be-93f6-ae77cac0a784}" value="QTci"/>
+        <item key="{1e8ab6e0-fac4-4a09-81c0-8f13d8c096e0}" value="Og"/>
+        <item key="{26b8077b-4f49-4c3f-b13f-e86d891f3a68}" value="Qalt"/>
+        <item key="{13331e58-c769-431d-b61e-9fcc98d7d651}" value="TXgn"/>
+        <item key="{7e11fa42-93ce-4a01-bce6-e2a33968423b}" value="Sl"/>
+        <item key="{a7373632-8c3f-4b3c-b88b-c54424bb7b96}" value="Agn"/>
+        <item key="{8919ffc3-9c28-4a77-a28b-cd3f002451d1}" value="Jg"/>
+        <item key="{fc81a26c-942d-43b1-8c1f-08bd2a95965f}" value="ALCA"/>
+        <item key="{f3c6de04-ff79-4599-b00c-f6b169eb5837}" value="Tr"/>
+        <item key="{ab203876-c86d-4bb7-9648-01f6b243400d}" value="Yd"/>
+        <item key="{7dd89506-4213-4b5f-8834-c4d35398a51e}" value="Pcl"/>
+        <item key="{8b114cbe-81bc-4d36-8e6f-399daad76a8e}" value="Ocj"/>
+        <item key="{b931aa00-d0f5-498c-b39c-506284d83d6c}" value="Tcl"/>
+        <item key="{1328f338-d556-4b9e-b51b-b87192045862}" value="AZX"/>
+        <item key="{5b45d007-d8e2-48a8-9589-2fdd8b5b4c9c}" value="AZX"/>
+        <item key="{840cec56-7b69-45af-a7d8-3d69831349b2}" value="Sg"/>
+        <item key="{b69ad42b-5481-44e8-b7b2-c49027e06684}" value="bsg"/>
+        <item key="{5a3596e5-e88e-4c9c-9d2f-2b3c99b0197d}" value="P?"/>
+        <item key="{c75834e0-dcb7-4955-9efc-13d3b295a208}" value="Mpu"/>
+        <item key="{8a9ca450-42a0-4bd6-b277-7a4845fb1645}" value="Jsv"/>
+        <item key="{4ac654af-864d-49fe-ac1f-7117821866c1}" value="Tm"/>
+        <item key="{68cf684a-936a-4438-988b-ba84554caaae}" value="Kde"/>
+        <item key="{85623b10-d3a3-4d5c-80cd-75c978d5b63c}" value="Dt"/>
+        <item key="{c4952e78-1f0a-4fc1-94a5-95bcfb81c1e7}" value="Tgl"/>
+        <item key="{d1c64100-06e1-43f8-985d-ca4efd345760}" value="Jgc"/>
+        <item key="{fa576e10-854e-4ece-a786-15ca0eae8c88}" value="grPz"/>
+        <item key="{e74d86e3-9d73-4340-b26f-625ff5072215}" value="Ka"/>
+        <item key="{059559f7-661e-4215-9952-19fdd8f16570}" value="Ys"/>
+        <item key="{66e62901-6f89-4454-ac4a-be7616ee7500}" value="grMz"/>
+        <item key="{274dfa52-1f19-4947-90bd-1228377794cb}" value="DSnr"/>
+        <item key="{80d5f0dc-b08a-4b95-be54-91c1c935650e}" value="Ms"/>
+        <item key="{9a0dd7b3-36ae-4298-939c-7ed74b6f6d37}" value="SO"/>
+        <item key="{e6f0fca6-f451-4816-a269-9493daa5685d}" value="Pz"/>
+        <item key="{3daa8e9e-dd07-4398-895b-1cf51bf72bbc}" value="Zi"/>
+        <item key="{6414e90f-7f3e-44bf-9798-a190dee9d507}" value="Qt"/>
+        <item key="{ab072128-1d89-449d-8d13-d63a1162ad90}" value="Ob"/>
+        <item key="{eafcf023-e889-4265-a136-e68e98121e4c}" value="XAm"/>
+        <item key="{a0d3dd8b-2e76-4b22-8c09-cc088c708f9a}" value="IDY"/>
+        <item key="{46fa7095-72f1-4b32-8863-05e32f3b91a4}" value="Ma"/>
+        <item key="{47f71936-b073-41e1-ac4d-2d4797d675a2}" value="Xog"/>
+        <item key="{7b8a5a70-a583-491d-8d59-201125f7ecd8}" value="ALCA"/>
+        <item key="{7f8dd244-862b-40a9-9480-6757f98a38c1}" value="J?"/>
+        <item key="{570e82f3-1ff9-4517-a4a6-b0e99d041d76}" value="To"/>
+        <item key="{360f79c6-c727-48ca-a7ac-93f72f894547}" value="P"/>
+        <item key="{eb10d23b-db78-410e-b07c-a54ad9517e1a}" value="Yg"/>
+        <item key="{18f75343-63f8-4d55-bbe8-fb6830a362cc}" value="Jm"/>
       </content>
     </text-on-symbol>
   </legend>
@@ -2400,7 +2447,7 @@
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="&quot;ORIG_LABEL&quot;">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;AGE_MAX&quot;">
     <columns>
       <column width="-1" type="field" name="STATE" hidden="0"/>
       <column width="-1" type="field" name="ORIG_LABEL" hidden="0"/>
