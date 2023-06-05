@@ -2031,7 +2031,63 @@
       </Option>
     </checkConfiguration>
   </geometryOptions>
-  <legend type="default-vector" showLabelLegend="0"/>
+  <legend type="default-vector" showLabelLegend="0">
+    <text-on-symbol>
+      <text-style fontUnderline="0" capitalization="0" forcedBold="0" previewBkgrdColor="255,255,255,255" blendMode="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontLetterSpacing="0" multilineHeightUnit="Percentage" fontFamily="MS Shell Dlg 2" fontStrikeout="0" namedStyle="" fontSizeUnit="Point" fontSize="10" fontWordSpacing="0" fontItalic="0" multilineHeight="1" allowHtml="0" textOpacity="1" fontKerning="1" textColor="0,0,0,255" textOrientation="horizontal" forcedItalic="0" fontWeight="50">
+        <families/>
+        <text-buffer bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferSize="1" bufferColor="255,255,255,255" bufferNoFill="1" bufferJoinStyle="128" bufferDraw="0" bufferOpacity="1"/>
+        <text-mask maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskJoinStyle="128" maskedSymbolLayers="" maskType="0" maskOpacity="1" maskEnabled="0" maskSize="1.5"/>
+        <background shapeBorderWidth="0" shapeType="0" shapeJoinStyle="64" shapeDraw="0" shapeSVGFile="" shapeSizeX="0" shapeOpacity="1" shapeRadiiX="0" shapeRotation="0" shapeRadiiY="0" shapeSizeUnit="MM" shapeOffsetY="0" shapeBorderWidthUnit="MM" shapeRotationType="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeRadiiUnit="MM" shapeOffsetUnit="MM" shapeOffsetX="0" shapeBorderColor="128,128,128,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeSizeY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0">
+          <symbol frame_rate="10" is_animated="0" type="fill" alpha="1" clip_to_extent="1" force_rhr="0" name="fillSymbol">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer pass="0" enabled="1" class="SimpleFill" locked="0">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="255,255,255,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="128,128,128,255" name="outline_color"/>
+                <Option type="QString" value="no" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </background>
+        <shadow shadowScale="100" shadowOpacity="0.69999999999999996" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowRadiusUnit="MM" shadowOffsetAngle="135" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowRadiusAlphaOnly="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+        <dd_properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+        </dd_properties>
+      </text-style>
+      <content>
+        <item key="{e74d86e3-9d73-4340-b26f-625ff5072215}" value="Ku"/>
+        <item key="{13331e58-c769-431d-b61e-9fcc98d7d651}" value="Pgd"/>
+        <item key="{47f71936-b073-41e1-ac4d-2d4797d675a2}" value="Pmi"/>
+        <item key="{a7373632-8c3f-4b3c-b88b-c54424bb7b96}" value="Amd"/>
+        <item key="{eafcf023-e889-4265-a136-e68e98121e4c}" value="Agl"/>
+      </content>
+    </text-on-symbol>
+  </legend>
   <referencedLayers/>
   <fieldConfiguration>
     <field configurationFlags="None" name="STATE">
@@ -2344,7 +2400,7 @@
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="&quot;ORIG_LABEL&quot;">
     <columns>
       <column width="-1" type="field" name="STATE" hidden="0"/>
       <column width="-1" type="field" name="ORIG_LABEL" hidden="0"/>
