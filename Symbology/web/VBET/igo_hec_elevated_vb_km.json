@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(12, 118, 193)", "0 - 1"],
+    ["rgb(19, 130, 176)", "1 - 2"],
+    ["rgb(27, 141, 159)", "2 - 4"],
+    ["rgb(35, 153, 141)", "4 - 6"],
+    ["rgb(43, 165, 124)", "6 - 15"],
+    ["rgb(51, 176, 107)","15 - 20"],
+    ["rgb(120, 199, 103)", "20 - 25"],
+    ["rgb(229, 227, 108)", "25 - 75"],
+    ["rgb(191, 115, 57)", "75 - 125"],
+    ["rgb(153, 4, 6)", "> 125"]
+  ],
+  "layerStyles": [
+    {
+        "id": "Hectares of Estimated Elevated VB",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "IGO_edit-dtm2v4",
+        "paint": {
+            "circle-color": [
+                "step",
+                ["get", "inactive_hectares_per_km"],
+                "rgb(12, 118, 193)",
+                1,
+                "rgb(19, 130, 176)",
+                2,
+                "rgb(27, 141, 159)",
+                4,
+                "rgb(35, 153, 141)",
+                6,
+                "rgb(43, 165, 124)",
+                15,
+                "rgb(51, 176, 107)",
+                20,
+                "rgb(120, 199, 103)",
+                25,
+                "rgb(229, 227, 108)",
+                75,
+                "rgb(191, 115, 57)",
+                125,
+                "rgb(153, 4, 6)",
+                200,
+                "rgb(153, 4, 6)"
+            ],
+            "circle-radius": 4
+        }
+    }
+  ]
+}

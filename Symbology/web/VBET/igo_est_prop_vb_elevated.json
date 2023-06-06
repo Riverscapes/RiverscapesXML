@@ -1,0 +1,45 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(247, 252, 245)", "< 2%"],
+    ["rgb(242, 244, 183)", "2% - 5%"],
+    ["rgb(237, 236, 121)", "5% - 10%"],
+    ["rgb(231, 228, 59)", "10% - 15%"],
+    ["rgb(216, 212, 34)", "15% - 25%"],
+    ["rgb(190, 187, 46)","25% - 50%"],
+    ["rgb(165, 162, 58)", "50% - 75%"],
+    ["rgb(139, 137, 70)", "> 75%"]
+  ],
+  "layerStyles": [
+    {
+        "id": "Est prop VB Elevated",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "IGO_edit-dtm2v4",
+        "paint": {
+            "circle-radius": 4,
+            "circle-color": [
+                "step",
+                ["get", "inactive_floodplain_proportion"],
+                "rgb(247, 252, 245)",
+                0.02,
+                "rgb(242, 244, 183)",
+                0.05,
+                "rgb(237, 236, 121)",
+                0.1,
+                "rgb(231, 228, 59)",
+                0.15,
+                "rgb(216, 212, 34)",
+                0.25,
+                "rgb(190, 187, 46)",
+                0.5,
+                "rgb(165, 162, 58)",
+                0.75,
+                "rgb(139, 137, 70)",
+                100,
+                "rgb(139, 137, 70)"
+            ]
+        }
+    }
+  ]
+}

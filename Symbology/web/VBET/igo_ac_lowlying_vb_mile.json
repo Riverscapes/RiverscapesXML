@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(247, 252, 245)", "< 5"],
+    ["rgb(232, 246, 227)", "5 - 10"],
+    ["rgb(208, 237, 202)", "10 - 15"],
+    ["rgb(178, 224, 171)", "15 - 25"],
+    ["rgb(142, 209, 140)", "25 - 50"],
+    ["rgb(102, 189, 111)","50 - 75"],
+    ["rgb(61, 167, 90)", "75 - 100"],
+    ["rgb(35, 140, 69)", "100 - 250"],
+    ["rgb(3, 112, 46)", "250 - 500"],
+    ["rgb(0, 68, 27)", "> 500"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Acres of Estimated Low-Lying VB",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "IGO_edit-dtm2v4",
+      "paint": {
+          "circle-radius": 4,
+          "circle-color": [
+              "step",
+              ["get", "active_acreage_per_mile"],
+              "rgb(247, 252, 245)",
+              5,
+              "rgb(232, 246, 227)",
+              10,
+              "rgb(208, 237, 202)",
+              15,
+              "rgb(178, 224, 171)",
+              25,
+              "rgb(142, 209, 140)",
+              50,
+              "rgb(102, 189, 111)",
+              75,
+              "rgb(61, 167, 90)",
+              100,
+              "rgb(35, 140, 69)",
+              250,
+              "rgb(3, 112, 46)",
+              500,
+              "rgb(0, 68, 27)",
+              10000,
+              "rgb(0, 68, 27)"
+          ]
+      }
+  }
+  ]
+}
