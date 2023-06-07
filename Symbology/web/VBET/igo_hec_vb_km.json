@@ -18,26 +18,10 @@
         "type": "circle",
         "source": "composite",
         "source-layer": "IGO_edit-dtm2v4",
-        "layout": {},
         "paint": {
-          "circle-radius": [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              10,
-              1,
-              11,
-              2,
-              13.55,
-              3,
-              15,
-              4,
-              22,
-              5
-          ],
+            "circle-radius": 4,
             "circle-color": [
-                "interpolate",
-                ["linear"],
+                "step",
                 ["get", "vb_hectares_per_km"],
                 "rgb(153, 4, 6)",
                 1,
