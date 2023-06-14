@@ -69,7 +69,6 @@
         <Children collapsed="true">
           <Node label="Major 1" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geo" transparency="40"/>
           <Node label="Age" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geo_maxage" transparency="40"/>
-          <Node label="Unit" xpath="Datasets/Vector[@id='GEOLOGY']" type="polygon" symbology="geo_unit" transparency="40"/>
         </Children>
       </Node>
       <Node label="Land Management">
