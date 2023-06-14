@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" labelsEnabled="0" simplifyLocal="1" minScale="100000000" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" readOnly="0" maxScale="0" symbologyReferenceScale="-1" simplifyMaxScale="1" version="3.28.1-Firenze" simplifyDrawingHints="0" simplifyAlgorithm="0">
+<qgis labelsEnabled="0" simplifyMaxScale="1" version="3.28.1-Firenze" simplifyDrawingHints="0" simplifyLocal="1" symbologyReferenceScale="-1" minScale="100000000" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" maxScale="0" simplifyDrawingTol="1" simplifyAlgorithm="0" readOnly="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal limitMode="0" startExpression="" mode="0" startField="" endExpression="" durationField="" fixedDuration="0" endField="" durationUnit="min" enabled="0" accumulate="0">
+  <temporal startField="" endExpression="" accumulate="0" durationField="" durationUnit="min" mode="0" startExpression="" fixedDuration="0" enabled="0" limitMode="0" endField="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation clamping="Terrain" symbology="Line" respectLayerSymbol="1" binding="Centroid" extrusion="0" showMarkerSymbolInSurfacePlots="0" zoffset="0" zscale="1" type="IndividualFeatures" extrusionEnabled="0">
+  <elevation symbology="Line" extrusionEnabled="0" extrusion="0" binding="Centroid" zoffset="0" type="IndividualFeatures" showMarkerSymbolInSurfacePlots="0" clamping="Terrain" respectLayerSymbol="1" zscale="1">
     <data-defined-properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" force_rhr="0" type="line" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="" frame_rate="10" alpha="1" type="line" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -29,7 +29,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+        <layer class="SimpleLine" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="align_dash_pattern" type="QString" value="0"/>
             <Option name="capstyle" type="QString" value="square"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" force_rhr="0" type="fill" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="" frame_rate="10" alpha="1" type="fill" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -78,7 +78,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+        <layer class="SimpleFill" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="color" type="QString" value="190,207,80,255"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" force_rhr="0" type="marker" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="" frame_rate="10" alpha="1" type="marker" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -111,7 +111,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -144,14 +144,14 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 enableorderby="0" referencescale="-1" attr="window_size" symbollevels="0" type="categorizedSymbol" forceraster="0">
-    <categories>
-      <category label="300 m (150 up; 150 down)" type="string" render="true" value="200" symbol="0"/>
-      <category label="500 m (250 up; 250 down)" type="string" render="true" value="400" symbol="1"/>
-      <category label="1800 m (900 up; 900 down)" type="string" render="true" value="1200" symbol="2"/>
-    </categories>
+  <renderer-v2 referencescale="-1" type="graduatedSymbol" forceraster="0" attr="window_size" graduatedMethod="GraduatedColor" enableorderby="0" symbollevels="0">
+    <ranges>
+      <range render="true" label="300 m (+/- 150)" upper="300.000099999999975" lower="0.000000000000000" symbol="0"/>
+      <range render="true" label="500 m (+/- 250)" upper="500.000999999999976" lower="300.000099999999975" symbol="1"/>
+      <range render="true" label="1800 m (+/- 900)" upper="5000.000000000000000" lower="500.000999999999976" symbol="2"/>
+    </ranges>
     <symbols>
-      <symbol clip_to_extent="1" is_animated="0" name="0" force_rhr="0" type="marker" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="0" frame_rate="10" alpha="1" type="marker" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -159,7 +159,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -212,7 +212,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="1" force_rhr="0" type="marker" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="1" frame_rate="10" alpha="1" type="marker" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -220,7 +220,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -273,7 +273,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="2" force_rhr="0" type="marker" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="2" frame_rate="10" alpha="1" type="marker" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -281,7 +281,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -336,7 +336,7 @@
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="0" force_rhr="0" type="marker" alpha="1" frame_rate="10">
+      <symbol force_rhr="0" name="0" frame_rate="10" alpha="1" type="marker" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -344,7 +344,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -409,6 +409,14 @@
         <Option name="stops" type="QString" value="0.0196078;2,2,11,0;rgb;ccw:0.0392157;5,4,22,0;rgb;ccw:0.0588235;9,7,32,0;rgb;ccw:0.0784314;14,11,43,0;rgb;ccw:0.0980392;20,14,54,0;rgb;ccw:0.117647;26,16,66,0;rgb;ccw:0.137255;33,17,78,0;rgb;ccw:0.156863;41,17,90,0;rgb;ccw:0.176471;49,17,101,0;rgb;ccw:0.196078;57,15,110,0;rgb;ccw:0.215686;66,15,117,0;rgb;ccw:0.235294;74,16,121,0;rgb;ccw:0.254902;82,19,124,0;rgb;ccw:0.27451;90,22,126,0;rgb;ccw:0.294118;98,25,128,0;rgb;ccw:0.313725;106,28,129,0;rgb;ccw:0.333333;114,31,129,0;rgb;ccw:0.352941;121,34,130,0;rgb;ccw:0.372549;129,37,129,0;rgb;ccw:0.392157;137,40,129,0;rgb;ccw:0.411765;145,43,129,0;rgb;ccw:0.431373;153,45,128,0;rgb;ccw:0.45098;161,48,126,0;rgb;ccw:0.470588;170,51,125,0;rgb;ccw:0.490196;178,53,123,0;rgb;ccw:0.509804;186,56,120,0;rgb;ccw:0.529412;194,59,117,0;rgb;ccw:0.54902;202,62,114,0;rgb;ccw:0.568627;210,66,111,0;rgb;ccw:0.588235;217,70,107,0;rgb;ccw:0.607843;224,76,103,0;rgb;ccw:0.627451;231,82,99,0;rgb;ccw:0.647059;236,88,96,0;rgb;ccw:0.666667;241,96,93,0;rgb;ccw:0.686275;244,105,92,0;rgb;ccw:0.705882;247,114,92,0;rgb;ccw:0.72549;249,123,93,0;rgb;ccw:0.745098;251,133,96,0;rgb;ccw:0.764706;252,142,100,0;rgb;ccw:0.784314;253,152,105,0;rgb;ccw:0.803922;254,161,110,0;rgb;ccw:0.823529;254,170,116,0;rgb;ccw:0.843137;254,180,123,0;rgb;ccw:0.862745;254,189,130,0;rgb;ccw:0.882353;254,198,138,0;rgb;ccw:0.901961;254,207,146,0;rgb;ccw:0.921569;254,216,154,0;rgb;ccw:0.941176;253,226,163,0;rgb;ccw:0.960784;253,235,172,0;rgb;ccw:0.980392;252,244,182,0;rgb;ccw"/>
       </Option>
     </colorramp>
+    <classificationMethod id="Quantile">
+      <symmetricMode symmetrypoint="0" enabled="0" astride="0"/>
+      <labelFormat format="%1 - %2" labelprecision="0" trimtrailingzeroes="1"/>
+      <parameters>
+        <Option/>
+      </parameters>
+      <extraInformation/>
+    </classificationMethod>
     <rotation/>
     <sizescale/>
   </renderer-v2>
@@ -422,12 +430,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>0.6</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory minimumSize="0" diagramOrientation="Up" penAlpha="255" enabled="0" maxScaleDenominator="1e+08" backgroundAlpha="255" spacing="5" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" scaleDependency="Area" backgroundColor="#ffffff" sizeType="MM" direction="0" minScaleDenominator="0" width="15" labelPlacementMethod="XHeight" scaleBasedVisibility="0" spacingUnit="MM" lineSizeType="MM" penColor="#000000" opacity="1" spacingUnitScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" penWidth="0" height="15" rotationOffset="270" showAxis="1">
-      <fontProperties description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" style="" bold="0" strikethrough="0" italic="0" underline="0"/>
-      <attribute label="" color="#000000" field="" colorOpacity="1"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory backgroundAlpha="255" spacing="5" width="15" maxScaleDenominator="1e+08" enabled="0" spacingUnit="MM" opacity="1" penAlpha="255" penColor="#000000" labelPlacementMethod="XHeight" scaleDependency="Area" barWidth="5" minimumSize="0" backgroundColor="#ffffff" direction="0" lineSizeType="MM" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" spacingUnitScale="3x:0,0,0,0,0,0" height="15" penWidth="0" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" showAxis="1" diagramOrientation="Up" sizeType="MM">
+      <fontProperties strikethrough="0" bold="0" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" underline="0" style="" italic="0"/>
+      <attribute color="#000000" field="" label="" colorOpacity="1"/>
       <axisSymbol>
-        <symbol clip_to_extent="1" is_animated="0" name="" force_rhr="0" type="line" alpha="1" frame_rate="10">
+        <symbol force_rhr="0" name="" frame_rate="10" alpha="1" type="line" is_animated="0" clip_to_extent="1">
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -435,7 +443,7 @@
               <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+          <layer class="SimpleLine" enabled="1" pass="0" locked="0">
             <Option type="Map">
               <Option name="align_dash_pattern" type="QString" value="0"/>
               <Option name="capstyle" type="QString" value="square"/>
@@ -477,7 +485,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings priority="0" dist="0" obstacle="0" placement="0" linePlacementFlags="18" zIndex="0" showAll="1">
+  <DiagramLayerSettings linePlacementFlags="18" obstacle="0" priority="0" zIndex="0" showAll="1" placement="0" dist="0">
     <properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -486,7 +494,7 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
@@ -677,150 +685,150 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" index="0" field="fid"/>
-    <alias name="" index="1" field="LevelPathI"/>
-    <alias name="" index="2" field="seg_distance"/>
-    <alias name="" index="3" field="stream_size"/>
-    <alias name="" index="4" field="window_size"/>
-    <alias name="" index="5" field="centerline_length"/>
-    <alias name="" index="6" field="window_area"/>
-    <alias name="" index="7" field="integrated_width"/>
-    <alias name="" index="8" field="active_floodplain_area"/>
-    <alias name="" index="9" field="active_floodplain_proportion"/>
-    <alias name="" index="10" field="active_floodplain_itgr_width"/>
-    <alias name="" index="11" field="active_channel_area"/>
-    <alias name="" index="12" field="active_channel_proportion"/>
-    <alias name="" index="13" field="active_channel_itgr_width"/>
-    <alias name="" index="14" field="inactive_floodplain_area"/>
-    <alias name="" index="15" field="inactive_floodplain_proportion"/>
-    <alias name="" index="16" field="inactive_floodplain_itgr_width"/>
-    <alias name="" index="17" field="floodplain_area"/>
-    <alias name="" index="18" field="floodplain_proportion"/>
-    <alias name="" index="19" field="floodplain_itgr_width"/>
-    <alias name="" index="20" field="vb_acreage_per_mile"/>
-    <alias name="" index="21" field="vb_hectares_per_km"/>
-    <alias name="" index="22" field="active_acreage_per_mile"/>
-    <alias name="" index="23" field="active_hectares_per_km"/>
-    <alias name="" index="24" field="inactive_acreage_per_mile"/>
-    <alias name="" index="25" field="inactive_hectares_per_km"/>
+    <alias field="fid" name="" index="0"/>
+    <alias field="LevelPathI" name="" index="1"/>
+    <alias field="seg_distance" name="" index="2"/>
+    <alias field="stream_size" name="" index="3"/>
+    <alias field="window_size" name="" index="4"/>
+    <alias field="centerline_length" name="" index="5"/>
+    <alias field="window_area" name="" index="6"/>
+    <alias field="integrated_width" name="" index="7"/>
+    <alias field="active_floodplain_area" name="" index="8"/>
+    <alias field="active_floodplain_proportion" name="" index="9"/>
+    <alias field="active_floodplain_itgr_width" name="" index="10"/>
+    <alias field="active_channel_area" name="" index="11"/>
+    <alias field="active_channel_proportion" name="" index="12"/>
+    <alias field="active_channel_itgr_width" name="" index="13"/>
+    <alias field="inactive_floodplain_area" name="" index="14"/>
+    <alias field="inactive_floodplain_proportion" name="" index="15"/>
+    <alias field="inactive_floodplain_itgr_width" name="" index="16"/>
+    <alias field="floodplain_area" name="" index="17"/>
+    <alias field="floodplain_proportion" name="" index="18"/>
+    <alias field="floodplain_itgr_width" name="" index="19"/>
+    <alias field="vb_acreage_per_mile" name="" index="20"/>
+    <alias field="vb_hectares_per_km" name="" index="21"/>
+    <alias field="active_acreage_per_mile" name="" index="22"/>
+    <alias field="active_hectares_per_km" name="" index="23"/>
+    <alias field="inactive_acreage_per_mile" name="" index="24"/>
+    <alias field="inactive_hectares_per_km" name="" index="25"/>
   </aliases>
   <defaults>
-    <default applyOnUpdate="0" field="fid" expression=""/>
-    <default applyOnUpdate="0" field="LevelPathI" expression=""/>
-    <default applyOnUpdate="0" field="seg_distance" expression=""/>
-    <default applyOnUpdate="0" field="stream_size" expression=""/>
-    <default applyOnUpdate="0" field="window_size" expression=""/>
-    <default applyOnUpdate="0" field="centerline_length" expression=""/>
-    <default applyOnUpdate="0" field="window_area" expression=""/>
-    <default applyOnUpdate="0" field="integrated_width" expression=""/>
-    <default applyOnUpdate="0" field="active_floodplain_area" expression=""/>
-    <default applyOnUpdate="0" field="active_floodplain_proportion" expression=""/>
-    <default applyOnUpdate="0" field="active_floodplain_itgr_width" expression=""/>
-    <default applyOnUpdate="0" field="active_channel_area" expression=""/>
-    <default applyOnUpdate="0" field="active_channel_proportion" expression=""/>
-    <default applyOnUpdate="0" field="active_channel_itgr_width" expression=""/>
-    <default applyOnUpdate="0" field="inactive_floodplain_area" expression=""/>
-    <default applyOnUpdate="0" field="inactive_floodplain_proportion" expression=""/>
-    <default applyOnUpdate="0" field="inactive_floodplain_itgr_width" expression=""/>
-    <default applyOnUpdate="0" field="floodplain_area" expression=""/>
-    <default applyOnUpdate="0" field="floodplain_proportion" expression=""/>
-    <default applyOnUpdate="0" field="floodplain_itgr_width" expression=""/>
-    <default applyOnUpdate="0" field="vb_acreage_per_mile" expression=""/>
-    <default applyOnUpdate="0" field="vb_hectares_per_km" expression=""/>
-    <default applyOnUpdate="0" field="active_acreage_per_mile" expression=""/>
-    <default applyOnUpdate="0" field="active_hectares_per_km" expression=""/>
-    <default applyOnUpdate="0" field="inactive_acreage_per_mile" expression=""/>
-    <default applyOnUpdate="0" field="inactive_hectares_per_km" expression=""/>
+    <default field="fid" applyOnUpdate="0" expression=""/>
+    <default field="LevelPathI" applyOnUpdate="0" expression=""/>
+    <default field="seg_distance" applyOnUpdate="0" expression=""/>
+    <default field="stream_size" applyOnUpdate="0" expression=""/>
+    <default field="window_size" applyOnUpdate="0" expression=""/>
+    <default field="centerline_length" applyOnUpdate="0" expression=""/>
+    <default field="window_area" applyOnUpdate="0" expression=""/>
+    <default field="integrated_width" applyOnUpdate="0" expression=""/>
+    <default field="active_floodplain_area" applyOnUpdate="0" expression=""/>
+    <default field="active_floodplain_proportion" applyOnUpdate="0" expression=""/>
+    <default field="active_floodplain_itgr_width" applyOnUpdate="0" expression=""/>
+    <default field="active_channel_area" applyOnUpdate="0" expression=""/>
+    <default field="active_channel_proportion" applyOnUpdate="0" expression=""/>
+    <default field="active_channel_itgr_width" applyOnUpdate="0" expression=""/>
+    <default field="inactive_floodplain_area" applyOnUpdate="0" expression=""/>
+    <default field="inactive_floodplain_proportion" applyOnUpdate="0" expression=""/>
+    <default field="inactive_floodplain_itgr_width" applyOnUpdate="0" expression=""/>
+    <default field="floodplain_area" applyOnUpdate="0" expression=""/>
+    <default field="floodplain_proportion" applyOnUpdate="0" expression=""/>
+    <default field="floodplain_itgr_width" applyOnUpdate="0" expression=""/>
+    <default field="vb_acreage_per_mile" applyOnUpdate="0" expression=""/>
+    <default field="vb_hectares_per_km" applyOnUpdate="0" expression=""/>
+    <default field="active_acreage_per_mile" applyOnUpdate="0" expression=""/>
+    <default field="active_hectares_per_km" applyOnUpdate="0" expression=""/>
+    <default field="inactive_acreage_per_mile" applyOnUpdate="0" expression=""/>
+    <default field="inactive_hectares_per_km" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint constraints="3" notnull_strength="1" unique_strength="1" exp_strength="0" field="fid"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="LevelPathI"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="seg_distance"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="stream_size"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="window_size"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="centerline_length"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="window_area"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="integrated_width"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_floodplain_area"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_floodplain_proportion"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_floodplain_itgr_width"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_channel_area"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_channel_proportion"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_channel_itgr_width"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="inactive_floodplain_area"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="inactive_floodplain_proportion"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="inactive_floodplain_itgr_width"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="floodplain_area"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="floodplain_proportion"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="floodplain_itgr_width"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="vb_acreage_per_mile"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="vb_hectares_per_km"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_acreage_per_mile"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="active_hectares_per_km"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="inactive_acreage_per_mile"/>
-    <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="inactive_hectares_per_km"/>
+    <constraint notnull_strength="1" exp_strength="0" field="fid" constraints="3" unique_strength="1"/>
+    <constraint notnull_strength="0" exp_strength="0" field="LevelPathI" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="seg_distance" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="stream_size" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="window_size" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="centerline_length" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="window_area" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="integrated_width" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_floodplain_area" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_floodplain_proportion" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_floodplain_itgr_width" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_channel_area" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_channel_proportion" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_channel_itgr_width" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="inactive_floodplain_area" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="inactive_floodplain_proportion" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="inactive_floodplain_itgr_width" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="floodplain_area" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="floodplain_proportion" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="floodplain_itgr_width" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="vb_acreage_per_mile" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="vb_hectares_per_km" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_acreage_per_mile" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="active_hectares_per_km" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="inactive_acreage_per_mile" constraints="0" unique_strength="0"/>
+    <constraint notnull_strength="0" exp_strength="0" field="inactive_hectares_per_km" constraints="0" unique_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" desc="" field="fid"/>
-    <constraint exp="" desc="" field="LevelPathI"/>
-    <constraint exp="" desc="" field="seg_distance"/>
-    <constraint exp="" desc="" field="stream_size"/>
-    <constraint exp="" desc="" field="window_size"/>
-    <constraint exp="" desc="" field="centerline_length"/>
-    <constraint exp="" desc="" field="window_area"/>
-    <constraint exp="" desc="" field="integrated_width"/>
-    <constraint exp="" desc="" field="active_floodplain_area"/>
-    <constraint exp="" desc="" field="active_floodplain_proportion"/>
-    <constraint exp="" desc="" field="active_floodplain_itgr_width"/>
-    <constraint exp="" desc="" field="active_channel_area"/>
-    <constraint exp="" desc="" field="active_channel_proportion"/>
-    <constraint exp="" desc="" field="active_channel_itgr_width"/>
-    <constraint exp="" desc="" field="inactive_floodplain_area"/>
-    <constraint exp="" desc="" field="inactive_floodplain_proportion"/>
-    <constraint exp="" desc="" field="inactive_floodplain_itgr_width"/>
-    <constraint exp="" desc="" field="floodplain_area"/>
-    <constraint exp="" desc="" field="floodplain_proportion"/>
-    <constraint exp="" desc="" field="floodplain_itgr_width"/>
-    <constraint exp="" desc="" field="vb_acreage_per_mile"/>
-    <constraint exp="" desc="" field="vb_hectares_per_km"/>
-    <constraint exp="" desc="" field="active_acreage_per_mile"/>
-    <constraint exp="" desc="" field="active_hectares_per_km"/>
-    <constraint exp="" desc="" field="inactive_acreage_per_mile"/>
-    <constraint exp="" desc="" field="inactive_hectares_per_km"/>
+    <constraint field="fid" desc="" exp=""/>
+    <constraint field="LevelPathI" desc="" exp=""/>
+    <constraint field="seg_distance" desc="" exp=""/>
+    <constraint field="stream_size" desc="" exp=""/>
+    <constraint field="window_size" desc="" exp=""/>
+    <constraint field="centerline_length" desc="" exp=""/>
+    <constraint field="window_area" desc="" exp=""/>
+    <constraint field="integrated_width" desc="" exp=""/>
+    <constraint field="active_floodplain_area" desc="" exp=""/>
+    <constraint field="active_floodplain_proportion" desc="" exp=""/>
+    <constraint field="active_floodplain_itgr_width" desc="" exp=""/>
+    <constraint field="active_channel_area" desc="" exp=""/>
+    <constraint field="active_channel_proportion" desc="" exp=""/>
+    <constraint field="active_channel_itgr_width" desc="" exp=""/>
+    <constraint field="inactive_floodplain_area" desc="" exp=""/>
+    <constraint field="inactive_floodplain_proportion" desc="" exp=""/>
+    <constraint field="inactive_floodplain_itgr_width" desc="" exp=""/>
+    <constraint field="floodplain_area" desc="" exp=""/>
+    <constraint field="floodplain_proportion" desc="" exp=""/>
+    <constraint field="floodplain_itgr_width" desc="" exp=""/>
+    <constraint field="vb_acreage_per_mile" desc="" exp=""/>
+    <constraint field="vb_hectares_per_km" desc="" exp=""/>
+    <constraint field="active_acreage_per_mile" desc="" exp=""/>
+    <constraint field="active_hectares_per_km" desc="" exp=""/>
+    <constraint field="inactive_acreage_per_mile" desc="" exp=""/>
+    <constraint field="inactive_hectares_per_km" desc="" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
     <columns>
-      <column name="fid" type="field" hidden="0" width="-1"/>
-      <column name="LevelPathI" type="field" hidden="0" width="-1"/>
-      <column name="seg_distance" type="field" hidden="0" width="-1"/>
-      <column name="stream_size" type="field" hidden="0" width="-1"/>
-      <column name="active_floodplain_area" type="field" hidden="0" width="-1"/>
-      <column name="active_channel_area" type="field" hidden="0" width="-1"/>
-      <column name="inactive_floodplain_area" type="field" hidden="0" width="-1"/>
-      <column name="floodplain_area" type="field" hidden="0" width="-1"/>
-      <column name="integrated_width" type="field" hidden="0" width="-1"/>
-      <column name="window_size" type="field" hidden="0" width="-1"/>
-      <column name="window_area" type="field" hidden="0" width="-1"/>
-      <column name="centerline_length" type="field" hidden="0" width="-1"/>
-      <column type="actions" hidden="1" width="-1"/>
-      <column name="active_floodplain_proportion" type="field" hidden="0" width="-1"/>
-      <column name="active_floodplain_itgr_width" type="field" hidden="0" width="-1"/>
-      <column name="active_channel_proportion" type="field" hidden="0" width="-1"/>
-      <column name="active_channel_itgr_width" type="field" hidden="0" width="-1"/>
-      <column name="inactive_floodplain_proportion" type="field" hidden="0" width="-1"/>
-      <column name="inactive_floodplain_itgr_width" type="field" hidden="0" width="-1"/>
-      <column name="floodplain_proportion" type="field" hidden="0" width="-1"/>
-      <column name="floodplain_itgr_width" type="field" hidden="0" width="-1"/>
-      <column name="vb_acreage_per_mile" type="field" hidden="0" width="-1"/>
-      <column name="vb_hectares_per_km" type="field" hidden="0" width="-1"/>
-      <column name="active_acreage_per_mile" type="field" hidden="0" width="-1"/>
-      <column name="active_hectares_per_km" type="field" hidden="0" width="-1"/>
-      <column name="inactive_acreage_per_mile" type="field" hidden="0" width="-1"/>
-      <column name="inactive_hectares_per_km" type="field" hidden="0" width="-1"/>
+      <column hidden="0" name="fid" width="-1" type="field"/>
+      <column hidden="0" name="LevelPathI" width="-1" type="field"/>
+      <column hidden="0" name="seg_distance" width="-1" type="field"/>
+      <column hidden="0" name="stream_size" width="-1" type="field"/>
+      <column hidden="0" name="active_floodplain_area" width="-1" type="field"/>
+      <column hidden="0" name="active_channel_area" width="-1" type="field"/>
+      <column hidden="0" name="inactive_floodplain_area" width="-1" type="field"/>
+      <column hidden="0" name="floodplain_area" width="-1" type="field"/>
+      <column hidden="0" name="integrated_width" width="-1" type="field"/>
+      <column hidden="0" name="window_size" width="-1" type="field"/>
+      <column hidden="0" name="window_area" width="-1" type="field"/>
+      <column hidden="0" name="centerline_length" width="-1" type="field"/>
+      <column hidden="1" width="-1" type="actions"/>
+      <column hidden="0" name="active_floodplain_proportion" width="-1" type="field"/>
+      <column hidden="0" name="active_floodplain_itgr_width" width="-1" type="field"/>
+      <column hidden="0" name="active_channel_proportion" width="-1" type="field"/>
+      <column hidden="0" name="active_channel_itgr_width" width="-1" type="field"/>
+      <column hidden="0" name="inactive_floodplain_proportion" width="-1" type="field"/>
+      <column hidden="0" name="inactive_floodplain_itgr_width" width="-1" type="field"/>
+      <column hidden="0" name="floodplain_proportion" width="-1" type="field"/>
+      <column hidden="0" name="floodplain_itgr_width" width="-1" type="field"/>
+      <column hidden="0" name="vb_acreage_per_mile" width="-1" type="field"/>
+      <column hidden="0" name="vb_hectares_per_km" width="-1" type="field"/>
+      <column hidden="0" name="active_acreage_per_mile" width="-1" type="field"/>
+      <column hidden="0" name="active_hectares_per_km" width="-1" type="field"/>
+      <column hidden="0" name="inactive_acreage_per_mile" width="-1" type="field"/>
+      <column hidden="0" name="inactive_hectares_per_km" width="-1" type="field"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -888,40 +896,40 @@ def my_form_open(dialog, layer, feature):
     <field name="window_size" editable="1"/>
   </editable>
   <labelOnTop>
-    <field name="LevelPathI" labelOnTop="0"/>
-    <field name="active_acreage_per_mile" labelOnTop="0"/>
-    <field name="active_channel_area" labelOnTop="0"/>
-    <field name="active_channel_area_cl_len" labelOnTop="0"/>
-    <field name="active_channel_area_prop" labelOnTop="0"/>
-    <field name="active_channel_itgr_width" labelOnTop="0"/>
-    <field name="active_channel_proportion" labelOnTop="0"/>
-    <field name="active_floodplain_area" labelOnTop="0"/>
-    <field name="active_floodplain_area_cl_len" labelOnTop="0"/>
-    <field name="active_floodplain_area_prop" labelOnTop="0"/>
-    <field name="active_floodplain_itgr_width" labelOnTop="0"/>
-    <field name="active_floodplain_proportion" labelOnTop="0"/>
-    <field name="active_hectares_per_km" labelOnTop="0"/>
-    <field name="centerline_length" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
-    <field name="floodplain_area" labelOnTop="0"/>
-    <field name="floodplain_area_cl_len" labelOnTop="0"/>
-    <field name="floodplain_area_prop" labelOnTop="0"/>
-    <field name="floodplain_itgr_width" labelOnTop="0"/>
-    <field name="floodplain_proportion" labelOnTop="0"/>
-    <field name="inactive_acreage_per_mile" labelOnTop="0"/>
-    <field name="inactive_floodplain_area" labelOnTop="0"/>
-    <field name="inactive_floodplain_area_cl_len" labelOnTop="0"/>
-    <field name="inactive_floodplain_area_prop" labelOnTop="0"/>
-    <field name="inactive_floodplain_itgr_width" labelOnTop="0"/>
-    <field name="inactive_floodplain_proportion" labelOnTop="0"/>
-    <field name="inactive_hectares_per_km" labelOnTop="0"/>
-    <field name="integrated_width" labelOnTop="0"/>
-    <field name="seg_distance" labelOnTop="0"/>
-    <field name="stream_size" labelOnTop="0"/>
-    <field name="vb_acreage_per_mile" labelOnTop="0"/>
-    <field name="vb_hectares_per_km" labelOnTop="0"/>
-    <field name="window_area" labelOnTop="0"/>
-    <field name="window_size" labelOnTop="0"/>
+    <field labelOnTop="0" name="LevelPathI"/>
+    <field labelOnTop="0" name="active_acreage_per_mile"/>
+    <field labelOnTop="0" name="active_channel_area"/>
+    <field labelOnTop="0" name="active_channel_area_cl_len"/>
+    <field labelOnTop="0" name="active_channel_area_prop"/>
+    <field labelOnTop="0" name="active_channel_itgr_width"/>
+    <field labelOnTop="0" name="active_channel_proportion"/>
+    <field labelOnTop="0" name="active_floodplain_area"/>
+    <field labelOnTop="0" name="active_floodplain_area_cl_len"/>
+    <field labelOnTop="0" name="active_floodplain_area_prop"/>
+    <field labelOnTop="0" name="active_floodplain_itgr_width"/>
+    <field labelOnTop="0" name="active_floodplain_proportion"/>
+    <field labelOnTop="0" name="active_hectares_per_km"/>
+    <field labelOnTop="0" name="centerline_length"/>
+    <field labelOnTop="0" name="fid"/>
+    <field labelOnTop="0" name="floodplain_area"/>
+    <field labelOnTop="0" name="floodplain_area_cl_len"/>
+    <field labelOnTop="0" name="floodplain_area_prop"/>
+    <field labelOnTop="0" name="floodplain_itgr_width"/>
+    <field labelOnTop="0" name="floodplain_proportion"/>
+    <field labelOnTop="0" name="inactive_acreage_per_mile"/>
+    <field labelOnTop="0" name="inactive_floodplain_area"/>
+    <field labelOnTop="0" name="inactive_floodplain_area_cl_len"/>
+    <field labelOnTop="0" name="inactive_floodplain_area_prop"/>
+    <field labelOnTop="0" name="inactive_floodplain_itgr_width"/>
+    <field labelOnTop="0" name="inactive_floodplain_proportion"/>
+    <field labelOnTop="0" name="inactive_hectares_per_km"/>
+    <field labelOnTop="0" name="integrated_width"/>
+    <field labelOnTop="0" name="seg_distance"/>
+    <field labelOnTop="0" name="stream_size"/>
+    <field labelOnTop="0" name="vb_acreage_per_mile"/>
+    <field labelOnTop="0" name="vb_hectares_per_km"/>
+    <field labelOnTop="0" name="window_area"/>
+    <field labelOnTop="0" name="window_size"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="LevelPathI" reuseLastValue="0"/>
