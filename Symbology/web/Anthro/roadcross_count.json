@@ -1,0 +1,61 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(42, 79%, 58%)", "< 5"],
+    ["hsl(28, 85%, 56%)", "5 - 10"],
+    ["hsl(17, 90%, 54%)", "10 - 20"],
+    ["hsl(352, 100%, 49%)", "20 - 50"],
+    ["hsl(0, 100%, 39%)", "> 50"]
+  ],
+  "layerStyles": [
+    {
+        "id": "igos-5l0gli",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "IGOs-5l0gli",
+        "layout": {},
+        "paint": {
+            "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                10,
+                1,
+                11,
+                2,
+                13.5,
+                3,
+                15,
+                4,
+                22,
+                5
+            ],
+            "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "RoadX_ct"],
+                0,
+                "hsl(42, 79%, 58%)",
+                5,
+                "hsl(42, 79%, 58%)",
+                5.001,
+                "hsl(28, 85%, 56%)",
+                10,
+                "hsl(28, 85%, 56%)",
+                10.001,
+                "hsl(17, 90%, 54%)",
+                20,
+                "hsl(17, 90%, 54%)",
+                20.001,
+                "hsl(352, 100%, 49%)",
+                50,
+                "hsl(352, 100%, 49%)",
+                50.001,
+                "hsl(0, 100%, 39%)",
+                10000000.00,
+                "hsl(0, 100%, 39%)"
+            ]
+        }
+    }
+  ]
+}
