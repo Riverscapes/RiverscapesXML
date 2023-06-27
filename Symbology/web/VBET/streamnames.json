@@ -10,13 +10,11 @@
       "source": "composite",
       "source-layer": "stream_network-7x2b8z",
       "layout": {
-          "text-font": ["Karla Regular", "Arial Unicode MS Regular"],
-          "text-size": 12,
           "text-field": ["to-string", ["get", "GNIS_Name"]]
       },
       "paint": {
-          "text-color": "hsl(0, 0%, 96%)",
-          "text-halo-color": "hsl(0, 0%, 0%)",
+          "text-color": "#FF0000",
+          "text-halo-color": "#FFFFFF",
           "text-halo-width": 0.1,
           "text-halo-blur": 0.5
       }
