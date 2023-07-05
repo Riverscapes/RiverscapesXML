@@ -4,6 +4,7 @@ import os
 from uuid import uuid4
 
 from rsxml import project_xml
+from rsxml.project_xml import MetaData
 
 MOCK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mock')
 
@@ -20,10 +21,10 @@ class RSObjTest(unittest.TestCase):
         description = 'test description'
         summary = 'test summary'
         citation = 'test citation'
-        meta = [
+        meta = MetaData(values=[
             project_xml.Meta(name='test_key', value='test_value'),
             project_xml.Meta(name='test_key2', value='test_value2')
-        ]
+        ])
 
         rsobj = project_xml.RSObj(xml_id=xml_id,
                                   xml_tag=xml_tag,
@@ -46,7 +47,7 @@ class RSObjTest(unittest.TestCase):
         self.assertEqual(xml.find('Summary').text, summary)
         self.assertEqual(xml.find('Description').text, description)
         self.assertEqual(xml.find('Citation').text, citation)
-        self.assertEqual(xml.find('MetaData/Meta[@name=\'test_key\']').text, 'test_value')
+        self.assertEqual(xml.find('MetaData/Meta/[@name=\'test_key\']').text, 'test_value')
         self.assertEqual(xml.find('MetaData/Meta[@name=\'test_key2\']').text, 'test_value2')
 
 
