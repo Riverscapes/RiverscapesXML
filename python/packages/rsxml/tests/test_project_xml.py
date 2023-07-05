@@ -173,3 +173,35 @@ class ProjectClasses(unittest.TestCase):
         self.assertEqual(xml.find('Summary').text, summary)
         self.assertEqual(xml.find('Path').text, ds_path)
         self.assertEqual(xml.find('Citation').text, citation)
+
+    def test_metadata(self):
+
+        # Test the metadata types
+        test_meta = MetaData(values=[
+            project_xml.Meta(name='test_key', value='test_no_type'),
+            project_xml.Meta(name='test_key2', value='test_valid_type', type='filepath')
+        ])
+
+        try:
+            test_meta2 = MetaData(values=[
+                project_xml.Meta(name='test_key2', value='test_invalid_type', type='invalid_type')
+            ])
+            # Should not be able to get here with invalid metadata
+            self.fail('Expected ValueError')
+        except ValueError:
+            pass
+
+        # Test the ext types
+        test_meta3 = MetaData(values=[
+            project_xml.Meta(name='test_key', value='test_no_type'),
+            project_xml.Meta(name='test_key2', value='test_valid_ext', ext='project')
+        ])
+
+        try:
+            test_meta4 = MetaData(values=[
+                project_xml.Meta(name='test_key2', value='test_invalid_ext', ext='invalid_ext')
+            ])
+            # Should not be able to get here with invalid metadata
+            self.fail('Expected ValueError')
+        except ValueError:
+            pass
