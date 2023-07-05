@@ -1,3 +1,6 @@
+"""
+This is an example file that demonstrates how to use the RSXML Logger class.
+"""
 from rsxml import Logger
 import tempfile
 
