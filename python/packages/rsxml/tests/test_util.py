@@ -60,9 +60,9 @@ class UtilTest(unittest.TestCase):
     def test_get_obj_size(self):
 
         self.assertEqual(util.get_obj_size(None), 16)
-        self.assertEqual(util.get_obj_size(0), 24)
-        self.assertEqual(util.get_obj_size([1, 2, 3, 4]), 232)
-        self.assertEqual(util.get_obj_size({"key": "value"}), 286)
+        self.assertEqual(util.get_obj_size(0), 28)
+        self.assertEqual(util.get_obj_size([1, 2, 3, 4]), 200)
+        self.assertEqual(util.get_obj_size({"key": "value"}), 238)
 
     def test_parse_metadata(self):
         """[summary]

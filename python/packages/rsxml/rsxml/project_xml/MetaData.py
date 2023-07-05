@@ -85,12 +85,13 @@ class MetaData():
         if values and not isinstance(values, List):
             raise ValueError('values must be a list of Meta')
 
-        for meta in values:
-            if meta.type is not None:
-                self._validate_meta_type(meta.type)
+        if values:
+            for meta in values:
+                if meta.type is not None:
+                    self._validate_meta_type(meta.type)
 
-            if meta.ext is not None:
-                self._validate_ext_type(meta.ext)
+                if meta.ext is not None:
+                    self._validate_ext_type(meta.ext)
 
         self._values = values if values else []
         self.container_tag = container_tag
