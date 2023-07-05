@@ -1,3 +1,7 @@
+"""
+This is an example file demonstrating how to use various different
+types of timers that come with RSXML
+"""
 from time import sleep
 import tempfile
 import sqlite3

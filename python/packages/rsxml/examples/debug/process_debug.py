@@ -1,3 +1,6 @@
+"""
+This is an example of how to use the debug module to debug a process.
+"""
 from time import sleep
 import tempfile
 from rsxml import Logger, debug

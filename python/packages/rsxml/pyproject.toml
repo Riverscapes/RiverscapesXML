@@ -6,7 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "rsxml"
 version = "{file = \"rsxml/__version__.py\", key = \"__version__\"}"
 description = "Riverscapes XML helpers for use across Python3 open-source GIS Stack"
-authors = ["Matt Reimer <info@northarrowresearch.com>"]
+authors = [{
+  name="Matt Reimer",
+  email="info@northarrowresearch.com"
+}]
 license = "MIT"
 homepage = "https://github.com/Riverscapes/RiverscapesXML"
 
@@ -14,7 +17,16 @@ homepage = "https://github.com/Riverscapes/RiverscapesXML"
 python = "^3.10.0"
 semver = ">=2.10.2"
 argparse = "*"
-
+readme="README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
 [build-system.sdist]
 formats = ["gztar", "zip"]
+
+[project.urls]
+"Homepage" = "https://github.com/Riverscapes/RiverscapesXML"
+"Bug Tracker" = "https://github.com/Riverscapes/RiverscapesXML/issues"
