@@ -1,14 +1,18 @@
 import re
-from setuptools import setup, find_packages
+from setuptools import setup
 
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 install_requires = [
+    'lxml==4.9.2',
+    'requests>=2.31.0',
+    'urllib3>=2.0.2',
     'semver>=2.10.2',
     'argparse'
 ]
 
 with open("README.md", "rb") as f:
-    long_descr = f.read().decode("utf-8")
+    long_description = f.read().decode("utf-8")
+
 
 version = re.search(
     '^__version__\\s*=\\s*"(.*)"',
@@ -23,7 +27,8 @@ setup(
     author='Matt Reimer',
     license='MIT',
     python_requires='>=3.9.0',
-    long_description=long_descr,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author_email='info@northarrowresearch.com',
     install_requires=install_requires,
     url='https://github.com/Riverscapes/RiverscapesXML',

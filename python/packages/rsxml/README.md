@@ -1,6 +1,5 @@
 # RSXML
 
-
 This pip module contains a series of classes to help people generate compliant `project.rs.xml` files. These files lie at the heart of the Riverscapes Consortium data standards. Each collection of geospatial data is referred to as a "project" and must be accompanied by a single `project.rs.xml` file. The file must validate against the set of rules defined in the [riverscapes XSD schema](https://github.com/Riverscapes/RiverscapesXML/blob/master/Projects/XSD/V2/RiverscapesProject.xsd).
 
 It is absolutely vital that once you have used this module to write one or more `project.rs.xml` files that you validate the output to ensure its compliance with the XSD ruleset. There are many ways to do this; the one we prefer is to use Visual Studio Code free code editor that is capable of validating XML when an XSD is specified. It even possesses Intellisense that can autocomplate XML tags and suggest fixes to problems.
