@@ -119,8 +119,12 @@ class MetaData():
         """
         meta_data = ET.Element(self.container_tag)
         for meta in self._values:
-            meta_data.append(ET.Element(self.inner_tag, {
+            meta_node = ET.Element(self.inner_tag, {
                 'name': meta.name,
-                'value': meta.value,
                 'type': meta.type,
-            }))
+            })
+
+            meta_node.text = str(meta.value)
+            meta_data.append(meta_node)
+
+        return meta_data

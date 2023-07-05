@@ -146,12 +146,7 @@ class RSObj (abc.ABC):
         if self.citation:
             ET.SubElement(xml_node, 'Citation').text = self.citation
 
-        if self.meta_data is not None and len(self.meta_data) > 0:
-            metadata_root = ET.SubElement(xml_node, 'MetaData')
-            for meta in self.meta_data:
-                meta_item = ET.SubElement(metadata_root, 'Meta')
-                meta_item.set('name', meta.name)
-                if meta.type:
-                    meta_item.set('type', meta.type)
-                meta_item.text = meta.value
+        if self.meta_data is not None:
+            xml_node.append(self.meta_data.to_xml())
+
         return xml_node
