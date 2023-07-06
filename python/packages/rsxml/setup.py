@@ -3,11 +3,10 @@ from setuptools import setup
 
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 install_requires = [
-    'lxml==4.9.2',
+    'lxml>=4.9.2',
     'requests>=2.31.0',
     'urllib3>=2.0.2',
     'semver>=2.10.2',
-    'argparse'
 ]
 
 with open("README.md", "rb") as f:
@@ -33,7 +32,10 @@ setup(
     install_requires=install_requires,
     url='https://github.com/Riverscapes/RiverscapesXML',
     packages=[
-        'rsxml'
+        'rsxml',
+        'rsxml.logging',
+        'rsxml.debug',
+        'rsxml.project_xml'
     ],
     zip_safe=False,
     classifiers=[

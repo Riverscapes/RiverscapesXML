@@ -83,6 +83,7 @@ class Project(RSObj):
         self.proj_path = proj_path.strip() if proj_path else None
         self.bounds = bounds
         self.warehouse = warehouse
+        self.meta_data = meta_data if meta_data else MetaData()
         self.common_datasets = common_datasets if common_datasets else []
         self.realizations = realizations if realizations else []
         self.qaqc_events = qaqc_events if qaqc_events else []

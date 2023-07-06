@@ -1,7 +1,7 @@
 """Mostly common types and constants for the rsxml package.
 """
-
 from __future__ import annotations
+import xml.etree.cElementTree as ET
 from typing import Dict, NamedTuple
 
 

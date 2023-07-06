@@ -9,4 +9,5 @@ rm -fr build/*
 # build new version
 
 python setup.py sdist bdist_wheel
-twine upload dist/*
+twine check dist/*
+# twine upload dist/*

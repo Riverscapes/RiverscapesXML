@@ -3,8 +3,15 @@ import codecs
 from typing import Dict
 import re
 import os
-import argparse
 from pathlib import Path
+
+
+def has_argparse():
+    # Try to load argparse and fall back
+    try:
+        import argparse
+    except ImportError:
+        raise Exception('argparse is required for this library. Please install it with `pip install argparse`')
 
 
 def parse_dotenv(dotenv_path):
@@ -17,6 +24,7 @@ def parse_dotenv(dotenv_path):
         [type]: [description]
     """
     results = {}
+    has_argparse()
     # We fall back gracefully if there's no file there
     if not os.path.exists(dotenv_path):
         return results
@@ -39,7 +47,7 @@ def parse_dotenv(dotenv_path):
     return results
 
 
-def parse_args_env(parser: argparse.ArgumentParser, env_path=None, args=None):
+def parse_args_env(parser, env_path=None, args=None):
     """Parse the arguments and environment variables
 
     Args:
@@ -47,6 +55,7 @@ def parse_args_env(parser: argparse.ArgumentParser, env_path=None, args=None):
         env_path ([type], optional): path to .env file. Defaults to None.
         args ([type], optional): Good for testing values other than sys.argv. Defaults to None.
     """
+    has_argparse()
     _env = parse_dotenv(env_path) if env_path is not None else {}
     args = parser.parse_args(args)
     pattern = r'{env:([^}]+)}'

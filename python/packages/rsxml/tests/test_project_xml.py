@@ -2,11 +2,26 @@
 import unittest
 import os
 from uuid import uuid4
+import xml.etree.cElementTree as ET
 
 from rsxml import project_xml
 from rsxml.project_xml import MetaData
 
 MOCK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mock')
+
+
+def validate_xml(element):
+    try:
+        """ Make sure the XML we generate is valid and can go back and forth cleanly
+        between ElementTree and string.
+
+        In general you should probably only use this in unit tests
+        """
+        xml_node = element.to_xml()
+        ET.fromstring(ET.tostring(xml_node, encoding='utf8'))
+        return True
+    except Exception as e:
+        return False
 
 
 class RSObjTest(unittest.TestCase):
@@ -34,6 +49,7 @@ class RSObjTest(unittest.TestCase):
                                   citation=citation,
                                   meta_data=meta
                                   )
+        self.assertTrue(validate_xml(rsobj))
         self.assertEqual(rsobj.xml_id, xml_id)
         self.assertEqual(rsobj.xml_tag, xml_tag)
         self.assertEqual(rsobj.name, name)
@@ -62,6 +78,7 @@ class ProjectClasses(unittest.TestCase):
             centroid=project_xml.Coords(-0.75, -1.25),
             filepath='test_path/test.geojson'
         )
+        self.assertTrue(validate_xml(bounds))
         self.assertEqual(bounds.bounding_box, (-1.0, -2.0, -0.5, -0.5))
         self.assertEqual(bounds.centroid, (-0.75, -1.25))
         self.assertEqual(bounds.filepath, 'test_path/test.geojson')
@@ -82,6 +99,7 @@ class ProjectClasses(unittest.TestCase):
         guid = str(uuid4())
         api_url = 'https://api.something.com/api'
         warehouse = project_xml.Warehouse(guid, api_url=api_url)
+        self.assertTrue(validate_xml(warehouse))
 
         self.assertEqual(warehouse.guid, guid)
         self.assertEqual(warehouse.api_url, api_url)
@@ -122,6 +140,7 @@ class ProjectClasses(unittest.TestCase):
         self.assertEqual(project.citation, citation)
         self.assertEqual(project.bounds, bounds)
         self.assertEqual(project.meta_data, meta_data)
+        self.assertTrue(validate_xml(project))
 
         xml = project.to_xml()
         self.assertEqual(xml.find('Name').text, name)
@@ -157,6 +176,7 @@ class ProjectClasses(unittest.TestCase):
             summary=summary,
             citation=citation
         )
+        self.assertTrue(validate_xml(dataset))
 
         self.assertEqual(dataset.xml_id, xml_id)
         self.assertEqual(dataset.name, name)
@@ -181,6 +201,7 @@ class ProjectClasses(unittest.TestCase):
             project_xml.Meta(name='test_key', value='test_no_type'),
             project_xml.Meta(name='test_key2', value='test_valid_type', type='filepath')
         ])
+        self.assertTrue(validate_xml(test_meta))
 
         try:
             test_meta2 = MetaData(values=[

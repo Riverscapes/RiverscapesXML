@@ -60,7 +60,7 @@ class MetaData():
     container_tag: str
     inner_tag: str
 
-    def __init__(self, values: List[Meta] = None, container_tag: str = 'MetaData', inner_tag: str = 'Meta') -> None:
+    def __init__(self, values: List[Meta] = [], container_tag: str = 'MetaData', inner_tag: str = 'Meta') -> None:
         """
         Initializes an instance of the Metadata class.
 
@@ -179,9 +179,11 @@ class MetaData():
         for meta in self._values:
             meta_node = ET.Element(self.inner_tag, {
                 'name': meta.name,
-                'type': meta.type,
-                'ext': meta.ext
             })
+            if meta.type is not None:
+                meta_node.set('type', meta.type)
+            if meta.ext is not None:
+                meta_node.set('ext', meta.ext)
 
             meta_node.text = str(meta.value)
             meta_data.append(meta_node)
