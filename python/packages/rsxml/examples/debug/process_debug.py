@@ -1,5 +1,14 @@
 """
 This is an example of how to use the debug module to debug a process.
+
+Debugging runs your code in a separate process and monitors it's memory and CPU usage.
+
+You pass in a handle to a csv file and you get a csv file back with the process usage.
+
+If you have matplotlib installed you will get a graph of the process usage in png format.
+
+Note: You need to install psutil and matplotlib `pip install psutil matplotlib` for this to work.
+
 """
 from time import sleep
 import tempfile

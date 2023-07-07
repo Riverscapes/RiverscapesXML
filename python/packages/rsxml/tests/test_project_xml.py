@@ -66,6 +66,35 @@ class RSObjTest(unittest.TestCase):
         self.assertEqual(xml.find('MetaData/Meta/[@name=\'test_key\']').text, 'test_value')
         self.assertEqual(xml.find('MetaData/Meta[@name=\'test_key2\']').text, 'test_value2')
 
+        rsobj2 = project_xml.RSObj.from_xml(xml)
+        self.assertEqual(rsobj, rsobj2)
+
+        # Now test differences
+        rsobj3 = project_xml.RSObj.from_xml(xml)
+        rsobj3.meta_data.remove_meta('test_key2')
+        self.assertNotEqual(rsobj, rsobj3)
+
+        rsobj4 = project_xml.RSObj.from_xml(xml)
+        rsobj4.name = 'newNAME'
+        self.assertNotEqual(rsobj, rsobj4)
+
+        rsobj5 = project_xml.RSObj.from_xml(xml)
+        rsobj5.summary = 'newSUMMARY'
+        self.assertNotEqual(rsobj, rsobj5)
+
+        rsobj6 = project_xml.RSObj.from_xml(xml)
+        rsobj6.description = None
+        self.assertNotEqual(rsobj, rsobj6)
+
+        rsobj7 = project_xml.RSObj.from_xml(xml)
+        rsobj7.citation = 'newCITATION'
+        self.assertNotEqual(rsobj, rsobj7)
+
+        rsobj8 = project_xml.RSObj.from_xml(xml)
+        rsobj8.meta_data.add_meta(name='test_key3', value='test_value3')
+        rsobj8.meta_data.add_meta('test_key4', 'test_value4')
+        self.assertNotEqual(rsobj, rsobj8)
+
 
 class ProjectClasses(unittest.TestCase):
     """[summary]"""
@@ -226,3 +255,38 @@ class ProjectClasses(unittest.TestCase):
             self.fail('Expected ValueError')
         except ValueError:
             pass
+
+    def test_metadata_parsing(self):
+        """Test the px.MetaData class constructor
+        """
+
+        xml_node = """
+        <MetaData>
+            <Meta name="test_key">
+                test value
+            </Meta>
+            <Meta name="test_key2" type="filepath">
+                test value 2 😎
+            </Meta>
+            <Meta name="test_key3" ext="project">
+            <![CDATA[
+                test value 3 1245 🚀 \\ <thing>
+                & ' " %^&*()_+=-[]{};:|,./<>?
+            ]]>
+            </Meta>
+        </MetaData>
+        """
+
+        test_meta = MetaData.from_xml(ET.fromstring(xml_node))
+
+        self.assertEqual(test_meta._values[0].name, 'test_key')
+        self.assertEqual(test_meta._values[0].value, 'test value')
+        self.assertEqual(test_meta._values[0].type, None)
+
+        self.assertEqual(test_meta._values[1].name, 'test_key2')
+        self.assertEqual(test_meta._values[1].value, 'test value 2 😎')
+        self.assertEqual(test_meta._values[1].type, 'filepath')
+
+        self.assertEqual(test_meta._values[2].name, 'test_key3')
+        self.assertEqual(test_meta._values[2].value, 'test value 3 1245 🚀 \\ <thing>\n                & \' " %^&*()_+=-[]{};:|,./<>?')
+        self.assertEqual(test_meta._values[2].ext, 'project')

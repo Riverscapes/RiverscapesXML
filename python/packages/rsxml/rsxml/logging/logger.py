@@ -36,8 +36,10 @@ class _LoggerSingleton:
             self.logpath = None
             self.handler = None
             self.logger = logging.getLogger("LOGGER")
+            logging.addLevelName(25, 'TITLE')
+            self.loglevels = logging.getLevelNamesMapping()
 
-        def setup(self, log_path=None, verbose=False, log_level: str = None):
+        def setup(self, log_path=None, verbose=False, log_level: int = None):
             """_summary_
 
             Args:
@@ -45,12 +47,12 @@ class _LoggerSingleton:
                 verbose (bool, optional): _description_. Defaults to False.
             """
             self.initialized = True
-            self.verbose = verbose
 
             if verbose is True and log_level is not None:
                 raise ValueError("Cannot set both verbose and log_level")
 
-            loglevel = logging.INFO if not verbose else logging.DEBUG
+            self.verbose = verbose if verbose else log_level >= logging.DEBUG
+            loglevel = log_level if log_level else logging.INFO if not verbose else logging.DEBUG
 
             self.logger = logging.getLogger("LOGGER")
             self.logger.setLevel(loglevel)
@@ -76,7 +78,7 @@ class _LoggerSingleton:
 
                 osgeo_logger.addHandler(self.handler)
 
-        def logprint(self, message, method="", severity="info", exception=None):
+        def logprint(self, message, method="", severity="INFO", exception=None):
             """
             Logprint logs things 3 different ways: 1) stdout 2) log txt file 3) xml
             :param message:
@@ -85,9 +87,10 @@ class _LoggerSingleton:
             :param exception:
             :return:
             """
+            msg_log_level = self.loglevels[severity.upper()]
 
-            # Verbose logs don't get written until we ask for them
-            if severity == 'debug' and not self.verbose:
+            # If we're not verbose and the log level is less than info then don't print
+            if msg_log_level < self.logger.level:
                 return
 
             # dateStr = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S%z')
@@ -95,47 +98,49 @@ class _LoggerSingleton:
             if exception is not None:
                 txtmsg = f'{message}  Exception: {str(exception)}'
                 msg = f'[{severity}] [{method}] {message} : {str(exception)}'
-            elif severity == 'title':
+            elif msg_log_level == self.loglevels['TITLE']:
                 buffer = 15
                 buffer_str = buffer * ' '
                 spcrbar = (len(message) + (buffer * 2)) * '='
                 msg_arr = [
                     spcrbar, f'{buffer_str}{message}{buffer_str}', spcrbar, ' '
                 ]
-                msg = '\n'.join([f'[info] [{method}] {m}' for m in msg_arr])
+                msg = '\n'.join([f'[INFO] [{method}] {m}' for m in msg_arr])
             else:
                 txtmsg = message
                 msg = f'[{severity}] [{method}] {message}'
 
             # Print to stdout
             if not NO_UI and colored is not None:
-                if severity == 'debug':
+                if msg_log_level == self.loglevels['DEBUG']:
                     msg = colored(msg, 'cyan')
-                if severity == 'warning':
+                if msg_log_level == self.loglevels['WARNING']:
                     msg = colored(msg, 'yellow')
-                if severity == 'error':
+                if msg_log_level == self.loglevels['ERROR']:
                     msg = colored(msg, 'red')
-                if severity == 'title':
+                if msg_log_level == self.loglevels['CRITICAL']:
+                    msg = colored(msg, 'red', attrs=['bold', 'reverse'])
+                if msg_log_level == self.loglevels['TITLE']:
                     msg = colored(msg, 'magenta')
 
             print(msg)
 
-            # If we haven't set up a logger then we're done here. Don't write to any files
+            # If we haven't set up a log file then we're done here. Don't write to any files
             if not self.initialized:
                 return
 
             # Write to log file
-            if severity == 'info':
+            if msg_log_level == self.loglevels['INFO']:
                 self.logger.info(txtmsg, extra={'curmethod': method})
-            elif severity == 'warning':
+            elif msg_log_level == self.loglevels['WARNING']:
                 self.logger.warning(txtmsg, extra={'curmethod': method})
-            elif severity == 'error':
+            elif msg_log_level == self.loglevels['ERROR']:
                 self.logger.error(txtmsg, extra={'curmethod': method})
-            elif severity == 'critical':
+            elif msg_log_level == self.loglevels['CRITICAL']:
                 self.logger.critical(txtmsg, extra={'curmethod': method})
-            elif severity == 'debug':
+            elif msg_log_level == self.loglevels['DEBUG']:
                 self.logger.debug(txtmsg, extra={'curmethod': method})
-            elif severity == 'title':
+            elif msg_log_level == self.loglevels['TITLE']:
                 for msg_it in msg_arr:
                     self.logger.info(msg_it, extra={'curmethod': method})
 
@@ -188,8 +193,10 @@ class Logger():
             level (_type_): _description_
         """
         self.instance.logger.setLevel(logging.getLevelName(log_level))
+        if self.instance.handler is not None:
+            self.instance.handler.setLevel(logging.getLevelName(log_level))
 
-    def debug(self, *args):
+    def debug(self, *args, **kwargs):
         """
         This works a little differently. You can basically throw anything you want into it.
         :param message:
@@ -201,8 +208,14 @@ class Logger():
                 msgarr.append(arg)
             else:
                 msgarr.append(pformat(arg))
+        for key, value in kwargs.items():
+            if isinstance(value, str):
+                msgarr.append(f'{key}: {value}')
+            else:
+                msgarr.append(f'{key}: {pformat(value)}')
+
         finalmessage = '\n'.join(msgarr).replace('\n', '\n              ')
-        self.instance.logprint(finalmessage, self.method, "debug")
+        self.instance.logprint(finalmessage, self.method, "DEBUG")
 
     def destroy(self):
         """_summary_
@@ -216,7 +229,7 @@ class Logger():
         Args:
             message (_type_): _description_
         """
-        self.instance.logprint(message, self.method, "info")
+        self.instance.logprint(message, self.method, "INFO")
 
     def error(self, message, exception=None):
         """_summary_
@@ -225,7 +238,7 @@ class Logger():
             message (_type_): _description_
             exception (_type_, optional): _description_. Defaults to None.
         """
-        self.instance.logprint(message, self.method, "error", exception)
+        self.instance.logprint(message, self.method, "ERROR", exception)
 
     def critical(self, message, exception=None):
         """_summary_
@@ -234,7 +247,7 @@ class Logger():
             message (_type_): _description_
             exception (_type_, optional): _description_. Defaults to None.
         """
-        self.instance.logprint(message, self.method, "critical", exception)
+        self.instance.logprint(message, self.method, "CRITICAL", exception)
 
     def warning(self, message, exception=None):
         """_summary_
@@ -243,7 +256,7 @@ class Logger():
             message (_type_): _description_
             exception (_type_, optional): _description_. Defaults to None.
         """
-        self.instance.logprint(message, self.method, "warning", exception)
+        self.instance.logprint(message, self.method, "WARNING", exception)
 
     def title(self, message):
         """_summary_
@@ -251,4 +264,4 @@ class Logger():
         Args:
             message (_type_): _description_
         """
-        self.instance.logprint(message, self.method, "title")
+        self.instance.logprint(message, self.method, "TITLE")

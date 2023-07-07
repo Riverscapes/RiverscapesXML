@@ -151,7 +151,7 @@ class MemoryMonitor:
         """
         log = Logger('write_plot')
         if not plt:
-            log.error('You need Matplotlib to run write_plot')
+            log.warning('No plot written. You need Matplotlib to run write_plot.')
             return
         x = []
         data = {}
@@ -219,9 +219,11 @@ def thread_run(callback, memlogfile: str, *args, **kwargs):
         _type_: _description_
     """
     log = Logger('Debug')
+    log.setlevel('DEBUG')
+    log.debug('Starting thread_run')
     if not psutil:
         log.error('You need "psutil" to run the debug tools')
-        return
+        raise Exception('Missing psutil')
 
     memmon = MemoryMonitor(memlogfile, 1)
     result = None
@@ -241,8 +243,13 @@ def thread_run(callback, memlogfile: str, *args, **kwargs):
     except Exception as err_out:
         # Make sure we always return so that we don't have to debug our debugger
         log.error(err_out)
+    log.debug(f'Resource plot CSV written to {memlogfile}')
     try:
-        memmon.write_plot(os.path.splitext(memlogfile)[0] + '.png')
+        if plt:
+            memmon.write_plot(os.path.splitext(memlogfile)[0] + '.png')
+            log.debug(f'Resource plot written to {os.path.splitext(memlogfile)[0] + ".png"}')
+        else:
+            log.warning('No plot written. You need Matplotlib to run write_plot.')
     except Exception as err:
         log.error(f'Error Writing memory plot: {err}')
 

@@ -113,7 +113,7 @@ class RSObj (abc.ABC):
         citation = citation_find.text if citation_find is not None else None
 
         meta_data_find = xml_node.find('MetaData')
-        meta_data = MetaData.from_xml(meta_data_find, xml_node) if meta_data_find is not None else None
+        meta_data = MetaData.from_xml(meta_data_find) if meta_data_find is not None else None
 
         mandatory_id = xml_id is not None
 
@@ -127,6 +127,19 @@ class RSObj (abc.ABC):
             meta_data=meta_data,
             mandatory_id=mandatory_id
         )
+
+    def __eq__(self, other: RSObj) -> bool:
+        """ Equality operator """
+
+        if not isinstance(other, RSObj):
+            return False
+
+        return self.xml_id == other.xml_id and \
+            self.name == other.name and \
+            self.summary == other.summary and \
+            self.description == other.description and \
+            self.citation == other.citation and \
+            self.meta_data == other.meta_data
 
     def to_xml(self) -> ET.Element:
         """

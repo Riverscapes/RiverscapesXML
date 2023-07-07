@@ -9,13 +9,15 @@
 from __future__ import annotations
 from typing import List
 import re
-from datetime import date
+from datetime import datetime
 import xml.etree.cElementTree as ET
 
 from rsxml.project_xml.RSObj import RSObj
 from rsxml.project_xml.MetaData import MetaData
 from rsxml.project_xml.Dataset import Dataset, Log
 from rsxml.project_xml.Analysis import Analysis
+
+from rsxml.logging.logger import Logger
 
 versionPattern = r'^[0-9]+\.[0-9]+\.[0-9]+[a-z-]*$'
 
@@ -26,7 +28,7 @@ class Realization(RSObj):
     Args:
         RSObj (_type_): _description_
     """
-    date_created: date
+    date_created: datetime
     product_version: str
     xml_id: str
 
@@ -40,7 +42,7 @@ class Realization(RSObj):
     def __init__(self,
                  name: str,
                  xml_id: str,
-                 date_created: date,
+                 date_created: datetime,
                  product_version: str,
                  summary: str = None,
                  description: str = None,
@@ -54,7 +56,7 @@ class Realization(RSObj):
                  analyses: List[Analysis] = None,
                  ) -> None:
         super().__init__('Realization', xml_id, name, summary, description, citation, meta_data)
-        if not date_created or not isinstance(date_created, date):
+        if not date_created or not isinstance(date_created, datetime):
             raise ValueError('date_created is mandatory')
         if product_version and not re.match(versionPattern, product_version):
             raise ValueError('product_version must match the pattern: ' + versionPattern)
@@ -92,3 +94,40 @@ class Realization(RSObj):
                     node.append(ds.to_xml())
 
         return xml_node
+
+    def from_xml(xml_node: ET.Element) -> Realization:
+        """_summary_
+
+        Args:
+            xml_node (ET.Element): _description_
+
+        Returns:
+            Realization: _description_
+        """
+        log = Logger('Realization')
+        if xml_node.tag != 'Realization':
+            raise ValueError('xml_node must be a Realization node')
+
+        rsobj = RSObj.from_xml(xml_node)
+
+        try:
+            date_created_node = xml_node.get('dateCreated')
+            date_created = datetime.fromisoformat(date_created_node)
+        except ValueError as err:
+            log.error(f'dateCreated is not a valid ISO 8601 date like "{datetime.now().isoformat()}". Got: "{date_created_node}"')
+            raise err
+
+        product_version = xml_node.get('productVersion')
+
+        datasets = [Dataset.from_xml(dataset_node) for dataset_node in xml_node.find('Datasets')] if xml_node.find('Datasets') else None
+        logs = [Dataset.from_xml(log_node) for log_node in xml_node.find('Logs')] if xml_node.find('Logs') else None
+
+        inputs = [Dataset.from_xml(input_node) for input_node in xml_node.find('Inputs')] if xml_node.find('Inputs') else None
+        intermediates = [Dataset.from_xml(intermediate_node) for intermediate_node in xml_node.find('Intermediates')] if xml_node.find('Intermediates') else None
+        outputs = [Dataset.from_xml(output_node) for output_node in xml_node.find('Outputs')] if xml_node.find('Outputs') else None
+
+        analyses = [Analysis.from_xml(analysis) for analysis in xml_node.find('Analyses')] if xml_node.find('Analyses') else None
+
+        return Realization(rsobj.name, rsobj.xml_id, date_created, product_version,
+                           rsobj.summary, rsobj.description, rsobj.citation, rsobj.meta_data,
+                           datasets, logs, inputs, intermediates, outputs, analyses)

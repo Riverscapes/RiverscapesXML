@@ -10,16 +10,22 @@ from rsxml.project_xml import (
     Coords,
     BoundingBox,
     Dataset,
+    Realization,
+    MetaData,
+    Meta
 )
+import tempfile
+from datetime import datetime
 from rsxml import Logger
-from datetime import date
 
-if __name__ == '__main__':
+
+def main(filepath: str):
     log = Logger('Project')
-    # Create a new Riverscapes Project from scratch
+
+    # First create a new Riverscapes Project from scratch
     project = Project(
         name='Test Project',
-        proj_path='project.rs.xml',
+        proj_path=filepath,
         project_type='VBET',
         description='This is a test project',
         citation='This is a citation',
@@ -28,9 +34,24 @@ if __name__ == '__main__':
             bounding_box=BoundingBox(-22, -21, 114, 116),
             filepath='project_bounds.json',
         ),
+        realizations=[
+            Realization(
+                xml_id='test',
+                name='Test Realization',
+                product_version='1.0.0',
+                date_created=datetime(2021, 1, 1),
+                summary='This is a test realization',
+                description='This is a test realization',
+                meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
+            )
+        ]
     )
 
-    # Add some more project metadata
+    # ========================================================================
+    # ... maybe you do some work
+    # ========================================================================
+
+    # Now add some metadata
     project.meta_data.add_meta('Test2', 'Test Value 2')
 
     # Add a dataset
@@ -51,3 +72,57 @@ if __name__ == '__main__':
     project.write()
 
     log.info('done')
+
+
+if __name__ == '__main__':
+    with tempfile.NamedTemporaryFile(prefix='project.rs.', suffix='.xml') as f:
+        print("\n\nConsole Output\n========================================================================\n")
+        main(f.name)
+        print("\n\nProject XML\n========================================================================\n")
+        with open(f.name, 'r') as f:
+            print(f.read())
+
+
+# FINAL OUTPUT ========================================================================
+
+# <?xml version="1.0" ?>
+# <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd">
+#     <Name>Test Project</Name>
+#     <Description>This is a test project</Description>
+#     <Citation>This is a citation</Citation>
+#     <MetaData>
+#         <Meta name="Test2">Test Value 2</Meta>
+#     </MetaData>
+#     <ProjectType>VBET</ProjectType>
+#     <ProjectBounds>
+#         <Centroid>
+#             <Lat>114.56</Lat>
+#             <Lng>-21.23</Lng>
+#         </Centroid>
+#         <BoundingBox>
+#             <MinLng>-22</MinLng>
+#             <MinLat>-21</MinLat>
+#             <MaxLng>114</MaxLng>
+#             <MaxLat>116</MaxLat>
+#         </BoundingBox>
+#         <Path>project_bounds.json</Path>
+#     </ProjectBounds>
+#     <Realizations>
+#         <Realization id="test" dateCreated="2021-01-01" productVersion="1.0.0">
+#             <Name>Test Realization</Name>
+#             <Summary>This is a test realization</Summary>
+#             <Description>This is a test realization</Description>
+#             <MetaData>
+#                 <Meta name="Test">Test Value</Meta>
+#             </MetaData>
+#             <Datasets>
+#                 <CSV id="test2" extRef="f23b187a-537b-4dd0-8b71-4b7c4a6e9747:Project/Realizations/Realization#REALIZATION1/Datasets/Raster#DEM">
+#                     <Name>Test Dataset 2</Name>
+#                     <Summary>This is a test dataset 2</Summary>
+#                     <Description>This is a test dataset 2</Description>
+#                     <Path>test2.gpkg</Path>
+#                 </CSV>
+#             </Datasets>
+#         </Realization>
+#     </Realizations>
+# </Project>

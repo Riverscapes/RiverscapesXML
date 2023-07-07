@@ -143,8 +143,18 @@ class MetaData():
         """
         self._values = [s for s in self._values if s.name != name]
 
+    def __eq__(self, other: MetaData) -> bool:
+
+        if not isinstance(other, MetaData):
+            return False
+
+        return self.container_tag == other.container_tag and \
+            self.inner_tag == other.inner_tag and \
+            len(self._values) == len(other._values) and \
+            all([a == b for a, b in zip(self._values, other._values)])
+
     @staticmethod
-    def from_xml(xml_node: ET.Element, parent: ET.Element) -> MetaData:
+    def from_xml(xml_node: ET.Element) -> MetaData:
         """
         Create an instance of the MetaData class from an xml node.
 
@@ -163,8 +173,9 @@ class MetaData():
         for meta in xml_node.findall('*'):
             meta_data.add_meta(
                 meta.get('name'),
-                meta.get('value'),
+                meta.text.strip(),
                 meta.get('type'),
+                meta.get('ext')
             )
         return meta_data
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd">
+    <Name>Test Project</Name>
+    <Description>This is a test project</Description>
+    <Citation>This is a citation</Citation>
+    <MetaData>
+        <Meta name="Test1">Test Value 1</Meta>
+        <!-- This is where our new metadata will go -->
+    </MetaData>
+    <ProjectType>VBET</ProjectType>
+    <ProjectBounds>
+        <Centroid>
+            <Lat>114.56</Lat>
+            <Lng>-21.23</Lng>
+        </Centroid>
+        <BoundingBox>
+            <MinLng>-22</MinLng>
+            <MinLat>-21</MinLat>
+            <MaxLng>114</MaxLng>
+            <MaxLat>116</MaxLat>
+        </BoundingBox>
+        <Path>project_bounds.json</Path>
+    </ProjectBounds>
+    <Realizations>
+        <Realization id="test" dateCreated="2021-10-02T16:48:50.457945" productVersion="1.0.0">
+            <Name>Test Realization</Name>
+            <Summary>This is a test realization</Summary>
+            <Description>This is a test realization</Description>
+            <MetaData>
+                <Meta name="Test">Test Value</Meta>
+            </MetaData>
+            <Datasets>
+                 <!-- This is where our dataset will go -->
+            </Datasets>
+        </Realization>
+    </Realizations>
+</Project>

@@ -1,6 +1,12 @@
 """
 This is an example file that demonstrates how to use the progress bar that
 comes with RS XML.
+
+NOTE: In QGIS you should probably use QgsMessageBar or QgsTask's async methods
+
+- https://qgis.org/pyqgis/3.0/core/Task/QgsTask.html
+- https://api.qgis.org/api/classQgsMessageBar.html
+
 """
 import random
 from time import sleep

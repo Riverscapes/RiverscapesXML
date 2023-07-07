@@ -1,6 +1,10 @@
 """
 This is an example file demonstrating how to use various different
 types of timers that come with RSXML
+
+Timers are really useful for debugging why your code is slow. You can also use them
+to time how long it takes to do something and then write the results to a csv file.
+
 """
 from time import sleep
 import tempfile
