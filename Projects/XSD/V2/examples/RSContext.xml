@@ -1,496 +1,496 @@
 <?xml version="1.0" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
-	<Name>Riverscapes Context for HUC 16010202</Name>
-	<ProjectType>RSContext</ProjectType>
-	<MetaData>
-		<Meta name="ModelVersion">1.3.0</Meta>
-		<Meta name="dateCreated" type="isodate">2022-11-01T13:06:11.866680</Meta>
-		<Meta name="HUC8">16010202</Meta>
-		<Meta name="HUC">16010202</Meta>
-		<Meta name="Runner">VSCode</Meta>
-		<Meta name="Watershed">Middle Bear</Meta>
-		<Meta name="ProcTimeS" type="int">757.32</Meta>
-		<Meta name="ProcTimeHuman">12:37 minutes</Meta>
-	</MetaData>
-	<ProjectBounds>
-		<Centroid>
-			<Lat>42.17919890105665</Lat>
-			<Lng>-111.84521490101613</Lng>
-		</Centroid>
-		<BoundingBox>
-			<MinLat>41.75990660184698</MinLat>
-			<MinLng>-112.16837046445755</MinLng>
-			<MaxLat>42.663275942111454</MaxLat>
-			<MaxLng>-111.55210570812244</MaxLng>
-		</BoundingBox>
-		<Path>project_bounds.geojson</Path>
-	</ProjectBounds>
-	<Realizations>
-		<Realization id="REALIZATION1" dateCreated="2022-11-01T13:06:11.884784" productVersion="1.3.0">
-			<Name>Riverscapes Context for HUC 16010202</Name>
-			<Logs>
-				<LogFile id="LOGFILE">
-					<Name>Log</Name>
-					<Path>rs_context.log</Path>
-				</LogFile>
-			</Logs>
-			<Datasets>
-				<Raster id="DEM">
-					<Name>NED 10m DEM</Name>
-					<Path>topography/dem.tif</Path>
-					<MetaData>
-						<Meta name="Description">National Elevation Dataset (NED) Digital Elevation Models (DEM). These DEMs are downloaded from Science Base and mosaiced into a single 10m DEM that covers the riverscapes context project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://gdg.sc.egov.usda.gov/Catalog/ProductDescription/NED.html</Meta>
-						<Meta name="ProductVersion"/>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#DEM</Meta>
-						<Meta name="num_rasters" ext="dataset" type="int">4</Meta>
-						<Meta name="origin_urls" ext="dataset" type="json">[&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n43w113/USGS_13_n43w113_20190723.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n43w112/USGS_13_n43w112_20190912.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n42w113/USGS_13_n42w113_20190919.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n42w112/USGS_13_n42w112_20211101.tif&quot;]</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="HILLSHADE">
-					<Name>DEM Hillshade</Name>
-					<Path>topography/dem_hillshade.tif</Path>
-					<MetaData>
-						<Meta name="Description">Hillshade raster generated from the NED DEM using the gdal_dem tool specifying the hillshade option.</Meta>
-						<Meta name="SourceUrl" type="url">https://gdal.org/programs/gdaldem.html</Meta>
-						<Meta name="ProductVersion"/>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HILLSHADE</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="SLOPE">
-					<Name>Slope</Name>
-					<Path>topography/slope.tif</Path>
-					<MetaData>
-						<Meta name="Description">Slope raster generated from the NED DEM using gdal_dem tool specifying the slope option. Units are in percent.</Meta>
-						<Meta name="SourceUrl" type="url">https://gdal.org/programs/gdaldem.html</Meta>
-						<Meta name="ProductVersion"/>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SLOPE</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="EXVEG">
-					<Name>Existing Vegetation</Name>
-					<Path>vegetation/existing_veg.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire EVT raster: Complexes of plant communities representing NatureServe's terrestrial Ecological Systems classification. Version 2.1.0 LF REMAP 2019: Reflects change and disturbance since completion of LF 2016 Remap, including the years of 2017, 2018, and 2019. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#EXVEG</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="HISTVEG">
-					<Name>Historic Vegetation</Name>
-					<Path>vegetation/historic_veg.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire BPS raster: Vegetation system that may have been dominant on the landscape pre Euro-American settlement. Version 2.1.0 LF REMAP 2019: Reflects change and disturbance since completion of LF 2016 Remap, including the years of 2017, 2018, and 2019. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HISTVEG</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="VEGCOVER">
-					<Name>Vegetation Cover</Name>
-					<Path>vegetation/veg_cover.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire EVC raster: Vertically projected percent cover of the live canopy layer for a specific area. Version 2.2.0: Reflects adjustments to vegetation and fuels since LF 2016 Remap in disturbed areas for disturbances recorded in 2017-2020. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGCOVER</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="VEGHEIGHT">
-					<Name>Vegetation Height</Name>
-					<Path>vegetation/veg_height.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire EVH raster: Average height of the dominant vegetation. Version 2.2.0: Reflects adjustments to vegetation and fuels since LF 2016 Remap in disturbed areas for disturbances recorded in 2017-2020. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGHEIGHT</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="HDIST">
-					<Name>Historic Disturbance</Name>
-					<Path>vegetation/historic_disturbance.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire HDst raster: The latest 10 years of Annual Disturbance products are used to identify disturbance year, type, and severity. Starting with LF Remap, HDist replaces VDist from previous LF versions incorporating pre-disturbance vegetation logic (based on disturbance year and vegetation type). The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HDIST</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="FDIST">
-					<Name>Fuel Disturbance</Name>
-					<Path>vegetation/fuel_disturbance.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire FDst raster: The latest 10 years of Annual Disturbance products representing disturbance year and original disturbance code. FDist was a refinement of VDist in LF 1.x products and is a refinement of Historical Disturbance in LF Remap to more accurately represent disturbance scenarios within the fuels environment. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#FDIST</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="FCCS">
-					<Name>Fuel Characteristic Classification System</Name>
-					<Path>vegetation/fccs.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire FCCS raster: Describes the phsical characteristics of a relatively uniform unit on a lanscape that represents a distinct fire environment; provides land managers, regulators, and scientists with a nationally consistent and durable procedure to characterize and classify fuelbed characteristics to predict fuel consumption and smoke production. For LF Remap, FCCS will be released as part of the final release for CONUS. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#FCCS</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="VEGCONDITION">
-					<Name>Vegetation Condition</Name>
-					<Path>vegetation/vegetation_condition.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire VCC raster: A discrete metric that qunatifies the amount that current vegetation has departed from teh simulated historical vegetation reference conditions. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGCONDITION</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="VEGDEPARTURE">
-					<Name>Vegetation Departure</Name>
-					<Path>vegetation/vegetation_departure.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire VDEP raster: Range from 0-100 depicting the amount that current vegetation has departed from simulated historical vegetation reference. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGDEPARTURE</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="SCLASS">
-					<Name>Succession Classes</Name>
-					<Path>vegetation/succession_classes.tif</Path>
-					<MetaData>
-						<Meta name="Description">LandFire SCla raster: Current vegetation conditions with respect to vegetation species composition, cover, and height ranges of successional states occurring within each biophysical setting. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
-						<Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
-						<Meta name="ProductVersion">2.2.0</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SCLASS</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="FAIRMARKETVALUE">
-					<Name>Fair Market Value</Name>
-					<Path>ownership/fair_market_value.tif</Path>
-					<MetaData>
-						<Meta name="Description">Fair Market Value raster. This raster was downloaded and converted to US dollars per hectare.</Meta>
-						<Meta name="SourceUrl" type="url">https://placeslab.org/fmv-usa/</Meta>
-						<Meta name="ProductVersion">October 2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#FAIRMARKETVALUE</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="Precip">
-					<Name>Precipitation</Name>
-					<Path>climate/precipitation.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal precipitation raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Precip</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="MeanTemp">
-					<Name>Mean Temperature</Name>
-					<Path>climate/mean_temp.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal mean temperature raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MeanTemp</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="MinTemp">
-					<Name>Minimum Temperature</Name>
-					<Path>climate/min_temp.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal minimum temperature raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MinTemp</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="MaxTemp">
-					<Name>Maximum Temperature</Name>
-					<Path>climate/max_temp.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal maximum temperature raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MaxTemp</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="MeanDew">
-					<Name>Mean Dew Point Temperature</Name>
-					<Path>climate/mean_dew_temp.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal mean dew point temperature  raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MeanDew</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="MinVap">
-					<Name>Minimum Vapor Pressure Deficit</Name>
-					<Path>climate/min_vapor_pressure.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal minimum vapor pressure deficit raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MinVap</Meta>
-					</MetaData>
-				</Raster>
-				<Raster id="MaxVap">
-					<Name>Maximum Vapor Pressure Deficit</Name>
-					<Path>climate/max_vapor_pressure.tif</Path>
-					<MetaData>
-						<Meta name="Description">PRISM 30 year normal maximum vapor pressure deficit raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
-						<Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
-						<Meta name="ProductVersion">1991-2020</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MaxVap</Meta>
-					</MetaData>
-				</Raster>
-				<Vector id="Roads">
-					<Name>Roads</Name>
-					<Path>transportation/roads.shp</Path>
-					<MetaData>
-						<Meta name="Description">The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data is downloaded from science base by state then clipped to the project extent.</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/data/html#Roads</Meta>
-						<Meta name="SourceUrl" type="url">https://data.usgs.gov/datacatalog/data/USGS:ad3d631d-f51f-4b6a-91a3-e617d6a58b4e</Meta>
-						<Meta name="ProductVersion">2020</Meta>
-						<Meta name="Idaho" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
-						<Meta name="Utah" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Utah_State_Shape.zip</Meta>
-					</MetaData>
-				</Vector>
-				<Vector id="Rail">
-					<Name>Rail</Name>
-					<Path>transportation/railways.shp</Path>
-					<MetaData>
-						<Meta name="Description">The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data is downloaded from science base by state then clipped to the project extent.</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/data/html#Rail</Meta>
-						<Meta name="SourceUrl" type="url">https://data.usgs.gov/datacatalog/data/USGS:ad3d631d-f51f-4b6a-91a3-e617d6a58b4e</Meta>
-						<Meta name="ProductVersion">2020</Meta>
-						<Meta name="Idaho" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
-						<Meta name="Utah" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Utah_State_Shape.zip</Meta>
-					</MetaData>
-				</Vector>
-				<Vector id="Canals">
-					<Name>Canals</Name>
-					<Path>transportation/canals.shp</Path>
-					<MetaData>
-						<Meta name="Description">The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data is downloaded from science base by state then clipped to the project extent.</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/data/html#Canals</Meta>
-						<Meta name="SourceUrl" type="url">https://data.usgs.gov/datacatalog/data/USGS:ad3d631d-f51f-4b6a-91a3-e617d6a58b4e</Meta>
-						<Meta name="ProductVersion">2020</Meta>
-						<Meta name="Idaho" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
-						<Meta name="Utah" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Utah_State_Shape.zip</Meta>
-					</MetaData>
-				</Vector>
-				<Vector id="Ownership">
-					<Name>Ownership</Name>
-					<Path>ownership/ownership.shp</Path>
-					<MetaData>
-						<Meta name="Description">Land ownership obtained from the Bureau of Management (BLM) Land Surface Agency. A single ShapeFile was downloaded and then pre-processed to remove invalid geometries and other irregularities.</Meta>
-						<Meta name="SourceUrl" type="url">https://landscape.blm.gov/geoportal/catalog/search/resource/details.page?uuid=%7B2A8B8906-7711-4AF7-9510-C6C7FD991177%7D</Meta>
-						<Meta name="ProductVersion"/>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Ownership</Meta>
-					</MetaData>
-				</Vector>
-				<Vector id="States">
-					<Name>States</Name>
-					<Path>political_boundaries/states.shp</Path>
-					<MetaData>
-						<Meta name="Description">State boundaries obtained from the US Census Bureau.</Meta>
-						<Meta name="SourceUrl" type="url">https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html</Meta>
-						<Meta name="ProductVersion">2021</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#States</Meta>
-					</MetaData>
-				</Vector>
-				<Vector id="Counties">
-					<Name>Counties</Name>
-					<Path>political_boundaries/counties.shp</Path>
-					<MetaData>
-						<Meta name="Description">County boundaries obtained from the US Census Bureau.</Meta>
-						<Meta name="SourceUrl" type="url">https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html</Meta>
-						<Meta name="ProductVersion">2021</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Counties</Meta>
-					</MetaData>
-				</Vector>
-				<Vector id="GEOLOGY">
-					<Name>Geology</Name>
-					<Path>geology/geology.shp</Path>
-					<MetaData>
-						<Meta name="Description">Shapefile of geologic units from the State Geologic Map Compilation (SGMC) available via the USGS; the dataset is a compiliation of geologic maps from each state with a field added ('GENERALIZE') for consistent symbology across the country.</Meta>
-						<Meta name="SourceUrl" type="url">https://www.sciencebase.gov/catalog/item/5888bf4fe4b05ccb964bab9d</Meta>
-						<Meta name="ProductVersion">1.1</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#GEOLOGY</Meta>
-					</MetaData>
-				</Vector>
-				<Geopackage id="NHD">
-					<Name>Hydrology</Name>
-					<Path>hydrology/hydrology.gpkg</Path>
-					<Layers>
-						<Vector lyrName="network">
-							<Name>NHD Flowlines</Name>
-							<MetaData>
-								<Meta name="Description">National Hydrologic Dataset (NHD) High Resolution. 1:24,000 stream network polyline feature class. This is the original data downloaded as an ESRI file geodatabase and then converted to an open source GeoPackage.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
-								<Meta name="ProductVersion">2017</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NETWORK</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="buffered_clip100m">
-							<Name>Buffered Clip Shape 100m</Name>
-							<MetaData>
-								<Meta name="Description">The riverscapes context project extent polygon buffered by 100m.</Meta>
-								<Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR WBD</Meta>
-								<Meta name="ProductVersion"/>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#BUFFERED_CLIP100</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="buffered_clip500m">
-							<Name>Buffered Clip Shape 500m</Name>
-							<MetaData>
-								<Meta name="Description">The riverscapes context project extent polygon buffered by 500m.</Meta>
-								<Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR WBD</Meta>
-								<Meta name="ProductVersion"/>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#BUFFERED_CLIP500</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="network_300m">
-							<Name>NHD Flowlines Segmented 300m</Name>
-							<MetaData>
-								<Meta name="Description">This polyline feature class is the original NHDPlusHR flow line network segmented into 300m reach lengths. Segmentation that would produce a feature of less than 50m is not performed. And features that are less than 50m are left untouched.</Meta>
-								<Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR flowlines</Meta>
-								<Meta name="ProductVersion"/>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NETWORK300M</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="network_intersected">
-							<Name>NHD Flowlines intersected with road, rail and ownership</Name>
-						</Vector>
-						<Vector lyrName="network_intersected_300m">
-							<Name>NHD Flowlines intersected with road, rail and ownership, segmented to 300m</Name>
-							<MetaData>
-								<Meta name="Description">This polyline feeature class is the NETWORK300M featureclass intersected with road and rail crossings and ownership.</Meta>
-								<Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR flowlines and transporation features</Meta>
-								<Meta name="ProductVersion"/>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NETWORK300MCROSSINGS</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="processing_extent">
-							<Name>Processing Extent of HUC-DEM Intersection</Name>
-						</Vector>
-						<Vector lyrName="NHDFlowline">
-							<Name>NHD Flowlines</Name>
-							<MetaData>
-								<Meta name="Description">NHDFlowline is the fundamental flow network consisting predominantly of stream/river and artificial path vector features. It represents the spatial geometry, carries the attributes, and contains linear referencing measures for locating features or “events” on the network. Additional NHDFlowline features are canal/ditch, pipeline, connector, underground conduit, and coastline.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
-								<Meta name="ProductVersion">2017</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDFlowline</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="NHDArea">
-							<Name>NHD Area</Name>
-							<MetaData>
-								<Meta name="Description">NHDArea contains many additional water-polygon features. One of the more important is the stream/river feature. It represents the areal extent of the water in a wide stream/river with a basic set of attributes. These polygons typically encompass NHDFlowline artificial paths that represent the stream network. Artificial path carries the critical attributes of the stream/river, whereas NHDArea represents the geometric extent.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
-								<Meta name="ProductVersion">2017</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDArea</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="NHDPlusCatchment">
-							<Name>NHD Plus Catchment</Name>
-							<MetaData>
-								<Meta name="Description">NHDPlusCatchment represent drainage wings within watersheds.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
-								<Meta name="ProductVersion">2017</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDPlusCatchment</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="NHDWaterbody">
-							<Name>NHD Waterbody</Name>
-							<MetaData>
-								<Meta name="Description">Waterbodies such as lake/pond features are represented in NHDWaterbody. They portray the spatial geometry and the attributes of the feature. These water polygons may have NHDFlowline artificial paths drawn through them to allow the representation of water flow direction. Other NHDWaterbody features are swamp/marsh, reservoir, playa, estuary, and ice mass.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
-								<Meta name="ProductVersion">2017</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDWaterbody</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="WBDHU2">
-							<Name>HUC2</Name>
-							<MetaData>
-								<Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
-								<Meta name="ProductVersion">2014</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU2</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="WBDHU4">
-							<Name>HUC4</Name>
-							<MetaData>
-								<Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
-								<Meta name="ProductVersion">2014</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU4</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="WBDHU6">
-							<Name>HUC6</Name>
-							<MetaData>
-								<Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
-								<Meta name="ProductVersion">2014</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU6</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="WBDHU8">
-							<Name>HUC8</Name>
-							<MetaData>
-								<Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
-								<Meta name="ProductVersion">2014</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU8</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="WBDHU10">
-							<Name>HUC10</Name>
-							<MetaData>
-								<Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
-								<Meta name="ProductVersion">2014</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU10</Meta>
-							</MetaData>
-						</Vector>
-						<Vector lyrName="WBDHU12">
-							<Name>HUC12</Name>
-							<MetaData>
-								<Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
-								<Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
-								<Meta name="ProductVersion">2014</Meta>
-								<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU12</Meta>
-							</MetaData>
-						</Vector>
+  <Name>Riverscapes Context for HUC 16010202</Name>
+  <MetaData>
+    <Meta name="ModelVersion">1.3.0</Meta>
+    <Meta name="dateCreated" type="isodate">2022-11-01T13:06:11.866680</Meta>
+    <Meta name="HUC8">16010202</Meta>
+    <Meta name="HUC">16010202</Meta>
+    <Meta name="Runner">VSCode</Meta>
+    <Meta name="Watershed">Middle Bear</Meta>
+    <Meta name="ProcTimeS" type="int">757.32</Meta>
+    <Meta name="ProcTimeHuman">12:37 minutes</Meta>
+  </MetaData>
+  <ProjectType>RSContext</ProjectType>
+  <ProjectBounds>
+    <Centroid>
+      <Lat>42.17919890105665</Lat>
+      <Lng>-111.84521490101613</Lng>
+    </Centroid>
+    <BoundingBox>
+      <MinLng>-112.16837046445755</MinLng>
+      <MinLat>41.75990660184698</MinLat>
+      <MaxLng>-111.55210570812244</MaxLng>
+      <MaxLat>42.663275942111454</MaxLat>
+    </BoundingBox>
+    <Path>project_bounds.geojson</Path>
+  </ProjectBounds>
+  <Realizations>
+    <Realization id="REALIZATION1" dateCreated="2022-11-01T13:06:11.884784" productVersion="1.3.0">
+      <Name>Riverscapes Context for HUC 16010202</Name>
+      <Logs>
+        <LogFile id="LOGFILE">
+          <Name>Log</Name>
+          <Path>rs_context.log</Path>
+        </LogFile>
+      </Logs>
+      <Datasets>
+        <Raster id="DEM">
+          <Name>NED 10m DEM</Name>
+          <MetaData>
+            <Meta name="Description">National Elevation Dataset (NED) Digital Elevation Models (DEM). These DEMs are downloaded from Science Base and mosaiced into a single 10m DEM that covers the riverscapes context project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://gdg.sc.egov.usda.gov/Catalog/ProductDescription/NED.html</Meta>
+            <Meta name="ProductVersion" />
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#DEM</Meta>
+            <Meta name="num_rasters" ext="dataset" type="int">4</Meta>
+            <Meta name="origin_urls" ext="dataset" type="json">[&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n43w113/USGS_13_n43w113_20190723.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n43w112/USGS_13_n43w112_20190912.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n42w113/USGS_13_n42w113_20190919.tif&quot;, &quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/historical/n42w112/USGS_13_n42w112_20211101.tif&quot;]</Meta>
+          </MetaData>
+          <Path>topography/dem.tif</Path>
+        </Raster>
+        <Raster id="HILLSHADE">
+          <Name>DEM Hillshade</Name>
+          <Path>topography/dem_hillshade.tif</Path>
+          <MetaData>
+            <Meta name="Description">Hillshade raster generated from the NED DEM using the gdal_dem tool specifying the hillshade option.</Meta>
+            <Meta name="SourceUrl" type="url">https://gdal.org/programs/gdaldem.html</Meta>
+            <Meta name="ProductVersion"/>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HILLSHADE</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="SLOPE">
+          <Name>Slope</Name>
+          <Path>topography/slope.tif</Path>
+          <MetaData>
+            <Meta name="Description">Slope raster generated from the NED DEM using gdal_dem tool specifying the slope option. Units are in percent.</Meta>
+            <Meta name="SourceUrl" type="url">https://gdal.org/programs/gdaldem.html</Meta>
+            <Meta name="ProductVersion"/>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SLOPE</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="EXVEG">
+          <Name>Existing Vegetation</Name>
+          <Path>vegetation/existing_veg.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire EVT raster: Complexes of plant communities representing NatureServe's terrestrial Ecological Systems classification. Version 2.1.0 LF REMAP 2019: Reflects change and disturbance since completion of LF 2016 Remap, including the years of 2017, 2018, and 2019. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#EXVEG</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="HISTVEG">
+          <Name>Historic Vegetation</Name>
+          <Path>vegetation/historic_veg.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire BPS raster: Vegetation system that may have been dominant on the landscape pre Euro-American settlement. Version 2.1.0 LF REMAP 2019: Reflects change and disturbance since completion of LF 2016 Remap, including the years of 2017, 2018, and 2019. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HISTVEG</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="VEGCOVER">
+          <Name>Vegetation Cover</Name>
+          <Path>vegetation/veg_cover.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire EVC raster: Vertically projected percent cover of the live canopy layer for a specific area. Version 2.2.0: Reflects adjustments to vegetation and fuels since LF 2016 Remap in disturbed areas for disturbances recorded in 2017-2020. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGCOVER</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="VEGHEIGHT">
+          <Name>Vegetation Height</Name>
+          <Path>vegetation/veg_height.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire EVH raster: Average height of the dominant vegetation. Version 2.2.0: Reflects adjustments to vegetation and fuels since LF 2016 Remap in disturbed areas for disturbances recorded in 2017-2020. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGHEIGHT</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="HDIST">
+          <Name>Historic Disturbance</Name>
+          <Path>vegetation/historic_disturbance.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire HDst raster: The latest 10 years of Annual Disturbance products are used to identify disturbance year, type, and severity. Starting with LF Remap, HDist replaces VDist from previous LF versions incorporating pre-disturbance vegetation logic (based on disturbance year and vegetation type). The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#HDIST</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="FDIST">
+          <Name>Fuel Disturbance</Name>
+          <Path>vegetation/fuel_disturbance.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire FDst raster: The latest 10 years of Annual Disturbance products representing disturbance year and original disturbance code. FDist was a refinement of VDist in LF 1.x products and is a refinement of Historical Disturbance in LF Remap to more accurately represent disturbance scenarios within the fuels environment. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#FDIST</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="FCCS">
+          <Name>Fuel Characteristic Classification System</Name>
+          <Path>vegetation/fccs.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire FCCS raster: Describes the phsical characteristics of a relatively uniform unit on a lanscape that represents a distinct fire environment; provides land managers, regulators, and scientists with a nationally consistent and durable procedure to characterize and classify fuelbed characteristics to predict fuel consumption and smoke production. For LF Remap, FCCS will be released as part of the final release for CONUS. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#FCCS</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="VEGCONDITION">
+          <Name>Vegetation Condition</Name>
+          <Path>vegetation/vegetation_condition.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire VCC raster: A discrete metric that qunatifies the amount that current vegetation has departed from teh simulated historical vegetation reference conditions. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGCONDITION</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="VEGDEPARTURE">
+          <Name>Vegetation Departure</Name>
+          <Path>vegetation/vegetation_departure.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire VDEP raster: Range from 0-100 depicting the amount that current vegetation has departed from simulated historical vegetation reference. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#VEGDEPARTURE</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="SCLASS">
+          <Name>Succession Classes</Name>
+          <Path>vegetation/succession_classes.tif</Path>
+          <MetaData>
+            <Meta name="Description">LandFire SCla raster: Current vegetation conditions with respect to vegetation species composition, cover, and height ranges of successional states occurring within each biophysical setting. The source is a single raster for the entire nation that is downloaded and then clipped to the riverscapes project extent.</Meta>
+            <Meta name="SourceUrl" type="url">https://landfire.gov/data_overviews.php</Meta>
+            <Meta name="ProductVersion">2.2.0</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#SCLASS</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="FAIRMARKETVALUE">
+          <Name>Fair Market Value</Name>
+          <Path>ownership/fair_market_value.tif</Path>
+          <MetaData>
+            <Meta name="Description">Fair Market Value raster. This raster was downloaded and converted to US dollars per hectare.</Meta>
+            <Meta name="SourceUrl" type="url">https://placeslab.org/fmv-usa/</Meta>
+            <Meta name="ProductVersion">October 2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#FAIRMARKETVALUE</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="Precip">
+          <Name>Precipitation</Name>
+          <Path>climate/precipitation.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal precipitation raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Precip</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="MeanTemp">
+          <Name>Mean Temperature</Name>
+          <Path>climate/mean_temp.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal mean temperature raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MeanTemp</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="MinTemp">
+          <Name>Minimum Temperature</Name>
+          <Path>climate/min_temp.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal minimum temperature raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MinTemp</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="MaxTemp">
+          <Name>Maximum Temperature</Name>
+          <Path>climate/max_temp.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal maximum temperature raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MaxTemp</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="MeanDew">
+          <Name>Mean Dew Point Temperature</Name>
+          <Path>climate/mean_dew_temp.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal mean dew point temperature  raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MeanDew</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="MinVap">
+          <Name>Minimum Vapor Pressure Deficit</Name>
+          <Path>climate/min_vapor_pressure.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal minimum vapor pressure deficit raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MinVap</Meta>
+          </MetaData>
+        </Raster>
+        <Raster id="MaxVap">
+          <Name>Maximum Vapor Pressure Deficit</Name>
+          <Path>climate/max_vapor_pressure.tif</Path>
+          <MetaData>
+            <Meta name="Description">PRISM 30 year normal maximum vapor pressure deficit raster. Normals are baseline datasets describing average monthly and annual conditions over the most recent three full decades.</Meta>
+            <Meta name="SourceUrl" type="url">https://prism.oregonstate.edu/normals/</Meta>
+            <Meta name="ProductVersion">1991-2020</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#MaxVap</Meta>
+          </MetaData>
+        </Raster>
+        <Vector id="Roads">
+          <Name>Roads</Name>
+          <Path>transportation/roads.shp</Path>
+          <MetaData>
+            <Meta name="Description">The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data is downloaded from science base by state then clipped to the project extent.</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/data/html#Roads</Meta>
+            <Meta name="SourceUrl" type="url">https://data.usgs.gov/datacatalog/data/USGS:ad3d631d-f51f-4b6a-91a3-e617d6a58b4e</Meta>
+            <Meta name="ProductVersion">2020</Meta>
+            <Meta name="Idaho" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
+            <Meta name="Utah" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Utah_State_Shape.zip</Meta>
+          </MetaData>
+        </Vector>
+        <Vector id="Rail">
+          <Name>Rail</Name>
+          <Path>transportation/railways.shp</Path>
+          <MetaData>
+            <Meta name="Description">The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data is downloaded from science base by state then clipped to the project extent.</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/data/html#Rail</Meta>
+            <Meta name="SourceUrl" type="url">https://data.usgs.gov/datacatalog/data/USGS:ad3d631d-f51f-4b6a-91a3-e617d6a58b4e</Meta>
+            <Meta name="ProductVersion">2020</Meta>
+            <Meta name="Idaho" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
+            <Meta name="Utah" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Utah_State_Shape.zip</Meta>
+          </MetaData>
+        </Vector>
+        <Vector id="Canals">
+          <Name>Canals</Name>
+          <Path>transportation/canals.shp</Path>
+          <MetaData>
+            <Meta name="Description">The USGS Transportation downloadable data from The National Map (TNM) is based on TIGER/Line data provided through U.S. Census Bureau and supplemented with HERE road data to create tile cache base maps. Some of the TIGER/Line data includes limited corrections done by USGS. Transportation data consists of roads, railroads, trails, airports, and other features associated with the transport of people or commerce. The data is downloaded from science base by state then clipped to the project extent.</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/data/html#Canals</Meta>
+            <Meta name="SourceUrl" type="url">https://data.usgs.gov/datacatalog/data/USGS:ad3d631d-f51f-4b6a-91a3-e617d6a58b4e</Meta>
+            <Meta name="ProductVersion">2020</Meta>
+            <Meta name="Idaho" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Idaho_State_Shape.zip</Meta>
+            <Meta name="Utah" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/Shape/TRAN_Utah_State_Shape.zip</Meta>
+          </MetaData>
+        </Vector>
+        <Vector id="Ownership">
+          <Name>Ownership</Name>
+          <Path>ownership/ownership.shp</Path>
+          <MetaData>
+            <Meta name="Description">Land ownership obtained from the Bureau of Management (BLM) Land Surface Agency. A single ShapeFile was downloaded and then pre-processed to remove invalid geometries and other irregularities.</Meta>
+            <Meta name="SourceUrl" type="url">https://landscape.blm.gov/geoportal/catalog/search/resource/details.page?uuid=%7B2A8B8906-7711-4AF7-9510-C6C7FD991177%7D</Meta>
+            <Meta name="ProductVersion"/>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Ownership</Meta>
+          </MetaData>
+        </Vector>
+        <Vector id="States">
+          <Name>States</Name>
+          <Path>political_boundaries/states.shp</Path>
+          <MetaData>
+            <Meta name="Description">State boundaries obtained from the US Census Bureau.</Meta>
+            <Meta name="SourceUrl" type="url">https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html</Meta>
+            <Meta name="ProductVersion">2021</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#States</Meta>
+          </MetaData>
+        </Vector>
+        <Vector id="Counties">
+          <Name>Counties</Name>
+          <Path>political_boundaries/counties.shp</Path>
+          <MetaData>
+            <Meta name="Description">County boundaries obtained from the US Census Bureau.</Meta>
+            <Meta name="SourceUrl" type="url">https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html</Meta>
+            <Meta name="ProductVersion">2021</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Counties</Meta>
+          </MetaData>
+        </Vector>
+        <Vector id="GEOLOGY">
+          <Name>Geology</Name>
+          <Path>geology/geology.shp</Path>
+          <MetaData>
+            <Meta name="Description">Shapefile of geologic units from the State Geologic Map Compilation (SGMC) available via the USGS; the dataset is a compiliation of geologic maps from each state with a field added ('GENERALIZE') for consistent symbology across the country.</Meta>
+            <Meta name="SourceUrl" type="url">https://www.sciencebase.gov/catalog/item/5888bf4fe4b05ccb964bab9d</Meta>
+            <Meta name="ProductVersion">1.1</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#GEOLOGY</Meta>
+          </MetaData>
+        </Vector>
+        <Geopackage id="NHD">
+          <Name>Hydrology</Name>
+          <Path>hydrology/hydrology.gpkg</Path>
+          <Layers>
+            <Vector lyrName="network">
+              <Name>NHD Flowlines</Name>
+              <MetaData>
+                <Meta name="Description">National Hydrologic Dataset (NHD) High Resolution. 1:24,000 stream network polyline feature class. This is the original data downloaded as an ESRI file geodatabase and then converted to an open source GeoPackage.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
+                <Meta name="ProductVersion">2017</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NETWORK</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="buffered_clip100m">
+              <Name>Buffered Clip Shape 100m</Name>
+              <MetaData>
+                <Meta name="Description">The riverscapes context project extent polygon buffered by 100m.</Meta>
+                <Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR WBD</Meta>
+                <Meta name="ProductVersion"/>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#BUFFERED_CLIP100</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="buffered_clip500m">
+              <Name>Buffered Clip Shape 500m</Name>
+              <MetaData>
+                <Meta name="Description">The riverscapes context project extent polygon buffered by 500m.</Meta>
+                <Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR WBD</Meta>
+                <Meta name="ProductVersion"/>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#BUFFERED_CLIP500</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="network_300m">
+              <Name>NHD Flowlines Segmented 300m</Name>
+              <MetaData>
+                <Meta name="Description">This polyline feature class is the original NHDPlusHR flow line network segmented into 300m reach lengths. Segmentation that would produce a feature of less than 50m is not performed. And features that are less than 50m are left untouched.</Meta>
+                <Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR flowlines</Meta>
+                <Meta name="ProductVersion"/>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NETWORK300M</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="network_intersected">
+              <Name>NHD Flowlines intersected with road, rail and ownership</Name>
+            </Vector>
+            <Vector lyrName="network_intersected_300m">
+              <Name>NHD Flowlines intersected with road, rail and ownership, segmented to 300m</Name>
+              <MetaData>
+                <Meta name="Description">This polyline feeature class is the NETWORK300M featureclass intersected with road and rail crossings and ownership.</Meta>
+                <Meta name="SourceUrl" type="url">Layer generated from NHDPlusHR flowlines and transporation features</Meta>
+                <Meta name="ProductVersion"/>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NETWORK300MCROSSINGS</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="processing_extent">
+              <Name>Processing Extent of HUC-DEM Intersection</Name>
+            </Vector>
+            <Vector lyrName="NHDFlowline">
+              <Name>NHD Flowlines</Name>
+              <MetaData>
+                <Meta name="Description">NHDFlowline is the fundamental flow network consisting predominantly of stream/river and artificial path vector features. It represents the spatial geometry, carries the attributes, and contains linear referencing measures for locating features or “events” on the network. Additional NHDFlowline features are canal/ditch, pipeline, connector, underground conduit, and coastline.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
+                <Meta name="ProductVersion">2017</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDFlowline</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="NHDArea">
+              <Name>NHD Area</Name>
+              <MetaData>
+                <Meta name="Description">NHDArea contains many additional water-polygon features. One of the more important is the stream/river feature. It represents the areal extent of the water in a wide stream/river with a basic set of attributes. These polygons typically encompass NHDFlowline artificial paths that represent the stream network. Artificial path carries the critical attributes of the stream/river, whereas NHDArea represents the geometric extent.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
+                <Meta name="ProductVersion">2017</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDArea</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="NHDPlusCatchment">
+              <Name>NHD Plus Catchment</Name>
+              <MetaData>
+                <Meta name="Description">NHDPlusCatchment represent drainage wings within watersheds.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
+                <Meta name="ProductVersion">2017</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDPlusCatchment</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="NHDWaterbody">
+              <Name>NHD Waterbody</Name>
+              <MetaData>
+                <Meta name="Description">Waterbodies such as lake/pond features are represented in NHDWaterbody. They portray the spatial geometry and the attributes of the feature. These water polygons may have NHDFlowline artificial paths drawn through them to allow the representation of water flow direction. Other NHDWaterbody features are swamp/marsh, reservoir, playa, estuary, and ice mass.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/nhdplus-high-resolution</Meta>
+                <Meta name="ProductVersion">2017</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#NHDWaterbody</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="WBDHU2">
+              <Name>HUC2</Name>
+              <MetaData>
+                <Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
+                <Meta name="ProductVersion">2014</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU2</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="WBDHU4">
+              <Name>HUC4</Name>
+              <MetaData>
+                <Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
+                <Meta name="ProductVersion">2014</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU4</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="WBDHU6">
+              <Name>HUC6</Name>
+              <MetaData>
+                <Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
+                <Meta name="ProductVersion">2014</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU6</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="WBDHU8">
+              <Name>HUC8</Name>
+              <MetaData>
+                <Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
+                <Meta name="ProductVersion">2014</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU8</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="WBDHU10">
+              <Name>HUC10</Name>
+              <MetaData>
+                <Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
+                <Meta name="ProductVersion">2014</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU10</Meta>
+              </MetaData>
+            </Vector>
+            <Vector lyrName="WBDHU12">
+              <Name>HUC12</Name>
+              <MetaData>
+                <Meta name="Description">The Watershed Boundary Dataset (WBD) is a seamless, national hydrologic unit dataset. Hydrologic units represent the area of the landscape that drains to a portion of the stream network. WBD contains eight levels of progressive hydrologic units identified by unique 2- to 16-digit codes.</Meta>
+                <Meta name="SourceUrl" type="url">https://www.usgs.gov/national-hydrography/watershed-boundary-dataset</Meta>
+                <Meta name="ProductVersion">2014</Meta>
+                <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#WBDHU12</Meta>
+              </MetaData>
+            </Vector>
             <DataTable lyrName="NHDPlusFlowlineVAA">
               <Name>NHD Tables</Name>
               <MetaData>
                 <Meta name="origin_url" ext="dataset" type="url">https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHDPlusHR/Beta/GDB/NHDPLUS_H_1601_HU4_GDB.zip</Meta>
               </MetaData>
             </DataTable>
-					</Layers>
-				</Geopackage>
-				<Vector id="Ecoregions">
-					<Name>Ecoregions</Name>
-					<Path>ecoregions/ecoregions.shp</Path>
-					<MetaData>
-						<Meta name="Description">Level IV ecoregions (also contains levels I-III) obtained from the Environmental Protection Agency (EPA).</Meta>
-						<Meta name="SourceUrl" type="url">https://gaftp.epa.gov/EPADataCommons/ORD/Ecoregions/us/Eco_Level_IV_US.html</Meta>
-						<Meta name="ProductVersion">2013-04-16</Meta>
-						<Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Ecoregions</Meta>
-					</MetaData>
-				</Vector>
-				<HTMLFile id="REPORT">
-					<Name>RSContext Report</Name>
-					<Path>rs_context.html</Path>
-				</HTMLFile>
-			</Datasets>
-		</Realization>
-	</Realizations>
+          </Layers>
+        </Geopackage>
+        <Vector id="Ecoregions">
+          <Name>Ecoregions</Name>
+          <Path>ecoregions/ecoregions.shp</Path>
+          <MetaData>
+            <Meta name="Description">Level IV ecoregions (also contains levels I-III) obtained from the Environmental Protection Agency (EPA).</Meta>
+            <Meta name="SourceUrl" type="url">https://gaftp.epa.gov/EPADataCommons/ORD/Ecoregions/us/Eco_Level_IV_US.html</Meta>
+            <Meta name="ProductVersion">2013-04-16</Meta>
+            <Meta name="DocsUrl" type="url">https://tools.riverscapes.net/rscontext/data.html#Ecoregions</Meta>
+          </MetaData>
+        </Vector>
+        <HTMLFile id="REPORT">
+          <Name>RSContext Report</Name>
+          <Path>rs_context.html</Path>
+        </HTMLFile>
+      </Datasets>
+    </Realization>
+  </Realizations>
 </Project>

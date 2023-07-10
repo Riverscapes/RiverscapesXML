@@ -12,7 +12,8 @@ import xml.etree.cElementTree as ET
 
 from rsxml.project_xml.RSObj import RSObj
 from rsxml.project_xml.MetaData import MetaData
-from rsxml.project_xml.Dataset import Dataset
+from rsxml.project_xml.Geopackage import Geopackage
+from rsxml.project_xml.Dataset import Dataset, RefDataset
 
 
 class Analysis(RSObj):
@@ -50,13 +51,29 @@ class Analysis(RSObj):
         self.products = products
 
     @staticmethod
+    def datasets_from_xml(xml_node: ET.Element, ds_type: str, common_datasets: List[Dataset] = []) -> List[Dataset | RefDataset]:
+        """This works across a dataset container AND accounts for the possibility of RefDatasets
+        """
+        retvals = []
+        found = xml_node.find(ds_type)
+        if found:
+            for ds in found:
+                if ds.tag == 'CommonDatasetRef':
+                    retvals.append(RefDataset.from_xml(ds, common_datasets))
+                elif ds.tag == 'Geopackage':
+                    retvals.append(Geopackage.from_xml(ds))
+                else:
+                    retvals.append(Dataset.from_xml(ds))
+        return retvals
+
+    @staticmethod
     def from_xml(xml_node: ET.Element) -> Analysis:
-        rsobj = super.from_xml(xml_node)
+        rsobj = RSObj.from_xml(xml_node)
 
         metrics = MetaData.from_xml(xml_node.find('Metrics'))
 
-        configuration = [Dataset.from_xml(d) for d in xml_node.findall('Configuration/*')]
-        products = [Dataset.from_xml(d) for d in xml_node.findall('Products/*')]
+        configuration = Analysis.datasets_from_xml(xml_node, 'Configuration')
+        products = Analysis.datasets_from_xml(xml_node, 'Products')
 
         return Analysis(xml_id=rsobj.xml_id,
                         name=rsobj.name,

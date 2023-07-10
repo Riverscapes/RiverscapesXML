@@ -164,6 +164,8 @@ class MetaData():
         Returns:
             MetaData: _description_
         """
+        if xml_node is None:
+            return MetaData()
         container_tag = xml_node.tag
         inner_tag_find = xml_node.find('*')
         inner_tag = xml_node.find('*').tag if inner_tag_find is not None else None
@@ -173,7 +175,7 @@ class MetaData():
         for meta in xml_node.findall('*'):
             meta_data.add_meta(
                 meta.get('name'),
-                meta.text.strip(),
+                meta.text.strip() if meta.text else "",
                 meta.get('type'),
                 meta.get('ext')
             )
@@ -186,6 +188,8 @@ class MetaData():
         Returns:
             ET.Element: XML node representing the MetaData item.
         """
+        if len(self._values) == 0:
+            return None
         meta_data = ET.Element(self.container_tag)
         for meta in self._values:
             meta_node = ET.Element(self.inner_tag, {

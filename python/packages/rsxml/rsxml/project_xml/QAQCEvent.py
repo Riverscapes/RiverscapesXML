@@ -8,12 +8,12 @@
     """
 from __future__ import annotations
 from typing import Dict
-from datetime import date
+from datetime import datetime
 import xml.etree.cElementTree as ET
 
 from rsxml.project_xml.RSObj import RSObj
 from rsxml.project_xml.MetaData import MetaData
-
+from rsxml.logging.logger import Logger
 
 ALLOWED_STATES = [
     'passed',
@@ -25,13 +25,13 @@ ALLOWED_STATES = [
 class QAQCEvent(RSObj):
     """_summary_
     """
-    date_performed: date
+    date_performed: datetime
     state: str
     performed_by: str
     links: Dict[str, str]
 
     def __init__(self,
-                 date_performed: date,
+                 date_performed: datetime,
                  performed_by: str,
                  state: str,
                  name: str,
@@ -75,8 +75,16 @@ class QAQCEvent(RSObj):
         Returns:
             QAQCEvent: _description_
         """
+        log = Logger()
         rs_obj = RSObj.from_xml(xml_node)
-        date_performed = xml_node.get('datePerformed')
+
+        try:
+            date_performed_node = xml_node.get('datePerformed')
+            date_performed = datetime.fromisoformat(date_performed_node)
+        except ValueError as err:
+            log.error(f'QAQC: datePerformed is not a valid ISO 8601 date like "{datetime.now().isoformat()}". Got: "{date_performed_node}"')
+            raise err
+
         performed_by = xml_node.find('PerformedBy').text
         state = xml_node.get('state')
 
@@ -104,6 +112,7 @@ class QAQCEvent(RSObj):
         Returns:
             str: _description_
         """
+        log = Logger('QAQC')
         xml_node = super().to_xml()
         xml_node.set('datePerformed', self.date_performed.isoformat())
         xml_node.set('state', self.state)

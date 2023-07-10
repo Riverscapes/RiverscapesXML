@@ -13,9 +13,11 @@ from datetime import datetime
 import xml.etree.cElementTree as ET
 
 from rsxml.project_xml.RSObj import RSObj
+from rsxml.project_xml.Geopackage import Geopackage
 from rsxml.project_xml.MetaData import MetaData
-from rsxml.project_xml.Dataset import Dataset, Log
+from rsxml.project_xml.Dataset import Dataset, Log, RefDataset
 from rsxml.project_xml.Analysis import Analysis
+
 
 from rsxml.logging.logger import Logger
 
@@ -28,15 +30,18 @@ class Realization(RSObj):
     Args:
         RSObj (_type_): _description_
     """
+    _common_ds: List[Dataset]
+
     date_created: datetime
     product_version: str
     xml_id: str
 
-    datasets: List[Dataset]
     logs: List[Log]
-    inputs: List[Dataset]
-    intermediates: List[Dataset]
-    outputs: List[Dataset]
+    datasets: List[Dataset | RefDataset]
+    inputs: List[Dataset | RefDataset]
+    intermediates: List[Dataset | RefDataset]
+    outputs: List[Dataset | RefDataset]
+
     analyses: List[Analysis]
 
     def __init__(self,
@@ -48,12 +53,13 @@ class Realization(RSObj):
                  description: str = None,
                  citation: str = None,
                  meta_data: MetaData = None,
-                 datasets: List[Dataset] = None,
-                 logs: List[Log] = None,
-                 inputs: List[Dataset] = None,
-                 intermediates: List[Dataset] = None,
-                 outputs: List[Dataset] = None,
-                 analyses: List[Analysis] = None,
+                 common_datasets: List[Dataset] = [],
+                 datasets: List[Dataset | RefDataset] = [],
+                 logs: List[Log] = [],
+                 inputs: List[Dataset | RefDataset] = [],
+                 intermediates: List[Dataset | RefDataset] = [],
+                 outputs: List[Dataset | RefDataset] = [],
+                 analyses: List[Analysis] = [],
                  ) -> None:
         super().__init__('Realization', xml_id, name, summary, description, citation, meta_data)
         if not date_created or not isinstance(date_created, datetime):
@@ -64,12 +70,15 @@ class Realization(RSObj):
         self.date_created = date_created
         self.product_version = product_version.strip() if product_version else None
 
-        self.datasets = datasets if datasets else []
-        self.logs = logs if logs else []
-        self.inputs = inputs if inputs else []
-        self.intermediates = intermediates if intermediates else []
-        self.outputs = outputs if outputs else []
-        self.analyses = analyses if analyses else []
+        # This is so we can do a quick lookup of common datasets by name
+        self._common_ds = common_datasets
+
+        self.datasets = datasets
+        self.logs = logs
+        self.inputs = inputs
+        self.intermediates = intermediates
+        self.outputs = outputs
+        self.analyses = analyses
 
     def to_xml(self) -> ET.Element:
         xml_node: ET.Element = super().to_xml()
@@ -91,11 +100,61 @@ class Realization(RSObj):
             if dataset_list:
                 node = ET.SubElement(xml_node, xml_tag)
                 for ds in dataset_list:
-                    node.append(ds.to_xml())
+                    if isinstance(ds, RefDataset):
+                        node.append(ds.to_xml())
+                    elif isinstance(ds, Dataset):
+                        node.append(ds.to_xml())
+                    elif isinstance(ds, Analysis):
+                        node.append(ds.to_xml())
+                    elif isinstance(ds, Geopackage):
+                        node.append(ds.to_xml())
+                    else:
+                        raise ValueError(f'Unknown dataset type {type(ds)}')
 
         return xml_node
 
-    def from_xml(xml_node: ET.Element) -> Realization:
+    def __ds_eq__(self, first_list: List[Dataset | RefDataset], other_list: List[Dataset | RefDataset]) -> bool:
+        """_summary_
+        """
+        if not list or len(first_list) != len(other_list):
+            return False
+
+        return all([a == b for a, b in zip(first_list, other_list)])
+
+    def __eq__(self, other: RSObj) -> bool:
+        if not isinstance(other, Realization):
+            return False
+
+        return super().__eq__(other) and \
+            self.date_created == other.date_created and \
+            self.product_version == other.product_version and \
+            self.__ds_eq__(self.datasets, other.datasets) and \
+            self.__ds_eq__(self.logs, other.logs) and \
+            self.__ds_eq__(self.inputs, other.inputs) and \
+            self.__ds_eq__(self.intermediates, other.intermediates) and \
+            self.__ds_eq__(self.outputs, other.outputs) and \
+            self.__ds_eq__(self.analyses, other.analyses)
+
+    @staticmethod
+    def datasets_from_xml(xml_node: ET.Element, ds_type: str, common_datasets: List[Dataset] = []) -> List[Dataset | RefDataset]:
+        """This works across a dataset container AND accounts for the possibility of RefDatasets
+        """
+        retvals = []
+        found = xml_node.find(ds_type)
+        if found:
+            for ds in found:
+                if ds.tag == 'CommonDatasetRef':
+                    retvals.append(RefDataset.from_xml(ds, common_datasets))
+                elif ds.tag == 'Geopackage':
+                    retvals.append(Geopackage.from_xml(ds))
+                elif ds.tag == 'LogFile':
+                    retvals.append(Log.from_xml(ds))
+                else:
+                    retvals.append(Dataset.from_xml(ds))
+        return retvals
+
+    @staticmethod
+    def from_xml(xml_node: ET.Element, common_datasets: List[Dataset] = []) -> Realization:
         """_summary_
 
         Args:
@@ -119,15 +178,16 @@ class Realization(RSObj):
 
         product_version = xml_node.get('productVersion')
 
-        datasets = [Dataset.from_xml(dataset_node) for dataset_node in xml_node.find('Datasets')] if xml_node.find('Datasets') else None
-        logs = [Dataset.from_xml(log_node) for log_node in xml_node.find('Logs')] if xml_node.find('Logs') else None
+        datasets = Realization.datasets_from_xml(xml_node, 'Datasets', common_datasets)
+        logs = Realization.datasets_from_xml(xml_node, 'Logs', common_datasets)
 
-        inputs = [Dataset.from_xml(input_node) for input_node in xml_node.find('Inputs')] if xml_node.find('Inputs') else None
-        intermediates = [Dataset.from_xml(intermediate_node) for intermediate_node in xml_node.find('Intermediates')] if xml_node.find('Intermediates') else None
-        outputs = [Dataset.from_xml(output_node) for output_node in xml_node.find('Outputs')] if xml_node.find('Outputs') else None
+        inputs = Realization.datasets_from_xml(xml_node, 'Inputs', common_datasets)
+        intermediates = Realization.datasets_from_xml(xml_node, 'Intermediates', common_datasets)
+        outputs = Realization.datasets_from_xml(xml_node, 'Outputs', common_datasets)
 
         analyses = [Analysis.from_xml(analysis) for analysis in xml_node.find('Analyses')] if xml_node.find('Analyses') else None
 
         return Realization(rsobj.name, rsobj.xml_id, date_created, product_version,
                            rsobj.summary, rsobj.description, rsobj.citation, rsobj.meta_data,
+                           common_datasets,
                            datasets, logs, inputs, intermediates, outputs, analyses)

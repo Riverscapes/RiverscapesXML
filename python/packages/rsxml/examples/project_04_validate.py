@@ -1,6 +1,7 @@
 import os
 import json
 from rsxml import validate_project_file, Logger
+from rsxml.project_xml import ProjectValidation
 
 
 def main():
@@ -43,6 +44,11 @@ def main():
     # Note that Errors are rich objects (lxml.etree._LogEntry)
     # they can tell you where the error is in your xml like:
     #     err.line, err.column, err.level, err.domain, err.type, err.message
+
+    # We can also do a more thorough validation to make sure our project folders are ok
+    # ==================================
+    validation = ProjectValidation('/Users/matt/Downloads/16010202/')
+    print('yes')
 
 
 if __name__ == '__main__':

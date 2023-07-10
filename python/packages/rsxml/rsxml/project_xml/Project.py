@@ -7,13 +7,16 @@ You can then write the project to an XML file.
 from __future__ import annotations
 from typing import List
 import xml.etree.cElementTree as ET
+import os
 
 from rsxml.project_xml.MetaData import MetaData
 from rsxml.project_xml.RSObj import RSObj
 from rsxml.project_xml.ProjectBounds import ProjectBounds
 from rsxml.project_xml.Realization import Realization
-from rsxml.project_xml.Dataset import Dataset
+from rsxml.project_xml.Geopackage import Geopackage
+from rsxml.project_xml.Dataset import Dataset, RefDataset
 from rsxml.project_xml.QAQCEvent import QAQCEvent
+from rsxml.project_xml.Warehouse import Warehouse
 
 from rsxml.logging.logger import Logger
 
@@ -103,7 +106,21 @@ class Project(RSObj):
         return Project.from_xml(xml_node, xml_file_path)
 
     @staticmethod
-    def from_xml(xml_node: ET.Element, proj_path: str) -> Project:
+    def datasets_from_xml(xml_node: ET.Element, ds_type: str) -> List[Dataset | RefDataset]:
+        """This works across a dataset container AND accounts for the possibility of RefDatasets
+        """
+        retvals = []
+        found = xml_node.find(ds_type)
+        if found:
+            for ds in found:
+                if ds.tag == 'Geopackage':
+                    retvals.append(Geopackage.from_xml(ds))
+                else:
+                    retvals.append(Dataset.from_xml(ds))
+        return retvals
+
+    @staticmethod
+    def from_xml(xml_node: ET.Element, proj_path: str = None) -> Project:
         """
         Initializes a Project instance from an XML node.
         Typically only used within the load_project method.
@@ -117,11 +134,30 @@ class Project(RSObj):
 
         rsobj = RSObj.from_xml(xml_node)
         warehouse_find = xml_node.find('Warehouse')
+        warehouse = Warehouse.from_xml(warehouse_find) if warehouse_find is not None else None
+
         project_bounds_find = xml_node.find('ProjectBounds')
         if project_bounds_find is None:
             log = Logger('Project')
             log.warning("""WARNING: No ProjectBounds.
                 The project will load into the Riverscapes Data Exchange, but will be easier to discover if you add a ProjectBounds.""")
+
+        # We need to find common datasets before realizations, because realizations reference common datasets
+        common_datasets = Project.datasets_from_xml(xml_node, 'CommonDatasets')
+
+        realizations = []
+        realization_nodes = xml_node.find('Realizations')
+        if realization_nodes:
+            for realization_node in realization_nodes:
+                if realization_node:
+                    realizations.append(Realization.from_xml(realization_node, common_datasets))
+
+        qaqc_events = []
+        qaqc_events_nodes = xml_node.find('QAQCEvents')
+        if qaqc_events_nodes:
+            for qaqc_event_node in qaqc_events_nodes:
+                if qaqc_event_node:
+                    qaqc_events.append(QAQCEvent.from_xml(qaqc_event_node))
 
         project = Project(
             name=rsobj.name,
@@ -132,12 +168,12 @@ class Project(RSObj):
             description=rsobj.description,
             citation=rsobj.citation,
             meta_data=rsobj.meta_data,
-            warehouse=Warehouse.from_xml(warehouse_find) if warehouse_find else None,
+            warehouse=warehouse,
 
             # List comprehension on the result of find() will iterate over all the children of the node. Do not wildcard!
-            common_datasets=[Dataset.from_xml(dataset_node) for dataset_node in xml_node.find('CommonDatasets')] if xml_node.find('CommonDatasets') else None,
-            realizations=[Realization.from_xml(realization_node) for realization_node in xml_node.find('Realizations')]if xml_node.find('Realizations') else None,
-            qaqc_events=[QAQCEvent.from_xml(qaqc_event_node) for qaqc_event_node in xml_node.find('QAQCEvents')]if xml_node.find('QAQCEvents') else None,
+            common_datasets=common_datasets,
+            realizations=realizations,
+            qaqc_events=qaqc_events
         )
 
         return project
@@ -152,6 +188,9 @@ class Project(RSObj):
         xml_node = super().to_xml()
 
         ET.SubElement(xml_node, 'ProjectType').text = self.project_type
+
+        if self.warehouse:
+            xml_node.append(self.warehouse.to_xml())
 
         # If there's no Model Version then throw a warning
         if not self.meta_data.find_meta('ModelVersion'):
@@ -177,13 +216,24 @@ class Project(RSObj):
 
         return xml_node
 
-    def write(self):
+    def write(self, new_path: str = None):
         """
         Serialize the project to an XML file on disk.
         Call this method once you have finished modifying the project and want to save it to disk.
 
         https://stackoverflow.com/questions/28813876/how-do-i-get-pythons-elementtree-to-pretty-print-to-an-xml-file
         """
+        log = Logger('Project Writer')
+        final_path = new_path if new_path else self.proj_path
+
+        if not final_path:
+            raise ValueError('Project path is not set. Cannot write project.')
+        path_dir = os.path.dirname(final_path)
+        if not os.path.exists(path_dir) or not os.path.isdir(path_dir):
+            raise ValueError(f'Project path {path_dir} does not exist or is not a directory. Cannot write project.')
+        if os.path.exists(final_path):
+            log.warning(f'Project path {final_path} already exists. Overwriting.')
+
         xml_node = self.to_xml()
         encoding = 'UTF-8'
 
@@ -192,55 +242,14 @@ class Project(RSObj):
         xml_node.set("xsi:noNamespaceSchemaLocation", "https://xml.riverscapes.net/Projects/XSD/V2/RiverscapesProject.xsd")
 
         # Create a copy of the input element: Convert to string, then parse again
-        copy = ET.fromstring(ET.tostring(xml_node, encoding='utf8'))
+        copy = ET.fromstring(ET.tostring(xml_node, encoding='utf-8'))
 
         # Format copy. This needs Python 3.9+
-        ET.indent(copy, space="    ", level=0)
+        ET.indent(copy, space="  ", level=0)
 
         # tostring() returns a binary, so we need to decode it to get a string
         xml_string = ET.tostring(copy, encoding=encoding).decode(encoding)
 
-        with open(self.proj_path, 'w', encoding=encoding) as f:
+        with open(final_path, 'w', encoding=encoding) as f:
             f.write('<?xml version="1.0" ?>\n')
             f.write(xml_string)
-
-
-class Warehouse:
-    """
-    Represents a Riverscapes Warehouse where the project is stored.
-    Only use this class if the project is already stored in a warehouse.
-    """
-    guid: str
-    api_url: str
-
-    def __init__(self, guid, api_url) -> None:
-        self.guid = guid
-        self.api_url = api_url
-
-    @staticmethod
-    def from_xml(xml_node: ET.Element) -> Warehouse:
-        """
-        Load an instance of this class from an XML node.
-
-        Args:
-            xml_node (ET.Element): XML node representing this warehouse.
-
-        Returns:
-            Warehouse: Initialized warehouse object.
-        """
-        return Warehouse(
-            guid=xml_node.attrib['id'],
-            api_url=xml_node.attrib['apiUrl']
-        )
-
-    def to_xml(self) -> ET.Element:
-        """
-        Serialize an instance of this class to an XML node.
-
-        Returns:
-            str: XML node representing this warehouse, ready to be written to disk.
-        """
-        root = ET.Element('Warehouse')
-        root.set('id', self.guid)
-        root.set('apiUrl', self.api_url)
-        return root

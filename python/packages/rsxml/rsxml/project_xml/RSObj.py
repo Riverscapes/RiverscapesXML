@@ -43,7 +43,7 @@ class RSObj (abc.ABC):
                  summary: str = None,
                  description: str = None,
                  citation: str = None,
-                 meta_data: MetaData = None,
+                 meta_data: MetaData = MetaData(),
                  mandatory_id: bool = True
                  ) -> None:
         """
@@ -93,7 +93,7 @@ class RSObj (abc.ABC):
         self.summary = summary.strip() if summary else None
         self.description = description.strip() if description else None
         self.citation = citation.strip() if citation else None
-        self.meta_data = meta_data
+        self.meta_data = meta_data if meta_data else MetaData()
 
     @staticmethod
     def from_xml(xml_node: ET.Element) -> RSObj:
@@ -101,7 +101,10 @@ class RSObj (abc.ABC):
 
         xml_id = xml_node.get('id')
         xml_tag = xml_node.tag
-        name = xml_node.find('Name').text
+        name_find = xml_node.find('Name')
+        if name_find is None:
+            raise ValueError('Name is mandatory')
+        name = name_find.text
 
         summary_find = xml_node.find('Summary')
         summary = summary_find.text if summary_find is not None else None
@@ -113,7 +116,7 @@ class RSObj (abc.ABC):
         citation = citation_find.text if citation_find is not None else None
 
         meta_data_find = xml_node.find('MetaData')
-        meta_data = MetaData.from_xml(meta_data_find) if meta_data_find is not None else None
+        meta_data = MetaData.from_xml(meta_data_find) if meta_data_find is not None else MetaData()
 
         mandatory_id = xml_id is not None
 
@@ -160,6 +163,8 @@ class RSObj (abc.ABC):
             ET.SubElement(xml_node, 'Citation').text = self.citation
 
         if self.meta_data is not None:
-            xml_node.append(self.meta_data.to_xml())
+            new_node = self.meta_data.to_xml()
+            if new_node is not None:
+                xml_node.append(new_node)
 
         return xml_node

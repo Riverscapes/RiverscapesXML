@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
   <Name>Testing Project</Name>
-  <ProjectType>Topo</ProjectType>
   <MetaData>
     <Meta name="CreatedOn">2017-06-12T09:17:56.2655460-07:00</Meta>
     <Meta name="Site">Test Site</Meta>
@@ -18,6 +17,7 @@
     <Meta name="SpatialReferenceID">26910</Meta>
     <Meta name="ValidationStatus">Unknown</Meta>
   </MetaData>
+  <ProjectType>Topo</ProjectType>
   <CommonDatasets>
     <SurveyQualityDB id="SurveyQualityDB" >
       <Name>Survey Quality Database</Name>

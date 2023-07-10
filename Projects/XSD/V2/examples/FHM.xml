@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RiverscapesProject.xsd">
 <Name>CBW05583-128427</Name>
-	<ProjectType>FHM</ProjectType>
+  <ProjectType>FHM</ProjectType>
   <Warehouse id="03f7a521-c24d-4048-bb4e-83a406aa717e" apiUrl="https://12312312.amazon.ca/api/prod" />
   <MetaData>
-		<Meta name="CreatedOn">2017-09-08T22:31:57</Meta>
-		<Meta name="Region">CRB</Meta>
-		<Meta name="Site">CBW05583-128427</Meta>
-		<Meta name="Watershed">Entiat</Meta>
-	</MetaData>
-	<Realizations>
-		<Realization dateCreated="2017-09-08T22:31:57" id="S0000_0915" productVersion="0.0.1">
-			<Name>REALIZATION1</Name>
-			<MetaData>
-				<Meta name="Visit">1621</Meta>
-				<Meta name="Discharge">S0000_0915</Meta>
-			</MetaData>
-			<Inputs>
-				<Raster id="2013_VISIT_1621_S0000_0915_CoverIndex">
-					<Name>2013 Visit 1621 S0000_0915 Cover Index</Name>
-					<Path>2013/VISIT_1621/S0000_0915/Inputs/CoverIndex/CoverIndex.tif</Path>
-				</Raster>
-				<Raster id="2013_VISIT_1621_S0000_0915_Substrate">
-					<Name>2013 Visit 1621 S0000_0915 Substrate</Name>
-					<Path>2013/VISIT_1621/S0000_0915/Inputs/GrainSize/D50.tif</Path>
-				</Raster>
-				<Raster id="2013_VISIT_1621_S0000_0915_Velocity">
-					<Name>2013 Visit 1621 S0000_0915 Velocity</Name>
-					<Path>2013/VISIT_1621/S0000_0915/Inputs/Hydraulics/Vel.tif</Path>
-				</Raster>
-				<Raster id="2013_VISIT_1621_S0000_0915_Depth">
-					<Name>2013 Visit 1621 S0000_0915 Depth</Name>
-					<Path>2013/VISIT_1621/S0000_0915/Inputs/Hydraulics/Depth.tif</Path>
-				</Raster>
-			</Inputs>
-			<Analyses>
-				<Analysis id="ANALYSIS_01">
-					<Name>2013 Visit 1621 S0000_0915 Chinook Spawner</Name>
+    <Meta name="CreatedOn">2017-09-08T22:31:57</Meta>
+    <Meta name="Region">CRB</Meta>
+    <Meta name="Site">CBW05583-128427</Meta>
+    <Meta name="Watershed">Entiat</Meta>
+  </MetaData>
+  <Realizations>
+    <Realization dateCreated="2017-09-08T22:31:57" id="S0000_0915" productVersion="0.0.1">
+      <Name>REALIZATION1</Name>
+      <MetaData>
+        <Meta name="Visit">1621</Meta>
+        <Meta name="Discharge">S0000_0915</Meta>
+      </MetaData>
+      <Inputs>
+        <Raster id="2013_VISIT_1621_S0000_0915_CoverIndex">
+          <Name>2013 Visit 1621 S0000_0915 Cover Index</Name>
+          <Path>2013/VISIT_1621/S0000_0915/Inputs/CoverIndex/CoverIndex.tif</Path>
+        </Raster>
+        <Raster id="2013_VISIT_1621_S0000_0915_Substrate">
+          <Name>2013 Visit 1621 S0000_0915 Substrate</Name>
+          <Path>2013/VISIT_1621/S0000_0915/Inputs/GrainSize/D50.tif</Path>
+        </Raster>
+        <Raster id="2013_VISIT_1621_S0000_0915_Velocity">
+          <Name>2013 Visit 1621 S0000_0915 Velocity</Name>
+          <Path>2013/VISIT_1621/S0000_0915/Inputs/Hydraulics/Vel.tif</Path>
+        </Raster>
+        <Raster id="2013_VISIT_1621_S0000_0915_Depth">
+          <Name>2013 Visit 1621 S0000_0915 Depth</Name>
+          <Path>2013/VISIT_1621/S0000_0915/Inputs/Hydraulics/Depth.tif</Path>
+        </Raster>
+      </Inputs>
+      <Analyses>
+        <Analysis id="ANALYSIS_01">
+          <Name>2013 Visit 1621 S0000_0915 Chinook Spawner</Name>
           <Metrics>
             <Metric name="WUA">0.0</Metric>
           </Metrics>
@@ -46,6 +46,7 @@
           </MetaData>
           <Products>
             <File id="FISFile">
+            <Name>Fidfile</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Chinook/Spawner/Run_01/FISModel/FuzzyChinookSpawner_DVSC.fis</Path>
             </File>
             <Raster id="raster_01">
@@ -63,9 +64,9 @@
               </MetaData>
             </Raster>
           </Products>
-				</Analysis>
-				<Analysis id="ANALYSIS_02">
-					<Name>2013 Visit 1621 S0000_0915 Steelhead Spawner</Name>
+        </Analysis>
+        <Analysis id="ANALYSIS_02">
+          <Name>2013 Visit 1621 S0000_0915 Steelhead Spawner</Name>
           <Metrics>
             <Metric name="WUA">0.0</Metric>
           </Metrics>
@@ -75,6 +76,7 @@
           </MetaData>
           <Products>
             <File id="FISFile2">
+              <Name>Fidfile</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Chinook/Spawner/Run_01/FISModel/FuzzySteelheadSpawner_DVSC.fis</Path>
             </File>
             <Raster id="raster_012">
@@ -92,9 +94,9 @@
               </MetaData>
             </Raster>
           </Products>
-				</Analysis>
+        </Analysis>
         <Analysis id="ANALYSIS_03">
-					<Name>2013 Visit 1621 S0000_0915 Chinook Juvenile</Name>
+          <Name>2013 Visit 1621 S0000_0915 Chinook Juvenile</Name>
           <Metrics>
             <Metric name="WUA">0.0</Metric>
           </Metrics>          
@@ -102,8 +104,9 @@
             <Meta name="Species">Chinook</Meta>
             <Meta name="LifeStage">Juvenile</Meta>
           </MetaData>
-					<Products>
+          <Products>
             <File id="FISFile3">
+              <Name>Fidfile</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Chinook/Spawner/Run_01/FISModel/Juvenile_DVSC.fis</Path>
             </File>
             <Raster id="raster_013">
@@ -121,9 +124,9 @@
               </MetaData>
             </Raster>
           </Products>
-				</Analysis>
+        </Analysis>
         <Analysis id="ANALYSIS_04">
-					<Name>2013 Visit 1621 S0000_0915 Steelhead Juvenile</Name>
+          <Name>2013 Visit 1621 S0000_0915 Steelhead Juvenile</Name>
           <Metrics>
             <Metric name="WUA">0.0</Metric>
           </Metrics>
@@ -131,7 +134,7 @@
             <Meta name="Species">Steelhead</Meta>
             <Meta name="LifeStage">Juvenile</Meta>
           </MetaData>
-					<Products>
+          <Products>
             <Raster id="raster_014">
               <Name>Fish Habitat</Name>
               <Path>2013/VISIT_1621/S0000_0915/Analyses/FIS/Steelhead/Juvenile/Run_01/FuzzyHQ.tif</Path>
@@ -147,8 +150,8 @@
               </MetaData>
             </Raster>            
           </Products>
-				</Analysis>
-			</Analyses>
-		</Realization>
-	</Realizations>
+        </Analysis>
+      </Analyses>
+    </Realization>
+  </Realizations>
 </Project>

@@ -1,5 +1,9 @@
 """ handling of paths across operating systems
 """
+from __future__ import annotations
+import re
+import os
+from typing import List
 from pathlib import Path, PurePosixPath
 
 
@@ -26,3 +30,17 @@ def parse_posix_path(path: str) -> str:
     """
     new_path = PurePosixPath(path.replace('\\', '/'))
     return str(new_path)
+
+
+def get_sidecar_files(file_list: List[str], ds_rel_path: str):
+    """ get all the sidecar files for a given dataset path
+
+    Args:
+        file_list (List[str]): _description_
+        ds_rel_path (str): _description_
+    """
+    basepath = os.path.splitext(ds_rel_path)[0]
+    path_escaped = re.escape(basepath)
+    pattern = re.compile('^' + path_escaped + '(\\.[\\w]{1,3})+$')
+    sidecar_files = [file for file in file_list if re.match(pattern, file)]
+    return sidecar_files

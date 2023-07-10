@@ -1,4 +1,6 @@
 """_summary_"""
+from __future__ import annotations
+from typing import List
 import requests
 from io import BytesIO
 try:
@@ -78,3 +80,4 @@ def validate_project_file(project_file_path: str):
         raise e
 
     return validate_xml(xml, xsd)
+

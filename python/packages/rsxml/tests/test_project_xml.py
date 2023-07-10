@@ -5,7 +5,7 @@ from uuid import uuid4
 import xml.etree.cElementTree as ET
 
 from rsxml import project_xml
-from rsxml.project_xml import MetaData
+from rsxml.project_xml import MetaData, Dataset
 
 MOCK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mock')
 
@@ -223,6 +223,46 @@ class ProjectClasses(unittest.TestCase):
         self.assertEqual(xml.find('Path').text, ds_path)
         self.assertEqual(xml.find('Citation').text, citation)
 
+        dataset2 = Dataset.from_xml(xml)
+        self.assertEqual(dataset2, dataset)
+
+        dataset3 = Dataset.from_xml(xml)
+        dataset3.meta_data.add_meta('test_key', 'test_value')
+        self.assertNotEqual(dataset3, dataset)
+
+        dataset4 = Dataset.from_xml(xml)
+        dataset4.name = 'test_name'
+        self.assertNotEqual(dataset4, dataset)
+
+    def test_logs(self):
+        log_obj = project_xml.Log(
+            xml_id='SOMEID',
+            name='test_log',
+            description='test description',
+            summary='test summary',
+            citation='test citation',
+            path='test_path/log.log'
+        )
+
+        xml = log_obj.to_xml()
+        self.assertEqual(xml.tag, 'LogFile')
+        self.assertEqual(xml.find('Name').text, 'test_log')
+        self.assertEqual(xml.find('Description').text, 'test description')
+        self.assertEqual(xml.find('Summary').text, 'test summary')
+        self.assertEqual(xml.find('Citation').text, 'test citation')
+        self.assertEqual(xml.find('Path').text, 'test_path/log.log')
+
+        log2 = Dataset.from_xml(xml)
+        self.assertEqual(log2, log_obj)
+
+        log_obj3 = Dataset.from_xml(xml)
+        log_obj3.meta_data.add_meta('test_key', 'test_value')
+        self.assertNotEqual(log_obj3, log_obj)
+
+        log_obj4 = Dataset.from_xml(xml)
+        log_obj4.name = 'test_name'
+        self.assertNotEqual(log_obj4, log_obj)
+
     def test_metadata(self):
 
         # Test the metadata types
@@ -255,6 +295,81 @@ class ProjectClasses(unittest.TestCase):
             self.fail('Expected ValueError')
         except ValueError:
             pass
+
+    def test_geopackage(self):
+
+        gpkg = project_xml.Geopackage(
+            xml_id='SOMEID',
+            name='test_geopackage',
+            description='test description',
+            summary='test summary',
+            citation='test citation',
+            path='test_path/test.gpkg',
+            layers=[
+                project_xml.GeopackageLayer(
+                    name='test_layer',
+                    citation='test citation',
+                    description='test description',
+                    ds_type=project_xml.GeoPackageDatasetTypes.RASTER,
+                    ext_ref='test_path/test.tiff',
+                    lyr_name='test_layer',
+                    meta_data=MetaData(values=[
+                        project_xml.Meta(name='test_key', value='test_no_type'),
+                        project_xml.Meta(name='test_key2', value='test_valid_type', type='filepath')
+                    ])
+                )
+            ]
+        )
+
+        xml = gpkg.to_xml()
+        self.assertEqual(xml.tag, 'Geopackage')
+        self.assertEqual(xml.find('Name').text, 'test_geopackage')
+        self.assertEqual(xml.find('Description').text, 'test description')
+        self.assertEqual(xml.find('Summary').text, 'test summary')
+        self.assertEqual(xml.find('Citation').text, 'test citation')
+        self.assertEqual(xml.find('Path').text, 'test_path/test.gpkg')
+
+        gpkg2 = project_xml.Geopackage.from_xml(xml)
+        self.assertEqual(gpkg2, gpkg)
+
+        gpkg3 = project_xml.Geopackage.from_xml(xml)
+        gpkg3.meta_data.add_meta('test_key', 'test_value')
+        self.assertNotEqual(gpkg3, gpkg)
+
+        gpkg4 = project_xml.Geopackage.from_xml(xml)
+        gpkg4.name = 'test_name'
+        self.assertNotEqual(gpkg4, gpkg)
+
+    def test_geopackage_add_layer(self):
+
+        gpkg = project_xml.Geopackage(
+            xml_id='SOMEID',
+            name='test_geopackage',
+            description='test description',
+            summary='test summary',
+            citation='test citation',
+            path='test_path/test.gpkg',
+        )
+
+        gpkg.layers.append(
+            project_xml.GeopackageLayer(
+                name='test_layer',
+                citation='test citation',
+                description='test description',
+                ds_type=project_xml.GeoPackageDatasetTypes.RASTER,
+                ext_ref='test_path/test.tiff',
+                lyr_name='test_layer',
+                meta_data=MetaData(values=[
+                    project_xml.Meta(name='test_key', value='test_no_type'),
+                    project_xml.Meta(name='test_key2', value='test_valid_type', type='filepath')
+                ])
+            )
+        )
+
+        xml = gpkg.to_xml()
+
+        gpkg2 = project_xml.Geopackage.from_xml(xml)
+        self.assertEqual(gpkg2, gpkg)
 
     def test_metadata_parsing(self):
         """Test the px.MetaData class constructor
