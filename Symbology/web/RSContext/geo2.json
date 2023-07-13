@@ -299,7 +299,6 @@
             [ "get", "GENERALIZE" ]
           ]
         ],
-        "text-font": [ "Karla Regular", "Arial Unicode MS Regular" ],
         "text-size": 10
       },
       "paint": {

@@ -18,21 +18,7 @@
       "source": "composite",
       "source-layer": "political_boundaries-96q9y2",
       "layout": {
-          "text-field": ["to-string", ["get", "NAME"]],
-          "text-font": [
-              "JetBrains Mono Regular",
-              "Arial Unicode MS Regular"
-          ],
-          "text-size": [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              0,
-              13.3,
-              22,
-              13.3
-          ]
-      },
+          "text-field": ["to-string", ["get", "NAME"]]},
       "paint": {}
   }
   ]
