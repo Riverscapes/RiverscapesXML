@@ -10,7 +10,6 @@
       "source": "composite",
       "source-layer": "stream_network-7x2b8z",
       "layout": {
-        "text-font": ["Karla Regular", "Arial Unicode MS Regular"],
         "text-size": 12,
         "text-field": ["to-string", ["get", "GNIS_Name"]]
       },
