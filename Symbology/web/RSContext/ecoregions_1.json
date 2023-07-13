@@ -1,0 +1,80 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(180, 100%, 94%)", "0 WATER"],
+    ["hsl(216, 48%, 60%)", "1 ARCTIC CORDILLERA"],
+    ["hsl(226, 41%, 73%)", "2 TUNDRA"],
+    ["hsl(205, 68%, 74%)", "3 TAIGA"],
+    ["hsl(186, 51%, 49%)", "4 HUDSON PLAIN"],
+    ["hsl(188, 51%, 79%)", "5 NORTHERN FORESTS"],
+    ["hsl(114, 43%, 54%)", "6 NORTHWESTERN FORESTED MOUNTAINS"],
+    ["hsl(179, 49%, 51%)", "7 MARINE WEST COAST FORESTS"],
+    ["hsl(83, 51%, 70%)", "8 EASTERN TEMPERATE FORESTS"],
+    ["hsl(32, 85%, 79%)", "9 GREAT PLAINS"],
+    ["hsl(48, 86%, 68%)", "10 NORTH AMERICAN DESERTS"],
+    ["hsl(85, 47%, 81%)", "11 MEDITERRANEAN CALIFORNIA"],
+    ["hsl(54, 50%, 72%)", "12 SOUTHERN SEMIARID HIGHLANDS"],
+    ["hsl(83, 51%, 70%)", "13 TEMPERATE SIERRAS"],
+    ["hsl(13, 81%, 67%)", "14 TROPICAL DRY FORESTS"],
+    ["hsl(317, 42%, 62%)", "15 TROPICAL WET FORESTS"]
+  ],
+  "layerStyles": [
+    {
+      "id": "ecoregions-3h7hmj",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "ecoregions-3h7hmj",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "L1_KEY"],
+              ["0  WATER"],
+              "hsl(180, 100%, 94%)",
+              ["1  ARCTIC CORDILLERA"],
+              "hsl(216, 48%, 60%)",
+              ["2  TUNDRA"],
+              "hsl(226, 41%, 73%)",
+              ["3  TAIGA"],
+              "hsl(205, 68%, 74%)",
+              ["4  HUDSON PLAIN"],
+              "hsl(186, 51%, 49%)",
+              ["5  NORTHERN FORESTS"],
+              "hsl(188, 51%, 79%)",
+              ["6  NORTHWESTERN FORESTED MOUNTAINS"],
+              "hsl(114, 43%, 54%)",
+              ["7  MARINE WEST COAST FOREST"],
+              "hsl(179, 49%, 51%)",
+              ["8  EASTERN TEMPERATE FORESTS"],
+              "hsl(83, 51%, 70%)",
+              ["9  GREAT PLAINS"],
+              "hsl(32, 85%, 79%)",
+              ["10  NORTH AMERICAN DESERTS"],
+              "hsl(48, 86%, 68%)",
+              ["11  MEDITERRANEAN CALIFORNIA"],
+              "hsl(85, 47%, 81%)",
+              ["12  SOUTHERN SEMIARID HIGHLANDS"],
+              "hsl(54, 50%, 72%)",
+              ["13  TEMPERATE SIERRAS"],
+              "hsl(83, 51%, 70%)",
+              ["14  TROPICAL DRY FORESTS"],
+              "hsl(13, 81%, 67%)",
+              ["15  TROPICAL WET FORESTS"],
+              "hsl(317, 42%, 62%)",
+              "#000000"
+          ]
+      }
+  },
+  {
+      "id": "ecoregions-3h7hmj copy",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "ecoregions-3h7hmj",
+      "layout": {
+          "text-field": ["to-string", ["get", "L1_KEY"]],
+          "text-size": 12
+      },
+      "paint": {}
+  }
+  ]
+}
