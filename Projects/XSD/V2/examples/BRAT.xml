@@ -3,7 +3,7 @@
 	<Name>BRAT for HUC 16050304</Name>
 	<ProjectType>BRAT</ProjectType>
 	<!-- apiUrl is taken from examples/VBET.xml May not be correct-->
-	<Warehouse id="63bfb8e2-b9c3-49e1-861e-1e97d7455a5a" apiUrl="https://12312312.amazon.ca/api/prod" />
+	<Warehouse id="63bfb8e2-b9c3-49e1-861e-1e97d7455a5a" apiUrl="https://12312312.amazon.ca/api/prod" ref="aafasdgfasdf999231"/>
 	<MetaData>
 		<Meta name="ModelVersion">4.3.0</Meta>
 		<Meta name="dateCreated" type="isodate">2021-09-13T18:05:52.241097</Meta>

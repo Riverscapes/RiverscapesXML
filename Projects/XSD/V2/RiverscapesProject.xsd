@@ -63,6 +63,7 @@
   <xs:complexType name="WarehouseType" mixed="true">
     <xs:attribute type="GUIDType" name="id" use="required" />
     <xs:attribute type="WarehouseUrlType" name="apiUrl" use="required" />
+    <xs:attribute type="xs:string" name="ref" />
   </xs:complexType>
 
   <!-- =========================================================================
