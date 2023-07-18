@@ -37,7 +37,19 @@ class _LoggerSingleton:
             self.handler = None
             self.logger = logging.getLogger("LOGGER")
             logging.addLevelName(25, 'TITLE')
-            self.loglevels = logging.getLevelNamesMapping()
+            # self.loglevels = logging.getLevelNamesMapping() # THIS IS PYTHON 3.11 only
+            # These are more or less constants so we can define them here
+            self.loglevels = {
+                'CRITICAL': 50,
+                'FATAL': 50,
+                'ERROR': 40,
+                'WARN': 30,
+                'WARNING': 30,
+                'INFO': 20,
+                'DEBUG': 10,
+                'NOTSET': 0,
+                'TITLE': 25,
+            }
 
         def setup(self, log_path=None, verbose=False, log_level: int = None):
             """_summary_
