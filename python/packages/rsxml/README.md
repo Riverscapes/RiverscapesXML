@@ -31,7 +31,7 @@ You can construct an instance of a `Project` class that incorporates all the nec
                 xml_id='test',
                 name='Test Realization',
                 product_version='1.0.0',
-                date_created=date(2021, 1, 1),
+                date_created=datetime(2021, 1, 1),
                 summary='This is a test realization',
                 description='This is a test realization',
                 meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
@@ -111,7 +111,7 @@ Alternatively you can start by constructing a project object and then add each o
                 xml_id='test',
                 name='Test Realization',
                 product_version='1.0.0',
-                date_created=date(2021, 1, 1),
+                date_created=datetime(2021, 1, 1),
                 summary='This is a test realization',
                 description='This is a test realization',
                 meta_data=MetaData(values=[Meta('Test', 'Test Value')])
