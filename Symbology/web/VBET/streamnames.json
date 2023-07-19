@@ -14,10 +14,10 @@
         "text-field": ["to-string", ["get", "GNIS_Name"]]
       },
       "paint": {
-          "text-color": "#FF0000",
-          "text-halo-color": "#FFFFFF",
+          "text-color": "hsl(0, 0%, 100%)",
+          "text-halo-color": "hsl(0, 0%, 0%)",
           "text-halo-width": 0.1,
-          "text-halo-blur": 0.5
+          "text-halo-blur": 0.1
       }
   }
   ]
