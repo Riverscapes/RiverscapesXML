@@ -1,0 +1,25 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 0%, 100%)", "Channel Level Path"]
+  ],
+  "layerStyles": [
+    
+      {
+          "id": "levelpaths-net-afw9tr",
+          "type": "symbol",
+          "source": "composite",
+          "source-layer": "LevelPaths_net-afw9tr",
+          "layout": {
+              "text-field": ["to-string", ["get", "vbet_level_path"]],
+              "text-size": 12
+          },
+          "paint": {
+              "text-color": "hsl(0, 0%, 100%)",
+              "text-halo-color": "hsl(0, 0%, 0%)",
+              "text-halo-width": 0.1,
+              "text-halo-blur": 0.1
+          }
+      }
+  ] 
+}
