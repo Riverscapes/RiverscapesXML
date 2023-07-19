@@ -1,10 +1,10 @@
 # QGIS Generated Color Map Export File
 INTERPOLATION:EXACT
-1,246,233,39,255,East
-2,223,153,21,255,Northeast
-3,230,16,37,255,North
-4,209,28,201,255,Northwest
-5,32,25,223,255,West
-6,116,145,230,255,Southwest
-7,108,239,243,255,South
-8,66,231,80,255,Southeast
+0.79,246,233,39,255,East
+1.57,223,153,21,255,Northeast
+2.35,230,16,37,255,North
+3.14,209,28,201,255,Northwest
+3.93,32,25,223,255,West
+4.71,116,145,230,255,Southwest
+5.49,108,239,243,255,South
+6.28,66,231,80,255,Southeast
