@@ -1,24 +1,26 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(hsl(0, 0%, 0%))", "Channel Network Levelpaths"]
+    ["hsl(Item1COlorHERE)", "WebRave Legend Item1"],
+    ["hsl(Item2COlorHERE)", "WebRave Legend Item2"]
   ],
   "layerStyles": [
-    {
-        "id": "stream-network-7x2b8z copy",
-        "type": "symbol",
-        "source": "composite",
-        "source-layer": "stream_network-7x2b8z",
-        "layout": {
-            "text-size": 12,
-            "text-field": ["to-string", ["get", "vbet_level_path"]]
-        },
-        "paint": {
-            "text-color": "hsl(0, 0%, 96%)",
-            "text-halo-color": "hsl(0, 0%, 0%)",
-            "text-halo-width": 0.1,
-            "text-halo-blur": 0.5
-        }
-    }
-  ]
+    
+      {
+          "id": "levelpaths-net-afw9tr",
+          "type": "symbol",
+          "source": "composite",
+          "source-layer": "LevelPaths_net-afw9tr",
+          "layout": {
+              "text-field": ["to-string", ["get", "vbet_level_path"]],
+              "text-size": 14
+          },
+          "paint": {
+              "text-color": "hsl(0, 0%, 100%)",
+              "text-halo-color": "hsl(0, 0%, 0%)",
+              "text-halo-width": 0.1,
+              "text-halo-blur": 0.1
+          }
+      }
+  ] 
 }
