@@ -108,7 +108,7 @@ class _LoggerSingleton:
                 msg = f'[{severity}] [{method}] {message}'
 
             # Print to stdout
-            if not NO_UI or colored is None:
+            if not NO_UI and colored is not None:
                 if severity == 'debug':
                     msg = colored(msg, 'cyan')
                 if severity == 'warning':
