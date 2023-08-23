@@ -13,7 +13,8 @@ def main():
     # ==================================
     # Open the xml file called data/xml_builder_test.xml in the tests directory
     # and read it into a string
-    xml_file = os.path.join(os.path.dirname(__file__), '..', 'tests', 'data', 'xml_builder_test.xml')
+    #xml_file = os.path.join(os.path.dirname(__file__), '..', 'tests', 'data', 'xml_builder_test.xml')
+    xml_file = '/mnt/c/Users/jordang/Documents/Riverscapes/data/France/Isere_River/Arly/RSContext/project.rs.xml'
 
     result, errors = validate_project_file(xml_file)
     log.info(f'Passed: {result}')

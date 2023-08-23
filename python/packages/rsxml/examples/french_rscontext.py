@@ -23,7 +23,9 @@ from rsxml.project_xml import (
     Realization,
 )
 from rsxml import Logger
-from datetime import date
+from datetime import datetime
+import sys
+import traceback
 
 if __name__ == '__main__':
 
@@ -32,7 +34,7 @@ if __name__ == '__main__':
     # Create a new Riverscapes Project from scratch
     project = Project(
         name='Riverscapes Context for Arly',
-        proj_path='project.rs.xml',
+        proj_path='/mnt/c/Users/jordang/Documents/Riverscapes/data/France/Isere_River/Arly/RSContext/project.rs.xml',
         project_type='RSContext',
         description='Riverscapes Context pour le bassin versant de larly en France',
         citation='',
@@ -46,8 +48,8 @@ if __name__ == '__main__':
             Realization(
                 xml_id='REALIZATION1',
                 name='Riverscapes Context for Arly',
-                product_version='Custom',
-                date_created=date(2023, 7, 18),
+                product_version='1.4.2',
+                date_created=datetime(2023, 7, 18),
                 summary='',
                 description='projet personnalisé du Riverscapes Context',
                 # meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
@@ -225,6 +227,9 @@ if __name__ == '__main__':
     )
 
     # Write it to disk
-    project.write()
+    try:
+        project.write()
+    except Exception as e:
+        traceback.print_exc(file=sys.stdout)
 
     log.info('done')
