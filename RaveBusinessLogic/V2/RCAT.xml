@@ -8,12 +8,12 @@
                 <Children collapsed="false">
                     <Node label="IGOs">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo" id="rcat_condition_igo"/>
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_v2" id="rcat_condition_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition" id="rcat_condition"/>
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition_v2" id="rcat_condition"/>
                         </Children>
                     </Node>
                 </Children>
