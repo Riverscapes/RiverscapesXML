@@ -167,26 +167,26 @@
             <Option value="round" type="QString" name="capstyle"/>
             <Option value="5;2" type="QString" name="customdash"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
-            <Option value="MM" type="QString" name="customdash_unit"/>
+            <Option value="Point" type="QString" name="customdash_unit"/>
             <Option value="0" type="QString" name="dash_pattern_offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
-            <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+            <Option value="Point" type="QString" name="dash_pattern_offset_unit"/>
             <Option value="0" type="QString" name="draw_inside_polygon"/>
             <Option value="round" type="QString" name="joinstyle"/>
             <Option value="237,32,36,255" type="QString" name="line_color"/>
             <Option value="solid" type="QString" name="line_style"/>
-            <Option value="1" type="QString" name="line_width"/>
+            <Option value="3" type="QString" name="line_width"/>
             <Option value="Point" type="QString" name="line_width_unit"/>
             <Option value="0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
-            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="Point" type="QString" name="offset_unit"/>
             <Option value="0" type="QString" name="ring_filter"/>
             <Option value="0" type="QString" name="trim_distance_end"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
-            <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+            <Option value="Point" type="QString" name="trim_distance_end_unit"/>
             <Option value="0" type="QString" name="trim_distance_start"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
-            <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+            <Option value="Point" type="QString" name="trim_distance_start_unit"/>
             <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
             <Option value="0" type="QString" name="use_custom_dash"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
@@ -222,7 +222,7 @@
             <Option value="round" type="QString" name="joinstyle"/>
             <Option value="251,169,25,255" type="QString" name="line_color"/>
             <Option value="solid" type="QString" name="line_style"/>
-            <Option value="1.1" type="QString" name="line_width"/>
+            <Option value="2.5" type="QString" name="line_width"/>
             <Option value="Point" type="QString" name="line_width_unit"/>
             <Option value="0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
@@ -269,7 +269,7 @@
             <Option value="round" type="QString" name="joinstyle"/>
             <Option value="247,242,120,255" type="QString" name="line_color"/>
             <Option value="solid" type="QString" name="line_style"/>
-            <Option value="1.13" type="QString" name="line_width"/>
+            <Option value="2" type="QString" name="line_width"/>
             <Option value="Point" type="QString" name="line_width_unit"/>
             <Option value="0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
@@ -316,7 +316,7 @@
             <Option value="round" type="QString" name="joinstyle"/>
             <Option value="176,209,54,255" type="QString" name="line_color"/>
             <Option value="solid" type="QString" name="line_style"/>
-            <Option value="1.15" type="QString" name="line_width"/>
+            <Option value="1.5" type="QString" name="line_width"/>
             <Option value="Point" type="QString" name="line_width_unit"/>
             <Option value="0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
@@ -363,7 +363,7 @@
             <Option value="round" type="QString" name="joinstyle"/>
             <Option value="90,191,146,255" type="QString" name="line_color"/>
             <Option value="solid" type="QString" name="line_style"/>
-            <Option value="1.25" type="QString" name="line_width"/>
+            <Option value="1" type="QString" name="line_width"/>
             <Option value="Point" type="QString" name="line_width_unit"/>
             <Option value="0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
@@ -486,246 +486,311 @@
     </settings>
   </labeling>
   <customproperties>
-    <Option/>
+    <Option type="Map">
+      <Option value="0" type="int" name="embeddedWidgets/count"/>
+      <Option name="variableNames"/>
+      <Option name="variableValues"/>
+    </Option>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory penColor="#000000" spacingUnit="MM" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" enabled="0" opacity="1" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" direction="0" penWidth="0" sizeType="MM" scaleBasedVisibility="0" backgroundColor="#ffffff" backgroundAlpha="255" width="15" labelPlacementMethod="XHeight" height="15" scaleDependency="Area" spacing="5" maxScaleDenominator="0" showAxis="1" lineSizeType="MM" diagramOrientation="Up" rotationOffset="270">
+      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style="" italic="0" strikethrough="0" underline="0" bold="0"/>
+      <axisSymbol>
+        <symbol is_animated="0" type="line" alpha="1" name="" force_rhr="0" clip_to_extent="1" frame_rate="10">
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+          <layer pass="0" id="{92776372-188e-4bf3-bd99-2dd388deaee7}" class="SimpleLine" locked="0" enabled="1">
+            <Option type="Map">
+              <Option value="0" type="QString" name="align_dash_pattern"/>
+              <Option value="square" type="QString" name="capstyle"/>
+              <Option value="5;2" type="QString" name="customdash"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+              <Option value="MM" type="QString" name="customdash_unit"/>
+              <Option value="0" type="QString" name="dash_pattern_offset"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+              <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+              <Option value="0" type="QString" name="draw_inside_polygon"/>
+              <Option value="bevel" type="QString" name="joinstyle"/>
+              <Option value="35,35,35,255" type="QString" name="line_color"/>
+              <Option value="solid" type="QString" name="line_style"/>
+              <Option value="0.26" type="QString" name="line_width"/>
+              <Option value="MM" type="QString" name="line_width_unit"/>
+              <Option value="0" type="QString" name="offset"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+              <Option value="MM" type="QString" name="offset_unit"/>
+              <Option value="0" type="QString" name="ring_filter"/>
+              <Option value="0" type="QString" name="trim_distance_end"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+              <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+              <Option value="0" type="QString" name="trim_distance_start"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+              <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+              <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+              <Option value="0" type="QString" name="use_custom_dash"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+            </Option>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </axisSymbol>
+    </DiagramCategory>
+  </SingleCategoryDiagramRenderer>
+  <DiagramLayerSettings showAll="1" dist="0" linePlacementFlags="18" placement="2" priority="0" obstacle="0" zIndex="0">
+    <properties>
+      <Option type="Map">
+        <Option value="" type="QString" name="name"/>
+        <Option name="properties"/>
+        <Option value="collection" type="QString" name="type"/>
+      </Option>
+    </properties>
+  </DiagramLayerSettings>
   <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
-    <activeChecks type="StringList">
-      <Option value="" type="QString"/>
-    </activeChecks>
+    <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
   <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
     <field configurationFlags="None" name="ReachID">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="ReachCode">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="WatershedID">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="StreamName">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="NHDPlusID">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="iPC_LU">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="FloodplainAccess">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="FromConifer">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="FromDevegetated">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="FromGrassShrubland">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="FromDeciduous">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="NoChange">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Deciduous">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="GrassShrubland">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Devegetation">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Conifer">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Invasive">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Development">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Agriculture">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="RiparianTotal">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="ConversionID">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="LevelID">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="ExistingRiparianMean">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="HistoricRiparianMean">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="RiparianDeparture">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="RiparianDepartureID">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="ExistingNativeRiparianMean">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="HistoricNativeRiparianMean">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="NativeRiparianDeparture">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Condition">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="ConversionCode">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="ConversionType">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="None" name="Departure">
-      <editWidget type="">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
@@ -908,9 +973,46 @@
     <constraint field="Departure" exp="" desc=""/>
   </constraintExpressions>
   <expressionfields/>
-  <attributeactions/>
+  <attributeactions>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+  </attributeactions>
   <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
-    <columns/>
+    <columns>
+      <column type="field" name="ReachID" hidden="0" width="-1"/>
+      <column type="field" name="ReachCode" hidden="0" width="-1"/>
+      <column type="field" name="WatershedID" hidden="0" width="-1"/>
+      <column type="field" name="StreamName" hidden="0" width="-1"/>
+      <column type="field" name="NHDPlusID" hidden="0" width="-1"/>
+      <column type="field" name="iPC_LU" hidden="0" width="-1"/>
+      <column type="field" name="FloodplainAccess" hidden="0" width="-1"/>
+      <column type="field" name="FromConifer" hidden="0" width="-1"/>
+      <column type="field" name="FromDevegetated" hidden="0" width="-1"/>
+      <column type="field" name="FromGrassShrubland" hidden="0" width="-1"/>
+      <column type="field" name="FromDeciduous" hidden="0" width="-1"/>
+      <column type="field" name="NoChange" hidden="0" width="-1"/>
+      <column type="field" name="Deciduous" hidden="0" width="-1"/>
+      <column type="field" name="GrassShrubland" hidden="0" width="-1"/>
+      <column type="field" name="Devegetation" hidden="0" width="-1"/>
+      <column type="field" name="Conifer" hidden="0" width="-1"/>
+      <column type="field" name="Invasive" hidden="0" width="-1"/>
+      <column type="field" name="Development" hidden="0" width="-1"/>
+      <column type="field" name="Agriculture" hidden="0" width="-1"/>
+      <column type="field" name="RiparianTotal" hidden="0" width="-1"/>
+      <column type="field" name="ConversionID" hidden="0" width="-1"/>
+      <column type="field" name="LevelID" hidden="0" width="-1"/>
+      <column type="field" name="ExistingRiparianMean" hidden="0" width="-1"/>
+      <column type="field" name="HistoricRiparianMean" hidden="0" width="-1"/>
+      <column type="field" name="RiparianDeparture" hidden="0" width="-1"/>
+      <column type="field" name="RiparianDepartureID" hidden="0" width="-1"/>
+      <column type="field" name="ExistingNativeRiparianMean" hidden="0" width="-1"/>
+      <column type="field" name="HistoricNativeRiparianMean" hidden="0" width="-1"/>
+      <column type="field" name="NativeRiparianDeparture" hidden="0" width="-1"/>
+      <column type="field" name="Condition" hidden="0" width="-1"/>
+      <column type="field" name="ConversionCode" hidden="0" width="-1"/>
+      <column type="field" name="ConversionType" hidden="0" width="-1"/>
+      <column type="field" name="Departure" hidden="0" width="-1"/>
+      <column type="actions" hidden="1" width="-1"/>
+    </columns>
   </attributetableconfig>
   <conditionalstyles>
     <rowstyles/>
@@ -921,12 +1023,130 @@
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>
   <editforminitfilepath></editforminitfilepath>
-  <editforminitcode><![CDATA[]]></editforminitcode>
+  <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
-  <editable/>
-  <labelOnTop/>
-  <reuseLastValue/>
+  <editable>
+    <field editable="1" name="Agriculture"/>
+    <field editable="1" name="Condition"/>
+    <field editable="1" name="Conifer"/>
+    <field editable="1" name="ConversionCode"/>
+    <field editable="1" name="ConversionID"/>
+    <field editable="1" name="ConversionType"/>
+    <field editable="1" name="Deciduous"/>
+    <field editable="1" name="Departure"/>
+    <field editable="1" name="Devegetation"/>
+    <field editable="1" name="Development"/>
+    <field editable="1" name="ExistingNativeRiparianMean"/>
+    <field editable="1" name="ExistingRiparianMean"/>
+    <field editable="1" name="FloodplainAccess"/>
+    <field editable="1" name="FromConifer"/>
+    <field editable="1" name="FromDeciduous"/>
+    <field editable="1" name="FromDevegetated"/>
+    <field editable="1" name="FromGrassShrubland"/>
+    <field editable="1" name="GrassShrubland"/>
+    <field editable="1" name="HistoricNativeRiparianMean"/>
+    <field editable="1" name="HistoricRiparianMean"/>
+    <field editable="1" name="Invasive"/>
+    <field editable="1" name="LevelID"/>
+    <field editable="1" name="NHDPlusID"/>
+    <field editable="1" name="NativeRiparianDeparture"/>
+    <field editable="1" name="NoChange"/>
+    <field editable="1" name="ReachCode"/>
+    <field editable="1" name="ReachID"/>
+    <field editable="1" name="RiparianDeparture"/>
+    <field editable="1" name="RiparianDepartureID"/>
+    <field editable="1" name="RiparianTotal"/>
+    <field editable="1" name="StreamName"/>
+    <field editable="1" name="WatershedID"/>
+    <field editable="1" name="iPC_LU"/>
+  </editable>
+  <labelOnTop>
+    <field name="Agriculture" labelOnTop="0"/>
+    <field name="Condition" labelOnTop="0"/>
+    <field name="Conifer" labelOnTop="0"/>
+    <field name="ConversionCode" labelOnTop="0"/>
+    <field name="ConversionID" labelOnTop="0"/>
+    <field name="ConversionType" labelOnTop="0"/>
+    <field name="Deciduous" labelOnTop="0"/>
+    <field name="Departure" labelOnTop="0"/>
+    <field name="Devegetation" labelOnTop="0"/>
+    <field name="Development" labelOnTop="0"/>
+    <field name="ExistingNativeRiparianMean" labelOnTop="0"/>
+    <field name="ExistingRiparianMean" labelOnTop="0"/>
+    <field name="FloodplainAccess" labelOnTop="0"/>
+    <field name="FromConifer" labelOnTop="0"/>
+    <field name="FromDeciduous" labelOnTop="0"/>
+    <field name="FromDevegetated" labelOnTop="0"/>
+    <field name="FromGrassShrubland" labelOnTop="0"/>
+    <field name="GrassShrubland" labelOnTop="0"/>
+    <field name="HistoricNativeRiparianMean" labelOnTop="0"/>
+    <field name="HistoricRiparianMean" labelOnTop="0"/>
+    <field name="Invasive" labelOnTop="0"/>
+    <field name="LevelID" labelOnTop="0"/>
+    <field name="NHDPlusID" labelOnTop="0"/>
+    <field name="NativeRiparianDeparture" labelOnTop="0"/>
+    <field name="NoChange" labelOnTop="0"/>
+    <field name="ReachCode" labelOnTop="0"/>
+    <field name="ReachID" labelOnTop="0"/>
+    <field name="RiparianDeparture" labelOnTop="0"/>
+    <field name="RiparianDepartureID" labelOnTop="0"/>
+    <field name="RiparianTotal" labelOnTop="0"/>
+    <field name="StreamName" labelOnTop="0"/>
+    <field name="WatershedID" labelOnTop="0"/>
+    <field name="iPC_LU" labelOnTop="0"/>
+  </labelOnTop>
+  <reuseLastValue>
+    <field reuseLastValue="0" name="Agriculture"/>
+    <field reuseLastValue="0" name="Condition"/>
+    <field reuseLastValue="0" name="Conifer"/>
+    <field reuseLastValue="0" name="ConversionCode"/>
+    <field reuseLastValue="0" name="ConversionID"/>
+    <field reuseLastValue="0" name="ConversionType"/>
+    <field reuseLastValue="0" name="Deciduous"/>
+    <field reuseLastValue="0" name="Departure"/>
+    <field reuseLastValue="0" name="Devegetation"/>
+    <field reuseLastValue="0" name="Development"/>
+    <field reuseLastValue="0" name="ExistingNativeRiparianMean"/>
+    <field reuseLastValue="0" name="ExistingRiparianMean"/>
+    <field reuseLastValue="0" name="FloodplainAccess"/>
+    <field reuseLastValue="0" name="FromConifer"/>
+    <field reuseLastValue="0" name="FromDeciduous"/>
+    <field reuseLastValue="0" name="FromDevegetated"/>
+    <field reuseLastValue="0" name="FromGrassShrubland"/>
+    <field reuseLastValue="0" name="GrassShrubland"/>
+    <field reuseLastValue="0" name="HistoricNativeRiparianMean"/>
+    <field reuseLastValue="0" name="HistoricRiparianMean"/>
+    <field reuseLastValue="0" name="Invasive"/>
+    <field reuseLastValue="0" name="LevelID"/>
+    <field reuseLastValue="0" name="NHDPlusID"/>
+    <field reuseLastValue="0" name="NativeRiparianDeparture"/>
+    <field reuseLastValue="0" name="NoChange"/>
+    <field reuseLastValue="0" name="ReachCode"/>
+    <field reuseLastValue="0" name="ReachID"/>
+    <field reuseLastValue="0" name="RiparianDeparture"/>
+    <field reuseLastValue="0" name="RiparianDepartureID"/>
+    <field reuseLastValue="0" name="RiparianTotal"/>
+    <field reuseLastValue="0" name="StreamName"/>
+    <field reuseLastValue="0" name="WatershedID"/>
+    <field reuseLastValue="0" name="iPC_LU"/>
+  </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
   <previewExpression>"StreamName"</previewExpression>
