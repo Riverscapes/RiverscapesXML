@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>LTPBR Design</Name>
+    <ProjectType>LTPBRDesign</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="Design">
+                <Children>
+                    <Node label="Structure Points" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='structure_points']" type="point" symbology="structure_points" id="structure_points"/>
+                    <Node label="Structure Lines" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='structure_lines']" type="line" symbology="structure_lines" id="structure_lines"/>
+                    <Node label="Structure Complexes" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='complexes']" type="polygon" symbology="complexes" id="complexes"/>
+                    <Node label="Zones of Influence" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='zoi']" type="polygon" symbology="zoi" id="zoi"/>
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="LTPBR Design" id="DEFAULT">
+          <Layers>
+            <Layer id="structure_points" />
+            <Layer id="structure_lines" />
+            <Layer id="complexes" />
+            <Layer id="zoi" />
+          </Layers>
+        </View>
+    </Views>
+</Project>
