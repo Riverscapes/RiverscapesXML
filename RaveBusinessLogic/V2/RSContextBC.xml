@@ -6,24 +6,24 @@
     <Children collapsed="false">
       <Node label="Transportation Local">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='dra_dgtl_road_atlas_mpar_sp']" type="line" symbology="roads" id="roads" />
+          <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='dra_dgtl_road_atlas_mpar_sp']" type="line" id="roads" />
         </Children>
       </Node>
       <Node label="Hydrology">
         <Children collapsed="false">
-				<Node label="Flow Lines" xpath="Datasets/Geopackage[@id='hydrology']/Layers/Vector[@lyrName='flow_lines']" type="line"/>
-				<Node label="Waterbodies" xpath="Datasets/Geopackage[@id='hydrology']/Layers/Vector[@lyrName='waterbodies']" type="polygon"/>
-				<Node label="Watershed" xpath="Datasets/Geopackage[@id='hydrology']/Layers/Vector[@lyrName='watershed']" type="polygon"/>
+				<Node label="Flow Lines" xpath="Datasets/Geopackage[@id='hydrology']/Layers/Vector[@lyrName='flow_lines']" type="line" id="flowlines"/>
+				<Node label="Waterbodies" xpath="Datasets/Geopackage[@id='hydrology']/Layers/Vector[@lyrName='waterbodies']" type="polygon" id="waterbodies"/>
+				<Node label="Watershed" xpath="Datasets/Geopackage[@id='hydrology']/Layers/Vector[@lyrName='watershed']" type="polygon" id="watershed"/>
         </Children>
       </Node>
       <Node label="Biogeoclimate">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='bec_biogeoclimatic_poly']" type="polygon"/>
+          <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='bec_biogeoclimatic_poly']" type="polygon" id="biogeoclimatic"/>
         </Children>
       </Node>
 	  <Node label="Vegetation">
 		<Children collapsed="true">
-			  <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='veg_comp_lyr_r1_poly']" type="polygon" id="exveg" />
+			  <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='veg_comp_lyr_r1_poly']" type="polygon" id="veg_comp" />
 		</Children>
 	  </Node>
       <Node label="Topography and Derivatives">
@@ -34,24 +34,22 @@
       </Node>
       <Node label="Hillshade">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Datasets/Hillshade[@id='hillshade']" type="raster" symbology="hillshade" id="hs" />
+          <Node xpathlabel="Name" xpath="Datasets/Raster[@id='hillshade']" type="raster" symbology="hillshade" id="hs" />
         </Children>
       </Node>
-      <Node label="Log File" xpath="Logs/LogFile" type="file" />
     </Children>
   </Node>
   <Views default="Default">
     <View name="Hydrology" id="Default">
       <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="huc10" /> <!-- A test to see if we like it and to see if we avoid the webrave problem of green fill with HUC8-->
+        <Layer id="flowlines" />
+        <Layer id="waterbodies" />
+        <Layer id="watershed" />
       </Layers>
     </View>
     <View name="Topography" id="Topography">
       <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
+        <Layer id="flowlines" />
         <Layer id="dem" />
         <Layer id="hs" />
       </Layers>
@@ -59,21 +57,12 @@
     <View name="Transportation" id="Transportation">
       <Layers>
         <Layer id="roads" />
-        <Layer id="railroads" />
       </Layers>
     </View>
     <View name="Existing Vegetation" id="veg">
       <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="exveg" /> 
-      </Layers>
-    </View>
-    <View name="Land Ownership" id="land">
-      <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="owner" /> 
+        <Layer id="flowlines" />
+        <Layer id="veg_comp" /> 
       </Layers>
     </View>
   </Views>
