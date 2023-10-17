@@ -2,8 +2,8 @@
 <qgis styleCategories="Symbology|Legend" version="3.26.0-Buenos Aires">
   <renderer-v2 type="categorizedSymbol" enableorderby="0" attr="structure_type_id" referencescale="-1" symbollevels="0" forceraster="0">
     <categories>
-      <category label="BDA Large" symbol="0" value="1" type="string" render="true"/>
-      <category label="BDA Small" symbol="1" value="2" type="string" render="true"/>
+      <category label="BDA Primary" symbol="0" value="1" type="string" render="true"/>
+      <category label="BDA Secondary" symbol="1" value="2" type="string" render="true"/>
       <category label="BDA Postless" symbol="2" value="3" type="string" render="true"/>
       <category label="PALS Mid-Channel" symbol="3" value="4" type="string" render="true"/>
       <category label="PALS Bank Attached" symbol="4" value="5" type="string" render="true"/>
