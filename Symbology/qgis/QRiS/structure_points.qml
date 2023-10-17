@@ -7,7 +7,7 @@
       <category label="BDA Postless" symbol="2" value="3" type="string" render="true"/>
       <category label="PALS Mid-Channel" symbol="3" value="4" type="string" render="true"/>
       <category label="PALS Bank Attached" symbol="4" value="5" type="string" render="true"/>
-      <category label="Wood Jam" symbol="5" value="6" type="string" render="true"/>
+      <category label="Woody Jam" symbol="5" value="6" type="string" render="true"/>
     </categories>
     <symbols>
       <symbol force_rhr="0" clip_to_extent="1" type="marker" alpha="1" is_animated="0" name="0" frame_rate="10">
