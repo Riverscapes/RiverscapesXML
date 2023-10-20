@@ -12,38 +12,50 @@
       "console": "integratedTerminal",
     },
     {
-      "name": "Warehouse 3.0: Migration",
+      "name": "🔬Python Test XML",
       "type": "python",
       "request": "launch",
-      "module": "migration.warehouse_migration",
+      // Run test.py
+      "program": "${workspaceFolder}/test.py",
+      "cwd": "${workspaceFolder}/../",
       "console": "integratedTerminal",
-      "envFile": "${workspaceFolder}/.env",
-      "justMyCode": true,
-      "args": [
-        // Note that we're readinf the copy here:
-        "production_01-06-2022.sqlite",
-        "old_xml",
-        "new_xml",
-        "watersheds_for_riverscapes.sqlite",
-        "champ_visit_bounds.sqlite"
-      ],
       "env": {
         "PYTHON_PATH": "${workspaceFolder}",
       }
     },
-    {
-      "name": "Warehouse 3.0: XML_Conversion",
-      "type": "python",
-      "request": "launch",
-      "module": "migration.xml_conversion",
-      "console": "integratedTerminal",
-      "envFile": "${workspaceFolder}/.env",
-      "justMyCode": true,
-      "args": [
-        // Note that we're readinf the copy here:
-        "production_11-05-2022_MIGRATION.sqlite",
-      ]
-    },
+    // {
+    //   "name": "Warehouse 3.0: Migration",
+    //   "type": "python",
+    //   "request": "launch",
+    //   "module": "migration.warehouse_migration",
+    //   "console": "integratedTerminal",
+    //   "envFile": "${workspaceFolder}/.env",
+    //   "justMyCode": true,
+    //   "args": [
+    //     // Note that we're readinf the copy here:
+    //     "production_01-06-2022.sqlite",
+    //     "old_xml",
+    //     "new_xml",
+    //     "watersheds_for_riverscapes.sqlite",
+    //     "champ_visit_bounds.sqlite"
+    //   ],
+    //   "env": {
+    //     "PYTHON_PATH": "${workspaceFolder}",
+    //   }
+    // },
+    // {
+    //   "name": "Warehouse 3.0: XML_Conversion",
+    //   "type": "python",
+    //   "request": "launch",
+    //   "module": "migration.xml_conversion",
+    //   "console": "integratedTerminal",
+    //   "envFile": "${workspaceFolder}/.env",
+    //   "justMyCode": true,
+    //   "args": [
+    //     // Note that we're readinf the copy here:
+    //     "production_11-05-2022_MIGRATION.sqlite",
+    //   ]
+    // },
     // {
     //   // This is a script you should have to run AFTER the XML migration
     //   "name": "Warehouse 3.0: DB Augmentation",
