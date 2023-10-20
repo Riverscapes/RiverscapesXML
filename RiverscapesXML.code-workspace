@@ -51,5 +51,13 @@
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.terminal.activateEnvironment": true,
     "python.testing.pytestEnabled": true,
-	}
+	},
+  "extensions": {
+    "recommendations": [
+      "ms-python.pylint",
+      "ms-python.python",
+      "njpwerner.autodocstring",
+      "redhat.vscode-xml"
+    ]
+  }
 }
