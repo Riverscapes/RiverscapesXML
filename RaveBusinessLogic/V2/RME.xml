@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.xyz/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <Name>GNAT</Name>
-  <ProjectType>GNAT</ProjectType>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>RME</Name>
+  <ProjectType>RME</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="true">
       <Node label="Project Report" xpath="RME_OUTPUTS/HTMLFile" type="report" />
