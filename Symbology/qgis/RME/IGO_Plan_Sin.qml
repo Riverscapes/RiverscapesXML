@@ -13,13 +13,13 @@
     </fixedRange>
   </temporal>
   <renderer-v2 type="RuleRenderer" forceraster="0" referencescale="-1" symbollevels="0" enableorderby="0">
-    <rules key="{27b2629d-31b5-4189-8fec-00e2c7067bbc}">
-      <rule key="{09d5a633-8f7b-4d83-8c8d-4466625ab74f}" symbol="0" label="&lt;= 1" filter="&quot;rme_igo_rel_flow_length&quot; &lt;= '1'"/>
-      <rule key="{eb737b18-814c-4ce1-8b9b-f259575957b5}" symbol="1" label="1 - 1.2" filter="&quot;rme_igo_rel_flow_length&quot; > '1' and &quot;rme_igo_rel_flow_length&quot; &lt;= '1.2'"/>
-      <rule key="{4e7d31e4-3920-434a-a732-7fcb22d9a25d}" symbol="2" label="1.2 - 1.5" filter="&quot;rme_igo_rel_flow_length&quot; > '1.2' and &quot;rme_igo_rel_flow_length&quot; &lt;= '1.5'"/>
-      <rule key="{a6b8ff41-200f-475b-986e-fc3e078f0011}" symbol="3" label="1.5 - 2" filter="&quot;rme_igo_rel_flow_length&quot; > '1.5' and &quot;rme_igo_rel_flow_length&quot; &lt;= '2'"/>
-      <rule key="{d7736baf-ddd0-4778-8f5c-9709601ce8b4}" symbol="4" label="2 - 5" filter="&quot;rme_igo_rel_flow_length&quot; > '2' and &quot;rme_igo_rel_flow_length&quot; &lt;= '5'"/>
-      <rule key="{96d92868-323c-4e4b-b1ca-a3ef5d63e530}" symbol="5" label="> 5" filter="&quot;rme_igo_rel_flow_length&quot; > '5'"/>
+    <rules key="{e733fbac-6859-4f6b-8fba-77865655458a}">
+      <rule key="{58ddbd87-a9ec-4b7e-b3fc-1d4bd0f2a5f3}" symbol="0" label="1 - 1.1" filter="&quot;rme_igo_planform_sinuosity&quot; &lt;= 1.1"/>
+      <rule key="{e1e8533a-78b7-4c71-a5aa-d0e908b0c183}" symbol="1" label="1-1.25" filter="&quot;rme_igo_planform_sinuosity&quot; > 1.1 and &quot;rme_igo_planform_sinuosity&quot; &lt;= 1.25"/>
+      <rule key="{6a0adf95-af31-49fa-a8ea-8be81f602089}" symbol="2" label="1.25 - 1.5" filter="&quot;rme_igo_planform_sinuosity&quot; > 1.25 and &quot;rme_igo_planform_sinuosity&quot; &lt;= 1.5"/>
+      <rule key="{b9437e2b-cbfe-4f9a-b578-f2729f96fc15}" symbol="3" label="1.5 - 2" filter="&quot;rme_igo_planform_sinuosity&quot; > 1.5 and &quot;rme_igo_planform_sinuosity&quot; &lt;= 2"/>
+      <rule key="{69ad07da-4a03-4fc9-beff-75bd93f72cb6}" symbol="4" label="2 - 5 " filter="&quot;rme_igo_planform_sinuosity&quot; > 2 and &quot;rme_igo_planform_sinuosity&quot; &lt;= 5"/>
+      <rule key="{f84b4c36-522d-4936-9c21-e89bea35ab55}" symbol="5" label="> 5" filter="&quot;rme_igo_planform_sinuosity&quot; > 5"/>
     </rules>
     <symbols>
       <symbol type="marker" name="0" force_rhr="0" alpha="1" clip_to_extent="1">
@@ -34,7 +34,7 @@
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
-            <Option type="QString" value="237,248,251,255" name="color"/>
+            <Option type="QString" value="241,238,246,255" name="color"/>
             <Option type="QString" value="1" name="horizontal_anchor_point"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="circle" name="name"/>
@@ -54,7 +54,7 @@
           </Option>
           <prop v="0" k="angle"/>
           <prop v="square" k="cap_style"/>
-          <prop v="237,248,251,255" k="color"/>
+          <prop v="241,238,246,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
@@ -92,7 +92,7 @@
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
-            <Option type="QString" value="191,211,230,255" name="color"/>
+            <Option type="QString" value="212,185,218,255" name="color"/>
             <Option type="QString" value="1" name="horizontal_anchor_point"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="circle" name="name"/>
@@ -112,7 +112,7 @@
           </Option>
           <prop v="0" k="angle"/>
           <prop v="square" k="cap_style"/>
-          <prop v="191,211,230,255" k="color"/>
+          <prop v="212,185,218,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
@@ -150,7 +150,7 @@
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
-            <Option type="QString" value="158,188,218,255" name="color"/>
+            <Option type="QString" value="201,148,199,255" name="color"/>
             <Option type="QString" value="1" name="horizontal_anchor_point"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="circle" name="name"/>
@@ -170,7 +170,7 @@
           </Option>
           <prop v="0" k="angle"/>
           <prop v="square" k="cap_style"/>
-          <prop v="158,188,218,255" k="color"/>
+          <prop v="201,148,199,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
@@ -208,7 +208,7 @@
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
-            <Option type="QString" value="140,150,198,255" name="color"/>
+            <Option type="QString" value="223,101,176,255" name="color"/>
             <Option type="QString" value="1" name="horizontal_anchor_point"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="circle" name="name"/>
@@ -228,7 +228,7 @@
           </Option>
           <prop v="0" k="angle"/>
           <prop v="square" k="cap_style"/>
-          <prop v="140,150,198,255" k="color"/>
+          <prop v="223,101,176,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
@@ -266,7 +266,7 @@
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
-            <Option type="QString" value="136,86,167,255" name="color"/>
+            <Option type="QString" value="221,28,119,255" name="color"/>
             <Option type="QString" value="1" name="horizontal_anchor_point"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="circle" name="name"/>
@@ -286,7 +286,7 @@
           </Option>
           <prop v="0" k="angle"/>
           <prop v="square" k="cap_style"/>
-          <prop v="136,86,167,255" k="color"/>
+          <prop v="221,28,119,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
@@ -324,7 +324,7 @@
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
-            <Option type="QString" value="129,15,124,255" name="color"/>
+            <Option type="QString" value="152,0,67,255" name="color"/>
             <Option type="QString" value="1" name="horizontal_anchor_point"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="circle" name="name"/>
@@ -344,7 +344,7 @@
           </Option>
           <prop v="0" k="angle"/>
           <prop v="square" k="cap_style"/>
-          <prop v="129,15,124,255" k="color"/>
+          <prop v="152,0,67,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
