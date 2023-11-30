@@ -2,8 +2,8 @@
 set -eu
 
 # On OSX you must have run `brew install gdal` so that the header files are findable 
-python3 --version
-python3 -m venv .venv
+python3.11 --version
+python3.11 -m venv .venv
 # Make sure pip is at a good version
 .venv/bin/python3 -m pip install --upgrade pip
 
