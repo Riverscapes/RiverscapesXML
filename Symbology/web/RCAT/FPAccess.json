@@ -1,0 +1,44 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#e81014", "0.0-0.2"],
+    ["#e600a9", "0.2-0.4"], 
+    ["#8400a8", "0.4-0.6"], 
+    ["#4c0073", "0.6-0.8"], 
+    ["#002673", "0.8-1.0"]
+  ],
+  "layerStyles": [
+    {
+    "id": "fpaccess-bo5cqs",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "FPAccess-bo5cqs",
+    "layout": {},
+    "paint": {
+        "line-color": [
+            "interpolate",
+            ["linear"],
+            ["get", "FloodplainAccess"],
+            0,
+            "#e81014",
+            0.2,
+            "#e81014",
+            0.20001,
+            "#e600a9",
+            0.4,
+            "#e600a9",
+            0.400001,
+            "#8400a8",
+            0.6,
+            "#8400a8",
+            0.600001,
+            "#4c0073",
+            0.8,
+            "#4c0073",
+            0.800001,
+            "#002673"
+        ]
+      }
+    }    
+  ]
+}
