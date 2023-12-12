@@ -146,8 +146,8 @@
   </elevation>
   <renderer-v2 symbollevels="0" type="RuleRenderer" enableorderby="0" referencescale="-1" forceraster="0">
     <rules key="{63c09983-2d26-4579-ac80-dd9769b8f68f}">
-      <rule filter="&quot;ConversionCode&quot; in (29, 30, 21, 32)" symbol="0" label="Conifer Encroachment" key="{84fc2890-f3cf-4ebc-8e24-5a58ad5c7037}"/>
-      <rule filter="&quot;ConversionCode&quot; in (41, 42, 43, 44)" symbol="1" label="Conv. To Agriculture" key="{18195d90-873a-4d0b-a2c6-5e8e4ab461e7}"/>
+      <rule filter="&quot;ConversionCode&quot; in (41, 42, 43, 44)" symbol="0" label="Conifer Encroachment" key="{84fc2890-f3cf-4ebc-8e24-5a58ad5c7037}"/>
+      <rule filter="&quot;ConversionCode&quot; in (29, 30, 31, 32)" symbol="1" label="Conv. To Agriculture" key="{18195d90-873a-4d0b-a2c6-5e8e4ab461e7}"/>
       <rule filter="&quot;ConversionCode&quot; in (21, 22, 23, 24)" symbol="2" label="Conv. To Grass/Shrubland" key="{6ceb3524-7a7e-4655-8e7d-8ec8607a434b}"/>
       <rule filter="&quot;ConversionCode&quot; in (33, 34, 35, 36)" symbol="3" label="Conv. To Invasive" key="{efa7d8f6-34d0-4c9d-902b-da6c077f664d}"/>
       <rule filter="&quot;ConversionCode&quot; in (45, 46, 47, 48)" symbol="4" label="Non-Riparian Conversions" key="{5c284893-11bc-4a05-867e-43d669e0b9a4}"/>
@@ -155,8 +155,8 @@
       <rule filter="&quot;ConversionCode&quot; in (37, 38, 39, 40)" symbol="6" label="Development" key="{7a9ad057-6889-495f-b9b0-37ed9c1b9664}"/>
       <rule filter="&quot;ConversionCode&quot; in (49, 50, 51, 52)" symbol="7" label="Multiple Conv. Types" key="{c693bbe9-3593-47b1-84cf-dde7048f2210}"/>
       <rule filter="&quot;ConversionCode&quot; = 0" symbol="8" label="Negligible to Minor Veg. Conversion" key="{2431703c-a827-428f-af83-c139029ee477}"/>
-      <rule filter="&quot;ConversionCode&quot; in (9, 10, 11, 12)" symbol="9" label="From Grass/Shrubland to Riparian" key="{3a81613c-e8e8-4327-afd4-1e8d1d058e64}"/>
-      <rule filter="&quot;ConversionCode&quot; in (5, 6, 7, 8)" symbol="10" label="From Devegetated to Riparian" key="{b074bfb5-0334-49ac-a74c-84bb0eaf347e}"/>
+      <rule filter="&quot;ConversionCode&quot; = (9, 10, 11, 12)" symbol="9" label="From Grass/Shrubland to Riparian" key="{3a81613c-e8e8-4327-afd4-1e8d1d058e64}"/>
+      <rule filter="&quot;ConversionCode&quot; in (5, 6, 7, 8)" symbol="10" label="From Devegetated to Riparian" key="{e7a97fdf-477c-41ad-b89a-a59ca18323d3}"/>
       <rule filter="&quot;ConversionCode&quot; in (1, 2, 3, 4)" symbol="11" label="From Conifer to Riparian" key="{5bd42e75-180b-4cb0-8e73-e7722dbddeae}"/>
     </rules>
     <symbols>
@@ -294,7 +294,7 @@
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="247,214,167,255" type="QString"/>
+            <Option name="color" value="31,47,231,255" type="QString"/>
             <Option name="horizontal_anchor_point" value="1" type="QString"/>
             <Option name="joinstyle" value="miter" type="QString"/>
             <Option name="name" value="circle" type="QString"/>
@@ -355,7 +355,7 @@
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="242,209,228,255" type="QString"/>
+            <Option name="color" value="147,246,170,255" type="QString"/>
             <Option name="horizontal_anchor_point" value="1" type="QString"/>
             <Option name="joinstyle" value="miter" type="QString"/>
             <Option name="name" value="circle" type="QString"/>
@@ -843,7 +843,7 @@
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="215,235,242,255" type="QString"/>
+            <Option name="color" value="31,218,231,255" type="QString"/>
             <Option name="horizontal_anchor_point" value="1" type="QString"/>
             <Option name="joinstyle" value="miter" type="QString"/>
             <Option name="name" value="circle" type="QString"/>
