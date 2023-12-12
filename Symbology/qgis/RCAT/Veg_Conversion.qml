@@ -274,7 +274,7 @@
             <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
             <Option name="draw_inside_polygon" value="0" type="QString"/>
             <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="247,214,167,255" type="QString"/>
+            <Option name="line_color" value="31,47,231,255" type="QString"/>
             <Option name="line_style" value="solid" type="QString"/>
             <Option name="line_width" value="0.26" type="QString"/>
             <Option name="line_width_unit" value="MM" type="QString"/>
@@ -321,7 +321,7 @@
             <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
             <Option name="draw_inside_polygon" value="0" type="QString"/>
             <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="242,209,228,255" type="QString"/>
+            <Option name="line_color" value="147,246,170,255" type="QString"/>
             <Option name="line_style" value="solid" type="QString"/>
             <Option name="line_width" value="0.26" type="QString"/>
             <Option name="line_width_unit" value="MM" type="QString"/>
@@ -697,7 +697,7 @@
             <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
             <Option name="draw_inside_polygon" value="0" type="QString"/>
             <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="215,235,242,255" type="QString"/>
+            <Option name="line_color" value="31,218,231,255" type="QString"/>
             <Option name="line_style" value="solid" type="QString"/>
             <Option name="line_width" value="0.26" type="QString"/>
             <Option name="line_width_unit" value="MM" type="QString"/>
