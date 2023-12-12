@@ -156,7 +156,7 @@
       <rule filter="&quot;ConversionCode&quot; in (49, 50, 51, 52)" symbol="7" label="Multiple Conv. Types" key="{c693bbe9-3593-47b1-84cf-dde7048f2210}"/>
       <rule filter="&quot;ConversionCode&quot; = 0" symbol="8" label="Negligible to Minor Veg. Conversion" key="{2431703c-a827-428f-af83-c139029ee477}"/>
       <rule filter="&quot;ConversionCode&quot; = (9, 10, 11, 12)" symbol="9" label="From Grass/Shrubland to Riparian" key="{3a81613c-e8e8-4327-afd4-1e8d1d058e64}"/>
-      <rule filter="&quot;ConversionCode&quot; in (5, 6, 7, 8)" symbol="10" label="From Devegetated to Riparian" key="{e7a97fdf-477c-41ad-b89a-a59ca18323d3}"/>
+      <rule filter="&quot;ConversionCode&quot; in (5, 6, 7, 8)" symbol="10" label="From Devegetated to Riparian" key="{b074bfb5-0334-49ac-a74c-84bb0eaf347e}"/>
       <rule filter="&quot;ConversionCode&quot; in (1, 2, 3, 4)" symbol="11" label="From Conifer to Riparian" key="{5bd42e75-180b-4cb0-8e73-e7722dbddeae}"/>
     </rules>
     <symbols>
@@ -294,7 +294,7 @@
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="31,47,231,255" type="QString"/>
+            <Option name="color" value="247,214,167,255" type="QString"/>
             <Option name="horizontal_anchor_point" value="1" type="QString"/>
             <Option name="joinstyle" value="miter" type="QString"/>
             <Option name="name" value="circle" type="QString"/>
@@ -355,7 +355,7 @@
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="147,246,170,255" type="QString"/>
+            <Option name="color" value="242,209,228,255" type="QString"/>
             <Option name="horizontal_anchor_point" value="1" type="QString"/>
             <Option name="joinstyle" value="miter" type="QString"/>
             <Option name="name" value="circle" type="QString"/>
@@ -843,7 +843,7 @@
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="31,218,231,255" type="QString"/>
+            <Option name="color" value="215,235,242,255" type="QString"/>
             <Option name="horizontal_anchor_point" value="1" type="QString"/>
             <Option name="joinstyle" value="miter" type="QString"/>
             <Option name="name" value="circle" type="QString"/>
