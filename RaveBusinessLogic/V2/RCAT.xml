@@ -25,6 +25,7 @@
                             <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo" id="rvd_igo"/>
                             <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo" id="LUI_igo" />
                             <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo" id="fpaccess_igo"/>
+                            <Node label="Riparian Vegetation Conversion Type" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="Veg_conversion_igo" id="Veg_conversion_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
@@ -32,6 +33,7 @@
                             <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="rvd" id="rvd"/>
                             <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU" id="LUI"/>
                             <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="FPAccess" id="fpaccess"/>
+                            <Node label="Riparian Vegetation Conversion Type" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="Veg_conversion" id="Veg_conversion"/>
                         </Children>
                     </Node>
                     <Node label="Rasters">
