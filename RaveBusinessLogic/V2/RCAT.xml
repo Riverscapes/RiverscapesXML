@@ -76,6 +76,7 @@
                     <Node label="Digital Elevation Model">
                         <Children collapsed="true">
                             <Node label="Pit-filled DEM" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" id="dem" />
+                            <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" transparency="40" id="hillshade" />
                         </Children>
                     </Node>
                 </Children>
@@ -86,7 +87,7 @@
      <View name="Riparian Condition" id="RCAT_Condition">
       <Description>This view is the riparian condition ouptut from RCAT</Description>
       <Layers>
-        <Layer id="dem"/>
+        <Layer id="hillshade"/>
         <Layer id="vb"/>
         <Layer id="rcat_condition"/>
       </Layers>
@@ -94,7 +95,7 @@
      <View name="DGOs and IGOs" id="DGO_IGO">
       <Description>This view shows the IGOs and DGOs</Description>
       <Layers>
-       <Layer id="dem"/>
+       <Layer id="hillshade"/>
        <Layer id="dgo"/>
        <Layer id="igo"/>
       </Layers>
@@ -102,7 +103,7 @@
      <View name="RVD" id="rvd_rip">
       <Description>This view shows the riparian vegetation departure (RVD) output overlayed on the existing riprarian vegetation raster</Description>
       <Layers>
-       <Layer id="dem"/>
+       <Layer id="hillshade"/>
        <Layer id="evt_rip"/>
        <Layer id="rvd"/>
       </Layers>
