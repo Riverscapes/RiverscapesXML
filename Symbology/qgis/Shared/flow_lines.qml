@@ -14,7 +14,7 @@
   </temporal>
   <renderer-v2 enableorderby="0" forceraster="0" type="categorizedSymbol" attr="FCode" symbollevels="0">
     <categories>
-      <category render="true" value="46006" symbol="0" label="46006 - Perrenial"/>
+      <category render="true" value="46006" symbol="0" label="46006 - Perennial"/>
       <category render="true" value="46003" symbol="1" label="46003 - Intermittent"/>
       <category render="true" value="46007" symbol="2" label="46007 - Ephemeral"/>
       <category render="true" value="33600" symbol="3" label="33600 - Canal"/>
