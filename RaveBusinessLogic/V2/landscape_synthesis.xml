@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>Landscape Synthesis</Name>
+    <ProjectType>lanscape_synthesis</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="Landscape Metrics">
+                <Children>
+                    <Node label="Drainage Density" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="drainage_density" id="drainage_density"/>
+                    <Node label="Proportion Valley Bottom" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="proportion_vb" id="proportion_vb"/>
+                    <Node label="Acres of Valley Bottom per Mile of Channel" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="acres_vb_mile" id="acres_vb_mi"/>
+                    <Node label="Proportion Riparian in Valley Bottom" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="prop_rip" id="prop_rip"/>
+                </Children>
+            </Node>
+            <Node label="BLM Metrics">
+                <Children>
+                    <Node label="Proportion of Channels on BLM" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="prop_chan_blm" id="prop_chan_blm"/>
+                    <Node label="Proportion Riverscape on BLM" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="prop_vb_blm" id="prop_vb_blm"/>
+                    <Node label="Proportion of Landscape in BLM Valley Bottom" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="proportion_vb_blm" id="proportion_vb_blm"/>
+                    <Node label="Proportion Riparian in BLM Valley Bottoms" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='blm_restoration_landscapes']" type="polygon" symbology="prop_rip_blm" id="prop_rip_blm"/>
+                </Children>
+            </Node>
+            <Node label="Metrics Table" xpath="Datasets/CSV[@id='METRIC_TABLE']" type="file"/>
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="Proportion of Riverscape that is BLM" id="DEFAULT">
+            <Layers>
+                <Layer id="prop_vb_blm" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
