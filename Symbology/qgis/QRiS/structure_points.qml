@@ -3,15 +3,15 @@
   <renderer-v2 forceraster="0" referencescale="-1" type="RuleRenderer" symbollevels="0" enableorderby="0">
     <rules key="{96719773-fe41-4558-9e9e-7ab5324a8915}">
       <rule filter="&quot;Structure Type&quot; = 'BDA' or &quot;Structure Type&quot; = 'Primary BDA' or &quot;Structure Type&quot; = 'Secondary BDA' or &quot;Structure Type&quot; = 'BDA Large' or &quot;Structure Type&quot; = 'BDA Small' or &quot;Structure Type&quot; = 'BDA Postless' or &quot;Structure Type&quot; = 'Tight PALS (BDA without sod)' or &quot;Structure Type&quot; = 'Bag Plugs' or &quot;Structure Type&quot; = 'Postline Wicker Weave'" key="{cca9b65a-15a2-42ac-8b4b-abc780450914}" label="Beaver Dam Activity" symbol="0">
-        <rule filter="&quot;Structure Type&quot; = 'BDA'" checkstate="0" key="{e5a76d39-b65a-4489-b1f7-a221bd95334a}" label="BDA" symbol="1"/>
-        <rule filter="&quot;Structure Type&quot; = 'Secondary BDA'" checkstate="0" key="{a2f3927c-c4c1-4158-b21b-668d6a75a812}" label="Secondary BDA" symbol="2"/>
-        <rule filter="&quot;Structure Type&quot; = 'Primary BDA'" checkstate="0" key="{6d326221-a6e6-43f9-ac63-d63efa55b1f0}" label="Primary BDA" symbol="3"/>
-        <rule filter="&quot;Structure Type&quot; = 'BDA Large'" checkstate="0" key="{3363df72-ed29-4a54-8b97-c40fa6afcf1d}" label="BDA Large" symbol="4"/>
-        <rule filter="&quot;Structure Type&quot; = 'BDA Small'" checkstate="0" key="{ac5cd2ba-b335-4188-b953-efc53e0c2174}" label="BDA Small" symbol="5"/>
-        <rule filter="&quot;Structure Type&quot; = 'BDA Postless'" checkstate="0" key="{fd1bff69-4970-4279-b416-4e8a8db4752f}" label="BDA Postless" symbol="6"/>
-        <rule filter="&quot;Structure Type&quot; = 'Tight PALS (BDA without sod)'" checkstate="0" key="{688fd4e8-1b15-4862-9cbc-1c1d1f32d134}" label="Tight PALS (BDA without sod)" symbol="7"/>
-        <rule filter="&quot;Structure Type&quot; = 'Bag Plugs'" checkstate="0" key="{4566ffe7-1e95-4c97-ba8d-c34c1e97aafd}" label="Bag Plugs" symbol="8"/>
-        <rule filter="&quot;Structure Type&quot; = 'Postline Wicker Weave'" checkstate="0" key="{b578a63f-1bac-4796-ae5e-de161eb90ad4}" label="Postline Wicker Weave" symbol="9"/>
+        <rule filter="&quot;Structure Type&quot; = 'BDA'" key="{e5a76d39-b65a-4489-b1f7-a221bd95334a}" label="BDA" symbol="1"/>
+        <rule filter="&quot;Structure Type&quot; = 'Secondary BDA'" key="{a2f3927c-c4c1-4158-b21b-668d6a75a812}" label="Secondary BDA" symbol="2"/>
+        <rule filter="&quot;Structure Type&quot; = 'Primary BDA'" key="{6d326221-a6e6-43f9-ac63-d63efa55b1f0}" label="Primary BDA" symbol="3"/>
+        <rule filter="&quot;Structure Type&quot; = 'BDA Large'" key="{3363df72-ed29-4a54-8b97-c40fa6afcf1d}" label="BDA Large" symbol="4"/>
+        <rule filter="&quot;Structure Type&quot; = 'BDA Small'" key="{ac5cd2ba-b335-4188-b953-efc53e0c2174}" label="BDA Small" symbol="5"/>
+        <rule filter="&quot;Structure Type&quot; = 'BDA Postless'" key="{fd1bff69-4970-4279-b416-4e8a8db4752f}" label="BDA Postless" symbol="6"/>
+        <rule filter="&quot;Structure Type&quot; = 'Tight PALS (BDA without sod)'" key="{688fd4e8-1b15-4862-9cbc-1c1d1f32d134}" label="Tight PALS (BDA without sod)" symbol="7"/>
+        <rule filter="&quot;Structure Type&quot; = 'Bag Plugs'" key="{4566ffe7-1e95-4c97-ba8d-c34c1e97aafd}" label="Bag Plugs" symbol="8"/>
+        <rule filter="&quot;Structure Type&quot; = 'Postline Wicker Weave'" key="{b578a63f-1bac-4796-ae5e-de161eb90ad4}" label="Postline Wicker Weave" symbol="9"/>
       </rule>
       <rule filter="&quot;Structure Type&quot; = 'One Rock Dam' or &quot;Structure Type&quot; = 'Zuni Bowl' or &quot;Structure Type&quot; = 'Spreaders' or &quot;Structure Type&quot; = 'Floodplain BDA' or &quot;Structure Type&quot; = 'Sedge Plugs' or &quot;Structure Type&quot; = 'Headcut Treatment'" key="{cde5c93f-90dc-4148-a0f4-86a891e4c991}" label="Root Mat Production" symbol="10">
         <rule filter="&quot;Structure Type&quot; = 'One Rock Dam'" key="{1f6ed511-1437-4ca7-93a7-9014ed8eb8ff}" label="One Rock Dam" symbol="11"/>
