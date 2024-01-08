@@ -71,9 +71,9 @@
         <Children collapsed="true">
           <Node label="Sample Frames">
             <Children collapsed="true">
-              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="igos" symbology="igo" />
+              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="igos" symbology="igo" />
               <Node label="Centerlines" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='valley_centerlines']" type="line" id="centerlines" symbology="CL_vb" />
-              <Node label="Discrete Geographic Objects (DGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dgos" symbology="DGO" />
+              <Node label="Discrete Geographic Objects (DGOs)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dgos" symbology="DGO" />
               <Node label="DEM" xpath="Inputs/Raster[@lyrName='DEM']" type="raster" symbology="dem" transparency="40" id="DEM" />
             </Children>
           </Node>
