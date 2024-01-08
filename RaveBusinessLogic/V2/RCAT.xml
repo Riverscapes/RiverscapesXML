@@ -8,7 +8,7 @@
                 <Children collapsed="false">
                     <Node label="IGOs">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_v2" id="rcat_condition_igo"/>
+                            <Node label="Riparian Condition (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_v2" id="rcat_condition_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
@@ -22,10 +22,10 @@
                 <Children collapsed="true">
                     <Node label="IGOs">
                         <Children collapsed="true">
-                            <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo" id="rvd_igo"/>
-                            <Node label="Land Use Intensity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo" id="LUI_igo" />
-                            <Node label="Floodplain Accessibility" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo" id="fpaccess_igo"/>
-                            <Node label="Riparian Vegetation Conversion Type" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="Veg_conversion_igo" id="Veg_conversion_igo"/>
+                            <Node label="Riparian Vegetation Departure (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rvd_igo" id="rvd_igo"/>
+                            <Node label="Land Use Intensity (IG0)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo" id="LUI_igo" />
+                            <Node label="Floodplain Accessibility (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo" id="fpaccess_igo"/>
+                            <Node label="Riparian Vegetation Conversion Type (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="Veg_conversion_igo" id="Veg_conversion_igo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">
