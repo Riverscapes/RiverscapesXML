@@ -45,24 +45,8 @@
             </Children>
           </Node>
           <Node label="Sinuosities">
-            <Children collapsed="true">
-              <Node label="Standard Sinuosities">
-                <Children collapsed="true">
-                  <Node label="DGO Standard Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dgo_sinuos" symbology="DGO_Stand_Sin" />
-                  <Node label="IGO Standard Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="igo_sinuos" symbology="IGO_Stand_Sin" />
-                </Children>
-              </Node>
-              <Node label="Standard Planform Sinuosities">
-                <Children collapsed="true">
-                  <Node label="IGO Standard Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_igo_planform_sinuos" symbology="IGO_Plan_Sin" />
-                </Children>
-              </Node>
-              <Node label="Standard Valley Bottom Sinuosities">
-                <Children collapsed="true">
-                  <Node label="DGO Standard Valley Bottom Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dgo_vb_sinuos" symbology="DGO_Val_Sin" />
-                  <Node label="IGO Standard Valley Bottom Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="igo_vb_sinuos" symbology="IGO_Val_Sin" />
-                </Children>
-              </Node>
+            <Children collapsed= "true">
+              <Node label="Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_igo_planform_sinuos" symbology="IGO_Plan_Sin" />
             </Children>
           </Node>
           <Node label="Confinements">
