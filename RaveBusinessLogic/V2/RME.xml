@@ -14,6 +14,7 @@
               <Node label="Confluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_dgo_confluences" symbology="Confluence_Count" />
               <Node label="Diffluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_dgo_diffluences" symbology="Diffluence_Count" />
               <Node label="Tributaries per KM" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_igo_trib_per_km" symbology="Trib_Km" />
+              <Node label="Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_igo_planform_sinuosity" symbology="Plnfrm_Sinuosity" />
             </Children>
           </Node>
           <Node label="Stream Info">
@@ -42,11 +43,6 @@
               <Node label="Integrated Width" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="vbet_igo_integrated_width" symbology="Integrated_Width" />
               <Node label="Active Channel Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="vbet_igo_active_channel_ratio" symbology="Act_Chan_Ratio" />
               <Node label="Relative Flow Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme__igo_rel_flow_length" symbology="Rel_Flow_Length" />
-            </Children>
-          </Node>
-          <Node label="Sinuosities">
-            <Children collapsed= "true">
-              <Node label="Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_igo_planform_sinuos" symbology="IGO_Plan_Sin" />
             </Children>
           </Node>
           <Node label="Confinements">
