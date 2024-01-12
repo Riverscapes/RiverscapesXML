@@ -1,0 +1,26 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+-80,242,209,228,255,From Conifer to Riparian
+-60,247,214,167,255,From Devegetated to Riparian
+-50,215,235,242,255,From Grass/Shrubland to Riparian
+-30,255,255,255,255,Non-Riparian Conversion
+-20,255,255,255,255,Non-Riparian Conversion
+0,109,190,69,255,Negligible to Minor Veg. Conversion
+10,255,255,255,255,Non-Riparian Conversion
+17,255,255,255,255,Non-Riparian Conversion
+18,255,255,255,255,Non-Riparian Conversion
+19,255,255,255,255,Non-Riparian Conversion
+20,255,255,255,255,Non-Riparian Conversion
+30,255,255,255,255,Non-Riparian Conversion
+38,255,255,255,255,Non-Riparian Conversion
+47,255,255,255,255,Non-Riparian Conversion
+48,255,255,255,255,Non-Riparian Conversion
+49,255,255,255,255,Non-Riparian Conversion
+50,54,195,242,255,Conv. To Grass/Shrubland
+60,166,116,42,255,Devegetation
+80,215,70,153,255,Conifer Encroachment
+97,137,76,158,255,Conv. To Invasive
+98,237,32,36,255,Development
+99,229,229,21,255,Conv. To Agriculture
+100,79,79,79,255,Multiple Conv. Types
+1000,249,114,11,255,Non-Riparian Conversions
