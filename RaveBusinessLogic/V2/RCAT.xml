@@ -42,7 +42,7 @@
                             <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40"/>
                             <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
-                            <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="Veg_Conversion_raster" transparency="40"/>
+                            <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="Veg_conversion_raster" transparency="40"/>
                             <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="FPAccess_Raster" transparency="40"/>
                         </Children>
                     </Node>
