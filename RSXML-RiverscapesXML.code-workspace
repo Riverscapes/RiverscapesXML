@@ -1,66 +1,62 @@
 {
-	"folders": [
-		{
+  "folders": [
+    {
       "name": "📦 rsxml",
-			"path": "python/packages/rsxml"
-		},
-		{
+      "path": "python/packages/rsxml"
+    },
+    {
       "name": "🏠 Home",
-			"path": "."
-		}    
-	],
-	"settings": {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "[python]": {
       "editor.tabSize": 4,
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "ms-python.autopep8",
+      "editor.formatOnSave": true
     },
-    // "python.analysis.typeCheckingMode": "basic",
-    "python.linting.ignorePatterns": [
-      "**/site-packages/**/*.py",
-      ".vscode/*.py"
-    ],
-    "python.linting.pylintArgs": [
-      "--extension-pkg-whitelist=sqlite3,math,lxml",
-      "--ignore=E501",
-      "--max-line-length=240"
-    ],  
-    "python.linting.enabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleArgs": [
+    "pylint.args": [
+      "--extension-pkg-whitelist=pygeoprocessing",
       "--ignore=E501",
       "--max-line-length=240"
     ],
-    "python.formatting.autopep8Args": [
-      "--ignore=E501",
-      "--max-line-length=240"
-    ],
-    "python.terminal.activateEnvInCurrentTerminal": true,
     "python.terminal.activateEnvironment": true,
-    "python.testing.pytestEnabled": false,
+    "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": true,
-    "python.testing.autoTestDiscoverOnSaveEnabled": true,
-    "files.exclude": {
-      "**/*.egg-info": true,
-      "**/.pytest_cache/**": true,
-      "**/python/**": true,
-      "**/.venv/**": true
-    },
     "files.watcherExclude": {
       "**/*.egg-info/**": true,
-      "**/.pytest_cache/**": true,
-      "**/dist/**": true,
-      "**/build/**": true,
-      "**/python/**": true,
-      "**/.venv/**": true
+      "**/docs/**": true,
+      "**/*.pytest_cache/**": true,
+      "**/.venv/**": true,
+      "**/__pycache__/**": true
     },
     "search.exclude": {
-      "**/*.egg-info": true,
-      "**/.pytest_cache/**": true,
-      "**/python/**": true,
-      "**/.venv/**": true
+      "**/*.egg-info/**": true,
+      "**/*.pytest_cache/**": true,
+      "**/.venv/**": true,
+      "**/__pycache__/**": true
     },
-	}
+    "files.exclude": {
+      "**/*.egg-info/**": true,
+      "**/*.pytest_cache/**": true,
+      "**/.venv/**": true,
+      "**/__pycache__/**": true
+    }
+  },
+  // Suggested extensions that will be installed for everyone
+  "extensions": {
+    "recommendations": [
+      "mhutchie.git-graph",
+      "ms-python.autopep8",
+      "ms-python.pylint",
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "njpwerner.autodocstring",
+      "redhat.vscode-xml",
+      "unifiedjs.vscode-mdx",
+      "yzhang.markdown-all-in-one",
+      "GitHub.copilot-chat",
+      "GitHub.copilot"
+    ]
+  }
 }

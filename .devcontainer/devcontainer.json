@@ -1,0 +1,61 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "Riverscapes XML",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "[python]": {
+          "editor.tabSize": 4,
+          "editor.formatOnSave": true
+        },
+        "python.analysis.extraPaths": ["../../lib/commons"],
+        "pylint.args": [
+          "--extension-pkg-whitelist=pygeoprocessing",
+          "--ignore=E501",
+          "--max-line-length=240"    
+        ],
+        "python.terminal.activateEnvironment": true,
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": true,
+        "files.watcherExclude": {
+          "**/*.egg-info/**": true,
+          "**/docs/**": true,
+          "**/*.pytest_cache/**": true,
+          "**/.venv/**": true,
+          "**/__pycache__/**": true
+        },
+        "search.exclude": {
+          "**/*.egg-info/**": true,
+          "**/*.pytest_cache/**": true,
+          "**/.venv/**": true,
+          "**/__pycache__/**": true
+        },
+        "files.exclude": {
+          "**/*.egg-info/**": true,
+          "**/*.pytest_cache/**": true,
+          "**/.venv/**": true,
+          "**/__pycache__/**": true
+        }
+      },
+      // Suggested extensions that will be installed for everyone
+      "extensions": [
+        "mhutchie.git-graph",
+        "ms-python.autopep8",
+        "ms-python.pylint",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "redhat.vscode-xml",
+        "unifiedjs.vscode-mdx",
+        "yzhang.markdown-all-in-one",
+        "GitHub.copilot-chat",
+        "GitHub.copilot"
+      ]
+    }
+  }
+}
