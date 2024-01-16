@@ -12,7 +12,17 @@
           "source-layer": "LevelPaths_net-afw9tr",
           "layout": {
               "text-field": ["to-string", ["get", "vbet_level_path"]],
-              "text-size": 12
+              "text-size": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                11.9,
+                0,
+                13,
+                16,
+                22,
+                16
+              ]
           },
           "paint": {
               "text-color": "hsl(0, 0%, 100%)",
