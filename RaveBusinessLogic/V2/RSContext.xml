@@ -136,6 +136,7 @@
         </Children>
       </Node>
       <Node label="Log File" xpath="Logs/LogFile" type="file" />
+      <Node label="Metrics" xpath="Datasets/File" type="file" />
     </Children>
   </Node>
   <Views default="Default">
