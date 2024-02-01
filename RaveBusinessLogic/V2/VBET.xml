@@ -11,15 +11,15 @@
           <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_filled" transparency="40" id="vbet_extent_filled" />   
           <Node label="Categorized VBET (2-class)">
             <Children collapsed="true">
-              <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_valley_bottom']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
-              <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_vb"/>      
+              <Node label="Estimated Low-Lying Valley Bottom (2-class)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='low_lying_valley_bottom']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
+              <Node label="Estimated Elevated Valley Bottom (2-class)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='elevated_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_vb"/>      
             </Children>
           </Node>
           <Node label="Categorized VBET (3-class)">
             <Children collapsed="true">
-              <Node label="Estimated Channel (Channel Area Input)" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
-              <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
-              <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='inactive_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>      
+              <Node label="Estimated Channel (3-class)" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Estimated Low-Lying Valley Bottom (3-class)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='low_lying_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
+              <Node label="Estimated Elevated Valley Bottom (3-class)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='elevated_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>      
             </Children>
           </Node>
           <Node label="Sample Frames">
@@ -80,20 +80,14 @@
               <Children collapsed="false">
                 <Node label="Valley Bottom Level Paths" xpath="Intermediates/Raster[@id='VBET_ZONES']" type="raster" symbology="levelpaths_unique" transparency="40" />
               </Children>
-            </Node>
-            <Node label="Transform Zones" >
-              <Children collapsed="true">
-                  <Node label="Catchment Wing Drainage Area" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='transform_zones']" type="polygon" symbology="catchment_wing_da" transparency="40" />
-                  <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" />
-                </Children>
-              </Node>             
+            </Node>            
             </Children>
           </Node>
         <Node label="Inputs" xpath="Inputs">
           <Children collapsed="true">
             <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" id="channel_area_polygons" symbology="vbet_channel_area" transparency="40" />
-            <Node label="Stream Names" xpath="Geopackage/Layers/Vector[@lyrName='Flowlines_VAA']" type="line" symbology="streamnames" id="streamnames"  />
-            <Node label="Channel Network Level Paths" xpath="Geopackage/Layers/Vector[@lyrName='Flowlines_VAA']" type="line" id="channel_levelpath" symbology="levelpath" />
+            <Node label="Stream Names" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="streamnames" id="streamnames"  />
+            <Node label="Channel Network Level Paths" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" id="channel_levelpath" symbology="levelpath" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
             <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" />
           </Children>     
@@ -104,6 +98,7 @@
           </Children>
         </Node>
         <Node label="Log File" xpath="Logs/LogFile" type="file" />
+        <Node label="Metrics" xpath="Datasets/File" type="file" />
       </Children>
     </Node>
     <Views default="DEFAULT">
@@ -111,7 +106,7 @@
         <Layers>
           <Layer id="streamnames" />
           <Layer id="vbet_extent_hollow" />
-          <Layer id="likevbet" />
+          <Layer id="vbet_extent_filled" />
           <Layer id="hillshade" />
         </Layers>
       </View>
@@ -119,13 +114,6 @@
         <Layers>
           <Layer id="vbet_active_vb" />
           <Layer id="vbet_inactive_vb" />
-          <Layer id="hillshade" />
-        </Layers>
-      </View>
-      <View name="Transformed Evidence Rasters" id="Norm">
-        <Layers>
-          <Layer id="transformed_slope" />
-          <Layer id="transformed_hand" />
           <Layer id="hillshade" />
         </Layers>
       </View>
