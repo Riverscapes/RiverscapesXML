@@ -43,7 +43,7 @@
                             <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="Veg_conversion_raster" transparency="40"/>
-                            <Node label="Floodplain Accessibility" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="FPAccess_Raster" transparency="40"/>
+                            <Node label="Floodplain Accessibility Raster" xpath="Intermediates/Raster[@id='FPACCESS']" type="raster" symbology="FPAccess_Raster" transparency="40"/>
                         </Children>
                     </Node>
                 </Children>
@@ -78,7 +78,7 @@
                     <Node label="Digital Elevation Model">
                         <Children collapsed="true">
                             <Node label="Pit-filled DEM" xpath="Raster[@id='PITFILL']" type="raster" symbology="dem" transparency="40" id="dem" />
-                            <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" transparency="40" id="hillshade" />
+                            <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hillshade" />
                         </Children>
                     </Node>
                 </Children>
@@ -90,8 +90,7 @@
       <Description>This view is the riparian condition ouptut from RCAT</Description>
       <Layers>
         <Layer id="hillshade"/>
-        <Layer id="vb"/>
-        <Layer id="rcat_condition"/>
+        <Layer id="rcat_condition_igo"/>
       </Layers>
      </View>
      <View name="DGOs and IGOs" id="DGO_IGO">
