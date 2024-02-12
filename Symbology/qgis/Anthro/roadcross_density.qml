@@ -12,7 +12,6 @@
       <end></end>
     </fixedRange>
   </temporal>
-<<<<<<< HEAD
   <elevation zscale="1" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" extrusion="0" symbology="Line" clamping="Terrain" type="IndividualFeatures" respectLayerSymbol="1" zoffset="0" binding="Centroid">
     <data-defined-properties>
       <Option type="Map">
@@ -64,7 +63,6 @@
               <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
               <Option value="collection" name="type" type="QString"/>
->>>>>>> anthro and rcat updates for workshop
             </Option>
           </data_defined_properties>
         </layer>
