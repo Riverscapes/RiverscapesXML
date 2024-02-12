@@ -92,7 +92,7 @@
                 <Layer id="lui_igo"/>
             </Layers>
         </View>
-        <View name="Sampling Units:IGOs and DGOs" id="igo_dgo">
+        <View name="Sampling Frames" id="igo_dgo">
             <Description>This view displayis the sampling units (IGOs and DGOs)</Description>
             <Layers>
                 <Layer id="hs"/>

@@ -1,0 +1,16 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+    "legend": [
+      ["hsl(0, 0%, 0%)", "Roads in the Valley Bottom"]
+    ],
+    "layerStyles": [
+      {
+        "id": "road-vb",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "road_valleybottom",
+        "layout": {},
+        "paint": {"line-color": "hsl(0, 0%, 0%)"}
+    }
+    ]
+  }
