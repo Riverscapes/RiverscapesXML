@@ -14,14 +14,14 @@
   </temporal>
   <renderer-v2 enableorderby="0" symbollevels="0" referencescale="-1" type="RuleRenderer" forceraster="0">
     <rules key="{74b18146-02e2-4bd4-ad4c-996748046586}">
-      <rule symbol="0" label="&lt; 2%" filter="&quot;vbet_igo_active_channel_ratio&quot; &lt; 0.02" key="{4e2991cc-a65b-4213-9cbe-900c7018ca7a}"/>
-      <rule symbol="1" label="2% to 5%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.02 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.05" key="{b25eaed3-e38a-49d6-b8b5-c151647e9852}"/>
-      <rule symbol="2" label="5% - 10%" filter="&quot;vbet_igo_active_channel_ratio&quot;>= 0.05 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.1" key="{d1d038ba-632f-42de-b195-7d14d7db2b75}"/>
-      <rule symbol="3" label="10% to 15%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.1 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.15" key="{d7d5b108-b27e-43ea-8b09-70ac500cf74f}"/>
-      <rule symbol="4" label="15% to 25%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.15 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.25" key="{5dcf0a4e-c077-4839-b96f-8f5a04376f10}"/>
-      <rule symbol="5" label="25% to 50% " filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.25 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.5" key="{87131111-33cf-4724-b94c-a6e70b5d456a}"/>
-      <rule symbol="6" label="50% to 75% " filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.5 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.75" key="{c6db9e10-6619-439e-bf60-bb1e885b2b4c}"/>
-      <rule symbol="7" label="> 75%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.75" key="{3c29e498-5ded-4e5b-a89d-0ae78e081e85}"/>
+      <rule symbol="0" label="&lt; 2%" filter="&quot;vbet_igo_elevated_ratio&quot; &lt; 0.02" key="{4e2991cc-a65b-4213-9cbe-900c7018ca7a}"/>
+      <rule symbol="1" label="2% to 5%" filter="&quot;vbet_igo_elevated_ratio&quot; >= 0.02 and &quot;vbet_igo_elevated_ratio&quot; &lt; 0.05" key="{b25eaed3-e38a-49d6-b8b5-c151647e9852}"/>
+      <rule symbol="2" label="5% - 10%" filter="&quot;vbet_igo_elevated_ratio&quot;>= 0.05 and &quot;vbet_igo_elevated_ratio&quot; &lt; 0.1" key="{d1d038ba-632f-42de-b195-7d14d7db2b75}"/>
+      <rule symbol="3" label="10% to 15%" filter="&quot;vbet_igo_elevated_ratio&quot; >= 0.1 and &quot;vbet_igo_elevated_ratio&quot; &lt; 0.15" key="{d7d5b108-b27e-43ea-8b09-70ac500cf74f}"/>
+      <rule symbol="4" label="15% to 25%" filter="&quot;vbet_igo_elevated_ratio&quot; >= 0.15 and &quot;vbet_igo_elevated_ratio&quot; &lt; 0.25" key="{5dcf0a4e-c077-4839-b96f-8f5a04376f10}"/>
+      <rule symbol="5" label="25% to 50% " filter="&quot;vbet_igo_elevated_ratio&quot; >= 0.25 and &quot;vbet_igo_elevated_ratio&quot; &lt; 0.5" key="{87131111-33cf-4724-b94c-a6e70b5d456a}"/>
+      <rule symbol="6" label="50% to 75% " filter="&quot;vbet_igo_elevated_ratio&quot; >= 0.5 and &quot;vbet_igo_elevated_ratio&quot; &lt; 0.75" key="{c6db9e10-6619-439e-bf60-bb1e885b2b4c}"/>
+      <rule symbol="7" label="> 75%" filter="&quot;vbet_igo_elevated_ratio&quot; >= 0.75" key="{3c29e498-5ded-4e5b-a89d-0ae78e081e85}"/>
     </rules>
     <symbols>
       <symbol clip_to_extent="1" alpha="1" force_rhr="0" name="0" type="marker">
@@ -36,7 +36,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="247,251,255,255" name="color" type="QString"/>
+            <Option value="247,252,245,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -56,7 +56,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="247,251,255,255"/>
+          <prop k="color" v="247,252,245,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -94,7 +94,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="220,233,246,255" name="color" type="QString"/>
+            <Option value="242,244,183,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -114,7 +114,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="220,233,246,255"/>
+          <prop k="color" v="242,244,183,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -152,7 +152,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="190,216,236,255" name="color" type="QString"/>
+            <Option value="237,236,121,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -172,7 +172,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="190,216,236,255"/>
+          <prop k="color" v="237,236,121,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -210,7 +210,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="143,194,222,255" name="color" type="QString"/>
+            <Option value="231,228,59,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -230,7 +230,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="143,194,222,255"/>
+          <prop k="color" v="231,228,59,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -268,7 +268,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="91,163,208,255" name="color" type="QString"/>
+            <Option value="212,208,31,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -288,7 +288,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="91,163,208,255"/>
+          <prop k="color" v="212,208,31,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -326,7 +326,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="50,130,190,255" name="color" type="QString"/>
+            <Option value="179,176,39,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -346,7 +346,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="50,130,190,255"/>
+          <prop k="color" v="179,176,39,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -384,7 +384,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="17,92,165,255" name="color" type="QString"/>
+            <Option value="146,143,46,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -404,7 +404,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="17,92,165,255"/>
+          <prop k="color" v="146,143,46,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -442,7 +442,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="8,48,107,255" name="color" type="QString"/>
+            <Option value="113,111,53,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -462,7 +462,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="8,48,107,255"/>
+          <prop k="color" v="113,111,53,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>

@@ -13,15 +13,14 @@
     </fixedRange>
   </temporal>
   <renderer-v2 enableorderby="0" symbollevels="0" referencescale="-1" type="RuleRenderer" forceraster="0">
-    <rules key="{74b18146-02e2-4bd4-ad4c-996748046586}">
-      <rule symbol="0" label="&lt; 2%" filter="&quot;vbet_igo_active_channel_ratio&quot; &lt; 0.02" key="{4e2991cc-a65b-4213-9cbe-900c7018ca7a}"/>
-      <rule symbol="1" label="2% to 5%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.02 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.05" key="{b25eaed3-e38a-49d6-b8b5-c151647e9852}"/>
-      <rule symbol="2" label="5% - 10%" filter="&quot;vbet_igo_active_channel_ratio&quot;>= 0.05 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.1" key="{d1d038ba-632f-42de-b195-7d14d7db2b75}"/>
-      <rule symbol="3" label="10% to 15%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.1 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.15" key="{d7d5b108-b27e-43ea-8b09-70ac500cf74f}"/>
-      <rule symbol="4" label="15% to 25%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.15 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.25" key="{5dcf0a4e-c077-4839-b96f-8f5a04376f10}"/>
-      <rule symbol="5" label="25% to 50% " filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.25 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.5" key="{87131111-33cf-4724-b94c-a6e70b5d456a}"/>
-      <rule symbol="6" label="50% to 75% " filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.5 and &quot;vbet_igo_active_channel_ratio&quot; &lt; 0.75" key="{c6db9e10-6619-439e-bf60-bb1e885b2b4c}"/>
-      <rule symbol="7" label="> 75%" filter="&quot;vbet_igo_active_channel_ratio&quot; >= 0.75" key="{3c29e498-5ded-4e5b-a89d-0ae78e081e85}"/>
+    <rules key="{dd4c7900-8889-40e7-9b5f-5b2948e829f8}">
+      <rule symbol="0" label="&lt; 10" filter="&quot;rme_dgo_drainage_area&quot; &lt; 10" key="{25b03fb4-9714-4990-af7f-cdca5bc8e68c}"/>
+      <rule symbol="1" label="10 - 25" filter="&quot;rme_dgo_drainage_area&quot; >= 10 and &quot;rme_dgo_drainage_area&quot; &lt; 25" key="{bd9579b6-51e8-42e7-a756-b9f5bb32115f}"/>
+      <rule symbol="2" label="25 - 100" filter="&quot;rme_dgo_drainage_area&quot; >= 25 and &quot;rme_dgo_drainage_area&quot; &lt; 100" key="{742abe3b-59a8-4570-9b71-1354a80008cc}"/>
+      <rule symbol="3" label="100 - 250" filter="&quot;rme_dgo_drainage_area&quot; >= 100 and &quot;rme_dgo_drainage_area&quot; &lt; 250" key="{ac175dcf-f2f6-46c4-877b-827359045c65}"/>
+      <rule symbol="4" label="250 - 50000" filter="&quot;rme_dgo_drainage_area&quot; >= 250 and &quot;rme_dgo_drainage_area&quot; &lt; 50000" key="{0ddf600e-106a-4311-af78-a11dff9da1f0}"/>
+      <rule symbol="5" label="50000 - 250000" filter="&quot;rme_dgo_drainage_area&quot; >= 50000 and &quot;rme_dgo_drainage_area&quot; &lt; 250000" key="{b07199b3-6c76-4147-a021-722f42a32ee9}"/>
+      <rule symbol="6" label="> 250000" filter="&quot;rme_dgo_drainage_area&quot; >= 250000" key="{bbf83a5d-8619-4656-b91a-152714b89170}"/>
     </rules>
     <symbols>
       <symbol clip_to_extent="1" alpha="1" force_rhr="0" name="0" type="marker">
@@ -36,7 +35,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="247,251,255,255" name="color" type="QString"/>
+            <Option value="250,250,110,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -56,7 +55,7 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="247,251,255,255"/>
+          <prop k="color" v="250,250,110,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -94,7 +93,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="220,233,246,255" name="color" type="QString"/>
+            <Option value="150,219,117,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -107,14 +106,14 @@
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
+            <Option value="1.4" name="size" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
             <Option value="MM" name="size_unit" type="QString"/>
             <Option value="1" name="vertical_anchor_point" type="QString"/>
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="220,233,246,255"/>
+          <prop k="color" v="150,219,117,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -127,7 +126,7 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
+          <prop k="size" v="1.4"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
@@ -152,7 +151,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="190,216,236,255" name="color" type="QString"/>
+            <Option value="54,182,130,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -165,14 +164,14 @@
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
+            <Option value="1.6" name="size" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
             <Option value="MM" name="size_unit" type="QString"/>
             <Option value="1" name="vertical_anchor_point" type="QString"/>
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="190,216,236,255"/>
+          <prop k="color" v="54,182,130,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -185,7 +184,7 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
+          <prop k="size" v="1.6"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
@@ -210,7 +209,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="143,194,222,255" name="color" type="QString"/>
+            <Option value="0,140,131,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -223,14 +222,14 @@
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
+            <Option value="1.8" name="size" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
             <Option value="MM" name="size_unit" type="QString"/>
             <Option value="1" name="vertical_anchor_point" type="QString"/>
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="143,194,222,255"/>
+          <prop k="color" v="0,140,131,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -243,7 +242,7 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
+          <prop k="size" v="1.8"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
@@ -268,7 +267,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="91,163,208,255" name="color" type="QString"/>
+            <Option value="0,98,115,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -281,14 +280,14 @@
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
+            <Option value="2" name="size" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
             <Option value="MM" name="size_unit" type="QString"/>
             <Option value="1" name="vertical_anchor_point" type="QString"/>
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="91,163,208,255"/>
+          <prop k="color" v="0,98,115,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -301,7 +300,7 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
+          <prop k="size" v="2"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
@@ -326,7 +325,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="50,130,190,255" name="color" type="QString"/>
+            <Option value="0,58,81,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -339,14 +338,14 @@
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
+            <Option value="2.2" name="size" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
             <Option value="MM" name="size_unit" type="QString"/>
             <Option value="1" name="vertical_anchor_point" type="QString"/>
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="50,130,190,255"/>
+          <prop k="color" v="0,58,81,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -359,7 +358,7 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
+          <prop k="size" v="2.2"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
@@ -384,7 +383,7 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="17,92,165,255" name="color" type="QString"/>
+            <Option value="8,22,38,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="circle" name="name" type="QString"/>
@@ -397,14 +396,14 @@
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
+            <Option value="2.4" name="size" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
             <Option value="MM" name="size_unit" type="QString"/>
             <Option value="1" name="vertical_anchor_point" type="QString"/>
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="17,92,165,255"/>
+          <prop k="color" v="8,22,38,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
@@ -417,65 +416,7 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
-          <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" name="7" type="marker">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option value="" name="name" type="QString"/>
-            <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
-          <Option type="Map">
-            <Option value="0" name="angle" type="QString"/>
-            <Option value="square" name="cap_style" type="QString"/>
-            <Option value="8,48,107,255" name="color" type="QString"/>
-            <Option value="1" name="horizontal_anchor_point" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="circle" name="name" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="35,35,35,0" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0" name="outline_width" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="1.2" name="size" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-            <Option value="MM" name="size_unit" type="QString"/>
-            <Option value="1" name="vertical_anchor_point" type="QString"/>
-          </Option>
-          <prop k="angle" v="0"/>
-          <prop k="cap_style" v="square"/>
-          <prop k="color" v="8,48,107,255"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="name" v="circle"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="35,35,35,0"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0"/>
-          <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="1.2"/>
+          <prop k="size" v="2.4"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
@@ -492,10 +433,10 @@
   </renderer-v2>
   <customproperties>
     <Option type="Map">
-      <Option name="dualview/previewExpressions" type="List">
-        <Option value="&quot;anthro_igo_road_dens&quot;" type="QString"/>
-      </Option>
-      <Option value="0" name="embeddedWidgets/count" type="int"/>
+      <Option value="false" name="WMSBackgroundLayer" type="QString"/>
+      <Option value="false" name="WMSPublishDataSourceUrl" type="QString"/>
+      <Option value="0" name="embeddedWidgets/count" type="QString"/>
+      <Option value="Value" name="identify/format" type="QString"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
     </Option>
@@ -506,7 +447,6 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory penAlpha="255" backgroundAlpha="255" direction="0" lineSizeType="MM" minimumSize="0" penColor="#000000" labelPlacementMethod="XHeight" width="15" backgroundColor="#ffffff" maxScaleDenominator="1e+08" scaleDependency="Area" rotationOffset="270" opacity="1" scaleBasedVisibility="0" spacing="5" sizeScale="3x:0,0,0,0,0,0" enabled="0" height="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" showAxis="1" spacingUnitScale="3x:0,0,0,0,0,0" sizeType="MM" penWidth="0" diagramOrientation="Up" spacingUnit="MM" minScaleDenominator="0">
       <fontProperties style="" description="MS Shell Dlg 2,8.1,-1,5,50,0,0,0,0,0"/>
-      <attribute color="#000000" field="" colorOpacity="1" label=""/>
       <axisSymbol>
         <symbol clip_to_extent="1" alpha="1" force_rhr="0" name="" type="line">
           <data_defined_properties>
@@ -1127,7 +1067,7 @@
       <column hidden="0" width="-1" name="vbet_dgo_floodplain_area" type="field"/>
       <column hidden="0" width="-1" name="vbet_igo_integrated_width" type="field"/>
       <column hidden="0" width="-1" name="vbet_igo_active_channel_ratio" type="field"/>
-      <column hidden="0" width="407" name="vbet_igo_low_lying_ratio" type="field"/>
+      <column hidden="0" width="-1" name="vbet_igo_low_lying_ratio" type="field"/>
       <column hidden="0" width="-1" name="vbet_igo_elevated_ratio" type="field"/>
       <column hidden="0" width="-1" name="vbet_igo_floodplain_ratio" type="field"/>
       <column hidden="0" width="-1" name="vbet_igo_acres_vb_per_mile" type="field"/>
