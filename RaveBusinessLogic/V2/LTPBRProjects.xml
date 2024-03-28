@@ -4,7 +4,7 @@
   <ProjectType>ltpbrprojects</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
-      <Node label="Outputs" xpath="Outputs">
+      <Node label="Outputs" xpath="Datasets">
         <Children collapsed="false">
           <Node label="LTPBR Projects" xpath="Geopackage/Layers/Vector[@lyrName='projects']" type="point" id="projects" symbology="ltpbr_projects" />
           <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
