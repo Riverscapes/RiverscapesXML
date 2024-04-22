@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>PIBO and Riverscapes data for Clearwater</Name>
+    <ProjectType>pibo_riverscapes</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="PIBO points">
+                <Children collapsed="true">
+                    <Node label="Active Status" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="pibo_active_sym" id="pibo_active"/>
+                    <Node label="Site Designation" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="sitedes_sym" id="pibo_sitedes"/>
+                    <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="iPC_LU_igo" id="lui"/>
+                    <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="condition_igo_v2" id="rcat_condition"/>
+                    <Node label="Riparian Conversion" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="Veg_conversion_igo" id="rcat_conversion"/>
+                    <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="capacity_sym" id="brat_capacity"/>
+                    <Node label="Risk" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="risk_sym" id="brat_risk"/>
+                    <Node label="Restoration and Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="opportunity_sym" id="brat_opportunity"/>
+                    <Node label="Confinement Ratio" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="conratio_sym" id="con_ratio"/>
+                </Children>
+            </Node>
+            <Node label="vbet dgos">
+                <Children collapsed="true">
+                    <Node label="VBET DGOs" xpath="Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_sym" id="dgos"/>
+                </Children>
+            </Node>
+            <Node label="huc10">
+                <Children collapsed="true">
+                    <Node label="HUC10 for Clearwater" xpath="Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon" symbology="huc10_sym" id="huc10"/>
+                </Children>
+            </Node>
+            <Node label="Hillshade">
+                <Children>
+                    <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hs" />
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="PIBO_active">
+        <View name="PIBO Active Status" id="PIBO_active">
+            <Description>This view displays the monitoring activity status for each PIBO site</Description>
+            <Layers>
+                <Layer id="pibo_active"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>
+            </Layers>
+        </View>
+        <View name="PIBO Site Designation" id="PIBO_sitedes">
+            <Description>This view displays the site designation for each PIBO site</Description>
+            <Layers>
+                <Layer id="pibo_sitedes"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>
+            </Layers>
+        </View>
+        <View name="Land Use Intensity" id="LUI">
+            <Description>This view displays the land use intensity output of the Anthropogenic Context Model</Description>
+            <Layers>
+                <Layer id="lui"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>
+            </Layers>
+        </View>
+        <View name="Riparian Condition" id="RCAT_condition">
+            <Description>This view displays the riparian condition output of the RCAT model</Description>
+            <Layers>
+                <Layer id="rcat_condition"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>  
+            </Layers>
+        </View>
+        <View name="Riparian Conversion" id="RCAT_conversion">
+            <Description>This view displays the riparian conversion output of the RCAT model</Description>
+            <Layers>
+                <Layer id="rcat_conversion"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>  
+            </Layers>
+        </View>
+        <View name="Existing Dam Capacity" id="BRAT_capacity">
+            <Description>This view displays the existing dam capacity output of the BRAT model</Description>
+            <Layers>
+                <Layer id="brat_capacity"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>  
+            </Layers>
+        </View>
+        <View name="Risk" id="BRAT_risk">
+            <Description>This view displays the risk for undesirable dams output of the BRAT model</Description>
+            <Layers>
+                <Layer id="brat_risk"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>  
+            </Layers>
+        </View>
+        <View name="Restoration and Conservation Opportunities" id="BRAT_opportunity">
+            <Description>This view displays the restoration and conservation opportunities output of the BRAT model</Description>
+            <Layers>
+                <Layer id="brat_opportunity"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>  
+            </Layers>
+        </View>
+        <View name="Confinement Ratio" id="CON_ratio">
+            <Description>This view displays the confinement ratio output of the confinement model</Description>
+            <Layers>
+                <Layer id="con_ratio"/>
+                <Layer id="dgos"/>
+                <Layer id="huc10"/>
+                <Layer id="hs"/>  
+            </Layers>
+        </View>
+    </Views>
+</Project>
