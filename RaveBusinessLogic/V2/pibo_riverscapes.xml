@@ -4,7 +4,7 @@
     <ProjectType>pibo_riverscapes</ProjectType>
     <Node xpathlabel="Name" xpath="Realizations/Realization">
         <Children collapsed="false">
-            <Node label="PIBO points">
+            <Node label="PIBO Points">
                 <Children collapsed="true">
                     <Node label="Active Status" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="pibo_active_sym" id="pibo_active"/>
                     <Node label="Site Designation" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="sitedes_sym" id="pibo_sitedes"/>
