@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
-    <Name>PIBO and Riverscapes data for Clearwater</Name>
+    <Name>PIBO and Riverscapes Data</Name>
     <ProjectType>pibo_riverscapes</ProjectType>
-    <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Node xpathlabel="Name">
         <Children collapsed="false">
-            <Node label="PIBO Points">
+            <Node label="PIBO Points" xpath="Realizations/Realization/Datasets">
                 <Children collapsed="true">
                     <Node label="Active Status" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="pibo_active_sym" id="pibo_active"/>
                     <Node label="Site Designation" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="sitedes_sym" id="pibo_sitedes"/>
@@ -17,17 +17,17 @@
                     <Node label="Confinement Ratio" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="conratio_sym" id="con_ratio"/>
                 </Children>
             </Node>
-            <Node label="VBET DGOs">
+            <Node label="VBET DGOs" xpath="Realizations/Realization/Datasets">
                 <Children collapsed="true">
                     <Node label="VBET DGOs" xpath="Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_sym" id="dgos"/>
                 </Children>
             </Node>
-            <Node label="Watershed Boundary">
+            <Node label="Watershed Boundary" xpath="Realizations/Realization/Datasets">
                 <Children collapsed="true">
-                    <Node label="HUC10 for Clearwater" xpath="Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon" symbology="huc10_sym" id="huc10"/>
+                    <Node label="HUC10" xpath="Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon" symbology="huc10_sym" id="huc10"/>
                 </Children>
             </Node>
-            <Node label="Hillshade">
+            <Node label="Hillshade" xpath="Realizations/Realization/Datasets">
                 <Children>
                     <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hs" />
                 </Children>
