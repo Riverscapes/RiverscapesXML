@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
-    <Name>PIBO and Riverscapes Data</Name>
+    <Name>PIBO and Riverscapes data for Clearwater</Name>
     <ProjectType>pibo_riverscapes</ProjectType>
     <Node xpathlabel="Name">
         <Children collapsed="false">
@@ -8,9 +8,9 @@
                 <Children collapsed="true">
                     <Node label="Active Status" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="pibo_active_sym" id="pibo_active"/>
                     <Node label="Site Designation" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="sitedes_sym" id="pibo_sitedes"/>
-                    <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="iPC_LU_igo" id="lui"/>
-                    <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="condition_igo_v2" id="rcat_condition"/>
-                    <Node label="Riparian Conversion" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="Veg_conversion_igo" id="rcat_conversion"/>
+                    <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="lui_sym" id="lui"/>
+                    <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="cond_sym" id="rcat_condition"/>
+                    <Node label="Riparian Conversion" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="conv_sym" id="rcat_conversion"/>
                     <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="capacity_sym" id="brat_capacity"/>
                     <Node label="Risk" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="risk_sym" id="brat_risk"/>
                     <Node label="Restoration and Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='PIBO_points']" type="point" symbology="opportunity_sym" id="brat_opportunity"/>
