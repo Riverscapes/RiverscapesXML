@@ -1,0 +1,43 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+    "legend": [
+      ["#26760b", "Very Low"],
+      ["#a1c21a", "Low"],
+      ["#ffbb17", "Moderate"],
+      ["#ff0000", "High"]
+    ],
+    "layerStyles": [
+        {
+            "id": "pibo-edited2-4dwu64",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "pibo_edited2-4dwu64",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "LUI"],
+                    0,
+                    "#26760b",
+                    0.00001,
+                    "#26760b",
+                    0.01,
+                    "#a1c21a",
+                    33,
+                    "#a1c21a",
+                    33.00001,
+                    "#ffbb17",
+                    66,
+                    "#ffbb17",
+                    66.00001,
+                    "#ff0000",
+                    100,
+                    "#ff0000"
+                ],
+                "circle-radius": 6,
+                "circle-stroke-width": 1
+            }
+        }
+    ]
+  }

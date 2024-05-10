@@ -1,0 +1,16 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+    "legend": [
+      ["#000000", "HUC10 Outline"]
+    ],
+    "layerStyles": [
+        {
+            "id": "huc10-cle5s0",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "huc10-cle5s0",
+            "layout": {},
+            "paint": {"line-color": "#000000", "line-width": 2}
+        }
+    ]
+  }

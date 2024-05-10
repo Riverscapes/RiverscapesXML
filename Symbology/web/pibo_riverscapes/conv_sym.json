@@ -1,0 +1,59 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+    "legend": [
+        ["#6dbe45", "Negligible to Minor veg. Conversion"],
+        ["#d74699", "Conifer Encroachment"],
+        ["#e5e515", "Conv. to Agriculture"],
+        ["#36c3f2", "Conv. to Grass/Shrubland"],
+        ["#894c9e", "Conv. to Invasive"],
+        ["#f9720b", "Non-Riparian Conversions"],
+        ["#a6742a", "Devegetation"],
+        ["#ed2024", "Development"],
+        ["#4f4f4f", "Multiple Conv. Types"],
+        ["#d7ebf2", "From Grass/Shrubland to Riparian"],
+        ["#f7d6a7", "From Devegetated to Riparian"],
+        ["#f2d1e4", "From Conifer to Riparian"]
+    ],
+    "layerStyles": [
+        {
+            "id": "pibo-points-b11n96",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "pibo_points-b11n96",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "ConversionCode"],
+                    0,
+                    "#6dbe45",
+                    [43, 44, 41, 42],
+                    "#e5e515",
+                    [29, 30, 31, 32],
+                    "#d74699",
+                    [21, 22, 23, 24],
+                    "#36c3f2",
+                    [33, 34, 35, 36],
+                    "#894c9e",
+                    [45, 46, 47, 48],
+                    "#f9720b",
+                    [25, 26, 27, 28],
+                    "#a6742a",
+                    [37, 38, 39, 40],
+                    "#ed2024",
+                    [49, 50, 51, 52],
+                    "#4f4f4f",
+                    [9, 10, 11, 12],
+                    "#d7ebf2",
+                    [5, 6, 7, 8],
+                    "#f7d6a7",
+                    [1, 2, 3, 4],
+                    "#f2d1e4",
+                    "#000000"
+                ],
+                "circle-stroke-width": 1, 
+                "circle-radius": 6
+            }
+        }
+    ]
+  }
