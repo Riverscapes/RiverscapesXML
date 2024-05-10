@@ -1,0 +1,38 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+    "legend": [
+      ["#00a815", "Easiest - Low-Hanging Fruit"],
+      ["#05c3fe", "Straight Forward - Quick Return"],
+      ["#e5cb1b", "Strategic - Long-Term Investment"],
+      ["#bababa", "Other"],
+      ["#bababa", "NA"]
+    ],
+    "layerStyles": [
+        {
+            "id": "pibo-points-b11n96",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "pibo_points-b11n96",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "Opportunity"],
+                    ["Easiest - Low-Hanging Fruit"],
+                    "#00a815",
+                    ["Straight Forward - Quick Return"],
+                    "#05c3fe",
+                    ["Strategic - Long-Term Investment"],
+                    "#e5cb1b",
+                    ["NA"],
+                    "#bababa",
+                    ["Other"],
+                    "#bababa",
+                    "#000000"
+                ],
+                "circle-stroke-width": 1,
+                "circle-radius": 6
+            }
+        }
+    ]
+  }

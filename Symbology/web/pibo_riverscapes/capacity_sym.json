@@ -1,0 +1,48 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+    "legend": [
+      ["#f40000", "None"],
+      ["#ffaa14", "Rare, 0-1 dams/km"],
+      ["#f5f523", "Occasional, 1-5 dams/km"],
+      ["#4de521", "Frequent, 5-15 dams/km"],
+      ["#015ce5", "Pervasive, 15-40 dams/km"]
+    ],
+    "layerStyles": [
+        {
+            "id": "pibo-edited2-4dwu64",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "pibo_edited2-4dwu64",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "oCC_EX"],
+                    0.00,
+                    "#f40000",
+                    0.00001,
+                    "#f40000",
+                    0.01,
+                    "#ffaa14",
+                    1.00,
+                    "#ffaa14",
+                    1.00001,
+                    "#f5f523",
+                    5,
+                    "#f5f523",
+                    5.0001,
+                    "#4de521",
+                    15,
+                    "#4de521",
+                    15.0001,
+                    "#015ce5",
+                    40,
+                    "#015ce5"
+                ],
+                "circle-radius": 6,
+                "circle-stroke-width": 1
+            }
+        }
+    ]
+  }

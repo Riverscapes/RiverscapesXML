@@ -1,0 +1,35 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+    "legend": [
+      ["#e0e0e0", "Negligible Risk"],
+      ["#05c3fe", "Minor Risk"],
+      ["#ffaa14", "Some Risk"],
+      ["#e60000", "Considerable Risk"]
+    ],
+    "layerStyles": [
+        {
+            "id": "pibo-points-b11n96",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "pibo_points-b11n96",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "RiskID"],
+                    [1],
+                    "#e0e0e0",
+                    [2],
+                    "#05c3fe",
+                    [3],
+                    "#ffaa14",
+                    [4],
+                    "#e60000",
+                    "#000000"
+                ],
+                "circle-stroke-width": 1,
+                "circle-radius": 6
+            }
+        }
+    ]
+  }
