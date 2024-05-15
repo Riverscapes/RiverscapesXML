@@ -7,27 +7,53 @@
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs">
         <Children collapsed="true">
-          <Node label="Confinement Type" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Raw']" type="line" id="confinement_raw" symbology="confinement_raw" />
-          <Node label="Confining Margins" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confining_Margins']" type="line" id="confinement_margins" symbology="confinement_margins" />
-          <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Ratio']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
-          <Node label="Constriction Proportion" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Ratio']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
-          <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Buffers']" type="line" id="confinement_buffer" symbology="confinement_buffer" />
-          <Node label="Outputs Geopackage (SQLite Database)" xpath="Outputs/Geopackage" type="file" /> 
+          <Node label="Stream Network">
+            <Children collapsed="true">
+              <Node label="Confinement Type" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Raw']" type="line" id="confinement_raw" symbology="confinement_raw" />
+              <Node label="Confinement Type" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confinement_raw']" type="line" id="confinement_raw" symbology="confinement_raw" />
+              <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Ratio']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
+              <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confinement_ratio']" type="line" id="confinement_ratio" symbology="confinement_ratio" />
+              <Node label="Constriction Proportion" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Ratio']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
+              <Node label="Constriction Proportion" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confinement_ratio']" type="line" id="constriction_ratio" symbology="constriction_ratio" />
+              <Node label="Outputs Geopackage (SQLite Database)" xpath="Outputs/Geopackage" type="file" /> 
+            </Children>
+          </Node>
+          <Node label="Riverscape Network">
+            <Children collapsed="true">
+              <Node label="Confinement Ratio (DGOs)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confinement_dgos']" type="polygon" id="confinement_dgos" symbology="confinement_dgo" />
+              <Node label="Confinement Ratio (IGOs)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confinement_igos']" type="point" id="confinement_igos" symbology="confinement_igo" />
+            </Children>
+          </Node>
+          <Node label="Other Outputs">
+            <Children collapsed="true">
+              <Node label="Confining Margins" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confining_Margins']" type="line" id="confinement_margins" symbology="confinement_margins" />
+              <Node label="Confining Margins" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confining_margins']" type="line" id="confinement_margins" symbology="confinement_margins" />
+              <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='Confinement_Buffers']" type="line" id="confinement_buffer" symbology="confinement_buffer" />
+              <Node xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='confinement_buffers']" type="line" id="confinement_buffer" symbology="confinement_buffer" />
+            </Children>
+          </Node>
         </Children>
       </Node>
       <Node label="Intermediates">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='Split_Points']" type="point" symbology="split_points" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='split_points']" type="point" symbology="split_points" />
           <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='Flowline_Segments']" type="line" symbology="flowline_segments" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='flowline_segments']" type="line" symbology="flowline_segments" />
           <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='Error_Polylines']" type="line" symbology="error_polylines" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='error_polylines']" type="line" symbology="error_polylines" />
           <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='Error_Polygons']" type="polygon" symbology="error_polygons" />
+          <Node xpathlabel="Name" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='error_polygons']" type="polygon" symbology="error_polygons" />
           <Node label="Intermediates Geopackage (SQLite Database)" xpath="Intermediates/Geopackage" type="file" /> 
         </Children>
       </Node>
       <Node label="Inputs">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='Flowlines']" type="line" symbology="flowlines" />
+          <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flowlines" />
+          <Node label="Channel Area" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area']" type="polygon" id="channel_area" symbology="channel_area" transparency="60"/>
           <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='ConfiningPolygon']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
+          <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='confining_polygon']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
           <Node label="Inputs Geopackage (SQLite Database)" xpath="Inputs/Geopackage" type="file" /> 
         </Children>
       </Node>
