@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>RiverscapesStudio</Name>
+    <ProjectType>RiverscapesStudio</ProjectType>
+    <Node xpathlabel="Name">
+        <Children>
+            <Node label="Inputs" xpath="Realizations/Realization[@id='inputs']" id="inputs">
+                <Children collapsed="true">
+                    <Repeater label="Surfaces" xpath="Datasets/Raster[contains(@id,'surface')]">
+                        <Node xpathlabel="Name" type="raster"/>
+                    </Repeater>
+                    <Repeater label="AOIs" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_aoi')]">
+                        <Node xpathlabel="Name" type="polygon"/>
+                    </Repeater>
+                    <Repeater label="Sampling Frames" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_sample_frame')]">
+                        <Node xpathlabel="Name" type="polygon"/>
+                    </Repeater>
+                    <Repeater label="Profiles" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_profile')]">
+                        <Node xpathlabel="Name" type="line" symbology="centerlines"/>
+                    </Repeater>
+                    <Repeater label="Cross Sections" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_cross_section')]">
+                        <Node xpathlabel="Name" type="line"/>
+                    </Repeater>
+                    <Node label="Context">
+                        <Children collapsed="true">
+                            <Repeater label="Points" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_point')]">
+                                <Node xpathlabel="Name" type="point"/>
+                            </Repeater>
+                            <Repeater label="Lines" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_linestring')]">
+                                <Node xpathlabel="Name" type="line"/>
+                            </Repeater>
+                            <Repeater label="Polygons" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_polygon')]">
+                                <Node xpathlabel="Name" type="polygon"/>
+                            </Repeater>
+                            <Repeater label="Rasters" xpath="Datasets/Raster[contains(@id, 'context')]">
+                                <Node xpathlabel="Name" type="raster"/>
+                            </Repeater>
+                            <Repeater label="Watershed Catchments" xpath="Datasets/Geopackage[contains(@id, 'pour_points')]">
+                                <Node xpathlabel="Name">
+                                    <Children>
+                                        <Node label="Pour Point" xpath="Layers/Vector[contains(@lyrName, 'vw_pour_point')]" type='point'/>
+                                        <Node label="Catchment" xpath="Layers/Vector[contains(@lyrName, 'vw_catchment')]" type='polygon'/>
+                                    </Children>
+                                </Node>
+                            </Repeater>
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Repeater label="Data Capture Events" xpath="Realizations/Realization[MetaData/Meta[@name='DCE']]">
+                <Node xpathlabel="Name">
+                <Children collapsed="true">
+                    <Node label="Dam Points" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'dams')]" type="point" symbology="dams"/>
+                    <Node label="Jam Points" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'jams')]" type="point" symbology="jams"/>
+                    <Node label="Channel Unit Points" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'channel_unit_points')]" type="point" symbology="channel_unit_points"/>
+                    <Node label="Centerlines" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'centerlines')]" type="line" symbology="centerlines"/>
+                    <Node label="Thalwegs" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'thalwegs')]" type="line" symbology="thalwegs" filter="event_id = 1"/>
+                    <Node label="Active Extents" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'active_extents')]" type="polygon" symbology="active_extents"/>
+                    <Node label="Inundation Extents" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'inundation_extents')]" type="polygon" symbology="inundation_extents"/>
+                    <Node label="Vegetation Extents" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vegetation_extents')]" type="polygon" symbology="vegetation_extents"/>
+                    <Node label="Valley Bottoms" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'valley_bottoms')]" type="polygon" symbology="valley_bottoms"/>
+                </Children>
+                </Node>
+            </Repeater>
+            <Repeater label="Designs" xpath="Realizations/Realization[MetaData/Meta[@name='Design']]">
+                <Node xpathlabel="Name">
+                    <Children collapsed="true">
+                        <Node label="Structure Points" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'structure_points')]" type="point" symbology="structure_points" id="structure_points"/>
+                        <Node label="Structure Lines" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'structure_lines')]" type="line" symbology="structure_lines" id="structure_lines"/>
+                        <Node label="Structure Complexes" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'complexes')]" type="polygon" symbology="complexes" id="complexes"/>
+                        <Node label="Zones of Influence" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'zoi')]" type="polygon" symbology="zoi" id="zoi"/>
+                        <Node label="Observation Points" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'observation_points')]" type="point" symbology="observation_points" id="observation_points"/>
+                        <Node label="Observation Lines" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'observation_lines')]" type="line" symbology="observation_lines" id="observation_lines"/>
+                        <Node label="Observation Polygons" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'observation_polygons')]" type="polygon" symbology="observation_polygons" id="observation_polygons"/>
+                    </Children>
+                </Node>
+            </Repeater>
+            <Repeater label="Analyses" xpath="Realizations/Realization[contains(@id, 'analysis')]">
+                <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_analysis')]" type="polygon">
+                    <!-- <Children>
+                        <Node label="Analysis" />
+                    </Children> -->
+                </Node>
+            </Repeater>
+        </Children>
+      </Node>
+    <!-- <Views default="DEFAULT">
+        <View name="LTPBR Design" id="DEFAULT">
+          <Layers>
+            <Layer id="structure_points" />
+            <Layer id="structure_lines" />
+            <Layer id="complexes" />
+            <Layer id="zoi" />
+          </Layers>
+        </View>
+    </Views> -->
+</Project>
