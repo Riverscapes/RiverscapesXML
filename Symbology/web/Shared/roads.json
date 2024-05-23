@@ -18,12 +18,12 @@
       "paint": {
           "line-color": [
               "match",
-              ["get", "TNMFRC"],
+              ["get", "tnmfrc"],
               [6],
               "#000000",
               "hsla(0, 0%, 0%, 0)"
           ],
-          "line-gap-width": ["match", ["get", "TNMFRC"], [6], 2, 0],
+          "line-gap-width": ["match", ["get", "tnmfrc"], [6], 2, 0],
           "line-dasharray": [4, 5]
       }
   },
@@ -36,7 +36,7 @@
       "paint": {
           "line-color": [
               "match",
-              ["get", "TNMFRC"],
+              ["get", "tnmfrc"],
               [1],
               "hsl(0, 52%, 34%)",
               [2],
@@ -51,7 +51,7 @@
           ],
           "line-width": [
               "match",
-              ["get", "TNMFRC"],
+              ["get", "tnmfrc"],
               [1],
               2.5,
               [2],
