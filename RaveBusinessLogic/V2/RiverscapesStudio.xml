@@ -23,13 +23,13 @@
                     </Repeater>
                     <Node label="Context">
                         <Children collapsed="true">
-                            <Repeater label="Points" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_point')]">
+                            <Repeater label="Points" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_point') or contains(Summary, 'context_multipoint')]">
                                 <Node xpathlabel="Name" type="point"/>
                             </Repeater>
-                            <Repeater label="Lines" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_linestring')]">
+                            <Repeater label="Lines" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_linestring') or contains(Summary, 'context_multilinestring')]">
                                 <Node xpathlabel="Name" type="line"/>
                             </Repeater>
-                            <Repeater label="Polygons" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_polygon')]">
+                            <Repeater label="Polygons" xpath="Datasets/Geopackage/Layers/Vector[contains(Summary, 'context_polygon') or contains(Summary, 'context_multipolygon')]">
                                 <Node xpathlabel="Name" type="polygon"/>
                             </Repeater>
                             <Repeater label="Rasters" xpath="Datasets/Raster[contains(@id, 'context')]">
@@ -102,7 +102,7 @@
                                     <Children collapsed="true">
                                         <Node label="Dam Crests" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'dam_crests')]" type="line" symbology="dam_crests" id="dam_crests"/>
                                         <Node label="BRAT Vegetation Suitability" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'brat_vegetation')]" type="polygon" symbology="brat_vegetation" id="brat_vegetation"/>
-                                        <Node label="BRAT CIS" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'brat_cis')]" type="point" symbology="brat_cis" id="brat_cis"/>
+                                        <Node label="BRAT CIS" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'brat_cis') and not(contains(@lyrName, 'reaches'))]" type="point" symbology="brat_cis" id="brat_cis"/>
                                         <Node label="BRAT CIS Reaches" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'brat_cis_reaches')]" type="line" symbology="brat_cis_reaches" id="brat_cis_reaches"/>
                                     </Children>
                                 </Node>
