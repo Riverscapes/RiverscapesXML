@@ -129,7 +129,7 @@
                     </Children>
                 </Node>
             </Repeater>
-            <Repeater label="As Builts" xpath="Realizations/Realization[MetaData/Meta[@name='As Built']]">
+            <Repeater label="As Builts" xpath="Realizations/Realization[MetaData/Meta[@name='AsBuilt']]">
                 <Node xpathlabel="Name">
                     <Children collapsed="true">
                         <Node label="Structure Points" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'structure_points')]" type="point" symbology="structure_points" id="structure_points"/>
