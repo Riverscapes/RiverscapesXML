@@ -1,0 +1,36 @@
+{
+    
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Bar Density",
+    "machine_name": "bar_density",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "geomorphic_units",
+                "attribute_filter": {
+                    "field_name": "Type 2 Tier",
+                    "values": [
+                        "Mound"
+                    ]
+                }
+            },
+            {
+                "layer_name": "geomorphic_unit_extents",
+                "attribute_filter": {
+                    "field_name": "Type 2 Tier",
+                    "values": [
+                        "Mound"
+                    ]
+                }
+            }
+        ],
+        "normalization": "centerline"
+    }
+}

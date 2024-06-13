@@ -1,0 +1,20 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Relative Flow Length",
+    "machine_name": "relative_flow_length",
+    "version": 1,
+    "calculation_name": "length",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "centerlines"
+            }
+        ],
+        "normalization": "centerline"
+    }
+}

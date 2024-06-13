@@ -1,0 +1,20 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "% Inundated",
+    "machine_name": "percent_inundated",
+    "version": 1,
+    "calculation_name": "area_proportion",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "inundation_extents",
+                "usage": "numerator"
+            }
+        ]
+    }
+} 

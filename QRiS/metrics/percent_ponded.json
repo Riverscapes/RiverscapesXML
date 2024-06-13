@@ -1,0 +1,30 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "% Ponded",
+    "machine_name": "percent_ponded",
+    "version": 1,
+    "calculation_name": "area_proportion",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "inundation_extents",
+                "usage": "numerator",
+                "attribute_filter": {
+                    "field_name": "Extent Type",
+                    "values": [
+                        "Ponded"
+                    ]
+                }    
+            },
+            {
+                "layer_name":"inundation_extents",
+                "usage": "denominator"
+            }
+        ]
+    }
+} 

@@ -1,0 +1,26 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Channel Sinuosity",
+    "machine_name": "channel_sinuosity",
+    "version": 1,
+    "calculation_name": "sinuosity",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "centerlines",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Primary"
+                        
+                    ]
+                }
+            }
+        ]
+    }
+}

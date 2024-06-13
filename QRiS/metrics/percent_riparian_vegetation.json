@@ -1,0 +1,20 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "% Riparian Vegetation",
+    "machine_name": "percent_riparian_vegetation",
+    "version": 1,
+    "calculation_name": "area_proportion",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "vegetation_extents",
+                "usage": "numerator"   
+            }
+        ]
+    }
+} 
