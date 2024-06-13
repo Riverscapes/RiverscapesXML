@@ -3,16 +3,14 @@ import json
 # import sys
 # import csv
 import os
-from validate import get_xml, collect_files, get_xsd, validate_web_vector_json, validate_xml, validate_qramp
+from validate import get_xml, collect_files, get_xsd, validate_web_vector_json, validate_xml, validate_qramp, validate_qris_metric_json
 
 # We do this mapping because we want the current version's XML tested against the corrent
 # version's XSD.
 XML_DIGEST = [
     {'xml': './Programs/**/*.xml', 'xsd': './Program.xsd'},
-    {'xml': './RaveBusinessLogic/*.xml',
-        'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
-    {'xml': './RaveBusinessLogic/V2/*.xml',
-        'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
+    {'xml': './RaveBusinessLogic/*.xml', 'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
+    {'xml': './RaveBusinessLogic/V2/*.xml', 'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
     {'xml': './BaseMaps.xml', 'xsd': './BaseMaps.xsd'}
 ]
 
@@ -48,27 +46,47 @@ class TestLambdaFunc(unittest.TestCase):
                     errors.append([xml_path, str(e)])
                 print("Tested XML: {}".format(xml_path))
 
-        self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(
-            self.err_helper(errors)))
+        self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(self.err_helper(errors)))
 
     def test_validateJSON(self):
         """We have some JSON in the system that needs validating
         """
         errors = []
-        json_paths = collect_files('./Symbology/web/**/*.json')
-        with open('./Symbology/web/vector.schema.json') as f:
-            schema = json.load(f)
+
         print("\nTesting Web Symbologies:\n========================")
-        for json_path in json_paths:
-            try:
-                with open(json_path, 'r') as f:
-                    json_file = json.load(f)
-                result, errs = validate_web_vector_json(json_file, schema)
-                if not result:
-                    errors.append([json_path, str(errs)])
-            except Exception as e:
-                errors.append([json_path, str(e)])
-            print("Tested web symbology: {}".format(json_path))
+        with open('./Symbology/web/vector.schema.json') as f:
+            symbology_paths = collect_files('./Symbology/web/**/*.json')
+            schema = json.load(f)
+
+            for json_path in symbology_paths:
+                try:
+                    with open(json_path, 'r') as f:
+                        json_file = json.load(f)
+                    result, errs = validate_web_vector_json(json_file, schema)
+                    if not result:
+                        errors.append([json_path, str(errs)])
+                except Exception as e:
+                    errors.append([json_path, str(e)])
+                print("Tested web symbology: {}".format(json_path))
+
+        print("\nTesting QRiS Metrics:\n========================")
+        with open('./QRiS/qris_metrics.schema.json') as f:
+            metric_paths = [
+                *collect_files('./QRiS/metrics/*.json'),
+                *collect_files('./QRiS/metrics/**/*.json'),
+            ]
+            schema = json.load(f)
+
+            for json_path in metric_paths:
+                try:
+                    with open(json_path, 'r') as f:
+                        json_file = json.load(f)
+                    result, errs = validate_qris_metric_json(json_file, schema)
+                    if not result:
+                        errors.append([json_path, str(errs)])
+                except Exception as e:
+                    errors.append([json_path, str(e)])
+                print("Tested QRiS Metric: {}".format(json_path))
 
         self.assertEqual(len(errors), 0, msg='Errors were found: \n{}'.format(
             self.err_helper(errors)))
