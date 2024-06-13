@@ -1,0 +1,30 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "% Free Flowing",
+    "machine_name": "percent_free_flowing",
+    "version": 1,
+    "calculation_name": "area_proportion",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "inundation_extents",
+                "usage": "numerator",
+                "attribute_filter": {
+                    "field_name": "Extent Type",
+                    "values": [
+                        "Free Flowing"
+                    ]
+                }    
+            },
+            {
+                "layer_name":"inundation_extents",
+                "usage": "denominator"
+            }
+        ]
+    }
+} 

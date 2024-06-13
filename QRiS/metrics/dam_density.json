@@ -1,12 +1,11 @@
 {
   "$schema": "../qris_metrics.schema.json",
   "name": "Dam Density",
-  "machine_name": "dam_density", 
+  "machine_name": "dam_density",
+  "version": 1,
   "calculation_name": "count",
   "default_level": "METRIC",
-  "units": "meters",
-  "description": "The number of dams per square kilometer.",
-  "definition_url": "https://whatever.com", 
+  "description": "",
   "metadata": {},
   "metric_params": {
     "layers": [
@@ -43,7 +42,7 @@
         }
       }
     ],
-    "normalization": "CENTERLINE",
+    "normalization": "centerline",
     "surfaces": [
       {
         "surface_name": "dem",

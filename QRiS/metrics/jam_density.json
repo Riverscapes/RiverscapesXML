@@ -1,0 +1,48 @@
+{
+  "$schema": "../qris_metrics.schema.json",
+  "name": "Jam Density",
+  "machine_name": "jam_density",
+  "version": 1,
+  "calculation_name": "count",
+  "default_level": "METRIC",
+  "description": "",
+  "metadata": {
+    "min_value": 0
+  },
+  "metric_params": {
+    "layers": [
+      {
+        "layer_name": "structural_elements_points",
+        "count_field": "Structure Count",
+        "attribute_filter": {
+          "field_name": "Type",
+          "values": [
+            "Jam",
+            "Jam Complex"
+          ]
+        }
+      },
+      {
+        "layer_name": "structural_elements_lines",
+        "attribute_filter": {
+          "field_name": "Type",
+          "values": [
+            "Jam",
+            "Jam Complex"
+          ]
+        }
+      },
+      {
+        "layer_name": "structural_elements_areas",
+        "attribute_filter": {
+          "field_name": "Type",
+          "values": [
+            "Jam",
+            "Jam Complex"
+          ]
+        }
+      }
+    ],
+    "normalization": "centerline"
+  }
+}

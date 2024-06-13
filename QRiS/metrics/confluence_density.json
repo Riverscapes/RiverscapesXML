@@ -1,0 +1,27 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Confluence Density",
+    "machine_name": "confluence_density",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "channel_junctions",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Confluence (Anabranch)",
+                        "Confluence (Tributary)"
+                    ]
+                }
+            }
+        ],
+        "normalization": "centerline"
+    }
+}

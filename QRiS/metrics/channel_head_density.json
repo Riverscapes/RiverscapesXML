@@ -1,0 +1,26 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Floodplain Channel Head Density",
+    "machine_name": "channel_head_density",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "channel_junctions",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Channel Head"
+                    ]
+                }
+            }
+        ],
+        "normalization": "centerline"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Number of Active Channels",
+    "machine_name": "active_channel_count",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "centerlines"
+            }
+        ]
+    }
+}

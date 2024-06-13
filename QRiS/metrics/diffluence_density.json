@@ -1,0 +1,26 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Diffluence Density",
+    "machine_name": "diffluence_density",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "METRIC",
+    "description": "",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "channel_junctions",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Diffluence"
+                    ]
+                }
+            }
+        ],
+        "normalization": "centerline"
+    }
+}
