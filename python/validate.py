@@ -20,8 +20,7 @@ def get_xsd(xsd_path):
     xsd_encoded = bytes(xsd, encoding='utf-8')
     errors = validate_xsd(xsd_encoded)
     if len(errors) > 0:
-        raise Exception(
-            'XSD Failed to validate: {} \n {}'.format(xsd_path, errors))
+        raise Exception('XSD Failed to validate: {} \n {}'.format(xsd_path, errors))
     return xsd_encoded
 
 
@@ -55,13 +54,21 @@ def validate_xsd(xsd_str: str):
 
 
 def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
+    """ Make sure the Web Vector JSON is valid
+
+    Args:
+        json_obj (dict): _description_
+        schema (dict): _description_
+
+    Returns:
+        bool: _description_
+    """
     result = True
     errors = []
     try:
         jsonschema.validate(json_obj, schema)
     except ValidationError as e:
-        errors.append(
-            "JSON Did not validate against schema: '{}' in object: {}".format(e.message, e.instance))
+        errors.append("JSON Did not validate against schema: '{}' in object: {}".format(e.message, e.instance))
         return False, errors
 
     if len(json_obj['layerStyles']) < 1:
@@ -75,8 +82,7 @@ def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
                 # Check for mapbox stock layers
                 if 'mapbox://' in o['source']:
                     result = False
-                    errors.append(
-                        'You cannot use mapbox layers: {}'.format(json.dumps(o)))
+                    errors.append('You cannot use mapbox layers: {}'.format(json.dumps(o)))
                 elif o['type'] == 'raster':
                     result = False
                     errors.append(
@@ -86,8 +92,31 @@ def validate_web_vector_json(json_obj: dict, schema: dict) -> bool:
                     [k['source-layer'] for k in json_obj['layerStyles']]))
                 if len(unique_sources) != 1:
                     result = False
-                    errors.append(
-                        'You cannot consume from multiple sources: {}'.format(unique_sources))
+                    errors.append('You cannot consume from multiple sources: {}'.format(unique_sources))
+    return result, errors
+
+
+def validate_qris_metric_json(json_obj: dict, schema: dict) -> bool:
+    """ Make sure the QRiS metric JSON is valid
+
+    Args:
+        json_obj (dict): _description_
+        schema (dict): _description_
+
+    Returns:
+        bool: _description_
+    """
+    result = True
+    errors = []
+    try:
+        jsonschema.validate(json_obj, schema)
+    except ValidationError as e:
+        errors.append("JSON Did not validate against schema: '{}' in object: {}".format(e.message, e.instance))
+        return False, errors
+
+    # HERE IS WHERE SPECIFIC CHECKS CAN HAPPEN. THESE WOULD BE THINGS THE SCHEMA
+    # CHECK CAN'T CATCH
+
     return result, errors
 
 
@@ -106,16 +135,13 @@ def validate_qramp(qramp: str):
     result = True
 
     if lines[0].rstrip() != "# QGIS Generated Color Map Export File":
-        errors.append(
-            'Missing the header line: "# QGIS Generated Color Map Export File". This is probabyl not a QGIS exported color ramp')
+        errors.append('Missing the header line: "# QGIS Generated Color Map Export File". This is probabyl not a QGIS exported color ramp')
         result = False
     if "INTERPOLATION:" not in lines[1]:
-        errors.append(
-            'Missing the intepolation type on line 2: "INTERPOLATED:[DISCRETE|INTERPOLATED|EXACT]". This is probabyl not a QGIS exported color ramp')
+        errors.append('Missing the intepolation type on line 2: "INTERPOLATED:[DISCRETE|INTERPOLATED|EXACT]". This is probabyl not a QGIS exported color ramp')
         result = False
     if lines[1].split(':')[1] not in ['DISCRETE', 'EXACT', 'INTERPOLATED']:
-        errors.append(
-            "Interpolation value must be one of: 'DISCRETE', 'EXACT', 'INTERPOLATED'. Got: {}".format(lines[1]))
+        errors.append("Interpolation value must be one of: 'DISCRETE', 'EXACT', 'INTERPOLATED'. Got: {}".format(lines[1]))
         result = False
 
     pat = "^(.+),([0-9]{1,3},){4}(.+)$"
@@ -125,8 +151,7 @@ def validate_qramp(qramp: str):
         if len(cline.strip()) == 0:
             continue
         if not re.match(pat, cline):
-            errors.append(
-                'Value line did not match the pattern: "{}". Got: {}'.format(pat, cline))
+            errors.append('Value line did not match the pattern: "{}". Got: {}'.format(pat, cline))
             result = False
 
     return result, errors
