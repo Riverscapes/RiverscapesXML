@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 # These are the folders we will scrape
 FOLDERS = [
-    'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic'
+    'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic', 'QRiS'
 ]
 FILES = [
     'BaseMaps.xml'
