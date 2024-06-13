@@ -12,6 +12,10 @@
 		{
 			"path": "Programs"
 		},
+    {
+      "name": "QRiS",
+			"path": "QRiS"
+		},
 		{
       "name": "🔧 Python Scripts",
 			"path": "python"
