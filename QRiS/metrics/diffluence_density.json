@@ -4,7 +4,7 @@
     "machine_name": "diffluence_density",
     "version": 1,
     "calculation_name": "count",
-    "default_level": "METRIC",
+    "default_level": "Metric",
     "description": "",
     "metadata": {
         "min_value": 0

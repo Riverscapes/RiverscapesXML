@@ -20,7 +20,7 @@
     },
     "default_level": {
       "type": "string",
-      "enum": ["METRIC", "INDICATOR"]
+      "enum": ["Metric", "Indicator"]
     },
     "units": {
       "type": "string"
