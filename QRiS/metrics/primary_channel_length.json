@@ -4,7 +4,7 @@
     "machine_name": "primary_channel_length",
     "version": 1,
     "calculation_name": "length",
-    "default_level": "METRIC",
+    "default_level": "Metric",
     "description": "",
     "metadata": {
         "min_value": 0

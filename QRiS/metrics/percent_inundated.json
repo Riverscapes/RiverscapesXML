@@ -4,7 +4,7 @@
     "machine_name": "percent_inundated",
     "version": 1,
     "calculation_name": "area_proportion",
-    "default_level": "METRIC",
+    "default_level": "Metric",
     "description": "",
     "metadata": {
         "min_value": 0
