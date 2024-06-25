@@ -5,8 +5,11 @@
   "version": 1,
   "calculation_name": "count",
   "default_level": "Metric",
-  "description": "",
-  "metadata": {},
+  "description": "The number of beaver dams per km of riverscape ",
+  "metadata": {
+    "min_value": 0,
+    "precision": 2
+  },
   "metric_params": {
     "layers": [
       {
@@ -19,27 +22,7 @@
             "Dam",
             "Dam Complex"
           ]
-        }
-      },
-      {
-        "layer_name": "structural_elements_lines",
-        "attribute_filter": {
-          "field_name": "Type",
-          "values": [
-            "Dam",
-            "Dam Complex"
-          ]
-        }
-      },
-      {
-        "layer_name": "structural_elements_areas",
-        "attribute_filter": {
-          "field_name": "Type",
-          "values": [
-            "Dam",
-            "Dam Complex"
-          ]
-        }
+        }  
       }
     ],
     "normalization": "centerline",

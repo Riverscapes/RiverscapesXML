@@ -5,9 +5,10 @@
     "version": 1,
     "calculation_name": "count",
     "default_level": "Metric",
-    "description": "",
+    "description": "The number of channel heads per km of riverscape",
     "metadata": {
-        "min_value": 0
+        "min_value": 0,
+        "precison": 2
     },
     "metric_params": {
         "layers": [

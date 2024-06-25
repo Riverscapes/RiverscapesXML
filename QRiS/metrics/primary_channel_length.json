@@ -5,7 +5,7 @@
     "version": 1,
     "calculation_name": "length",
     "default_level": "Metric",
-    "description": "",
+    "description": "Length of the primary channel within the riverscape sample frame",
     "metadata": {
         "min_value": 0
     },

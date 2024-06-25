@@ -5,9 +5,10 @@
     "version": 1,
     "calculation_name": "sinuosity",
     "default_level": "Metric",
-    "description": "",
+    "description": "The sinuosity of the primary channel in the riverscape sample frame",
     "metadata": {
-        "min_value": 0
+        "min_value": 0,
+        "precision": 3
     },
     "metric_params": {
         "layers": [

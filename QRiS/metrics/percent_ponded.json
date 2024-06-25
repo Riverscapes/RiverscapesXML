@@ -1,13 +1,14 @@
 {
     "$schema": "../qris_metrics.schema.json",
-    "name": "% Ponded",
+    "name": "% Backwater/Ponded",
     "machine_name": "percent_ponded",
     "version": 1,
     "calculation_name": "area_proportion",
     "default_level": "Metric",
-    "description": "",
+    "description": "The percent of the inundation extents that is backwater/ponded",
     "metadata": {
-        "min_value": 0
+        "min_value": 0,
+        "precison": 2
     },
     "metric_params": {
         "layers": [
