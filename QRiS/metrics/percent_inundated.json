@@ -5,9 +5,10 @@
     "version": 1,
     "calculation_name": "area_proportion",
     "default_level": "Metric",
-    "description": "",
+    "description": "The percent of the riverscape that is inundated at baseflow",
     "metadata": {
-        "min_value": 0
+        "min_value": 0,
+        "precision": 2
     },
     "metric_params": {
         "layers": [

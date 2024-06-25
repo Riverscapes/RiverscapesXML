@@ -5,23 +5,15 @@
     "version": 1,
     "calculation_name": "count",
     "default_level": "Metric",
-    "description": "",
+    "description": "The number of pools per km of riverscape",
     "metadata": {
-        "min_value": 0
+        "min_value": 0,
+        "precison": 2
     },
     "metric_params": {
         "layers": [
             {
                 "layer_name": "geomorphic_units",
-                "attribute_filter": {
-                    "field_name": "Type 2 Tier",
-                    "values": [
-                        "Bowl"
-                    ]
-                }
-            },
-            {
-                "layer_name": "geomorphic_unit_extents",
                 "attribute_filter": {
                     "field_name": "Type 2 Tier",
                     "values": [
