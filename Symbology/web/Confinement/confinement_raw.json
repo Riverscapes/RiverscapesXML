@@ -1,29 +1,32 @@
 {
-  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-        ["hsl(8, 100%, 50%)", "Both"],
-        ["hsl(235, 86%, 55%)", "Left"],
-        ["hsl(313, 71%, 39%)", "Right"],
-        [ "hsl(178, 64%, 34%)", "None"]
+    ["hsl(8, 100%, 50%)", "Both"],
+    ["hsl(235, 87%, 56%)", "Left"],
+    ["hsl(314, 71%, 39%)", "Right"],
+    ["hsl(178, 64%, 35%)", "None"]
   ],
   "layerStyles": [
     {
-      "id": "confinement-raw-0utorb",
+      "id": "confinement-type-9thrft",
       "type": "line",
       "source": "composite",
-      "source-layer": "confinement_raw-0utorb",
+      "source-layer": "confinement_type-9thrft",
       "layout": {},
       "paint": {
-        "line-color": [
-          "match",
-          [ "get", "Confinement_Type"],
-          ["Both"],"hsl(8, 100%, 50%)",
-          ["Left"],"hsl(235, 86%, 55%)",
-          ["Right"],"hsl(313, 71%, 39%)",
-          ["None"], "hsl(178, 64%, 34%)",
-          "#000000"
-        ]
+          "line-color": [
+              "match",
+              ["get", "confinement_type"],
+              ["Right"],
+              "hsl(314, 71%, 39%)",
+              ["None"],
+              "hsl(178, 64%, 35%)",
+              ["Left"],
+              "hsl(235, 87%, 56%)",
+              ["Both"],
+              "hsl(8, 100%, 50%)"
+          ]
       }
-    }
+  }
   ]
 }
