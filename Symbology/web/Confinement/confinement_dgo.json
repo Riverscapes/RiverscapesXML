@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 1%)", "Discrete Geographic Objects (DGOs)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "dgo-ajx9vb",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "dgo-ajx9vb",
+        "layout": {},
+        "paint": {"line-color": "hsl(0, 100%, 1%)"}
+    }
+  ]
+}

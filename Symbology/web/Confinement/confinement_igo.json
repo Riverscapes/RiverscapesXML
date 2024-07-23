@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(57, 76%, 49%)", "Integrated Geographic Objects (IGOs)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "igo-dcto49",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "igo-dcto49",
+        "layout": {},
+        "paint": {
+            "circle-radius": 4,
+            "circle-color": "hsl(57, 76%, 49%)",
+            "circle-stroke-width": 0.4
+        }
+    }
+  ]
+}

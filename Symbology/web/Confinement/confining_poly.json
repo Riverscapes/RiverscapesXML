@@ -1,19 +1,16 @@
 {
-    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
-    "legend": [
-      ["hsl(60, 36%, 59%)", "Confining Polygon"]
-    ],
-    "layerStyles": [
-        {
-            "id": "confining-poly-3a679s",
-            "type": "fill",
-            "source": "composite",
-            "source-layer": "confining_poly-3a679s",
-            "layout": {},
-            "paint": {
-                "fill-color": "hsl(60, 36%, 59%)",
-                "fill-outline-color": "hsla(0, 0%, 0%, 0)"
-            }
-        }
-    ]
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsla(128, 67%, 34%, 0.4)", ""]
+  ],
+  "layerStyles": [
+    {
+      "id": "valley-bottom-polygon-6di8ff",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "valley_bottom_polygon-6di8ff",
+      "layout": {},
+      "paint": {"fill-color": "hsla(128, 67%, 34%, 0.4)"}
+  }
+  ]
 }
