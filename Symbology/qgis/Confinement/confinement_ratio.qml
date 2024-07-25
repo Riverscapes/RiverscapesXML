@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="100000000" labelsEnabled="0" simplifyMaxScale="1" simplifyLocal="1" symbologyReferenceScale="-1" readOnly="0" maxScale="0" version="3.32.3-Lima" styleCategories="AllStyleCategories" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0">
+<qgis maxScale="0" minScale="100000000" simplifyDrawingHints="1" simplifyDrawingTol="1" version="3.32.3-Lima" simplifyAlgorithm="0" labelsEnabled="0" simplifyLocal="1" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" readOnly="0" symbologyReferenceScale="-1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal limitMode="0" accumulate="0" enabled="0" startField="" fixedDuration="0" startExpression="" endExpression="" durationField="" endField="" durationUnit="min" mode="0">
+  <temporal startExpression="" limitMode="0" startField="" endField="" durationUnit="min" fixedDuration="0" enabled="0" endExpression="" durationField="" mode="0" accumulate="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation respectLayerSymbol="1" showMarkerSymbolInSurfacePlots="0" zoffset="0" clamping="Terrain" zscale="1" type="IndividualFeatures" symbology="Line" binding="Centroid" extrusionEnabled="0" extrusion="0">
+  <elevation showMarkerSymbolInSurfacePlots="0" type="IndividualFeatures" extrusionEnabled="0" zoffset="0" symbology="Line" zscale="1" respectLayerSymbol="1" extrusion="0" clamping="Terrain" binding="Centroid">
     <data-defined-properties>
       <Option type="Map">
         <Option type="QString" name="name" value=""/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="line" name="" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="line" name="" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -29,7 +29,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{5c8b58b5-e999-4d50-8163-f8a97ef74a7a}" locked="0">
+        <layer class="SimpleLine" enabled="1" id="{5c8b58b5-e999-4d50-8163-f8a97ef74a7a}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="fill" name="" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="fill" name="" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -78,7 +78,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleFill" id="{1c8d4fc7-fdd9-445b-ae33-71858b8522a3}" locked="0">
+        <layer class="SimpleFill" enabled="1" id="{1c8d4fc7-fdd9-445b-ae33-71858b8522a3}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="color" value="255,158,23,255"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="marker" name="" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="marker" name="" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -111,7 +111,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleMarker" id="{862c2137-3e9b-4b78-8fd6-03680b749d8f}" locked="0">
+        <layer class="SimpleMarker" enabled="1" id="{862c2137-3e9b-4b78-8fd6-03680b749d8f}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
@@ -144,15 +144,15 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 symbollevels="0" enableorderby="0" graduatedMethod="GraduatedColor" type="graduatedSymbol" referencescale="-1" attr="confinement_ratio" forceraster="0">
+  <renderer-v2 type="graduatedSymbol" forceraster="0" symbollevels="0" enableorderby="0" graduatedMethod="GraduatedColor" attr="confinement_ratio" referencescale="-1">
     <ranges>
-      <range upper="0.100000000000000" lower="0.000000000000000" symbol="0" label="0.1" render="true"/>
-      <range upper="0.500000000000000" lower="0.100000000000000" symbol="1" label="0.5" render="true"/>
-      <range upper="0.850000000000000" lower="0.500000000000000" symbol="2" label="0.85" render="true"/>
-      <range upper="2.000000000000000" lower="0.850000000000000" symbol="3" label="1.0" render="true"/>
+      <range upper="0.100000000000000" label="0 - 0.1" render="true" lower="0.000000000000000" symbol="0"/>
+      <range upper="0.500000000000000" label="0.1 - 0.5" render="true" lower="0.100000000000000" symbol="1"/>
+      <range upper="0.850000000000000" label="0.5 - 0.85" render="true" lower="0.500000000000000" symbol="2"/>
+      <range upper="2.000000000000000" label="0.85 - 1.0" render="true" lower="0.850000000000000" symbol="3"/>
     </ranges>
     <symbols>
-      <symbol force_rhr="0" clip_to_extent="1" type="line" name="0" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="line" name="0" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -160,7 +160,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0">
+        <layer class="SimpleLine" enabled="1" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -199,7 +199,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="line" name="1" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="line" name="1" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -207,7 +207,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0">
+        <layer class="SimpleLine" enabled="1" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -246,7 +246,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="line" name="2" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="line" name="2" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -254,7 +254,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0">
+        <layer class="SimpleLine" enabled="1" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -293,7 +293,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="line" name="3" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="line" name="3" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -301,7 +301,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0">
+        <layer class="SimpleLine" enabled="1" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -342,7 +342,7 @@
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol force_rhr="0" clip_to_extent="1" type="line" name="0" alpha="1" frame_rate="10" is_animated="0">
+      <symbol type="line" name="0" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -350,7 +350,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0">
+        <layer class="SimpleLine" enabled="1" id="{604fa39e-a215-4f18-842d-fe2fe9bbeb28}" locked="0" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -390,12 +390,9 @@
         </layer>
       </symbol>
     </source-symbol>
-    <colorramp type="randomcolors" name="[source]">
-      <Option/>
-    </colorramp>
     <classificationMethod id="Pretty">
-      <symmetricMode astride="0" enabled="0" symmetrypoint="0"/>
-      <labelFormat labelprecision="2" format="%1 - %2" trimtrailingzeroes="1"/>
+      <symmetricMode enabled="0" symmetrypoint="0" astride="0"/>
+      <labelFormat format="%1 - %2" trimtrailingzeroes="0" labelprecision="2"/>
       <parameters>
         <Option/>
       </parameters>
@@ -424,11 +421,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" penAlpha="255" sizeType="MM" maxScaleDenominator="1e+08" opacity="1" backgroundColor="#ffffff" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" width="15" labelPlacementMethod="XHeight" rotationOffset="270" minScaleDenominator="0" penColor="#000000" backgroundAlpha="255" penWidth="0" lineSizeType="MM" spacing="5" direction="0" enabled="0" diagramOrientation="Up" showAxis="1" height="15" lineSizeScale="3x:0,0,0,0,0,0" spacingUnit="MM" barWidth="5">
-      <fontProperties strikethrough="0" bold="0" italic="0" style="" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory direction="0" enabled="0" lineSizeType="MM" maxScaleDenominator="1e+08" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penWidth="0" spacingUnit="MM" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" scaleDependency="Area" scaleBasedVisibility="0" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" rotationOffset="270" width="15" minimumSize="0" minScaleDenominator="0" opacity="1" height="15" spacing="5" backgroundColor="#ffffff" penAlpha="255" barWidth="5" showAxis="1">
+      <fontProperties italic="0" strikethrough="0" underline="0" bold="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute label="" colorOpacity="1" color="#000000" field=""/>
       <axisSymbol>
-        <symbol force_rhr="0" clip_to_extent="1" type="line" name="" alpha="1" frame_rate="10" is_animated="0">
+        <symbol type="line" name="" force_rhr="0" frame_rate="10" clip_to_extent="1" alpha="1" is_animated="0">
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" name="name" value=""/>
@@ -436,7 +434,7 @@
               <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer enabled="1" pass="0" class="SimpleLine" id="{40c8a776-0d1d-46a2-aa83-54683d9e1141}" locked="0">
+          <layer class="SimpleLine" enabled="1" id="{40c8a776-0d1d-46a2-aa83-54683d9e1141}" locked="0" pass="0">
             <Option type="Map">
               <Option type="QString" name="align_dash_pattern" value="0"/>
               <Option type="QString" name="capstyle" value="square"/>
@@ -478,7 +476,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="2" showAll="1" linePlacementFlags="18" priority="0" dist="0" obstacle="0" zIndex="0">
+  <DiagramLayerSettings placement="2" dist="0" showAll="1" linePlacementFlags="18" obstacle="0" zIndex="0" priority="0">
     <properties>
       <Option type="Map">
         <Option type="QString" name="name" value=""/>
@@ -491,52 +489,52 @@
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field configurationFlags="None" name="fid">
+    <field name="fid" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="level_path">
+    <field name="level_path" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="confinement_ratio">
+    <field name="confinement_ratio" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="constriction_ratio">
+    <field name="constriction_ratio" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="approx_leng">
+    <field name="approx_leng" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="confin_leng">
+    <field name="confin_leng" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="constr_leng">
+    <field name="constr_leng" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -572,37 +570,37 @@
     <default expression="" applyOnUpdate="0" field="constr_leng"/>
   </defaults>
   <constraints>
-    <constraint notnull_strength="1" unique_strength="1" exp_strength="0" constraints="3" field="fid"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="level_path"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="confinement_ratio"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="constriction_ratio"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="approx_leng"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="confin_leng"/>
-    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="constr_leng"/>
+    <constraint notnull_strength="1" constraints="3" exp_strength="0" unique_strength="1" field="fid"/>
+    <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="level_path"/>
+    <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="confinement_ratio"/>
+    <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="constriction_ratio"/>
+    <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="approx_leng"/>
+    <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="confin_leng"/>
+    <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="constr_leng"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" field="fid" desc=""/>
-    <constraint exp="" field="level_path" desc=""/>
-    <constraint exp="" field="confinement_ratio" desc=""/>
-    <constraint exp="" field="constriction_ratio" desc=""/>
-    <constraint exp="" field="approx_leng" desc=""/>
-    <constraint exp="" field="confin_leng" desc=""/>
-    <constraint exp="" field="constr_leng" desc=""/>
+    <constraint desc="" field="fid" exp=""/>
+    <constraint desc="" field="level_path" exp=""/>
+    <constraint desc="" field="confinement_ratio" exp=""/>
+    <constraint desc="" field="constriction_ratio" exp=""/>
+    <constraint desc="" field="approx_leng" exp=""/>
+    <constraint desc="" field="confin_leng" exp=""/>
+    <constraint desc="" field="constr_leng" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
     <columns>
-      <column hidden="0" type="field" width="-1" name="fid"/>
-      <column hidden="0" type="field" width="-1" name="level_path"/>
-      <column hidden="0" type="field" width="-1" name="confinement_ratio"/>
-      <column hidden="0" type="field" width="-1" name="constriction_ratio"/>
-      <column hidden="0" type="field" width="-1" name="approx_leng"/>
-      <column hidden="0" type="field" width="-1" name="confin_leng"/>
-      <column hidden="0" type="field" width="-1" name="constr_leng"/>
-      <column hidden="1" type="actions" width="-1"/>
+      <column type="field" name="fid" hidden="0" width="-1"/>
+      <column type="field" name="level_path" hidden="0" width="-1"/>
+      <column type="field" name="confinement_ratio" hidden="0" width="-1"/>
+      <column type="field" name="constriction_ratio" hidden="0" width="-1"/>
+      <column type="field" name="approx_leng" hidden="0" width="-1"/>
+      <column type="field" name="confin_leng" hidden="0" width="-1"/>
+      <column type="field" name="constr_leng" hidden="0" width="-1"/>
+      <column type="actions" hidden="1" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -634,13 +632,13 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field name="approx_leng" editable="1"/>
-    <field name="confin_leng" editable="1"/>
-    <field name="confinement_ratio" editable="1"/>
-    <field name="constr_leng" editable="1"/>
-    <field name="constriction_ratio" editable="1"/>
-    <field name="fid" editable="1"/>
-    <field name="level_path" editable="1"/>
+    <field editable="1" name="approx_leng"/>
+    <field editable="1" name="confin_leng"/>
+    <field editable="1" name="confinement_ratio"/>
+    <field editable="1" name="constr_leng"/>
+    <field editable="1" name="constriction_ratio"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="level_path"/>
   </editable>
   <labelOnTop>
     <field name="approx_leng" labelOnTop="0"/>
@@ -652,13 +650,13 @@ def my_form_open(dialog, layer, feature):
     <field name="level_path" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
-    <field reuseLastValue="0" name="approx_leng"/>
-    <field reuseLastValue="0" name="confin_leng"/>
-    <field reuseLastValue="0" name="confinement_ratio"/>
-    <field reuseLastValue="0" name="constr_leng"/>
-    <field reuseLastValue="0" name="constriction_ratio"/>
-    <field reuseLastValue="0" name="fid"/>
-    <field reuseLastValue="0" name="level_path"/>
+    <field name="approx_leng" reuseLastValue="0"/>
+    <field name="confin_leng" reuseLastValue="0"/>
+    <field name="confinement_ratio" reuseLastValue="0"/>
+    <field name="constr_leng" reuseLastValue="0"/>
+    <field name="constriction_ratio" reuseLastValue="0"/>
+    <field name="fid" reuseLastValue="0"/>
+    <field name="level_path" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
