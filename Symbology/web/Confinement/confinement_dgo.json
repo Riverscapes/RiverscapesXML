@@ -1,16 +1,43 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(0, 100%, 1%)", "Discrete Geographic Objects (DGOs)"]
+    ["hsl(84, 95%, 34%)", "0 - 0.1"],
+    ["hsl(63, 100%, 41%)", "0.1 - 0.5"],
+    ["hsl(42, 100%, 48%)", "0.5 - 0.85"],
+    ["hsl(0, 95%, 44%)", "0.85 - 1.0"]
   ],
   "layerStyles": [
     {
-        "id": "dgo-ajx9vb",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "dgo-ajx9vb",
-        "layout": {},
-        "paint": {"line-color": "hsl(0, 100%, 1%)"}
-    }
+      "id": "sample-dgo-ccfyjo",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "sample_dgo-ccfyjo",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "interpolate",
+              ["linear"],
+              ["get", "confinemen"],
+              0,
+              "hsl(84, 95%, 34%)",
+              0.1,
+              "hsl(84, 95%, 34%)",
+              0.10001,
+              "hsl(63, 100%, 41%)",
+              0.5,
+              "hsl(63, 100%, 41%)",
+              0.50001,
+              "hsl(42, 100%, 48%)",
+              0.85,
+              "hsl(42, 100%, 48%)",
+              0.85001,
+              "hsl(0, 95%, 44%)",
+              1,
+              "hsl(0, 95%, 44%)"
+          ],
+          "fill-outline-color": "rgb(0, 0, 0)",
+          "fill-opacity": 0.75
+      }
+  }
   ]
 }

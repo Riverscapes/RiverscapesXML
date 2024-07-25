@@ -51,7 +51,7 @@
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='Flowlines']" type="line" symbology="flowlines" />
           <Node xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flowlines" />
-          <Node label="Channel Area" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area']" type="polygon" id="channel_area" symbology="channel_area" transparency="60"/>
+          <Node label="Channel Area" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area']" type="polygon" id="channel_area" symbology="ChannelArea" transparency="60"/>
           <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='ConfiningPolygon']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
           <Node label="Valley Bottom Polygon" xpathlabel="Name" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='confining_polygon']" type="polygon" id="confining_poly" symbology="confining_poly" transparency="60"/>
           <Node label="Inputs Geopackage (SQLite Database)" xpath="Inputs/Geopackage" type="file" /> 
