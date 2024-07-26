@@ -1,0 +1,418 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_RestorationLandscapes_051923_87582842_f008_43e8_bb66_e76dfaa0dcf8.xml",
+      "name": "BLM_Restoration_Landscapes_A",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": true,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "The Bureau of Land Management has selected 21 Restoration Landscapes where we will focus investments in ecosystem restoration and the economic resilience of communities that depend on these lands to support their livelihoods and traditions. \r\n\r\nThis service is attributed to show those HUC8 watersheds nominated as Focal Landscapes, by BLM State Office Organizations.",
+      "attribution": "Bureau of Land Management",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_Restoration_Landscapes_A\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_Restoration_Landscapes_A.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 3857,
+                  "wkid": 102100
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "FocalName",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Shape_Leng",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "Shape_Le_1",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "ymin": 3676055.7179,
+            "ymax": 10020732.6576,
+            "xmin": -16337162.9231,
+            "xmax": -11516294.9967
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 3857,
+            "wkid": 102100
+          },
+          "srid": "3857",
+          "sqlQuery": "select fid,geom,\"FocalName\",\"Shape_Leng\",\"Shape_Le_1\",\"SHAPE_Length\",\"SHAPE_Area\" from main.\"BLM_Restoration_Landscapes_A\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMSimpleRenderer",
+        "symbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 1.3039361864968906,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Square",
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    21,
+                    25,
+                    139,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMHatchFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "separation": 5.669287767377785,
+                "rotation": 45.0,
+                "lineSymbol": {
+                  "type": "CIMLineSymbol",
+                  "useRealWorldSymbolSizes": false,
+                  "symbolLayers": [
+                    {
+                      "type": "CIMSolidStroke",
+                      "overprint": false,
+                      "colorLocked": false,
+                      "enable": true,
+                      "anchor3D": "Center",
+                      "closeCaps3D": false,
+                      "width": 0.8503931651066676,
+                      "miterLimit": 10,
+                      "lineStyle3D": "Tube",
+                      "joinStyle": "Bevel",
+                      "capStyle": "Square",
+                      "color": {
+                        "type": "CIMRGBColor",
+                        "values": [
+                          7,
+                          38,
+                          242,
+                          100.0
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "patch": "Default"
+      },
+      "labelVisibility": true,
+      "labelClasses": [
+        {
+          "type": "CIMLabelClass",
+          "iD": -1,
+          "visibility": true,
+          "useCodedValue": false,
+          "textSymbol": {
+            "type": "CIMSymbolReference",
+            "symbol": {
+              "type": "CIMTextSymbol",
+              "overprint": false,
+              "billboardMode3D": "None",
+              "wordSpacing": 100,
+              "verticalGlyphOrientation": "Right",
+              "verticalAlignment": "Baseline",
+              "underline": false,
+              "textDirection": "LTR",
+              "textCase": "Normal",
+              "symbol3DProperties": {
+                "type": "CIM3DSymbolProperties",
+                "rotationOrder3D": "XYZ",
+                "dominantSizeAxis3D": "Z"
+              },
+              "symbol": {
+                "type": "CIMPolygonSymbol",
+                "useRealWorldSymbolSizes": false,
+                "symbolLayers": [
+                  {
+                    "type": "CIMSolidFill",
+                    "overprint": false,
+                    "colorLocked": false,
+                    "enable": true,
+                    "color": {
+                      "type": "CIMGrayColor",
+                      "values": [
+                        50,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment": "Display"
+              },
+              "strikethrough": false,
+              "smallCaps": false,
+              "lineGapType": "ExtraLeading",
+              "ligatures": false,
+              "letterWidth": 100,
+              "kerning": true,
+              "horizontalAlignment": "Left",
+              "hinting": "None",
+              "height": 7.0,
+              "haloSize": 1,
+              "fontType": "Unspecified",
+              "fontStyleName": "",
+              "fontFamilyName": "Arial",
+              "fontEncoding": "Unicode",
+              "fontEffects": "Normal",
+              "extrapolateBaselines": false,
+              "drawSoftHyphen": false,
+              "drawGlyphsAsGeometry": false,
+              "depth3D": 1,
+              "compatibilityMode": false,
+              "blockProgression": "TTB"
+            }
+          },
+          "standardLabelPlacementProperties": {
+            "type": "CIMStandardLabelPlacementProperties",
+            "featureType": "Point",
+            "allowOverlappingLabels": false,
+            "placeOnlyInsidePolygon": false,
+            "polygonPlacementMethod": "AlwaysHorizontal",
+            "perpendicularToAngle": false,
+            "rotationType": "Geographic",
+            "pointPlacementMethod": "AroundPoint",
+            "numLabelsOption": "NoLabelRestrictions",
+            "labelWeight": "Low",
+            "featureWeight": "None"
+          },
+          "priority": 2,
+          "name": "Default",
+          "minimumScale": 1500000.0,
+          "maplexLabelPlacementProperties": {
+            "type": "CIMMaplexLabelPlacementProperties",
+            "featureType": "Point",
+            "secondaryOffsetUnit": "Map",
+            "removeAmbiguousLabels": "All",
+            "measureFromClippedFeatureGeometry": false,
+            "centerLabelAnchorType": "Symbol",
+            "avoidOverlappingLabeledPolygonsAsIfHoles": false,
+            "polygonAnchorPointPerimeterInsetUnit": "Map",
+            "useExactSymbolOutline": false,
+            "thinningDistanceUnit": "Map",
+            "thinDuplicateLabels": false,
+            "spreadWords": false,
+            "spreadCharacters": false,
+            "repetitionIntervalUnit": "Map",
+            "repeatLabel": false,
+            "removeExtraWhiteSpace": false,
+            "removeExtraLineBreaks": false,
+            "primaryOffsetUnit": "Map",
+            "preferLabelNearMapBorder": false,
+            "preferLabelNearJunction": false,
+            "preferHorizontalPlacement": false,
+            "polygonPlacementMethod": "HorizontalInPolygon",
+            "polygonFeatureType": "General",
+            "polygonAnchorPointType": "GeometricCenter",
+            "pointPlacementMethod": "AroundPoint",
+            "neverRemoveLabel": false,
+            "multiPartOption": "OneLabelPerFeature",
+            "minimumFeatureSizeUnit": "Map",
+            "maximumLabelOverrunUnit": "Map",
+            "linePlacementMethod": "CenteredHorizontalOnLine",
+            "lineFeatureType": "General",
+            "labelLargestPolygon": false,
+            "isOffsetFromFeatureGeometry": false,
+            "isMinimumSizeBasedOnArea": false,
+            "isLabelBufferHardConstraint": false,
+            "graticuleAlignmentType": "Straight",
+            "graticuleAlignment": false,
+            "enableSecondaryOffset": false,
+            "enablePolygonFixedPosition": false,
+            "enablePointPlacementPriorities": false,
+            "enableConnection": false,
+            "contourLadderType": "None",
+            "contourAlignmentType": "Uphill",
+            "constrainOffset": "NoConstraint",
+            "connectionType": "MinimizeLabels",
+            "canUseAlternateLabelExpression": false,
+            "canTruncateLabel": false,
+            "canStackLabel": false,
+            "canShiftPointLabel": false,
+            "canRemoveOverlappingLabel": false,
+            "canReduceLeading": false,
+            "canReduceFontSize": false,
+            "canPlaceLabelOutsidePolygon": false,
+            "canPlaceLabelOnTopOfFeature": false,
+            "canOverrunFeature": false,
+            "canKeyNumberLabel": false,
+            "canFlipStackedStreetLabel": false,
+            "canAbbreviateLabel": false,
+            "boundaryLabelingSingleSidedOnLine": false,
+            "boundaryLabelingAllowSingleSided": false,
+            "boundaryLabelingAllowHoles": false,
+            "backgroundLabel": false,
+            "avoidPolygonHoles": false,
+            "allowStraddleStacking": false,
+            "allowAsymmetricOverrun": false,
+            "alignLabelToLineDirection": false
+          },
+          "featuresToLabel": "AllVisibleFeatures",
+          "expressionEngine": "Arcade",
+          "expression": "$feature['FocalName']"
+        }
+      ]
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_RestorationLandscapes_051923_87582842_f008_43e8_bb66_e76dfaa0dcf8.xml"
+  ]
+}

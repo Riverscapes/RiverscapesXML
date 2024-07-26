@@ -1,0 +1,761 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_August_2022_4c90b10c_7a5f_4b21_8101_0cd5f113e1cb.xml",
+      "name": "BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": true,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "This dataset represents the consolidated submissions of GRSG habitat management areas from each individual BLM ARMP & ARMPA/Records of Decision (ROD) and for subsequent updates. These data were submitted to the BLM\u2019s Wildlife Habitat Spatial Analysis Lab in March 2016 and were updated for UT in April of 2017, WY in October of 2017 (Lander and Bighorn EIS) and May 2022 (Buffalo and NinePlan EIS); CO in February of 2020, NVCA in July 2022, HiLine (GHMA only) in July 2022, and Oregon in August 2022. \r\nAugust 2022 Update: OR - New habitat data was submitted by Oregon EIS as part of the Allocation Decision Analysis data call in 2022. Data that was submitted earlier was updated to reflect SFA designations in Aug 2022.\r\nJuly 2022 Update: NVCA and HiLine (GHMA only) - New habitat data was submitted by NVCA and HiLine EISs as part of the Allocation Decision Analysis data call in 2022. \r\nMay 2022 Update: WY - New habitat data was submitted by Wyoming EISs Buffalo and Nine Plan as part of the Allocation Decision Analysis data call in 2022. \r\nFebruary 2020 Update: CO - In February 2016, the Associated Governments of Northwest Colorado (AGNC) hired a consultant (Olsson) to help further refine CPW\u2019s greater sage-grouse habitat maps in Northwest Colorado. The Olsson consultation team, have utilized CPW\u2019s contemporary and rigorous habitat models and developed their own to produce revised PHMA and GHMA habitat data. These spatial datasets (i.e., habitat maps) are specifically designed to meet the management intent of the ARMPA and have been produced for formal submittal to the BLM for incorporation into Northwest Colorado Land and Resource Management Plans. The updated habitat delineations for NWCO include Undesignated Habitat (UDH) to address concerns surrounding the management of privately held irrigated agricultural lands. The BLM's NWCO Sage-Grouse Plan has no management decisions associated with this habitat designation. \r\nOctober 2017 Update: WY - On October 27, 2017 the WY state director signed maintenance actions for the Wyoming Sage-Grouse ARMPA, Buffalo RMP, Cody RMP, and Worland RMP that changed WY PHMA boundaries, bringing them into consistency with the Wyoming Core Areas (version 4) from the current Governor's executive order 2015-4. The updated PHMA boundaries were also adopted by the Lander RMP.\r\nApril 2017 Update: UT - The interagency team reconvened in late 2016 to review State of Utah GRSG populations and the BLM\u2019s 2015 and 2016 wildfire data. Of the ten soft triggers and seven hard triggers evaluated, only one population soft trigger and one population hard trigger have been met, both within the Sheeprocks population area of Fillmore and Salt Lake Field Offices. Appendix I of the ARMPA includes \u201chard-wired\u201d changes in management that were finalized in the 2015 Record of Decision, listed in Appendix I Table I.1 (Specific Management Responses). The PHMA in the Sheeprocks population has changed as a result of this, and the change is reflected in this data.\r\nThe following habitat management areas were used in the creation of this feature class:\r\nPHMA: Areas identified as having the highest habitat value for maintaining sustainable GRSG populations and include breeding, late brood-rearing, and winter concentration areas.\r\nGHMA: Areas that are occupied seasonally or year-round and are outside of PHMAs.\r\nIHMA: Areas in Idaho that provide a management buffer for and that connect patches of PHMAs. IHMAs encompass areas of generally moderate to high habitat value habitat or populations but that are not as important as PHMAs.\r\nOHMA: Areas in Nevada and Northeastern California, identified as unmapped habitat in the Proposed RMP/Final EIS, that are within the Planning Area and contain seasonal or connectivity habitat areas.\r\nRHMA: Areas in Montana EISs with ongoing or imminent impacts containing substantial and high-quality GRSG habitat that historically supported sustainable GRSG populations. Management actions would emphasize restoration for the purpose of establishing or restoring sustainable GRSG populations. Areas are delineated using key, core, and connectivity data or maps and other resource information.\r\nLCHMA: Areas in CO EIS that have been identified as broader regions of connectivity important to facilitate the movement of GRSG and maintain ecological processes.\r\nUDH: In CO EIS, An Undesignated Habitat management prescription was developed to address concerns surrounding the management of privately held irrigated agricultural lands.\r\nAnthro Mountain: An additional 41,200 acres of National Forest System lands in the Anthro Mountain portion of the Carbon Population Area in Utah EIS that are managed as neither PHMA nor GHMA. These areas are identified as \u201cAnthro Mountain.\u201d In the BLM\u2019s ARMPA, these areas are considered split-estate, where the BLM merely administers the mineral estate.\r\n\r\n\r\nThis dataset represents the consolidated submissions of GRSG habitat management areas from each individual BLM ARMP & ARMPA/Records of Decision (ROD) and for subsequent updates. These data were submitted to the BLM\u2019s Wildlife Habitat Spatial Analysis Lab in March 2016 and were updated for UT in April of 2017, WY in October of 2017 (Lander and Bighorn EIS) and May 2022 (Buffalo and NinePlan EIS); NW CO in February of 2020, NVCA in July 2022, HiLine (GHMA only) in July 2022, and Oregon in August 2022. All of the data used to create this file was submitted by the EIS. Quality Assurance/Quality Control (QA/QC) employed by the Wildlife Habitat Spatial Analysis lab was limited to: ensuring that the submitted data did not span the EIS boundary and ensuring that the submitted habitat data did not contain overlaps between various habitat management area designations. The EIS is solely responsible for the content and quality of submitted data used to create this file. The habitat data submitted by an EIS was identified by the EIS name and alternative through the addition and calculation of the EIS_HAB field. The EIS_HAB field calculation was performed according to the following template: For Priority habitat: \u201cEIS Name\u201d_\"PH\"_\u201cROD\u201d. For General habitat: \u201cEIS Name\u201d_\"GH\"_\u201cROD\u201d or \u201cEIS Name\u201d_\"IH\"_\u201cROD\u201d (representing Idaho's Important Habitat Management Areas). Restoration Habitat management Areas (RHMAs) for Montana, Linkage Connectivity Habitat Management Areas (LCHMAs) for CO, Other Habitat management Areas (OHMAs) for NVCA and Anthro Mountain for Utah were also included and calculated within the EIS_HAB field. The updated habitat delineations for CO include Undesignated Habitat (UDH) to address concerns surrounding the management of privately held irrigated agricultural lands. The BLM's NWCO Sage-Grouse Plan has no management decisions associated with this habitat designation. The Hab_Type field was calculated from the EIS_HAB field, and includes the following: PHMA, GHMA, IHMA, RHMA, OHMA, LCHMA, Anthro Mtn, and UDH. Features were dissolved to the EIS_HAB and Hab_Type fields and geometry was repaired. See the Details section of this metadata record for a description of the updates made to the original dataset. The Source field was added to keep track of data that was submitted in 2022 to distinguish these records from habitat records that were not updated in 2022, having been retained from the Feb 2020 version of the GRSG Habitat data.\r\n\r\nThis dataset represents the consolidated submissions of GRSG habitat management areas from each individual BLM ARMP & ARMPA/Records of Decision (ROD) and for subsequent updates. These data were submitted to the BLM\u2019s Wildlife Habitat Spatial Analysis Lab in March 2016 and were updated for UT in April of 2017, WY in October of 2017, and CO in February of 2020. All the data used to create this file was submitted by the EIS. Quality Assurance/Quality Control (QA/QC) employed by the Wildlife Habitat Spatial Analysis lab was limited to: ensuring that the submitted data did not span the EIS boundary and ensuring that the submitted habitat data did not contain overlaps between various habitat management area designations. The EIS is solely responsible for the content and quality of submitted data used to create this file. The habitat data submitted by an EIS was identified by the EIS name and alternative through the addition and calculation of the EIS_HAB field. The EIS_HAB field calculation was performed according to the following template: For Priority habitat: \u201cEIS Name\u201d_\"PH\"_\u201cROD\u201d. For General habitat: \u201cEIS Name\u201d_\"GH\"_\u201cROD\u201d or \u201cEIS Name\u201d_\"IH\"_\u201cROD\u201d (representing Idaho's Important Habitat Management Areas). Restoration Habitat management Areas (RHMAs) for Montana, Linkage Connectivity Habitat Management Areas (LCHMAs) for NWCO, Other Habitat management Areas (OHMAs) for NVCA and Anthro Mountain for Utah were also included and calculated within the EIS_HAB field. The updated habitat delineations for NWCO include Undesignated Habitat (UDH) to address concerns surrounding the management of privately held irrigated agricultural lands. The BLM's NWCO Sage-Grouse Plan has no management decisions associated with this habitat designation. The Hab_Type field was calculated from the EIS_HAB field, and includes the following: PHMA, GHMA, IHMA, RHMA, OHMA, LCHMA, Anthro Mtn, and UDH. Features were dissolved to the EIS_HAB and Hab_Type fields and geometry was repaired. See the Details section of this metadata record for a description of the updates made to the original dataset.\r\n\r\nThis dataset represents the consolidated submissions of GRSG habitat management areas from each individual BLM ARMP & ARMPA/Records of Decision (ROD) and for subsequent updates. These data were submitted to the BLM\u2019s Wildlife Habitat Spatial Analysis Lab in March 2016 and were updated for UT in April of 2017, WY in October of 2017, and CO in February of 2020. February 2020 Update: CO - In February 2016, the Associated Governments of Northwest Colorado (AGNC) hired a consultant (Olsson) to help further refine CPW\u2019s greater sage-grouse habitat maps in Northwest Colorado. The Olsson consultation team, have utilized CPW\u2019s contemporary and rigorous habitat models and developed their own to produce revised PHMA and GHMA habitat data. These spatial datasets (i.e., habitat maps) are specifically designed to meet the management intent of the ARMPA and have been produced for formal submittal to the BLM for incorporation into Northwest Colorado Land and Resource Management Plans. The updated habitat delineations for NWCO include Undesignated Habitat (UDH) to address concerns surrounding the management of privately held irrigated agricultural lands. The BLM's NWCO Sage-Grouse Plan has no management decisions associated with this habitat designation. October 2017 Update: WY - On October 27, 2017 the WY state director signed maintenance actions for the Wyoming Sage-Grouse ARMPA, Buffalo RMP, Cody RMP, and Worland RMP that changed WY PHMA boundaries, bringing them into consistency with the Wyoming Core Areas (version 4) from the current Governor's executive order 2015-4. The updated PHMA boundaries were also adopted by the Lander RMP. April 2017 Update: UT - The interagency team reconvened in late 2016 to review State of Utah GRSG populations and the BLM\u2019s 2015 and 2016 wildfire data. Of the ten soft triggers and seven hard triggers evaluated, only one population soft trigger and one population hard trigger have been met, both within the Sheeprocks population area of Fillmore and Salt Lake Field Offices. Appendix I of the ARMPA includes \u201chard-wired\u201d changes in management that were finalized in the 2015 Record of Decision, listed in Appendix I Table I.1 (Specific Management Responses). The PHMA in the Sheeprocks population has changed as a result of this, and the change is reflected in this data. The following habitat management areas were used in the creation of this feature class: PHMA: Areas identified as having the highest habitat value for maintaining sustainable GRSG populations and include breeding, late brood-rearing, and winter concentration areas. GHMA: Areas that are occupied seasonally or year-round and are outside of PHMAs. IHMA: Areas in Idaho that provide a management buffer for and that connect patches of PHMAs. IHMAs encompass areas of generally moderate to high habitat value habitat or populations but that are not as important as PHMAs. OHMA: Areas in Nevada and Northeastern California, identified as unmapped habitat in the Proposed RMP/Final EIS, that are within the Planning Area and contain seasonal or connectivity habitat areas. RHMA: Areas with ongoing or imminent impacts containing substantial and high-quality GRSG habitat that historically supported sustainable GRSG populations. Management actions would emphasize restoration for the purpose of establishing or restoring sustainable GRSG populations. Areas are delineated using key, core, and connectivity data or maps and other resource information. LCHMA: Areas that have been identified as broader regions of connectivity important to facilitate the movement of GRSG and maintain ecological processes. Anthro Mountain: An additional 41,200 acres of National Forest System lands in the Anthro Mountain portion of the Carbon Population Area that are managed as neither PHMA nor GHMA. These areas are identified as \u201cAnthro Mountain.\u201d In the BLM\u2019s ARMPA, these areas are considered split-estate, where the BLM merely administers the mineral estate. UDH: An Undesignated Habitat management prescription was developed to address concerns surrounding the management of privately held irrigated agricultural lands.",
+      "attribution": "Compiled by the BLM\u2019s Wildlife Habitat Spatial Analysis Lab. Data created and submitted to the NOC by each individual EIS.\nThese data are provided by Bureau of Land Management (BLM) \u201cas is\u201d and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User\u2019s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification. (Optional paragraph for additional use constraints, as needed, depending on the data being released. For example: These data were digitized and edited from best available sources at scales ranging from 1:24,000 up to 1:500,000. These data are for general purposes related to Geographic Information System and mapping applications at small to intermediate geographic scales. Users are cautioned that digital enlargement of these data to scales larger than that at which they were originally mapped can cause misinterpretation. Users are further cautioned that these data and interpretations derived from them do not eliminate the need for onsite survey and evaluation of specific sites. OR These data were collected only on those lands managed by the BLM. OR This raptor nest data was collected piece-meal from various small surveys over a 5-year period and do not constitute an intensive survey for nests. Nests might be missing.",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 5070,
+                  "wkid": 5070
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "EIS_HAB",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Source",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Habitat_Type",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 5070,
+              "wkid": 5070
+            },
+            "ymin": 1701314.8481,
+            "ymax": 2964467.0039,
+            "xmin": -2088391.8329,
+            "xmax": -545690.076099999
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 5070,
+            "wkid": 5070
+          },
+          "srid": "5070",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"EIS_HAB\",\"Source\",\"Habitat_Type\",\"SHAPE_Length\",\"SHAPE_Area\" from main.\"BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "Habitat_Type",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Anthro Mtn"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            141,
+                            211,
+                            199,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Anthro Mtn",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "GHMA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            255,
+                            255,
+                            179,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "General Habitat Mgmt. Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "IHMA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            190,
+                            186,
+                            218,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Important Habitat Mgmt. Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "LCHMA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            251,
+                            128,
+                            114,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Linkage and Connectivity Habitat Mgmt. Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "OHMA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            128,
+                            177,
+                            211,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Other Habitat Mgmt. Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "PHMA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            253,
+                            180,
+                            98,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Priority Habitat Mgmt. Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "RHMA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            179,
+                            222,
+                            105,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Restoration Habitat Mgmt. Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "UDH"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            66,
+                            29,
+                            73,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            252,
+                            205,
+                            229,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Undesignated Habitat",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "Habitat_Type"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Butt",
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    66,
+                    29,
+                    73,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    175,
+                    122,
+                    219,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "defaultLabel": "<all other values>"
+      },
+      "labelVisibility": false
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_August_2022_4c90b10c_7a5f_4b21_8101_0cd5f113e1cb.xml"
+  ]
+}

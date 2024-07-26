@@ -1,0 +1,503 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_Natl_Grazing_Allotment_Polygons_24ae113d_43e2_4243_ac44_f73403cf08a8.xml",
+      "name": "BLM_Natl_Grazing_Allotment_P",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": true,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "This polygon feature class represents the spatial extent and boundaries for BLM Grazing Allotments. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived..\r\n\r\nThe purpose of this polygon feature class is to show BLM Grazing Allotments, which are areas of land designated and managed for livestock grazing. In addition to public lands under the jurisdiction of the Bureau of Land Management, allotments may include private lands, State lands, and lands under the jurisdiction of other federal agencies. This geospatial dataset is supplemental to the Rangeland Administration System (RAS), which is authoritative for BLM grazing allotments (except Alaska). Rangeland Administration System Reports can be accessed from the BLM public reporting application website at reports.blm.gov.\r\n\r\nA published revision of the Department Manual\u2019s Part 305: Departmental Science Effects, Chapter 3: Integrity of Scientific and Scholarly Activities (305 DM 3), effective December 16, 2014, is available online at http://elips.doi.gov/ELIPS/DocView.aspx?id=4056. Scholarly information considered in Departmental decision making must be robust, of the highest quality, and the result of as rigorous scientific and scholarly processes as can be achieved. Most importantly, it must be trustworthy. This policy helps us to achieve that standard (http://www.doi.gov/scientificintegrity/index.cfm). Each state office has a Data Steward or Contact Person for this data. Please contact the specific state office for additional information on their state dataset.",
+      "attribution": "BLM Admin State",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_Natl_Grazing_Allotment_P\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_Natl_Grazing_Allotment_P.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "ALLOT_NO",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ALLOT_NAME",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "GIS_ACRES",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "ADMIN_ST",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADM_OFC_CD",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADM_UNIT_CD",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ST_ALLOT",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ACTIVE_DT",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "GlobalID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "created_user",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "created_date",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "last_edited_user",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "last_edited_date",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "Original_GlobalID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 31.332274087,
+            "ymax": 49.0002565620001,
+            "xmin": -124.504518722,
+            "xmax": -98.901824883
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"ALLOT_NO\",\"ALLOT_NAME\",\"GIS_ACRES\",\"ADMIN_ST\",\"ADM_OFC_CD\",\"ADM_UNIT_CD\",\"ST_ALLOT\",\"ACTIVE_DT\",\"GlobalID\",\"created_user\",\"created_date\",\"last_edited_user\",\"last_edited_date\",\"Original_GlobalID\",\"SHAPE_Length\",\"SHAPE_Area\" from main.\"BLM_Natl_Grazing_Allotment_P\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMSimpleRenderer",
+        "symbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Butt",
+                "color": {
+                  "type": "CIMGrayColor",
+                  "values": [
+                    35,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    114,
+                    155,
+                    111,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "patch": "Default"
+      },
+      "labelVisibility": true,
+      "labelClasses": [
+        {
+          "type": "CIMLabelClass",
+          "iD": -1,
+          "visibility": true,
+          "useCodedValue": false,
+          "textSymbol": {
+            "type": "CIMSymbolReference",
+            "symbol": {
+              "type": "CIMTextSymbol",
+              "overprint": false,
+              "billboardMode3D": "None",
+              "wordSpacing": 100,
+              "verticalGlyphOrientation": "Right",
+              "verticalAlignment": "Baseline",
+              "underline": false,
+              "textDirection": "LTR",
+              "textCase": "Normal",
+              "symbol3DProperties": {
+                "type": "CIM3DSymbolProperties",
+                "rotationOrder3D": "XYZ",
+                "dominantSizeAxis3D": "Z"
+              },
+              "symbol": {
+                "type": "CIMPolygonSymbol",
+                "useRealWorldSymbolSizes": false,
+                "symbolLayers": [
+                  {
+                    "type": "CIMSolidFill",
+                    "overprint": false,
+                    "colorLocked": false,
+                    "enable": true,
+                    "color": {
+                      "type": "CIMGrayColor",
+                      "values": [
+                        50,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment": "Display"
+              },
+              "strikethrough": false,
+              "smallCaps": false,
+              "lineGapType": "ExtraLeading",
+              "ligatures": false,
+              "letterWidth": 100,
+              "kerning": true,
+              "horizontalAlignment": "Left",
+              "hinting": "None",
+              "height": 7.0,
+              "haloSize": 1,
+              "fontType": "Unspecified",
+              "fontStyleName": "",
+              "fontFamilyName": "Arial",
+              "fontEncoding": "Unicode",
+              "fontEffects": "Normal",
+              "extrapolateBaselines": false,
+              "drawSoftHyphen": false,
+              "drawGlyphsAsGeometry": false,
+              "depth3D": 1,
+              "compatibilityMode": false,
+              "blockProgression": "TTB"
+            }
+          },
+          "standardLabelPlacementProperties": {
+            "type": "CIMStandardLabelPlacementProperties",
+            "featureType": "Point",
+            "allowOverlappingLabels": false,
+            "placeOnlyInsidePolygon": false,
+            "polygonPlacementMethod": "AlwaysHorizontal",
+            "perpendicularToAngle": false,
+            "rotationType": "Geographic",
+            "pointPlacementMethod": "AroundPoint",
+            "numLabelsOption": "NoLabelRestrictions",
+            "labelWeight": "Low",
+            "featureWeight": "None"
+          },
+          "priority": 2,
+          "name": "Default",
+          "minimumScale": 1500000.0,
+          "maplexLabelPlacementProperties": {
+            "type": "CIMMaplexLabelPlacementProperties",
+            "featureType": "Point",
+            "secondaryOffsetUnit": "Map",
+            "removeAmbiguousLabels": "All",
+            "measureFromClippedFeatureGeometry": false,
+            "centerLabelAnchorType": "Symbol",
+            "avoidOverlappingLabeledPolygonsAsIfHoles": false,
+            "polygonAnchorPointPerimeterInsetUnit": "Map",
+            "useExactSymbolOutline": false,
+            "thinningDistanceUnit": "Map",
+            "thinDuplicateLabels": false,
+            "spreadWords": false,
+            "spreadCharacters": false,
+            "repetitionIntervalUnit": "Map",
+            "repeatLabel": false,
+            "removeExtraWhiteSpace": false,
+            "removeExtraLineBreaks": false,
+            "primaryOffsetUnit": "Map",
+            "preferLabelNearMapBorder": false,
+            "preferLabelNearJunction": false,
+            "preferHorizontalPlacement": false,
+            "polygonPlacementMethod": "HorizontalInPolygon",
+            "polygonFeatureType": "General",
+            "polygonAnchorPointType": "GeometricCenter",
+            "pointPlacementMethod": "AroundPoint",
+            "neverRemoveLabel": false,
+            "multiPartOption": "OneLabelPerFeature",
+            "minimumFeatureSizeUnit": "Map",
+            "maximumLabelOverrunUnit": "Map",
+            "linePlacementMethod": "CenteredHorizontalOnLine",
+            "lineFeatureType": "General",
+            "labelLargestPolygon": false,
+            "isOffsetFromFeatureGeometry": false,
+            "isMinimumSizeBasedOnArea": false,
+            "isLabelBufferHardConstraint": false,
+            "graticuleAlignmentType": "Straight",
+            "graticuleAlignment": false,
+            "enableSecondaryOffset": false,
+            "enablePolygonFixedPosition": false,
+            "enablePointPlacementPriorities": false,
+            "enableConnection": false,
+            "contourLadderType": "None",
+            "contourAlignmentType": "Uphill",
+            "constrainOffset": "NoConstraint",
+            "connectionType": "MinimizeLabels",
+            "canUseAlternateLabelExpression": false,
+            "canTruncateLabel": false,
+            "canStackLabel": false,
+            "canShiftPointLabel": false,
+            "canRemoveOverlappingLabel": false,
+            "canReduceLeading": false,
+            "canReduceFontSize": false,
+            "canPlaceLabelOutsidePolygon": false,
+            "canPlaceLabelOnTopOfFeature": false,
+            "canOverrunFeature": false,
+            "canKeyNumberLabel": false,
+            "canFlipStackedStreetLabel": false,
+            "canAbbreviateLabel": false,
+            "boundaryLabelingSingleSidedOnLine": false,
+            "boundaryLabelingAllowSingleSided": false,
+            "boundaryLabelingAllowHoles": false,
+            "backgroundLabel": false,
+            "avoidPolygonHoles": false,
+            "allowStraddleStacking": false,
+            "allowAsymmetricOverrun": false,
+            "alignLabelToLineDirection": false
+          },
+          "featuresToLabel": "AllVisibleFeatures",
+          "expressionEngine": "Arcade",
+          "expression": "$feature['ALLOT_NAME']"
+        }
+      ]
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_Natl_Grazing_Allotment_Polygons_24ae113d_43e2_4243_ac44_f73403cf08a8.xml"
+  ]
+}

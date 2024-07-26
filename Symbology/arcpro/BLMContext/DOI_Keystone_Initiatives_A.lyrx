@@ -1,0 +1,880 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_Keystone_Initiatives_A_4a2a982f_2355_4d87_806b_5d54497efac9.xml",
+      "name": "DOI_Keystone_Initiatives_A",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": false,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "",
+      "attribution": "",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"DOI_Keystone_Initiatives_A\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\DOI_Keystone_Initiatives_A.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": true,
+                "hasZ": true,
+                "spatialReference": {
+                  "latestWkid": 3857,
+                  "wkid": 102100
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "KeystoneIn_Name",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Shape_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "Shape_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "ymin": -1643352.0164,
+            "ymax": 10774982.3999,
+            "xmin": -19864251.3047,
+            "xmax": 16269834.8254
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 3857,
+            "wkid": 102100
+          },
+          "srid": "3857",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"KeystoneIn_Name\",\"Shape_Length\",\"Shape_Area\" from main.\"DOI_Keystone_Initiatives_A\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "KeystoneIn_Name",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Appalachia"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            141,
+                            211,
+                            199,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Appalachia",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Grasslands"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            255,
+                            255,
+                            179,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Grasslands",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Gravel to Gravel"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            190,
+                            186,
+                            218,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Gravel to Gravel",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Hawaiian Forest Bird Conservation"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            251,
+                            128,
+                            114,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Hawaiian Forest Bird Conservation",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Islands"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            128,
+                            177,
+                            211,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Islands",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Klamath Basin"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            253,
+                            180,
+                            98,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Klamath Basin",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Sagebrush"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            179,
+                            222,
+                            105,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Sagebrush",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Salt Marsh"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            252,
+                            205,
+                            229,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Salt Marsh",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "KeystoneIn_Name"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Butt",
+                "color": {
+                  "type": "CIMGrayColor",
+                  "values": [
+                    35,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    105,
+                    204,
+                    183,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "defaultLabel": "<all other values>"
+      },
+      "labelVisibility": true,
+      "labelClasses": [
+        {
+          "type": "CIMLabelClass",
+          "iD": -1,
+          "visibility": true,
+          "useCodedValue": false,
+          "textSymbol": {
+            "type": "CIMSymbolReference",
+            "symbol": {
+              "type": "CIMTextSymbol",
+              "overprint": false,
+              "billboardMode3D": "None",
+              "wordSpacing": 100,
+              "verticalGlyphOrientation": "Right",
+              "verticalAlignment": "Baseline",
+              "underline": false,
+              "textDirection": "LTR",
+              "textCase": "Normal",
+              "symbol3DProperties": {
+                "type": "CIM3DSymbolProperties",
+                "rotationOrder3D": "XYZ",
+                "dominantSizeAxis3D": "Z"
+              },
+              "symbol": {
+                "type": "CIMPolygonSymbol",
+                "useRealWorldSymbolSizes": false,
+                "symbolLayers": [
+                  {
+                    "type": "CIMSolidFill",
+                    "overprint": false,
+                    "colorLocked": false,
+                    "enable": true,
+                    "color": {
+                      "type": "CIMGrayColor",
+                      "values": [
+                        50,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment": "Display"
+              },
+              "strikethrough": false,
+              "smallCaps": false,
+              "lineGapType": "ExtraLeading",
+              "ligatures": false,
+              "letterWidth": 100,
+              "kerning": true,
+              "horizontalAlignment": "Left",
+              "hinting": "None",
+              "height": 7.0,
+              "haloSize": 1,
+              "fontType": "Unspecified",
+              "fontStyleName": "",
+              "fontFamilyName": "Arial",
+              "fontEncoding": "Unicode",
+              "fontEffects": "Normal",
+              "extrapolateBaselines": false,
+              "drawSoftHyphen": false,
+              "drawGlyphsAsGeometry": false,
+              "depth3D": 1,
+              "compatibilityMode": false,
+              "blockProgression": "TTB"
+            }
+          },
+          "standardLabelPlacementProperties": {
+            "type": "CIMStandardLabelPlacementProperties",
+            "featureType": "Point",
+            "allowOverlappingLabels": false,
+            "placeOnlyInsidePolygon": false,
+            "polygonPlacementMethod": "AlwaysHorizontal",
+            "perpendicularToAngle": false,
+            "rotationType": "Geographic",
+            "pointPlacementMethod": "AroundPoint",
+            "numLabelsOption": "NoLabelRestrictions",
+            "labelWeight": "Low",
+            "featureWeight": "None"
+          },
+          "priority": 2,
+          "name": "Default",
+          "minimumScale": 1500000.0,
+          "maplexLabelPlacementProperties": {
+            "type": "CIMMaplexLabelPlacementProperties",
+            "featureType": "Point",
+            "secondaryOffsetUnit": "Map",
+            "removeAmbiguousLabels": "All",
+            "measureFromClippedFeatureGeometry": false,
+            "centerLabelAnchorType": "Symbol",
+            "avoidOverlappingLabeledPolygonsAsIfHoles": false,
+            "polygonAnchorPointPerimeterInsetUnit": "Map",
+            "useExactSymbolOutline": false,
+            "thinningDistanceUnit": "Map",
+            "thinDuplicateLabels": false,
+            "spreadWords": false,
+            "spreadCharacters": false,
+            "repetitionIntervalUnit": "Map",
+            "repeatLabel": false,
+            "removeExtraWhiteSpace": false,
+            "removeExtraLineBreaks": false,
+            "primaryOffsetUnit": "Map",
+            "preferLabelNearMapBorder": false,
+            "preferLabelNearJunction": false,
+            "preferHorizontalPlacement": false,
+            "polygonPlacementMethod": "HorizontalInPolygon",
+            "polygonFeatureType": "General",
+            "polygonAnchorPointType": "GeometricCenter",
+            "pointPlacementMethod": "AroundPoint",
+            "neverRemoveLabel": false,
+            "multiPartOption": "OneLabelPerFeature",
+            "minimumFeatureSizeUnit": "Map",
+            "maximumLabelOverrunUnit": "Map",
+            "linePlacementMethod": "CenteredHorizontalOnLine",
+            "lineFeatureType": "General",
+            "labelLargestPolygon": false,
+            "isOffsetFromFeatureGeometry": false,
+            "isMinimumSizeBasedOnArea": false,
+            "isLabelBufferHardConstraint": false,
+            "graticuleAlignmentType": "Straight",
+            "graticuleAlignment": false,
+            "enableSecondaryOffset": false,
+            "enablePolygonFixedPosition": false,
+            "enablePointPlacementPriorities": false,
+            "enableConnection": false,
+            "contourLadderType": "None",
+            "contourAlignmentType": "Uphill",
+            "constrainOffset": "NoConstraint",
+            "connectionType": "MinimizeLabels",
+            "canUseAlternateLabelExpression": false,
+            "canTruncateLabel": false,
+            "canStackLabel": false,
+            "canShiftPointLabel": false,
+            "canRemoveOverlappingLabel": false,
+            "canReduceLeading": false,
+            "canReduceFontSize": false,
+            "canPlaceLabelOutsidePolygon": false,
+            "canPlaceLabelOnTopOfFeature": false,
+            "canOverrunFeature": false,
+            "canKeyNumberLabel": false,
+            "canFlipStackedStreetLabel": false,
+            "canAbbreviateLabel": false,
+            "boundaryLabelingSingleSidedOnLine": false,
+            "boundaryLabelingAllowSingleSided": false,
+            "boundaryLabelingAllowHoles": false,
+            "backgroundLabel": false,
+            "avoidPolygonHoles": false,
+            "allowStraddleStacking": false,
+            "allowAsymmetricOverrun": false,
+            "alignLabelToLineDirection": false
+          },
+          "featuresToLabel": "AllVisibleFeatures",
+          "expressionEngine": "Arcade",
+          "expression": "$feature['KeystoneIn_Name']"
+        }
+      ]
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_Keystone_Initiatives_A_4a2a982f_2355_4d87_806b_5d54497efac9.xml"
+  ]
+}

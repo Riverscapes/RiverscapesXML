@@ -1,0 +1,735 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons_fc719a49_2a69_4221_9bcb_c5f475435463.xml",
+      "name": "BLM_NLCS_Natl_Monuments_Cons_Areas_A",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": false,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "This polygon feature class represents the spatial extent and boundaries of the BLM National Landscape Conservation System (NLCS) National Monuments, National Conservation Areas and Similar Designations. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived.\r\n\r\nThis feature class includes Cooperative Management and Protection Areas, Forest Reserves, National Conservation Areas, National Monuments, and Outstanding Natural Areas. Descriptions of each type of polygon found in this feature class can be found on Page 21 of the National Landscape Conservation System (NLCS) Implementation Guidelines (Version 1.1). The Bureau of Land Management's National Conservation Lands include 19 national monuments in nine western states. These national monuments encompass landscapes of tremendous beauty and diversity, ranging from rugged California coastline to vividly-hued desert canyons. The Antiquities Act of 1906 grants the President authority to designate national monuments in order to protect \u201cobjects of historic or scientific interest.\u201d National conservation areas (NCAs) and similarly designated lands are designated by Congress to conserve, protect, enhance, and manage public lands for the benefit and enjoyment of present and future generations. The Bureau of Land Management's National Conservation Lands include 16 NCAs and five similarly designated lands in ten states. These lands feature exceptional scientific, cultural, ecological, historical, and recreational values. They differ tremendously in landscape and size, varying from the coastal beauty of California's 18-acre Piedras Blancas Light Station Outstanding Natural Area to the rugged desert vistas of Nevada's 1.2 million acre Black Rock Desert-High Rock Canyon Emigrant Trails NCA.\r\n\r\nA published revision of the Department Manual\u2019s Part 305: Departmental Science Effects, Chapter 3: Integrity of Scientific and Scholarly Activities (305 DM 3), effective December 16, 2014, is available online at http://elips.doi.gov/ELIPS/DocView.aspx?id=4056. Scholarly information considered in Departmental decision making must be robust, of the highest quality, and the result of as rigorous scientific and scholarly processes as can be achieved. Most importantly, it must be trustworthy. This policy helps us to achieve that standard (http://www.doi.gov/scientificintegrity/index.cfm). Each state office has a Data Steward or Contact Person for this data. Please contact the specific state office for additional information on their state dataset.",
+      "attribution": "BLM Admin State",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_NLCS_Natl_Monuments_Cons_Areas_A\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_NLCS_Natl_Monuments_Cons_Areas_A.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": true,
+                "hasZ": true,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "sma_code",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "STATE_ADMN",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "STATE_GEOG",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Label",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "NCA_NAME",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "PHOTO_BLOB",
+              "type": "esriFieldTypeBlob",
+              "isNullable": true,
+              "length": 0,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 6
+            },
+            {
+              "name": "NLCS_ID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 26.947545012,
+            "ymax": 65.8458668010001,
+            "xmin": -146.75930066,
+            "xmax": -80.0792492099999
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"sma_code\",\"STATE_ADMN\",\"STATE_GEOG\",\"Label\",\"NCA_NAME\",\"PHOTO_BLOB\",\"NLCS_ID\",\"SHAPE_Length\",\"SHAPE_Area\" from main.\"BLM_NLCS_Natl_Monuments_Cons_Areas_A\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "sma_code",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_CMPA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            166,
+                            206,
+                            227,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Cooperative Management and Protection Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_FR"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            31,
+                            120,
+                            180,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Forest Reserve",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_MON"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            178,
+                            223,
+                            138,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "National Monuments",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_NCA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            251,
+                            154,
+                            153,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "National Conservation Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_NM"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            227,
+                            26,
+                            28,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "National Monuments",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_NSA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            253,
+                            191,
+                            111,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "National Scenic Area",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "BLM_ONA"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            60,
+                            39,
+                            69,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            255,
+                            127,
+                            0,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Outstanding Natural Area",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "sma_code"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Butt",
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    60,
+                    39,
+                    69,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    141,
+                    90,
+                    153,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "defaultLabel": "<all other values>"
+      },
+      "labelVisibility": false
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons_fc719a49_2a69_4221_9bcb_c5f475435463.xml"
+  ]
+}

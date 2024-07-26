@@ -1,0 +1,350 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=CriticalHabitatLinearUSFWS_176f4236_9e6d_4355_b63c_12df38a9d695.xml",
+      "name": "USFWS_Critical_Habitat_L",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": false,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "",
+      "attribution": "",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"USFWS_Critical_Habitat_L\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\USFWS_Critical_Habitat_L.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolyline",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "commonName",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "scientificName",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "statusType",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "listingStatus",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "federalRegister",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Shape_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 24.52313238,
+            "ymax": 49.0001744370001,
+            "xmin": -124.68072998,
+            "xmax": -76.6745865189999
+          },
+          "geometryType": "esriGeometryPolyline",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"commonName\",\"scientificName\",\"statusType\",\"listingStatus\",\"federalRegister\",\"Shape_Length\" from main.\"USFWS_Critical_Habitat_L\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "listingStatus",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Endangered"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMLineSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Square",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            204,
+                            76,
+                            2,
+                            100.0
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "patch": "Default",
+                "label": "Endangered",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Threatened"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMLineSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Square",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            254,
+                            153,
+                            41,
+                            100.0
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "patch": "Default",
+                "label": "Threatened",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "listingStatus"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMLineSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Square",
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    230,
+                    184,
+                    33,
+                    100.0
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "defaultLabel": "<all other values>"
+      },
+      "labelVisibility": false
+    }
+  ],
+  "layers": [
+    "CIMPATH=CriticalHabitatLinearUSFWS_176f4236_9e6d_4355_b63c_12df38a9d695.xml"
+  ]
+}

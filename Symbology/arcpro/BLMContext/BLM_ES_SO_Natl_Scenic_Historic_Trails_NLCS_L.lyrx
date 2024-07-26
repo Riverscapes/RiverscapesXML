@@ -1,0 +1,440 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_f2fecbf5_ecc1_4952_9698_812803e1ebcc.xml",
+      "name": "BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": false,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "This polyline feature class represents the Bureau of Land Management (BLM) National Landscape Conservation System (NLCS) National Scenic and Historic Trails. This feature class shows the BLM Eastern States (ES) National Scenic and Historic Trails.\r\n\r\nThis polyline feature class includes National Scenic and Historic Trails. These trails are extended trails that closely follow a historic trail of travel or national significance. The designation of National Scenic and History Trail identifies and protects historic routes, historic remnants, cultural and artifacts for public use and enjoyment.\r\n\r\nA published revision of the Department Manual\u2019s Part 305: Departmental Science Effects, Chapter 3: Integrity of Scientific and Scholarly Activities (305 DM 3), effective December 16, 2014, is available online at http://elips.doi.gov/ELIPS/DocView.aspx?id=4056. Scholarly information considered in Departmental decision making must be robust, of the highest quality, and the result of as rigorous scientific and scholarly processes as can be achieved. Most importantly, it must be trustworthy. This policy helps us to achieve that standard (http://www.doi.gov/scientificintegrity/index.cfm). Please contact the Eastern States GIS Manager for additional information on their state dataset.",
+      "attribution": "BLM Eastern States",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolyline",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "NLCS_ID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "TRAIL_TYPE",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "NSHT_SGMNT_NO",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "NLCS_NAME",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "FAMS_ID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "CASEFILE_NO",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "MNG_AGCY",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADMIN_ST",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "NHT_CND_CTGY",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "COORD_SRC_TYPE",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "COORD_SRC2",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "DEF_FET_TYPE",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "DEF_FET2",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ACCURACY_FT",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "GlobalID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 25.7571288820001,
+            "ymax": 48.09292628,
+            "xmin": -96.596665638,
+            "xmax": -68.921619161
+          },
+          "geometryType": "esriGeometryPolyline",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"NLCS_ID\",\"TRAIL_TYPE\",\"NSHT_SGMNT_NO\",\"NLCS_NAME\",\"FAMS_ID\",\"CASEFILE_NO\",\"MNG_AGCY\",\"ADMIN_ST\",\"NHT_CND_CTGY\",\"COORD_SRC_TYPE\",\"COORD_SRC2\",\"DEF_FET_TYPE\",\"DEF_FET2\",\"ACCURACY_FT\",\"GlobalID\",\"SHAPE_Length\" from main.\"BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "TRAIL_TYPE",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Historic"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMLineSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Square",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            230,
+                            171,
+                            2,
+                            100.0
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "patch": "Default",
+                "label": "Historic",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Scenic"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMLineSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Square",
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            27,
+                            158,
+                            119,
+                            100.0
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "patch": "Default",
+                "label": "Scenic",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "TRAIL_TYPE"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMLineSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Square",
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    109,
+                    213,
+                    117,
+                    100.0
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "defaultLabel": "<all other values>"
+      },
+      "labelVisibility": false
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_f2fecbf5_ecc1_4952_9698_812803e1ebcc.xml"
+  ]
+}

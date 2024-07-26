@@ -1,0 +1,830 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=NIFC_Fuel_Polys_5d10bfe4_05a4_43f6_9ef0_d1966ba3462b.xml",
+      "name": "NIFC_Fuel_Polys",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": true,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "",
+      "attribution": "",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"NIFC_Fuel_Polys\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\NIFC_Fuel_Polys.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "trt_unt_id",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "local_id",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "col_date",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "trt_status",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "col_meth",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "comments",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "gis_acres",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "pstatus",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "modifiedon",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "createdon",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "cent_lat",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "cent_lon",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "userid",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "st_abbr",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "cong_dist",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "cnty_fips",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "trt_nm",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "fy",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "plan_acc_ac",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "act_acc_ac",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "act_init_dt",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "act_comp_dt",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "nfporsfid",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "trt_id_db",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "type_name",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "cat_nm",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "trt_statnm",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "col_methnm",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "plan_int_dt",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "unit_id",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "agency",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "trt_id",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "created_by",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "edited_by",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "projectname",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "regionname",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "projectid",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "keypointarea",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "unitname",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "deptname",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "countyname",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "statename",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "regioncode",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "districtname",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "isbil",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "bilfunding",
+              "type": "esriFieldTypeInteger",
+              "isNullable": true,
+              "length": 4,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 2
+            },
+            {
+              "name": "shape_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "shape_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 17.968776335,
+            "ymax": 67.9419617240001,
+            "xmin": -162.296501552,
+            "xmax": -67.085592949
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"trt_unt_id\",\"local_id\",\"col_date\",\"trt_status\",\"col_meth\",\"comments\",\"gis_acres\",\"pstatus\",\"modifiedon\",\"createdon\",\"cent_lat\",\"cent_lon\",\"userid\",\"st_abbr\",\"cong_dist\",\"cnty_fips\",\"trt_nm\",\"fy\",\"plan_acc_ac\",\"act_acc_ac\",\"act_init_dt\",\"act_comp_dt\",\"nfporsfid\",\"trt_id_db\",\"type_name\",\"cat_nm\",\"trt_statnm\",\"col_methnm\",\"plan_int_dt\",\"unit_id\",\"agency\",\"trt_id\",\"created_by\",\"edited_by\",\"projectname\",\"regionname\",\"projectid\",\"keypointarea\",\"unitname\",\"deptname\",\"countyname\",\"statename\",\"regioncode\",\"districtname\",\"isbil\",\"bilfunding\",\"shape_Length\",\"shape_Area\" from main.\"NIFC_Fuel_Polys\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "cat_nm",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Fire"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            238,
+                            177,
+                            54,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Fire",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Mechanical"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            214,
+                            29,
+                            183,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Mechanical",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "Other"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidStroke",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "anchor3D": "Center",
+                        "closeCaps3D": false,
+                        "width": 0.737007409759112,
+                        "miterLimit": 10,
+                        "lineStyle3D": "Tube",
+                        "joinStyle": "Bevel",
+                        "capStyle": "Butt",
+                        "color": {
+                          "type": "CIMGrayColor",
+                          "values": [
+                            35,
+                            100.0
+                          ]
+                        }
+                      },
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            80,
+                            123,
+                            216,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "Other",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "cat_nm"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Butt",
+                "color": {
+                  "type": "CIMGrayColor",
+                  "values": [
+                    35,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    196,
+                    60,
+                    57,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "defaultLabel": "<all other values>"
+      },
+      "labelVisibility": false
+    }
+  ],
+  "layers": [
+    "CIMPATH=NIFC_Fuel_Polys_5d10bfe4_05a4_43f6_9ef0_d1966ba3462b.xml"
+  ]
+}
