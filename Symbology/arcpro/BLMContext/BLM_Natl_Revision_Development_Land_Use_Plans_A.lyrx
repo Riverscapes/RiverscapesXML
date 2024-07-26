@@ -1,0 +1,451 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_Natl_Revision_Development_Land_Use_Plans_b5a7c0aa_32d9_4218_86aa_df4fa8d6a0b4.xml",
+      "name": "BLM_Natl_Revision_Development_Land_Use_Plans_A",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": true,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "A Land Use Planning Area is defined as the geographic area within which the BLM will make decisions during a planning effort. A planning area boundary includes all lands regardless of jurisdiction; however, the BLM will only make decisions on lands that fall under the BLM\u2019s jurisdiction (including subsurface minerals). Unless the State Director determines otherwise, the planning area for a RMP is the geographic area associated with a particular field office (43 CFR 1610.1(b)). State Directors may also establish regional planning areas that encompass several field offices and/or states, as necessary. Page 14 of the BLM Planning Handbook.\r\n\r\nA subset of land use plans that are under revision or development created from a snapshot of National LUPA layer on April 8, 2021. Data are current as of April, 2022. Boundaries and supporting data were reviewed by BLM state planners for accuracy and currency.",
+      "attribution": "BLM | BLM HQ-210",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_Natl_Revision_Development_Land_Use_Plans_A\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_Natl_Revision_Development_Land_Use_Plans_A.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "MapID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "MapType",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "LUPName",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "Status",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "RODdate",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ePLink",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "AdminSt",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "NEPAnum",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 31.7836380800001,
+            "ymax": 70.621169067,
+            "xmin": -159.161489714,
+            "xmax": -95.3717997909999
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"MapID\",\"MapType\",\"LUPName\",\"Status\",\"RODdate\",\"ePLink\",\"AdminSt\",\"NEPAnum\",\"SHAPE_Length\",\"SHAPE_Area\" from main.\"BLM_Natl_Revision_Development_Land_Use_Plans_A\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMSimpleRenderer",
+        "symbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidStroke",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "anchor3D": "Center",
+                "closeCaps3D": false,
+                "width": 0.737007409759112,
+                "miterLimit": 10,
+                "lineStyle3D": "Tube",
+                "joinStyle": "Bevel",
+                "capStyle": "Butt",
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    153,
+                    128,
+                    29,
+                    100.0
+                  ]
+                }
+              },
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    227,
+                    206,
+                    71,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "patch": "Default"
+      },
+      "labelVisibility": true,
+      "labelClasses": [
+        {
+          "type": "CIMLabelClass",
+          "iD": -1,
+          "visibility": true,
+          "useCodedValue": false,
+          "textSymbol": {
+            "type": "CIMSymbolReference",
+            "symbol": {
+              "type": "CIMTextSymbol",
+              "overprint": false,
+              "billboardMode3D": "None",
+              "wordSpacing": 100,
+              "verticalGlyphOrientation": "Right",
+              "verticalAlignment": "Baseline",
+              "underline": false,
+              "textDirection": "LTR",
+              "textCase": "Normal",
+              "symbol3DProperties": {
+                "type": "CIM3DSymbolProperties",
+                "rotationOrder3D": "XYZ",
+                "dominantSizeAxis3D": "Z"
+              },
+              "symbol": {
+                "type": "CIMPolygonSymbol",
+                "useRealWorldSymbolSizes": false,
+                "symbolLayers": [
+                  {
+                    "type": "CIMSolidFill",
+                    "overprint": false,
+                    "colorLocked": false,
+                    "enable": true,
+                    "color": {
+                      "type": "CIMGrayColor",
+                      "values": [
+                        50,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment": "Display"
+              },
+              "strikethrough": false,
+              "smallCaps": false,
+              "lineGapType": "ExtraLeading",
+              "ligatures": false,
+              "letterWidth": 100,
+              "kerning": true,
+              "horizontalAlignment": "Left",
+              "hinting": "None",
+              "height": 7.0,
+              "haloSize": 1,
+              "fontType": "Unspecified",
+              "fontStyleName": "",
+              "fontFamilyName": "Arial",
+              "fontEncoding": "Unicode",
+              "fontEffects": "Normal",
+              "extrapolateBaselines": false,
+              "drawSoftHyphen": false,
+              "drawGlyphsAsGeometry": false,
+              "depth3D": 1,
+              "compatibilityMode": false,
+              "blockProgression": "TTB"
+            }
+          },
+          "standardLabelPlacementProperties": {
+            "type": "CIMStandardLabelPlacementProperties",
+            "featureType": "Point",
+            "allowOverlappingLabels": false,
+            "placeOnlyInsidePolygon": false,
+            "polygonPlacementMethod": "AlwaysHorizontal",
+            "perpendicularToAngle": false,
+            "rotationType": "Geographic",
+            "pointPlacementMethod": "AroundPoint",
+            "numLabelsOption": "NoLabelRestrictions",
+            "labelWeight": "Low",
+            "featureWeight": "None"
+          },
+          "priority": 2,
+          "name": "Default",
+          "minimumScale": 1500000.0,
+          "maplexLabelPlacementProperties": {
+            "type": "CIMMaplexLabelPlacementProperties",
+            "featureType": "Point",
+            "secondaryOffsetUnit": "Map",
+            "removeAmbiguousLabels": "All",
+            "measureFromClippedFeatureGeometry": false,
+            "centerLabelAnchorType": "Symbol",
+            "avoidOverlappingLabeledPolygonsAsIfHoles": false,
+            "polygonAnchorPointPerimeterInsetUnit": "Map",
+            "useExactSymbolOutline": false,
+            "thinningDistanceUnit": "Map",
+            "thinDuplicateLabels": false,
+            "spreadWords": false,
+            "spreadCharacters": false,
+            "repetitionIntervalUnit": "Map",
+            "repeatLabel": false,
+            "removeExtraWhiteSpace": false,
+            "removeExtraLineBreaks": false,
+            "primaryOffsetUnit": "Map",
+            "preferLabelNearMapBorder": false,
+            "preferLabelNearJunction": false,
+            "preferHorizontalPlacement": false,
+            "polygonPlacementMethod": "HorizontalInPolygon",
+            "polygonFeatureType": "General",
+            "polygonAnchorPointType": "GeometricCenter",
+            "pointPlacementMethod": "AroundPoint",
+            "neverRemoveLabel": false,
+            "multiPartOption": "OneLabelPerFeature",
+            "minimumFeatureSizeUnit": "Map",
+            "maximumLabelOverrunUnit": "Map",
+            "linePlacementMethod": "CenteredHorizontalOnLine",
+            "lineFeatureType": "General",
+            "labelLargestPolygon": false,
+            "isOffsetFromFeatureGeometry": false,
+            "isMinimumSizeBasedOnArea": false,
+            "isLabelBufferHardConstraint": false,
+            "graticuleAlignmentType": "Straight",
+            "graticuleAlignment": false,
+            "enableSecondaryOffset": false,
+            "enablePolygonFixedPosition": false,
+            "enablePointPlacementPriorities": false,
+            "enableConnection": false,
+            "contourLadderType": "None",
+            "contourAlignmentType": "Uphill",
+            "constrainOffset": "NoConstraint",
+            "connectionType": "MinimizeLabels",
+            "canUseAlternateLabelExpression": false,
+            "canTruncateLabel": false,
+            "canStackLabel": false,
+            "canShiftPointLabel": false,
+            "canRemoveOverlappingLabel": false,
+            "canReduceLeading": false,
+            "canReduceFontSize": false,
+            "canPlaceLabelOutsidePolygon": false,
+            "canPlaceLabelOnTopOfFeature": false,
+            "canOverrunFeature": false,
+            "canKeyNumberLabel": false,
+            "canFlipStackedStreetLabel": false,
+            "canAbbreviateLabel": false,
+            "boundaryLabelingSingleSidedOnLine": false,
+            "boundaryLabelingAllowSingleSided": false,
+            "boundaryLabelingAllowHoles": false,
+            "backgroundLabel": false,
+            "avoidPolygonHoles": false,
+            "allowStraddleStacking": false,
+            "allowAsymmetricOverrun": false,
+            "alignLabelToLineDirection": false
+          },
+          "featuresToLabel": "AllVisibleFeatures",
+          "expressionEngine": "Arcade",
+          "expression": "$feature['LUPName']"
+        }
+      ]
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_Natl_Revision_Development_Land_Use_Plans_b5a7c0aa_32d9_4218_86aa_df4fa8d6a0b4.xml"
+  ]
+}

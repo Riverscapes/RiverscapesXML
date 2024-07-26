@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+  <Name>BLM Context</Name>
+  <ProjectType>BLMContext</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Habitat Designations">
+        <Children collapsed="true">
+          <Node label="USFWS Critical Habitat A" xpath="Datasets/Geopackage[@id='USFWS_Critical_Habitat_A']/Layers/Vector[@lyrName='USFWS_Critical_Habitat_A']" type="polygon" symbology="USFWS_Critical_Habitat_A" />
+          <Node label="USFWS Critical Habitat L" xpath="Datasets/Geopackage[@id='USFWS_Critical_Habitat_L']/Layers/Vector[@lyrName='USFWS_Critical_Habitat_L']" type="line" symbology="USFWS_Critical_Habitat_L" />
+        </Children>
+      </Node>
+      <Node label="Land Use Planning">
+        <Children collapsed="true">
+          <Node label="NIFC Fuel Polys" xpath="Datasets/Geopackage[@id='NIFC_Fuel_Polys']/Layers/Vector[@lyrName='NIFC_Fuel_Polys']" type="polygon" symbology="NIFC_Fuel_Polys" />
+          <Node label="BLM Natl Fire Perimeters P" xpath="Datasets/Geopackage[@id='BLM_Natl_Fire_Perimeters_P']/Layers/Vector[@lyrName='BLM_Natl_Fire_Perimeters_P']" type="polygon" symbology="BLM_Natl_Fire_Perimeters_P" />
+          <Node label="BLM Natl Visual Resource Inventory Classes Polygon A" xpath="Datasets/Geopackage[@id='BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A']/Layers/Vector[@lyrName='BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A']" type="polygon" symbology="BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A" />
+          <Node label="BLM Natl Area Critical Env Concern A" xpath="Datasets/Geopackage[@id='BLM_Natl_Area_Critical_Env_Concern_A']/Layers/Vector[@lyrName='BLM_Natl_Area_Critical_Env_Concern_A']" type="polygon" symbology="BLM_Natl_Area_Critical_Env_Concern_A" />
+          <Node label="BLM Natl Wild Horse and Burro Herd Mgmt Area A" xpath="Datasets/Geopackage[@id='BLM_Natl_Wild_Horse_and_Burro_Herd_Mgmt_Area_A']/Layers/Vector[@lyrName='BLM_Natl_Wild_Horse_and_Burro_Herd_Mgmt_Area_A']" type="polygon" symbology="BLM_Natl_Wild_Horse_and_Burro_Herd_Mgmt_Area_A" />
+          <Node label="BLM Natl Grazing Allotment P" xpath="Datasets/Geopackage[@id='BLM_Natl_Grazing_Allotment_P']/Layers/Vector[@lyrName='BLM_Natl_Grazing_Allotment_P']" type="polygon" symbology="BLM_Natl_Grazing_Allotment_P" />
+          <Node label="BLM Natl WesternUS GRSG ROD Habitat Mgmt Areas Aug22 A" xpath="Datasets/Geopackage[@id='BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A']/Layers/Vector[@lyrName='BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A']" type="polygon" symbology="BLM_Natl_WesternUS_GRSG_ROD_Habitat_Mgmt_Areas_Aug22_A" />
+          <Node label="BLM Natl Land Use Plans 2022 A" xpath="Datasets/Geopackage[@id='BLM_Natl_Land_Use_Plans_2022_A']/Layers/Vector[@lyrName='BLM_Natl_Land_Use_Plans_2022_A']" type="polygon" symbology="BLM_Natl_Land_Use_Plans_2022_A" />
+          <Node label="BLM Natl Revision Development Land Use Plans A" xpath="Datasets/Geopackage[@id='BLM_Natl_Revision_Development_Land_Use_Plans_A']/Layers/Vector[@lyrName='BLM_Natl_Revision_Development_Land_Use_Plans_A']" type="polygon" symbology="BLM_Natl_Revision_Development_Land_Use_Plans_A" />
+          <Node label="BLM ES SO Natl Scenic Historic Trails NLCS L" xpath="Datasets/Geopackage[@id='BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L']/Layers/Vector[@lyrName='BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L']" type="line" symbology="BLM_ES_SO_Natl_Scenic_Historic_Trails_NLCS_L" />
+          <Node label="BLM Natl Recreation Site Polygons" xpath="Datasets/Geopackage[@id='BLM_Natl_Recreation_Site_Polygons']/Layers/Vector[@lyrName='BLM_Natl_Recreation_Site_Polygons']" type="polygon" symbology="BLM_Natl_Recreation_Site_Polygons" />
+        </Children>
+      </Node>
+      <Node label="National Priority Areas">
+        <Children collapsed="true">
+            <Node label="BLM Restoration Landscapes A" xpath="Datasets/Geopackage[@id='BLM_Restoration_Landscapes_A']/Layers/Vector[@lyrName='BLM_Restoration_Landscapes_A']" type="polygon" symbology="BLM_Restoration_Landscapes_A" />
+            <Node label="DOI Keystone Initiatives A" xpath="Datasets/Geopackage[@id='DOI_Keystone_Initiatives_A']/Layers/Vector[@lyrName='DOI_Keystone_Initiatives_A']" type="polygon" symbology="DOI_Keystone_Initiatives_A" />
+        </Children>
+      </Node>
+      <Node label="National Landscape Conservation System">
+        <Children collapsed="true">
+            <Node label="BLM Natl NLCS Wilderness Areas A" xpath="Datasets/Geopackage[@id='BLM_Natl_NLCS_Wilderness_Areas_A']/Layers/Vector[@lyrName='BLM_Natl_NLCS_Wilderness_Areas_A']" type="polygon" symbology="BLM_Natl_NLCS_Wilderness_Areas_A" />
+            <Node label="BLM Natl NLCS Wilderness Study Areas A" xpath="Datasets/Geopackage[@id='BLM_Natl_NLCS_Wilderness_Study_Areas_A']/Layers/Vector[@lyrName='BLM_Natl_NLCS_Wilderness_Study_Areas_A']" type="polygon" symbology="BLM_Natl_NLCS_Wilderness_Study_Areas_A" />
+            <Node label="BLM NLCS Natl Monuments Cons Areas A" xpath="Datasets/Geopackage[@id='BLM_NLCS_Natl_Monuments_Cons_Areas_A']/Layers/Vector[@lyrName='BLM_NLCS_Natl_Monuments_Cons_Areas_A']" type="polygon" symbology="BLM_NLCS_Natl_Monuments_Cons_Areas_A" />
+        </Children>
+      </Node>
+    </Children>   
+  </Node>
+  <!-- <Views default="Default">
+    <View name="Hydrology" id="Default">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="intermittent" />
+        <Layer id="huc10" /> 
+      </Layers>
+    </View>
+    <View name="Topography" id="Topography">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="intermittent" />
+        <Layer id="dem" />
+        <Layer id="hs" />
+      </Layers>
+    </View>
+    <View name="Transportation" id="Transportation">
+      <Layers>
+        <Layer id="roads" />
+        <Layer id="railroads" />
+      </Layers>
+    </View>
+    <View name="Existing Vegetation" id="veg">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="intermittent" />
+        <Layer id="exveg" /> 
+      </Layers>
+    </View>
+    <View name="Land Ownership" id="land">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="intermittent" />
+        <Layer id="owner" /> 
+      </Layers>
+    </View>
+  </Views> -->
+</Project>

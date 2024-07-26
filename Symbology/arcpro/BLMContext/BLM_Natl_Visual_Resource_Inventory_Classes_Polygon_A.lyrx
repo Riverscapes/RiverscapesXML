@@ -1,0 +1,687 @@
+{
+  "type": "CIMLayerDocument",
+  "build": 15850,
+  "version": "2.3.0",
+  "layerDefinitions": [
+    {
+      "type": "CIMFeatureLayer",
+      "useSourceMetadata": false,
+      "sourceModifiedTime": {
+        "type": "TimeInstant"
+      },
+      "uRI": "CIMPATH=BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_511b9ddb_abda_49dd_8d0f_6cc8e92e3885.xml",
+      "name": "BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A",
+      "enableLayerEffects": false,
+      "useVisibilityTimeExtent": false,
+      "rasterizeOnExport": false,
+      "layerScaleVisibilityOptions": {
+        "type": "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales": true,
+        "savedMinScale": 100000000.0,
+        "savedMaxScale": 0.0
+      },
+      "allowDrapingOnIntegratedMesh": false,
+      "blendingMode": "Alpha",
+      "showMapTips": false,
+      "refreshRateUnit": "esriTimeUnitsSeconds",
+      "refreshRate": -1,
+      "searchable": false,
+      "serviceLayerID": -1,
+      "showPopups": false,
+      "maxDisplayCacheAge": 5,
+      "displayCacheType": "Permanent",
+      "visibility": true,
+      "transparency": 0.0,
+      "showLegends": true,
+      "layerType": "Operational",
+      "expanded": true,
+      "description": "The Visual Resource Inventory Classes Polygon is a component of the Visual Resources Inventory (VRI) and includes information needed for inventorying for visual values on BLM-managed public lands according to policy direction found in Manual 8400 and related Handbook 8410-1. Current policy requires that every acre of BLM land be inventoried for visual values and be assigned one of four VRI classes (Class I, II, III, or IV). Class I is reserved for those areas where a management decision has been made previously to maintain a natural landscape. This includes areas such as national wilderness areas, the wild section of national wild and scenic rivers, and other congressionally and administratively designated areas where decisions have been made to preserve a natural landscape. The inventory classes provide the basis for considering visual values in the resource management planning (RMP) process and constitute the current state of visual resource values as part of the affected environment sections of environmental analyses. Particularly, this data pertains Visual Resource National, State, District and Field Office leads and any group, program, or organization that is involved with surface disturbance activities or visually altering activities, including: Land Use Planners, Realty Specialists, Recreation Planners, Natural Resource Specialists, Landscape Architects, Cultural Resource Specialists, Fluid Minerals and Renewable Energy. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived.\r\n\r\nCurrent policy requires that every acre of BLM land be inventoried for visual values and be assigned one of four VRI classes (Class I, II, III, or IV). Class I is reserved for those areas where a management decision has been made previously to maintain a natural landscape. This includes areas such as national wilderness areas, the wild section of national wild and scenic rivers, and other congressionally and administratively designated areas where decisions have been made to preserve a natural landscape. VRI consists of a scenic quality evaluation, sensitivity level analysis, and a delineation of distance zones. Based on a matrix combination of these three factors, BLM-administered lands are placed into one of three visual resource inventory classes (VRI II-IV). These inventory classes represent the relative value of the visual resources, with classes I and II being the most valued, Class III representing a moderate value, and Class IV being of lesser visual value. The inventory classes provide the basis for considering visual values in the resource management planning (RMP) process and constitute the current state of visual resource values as part of the affected environment sections of environmental analyses.\r\n\r\nA published revision of the Department Manual\u2019s Part 305: Departmental Science Effects, Chapter 3: Integrity of Scientific and Scholarly Activities (305 DM 3), effective December 16, 2014, is available online at http://elips.doi.gov/ELIPS/DocView.aspx?id=4056. Scholarly information considered in Departmental decision making must be robust, of the highest quality, and the result of as rigorous scientific and scholarly processes as can be achieved. Most importantly, it must be trustworthy. This policy helps us to achieve that standard (http://www.doi.gov/scientificintegrity/index.cfm)",
+      "attribution": "BLM Admin State",
+      "layerEffectsMode": "Layer",
+      "featureBlendingMode": "Alpha",
+      "displayFiltersType": "ByChoice",
+      "enableDisplayFilters": false,
+      "featureCacheType": "None",
+      "useSelectionSymbol": false,
+      "selectable": true,
+      "isFlattened": true,
+      "htmlPopupEnabled": false,
+      "featureTable": {
+        "type": "CIMFeatureTable",
+        "isLicensedDataSource": false,
+        "searchOrder": "esriSearchOrderSpatial",
+        "studyAreaSpatialRel": "esriSpatialRelUndefined",
+        "dataConnection": {
+          "type": "CIMSqlQueryDataConnection",
+          "datasetType": "esriDTFeatureClass",
+          "dataset": "main.%\"BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A\"",
+          "workspaceFactory": "Sql",
+          "workspaceConnectionString": "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\BLM_NationalDatasets\\layers\\BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A.gpkg",
+          "mappedOIDFieldLength": "OID64Bit",
+          "isTableBased": true,
+          "spatialStorageType": 11,
+          "queryFields": [
+            {
+              "name": "fid",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": false,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "required": true,
+              "editable": false,
+              "dbmsType": 11
+            },
+            {
+              "name": "geom",
+              "type": "esriFieldTypeGeometry",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "geometryDef": {
+                "avgNumPoints": 0,
+                "geometryType": "esriGeometryPolygon",
+                "hasM": false,
+                "hasZ": false,
+                "spatialReference": {
+                  "latestWkid": 4269,
+                  "wkid": 4269
+                }
+              },
+              "dbmsType": 8
+            },
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeBigInteger",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 11
+            },
+            {
+              "name": "VRI_AREA_ID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADMIN_ST",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADM_OFC_CD",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADM_UNIT_CD",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_AREA_NR",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "ADMIN_FO_NM",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_EVAL",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_CONTACT",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_ORIG_DT",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "VRI_MOD_DT",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "VRI_CLASS_CODE",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_CLASS_TX",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "BLM_ACRE",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SQ_CODE",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SL_OVRL_RT",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VDZ_CODE",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_REHAB_IND",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "VRI_SPCL_IND",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "GlobalID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "created_user",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "created_date",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "last_edited_user",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "last_edited_date",
+              "type": "esriFieldTypeDate",
+              "isNullable": true,
+              "length": 8,
+              "precision": 1,
+              "scale": 0,
+              "dbmsType": 7
+            },
+            {
+              "name": "Original_GlobalID",
+              "type": "esriFieldTypeString",
+              "isNullable": true,
+              "length": 2147483647,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 13
+            },
+            {
+              "name": "SHAPE_Length",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            },
+            {
+              "name": "SHAPE_Area",
+              "type": "esriFieldTypeDouble",
+              "isNullable": true,
+              "length": 8,
+              "precision": 0,
+              "scale": 0,
+              "dbmsType": 4
+            }
+          ],
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 4269,
+              "wkid": 4269
+            },
+            "ymin": 31.3321078870001,
+            "ymax": 71.3895425630001,
+            "xmin": -167.844374992,
+            "xmax": -100.14854493
+          },
+          "geometryType": "esriGeometryPolygon",
+          "oIDFields": "fid",
+          "spatialReference": {
+            "latestWkid": 4269,
+            "wkid": 4269
+          },
+          "srid": "4269",
+          "sqlQuery": "select fid,geom,\"OBJECTID\",\"VRI_AREA_ID\",\"ADMIN_ST\",\"ADM_OFC_CD\",\"ADM_UNIT_CD\",\"VRI_AREA_NR\",\"ADMIN_FO_NM\",\"VRI_EVAL\",\"VRI_CONTACT\",\"VRI_ORIG_DT\",\"VRI_MOD_DT\",\"VRI_CLASS_CODE\",\"VRI_CLASS_TX\",\"BLM_ACRE\",\"SQ_CODE\",\"SL_OVRL_RT\",\"VDZ_CODE\",\"VRI_REHAB_IND\",\"VRI_SPCL_IND\",\"GlobalID\",\"created_user\",\"created_date\",\"last_edited_user\",\"last_edited_date\",\"Original_GlobalID\",\"SHAPE_Length\",\"SHAPE_Area\" from main.\"BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A\""
+        },
+        "useSubtypeValue": false,
+        "selectRelatedData": false,
+        "timeDisplayDefinition": {
+          "type": "CIMTimeDisplayDefinition",
+          "timeOffsetUnits": "esriTimeUnitsYears",
+          "timeIntervalUnits": "esriTimeUnitsHours",
+          "timeInterval": 0,
+          "cumulative": false
+        },
+        "timeDefinition": {
+          "type": "CIMTimeDataDefinition",
+          "timeExtentCanChange": false,
+          "hasLiveData": true,
+          "useTime": false
+        },
+        "timeFields": {
+          "type": "CIMTimeTableDefinition"
+        },
+        "editable": true
+      },
+      "autoGenerateFeatureTemplates": true,
+      "showTracks": false,
+      "showPreviousObservations": false,
+      "useRealWorldSymbolSizes": false,
+      "snappable": true,
+      "scaleSymbols": true,
+      "renderer": {
+        "type": "CIMUniqueValueRenderer",
+        "polygonSymbolColorTarget": "Fill",
+        "useDefaultSymbol": false,
+        "groups": [
+          {
+            "type": "CIMUniqueValueGroup",
+            "heading": "VRI_CLASS_CODE",
+            "classes": [
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "I"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            255,
+                            255,
+                            204,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "VRI Class I",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "II"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            129,
+                            206,
+                            185,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "VRI Class II",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "III"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            51,
+                            145,
+                            188,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "VRI Class III",
+                "editable": false
+              },
+              {
+                "type": "CIMUniqueValueClass",
+                "visible": true,
+                "values": [
+                  {
+                    "type": "CIMUniqueValue",
+                    "fieldValues": [
+                      "IV"
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPolygonSymbol",
+                    "useRealWorldSymbolSizes": false,
+                    "symbolLayers": [
+                      {
+                        "type": "CIMSolidFill",
+                        "overprint": false,
+                        "colorLocked": false,
+                        "enable": true,
+                        "color": {
+                          "type": "CIMRGBColor",
+                          "values": [
+                            37,
+                            52,
+                            148,
+                            100.0
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment": "Display"
+                  }
+                },
+                "patch": "Default",
+                "label": "VRI Class IV",
+                "editable": false
+              }
+            ]
+          }
+        ],
+        "fields": [
+          "VRI_CLASS_CODE"
+        ],
+        "defaultSymbolPatch": "Default",
+        "defaultSymbol": {
+          "type": "CIMSymbolReference",
+          "symbol": {
+            "type": "CIMPolygonSymbol",
+            "useRealWorldSymbolSizes": false,
+            "symbolLayers": [
+              {
+                "type": "CIMSolidFill",
+                "overprint": false,
+                "colorLocked": false,
+                "enable": true,
+                "color": {
+                  "type": "CIMRGBColor",
+                  "values": [
+                    153,
+                    217,
+                    217,
+                    100.0
+                  ]
+                }
+              }
+            ],
+            "angleAlignment": "Display"
+          }
+        },
+        "defaultLabel": "<all other values>",
+        "colorRamp": {
+          "type": "CIMMultipartColorRamp",
+          "weights": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "colorRamps": [
+            {
+              "type": "CIMLinearContinuousColorRamp",
+              "toColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  161,
+                  218,
+                  180,
+                  100.0
+                ]
+              },
+              "fromColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  255,
+                  255,
+                  204,
+                  100.0
+                ]
+              }
+            },
+            {
+              "type": "CIMLinearContinuousColorRamp",
+              "toColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  65,
+                  182,
+                  196,
+                  100.0
+                ]
+              },
+              "fromColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  161,
+                  218,
+                  180,
+                  100.0
+                ]
+              }
+            },
+            {
+              "type": "CIMLinearContinuousColorRamp",
+              "toColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  44,
+                  127,
+                  184,
+                  100.0
+                ]
+              },
+              "fromColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  65,
+                  182,
+                  196,
+                  100.0
+                ]
+              }
+            },
+            {
+              "type": "CIMLinearContinuousColorRamp",
+              "toColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  37,
+                  52,
+                  148,
+                  100.0
+                ]
+              },
+              "fromColor": {
+                "type": "CIMRGBColor",
+                "values": [
+                  44,
+                  127,
+                  184,
+                  100.0
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "labelVisibility": false
+    }
+  ],
+  "layers": [
+    "CIMPATH=BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_511b9ddb_abda_49dd_8d0f_6cc8e92e3885.xml"
+  ]
+}
