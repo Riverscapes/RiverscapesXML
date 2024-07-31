@@ -19,7 +19,7 @@
       "paint": {
           "circle-color": [
               "step",
-              ["get", "active_floodplain_proportion"],
+              ["get", "low_lying_floodplain_proportion"],
               "rgb(247, 252, 245)",
               0.02,
               "rgb(226, 244, 221)",

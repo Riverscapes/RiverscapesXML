@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 0, 0)", "Centerline of Valley Bottom"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vbet-centerlines-axpb18",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "vbet_centerlines-axpb18",
+        "layout": {},
+        "paint": {"line-dasharray": [15, 2, 5, 2]}
+    }
+]
+}

@@ -21,7 +21,7 @@
       "paint": {
           "circle-color": [
               "step",
-              ["get", "active_acreage_per_mile"],
+              ["get", "low_lying_acreage_per_mile"],
               "rgb(247, 252, 245)",
               5,
               "rgb(232, 246, 227)",

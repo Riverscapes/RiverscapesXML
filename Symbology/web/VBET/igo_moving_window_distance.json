@@ -1,9 +1,9 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(0, 0, 4)", "200 m (100 up; 100 down)"],
-    ["rgb(114, 31, 129)", "400 m (200 up; 200 down)"],
-    ["rgb(241, 96, 93)", "1200 m (600 up; 600 down)"],
+    ["rgb(0, 0, 4)", "300 m (150 up; 150 down)"],
+    ["rgb(114, 31, 129)", "600 m (300 up; 300 down)"],
+    ["rgb(241, 96, 93)", "1500 m (750 up; 750 down)"],
     ["rgb(252, 253, 191)", "other"]
   ],
   "layerStyles": [
@@ -17,11 +17,11 @@
             "circle-color": [
                 "match",
                 ["get", "window_size"],
-                [200],
+                [300],
                 "rgb(0, 0, 4)",
-                [400],
+                [600],
                 "rgb(114, 31, 129)",
-                [1200],
+                [1500],
                 "rgb(241, 96, 93)",
                 "rgb(252, 253, 191)"
             ],
