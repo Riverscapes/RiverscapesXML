@@ -11,7 +11,7 @@
     ["hsl(213, 100%, 73%)", "State"],
     ["hsl(222, 100%, 87%)", "Local"],
     ["hsl(0, 0%, 88%)", "Private"],
-    ["hsl(0, 4%, 66%)", "Unkown"]
+    ["hsl(0, 4%, 66%)", "Unknown"]
   ],
   "layerStyles": [
     {

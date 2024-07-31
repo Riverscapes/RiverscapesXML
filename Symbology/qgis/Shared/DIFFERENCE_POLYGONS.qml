@@ -1,57 +1,178 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.18.2-Zürich" simplifyAlgorithm="0" simplifyDrawingTol="1" minScale="100000000" labelsEnabled="0" simplifyLocal="1" simplifyMaxScale="1" readOnly="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" maxScale="0">
+<qgis styleCategories="AllStyleCategories" symbologyReferenceScale="-1" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" minScale="100000000" simplifyLocal="1" simplifyAlgorithm="0" maxScale="0" readOnly="0" version="3.34.8-Prizren">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal fixedDuration="0" endExpression="" accumulate="0" endField="" durationUnit="min" mode="0" startExpression="" startField="" durationField="" enabled="0">
+  <temporal startExpression="" mode="0" endExpression="" limitMode="0" durationUnit="min" startField="" accumulate="0" enabled="0" endField="" durationField="fid" fixedDuration="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="singleSymbol">
-    <symbols>
-      <symbol alpha="1" force_rhr="0" name="0" type="fill" clip_to_extent="1">
+  <elevation zoffset="0" clamping="Terrain" extrusion="0" respectLayerSymbol="1" showMarkerSymbolInSurfacePlots="0" zscale="1" type="IndividualFeatures" binding="Centroid" symbology="Line" extrusionEnabled="0">
+    <data-defined-properties>
+      <Option type="Map">
+        <Option value="" name="name" type="QString"/>
+        <Option name="properties"/>
+        <Option value="collection" name="type" type="QString"/>
+      </Option>
+    </data-defined-properties>
+    <profileLineSymbol>
+      <symbol is_animated="0" alpha="1" name="" type="line" force_rhr="0" frame_rate="10" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" name="name" type="QString"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+        <layer locked="0" class="SimpleLine" id="{a1a2836d-00a6-4dc5-9f05-b10c21763688}" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="243,166,178,255"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0.26"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="style" type="QString" value="solid"/>
+            <Option value="0" name="align_dash_pattern" type="QString"/>
+            <Option value="square" name="capstyle" type="QString"/>
+            <Option value="5;2" name="customdash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+            <Option value="MM" name="customdash_unit" type="QString"/>
+            <Option value="0" name="dash_pattern_offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+            <Option value="0" name="draw_inside_polygon" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="213,180,60,255" name="line_color" type="QString"/>
+            <Option value="solid" name="line_style" type="QString"/>
+            <Option value="0.6" name="line_width" type="QString"/>
+            <Option value="MM" name="line_width_unit" type="QString"/>
+            <Option value="0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="0" name="ring_filter" type="QString"/>
+            <Option value="0" name="trim_distance_end" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+            <Option value="0" name="trim_distance_start" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+            <Option value="0" name="use_custom_dash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
           </Option>
-          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-          <prop v="243,166,178,255" k="color"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,0" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="0.26" k="outline_width"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileLineSymbol>
+    <profileFillSymbol>
+      <symbol is_animated="0" alpha="1" name="" type="fill" force_rhr="0" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleFill" id="{c7ab8f8f-74eb-407a-9406-f257e16a43c9}" enabled="1" pass="0">
+          <Option type="Map">
+            <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
+            <Option value="213,180,60,255" name="color" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="0,0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="152,129,43,255" name="outline_color" type="QString"/>
+            <Option value="solid" name="outline_style" type="QString"/>
+            <Option value="0.2" name="outline_width" type="QString"/>
+            <Option value="MM" name="outline_width_unit" type="QString"/>
+            <Option value="solid" name="style" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileFillSymbol>
+    <profileMarkerSymbol>
+      <symbol is_animated="0" alpha="1" name="" type="marker" force_rhr="0" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleMarker" id="{076ad2b8-2368-4f9f-afe0-2a3e9059d235}" enabled="1" pass="0">
+          <Option type="Map">
+            <Option value="0" name="angle" type="QString"/>
+            <Option value="square" name="cap_style" type="QString"/>
+            <Option value="213,180,60,255" name="color" type="QString"/>
+            <Option value="1" name="horizontal_anchor_point" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="diamond" name="name" type="QString"/>
+            <Option value="0,0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="152,129,43,255" name="outline_color" type="QString"/>
+            <Option value="solid" name="outline_style" type="QString"/>
+            <Option value="0.2" name="outline_width" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
+            <Option value="MM" name="outline_width_unit" type="QString"/>
+            <Option value="diameter" name="scale_method" type="QString"/>
+            <Option value="3" name="size" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
+            <Option value="MM" name="size_unit" type="QString"/>
+            <Option value="1" name="vertical_anchor_point" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileMarkerSymbol>
+  </elevation>
+  <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" referencescale="-1" enableorderby="0">
+    <symbols>
+      <symbol is_animated="0" alpha="1" name="0" type="fill" force_rhr="0" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleFill" id="{8910bff9-7749-4cf2-b251-7fce0fdf6c72}" enabled="1" pass="0">
+          <Option type="Map">
+            <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
+            <Option value="243,166,178,255" name="color" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="0,0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="243,166,178,255" name="outline_color" type="QString"/>
+            <Option value="solid" name="outline_style" type="QString"/>
+            <Option value="0.04" name="outline_width" type="QString"/>
+            <Option value="MM" name="outline_width_unit" type="QString"/>
+            <Option value="solid" name="style" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -60,76 +181,100 @@
     <rotation/>
     <sizescale/>
   </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol is_animated="0" alpha="1" name="" type="fill" force_rhr="0" frame_rate="10" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" class="SimpleFill" id="{b618c11d-6b62-40b0-a06a-4edd8dfdd9c8}" enabled="1" pass="0">
+          <Option type="Map">
+            <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
+            <Option value="0,0,255,255" name="color" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="0,0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="35,35,35,255" name="outline_color" type="QString"/>
+            <Option value="solid" name="outline_style" type="QString"/>
+            <Option value="0.26" name="outline_width" type="QString"/>
+            <Option value="MM" name="outline_width_unit" type="QString"/>
+            <Option value="solid" name="style" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </selectionSymbol>
+  </selection>
   <customproperties>
-    <property key="embeddedWidgets/count" value="0"/>
-    <property key="variableNames"/>
-    <property key="variableValues"/>
+    <Option type="Map">
+      <Option value="0" name="embeddedWidgets/count" type="QString"/>
+      <Option name="variableNames"/>
+      <Option name="variableValues"/>
+    </Option>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory width="15" sizeScale="3x:0,0,0,0,0,0" opacity="1" minScaleDenominator="0" showAxis="1" maxScaleDenominator="1e+08" backgroundColor="#ffffff" rotationOffset="270" height="15" minimumSize="0" spacing="5" labelPlacementMethod="XHeight" backgroundAlpha="255" diagramOrientation="Up" barWidth="5" penWidth="0" lineSizeType="MM" sizeType="MM" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0" spacingUnit="MM" penAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" direction="0" penColor="#000000" enabled="0" scaleDependency="Area">
-      <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory spacingUnit="MM" lineSizeScale="3x:0,0,0,0,0,0" minimumSize="0" width="15" rotationOffset="270" minScaleDenominator="0" showAxis="1" enabled="0" diagramOrientation="Up" opacity="1" penWidth="0" height="15" scaleDependency="Area" spacingUnitScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" backgroundAlpha="255" lineSizeType="MM" barWidth="5" spacing="5" penAlpha="255" scaleBasedVisibility="0" direction="0" penColor="#000000" labelPlacementMethod="XHeight" sizeType="MM" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0">
+      <fontProperties bold="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0"/>
+      <attribute field="" label="" color="#000000" colorOpacity="1"/>
       <axisSymbol>
-        <symbol alpha="1" force_rhr="0" name="" type="line" clip_to_extent="1">
+        <symbol is_animated="0" alpha="1" name="" type="line" force_rhr="0" frame_rate="10" clip_to_extent="1">
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" locked="0" enabled="1" pass="0">
+          <layer locked="0" class="SimpleLine" id="{edacf037-6ed7-4f76-bf32-a71cdd77cf48}" enabled="1" pass="0">
             <Option type="Map">
-              <Option name="align_dash_pattern" type="QString" value="0"/>
-              <Option name="capstyle" type="QString" value="square"/>
-              <Option name="customdash" type="QString" value="5;2"/>
-              <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="customdash_unit" type="QString" value="MM"/>
-              <Option name="dash_pattern_offset" type="QString" value="0"/>
-              <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
-              <Option name="draw_inside_polygon" type="QString" value="0"/>
-              <Option name="joinstyle" type="QString" value="bevel"/>
-              <Option name="line_color" type="QString" value="35,35,35,255"/>
-              <Option name="line_style" type="QString" value="solid"/>
-              <Option name="line_width" type="QString" value="0.26"/>
-              <Option name="line_width_unit" type="QString" value="MM"/>
-              <Option name="offset" type="QString" value="0"/>
-              <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="offset_unit" type="QString" value="MM"/>
-              <Option name="ring_filter" type="QString" value="0"/>
-              <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
-              <Option name="use_custom_dash" type="QString" value="0"/>
-              <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option value="0" name="align_dash_pattern" type="QString"/>
+              <Option value="square" name="capstyle" type="QString"/>
+              <Option value="5;2" name="customdash" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+              <Option value="MM" name="customdash_unit" type="QString"/>
+              <Option value="0" name="dash_pattern_offset" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+              <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+              <Option value="0" name="draw_inside_polygon" type="QString"/>
+              <Option value="bevel" name="joinstyle" type="QString"/>
+              <Option value="35,35,35,255" name="line_color" type="QString"/>
+              <Option value="solid" name="line_style" type="QString"/>
+              <Option value="0.26" name="line_width" type="QString"/>
+              <Option value="MM" name="line_width_unit" type="QString"/>
+              <Option value="0" name="offset" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+              <Option value="MM" name="offset_unit" type="QString"/>
+              <Option value="0" name="ring_filter" type="QString"/>
+              <Option value="0" name="trim_distance_end" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+              <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+              <Option value="0" name="trim_distance_start" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+              <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+              <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+              <Option value="0" name="use_custom_dash" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
             </Option>
-            <prop v="0" k="align_dash_pattern"/>
-            <prop v="square" k="capstyle"/>
-            <prop v="5;2" k="customdash"/>
-            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-            <prop v="MM" k="customdash_unit"/>
-            <prop v="0" k="dash_pattern_offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
-            <prop v="MM" k="dash_pattern_offset_unit"/>
-            <prop v="0" k="draw_inside_polygon"/>
-            <prop v="bevel" k="joinstyle"/>
-            <prop v="35,35,35,255" k="line_color"/>
-            <prop v="solid" k="line_style"/>
-            <prop v="0.26" k="line_width"/>
-            <prop v="MM" k="line_width_unit"/>
-            <prop v="0" k="offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-            <prop v="MM" k="offset_unit"/>
-            <prop v="0" k="ring_filter"/>
-            <prop v="0" k="tweak_dash_pattern_on_corners"/>
-            <prop v="0" k="use_custom_dash"/>
-            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" type="QString" value=""/>
+                <Option value="" name="name" type="QString"/>
                 <Option name="properties"/>
-                <Option name="type" type="QString" value="collection"/>
+                <Option value="collection" name="type" type="QString"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -137,12 +282,12 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="1" linePlacementFlags="18" obstacle="0" priority="0" dist="0" zIndex="0" showAll="1">
+  <DiagramLayerSettings zIndex="0" placement="1" linePlacementFlags="18" priority="0" obstacle="0" showAll="1" dist="0">
     <properties>
       <Option type="Map">
-        <Option name="name" type="QString" value=""/>
+        <Option value="" name="name" type="QString"/>
         <Option name="properties"/>
-        <Option name="type" type="QString" value="collection"/>
+        <Option value="collection" name="type" type="QString"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -150,191 +295,142 @@
     <activeChecks/>
     <checkConfiguration type="Map">
       <Option name="QgsGeometryGapCheck" type="Map">
-        <Option name="allowedGapsBuffer" type="double" value="0"/>
-        <Option name="allowedGapsEnabled" type="bool" value="false"/>
-        <Option name="allowedGapsLayer" type="QString" value=""/>
+        <Option value="0" name="allowedGapsBuffer" type="double"/>
+        <Option value="false" name="allowedGapsEnabled" type="bool"/>
+        <Option value="" name="allowedGapsLayer" type="QString"/>
       </Option>
     </checkConfiguration>
   </geometryOptions>
-  <legend type="default-vector"/>
+  <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field configurationFlags="None" name="fid">
+    <field name="fid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="Permanent_">
+    <field name="GNIS_ID" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="FDate">
-      <editWidget type="DateTime">
+    <field name="GNIS_Name" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="Resolution">
+    <field name="ReachCode" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="FType" configurationFlags="NoFlag">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="GNIS_ID">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="GNIS_Name">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="LengthKM">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="ReachCode">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="FlowDir">
+    <field name="FCode" configurationFlags="NoFlag">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="WBArea_Per">
+    <field name="NHDPlusID" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="FType">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="FCode">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="MainPath">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="InNetwork">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="Visibility">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="Shape_Leng">
+    <field name="TotDASqKM" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="NHDPlusID">
+    <field name="DivDASqKM" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="VPUID">
+    <field name="level_path" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="Enabled">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="AreaSqKm">
+    <field name="downstream_level_path" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="TotDASqKm">
+    <field name="upstream_level_path" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="Slope">
+    <field name="divergence" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="MaxElevSmo">
+    <field name="stream_order" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="MInElevSmo">
+    <field name="ownership" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="BFwidth">
+    <field name="us_state" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="bankfull_m">
+    <field name="ecoregion_iii" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="ecoregion_iv" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="bankfull_m" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -344,149 +440,135 @@
   </fieldConfiguration>
   <aliases>
     <alias field="fid" name="" index="0"/>
-    <alias field="Permanent_" name="" index="1"/>
-    <alias field="FDate" name="" index="2"/>
-    <alias field="Resolution" name="" index="3"/>
-    <alias field="GNIS_ID" name="" index="4"/>
-    <alias field="GNIS_Name" name="" index="5"/>
-    <alias field="LengthKM" name="" index="6"/>
-    <alias field="ReachCode" name="" index="7"/>
-    <alias field="FlowDir" name="" index="8"/>
-    <alias field="WBArea_Per" name="" index="9"/>
-    <alias field="FType" name="" index="10"/>
-    <alias field="FCode" name="" index="11"/>
-    <alias field="MainPath" name="" index="12"/>
-    <alias field="InNetwork" name="" index="13"/>
-    <alias field="Visibility" name="" index="14"/>
-    <alias field="Shape_Leng" name="" index="15"/>
-    <alias field="NHDPlusID" name="" index="16"/>
-    <alias field="VPUID" name="" index="17"/>
-    <alias field="Enabled" name="" index="18"/>
-    <alias field="AreaSqKm" name="" index="19"/>
-    <alias field="TotDASqKm" name="" index="20"/>
-    <alias field="Slope" name="" index="21"/>
-    <alias field="MaxElevSmo" name="" index="22"/>
-    <alias field="MInElevSmo" name="" index="23"/>
-    <alias field="BFwidth" name="" index="24"/>
-    <alias field="bankfull_m" name="" index="25"/>
+    <alias field="GNIS_ID" name="" index="1"/>
+    <alias field="GNIS_Name" name="" index="2"/>
+    <alias field="ReachCode" name="" index="3"/>
+    <alias field="FType" name="" index="4"/>
+    <alias field="FCode" name="" index="5"/>
+    <alias field="NHDPlusID" name="" index="6"/>
+    <alias field="TotDASqKM" name="" index="7"/>
+    <alias field="DivDASqKM" name="" index="8"/>
+    <alias field="level_path" name="" index="9"/>
+    <alias field="downstream_level_path" name="" index="10"/>
+    <alias field="upstream_level_path" name="" index="11"/>
+    <alias field="divergence" name="" index="12"/>
+    <alias field="stream_order" name="" index="13"/>
+    <alias field="ownership" name="" index="14"/>
+    <alias field="us_state" name="" index="15"/>
+    <alias field="ecoregion_iii" name="" index="16"/>
+    <alias field="ecoregion_iv" name="" index="17"/>
+    <alias field="bankfull_m" name="" index="18"/>
   </aliases>
+  <splitPolicies>
+    <policy field="fid" policy="Duplicate"/>
+    <policy field="GNIS_ID" policy="Duplicate"/>
+    <policy field="GNIS_Name" policy="Duplicate"/>
+    <policy field="ReachCode" policy="Duplicate"/>
+    <policy field="FType" policy="Duplicate"/>
+    <policy field="FCode" policy="Duplicate"/>
+    <policy field="NHDPlusID" policy="Duplicate"/>
+    <policy field="TotDASqKM" policy="Duplicate"/>
+    <policy field="DivDASqKM" policy="Duplicate"/>
+    <policy field="level_path" policy="Duplicate"/>
+    <policy field="downstream_level_path" policy="Duplicate"/>
+    <policy field="upstream_level_path" policy="Duplicate"/>
+    <policy field="divergence" policy="Duplicate"/>
+    <policy field="stream_order" policy="Duplicate"/>
+    <policy field="ownership" policy="Duplicate"/>
+    <policy field="us_state" policy="Duplicate"/>
+    <policy field="ecoregion_iii" policy="Duplicate"/>
+    <policy field="ecoregion_iv" policy="Duplicate"/>
+    <policy field="bankfull_m" policy="Duplicate"/>
+  </splitPolicies>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="Permanent_" expression="" applyOnUpdate="0"/>
-    <default field="FDate" expression="" applyOnUpdate="0"/>
-    <default field="Resolution" expression="" applyOnUpdate="0"/>
-    <default field="GNIS_ID" expression="" applyOnUpdate="0"/>
-    <default field="GNIS_Name" expression="" applyOnUpdate="0"/>
-    <default field="LengthKM" expression="" applyOnUpdate="0"/>
-    <default field="ReachCode" expression="" applyOnUpdate="0"/>
-    <default field="FlowDir" expression="" applyOnUpdate="0"/>
-    <default field="WBArea_Per" expression="" applyOnUpdate="0"/>
-    <default field="FType" expression="" applyOnUpdate="0"/>
-    <default field="FCode" expression="" applyOnUpdate="0"/>
-    <default field="MainPath" expression="" applyOnUpdate="0"/>
-    <default field="InNetwork" expression="" applyOnUpdate="0"/>
-    <default field="Visibility" expression="" applyOnUpdate="0"/>
-    <default field="Shape_Leng" expression="" applyOnUpdate="0"/>
-    <default field="NHDPlusID" expression="" applyOnUpdate="0"/>
-    <default field="VPUID" expression="" applyOnUpdate="0"/>
-    <default field="Enabled" expression="" applyOnUpdate="0"/>
-    <default field="AreaSqKm" expression="" applyOnUpdate="0"/>
-    <default field="TotDASqKm" expression="" applyOnUpdate="0"/>
-    <default field="Slope" expression="" applyOnUpdate="0"/>
-    <default field="MaxElevSmo" expression="" applyOnUpdate="0"/>
-    <default field="MInElevSmo" expression="" applyOnUpdate="0"/>
-    <default field="BFwidth" expression="" applyOnUpdate="0"/>
-    <default field="bankfull_m" expression="" applyOnUpdate="0"/>
+    <default field="fid" applyOnUpdate="0" expression=""/>
+    <default field="GNIS_ID" applyOnUpdate="0" expression=""/>
+    <default field="GNIS_Name" applyOnUpdate="0" expression=""/>
+    <default field="ReachCode" applyOnUpdate="0" expression=""/>
+    <default field="FType" applyOnUpdate="0" expression=""/>
+    <default field="FCode" applyOnUpdate="0" expression=""/>
+    <default field="NHDPlusID" applyOnUpdate="0" expression=""/>
+    <default field="TotDASqKM" applyOnUpdate="0" expression=""/>
+    <default field="DivDASqKM" applyOnUpdate="0" expression=""/>
+    <default field="level_path" applyOnUpdate="0" expression=""/>
+    <default field="downstream_level_path" applyOnUpdate="0" expression=""/>
+    <default field="upstream_level_path" applyOnUpdate="0" expression=""/>
+    <default field="divergence" applyOnUpdate="0" expression=""/>
+    <default field="stream_order" applyOnUpdate="0" expression=""/>
+    <default field="ownership" applyOnUpdate="0" expression=""/>
+    <default field="us_state" applyOnUpdate="0" expression=""/>
+    <default field="ecoregion_iii" applyOnUpdate="0" expression=""/>
+    <default field="ecoregion_iv" applyOnUpdate="0" expression=""/>
+    <default field="bankfull_m" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" constraints="3" field="fid" notnull_strength="1" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="Permanent_" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="FDate" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="Resolution" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="GNIS_ID" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="GNIS_Name" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="LengthKM" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="ReachCode" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="FlowDir" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="WBArea_Per" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="FType" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="FCode" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="MainPath" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="InNetwork" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="Visibility" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="Shape_Leng" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="NHDPlusID" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="VPUID" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="Enabled" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="AreaSqKm" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="TotDASqKm" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="Slope" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="MaxElevSmo" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="MInElevSmo" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="BFwidth" notnull_strength="0" exp_strength="0"/>
-    <constraint unique_strength="0" constraints="0" field="bankfull_m" notnull_strength="0" exp_strength="0"/>
+    <constraint field="fid" constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1"/>
+    <constraint field="GNIS_ID" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="GNIS_Name" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="ReachCode" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="FType" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="FCode" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="NHDPlusID" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="TotDASqKM" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="DivDASqKM" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="level_path" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="downstream_level_path" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="upstream_level_path" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="divergence" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="stream_order" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="ownership" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="us_state" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="ecoregion_iii" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="ecoregion_iv" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+    <constraint field="bankfull_m" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="fid" exp="" desc=""/>
-    <constraint field="Permanent_" exp="" desc=""/>
-    <constraint field="FDate" exp="" desc=""/>
-    <constraint field="Resolution" exp="" desc=""/>
-    <constraint field="GNIS_ID" exp="" desc=""/>
-    <constraint field="GNIS_Name" exp="" desc=""/>
-    <constraint field="LengthKM" exp="" desc=""/>
-    <constraint field="ReachCode" exp="" desc=""/>
-    <constraint field="FlowDir" exp="" desc=""/>
-    <constraint field="WBArea_Per" exp="" desc=""/>
-    <constraint field="FType" exp="" desc=""/>
-    <constraint field="FCode" exp="" desc=""/>
-    <constraint field="MainPath" exp="" desc=""/>
-    <constraint field="InNetwork" exp="" desc=""/>
-    <constraint field="Visibility" exp="" desc=""/>
-    <constraint field="Shape_Leng" exp="" desc=""/>
-    <constraint field="NHDPlusID" exp="" desc=""/>
-    <constraint field="VPUID" exp="" desc=""/>
-    <constraint field="Enabled" exp="" desc=""/>
-    <constraint field="AreaSqKm" exp="" desc=""/>
-    <constraint field="TotDASqKm" exp="" desc=""/>
-    <constraint field="Slope" exp="" desc=""/>
-    <constraint field="MaxElevSmo" exp="" desc=""/>
-    <constraint field="MInElevSmo" exp="" desc=""/>
-    <constraint field="BFwidth" exp="" desc=""/>
-    <constraint field="bankfull_m" exp="" desc=""/>
+    <constraint field="fid" desc="" exp=""/>
+    <constraint field="GNIS_ID" desc="" exp=""/>
+    <constraint field="GNIS_Name" desc="" exp=""/>
+    <constraint field="ReachCode" desc="" exp=""/>
+    <constraint field="FType" desc="" exp=""/>
+    <constraint field="FCode" desc="" exp=""/>
+    <constraint field="NHDPlusID" desc="" exp=""/>
+    <constraint field="TotDASqKM" desc="" exp=""/>
+    <constraint field="DivDASqKM" desc="" exp=""/>
+    <constraint field="level_path" desc="" exp=""/>
+    <constraint field="downstream_level_path" desc="" exp=""/>
+    <constraint field="upstream_level_path" desc="" exp=""/>
+    <constraint field="divergence" desc="" exp=""/>
+    <constraint field="stream_order" desc="" exp=""/>
+    <constraint field="ownership" desc="" exp=""/>
+    <constraint field="us_state" desc="" exp=""/>
+    <constraint field="ecoregion_iii" desc="" exp=""/>
+    <constraint field="ecoregion_iv" desc="" exp=""/>
+    <constraint field="bankfull_m" desc="" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
     <columns>
-      <column hidden="0" width="-1" name="fid" type="field"/>
-      <column hidden="0" width="-1" name="Permanent_" type="field"/>
-      <column hidden="0" width="-1" name="FDate" type="field"/>
-      <column hidden="0" width="-1" name="Resolution" type="field"/>
-      <column hidden="0" width="-1" name="GNIS_ID" type="field"/>
-      <column hidden="0" width="-1" name="GNIS_Name" type="field"/>
-      <column hidden="0" width="-1" name="LengthKM" type="field"/>
-      <column hidden="0" width="-1" name="ReachCode" type="field"/>
-      <column hidden="0" width="-1" name="FlowDir" type="field"/>
-      <column hidden="0" width="-1" name="WBArea_Per" type="field"/>
-      <column hidden="0" width="-1" name="FType" type="field"/>
-      <column hidden="0" width="-1" name="FCode" type="field"/>
-      <column hidden="0" width="-1" name="MainPath" type="field"/>
-      <column hidden="0" width="-1" name="InNetwork" type="field"/>
-      <column hidden="0" width="-1" name="Visibility" type="field"/>
-      <column hidden="0" width="-1" name="Shape_Leng" type="field"/>
-      <column hidden="0" width="-1" name="NHDPlusID" type="field"/>
-      <column hidden="0" width="-1" name="VPUID" type="field"/>
-      <column hidden="0" width="-1" name="Enabled" type="field"/>
-      <column hidden="0" width="-1" name="AreaSqKm" type="field"/>
-      <column hidden="0" width="-1" name="TotDASqKm" type="field"/>
-      <column hidden="0" width="-1" name="Slope" type="field"/>
-      <column hidden="0" width="-1" name="MaxElevSmo" type="field"/>
-      <column hidden="0" width="-1" name="MInElevSmo" type="field"/>
-      <column hidden="0" width="-1" name="BFwidth" type="field"/>
-      <column hidden="0" width="-1" name="bankfull_m" type="field"/>
-      <column hidden="1" width="-1" type="actions"/>
+      <column name="fid" hidden="0" type="field" width="-1"/>
+      <column name="GNIS_ID" hidden="0" type="field" width="-1"/>
+      <column name="GNIS_Name" hidden="0" type="field" width="-1"/>
+      <column name="ReachCode" hidden="0" type="field" width="-1"/>
+      <column name="FType" hidden="0" type="field" width="-1"/>
+      <column name="FCode" hidden="0" type="field" width="-1"/>
+      <column name="NHDPlusID" hidden="0" type="field" width="-1"/>
+      <column name="bankfull_m" hidden="0" type="field" width="-1"/>
+      <column name="TotDASqKM" hidden="0" type="field" width="-1"/>
+      <column name="DivDASqKM" hidden="0" type="field" width="-1"/>
+      <column name="level_path" hidden="0" type="field" width="-1"/>
+      <column name="downstream_level_path" hidden="0" type="field" width="-1"/>
+      <column name="upstream_level_path" hidden="0" type="field" width="-1"/>
+      <column name="divergence" hidden="0" type="field" width="-1"/>
+      <column name="stream_order" hidden="0" type="field" width="-1"/>
+      <column name="ownership" hidden="0" type="field" width="-1"/>
+      <column name="us_state" hidden="0" type="field" width="-1"/>
+      <column name="ecoregion_iii" hidden="0" type="field" width="-1"/>
+      <column name="ecoregion_iv" hidden="0" type="field" width="-1"/>
+      <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -518,64 +600,107 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field editable="1" name="AreaSqKm"/>
-    <field editable="1" name="BFwidth"/>
-    <field editable="1" name="Enabled"/>
-    <field editable="1" name="FCode"/>
-    <field editable="1" name="FDate"/>
-    <field editable="1" name="FType"/>
-    <field editable="1" name="FlowDir"/>
-    <field editable="1" name="GNIS_ID"/>
-    <field editable="1" name="GNIS_Name"/>
-    <field editable="1" name="InNetwork"/>
-    <field editable="1" name="LengthKM"/>
-    <field editable="1" name="MInElevSmo"/>
-    <field editable="1" name="MainPath"/>
-    <field editable="1" name="MaxElevSmo"/>
-    <field editable="1" name="NHDPlusID"/>
-    <field editable="1" name="Permanent_"/>
-    <field editable="1" name="ReachCode"/>
-    <field editable="1" name="Resolution"/>
-    <field editable="1" name="Shape_Leng"/>
-    <field editable="1" name="Slope"/>
-    <field editable="1" name="TotDASqKm"/>
-    <field editable="1" name="VPUID"/>
-    <field editable="1" name="Visibility"/>
-    <field editable="1" name="WBArea_Per"/>
-    <field editable="1" name="bankfull_m"/>
-    <field editable="1" name="fid"/>
+    <field name="AreaSqKm" editable="1"/>
+    <field name="BFwidth" editable="1"/>
+    <field name="DivDASqKM" editable="1"/>
+    <field name="Enabled" editable="1"/>
+    <field name="FCode" editable="1"/>
+    <field name="FDate" editable="1"/>
+    <field name="FType" editable="1"/>
+    <field name="FlowDir" editable="1"/>
+    <field name="GNIS_ID" editable="1"/>
+    <field name="GNIS_Name" editable="1"/>
+    <field name="InNetwork" editable="1"/>
+    <field name="LengthKM" editable="1"/>
+    <field name="MInElevSmo" editable="1"/>
+    <field name="MainPath" editable="1"/>
+    <field name="MaxElevSmo" editable="1"/>
+    <field name="NHDPlusID" editable="1"/>
+    <field name="Permanent_" editable="1"/>
+    <field name="ReachCode" editable="1"/>
+    <field name="Resolution" editable="1"/>
+    <field name="Shape_Leng" editable="1"/>
+    <field name="Slope" editable="1"/>
+    <field name="TotDASqKM" editable="1"/>
+    <field name="TotDASqKm" editable="1"/>
+    <field name="VPUID" editable="1"/>
+    <field name="Visibility" editable="1"/>
+    <field name="WBArea_Per" editable="1"/>
+    <field name="bankfull_m" editable="1"/>
+    <field name="divergence" editable="1"/>
+    <field name="downstream_level_path" editable="1"/>
+    <field name="ecoregion_iii" editable="1"/>
+    <field name="ecoregion_iv" editable="1"/>
+    <field name="fid" editable="1"/>
+    <field name="level_path" editable="1"/>
+    <field name="ownership" editable="1"/>
+    <field name="stream_order" editable="1"/>
+    <field name="upstream_level_path" editable="1"/>
+    <field name="us_state" editable="1"/>
   </editable>
   <labelOnTop>
-    <field name="AreaSqKm" labelOnTop="0"/>
-    <field name="BFwidth" labelOnTop="0"/>
-    <field name="Enabled" labelOnTop="0"/>
-    <field name="FCode" labelOnTop="0"/>
-    <field name="FDate" labelOnTop="0"/>
-    <field name="FType" labelOnTop="0"/>
-    <field name="FlowDir" labelOnTop="0"/>
-    <field name="GNIS_ID" labelOnTop="0"/>
-    <field name="GNIS_Name" labelOnTop="0"/>
-    <field name="InNetwork" labelOnTop="0"/>
-    <field name="LengthKM" labelOnTop="0"/>
-    <field name="MInElevSmo" labelOnTop="0"/>
-    <field name="MainPath" labelOnTop="0"/>
-    <field name="MaxElevSmo" labelOnTop="0"/>
-    <field name="NHDPlusID" labelOnTop="0"/>
-    <field name="Permanent_" labelOnTop="0"/>
-    <field name="ReachCode" labelOnTop="0"/>
-    <field name="Resolution" labelOnTop="0"/>
-    <field name="Shape_Leng" labelOnTop="0"/>
-    <field name="Slope" labelOnTop="0"/>
-    <field name="TotDASqKm" labelOnTop="0"/>
-    <field name="VPUID" labelOnTop="0"/>
-    <field name="Visibility" labelOnTop="0"/>
-    <field name="WBArea_Per" labelOnTop="0"/>
-    <field name="bankfull_m" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
+    <field labelOnTop="0" name="AreaSqKm"/>
+    <field labelOnTop="0" name="BFwidth"/>
+    <field labelOnTop="0" name="DivDASqKM"/>
+    <field labelOnTop="0" name="Enabled"/>
+    <field labelOnTop="0" name="FCode"/>
+    <field labelOnTop="0" name="FDate"/>
+    <field labelOnTop="0" name="FType"/>
+    <field labelOnTop="0" name="FlowDir"/>
+    <field labelOnTop="0" name="GNIS_ID"/>
+    <field labelOnTop="0" name="GNIS_Name"/>
+    <field labelOnTop="0" name="InNetwork"/>
+    <field labelOnTop="0" name="LengthKM"/>
+    <field labelOnTop="0" name="MInElevSmo"/>
+    <field labelOnTop="0" name="MainPath"/>
+    <field labelOnTop="0" name="MaxElevSmo"/>
+    <field labelOnTop="0" name="NHDPlusID"/>
+    <field labelOnTop="0" name="Permanent_"/>
+    <field labelOnTop="0" name="ReachCode"/>
+    <field labelOnTop="0" name="Resolution"/>
+    <field labelOnTop="0" name="Shape_Leng"/>
+    <field labelOnTop="0" name="Slope"/>
+    <field labelOnTop="0" name="TotDASqKM"/>
+    <field labelOnTop="0" name="TotDASqKm"/>
+    <field labelOnTop="0" name="VPUID"/>
+    <field labelOnTop="0" name="Visibility"/>
+    <field labelOnTop="0" name="WBArea_Per"/>
+    <field labelOnTop="0" name="bankfull_m"/>
+    <field labelOnTop="0" name="divergence"/>
+    <field labelOnTop="0" name="downstream_level_path"/>
+    <field labelOnTop="0" name="ecoregion_iii"/>
+    <field labelOnTop="0" name="ecoregion_iv"/>
+    <field labelOnTop="0" name="fid"/>
+    <field labelOnTop="0" name="level_path"/>
+    <field labelOnTop="0" name="ownership"/>
+    <field labelOnTop="0" name="stream_order"/>
+    <field labelOnTop="0" name="upstream_level_path"/>
+    <field labelOnTop="0" name="us_state"/>
   </labelOnTop>
+  <reuseLastValue>
+    <field reuseLastValue="0" name="DivDASqKM"/>
+    <field reuseLastValue="0" name="FCode"/>
+    <field reuseLastValue="0" name="FType"/>
+    <field reuseLastValue="0" name="GNIS_ID"/>
+    <field reuseLastValue="0" name="GNIS_Name"/>
+    <field reuseLastValue="0" name="NHDPlusID"/>
+    <field reuseLastValue="0" name="ReachCode"/>
+    <field reuseLastValue="0" name="TotDASqKM"/>
+    <field reuseLastValue="0" name="bankfull_m"/>
+    <field reuseLastValue="0" name="divergence"/>
+    <field reuseLastValue="0" name="downstream_level_path"/>
+    <field reuseLastValue="0" name="ecoregion_iii"/>
+    <field reuseLastValue="0" name="ecoregion_iv"/>
+    <field reuseLastValue="0" name="fid"/>
+    <field reuseLastValue="0" name="level_path"/>
+    <field reuseLastValue="0" name="ownership"/>
+    <field reuseLastValue="0" name="stream_order"/>
+    <field reuseLastValue="0" name="upstream_level_path"/>
+    <field reuseLastValue="0" name="us_state"/>
+  </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
   <previewExpression>"GNIS_Name"</previewExpression>
-  <mapTip></mapTip>
+  <mapTip enabled="1"></mapTip>
   <layerGeometryType>2</layerGeometryType>
 </qgis>

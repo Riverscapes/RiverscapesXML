@@ -21,7 +21,7 @@
         "paint": {
             "circle-color": [
                 "step",
-                ["get", "inactive_hectares_per_km"],
+                ["get", "elevated_hectares_per_km"],
                 "rgb(12, 118, 193)",
                 1,
                 "rgb(19, 130, 176)",
