@@ -1,7 +1,8 @@
 {
     "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
     "legend": [
-        ["hsl(325, 73%, 58%)", "Confining Margins"]
+        ["hsl(325, 73%, 58%)", "Left"],
+        ["hsl(187, 74%, 49%)", "Right]"]
     ],
     "layerStyles": [
         {
@@ -10,7 +11,16 @@
             "source": "composite",
             "source-layer": "sample_confining_margin-42524p",
             "layout": {},
-            "paint": {"line-color": "hsl(325, 73%, 58%)", "line-width": 0.75}
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "side"],
+                    ["RIGHT"],
+                    "hsl(187, 74%, 49%)",
+                    "hsl(325, 73%, 58%)"
+                ],
+                "line-width": 0.75
+            }
         }
     ]
 }
