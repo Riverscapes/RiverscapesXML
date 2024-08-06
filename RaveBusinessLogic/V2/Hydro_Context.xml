@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Hydrologic Context</Name>
+  <ProjectType>Hydrologic</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
+      <Node label="Outputs">
+        <Children collapsed="true">
+          <Node label="Hydrologic IGO Point Geometry" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='IGOGeometry']" type="point" id="IGOGeometry" symbology="IGOGeometry" />
+          <Node label="Hydrologic Output Points" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="vwIgos" symbology="vwIgo" />
+          <Node label="Hydrologic Reach Geometry" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='ReachGeometry']" type="line" id="ReachGeometry" symbology="ReachGeometry" />
+          <Node label="Hydrologic Output Lines" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="vwReaches" symbology="vwReach" />
+          <Node label="Hydrologic Output DGOs Polygons" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='DGOGeometry']" type="polygon" id="DGOGeometry" symbology="DGOGeometry" />
+          <Node label="Hydrologic Output DGOs" xpathlabel="Name" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="vwDgos" symbology="vwDgo" />
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="Inputs">
+        <Children collapsed="true">
+          <Node label="Hillshade" xpath="Inputs/Raster[@id='HILLSHADE']" type="raster" id="hillshade" symbology="hillshade" />
+          <Node label="Digital Elevation Model" xpath="Inputs/Raster[@id='DEM']" type="raster" id="dem" symbology="dem" transparency="40" />
+          <Node label="Integrated Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="vbet_igos" />
+          <Node label="Discrete Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="point" symbology="DGO" />
+          <Node label="Segmented Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='network_segmented']" type="line" symbology="flowlines" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>
