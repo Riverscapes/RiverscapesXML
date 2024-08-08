@@ -17,6 +17,8 @@ from rsxml.project_xml import (
     Coords,
     BoundingBox,
     Dataset,
+    Geopackage,
+    GeopackageLayer,
     GeoPackageDatasetTypes,
     Realization,
 )
@@ -79,7 +81,31 @@ def main(filepath: str):
                         ds_type=GeoPackageDatasetTypes.RASTER,
                         summary='This is a input dataset',
                         description='This is a input dataset',
-                    )
+                    ),
+                    Geopackage(
+                        xml_id='output2',
+                        name='OutputDS2',
+                        path='datasets/output.gpkg',
+                        layers=[
+                            GeopackageLayer(
+                                lyr_name='output2_layer1',
+                                lyr_type='output_layer',
+                                name='OutputDS2 Layer 1',
+                                ds_type=GeoPackageDatasetTypes.VECTOR,
+                                summary='This is a input dataset',
+                                description='This is a input dataset',
+                            ),
+                            GeopackageLayer(
+                                lyr_name='output2_layer2',
+                                name='OutputDS2 Layer 2',
+                                ds_type=GeoPackageDatasetTypes.VECTOR,
+                                summary='This is a input dataset',
+                                description='This is a input dataset',
+                            ),
+                        ],
+                        summary='This is a input dataset',
+                        description='This is a input dataset',
+                    ),
                 ]
             )
         ]

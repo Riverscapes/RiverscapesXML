@@ -126,6 +126,7 @@ class GeopackageLayer(RSObj):
     """
     ds_type: GeoPackageDatasetTypes
     lyr_name: str
+    lyr_type: str
     ext_ref: str
 
     def __init__(self,
@@ -137,6 +138,7 @@ class GeopackageLayer(RSObj):
                  description: str = None,
                  citation: str = None,
                  meta_data: MetaData = None,
+                 lyr_type: str = None
                  ) -> None:
         """
         Initializes a GeoPackageDataset instance.
@@ -150,6 +152,7 @@ class GeopackageLayer(RSObj):
             description (str, optional): A detailed description of the dataset. Defaults to None.
             citation (str, optional): The citation information for the dataset. Defaults to None.
             meta_data (MetaData, optional): The metadata associated with the dataset. Defaults to None.
+            lyr_type (str): The type of the dataset layer. This can be any string and it's used as a non-unique identifier to help with business logic xpaths
 
         Returns:
             None
@@ -178,7 +181,7 @@ class GeopackageLayer(RSObj):
                          description=description,
                          citation=citation,
                          meta_data=meta_data,
-                         mandatory_id=False
+                         mandatory_id=False,
                          )
         if not ds_type or ds_type not in GeoPackageDatasetTypes.__dict__.values():
             raise ValueError('Dataset type is required for Dataset')
@@ -186,6 +189,7 @@ class GeopackageLayer(RSObj):
             raise ValueError('Layer name is required for Dataset')
 
         self.lyr_name = lyr_name
+        self.lyr_type = lyr_type
         self.ds_type = ds_type
         self.ext_ref = ext_ref
 
@@ -198,6 +202,7 @@ class GeopackageLayer(RSObj):
         """
         rsobj = RSObj.from_xml(xml_node)
         lyr_name = xml_node.get('lyrName')
+        lyr_type = xml_node.get('type')
 
         # if this is a dataset then the id will get picked up by the RSObj.from_xml
         dataset = GeopackageLayer(lyr_name=lyr_name,
@@ -207,7 +212,8 @@ class GeopackageLayer(RSObj):
                                   summary=rsobj.summary,
                                   description=rsobj.description,
                                   citation=rsobj.citation,
-                                  meta_data=rsobj.meta_data
+                                  meta_data=rsobj.meta_data,
+                                  lyr_type=lyr_type,
                                   )
         return dataset
 
@@ -229,6 +235,8 @@ class GeopackageLayer(RSObj):
         xml_node = super().to_xml()
 
         xml_node.set('lyrName', self.lyr_name)
+        if self.lyr_type:
+            xml_node.set('type', self.lyr_type)
         if self.ext_ref:
             xml_node.set('extRef', self.ext_ref)
 

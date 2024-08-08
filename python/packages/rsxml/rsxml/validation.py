@@ -7,7 +7,7 @@ try:
     from lxml import etree
 except ImportError:
     etree = None
-from rsxml import Logger
+from rsxml.logging.logger import Logger
 from rsxml.constants import XSD_URL
 
 
@@ -80,4 +80,3 @@ def validate_project_file(project_file_path: str):
         raise e
 
     return validate_xml(xml, xsd)
-

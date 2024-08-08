@@ -18,7 +18,7 @@ from rsxml.project_xml.Dataset import Dataset, RefDataset
 from rsxml.project_xml.QAQCEvent import QAQCEvent
 from rsxml.project_xml.Warehouse import Warehouse
 
-from rsxml.logging.logger import Logger
+from rsxml import Logger
 
 
 class Project(RSObj):

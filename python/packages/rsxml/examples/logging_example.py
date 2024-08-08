@@ -8,7 +8,6 @@ NOTE: For QGIS plugins you should use QgsMessageLog instead of this class.
 - https://qgis.org/pyqgis/3.2/core/Message/QgsMessageLog.html
 
 """
-import logging
 from rsxml import Logger
 import tempfile
 

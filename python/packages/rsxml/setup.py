@@ -33,6 +33,9 @@ setup(
     url='https://github.com/Riverscapes/RiverscapesXML',
     packages=[
         'rsxml',
+        'rsxml.util',
+        'rsxml.dotenv',
+        'rsxml.rspaths',
         'rsxml.logging',
         'rsxml.debug',
         'rsxml.project_xml'

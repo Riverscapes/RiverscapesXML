@@ -359,6 +359,7 @@ class ProjectClasses(unittest.TestCase):
                 ds_type=project_xml.GeoPackageDatasetTypes.RASTER,
                 ext_ref='test_path/test.tiff',
                 lyr_name='test_layer',
+                lyr_type='test_type',
                 meta_data=MetaData(values=[
                     project_xml.Meta(name='test_key', value='test_no_type'),
                     project_xml.Meta(name='test_key2', value='test_valid_type', type='filepath')

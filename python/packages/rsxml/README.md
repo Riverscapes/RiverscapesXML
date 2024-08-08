@@ -54,13 +54,14 @@ You can construct an instance of a `Project` class that incorporates all the nec
                         meta_data=MetaData(values=[Meta('Test', 'Test Value')]),
                         layers=[
                             GeopackageLayer(
-                                lyr_name='layer1',
+                                lyr_name='my_layer1',
                                 name='Layer1',
                                 ds_type=GeoPackageDatasetTypes.VECTOR,
                                  summary='This is a dataset',
                                 description='This is a dataset',
                                 citation='This is a citation',
                                 meta_data=MetaData(values=[Meta('Test', 'Test Value')])
+                                lyr_type='my_layer',
                             )
                         ]
                     )
