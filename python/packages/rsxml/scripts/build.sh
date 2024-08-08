@@ -7,6 +7,7 @@ rm -rf dist/*
 rm -fr build/*
 
 # build new version
+pip install wheel twine
 
 python setup.py sdist bdist_wheel
 twine check dist/*
