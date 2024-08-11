@@ -1,0 +1,41 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 76, 168)", "Perennial"],
+    ["rgb(161, 242, 242)", "Canal"],
+    ["rgb(255, 170, 0)", "Connector"],
+    ["rgb(207, 89, 107)", "Artifical Path"],
+    ["rgb(170, 255, 0)", "Intermittent"],
+    ["rgb(230, 153, 0)", "Ephemeral"],
+    ["#000000", "Other"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "match",
+                ["get", "FCode"],
+                [46006],
+                "rgb(0, 76, 168)",
+                [33600],
+                "rgb(161, 242, 242)",
+                [33400],
+                "rgb(255, 170, 0)",
+                [55800],
+                "rgb(207, 89, 107)",
+                [46003],
+                "rgb(170, 255, 0)",
+                [46007],
+                "rgb(230, 153, 0)",
+                "#000000"
+            ]
+        }
+    }
+]
+}

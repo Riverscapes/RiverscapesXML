@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(88, 87, 80)", "Small (0)"],
+    ["rgb(163, 242, 242)", "Medium (1)"],
+    ["rgb(74, 73, 130)", "Large (2)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "match",
+                ["get", "stream_size"],
+                0,
+                "rgb(88, 87, 80)",
+                [1],
+                "rgb(163, 242, 242)",
+                [2],
+                "rgb(74, 73, 130)",
+                "#000000"
+            ]
+        }
+    }
+]
+}

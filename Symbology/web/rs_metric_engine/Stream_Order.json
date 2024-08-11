@@ -1,0 +1,66 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 255, 217)", "1"],
+    ["rgb(237, 248, 177)", "2"],
+    ["rgb(199, 233, 180)", "3"],
+    ["rgb(127, 205, 187)", "4"],
+    ["rgb(65, 182, 196)", "5"],
+    ["rgb(29, 145, 192)", "6"],
+    ["rgb(34, 94, 168)", "7"],
+    ["rgb(37, 52, 148)", "8"],
+    ["rgb(90, 90, 90)", "None or > 8"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "match",
+                ["get", "nhd_dgo_streamorder"],
+                [1],
+                "rgb(255, 255, 217)",
+                [2],
+                "rgb(237, 248, 177)",
+                [3],
+                "rgb(199, 233, 180)",
+                [4],
+                "rgb(127, 205, 187)",
+                [5],
+                "rgb(65, 182, 196)",
+                [6],
+                "rgb(29, 145, 192)",
+                [7],
+                "rgb(34, 94, 168)",
+                [8],
+                "rgb(37, 52, 148)",
+                "rgb(90, 90, 90)"
+            ],
+            "circle-radius": [
+                "match",
+                ["get", "nhd_dgo_streamorder"],
+                [1],
+                2.7,
+                [2],
+                2.9,
+                [3],
+                3.2,
+                [4],
+                3.5,
+                [5],
+                3.7,
+                [7],
+                4.3,
+                [8],
+                4.5,
+                4
+            ]
+        }
+    }
+]
+}

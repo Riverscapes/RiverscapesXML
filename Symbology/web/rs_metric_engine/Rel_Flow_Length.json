@@ -1,0 +1,81 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(237, 248, 251)", "<= 1"],
+    ["rgb(191, 211, 230)", "1 - 1.2"],
+    ["rgb(158, 188, 218)", "1.2 - 1.5"],
+    ["rgb(140, 150, 198)", "1.5 - 2"],
+    ["rgb(136, 86, 167)", "2 - 5"],
+    ["rgb(129, 15, 124)", "> 5"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "rme_igo_rel_flow_length"],
+                0.00,
+                "rgb(237, 248, 251)",
+                1,
+                "rgb(237, 248, 251)",
+                1.0001,
+                "rgb(191, 211, 230)",
+                1.2,
+                "rgb(191, 211, 230)",
+                1.2001,
+                "rgb(158, 188, 218)",
+                1.5,
+                "rgb(158, 188, 218)",
+                1.5001,
+                "rgb(140, 150, 198)",
+                2,
+                "rgb(140, 150, 198)",
+                2.0001,
+                "rgb(136, 86, 167)",
+                5,
+                "rgb(136, 86, 167)",
+                5.0001,
+                "rgb(129, 15, 124)",
+                1000,
+                "rgb(129, 15, 124)"
+            ],
+            "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["get", "rme_igo_rel_flow_length"],
+                0.00,
+                3.8,
+                1,
+                3.8,
+                1.0001,
+                4.5,
+                1.2,
+                4.5,
+                1.2001,
+                5.3,
+                1.5,
+                5.3,
+                1.5001,
+                6,
+                2,
+                6,
+                2.0001,
+                6.8,
+                5,
+                6.8,
+                5.0001,
+                7.5,
+                1000,
+                7.5
+            ]
+        }
+    }
+]
+}

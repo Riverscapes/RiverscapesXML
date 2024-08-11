@@ -1,0 +1,37 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 168, 0)", "Easiest - Low-Hanging Fruit"],
+    ["rgb(0, 197, 255)", "Straight Forward - Quick Return"],
+    ["rgb(230, 204, 0)", "Strategic - Long-Term Investment"],
+    ["rgb(185, 185, 185)", "None"],
+    ["rgb(0, 0, 0)", "NA"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "match",
+                ["get", "brat_igo_opportunity"],
+                ["Easiest - Low-Hanging Fruit"],
+                "rgb(0, 168, 0)",
+                ["Straight Forward - Quick Return"],
+                "rgb(0, 197, 255)",
+                ["Strategic - Long-Term Investment"],
+                "rgb(230, 204, 0)",
+                ["None"],
+                "rgb(185, 185, 185)",
+                ["NA"],
+                "rgb(0, 0, 0)",
+                "#000000"
+            ]
+        }
+    }
+]
+}

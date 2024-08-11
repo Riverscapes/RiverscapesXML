@@ -1,0 +1,47 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 240, 240)", "0 - 0.2"],
+    ["rgb(255, 191, 191)", "0.2 - 0.4"],
+    ["rgb(255, 128, 128)", "0.4 - 0.6"],
+    ["rgb(255, 64, 64)", "0.6 - 0.8"],
+    ["rgb(255, 0, 0)", "0.8 - 1"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "conf_igo_constriction_ratio"],
+                0,
+                "rgb(255, 240, 240)",
+                0.2,
+                "rgb(255, 240, 240)",
+                0.2001,
+                "rgb(255, 191, 191)",
+                0.4,
+                "rgb(255, 191, 191)",
+                0.4001,
+                "rgb(255, 128, 128)",
+                0.6,
+                "rgb(255, 128, 128)",
+                0.6001,
+                "rgb(255, 64, 64)",
+                0.8,
+                "rgb(255, 64, 64)",
+                0.8001,
+                "rgb(255, 0, 0)",
+                1,
+                "rgb(255, 0, 0)"
+            ]
+        }
+    }
+]
+}
