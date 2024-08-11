@@ -1,0 +1,47 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 181, 84)", "Bureau of Indian Affairs"],
+    ["rgb(255, 234, 140)", "Bureau of Land Management"],
+    ["rgb(91, 179, 166)", "US Fish and Wildlife Service"],
+    ["rgb(159, 221, 174)", "US Forest Service"],
+    ["rgb(216, 162, 135)", "Department of Energy"],
+    ["rgb(250, 177, 255)", "Department of Defense"],
+    ["rgb(115, 178, 255)", "State"],
+    ["rgb(225, 225, 225)", "Private"],
+    ["rgb(119, 119, 119)", "Other"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "match",
+                ["get", "rme_dgo_ownership"],
+                ["BIA"],
+                "rgb(255, 181, 84)",
+                ["BLM"],
+                "rgb(255, 234, 140)",
+                ["FWS"],
+                "rgb(91, 179, 166)",
+                ["USFS"],
+                "rgb(159, 221, 174)",
+                ["DOE"],
+                "rgb(216, 162, 135)",
+                ["DOD"],
+                "rgb(250, 177, 255)",
+                ["ST"],
+                "rgb(115, 178, 255)",
+                ["PVT"],
+                "rgb(225, 225, 225)",
+                "rgb(119, 119, 119)"
+            ]
+        }
+    }
+]
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 183, 33)", "0%"],
+    ["rgb(231, 145, 23)", "0 - 5%"],
+    ["rgb(203, 109, 17)", "5 - 15%"],
+    ["rgb(173, 74, 13)", "15 - 30%"],
+    ["rgb(140, 41, 9)", "30 - 60%"],
+    ["rgb(107, 0, 0)", "> 60%"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "rcat_igo_riparian_develop"],
+                0,
+                "rgb(255, 183, 33)",
+                0.00001,
+                "rgb(255, 183, 33)",
+                0.00002,
+                "rgb(231, 145, 23)",
+                0.05,
+                "rgb(231, 145, 23)",
+                0.0501,
+                "rgb(203, 109, 17)",
+                0.15,
+                "rgb(203, 109, 17)",
+                0.1501,
+                "rgb(173, 74, 13)",
+                0.3,
+                "rgb(173, 74, 13)",
+                0.3001,
+                "rgb(140, 41, 9)",
+                0.60,
+                "rgb(140, 41, 9)",
+                0.6001,
+                "rgb(107, 0, 0)",
+                1,
+                "rgb(107, 0, 0)"
+            ],
+            "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["get", "rcat_igo_riparian_ag_conversion"],
+                0,
+                2.6,
+                0.00001,
+                2.6,
+                0.00002,
+                2.9,
+                0.05,
+                2.9,
+                0.0501,
+                3.2,
+                0.15,
+                3.2,
+                0.1501,
+                3.5,
+                0.3,
+                3.5,
+                0.3001,
+                3.8,
+                0.60,
+                3.8,
+                0.6001,
+                4.1,
+                1,
+                4.1
+            ]
+        }
+    }
+]
+}

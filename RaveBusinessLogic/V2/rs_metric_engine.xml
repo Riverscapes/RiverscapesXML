@@ -23,8 +23,7 @@
               <Node label="Stream Type" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="nhd_dgo_streamtype" symbology="Stream_Type" />
               <Node label="Headwater" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="nhd_dgo_headwater" symbology="Headwater" />
               <Node label="Stream Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="stream_size" symbology="Stream_Size" />
-              <Node label="EcoRegion IV" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="epa_dgo_ecoregion4" symbology="EcoRegion4" />
-              <Node label="Drainage Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_dgo_drainage_area" symbology="Drainage_Area" />
+              <Node label="Drainage Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_dgo_drainage_area" symbology="RME_Drainage" />
               <Node label="Land Ownership" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rme_dgo_ownership" symbology="RME_Ownership" />
             </Children>
           </Node>
@@ -44,7 +43,6 @@
             <Children collapsed="true">
               <Node label="Confinement Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="conf_igo_confinement_ratio" symbology="IGO_Confinement" />
               <Node label="Constriction Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="conf_igo_constriction_ratio" symbology="IGO_Constriction" />
-              <Node label="Confining Margins" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="conf_dgo_confining_margins" symbology="Confining_Margins" />
             </Children>
           </Node>
           <Node label="Condition">
@@ -59,6 +57,13 @@
               <Node label="Floodplain Access" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rcat_igo_fldpln_access" symbology="Fldpln_Access" />
             </Children>
           </Node>
+          <Node label="BRAT">
+            <Children collapsed="true">
+              <Node label="Dam Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_igo_capacity" symbology="RME_Capacity" />
+              <Node label="Risk of Undesirable Dams" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_igo_risk" symbology="RME_Risk" />
+              <Node label="Restoration or Conservation Opportunities" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_igo_opportunity" symbology="RME_Opportunity" />
+            </Children>
+          </Node>
         </Children>
       </Node>
       <Node label="Intermediates" xpath='Realizations/Realization'>
@@ -70,7 +75,7 @@
         <Children collapsed="true">
           <Node label="Sample Frames">
             <Children collapsed="true">
-              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" id="igos" symbology="igo" />
+              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" id="igos" symbology="IGO" />
               <Node label="Centerlines" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='valley_centerlines']" type="line" id="centerlines" symbology="CL_vb" />
               <Node label="Discrete Geographic Objects (DGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" id="dgos" symbology="DGO" />
             </Children>

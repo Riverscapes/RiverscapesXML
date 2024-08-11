@@ -1,0 +1,63 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(26, 150, 65)", "Unconfined (0 - 0.1)"],
+    ["rgb(166, 217, 106)", "Partly Confined - Planform Controlled (0.1 - 0.5)"],
+    ["rgb(253, 174, 97)", "Partly Confined - Bedrock Controlled (0.5 - 0.85)"],
+    ["rgb(215, 25, 28)", "Confined (0.85 - 1)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["get", "conf_igo_confinement_ratio"],
+                0,
+                6.8,
+                0.1,
+                6.8,
+                0.1001,
+                6,
+                0.5,
+                6,
+                0.5001,
+                5.3,
+                0.85,
+                5.3,
+                0.8501,
+                4.5,
+                1,
+                4.5
+            ],
+            "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "conf_igo_confinement_ratio"],
+                0,
+                "rgb(26, 150, 65)",
+                0.1,
+                "rgb(26, 150, 65)",
+                0.1001,
+                "rgb(166, 217, 106)",
+                0.5,
+                "rgb(166, 217, 106)",
+                0.5001,
+                "rgb(253, 174, 97)",
+                0.85,
+                "rgb(253, 174, 97)",
+                0.8501,
+                "rgb(215, 25, 28)",
+                1,
+                "rgb(215, 25, 28)"
+            ]
+        }
+    }
+]
+}

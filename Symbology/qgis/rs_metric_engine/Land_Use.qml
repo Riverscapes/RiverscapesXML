@@ -1,333 +1,368 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis readOnly="0" simplifyDrawingTol="1" styleCategories="AllStyleCategories" version="3.22.11-Białowieża" simplifyAlgorithm="0" minScale="100000000" maxScale="0" symbologyReferenceScale="-1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyMaxScale="1" labelsEnabled="0">
+<qgis symbologyReferenceScale="-1" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" readOnly="0" maxScale="0" simplifyDrawingTol="1" simplifyLocal="1" version="3.34.8-Prizren" simplifyMaxScale="1" minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal endExpression="" mode="0" startField="" startExpression="" durationUnit="min" durationField="" fixedDuration="0" accumulate="0" endField="" enabled="0" limitMode="0">
+  <temporal enabled="0" startExpression="" durationUnit="min" endField="" mode="0" accumulate="0" durationField="" limitMode="0" endExpression="" startField="" fixedDuration="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 type="graduatedSymbol" forceraster="0" symbollevels="0" graduatedMethod="GraduatedColor" attr="to_real(&quot;anthro_igo_land_use_intens&quot;)" enableorderby="0" referencescale="-1">
+  <elevation symbology="Line" zoffset="0" extrusion="0" clamping="Terrain" binding="Centroid" extrusionEnabled="0" zscale="1" type="IndividualFeatures" showMarkerSymbolInSurfacePlots="0" respectLayerSymbol="1">
+    <data-defined-properties>
+      <Option type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+      </Option>
+    </data-defined-properties>
+    <profileLineSymbol>
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" alpha="1" type="line">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" class="SimpleLine" id="{6444d8cc-9128-428a-baed-8ec82f616e20}" pass="0" locked="0">
+          <Option type="Map">
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="225,89,137,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.6"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileLineSymbol>
+    <profileFillSymbol>
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" alpha="1" type="fill">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" class="SimpleFill" id="{293d11a0-7066-4ced-b450-65606e8c1f73}" pass="0" locked="0">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="color" type="QString" value="225,89,137,255"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="161,64,98,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.2"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="style" type="QString" value="solid"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileFillSymbol>
+    <profileMarkerSymbol>
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" alpha="1" type="marker">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" class="SimpleMarker" id="{e5249c6b-bdef-4b3b-8dbb-6289385fe970}" pass="0" locked="0">
+          <Option type="Map">
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="225,89,137,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="diamond"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="161,64,98,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.2"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="3"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileMarkerSymbol>
+  </elevation>
+  <renderer-v2 referencescale="-1" enableorderby="0" attr="anthro_igo_land_use_intens" graduatedMethod="GraduatedColor" symbollevels="0" type="graduatedSymbol" forceraster="0">
     <ranges>
-      <range label="Very Low" lower="0.000000000000000" render="true" symbol="0" upper="0.000000000000000"/>
-      <range label="Low" lower="0.000000000000000" render="true" symbol="1" upper="33.000000000000000"/>
-      <range label="Moderate" lower="33.000000000000000" render="true" symbol="2" upper="66.000000000000000"/>
-      <range label="High" lower="66.000000000000000" render="true" symbol="3" upper="100.000000000000000"/>
+      <range uuid="0" symbol="0" upper="0.000000000000000" label="Very Low" lower="0.000000000000000" render="true"/>
+      <range uuid="1" symbol="1" upper="33.000000000000000" label="Low" lower="0.000000000000000" render="true"/>
+      <range uuid="2" symbol="2" upper="66.000000000000000" label="Moderate" lower="33.000000000000000" render="true"/>
+      <range uuid="3" symbol="3" upper="100.000000000000000" label="High" lower="66.000000000000000" render="true"/>
     </ranges>
     <symbols>
-      <symbol type="marker" clip_to_extent="1" force_rhr="0" name="0" alpha="1">
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="0" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" id="{b48c280a-67c6-4eec-bbd7-de6b464f8223}" pass="0" locked="0">
           <Option type="Map">
-            <Option type="QString" name="angle" value="0"/>
-            <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="38,115,0,255"/>
-            <Option type="QString" name="horizontal_anchor_point" value="1"/>
-            <Option type="QString" name="joinstyle" value="bevel"/>
-            <Option type="QString" name="name" value="circle"/>
-            <Option type="QString" name="offset" value="0,0"/>
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="offset_unit" value="MM"/>
-            <Option type="QString" name="outline_color" value="35,35,35,255"/>
-            <Option type="QString" name="outline_style" value="no"/>
-            <Option type="QString" name="outline_width" value="0"/>
-            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="outline_width_unit" value="MM"/>
-            <Option type="QString" name="scale_method" value="diameter"/>
-            <Option type="QString" name="size" value="2.4"/>
-            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="size_unit" value="Point"/>
-            <Option type="QString" name="vertical_anchor_point" value="1"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="38,115,0,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="Point"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="no"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="Point"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="Point"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <prop v="0" k="angle"/>
-          <prop v="square" k="cap_style"/>
-          <prop v="38,115,0,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="circle" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="no" k="outline_style"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="2.4" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="Point" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="marker" clip_to_extent="1" force_rhr="0" name="1" alpha="1">
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="1" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" id="{3ff51d38-b9c0-45b2-9f94-ecb826d86ac2}" pass="0" locked="0">
           <Option type="Map">
-            <Option type="QString" name="angle" value="0"/>
-            <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="164,196,0,255"/>
-            <Option type="QString" name="horizontal_anchor_point" value="1"/>
-            <Option type="QString" name="joinstyle" value="bevel"/>
-            <Option type="QString" name="name" value="circle"/>
-            <Option type="QString" name="offset" value="0,0"/>
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="offset_unit" value="MM"/>
-            <Option type="QString" name="outline_color" value="35,35,35,255"/>
-            <Option type="QString" name="outline_style" value="no"/>
-            <Option type="QString" name="outline_width" value="0"/>
-            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="outline_width_unit" value="MM"/>
-            <Option type="QString" name="scale_method" value="diameter"/>
-            <Option type="QString" name="size" value="2.4"/>
-            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="size_unit" value="Point"/>
-            <Option type="QString" name="vertical_anchor_point" value="1"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="164,196,0,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="Point"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="no"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="Point"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="Point"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <prop v="0" k="angle"/>
-          <prop v="square" k="cap_style"/>
-          <prop v="164,196,0,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="circle" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="no" k="outline_style"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="2.4" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="Point" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="marker" clip_to_extent="1" force_rhr="0" name="2" alpha="1">
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="2" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" id="{45ffe690-6140-485c-9603-e67f47e75e0d}" pass="0" locked="0">
           <Option type="Map">
-            <Option type="QString" name="angle" value="0"/>
-            <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="255,187,0,255"/>
-            <Option type="QString" name="horizontal_anchor_point" value="1"/>
-            <Option type="QString" name="joinstyle" value="bevel"/>
-            <Option type="QString" name="name" value="circle"/>
-            <Option type="QString" name="offset" value="0,0"/>
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="offset_unit" value="Point"/>
-            <Option type="QString" name="outline_color" value="35,35,35,255"/>
-            <Option type="QString" name="outline_style" value="no"/>
-            <Option type="QString" name="outline_width" value="0"/>
-            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="outline_width_unit" value="Point"/>
-            <Option type="QString" name="scale_method" value="diameter"/>
-            <Option type="QString" name="size" value="2.4"/>
-            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="size_unit" value="Point"/>
-            <Option type="QString" name="vertical_anchor_point" value="1"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="255,187,0,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="Point"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="no"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="Point"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="Point"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <prop v="0" k="angle"/>
-          <prop v="square" k="cap_style"/>
-          <prop v="255,187,0,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="circle" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="Point" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="no" k="outline_style"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="Point" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="2.4" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="Point" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="marker" clip_to_extent="1" force_rhr="0" name="3" alpha="1">
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="3" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" id="{6d266633-fa91-4403-83e7-46fa4f135f31}" pass="0" locked="0">
           <Option type="Map">
-            <Option type="QString" name="angle" value="0"/>
-            <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="245,0,0,255"/>
-            <Option type="QString" name="horizontal_anchor_point" value="1"/>
-            <Option type="QString" name="joinstyle" value="bevel"/>
-            <Option type="QString" name="name" value="circle"/>
-            <Option type="QString" name="offset" value="0,0"/>
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="offset_unit" value="MM"/>
-            <Option type="QString" name="outline_color" value="35,35,35,255"/>
-            <Option type="QString" name="outline_style" value="no"/>
-            <Option type="QString" name="outline_width" value="0"/>
-            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="outline_width_unit" value="MM"/>
-            <Option type="QString" name="scale_method" value="diameter"/>
-            <Option type="QString" name="size" value="2.4"/>
-            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="size_unit" value="Point"/>
-            <Option type="QString" name="vertical_anchor_point" value="1"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="245,0,0,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="Point"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="no"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="Point"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2.4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="Point"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <prop v="0" k="angle"/>
-          <prop v="square" k="cap_style"/>
-          <prop v="245,0,0,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="circle" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="no" k="outline_style"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="2.4" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="Point" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol type="marker" clip_to_extent="1" force_rhr="0" name="0" alpha="1">
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="0" alpha="1" type="marker">
         <data_defined_properties>
           <Option type="Map">
-            <Option type="QString" name="name" value=""/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" name="type" value="collection"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" id="{edcd12f7-700d-4302-8c0f-f0b80596c6f1}" pass="0" locked="0">
           <Option type="Map">
-            <Option type="QString" name="angle" value="0"/>
-            <Option type="QString" name="cap_style" value="square"/>
-            <Option type="QString" name="color" value="196,60,57,255"/>
-            <Option type="QString" name="horizontal_anchor_point" value="1"/>
-            <Option type="QString" name="joinstyle" value="bevel"/>
-            <Option type="QString" name="name" value="circle"/>
-            <Option type="QString" name="offset" value="0,0"/>
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="offset_unit" value="MM"/>
-            <Option type="QString" name="outline_color" value="35,35,35,255"/>
-            <Option type="QString" name="outline_style" value="solid"/>
-            <Option type="QString" name="outline_width" value="0"/>
-            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="outline_width_unit" value="MM"/>
-            <Option type="QString" name="scale_method" value="diameter"/>
-            <Option type="QString" name="size" value="2"/>
-            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-            <Option type="QString" name="size_unit" value="MM"/>
-            <Option type="QString" name="vertical_anchor_point" value="1"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="196,60,57,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <prop v="0" k="angle"/>
-          <prop v="square" k="cap_style"/>
-          <prop v="196,60,57,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="circle" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="2" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="MM" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </source-symbol>
-    <colorramp type="gradient" name="[source]">
+    <colorramp name="[source]" type="gradient">
       <Option type="Map">
-        <Option type="QString" name="color1" value="255,255,255,255"/>
-        <Option type="QString" name="color2" value="255,0,0,255"/>
-        <Option type="QString" name="discrete" value="0"/>
-        <Option type="QString" name="rampType" value="gradient"/>
+        <Option name="color1" type="QString" value="255,255,255,255"/>
+        <Option name="color2" type="QString" value="255,0,0,255"/>
+        <Option name="direction" type="QString" value="ccw"/>
+        <Option name="discrete" type="QString" value="0"/>
+        <Option name="rampType" type="QString" value="gradient"/>
+        <Option name="spec" type="QString" value="rgb"/>
       </Option>
-      <prop v="255,255,255,255" k="color1"/>
-      <prop v="255,0,0,255" k="color2"/>
-      <prop v="0" k="discrete"/>
-      <prop v="gradient" k="rampType"/>
     </colorramp>
     <classificationMethod id="Quantile">
-      <symmetricMode astride="0" symmetrypoint="0" enabled="0"/>
-      <labelFormat format="%1 - %2" labelprecision="0" trimtrailingzeroes="1"/>
+      <symmetricMode enabled="0" astride="0" symmetrypoint="0"/>
+      <labelFormat format="%1 - %2" labelprecision="0" trimtrailingzeroes="0"/>
       <parameters>
         <Option/>
       </parameters>
@@ -336,12 +371,56 @@
     <rotation/>
     <sizescale/>
   </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" alpha="1" type="marker">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer enabled="1" class="SimpleMarker" id="{0d28b7ac-7f5b-40a6-a9b1-321c5ed99eee}" pass="0" locked="0">
+          <Option type="Map">
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="255,0,0,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="2"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </selectionSymbol>
+  </selection>
   <customproperties>
     <Option type="Map">
-      <Option type="List" name="dualview/previewExpressions">
+      <Option name="dualview/previewExpressions" type="List">
         <Option type="QString" value="&quot;anthro_igo_road_dens&quot;"/>
       </Option>
-      <Option type="int" name="embeddedWidgets/count" value="0"/>
+      <Option name="embeddedWidgets/count" type="int" value="0"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
     </Option>
@@ -350,79 +429,53 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory rotationOffset="270" penColor="#000000" backgroundColor="#ffffff" opacity="1" minScaleDenominator="0" showAxis="1" diagramOrientation="Up" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" spacingUnit="MM" lineSizeType="MM" barWidth="5" penWidth="0" minimumSize="0" direction="0" spacing="5" sizeType="MM" labelPlacementMethod="XHeight" scaleBasedVisibility="0" height="15" width="15" maxScaleDenominator="1e+08" backgroundAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" penAlpha="255" enabled="0">
-      <fontProperties style="" description="MS Shell Dlg 2,8.1,-1,5,50,0,0,0,0,0"/>
+    <DiagramCategory backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" sizeType="MM" rotationOffset="270" spacing="5" maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" penWidth="0" showAxis="1" lineSizeType="MM" barWidth="5" opacity="1" width="15" direction="0" penColor="#000000" scaleDependency="Area" enabled="0" backgroundAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" penAlpha="255" diagramOrientation="Up" height="15" minScaleDenominator="0" spacingUnit="MM" minimumSize="0">
+      <fontProperties italic="0" strikethrough="0" underline="0" description="MS Shell Dlg 2,8.1,-1,5,50,0,0,0,0,0" style="" bold="0"/>
+      <attribute color="#000000" field="" colorOpacity="1" label=""/>
       <axisSymbol>
-        <symbol type="line" clip_to_extent="1" force_rhr="0" name="" alpha="1">
+        <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" alpha="1" type="line">
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+          <layer enabled="1" class="SimpleLine" id="{828ade78-7015-4008-9f40-ddd949334a3a}" pass="0" locked="0">
             <Option type="Map">
-              <Option type="QString" name="align_dash_pattern" value="0"/>
-              <Option type="QString" name="capstyle" value="square"/>
-              <Option type="QString" name="customdash" value="5;2"/>
-              <Option type="QString" name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-              <Option type="QString" name="customdash_unit" value="MM"/>
-              <Option type="QString" name="dash_pattern_offset" value="0"/>
-              <Option type="QString" name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-              <Option type="QString" name="dash_pattern_offset_unit" value="MM"/>
-              <Option type="QString" name="draw_inside_polygon" value="0"/>
-              <Option type="QString" name="joinstyle" value="bevel"/>
-              <Option type="QString" name="line_color" value="35,35,35,255"/>
-              <Option type="QString" name="line_style" value="solid"/>
-              <Option type="QString" name="line_width" value="0.26"/>
-              <Option type="QString" name="line_width_unit" value="MM"/>
-              <Option type="QString" name="offset" value="0"/>
-              <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-              <Option type="QString" name="offset_unit" value="MM"/>
-              <Option type="QString" name="ring_filter" value="0"/>
-              <Option type="QString" name="trim_distance_end" value="0"/>
-              <Option type="QString" name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-              <Option type="QString" name="trim_distance_end_unit" value="MM"/>
-              <Option type="QString" name="trim_distance_start" value="0"/>
-              <Option type="QString" name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-              <Option type="QString" name="trim_distance_start_unit" value="MM"/>
-              <Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
-              <Option type="QString" name="use_custom_dash" value="0"/>
-              <Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+              <Option name="align_dash_pattern" type="QString" value="0"/>
+              <Option name="capstyle" type="QString" value="square"/>
+              <Option name="customdash" type="QString" value="5;2"/>
+              <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="customdash_unit" type="QString" value="MM"/>
+              <Option name="dash_pattern_offset" type="QString" value="0"/>
+              <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+              <Option name="draw_inside_polygon" type="QString" value="0"/>
+              <Option name="joinstyle" type="QString" value="bevel"/>
+              <Option name="line_color" type="QString" value="35,35,35,255"/>
+              <Option name="line_style" type="QString" value="solid"/>
+              <Option name="line_width" type="QString" value="0.26"/>
+              <Option name="line_width_unit" type="QString" value="MM"/>
+              <Option name="offset" type="QString" value="0"/>
+              <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="offset_unit" type="QString" value="MM"/>
+              <Option name="ring_filter" type="QString" value="0"/>
+              <Option name="trim_distance_end" type="QString" value="0"/>
+              <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+              <Option name="trim_distance_start" type="QString" value="0"/>
+              <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+              <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+              <Option name="use_custom_dash" type="QString" value="0"/>
+              <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             </Option>
-            <prop v="0" k="align_dash_pattern"/>
-            <prop v="square" k="capstyle"/>
-            <prop v="5;2" k="customdash"/>
-            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-            <prop v="MM" k="customdash_unit"/>
-            <prop v="0" k="dash_pattern_offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
-            <prop v="MM" k="dash_pattern_offset_unit"/>
-            <prop v="0" k="draw_inside_polygon"/>
-            <prop v="bevel" k="joinstyle"/>
-            <prop v="35,35,35,255" k="line_color"/>
-            <prop v="solid" k="line_style"/>
-            <prop v="0.26" k="line_width"/>
-            <prop v="MM" k="line_width_unit"/>
-            <prop v="0" k="offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-            <prop v="MM" k="offset_unit"/>
-            <prop v="0" k="ring_filter"/>
-            <prop v="0" k="trim_distance_end"/>
-            <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
-            <prop v="MM" k="trim_distance_end_unit"/>
-            <prop v="0" k="trim_distance_start"/>
-            <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
-            <prop v="MM" k="trim_distance_start_unit"/>
-            <prop v="0" k="tweak_dash_pattern_on_corners"/>
-            <prop v="0" k="use_custom_dash"/>
-            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" name="name" value=""/>
+                <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
-                <Option type="QString" name="type" value="collection"/>
+                <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -430,12 +483,12 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings priority="0" showAll="1" placement="0" zIndex="0" linePlacementFlags="18" dist="0" obstacle="0">
+  <DiagramLayerSettings dist="0" showAll="1" priority="0" obstacle="0" zIndex="0" linePlacementFlags="18" placement="0">
     <properties>
       <Option type="Map">
-        <Option type="QString" name="name" value=""/>
+        <Option name="name" type="QString" value=""/>
         <Option name="properties"/>
-        <Option type="QString" name="type" value="collection"/>
+        <Option name="type" type="QString" value="collection"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -443,339 +496,339 @@
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend type="default-vector" showLabelLegend="0"/>
+  <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field configurationFlags="None" name="fid">
+    <field name="fid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="level_path">
+    <field name="level_path" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="seg_distance">
+    <field name="seg_distance" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="stream_size">
+    <field name="stream_size" configurationFlags="NoFlag">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="FCode">
+    <field name="FCode" configurationFlags="NoFlag">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="window_size">
+    <field name="window_size" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_dgo_ownership">
+    <field name="rme_dgo_ownership" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_dgo_state">
+    <field name="rme_dgo_state" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_dgo_county">
+    <field name="rme_dgo_county" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_igo_prim_channel_gradient">
+    <field name="rme_igo_prim_channel_gradient" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_igo_valleybottom_gradient">
+    <field name="rme_igo_valleybottom_gradient" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_igo_rel_flow_length">
+    <field name="rme_igo_rel_flow_length" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_dgo_confluences">
+    <field name="rme_dgo_confluences" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_dgo_diffluences">
+    <field name="rme_dgo_diffluences" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_igo_trib_per_km">
+    <field name="rme_igo_trib_per_km" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_igo_planform_sinuosity">
+    <field name="rme_igo_planform_sinuosity" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rme_dgo_drainage_area">
+    <field name="rme_dgo_drainage_area" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="nhd_dgo_streamorder">
+    <field name="nhd_dgo_streamorder" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="nhd_dgo_headwater">
+    <field name="nhd_dgo_headwater" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="nhd_dgo_streamlength">
+    <field name="nhd_dgo_streamlength" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="epa_dgo_ecoregion3">
+    <field name="epa_dgo_ecoregion3" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="epa_dgo_ecoregion4">
+    <field name="epa_dgo_ecoregion4" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_dgo_lowlying_area">
+    <field name="vbet_dgo_lowlying_area" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_dgo_elevated_area">
+    <field name="vbet_dgo_elevated_area" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_dgo_channel_area">
+    <field name="vbet_dgo_channel_area" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_dgo_floodplain_area">
+    <field name="vbet_dgo_floodplain_area" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_integrated_width">
+    <field name="vbet_igo_integrated_width" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_active_channel_ratio">
+    <field name="vbet_igo_active_channel_ratio" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_low_lying_ratio">
+    <field name="vbet_igo_low_lying_ratio" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_elevated_ratio">
+    <field name="vbet_igo_elevated_ratio" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_floodplain_ratio">
+    <field name="vbet_igo_floodplain_ratio" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_acres_vb_per_mile">
+    <field name="vbet_igo_acres_vb_per_mile" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_igo_hect_vb_per_km">
+    <field name="vbet_igo_hect_vb_per_km" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="vbet_dgo_streamsize">
+    <field name="vbet_dgo_streamsize" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="conf_igo_confinement_ratio">
+    <field name="conf_igo_confinement_ratio" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="conf_igo_constriction_ratio">
+    <field name="conf_igo_constriction_ratio" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="conf_dgo_confining_margins">
+    <field name="conf_dgo_confining_margins" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="anthro_igo_road_dens">
+    <field name="anthro_igo_road_dens" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="anthro_igo_rail_dens">
+    <field name="anthro_igo_rail_dens" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="anthro_igo_land_use_intens">
+    <field name="anthro_igo_land_use_intens" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rcat_igo_fldpln_access">
+    <field name="rcat_igo_fldpln_access" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rcat_igo_prop_riparian">
+    <field name="rcat_igo_prop_riparian" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rcat_igo_riparian_veg_departure">
+    <field name="rcat_igo_riparian_veg_departure" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rcat_igo_riparian_ag_conversion">
+    <field name="rcat_igo_riparian_ag_conversion" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rcat_igo_riparian_develop">
+    <field name="rcat_igo_riparian_develop" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="brat_igo_capacity">
+    <field name="brat_igo_capacity" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="brat_igo_risk">
+    <field name="brat_igo_risk" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="brat_igo_opportunity">
+    <field name="brat_igo_opportunity" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -833,105 +886,155 @@
     <alias field="brat_igo_risk" name="" index="46"/>
     <alias field="brat_igo_opportunity" name="" index="47"/>
   </aliases>
+  <splitPolicies>
+    <policy field="fid" policy="Duplicate"/>
+    <policy field="level_path" policy="Duplicate"/>
+    <policy field="seg_distance" policy="Duplicate"/>
+    <policy field="stream_size" policy="Duplicate"/>
+    <policy field="FCode" policy="Duplicate"/>
+    <policy field="window_size" policy="Duplicate"/>
+    <policy field="rme_dgo_ownership" policy="Duplicate"/>
+    <policy field="rme_dgo_state" policy="Duplicate"/>
+    <policy field="rme_dgo_county" policy="Duplicate"/>
+    <policy field="rme_igo_prim_channel_gradient" policy="Duplicate"/>
+    <policy field="rme_igo_valleybottom_gradient" policy="Duplicate"/>
+    <policy field="rme_igo_rel_flow_length" policy="Duplicate"/>
+    <policy field="rme_dgo_confluences" policy="Duplicate"/>
+    <policy field="rme_dgo_diffluences" policy="Duplicate"/>
+    <policy field="rme_igo_trib_per_km" policy="Duplicate"/>
+    <policy field="rme_igo_planform_sinuosity" policy="Duplicate"/>
+    <policy field="rme_dgo_drainage_area" policy="Duplicate"/>
+    <policy field="nhd_dgo_streamorder" policy="Duplicate"/>
+    <policy field="nhd_dgo_headwater" policy="Duplicate"/>
+    <policy field="nhd_dgo_streamlength" policy="Duplicate"/>
+    <policy field="epa_dgo_ecoregion3" policy="Duplicate"/>
+    <policy field="epa_dgo_ecoregion4" policy="Duplicate"/>
+    <policy field="vbet_dgo_lowlying_area" policy="Duplicate"/>
+    <policy field="vbet_dgo_elevated_area" policy="Duplicate"/>
+    <policy field="vbet_dgo_channel_area" policy="Duplicate"/>
+    <policy field="vbet_dgo_floodplain_area" policy="Duplicate"/>
+    <policy field="vbet_igo_integrated_width" policy="Duplicate"/>
+    <policy field="vbet_igo_active_channel_ratio" policy="Duplicate"/>
+    <policy field="vbet_igo_low_lying_ratio" policy="Duplicate"/>
+    <policy field="vbet_igo_elevated_ratio" policy="Duplicate"/>
+    <policy field="vbet_igo_floodplain_ratio" policy="Duplicate"/>
+    <policy field="vbet_igo_acres_vb_per_mile" policy="Duplicate"/>
+    <policy field="vbet_igo_hect_vb_per_km" policy="Duplicate"/>
+    <policy field="vbet_dgo_streamsize" policy="Duplicate"/>
+    <policy field="conf_igo_confinement_ratio" policy="Duplicate"/>
+    <policy field="conf_igo_constriction_ratio" policy="Duplicate"/>
+    <policy field="conf_dgo_confining_margins" policy="Duplicate"/>
+    <policy field="anthro_igo_road_dens" policy="Duplicate"/>
+    <policy field="anthro_igo_rail_dens" policy="Duplicate"/>
+    <policy field="anthro_igo_land_use_intens" policy="Duplicate"/>
+    <policy field="rcat_igo_fldpln_access" policy="Duplicate"/>
+    <policy field="rcat_igo_prop_riparian" policy="Duplicate"/>
+    <policy field="rcat_igo_riparian_veg_departure" policy="Duplicate"/>
+    <policy field="rcat_igo_riparian_ag_conversion" policy="Duplicate"/>
+    <policy field="rcat_igo_riparian_develop" policy="Duplicate"/>
+    <policy field="brat_igo_capacity" policy="Duplicate"/>
+    <policy field="brat_igo_risk" policy="Duplicate"/>
+    <policy field="brat_igo_opportunity" policy="Duplicate"/>
+  </splitPolicies>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="level_path" expression="" applyOnUpdate="0"/>
-    <default field="seg_distance" expression="" applyOnUpdate="0"/>
-    <default field="stream_size" expression="" applyOnUpdate="0"/>
-    <default field="FCode" expression="" applyOnUpdate="0"/>
-    <default field="window_size" expression="" applyOnUpdate="0"/>
-    <default field="rme_dgo_ownership" expression="" applyOnUpdate="0"/>
-    <default field="rme_dgo_state" expression="" applyOnUpdate="0"/>
-    <default field="rme_dgo_county" expression="" applyOnUpdate="0"/>
-    <default field="rme_igo_prim_channel_gradient" expression="" applyOnUpdate="0"/>
-    <default field="rme_igo_valleybottom_gradient" expression="" applyOnUpdate="0"/>
-    <default field="rme_igo_rel_flow_length" expression="" applyOnUpdate="0"/>
-    <default field="rme_dgo_confluences" expression="" applyOnUpdate="0"/>
-    <default field="rme_dgo_diffluences" expression="" applyOnUpdate="0"/>
-    <default field="rme_igo_trib_per_km" expression="" applyOnUpdate="0"/>
-    <default field="rme_igo_planform_sinuosity" expression="" applyOnUpdate="0"/>
-    <default field="rme_dgo_drainage_area" expression="" applyOnUpdate="0"/>
-    <default field="nhd_dgo_streamorder" expression="" applyOnUpdate="0"/>
-    <default field="nhd_dgo_headwater" expression="" applyOnUpdate="0"/>
-    <default field="nhd_dgo_streamlength" expression="" applyOnUpdate="0"/>
-    <default field="epa_dgo_ecoregion3" expression="" applyOnUpdate="0"/>
-    <default field="epa_dgo_ecoregion4" expression="" applyOnUpdate="0"/>
-    <default field="vbet_dgo_lowlying_area" expression="" applyOnUpdate="0"/>
-    <default field="vbet_dgo_elevated_area" expression="" applyOnUpdate="0"/>
-    <default field="vbet_dgo_channel_area" expression="" applyOnUpdate="0"/>
-    <default field="vbet_dgo_floodplain_area" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_integrated_width" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_active_channel_ratio" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_low_lying_ratio" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_elevated_ratio" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_floodplain_ratio" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_acres_vb_per_mile" expression="" applyOnUpdate="0"/>
-    <default field="vbet_igo_hect_vb_per_km" expression="" applyOnUpdate="0"/>
-    <default field="vbet_dgo_streamsize" expression="" applyOnUpdate="0"/>
-    <default field="conf_igo_confinement_ratio" expression="" applyOnUpdate="0"/>
-    <default field="conf_igo_constriction_ratio" expression="" applyOnUpdate="0"/>
-    <default field="conf_dgo_confining_margins" expression="" applyOnUpdate="0"/>
-    <default field="anthro_igo_road_dens" expression="" applyOnUpdate="0"/>
-    <default field="anthro_igo_rail_dens" expression="" applyOnUpdate="0"/>
-    <default field="anthro_igo_land_use_intens" expression="" applyOnUpdate="0"/>
-    <default field="rcat_igo_fldpln_access" expression="" applyOnUpdate="0"/>
-    <default field="rcat_igo_prop_riparian" expression="" applyOnUpdate="0"/>
-    <default field="rcat_igo_riparian_veg_departure" expression="" applyOnUpdate="0"/>
-    <default field="rcat_igo_riparian_ag_conversion" expression="" applyOnUpdate="0"/>
-    <default field="rcat_igo_riparian_develop" expression="" applyOnUpdate="0"/>
-    <default field="brat_igo_capacity" expression="" applyOnUpdate="0"/>
-    <default field="brat_igo_risk" expression="" applyOnUpdate="0"/>
-    <default field="brat_igo_opportunity" expression="" applyOnUpdate="0"/>
+    <default expression="" field="fid" applyOnUpdate="0"/>
+    <default expression="" field="level_path" applyOnUpdate="0"/>
+    <default expression="" field="seg_distance" applyOnUpdate="0"/>
+    <default expression="" field="stream_size" applyOnUpdate="0"/>
+    <default expression="" field="FCode" applyOnUpdate="0"/>
+    <default expression="" field="window_size" applyOnUpdate="0"/>
+    <default expression="" field="rme_dgo_ownership" applyOnUpdate="0"/>
+    <default expression="" field="rme_dgo_state" applyOnUpdate="0"/>
+    <default expression="" field="rme_dgo_county" applyOnUpdate="0"/>
+    <default expression="" field="rme_igo_prim_channel_gradient" applyOnUpdate="0"/>
+    <default expression="" field="rme_igo_valleybottom_gradient" applyOnUpdate="0"/>
+    <default expression="" field="rme_igo_rel_flow_length" applyOnUpdate="0"/>
+    <default expression="" field="rme_dgo_confluences" applyOnUpdate="0"/>
+    <default expression="" field="rme_dgo_diffluences" applyOnUpdate="0"/>
+    <default expression="" field="rme_igo_trib_per_km" applyOnUpdate="0"/>
+    <default expression="" field="rme_igo_planform_sinuosity" applyOnUpdate="0"/>
+    <default expression="" field="rme_dgo_drainage_area" applyOnUpdate="0"/>
+    <default expression="" field="nhd_dgo_streamorder" applyOnUpdate="0"/>
+    <default expression="" field="nhd_dgo_headwater" applyOnUpdate="0"/>
+    <default expression="" field="nhd_dgo_streamlength" applyOnUpdate="0"/>
+    <default expression="" field="epa_dgo_ecoregion3" applyOnUpdate="0"/>
+    <default expression="" field="epa_dgo_ecoregion4" applyOnUpdate="0"/>
+    <default expression="" field="vbet_dgo_lowlying_area" applyOnUpdate="0"/>
+    <default expression="" field="vbet_dgo_elevated_area" applyOnUpdate="0"/>
+    <default expression="" field="vbet_dgo_channel_area" applyOnUpdate="0"/>
+    <default expression="" field="vbet_dgo_floodplain_area" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_integrated_width" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_active_channel_ratio" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_low_lying_ratio" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_elevated_ratio" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_floodplain_ratio" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_acres_vb_per_mile" applyOnUpdate="0"/>
+    <default expression="" field="vbet_igo_hect_vb_per_km" applyOnUpdate="0"/>
+    <default expression="" field="vbet_dgo_streamsize" applyOnUpdate="0"/>
+    <default expression="" field="conf_igo_confinement_ratio" applyOnUpdate="0"/>
+    <default expression="" field="conf_igo_constriction_ratio" applyOnUpdate="0"/>
+    <default expression="" field="conf_dgo_confining_margins" applyOnUpdate="0"/>
+    <default expression="" field="anthro_igo_road_dens" applyOnUpdate="0"/>
+    <default expression="" field="anthro_igo_rail_dens" applyOnUpdate="0"/>
+    <default expression="" field="anthro_igo_land_use_intens" applyOnUpdate="0"/>
+    <default expression="" field="rcat_igo_fldpln_access" applyOnUpdate="0"/>
+    <default expression="" field="rcat_igo_prop_riparian" applyOnUpdate="0"/>
+    <default expression="" field="rcat_igo_riparian_veg_departure" applyOnUpdate="0"/>
+    <default expression="" field="rcat_igo_riparian_ag_conversion" applyOnUpdate="0"/>
+    <default expression="" field="rcat_igo_riparian_develop" applyOnUpdate="0"/>
+    <default expression="" field="brat_igo_capacity" applyOnUpdate="0"/>
+    <default expression="" field="brat_igo_risk" applyOnUpdate="0"/>
+    <default expression="" field="brat_igo_opportunity" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint field="fid" notnull_strength="1" unique_strength="1" exp_strength="0" constraints="3"/>
-    <constraint field="level_path" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="seg_distance" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="stream_size" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="FCode" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="window_size" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_dgo_ownership" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_dgo_state" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_dgo_county" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_igo_prim_channel_gradient" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_igo_valleybottom_gradient" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_igo_rel_flow_length" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_dgo_confluences" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_dgo_diffluences" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_igo_trib_per_km" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_igo_planform_sinuosity" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rme_dgo_drainage_area" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="nhd_dgo_streamorder" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="nhd_dgo_headwater" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="nhd_dgo_streamlength" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="epa_dgo_ecoregion3" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="epa_dgo_ecoregion4" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_dgo_lowlying_area" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_dgo_elevated_area" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_dgo_channel_area" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_dgo_floodplain_area" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_integrated_width" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_active_channel_ratio" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_low_lying_ratio" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_elevated_ratio" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_floodplain_ratio" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_acres_vb_per_mile" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_igo_hect_vb_per_km" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="vbet_dgo_streamsize" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="conf_igo_confinement_ratio" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="conf_igo_constriction_ratio" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="conf_dgo_confining_margins" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="anthro_igo_road_dens" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="anthro_igo_rail_dens" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="anthro_igo_land_use_intens" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rcat_igo_fldpln_access" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rcat_igo_prop_riparian" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rcat_igo_riparian_veg_departure" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rcat_igo_riparian_ag_conversion" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="rcat_igo_riparian_develop" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="brat_igo_capacity" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="brat_igo_risk" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
-    <constraint field="brat_igo_opportunity" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
+    <constraint notnull_strength="1" field="fid" exp_strength="0" unique_strength="1" constraints="3"/>
+    <constraint notnull_strength="0" field="level_path" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="seg_distance" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="stream_size" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="FCode" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="window_size" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_dgo_ownership" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_dgo_state" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_dgo_county" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_igo_prim_channel_gradient" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_igo_valleybottom_gradient" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_igo_rel_flow_length" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_dgo_confluences" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_dgo_diffluences" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_igo_trib_per_km" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_igo_planform_sinuosity" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rme_dgo_drainage_area" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="nhd_dgo_streamorder" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="nhd_dgo_headwater" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="nhd_dgo_streamlength" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="epa_dgo_ecoregion3" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="epa_dgo_ecoregion4" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_dgo_lowlying_area" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_dgo_elevated_area" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_dgo_channel_area" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_dgo_floodplain_area" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_integrated_width" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_active_channel_ratio" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_low_lying_ratio" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_elevated_ratio" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_floodplain_ratio" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_acres_vb_per_mile" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_igo_hect_vb_per_km" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="vbet_dgo_streamsize" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="conf_igo_confinement_ratio" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="conf_igo_constriction_ratio" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="conf_dgo_confining_margins" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="anthro_igo_road_dens" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="anthro_igo_rail_dens" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="anthro_igo_land_use_intens" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rcat_igo_fldpln_access" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rcat_igo_prop_riparian" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rcat_igo_riparian_veg_departure" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rcat_igo_riparian_ag_conversion" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="rcat_igo_riparian_develop" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="brat_igo_capacity" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="brat_igo_risk" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint notnull_strength="0" field="brat_igo_opportunity" exp_strength="0" unique_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
     <constraint field="fid" exp="" desc=""/>
@@ -985,59 +1088,59 @@
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
   <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
     <columns>
-      <column type="field" width="-1" name="fid" hidden="0"/>
-      <column type="field" width="-1" name="level_path" hidden="0"/>
-      <column type="field" width="-1" name="seg_distance" hidden="0"/>
-      <column type="field" width="-1" name="stream_size" hidden="0"/>
-      <column type="field" width="-1" name="FCode" hidden="0"/>
-      <column type="field" width="-1" name="window_size" hidden="0"/>
-      <column type="field" width="-1" name="rme_dgo_ownership" hidden="0"/>
-      <column type="field" width="-1" name="rme_dgo_state" hidden="0"/>
-      <column type="field" width="-1" name="rme_dgo_county" hidden="0"/>
-      <column type="field" width="-1" name="rme_igo_prim_channel_gradient" hidden="0"/>
-      <column type="field" width="498" name="rme_igo_valleybottom_gradient" hidden="0"/>
-      <column type="field" width="-1" name="rme_igo_rel_flow_length" hidden="0"/>
-      <column type="field" width="-1" name="rme_dgo_confluences" hidden="0"/>
-      <column type="field" width="-1" name="rme_dgo_diffluences" hidden="0"/>
-      <column type="field" width="-1" name="rme_igo_trib_per_km" hidden="0"/>
-      <column type="field" width="-1" name="rme_igo_planform_sinuosity" hidden="0"/>
-      <column type="field" width="-1" name="rme_dgo_drainage_area" hidden="0"/>
-      <column type="field" width="-1" name="nhd_dgo_streamorder" hidden="0"/>
-      <column type="field" width="-1" name="nhd_dgo_headwater" hidden="0"/>
-      <column type="field" width="-1" name="nhd_dgo_streamlength" hidden="0"/>
-      <column type="field" width="-1" name="epa_dgo_ecoregion3" hidden="0"/>
-      <column type="field" width="-1" name="epa_dgo_ecoregion4" hidden="0"/>
-      <column type="field" width="-1" name="vbet_dgo_lowlying_area" hidden="0"/>
-      <column type="field" width="-1" name="vbet_dgo_elevated_area" hidden="0"/>
-      <column type="field" width="-1" name="vbet_dgo_channel_area" hidden="0"/>
-      <column type="field" width="-1" name="vbet_dgo_floodplain_area" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_integrated_width" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_active_channel_ratio" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_low_lying_ratio" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_elevated_ratio" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_floodplain_ratio" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_acres_vb_per_mile" hidden="0"/>
-      <column type="field" width="-1" name="vbet_igo_hect_vb_per_km" hidden="0"/>
-      <column type="field" width="-1" name="vbet_dgo_streamsize" hidden="0"/>
-      <column type="field" width="-1" name="conf_igo_confinement_ratio" hidden="0"/>
-      <column type="field" width="-1" name="conf_igo_constriction_ratio" hidden="0"/>
-      <column type="field" width="-1" name="conf_dgo_confining_margins" hidden="0"/>
-      <column type="field" width="-1" name="anthro_igo_road_dens" hidden="0"/>
-      <column type="field" width="-1" name="anthro_igo_rail_dens" hidden="0"/>
-      <column type="field" width="-1" name="anthro_igo_land_use_intens" hidden="0"/>
-      <column type="field" width="-1" name="rcat_igo_fldpln_access" hidden="0"/>
-      <column type="field" width="-1" name="rcat_igo_prop_riparian" hidden="0"/>
-      <column type="field" width="-1" name="rcat_igo_riparian_veg_departure" hidden="0"/>
-      <column type="field" width="-1" name="rcat_igo_riparian_ag_conversion" hidden="0"/>
-      <column type="field" width="-1" name="rcat_igo_riparian_develop" hidden="0"/>
-      <column type="field" width="-1" name="brat_igo_capacity" hidden="0"/>
-      <column type="field" width="-1" name="brat_igo_risk" hidden="0"/>
-      <column type="field" width="-1" name="brat_igo_opportunity" hidden="0"/>
-      <column type="actions" width="-1" hidden="1"/>
+      <column hidden="0" name="fid" type="field" width="-1"/>
+      <column hidden="0" name="level_path" type="field" width="-1"/>
+      <column hidden="0" name="seg_distance" type="field" width="-1"/>
+      <column hidden="0" name="stream_size" type="field" width="-1"/>
+      <column hidden="0" name="FCode" type="field" width="-1"/>
+      <column hidden="0" name="window_size" type="field" width="-1"/>
+      <column hidden="0" name="rme_dgo_ownership" type="field" width="-1"/>
+      <column hidden="0" name="rme_dgo_state" type="field" width="-1"/>
+      <column hidden="0" name="rme_dgo_county" type="field" width="-1"/>
+      <column hidden="0" name="rme_igo_prim_channel_gradient" type="field" width="-1"/>
+      <column hidden="0" name="rme_igo_valleybottom_gradient" type="field" width="498"/>
+      <column hidden="0" name="rme_igo_rel_flow_length" type="field" width="-1"/>
+      <column hidden="0" name="rme_dgo_confluences" type="field" width="-1"/>
+      <column hidden="0" name="rme_dgo_diffluences" type="field" width="-1"/>
+      <column hidden="0" name="rme_igo_trib_per_km" type="field" width="-1"/>
+      <column hidden="0" name="rme_igo_planform_sinuosity" type="field" width="-1"/>
+      <column hidden="0" name="rme_dgo_drainage_area" type="field" width="-1"/>
+      <column hidden="0" name="nhd_dgo_streamorder" type="field" width="-1"/>
+      <column hidden="0" name="nhd_dgo_headwater" type="field" width="-1"/>
+      <column hidden="0" name="nhd_dgo_streamlength" type="field" width="-1"/>
+      <column hidden="0" name="epa_dgo_ecoregion3" type="field" width="-1"/>
+      <column hidden="0" name="epa_dgo_ecoregion4" type="field" width="-1"/>
+      <column hidden="0" name="vbet_dgo_lowlying_area" type="field" width="-1"/>
+      <column hidden="0" name="vbet_dgo_elevated_area" type="field" width="-1"/>
+      <column hidden="0" name="vbet_dgo_channel_area" type="field" width="-1"/>
+      <column hidden="0" name="vbet_dgo_floodplain_area" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_integrated_width" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_active_channel_ratio" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_low_lying_ratio" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_elevated_ratio" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_floodplain_ratio" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_acres_vb_per_mile" type="field" width="-1"/>
+      <column hidden="0" name="vbet_igo_hect_vb_per_km" type="field" width="-1"/>
+      <column hidden="0" name="vbet_dgo_streamsize" type="field" width="-1"/>
+      <column hidden="0" name="conf_igo_confinement_ratio" type="field" width="-1"/>
+      <column hidden="0" name="conf_igo_constriction_ratio" type="field" width="-1"/>
+      <column hidden="0" name="conf_dgo_confining_margins" type="field" width="-1"/>
+      <column hidden="0" name="anthro_igo_road_dens" type="field" width="-1"/>
+      <column hidden="0" name="anthro_igo_rail_dens" type="field" width="-1"/>
+      <column hidden="0" name="anthro_igo_land_use_intens" type="field" width="-1"/>
+      <column hidden="0" name="rcat_igo_fldpln_access" type="field" width="-1"/>
+      <column hidden="0" name="rcat_igo_prop_riparian" type="field" width="-1"/>
+      <column hidden="0" name="rcat_igo_riparian_veg_departure" type="field" width="-1"/>
+      <column hidden="0" name="rcat_igo_riparian_ag_conversion" type="field" width="-1"/>
+      <column hidden="0" name="rcat_igo_riparian_develop" type="field" width="-1"/>
+      <column hidden="0" name="brat_igo_capacity" type="field" width="-1"/>
+      <column hidden="0" name="brat_igo_risk" type="field" width="-1"/>
+      <column hidden="0" name="brat_igo_opportunity" type="field" width="-1"/>
+      <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -1169,58 +1272,58 @@ def my_form_open(dialog, layer, feature):
     <field name="window_size" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="FCode" reuseLastValue="0"/>
-    <field name="anthro_igo_land_use_intens" reuseLastValue="0"/>
-    <field name="anthro_igo_rail_dens" reuseLastValue="0"/>
-    <field name="anthro_igo_road_dens" reuseLastValue="0"/>
-    <field name="brat_igo_capacity" reuseLastValue="0"/>
-    <field name="brat_igo_opportunity" reuseLastValue="0"/>
-    <field name="brat_igo_risk" reuseLastValue="0"/>
-    <field name="conf_dgo_confining_margins" reuseLastValue="0"/>
-    <field name="conf_igo_confinement_ratio" reuseLastValue="0"/>
-    <field name="conf_igo_constriction_ratio" reuseLastValue="0"/>
-    <field name="epa_dgo_ecoregion3" reuseLastValue="0"/>
-    <field name="epa_dgo_ecoregion4" reuseLastValue="0"/>
-    <field name="fid" reuseLastValue="0"/>
-    <field name="level_path" reuseLastValue="0"/>
-    <field name="nhd_dgo_headwater" reuseLastValue="0"/>
-    <field name="nhd_dgo_streamlength" reuseLastValue="0"/>
-    <field name="nhd_dgo_streamorder" reuseLastValue="0"/>
-    <field name="rcat_igo_fldpln_access" reuseLastValue="0"/>
-    <field name="rcat_igo_prop_riparian" reuseLastValue="0"/>
-    <field name="rcat_igo_riparian_ag_conversion" reuseLastValue="0"/>
-    <field name="rcat_igo_riparian_develop" reuseLastValue="0"/>
-    <field name="rcat_igo_riparian_veg_departure" reuseLastValue="0"/>
-    <field name="rme_dgo_confluences" reuseLastValue="0"/>
-    <field name="rme_dgo_county" reuseLastValue="0"/>
-    <field name="rme_dgo_diffluences" reuseLastValue="0"/>
-    <field name="rme_dgo_drainage_area" reuseLastValue="0"/>
-    <field name="rme_dgo_ownership" reuseLastValue="0"/>
-    <field name="rme_dgo_state" reuseLastValue="0"/>
-    <field name="rme_igo_planform_sinuosity" reuseLastValue="0"/>
-    <field name="rme_igo_prim_channel_gradient" reuseLastValue="0"/>
-    <field name="rme_igo_rel_flow_length" reuseLastValue="0"/>
-    <field name="rme_igo_trib_per_km" reuseLastValue="0"/>
-    <field name="rme_igo_valleybottom_gradient" reuseLastValue="0"/>
-    <field name="seg_distance" reuseLastValue="0"/>
-    <field name="stream_size" reuseLastValue="0"/>
-    <field name="vbet_dgo_channel_area" reuseLastValue="0"/>
-    <field name="vbet_dgo_elevated_area" reuseLastValue="0"/>
-    <field name="vbet_dgo_floodplain_area" reuseLastValue="0"/>
-    <field name="vbet_dgo_lowlying_area" reuseLastValue="0"/>
-    <field name="vbet_dgo_streamsize" reuseLastValue="0"/>
-    <field name="vbet_igo_acres_vb_per_mile" reuseLastValue="0"/>
-    <field name="vbet_igo_active_channel_ratio" reuseLastValue="0"/>
-    <field name="vbet_igo_elevated_ratio" reuseLastValue="0"/>
-    <field name="vbet_igo_floodplain_ratio" reuseLastValue="0"/>
-    <field name="vbet_igo_hect_vb_per_km" reuseLastValue="0"/>
-    <field name="vbet_igo_integrated_width" reuseLastValue="0"/>
-    <field name="vbet_igo_low_lying_ratio" reuseLastValue="0"/>
-    <field name="window_size" reuseLastValue="0"/>
+    <field reuseLastValue="0" name="FCode"/>
+    <field reuseLastValue="0" name="anthro_igo_land_use_intens"/>
+    <field reuseLastValue="0" name="anthro_igo_rail_dens"/>
+    <field reuseLastValue="0" name="anthro_igo_road_dens"/>
+    <field reuseLastValue="0" name="brat_igo_capacity"/>
+    <field reuseLastValue="0" name="brat_igo_opportunity"/>
+    <field reuseLastValue="0" name="brat_igo_risk"/>
+    <field reuseLastValue="0" name="conf_dgo_confining_margins"/>
+    <field reuseLastValue="0" name="conf_igo_confinement_ratio"/>
+    <field reuseLastValue="0" name="conf_igo_constriction_ratio"/>
+    <field reuseLastValue="0" name="epa_dgo_ecoregion3"/>
+    <field reuseLastValue="0" name="epa_dgo_ecoregion4"/>
+    <field reuseLastValue="0" name="fid"/>
+    <field reuseLastValue="0" name="level_path"/>
+    <field reuseLastValue="0" name="nhd_dgo_headwater"/>
+    <field reuseLastValue="0" name="nhd_dgo_streamlength"/>
+    <field reuseLastValue="0" name="nhd_dgo_streamorder"/>
+    <field reuseLastValue="0" name="rcat_igo_fldpln_access"/>
+    <field reuseLastValue="0" name="rcat_igo_prop_riparian"/>
+    <field reuseLastValue="0" name="rcat_igo_riparian_ag_conversion"/>
+    <field reuseLastValue="0" name="rcat_igo_riparian_develop"/>
+    <field reuseLastValue="0" name="rcat_igo_riparian_veg_departure"/>
+    <field reuseLastValue="0" name="rme_dgo_confluences"/>
+    <field reuseLastValue="0" name="rme_dgo_county"/>
+    <field reuseLastValue="0" name="rme_dgo_diffluences"/>
+    <field reuseLastValue="0" name="rme_dgo_drainage_area"/>
+    <field reuseLastValue="0" name="rme_dgo_ownership"/>
+    <field reuseLastValue="0" name="rme_dgo_state"/>
+    <field reuseLastValue="0" name="rme_igo_planform_sinuosity"/>
+    <field reuseLastValue="0" name="rme_igo_prim_channel_gradient"/>
+    <field reuseLastValue="0" name="rme_igo_rel_flow_length"/>
+    <field reuseLastValue="0" name="rme_igo_trib_per_km"/>
+    <field reuseLastValue="0" name="rme_igo_valleybottom_gradient"/>
+    <field reuseLastValue="0" name="seg_distance"/>
+    <field reuseLastValue="0" name="stream_size"/>
+    <field reuseLastValue="0" name="vbet_dgo_channel_area"/>
+    <field reuseLastValue="0" name="vbet_dgo_elevated_area"/>
+    <field reuseLastValue="0" name="vbet_dgo_floodplain_area"/>
+    <field reuseLastValue="0" name="vbet_dgo_lowlying_area"/>
+    <field reuseLastValue="0" name="vbet_dgo_streamsize"/>
+    <field reuseLastValue="0" name="vbet_igo_acres_vb_per_mile"/>
+    <field reuseLastValue="0" name="vbet_igo_active_channel_ratio"/>
+    <field reuseLastValue="0" name="vbet_igo_elevated_ratio"/>
+    <field reuseLastValue="0" name="vbet_igo_floodplain_ratio"/>
+    <field reuseLastValue="0" name="vbet_igo_hect_vb_per_km"/>
+    <field reuseLastValue="0" name="vbet_igo_integrated_width"/>
+    <field reuseLastValue="0" name="vbet_igo_low_lying_ratio"/>
+    <field reuseLastValue="0" name="window_size"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
   <previewExpression>"anthro_igo_road_dens"</previewExpression>
-  <mapTip></mapTip>
+  <mapTip enabled="1"></mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>

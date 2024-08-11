@@ -1,0 +1,70 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(140, 81, 10)", "0 - 1"],
+    ["rgb(216, 179, 101)", "1 - 2"],
+    ["rgb(246, 232, 195)", "2 - 5"],
+    ["rgb(245, 245, 245)", "5 - 10"],
+    ["rgb(199, 234, 229)", "10 - 20"],
+    ["rgb(90, 180, 172)", "20 - 50"],
+    ["rgb(1, 102, 94)", "> 50"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "case",
+                ["<=", ["get", "rme_igo_trib_per_km"], 1],
+                "rgb(140, 81, 10)", 
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 1], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 2]],
+                "rgb(216, 179, 101)", 
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 2], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 5]],
+                "rgb(246, 232, 195)", 
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 5], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 10]],
+                "rgb(245, 245, 245)", 
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 10], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 20]],
+                "rgb(199, 234, 229)", 
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 20], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 50]],
+                "rgb(90, 180, 172)", 
+                [">", ["get", "rme_igo_trib_per_km"], 50],
+                "rgb(1, 102, 94)", 
+                "rgb(0, 0, 0)" 
+            ],
+            "circle-radius": [
+                "case",
+                ["<=", ["get", "rme_igo_trib_per_km"], 1],
+                3.8,
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 1], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 2]],
+                4.5,
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 2], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 5]],
+                5.3,
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 5], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 10]],
+                6,
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 10], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 20]],
+                6.8,
+                ["all", [">", ["get", "rme_igo_trib_per_km"], 20], 
+                ["<=", ["get", "rme_igo_trib_per_km"], 50]],
+                7.6,
+                [">", ["get", "rme_igo_trib_per_km"], 50],
+                8.3,
+                2
+            ]
+        }
+    }
+]
+}

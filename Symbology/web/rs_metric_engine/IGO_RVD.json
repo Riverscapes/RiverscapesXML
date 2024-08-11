@@ -1,0 +1,39 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 0, 0)", "Large: > 66%"],
+    ["rgb(245, 245, 0)", "Significant: 33% to 66%"],
+    ["rgb(148, 247, 0)", "Minor: 10% to 33%"],
+    ["rgb(56, 168, 0)", "< 10%"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vw-igo-metrics-sample-7y7547",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "layout": {},
+        "paint": {
+            "circle-emissive-strength": 1,
+            "circle-color": [
+                "case",
+                [">", ["get", "rcat_igo_riparian_veg_departure"], 0.66],
+                "rgb(255, 0, 0)",
+                ["all",
+                    [">", ["get", "rcat_igo_riparian_veg_departure"], 0.33],
+                    ["<=", ["get", "rcat_igo_riparian_veg_departure"], 0.66]],
+                "rgb(245, 245, 0)",
+                ["all",
+                    [">", ["get", "rcat_igo_riparian_veg_departure"], 0.1],
+                    ["<=", ["get", "rcat_igo_riparian_veg_departure"], 0.33]],
+                "rgb(148, 247, 0)",
+                ["any",
+                    ["<=", ["get", "rcat_igo_riparian_veg_departure"], 0.1],
+                    ["==", ["get", "anthro_igo_land_use_intens"], 0]],
+                "rgb(56, 168, 0)"
+            ],
+            "circle-radius": 4.5
+        }
+    }
+]
+}
