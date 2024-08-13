@@ -40,4 +40,13 @@
       </Node>
     </Children>
   </Node>
+  <Views default="Q2">
+    <View name="Typical Flood" id="Q2">
+      <Description>Predicted values for a typical two-year flood attributed to the channel network</Description>
+      <Layers>
+        <Layer id="reach_flood" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+  </Views>
 </Project>
