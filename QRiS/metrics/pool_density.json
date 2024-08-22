@@ -17,7 +17,18 @@
                 "attribute_filter": {
                     "field_name": "Type 2 Tier",
                     "values": [
-                        "Bowl"
+                        "Bowl",
+                        "Trough"
+                    ]
+                }
+            },
+            {
+                "layer_name": "geomorphic_unit_extents",
+                "attribute_filter": {
+                    "field_name": "Type 2 Tier",
+                    "values": [
+                        "Bowl",
+                        "Trough"
                     ]
                 }
             }

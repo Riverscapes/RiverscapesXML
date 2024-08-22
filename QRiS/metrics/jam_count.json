@@ -1,11 +1,11 @@
 {
   "$schema": "../qris_metrics.schema.json",
-  "name": "Dam Density",
-  "machine_name": "dam_density",
+  "name": "Jam Count",
+  "machine_name": "jam_count",
   "version": 1,
   "calculation_name": "count",
   "default_level": "Metric",
-  "description": "The number of beaver dams per km of riverscape ",
+  "description": "The number of jams in each sample frame",
   "metadata": {
     "min_value": 0,
     "precision": 2
@@ -15,16 +15,14 @@
       {
         "layer_name": "structural_elements_points",
         "count_field": "Structure Count",
-        "layer_type": "point",
         "attribute_filter": {
           "field_name": "Type",
           "values": [
-            "Dam",
-            "Dam Complex"
+            "Jam",
+            "Jam Complex"
           ]
-        }  
+        }
       }
-    ],
-    "normalization": "centerline"
+    ]
   }
 }

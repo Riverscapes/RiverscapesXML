@@ -1,0 +1,26 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Primary Channel Length",
+    "machine_name": "secondary_channel_length",
+    "version": 1,
+    "calculation_name": "length",
+    "default_level": "Metric",
+    "description": "Length of the secondary channels within the riverscape sample frame",
+    "metadata": {
+        "min_value": 0
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "centerlines",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Secondary"
+                        
+                    ]
+                }
+            }
+        ]
+    }
+}

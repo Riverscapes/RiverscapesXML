@@ -1,0 +1,26 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Bar Area",
+    "machine_name": "bar_area",
+    "version": 1,
+    "calculation_name": "area",
+    "default_level": "Metric",
+    "description": "The area of bars in containing sample frame",
+    "metadata": {
+        "min_value": 0,
+        "precison": 2
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "geomorphic_unit_extents",
+                "attribute_filter": {
+                    "field_name": "Type 2 Tier",
+                    "values": [
+                        "Mound"
+                    ]
+                }
+            }
+        ]
+    }
+}
