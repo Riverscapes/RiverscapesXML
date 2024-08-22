@@ -1,0 +1,26 @@
+{
+  "$schema": "../qris_metrics.schema.json",
+  "name": "Free Flowing Area",
+  "machine_name": "free_flowing_area",
+  "version": 1,
+  "calculation_name": "area",
+  "default_level": "Metric",
+  "description": "The area of free flowing inundation in each sample frame",
+  "metadata": {
+    "min_value": 0,
+    "precision": 2
+  },
+  "metric_params": {
+    "layers": [
+      {
+        "layer_name": "inundation_extents",
+        "attribute_filter": {
+          "field_name": "Extent Type",
+          "values": [
+            "Free Flowing"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Channel Length",
+    "machine_name": "flow_length",
+    "version": 1,
+    "calculation_name": "length",
+    "default_level": "Metric",
+    "description": "The sum of all channel lengths in a sample frame",
+    "metadata": {
+        "min_value": 0,
+        "precison": 2
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "centerlines"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../qris_metrics.schema.json",
+  "name": "CEM Stage 7 Area",
+  "machine_name": "stage_7_area",
+  "version": 1,
+  "calculation_name": "area",
+  "default_level": "Metric",
+  "description": "The area of Stage 7 riverscape in each sample frame",
+  "metadata": {
+    "min_value": 0,
+    "precision": 2
+  },
+  "metric_params": {
+    "layers": [
+      {
+        "layer_name": "cem_phases",
+        "attribute_filter": {
+          "field_name": "CEM Stage",
+          "values": [
+            "7"
+          ]
+        }
+      }
+    ]
+  }
+}

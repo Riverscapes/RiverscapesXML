@@ -1,0 +1,27 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Proportion of Active Valley Bottom",
+    "machine_name": "proportion_active",
+    "version": 1,
+    "calculation_name": "area_proportion",
+    "default_level": "Metric",
+    "description": "The proportion of the riverscape that is active",
+    "metadata": {
+        "min_value": 0,
+        "precision": 2
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "active_extents",
+                "usage": "numerator",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Active"
+                     ]      
+                }
+            }
+        ]
+    }
+} 

@@ -1,0 +1,26 @@
+{
+  "$schema": "../qris_metrics.schema.json",
+  "name": "Jam Area",
+  "machine_name": "jam_area",
+  "version": 1,
+  "calculation_name": "area",
+  "default_level": "Metric",
+  "description": "The area of jams in each sample frame",
+  "metadata": {
+    "min_value": 0,
+    "precision": 2
+  },
+  "metric_params": {
+    "layers": [
+      {
+        "layer_name": "structural_elements_areas",
+        "attribute_filter": {
+          "field_name": "Type",
+          "values": [
+            "Jam"
+          ]
+        }
+      }
+    ]
+  }
+}

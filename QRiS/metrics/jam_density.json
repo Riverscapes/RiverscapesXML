@@ -22,6 +22,15 @@
             "Jam Complex"
           ]
         }
+      },
+      {
+        "layer_name": "structural_elements_areas",
+        "attribute_filter": {
+          "field_name": "Type",
+          "values": [
+            "Jam"
+          ]
+        }
       }
     ],
     "normalization": "centerline"

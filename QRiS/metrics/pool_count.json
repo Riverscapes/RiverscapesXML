@@ -1,0 +1,37 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Pool Count",
+    "machine_name": "pool_count",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "Metric",
+    "description": "The number of pools in containing sample frame",
+    "metadata": {
+        "min_value": 0,
+        "precison": 2
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "geomorphic_units",
+                "attribute_filter": {
+                    "field_name": "Type 2 Tier",
+                    "values": [
+                        "Bowl",
+                        "Trough"
+                    ]
+                }
+            },
+            {
+                "layer_name": "geomorphic_unit_extents",
+                "attribute_filter": {
+                    "field_name": "Type 2 Tier",
+                    "values": [
+                        "Bowl",
+                        "Trough"
+                    ]
+                }
+            }
+        ]
+    }
+}

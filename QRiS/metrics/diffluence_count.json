@@ -1,0 +1,26 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "name": "Diffluence Count",
+    "machine_name": "diffluence_count",
+    "version": 1,
+    "calculation_name": "count",
+    "default_level": "Metric",
+    "description": "The number of channel diffluences in the containing sample frame",
+    "metadata": {
+        "min_value": 0,
+        "precision": 2
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "channel_junctions",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Diffluence"
+                    ]
+                }
+            }
+        ]
+    }
+}
