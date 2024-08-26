@@ -1,11 +1,11 @@
 {
     "$schema": "../qris_metrics.schema.json",
-    "name": "Pool Count",
-    "machine_name": "pool_count",
+    "name": "Mid Channel Bar Count",
+    "machine_name": "mid_channel_bar_count",
     "version": 1,
     "calculation_name": "count",
     "default_level": "Metric",
-    "description": "The number of pools in containing sample frame",
+    "description": "The number of mid channel bars in containing sample frame",
     "metadata": {
         "min_value": 0,
         "precison": 2
@@ -17,9 +17,7 @@
                 "attribute_filter": {
                     "field_name": "Type",
                     "values": [
-                        "Pool",
-                        "Pond",
-                        "Chute"
+                        "Mid Channel Bar"
                     ]
                 }
             },
@@ -28,9 +26,7 @@
                 "attribute_filter": {
                     "field_name": "Type",
                     "values": [
-                        "Pool",
-                        "Pond",
-                        "Chute"
+                        "Mid Channel Bar"
                     ]
                 }
             }

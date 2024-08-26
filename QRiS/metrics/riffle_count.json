@@ -15,18 +15,18 @@
             {
                 "layer_name": "geomorphic_units",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Saddle"
+                         "Riffle"
                     ]
                 }
             },
             {
                 "layer_name": "geomorphic_unit_extents",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Saddle"
+                         "Riffle"
                     ]
                 }
             }

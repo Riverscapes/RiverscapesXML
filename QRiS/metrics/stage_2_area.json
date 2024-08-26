@@ -1,6 +1,6 @@
 {
   "$schema": "../qris_metrics.schema.json",
-  "name": "CEM Stage 2 Area",
+  "name": "SEM Stage 2 Area",
   "machine_name": "stage_2_area",
   "version": 1,
   "calculation_name": "area",
@@ -15,9 +15,9 @@
       {
         "layer_name": "cem_phases",
         "attribute_filter": {
-          "field_name": "CEM Stage",
+          "field_name": "SEM Stage",
           "values": [
-            "2"
+            "2 Channelized"
           ]
         }
       }

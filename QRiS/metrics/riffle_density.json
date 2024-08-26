@@ -5,7 +5,7 @@
     "version": 1,
     "calculation_name": "count",
     "default_level": "Metric",
-    "description": "The number of pools per km of riverscape",
+    "description": "The number of riffles per km of riverscape",
     "metadata": {
         "min_value": 0,
         "precison": 2
@@ -15,18 +15,18 @@
             {
                 "layer_name": "geomorphic_units",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Saddle"
+                         "Riffle"
                     ]
                 }
             },
             {
                 "layer_name": "geomorphic_unit_extents",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Saddle"
+                        "Riffle"
                     ]
                 }
             }
