@@ -1,11 +1,11 @@
 {
     "$schema": "../qris_metrics.schema.json",
-    "name": "Bar Count",
-    "machine_name": "bar_count",
+    "name": "Mid Channel Bar Density",
+    "machine_name": "mid_channel_bar_density",
     "version": 1,
     "calculation_name": "count",
     "default_level": "Metric",
-    "description": "The number of bars in containing sample frame",
+    "description": "The number of mid channel bars per km of riverscape",
     "metadata": {
         "min_value": 0,
         "precison": 2
@@ -15,21 +15,22 @@
             {
                 "layer_name": "geomorphic_units",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Mound"
+                        "Mid Channel Bar"
                     ]
                 }
             },
             {
                 "layer_name": "geomorphic_unit_extents",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Mound"
+                        "Mid Channel Bar"
                     ]
                 }
             }
-        ]
+        ],
+        "normalization": "centerline"
     }
 }

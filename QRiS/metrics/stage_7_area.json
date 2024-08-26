@@ -1,6 +1,6 @@
 {
   "$schema": "../qris_metrics.schema.json",
-  "name": "CEM Stage 7 Area",
+  "name": "SEM Stage 7 Area",
   "machine_name": "stage_7_area",
   "version": 1,
   "calculation_name": "area",
@@ -15,9 +15,9 @@
       {
         "layer_name": "cem_phases",
         "attribute_filter": {
-          "field_name": "CEM Stage",
+          "field_name": "SEM Stage",
           "values": [
-            "7"
+            "7 Laterally Active"
           ]
         }
       }

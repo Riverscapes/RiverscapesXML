@@ -14,6 +14,12 @@
         "layers": [
             {
                 "layer_name": "vegetation_extents",
+                "attribute_filter": {
+                    "field_name": "Type",
+                    "values": [
+                        "Riparian"
+                    ]
+                },
                 "usage": "numerator"   
             }
         ]

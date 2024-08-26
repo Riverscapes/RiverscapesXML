@@ -1,11 +1,11 @@
 {
     "$schema": "../qris_metrics.schema.json",
-    "name": "Bar Area",
-    "machine_name": "bar_area",
+    "name": "Mid Channel Bar Area",
+    "machine_name": "mid_channel_bar_area",
     "version": 1,
     "calculation_name": "area",
     "default_level": "Metric",
-    "description": "The area of bars in containing sample frame",
+    "description": "The area of of mid channel bars in containing sample frame",
     "metadata": {
         "min_value": 0,
         "precison": 2
@@ -15,9 +15,9 @@
             {
                 "layer_name": "geomorphic_unit_extents",
                 "attribute_filter": {
-                    "field_name": "Type 2 Tier",
+                    "field_name": "Type",
                     "values": [
-                        "Mound"
+                        "Mid Channel Bar"
                     ]
                 }
             }
