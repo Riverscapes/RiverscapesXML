@@ -1,0 +1,6224 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.3.0",
+  "build" : 52636,
+  "layers" : [
+    "CIMPATH=map/vbet_level_path_zones_tif.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "vbet_level_path_zones.tif",
+      "uRI" : "CIMPATH=map/vbet_level_path_zones_tif.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "vbet_level_path_zones.tif",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\1701020301_landers\\VBET_Landers\\intermediates",
+        "workspaceFactory" : "Raster",
+        "dataset" : "vbet_level_path_zones.tif",
+        "datasetType" : "esriDTAny"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterUniqueValueColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "defaultColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            55,
+            107,
+            79,
+            100
+          ]
+        },
+        "fieldName" : "Value",
+        "groups" : [
+          {
+            "type" : "CIMRasterUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "1"
+                ],
+                "label" : "1",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    354,
+                    74,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "2"
+                ],
+                "label" : "2",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    48,
+                    60,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "3"
+                ],
+                "label" : "3",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    5,
+                    75,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "4"
+                ],
+                "label" : "4",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    133,
+                    70,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "5"
+                ],
+                "label" : "5",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    97,
+                    79,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "6"
+                ],
+                "label" : "6",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    116,
+                    79,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "7"
+                ],
+                "label" : "7",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    156,
+                    61,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "8"
+                ],
+                "label" : "8",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    44,
+                    73,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "9"
+                ],
+                "label" : "9",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    5,
+                    60,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "10"
+                ],
+                "label" : "10",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    60,
+                    72,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "11"
+                ],
+                "label" : "11",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    167,
+                    72,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "12"
+                ],
+                "label" : "12",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    347,
+                    62,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "13"
+                ],
+                "label" : "13",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    218,
+                    60,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "14"
+                ],
+                "label" : "14",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    192,
+                    61,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "15"
+                ],
+                "label" : "15",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    258,
+                    65,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "16"
+                ],
+                "label" : "16",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    329,
+                    66,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "17"
+                ],
+                "label" : "17",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    52,
+                    66,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "18"
+                ],
+                "label" : "18",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    160,
+                    64,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "19"
+                ],
+                "label" : "19",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    150,
+                    62,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "20"
+                ],
+                "label" : "20",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    266,
+                    75,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "21"
+                ],
+                "label" : "21",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    190,
+                    66,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "22"
+                ],
+                "label" : "22",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    318,
+                    63,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "23"
+                ],
+                "label" : "23",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    224,
+                    69,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "24"
+                ],
+                "label" : "24",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    96,
+                    62,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "25"
+                ],
+                "label" : "25",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    216,
+                    75,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "26"
+                ],
+                "label" : "26",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    279,
+                    71,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "27"
+                ],
+                "label" : "27",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    16,
+                    71,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "28"
+                ],
+                "label" : "28",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    46,
+                    78,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "29"
+                ],
+                "label" : "29",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    10,
+                    77,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "30"
+                ],
+                "label" : "30",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    18,
+                    67,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "31"
+                ],
+                "label" : "31",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    357,
+                    68,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "32"
+                ],
+                "label" : "32",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    122,
+                    74,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "33"
+                ],
+                "label" : "33",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    286,
+                    76,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "34"
+                ],
+                "label" : "34",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    323,
+                    77,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "35"
+                ],
+                "label" : "35",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    119,
+                    67,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "36"
+                ],
+                "label" : "36",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    298,
+                    68,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "37"
+                ],
+                "label" : "37",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    187,
+                    61,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "38"
+                ],
+                "label" : "38",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    313,
+                    74,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "39"
+                ],
+                "label" : "39",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    229,
+                    62,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "40"
+                ],
+                "label" : "40",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    175,
+                    74,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "41"
+                ],
+                "label" : "41",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    48,
+                    79,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "42"
+                ],
+                "label" : "42",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    222,
+                    74,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "43"
+                ],
+                "label" : "43",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    345,
+                    68,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "44"
+                ],
+                "label" : "44",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    209,
+                    73,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "45"
+                ],
+                "label" : "45",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    349,
+                    61,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "46"
+                ],
+                "label" : "46",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    110,
+                    66,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "47"
+                ],
+                "label" : "47",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    321,
+                    61,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "48"
+                ],
+                "label" : "48",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    171,
+                    63,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "49"
+                ],
+                "label" : "49",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    137,
+                    63,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "50"
+                ],
+                "label" : "50",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    259,
+                    76,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "51"
+                ],
+                "label" : "51",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    215,
+                    76,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "52"
+                ],
+                "label" : "52",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    352,
+                    64,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "53"
+                ],
+                "label" : "53",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    111,
+                    70,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "54"
+                ],
+                "label" : "54",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    87,
+                    67,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "55"
+                ],
+                "label" : "55",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    203,
+                    79,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "56"
+                ],
+                "label" : "56",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    277,
+                    64,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "57"
+                ],
+                "label" : "57",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    106,
+                    76,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "58"
+                ],
+                "label" : "58",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    195,
+                    64,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "59"
+                ],
+                "label" : "59",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    183,
+                    72,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "60"
+                ],
+                "label" : "60",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    353,
+                    68,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "61"
+                ],
+                "label" : "61",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    116,
+                    67,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "62"
+                ],
+                "label" : "62",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    55,
+                    64,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "63"
+                ],
+                "label" : "63",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    124,
+                    73,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "64"
+                ],
+                "label" : "64",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    137,
+                    63,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "65"
+                ],
+                "label" : "65",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    265,
+                    72,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "66"
+                ],
+                "label" : "66",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    291,
+                    64,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "67"
+                ],
+                "label" : "67",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    228,
+                    70,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "68"
+                ],
+                "label" : "68",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    135,
+                    79,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "69"
+                ],
+                "label" : "69",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    346,
+                    76,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "70"
+                ],
+                "label" : "70",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    277,
+                    65,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "71"
+                ],
+                "label" : "71",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    161,
+                    68,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "72"
+                ],
+                "label" : "72",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    349,
+                    75,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "73"
+                ],
+                "label" : "73",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    15,
+                    63,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "74"
+                ],
+                "label" : "74",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    2,
+                    68,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "75"
+                ],
+                "label" : "75",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    332,
+                    68,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "76"
+                ],
+                "label" : "76",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    94,
+                    79,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "77"
+                ],
+                "label" : "77",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    300,
+                    65,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "78"
+                ],
+                "label" : "78",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    145,
+                    73,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "79"
+                ],
+                "label" : "79",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    239,
+                    60,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "80"
+                ],
+                "label" : "80",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    182,
+                    62,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "81"
+                ],
+                "label" : "81",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    304,
+                    76,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "82"
+                ],
+                "label" : "82",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    285,
+                    67,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "83"
+                ],
+                "label" : "83",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    39,
+                    78,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "84"
+                ],
+                "label" : "84",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    42,
+                    66,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "85"
+                ],
+                "label" : "85",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    121,
+                    66,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "86"
+                ],
+                "label" : "86",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    108,
+                    64,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "87"
+                ],
+                "label" : "87",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    341,
+                    63,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "88"
+                ],
+                "label" : "88",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    338,
+                    70,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "89"
+                ],
+                "label" : "89",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    85,
+                    72,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "90"
+                ],
+                "label" : "90",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    109,
+                    69,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "91"
+                ],
+                "label" : "91",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    332,
+                    62,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "92"
+                ],
+                "label" : "92",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    349,
+                    72,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "93"
+                ],
+                "label" : "93",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    317,
+                    78,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "94"
+                ],
+                "label" : "94",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    318,
+                    68,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "95"
+                ],
+                "label" : "95",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    25,
+                    74,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "96"
+                ],
+                "label" : "96",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    293,
+                    71,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "97"
+                ],
+                "label" : "97",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    130,
+                    78,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "98"
+                ],
+                "label" : "98",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    54,
+                    72,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "99"
+                ],
+                "label" : "99",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    190,
+                    68,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "100"
+                ],
+                "label" : "100",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    132,
+                    75,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "101"
+                ],
+                "label" : "101",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    253,
+                    79,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "102"
+                ],
+                "label" : "102",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    280,
+                    62,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "103"
+                ],
+                "label" : "103",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    7,
+                    64,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "104"
+                ],
+                "label" : "104",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    214,
+                    72,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "105"
+                ],
+                "label" : "105",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    98,
+                    77,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "106"
+                ],
+                "label" : "106",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    225,
+                    62,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "107"
+                ],
+                "label" : "107",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    152,
+                    62,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "108"
+                ],
+                "label" : "108",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    73,
+                    68,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "109"
+                ],
+                "label" : "109",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    342,
+                    75,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "110"
+                ],
+                "label" : "110",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    258,
+                    68,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "111"
+                ],
+                "label" : "111",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    135,
+                    68,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "112"
+                ],
+                "label" : "112",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    345,
+                    76,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "113"
+                ],
+                "label" : "113",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    105,
+                    64,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "114"
+                ],
+                "label" : "114",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    128,
+                    75,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "115"
+                ],
+                "label" : "115",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    303,
+                    62,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "116"
+                ],
+                "label" : "116",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    168,
+                    74,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "117"
+                ],
+                "label" : "117",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    85,
+                    62,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "118"
+                ],
+                "label" : "118",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    155,
+                    74,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "119"
+                ],
+                "label" : "119",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    165,
+                    62,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "120"
+                ],
+                "label" : "120",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    13,
+                    61,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "121"
+                ],
+                "label" : "121",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    239,
+                    75,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "122"
+                ],
+                "label" : "122",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    78,
+                    78,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "123"
+                ],
+                "label" : "123",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    55,
+                    69,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "124"
+                ],
+                "label" : "124",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    292,
+                    60,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "125"
+                ],
+                "label" : "125",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    133,
+                    77,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "126"
+                ],
+                "label" : "126",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    103,
+                    63,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "127"
+                ],
+                "label" : "127",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    201,
+                    78,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "128"
+                ],
+                "label" : "128",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    126,
+                    76,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "129"
+                ],
+                "label" : "129",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    217,
+                    69,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "130"
+                ],
+                "label" : "130",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    335,
+                    75,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "131"
+                ],
+                "label" : "131",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    50,
+                    69,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "132"
+                ],
+                "label" : "132",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    17,
+                    76,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "133"
+                ],
+                "label" : "133",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    278,
+                    67,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "134"
+                ],
+                "label" : "134",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    314,
+                    71,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "135"
+                ],
+                "label" : "135",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    223,
+                    63,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "136"
+                ],
+                "label" : "136",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    274,
+                    74,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "137"
+                ],
+                "label" : "137",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    257,
+                    72,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "138"
+                ],
+                "label" : "138",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    186,
+                    64,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "139"
+                ],
+                "label" : "139",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    71,
+                    64,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "140"
+                ],
+                "label" : "140",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    185,
+                    61,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "141"
+                ],
+                "label" : "141",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    322,
+                    71,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "142"
+                ],
+                "label" : "142",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    160,
+                    73,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "143"
+                ],
+                "label" : "143",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    151,
+                    71,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "144"
+                ],
+                "label" : "144",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    101,
+                    67,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "145"
+                ],
+                "label" : "145",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    292,
+                    73,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "146"
+                ],
+                "label" : "146",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    252,
+                    62,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "147"
+                ],
+                "label" : "147",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    86,
+                    62,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "148"
+                ],
+                "label" : "148",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    89,
+                    60,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "149"
+                ],
+                "label" : "149",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    137,
+                    71,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "150"
+                ],
+                "label" : "150",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    86,
+                    68,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "151"
+                ],
+                "label" : "151",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    340,
+                    62,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "152"
+                ],
+                "label" : "152",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    255,
+                    64,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "153"
+                ],
+                "label" : "153",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    41,
+                    78,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "154"
+                ],
+                "label" : "154",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    69,
+                    78,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "155"
+                ],
+                "label" : "155",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    255,
+                    73,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "156"
+                ],
+                "label" : "156",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    36,
+                    68,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "157"
+                ],
+                "label" : "157",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    108,
+                    66,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "158"
+                ],
+                "label" : "158",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    224,
+                    73,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "159"
+                ],
+                "label" : "159",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    86,
+                    71,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "160"
+                ],
+                "label" : "160",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    51,
+                    60,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "161"
+                ],
+                "label" : "161",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    255,
+                    78,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "162"
+                ],
+                "label" : "162",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    291,
+                    71,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "163"
+                ],
+                "label" : "163",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    90,
+                    65,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "164"
+                ],
+                "label" : "164",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    253,
+                    71,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "165"
+                ],
+                "label" : "165",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    356,
+                    75,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "166"
+                ],
+                "label" : "166",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    100,
+                    73,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "167"
+                ],
+                "label" : "167",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    226,
+                    63,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "168"
+                ],
+                "label" : "168",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    144,
+                    76,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "169"
+                ],
+                "label" : "169",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    213,
+                    77,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "170"
+                ],
+                "label" : "170",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    149,
+                    65,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "171"
+                ],
+                "label" : "171",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    183,
+                    68,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "172"
+                ],
+                "label" : "172",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    135,
+                    72,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "173"
+                ],
+                "label" : "173",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    26,
+                    67,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "174"
+                ],
+                "label" : "174",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    347,
+                    73,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "175"
+                ],
+                "label" : "175",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    111,
+                    75,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "176"
+                ],
+                "label" : "176",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    138,
+                    61,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "177"
+                ],
+                "label" : "177",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    305,
+                    79,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "178"
+                ],
+                "label" : "178",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    327,
+                    74,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "179"
+                ],
+                "label" : "179",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    125,
+                    61,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "180"
+                ],
+                "label" : "180",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    271,
+                    66,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "181"
+                ],
+                "label" : "181",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    6,
+                    73,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "182"
+                ],
+                "label" : "182",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    181,
+                    60,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "183"
+                ],
+                "label" : "183",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    105,
+                    76,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "184"
+                ],
+                "label" : "184",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    32,
+                    63,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "185"
+                ],
+                "label" : "185",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    172,
+                    65,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "186"
+                ],
+                "label" : "186",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    307,
+                    67,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "187"
+                ],
+                "label" : "187",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    237,
+                    67,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "188"
+                ],
+                "label" : "188",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    166,
+                    66,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "189"
+                ],
+                "label" : "189",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    355,
+                    73,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "190"
+                ],
+                "label" : "190",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    139,
+                    73,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "191"
+                ],
+                "label" : "191",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    248,
+                    60,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "192"
+                ],
+                "label" : "192",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    294,
+                    62,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "193"
+                ],
+                "label" : "193",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    106,
+                    76,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "194"
+                ],
+                "label" : "194",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    84,
+                    73,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "195"
+                ],
+                "label" : "195",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    86,
+                    64,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "196"
+                ],
+                "label" : "196",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    193,
+                    67,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "197"
+                ],
+                "label" : "197",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    7,
+                    60,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "198"
+                ],
+                "label" : "198",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    133,
+                    60,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "199"
+                ],
+                "label" : "199",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    184,
+                    69,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "200"
+                ],
+                "label" : "200",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    322,
+                    75,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "201"
+                ],
+                "label" : "201",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    156,
+                    75,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "202"
+                ],
+                "label" : "202",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    306,
+                    66,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "203"
+                ],
+                "label" : "203",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    72,
+                    69,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "204"
+                ],
+                "label" : "204",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    299,
+                    76,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "205"
+                ],
+                "label" : "205",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    269,
+                    60,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "206"
+                ],
+                "label" : "206",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    308,
+                    64,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "207"
+                ],
+                "label" : "207",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    240,
+                    75,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "208"
+                ],
+                "label" : "208",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    216,
+                    78,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "209"
+                ],
+                "label" : "209",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    64,
+                    63,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "210"
+                ],
+                "label" : "210",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    275,
+                    76,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "211"
+                ],
+                "label" : "211",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    308,
+                    74,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "212"
+                ],
+                "label" : "212",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    56,
+                    74,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "213"
+                ],
+                "label" : "213",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    101,
+                    63,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "214"
+                ],
+                "label" : "214",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    102,
+                    68,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "215"
+                ],
+                "label" : "215",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    189,
+                    73,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "216"
+                ],
+                "label" : "216",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    296,
+                    79,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "217"
+                ],
+                "label" : "217",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    358,
+                    79,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "218"
+                ],
+                "label" : "218",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    191,
+                    67,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "219"
+                ],
+                "label" : "219",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    248,
+                    69,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "220"
+                ],
+                "label" : "220",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    170,
+                    64,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "221"
+                ],
+                "label" : "221",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    224,
+                    75,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "222"
+                ],
+                "label" : "222",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    103,
+                    68,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "223"
+                ],
+                "label" : "223",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    207,
+                    72,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "224"
+                ],
+                "label" : "224",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    173,
+                    79,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "225"
+                ],
+                "label" : "225",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    107,
+                    76,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "226"
+                ],
+                "label" : "226",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    121,
+                    73,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "227"
+                ],
+                "label" : "227",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    6,
+                    74,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "228"
+                ],
+                "label" : "228",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    277,
+                    69,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "229"
+                ],
+                "label" : "229",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    151,
+                    73,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "230"
+                ],
+                "label" : "230",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    293,
+                    72,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "231"
+                ],
+                "label" : "231",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    288,
+                    78,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "232"
+                ],
+                "label" : "232",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    22,
+                    70,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "233"
+                ],
+                "label" : "233",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    72,
+                    68,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "234"
+                ],
+                "label" : "234",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    346,
+                    67,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "235"
+                ],
+                "label" : "235",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    283,
+                    78,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "236"
+                ],
+                "label" : "236",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    349,
+                    66,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "237"
+                ],
+                "label" : "237",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    19,
+                    61,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "238"
+                ],
+                "label" : "238",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    337,
+                    73,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "239"
+                ],
+                "label" : "239",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    74,
+                    79,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "240"
+                ],
+                "label" : "240",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    287,
+                    64,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "241"
+                ],
+                "label" : "241",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    321,
+                    69,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "242"
+                ],
+                "label" : "242",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    272,
+                    79,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "243"
+                ],
+                "label" : "243",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    346,
+                    79,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "244"
+                ],
+                "label" : "244",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    237,
+                    79,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "245"
+                ],
+                "label" : "245",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    36,
+                    66,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "246"
+                ],
+                "label" : "246",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    283,
+                    61,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "247"
+                ],
+                "label" : "247",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    256,
+                    76,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "248"
+                ],
+                "label" : "248",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    343,
+                    75,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "249"
+                ],
+                "label" : "249",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    97,
+                    69,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "250"
+                ],
+                "label" : "250",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    97,
+                    63,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "251"
+                ],
+                "label" : "251",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    17,
+                    72,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "252"
+                ],
+                "label" : "252",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    239,
+                    69,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "253"
+                ],
+                "label" : "253",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    93,
+                    64,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "254"
+                ],
+                "label" : "254",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    93,
+                    78,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "255"
+                ],
+                "label" : "255",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    225,
+                    77,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "256"
+                ],
+                "label" : "256",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    257,
+                    77,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "257"
+                ],
+                "label" : "257",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    10,
+                    61,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "258"
+                ],
+                "label" : "258",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    346,
+                    66,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "259"
+                ],
+                "label" : "259",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    41,
+                    76,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "260"
+                ],
+                "label" : "260",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    185,
+                    79,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "261"
+                ],
+                "label" : "261",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    196,
+                    67,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "262"
+                ],
+                "label" : "262",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    165,
+                    72,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "263"
+                ],
+                "label" : "263",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    51,
+                    69,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "264"
+                ],
+                "label" : "264",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    77,
+                    69,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "265"
+                ],
+                "label" : "265",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    47,
+                    60,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "266"
+                ],
+                "label" : "266",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    253,
+                    76,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "267"
+                ],
+                "label" : "267",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    112,
+                    69,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "268"
+                ],
+                "label" : "268",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    292,
+                    76,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "269"
+                ],
+                "label" : "269",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    332,
+                    60,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "270"
+                ],
+                "label" : "270",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    85,
+                    66,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "271"
+                ],
+                "label" : "271",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    244,
+                    75,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "272"
+                ],
+                "label" : "272",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    102,
+                    65,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "273"
+                ],
+                "label" : "273",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    173,
+                    76,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "274"
+                ],
+                "label" : "274",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    44,
+                    77,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "275"
+                ],
+                "label" : "275",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    192,
+                    79,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "276"
+                ],
+                "label" : "276",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    150,
+                    73,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "277"
+                ],
+                "label" : "277",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    93,
+                    61,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "278"
+                ],
+                "label" : "278",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    188,
+                    71,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "279"
+                ],
+                "label" : "279",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    33,
+                    76,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "280"
+                ],
+                "label" : "280",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    12,
+                    71,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "281"
+                ],
+                "label" : "281",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    67,
+                    70,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "282"
+                ],
+                "label" : "282",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    305,
+                    70,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "283"
+                ],
+                "label" : "283",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    215,
+                    65,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "284"
+                ],
+                "label" : "284",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    207,
+                    66,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "285"
+                ],
+                "label" : "285",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    272,
+                    79,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "286"
+                ],
+                "label" : "286",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    156,
+                    71,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "287"
+                ],
+                "label" : "287",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    249,
+                    62,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "288"
+                ],
+                "label" : "288",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    202,
+                    70,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "289"
+                ],
+                "label" : "289",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    40,
+                    60,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "290"
+                ],
+                "label" : "290",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    264,
+                    74,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "291"
+                ],
+                "label" : "291",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    255,
+                    68,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "292"
+                ],
+                "label" : "292",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    341,
+                    63,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "293"
+                ],
+                "label" : "293",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    214,
+                    74,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "294"
+                ],
+                "label" : "294",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    131,
+                    65,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "295"
+                ],
+                "label" : "295",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    112,
+                    69,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "296"
+                ],
+                "label" : "296",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    63,
+                    64,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "297"
+                ],
+                "label" : "297",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    291,
+                    72,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "298"
+                ],
+                "label" : "298",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    249,
+                    61,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "299"
+                ],
+                "label" : "299",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    158,
+                    73,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "300"
+                ],
+                "label" : "300",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    122,
+                    73,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "301"
+                ],
+                "label" : "301",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    48,
+                    65,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "302"
+                ],
+                "label" : "302",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    13,
+                    73,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "303"
+                ],
+                "label" : "303",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    359,
+                    79,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "304"
+                ],
+                "label" : "304",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    294,
+                    64,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "305"
+                ],
+                "label" : "305",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    258,
+                    69,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "306"
+                ],
+                "label" : "306",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    281,
+                    64,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "307"
+                ],
+                "label" : "307",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    5,
+                    66,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "308"
+                ],
+                "label" : "308",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    178,
+                    69,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "309"
+                ],
+                "label" : "309",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    142,
+                    65,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "310"
+                ],
+                "label" : "310",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    55,
+                    78,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "311"
+                ],
+                "label" : "311",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    328,
+                    67,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "312"
+                ],
+                "label" : "312",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    40,
+                    79,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "313"
+                ],
+                "label" : "313",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    14,
+                    67,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "314"
+                ],
+                "label" : "314",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    280,
+                    70,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "315"
+                ],
+                "label" : "315",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    283,
+                    74,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "316"
+                ],
+                "label" : "316",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    248,
+                    69,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "317"
+                ],
+                "label" : "317",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    291,
+                    65,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "318"
+                ],
+                "label" : "318",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    60,
+                    67,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "319"
+                ],
+                "label" : "319",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    253,
+                    79,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "320"
+                ],
+                "label" : "320",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    191,
+                    62,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "321"
+                ],
+                "label" : "321",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    187,
+                    68,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "322"
+                ],
+                "label" : "322",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    322,
+                    67,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "323"
+                ],
+                "label" : "323",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    177,
+                    64,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "324"
+                ],
+                "label" : "324",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    56,
+                    73,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "325"
+                ],
+                "label" : "325",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    221,
+                    65,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "326"
+                ],
+                "label" : "326",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    314,
+                    76,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "327"
+                ],
+                "label" : "327",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    32,
+                    76,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "328"
+                ],
+                "label" : "328",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    59,
+                    72,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "329"
+                ],
+                "label" : "329",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    59,
+                    68,
+                    66,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "330"
+                ],
+                "label" : "330",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    104,
+                    73,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "331"
+                ],
+                "label" : "331",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    149,
+                    70,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "332"
+                ],
+                "label" : "332",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    197,
+                    74,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "333"
+                ],
+                "label" : "333",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    135,
+                    77,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "334"
+                ],
+                "label" : "334",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    291,
+                    67,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "335"
+                ],
+                "label" : "335",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    50,
+                    75,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "336"
+                ],
+                "label" : "336",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    232,
+                    66,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "337"
+                ],
+                "label" : "337",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    290,
+                    75,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "338"
+                ],
+                "label" : "338",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    142,
+                    77,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "339"
+                ],
+                "label" : "339",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    138,
+                    64,
+                    72,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "340"
+                ],
+                "label" : "340",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    10,
+                    66,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "341"
+                ],
+                "label" : "341",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    353,
+                    77,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "342"
+                ],
+                "label" : "342",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    206,
+                    65,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "343"
+                ],
+                "label" : "343",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    215,
+                    68,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "344"
+                ],
+                "label" : "344",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    235,
+                    72,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "345"
+                ],
+                "label" : "345",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    153,
+                    75,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "346"
+                ],
+                "label" : "346",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    85,
+                    77,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "347"
+                ],
+                "label" : "347",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    244,
+                    64,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "348"
+                ],
+                "label" : "348",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    155,
+                    73,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "349"
+                ],
+                "label" : "349",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    4,
+                    61,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "350"
+                ],
+                "label" : "350",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    13,
+                    73,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "351"
+                ],
+                "label" : "351",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    246,
+                    76,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "352"
+                ],
+                "label" : "352",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    210,
+                    76,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "353"
+                ],
+                "label" : "353",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    213,
+                    67,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "354"
+                ],
+                "label" : "354",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    176,
+                    70,
+                    74,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "356"
+                ],
+                "label" : "356",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    287,
+                    70,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "357"
+                ],
+                "label" : "357",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    76,
+                    76,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "359"
+                ],
+                "label" : "359",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    193,
+                    61,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "360"
+                ],
+                "label" : "360",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    159,
+                    62,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "361"
+                ],
+                "label" : "361",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    163,
+                    65,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "362"
+                ],
+                "label" : "362",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    331,
+                    68,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "363"
+                ],
+                "label" : "363",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    182,
+                    71,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "364"
+                ],
+                "label" : "364",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    201,
+                    77,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "365"
+                ],
+                "label" : "365",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    31,
+                    76,
+                    69,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "366"
+                ],
+                "label" : "366",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    134,
+                    69,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "367"
+                ],
+                "label" : "367",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    33,
+                    64,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "368"
+                ],
+                "label" : "368",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    70,
+                    76,
+                    65,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "369"
+                ],
+                "label" : "369",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    70,
+                    79,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "371"
+                ],
+                "label" : "371",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    177,
+                    78,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "372"
+                ],
+                "label" : "372",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    75,
+                    71,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "373"
+                ],
+                "label" : "373",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    132,
+                    72,
+                    78,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "374"
+                ],
+                "label" : "374",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    102,
+                    73,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "375"
+                ],
+                "label" : "375",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    15,
+                    72,
+                    60,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "376"
+                ],
+                "label" : "376",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    117,
+                    62,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "377"
+                ],
+                "label" : "377",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    328,
+                    78,
+                    68,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "378"
+                ],
+                "label" : "378",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    203,
+                    63,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "379"
+                ],
+                "label" : "379",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    221,
+                    66,
+                    75,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "380"
+                ],
+                "label" : "380",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    115,
+                    63,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "381"
+                ],
+                "label" : "381",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    64,
+                    64,
+                    63,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "382"
+                ],
+                "label" : "382",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    331,
+                    76,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "383"
+                ],
+                "label" : "383",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    80,
+                    67,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "384"
+                ],
+                "label" : "384",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    277,
+                    72,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "395"
+                ],
+                "label" : "395",
+                "color" : {
+                  "type" : "CIMHSVColor",
+                  "values" : [
+                    320,
+                    67,
+                    73,
+                    100
+                  ]
+                }
+              }
+            ],
+            "heading" : "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
