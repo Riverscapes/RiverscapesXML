@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Hydrologic Context</Name>
+  <ProjectType>hydro_context</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
+      <Node label="Outputs" xpath="Outputs">
+        <Children collapsed="false">
+          <Node label="Channel Network">
+            <Children>
+              <Node label="Baseflow (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="baseflow" symbology="reach_baseflow" />
+              <Node label="Typical Flood (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="flood" symbology="reach_flood" />
+              <Node label="Baseflow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="reach_baseflow_sp" symbology="reach_low_stream_power" />
+              <Node label="Flood Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="reach_flood_sp" symbology="reach_q2_stream_power" />  
+            </Children>
+          </Node>
+          <Node label="Riverscape Network">
+            <Children>
+              <Node label="Baseflow (IGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow" symbology="igo_baseflow" />
+              <Node label="Flood (IGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood" symbology="igo_flood" />
+              <Node label="Baseflow Stream Power (IGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow_sp" symbology="igo_low_stream_power" />
+              <Node label="Flood Stream Power (IGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_sp" symbology="igo_q2_stream_power" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="Inputs">
+        <Children collapsed="true">
+          <Node label="Segmented Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flowlines" />
+          <Node label="Integrated Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" />
+          <Node label="Discrete Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="point" symbology="DGO" />
+          <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" id="dem" symbology="dem" transparency="40" />
+        </Children>
+      </Node>
+      <Node label="Hillshade" xpath="Inputs">
+        <Children>
+          <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" id="hillshade" symbology="hillshade" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+  <Views default="Q2">
+    <View name="Typical Flood" id="Q2">
+      <Description>Predicted values for a typical two-year flood attributed to the channel network</Description>
+      <Layers>
+        <Layer id="flood" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+  </Views>
+</Project>
