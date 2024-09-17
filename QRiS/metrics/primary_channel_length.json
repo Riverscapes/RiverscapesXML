@@ -7,7 +7,8 @@
     "default_level": "Metric",
     "description": "Length of the primary channel within the riverscape sample frame",
     "metadata": {
-        "min_value": 0
+        "min_value": 0,
+        "precison": 2
     },
     "metric_params": {
         "layers": [

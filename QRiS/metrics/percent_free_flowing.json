@@ -8,7 +8,7 @@
     "description": "The percent of the inundation extents that is free flowing",
     "metadata": {
         "min_value": 0,
-        "precison": 2
+        "precision": 2
     },
     "metric_params": {
         "layers": [

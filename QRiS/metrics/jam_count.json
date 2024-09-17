@@ -8,7 +8,7 @@
   "description": "The number of jams in each sample frame",
   "metadata": {
     "min_value": 0,
-    "precision": 2
+    "precision": 1
   },
   "metric_params": {
     "layers": [
@@ -20,6 +20,15 @@
           "values": [
             "Jam",
             "Jam Complex"
+          ]
+        }
+      },
+      {
+        "layer_name": "structural_elements_areas",
+        "attribute_filter": {
+          "field_name": "Type",
+          "values": [
+            "Jam"
           ]
         }
       }

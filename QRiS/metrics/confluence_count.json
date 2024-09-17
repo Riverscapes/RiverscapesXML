@@ -8,7 +8,7 @@
     "description": "The number of channel confluences in containing sample frame",
     "metadata": {
         "min_value": 0,
-        "precison": 2
+        "precision": 1
     },
     "metric_params": {
         "layers": [

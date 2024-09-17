@@ -1,0 +1,23 @@
+{
+    "$schema": "../qris_metrics.schema.json",
+    "calculation_name": "length",
+    "default_level": "Metric",
+    "description": "Length of the riverscape centerline within the sample frame",
+    "machine_name": "riverscape_length",
+    "definition_url": "none",
+    "units": "",
+    "metadata": {
+        "min_value": 0,
+        "precision": 3
+    },
+    "metric_params": {
+        "layers": [
+            {
+                "layer_name": "centerline",
+                "layer_source": "inputs"
+            }
+        ]
+    },
+    "name": "Riverscape Length",
+    "version": 1
+}

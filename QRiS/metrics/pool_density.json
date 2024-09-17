@@ -8,7 +8,7 @@
     "description": "The number of pools per km of riverscape",
     "metadata": {
         "min_value": 0,
-        "precison": 2
+        "precision": 3
     },
     "metric_params": {
         "layers": [
