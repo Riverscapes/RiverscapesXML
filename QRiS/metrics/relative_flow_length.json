@@ -8,7 +8,7 @@
     "description": "The sum of all channel lengths per km of riverscape",
     "metadata": {
         "min_value": 0,
-        "precison": 2
+        "precision": 2
     },
     "metric_params": {
         "layers": [
