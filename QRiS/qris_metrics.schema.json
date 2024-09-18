@@ -58,6 +58,10 @@
                   "type": "string",
                   "enum": ["point", "line", "polygon"]
                 },
+                "layer_source": {
+                  "type": "string",
+                  "enum": ["inputs"]
+                },
                 "attribute_filter": {
                   "type": "object",
                   "properties": {
