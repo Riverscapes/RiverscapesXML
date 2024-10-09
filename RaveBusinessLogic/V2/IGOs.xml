@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>Riverscape IGOs</Name>
+    <ProjectType>IGOs</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="Outputs">
+                <Children collapsed="false">
+                    <Node label="IGOs" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point"
+                        symbology="igo_default" id="igos" />
+                </Children>
+            </Node>
+            <Node label="Log File" xpath="Logs/LogFile" type="file" />
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="Primary Outputs" id="DEFAULT">
+            <Layers>
+                <Layer id="igos" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
