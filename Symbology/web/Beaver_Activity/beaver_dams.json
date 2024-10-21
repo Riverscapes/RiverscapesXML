@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(242, 204, 78)", "Beaver Dam"]
+  ],
+  "layerStyles": [
+    {
+        "id": "dam-points-reproj-d7fdsb",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "dam_points_reproj-d7fdsb",
+        "layout": {
+            "icon-size": 0.02,
+            "icon-image": "star-svgrepo-com",
+            "icon-allow-overlap": true
+        },
+        "paint": {}
+    }
+]
+}
