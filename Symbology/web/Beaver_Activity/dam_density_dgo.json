@@ -1,13 +1,8 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(255, 255, 243)", "0 dams/km"],
-    ["rgb(249, 249, 157)", "0.01 - 1 dams/km"],
-    ["rgb(199, 234, 179)", "1 - 5 dams/km"],
-    ["rgb(66, 199, 195)", "5 - 15 dams/km"],
-    ["rgb(44, 127, 184)", "15 - 30 dams/km"],
-    ["rgb(37, 52, 148))", "30 - 50 dams/km"],
-    ["rgb(8, 21, 80)", "> 50 dams/km"]
+    ["hsl(Item1COlorHERE)", "WebRave Legend Item1"],
+    ["hsl(Item2COlorHERE)", "WebRave Legend Item2"]
   ],
   "layerStyles": [
     {
@@ -23,9 +18,9 @@
                 ["get", "dam_density"],
                 0,
                 "rgb(255, 255, 243)",
-                0.009,
-                "rgb(255, 255, 243)",
                 0.01,
+                "rgb(255, 255, 243)",
+                0.011,
                 "rgb(249, 249, 157)",
                 1,
                 "rgb(249, 249, 157)",
@@ -47,7 +42,8 @@
                 "rgb(37, 52, 148)",
                 50.0001,
                 "rgb(8, 21, 80)",
-                1000,
-                "rgb(8, 21, 80)"
-            ]
+                70.9081554824198,
+                "rgb(8, 21, 80)"]}
+    }
+  ]
 }
