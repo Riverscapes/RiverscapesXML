@@ -11,13 +11,14 @@
   ],
   "layerStyles": [
     {
-        "id": "beaver-dgo-7qly80",
-        "type": "fill",
+        "id": "dam-igo-filtered-30emtk",
+        "type": "circle",
         "source": "composite",
-        "source-layer": "beaver_dgo-7qly80",
+        "source-layer": "dam_igo_filtered-30emtk",
         "layout": {},
         "paint": {
-            "fill-color": [
+            "circle-radius": 3,
+            "circle-color": [
                 "interpolate",
                 ["linear"],
                 ["get", "dam_density"],
@@ -49,16 +50,9 @@
                 "rgb(8, 21, 80)",
                 1000,
                 "rgb(8, 21, 80)"
-            ]
+            ],
+            "circle-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 1, 0]
         }
-    },
-    {
-        "id": "beaver-dgo-7qly80 copy",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "beaver_dgo-7qly80",
-        "layout": {},
-        "paint": {"line-width": 0.1, "line-color": "rgb(35, 35, 35)"}
     }
 ]
 }
