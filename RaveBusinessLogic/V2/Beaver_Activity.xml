@@ -7,8 +7,8 @@
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Outputs" xpath="Outputs">
         <Children collapsed="false">
-          <Node label="Beaver Dam Density (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo" symbology="dam_density_igo_filtered" />
-          <Node label="Beaver Dam Density (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo" symbology="dam_density_dgo_filtered" />
+          <Node label="Beaver Dam Density (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo" symbology="dam_density_igo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+          <Node label="Beaver Dam Density (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo" symbology="dam_density_dgo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
           <Node label="Beaver Dam Density (IGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo_all" symbology="dam_density_igo" />
           <Node label="Beaver Dam Density (DGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo_all" symbology="dam_density_dgo" />
         </Children>
