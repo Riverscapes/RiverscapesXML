@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>BRAT</Name>
+  <ProjectType>Riverscapes_BRAT</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Outputs" xpath="Realizations/Realization/Outputs">
+        <Children collapsed="true">
+          <Node label="Capacity">
+            <Children>
+              <Node label="Reaches">
+                <Children>
+                  <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_EX_filtered" id="ex_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+                  <Node label="Existing Dam Size" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_EX_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_HPE_filtered" id ="his_capacity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Historic Dam Size" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_HPE_CT_filtered" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Capacity for Entire Network (overestimate including non-perennial) ">
+                    <Children>
+                      <Node label="Existing Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_EX"  />
+                      <Node label="Existing Dam Size (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_EX_CT"  />
+                      <Node label="Historic Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oCC_HPE" />
+                      <Node label="Historic Dam Size (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="mCC_HPE_CT"  />
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
+              <Node label="IGOs">
+                <Children>
+                  <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_EX_filtered_igo" id="ex_capacity_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+                  <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_HPE_filtered_igo" id ="his_capacity_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Capacity for Entire Network (overestimate including non-perennial) ">
+                    <Children>
+                      <Node label="Existing Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_EX_igo"  />
+                      <Node label="Historic Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_HPE_igo" />
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
+            </Children> 
+          </Node>
+          <Node label="Management">
+            <Children collapsed="true">
+              <Node label="Reaches">
+                <Children collapsed="true">
+                  <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="limitation" id="limited" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="risk" id="risk" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="opportunity" id="opportunity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 "/>
+                </Children>
+              </Node>
+              <Node label="IGOs">
+                <Children collapsed="true">
+                  <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="limitation_igo" id="limited" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="risk_igo" id="risk" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="opportunity_igo" id="opportunity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 "/>
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+          <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
+          <Node label="Project Report"  xpath="HTMLFile" type="report" />
+        </Children>
+      </Node>
+      <Node label="Intermediates" xpath="Realizations/Realization">
+        <Children collapsed="true">
+          <Node label="Network">
+            <Children>
+              <Node label="Perennial" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="IsPeren" />
+            </Children>
+          </Node>
+          <Node label="Topographic Index">
+            <Children>
+              <Node label="Slope" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iGeo_Slope" id="slope" />
+              <Node label="Drainage Area" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iGeo_DA" id="DA" />
+            </Children>
+          </Node>
+          <Node label="Overall Vegetation Dam Capacity">
+            <Children>
+              <Node label="Existing Veg Dam Building Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oVC_EX" />
+              <Node label="Historic Veg Dam Building Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oVC_HPE" />
+            </Children>
+          </Node>
+          <Node label="Vegetation Suitability">
+            <Children>
+              <Node label="Existing Vegetation Suitability" xpath="Intermediates/Raster[@id='EXVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
+              <Node label="Historic Vegetation Suitability" xpath="Intermediates/Raster[@id='HISTVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
+            </Children>
+          </Node>
+          <Node label="Buffers">
+            <Children>
+              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='30M_BUFFER']" type="polygon" symbology="buf30"/>
+              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='buffer_100m']" type="polygon" symbology="buf100"/>
+            </Children>
+          </Node>
+          <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="Realizations/Realization/Inputs">
+        <Children collapsed="true">
+          <Node label="Riverscapes Sampling Units">
+            <Children collapsed="true">
+              <Node label="Network" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="flow_lines" />
+              <Node label="River Polygons (NHD Area)" xpath="Geopackage/Layers/Vector[@lyrName='flowareas']" type="polygon" symbology="FlowArea" />
+              <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Geopackage/Layers/Vector[@lyrName='waterbodies']" type="polygon" symbology="Waterbodies" />
+              <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_igos']" type="polygon" symbology="DGO" />
+              <Node label="Integrated Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_dgos']" type="point" symbology="IGO" />
+            </Children>
+          </Node>
+          <Node label ="Anthropogenic Risk">
+            <Children>
+              <Node label="Distance to Roads in Riverscape" xpath="Geopackage/Layers/Vector[@lyrName='anthro_flowlines']" type="line" symbology="iPC_RoadVB"/>
+              <Node label="Distance to Railroads in Riverscape" xpath="Geopackage/Layers/Vector[@lyrName='anthro_flowlines']" type="line" symbology="iPC_RailVB"/>
+              <Node label="Distance to Stream Crossings" xpath="Geopackage/Layers/Vector[@lyrName='anthro_flowlines']" type="line" symbology="iPC_RoadX"/>
+              <Node label="Land Use Intensity" xpath="Geopackage/Layers/Vector[@lyrName='anthro_flowlines']" type="line" symbology="iPC_LU" />
+              <Node label="Valley Bottom Extent (Hollow)" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_hollow"/>
+              <Node label="Valley Bottom Extent (Filled)" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom']" type="polygon" symbology="vbet68_filled"/>
+            </Children>
+          </Node>
+          <Node label="Hydrology">
+            <Children collapsed="true">
+              <Node label="Low Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="iHyd_SP2" id="flow_high"/>
+              <Node label="Flood Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="iHyd_SPLow" id="flow_base"/>
+            </Children>
+          </Node>
+          <Node label="Vegetation">
+            <Children>
+              <Node label="Existing Vegetation" id="vegetation">
+                <Children>
+                  <Node label="Veg Type - EVT Class" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
+                  <Node label="Veg Type - EVT Name" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Name" transparency="40" />
+                  <Node label="Existing Riparian" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Riparian" transparency="40" />
+                </Children>
+              </Node>
+              <Node label="Historic Vegetation">
+                <Children>
+                  <Node label="Veg Type - BPS Name" xpath="Raster[@id='HISTVEG']" type="raster" symbology="Historic_Veg_BPS_Name" transparency="40" />
+                  <Node label="Historic Riparian" xpath="Raster[@id='HISTVEG']" type="raster" symbology="Historic_Veg_BPS_Riparian" transparency="40" />
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+          <Node label="Topography">
+            <Children>
+              <Node label="Flow Accumulation" xpath="Raster[@id='FA']" type="raster" symbology="flow_accumulation" transparency="40" />
+              <Node label="Drainage Area" xpath="Raster[@id='DA']" type="raster" symbology="drainage_area" transparency="40" />
+              <Node label="Slope" xpath="Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
+              <Node label="DEM" xpath="DEM" type="raster" symbology="dem" transparency="40" />
+              <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
+            </Children>
+          </Node>
+          <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
+        </Children>
+      </Node>
+      <Node label="Log File" xpath="Realizations/Realization/Logs/LogFile" type="file" />
+    </Children>
+  </Node>
+  <Views default="BRAT_exOutputs">
+    <View name="BRAT Existing Capacity" id="BRAT_exOutputs">
+      <Description>This view is the existing dam capacity</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="ex_capacity" />
+      </Layers>
+    </View>
+    <View name="BRAT Historic Capacity" id="BRAT_hisOutputs">
+      <Description>This view is the historic dam capacity</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="his_capacity" />
+      </Layers>
+    </View>
+    <View name="BRAT Limited Opportunities" id="BRAT_limited">
+      <Description>This view shows unsuitable or limited opportunities</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="limited" />
+      </Layers>
+    </View>
+    <View name="BRAT Risk of Undesireable Dams" id="BRAT_risk">
+      <Description>This view shows risk of undesireable dams</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="risk" />
+      </Layers>
+    </View>
+    <View name="BRAT Restoration or Conservation" id="BRAT_opportunity">
+      <Description>This view shows restoration/conservation opportunities</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="opportunity" />
+      </Layers>
+    </View>
+    <View name="BRAT Slope" id="BRAT_slope">
+      <Description>This view shows network slope</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="slope" />
+      </Layers>
+    </View>
+    <View name="BRAT Drainage Area" id="BRAT_DA">
+      <Description>This view shows drainage area</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="DA" />
+      </Layers>
+    </View>
+    <View name="BRAT High Flow" id="BRAT_highflow">
+      <Description>This view shows high flow stream power</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="flow_high" />
+      </Layers>
+    </View>
+    <View name="BRAT Base Flow" id="BRAT_baseflow">
+      <Description>This view shows base flow stream power</Description>
+      <Layers>
+        <Layer id="hillshade" />
+        <Layer id="flow_base" />
+      </Layers>
+    </View>
+  </Views>
+</Project>
