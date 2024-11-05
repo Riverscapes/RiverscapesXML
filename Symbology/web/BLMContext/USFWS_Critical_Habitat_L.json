@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#cc4c02", "Endangered"],
+    ["#fe9929", "Threatened"]
+  ],
+    "layerStyles": [
+        {
+            "id": "usfws_critical_habitat_l_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "usfws_critical_habitat_l",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "listingStatus"],
+                    ["Endangered"],
+                    "#cc4c02",
+                    ["Threatened"],
+                    "#fe9929",
+                    "#000000"
+                ]
+            }
+        }
+    ]
+}

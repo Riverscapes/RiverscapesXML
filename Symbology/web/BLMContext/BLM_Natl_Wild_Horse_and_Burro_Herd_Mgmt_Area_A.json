@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#8d5a99", "BLM Natl Wild Horse and Burro Herd Mgmt Area A"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_natl_wild_horse_and_burro_herd_mgmt_area_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_natl_wild_horse_and_burro_herd_mgmt_area_a",
+            "layout": {},
+            "paint": {
+                "fill-color": "#8d5a99",
+                "fill-outline-color": "#232323"
+            }
+        },
+        {
+            "id": "blm_natl_wild_horse_and_burro_herd_mgmt_area_a_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "blm_natl_wild_horse_and_burro_herd_mgmt_area_a",
+            "layout": {
+                "text-field": ["to-string", ["get", "HMA_NAME"]],
+                "minzoom": 8
+            },
+            "paint": {}
+        }
+    ]
+}

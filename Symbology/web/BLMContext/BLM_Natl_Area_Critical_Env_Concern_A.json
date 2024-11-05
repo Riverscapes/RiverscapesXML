@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#e77148", "BLM Natl Area Critical Env Concern A"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_natl_area_critical_env_concern_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_natl_area_critical_env_concern_a",
+            "layout": {},
+            "paint": {
+                "fill-color": "#e77148",
+                "fill-outline-color": "#232323"
+            }
+        },
+        {
+            "id": "blm_natl_area_critical_env_concern_a_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "blm_natl_area_critical_env_concern_a",
+            "layout": {
+                "text-field": ["to-string", ["get", "ACEC_NAME"]],
+                "minzoom": 8
+            },
+            "paint": {}
+        }
+    ]
+}

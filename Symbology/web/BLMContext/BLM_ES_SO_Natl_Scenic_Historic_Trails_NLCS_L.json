@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#e6ab02", "Historic"],
+    ["#1b9e77", "Scenic"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_es_so_natl_scenic_historic_trails_nlcs_l_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "blm_es_so_natl_scenic_historic_trails_nlcs_l",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "TRAIL_TYPE"],
+                    ["Historic"],
+                    "#e6ab02",
+                    ["Scenic"],
+                    "#1b9e77",
+                    "#000000"
+                ]
+            }
+        }
+    ]
+}
