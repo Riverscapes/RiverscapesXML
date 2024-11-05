@@ -1,0 +1,46 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#8dd3c7", "Anthro Mtn"],
+    ["#ffffb3", "General Habitat Mgmt. Area"],
+    ["#bebada", "Important Habitat Mgmt. Area"],
+    ["#fb8072", "Linkage and Connectivity Habitat Mgmt. Area"],
+    ["#80b1d3", "Other Habitat Mgmt. Area"],
+    ["#fdb462", "Priority Habitat Mgmt. Area"],
+    ["#b3de69", "Restoration Habitat Mgmt. Area"],
+    ["#fccde5", "Undesignated Habitat"]
+  ],
+	"layerStyles": [
+        {
+            "id": "blm_natl_westernus_grsg_rod_habitat_mgmt_areas_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_natl_westernus_grsg_rod_habitat_mgmt_areas_a",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "Habitat_Type"],
+                    ["Anthro Mtn"],
+                    "#8dd3c7",
+                    ["General Habitat Mgmt. Area"],
+                    "#ffffb3",
+                    ["Important Habitat Mgmt. Area"],
+                    "#bebada",
+                    ["Linkage and Connectivity Habitat Mgmt. Area"],
+                    "#fb8072",
+                    ["Other Habitat Mgmt. Area"],
+                    "#80b1d3",
+                    ["Priority Habitat Mgmt. Area"],
+                    "#fdb462",
+                    ["Restoration Habitat Mgmt. Area"],
+                    "#b3de69",
+                    ["Undesignated Habitat"],
+                    "#fccde5",
+                    "#000000"
+                ],
+                "fill-outline-color": "#421d49"
+            }
+        }
+    ]
+}

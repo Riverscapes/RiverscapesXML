@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#de8c1a", "BLM Fire Perimeters P"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_fire_perimeters_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_fire_perimeters",
+            "layout": {},
+            "paint": {
+                "fill-color": "#de8c1a",
+                "fill-outline-color": "#7e541c"
+            }
+        },
+        {
+            "id": "blm_fire_perimeters_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "blm_fire_perimeters",
+            "layout": {
+                "text-field": ["to-string", ["get", "INCDNT_NM"]],
+                "minzoom": 9
+            },
+            "paint": {}
+        }
+    ]
+}

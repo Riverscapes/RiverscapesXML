@@ -1,0 +1,40 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#0726f2", "BLM Restoration Landscapes A"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_restoration_landscapes_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_restoration_landscapes_a",
+            "layout": {},
+            "paint": {
+                "fill-color": "#0726f2",
+                "fill-opacity": 0.25
+            }
+        },
+        {
+            "id": "blm_restoration_landscapes_a_line",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "blm_restoration_landscapes_a",
+            "layout": {},
+            "paint": {
+                "line-color": "#0726f2",
+                "line-width": 2
+            }
+        },
+        {
+            "id": "blm_restoration_landscapes_a_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "blm_restoration_landscapes_a",
+            "layout": {
+                "text-field": ["to-string", ["get", "FocalName"]]
+            },
+            "paint": {}
+        }
+    ]
+}

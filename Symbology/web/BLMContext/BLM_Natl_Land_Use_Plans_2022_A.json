@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#d1e589", "BLM Natl Land Use Plans 2022 A"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_natl_land_use_plans_2022_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_natl_land_use_plans_2022_a",
+            "layout": {},
+            "paint": {
+                "fill-color": "#d1e589",
+                "fill-outline-color": "#767c53"
+            }
+        },
+        {
+            "id": "blm_natl_land_use_plans_2022_a_symbol",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "blm_natl_land_use_plans_2022_a",
+            "layout": {
+                "text-field": ["to-string", ["get", "LUPName"]],
+                "minzoom": 7
+            },
+            "paint": {}
+        }
+    ]
+}

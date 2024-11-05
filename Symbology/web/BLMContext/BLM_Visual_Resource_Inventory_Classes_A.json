@@ -1,0 +1,34 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#d9ccff", "VRI Class I"],
+    ["#8581ce", "VRI Class II"],
+    ["#bc8733", "VRI Class III"],
+    ["#253494", "VRI Class IV"]
+  ],
+    "layerStyles": [
+        {
+            "id": "blm_vri_classes_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "usfws_critical_habitat_a",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "VRI_CLASS_CODE"],
+                    ["I"],
+                    "#d9ccff",
+                    ["II"],
+                    "#8581ce",
+                    ["III"],
+                    "#bc8733",
+                    ["IV"],
+                    "#253494",
+                    "#000000"
+                ],
+                "fill-outline-color": "#232323"
+            }
+        }
+    ]
+}

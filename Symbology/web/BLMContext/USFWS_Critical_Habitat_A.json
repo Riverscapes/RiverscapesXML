@@ -1,0 +1,55 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#cc4c02", "Endangered"],
+    ["#d61db7", "Proposed Endangered"],
+    ["#507bd8", "Proposed Threatened"],
+    ["#fe9929", "Threatened"]
+  ],
+    "layerStyles": [
+        {
+            "id": "usfws_critical_habitat_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "usfws_critical_habitat_a",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "listingStatus"],
+                    ["Endangered"],
+                    "#cc4c02",
+                    ["Proposed Endangered"],
+                    "#fed98e",
+                    ["Proposed Threatened"],
+                    "#ffffd4",
+                    ["Threatened"],
+                    "#fe9929",
+                    "#000000"
+                ]
+            }
+        },
+        {
+            "id": "usfws_critical_habitat_a_stroke",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "usfws_critical_habitat_a",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "listingStatus"],
+                    ["Endangered"],
+                    "#816a1d",
+                    ["Proposed Endangered"],
+                    "#816a1d",
+                    ["Proposed Threatened"],
+                    "#816a1d",
+                    ["Threatened"],
+                    "#816a1d",
+                    "#000000"
+                ]
+            }
+        }
+    ]
+}

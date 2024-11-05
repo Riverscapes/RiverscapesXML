@@ -1,0 +1,40 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#004c73", "Campground"],
+    ["#732600", "Day Use Area"],
+    ["#38a800", "ERMA"],
+    ["#000000", "Natural Area/Endangered Area"],
+    ["#e6e600", "OHV Designated Area"],
+    ["#c1914e", "Special RMA"]
+  ],
+	"layerStyles": [
+        {
+            "id": "blm_natl_recreation_site_polygons_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_natl_recreation_site_polygons",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "fet_subtyp"],
+                    ["Campground"],
+                    "#004c73",
+                    ["Day Use Area"],
+                    "#732600",
+                    ["ERMA"],
+                    "#38a800",
+                    ["Natural Area/Endangered Area"],
+                    "#000000",
+                    ["OHV Designated Area"],
+                    "#e6e600",
+                    ["Special RMA"],
+                    "#c1914e",
+                    "#ffffff"
+                ],
+                "fill-outline-color": "#232323"
+            }
+        }
+    ]
+}

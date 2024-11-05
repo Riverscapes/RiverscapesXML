@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#eeb136", "Fire"],
+    ["#d61db7", "Mechanical"],
+    ["#507bd8", "Other"]
+  ],
+	"layerStyles": [
+        {
+            "id": "nifc-fuel-polys_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "NIFC_Fuel_Polys",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "cat_nm"],
+                    ["Fire"],
+                    "#eeb136",
+                    ["Mechanical"],
+                    "#d61db7",
+                    ["Other"],
+                    "#507bd8",
+                    "#e85959"
+                ],
+                "fill-outline-color": "#232323"
+            }
+        }
+    ]
+}

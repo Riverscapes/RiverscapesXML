@@ -1,0 +1,46 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#8dd3c7", "Appalachia"],
+    ["#ffffb3", "Grasslands"],
+    ["#bebada", "Gravel to Gravel"],
+    ["#fb8072", "Hawaiian Forest Bird Conservation"],
+    ["#80b1d3", "Islands"],
+    ["#fdb462", "Klamath Basin"],
+    ["#b3de69", "Sagebrush"],
+    ["#fccde5", "Salt Marsh"]
+  ],
+	"layerStyles": [
+        {
+            "id": "",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "KeystoneIn_Name"],
+                    ["Appalachia"],
+                    "#8dd3c7",
+                    ["Grasslands"],
+                    "#ffffb3",
+                    ["Gravel to Gravel"],
+                    "#bebada",
+                    ["Hawaiian Forest Bird Conservation"],
+                    "#fb8072",
+                    ["Islands"],
+                    "#80b1d3",
+                    ["Klamath Basin"],
+                    "#fdb462",
+                    ["Sagebrush"],
+                    "#b3de69",
+                    ["Salt Marsh"],
+                    "#fccde5",
+                    "#000000"
+                ],
+                "fill-outline-color": "#232323"
+            }
+        }
+    ]
+}

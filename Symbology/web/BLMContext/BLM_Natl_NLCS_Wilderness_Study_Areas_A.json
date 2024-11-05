@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
+  "legend": [
+    ["#ffffbf", "No recommendation"],
+    ["#fc8d59", "Non-suitable"],
+    ["#bad272", "Suitable"]
+  ],
+	"layerStyles": [
+        {
+            "id": "blm_natl_nlcs_wilderness_study_areas_a_fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "blm_natl_nlcs_wilderness_study_areas_a",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "WSA_RCMND"],
+                    ["No recommendation"],
+                    "#ffffbf",
+                    ["Non-suitable"],
+                    "#fc8d59",
+                    ["Suitable"],
+                    "#bad272",
+                    "#000000"
+                ],
+                "fill-outline-color": "#000000"
+            }
+        }
+    ]
+}
