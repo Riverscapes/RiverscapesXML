@@ -20,9 +20,9 @@
             "type": "symbol",
             "source": "composite",
             "source-layer": "blm_natl_land_use_plans_2022_a",
+            "minzoom": 7,
             "layout": {
-                "text-field": ["to-string", ["get", "LUPName"]],
-                "minzoom": 7
+                "text-field": ["to-string", ["get", "LUPName"]]
             },
             "paint": {}
         }

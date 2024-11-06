@@ -20,9 +20,9 @@
             "type": "symbol",
             "source": "composite",
             "source-layer": "blm_natl_grazing_allotment",
+            "minzoom": 8,
             "layout": {
-                "text-field": ["to-string", ["get", "ALLOT_NAME"]],
-                "minzoom": 8
+                "text-field": ["to-string", ["get", "ALLOT_NAME"]]
             },
             "paint": {}
         }

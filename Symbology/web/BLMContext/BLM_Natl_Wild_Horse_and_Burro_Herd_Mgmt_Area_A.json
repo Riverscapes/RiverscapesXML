@@ -20,9 +20,9 @@
             "type": "symbol",
             "source": "composite",
             "source-layer": "blm_natl_wild_horse_and_burro_herd_mgmt_area_a",
+            "minzoom": 8,
             "layout": {
-                "text-field": ["to-string", ["get", "HMA_NAME"]],
-                "minzoom": 8
+                "text-field": ["to-string", ["get", "HMA_NAME"]]
             },
             "paint": {}
         }
