@@ -8,13 +8,12 @@
   ],
   "layerStyles": [
     {
-        "id": "vw-igo-metrics-sample-7y7547",
+        "id": "rme-igos-sample-2f60tk",
         "type": "circle",
         "source": "composite",
-        "source-layer": "vw_igo_metrics_sample-7y7547",
+        "source-layer": "RME_igos_sample-2f60tk",
         "layout": {},
         "paint": {
-            "circle-emissive-strength": 1,
             "circle-color": [
                 "interpolate",
                 ["linear"],
@@ -34,8 +33,10 @@
                 66.0001,
                 "rgb(245, 0, 0)",
                 100,
-                "rgb(245, 0, 0)"
-            ]
+                "rgb(245, 0, 0)",
+                "hsla(0, 0%, 0%, 0)"
+            ],
+            "circle-radius": 3
         }
     }
 ]

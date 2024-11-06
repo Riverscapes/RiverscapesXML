@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(241, 9, 9)", "Junction Point"]
+  ],
+  "layerStyles": [
+    {
+        "id": "junc-points-sample-daq1bq",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "junc_points_sample-daq1bq",
+        "layout": {},
+        "paint": {"circle-color": "rgb(241, 9, 9)", "circle-radius": 4}
+    }
+]
+}
