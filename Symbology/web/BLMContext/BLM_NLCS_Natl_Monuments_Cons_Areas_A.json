@@ -1,7 +1,13 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/webRAVEVector.schema.json",
   "legend": [
-    ["#117116", "BLM NLCS Natl Monuments Cons Areas A"]
+    ["#a6cee3", "Cooperative Management and Protection Area"],
+    ["#1f78b4", "Forest Reserve"],
+    ["#b2df8a", "National Monuments"],
+    ["#fb9a99", "National Conservation Area"],
+    ["#e31a1c", "National Monuments"],
+    ["#fdbf6f", "National Scenic Area"],
+    ["#ff7f00", "Outstanding Natural Area"]
   ],
     "layerStyles": [
         {
@@ -11,8 +17,26 @@
             "source-layer": "blm_nlcs_natl_monuments_cons_areas_a",
             "layout": {},
             "paint": {
-                "fill-color": "#117116",
-                "fill-outline-color": "#20581e"
+                "fill-color": [
+                    "match",
+                    ["get", "sma_code"],
+                    ["BLM_CMPA"],
+                    "#a6cee3",
+                    ["BLM_FR"],
+                    "#1f78b4",
+                    ["BLM_MON"],
+                    "#b2df8a",
+                    ["BLM_NCA"],
+                    "#fb9a99",
+                    ["BLM_NM"],
+                    "#e31a1c",
+                    ["BLM_NSA"],
+                    "#fdbf6f",
+                    ["BLM_ONA"],
+                    "#ff7f00",
+                    "#000000"
+                ],
+                "fill-outline-color": "#3c2745"
             }
         },
         {
@@ -20,9 +44,9 @@
             "type": "symbol",
             "source": "composite",
             "source-layer": "blm_nlcs_natl_monuments_cons_areas_a",
+            "minzoom": 8,
             "layout": {
-                "text-field": ["to-string", ["get", "NLCS_NAME"]],
-                "minzoom": 8
+                "text-field": ["to-string", ["get", "NLCS_NAME"]]
             },
             "paint": {}
         }

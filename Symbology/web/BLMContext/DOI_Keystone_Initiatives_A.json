@@ -12,10 +12,10 @@
   ],
 	"layerStyles": [
         {
-            "id": "",
+            "id": "doi_keystone_initiatives_a_fill",
             "type": "fill",
             "source": "composite",
-            "source-layer": "",
+            "source-layer": "doi_keystone_initiatives_a",
             "layout": {},
             "paint": {
                 "fill-color": [
@@ -41,6 +41,16 @@
                 ],
                 "fill-outline-color": "#232323"
             }
-        }
+        },
+        {
+          "id": "doi_keystone_initiatives_a_symbol",
+          "type": "symbol",
+          "source": "composite",
+          "source-layer": "doi_keystone_initiatives_a",
+          "layout": {
+              "text-field": ["to-string", ["get", "KeystoneIn_Name"]]
+          },
+          "paint": {}
+      }
     ]
 }

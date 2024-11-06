@@ -20,9 +20,9 @@
             "type": "symbol",
             "source": "composite",
             "source-layer": "blm_fire_perimeters",
+            "minzoom": 9,
             "layout": {
-                "text-field": ["to-string", ["get", "INCDNT_NM"]],
-                "minzoom": 9
+                "text-field": ["to-string", ["get", "INCDNT_NM"]]
             },
             "paint": {}
         }

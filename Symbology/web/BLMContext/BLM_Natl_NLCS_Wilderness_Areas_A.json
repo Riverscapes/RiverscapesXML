@@ -8,12 +8,23 @@
             "id": "blm_natl_nlcs_wilderness_areas_a_fill",
             "type": "fill",
             "source": "composite",
-            "source-layer": "blm_nlcs_natl_monuments_cons_areas_a",
+            "source-layer": "blm_natl_nlcs_wilderness_areas_a",
             "layout": {},
             "paint": {
                 "fill-color": "#117116",
                 "fill-outline-color": "#20581e"
             }
-        }
+        },
+        {
+          "id": "blm_natl_nlcs_wilderness_areas_a_symbol",
+          "type": "symbol",
+          "source": "composite",
+          "source-layer": "blm_natl_nlcs_wilderness_areas_a",
+          "minzoom": 8,
+          "layout": {
+              "text-field": ["to-string", ["get", "NLCS_NAME"]]
+          },
+          "paint": {}
+      }
     ]
 }

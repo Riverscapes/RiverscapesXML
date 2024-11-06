@@ -20,9 +20,9 @@
             "type": "symbol",
             "source": "composite",
             "source-layer": "blm_natl_area_critical_env_concern_a",
+            "minzoom": 8,
             "layout": {
-                "text-field": ["to-string", ["get", "ACEC_NAME"]],
-                "minzoom": 8
+                "text-field": ["to-string", ["get", "ACEC_NAME"]]
             },
             "paint": {}
         }
