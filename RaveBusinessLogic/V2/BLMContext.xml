@@ -28,7 +28,7 @@
       </Node>
       <Node label="National Priority Areas">
         <Children collapsed="true">
-            <Node label="BLM Restoration Landscapes A" xpath="Datasets/Geopackage[@id='BLM_Restoration_Landscapes_A']/Layers/Vector[@lyrName='BLM_Restoration_Landscapes_A']" type="polygon" symbology="BLM_Restoration_Landscapes_A" />
+            <Node label="BLM Restoration Landscapes A" xpath="Datasets/Geopackage[@id='BLM_Restoration_Landscapes_A']/Layers/Vector[@lyrName='BLM_Restoration_Landscapes_A']" type="polygon" symbology="BLM_Restoration_Landscapes_A" id="blm_restoration_landscapes_a"/>
             <Node label="DOI Keystone Initiatives A" xpath="Datasets/Geopackage[@id='DOI_Keystone_Initiatives_A']/Layers/Vector[@lyrName='DOI_Keystone_Initiatives_A']" type="polygon" symbology="DOI_Keystone_Initiatives_A" />
         </Children>
       </Node>
@@ -41,41 +41,11 @@
       </Node>
     </Children>   
   </Node>
-  <!-- <Views default="Default">
-    <View name="Hydrology" id="Default">
+  <Views default="Default">
+    <View name="BLM Priority Restoration Landscapes" id="Default">
       <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="huc10" /> 
+        <Layer id="blm_restoration_landscapes_a"/> 
       </Layers>
     </View>
-    <View name="Topography" id="Topography">
-      <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="dem" />
-        <Layer id="hs" />
-      </Layers>
-    </View>
-    <View name="Transportation" id="Transportation">
-      <Layers>
-        <Layer id="roads" />
-        <Layer id="railroads" />
-      </Layers>
-    </View>
-    <View name="Existing Vegetation" id="veg">
-      <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="exveg" /> 
-      </Layers>
-    </View>
-    <View name="Land Ownership" id="land">
-      <Layers>
-        <Layer id="perrenial" />
-        <Layer id="intermittent" />
-        <Layer id="owner" /> 
-      </Layers>
-    </View>
-  </Views> -->
+  </Views>
 </Project>
