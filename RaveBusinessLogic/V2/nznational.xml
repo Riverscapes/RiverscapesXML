@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>New Zealand National Datasets</Name>
+    <ProjectType>NZNational</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children>
+            <Node label="Hydrography">
+                <Children collapsed="false">
+                    <Node label="Hydro Net Junctions"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='hydro_net_junctions']"
+                        type="point" symbology="hydro_net_junctions" id="hydro_net_junctions" />
+                    <Node label="River Network"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverlines']"
+                        type="line" symbology="hydrography" id="riverlines" />
+                    <Node label="Catchment Wings"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='rec2ws']"
+                        type="polygon" symbology="catchment_wings" id="catchment_wings" />
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="Default">
+        <View name="Hydrology" id="Default">
+            <Layers>
+                <Layer id="riverlines" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
