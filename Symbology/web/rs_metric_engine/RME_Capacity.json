@@ -6,7 +6,8 @@
     ["rgb(245, 245, 0)", "Occasional: 1-5 dams/km (2-8 dams/mi)"],
     ["rgb(76, 230, 1)", "Frequent: 5-15 dams/km (8-24 dams/mi)"],
     ["rgb(0, 93, 230)", "Pervasive: 15-40 dams/km (24-64 dams/mi)"],
-    ["rgb(19, 26, 113)", "> 40 dams/km"]
+    ["rgb(19, 26, 113)", "> 40 dams/km"],
+    ["rgb(0, 0, 0)", "Null"]
   ],
   "layerStyles": [
     {
@@ -43,8 +44,7 @@
                 40.0001,
                 "rgb(19, 26, 113)",
                 100,
-                "rgb(19, 26, 113)",
-                "hsla(0, 0%, 0%, 0)"
+                "rgb(19, 26, 113)"
             ],
             "circle-radius": [
                 "interpolate",

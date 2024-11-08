@@ -5,7 +5,8 @@
     ["rgb(255, 170, 0)", "Some Risk"],
     ["rgb(0, 197, 255)", "Minor Risk"],
     ["rgb(165, 165, 165)", "Negligible Risk"],
-    ["rgb(0, 0, 0)", "None"]
+    ["rgb(100, 100, 100)", "None"],
+    ["rgb(0, 0, 0)", "Null"]
   ],
   "layerStyles": [
     {
@@ -27,8 +28,8 @@
                 ["Negligible Risk"],
                 "rgb(165, 165, 165)",
                 ["None"],
-                "rgb(0, 0, 0)",
-                "hsla(0, 0%, 0%, 0)"
+                "rgb(100, 100, 100)",
+                "rgb(0, 0, 0)"
             ]
         }
     }
