@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(100, 100%, 50%)", "Active"],
+    ["hsl(0, 100%, 50%)", "Inactive"]
+  ],
+  "layerStyles": [
+    {
+      "id": "catchment_wings",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "catchment_wings",
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "crest_type"],
+              ["active"],
+              "hsl(100, 100%, 50%)",
+              ["inactive"],
+              "hsl(0, 100%, 50%)",
+              "#000000"
+          ],
+          "line-width": 3
+      }
+  }
+  ]
+}
