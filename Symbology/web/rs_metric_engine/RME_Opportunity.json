@@ -5,7 +5,7 @@
     ["rgb(0, 197, 255)", "Straight Forward - Quick Return"],
     ["rgb(230, 204, 0)", "Strategic - Long-Term Investment"],
     ["rgb(185, 185, 185)", "None"],
-    ["rgb(0, 0, 0)", "NA"]
+    ["rgb(0, 0, 0)", "NA or Null"]
   ],
   "layerStyles": [
     {
@@ -28,7 +28,7 @@
                 "rgb(185, 185, 185)",
                 ["NA"],
                 "rgb(0, 0, 0)",
-                "hsla(0, 0%, 0%, 0)"
+                "rgb(0, 0, 0)"
             ],
             "circle-radius": 3
         }
