@@ -18,6 +18,9 @@
                     <Node label="Catchment Wings"
                         xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='rec2ws']"
                         type="polygon" symbology="catchment_wings" id="catchment_wings" />
+                    <Node label="Watersheds"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='watersheds']"
+                        type="polygon" symbology="watersheds" id="wateresheds" />
                 </Children>
             </Node>
         </Children>
