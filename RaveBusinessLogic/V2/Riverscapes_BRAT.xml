@@ -26,12 +26,12 @@
               </Node>
               <Node label="IGOs">
                 <Children>
-                  <Node label="Existing Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_EX_filtered_igo" id="ex_capacity_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
-                  <Node label="Historic Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_HPE_filtered_igo" id ="his_capacity_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
-                  <Node label="Capacity for Entire Network (overestimate including non-perennial) ">
+                  <Node label="Existing Riverscape Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_EX_filtered_igo" id="ex_capacity_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+                  <Node label="Historic Riverscape Dam Capacity" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_HPE_filtered_igo" id ="his_capacity_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Riverscape Capacity for Entire Network (overestimate including non-perennial) ">
                     <Children>
-                      <Node label="Existing Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_EX_igo"  />
-                      <Node label="Historic Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_HPE_igo" />
+                      <Node label="Existing Riverscape Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_EX_igo"  />
+                      <Node label="Historic Riverscape Dam Capacity (All)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="oCC_HPE_igo" />
                     </Children>
                   </Node>
                 </Children>
@@ -44,14 +44,14 @@
                 <Children collapsed="true">
                   <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="limitation" id="limited" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
                   <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="risk" id="risk" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
-                  <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="opportunity" id="opportunity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="opportunity" id="opportunity" />
                 </Children>
               </Node>
               <Node label="IGOs">
                 <Children collapsed="true">
-                  <Node label="Unsuitable or Limited Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="limitation_igo" id="limited" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
-                  <Node label="Risk of Undesirable Dams" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="risk_igo" id="risk" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
-                  <Node label="Restoration or Conservation Opportunities" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="opportunity_igo" id="opportunity" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Unsuitable or Limited Opportunities (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="limitation_igo" id="limited_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Risk of Undesirable Dams (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="risk_igo" id="risk_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Restoration or Conservation Opportunities (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="opportunity_igo" id="opportunity_igo" />
                 </Children>
               </Node>
             </Children>
@@ -71,6 +71,11 @@
             <Children>
               <Node label="Slope" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iGeo_Slope" id="slope" />
               <Node label="Drainage Area" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iGeo_DA" id="DA" />
+            </Children>
+          </Node>
+          <Node label="Beaver Dam Setting">
+            <Children>
+              <Node label="Dam Setting" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="dam_setting" />
             </Children>
           </Node>
           <Node label="Overall Vegetation Dam Capacity">
