@@ -148,7 +148,7 @@
     <categories>
       <category uuid="0" label="Conservation/Appropriate for Translocation" render="true" type="string" value="Conservation/Appropriate for Translocation" symbol="0"/>
       <category uuid="1" label="Encourage Beaver Expansion/Colonization" render="true" type="string" value="Encourage Beaver Expansion/Colonization" symbol="1"/>
-      <category uuid="2" label="Appropriate for BDAs" render="true" type="string" value="Appropriate for BDAs" symbol="2"/>
+      <category uuid="2" label="Appropriate for Beaver Mimicry" render="true" type="string" value="Appropriate for Beaver Mimicry" symbol="2"/>
       <category uuid="{0b5f9b91-0da7-4cbc-a82d-32bc502ea722}" label="Address Resource Limitations" render="true" type="string" value="Address Resource Limitations" symbol="3"/>
       <category uuid="{259b0823-ced4-445e-82ed-fccb2994ce02}" label="Potential Floodplain/Side Channel Opportunities" render="true" type="string" value="Potential Floodplain/Side Channel Opportunities" symbol="4"/>
       <category uuid="3" label="Natural or Anthropogenic Limitations" render="true" type="string" value="Natural or Anthropogenic Limitations" symbol="5"/>
@@ -270,7 +270,7 @@
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="line_color" type="QString" value="230,204,0,255"/>
             <Option name="line_style" type="QString" value="solid"/>
-            <Option name="line_width" type="QString" value="0.66"/>
+            <Option name="line_width" type="QString" value="0.26"/>
             <Option name="line_width_unit" type="QString" value="MM"/>
             <Option name="offset" type="QString" value="0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
