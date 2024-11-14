@@ -148,7 +148,7 @@
     <categories>
       <category uuid="{a2a3e943-0d0c-4a79-957c-23913ec8eea3}" label="Conservation/Appropriate for Translocation" render="true" type="string" value="Conservation/Appropriate for Translocation" symbol="0"/>
       <category uuid="{de87bd4f-484f-48fb-ae24-ef2b8618f0f6}" label="Encourage Beaver Expansion/Colonization" render="true" type="string" value="Encourage Beaver Expansion/Colonization" symbol="1"/>
-      <category uuid="{79fd4212-7793-4ca9-90aa-832d8680f873}" label="Appropriate for BDAs" render="true" type="string" value="Appropriate for BDAs" symbol="2"/>
+      <category uuid="{79fd4212-7793-4ca9-90aa-832d8680f873}" label="Appropriate for Beaver Mimicry" render="true" type="string" value="Appropriate for Beaver Mimicry" symbol="2"/>
       <category uuid="{8a6f3664-413d-4c72-a1d1-c3a0bac45ab0}" label="Address Resource Limitations" render="true" type="string" value="Address Resource Limitations" symbol="3"/>
       <category uuid="{76f91250-7bc0-404f-8e2c-4b8686992fbb}" label="Potential Floodplain/Side Channel Opportunities" render="true" type="string" value="Potential Floodplain/Side Channel Opportunities" symbol="4"/>
       <category uuid="{b90504ca-1e1f-4a5e-901e-6d991b6c06ac}" label="Natural or Anthropogenic Limitations" render="true" type="string" value="Natural or Anthropogenic Limitations" symbol="5"/>
@@ -430,9 +430,6 @@
         </layer>
       </symbol>
     </source-symbol>
-    <colorramp name="[source]" type="randomcolors">
-      <Option/>
-    </colorramp>
     <rotation/>
     <sizescale/>
   </renderer-v2>
@@ -493,6 +490,7 @@
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
     <DiagramCategory minScaleDenominator="0" backgroundAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" sizeType="MM" direction="0" spacingUnit="MM" showAxis="1" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" rotationOffset="270" penWidth="0" width="15" backgroundColor="#ffffff" enabled="0" penColor="#000000" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" scaleBasedVisibility="0" lineSizeType="MM" maxScaleDenominator="1e+08" penAlpha="255" barWidth="5" height="15" diagramOrientation="Up" spacing="5">
       <fontProperties italic="0" bold="0" style="" underline="0" strikethrough="0" description="MS Shell Dlg 2,8.1,-1,5,50,0,0,0,0,0"/>
+      <attribute colorOpacity="1" label="" color="#000000" field=""/>
       <axisSymbol>
         <symbol alpha="1" name="" clip_to_extent="1" type="line" is_animated="0" frame_rate="10" force_rhr="0">
           <data_defined_properties>
