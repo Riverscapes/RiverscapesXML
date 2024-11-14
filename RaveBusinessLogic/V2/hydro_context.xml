@@ -25,6 +25,12 @@
           </Node>
         </Children>
       </Node>
+      <Node label="Intermediates">
+        <Children collapsed="true">
+          <Node label="Slope" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="slope" id="slope" />
+          <Node label="Drainage Area" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="drain_area" id="DA" />
+        </Children>
+      </Node>
       <Node label="Inputs" xpath="Inputs">
         <Children collapsed="true">
           <Node label="Segmented Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flowlines" />
