@@ -31,10 +31,15 @@
               "hsl(240, 86%, 48%)",
               ["Natural or Anthropogenic Limitations"],
               "hsl(0, 0%, 73%)",
-              "#000000"
+              "hsl(0, 0%, 0%)"
           ],
-          "line-width": ["match", ["get", "ReachCode"], [46003], 0.5, 1, [46007], 0.5, 1]
+          "line-width": [
+            "match", 
+            ["get", "ReachCode"], 
+            [46003, 46007], 
+            0.75, 
+            1.25]
       }
-  }
+    }
   ]
 }

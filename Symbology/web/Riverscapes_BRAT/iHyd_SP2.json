@@ -1,0 +1,41 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+    "legend": [
+      ["hsl(100, 100%, 33%)", "0 - 1100 Dam Persists"],
+      ["hsl(73, 100%, 44%)", "1100 - 1400 Potential Dam Breach"],
+      ["hsl(40, 100%, 50%)", "1400 - 2200 Potential Dam Blowout"],
+      ["hsl(0, 100%, 50%)",">2200 Dam Blowout"]
+    ],
+    "layerStyles": [
+      {
+        "id": "High Flow Stream Power - watts",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "BRAT_results-4wzuaw",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "SP2"],
+                0,
+                "hsl(100, 100%, 33%)",
+                1100,
+                "hsl(100, 100%, 33%)",
+                1100.0001,
+                "hsl(73, 100%, 44%)",
+                1400,
+                "hsl(73, 100%, 44%)",
+                1400.0001,
+                "hsl(40, 100%, 50%)",
+                2200,
+                "hsl(40, 100%, 50%)",
+                2200.0001,
+                "hsl(0, 100%, 50%)",
+                101367,
+                "hsl(0, 100%, 50%)"
+            ]
+        }
+    }
+    ]
+  }
