@@ -33,7 +33,7 @@
                 "hsl(0, 0%, 73%)",
                 "hsl(0, 0%, 0%)"
             ],
-            "circle_radius": [
+            "circle-radius": [
               "match", 
               ["get", "ReachCode"], 
               [46003, 46007], 
