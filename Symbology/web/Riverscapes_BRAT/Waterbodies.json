@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(195, 80%, 71%)", "Ponds, Lakes, Reservoirs and Waterbodies"]
+  ],
+  "layerStyles": [
+    {
+      "id": "Waterbody outline",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "FlowArea-7fcprs",
+      "layout": {},
+      "paint": {"line-color": "hsl(200, 100%, 23%)"}
+  },
+  {
+      "id": "Waterbody  fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "FlowArea-7fcprs",
+      "paint": {"fill-color": "hsl(195, 80%, 71%)"}
+  }
+  ]
+}
