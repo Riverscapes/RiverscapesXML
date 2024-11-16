@@ -23,6 +23,16 @@
                         type="polygon" symbology="watersheds" id="wateresheds" />
                 </Children>
             </Node>
+            <Node label="Topography">
+                <Children collapsed="false">
+                    <Node label="DEM North Island"
+                        xpath="Outputs/Raster[@id='DEMNORTH']"
+                        type="raster" symbology="dem" id="demnorth" />
+                    <Node label="DEM South Island"
+                        xpath="Outputs/Raster[@id='DEMSOUTH']"
+                        type="raster" symbology="dem" id="demsouth" />
+                </Children>
+            </Node>
             <Node label="Administration">
                 <Children collapsed="false">
                     <Node label="New Zealand Regional Councils 2023"
