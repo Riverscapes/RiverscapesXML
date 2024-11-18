@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(192, 0, 0)", "High"],
+    ["rgb(0, 176, 80)", "Low"],
+    ["rgb(255, 255, 0)", "Medium"],
+    ["rgb(29, 200, 154)", "0"]
+  ],
+  "layerStyles": [
+    {
+        "id": "riskpoints-aozuwq",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "RiskPoints-aozuwq",
+        "layout": {},
+        "paint": {
+            "circle-color": [
+                "match",
+                ["get", "Risk"],
+                ["High"],
+                "rgb(192, 0, 0)",
+                ["Medium"],
+                "rgb(255, 255, 0)",
+                ["Low"],
+                "rgb(0, 176, 80)",
+                "rgb(29, 200, 154)"
+            ],
+            "circle-stroke-width": 1
+        }
+    }
+    ]
+}

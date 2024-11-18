@@ -1,0 +1,29 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(77, 175, 74)", "Active"],
+    ["rgb(228, 224, 28)", "Inactive"],
+    ["rgb(141, 90, 153)", "0"]
+  ],
+  "layerStyles": [
+    {
+      "id": "activeextents-8x07fj",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "ActiveExtents-8x07fj",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "Type"],
+              ["Active"],
+              "rgb(77, 175, 74)",
+              ["Inactive"],
+              "rgb(228, 224, 28)",
+              "rgb(141, 90, 153)"
+          ],
+          "fill-opacity": 0.6
+      }
+  }
+  ]
+}
