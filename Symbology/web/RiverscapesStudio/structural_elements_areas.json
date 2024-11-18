@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(135, 112, 49)", "Jam"],
+    ["rgb(152, 125, 183)", "Other"]
+  ],
+  "layerStyles": [
+    {
+      "id": "structurepolygon-arjc0v",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "StructurePolygon-arjc0v",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "Type"],
+              ["Jam"],
+              "rgba(135, 112, 49, 0.63)",
+              "rgb(152, 125, 183)"
+          ]
+      }
+  },
+  {
+      "id": "structurepolygon-arjc0v (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "StructurePolygon-arjc0v",
+      "layout": {},
+      "paint": {}
+  }
+  ]
+}

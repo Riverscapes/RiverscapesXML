@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(225, 89, 137)", "Recovery Potential"]
+  ],
+  "layerStyles": [
+    {
+      "id": "recoverypotential-c4t7d5",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "RecoveryPotential-c4t7d5",
+      "layout": {},
+      "paint": {"line-color": "rgb(225, 89, 137)", "line-width": 2.5}
+  }
+    ]
+}

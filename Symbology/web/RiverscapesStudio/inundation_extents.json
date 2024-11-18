@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 0, 197)", "Free Flowing"],
+    ["rgb(0, 230, 169)", "Overflow"],
+    ["rgb(0, 112, 255)", "Ponded"],
+    ["rgb(183, 72, 75)", "0"]
+  ],
+  "layerStyles": [
+    {
+      "id": "inundation-extents-cmxvgy",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "inundation_extents-cmxvgy",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "Extent Type"],
+              ["Free Flowing"],
+              "rgb(255, 0, 197)",
+              ["Overflow"],
+              "rgb(0, 230, 169)",
+              ["Ponded"],
+              "rgb(0, 112, 255)",
+              "rgb(183, 72, 75)"
+          ],
+          "fill-opacity": 0.6
+      }
+  }
+  ]
+}
