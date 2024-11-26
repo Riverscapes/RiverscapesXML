@@ -16,6 +16,19 @@
             "source": "composite",
             "source-layer": "blm_nlcs_natl_monuments_cons_areas_a",
             "layout": {},
+            "filter": [
+                "match",
+                ["get", "sma_code"],
+                ["BLM_CMPA",
+                "BLM_FR",
+                "BLM_MON",
+                "BLM_NCA",
+                "BLM_NM",
+                "BLM_NSA",
+                "BLM_ONA"],
+                true,
+                false
+            ],
             "paint": {
                 "fill-color": [
                     "match",
