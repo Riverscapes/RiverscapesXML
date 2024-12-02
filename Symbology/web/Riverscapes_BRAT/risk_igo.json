@@ -4,7 +4,7 @@
       ["hsl(0, 100%, 45%)", "Considerable Risk"],
       ["hsl(40, 100%, 50%)", "Some Risk"],
       ["hsl(194, 100%, 50%)","Minor Risk"],
-      ["hsl(0, 0%, 88%)","Negligible Risk"]
+      ["rgb(165, 165, 165)","Negligible Risk"]
     ],
     "layerStyles": [
       {
@@ -23,21 +23,21 @@
               "zoom"
             ],
             10,
-            1,
-            11,
             2,
-            13.55,
+            11,
             3,
-            15,
+            13.55,
             4,
+            15,
+            5,
             22,
-            5
+            6
             ],
               "circle-color": [
                   "match",
                   ["get", "Risk"],
                   ["Negligible Risk"],
-                  "hsl(0, 0%, 88%)",
+                  "rgb(165, 165, 165)",
                   ["Minor Risk"],
                   "hsl(194, 100%, 50%)",
                   ["Some Risk"],

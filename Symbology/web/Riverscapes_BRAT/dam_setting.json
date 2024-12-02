@@ -1,0 +1,42 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(55, 151, 203)", "Classic"],
+    ["rgb(215, 25, 28)", "Steep"],
+    ["rgb(67, 175, 105)", "Floodplain"],
+    ["rgb(185, 185, 185)", "No Capacity"]
+  ],
+  "layerStyles": [
+    {
+        "id": "dam-setting-subset-dwlk88",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "dam_setting_subset-dwlk88",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "match",
+                ["get", "Dam_Setting"],
+                ["Classic"],
+                "rgb(55, 151, 203)",
+                ["Steep"],
+                "rgb(215, 25, 28)",
+                ["Floodplain"],
+                "rgb(67, 175, 105)",
+                "rgb(185, 185, 185)"
+            ],
+            "line-width": [
+                "match",
+                ["get", "Dam_Setting"],
+                ["Classic"],
+                2,
+                ["Steep"],
+                2,
+                ["Floodplain"],
+                2,
+                1
+            ]
+        }
+    }
+]
+}

@@ -4,7 +4,7 @@
     ["hsl(0, 100%, 45%)", "Considerable Risk"],
     ["hsl(40, 100%, 50%)", "Some Risk"],
     ["hsl(194, 100%, 50%)","Minor Risk"],
-    ["hsl(0, 0%, 88%)","Negligible Risk"]
+    ["rgb(165, 165, 165)","Negligible Risk"]
   ],
   "layerStyles": [
     {
@@ -18,7 +18,7 @@
                 "match",
                 ["get", "Risk"],
                 ["Negligible Risk"],
-                "hsl(0, 0%, 88%)",
+                "rgb(165, 165, 165)",
                 ["Minor Risk"],
                 "hsl(194, 100%, 50%)",
                 ["Some Risk"],
