@@ -9,9 +9,10 @@
         <Children collapsed="false">
           <Node label="Hydrography">
             <Children collapsed="true">
-              <Node label="Hydro Junctions" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='junctions']" type="line" symbology="junctions" id="junctions" />
+              <Node label="Hydro Junctions" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='junctions']" type="point" symbology="junctions" id="junctions" />
               <Node label="Perennial Drainage Network" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverlines']" type="line" symbology="nhdperrenial" id="riverlines" />
-              <Node label="Catchments" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']" type="line" symbology="nhdperrenial" id="catchments" />
+              <Node label="Lakes" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='lakes']" type="polygon" symbology="lakes" id="lakes" />
+              <Node label="Catchments" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']" type="polygon" symbology="nhdperrenial" id="catchments" />
             </Children>
           </Node>
           <Node label="Watershed Boundaries">
