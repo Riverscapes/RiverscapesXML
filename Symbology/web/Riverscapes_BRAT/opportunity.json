@@ -3,8 +3,9 @@
   "legend": [
     ["hsl(120, 100%, 33%)", "Conservation/Appropriate for Translocation"],
     ["hsl(194, 100%, 50%)", "Encourage Beaver Expansion/Colonization"],
-    ["hsl(53, 100%, 45%)","Appropriate for Beaver Mimicry"],
-    ["hsl(24, 36%, 39%)", "Address Resource Limitations"],
+    ["hsl(53, 100%, 45%)","Beaver Mimicry"],
+    ["hsl(24, 36%, 39%)", "Land Management Change"],
+    ["hsl(1, 55%, 50%)", "Conflict Management"],
     ["hsl(240, 86%, 48%)", "Potential Floodpain/Side Channel Opportunities"],
     ["hsl(0, 0%, 73%)", "Natural or Anthropogenic Limitations"]
   ],
