@@ -36,6 +36,16 @@
                         type="line" symbology="nz_railways" id="railways" />
                 </Children>
             </Node>
+              <Node label="Land Use">
+                <Children collapsed="false">
+                    <Node label="Roads"
+                        xpath="Outputs/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='nzroadcentrelinestopo150k']"
+                        type="line" symbology="nz_roads" id="roads" />
+                    <Node label="Railways"
+                        xpath="Outputs/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='nz-railway-centrelines-topo-150k']"
+                        type="line" symbology="nz_railways" id="railways" />
+                </Children>
+            </Node>
             <Node label="Topography">
                 <Children collapsed="false">
                     <Node label="DEM North Island"
