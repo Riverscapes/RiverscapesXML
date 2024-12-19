@@ -38,12 +38,15 @@
             </Node>
               <Node label="Land Use">
                 <Children collapsed="false">
-                    <Node label="Roads"
-                        xpath="Outputs/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='nzroadcentrelinestopo150k']"
-                        type="line" symbology="nz_roads" id="roads" />
-                    <Node label="Railways"
-                        xpath="Outputs/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='nz-railway-centrelines-topo-150k']"
-                        type="line" symbology="nz_railways" id="railways" />
+                    <Node label="Suburbs"
+                        xpath="Outputs/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='suburblocality']"
+                        type="polygon" symbology="nz_suburbs" id="suburbs" />
+                    <Node label="Land Capability"
+                        xpath="Outputs/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='nzlri-land-use-capability-2021']"
+                        type="polygon" id="landcapability" />
+                    <Node label="Land Cover"
+                        xpath="Outputs/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='lcdb_v50_land_cover_database_version_50_mainland_new_zealand']"
+                        type="polygon" id="landcover" />
                 </Children>
             </Node>
             <Node label="Topography">
