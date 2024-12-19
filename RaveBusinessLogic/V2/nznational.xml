@@ -26,6 +26,16 @@
                         type="polygon" symbology="watersheds" id="wateresheds" />
                 </Children>
             </Node>
+            <Node label="Transportation">
+                <Children collapsed="false">
+                    <Node label="Roads"
+                        xpath="Outputs/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='nzroadcentrelinestopo150k']"
+                        type="line" symbology="nz_roads" id="roads" />
+                    <Node label="Railways"
+                        xpath="Outputs/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='nz-railway-centrelines-topo-150k']"
+                        type="line" symbology="nz_railways" id="railways" />
+                </Children>
+            </Node>
             <Node label="Topography">
                 <Children collapsed="false">
                     <Node label="DEM North Island"
@@ -40,7 +50,7 @@
                 <Children collapsed="false">
                     <Node label="New Zealand Regional Councils 2023"
                         xpath="Outputs/Geopackage[@id='ADMINISTRATION']/Layers/Vector[@lyrName='regional_council_2023_generalised']"
-                        type="line" symbology="regional_councils" id="regional_councils" />
+                        type="polygon" symbology="regional_councils" id="regional_councils" />
                 </Children>
             </Node>
         </Children>
