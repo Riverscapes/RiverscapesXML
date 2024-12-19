@@ -31,6 +31,30 @@
                     "#000000"
                 ]
             }
+        },
+        {
+            "id": "filteredflowareas-1xfmi5",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "filteredflowareas-1xfmi5",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "fcode"],
+                    [46006],
+                    "hsl(178, 64%, 35%)",
+                    [48400],
+                    "hsl(34, 97%, 71%)",
+                    [34306],
+                    "hsl(0, 0%, 0%)",
+                    [53700],
+                    "hsl(178, 223%, 138%)",
+                    [43100],
+                    "hsl(197, 24%, 240%)",
+                    "#000000"
+                ]
+            }
         }
     ]
 }

@@ -52,7 +52,7 @@
                 <Children collapsed="true">
                     <Node label="Sampling Units">
                         <Children collapsed="true">
-                            <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='reaches']" type="line" symbology="stream_reaches" />
+                            <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='reaches']" type="line" symbology="flow_lines" />
                             <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" id="igo" />
                             <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="DGO" id="dgo" />
                         </Children>
