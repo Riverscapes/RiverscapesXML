@@ -37,6 +37,37 @@
             ],
             "fill-opacity": ["match", ["get", "FCode"], [39001], 0.73, 1]
         }
+    },
+    {
+        "id": "waterbodiesfiltered-73drf0",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "WaterbodiesFiltered-73drf0",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "match",
+                ["get", "fcode"],
+                [39004, 39009, 39011],
+                "hsl(196, 76%, 61%)",
+                [39001],
+                "hsl(196, 71%, 74%)",
+                [43601, 43604, 43610, 43612, 43613],
+                "hsl(64, 66%, 56%)",
+                [46600],
+                "hsl(131, 59%, 52%)",
+                [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "fcode"],
+                    39001,
+                    "#000000",
+                    46600,
+                    "#000000"
+                ]
+            ],
+            "fill-opacity": ["match", ["get", "fcode"], [39001], 0.73, 1]
+        }
     }
     ]
   }

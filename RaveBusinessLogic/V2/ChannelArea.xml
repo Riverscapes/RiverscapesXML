@@ -26,7 +26,7 @@
       </Node>
       <Node label="Inputs" xpath="Inputs">
         <Children collapsed="true">
-          <Node label="NHD Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" id="flowlines" symbology="FLOWLINES" />
+          <Node label="NHD Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" id="flowlines" symbology="flow_lines" />
           <Node label="NHD Flow Areas" xpath="Geopackage/Layers/Vector[@lyrName='flowareas']" type="polygon" id="flowareas" symbology="FLOWAREAS" />
           <Node label="NHD Waterbody Areas" xpath="Geopackage/Layers/Vector[@lyrName='waterbody']" type="polygon" id="waterbodies" symbology="WATER_BODIES" />
           <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 

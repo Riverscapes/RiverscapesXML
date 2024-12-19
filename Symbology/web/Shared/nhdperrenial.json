@@ -24,11 +24,11 @@
               "hsl(220, 100%, 23%)",
               "hsla(0, 0%, 0%, 0)"
           ],
-          "line-width": ["match", ["get", "fcode"], [33400], 0.5, 1, 0]
+          "line-width": ["match", ["get", "fcode"], [33400], 0.5, 1]
       }
   },
   {
-    "id": "perennial network",
+    "id": "perennial drainage network",
     "type": "line",
     "source": "composite",
     "source-layer": "NHD_flowline-6tver9",
@@ -45,7 +45,7 @@
             "hsl(220, 100%, 23%)",
             "hsla(0, 0%, 0%, 0)"
         ],
-        "line-width": ["match", ["get", "FCode"], [33400], 0.5, 1, 0]
+        "line-width": ["match", ["get", "FCode"], [33400], 0.5, 1]
     }
 }
   ]

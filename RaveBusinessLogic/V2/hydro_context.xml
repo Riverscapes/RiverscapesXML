@@ -33,7 +33,7 @@
       </Node>
       <Node label="Inputs" xpath="Inputs">
         <Children collapsed="true">
-          <Node label="Segmented Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flowlines" />
+          <Node label="Segmented Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flow_lines" />
           <Node label="Integrated Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" />
           <Node label="Discrete Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="point" symbology="DGO" />
           <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" id="dem" symbology="dem" transparency="40" />
