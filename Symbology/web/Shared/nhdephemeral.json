@@ -9,7 +9,7 @@
         "type": "line",
         "source": "composite",
         "source-layer": "intermittent-126k30",
-        "filter": ["match", ["get", "FCode"], [46007], true, false],
+        "filter": ["match", ["get", "FCode"], [46007], ["get", "fcode"], [46007], true, false],
         "layout": {},
         "paint": {
             "line-dasharray": [3, 1, 1, 1, 1, 1],
