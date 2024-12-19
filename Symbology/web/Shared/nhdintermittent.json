@@ -9,12 +9,24 @@
       "type": "line",
       "source": "composite",
       "source-layer": "intermittent-126k30",
-      "filter": ["match", ["get", "FCode"], [46003], ["get", "fcode"], [46003], true, false],
+      "filter": ["match", ["get", "fcode"], [46003], true, false],
       "layout": {},
       "paint": {
           "line-color": "hsl(194, 100%, 73%)",
           "line-dasharray": [4, 1, 1, 1, 1, 1]
       }
-  }
+  },
+  {
+    "id": "46003 - Intermittent",
+    "type": "line",
+    "source": "composite",
+    "source-layer": "intermittent-126k30",
+    "filter": ["match", ["get", "FCode"], [46003], true, false],
+    "layout": {},
+    "paint": {
+        "line-color": "hsl(194, 100%, 73%)",
+        "line-dasharray": [4, 1, 1, 1, 1, 1]
+    }
+}
   ]
 }
