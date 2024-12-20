@@ -26,11 +26,22 @@
                     </Children>
                 </Node>
             </Repeater>
+
             <Node label="Other Datasets" xpath="Realizations/Realization">
                 <Children>
                     <Node label="USACE National Dams"
                         xpath="Outputs/Geopackage[@id='DAMS']/Layers/Vector[@lyrName='dams']"
                         type="point" symbology="usace_dams" id="watersheds" />
+                </Children>
+            </Node>
+            <Node label="NHD Plus V2 1:100k" xpath="Realizations/Realization">
+                <Children>
+                    <Node label="NHD Flowlines"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='NHDFlowline_Network']"
+                        type="line" id="nhdflowline" />
+                    <Node label="NHD Waterbody"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='NHDWaterbody']"
+                        type="line" id="nhdwaterbody" />
                 </Children>
             </Node>
         </Children>
