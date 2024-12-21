@@ -77,12 +77,12 @@
       </Layer>
     </GroupLayer>
     <GroupLayer name="Imagery">
-      <Layer name="NAIP" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
+      <Layer name="NAIP" type="wms" url="https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">NAIP Imagery</Meta>
         </Metadata>
       </Layer>
-      <Layer name="NAIP Plus" type="wms" url="https://services.nationalmap.gov/arcgis/services/USGSNAIPPlus/MapServer/WmsServer?">
+      <Layer name="NAIP Plus" type="wms" url="https://imagery.nationalmap.gov/arcgis/services/USGSNAIPPlus/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">NAIP Plus Imagery</Meta>
         </Metadata>
