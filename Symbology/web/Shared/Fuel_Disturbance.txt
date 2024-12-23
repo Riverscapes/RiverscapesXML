@@ -1,0 +1,45 @@
+﻿INTERPOLATION:DISCRETE
+-9999,255,255,255,Fill-NoData
+0,0,0,0,No Disturbance
+112,214,96,77,Fire
+113,214,96,77,Fire
+122,214,96,77,Fire
+123,214,96,77,Fire
+132,214,96,77,Fire
+133,214,96,77,Fire
+212,244,165,130,Mechanical Add
+213,244,165,130,Mechanical Add
+222,244,165,130,Mechanical Add
+223,244,165,130,Mechanical Add
+232,244,165,130,Mechanical Add
+233,244,165,130,Mechanical Add
+312,253,219,199,Mechanical Remove
+313,253,219,199,Mechanical Remove
+322,253,219,199,Mechanical Remove
+323,253,219,199,Mechanical Remove
+332,253,219,199,Mechanical Remove
+333,253,219,199,Mechanical Remove
+412,209,229,240,Windthrow
+413,209,229,240,Windthrow
+422,209,229,240,Windthrow
+423,209,229,240,Windthrow
+432,209,229,240,Windthrow
+433,209,229,240,Windthrow
+512,146,197,222,Insects-Disease
+513,146,197,222,Insects-Disease
+522,146,197,222,Insects-Disease
+523,146,197,222,Insects-Disease
+532,146,197,222,Insects-Disease
+533,146,197,222,Insects-Disease
+612,67,147,197,Mechanical Unknown
+613,67,147,197,Mechanical Unknown
+622,67,147,197,Mechanical Unknown
+623,67,147,197,Mechanical Unknown
+632,67,147,197,Mechanical Unknown
+633,67,147,197,Mechanical Unknown
+712,33,102,172,Mastication
+713,33,102,172,Mastication
+722,33,102,172,Mastication
+723,33,102,172,Mastication
+732,33,102,172,Mastication
+733,33,102,172,Mastication
