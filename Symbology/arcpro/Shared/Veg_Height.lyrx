@@ -1,0 +1,2010 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.3.0",
+  "build" : 52636,
+  "layers" : [
+    "CIMPATH=map/veg_height_tif.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "Veg Height - EVH",
+      "uRI" : "CIMPATH=map/veg_height_tif.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "veg_height.tif",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/c7190a4846cc4f39bc72dd57459de95a.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=..\\..\\..\\1602020402_bigcottonwood\\Riverscapes_Context_BigCottonwood\\vegetation",
+        "workspaceFactory" : "Raster",
+        "dataset" : "veg_height.tif",
+        "datasetType" : "esriDTAny"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterUniqueValueColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "fieldName" : "Value",
+        "groups" : [
+          {
+            "type" : "CIMRasterUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "-9999"
+                ],
+                "label" : "-9999: Fill-NoData",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    255,
+                    255,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "11"
+                ],
+                "label" : "11: Open Water",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    0,
+                    255,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "12"
+                ],
+                "label" : "12: Snow/Ice",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    159,
+                    161,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "13"
+                ],
+                "label" : "13: Developed-Upland Deciduous Forest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    64,
+                    61,
+                    168,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "14"
+                ],
+                "label" : "14: Developed-Upland Evergreen Forest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    68,
+                    79,
+                    137,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "15"
+                ],
+                "label" : "15: Developed-Upland Mixed Forest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    102,
+                    119,
+                    205,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "16"
+                ],
+                "label" : "16: Developed-Upland Herbaceous",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    122,
+                    142,
+                    245,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "17"
+                ],
+                "label" : "17: Developed-Upland Shrubland",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    158,
+                    170,
+                    215,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "22"
+                ],
+                "label" : "22: Developed - Low Intensity",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    122,
+                    143,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "23"
+                ],
+                "label" : "23: Developed - Medium Intensity",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    44,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "24"
+                ],
+                "label" : "24: Developed - High Intensity",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    173,
+                    0,
+                    28,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "25"
+                ],
+                "label" : "25: Developed-Roads",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    1,
+                    1,
+                    1,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "31"
+                ],
+                "label" : "31: Barren",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    191,
+                    191,
+                    191,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "32"
+                ],
+                "label" : "32: Quarries-Strip Mines-Gravel Pits-Well and Wind Pads",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    230,
+                    232,
+                    250,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "61"
+                ],
+                "label" : "61: NASS-Vineyard",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    168,
+                    0,
+                    132,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "63"
+                ],
+                "label" : "63: NASS-Row Crop-Close Grown Crop",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    245,
+                    140,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "64"
+                ],
+                "label" : "64: NASS-Row Crop",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    250,
+                    255,
+                    119,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "65"
+                ],
+                "label" : "65: NASS-Close Grown Crop",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    237,
+                    119,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "68"
+                ],
+                "label" : "68: NASS-Wheat",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    250,
+                    227,
+                    163,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "69"
+                ],
+                "label" : "69: NASS-Aquaculture",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    210,
+                    255,
+                    237,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "82"
+                ],
+                "label" : "82: Cultivated Crops",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    255,
+                    120,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "100"
+                ],
+                "label" : "100: Sparse Vegetation Canopy",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    122,
+                    127,
+                    117,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "101"
+                ],
+                "label" : "101: Tree Height = 1 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    204,
+                    255,
+                    153,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "102"
+                ],
+                "label" : "102: Tree Height = 2 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    199,
+                    250,
+                    147,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "103"
+                ],
+                "label" : "103: Tree Height = 3 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    192,
+                    245,
+                    142,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "104"
+                ],
+                "label" : "104: Tree Height = 4 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    188,
+                    242,
+                    138,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "105"
+                ],
+                "label" : "105: Tree Height = 5 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    181,
+                    237,
+                    133,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "106"
+                ],
+                "label" : "106: Tree Height = 6 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    178,
+                    235,
+                    129,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "107"
+                ],
+                "label" : "107: Tree Height = 7 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    171,
+                    230,
+                    124,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "108"
+                ],
+                "label" : "108: Tree Height = 8 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    168,
+                    227,
+                    120,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "109"
+                ],
+                "label" : "109: Tree Height = 9 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    160,
+                    222,
+                    113,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "110"
+                ],
+                "label" : "110: Tree Height = 10 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    155,
+                    219,
+                    110,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "111"
+                ],
+                "label" : "111: Tree Height = 11 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    150,
+                    214,
+                    105,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "112"
+                ],
+                "label" : "112: Tree Height = 12 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    212,
+                    102,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "113"
+                ],
+                "label" : "113: Tree Height = 13 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    141,
+                    207,
+                    97,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "114"
+                ],
+                "label" : "114: Tree Height = 14 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    136,
+                    204,
+                    94,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "115"
+                ],
+                "label" : "115: Tree Height = 15 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    131,
+                    199,
+                    90,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "116"
+                ],
+                "label" : "116: Tree Height = 16 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    127,
+                    196,
+                    86,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "117"
+                ],
+                "label" : "117: Tree Height = 17 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    119,
+                    191,
+                    80,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "118"
+                ],
+                "label" : "118: Tree Height = 18 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    116,
+                    189,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "119"
+                ],
+                "label" : "119: Tree Height = 19 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    110,
+                    184,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "120"
+                ],
+                "label" : "120: Tree Height = 20 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    107,
+                    181,
+                    71,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "121"
+                ],
+                "label" : "121: Tree Height = 21 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    101,
+                    176,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "122"
+                ],
+                "label" : "122: Tree Height = 22 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    99,
+                    173,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "123"
+                ],
+                "label" : "123: Tree Height = 23 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    93,
+                    168,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "124"
+                ],
+                "label" : "124: Tree Height = 24 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    87,
+                    166,
+                    56,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "125"
+                ],
+                "label" : "125: Tree Height = 25 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    84,
+                    161,
+                    53,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "126"
+                ],
+                "label" : "126: Tree Height = 26 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    79,
+                    158,
+                    51,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "127"
+                ],
+                "label" : "127: Tree Height = 27 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    76,
+                    153,
+                    47,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "128"
+                ],
+                "label" : "128: Tree Height = 28 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    71,
+                    150,
+                    45,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "129"
+                ],
+                "label" : "129: Tree Height = 29 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    68,
+                    145,
+                    42,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "130"
+                ],
+                "label" : "130: Tree Height = 30 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    64,
+                    143,
+                    40,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "131"
+                ],
+                "label" : "131: Tree Height = 31 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    61,
+                    138,
+                    37,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "132"
+                ],
+                "label" : "132: Tree Height = 32 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    56,
+                    135,
+                    34,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "133"
+                ],
+                "label" : "133: Tree Height = 33 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    51,
+                    130,
+                    31,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "134"
+                ],
+                "label" : "134: Tree Height = 34 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    49,
+                    128,
+                    29,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "135"
+                ],
+                "label" : "135: Tree Height = 35 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    44,
+                    122,
+                    27,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "136"
+                ],
+                "label" : "136: Tree Height = 36 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    43,
+                    120,
+                    25,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "137"
+                ],
+                "label" : "137: Tree Height = 37 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    38,
+                    115,
+                    23,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "138"
+                ],
+                "label" : "138: Tree Height = 38 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    36,
+                    112,
+                    21,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "139"
+                ],
+                "label" : "139: Tree Height = 39 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    32,
+                    107,
+                    18,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "140"
+                ],
+                "label" : "140: Tree Height = 40 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    28,
+                    105,
+                    17,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "141"
+                ],
+                "label" : "141: Tree Height = 41 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    26,
+                    99,
+                    15,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "142"
+                ],
+                "label" : "142: Tree Height = 42 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    23,
+                    97,
+                    14,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "201"
+                ],
+                "label" : "201: Shrub Height = 0.1 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    212,
+                    178,
+                    125,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "202"
+                ],
+                "label" : "202: Shrub Height = 0.2 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    212,
+                    174,
+                    121,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "203"
+                ],
+                "label" : "203: Shrub Height = 0.3 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    166,
+                    117,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "204"
+                ],
+                "label" : "204: Shrub Height = 0.4 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    161,
+                    113,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "205"
+                ],
+                "label" : "205: Shrub Height = 0.5 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    207,
+                    155,
+                    109,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "206"
+                ],
+                "label" : "206: Shrub Height = 0.6 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    207,
+                    149,
+                    105,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "207"
+                ],
+                "label" : "207: Shrub Height = 0.7 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    204,
+                    145,
+                    102,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "208"
+                ],
+                "label" : "208: Shrub Height = 0.8 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    201,
+                    137,
+                    97,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "209"
+                ],
+                "label" : "209: Shrub Height = 0.9 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    201,
+                    134,
+                    95,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "210"
+                ],
+                "label" : "210: Shrub Height = 1 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    199,
+                    126,
+                    90,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "211"
+                ],
+                "label" : "211: Shrub Height = 1.1 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    196,
+                    121,
+                    86,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "212"
+                ],
+                "label" : "212: Shrub Height = 1.2 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    196,
+                    115,
+                    82,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "213"
+                ],
+                "label" : "213: Shrub Height = 1.3 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    194,
+                    110,
+                    79,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "214"
+                ],
+                "label" : "214: Shrub Height = 1.4 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    191,
+                    105,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "215"
+                ],
+                "label" : "215: Shrub Height = 1.5 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    191,
+                    100,
+                    73,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "216"
+                ],
+                "label" : "216: Shrub Height = 1.6 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    189,
+                    94,
+                    70,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "217"
+                ],
+                "label" : "217: Shrub Height = 1.7 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    186,
+                    89,
+                    67,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "218"
+                ],
+                "label" : "218: Shrub Height = 1.8 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    184,
+                    83,
+                    62,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "219"
+                ],
+                "label" : "219: Shrub Height = 1.9 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    184,
+                    79,
+                    61,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "220"
+                ],
+                "label" : "220: Shrub Height = 2.0 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    181,
+                    72,
+                    58,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "221"
+                ],
+                "label" : "221: Shrub Height = 2.1 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    179,
+                    68,
+                    55,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "222"
+                ],
+                "label" : "222: Shrub Height = 2.2 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    176,
+                    61,
+                    51,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "223"
+                ],
+                "label" : "223: Shrub Height = 2.3 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    173,
+                    57,
+                    49,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "224"
+                ],
+                "label" : "224: Shrub Height = 2.4 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    173,
+                    51,
+                    47,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "225"
+                ],
+                "label" : "225: Shrub Height = 2.5 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    171,
+                    47,
+                    44,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "226"
+                ],
+                "label" : "226: Shrub Height = 2.6 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    168,
+                    39,
+                    41,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "227"
+                ],
+                "label" : "227: Shrub Height = 2.7 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    166,
+                    33,
+                    40,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "228"
+                ],
+                "label" : "228: Shrub Height = 2.8 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    163,
+                    26,
+                    38,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "229"
+                ],
+                "label" : "229: Shrub Height = 2.9 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    161,
+                    18,
+                    34,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "230"
+                ],
+                "label" : "230: Shrub Height >= 3.0 meters",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    158,
+                    0,
+                    32,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "301"
+                ],
+                "label" : "301: Herb Height = 0.1 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    204,
+                    102,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "302"
+                ],
+                "label" : "302: Herb Height = 0.2 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    186,
+                    89,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "303"
+                ],
+                "label" : "303: Herb Height = 0.3 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    169,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "304"
+                ],
+                "label" : "304: Herb Height = 0.4 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    150,
+                    64,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "305"
+                ],
+                "label" : "305: Herb Height = 0.5 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    133,
+                    51,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "306"
+                ],
+                "label" : "306: Herb Height = 0.6 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    112,
+                    41,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "307"
+                ],
+                "label" : "307: Herb Height = 0.7 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    92,
+                    28,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "308"
+                ],
+                "label" : "308: Herb Height = 0.8 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    73,
+                    18,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "309"
+                ],
+                "label" : "309: Herb Height = 0.9 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    51,
+                    0,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "310"
+                ],
+                "label" : "310: Herb Height >= 1 meter",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    51,
+                    0,
+                    100
+                  ]
+                }
+              }
+            ],
+            "heading" : "Value"
+          }
+        ],
+        "colorRamp" : {
+          "type" : "CIMMultipartColorRamp",
+          "colorRamps" : [
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  76.846907633328769,
+                  0,
+                  0,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  56.547017615341019,
+                  76.899433471346256,
+                  68.103444271380823,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  56.547017615341019,
+                  76.899433471346256,
+                  68.103444271380823,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  79.276993261605071,
+                  17.12111142164019,
+                  77.09125175223042,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  79.276993261605071,
+                  17.12111142164019,
+                  77.09125175223042,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  96.683616491167115,
+                  -20.419171018551619,
+                  87.367929001284963,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  96.683616491167115,
+                  -20.419171018551619,
+                  87.367929001284963,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  85.607074229000403,
+                  -91.486192975967157,
+                  73.962202685380788,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  85.607074229000403,
+                  -91.486192975967157,
+                  73.962202685380788,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  96.683616491167115,
+                  -20.419171018551619,
+                  87.367929001284963,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  89.644590646826003,
+                  -51.521697716782114,
+                  -16.300660645455501,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  68.955513833844876,
+                  -14.700660868053717,
+                  -47.117856942647563,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  68.955513833844876,
+                  -14.700660868053717,
+                  -47.117856942647563,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  34.668982832368499,
+                  71.125560221348664,
+                  -101.88789308244294,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  34.668982832368499,
+                  71.125560221348664,
+                  -101.88789308244294,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  63.995042207660305,
+                  92.113234125181236,
+                  -53.03187738755495,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "CIELAB"
+              },
+              "fromColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  63.995042207660305,
+                  92.113234125181236,
+                  -53.03187738755495,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMLABColor",
+                "values" : [
+                  56.547017615341019,
+                  76.899433471346256,
+                  68.103444271380823,
+                  100
+                ]
+              }
+            }
+          ],
+          "weights" : [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "attributeTable" : {
+        "type" : "CIMRasterTable",
+        "displayField" : "Value",
+        "editable" : true
+      }
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/c7190a4846cc4f39bc72dd57459de95a.json",
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}

@@ -1,0 +1,1785 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.3.0",
+  "build" : 52636,
+  "layers" : [
+    "CIMPATH=Map/7dd866e966bb477eae5a1d0ac6a4b0c1.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "LC22_FDst_220.tif",
+      "uRI" : "CIMPATH=Map/7dd866e966bb477eae5a1d0ac6a4b0c1.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant",
+        "start" : -62135596800000
+      },
+      "metadataURI" : "CIMPATH=Metadata/0c15c902cae2fdd54fd3eeec1e711026.xml",
+      "useSourceMetadata" : true,
+      "description" : "LC22_FDst_220.tif",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/c7190a4846cc4f39bc72dd57459de95a.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "layerScaleVisibilityOptions" : {
+        "type" : "CIMLayerScaleVisibilityOptions",
+        "showLayerAtAllScales" : true
+      },
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=..\\..\\..\\LANDFIRE\\CONUS_layers\\LF2022_FDist\\LF2022_FDist_220_CONUS_20240521\\LF2022_FDist_220_CONUS\\Tif",
+        "workspaceFactory" : "Raster",
+        "dataset" : "LC22_FDst_220.tif",
+        "datasetType" : "esriDTAny"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterUniqueValueColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "defaultColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            100
+          ]
+        },
+        "fieldName" : "Value",
+        "groups" : [
+          {
+            "type" : "CIMRasterUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "-9999"
+                ],
+                "label" : "-9999: Fill-NoData",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    255,
+                    255,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "0"
+                ],
+                "label" : "0: No Disturbance",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    0,
+                    0,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "112"
+                ],
+                "label" : "112: Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    214,
+                    96,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "113"
+                ],
+                "label" : "113: Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    214,
+                    96,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "122"
+                ],
+                "label" : "122: Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    214,
+                    96,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "123"
+                ],
+                "label" : "123: Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    214,
+                    96,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "132"
+                ],
+                "label" : "132: Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    214,
+                    96,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "133"
+                ],
+                "label" : "133: Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    214,
+                    96,
+                    77,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "212"
+                ],
+                "label" : "212: Mechanical Add",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    244,
+                    165,
+                    130,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "213"
+                ],
+                "label" : "213: Mechanical Add",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    244,
+                    165,
+                    130,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "222"
+                ],
+                "label" : "222: Mechanical Add",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    244,
+                    165,
+                    130,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "223"
+                ],
+                "label" : "223: Mechanical Add",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    244,
+                    165,
+                    130,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "232"
+                ],
+                "label" : "232: Mechanical Add",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    244,
+                    165,
+                    130,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "233"
+                ],
+                "label" : "233: Mechanical Add",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    244,
+                    165,
+                    130,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "312"
+                ],
+                "label" : "312: Mechanical Remove",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    219,
+                    199,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "313"
+                ],
+                "label" : "313: Mechanical Remove",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    219,
+                    199,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "322"
+                ],
+                "label" : "322: Mechanical Remove",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    219,
+                    199,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "323"
+                ],
+                "label" : "323: Mechanical Remove",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    219,
+                    199,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "332"
+                ],
+                "label" : "332: Mechanical Remove",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    219,
+                    199,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "333"
+                ],
+                "label" : "333: Mechanical Remove",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    253,
+                    219,
+                    199,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "412"
+                ],
+                "label" : "412: Windthrow",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    229,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "413"
+                ],
+                "label" : "413: Windthrow",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    229,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "422"
+                ],
+                "label" : "422: Windthrow",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    229,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "423"
+                ],
+                "label" : "423: Windthrow",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    229,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "432"
+                ],
+                "label" : "432: Windthrow",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    229,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "433"
+                ],
+                "label" : "433: Windthrow",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    229,
+                    240,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "512"
+                ],
+                "label" : "512: Insects-Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    197,
+                    222,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "513"
+                ],
+                "label" : "513: Insects-Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    197,
+                    222,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "522"
+                ],
+                "label" : "522: Insects-Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    197,
+                    222,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "523"
+                ],
+                "label" : "523: Insects-Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    197,
+                    222,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "532"
+                ],
+                "label" : "532: Insects-Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    197,
+                    222,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "533"
+                ],
+                "label" : "533: Insects-Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    197,
+                    222,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "612"
+                ],
+                "label" : "612: Mechanical Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    67,
+                    147,
+                    197,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "613"
+                ],
+                "label" : "613: Mechanical Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    67,
+                    147,
+                    197,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "622"
+                ],
+                "label" : "622: Mechanical Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    67,
+                    147,
+                    197,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "623"
+                ],
+                "label" : "623: Mechanical Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    67,
+                    147,
+                    197,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "632"
+                ],
+                "label" : "632: Mechanical Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    67,
+                    147,
+                    197,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "633"
+                ],
+                "label" : "633: Mechanical Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    67,
+                    147,
+                    197,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "712"
+                ],
+                "label" : "712: Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    33,
+                    102,
+                    172,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "713"
+                ],
+                "label" : "713: Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    33,
+                    102,
+                    172,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "722"
+                ],
+                "label" : "722: Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    33,
+                    102,
+                    172,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "723"
+                ],
+                "label" : "723: Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    33,
+                    102,
+                    172,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "732"
+                ],
+                "label" : "732: Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    33,
+                    102,
+                    172,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "733"
+                ],
+                "label" : "733: Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    33,
+                    102,
+                    172,
+                    100
+                  ]
+                }
+              }
+            ],
+            "heading" : "Value"
+          }
+        ],
+        "colorRamp" : {
+          "type" : "CIMMultipartColorRamp",
+          "colorRamps" : [
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  255,
+                  255,
+                  255,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  214,
+                  96,
+                  77,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  244,
+                  165,
+                  130,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  253,
+                  219,
+                  199,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  209,
+                  229,
+                  240,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  146,
+                  197,
+                  222,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  67,
+                  147,
+                  197,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              }
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp",
+              "fromColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  33,
+                  102,
+                  172,
+                  100
+                ]
+              }
+            }
+          ],
+          "weights" : [
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372,
+            0.023255813953488372
+          ]
+        },
+        "defaultLabel" : "<all other values>"
+      },
+      "attributeTable" : {
+        "type" : "CIMRasterTable",
+        "displayField" : "Value",
+        "editable" : true
+      }
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/0c15c902cae2fdd54fd3eeec1e711026.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\">\r\n\t<Esri>\r\n\t\t<CreaDate>20241115</CreaDate>\r\n\t\t<CreaTime>15373600</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n</metadata>\r\n"
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/c7190a4846cc4f39bc72dd57459de95a.json",
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
