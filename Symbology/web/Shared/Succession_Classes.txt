@@ -1,15 +1,15 @@
 ﻿INTERPOLATION:DISCRETE
--9999,255,255,255,Fill-NoData
--1111,111,111,111,Fill-Not Mapped
-1,161,99,51,Succession Class A
-2,56,168,0,Succession Class B
-3,201,222,171,Succession Class C
-4,255,248,166,Succession Class D
-5,0,74,77,Succession Class E
-6,160,0,0,Uncharacteristic Native Vegetation Cover/Structure/Composition
-7,255,0,0,Uncharacteristic Exotic Vegetation
-111,0,0,255,Water
-112,159,161,240,Snow/Ice
-120,132,0,138,Developed
-132,191,191,191,Barren or Sparse
-180,223,115,255,Agriculture
+-9999,255,255,255,255,Fill-NoData
+-1111,111,111,111,255,Fill-Not Mapped
+1,161,99,51,255,Succession Class A
+2,56,168,0,255,Succession Class B
+3,201,222,171,255,Succession Class C
+4,255,248,166,255,Succession Class D
+5,0,74,77,255,Succession Class E
+6,160,0,0,255,Uncharacteristic Native Vegetation Cover/Structure/Composition
+7,255,0,0,255,Uncharacteristic Exotic Vegetation
+111,0,0,255,255,Water
+112,159,161,240,255,Snow/Ice
+120,132,0,138,255,Developed
+132,191,191,191,255,Barren or Sparse
+180,223,115,255,255,Agriculture
