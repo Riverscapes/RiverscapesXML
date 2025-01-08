@@ -2,38 +2,46 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
   <Name>Beaver Activity</Name>
   <ProjectType>Beaver_Activity</ProjectType>
-  <Node xpathlabel="Name" xpath="Realizations/Realization">
-    <Children collapsed="false">
-      <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
-      <Node label="Outputs" xpath="Outputs">
-        <Children collapsed="false">
-          <Node label="Beaver Dam Density (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo" symbology="dam_density_igo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
-          <Node label="Beaver Dam Density (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo" symbology="dam_density_dgo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
-          <Node label="Beaver Dam Density (IGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo_all" symbology="dam_density_igo" />
-          <Node label="Beaver Dam Density (DGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo_all" symbology="dam_density_dgo" />
-        </Children>
-      </Node>
+  <Node xpathlabel="Name">
+    <Children>
+      <Repeater label="Outputs" xpath="Realizations/Realization">
+        <Node xpathlabel="Name" xpath="Outputs">
+          <Children collapsed="false">
+            <Node label="Beaver Dam Density (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='beaver_activity_igos']" type="point" id="dam_density_igo" symbology="dam_density_igo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+            <Node label="Beaver Dam Density (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo" symbology="dam_density_igo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+            <Node label="Beaver Dam Density (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='beaver_activity_dgos']" type="polygon" id="dam_density_dgo" symbology="dam_density_dgo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+            <Node label="Beaver Dam Density (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo" symbology="dam_density_dgo_filtered" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+            <Node label="Beaver Dam Density (IGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='beaver_activity_igos']" type="point" id="dam_density_igo_all" symbology="dam_density_igo" />
+            <Node label="Beaver Dam Density (IGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="dam_density_igo_all" symbology="dam_density_igo" />
+            <Node label="Beaver Dam Density (DGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='beaver_activity_dgos']" type="polygon" id="dam_density_dgo_all" symbology="dam_density_dgo" />
+            <Node label="Beaver Dam Density (DGO; All)" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" id="dam_density_dgo_all" symbology="dam_density_dgo" />
+          </Children>
+        </Node>
+      </Repeater>
       <Node label="Inputs" xpath="Outputs">
         <Children collapsed="true">
+          <Node label="Integrated Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='beaver_activity_igos']" type="point" symbology="IGO" />
           <Node label="Integrated Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='igos']" type="point" symbology="IGO" />
+          <Node label="Discrete Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='beaver_activity_dgos']" type="polygon" symbology="DGO" />
           <Node label="Discrete Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='dgos']" type="polygon" symbology="DGO" />
           <Node label="Dams" xpath="Geopackage/Layers/Vector[@lyrName='dams']" type="point" id="dams" symbology="beaver_dams" />
         </Children>
       </Node>
+      <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
     </Children>
-    </Node>
-    <Views default="dam_density_igo">
-        <View name="Beaver Dam Density (IGO)" id="dam_density_igo">
-            <Description>Beaver dam density attributed to the Integrated Geographic Objects</Description>
-            <Layers>
-                <Layer id="dam_density_igo" />
-            </Layers>
-        </View>
-        <View name="Beaver Dam Density (DGO)" id="dam_density_dgo">
-            <Description>Beaver dam density attributed to the Discrete Geographic Objects</Description>
-            <Layers>
-                <Layer id="dam_density_dgo" />
-            </Layers>
-        </View>
-    </Views>
+  </Node>  
+  <Views default="dam_density_igo">
+    <View name="Beaver Dam Density (IGO)" id="dam_density_igo">
+      <Description>Beaver dam density attributed to the Integrated Geographic Objects</Description>
+      <Layers>
+        <Layer id="dam_density_igo" />
+      </Layers>
+    </View>
+    <View name="Beaver Dam Density (DGO)" id="dam_density_dgo">
+      <Description>Beaver dam density attributed to the Discrete Geographic Objects</Description>
+      <Layers>
+        <Layer id="dam_density_dgo" />
+      </Layers>
+    </View>
+  </Views>
 </Project>
