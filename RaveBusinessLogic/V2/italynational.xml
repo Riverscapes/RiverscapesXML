@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>Italy National Datasets</Name>
+    <ProjectType>ItalyNational</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children>
+            <Node label="Hydrography">
+                <Children collapsed="false">
+                    <Node label="River Network"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='surfacewaterbodyline_it_23082023']"
+                        type="line" symbology="hydrography" id="riverlines" />
+                    <Node label="Flow Areas"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='po_2020_tratti']"
+                        type="polygon" symbology="flowareas" id="flowareas" />
+                </Children>
+            </Node>
+            <Node label="Topography">
+                <Children collapsed="false">
+                    <Node label="DEM" xpath="Outputs/Raster[@id='DEM']" type="raster" symbology="dem" id="dem" />
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="Default">
+        <View name="Hydrology" id="Default">
+            <Layers>
+                <Layer id="riverlines" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
