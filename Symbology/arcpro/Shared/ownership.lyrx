@@ -3,13 +3,13 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/ownership.json"
+    "CIMPATH=map/ownership2.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "ownership",
-      "uRI" : "CIMPATH=map/ownership.json",
+      "uRI" : "CIMPATH=map/ownership2.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
@@ -82,7 +82,7 @@
         },
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\1701020301_landers\\Riverscapes_Context_Landers\\ownership",
+          "workspaceConnectionString" : "DATABASE=..\\Curation_Testing\\1602020402_bigcottonwood\\Riverscapes_Context_BigCottonwood\\ownership",
           "workspaceFactory" : "Shapefile",
           "dataset" : "ownership.shp",
           "datasetType" : "esriDTFeatureClass"
@@ -403,9 +403,9 @@
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    115,
-                    178,
-                    115,
+                    0,
+                    0,
+                    0,
                     100
                   ]
                 }
@@ -569,9 +569,9 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            233,
-                            255,
-                            190,
+                            27,
+                            0,
+                            124,
                             100
                           ]
                         }
@@ -625,9 +625,9 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            189,
-                            227,
-                            150,
+                            91,
+                            179,
+                            166,
                             100
                           ]
                         }
@@ -681,9 +681,9 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            137,
-                            205,
-                            102,
+                            159,
+                            221,
+                            174,
                             100
                           ]
                         }
@@ -737,9 +737,9 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            56,
-                            168,
-                            0,
+                            216,
+                            162,
+                            135,
                             100
                           ]
                         }
@@ -793,8 +793,8 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            0,
-                            112,
+                            250,
+                            177,
                             255,
                             100
                           ]
@@ -809,6 +809,63 @@
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
                       "DOD"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "National Park Service",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 4,
+                        "width" : 0.40000000000000002,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            0,
+                            0,
+                            0,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            210,
+                            16,
+                            240,
+                            100
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "NPS"
                     ]
                   }
                 ],
@@ -984,7 +1041,7 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Unkown ",
+                "label" : "Unknown ",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
@@ -1017,9 +1074,9 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            204,
-                            204,
-                            204,
+                            107,
+                            107,
+                            107,
                             100
                           ]
                         }
@@ -1042,6 +1099,7 @@
             "heading" : "ADMIN_AGEN"
           }
         ],
+        "useDefaultSymbol" : true,
         "polygonSymbolColorTarget" : "Fill"
       },
       "scaleSymbols" : true,
