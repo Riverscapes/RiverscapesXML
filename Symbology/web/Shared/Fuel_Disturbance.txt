@@ -1,4 +1,5 @@
-﻿INTERPOLATION:DISCRETE
+# QGIS Generated Color Map Export File
+INTERPOLATION:DISCRETE
 -9999,255,255,255,255,Fill-NoData
 0,0,0,0,255,No Disturbance
 112,214,96,77,255,Fire
