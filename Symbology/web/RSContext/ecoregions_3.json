@@ -287,7 +287,12 @@
         "source": "composite",
         "source-layer": "ecoregions_3-7fr9mh",
         "layout": {
-            "text-field": ["to-string", ["get", "NA_L3CODE"]],
+            "text-field": [
+                "concat",
+                ["to-string", ["get", "NA_L3CODE"]],
+                " ",
+                ["get", "NA_L3NAME"]
+            ],
             "text-size": 10,
             "text-font": ["Open Sans Bold", "Arial Unicode MS Regular"]
         },
