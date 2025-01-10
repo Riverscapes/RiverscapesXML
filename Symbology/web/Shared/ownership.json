@@ -8,10 +8,12 @@
     ["hsl(135, 48%, 75%)", "US Forest Service (USFS)"],
     ["hsl(20, 51%, 69%)", "Department of Energy (DOE)"],
     ["hsl(296, 100%, 85%)", "Department of Defense (DOD)"],
+    ["hsl(292, 88%, 50%)", "National Park Service (NPS)"],
     ["hsl(213, 100%, 73%)", "State"],
     ["hsl(222, 100%, 87%)", "Local"],
     ["hsl(0, 0%, 88%)", "Private"],
-    ["hsl(0, 4%, 66%)", "Unknown"]
+    ["hsl(0, 4%, 66%)", "Unknown"],
+    ["hsl(0, 0%, 0%)", "Other"]
   ],
   "layerStyles": [
     {
@@ -36,6 +38,8 @@
               "hsl(135, 48%, 75%)",
               ["DOE"],
               "hsl(20, 51%, 69%)",
+              ["NPS"],
+              "hsl(292, 88%, 50%)",
               ["ST"],
               "hsl(213, 100%, 73%)",
               ["LG"],
@@ -46,9 +50,17 @@
               "hsl(0, 4%, 66%)",
               ["DOD"],
               "hsl(296, 100%, 85%)",
-              "#000000"
+              "hsl(0, 0%, 0%)"
           ]
       }
+  },
+  {
+    "id": "Land Ownership Copy",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "land_ownership-5gpnpp",
+      "layout": {},
+      "paint": {"line-width": 0.25, "line-color": "hsl(0, 0%, 0%)"}
   }
   ]
 }
