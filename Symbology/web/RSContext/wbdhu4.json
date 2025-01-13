@@ -17,7 +17,7 @@
       "type": "symbol",
       "source": "composite",
       "source-layer": "HUC4-3z13nu",
-      "layout": {"text-field": ["to-string", ["get", "HUC4"]]},
+      "layout": {"text-field": ["to-string", ["get", "huc4"]], "text-size": 20},
       "paint": {}
   }
   ]
