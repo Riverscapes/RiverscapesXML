@@ -3,23 +3,43 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/nhdflowline.json"
+    "CIMPATH=map/full_nhd_hr__drainage_network.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "NHDFlowline",
-      "uRI" : "CIMPATH=map/nhdflowline.json",
+      "name" : "Full NHD HR+ Drainage Network",
+      "uRI" : "CIMPATH=map/full_nhd_hr__drainage_network.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/c25c8f0b5a27383511ea9cb899f46b64.xml",
-      "useSourceMetadata" : false,
+      "useSourceMetadata" : true,
+      "description" : "Full NHD HR+ Drainage Network",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "maxDistance" : -1,
+        "minDistance" : -1,
+        "preloadTextureCutoffHigh" : 0,
+        "preloadTextureCutoffLow" : 0.25,
+        "textureCutoffHigh" : 0.25,
+        "textureCutoffLow" : 1,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "verticalUnit" : {
+          "uwkid" : 9001
+        },
+        "lighting" : "OneSideDataNormal",
+        "optimizeMarkerTransparency" : true
+      },
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -34,7 +54,7 @@
       "autoGenerateFeatureTemplates" : true,
       "featureTable" : {
         "type" : "CIMFeatureTable",
-        "displayField" : "GNIS_Name",
+        "displayField" : "gnis_name",
         "editable" : true,
         "fieldDescriptions" : [
           {
@@ -61,22 +81,22 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Permanent_",
-            "fieldName" : "Permanent_",
+            "alias" : "permanent_",
+            "fieldName" : "permanent_",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "FDate",
-            "fieldName" : "FDate",
+            "alias" : "fdate",
+            "fieldName" : "fdate",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Resolution",
-            "fieldName" : "Resolution",
+            "alias" : "resolution",
+            "fieldName" : "resolution",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -89,22 +109,22 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "GNIS_ID",
-            "fieldName" : "GNIS_ID",
+            "alias" : "gnis_id",
+            "fieldName" : "gnis_id",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "GNIS_Name",
-            "fieldName" : "GNIS_Name",
+            "alias" : "gnis_name",
+            "fieldName" : "gnis_name",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "LengthKM",
-            "fieldName" : "LengthKM",
+            "alias" : "lengthkm",
+            "fieldName" : "lengthkm",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -117,15 +137,15 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "ReachCode",
-            "fieldName" : "ReachCode",
+            "alias" : "reachcode",
+            "fieldName" : "reachcode",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "FlowDir",
-            "fieldName" : "FlowDir",
+            "alias" : "flowdir",
+            "fieldName" : "flowdir",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -138,15 +158,15 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "WBArea_Per",
-            "fieldName" : "WBArea_Per",
+            "alias" : "wbarea_per",
+            "fieldName" : "wbarea_per",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "FType",
-            "fieldName" : "FType",
+            "alias" : "ftype",
+            "fieldName" : "ftype",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -159,8 +179,8 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "FCode",
-            "fieldName" : "FCode",
+            "alias" : "fcode",
+            "fieldName" : "fcode",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -173,8 +193,8 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "MainPath",
-            "fieldName" : "MainPath",
+            "alias" : "mainpath",
+            "fieldName" : "mainpath",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -187,8 +207,8 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "InNetwork",
-            "fieldName" : "InNetwork",
+            "alias" : "innetwork",
+            "fieldName" : "innetwork",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -201,8 +221,8 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Visibility",
-            "fieldName" : "Visibility",
+            "alias" : "visibility",
+            "fieldName" : "visibility",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
@@ -210,6 +230,27 @@
               "roundingOption" : "esriRoundNumberOfDecimals",
               "roundingValue" : 0
             },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "nhdplusid",
+            "fieldName" : "nhdplusid",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "vpuid",
+            "fieldName" : "vpuid",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -224,27 +265,6 @@
               "roundingOption" : "esriRoundNumberOfDecimals",
               "roundingValue" : 6
             },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NHDPlusID",
-            "fieldName" : "NHDPlusID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "VPUID",
-            "fieldName" : "VPUID",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -362,11 +382,11 @@
         },
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\Riverscapes_Context_Landers\\hydrology\\nhdplushr.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1602020402_bigcottonwood\\Riverscapes_Context_BigCottonwood\\hydrology\\nhdplushr.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%NHDFlowline",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select fid,geom,Permanent_,FDate,Resolution,GNIS_ID,GNIS_Name,LengthKM,ReachCode,FlowDir,WBArea_Per,FType,FCode,MainPath,InNetwork,Visibility,Shape_Leng,NHDPlusID,VPUID,Enabled,AreaSqKm,TotDASqKm,DivDASqKm,Slope,MaxElevSmo,MInElevSmo from main.NHDFlowline",
+          "sqlQuery" : "select fid,geom,permanent_,fdate,resolution,gnis_id,gnis_name,lengthkm,reachcode,flowdir,wbarea_per,ftype,fcode,mainpath,innetwork,visibility,nhdplusid,vpuid,Shape_Leng,Enabled,AreaSqKm,TotDASqKm,DivDASqKm,Slope,MaxElevSmo,MInElevSmo from main.NHDFlowline",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -387,9 +407,9 @@
           "queryFields" : [
             {
               "name" : "fid",
-              "type" : "esriFieldTypeInteger",
+              "type" : "esriFieldTypeBigInteger",
               "isNullable" : false,
-              "length" : 4,
+              "length" : 8,
               "precision" : 0,
               "scale" : 0,
               "required" : true,
@@ -426,7 +446,7 @@
               "dbmsType" : 8
             },
             {
-              "name" : "Permanent_",
+              "name" : "permanent_",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 40,
@@ -435,8 +455,8 @@
               "dbmsType" : 5
             },
             {
-              "name" : "FDate",
-              "type" : "esriFieldTypeDate",
+              "name" : "fdate",
+              "type" : "esriFieldTypeDateOnly",
               "isNullable" : true,
               "length" : 8,
               "precision" : 0,
@@ -444,7 +464,7 @@
               "dbmsType" : 7
             },
             {
-              "name" : "Resolution",
+              "name" : "resolution",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
@@ -453,7 +473,7 @@
               "dbmsType" : 2
             },
             {
-              "name" : "GNIS_ID",
+              "name" : "gnis_id",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 10,
@@ -462,7 +482,7 @@
               "dbmsType" : 5
             },
             {
-              "name" : "GNIS_Name",
+              "name" : "gnis_name",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 65,
@@ -471,7 +491,7 @@
               "dbmsType" : 5
             },
             {
-              "name" : "LengthKM",
+              "name" : "lengthkm",
               "type" : "esriFieldTypeDouble",
               "isNullable" : true,
               "length" : 8,
@@ -480,7 +500,7 @@
               "dbmsType" : 4
             },
             {
-              "name" : "ReachCode",
+              "name" : "reachcode",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 14,
@@ -489,7 +509,7 @@
               "dbmsType" : 5
             },
             {
-              "name" : "FlowDir",
+              "name" : "flowdir",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
@@ -498,7 +518,7 @@
               "dbmsType" : 2
             },
             {
-              "name" : "WBArea_Per",
+              "name" : "wbarea_per",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 40,
@@ -507,7 +527,7 @@
               "dbmsType" : 5
             },
             {
-              "name" : "FType",
+              "name" : "ftype",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
@@ -516,7 +536,7 @@
               "dbmsType" : 2
             },
             {
-              "name" : "FCode",
+              "name" : "fcode",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
@@ -525,7 +545,7 @@
               "dbmsType" : 2
             },
             {
-              "name" : "MainPath",
+              "name" : "mainpath",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
@@ -534,7 +554,7 @@
               "dbmsType" : 2
             },
             {
-              "name" : "InNetwork",
+              "name" : "innetwork",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
@@ -543,13 +563,31 @@
               "dbmsType" : 2
             },
             {
-              "name" : "Visibility",
+              "name" : "visibility",
               "type" : "esriFieldTypeInteger",
               "isNullable" : true,
               "length" : 4,
               "precision" : 0,
               "scale" : 0,
               "dbmsType" : 2
+            },
+            {
+              "name" : "nhdplusid",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "vpuid",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 5
             },
             {
               "name" : "Shape_Leng",
@@ -559,24 +597,6 @@
               "precision" : 0,
               "scale" : 0,
               "dbmsType" : 4
-            },
-            {
-              "name" : "NHDPlusID",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "VPUID",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
             },
             {
               "name" : "Enabled",
@@ -644,7 +664,7 @@
           ],
           "spatialStorageType" : 11,
           "isTableBased" : true,
-          "mappedOIDFieldLength" : "OID32Bit"
+          "mappedOIDFieldLength" : "OID64Bit"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
@@ -657,35 +677,7 @@
       },
       "isFlattened" : true,
       "selectable" : true,
-      "selectionSymbol" : {
-        "type" : "CIMSymbolReference",
-        "symbol" : {
-          "type" : "CIMLineSymbol",
-          "symbolLayers" : [
-            {
-              "type" : "CIMSolidStroke",
-              "enable" : true,
-              "capStyle" : "Round",
-              "joinStyle" : "Round",
-              "lineStyle3D" : "Strip",
-              "miterLimit" : 10,
-              "width" : 2,
-              "height3D" : 1,
-              "anchor3D" : "Center",
-              "color" : {
-                "type" : "CIMRGBColor",
-                "values" : [
-                  0,
-                  255,
-                  255,
-                  100
-                ]
-              }
-            }
-          ]
-        }
-      },
-      "featureCacheType" : "None",
+      "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
       "featureBlendingMode" : "Alpha",
       "layerEffectsMode" : "Layer",
@@ -966,7 +958,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "FCode"
+          "fcode"
         ],
         "groups" : [
           {
@@ -1143,7 +1135,7 @@
                     "symbolLayers" : [
                       {
                         "type" : "CIMVectorMarker",
-                        "enable" : true,
+                        "enable" : false,
                         "anchorPointUnits" : "Relative",
                         "dominantSizeAxis3D" : "Z",
                         "rotation" : 90,
@@ -1220,6 +1212,15 @@
                             "method" : "Rounded",
                             "offset" : 1.3,
                             "option" : "Fast"
+                          },
+                          {
+                            "type" : "CIMGeometricEffectDashes",
+                            "dashTemplate" : [
+                              3,
+                              2
+                            ],
+                            "lineDashEnding" : "NoConstraint",
+                            "controlPointEnding" : "NoConstraint"
                           }
                         ],
                         "enable" : true,
@@ -1233,9 +1234,9 @@
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            163,
-                            242,
-                            242,
+                            115,
+                            223,
+                            255,
                             100
                           ]
                         }
@@ -1715,13 +1716,6 @@
       },
       "scaleSymbols" : true,
       "snappable" : true
-    }
-  ],
-  "binaryReferences" : [
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/c25c8f0b5a27383511ea9cb899f46b64.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240716</CreaDate><CreaTime>20412400</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>NHDFlowline</resTitle></idCitation><idAbs></idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",

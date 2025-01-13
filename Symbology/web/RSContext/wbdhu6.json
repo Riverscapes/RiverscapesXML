@@ -17,7 +17,7 @@
       "type": "symbol",
       "source": "composite",
       "source-layer": "HUC6-2hkkdg",
-      "layout": {"text-field": ["to-string", ["get", "HUC6"]]},
+      "layout": {"text-field": ["to-string", ["get", "huc6"]], "text-size": 20},
       "paint": {}
   }
   ]

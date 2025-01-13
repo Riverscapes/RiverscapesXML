@@ -8,7 +8,7 @@
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "canals",
+      "name" : "Canals and Ditches",
       "uRI" : "CIMPATH=map/canals.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
@@ -34,7 +34,7 @@
       "autoGenerateFeatureTemplates" : true,
       "featureTable" : {
         "type" : "CIMFeatureTable",
-        "displayField" : "FID",
+        "displayField" : "FID_1",
         "editable" : true,
         "fieldDescriptions" : [
           {
@@ -58,6 +58,20 @@
             "fieldName" : "Shape",
             "visible" : true,
             "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID_1",
+            "fieldName" : "FID_1",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
           }
         ],
         "timeFields" : {
@@ -74,7 +88,7 @@
         },
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\1701020301_landers\\Riverscapes_Context_Landers\\transportation",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\1602020402_bigcottonwood\\Riverscapes_Context_BigCottonwood\\transportation",
           "workspaceFactory" : "Shapefile",
           "dataset" : "canals.shp",
           "datasetType" : "esriDTFeatureClass"
@@ -334,20 +348,20 @@
             "symbolLayers" : [
               {
                 "type" : "CIMVectorMarker",
-                "enable" : true,
+                "enable" : false,
                 "anchorPointUnits" : "Relative",
                 "dominantSizeAxis3D" : "Z",
                 "rotation" : 90,
-                "size" : 1,
+                "size" : 2,
                 "billboardMode3D" : "None",
                 "markerPlacement" : {
                   "type" : "CIMMarkerPlacementAlongLineSameSize",
                   "placePerPart" : true,
                   "angleToLine" : true,
                   "endings" : "NoConstraint",
-                  "offsetAlongLine" : 4.5,
+                  "offsetAlongLine" : 9,
                   "placementTemplate" : [
-                    5
+                    10
                   ]
                 },
                 "frame" : {
@@ -389,9 +403,9 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              163,
-                              242,
-                              242,
+                              115,
+                              223,
+                              255,
                               100
                             ]
                           }
@@ -409,8 +423,17 @@
                   {
                     "type" : "CIMGeometricEffectOffset",
                     "method" : "Rounded",
-                    "offset" : 1.3,
+                    "offset" : 2.6000000000000001,
                     "option" : "Fast"
+                  },
+                  {
+                    "type" : "CIMGeometricEffectDashes",
+                    "dashTemplate" : [
+                      4,
+                      3
+                    ],
+                    "lineDashEnding" : "NoConstraint",
+                    "controlPointEnding" : "NoConstraint"
                   }
                 ],
                 "enable" : true,
@@ -418,15 +441,15 @@
                 "joinStyle" : "Round",
                 "lineStyle3D" : "Strip",
                 "miterLimit" : 10,
-                "width" : 0.13333333333333333,
+                "width" : 1,
                 "height3D" : 1,
                 "anchor3D" : "Center",
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    163,
-                    242,
-                    242,
+                    115,
+                    223,
+                    255,
                     100
                   ]
                 }

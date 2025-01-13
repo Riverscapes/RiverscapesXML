@@ -11,9 +11,9 @@
       "source-layer": "Rail-6j6x9c",
       "layout": {},
       "paint": {
-          "line-dasharray": [2, 4],
-          "line-gap-width": 3,
-          "line-width": 3
+          "line-dasharray": [0.25, 3],
+          "line-gap-width": 1.5,
+          "line-width": 2
       }
   },
   {

@@ -6,7 +6,7 @@
     ["hsl(120, 0%, 43%)", "Local Connector"],
     ["hsl(0, 0%, 61%)", "Local Road"],
     ["hsl(0, 48%, 60%)", "Ramp"],
-    ["hsla(0, 0%, 0%, 0)", "4WD (dashed)"]
+    ["hsla(0, 0%, 40.78%, 0)", "4WD (dashed)"]
   ],
   "layerStyles": [
     {
@@ -20,7 +20,7 @@
               "match",
               ["get", "tnmfrc"],
               [6],
-              "#000000",
+              "hsla(0, 0%, 40.78%, 0)",
               "hsla(0, 0%, 0%, 0)"
           ],
           "line-gap-width": ["match", ["get", "tnmfrc"], [6], 2, 0],
