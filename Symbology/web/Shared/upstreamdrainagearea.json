@@ -1,49 +1,72 @@
 {
-  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(201, 100%, 87%)", "0 - 15"],
-    ["hsl(200, 62%, 71%)", "15 - 50"],
-    ["hsl(200, 49%, 57%)", "50 - 100"],
-    ["hsl(200, 54%, 44%)", "100 - 250"],
-    ["hsl(200, 74%, 32%)", "250 - 500"],
-    ["hsl(200, 100%, 23%)", ">500"]
+    ["rgb(191, 233, 255)", "0 - 15 sq. km"],
+    ["rgb(136, 197, 227)", "15 - 50 sq. km"],
+    ["rgb(90, 162, 199)", "50 - 100 sq. km"],
+    ["rgb(51, 131, 171)", "100 - 250 sq. km"],
+    ["rgb(21, 102, 143)", "250 - 500 sq. km"],
+    ["rgb(0, 76, 115)", "> 500 sq. km"]
   ],
   "layerStyles": [
     {
-      "id": "Network - Upstream Drainage Area - sq.km",
-      "type": "line",
-      "source": "composite",
-      "source-layer": "NHD_flowline-6tver9",
-      "layout": {},
-      "paint": {
-          "line-color": [
-              "step",
-              ["get", "TotDASqKm"],
-              "hsl(201, 100%, 87%)",
-              15,
-              "hsl(201, 100%, 87%)",
-              15.000001,
-              "hsl(200, 62%, 71%)",
-              50,
-              "hsl(200, 62%, 71%)",
-              50.000001,
-              "hsl(200, 49%, 57%)",
-              100,
-              "hsl(200, 49%, 57%)",
-              100.00001,
-              "hsl(200, 54%, 44%)",
-              250,
-              "hsl(200, 54%, 44%)",
-              250.000001,
-              "hsl(200, 74%, 32%)",
-              500,
-              "hsl(200, 74%, 32%)",
-              500.000001,
-              "hsl(200, 100%, 23%)",
-              3604,
-              "hsl(200, 100%, 23%)"
-          ]
-      }
-  }
-  ]
+        "id": "upstreamdrainagearea-2hi4ge",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "upstreamdrainagearea-2hi4ge",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "TotDASqKm"],
+                0.00,
+                "rgb(191, 233, 255)",
+                15,
+                "rgb(191, 233, 255)",
+                15.0001,
+                "rgb(136, 197, 227)",
+                50,
+                "rgb(136, 197, 227)",
+                50.0001,
+                "rgb(90, 162, 199)",
+                100,
+                "rgb(90, 162, 199)",
+                100.0001,
+                "rgb(51, 131, 171)",
+                250,
+                "rgb(51, 131, 171)",
+                250.0001,
+                "rgb(21, 102, 143)",
+                500,
+                "rgb(21, 102, 143)",
+                500.0001,
+                "rgb(0, 76, 115)",
+                1000000,
+                "rgb(0, 76, 115)"
+            ],
+            "line-width": [
+                "interpolate",
+                ["linear"],
+                ["get", "TotDASqKm"],
+                0.00,
+                0.93,
+                15,
+                0.93,
+                15.0001,
+                1.33,
+                250,
+                1.33,
+                250.0001,
+                1.67,
+                500,
+                1.67,
+                500.0001,
+                2.67,
+                1000000,
+                2.67
+            ]
+        }
+    }
+]
 }

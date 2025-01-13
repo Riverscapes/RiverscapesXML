@@ -3,29 +3,24 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/usgs_symbology2.json"
+    "CIMPATH=map/roads.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "USGS Symbology",
-      "uRI" : "CIMPATH=map/usgs_symbology2.json",
+      "name" : "Roads",
+      "uRI" : "CIMPATH=map/roads.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/866c3bc11db1d11325e5baa002659efd.xml",
-      "useSourceMetadata" : false,
-      "description" : ".",
+      "useSourceMetadata" : true,
+      "description" : "roads",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
-      "layerScaleVisibilityOptions" : {
-        "type" : "CIMLayerScaleVisibilityOptions",
-        "showLayerAtAllScales" : true
-      },
       "showLegends" : true,
       "visibility" : true,
       "displayCacheType" : "Permanent",
@@ -40,8 +35,235 @@
       "featureElevationExpression" : "0",
       "featureTable" : {
         "type" : "CIMFeatureTable",
-        "displayField" : "PERMANENT_",
+        "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "permanent_",
+            "fieldName" : "permanent_",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "source_fea",
+            "fieldName" : "source_fea",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "source_dat",
+            "fieldName" : "source_dat",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "source_d_1",
+            "fieldName" : "source_d_1",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "source_ori",
+            "fieldName" : "source_ori",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "loaddate",
+            "fieldName" : "loaddate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "interstate",
+            "fieldName" : "interstate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "us_route",
+            "fieldName" : "us_route",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "state_rout",
+            "fieldName" : "state_rout",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "county_rou",
+            "fieldName" : "county_rou",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "federal_la",
+            "fieldName" : "federal_la",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "stco_fipsc",
+            "fieldName" : "stco_fipsc",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "tnmfrc",
+            "fieldName" : "tnmfrc",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "mtfcc_code",
+            "fieldName" : "mtfcc_code",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "intersta_1",
+            "fieldName" : "intersta_1",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "intersta_2",
+            "fieldName" : "intersta_2",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "intersta_3",
+            "fieldName" : "intersta_3",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "us_route_a",
+            "fieldName" : "us_route_a",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "us_route_b",
+            "fieldName" : "us_route_b",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "us_route_c",
+            "fieldName" : "us_route_c",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "state_ro_1",
+            "fieldName" : "state_ro_1",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "state_ro_2",
+            "fieldName" : "state_ro_2",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "state_ro_3",
+            "fieldName" : "state_ro_3",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "SHAPE_Leng",
+            "fieldName" : "SHAPE_Leng",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ObjectID",
+            "fieldName" : "ObjectID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
         "timeFields" : {
           "type" : "CIMTimeTableDefinition"
         },
@@ -56,308 +278,11 @@
           "timeOffsetUnits" : "esriTimeUnitsYears"
         },
         "dataConnection" : {
-          "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\Anthro_Landers\\inputs\\inputs.gpkg",
-          "workspaceFactory" : "Sql",
-          "dataset" : "main.%roads",
-          "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select fid,geom,permanent_,source_fea,source_dat,source_d_1,source_ori,loaddate,interstate,us_route,state_rout,county_rou,federal_la,stco_fipsc,tnmfrc,name,mtfcc_code,intersta_1,intersta_2,intersta_3,us_route_a,us_route_b,us_route_c,state_ro_1,state_ro_2,state_ro_3,SHAPE_Leng,ObjectID from main.roads",
-          "srid" : "4326",
-          "spatialReference" : {
-            "wkid" : 4326,
-            "latestWkid" : 4326,
-            "xyTolerance" : 8.983152841195215e-09,
-            "zTolerance" : 0.001,
-            "mTolerance" : 0.001,
-            "falseX" : -400,
-            "falseY" : -400,
-            "xyUnits" : 999999999.99999988,
-            "falseZ" : -100000,
-            "zUnits" : 10000,
-            "falseM" : -100000,
-            "mUnits" : 10000
-          },
-          "oIDFields" : "fid",
-          "geometryType" : "esriGeometryPolyline",
-          "queryFields" : [
-            {
-              "name" : "fid",
-              "type" : "esriFieldTypeBigInteger",
-              "isNullable" : false,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "required" : true,
-              "editable" : false,
-              "dbmsType" : 11
-            },
-            {
-              "name" : "geom",
-              "type" : "esriFieldTypeGeometry",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "geometryDef" : {
-                "avgNumPoints" : 0,
-                "geometryType" : "esriGeometryPolyline",
-                "hasM" : false,
-                "hasZ" : false,
-                "spatialReference" : {
-                  "wkid" : 4326,
-                  "latestWkid" : 4326,
-                  "xyTolerance" : 8.983152841195215e-09,
-                  "zTolerance" : 0.001,
-                  "mTolerance" : 0.001,
-                  "falseX" : -400,
-                  "falseY" : -400,
-                  "xyUnits" : 999999999.99999988,
-                  "falseZ" : -100000,
-                  "zUnits" : 10000,
-                  "falseM" : -100000,
-                  "mUnits" : 10000
-                }
-              },
-              "dbmsType" : 8
-            },
-            {
-              "name" : "permanent_",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 40,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "source_fea",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 40,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "source_dat",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 40,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "source_d_1",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 100,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "source_ori",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 130,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "loaddate",
-              "type" : "esriFieldTypeDateOnly",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 7
-            },
-            {
-              "name" : "interstate",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "us_route",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "state_rout",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "county_rou",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "federal_la",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "stco_fipsc",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 5,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "tnmfrc",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "name",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 100,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "mtfcc_code",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 50,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "intersta_1",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "intersta_2",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "intersta_3",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "us_route_a",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "us_route_b",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "us_route_c",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "state_ro_1",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "state_ro_2",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "state_ro_3",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 25,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "SHAPE_Leng",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "ObjectID",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 2
-            }
-          ],
-          "spatialStorageType" : 11,
-          "isTableBased" : true,
-          "mappedOIDFieldLength" : "OID64Bit"
+          "type" : "CIMStandardDataConnection",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\1602020402_bigcottonwood\\Riverscapes_Context_BigCottonwood\\transportation",
+          "workspaceFactory" : "Shapefile",
+          "dataset" : "roads.shp",
+          "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
@@ -370,36 +295,7 @@
       },
       "isFlattened" : true,
       "selectable" : true,
-      "selectionSymbol" : {
-        "type" : "CIMSymbolReference",
-        "symbol" : {
-          "type" : "CIMLineSymbol",
-          "symbolLayers" : [
-            {
-              "type" : "CIMSolidStroke",
-              "enable" : true,
-              "name" : "Level_0",
-              "capStyle" : "Round",
-              "joinStyle" : "Round",
-              "lineStyle3D" : "Strip",
-              "miterLimit" : 10,
-              "width" : 2,
-              "height3D" : 1,
-              "anchor3D" : "Center",
-              "color" : {
-                "type" : "CIMRGBColor",
-                "values" : [
-                  0,
-                  255,
-                  255,
-                  100
-                ]
-              }
-            }
-          ]
-        }
-      },
-      "featureCacheType" : "None",
+      "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
       "featureBlendingMode" : "Alpha",
       "layerEffectsMode" : "Layer",
@@ -418,18 +314,19 @@
             "canRemoveOverlappingLabel" : true,
             "canStackLabel" : true,
             "centerLabelAnchorType" : "Symbol",
-            "connectionType" : "Unambiguous",
-            "constrainOffset" : "NoConstraint",
+            "connectionType" : "MinimizeLabels",
+            "constrainOffset" : "AboveLine",
             "contourAlignmentType" : "Page",
             "contourLadderType" : "Straight",
             "contourMaximumAngle" : 90,
             "enableConnection" : true,
-            "featureWeight" : 100,
+            "featureWeight" : 0,
             "fontHeightReductionLimit" : 4,
             "fontHeightReductionStep" : 0.5,
             "fontWidthReductionLimit" : 90,
             "fontWidthReductionStep" : 5,
             "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
             "labelBuffer" : 15,
             "labelLargestPolygon" : true,
             "labelPriority" : -1,
@@ -439,19 +336,33 @@
               "maximumNumberOfLines" : 3,
               "minimumNumberOfCharsPerLine" : 3,
               "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ],
               "trimStackingSeparators" : true
             },
             "lineFeatureType" : "General",
-            "linePlacementMethod" : "OffsetCurvedFromLine",
-            "maximumLabelOverrun" : 36,
+            "linePlacementMethod" : "OffsetStraightFromLine",
+            "maximumLabelOverrun" : 16,
             "maximumLabelOverrunUnit" : "Point",
+            "measureFromClippedFeatureGeometry" : true,
             "minimumFeatureSizeUnit" : "Map",
-            "multiPartOption" : "OneLabelPerPart",
+            "multiPartOption" : "OneLabelPerFeature",
             "offsetAlongLineProperties" : {
               "type" : "CIMMaplexOffsetAlongLineProperties",
               "placementMethod" : "BestPositionAlongLine",
               "labelAnchorPoint" : "CenterOfLabel",
-              "distanceUnit" : "Percentage",
+              "distanceUnit" : "Map",
               "useLineDirection" : true
             },
             "pointExternalZonePriorities" : {
@@ -467,7 +378,7 @@
             },
             "pointPlacementMethod" : "AroundPoint",
             "polygonAnchorPointType" : "GeometricCenter",
-            "polygonBoundaryWeight" : 200,
+            "polygonBoundaryWeight" : 0,
             "polygonExternalZones" : {
               "type" : "CIMMaplexExternalZonePriorities",
               "aboveLeft" : 4,
@@ -489,7 +400,7 @@
             "primaryOffsetUnit" : "Point",
             "removeAmbiguousLabels" : "All",
             "removeExtraWhiteSpace" : true,
-            "repetitionIntervalUnit" : "Map",
+            "repetitionIntervalUnit" : "Point",
             "rotationProperties" : {
               "type" : "CIMMaplexRotationProperties",
               "rotationType" : "Arithmetic",
@@ -505,10 +416,11 @@
               "fontReduction" : 4,
               "abbreviation" : 5
             },
-            "thinningDistanceUnit" : "Map",
+            "thinningDistanceUnit" : "Point",
             "truncationMarkerCharacter" : ".",
             "truncationMinimumLength" : 1,
             "truncationPreferredCharacters" : "aeiou",
+            "truncationExcludedCharacters" : "0123456789",
             "polygonAnchorPointPerimeterInsetUnit" : "Point"
           },
           "name" : "Default",
@@ -665,7 +577,7 @@
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "TNMFRC"
+          "tnmfrc"
         ],
         "groups" : [
           {
@@ -946,8 +858,8 @@
                           {
                             "type" : "CIMGeometricEffectDashes",
                             "dashTemplate" : [
-                              3.6000000000000001,
-                              1.6000000000000001
+                              8.3333333333333339,
+                              3.7037037037037042
                             ],
                             "lineDashEnding" : "NoConstraint",
                             "controlPointEnding" : "NoConstraint"
@@ -955,7 +867,7 @@
                           {
                             "type" : "CIMGeometricEffectOffset",
                             "method" : "Mitered",
-                            "offset" : 0.69840000000000002,
+                            "offset" : 1.6166666666666667,
                             "option" : "Fast"
                           }
                         ],
@@ -965,7 +877,7 @@
                         "joinStyle" : "Miter",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 0.216,
+                        "width" : 0.5,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -984,8 +896,8 @@
                           {
                             "type" : "CIMGeometricEffectDashes",
                             "dashTemplate" : [
-                              3.6000000000000001,
-                              1.6000000000000001
+                              8.3333333333333339,
+                              3.7037037037037042
                             ],
                             "lineDashEnding" : "NoConstraint",
                             "controlPointEnding" : "NoConstraint"
@@ -993,7 +905,7 @@
                           {
                             "type" : "CIMGeometricEffectOffset",
                             "method" : "Mitered",
-                            "offset" : -0.69840000000000002,
+                            "offset" : -1.6166666666666667,
                             "option" : "Fast"
                           }
                         ],
@@ -1004,7 +916,7 @@
                         "joinStyle" : "Miter",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 0.216,
+                        "width" : 0.5,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1314,13 +1226,6 @@
         ],
         "useSymbolLayerDrawing" : true
       }
-    }
-  ],
-  "binaryReferences" : [
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/866c3bc11db1d11325e5baa002659efd.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20240720</CreaDate><CreaTime>21475200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>USGS Symbology</resTitle></idCitation><idAbs>.</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",

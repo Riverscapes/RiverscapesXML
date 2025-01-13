@@ -1,16 +1,19 @@
 {
-  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(180, 76%, 79%)", "Canals and Ditches"]
+    ["rgb(115, 223, 255)", "Canals and Ditches"]
   ],
   "layerStyles": [
     {
-      "id": "canals-ditches-7tezx4",
-      "type": "line",
-      "source": "composite",
-      "source-layer": "Canals_Ditches-7tezx4",
-      "layout": {},
-      "paint": {"line-color": "hsl(180, 76%, 79%)"}
-  }
-  ]
+        "id": "canals-ditches-98wueu",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "canals_ditches-98wueu",
+        "layout": {},
+        "paint": {
+            "line-dasharray": [3, 2],
+            "line-color": "rgb(115, 223, 255)"
+        }
+    }
+]
 }
