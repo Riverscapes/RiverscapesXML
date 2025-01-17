@@ -10,20 +10,33 @@
           <Repeater xpath="Realizations/Realization" label="Realizations" collapsed="true">
             <Node xpathlabel="Name">
               <Children collapsed="true">
-                <Node xpathlabel="Name" xpath="Outputs/Vector[@id='MODELEDDAMPOINTS']" type="point" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_HI']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_LO']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='PONDID']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPLO']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DAMID']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_MID']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_LO']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HTABOVE']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_MID']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_START']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPHI']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPMID']" type="raster" />
-                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_HI']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Vector[@id='MODELEDDAMPOINTS']" type="point" symbology="beaver_dams"/>
+                <Node label="High">
+                  <Children collapsed="true">
+                    <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_HI']" type="raster" symbology="head"/>
+                    <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_HI']" type="raster"  symbology="wsDEM"/>
+                  </Children>
+                </Node>
+                <Node label="Middle">
+                  <Children collapsed="true">
+                    <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_MID']" type="raster"  symbology="head"/>
+                    <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_MID']" type="raster"  symbology="wsDEM"/>
+                  </Children>
+                </Node>
+                <Node label="Low">
+                  <Children collapsed="true">
+                    <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_LO']" type="raster" symbology="head"/>
+                    <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_LO']" type="raster"  symbology="wsDEM"/>
+                  </Children>
+                </Node>
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='PONDID']" type="raster" symbology="pond_id" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPLO']" type="raster" symbology="deplo" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DAMID']" type="raster" symbology="dam_id" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HTABOVE']" type="raster"  symbology="hand"/>
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_START']" type="raster" symbology="head" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPHI']" type="raster" symbology="dephi" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPMID']" type="raster"  symbology="depmid" />
+                <Node xpathlabel="Name" xpath="Outputs/File[@id='MODFLOW_OUTPUTS']" type="file" />
               </Children>
             </Node>
           </Repeater>
@@ -31,15 +44,15 @@
       </Node>
       <Node label="Inputs" xpath="CommonDatasets">
         <Children>
-          <Node xpathlabel="Name" xpath="Vector[@id='BRAT_PERENNIAL']" type="line" />
-          <Node xpathlabel="Name" xpath="Vector[@id='VB_BUFFERED']" type="polygon" />
-          <Node xpathlabel="Name" xpath="Raster[@id='DEM']" type="raster" />
-          <Node xpathlabel="Name" xpath="Raster[@id='D8SLOPE']" type="raster" />
-          <Node xpathlabel="Name" xpath="Raster[@id='PITFILL']" type="raster" />
-          <Node xpathlabel="Name" xpath="Raster[@id='FAC']" type="raster" />
-          <Node xpathlabel="Name" xpath="Raster[@id='FLOWDIR']" type="raster" />
-          <Node xpathlabel="Name" xpath="Raster[@id='FLOWACC']" type="raster" />
-          <Node xpathlabel="Name" xpath="Raster[@id='DEM_VB']" type="raster" />
+          <Node xpathlabel="Name" xpath="Vector[@id='BRAT_PERENNIAL']" type="line" symbology="FLOWLINES" />
+          <Node xpathlabel="Name" xpath="Vector[@id='VB_BUFFERED']" type="polygon" symbology="valley_bottom" />
+          <Node xpathlabel="Name" xpath="Raster[@id='DEM']" type="raster" symbology="dem" />
+          <Node xpathlabel="Name" xpath="Raster[@id='D8SLOPE']" type="raster" symbology="slope" />
+          <Node xpathlabel="Name" xpath="Raster[@id='PITFILL']" type="raster" symbology="pitfill" />
+          <Node xpathlabel="Name" xpath="Raster[@id='FAC']" type="raster"  symbology="flow_accumulation" />
+          <Node xpathlabel="Name" xpath="Raster[@id='FLOWDIR']" type="raster" symbology="flow_direction" />
+          <Node xpathlabel="Name" xpath="Raster[@id='FLOWACC']" type="raster" symbology="flow_accumulation" />
+          <Node xpathlabel="Name" xpath="Raster[@id='DEM_VB']" type="raster" symbology="dem" />
         </Children>
       </Node>
     </Children>
