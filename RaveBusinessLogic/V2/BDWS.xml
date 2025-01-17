@@ -44,7 +44,7 @@
       </Node>
       <Node label="Inputs" xpath="CommonDatasets">
         <Children>
-          <Node xpathlabel="Name" xpath="Vector[@id='BRAT_PERENNIAL']" type="line" symbology="FLOWLINES" />
+          <Node xpathlabel="Name" xpath="Vector[@id='BRAT_PERENNIAL']" type="line" symbology="oCC_EX" />
           <Node xpathlabel="Name" xpath="Vector[@id='VB_BUFFERED']" type="polygon" symbology="valley_bottom" />
           <Node xpathlabel="Name" xpath="Raster[@id='DEM']" type="raster" symbology="dem" />
           <Node xpathlabel="Name" xpath="Raster[@id='D8SLOPE']" type="raster" symbology="slope" />
