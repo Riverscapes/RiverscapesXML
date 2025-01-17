@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Beaver Dam Water Storage</Name>
+  <ProjectType>BDWS</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Outputs">
+        <Children collapsed="false">
+          <Repeater xpath="Realizations/Realization" label="Realizations" collapsed="true">
+            <Node xpathlabel="Name">
+              <Children collapsed="true">
+                <Node xpathlabel="Name" xpath="Outputs/Vector[@id='MODELEDDAMPOINTS']" type="point" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_HI']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_LO']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='PONDID']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPLO']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DAMID']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_MID']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_LO']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HTABOVE']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_MID']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='HEAD_START']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPHI']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEPMID']" type="raster" />
+                <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WSESURF_HI']" type="raster" />
+              </Children>
+            </Node>
+          </Repeater>
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="CommonDatasets">
+        <Children>
+          <Node xpathlabel="Name" xpath="Vector[@id='BRAT_PERENNIAL']" type="line" />
+          <Node xpathlabel="Name" xpath="Vector[@id='VB_BUFFERED']" type="polygon" />
+          <Node xpathlabel="Name" xpath="Raster[@id='DEM']" type="raster" />
+          <Node xpathlabel="Name" xpath="Raster[@id='D8SLOPE']" type="raster" />
+          <Node xpathlabel="Name" xpath="Raster[@id='PITFILL']" type="raster" />
+          <Node xpathlabel="Name" xpath="Raster[@id='FAC']" type="raster" />
+          <Node xpathlabel="Name" xpath="Raster[@id='FLOWDIR']" type="raster" />
+          <Node xpathlabel="Name" xpath="Raster[@id='FLOWACC']" type="raster" />
+          <Node xpathlabel="Name" xpath="Raster[@id='DEM_VB']" type="raster" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>
