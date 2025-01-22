@@ -3,18 +3,18 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vbet_igos.json"
+    "CIMPATH=map/acres_of_estimated_low_lying_valley_bottom_per_mile.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vbet_igos",
-      "uRI" : "CIMPATH=map/main_vbet_igos.json",
+      "name" : "Acres of Estimated Low-Lying Valley Bottom per Mile",
+      "uRI" : "CIMPATH=map/acres_of_estimated_low_lying_valley_bottom_per_mile.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vbet_igos",
+      "description" : "Acres of Estimated Low-Lying Valley Bottom per Mile",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
@@ -432,7 +432,7 @@
         },
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\VBET_Landers\\outputs\\vbet.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1601010102_sulphur\\VBET_Sulphur\\outputs\\vbet.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vbet_igos",
           "datasetType" : "esriDTFeatureClass",
@@ -454,26 +454,6 @@
           },
           "oIDFields" : "fid",
           "geometryType" : "esriGeometryPoint",
-          "extent" : {
-            "xmin" : -112.76911199999995,
-            "ymin" : 46.965733000000057,
-            "xmax" : -112.507125999999971,
-            "ymax" : 47.2348980000000438,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "fid",
@@ -1047,7 +1027,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1063,10 +1043,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              247,
-                              252,
-                              245,
-                              100
+                              255,
+                              251,
+                              121,
+                              75
                             ]
                           }
                         }
@@ -1098,7 +1078,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1114,10 +1094,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              232,
-                              246,
-                              228,
-                              100
+                              229,
+                              238,
+                              109,
+                              75
                             ]
                           }
                         }
@@ -1149,7 +1129,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1165,10 +1145,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              209,
-                              236,
-                              202,
-                              100
+                              203,
+                              225,
+                              97,
+                              75
                             ]
                           }
                         }
@@ -1200,7 +1180,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1216,10 +1196,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              181,
-                              221,
-                              177,
-                              100
+                              176,
+                              211,
+                              85,
+                              75
                             ]
                           }
                         }
@@ -1251,7 +1231,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1267,10 +1247,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              142,
-                              209,
-                              140,
-                              100
+                              150,
+                              198,
+                              73,
+                              75
                             ]
                           }
                         }
@@ -1302,7 +1282,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1318,10 +1298,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              60,
-                              168,
-                              88,
-                              100
+                              123,
+                              185,
+                              61,
+                              75
                             ]
                           }
                         }
@@ -1353,7 +1333,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1369,10 +1349,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              65,
-                              165,
-                              91,
-                              100
+                              97,
+                              171,
+                              49,
+                              75
                             ]
                           }
                         }
@@ -1404,7 +1384,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1420,10 +1400,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
+                              70,
+                              158,
                               37,
-                              139,
-                              71,
-                              100
+                              75
                             ]
                           }
                         }
@@ -1455,7 +1435,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1471,10 +1451,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              0,
-                              113,
-                              47,
-                              100
+                              44,
+                              144,
+                              25,
+                              75
                             ]
                           }
                         }
@@ -1506,7 +1486,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Y",
-                    "size" : 5,
+                    "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "characterIndex" : 33,
                     "fontFamilyName" : "ESRI Default Marker",
@@ -1522,10 +1502,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              0,
-                              68,
-                              28,
-                              100
+                              18,
+                              131,
+                              14,
+                              75
                             ]
                           }
                         }

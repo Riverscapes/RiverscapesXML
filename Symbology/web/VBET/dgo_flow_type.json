@@ -1,0 +1,47 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(25, 103, 193)", "46006 - Perennial"],
+    ["rgb(115, 222, 255)", "33600 - Canal"],
+    ["rgb(255, 81, 0)", "33400 - Connector"],
+    ["rgb(207, 89, 107)", "55800 - Artificial Path"],
+    ["rgb(170, 255, 0)", "46003 - Intermittent"],
+    ["rgb(255, 170, 0)", "46007 - Ephemeral"]
+  ],
+  "layerStyles": [
+    {
+        "id": "dgo-sample-29ekr8",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "DGO_sample-29ekr8",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "match",
+                ["get", "FCode"],
+                [46006],
+                "rgb(25, 103, 193)",
+                [33600],
+                "rgb(115, 222, 255)",
+                [33400],
+                "rgb(255, 81, 0)",
+                [55800],
+                "rgb(207, 89, 107)",
+                [46003],
+                "rgb(170, 255, 0)",
+                [46007],
+                "rgb(255, 170, 0)",
+                "#000000"
+            ]
+        }
+    },
+    {
+        "id": "dgo-sample-29ekr8 (1)",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "DGO_sample-29ekr8",
+        "layout": {},
+        "paint": {"line-width": 0.5}
+    }
+]
+}

@@ -3,18 +3,18 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vbet_dgos.json"
+    "CIMPATH=map/est__prop__of_vb_low_lying__dgos_.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vbet_dgos",
-      "uRI" : "CIMPATH=map/main_vbet_dgos.json",
+      "name" : "Est. Prop. of VB Low-Lying (DGOs)",
+      "uRI" : "CIMPATH=map/est__prop__of_vb_low_lying__dgos_.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vbet_dgos",
+      "description" : "Est. Prop. of VB Low-Lying (DGOs)",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
@@ -264,7 +264,7 @@
         },
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\VBET_Landers\\intermediates\\vbet_intermediates.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1601010102_sulphur\\VBET_Sulphur\\intermediates\\vbet_intermediates.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vbet_dgos",
           "datasetType" : "esriDTFeatureClass",
@@ -286,26 +286,6 @@
           },
           "oIDFields" : "fid",
           "geometryType" : "esriGeometryPolygon",
-          "extent" : {
-            "xmin" : -112.769690999999966,
-            "ymin" : 46.9656180000000631,
-            "xmax" : -112.506568999999956,
-            "ymax" : 47.2350430000000756,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "fid",
@@ -796,12 +776,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        58,
-                        53,
-                        100,
-                        100
+                        255,
+                        250.5,
+                        121,
+                        75
                       ]
                     }
                   }
@@ -844,12 +824,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        67,
-                        55,
-                        93,
-                        100
+                        247,
+                        247,
+                        141,
+                        75
                       ]
                     }
                   }
@@ -892,12 +872,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        75,
-                        58,
-                        88,
-                        100
+                        239,
+                        243,
+                        160,
+                        75
                       ]
                     }
                   }
@@ -940,12 +920,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        83,
-                        61,
-                        83,
-                        100
+                        231,
+                        239,
+                        180,
+                        75
                       ]
                     }
                   }
@@ -988,12 +968,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        91,
-                        64,
-                        78,
-                        100
+                        223,
+                        234,
+                        199,
+                        75
                       ]
                     }
                   }
@@ -1036,12 +1016,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        99,
-                        68,
-                        73,
-                        100
+                        171,
+                        212,
+                        156,
+                        75
                       ]
                     }
                   }
@@ -1084,12 +1064,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        107,
-                        72,
-                        67,
-                        100
+                        108,
+                        184,
+                        97,
+                        75
                       ]
                     }
                   }
@@ -1132,12 +1112,12 @@
                     "type" : "CIMSolidFill",
                     "enable" : true,
                     "color" : {
-                      "type" : "CIMHSVColor",
+                      "type" : "CIMRGBColor",
                       "values" : [
-                        116,
-                        76,
-                        62,
-                        100
+                        44,
+                        157,
+                        38,
+                        75
                       ]
                     }
                   }

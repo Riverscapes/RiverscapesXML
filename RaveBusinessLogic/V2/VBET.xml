@@ -8,7 +8,11 @@
       <Node label="Outputs">
         <Children collapsed="true">
           <Node label="Valley Bottom Extent (Hollow)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_hollow" id="vbet_extent_hollow" />               
-          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_filled" transparency="40" id="vbet_extent_filled" />   
+          <Node label="Valley Bottom Extent (Filled)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_extent_filled" transparency="40" id="vbet_extent_filled" />
+          <Node label="Stream Name Label" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="stream_name_label" id="stream_name_label" />
+          <Node label="Level Path Label" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="level_path_label" id="level_path_label" />
+          <Node label="Flow Type DGOs" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_flow_type" id="flow_type" />
+          <Node label="Riverscape/Non-Riverscape Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_full']" type="polygon" symbology="vbet_riverscape" id="vbet_river" /> 
           <Node label="Categorized VBET (2-class)">
             <Children collapsed="true">
               <Node label="Estimated Low-Lying Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='low_lying_valley_bottom']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_vb"/>
@@ -19,7 +23,7 @@
           </Node>
           <Node label="Categorized VBET (3-class)">
             <Children collapsed="true">
-              <Node label="Estimated Channel (Channel Area Input)" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
+              <Node label="Channel (Channel Area Input)" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="vbet_channel_area" transparency="40" id="vbet_channel_area" />                        
               <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='low_lying_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
               <Node label="Estimated Low-Lying Valley Bottom (without channel)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='active_floodplain']" type="polygon" symbology="vbet_lowlying" transparency="40" id="vbet_active_floodplain"/>
               <Node label="Estimated Elevated Valley Bottom" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='elevated_floodplain']" type="polygon" symbology="vbet_elevated" transparency="40" id="vbet_inactive_floodplain"/>
@@ -51,33 +55,33 @@
               <Node label="Moving Window Analysis Distance" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_moving_window_distance" transparency="40" />
               <Node label="Acres of Categorized VBET (2-class) per Mile">
                 <Children collapsed="true">
-                  <Node label="Acres of Estimated Low-Lying Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_lowlying_vb_mile" transparency="40" />
-                  <Node label="Acres of Estimated Elevated Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_elevated_vb_mile" transparency="40" />
+                  <Node label="Acres of Low-Lying Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_lowlying_vb_mile" transparency="40" />
+                  <Node label="Acres of Elevated Valley Bottom per Mile" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_ac_elevated_vb_mile" transparency="40" />
                 </Children>
               </Node>
               <Node label="Hectares of Categorized VBET (2-class) per Kilometer">
                 <Children collapsed="true">
-                  <Node label="Hectares of Estimated Low-Lying Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_lowlying_vb_km" transparency="40" />
-                  <Node label="Hectares of Estimated Elevated Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_elevated_vb_km" transparency="40" />
+                  <Node label="Hectares of Low-Lying Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_lowlying_vb_km" transparency="40" />
+                  <Node label="Hectares of Elevated Valley Bottom per Kilometer" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" symbology="igo_hec_elevated_vb_km" transparency="40" />
                 </Children>
               </Node>
             </Children>
           </Node>
-          <Node label="Relative Likelihood of being Valley Bottom (composite)" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
+          <Node label="Relative Likelihood of being Valley Bottom" xpath="Outputs/Raster[@id='VBET_EVIDENCE']" type="raster" symbology="vbetLikelihood" transparency="40" id="likevbet" />
         </Children>
       </Node>
       <Node label="Intermediates">
         <Children collapsed="true">
           <Node label="Evidence Rasters">
             <Children collapsed="false">
-              <Node label="Slope Raster" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
-              <Node label="HAND Raster (composite)" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
+              <Node label="Slope Raster (degrees)" xpath="Inputs/Raster[@id='SLOPE_RASTER']" type="raster" symbology="slope" transparency="40" />
+              <Node label="HAND Raster" xpath="Intermediates/Raster[@id='HAND_RASTER']" type="raster" symbology="hand" transparency="40" />
             </Children>
           </Node>
           <Node label="Transformed Evidence Rasters">
             <Children collapsed="false">
-              <Node label="Transformed Slope Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" id="transformed_slope" />
-              <Node label="Transformed HAND Evidence" xpath="Intermediates/Raster[@id='TRANSFORMED_HAND']" type="raster" symbology="norm_hand" transparency="40" id="transformed_hand" />
+              <Node label="Transformed Slope Evidence (Likelihood 0-1)" xpath="Intermediates/Raster[@id='TRANSFORMED_SLOPE']" type="raster" symbology="norm_slope" transparency="40" id="transformed_slope" />
+              <Node label="Transformed HAND Evidence (Likelihood 0-1)" xpath="Intermediates/Raster[@id='TRANSFORMED_HAND']" type="raster" symbology="norm_hand" transparency="40" id="transformed_hand" />
             </Children>
           </Node>
             <Node label="Valley Bottom Rasters">
@@ -108,12 +112,12 @@
           </Children>
         </Node>
         <Node label="Log File" xpath="Logs/LogFile" type="file" />
+        <Node label="Metrics" xpath="Datasets/File" type="file" />
       </Children>
     </Node>
     <Views default="DEFAULT">
       <View name="Primary Outputs" id="DEFAULT">
         <Layers>
-          <Layer id="streamnames" />
           <Layer id="vbet_extent_hollow" />
           <Layer id="hillshade" />
         </Layers>
@@ -125,10 +129,29 @@
           <Layer id="hillshade" />
         </Layers>
       </View>
-      <View name="Transformed Evidence Rasters" id="Norm">
+      <View name="Stream Names" id="StreamName">
+        <Layers>
+          <Layer id="stream_name_label" />
+          <Layer id="flow_type" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="Level Path Labels" id="LevelPath">
+        <Layers>
+          <Layer id="level_path_label" />
+          <Layer id="flow_type" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="Transformed HAND Evidence Raster" id="NormHAND">
+        <Layers>
+          <Layer id="transformed_hand" />
+          <Layer id="hillshade" />
+        </Layers>
+      </View>
+      <View name="Transformed Slope Evidence Raster" id="NormSlope">
         <Layers>
           <Layer id="transformed_slope" />
-          <Layer id="transformed_hand" />
           <Layer id="hillshade" />
         </Layers>
       </View>
