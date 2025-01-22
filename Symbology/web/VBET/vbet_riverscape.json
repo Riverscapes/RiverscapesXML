@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgba(255, 170, 0, 1)", "Non-Riverscape Valley Bottom"],
+    ["rgba(40, 170, 226, 1)", "Riverscape Valley Bottom"]
+  ],
+  "layerStyles": [
+    {
+        "id": "vbet-sample-csa6dg",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "vbet_sample-csa6dg",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "case",
+                ["!", ["has", "level_path"]],
+                ["rgba", 255, 170, 0, 1],
+                ["rgba", 40, 170, 226, 1]
+            ]
+        }
+    },
+    {
+        "id": "vbet-sample-csa6dg (1)",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "vbet_sample-csa6dg",
+        "layout": {},
+        "paint": {"line-width": 0.5}
+    }
+]
+}

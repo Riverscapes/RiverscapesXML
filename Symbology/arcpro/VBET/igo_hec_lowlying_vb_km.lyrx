@@ -3,18 +3,18 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vbet_igos.json"
+    "CIMPATH=map/tares_of_estimated_low_lying_valley_bottom_per_kilometer.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vbet_igos",
-      "uRI" : "CIMPATH=map/main_vbet_igos.json",
+      "name" : "Hectares of Estimated Low-Lying Valley Bottom per Kilometer",
+      "uRI" : "CIMPATH=map/tares_of_estimated_low_lying_valley_bottom_per_kilometer.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vbet_igos",
+      "description" : "Hectares of Estimated Low-Lying Valley Bottom per Kilometer",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
@@ -432,7 +432,7 @@
         },
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\VBET_Landers\\outputs\\vbet.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1601010102_sulphur\\VBET_Sulphur\\outputs\\vbet.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vbet_igos",
           "datasetType" : "esriDTFeatureClass",
@@ -454,26 +454,6 @@
           },
           "oIDFields" : "fid",
           "geometryType" : "esriGeometryPoint",
-          "extent" : {
-            "xmin" : -112.76911199999995,
-            "ymin" : 46.965733000000057,
-            "xmax" : -112.507125999999971,
-            "ymax" : 47.2348980000000438,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "fid",
@@ -1071,10 +1051,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              152,
-                              6,
-                              0,
-                              100
+                              255,
+                              251,
+                              121,
+                              75
                             ]
                           }
                         }
@@ -1122,10 +1102,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              193,
-                              114,
-                              59,
-                              100
+                              229,
+                              238,
+                              109,
+                              75
                             ]
                           }
                         }
@@ -1173,10 +1153,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              230,
-                              227,
-                              107,
-                              100
+                              203,
+                              225,
+                              97,
+                              75
                             ]
                           }
                         }
@@ -1224,10 +1204,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              128,
-                              193,
-                              110,
-                              100
+                              176,
+                              211,
+                              85,
+                              75
                             ]
                           }
                         }
@@ -1275,10 +1255,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              52,
-                              175,
-                              110,
-                              100
+                              150,
+                              198,
+                              73,
+                              75
                             ]
                           }
                         }
@@ -1326,10 +1306,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              45,
-                              164,
-                              124,
-                              100
+                              123,
+                              185,
+                              61,
+                              75
                             ]
                           }
                         }
@@ -1377,10 +1357,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              31,
-                              155,
-                              140,
-                              100
+                              97,
+                              171,
+                              49,
+                              75
                             ]
                           }
                         }
@@ -1428,10 +1408,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              25,
-                              144,
-                              151,
-                              100
+                              70,
+                              158,
+                              37,
+                              75
                             ]
                           }
                         }
@@ -1479,10 +1459,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              21,
-                              128,
-                              178,
-                              100
+                              44,
+                              144,
+                              25,
+                              75
                             ]
                           }
                         }
@@ -1530,10 +1510,10 @@
                           "color" : {
                             "type" : "CIMRGBColor",
                             "values" : [
-                              12,
-                              119,
-                              191,
-                              100
+                              18,
+                              131,
+                              14,
+                              75
                             ]
                           }
                         }
