@@ -11,7 +11,7 @@
         "source-layer": "vbet_extent_hollow-2nztj2",
         "layout": {},
         "paint": {
-            "line-dasharray": [1, 2],
+            "line-width": 0.26,
             "line-color": "hsl(0, 0%, 100%)"
         }
     }

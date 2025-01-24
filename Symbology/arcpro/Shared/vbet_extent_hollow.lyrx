@@ -3,18 +3,18 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vbet_full.json"
+    "CIMPATH=map/valley_bottom_extent__hollow_2.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vbet_full",
-      "uRI" : "CIMPATH=map/main_vbet_full.json",
+      "name" : "Valley Bottom Extent (Hollow)",
+      "uRI" : "CIMPATH=map/valley_bottom_extent__hollow_2.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vbet_full",
+      "description" : "Valley Bottom Extent (Hollow)",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
@@ -96,7 +96,7 @@
         },
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\VBET_Landers\\outputs\\vbet.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\VBET_Pierpont_Lake\\outputs\\vbet.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vbet_full",
           "datasetType" : "esriDTFeatureClass",
@@ -118,26 +118,6 @@
           },
           "oIDFields" : "fid",
           "geometryType" : "esriGeometryPolygon",
-          "extent" : {
-            "xmin" : -112.769690999999966,
-            "ymin" : 46.9656180000000631,
-            "xmax" : -112.506568999999956,
-            "ymax" : 47.2350430000000756,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "fid",
@@ -455,17 +435,6 @@
             "symbolLayers" : [
               {
                 "type" : "CIMSolidStroke",
-                "effects" : [
-                  {
-                    "type" : "CIMGeometricEffectDashes",
-                    "dashTemplate" : [
-                      2,
-                      2
-                    ],
-                    "lineDashEnding" : "NoConstraint",
-                    "controlPointEnding" : "NoConstraint"
-                  }
-                ],
                 "enable" : true,
                 "capStyle" : "Butt",
                 "joinStyle" : "Round",
@@ -485,33 +454,15 @@
                 }
               },
               {
-                "type" : "CIMSolidStroke",
-                "effects" : [
-                  {
-                    "type" : "CIMGeometricEffectDashes",
-                    "dashTemplate" : [
-                      2,
-                      2
-                    ],
-                    "lineDashEnding" : "NoConstraint",
-                    "controlPointEnding" : "NoConstraint"
-                  }
-                ],
+                "type" : "CIMSolidFill",
                 "enable" : true,
-                "capStyle" : "Butt",
-                "joinStyle" : "Round",
-                "lineStyle3D" : "Strip",
-                "miterLimit" : 10,
-                "width" : 1.5,
-                "height3D" : 1,
-                "anchor3D" : "Center",
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    104,
-                    104,
-                    104,
-                    100
+                    204,
+                    204,
+                    204,
+                    0
                   ]
                 }
               }

@@ -3,18 +3,18 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vbet_centerlines.json"
+    "CIMPATH=map/centerline_of_valley_bottom.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vbet_centerlines",
-      "uRI" : "CIMPATH=map/main_vbet_centerlines.json",
+      "name" : "Centerline of Valley Bottom",
+      "uRI" : "CIMPATH=map/centerline_of_valley_bottom.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vbet_centerlines",
+      "description" : "Centerline of Valley Bottom",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
@@ -37,9 +37,40 @@
         "type" : "CIMFeatureTable",
         "displayField" : "level_path",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "fid",
+            "fieldName" : "fid",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "geom",
+            "fieldName" : "geom",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "level_path",
+            "fieldName" : "level_path",
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1701020301_landers\\VBET_Landers\\outputs\\vbet.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1601010102_sulphur\\VBET_Sulphur\\outputs\\vbet.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vbet_centerlines",
           "datasetType" : "esriDTFeatureClass",
@@ -61,26 +92,6 @@
           },
           "oIDFields" : "fid",
           "geometryType" : "esriGeometryPolyline",
-          "extent" : {
-            "xmin" : -112.76962999999995,
-            "ymin" : 46.9656640000000607,
-            "xmax" : -112.506614999999954,
-            "ymax" : 47.2349890000000414,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "fid",
@@ -378,12 +389,8 @@
                   {
                     "type" : "CIMGeometricEffectDashes",
                     "dashTemplate" : [
-                      8,
-                      4,
-                      4,
-                      4,
-                      4,
-                      4
+                      2,
+                      2
                     ],
                     "lineDashEnding" : "NoConstraint",
                     "controlPointEnding" : "NoConstraint"

@@ -52,7 +52,7 @@
               5
           ],
           "circle-color": "hsla(0, 0%, 0%, 0)",
-          "circle-stroke-width": 1
+          "circle-stroke-width": 0.5
       }
   }
   ]

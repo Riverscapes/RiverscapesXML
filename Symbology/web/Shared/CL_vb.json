@@ -10,7 +10,7 @@
         "source": "composite",
         "source-layer": "vbet_centerlines-axpb18",
         "layout": {},
-        "paint": {"line-dasharray": [15, 2, 5, 2]}
+        "paint": {"line-dasharray": [2, 2]}
     }
 ]
 }
