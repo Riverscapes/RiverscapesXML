@@ -1,118 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
   <Name>CHaMP Topo</Name>
-  <ProjectType>topo</ProjectType>
+  <ProjectType>Topo</ProjectType>
   <Node xpathlabel="Name">
     <Children collapsed="false">
-      <Node label="Topos">
+      <Node label="Topo">
         <Children>
-          <Node label="Auxiliary Survey Data" xpath="Realizations/Realization/TIN">
+          <Node label="Auxiliary Survey Data" xpath="Realizations/Realization[@id='topography']">
             <Children collapsed="true">
               <Node label="Channel Units">
                 <Children>
-                  <Node label="Unit ID" xpath="ChannelUnits" type="polygon" symbology="cu_UnitNum" />
+                  <Node label="Unit ID" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_UnitNum" />
                 </Children>
               </Node>
               <Node label="Hawkins Channel Units">
                 <Children>
-                  <Node label="Tier 1" xpath="ChannelUnits" type="polygon" symbology="cu_T1" />
-                  <Node label="Tier 2" xpath="ChannelUnits" type="polygon" symbology="cu_T2" />
+                  <Node label="Tier 1" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_T1" />
+                  <Node label="Tier 2" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_T2" />
                 </Children>
               </Node>
               <Node label="Grain Size Occular Estimates">
                 <Children>
-                  <Node label="D16" xpath="ChannelUnits" type="polygon" symbology="cu_D16" />
-                  <Node label="D50" xpath="ChannelUnits" type="polygon" symbology="cu_D50" />
-                  <Node label="D84" xpath="ChannelUnits" type="polygon" symbology="cu_D84" />
-                  <Node label="D90" xpath="ChannelUnits" type="polygon" symbology="cu_D90" />
+                  <Node label="D16" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_D16" />
+                  <Node label="D50" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_D50" />
+                  <Node label="D84" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_D84" />
+                  <Node label="D90" xpath="Outputs/Vector[@id='ChannelUnits']" type="polygon" symbology="cu_D90" />
                 </Children>
               </Node>
             </Children>
           </Node>
-          
-          <Node label="Topographic Survey Data" xpath="Realizations/Realization">
+          <Node label="Topographic Survey Data" xpath="Realizations/Realization[@id='survey_data_projected']">
             <Children collapsed="true">
-              <Node xpathlabel="Name" xpath="SurveyExtents/Vector[@id='survey_extent']" type="polygon" symbology="SurveyExtent" />
-              <Node xpathlabel="Name" xpath="Vector[@id='breaklines']" type="line" symbology="breaklines" />
-              <Node xpathlabel="Name" xpath="Vector[@id='topo_points']" type="point" symbology="pts_topo" />
-              <Node xpathlabel="Name" xpath="Vector[@id='eow_points']" type="point" symbology="pts_eow" />
-              <Node xpathlabel="Name" xpath="Vector[@id='control_points']" type="point" symbology="pts_control" />
-              <Node xpathlabel="Name" xpath="Vector[@id='stream_features']" type="point" symbology="pts_streamFeatures" />
-              <Node xpathlabel="Name" xpath="Vector[@id='error_points']" type="point" symbology="pts_error" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='survey_extent']" type="polygon" symbology="SurveyExtent" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='breaklines']" type="line" symbology="breaklines" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='topo_points']" type="point" symbology="pts_topo" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='eow_points']" type="point" symbology="pts_eow" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='control_points']" type="point" symbology="pts_control" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='stream_features']" type="point" symbology="pts_streamFeatures" />
+              <Node xpathlabel="Name" xpath="Inputs/Vector[@id='error_points']" type="point" symbology="pts_error" />
             </Children>
           </Node>
-          
-          <Node label="Topographic Derivatives" xpath="Realizations/Realization/TIN">
+          <Node label="Topographic Derivatives" xpath="Realizations/Realization[@id='topography']">
             <Children collapsed="true">
               <Node label="DEM Error Model">
                 <Children>
                   <Node label="Associated Surfaces">
                     <Children>
-                      <Node label="Point Density" xpath="AssocSurfaces/PointDensity" type="raster" symbology="asPD" transparency="40" />
-                      <Node label="Slope Analyis" xpath="AssocSurfaces/Slope" type="raster" symbology="asSD" transparency="40" />
-                      <Node label="Interpolation Error" xpath="AssocSurfaces/InterpolationError" type="raster" symbology="ErrorDEM" transparency="40" />
-                      <Node label="Roughness Height" xpath="AssocSurfaces/Roughness" type="raster" symbology="" transparency="40" />
+                      <Node label="Point Density" xpath="Outputs/Raster[@id='PointDensity']" type="raster" symbology="asPD" transparency="40" />
+                      <Node label="Slope Analyis" xpath="Outputs/Raster[@id='Slope']" type="raster" symbology="asSD" transparency="40" />
+                      <Node label="Interpolation Error" xpath="Outputs/Raster[@id='InterpolationError']" type="raster" symbology="ErrorDEM" transparency="40" />
+                      <Node label="Roughness Height" xpath="Outputs/Raster[@id='Roughness']" type="raster" symbology="" transparency="40" />
+                      <Node label="3D Point Quality" xpath="Outputs/Raster[@id='PointQuality3D']" type="raster" symbology="" transparency="40" />
                     </Children>
                   </Node>
                   <Node label="Error Model(s)">
                     <Children>
-                      <Node label="FIS Error Model" xpath="AssocSurfaces/ErrSurface" type="raster" symbology="ErrorDEM" transparency="40" />
+                      <Node label="FIS Error Model" xpath="Outputs/Raster[@id='ErrSurface']" type="raster" symbology="ErrorDEM" transparency="40" />
                     </Children>
                   </Node>
                 </Children>
               </Node>
               <Node label="Hydraulics">
                 <Children>
-                  <Node xpathlabel="Name" xpath="WaterDepth" type="raster" symbology="wDepth" transparency="40" />
-                  <Node xpathlabel="Name" xpath="WaterSurfaceDEM" type="raster" symbology="wsDEM" transparency="40" />
-                  <Node xpathlabel="Name" xpath="Thalweg" type="line" symbology="thalweg" />
+                  <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WaterDepth']" type="raster" symbology="wDepth" transparency="40" id="water_depth"/>
+                  <Node xpathlabel="Name" xpath="Outputs/Raster[@id='WaterSurfaceDEM']" type="raster" symbology="wsDEM" transparency="40" />
+                  <Node xpathlabel="Name" xpath="Outputs/Vector[@id='thalweg']" type="line" symbology="thalweg" />
                 </Children>
               </Node>
-              
               <Node label="Mapping">
                 <Children collapsed="true">
                   <Node label="Cross Sections, Profiles and Extents">
                     <Children>
                       <Node label="Surveyed Wetted Extent">
                         <Children>
-                          <Node label="Wetted Centerline" xpath="Stages/Vector[@id='wetted_centerline']" type="line" symbology="wetCL" />
-                          <Node label="Wetted Islands" xpath="Stages/Vector[@id='wetted_islands']" type="polygon" symbology="wetIslands" />
-                          <Node label="Wetted Polygon" xpath="Stages/Vector[@id='wetted_extent']" type="polygon" symbology="wetExtent" />
-                          <Node label="X-Sections" xpath="Stages/Vector[@id='wetted_crosssections']" type="line" symbology="XS_type" />
-                          <Node label="XS QA-QC" xpath="Stages/Vector[@id='wetted_crosssections']" type="line" symbology="XS_qaqc" />
+                          <Node label="Wetted Centerline" xpath="Outputs/Vector[@id='wetted_centerline']" type="line" symbology="wetCL" />
+                          <Node label="Wetted Islands" xpath="Outputs/Vector[@id='wetted_islands']" type="polygon" symbology="wetIslands" />
+                          <Node label="Wetted Polygon" xpath="Outputs/Vector[@id='wetted_extent']" type="polygon" symbology="wetExtent" />
+                          <Node label="X-Sections" xpath="Outputs/Vector[@id='wetted_crosssections']" type="line" symbology="XS_type" />
+                          <Node label="XS QA-QC" xpath="Outputs/Vector[@id='wetted_crosssections']" type="line" symbology="XS_qaqc" />
                         </Children>
                       </Node>
                       <Node label="Bankfull Extent">
                         <Children>
-                          <Node label="Bankfull Centerline" xpath="Stages/Vector[@id='bankfull_centerline']" type="line" symbology="bfCL" />
-                          <Node label="Bankfull Islands" xpath="Stages/Vector[@id='bankfull_islands']" type="polygon" symbology="bfIslands" />
-                          <Node label="Bankfull Extent Polygon" xpath="Stages/Vector[@id='bankfull_extent']" type="polygon" symbology="bfExtent" />
-                          <Node label="BF X-Sections" xpath="Stages/Vector[@id='bankfull_crosssections']" type="line" symbology="XS_type" />
-                          <Node label="BF XS QA-QC" xpath="Stages/Vector[@id='bankfull_crosssections']" type="line" symbology="XS_qaqc" />
+                          <Node label="Bankfull Centerline" xpath="Outputs/Vector[@id='bankfull_centerline']" type="line" symbology="bfCL" />
+                          <Node label="Bankfull Islands" xpath="Outputs/Vector[@id='bankfull_islands']" type="polygon" symbology="bfIslands" />
+                          <Node label="Bankfull Extent Polygon" xpath="Outputs/Vector[@id='bankfull_extent']" type="polygon" symbology="bfExtent" />
+                          <Node label="BF X-Sections" xpath="Outputs/Vector[@id='bankfull_crosssections']" type="line" symbology="XS_type" />
+                          <Node label="BF XS QA-QC" xpath="Outputs/Vector[@id='bankfull_crosssections']" type="line" symbology="XS_qaqc" />
                         </Children>
                       </Node>
                     </Children>
                   </Node>
-                  
                 </Children>
               </Node>
             </Children>
           </Node>
-          
-          <Node label="Topography" xpath="Realizations/Realization">
+          <Node label="Topography" xpath="Realizations/Realization[@id='topography']">
             <Children collapsed="false">
-              <Node label="TINs">
+              <!-- <Node label="TINs">
                 <Children>
-                  <Node xpathlabel="Name" xpath="TIN" type="tin" symbology="" />
-                  <Node xpathlabel="Name" xpath="TIN/WaterSurfaceTIN" type="tin" symbology="" />
+                  <Node xpathlabel="Name" xpath="Inputs/TIN" symbology="" type="tin"/>
+                  <Node xpathlabel="Name" xpath="Outputs/TIN[@id='WaterSurfaceTIN'" type="tin" symbology="" />
                 </Children>
-              </Node>
+              </Node> -->
               <Node label="Digital Elevation Models">
                 <Children>
-                  <Node xpathlabel="Name" xpath="TIN/Detrended" type="raster" symbology="detrendDEM" transparency="40" />
-                  <Node xpathlabel="Name" xpath="TIN/DEM" type="raster" symbology="dem" transparency="40" />
-                  <Node xpathlabel="Name" xpath="TIN/DEMHillshade" type="raster" symbology="hillshade" />
-                  
+                  <Node xpathlabel="Name" xpath="Outputs/Raster[@id='Detrended']" type="raster" symbology="detrendDEM" transparency="40" />
+                  <Node xpathlabel="Name" xpath="Outputs/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem"/>
+                  <Node xpathlabel="Name" xpath="Outputs/HillShade[@id='DEMHillshade']" type="raster" symbology="hillshade" id="dem_hillshade"/>
                 </Children>
               </Node>
             </Children>
@@ -123,19 +118,28 @@
         <Children collapsed="true">
           <Node label="Raw Survey Data">
             <Children>
-              <Node label="Breaklines CAD DXF file" xpath="Inputs/Vector[@id='BreaklineDXF']" type="file" />
-              <Node label="Survey Instrument File (*.mjf)" xpath="Inputs/InstrumentFile" type="file" />
-              <Node label="Auxilary RAW Instrument File" xpath="Inputs/AuxInstrumentFile" type="file" />
+              <Node label="Breaklines CAD DXF file" xpath="CommonDatasets/Vector[@id='BreaklineDXF']" type="file" />
+              <Node label="Survey Instrument File (*.mjf)" xpath="CommonDatasets/InstrumentFile" type="file" />
+              <Node label="Auxilary RAW Instrument File" xpath="CommonDatasets/AuxInstrumentFile" type="file" />
+              <Node label="Channel Units CSV" xpath="CommonDatasets/CSV[@id='channelunitcsv']" type="file" />
             </Children>
           </Node>
           <Node label="Survey Quality QA/QC">
             <Children>
-              <Node label="Survey Quality SQLite Database" xpath="Inputs/SurveyQualityDB" type="file" />
-              
+              <Node label="Survey Quality SQLite Database" xpath="CommonDatasets/SurveyQualityDB" type="file" />
             </Children>
           </Node>
         </Children>
       </Node>
     </Children>
   </Node>
+      <Views default="DEFAULT">
+      <View name="Topography with Water Depth" id="DEFAULT">
+        <Layers>
+          <Layer id="water_depth" />
+          <Layer id="dem" />
+          <Layer id="dem_hillshade" />
+        </Layers>
+      </View>
+    </Views>
 </Project>
