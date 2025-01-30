@@ -9,59 +9,55 @@
     <Children collapsed="false">
       <Node label="Hydrography">
         <Children collapsed="false">
-          <Node label="Hydrography">
-            <Children collapsed="true">
-              <Node label="Hydro Junctions"
-                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='junctions']"
-                type="point" symbology="junctions" id="junctions" />
-              <Node label="Perennial Drainage Network"
-                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverlines']"
-                type="line" symbology="nhdperrenial" id="riverlines" />
-              <Node label="Lakes"
-                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='lakes']"
-                type="polygon" symbology="lakes" id="lakes" />
-              <Node label="Catchments"
-                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']"
-                type="polygon" symbology="nhdperrenial" id="catchments" />
-            </Children>
-          </Node>
-          <Node label="Transportation">
-            <Children collapsed="true">
-              <Node label="Roads"
-                xpath="Datasets/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='roads']"
-                type="line" symbology="roads" id="roads" />
-              <Node label="Railways"
-                xpath="Datasets/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='railways']"
-                type="line" symbology="railways" id="railways" />
-            </Children>
-          </Node>
-          <Node label="Land Use">
-            <Children collapsed="true">
-              <Node label="Land Use"
-                xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='landuse']"
-                type="polygon" symbology="landuse" id="landuse" />
-              <Node label="Land Cover"
-                xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='landcover']"
-                type="polygon" symbology="landcover" id="landcover" />
-              <Node label="Suburbs"
-                xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='suburb']"
-                type="polygon" symbology="suburb" id="suburb" />
-            </Children>
-          </Node>
-          <Node label="Administrative">
-            <Children collapsed="true">
-              <Node label="Regional Councils"
-                xpath="Datasets/Geopackage[@id='ADMIN']/Layers/Vector[@lyrName='administration']"
-                type="polygon" symbology="admin" id="admin" />
-            </Children>
-          </Node>
-          <Node label="Watershed Boundaries">
-            <Children collapsed="true">
-              <Node label="Watersheds"
-                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='watersheds']"
-                type="polygon" symbology="watesheds" />
-            </Children>
-          </Node>
+          <Node label="Hydro Junctions"
+            xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='junctions']"
+            type="point" symbology="junctions" id="junctions" />
+          <Node label="Perennial Drainage Network"
+            xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverlines']"
+            type="line" symbology="nhdperrenial" id="riverlines" />
+          <Node label="Lakes"
+            xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='lakes']"
+            type="polygon" symbology="lakes" id="lakes" />
+          <Node label="Catchments"
+            xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']"
+            type="polygon" symbology="nhdperrenial" id="catchments" />
+        </Children>
+      </Node>
+      <Node label="Transportation">
+        <Children collapsed="true">
+          <Node label="Roads"
+            xpath="Datasets/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='roads']"
+            type="line" symbology="roads" id="roads" />
+          <Node label="Railways"
+            xpath="Datasets/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='railways']"
+            type="line" symbology="railways" id="railways" />
+        </Children>
+      </Node>
+      <Node label="Land Use">
+        <Children collapsed="true">
+          <Node label="Land Use"
+            xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='landuse']"
+            type="polygon" symbology="landuse" id="landuse" />
+          <Node label="Land Cover"
+            xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='landcover']"
+            type="polygon" symbology="landcover" id="landcover" />
+          <Node label="Suburbs"
+            xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='suburb']"
+            type="polygon" symbology="suburb" id="suburb" />
+        </Children>
+      </Node>
+      <Node label="Administrative">
+        <Children collapsed="true">
+          <Node label="Regional Councils"
+            xpath="Datasets/Geopackage[@id='ADMIN']/Layers/Vector[@lyrName='administration']"
+            type="polygon" symbology="admin" id="admin" />
+        </Children>
+      </Node>
+      <Node label="Watershed Boundaries">
+        <Children collapsed="true">
+          <Node label="Watersheds"
+            xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='watersheds']"
+            type="polygon" symbology="watesheds" />
         </Children>
       </Node>
       <Node label="Topography and Derivatives">
