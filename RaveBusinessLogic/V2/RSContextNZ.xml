@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
   <Name>Riverscapes Context</Name>
   <ProjectType>RSContext</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Realization">
@@ -9,28 +11,71 @@
         <Children collapsed="false">
           <Node label="Hydrography">
             <Children collapsed="true">
-              <Node label="Hydro Junctions" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='junctions']" type="point" symbology="junctions" id="junctions" />
-              <Node label="Perennial Drainage Network" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverlines']" type="line" symbology="nhdperrenial" id="riverlines" />
-              <Node label="Lakes" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='lakes']" type="polygon" symbology="lakes" id="lakes" />
-              <Node label="Catchments" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']" type="polygon" symbology="nhdperrenial" id="catchments" />
+              <Node label="Hydro Junctions"
+                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='junctions']"
+                type="point" symbology="junctions" id="junctions" />
+              <Node label="Perennial Drainage Network"
+                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverlines']"
+                type="line" symbology="nhdperrenial" id="riverlines" />
+              <Node label="Lakes"
+                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='lakes']"
+                type="polygon" symbology="lakes" id="lakes" />
+              <Node label="Catchments"
+                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']"
+                type="polygon" symbology="nhdperrenial" id="catchments" />
+            </Children>
+          </Node>
+          <Node label="Transportation">
+            <Children collapsed="true">
+              <Node label="Roads"
+                xpath="Datasets/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='roads']"
+                type="line" symbology="roads" id="roads" />
+              <Node label="Railways"
+                xpath="Datasets/Geopackage[@id='TRANSPORTATION']/Layers/Vector[@lyrName='railways']"
+                type="line" symbology="railways" id="railways" />
+            </Children>
+          </Node>
+          <Node label="Land Use">
+            <Children collapsed="true">
+              <Node label="Land Use"
+                xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='landuse']"
+                type="polygon" symbology="landuse" id="landuse" />
+              <Node label="Land Cover"
+                xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='landcover']"
+                type="polygon" symbology="landcover" id="landcover" />
+              <Node label="Suburbs"
+                xpath="Datasets/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='suburb']"
+                type="polygon" symbology="suburb" id="suburb" />
+            </Children>
+          </Node>
+          <Node label="Administrative">
+            <Children collapsed="true">
+              <Node label="Regional Councils"
+                xpath="Datasets/Geopackage[@id='ADMIN']/Layers/Vector[@lyrName='administration']"
+                type="polygon" symbology="admin" id="admin" />
             </Children>
           </Node>
           <Node label="Watershed Boundaries">
             <Children collapsed="true">
-              <Node label="Watersheds" xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='watersheds']" type="polygon" symbology="watesheds" />
+              <Node label="Watersheds"
+                xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='watersheds']"
+                type="polygon" symbology="watesheds" />
             </Children>
           </Node>
         </Children>
       </Node>
       <Node label="Topography and Derivatives">
         <Children collapsed="true">
-          <Node label="DEM (8 m)" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
-          <Node label="Slope Analysis" xpath="Datasets/Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
+          <Node label="DEM (8 m)" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem"
+            transparency="40" id="dem" />
+          <Node label="Slope Analysis" xpath="Datasets/Raster[@id='SLOPE']" type="raster"
+            symbology="slope" transparency="40" />
         </Children>
       </Node>
       <Node label="Hillshade">
         <Children collapsed="true">
-          <Node xpathlabel="Name" xpath="Datasets/Raster[@id='HILLSHADE']" type="raster" symbology="hillshade" id="hs" />
+          <Node xpathlabel="Name" xpath="Datasets/Raster[@id='HILLSHADE']" type="raster"
+            symbology="hillshade" id="hs" />
         </Children>
       </Node>
       <Node label="Log File" xpath="Logs/LogFile" type="file" />
@@ -41,7 +86,8 @@
     <View name="Hydrology" id="Default">
       <Layers>
         <Layer id="riverlines" />
-        <Layer id="hs" /> <!-- A test to see if we like it and to see if we avoid the webrave problem of green fill with HUC8-->
+        <Layer id="hs" /> <!-- A test to see if we like it and to see if we avoid the webrave problem
+        of green fill with HUC8-->
       </Layers>
     </View>
     <View name="Topography" id="Topography">
