@@ -1,0 +1,41 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 0, 0)", "Structure Complex Extents"]
+ 
+
+  ],
+  "layerStyles": [
+    {
+        "id": "complexes-60hgco",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "complexes-60hgco",
+        "layout": {},
+        "paint": {
+            "fill-outline-color": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                0,
+                "rgba(255, 255, 255, 0.25)",
+                22,
+                "rgba(255, 255, 255, 0.25)"
+            ],
+            "fill-color": "rgba(201, 221, 226, 0.25)"
+        }
+    },
+    {
+        "id": "complexes-60hgco (1)",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "complexes-60hgco",
+        "layout": {},
+        "paint": {
+            "line-color": "rgb(255, 0, 0)",
+            "line-width": 1.5,
+            "line-dasharray": [4, 2]
+        }
+    }
+    ]
+}
