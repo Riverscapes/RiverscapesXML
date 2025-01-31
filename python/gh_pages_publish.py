@@ -104,6 +104,12 @@ def prep_copy():
         shutil.copy(src, dst)
         logging.info('Copied {} --> {}'.format(src, dst))
 
+    if os.path.isfile(WEB_RASTER_SYMBOLOGY):
+        src = WEB_RASTER_SYMBOLOGY
+        dst = os.path.join('.', PUBLIC_DIR, WEB_RASTER_SYMBOLOGY)
+        shutil.copy(src, dst)
+        logging.info('Copied {} --> {}'.format(src, dst))
+
     if os.path.isfile(INDEX_HTML):
         src = INDEX_HTML
         dst = os.path.join('.', PUBLIC_DIR, INDEX_HTML)
