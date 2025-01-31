@@ -11,6 +11,9 @@
                             <Node label="Land Use Intensity (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo" id="lui_igo" />
                             <Node label="Road Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_len" />
                             <Node label="Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_dens" id="rd_dens_igo"/>
+                            <Node label="Primary Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_prim_dens" id="rd_prim_dens_igo"/>
+                            <Node label="Secondary Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_sec_dens" id="rd_sec_dens_igo"/>
+                            <Node label="4-Wheel Drive Road Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="road_4wd_dens" id="rd_4wd_dens_igo"/>
                             <Node label="Railroad Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rail_len" />
                             <Node label="Railroad Density" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="rail_dens" id="rail_dens_igo" />
                             <Node label="Canal Length" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="canal_length" />
@@ -23,16 +26,16 @@
                     </Node>
                     <Node label="Reach Outputs">
                         <Children collapsed="true">
-                            <Node label="Land Ownership per Reach" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reach_ownership" />
+                            <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reach_ownership" />
                             <Node label="Land Use Intensity (Reach)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU" />
-                            <Node label="Distance to Nearest Infrastructure" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oPC_Dist" />
-                            <Node label="Distance to Railroad" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Rail" />
-                            <Node label="Distance to Railroad in Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RailVB" />
-                            <Node label="Distance to Road" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Road" />
-                            <Node label="Distance to Road Crossing" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RoadX" />
-                            <Node label="Distance to Road in Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RoadVB" />
-                            <Node label="Distance to Points of Diversion" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_DivPts" />
-                            <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Canal" />
+                            <Node label="Distance to Nearest Infrastructure" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oPC_Dist_anthro" />
+                            <Node label="Distance to Railroad" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Rail_anthro" />
+                            <Node label="Distance to Railroad in Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RailVB_anthro" />
+                            <Node label="Distance to Road" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Road_anthro" />
+                            <Node label="Distance to Road Crossing" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RoadX_anthro" />
+                            <Node label="Distance to Road in Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_RoadVB_anthro" />
+                            <Node label="Distance to Points of Diversion" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_DivPts_anthro" />
+                            <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Canal_anthro" />
                         </Children>
                     </Node>
                 </Children>
@@ -81,6 +84,8 @@
                     <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hs" />
                 </Children>
             </Node>
+            <Node label="Log File" xpath="Logs/LogFile" type="file" />
+            <Node label="Metrics" xpath="Datasets/File" type="file" />
         </Children>
     </Node>
     <Views default="LUI">

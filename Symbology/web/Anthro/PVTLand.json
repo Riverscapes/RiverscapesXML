@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(51, 160, 44)", "Private Land"]
+  ],
+  "layerStyles": [
+    {
+        "id": "pvtland-sample-6cy4un",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "PVTLand_sample-6cy4un",
+        "layout": {},
+        "paint": {"fill-color": "rgb(51, 160, 44)"}
+    },
+    {
+        "id": "pvtland-sample-6cy4un (1)",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "PVTLand_sample-6cy4un",
+        "layout": {},
+        "paint": {"line-color": "rgb(0, 97, 0)", "line-width": 0.5}
+    }
+]
+}
