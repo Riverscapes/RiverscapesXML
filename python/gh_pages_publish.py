@@ -1,7 +1,7 @@
+import os
 import hashlib
 import glob
 import json
-import os
 import shutil
 import logging
 
@@ -15,11 +15,22 @@ FILES = [
     'BaseMaps.xml'
 ]
 PUBLIC_DIR = 'PUBLIC'
+# This is the manifest that the desktop viewers use to sync with the server
 INDEX_JSON = 'index.json'
 INDEX_HTML = 'index.html'
+# This file is used by webrave COG service to find the symbology files it can use
+WEB_RASTER_SYMBOLOGY = 'web_raster_symbologies.txt'
 
 
 def md5(fname: str) -> str:
+    """_summary_
+
+    Args:
+        fname (str): _description_
+
+    Returns:
+        str: _description_
+    """
     try:
         hash_md5 = hashlib.md5()
         with open(fname, "rb") as f:
@@ -52,6 +63,9 @@ def build_index():
     if os.path.isfile(INDEX_JSON):
         logging.warning('Removing file: {}'.format(INDEX_JSON))
         os.remove(INDEX_JSON)
+    if os.path.isfile(WEB_RASTER_SYMBOLOGY):
+        logging.warning('Removing file: {}'.format(WEB_RASTER_SYMBOLOGY))
+        os.remove(WEB_RASTER_SYMBOLOGY)
 
     # Basemaps is a special case
     for fl in FILES:
@@ -62,6 +76,14 @@ def build_index():
     with open(INDEX_JSON, 'w') as indf:
         logging.info('Writing {}'.format(INDEX_JSON))
         json.dump(output, indf, sort_keys=True, indent=4)
+    with open(WEB_RASTER_SYMBOLOGY, 'w') as indf:
+        logging.info('Writing {}'.format(WEB_RASTER_SYMBOLOGY))
+        for key in output.keys():
+            if key.startswith('Symbology/web/') and key.endswith('.txt'):
+                indf.write('{}\n'.format(key
+                                         .replace('Symbology/web/', '')
+                                         .replace('.txt', '')
+                                         ))
 
     logging.info('  complete.')
 
