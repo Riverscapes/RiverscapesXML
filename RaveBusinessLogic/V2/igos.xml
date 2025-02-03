@@ -70,8 +70,8 @@
         <Children collapsed="true">
           <Node label="Sample Frames">
             <Children collapsed="true">
-              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Inputs/Geopackage/Layers/Vector[@lyrName='vbet_igos']" type="point" id="igos" symbology="IGO" />
-              <Node label="HUC10 Boundaries" xpath = "Inputs/Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon" id="huc10" symbology="HUC10" />
+              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="igos" symbology="IGO" />
+              <Node label="HUC10 Boundaries" xpath = "Datasets/Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon" id="huc10" symbology="HUC10" />
             </Children>
           </Node>
         </Children>
