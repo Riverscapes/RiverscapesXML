@@ -1,37 +1,48 @@
 {
-  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(0, 168, 0)", "Easiest - Low-Hanging Fruit"],
-    ["rgb(0, 197, 255)", "Straight Forward - Quick Return"],
-    ["rgb(230, 204, 0)", "Strategic - Long-Term Investment"],
-    ["rgb(185, 185, 185)", "None"],
-    ["rgb(0, 0, 0)", "NA or Null"]
+    ["hsl(120, 100%, 33%)", "Conservation/Appropriate for Translocation"],
+    ["hsl(194, 100%, 50%)", "Encourage Beaver Expansion/Colonization"],
+    ["hsl(53, 100%, 45%)","Beaver Mimicry"],
+    ["hsl(24, 36%, 39%)", "Land Management Change"],
+    ["hsl(1, 55%, 50%)", "Conflict Management"],
+    ["hsl(240, 86%, 48%)", "Potential Floodpain/Side Channel Opportunities"],
+    ["hsl(0, 0%, 73%)", "Natural or Anthropogenic Limitations"]
   ],
   "layerStyles": [
     {
-        "id": "rme-igos-sample-2f60tk",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "RME_igos_sample-2f60tk",
-        "layout": {},
-        "paint": {
-            "circle-color": [
-                "match",
-                ["get", "brat_igo_opportunity"],
-                ["Easiest - Low-Hanging Fruit"],
-                "rgb(0, 168, 0)",
-                ["Straight Forward - Quick Return"],
-                "rgb(0, 197, 255)",
-                ["Strategic - Long-Term Investment"],
-                "rgb(230, 204, 0)",
-                ["None"],
-                "rgb(185, 185, 185)",
-                ["NA"],
-                "rgb(0, 0, 0)",
-                "rgb(0, 0, 0)"
-            ],
-            "circle-radius": 3
-        }
+      "id": "Restoration or Conservation Opportunities",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "BRAT_results-4wzuaw",
+      "layout": {},
+      "paint": {
+          "circle-color": [
+              "match",
+              ["get", "brat_igo_opportunity"],
+              ["Conservation/Appropriate for Translocation"],
+              "hsl(120, 100%, 33%)",
+              ["Encourage Beaver Expansion/Colonization"],
+              "hsl(194, 100%, 50%)",
+              ["Beaver Mimicry"],
+              "hsl(53, 100%, 45%)",
+              ["Conflict Management"],
+              "hsl(1, 55%, 50%)",
+              ["Land Management Change"],
+              "hsl(24, 36%, 39%)",
+              ["Potential Floodpain/Side Channel Opportunities"],
+              "hsl(240, 86%, 48%)",
+              ["Natural or Anthropogenic Limitations"],
+              "hsl(0, 0%, 73%)",
+              "hsl(0, 0%, 0%)"
+          ],
+          "circle-radius": [
+            "match", 
+            ["get", "ReachCode"], 
+            [46003, 46007], 
+            1.5, 
+            2]
+      }
     }
-]
+  ]
 }
