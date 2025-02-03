@@ -1,24 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
-    <Name>Riverscape IGOs</Name>
-    <ProjectType>IGOs</ProjectType>
-    <Node xpathlabel="Name" xpath="Realizations/Realization">
-        <Children collapsed="false">
-            <Node label="Outputs">
-                <Children collapsed="false">
-                    <Node label="IGOs" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point"
-                        symbology="igo_default" id="igos" />
-                </Children>
-            </Node>
-            <Node label="Log File" xpath="Logs/LogFile" type="file" />
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Riverscapes IGOs</Name>
+  <ProjectType>igos</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="true">
+      <Node label="Riverscape Metrics" xpath="Realizations/Realization">
+        <Children collapsed="true">
+          <Node label="Physical Geography">
+            <Children collapsed="true">
+              <Node label="Primary Channel Gradient" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_igo_prim_channel_gradient" symbology="Stream_Grad" />
+              <Node label="Valley Gradient" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_igo_valleybottom_gradient" symbology="Valley_Grad" />
+              <Node label="Confluence Count" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_dgo_confluences" symbology="Confluence_Count" />
+              <Node label="Diffluence Count" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_dgo_diffluences" symbology="Diffluence_Count" />
+              <Node label="Tributaries per KM" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_igo_trib_per_km" symbology="IGO_Tribs_Km" />
+              <Node label="Planform Sinuosity" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_igo_planform_sinuosity" symbology="IGO_Plan_Sin" />
+            </Children>
+          </Node>
+          <Node label="Stream Info">
+            <Children collapsed="true">
+              <Node label="Stream Length" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_dgo_stream_length" symbology="RME_Stream_Length" />      
+              <Node label="Stream Order" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="nhd_dgo_streamorder" symbology="Stream_Order" />
+              <Node label="Stream Type" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="nhd_dgo_streamtype" symbology="Stream_Type" />
+              <Node label="Headwater" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="nhd_dgo_headwater" symbology="Headwater" />
+              <Node label="Stream Size" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="stream_size" symbology="Stream_Size" />
+              <Node label="Drainage Area" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_dgo_drainage_area" symbology="RME_Drainage" />
+              <Node label="Land Ownership" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme_dgo_ownership" symbology="RME_Ownership" />
+            </Children>
+          </Node>
+          <Node label="Areas and Ratios">
+            <Children collapsed="true">
+              <Node label="Low-Lying Area Ratio" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_igo_low_lying_ratio" symbology="Low_Lying_Ratio" />
+              <Node label="Elevated Area Ratio" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_dgo_elevated_ratio" symbology="Elevated_Ratio" />
+              <Node label="Floodplain Area Ratio" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_igo_floodplain_ratio" symbology="Floodplain_Ratio" /> 
+              <Node label="Active Channel Ratio" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_igo_active_channel_ratio" symbology="Act_Chan_Ratio" />
+              <Node label="Integrated Width" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_igo_integrated_width" symbology="Integrated_Width" />
+              <Node label="Acres of Valley Bottom per Mile" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_igo_acres_vb_per_mile" symbology="AcresVB_Mile" /> 
+              <Node label="Hectares of Valley Bottom per Km" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="vbet_igo_hect_vb_per_km" symbology="HectaresVB_Km" /> 
+              <Node label="Relative Flow Length" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rme__igo_rel_flow_length" symbology="Rel_Flow_Length" />
+            </Children>
+          </Node>
+          <Node label="Confinements">
+            <Children collapsed="true">
+              <Node label="Confinement Ratio" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="conf_igo_confinement_ratio" symbology="IGO_Confinement" />
+              <Node label="Constriction Ratio" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="conf_igo_constriction_ratio" symbology="IGO_Constriction" />
+            </Children>
+          </Node>
+          <Node label="Condition">
+            <Children collapsed="true">
+              <Node label="Road Density" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="anthro_igo_road_dens" symbology="Road_Density" />
+              <Node label="Railroad Density" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="anthro_igo_rail_dens" symbology="Rail_Density" />
+              <Node label="Proportion Riparian" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rcat_igo_rip" symbology="Prop_Rip" />
+              <Node label="Riparian Departure" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rcat_igo_rvd" symbology="IGO_RVD" />
+              <Node label="Conversion to Agriculture" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rcat_igo_ag" symbology="Ag_Conv" />
+              <Node label="Developed" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rcat_igo_dev" symbology="Dev_Conv" />
+              <Node label="Land Use Intensity" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="anthro_igo_land_use_intens" symbology="Land_Use" />
+              <Node label="Floodplain Access" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="rcat_igo_fldpln_access" symbology="Fldpln_Access" />
+            </Children>
+          </Node>
+          <Node label="BRAT">
+            <Children collapsed="true">
+              <Node label="Dam Capacity" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="brat_igo_capacity" symbology="RME_Capacity" />
+              <Node label="Risk of Undesirable Dams" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="brat_igo_risk" symbology="RME_Risk" />
+              <Node label="Restoration or Conservation Opportunities" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="brat_igo_opportunity" symbology="RME_Opportunity" />
+            </Children>
+          </Node>
         </Children>
-    </Node>
-    <Views default="DEFAULT">
-        <View name="Primary Outputs" id="DEFAULT">
-            <Layers>
-                <Layer id="igos" />
-            </Layers>
-        </View>
-    </Views>
+      </Node>
+      <Node label="Inputs" xpath="Realizations/Realization">
+        <Children collapsed="true">
+          <Node label="Sample Frames">
+            <Children collapsed="true">
+              <Node label="Integrated Geographic Objects (IGOs)" xpath= "Datasets/Geopackage/Layers/Vector[@lyrName='igos']" type="point" id="igos" symbology="IGO" />
+              <Node label="HUC10 Boundaries" xpath = "Datasets/Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon" id="huc10" symbology="HUC10" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Log File" xpath="Logs/LogFile" type="file" />
+    </Children>
+  </Node>
 </Project>
