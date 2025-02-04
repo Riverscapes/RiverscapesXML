@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(25, 190, 38)", "active_dam"],
+    ["rgb(255, 151, 5)", "inactive_dam"],
+    ["rgb(137, 91, 69)", "relic"],
+    ["rgb(152, 125, 185)", "other"]
+  ],
+  "layerStyles": [
+    {
+        "id": "beaverdams-9jztvz",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "BeaverDams-9jztvz",
+        "paint": {
+            "circle-color": [
+                "match",
+                ["get", "Dam Type"],
+                ["active_dam"],
+                "rgb(25, 190, 38)",
+                ["inactive_dam"],
+                "rgb(255, 151, 5)",
+                ["relic"],
+                "rgb(137, 91, 69)",
+                "rgb(152, 125, 185)"
+            ],
+            "circle-stroke-width": 1,
+            "circle-radius": 4
+        }
+    }
+    ]
+}

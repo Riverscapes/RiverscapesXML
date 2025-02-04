@@ -1,0 +1,88 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(43, 131, 186)", "BDA"],
+    ["rgb(179, 88, 6)", "PALS"],
+    ["rgb(106, 106, 106)", "ALS"],
+    ["rgb(134, 186, 85)", "Other"]
+  ],
+  "layerStyles": [
+    {
+        "id": "structurelines-5udtsi (1)",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "StructureLines-5udtsi",
+        "slot": "",
+        "layout": {},
+        "paint": {"line-width": 2.5, "line-color": "rgb(255, 255, 255)"}
+    },
+    {
+        "id": "structurelines-5udtsi",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "StructureLines-5udtsi",
+        "layout": {"line-miter-limit": 1.75},
+        "paint": {
+            "line-color": [
+                "match",
+                ["get", "Structure Type"],
+                [
+                    "Primary BDA",
+                    "BDA",
+                    "BDA Postless",
+                    "Tight PALS (BDA without sod)",
+                    "Postline Wicker Weave",
+                    "Secondary BDA"
+                ],
+                "rgb(43, 131, 186)",
+                [
+                    "PALS - Right Bank Attached",
+                    "PALS - Left Bank Attached",
+                    "PALS - Bank Attached",
+                    "PALS - Mid Channel",
+                    "PALS - Constriction Jet",
+                    "PALS - Channel Spanning",
+                    "PALS",
+                    "PALS - Rhino",
+                    "PALS - Bank Blaster",
+                    "Post and Brush Plug",
+                    "Rhino",
+                    "Leaky Dam",
+                    "Wicker Weirs"
+                ],
+                "rgb(179, 88, 6)",
+                [
+                    "ALS - Mid Channel",
+                    "ALS - Channel Spanning",
+                    "ALS",
+                    "ALS - Rhino",
+                    "ALS - Bank Blaster",
+                    "ALS - Bank Attached",
+                    "Fell Tree",
+                    "Tree Plug",
+                    "Full Tree",
+                    "Tree Dam",
+                    "Grip Hoist Tree",
+                    "Strategic Felling",
+                    "Wood Jam"
+                ],
+                "rgb(106, 106, 106)",
+                [
+                    "Floodplain LWD",
+                    "Floodplain BDA",
+                    "Zuni Bowl",
+                    "Bag Plugs",
+                    "One Rock Dam",
+                    "Vanes",
+                    "Spreaders",
+                    "Sedge Plugs",
+                    "Headcut Treatment"
+                ],
+                "rgb(134, 186, 85)",
+                "#000000"
+            ],
+            "line-width": 1.5
+        }
+    }
+    ]
+}
