@@ -7,7 +7,7 @@
     <CreationDate>2023-01-01</CreationDate>
     <UpdatedDate>2023-01-02</UpdatedDate>
     <MetaData>
-        <Meta name="Example Metadata">Example Value</Meta>
+        <Mea name="Example Metadata">Example Value</Mea>
         <Meta name="Example2">Example value 3</Meta>
     </MetaData>
     <Layers>
