@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(11, 44, 122)", "0 - 0.5%"],
+    ["rgb(32, 153, 143)", "0.5 - 1%"],
+    ["rgb(0, 219, 0)", "1 - 3%"],
+    ["rgb(255, 255, 0)", "3 - 8%"],
+    ["rgb(237, 161, 19)", "8 - 23%"],
+    ["rgb(192, 82, 60)", "> 23%"]
+  ],
+  "layerStyles": [
+    {
+        "id": "drain-area-sample-84xjmj",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "drain_area_sample-84xjmj",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "Slope"],
+                0,
+                "rgb(11, 44, 122)",
+                0.005,
+                "rgb(11, 44, 122)",
+                0.00501,
+                "rgb(32, 153, 143)",
+                0.01,
+                "rgb(32, 153, 143)",
+                0.01001,
+                "rgb(0, 219, 0)",
+                0.03,
+                "rgb(0, 219, 0)",
+                0.03001,
+                "rgb(255, 255, 0)",
+                0.08,
+                "rgb(255, 255, 0)",
+                0.08001,
+                "rgb(237, 161, 19)",
+                0.23,
+                "rgb(237, 161, 19)",
+                0.23001,
+                "rgb(192, 82, 60)",
+                10,
+                "rgb(192, 82, 60)"
+            ]
+        }
+    }
+]
+}

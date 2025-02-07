@@ -10,16 +10,17 @@
   ],
   "layerStyles": [
     {
-        "id": "hydro-igos-9dnvmm",
-        "type": "circle",
+        "id": "hydro-reaches-59m7ce",
+        "type": "line",
         "source": "composite",
-        "source-layer": "hydro_igos-9dnvmm",
+        "source-layer": "hydro_reaches-59m7ce",
         "layout": {},
         "paint": {
-            "circle-color": [
+            "line-width": 1.7,
+            "line-color": [
                 "interpolate",
                 ["linear"],
-                ["get", "SPLow"],
+                ["get", "SP2"],
                 0,
                 "rgb(43, 131, 186)",
                 20,
@@ -45,21 +46,13 @@
                 10000000,
                 "rgb(215, 25, 28)"
             ],
-            "circle-radius": [
-                "interpolate",
-                ["linear"],
-                ["zoom"],
-                10,
-                1,
-                11,
-                2,
-                13.5,
-                3,
-                15,
-                4,
-                22,
-                5
-            ]
+            "line-opacity": [
+              "match",
+              ["get", "FCode"],
+              [46006, 33600, 55800],
+              1,
+              0
+          ]
         }
     }
 ]

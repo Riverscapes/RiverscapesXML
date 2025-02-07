@@ -19,7 +19,7 @@
             "circle-color": [
                 "interpolate",
                 ["linear"],
-                ["get", "SPLow"],
+                ["get", "SP2"],
                 0,
                 "rgb(43, 131, 186)",
                 20,
@@ -59,7 +59,14 @@
                 4,
                 22,
                 5
-            ]
+            ],
+            "circle-opacity": [
+              "match",
+              ["get", "FCode"],
+              [46006, 33600, 55800],
+              1,
+              0
+          ]
         }
     }
 ]
