@@ -15,6 +15,14 @@
               <Node label="Flood Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="reach_flood_sp" symbology="reach_q2_stream_power" />  
             </Children>
           </Node>
+          <Node label="Channel Network - Perennial Only">
+            <Children>
+              <Node label="Baseflow (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="baseflow_perennial" symbology="reach_baseflow_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+              <Node label="Typical Flood (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="flood_perennial" symbology="reach_flood_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+              <Node label="Baseflow Stream Power (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="reach_baseflow_sp_perennial" symbology="reach_low_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+              <Node label="Flood Stream Power (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" id="reach_flood_sp_perennial" symbology="reach_q2_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />  
+            </Children>
+          </Node>
           <Node label="Riverscape Network">
             <Children>
               <Node label="Baseflow (IGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow" symbology="igo_baseflow" />
@@ -23,19 +31,27 @@
               <Node label="Flood Stream Power (IGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_sp" symbology="igo_q2_stream_power" />
             </Children>
           </Node>
+          <Node label="Riverscape Network - Perennial Only">
+            <Children>
+              <Node label="Baseflow (IGO) (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow_per" symbology="igo_baseflow_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+              <Node label="Flood (IGO) (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_per" symbology="igo_flood_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+              <Node label="Baseflow Stream Power (IGO) (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow_sp_per" symbology="igo_low_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+              <Node label="Flood Stream Power (IGO) (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_sp_per" symbology="igo_q2_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+            </Children>
+          </Node>
         </Children>
       </Node>
       <Node label="Intermediates">
         <Children collapsed="true">
-          <Node label="Slope" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="slope" id="slope" />
+          <Node label="Slope" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reach_slope" id="slope" />
           <Node label="Drainage Area" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="drain_area" id="DA" />
         </Children>
       </Node>
       <Node label="Inputs" xpath="Inputs">
         <Children collapsed="true">
-          <Node label="Segmented Flowlines" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flow_lines" />
-          <Node label="Integrated Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" />
-          <Node label="Discrete Geographic Objects" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="point" symbology="DGO" />
+          <Node label="Stream Reaches" xpath="Geopackage/Layers/Vector[@lyrName='flowlines']" type="line" symbology="flow_lines" />
+          <Node label="Integrated Geographic Objects (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" />
+          <Node label="Discrete Geographic Objects (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="point" symbology="DGO" />
           <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" id="dem" symbology="dem" transparency="40" />
         </Children>
       </Node>
