@@ -17,7 +17,7 @@
           "fill-color": [
               "interpolate",
               ["linear"],
-              ["get", "confinemen"],
+              ["get", "confinement_ratio"],
               0,
               "hsl(84, 95%, 34%)",
               0.1,
