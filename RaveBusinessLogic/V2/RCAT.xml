@@ -9,11 +9,13 @@
                     <Node label="IGOs">
                         <Children>
                             <Node label="Riparian Condition (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_v2" id="rcat_condition_igo"/>
+                            <Node label="Riparian Condition - Perennial (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_per" id="rcat_condition_igo_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                         </Children>
                     </Node>
                     <Node label="Reaches">
                         <Children>
-                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition_v2" id="rcat_condition"/>
+                            <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition_v2" id="rcat_condition" />
+                            <Node label="Riparian Condition - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition_v2_per" id="rcat_condition_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                         </Children>
                     </Node>
                 </Children>
@@ -83,6 +85,7 @@
                     </Node>
                 </Children>
             </Node>
+            <Node label="Metrics" xpath="Datasets/File" type="file" />
         </Children>
     </Node>
     <Views default ="RCAT_Condition">
