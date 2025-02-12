@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#ff0303", "Very Poor < 0.20"],
+    ["#fba919", "Poor 0.20 - 0.40"],
+    ["#f7f278", "Moderate 0.40 - 0.65"],
+    ["#b0d136", "Good 0.65 - 0.85"],
+    ["#5abf92", "Intact > 0.85"]
+  ],
+  "layerStyles": [
+    {
+      "id": "condition-v2-7guh4l",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "condition_v2-7guh4l",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "interpolate",
+              ["linear"],
+              ["get", "Condition"],
+              0.00,
+              "#ff0303",
+              0.2,
+              "#ff0303",
+              0.20001,
+              "#fba919",
+              0.4,
+              "#fba919",
+              0.40001,
+              "#f7f278",
+              0.65,
+              "#f7f278",
+              0.650001,
+              "#b0d136",
+              0.85,
+              "#b0d136",
+              0.850001,
+              "#5abf92"
+          ],
+          "line-opacity": [
+            "match",
+            ["get", "FCode"],
+            [46006, 33600, 55800],
+            1,
+            0
+        ]
+      }
+  }
+  ]
+}
