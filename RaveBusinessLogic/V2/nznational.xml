@@ -57,6 +57,12 @@
                     <Node label="DEM South Island"
                         xpath="Outputs/Raster[@id='DEMSOUTH']"
                         type="raster" symbology="dem" id="demsouth" />
+                    <Node label="DEM North Island lidar-corrected"
+                        xpath="Outputs/Raster[@id='DEMNORTH_VC']"
+                        type="raster" symbology="dem" id="demnorth_vc" />
+                    <Node label="DEM South Island lidar-corrected"
+                        xpath="Outputs/Raster[@id='DEMSOUTH_VC']"
+                        type="raster" symbology="dem" id="demsouth_vc" />
                 </Children>
             </Node>
             <Node label="Administration">
