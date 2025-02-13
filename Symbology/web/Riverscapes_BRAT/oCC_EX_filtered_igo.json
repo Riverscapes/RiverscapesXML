@@ -1,62 +1,59 @@
 {
-    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
-    "legend": [
-      ["hsl(0, 100%, 48%)", "None: 0 dams"],
-      ["hsl(40, 100%, 50%)", "Rare: 0-1 dams/km (0-2 dams/mi)"],
-      ["hsl(60, 100%, 48%)","Occasional:  1-5 dams/km (2-8 dams/mi)"],
-      ["hsl(100, 99%, 45%)","Frequent: 5-15 dams/km (8-24 dams/mi)"],
-      ["hsl(216, 100%, 45%)","Pervasive: >15 dams/km (>24 dams/mi)"]
-    ],
-    "layerStyles": [
-      {
-        "id": "Existing Dam Capacity ",
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(245, 0, 0)", "None: 0 dams"],
+    ["rgb(255, 170, 0)", "Rare: 0-1 dams/km (0-2 dams/mi)"],
+    ["rgb(245, 245, 0)","Occasional:  1-5 dams/km (2-8 dams/mi)"],
+    ["rgb(76, 230, 1)","Frequent: 5-15 dams/km (8-24 dams/mi)"],
+    ["rgb(0, 92, 230)","Pervasive: >15 dams/km (>24 dams/mi)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "rbrat-igos-sample-2cy59j",
         "type": "circle",
         "source": "composite",
-        "source-layer": "oCC_EX-bmdfb2",
+        "source-layer": "rbrat_igos_sample-2cy59j",
         "layout": {},
         "paint": {
-            "circle-radius": [
-              "interpolate",
-            [
-              "linear"
-            ],
-            [
-              "zoom"
-            ],
-            10,
-            1,
-            11,
-            2,
-            13.55,
-            3,
-            15,
-            4,
-            22,
-            5
-            ],
             "circle-color": [
-                "step",
+                "interpolate",
+                ["linear"],
                 ["get", "oCC_EX"],
-                "hsl(0, 100%, 48%)",
-                0.0,
-                "hsl(0, 100%, 48%)",
-                0.0001,
-                "hsl(40, 100%, 50%)",
-                0.0002,
-                "hsl(40, 100%, 50%)",
+                0,
+                "rgb(245, 0, 0)",
+                0.00001,
+                "rgb(245, 0, 0)",
+                0.00002,
+                "rgb(255, 170, 0)",
                 1,
-                "hsl(60, 100%, 48%)",
+                "rgb(255, 170, 0)",
                 1.0001,
-                "hsl(60, 100%, 48%)",
+                "rgb(245, 245, 0)",
                 5,
-                "hsl(100, 99%, 45%)",
+                "rgb(245, 245, 0)",
                 5.0001,
-                "hsl(100, 99%, 45%)",
+                "rgb(76, 230, 1)",
                 15,
-                "hsl(216, 100%, 45%)",
+                "rgb(76, 230, 1)",
                 15.0001,
-                "hsl(216, 100%, 45%)",
-                150
+                "rgb(0, 92, 230)",
+                1000,
+                "rgb(0, 92, 230)"
+            ],
+            "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                10,
+                1,
+                11,
+                2,
+                13.5,
+                3,
+                15,
+                4,
+                22,
+                5
             ],
             "circle-opacity": [
               "match",
@@ -67,5 +64,5 @@
           ]
         }
     }
-    ]
-  }
+]
+}
