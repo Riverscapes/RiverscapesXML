@@ -36,7 +36,7 @@
                         type="line" symbology="nz_railways" id="railways" />
                 </Children>
             </Node>
-              <Node label="Land Use">
+            <Node label="Land Use">
                 <Children collapsed="false">
                     <Node label="Suburbs"
                         xpath="Outputs/Geopackage[@id='LANDUSE']/Layers/Vector[@lyrName='suburblocality']"
@@ -64,6 +64,13 @@
                     <Node label="New Zealand Regional Councils 2023"
                         xpath="Outputs/Geopackage[@id='ADMINISTRATION']/Layers/Vector[@lyrName='regional_council_2023_generalised']"
                         type="polygon" symbology="regional_councils" id="regional_councils" />
+                </Children>
+            </Node>
+            <Node label="Management">
+                <Children collapsed="false">
+                    <Node label="Stopbanks"
+                        xpath="Outputs/Geopackage[@id='MANAGEMENT']/Layers/Vector[@lyrName='nzembankment-centrelines-150k']"
+                        type="line" symbology="stopbanks" id="stopbanks" />
                 </Children>
             </Node>
         </Children>
