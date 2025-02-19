@@ -1,88 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<BaseMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./BaseMaps.xsd">
+<BaseMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="./BaseMaps.xsd">
   <Region name="United States">
     <GroupLayer name="Google">
-      <Layer name="Google Imagery" type="xyz" url="https://mt1.google.com/vt/lyrs=s&amp;x={x}&amp;y={y}&amp;z={z}">
+      <Layer name="Google Imagery" type="xyz"
+        url="https://mt1.google.com/vt/lyrs=s&amp;x={x}&amp;y={y}&amp;z={z}">
         <Metadata>
           <Meta name="Description">Google Imagery</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Google Terrain" type="xyz" url="https://mt1.google.com/vt/lyrs=p&amp;x={x}&amp;y={y}&amp;z={z}">
+      <Layer name="Google Terrain" type="xyz"
+        url="https://mt1.google.com/vt/lyrs=p&amp;x={x}&amp;y={y}&amp;z={z}">
         <Metadata>
           <Meta name="Description">Google Terrain</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Google Maps" type="xyz" url="https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}">
+      <Layer name="Google Maps" type="xyz"
+        url="https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}">
         <Metadata>
           <Meta name="Description">Google Maps</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="Bing Maps">
-      <Layer name="Bing Aerial Imagery" type="xyz" url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
+      <Layer name="Bing Aerial Imagery" type="xyz"
+        url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
         <Metadata>
           <Meta name="Description">Bing Aerial Imagery</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="USGS Hydrography">
-      <Layer name="Watershed Boundary Dataset" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
+      <Layer name="Watershed Boundary Dataset" type="wms"
+        url="https://hydro.nationalmap.gov:443/arcgis/services/wbd/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS HUC Watershed Boundaries</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Drainage Network NHD" type="wms" url="https://hydro.nationalmap.gov:443/arcgis/services/nhd/MapServer/WmsServer?">
+      <Layer name="Drainage Network NHD" type="wms"
+        url="https://hydro.nationalmap.gov:443/arcgis/services/nhd/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS National Hydrologic Dataset - Drainage Network</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="USGS Topography">
-      <Layer name="Topo Base Map" type="wms" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSTopo/MapServer/WmsServer?">
+      <Layer name="Topo Base Map" type="wms"
+        url="https://basemap.nationalmap.gov:443/arcgis/services/USGSTopo/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS Top Map Base Layer</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Shaded Relief" type="wms" url="https://basemap.nationalmap.gov:443/arcgis/services/USGSShadedReliefOnly/MapServer/WmsServer?">
+      <Layer name="Shaded Relief" type="wms"
+        url="https://basemap.nationalmap.gov:443/arcgis/services/USGSShadedReliefOnly/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS shaded relief</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Contours" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/contours/MapServer/WmsServer?">
+      <Layer name="Contours" type="wms"
+        url="https://carto.nationalmap.gov:443/arcgis/services/contours/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS NED Contours</Meta>
         </Metadata>
       </Layer>
-      <Layer name="NED 3DEPE" type="wms" url="https://elevation.nationalmap.gov:443/arcgis/services/3DEPElevation/ImageServer/WMSServer">
+      <Layer name="NED 3DEPE" type="wms"
+        url="https://elevation.nationalmap.gov:443/arcgis/services/3DEPElevation/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">High Resolution Topography from USGS </Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="Cartographic Basics">
-      <Layer name="Boundaries" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/govunits/MapServer/WmsServer?">
+      <Layer name="Boundaries" type="wms"
+        url="https://carto.nationalmap.gov:443/arcgis/services/govunits/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">Governmental Unit Boundaries</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Geographic Place Names" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/geonames/MapServer/WmsServer?">
+      <Layer name="Geographic Place Names" type="wms"
+        url="https://carto.nationalmap.gov:443/arcgis/services/geonames/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">Place Names</Meta>
         </Metadata>
       </Layer>
-      <Layer name="Transporation" type="wms" url="https://carto.nationalmap.gov:443/arcgis/services/transportation/MapServer/WmsServer?">
+      <Layer name="Transporation" type="wms"
+        url="https://carto.nationalmap.gov:443/arcgis/services/transportation/MapServer/WmsServer?">
         <Metadata>
           <Meta name="Description">USGS Roads and Railroads</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
     <GroupLayer name="Imagery">
-      <Layer name="NAIP" type="wms" url="https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
+      <Layer name="NAIP" type="wms"
+        url="https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">NAIP Imagery</Meta>
         </Metadata>
       </Layer>
-      <Layer name="NAIP Plus" type="wms" url="https://imagery.nationalmap.gov/arcgis/services/USGSNAIPPlus/ImageServer/WMSServer">
+      <Layer name="NAIP Plus" type="wms"
+        url="https://imagery.nationalmap.gov/arcgis/services/USGSNAIPPlus/ImageServer/WMSServer">
         <Metadata>
           <Meta name="Description">NAIP Plus Imagery</Meta>
         </Metadata>
@@ -94,9 +110,120 @@
       </Layer>
     </GroupLayer>
     <GroupLayer name="Geology">
-      <Layer name="SGMC Geology" type="wms" url="https://www.sciencebase.gov/arcgis/services/Catalog/5888bf4fe4b05ccb964bab9d/MapServer/WMSServer">
+      <Layer name="SGMC Geology" type="wms"
+        url="https://www.sciencebase.gov/arcgis/services/Catalog/5888bf4fe4b05ccb964bab9d/MapServer/WMSServer">
         <Metadata>
           <Meta name="Description">A compilation of state geologic maps</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+  </Region>
+  <Region name="New Zealand">
+    <GroupLayer name="Maps Past of New Zealand">
+      <Layer name="Topo 50 - 2019" type="xyz"
+        url="http://au.mapspast.org.nz/3857/topo50-2019/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Topo 50 - 2009" type="xyz"
+        url="http://au.mapspast.org.nz/3857/topo50-2009/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1999" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms260-1999/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1989" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms260-1989/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 3857" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms1-1979/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1969" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms1-1969/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1959" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms1-1959/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1949" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms15-1949/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1939" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms13-1939/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1929" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms13-1929/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1919" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms13-1919/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1909" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms13-1909/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="NZMS - 1899" type="xyz"
+        url="http://au.mapspast.org.nz/3857/nzms13-1899/{z}/{x}/{y}.png">
+        <Metadata>
+          <Meta name="Maps Past">http://mapspast.org.nz</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="Google">
+      <Layer name="Google Imagery" type="xyz"
+        url="https://mt1.google.com/vt/lyrs=s&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Imagery</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Google Terrain" type="xyz"
+        url="https://mt1.google.com/vt/lyrs=p&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Terrain</Meta>
+        </Metadata>
+      </Layer>
+      <Layer name="Google Maps" type="xyz"
+        url="https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}">
+        <Metadata>
+          <Meta name="Description">Google Maps</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
+    <GroupLayer name="Bing Maps">
+      <Layer name="Bing Aerial Imagery" type="xyz"
+        url="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1">
+        <Metadata>
+          <Meta name="Description">Bing Aerial Imagery</Meta>
         </Metadata>
       </Layer>
     </GroupLayer>
