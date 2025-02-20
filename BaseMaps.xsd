@@ -54,7 +54,7 @@
   <!-- Basemaps contain Regions -->
   <xs:complexType name="BaseMapsType">
     <xs:sequence>
-      <xs:element type="RegionType" name="Region"/>
+      <xs:element type="RegionType" name="Region" minOccurs="1" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
