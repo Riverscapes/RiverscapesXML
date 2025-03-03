@@ -15,7 +15,21 @@
         "source-layer": "RME_igos_sample-2f60tk",
         "layout": {},
         "paint": {
-            "circle-radius": 3,
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              1.5,
+              11,
+              2.5,
+              13.5,
+              3.5,
+              15,
+              4.5,
+              22,
+              5.5
+          ],
             "circle-color": [
                 "interpolate",
                 ["linear"],

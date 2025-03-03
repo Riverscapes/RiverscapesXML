@@ -41,27 +41,19 @@
                 "hsla(0, 0%, 0%, 0)" 
             ],
             "circle-radius": [
-                "case",
-                ["<=", ["get", "rme_igo_trib_per_km"], 1],
-                3.8,
-                ["all", [">", ["get", "rme_igo_trib_per_km"], 1], 
-                ["<=", ["get", "rme_igo_trib_per_km"], 2]],
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                10,
+                1.5,
+                11,
+                2.5,
+                13.5,
+                3.5,
+                15,
                 4.5,
-                ["all", [">", ["get", "rme_igo_trib_per_km"], 2], 
-                ["<=", ["get", "rme_igo_trib_per_km"], 5]],
-                5.3,
-                ["all", [">", ["get", "rme_igo_trib_per_km"], 5], 
-                ["<=", ["get", "rme_igo_trib_per_km"], 10]],
-                6,
-                ["all", [">", ["get", "rme_igo_trib_per_km"], 10], 
-                ["<=", ["get", "rme_igo_trib_per_km"], 20]],
-                6.8,
-                ["all", [">", ["get", "rme_igo_trib_per_km"], 20], 
-                ["<=", ["get", "rme_igo_trib_per_km"], 50]],
-                7.6,
-                [">", ["get", "rme_igo_trib_per_km"], 50],
-                8.3,
-                2
+                22,
+                5.5
             ]
         }
     }
