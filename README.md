@@ -1,11 +1,10 @@
-# Riverscapes Program XML
+# Riverscapes XML
 
-This repo contains all the master XML that controls the riverscapes warehouse
-
-All documentation for how to use this should be at 
-<https://riverscapes.net/Tools/Technical_Reference/Documentation_Standards/Riverscapes_Projects/Project/projectxml.html>
+This repo contains all the master XML that controls the [Riverscapes Data Exchange](https://data.riverscapes.net) and related software. Refer to the Riverscapes [Developer](https://developer.riverscapes.net) site for background information about the different types of XML in this repository and how to contribute changes.
 
 ## Status
+
+The following widgets display the current status of the XML in this repository and whether the master branch passes all validation checks.
 
 [![Deployed to Web](https://github.com/Riverscapes/RiverscapesXML/actions/workflows/docs_publish.yml/badge.svg?branch=master)](https://github.com/Riverscapes/RiverscapesXML/actions/workflows/docs_publish.yml)
 
@@ -13,56 +12,26 @@ All documentation for how to use this should be at
 
 ## Contents
 
-`/Program.xsd` this is the main file that controls how all the programs are built. Be Very careful about changing it.
-
-### `/Programs`
-
-This is where the 'program.xml' files for each program live. Follow the pattern to create new programs.
-
 ### `/Projects`
 
-This is where the project XSD lives. The XSD controls the rules for each project XML. It is separated from the programs because programs may share project definintions
+Each and every project in the Riverscapes Data Exchange possesses a `project.rs.xml` file that lists all the data in the project. These XML files refer to the `project.xsd` file in this repository and are validated against this XSD rule file.
 
-## IMPORTANT!!! What to change
+### QRiS
 
-### AWS SSM Store
+This folder contains the protocol library XML files for [Riverscapes Studio for QGIS](https://qris.riverscapes.net) (QRiS).
 
-These urls are stored in the AWS System manager store for easy lookup by processes like lambda. In the Riverscapes warehouse repo there is a shell script to update this and a `.programs.json` file that is `.gitignore`'d 
+### RaveBusinessLogic
+
+This folder contains the business logic XML files for each type of project. The business logic XML files define how project files are displayed in the [Riverscapes Viewer](https://viewer.riverscapes.net) software.
+
+### Symbology
+
+This folder contains the xymbology files for the different versions of the [Riverscapes Viewer](https://viewer.riverscapes.net) software. There are separate subfolders for each version: QGIS, WebViewer, ArcGIS 10.x and ArcGIS ArcPro.
+
+## AWS SSM Store
+
+These urls are stored in the AWS System manager store for easy lookup by processes like lambda. In the [Riverscapes Data Exchange repo](https://github.com/Riverscapes/rs-web-monorepo) there is a shell script to update this and a `.programs.json` file that is `.gitignore`'d 
 
 `AWS Systems Manager --> Parameter Store`
 
 You might also need to rebuild and redeploy any lambda works. Look for `PROGRAMS_DIR_JSON`
-
-
-A Note about Project XSDs
-
-The filename for Project XSDs must match the id in the program xml so that the validtor script can find it
-
-Here's an examples:
-
-```xml
-<!-- Programs/BRAT/Program.xml -->
-    <Products>
-      <Product id="NationalDatasets" name="National Datasets" folder="nationaldatasets" url="" />
-      <Product id="BRAT" name="BRAT Models (HUC8)" folder="BRAT" url="" />
-      <Product id="VBET" name="Valley Bottom Extraction Tool (VBET)" folder="VBET" url="" />
-      <Product id="RSContext" name="Riverscapes Context (HUC8)" folder="RSContext" url="" />
-    </Products>
-```
-
-And now in the folder `Projects/XSD/V1/`:
-
-```
-├── Programs
-│   ├── BRAT
-│   │   └── Program.xml
-├── Projects
-│   ├── XSD
-│   │   └── V1
-│   │       ├── BRAT.xsd
-│   │       ├── NationalDatasets.xsd
-│   │       ├── VBET.xsd
-│   │       ├── RSContext.xsd
-│   │       ├── ...
-
-```
