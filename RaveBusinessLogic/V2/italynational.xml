@@ -10,11 +10,21 @@
             <Node label="Hydrography">
                 <Children collapsed="false">
                     <Node label="River Network"
-                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='surfacewaterbodyline_it_23082023']"
-                        type="line" symbology="hydrography" id="riverlines" />
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='hydro_net_l']"
+                        type="line" symbology="river_network" id="riverlines" />
                     <Node label="Flow Areas"
                         xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='po_2020_tratti']"
                         type="polygon" symbology="flowareas" id="flowareas" />
+                    <Node label="Basins"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='riverbasins']"
+                        type="polygon" symbology="basins" id="basins" />
+                </Children>
+            </Node>
+            <Node label="Administrative">
+                <Children collapsed="true">
+                    <Node label="Administrative Regions"
+                        xpath="Outputs/Geopackage[@id='ADMINISTRATIVE']/Layers/Vector[@lyrName='italy']"
+                        type="polygon" symbology="administrative_regions" id="administrative" />
                 </Children>
             </Node>
             <Node label="Topography">
@@ -28,6 +38,7 @@
         <View name="Hydrology" id="Default">
             <Layers>
                 <Layer id="riverlines" />
+                <Layer id="basins" />
             </Layers>
         </View>
     </Views>
