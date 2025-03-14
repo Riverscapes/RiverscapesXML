@@ -9,6 +9,7 @@
       <Node label="Transportation Local">
         <Children collapsed="true">
           <Node xpathlabel="Name" xpath="Datasets/Vector[@id='Roads']" type="line" symbology="roads" id="roads" />
+          <Node label="Roads (simple)" xpath="Datasets/Vector[@id='Roads']" type="line" symbology="roads_simple" id="roads_simple" />
           <Node xpathlabel="Name" xpath="Datasets/Vector[@id='Rail']" type="line" symbology="railroads" id="railroads"/>
         </Children>
       </Node>
@@ -20,7 +21,8 @@
               <Node label="Intermittent Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
               <Node label="Ephemeral Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdephemeral" />
               <Node label="Network - Upstream Drainage Area" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
-              <Node label="Full NHD HR+ Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines" />
+              <Node label="Full NHD HR+ Drainage Network (by FCode)" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines" />
+              <Node label="Full NHD HR+ Drainage Network (simple)" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines_simple" />
               <Node label="Drainage Wings" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDPlusCatchment']" type="polygon" symbology="drainagewings" />
               <Node label="River Polygons (NHD Area)" xpath="Datasets/Geopackage[@id='HYDRODERIVATIVES']/Layers/Vector[@lyrName='NHDAreaSplit']" type="polygon" symbology="nhdarea" />
               <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDWaterbody']" type="polygon" symbology="waterbody" />
