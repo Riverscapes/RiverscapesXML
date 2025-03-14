@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(1, 1, 1)", "Roads (simple)"]
+  ],
+  "layerStyles": [
+    {
+        "id": "roads-sample-9rope7",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "roads_sample-9rope7",
+        "layout": {},
+        "paint": {"line-color": "rgb(1, 1, 1)", "line-width": 1}
+    }
+]
+}

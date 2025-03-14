@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(56, 226, 242)", "Full NHD HR+ Drainage Network"]
+  ],
+  "layerStyles": [
+    {
+        "id": "network-sample-c9rzfm",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "network_sample-c9rzfm",
+        "layout": {},
+        "paint": {"line-color": "rgb(56, 226, 242)", "line-width": 1.5}
+    }
+]
+}
