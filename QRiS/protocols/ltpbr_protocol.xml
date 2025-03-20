@@ -1,4 +1,4 @@
-<Protocol machine_code="LTPBR_BASE" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
+<Protocol machine_code="LTPBR_BASE" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>LTPBR Protocol</Label>
     <Description>Base LTPBR Layers</Description>
     <URL>https://lowtechpbr.restoration.usu.edu/</URL>
@@ -64,7 +64,7 @@
             <Symbology>active_extents.qml</Symbology>
             <Description>Active Extents Layer</Description>
             <MenuItems>
-                <MenuItem>Copy_From_Valley_Bottom</MenuItem>
+                <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>
@@ -149,7 +149,7 @@
             </Fields>
         </Layer>
         <Layer id="geomorphic_unit_extents" version="1.0" geom_type="Polygon">
-            <Label>Geomporhpic Units Extents</Label>
+            <Label>Geomorphic Units Extents</Label>
             <Symbology>geomorphic_unit_extents.qml</Symbology>
             <Description>Geomporhpic Units Extents Layer</Description>
             <Hierarchy>
@@ -232,7 +232,7 @@
             <Symbology>cem_phases.qml</Symbology>
             <Description>SEM Cluer &amp; Thorne Layer</Description>
             <MenuItems>
-                <MenuItem>Copy_From_Valley_Bottom</MenuItem>
+                <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
             <Hierarchy>
                 <HierarchyItem>Assessments</HierarchyItem>
@@ -290,42 +290,6 @@
                 </ListField>
             </Fields>
         </Layer>
-        <!-- <Layer id="brat_cis" version="1.0" geom_type="Point">
-            <Label>BRAT CIS</Label>
-            <Symbology>brat_cis.qml</Symbology>
-            <Description>BRAT CIS Layer</Description>
-            <MenuItems>
-                <MenuItem>export_brat</MenuItem>
-            </MenuItems>
-            <Hierarchy>
-                <HierarchyItem>Assessments</HierarchyItem>
-                <HierarchyItem>Beaver Dam Building</HierarchyItem>
-            </Hierarchy>
-            <Fields>
-                <TextField id="streamside_vegetation" version="1.0">
-                    <Label>Streamside Vegetation Suitability</Label>
-                </TextField>
-                <TextField id="riparian_vegetation" version="1.0">
-                    <Label>Riparian/Upland Vegetation Suitability</Label>
-                </TextField>
-                <TextField id="dam_capacity" version="1.0">
-                    <Label>Dam Capacity</Label>
-                </TextField>
-            </Fields>
-        </Layer>
-        <Layer id="brat_cis_reaches" version="1.0" geom_type="Linestring">
-            <Label>BRAT CIS Reaches</Label>
-            <Symbology>brat_cis_reaches.qml</Symbology>
-            <Description>BRAT CIS Reaches Layer</Description>
-            <MenuItems>
-                <MenuItem>export_brat</MenuItem>
-                <MenuItem>import_brat_reaches</MenuItem>
-            </MenuItems>
-            <Hierarchy>
-                <HierarchyItem>Assessments</HierarchyItem>
-                <HierarchyItem>Beaver Dam Building</HierarchyItem>
-            </Hierarchy>
-        </Layer> -->
         <Layer id="observation_points_dce" version="1.0" geom_type="Point">
             <Label>Observations</Label>
             <Symbology>observation_points_dce.qml</Symbology>
@@ -900,7 +864,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="precent_free_flowing" version="1.0" calculation_machine_code="area_proportion">
+        <Metric id="percent_free_flowing" version="1.0" calculation_machine_code="area_proportion">
             <Label>Percent Free Flowing</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The percent of the inundation extents that is free flowing</Description>
@@ -1073,6 +1037,7 @@
             <Description>The length of the primary channel within the riverscape sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
             <Precision>2</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines">
