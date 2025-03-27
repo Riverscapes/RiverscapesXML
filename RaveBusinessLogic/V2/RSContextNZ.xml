@@ -21,6 +21,13 @@
           <Node label="Catchments"
             xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='catchments']"
             type="polygon" symbology="nhdperrenial" id="catchments" />
+          <!-- Centerlines & Coastlines for Aukland demonstration, data from LINZ -->
+          <Node label="River Centerlines"
+            xpath="Datasets/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='nz_river_centrelines_topo_150k']"
+            type="line" symbology="VB_Centerline" id="riverlines" />
+          <Node label="Coastline and Islands"
+            xpath="Datasets/Geopackage[@id='COASTLINE']/Layers/Vector[@lyrName='nz_coastlines_and_islands_polygons_topo_150k']"
+            type="polygon" symbology="FILTERED_WATERBODY" id="coastline" />
         </Children>
       </Node>
       <Node label="Transportation">
