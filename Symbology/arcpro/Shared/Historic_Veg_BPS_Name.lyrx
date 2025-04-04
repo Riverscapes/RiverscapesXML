@@ -1,23 +1,23 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.1.0",
-  "build" : 41833,
+  "version" : "3.3.0",
+  "build" : 52636,
   "layers" : [
-    "CIMPATH=map/lc16_bps_200_tif.json"
+    "CIMPATH=map/historic_veg_tif.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMRasterLayer",
-      "name" : "LC16_BPS_200.tif",
-      "uRI" : "CIMPATH=map/lc16_bps_200_tif.json",
+      "name" : "Historic Vegetation",
+      "uRI" : "CIMPATH=map/historic_veg_tif.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "LC16_BPS_200.tif",
+      "description" : "historic_veg.tif",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/fe2b94bac65b4d1e86e2921119d66f31.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "layerType" : "Operational",
       "showLegends" : true,
@@ -32,9 +32,9 @@
       "allowDrapingOnIntegratedMesh" : true,
       "dataConnection" : {
         "type" : "CIMStandardDataConnection",
-        "workspaceConnectionString" : "DATABASE=.\\CONUS_Layers\\LF2016_BPS_200_CONUS\\LF2016_BPS_200_CONUS\\Tif",
+        "workspaceConnectionString" : "DATABASE=.\\RCAT_StillwaterForkBearRiver\\inputs",
         "workspaceFactory" : "Raster",
-        "dataset" : "LC16_BPS_200.tif",
+        "dataset" : "historic_veg.tif",
         "datasetType" : "esriDTAny"
       },
       "colorizer" : {
@@ -120,8 +120,8 @@
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    0,
-                    0,
+                    255,
+                    255,
                     255,
                     100
                   ]
@@ -138,7 +138,7 @@
                   "values" : [
                     0,
                     0,
-                    255,
+                    0,
                     100
                   ]
                 }
@@ -66516,11 +66516,7 @@
         },
         "defaultLabel" : "<all other values>"
       },
-      "attributeTable" : {
-        "type" : "CIMRasterTable",
-        "displayField" : "BPS_NAME",
-        "editable" : true
-      }
+      "autoComputeStatsHistogram" : true
     }
   ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",
@@ -66529,7 +66525,10 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/fe2b94bac65b4d1e86e2921119d66f31.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
