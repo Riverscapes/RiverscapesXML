@@ -31,16 +31,8 @@
                     <Values>
                         <Value>active_dam</Value>
                         <Value>inactive_dam</Value>
-                        <Value>relic</Value>
-                    </Values>
-                </ListField>
-                <ListField id="type_cer" version="1.0">
-                    <Label>Type CER</Label>
-                    <DefaultValue>high</DefaultValue>
-                    <Values>
-                        <Value>high</Value>
-                        <Value>medium</Value>
-                        <Value>low</Value>
+                        <Value>relic_dam</Value>
+                        <Value>uncertain</Value>
                     </Values>
                 </ListField>
             </Fields>
