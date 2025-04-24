@@ -115,8 +115,10 @@
           </Node>
           <Node label="Hydrology">
             <Children collapsed="true">
-              <Node label="Low Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="iHyd_SPLow" id="flow_high"/>
-              <Node label="Flood Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="iHyd_SP2" id="flow_base"/>
+              <Node label="Slope" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="reach_slope" id="slope"/>
+              <Node label="Drainage Area (sq. km)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="drain_area" id="DA"/>
+              <Node label="Low Flow Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="iHyd_SPLow" id="flow_base"/>
+              <Node label="Flood Stream Power (watts)" xpath="Geopackage/Layers/Vector[@lyrName='hydro_flowlines']" type="line" symbology="iHyd_SP2" id="flow_high"/>
             </Children>
           </Node>
           <Node label="Vegetation">
