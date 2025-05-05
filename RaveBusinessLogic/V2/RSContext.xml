@@ -129,6 +129,7 @@
       <Node label="Topography and Derivatives">
         <Children collapsed="true">
           <Node label="DEM (10 m NED)" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
+          <Node label="DEM (1 m 3-DEP)" xpath="Datasets/Raster[@id='3DEPDEM']" type="raster" symbology="dem" transparency="40" id="3depdem" />
           <Node label="Slope Analysis (Degrees)" xpath="Datasets/Raster[@id='SLOPE']" type="raster" symbology="slope" transparency="40" />
         </Children>
       </Node>
