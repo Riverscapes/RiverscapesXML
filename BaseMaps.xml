@@ -119,6 +119,15 @@
     </GroupLayer>
   </Region>
   <Region name="New Zealand">
+    <GroupLayer name="LINZ Basemaps">
+      <Layer name="LINZ Aerial Imagery" type="xyz"
+        url="https://basemaps.linz.govt.nz/v1/tiles/aerial/3857/{z}/{x}/{y}.png?api=c01jtphhng07exbtw29ac5zkbca">
+        <Metadata>
+          <Meta name="Description">Aerial Imagery Basemap provided by Land Information New Zealand
+            (https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery)</Meta>
+        </Metadata>
+      </Layer>
+    </GroupLayer>
     <GroupLayer name="Maps Past of New Zealand">
       <Layer name="Topo 50 - 2019" type="xyz"
         url="http://au.mapspast.org.nz/3857/topo50-2019/{z}/{x}/{y}.png">
