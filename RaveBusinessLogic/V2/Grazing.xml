@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>Grazing Likelihood</Name>
+    <ProjectType>grazing</ProjectType>
+    <Node xpathlabel="Name">
+        <Children collapsed="false">
+            <Node label="Outputs" xpath="Realizations/Realization/Outputs">
+                <Children collapsed="true">
+                    <Node label="Outputs">
+                        <Children collapsed="true">
+                            <Node label="Grazing Likelihood (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='grazing_dgos']" type="polygon" symbology="grazing_dgo" id="grazing_dgo" />
+                            <Node label="Grazing Likelihood (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='grazing_igos']" type="polygon" symbology="grazing_igo" id="grazing_igo" />
+                            <Node label="Grazing Likelihood Raster" xpath="Raster[@id='LIKELIHOOD']" type="raster" symbology="grazing_likelihood" transparency="40" id="grazing_likelihood" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Intermediates" xpath="Realizations/Realization/Intermediates">
+                <Children collapsed="true">
+                    <Node label="Vegetation Suitability" xpath="Raster[@id='VEGSUIT']" type="raster" symbology="veg_suit_raster" transparency="40" id="veg_suit_raster"/>
+                    <Node label="Proximity to Water" xpath="Raster[@id='PROXIMITY']" type="raster" symbology="water_prox" id="water_proximity" />
+                    <Node label="Perennial Water" xpath="Geopackage/Layers/Vector[@lyrName='water']" type="polygon" symbology="perennial_water" id="perennial_water" />
+                </Children>
+            </Node>
+            <Node label="Inputs" xpath="Realizations/Realization/Inputs">
+                <Children collapsed="true">
+                    <Node label="Sampling Units">
+                        <Children collapsed="true">
+                            <Node label="Integrated Geographic Objects (IGOs)" xpath="Geopackage/Layers/Vector[@lyrName='igo']" type="point" symbology="IGO" id="igo"/>
+                            <Node label="Discrete Geographic Objects (DGOs)" xpath="Geopackage/Layers/Vector[@lyrName='dgo']" type="polygon" symbology="DGO" id="dgo"/>
+                        </Children>
+                    </Node>
+                    <Node label="Vegetation">
+                        <Children collapsed="true">
+                            <Node label="Existing Vegetation (Land Cover)" xpath="Raster[@id='EXVEG']" type="raster" symbology="Existing_Veg_EVT_Class" transparency="40" />
+                        </Children>
+                    </Node>
+                    <Node label="Topography">
+                        <Children collapsed="true">
+                            <Node label="Slope" xpath="Raster[@id='SLOPE']" type="raster" symbology="slope_percent" transparency="40" id="slope" />
+                            <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hs" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+            <Node label="Log File" xpath="Logs/LogFile" type="file" />
+        </Children>
+    </Node>
+    <Views default="Grazing">
+        <View name="Grazing Likelihood" id="Grazing">
+            <Description>This view display is the Land Use Intensity raster and IGOs</Description>
+            <Layers>
+                <Layer id="hs"/>
+                <Layer id="grazing_likelihood"/>
+                <Layer id="grazing_igo"/>
+            </Layers>
+        </View>
+        <View name="Proximity to Water" id="Proxmity">
+            <Description>This view displays proximity to water in bins with water over a hillshade</Description>
+            <Layers>
+                <Layer id="hs" />
+                <Layer id="water_proximity" />
+                <Layer id="perennial_water" />
+            </Layers>
+        </View>
+        <View name="Slope" id="Slope">
+            <Description>This view displays slope in bins over a hillshade</Description>
+            <Layers>
+                <Layer id="hs" />
+                <Layer id="slope" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
