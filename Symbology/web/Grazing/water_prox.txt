@@ -1,0 +1,5 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:DISCRETE
+1609,0,250,233,255,< 1 mile
+3218,18,25,222,255,1 mile - 2 miles
+1000000,49,0,98,255,> 2 miles
