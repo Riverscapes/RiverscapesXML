@@ -47,7 +47,7 @@
       "id": "grazing-dgos-b595ip (1)",
       "type": "line",
       "source": "composite",
-      "source-layer": "vbet_dgos-b595ip",
+      "source-layer": "grazing_dgos-b595ip",
       "layout": {},
       "paint": {"line-width": 0.5}
   }
