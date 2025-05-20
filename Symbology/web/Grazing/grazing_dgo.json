@@ -1,0 +1,55 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(166, 97, 26)", "0 - 0.2"],
+    ["rgb(223, 194, 125)", "0.2 - 0.4"],
+    ["rgb(245, 245, 245)","0.4 - 0.6"],
+    ["rgb(128, 205, 193)","0.6 - 0.8"],
+    ["rgb(1, 133, 113)","0.8 - 1"]
+  ],
+  "layerStyles": [
+    {
+      "id": "grazing-dgos-b595ip",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "grazing_dgos-b595ip",
+      "slot": "",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "interpolate",
+                ["linear"],
+                ["get", "grazing_likelihood"],
+                0,
+                "rgb(166, 97, 26)",
+                0.2,
+                "rgb(166, 97, 26)",
+                0.20001,
+                "rgb(223, 194, 125)",
+                0.4,
+                "rgb(223, 194, 125)",
+                0.40001,
+                "rgb(245, 245, 245)",
+                0.6,
+                "rgb(245, 245, 245)",
+                0.60001,
+                "rgb(128, 205, 193)",
+                0.8,
+                "rgb(128, 205, 193)",
+                0.80001,
+                "rgb(1, 133, 113)",
+                1,
+                "rgb(1, 133, 113)"
+          ]
+      }
+  },
+  {
+      "id": "grazing-dgos-b595ip (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "vbet_dgos-b595ip",
+      "layout": {},
+      "paint": {"line-width": 0.5}
+  }
+  ]
+}
