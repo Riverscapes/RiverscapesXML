@@ -1147,7 +1147,7 @@
             <Parameters>
                 <DCELayer layer_id_ref="centerlines">
                     <AttributeFilter field_id_ref="type_id">
-                        <Value>Secondary</Value>
+                        <Value>Non-Primary</Value>
                     </AttributeFilter>
                 </DCELayer>
             </Parameters>
