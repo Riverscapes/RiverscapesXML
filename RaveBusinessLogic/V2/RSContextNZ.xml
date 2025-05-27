@@ -69,7 +69,7 @@
       </Node>
       <Node label="Topography and Derivatives">
         <Children collapsed="true">
-          <Node label="DEM (8 m)" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem"
+          <Node label="DEM" xpath="Datasets/Raster[@id='DEM']" type="raster" symbology="dem"
             transparency="40" id="dem" />
           <Node label="Slope Analysis" xpath="Datasets/Raster[@id='SLOPE']" type="raster"
             symbology="slope" transparency="40" />
@@ -77,6 +77,7 @@
       </Node>
       <Node label="Hillshade">
         <Children collapsed="true">
+
           <Node xpathlabel="Name" xpath="Datasets/Raster[@id='HILLSHADE']" type="raster"
             symbology="hillshade" id="hs" />
         </Children>
