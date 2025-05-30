@@ -37,11 +37,21 @@
             <Node label="NHD Plus V2 1:100k" xpath="Realizations/Realization">
                 <Children>
                     <Node label="NHD Flowlines"
-                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='NHDFlowline_Network']"
+                        xpath="Outputs/Geopackage[@id='NHDPlusV2']/Layers/Vector[@lyrName='nhdflowline_network']"
                         type="line" id="nhdflowline" />
                     <Node label="NHD Waterbody"
-                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='NHDWaterbody']"
-                        type="line" id="nhdwaterbody" />
+                        xpath="Outputs/Geopackage[@id='NHDPlusV2']/Layers/Vector[@lyrName='nhdwaterbody']"
+                        type="polygon" id="nhdwaterbody" />
+                    <Node label="NHD Flow Areas"
+                        xpath="Outputs/Geopackage[@id='NHDPlusV2']/Layers/Vector[@lyrName='nhdarea']"
+                        type="polygon" id="nhdwaterbody" />
+                </Children>
+            </Node>
+            <Node label="National Inventory of Dams" xpath="Realizations/Realization">
+                <Children>
+                    <Node xpathlabel="Name"
+                        xpath="Outputs/Geopackage[@id='DAMS']/Layers/Vector[@lyrName='dams']"
+                        type="point" id="national_dams" />
                 </Children>
             </Node>
         </Children>
