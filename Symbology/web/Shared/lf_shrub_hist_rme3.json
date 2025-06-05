@@ -1,0 +1,66 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(254, 240, 217)", "0%"],
+    ["rgb(253, 212, 158)", "0 - 5%"],
+    ["rgb(253, 187, 132)", "5 - 15%"],
+    ["rgb(252, 141, 89)", "15 - 30%"],
+    ["rgb(227, 74, 51)", "30 - 60%"],
+    ["rgb(179, 0, 0)", "> 60%"]
+  ],
+  "layerStyles": [
+        {
+            "id": "vw-igo-sample-cf7ljl",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vw_igo_sample-cf7ljl",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "lf_hist_shrubland_prop"],
+                0,
+                "rgb(254, 240, 217)",
+                0.00001,
+                "rgb(254, 240, 217)",
+                0.00002,
+                "rgb(253, 212, 158)",
+                0.05,
+                "rgb(253, 212, 158)",
+                0.0501,
+                "rgb(253, 187, 132)",
+                0.15,
+                "rgb(253, 187, 132)",
+                0.1501,
+                "rgb(252, 141, 89)",
+                0.3,
+                "rgb(252, 141, 89)",
+                0.3001,
+                "rgb(227, 74, 51)",
+                0.6,
+                "rgb(227, 74, 51)",
+                0.6001,
+                "rgb(179, 0, 0)",
+                1,
+                "rgb(179, 0, 0)"
+            ],
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              1.5,
+              11,
+              2.5,
+              13.5,
+              3.5,
+              15,
+              4.5,
+              22,
+              5.5
+            ]
+            }
+        }
+    ]
+}
