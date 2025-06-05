@@ -10,18 +10,17 @@
           <Node label="Beaver Metrics">
             <Children collapsed="true">
               <Node label="Existing Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_capacity" symbology="brat_capacity_rme3" />
-                <Node label="Historic Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_brat_capacity" symbology="hist_brat_capacity_rme3" />
-                <Node label="Risk of Undesirable Dams" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_risk" symbology="brat_risk_rme3" />
-                <Node label="Restoration or Conservation Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_opportunity" symbology="brat_opportunity_rme3" />
-                <Node label="Unsuitable or Limited Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_limitation" symbology="brat_limitation_rme3" />
-                <Node label="Existing Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="complex_size" symbology="placeholder" />
-                <Node label="Historic Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_complex_size" symbology="placeholder" />
-                <Node label="Dam Setting" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dam_setting" symbology="dam_setting_rme3" />
-                <!-- Old Version -->
-                <Node label="Existing Dam Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_capacity" symbology="RME_Capacity" />
-                <Node label="Risk of Undesirable Dams" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_risk" symbology="RME_Risk" />
-                <Node label="Restoration or Conservation Opportunities" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_opportunity" symbology="RME_Opportunity" />
-              </Node>
+              <Node label="Historic Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_brat_capacity" symbology="hist_brat_capacity_rme3" />
+              <Node label="Risk of Undesirable Dams" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_risk" symbology="brat_risk_rme3" />
+              <Node label="Restoration or Conservation Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_opportunity" symbology="brat_opportunity_rme3" />
+              <Node label="Unsuitable or Limited Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_limitation" symbology="brat_limitation_rme3" />
+              <Node label="Existing Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="complex_size" symbology="placeholder" />
+              <Node label="Historic Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_complex_size" symbology="placeholder" />
+              <Node label="Dam Setting" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dam_setting" symbology="dam_setting_rme3" />
+              <!-- Old Version -->
+              <Node label="Existing Dam Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_capacity" symbology="RME_Capacity" />
+              <Node label="Risk of Undesirable Dams" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_risk" symbology="RME_Risk" />
+              <Node label="Restoration or Conservation Opportunities" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_opportunity" symbology="RME_Opportunity" />
             </Children>
           </Node>
           <Node label="Descriptive Metrics">
