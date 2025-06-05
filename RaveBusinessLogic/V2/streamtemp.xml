@@ -25,7 +25,7 @@
           <Node label="Temporal Covariates Anomalies 2000s Lines"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_2000s_lines']"
             type="line" symbology="vw_temporal_covariates_anomalies_2000s_lines" />
-          <Node label="Temporal Covariates Anomalies 1990s Lines"
+          <Node label="Temporal Covariates Anomalies 1990s Lines" id="vw_temporal_covariates_anomalies_1990s_lines"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_1990s_lines']"
             type="line" symbology="vw_temporal_covariates_anomalies_1990s_lines" />
           <Node label="HUC12 Boundaries"
@@ -66,7 +66,7 @@
             type="polygon" symbology="vw_temporal_covariates_anomalies_2000s_byHUC12_polygons" />
           <Node label="Temporal Covariates Anomalies 1990s Polygons"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_1990s_polygons']"
-            type="polygon" symbology="vw_temporal_covariates_anomalies_1990s_polygons" />
+            type="polygon" symbology="vw_temporal_covariates_anomalies_1990s_polygons" id="vw_temporal_covariates_anomalies_1990s_polygons"/>
           <Node label="Temporal Covariates Anomalies 1990s by HUC12 Polygons"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_1990s_byHUC12_polygons']"
             type="polygon" symbology="vw_temporal_covariates_anomalies_1990s_byHUC12_polygons" />
@@ -84,4 +84,12 @@
       </Node>
     </Children>
   </Node>
+  <Views default="temporal_covariates_anomalies_1990s">
+    <View name="Temporal Covariates 1990s Anomolies" id="temporal_covariates_anomalies_1990s">
+        <Layers>
+            <Layer id="vw_temporal_covariates_anomalies_1990s_lines" />
+            <Layer id="vw_temporal_covariates_anomalies_1990s_polygons" />
+        </Layers>
+    </View>
+  </Views>
 </Project>
