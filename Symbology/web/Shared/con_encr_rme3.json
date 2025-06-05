@@ -1,0 +1,66 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(237, 248, 251)", "0%"],
+    ["rgb(204, 236, 230)", "0 - 5%"],
+    ["rgb(153, 216, 201)", "5 - 15%"],
+    ["rgb(102, 194, 164)", "15 - 30%"],
+    ["rgb(44, 162, 95)", "30 - 60%"],
+    ["rgb(0, 109, 44)", "> 60%"]
+  ],
+  "layerStyles": [
+        {
+            "id": "vw-igo-sample-cf7ljl",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vw_igo_sample-cf7ljl",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "conifer_encroachment"],
+                0,
+                "rgb(237, 248, 251)",
+                0.00001,
+                "rgb(237, 248, 251)",
+                0.00002,
+                "rgb(204, 236, 230)",
+                0.05,
+                "rgb(204, 236, 230)",
+                0.0501,
+                "rgb(153, 216, 201)",
+                0.15,
+                "rgb(153, 216, 201)",
+                0.1501,
+                "rgb(102, 194, 164)",
+                0.3,
+                "rgb(102, 194, 164)",
+                0.3001,
+                "rgb(44, 162, 95)",
+                0.6,
+                "rgb(44, 162, 95)",
+                0.6001,
+                "rgb(0, 109, 44)",
+                1,
+                "rgb(0, 109, 44)"
+            ],
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              1.5,
+              11,
+              2.5,
+              13.5,
+              3.5,
+              15,
+              4.5,
+              22,
+              5.5
+            ]
+            }
+        }
+    ]
+}

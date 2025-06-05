@@ -1,0 +1,59 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(8, 100%, 50%)", "0 - 30 m"],
+    ["hsl(36, 100%, 50%)", "30 - 100 m"],
+    ["hsl(60, 100%, 50%)","100 - 300 m"],
+    ["hsl(77, 100%, 34%)","300 m - 1 km"],
+    ["hsl(120, 100%, 19%)","> 1 km"]
+  ],
+  "layerStyles": [
+        {
+            "id": "vw-igo-sample-cf7ljl",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vw_igo_sample-cf7ljl",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+              "step",
+              ["get", "road_dist"],
+              "hsl(8, 100%, 50%)",
+              30,
+              "hsl(8, 100%, 50%)",
+              30.00001,
+              "hsl(36, 100%, 50%)",
+              100,
+              "hsl(36, 100%, 50%)",
+              100.00001,
+              "hsl(60, 100%, 50%)",
+              300,
+              "hsl(60, 100%, 50%)",
+              300.00001,
+              "hsl(77, 100%, 34%)",
+              1000,
+              "hsl(77, 100%, 34%)",
+              1000.00001,
+              "hsl(120, 100%, 19%)",
+              1000000,
+              "hsl(120, 100%, 19%)"
+          ],
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              1.5,
+              11,
+              2.5,
+              13.5,
+              3.5,
+              15,
+              4.5,
+              22,
+              5.5
+            ]
+            }
+        }
+    ]
+}
