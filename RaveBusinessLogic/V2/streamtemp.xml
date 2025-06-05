@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Stream Temperature</Name>
+  <ProjectType>streamtemp</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Seasonal Anomalies" xpath="Realizations/Realization">
+        <Children>
+          <Node label="Flowlines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='flowlines']"
+            type="line" symbology="flowlines" />
+          <Node label="Stream Temperature 2010s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2010s_lines']"
+            type="line" symbology="vw_stream_temperature_2010s_lines" />
+          <Node label="Stream Temperature Anomalies 2000s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2000s_lines']"
+            type="line" symbology="vw_stream_temperature_anomalies_2000s_lines" />
+          <Node label="Stream Temperature Anomalies 1990s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_lines']"
+            type="line" symbology="vw_stream_temperature_anomalies_1990s_lines" />
+          <Node label="Temporal Covariates 2010s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_2010s_lines']"
+            type="line" symbology="vw_temporal_covariates_2010s_lines" />
+          <Node label="Temporal Covariates Anomalies 2000s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_2000s_lines']"
+            type="line" symbology="vw_temporal_covariates_anomalies_2000s_lines" />
+          <Node label="Temporal Covariates Anomalies 1990s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_1990s_lines']"
+            type="line" symbology="vw_temporal_covariates_anomalies_1990s_lines" />
+          <Node label="HUC12 Boundaries"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='HUC12_boundaries']"
+            type="polygon" symbology="HUC12_boundaries" />
+          <Node label="Contributing Area"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='contributing_area']"
+            type="polygon" symbology="contributing_area" />
+          <Node label="Stream Temperature 2010s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2010s_polygons']"
+            type="polygon" symbology="vw_stream_temperature_2010s_polygons" />
+          <Node label="Stream Temperature 2010s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2010s_byHUC12_polygons']"
+            type="polygon" symbology="vw_stream_temperature_2010s_byHUC12_polygons" />
+          <Node label="Stream Temperature Anomalies 2000s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2000s_polygons']"
+            type="polygon" symbology="vw_stream_temperature_anomalies_2000s_polygons" />
+          <Node label="Stream Temperature Anomalies 2000s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2000s_byHUC12_polygons']"
+            type="polygon" symbology="vw_stream_temperature_anomalies_2000s_byHUC12_polygons" />
+          <Node label="Stream Temperature Anomalies 1990s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_polygons']"
+            type="polygon" symbology="vw_stream_temperature_anomalies_1990s_polygons" />
+          <Node label="Stream Temperature Anomalies 1990s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_byHUC12_polygons']"
+            type="polygon" symbology="vw_stream_temperature_anomalies_1990s_byHUC12_polygons" />
+          <Node label="Temporal Covariates 2010s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_2010s_polygons']"
+            type="polygon" symbology="vw_temporal_covariates_2010s_polygons" />
+          <Node label="Temporal Covariates 2010s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_2010s_byHUC12_polygons']"
+            type="polygon" symbology="vw_temporal_covariates_2010s_byHUC12_polygons" />
+          <Node label="Temporal Covariates Anomalies 2000s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_2000s_polygons']"
+            type="polygon" symbology="vw_temporal_covariates_anomalies_2000s_polygons" />
+          <Node label="Temporal Covariates Anomalies 2000s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_2000s_byHUC12_polygons']"
+            type="polygon" symbology="vw_temporal_covariates_anomalies_2000s_byHUC12_polygons" />
+          <Node label="Temporal Covariates Anomalies 1990s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_1990s_polygons']"
+            type="polygon" symbology="vw_temporal_covariates_anomalies_1990s_polygons" />
+          <Node label="Temporal Covariates Anomalies 1990s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_temporal_covariates_anomalies_1990s_byHUC12_polygons']"
+            type="polygon" symbology="vw_temporal_covariates_anomalies_1990s_byHUC12_polygons" />
+        </Children>
+      </Node>
+      <Node label="Other Files" xpath="Realizations/Realization">
+        <Children collapsed="true">
+          <Node label="Daily Covariates (Zipped Database)"
+            xpath="Datasets/File[@id='DAILY_COVARIATES']" type="file" />
+          <Node label="Covariates Metadata (CSV)" xpath="Datasets/File[@id='COVARIATE_METADATA']"
+            type="file" />
+          <Node label="Read Me" xpath="Datasets/File[@id='README']" type="file" />
+          <Node label="Log File" xpath="Datasets/File[@id='LOG']" type="file" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>
