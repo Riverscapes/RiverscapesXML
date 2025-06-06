@@ -46,6 +46,27 @@
               <Node label="Region - 2-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU2']" type="polygon" symbology="wbdhu2" />
             </Children>
           </Node>
+          <Node label="Hydrography (NHDPlus V2)">
+            <Children collapsed="true">
+              <Node label="Flow Lines (NHDPlus V2)" xpath="Datasets/Geopackage[@id='NHDPLUSV2']/Layers/Vector[@lyrName='nhdflowline_network']" type="line" symbology="nhdplusv2_flowlines" />
+              <Node label="Flow Areas (NHDPlus V2)" xpath="Datasets/Geopackage[@id='NHDPLUSV2']/Layers/Vector[@lyrName='nhdarea']" type="polygon" symbology="nhdplusv2_flowareas" />
+              <Node label="Waterbodies (NHDPlus V2)" xpath="Datasets/Geopackage[@id='NHDPLUSV2']/Layers/Vector[@lyrName='nhdwaterbody']" type="polygon" symbology="nhdplusv2_waterbodies" />
+            </Children>
+          </Node>
+          <Node label="National Inventory of Dams">
+            <Children collapsed="true">
+              <Node label="Dams by owner" xpath="Datasets/Geopackage[@id='NATIONAL_DAMS']/Layers/Vector[@lyrName='NationalDams']" type="point" symbology="nid_dams_ownership" />
+              <Node label="Dams by height" xpath="Datasets/Geopackage[@id='NATIONAL_DAMS']/Layers/Vector[@lyrName='NationalDams']" type="point" symbology="nid_dams_height" />
+            </Children>
+          </Node>
+          <Node label="National Wetlands Inventory">
+            <Children collapsed="true">
+              <Node label="Wetlands" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Wetlands']" type="polygon" symbology="nwi_wetlands" />
+              <Node label="Riparian Areas" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Riparian']" type="polygon" symbology="nwi_riparian" />
+              <Node label="Wetland Project Areas" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Wetlands_Project_metadata']" type="polygon" symbology="nwi_wetland_project" />
+              <Node label="Riparian Project Areas" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Riparian_Project_metadata']" type="polygon" symbology="nwi_riparian_project" />
+            </Children>
+            </Node>
         </Children>
       </Node>
       <Node label="Climate (PRISM)">
