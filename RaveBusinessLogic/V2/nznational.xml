@@ -21,9 +21,12 @@
                     <Node label="Catchment Wings"
                         xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='rec2ws']"
                         type="polygon" symbology="catchment_wings" id="catchment_wings" />
-                    <Node label="Watersheds"
-                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='watersheds']"
-                        type="polygon" symbology="watersheds" id="wateresheds" />
+                    <Node label="Catchments"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='NZ_Large_River_Catchments']"
+                        type="polygon" symbology="catchments" id="watersheds" />
+                    <Node label="Coastline"
+                        xpath="Outputs/Geopackage[@id='HYDROGRAPHY']/Layers/Vector[@lyrName='principal_coastlines_and_islands_polygons_topo_150k']"
+                        type="polygon" symbology="coastline" id="coastline" />
                 </Children>
             </Node>
             <Node label="Transportation">
@@ -75,7 +78,7 @@
             <Node label="Management">
                 <Children collapsed="false">
                     <Node label="Stopbanks"
-                        xpath="Outputs/Geopackage[@id='MANAGEMENT']/Layers/Vector[@lyrName='nzembankment-centrelines-150k']"
+                        xpath="Outputs//Vector[@lyrName='embankment_centrelines_topo_150k']"
                         type="line" symbology="stopbanks" id="stopbanks" />
                 </Children>
             </Node>
