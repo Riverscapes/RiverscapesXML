@@ -54,6 +54,9 @@
             </Node>
             <Node label="Topography">
                 <Children collapsed="false">
+                    <Node label="LiDAR Tiles" type="polygon" symbology="lidar_tiles" xpath="Outputs/Geopackage[@id='LIDAR']/Layers/Vector[@lyrName='lidar_tiles']" id="lidar_tiles" />
+                    <Node label="LiDAR Projects" type="polygon" symbology="lidar_projects" xpath="Outputs/Geopackage[@id='LIDAR']/Layers/Vector[@lyrName='lidar_projects']" id="lidar_projects" />
+
                     <Node label="DEM North Island"
                         xpath="Outputs/Raster[@id='DEMNORTH']"
                         type="raster" symbology="dem" id="demnorth" />
