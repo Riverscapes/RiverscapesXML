@@ -1,0 +1,49 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(38, 115, 0)", "Very Low"],
+    ["rgb(164, 196, 0)", "Low"],
+    ["rgb(255, 187, 0)", "Moderate"],
+    ["rgb(245, 0, 0)", "High"]
+  ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "land_use_intens"],
+                0,
+                "rgb(38, 115, 0)",
+                0.00001,
+                "rgb(38, 115, 0)",
+                0.00002,
+                "rgb(164, 196, 0)",
+                33,
+                "rgb(164, 196, 0)",
+                33.0001,
+                "rgb(255, 187, 0)",
+                66,
+                "rgb(255, 187, 0)",
+                66.0001,
+                "rgb(245, 0, 0)",
+                100,
+                "rgb(245, 0, 0)"
+            ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

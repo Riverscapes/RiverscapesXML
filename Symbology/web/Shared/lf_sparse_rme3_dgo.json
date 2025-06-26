@@ -1,0 +1,59 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(242, 240, 247)", "0%"],
+    ["rgb(203, 201, 226)", "0 - 5%"],
+    ["rgb(158, 154, 200)", "5 - 15%"],
+    ["rgb(117, 107, 177)", "15 - 30%"],
+    ["rgb(84, 39, 143)", "30 - 60%"],
+    ["rgb(52, 24, 88)", "> 60%"]
+  ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "lf_sparsely_vegetated_prop"],
+                0,
+                "rgb(242, 240, 247)",
+                0.00001,
+                "rgb(242, 240, 247)",
+                0.00002,
+                "rgb(203, 201, 226)",
+                0.05,
+                "rgb(203, 201, 226)",
+                0.0501,
+                "rgb(158, 154, 200)",
+                0.15,
+                "rgb(158, 154, 200)",
+                0.1501,
+                "rgb(117, 107, 177)",
+                0.3,
+                "rgb(117, 107, 177)",
+                0.3001,
+                "rgb(84, 39, 143)",
+                0.6,
+                "rgb(84, 39, 143)",
+                0.6001,
+                "rgb(52, 24, 88)",
+                1,
+                "rgb(52, 24, 88)"
+            ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

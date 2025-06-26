@@ -1,0 +1,53 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+      ["hsl(52, 100%, 45%)", "Anthropogenically Limited"],
+      ["hsl(194, 100%, 50%)","Stream Power Limited"],
+      ["hsl(0, 100%, 48%)", "Slope Limited"],
+      ["hsl(314, 100%, 73%)","Potential Reservoir or Land Use Change"],
+      ["hsl(100, 100%, 23%)", "Naturally Vegetation Limited"],
+      ["hsl(32, 100%, 52%)", "Stream Size Limited"],
+      ["hsl(0, 0%, 65%)", "Dam Building Possible"],
+      ["hsl(0, 0%, 0%)", "Other"]
+    ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "match",
+                ["get", "brat_limitation"],
+                ["Dam Building Possible"],
+                "hsl(0, 0%, 65%)",
+                ["Naturally Vegetation Limited"],
+                "hsl(100, 100%, 23%)",
+                ["Anthropogenically Limited"],
+                "hsl(52, 100%, 45%)",
+                ["Slope Limited"],
+                "hsl(0, 100%, 48%)",
+                ["Potential Reservoir or Land Use Change"],
+                "hsl(314, 100%, 73%)",
+                ["Stream Power Limited"],
+                "hsl(194, 100%, 50%)",
+                ["Stream Size Limited"],
+                "hsl(32, 100%, 52%)",
+                ["Other"],
+                "hsl(0, 0%, 0%)",
+                "hsl(0, 0%, 0%)"
+            ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

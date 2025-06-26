@@ -1,0 +1,48 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 255, 204)", "0"],
+    ["rgb(255, 237, 160)", "1"],
+    ["rgb(254, 217, 118)", "2"],
+    ["rgb(254, 178, 76)", "3"],
+    ["rgb(253, 141, 60)", "4"],
+    ["rgb(252, 78, 42)", "5"],
+    ["rgb(227, 26, 28)", "6"],
+    ["rgb(189, 0, 38)", "7"],
+    ["rgb(128, 0, 38)", "8"],
+    ["rgb(54, 0, 22)", "> 8"]
+  ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "match",
+                ["get", "tributaries"],
+                0, "rgb(255, 255, 204)",
+                1, "rgb(255, 237, 160)",
+                2, "rgb(254, 217, 118)",
+                3, "rgb(254, 178, 76)",
+                4, "rgb(253, 141, 60)",
+                5, "rgb(252, 78, 42)",
+                6, "rgb(227, 26, 28)",
+                7, "rgb(189, 0, 38)",
+                8, "rgb(128, 0, 38)",
+                "rgb(54, 0, 22)"
+              ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}
