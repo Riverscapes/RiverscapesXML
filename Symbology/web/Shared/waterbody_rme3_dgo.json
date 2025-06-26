@@ -1,0 +1,53 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+        ["rgb(55, 178, 222)", "Perennial Lake/Pond (39009, 39010, 39011, 39012)"],
+        ["rgb(155, 227, 241)", "Intermittent Lake/Pond (39001, 39004)"],
+        ["rgb(33, 59, 209)", "Reservoir (43600 - 43626)"],
+        ["rgb(42, 171, 18)", "Swamp/Marsh (46600, 46601, 46602)"],
+        ["rgb(84, 227, 110)", "Estuary (49300)"],
+        ["rgb(250, 224, 78)", "Playa (36100)"],
+        ["rgb(204, 212, 255)", "Ice Mass (37800)"],
+        ["rgb(0, 0, 0)", "NULL"]
+    ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                  "match",
+                  ["get", "waterbody_type"],
+                  ["39009", "39010", "39011", "39012"], 
+                  "rgb(55, 178, 222)",
+                  ["39001", "39004"], 
+                  "rgb(155, 227, 241)",
+                  ["43600", "43601", "43603", "43604", "43605", "43606", "43607", "43608", "43609", 
+                  "43610", "43611", "43612", "43613", "43614", "43615", "43616", "43617", "43618", 
+                  "43619", "43620", "43621", "43622", "43623", "43624", "43625", "43626"], 
+                  "rgb(33, 59, 209)",
+                  ["46600", "46601", "46602"], 
+                  "rgb(42, 171, 18)",
+                  "49300", 
+                  "rgb(84, 227, 110)",
+                  "36100", 
+                  "rgb(250, 224, 78)",
+                  "37800", 
+                  "rgb(204, 212, 255)",
+                  "rgb(0, 0, 0)"
+                ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

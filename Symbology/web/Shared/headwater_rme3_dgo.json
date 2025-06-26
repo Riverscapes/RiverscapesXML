@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(31, 120, 180)", "IS a headwater"],
+    ["rgb(0, 0, 0)", "Is NOT a headwater"]
+  ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "match",
+                ["get", "headwater"],
+                [1],
+                "rgb(31, 120, 180)",
+                0,
+                "rgb(0, 0, 0)",
+                "hsla(0, 0%, 0%, 0)"
+            ],
+                "fill-opacity": [
+                "match",
+                ["get", "headwater"],
+                0,
+                0.20,
+                [1],
+                0.60,
+                1
+            ]
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

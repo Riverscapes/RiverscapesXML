@@ -1,0 +1,69 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(247, 252, 245)", "< 2%"],
+    ["rgb(242, 244, 183)", "2% to 5%"],
+    ["rgb(237, 236, 121)", "5% to 10%"],
+    ["rgb(231, 228, 59)", "10% to 15%"],
+    ["rgb(212, 208, 31)", "15% to 25%"],
+    ["rgb(179, 176, 39)", "25% to 50%"],
+    ["rgb(146, 143, 46)", "50% to 75%"],
+    ["rgb(113, 111, 53)", "> 75%"]
+  ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "elevated_ratio"],
+                0.00,
+                "rgb(247, 252, 245)",
+                0.0199,
+                "rgb(247, 252, 245)",
+                0.02,
+                "rgb(242, 244, 183)",
+                0.0499,
+                "rgb(242, 244, 183)",
+                0.05,
+                "rgb(237, 236, 121)",
+                0.0999,
+                "rgb(237, 236, 121)",
+                0.1,
+                "rgb(231, 228, 59)",
+                0.1499,
+                "rgb(231, 228, 59)",
+                0.15,
+                "rgb(212, 208, 31)",
+                0.2499,
+                "rgb(212, 208, 31)",
+                0.25,
+                "rgb(179, 176, 39)",
+                0.4999,
+                "rgb(179, 176, 39)",
+                0.5,
+                "rgb(146, 143, 46)",
+                0.7499,
+                "rgb(146, 143, 46)",
+                0.75,
+                "rgb(113, 111, 53)",
+                2,
+                "rgb(113, 111, 53)"
+            ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

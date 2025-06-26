@@ -1,0 +1,69 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(71, 44, 124)", "< 10 m"],
+    ["rgb(59, 82, 139)", "10 to 25 m"],
+    ["rgb(44, 114, 142)", "25 to 100 m"],
+    ["rgb(33, 144, 141)", "100 to 250 m"],
+    ["rgb(40, 174, 128)", "250 to 500 m"],
+    ["rgb(93, 201, 99)", "500 m to 1 km"],
+    ["rgb(171, 220, 50)", "1 to 10 km"],
+    ["rgb(253, 231, 37)", "> 10 km"]
+  ],
+  "layerStyles": [
+        {
+            "id": "dgo-metrics-sample-byd148",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "integrated_width"],
+                0.00,
+                "rgb(71, 44, 124)",
+                10.00,
+                "rgb(71, 44, 124)",
+                10.0001,
+                "rgb(59, 82, 139)",
+                25,
+                "rgb(59, 82, 139)",
+                25.0001,
+                "rgb(44, 114, 142)",
+                100,
+                "rgb(44, 114, 142)",
+                100.0001,
+                "rgb(33, 144, 141)",
+                250,
+                "rgb(33, 144, 141)",
+                250.0001,
+                "rgb(40, 174, 128)",
+                500,
+                "rgb(40, 174, 128)",
+                500.0001,
+                "rgb(93, 201, 99)",
+                1000,
+                "rgb(93, 201, 99)",
+                1000.0001,
+                "rgb(171, 220, 50)",
+                10000,
+                "rgb(171, 220, 50)",
+                10000.0001,
+                "rgb(253, 231, 37)",
+                100000,
+                "rgb(253, 231, 37)"
+            ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}
