@@ -9,40 +9,40 @@
     [ "rgb(230, 230, 0)", "Glide/Run"],
     ["rgb(109, 196, 167)", "Rapid"],
     ["rgb(250, 170, 0)", "Riffle"],
-    ["rgb(141, 90, 153)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "geomorphic-untis-points-5rbso8",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "Geomorphic_untis_points-5rbso8",
-        "layout": {},
-        "paint": {
-            "circle-color": [
-                "match",
-                ["get", "Type"],
-                ["Chute"],
-                "rgb(145, 210, 199)",
-                ["Pond"],
-                "rgb(65, 109, 180)",
-                ["Pool"],
-                "rgb(0, 77, 168)",
-                ["Bank Attached Bar"],
-                "rgb(168, 0, 0)",
-                ["Mid Channel Bar"],
-                "rgb(137, 91, 69)",
-                ["Glide/Run"],
-                "rgb(230, 230, 0)",
-                ["Rapid"],
-                "rgb(109, 196, 167)",
-                ["Riffle"],
-                "rgb(250, 170, 0)",
-                "rgb(141, 90, 153)"
-            ],
-            "circle-stroke-color": "rgb(0, 0, 0)",
-            "circle-stroke-width": 1
-        }
-    }
+      "id": "geomorphic-untis-points-5rbso8",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "Geomorphic_untis_points-5rbso8",
+      "layout": {},
+      "paint": {
+          "circle-color": [
+              "match",
+              ["get", "Type"],
+              ["Chute"],
+              "rgb(145, 210, 199)",
+              ["Pond"],
+              "rgb(65, 109, 180)",
+              ["Pool"],
+              "rgb(0, 77, 168)",
+              ["Bank Attached Bar"],
+              "rgb(168, 0, 0)",
+              ["Mid Channel Bar"],
+              "rgb(137, 91, 69)",
+              ["Glide/Run"],
+              "rgb(230, 230, 0)",
+              ["Rapid"],
+              "rgb(109, 196, 167)",
+              ["Riffle"],
+              "rgb(250, 170, 0)",
+              "rgb(192, 177, 0)"
+          ],
+          "circle-stroke-color": "rgb(0, 0, 0)",
+          "circle-stroke-width": 1
+      }
+  }
   ]        
 }

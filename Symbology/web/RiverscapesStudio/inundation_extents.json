@@ -4,14 +4,38 @@
     ["rgb(255, 0, 197)", "Free Flowing"],
     ["rgb(0, 230, 169)", "Overflow"],
     ["rgb(0, 112, 255)", "Ponded"],
-    ["rgb(183, 72, 75)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
+      "id": "inundation-extents-cmxvgy (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "inundation_extents-cmxvgy",
+      "slot": "",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Extent Type"],
+              ["Free Flowing"],
+              "rgb(162, 0, 132)",
+              ["Overflow"],
+              "rgb(2, 134, 102)",
+              ["Ponded"],
+              "rgb(0, 50, 240)",
+              "#000000"
+          ],
+          "line-width": 1.5,
+          "line-dasharray": [4, 0.75]
+      }
+  },
+  {
       "id": "inundation-extents-cmxvgy",
       "type": "fill",
       "source": "composite",
       "source-layer": "inundation_extents-cmxvgy",
+      "slot": "",
       "layout": {},
       "paint": {
           "fill-color": [
@@ -23,9 +47,10 @@
               "rgb(0, 230, 169)",
               ["Ponded"],
               "rgb(0, 112, 255)",
-              "rgb(183, 72, 75)"
+              "rgb(192, 177, 0)"
           ],
-          "fill-opacity": 0.6
+          "fill-opacity": 0.6,
+          "fill-outline-color": "rgba(0, 0, 0, 0)"
       }
   }
   ]

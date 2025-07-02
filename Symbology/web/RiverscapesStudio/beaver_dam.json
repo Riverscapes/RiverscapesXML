@@ -4,29 +4,29 @@
     ["rgb(25, 190, 38)", "active_dam"],
     ["rgb(255, 151, 5)", "inactive_dam"],
     ["rgb(137, 91, 69)", "relic"],
-    ["rgb(152, 125, 185)", "other"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "beaverdams-9jztvz",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "BeaverDams-9jztvz",
-        "paint": {
-            "circle-color": [
-                "match",
-                ["get", "Dam Type"],
-                ["active_dam"],
-                "rgb(25, 190, 38)",
-                ["inactive_dam"],
-                "rgb(255, 151, 5)",
-                ["relic"],
-                "rgb(137, 91, 69)",
-                "rgb(152, 125, 185)"
-            ],
-            "circle-stroke-width": 1,
-            "circle-radius": 4
-        }
-    }
+      "id": "beaverdams-9jztvz",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "BeaverDams-9jztvz",
+      "paint": {
+          "circle-color": [
+              "match",
+              ["get", "Dam Type"],
+              ["active_dam"],
+              "rgb(25, 190, 38)",
+              ["inactive_dam"],
+              "rgb(255, 151, 5)",
+              ["relic"],
+              "rgb(137, 91, 69)",
+              "rgb(192, 177, 0)"
+          ],
+          "circle-stroke-width": 1,
+          "circle-radius": 4
+      }
+  }
     ]
 }

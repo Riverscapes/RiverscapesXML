@@ -1,10 +1,11 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(43, 131, 186)", "BDA"],
-    ["rgb(179, 88, 6)", "PALS"],
-    ["rgb(106, 106, 106)", "ALS"],
-    ["rgb(134, 186, 85)", "Other"]
+    ["rgb(8, 175, 221)", "BDA"],
+    ["rgb(222, 0, 189)", "PALS"],
+    ["rgb(227, 140, 1)", "ALS"],
+    ["rgb(47, 210, 28)", "Other"],
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
@@ -13,14 +14,14 @@
         "source": "composite",
         "source-layer": "StructureLines-5udtsi",
         "slot": "",
-        "layout": {},
-        "paint": {"line-width": 2.5, "line-color": "rgb(255, 255, 255)"}
+        "paint": {"line-width": 3, "line-color": "rgb(255, 255, 255)"}
     },
     {
         "id": "structurelines-5udtsi",
         "type": "line",
         "source": "composite",
         "source-layer": "StructureLines-5udtsi",
+        "slot": "",
         "layout": {"line-miter-limit": 1.75},
         "paint": {
             "line-color": [
@@ -34,7 +35,7 @@
                     "Postline Wicker Weave",
                     "Secondary BDA"
                 ],
-                "rgb(43, 131, 186)",
+                "rgb(8, 175, 221)",
                 [
                     "PALS - Right Bank Attached",
                     "PALS - Left Bank Attached",
@@ -50,7 +51,7 @@
                     "Leaky Dam",
                     "Wicker Weirs"
                 ],
-                "rgb(179, 88, 6)",
+                "rgb(222, 0, 189)",
                 [
                     "ALS - Mid Channel",
                     "ALS - Channel Spanning",
@@ -66,7 +67,7 @@
                     "Strategic Felling",
                     "Wood Jam"
                 ],
-                "rgb(106, 106, 106)",
+                "rgb(227, 140, 1)",
                 [
                     "Floodplain LWD",
                     "Floodplain BDA",
@@ -78,10 +79,118 @@
                     "Sedge Plugs",
                     "Headcut Treatment"
                 ],
-                "rgb(134, 186, 85)",
-                "#000000"
+                "rgb(47, 210, 28)",
+                "rgb(192, 177, 0)"
             ],
             "line-width": 1.5
+        }
+    },
+    {
+        "id": "structurelines-5udtsi (2)",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "StructureLines-5udtsi",
+        "slot": "",
+        "layout": {
+            "text-field": [
+                "match",
+                ["get", "Structure Type"],
+                ["ALS - Mid Channel"],
+                "ALS - Mid Channel",
+                ["Primary BDA"],
+                "Primary BDA",
+                ["Strategic Felling"],
+                "Strategic Felling",
+                ["Wood Jam"],
+                "Wood Jam",
+                ["Wicker Weirs"],
+                "Wicker Weirs",
+                ["Floodplain LWD"],
+                "Floodplain LWD",
+                ["Leaky Dam"],
+                "Leaky Dam",
+                ["ALS - Channel Spanning"],
+                "ALS - Channel Spanning",
+                ["ALS"],
+                "ALS",
+                ["PALS - Right Bank Attached"],
+                "PALS - Right Bank Attached",
+                ["Grip Hoist Tree"],
+                "Grip Hoist Tree",
+                ["ALS - Rhino"],
+                "ALS - Rhino",
+                ["PALS - Left Bank Attached"],
+                "PALS - Left Bank Attached",
+                ["Floodplain BDA"],
+                "Floodplain BDA",
+                ["ALS - Bank Blaster"],
+                "ALS - Bank Blaster",
+                ["Zuni Bowl"],
+                "Zuni Bowl",
+                ["Bag Plugs"],
+                "Bag Plugs",
+                ["PALS - Bank Attached"],
+                "PALS - Bank Attached",
+                ["Tree Dam"],
+                "Tree Dam",
+                ["One Rock Dam"],
+                "One Rock Dam",
+                ["Full Tree"],
+                "Full Tree",
+                ["PALS - Mid Channel"],
+                "PALS - Mid Channel",
+                ["Tree Plug"],
+                "Tree Plug",
+                ["PALS - Constriction Jet"],
+                "PALS - Constriction Jet",
+                ["Vanes"],
+                "Vanes",
+                ["Spreaders"],
+                "Spreaders",
+                ["Secondary BDA"],
+                "Secondary BDA",
+                ["Rhino"],
+                "Rhino",
+                ["Postline Wicker Weave"],
+                "Postline Wicker Weave",
+                ["Sedge Plugs"],
+                "Sedge Plugs",
+                ["PALS - Channel Spanning"],
+                "PALS - Channel Spanning",
+                ["PALS"],
+                "PALS",
+                ["PALS - Rhino"],
+                "PALS - Rhino",
+                ["BDA Postless"],
+                "BDA Postless",
+                ["Headcut Treatment"],
+                "Headcut Treatment",
+                ["Tight PALS (BDA without sod)"],
+                "Tight PALS (BDA without sod)",
+                ["PALS - Bank Blaster"],
+                "PALS - Bank Blaster",
+                ["Post and Brush Plug"],
+                "Post and Brush Plug",
+                ["ALS - Bank Attached"],
+                "ALS - Bank Attached",
+                ["BDA"],
+                "BDA",
+                ["Fell Tree"],
+                "Fell Tree",
+                ""
+            ],
+            "text-font": [
+                "Arial Unicode MS Bold",
+                "Arial Unicode MS Regular"
+            ],
+            "text-size": 12,
+            "text-justify": "right"
+        },
+        "paint": {
+            "text-halo-color": "rgb(255, 255, 255)",
+            "text-halo-width": 2,
+            "text-halo-blur": 1,
+            "text-translate": [10, -10]
         }
     }
     ]
