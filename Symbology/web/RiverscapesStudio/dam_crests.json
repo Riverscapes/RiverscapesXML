@@ -4,29 +4,29 @@
     ["rgb(215, 25, 28)", "Blown Out"],
     ["rgb(255, 141, 35)", "Breached"],
     ["rgb(25, 215, 38)", "Intact"],
-    ["rgb(33, 213, 102)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "dam-crests-4pmpz1",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "dam_crests-4pmpz1",
-        "paint": {
-            "line-color": [
-                "match",
-                ["get", "Dam State"],
-                ["Intact"],
-                "rgb(25, 215, 38)",
-                ["Breached"],
-                "rgb(255, 141, 35)",
-                ["Blown Out"],
-                "rgb(215, 25, 28)",
-                "rgb(33, 213, 102)"
-            ],
-            "line-width": 2.5,
-            "line-dasharray": [0.75, 0.25]
-        }
-    }
+      "id": "dam-crests-4pmpz1",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dam_crests-4pmpz1",
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Dam State"],
+              ["Intact"],
+              "rgb(25, 215, 38)",
+              ["Breached"],
+              "rgb(255, 141, 35)",
+              ["Blown Out"],
+              "rgb(215, 25, 28)",
+              "rgb(192, 177, 0)"
+          ],
+          "line-width": 2,
+          "line-dasharray": [1, 0.5]
+      }
+  }
   ]
 }

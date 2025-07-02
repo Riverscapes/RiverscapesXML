@@ -1,50 +1,75 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(5, 105, 9)", "0 Anastomosing"],
-    ["rgb(72, 118, 152)", "1 Sinuous Single Thread"],
-    ["rgb(131, 108, 56)", "2 Channelized"],
-    ["rgb(141, 27, 25)", "3 Degradation"],
-    ["rgb(255, 151, 5)", "4 Degradation and Widening"],
-    [ "rgb(195, 174, 113)", "5 Aggradation and Widening"],
+    ["rgb(56, 163, 203)", "0 Anastomosing"],
+    ["rgb(132, 0, 63)", "1 Sinuous Single Thread"],
+    ["rgb(234, 21, 153)", "2 Channelized"],
+    ["rgb(243, 17, 14)", "3 Degradation"],
+    ["rgb(181, 116, 25)", "4 Degradation and Widening"],
+    [ "rgb(255, 151, 5)", "5 Aggradation and Widening"],
     ["rgb(255, 226, 5)", "6 Quasi Equilibrium"],
-    ["rgb(130, 198, 98)", "7 Laterally Active"],
-    ["rgb(0, 242, 16)", "8 Anastomosing"],
-    ["rgb(90, 141, 203)", "0"]
+    ["rgb(41, 180, 46)", "7 Laterally Active"],
+    ["rgb(34, 73, 255)", "8 Anastomosing"],
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "sem-8gsej8",
-        "type": "fill",
-        "source": "composite",
-        "source-layer": "SEM-8gsej8",
-        "layout": {},
-        "paint": {
-            "fill-color": [
-                "match",
-                ["get", "SEM Stage"],
-                ["0 Anastomosing"],
-                "rgb(5, 105, 9)",
-                ["1 Sinuous Single Thread"],
-                "rgb(72, 118, 152)",
-                ["2 Channelized"],
-                "rgb(131, 108, 56)",
-                ["3 Degradation"],
-                "rgb(141, 27, 25)",
-                ["4 Degradation and Widening"],
-                "rgb(255, 151, 5)",
-                ["5 Aggradation and Widening"],
-                "rgb(195, 174, 113)",
-                ["6 Quasi Equilibrium"],
-                "rgb(255, 226, 5)",
-                ["7 Laterally Active"],
-                "rgb(130, 198, 98)",
-                ["8 Anastomosing"],
-                "rgb(0, 242, 16)",
-                "rgb(90, 141, 203)"
-            ],
-            "fill-opacity": 0.5
-        }
-    }
+      "id": "sem-8gsej8",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "SEM-8gsej8",
+      "layout": {},
+      "paint": {
+          "fill-color": [
+              "match",
+              ["get", "SEM Stage"],
+              ["0 Anastomosing"],
+              "rgb(56, 163, 203)",
+              ["1 Sinuous Single Thread"],
+              "rgb(132, 0, 63)",
+              ["2 Channelized"],
+              "rgb(234, 21, 153)",
+              ["3 Degradation"],
+              "rgb(243, 17, 14)",
+              ["4 Degradation and Widening"],
+              "rgb(181, 116, 25)",
+              ["5 Aggradation and Widening"],
+              "rgb(255, 151, 5)",
+              ["6 Quasi Equilibrium"],
+              "rgb(255, 226, 5)",
+              ["7 Laterally Active"],
+              "rgb(41, 180, 46)",
+              ["8 Anastomosing"],
+              "rgb(34, 73, 255)",
+              "rgb(192, 177, 0)"
+          ],
+          "fill-opacity": [
+              "match",
+              ["get", "SEM Stage"],
+              [
+                  "1 Sinuous Single Thread",
+                  "6 Quasi Equilibrium",
+                  "2 Channelized",
+                  "7 Laterally Active",
+                  "8 Anastomosing",
+                  "4 Degradation and Widening",
+                  "3 Degradation",
+                  "5 Aggradation and Widening",
+                  "0 Anastomosing"
+              ],
+              0.5,
+              1
+          ]
+      }
+  },
+  {
+      "id": "sem-8gsej8 (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "SEM-8gsej8",
+      "slot": "",
+      "layout": {},
+      "paint": {"line-width": 1.75}
+  }
   ]        
 }

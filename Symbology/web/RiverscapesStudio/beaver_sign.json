@@ -1,118 +1,131 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(255, 141, 35)", "Bank Den"],
-    ["rgb(255, 216, 107)", "Bank Lodge"],
-    ["rgb(141, 27, 25)", "Pond Lodge"],
-    ["rgb(178, 223, 138)", "Chew Stick"],
-    ["rgb(51, 160, 44)", "Clipped Vegetation"],
-    ["rgb(137, 91, 69)", "Felled Tree"],
-    ["rgb(124, 108, 99)", "Food Cache"],
-    ["rgb(195, 174, 113)", "Harvested Branches"],
-    ["rgb(166, 206, 227)", "Canal"],
+    ["rgb(255, 216, 107)", "Bank Den"],
+    ["rgb(255, 141, 35)", "Bank Lodge"],
+    ["rgb(189, 3, 0)", "Pond Lodge"],
+    ["rgb(140, 255, 136)", "Chew Stick"],
+    ["rgb(110, 223, 56)", "Clipped Vegetation"],
+    ["rgb(216, 255, 0)", "Felled Tree"],
+    ["rgb(8, 205, 188)", "Food Cache"],
+    ["rgb(194, 230, 153)", "Harvested Branches"],
+    ["rgb(194, 251, 252)", "Canal"],
     ["rgb(18, 141, 218)", "Pond Excavation"],
-    ["rgb(85, 56, 43)", "Scat"],
-    ["rgb(255, 127, 0)", "Scent Mound"],
-    ["rgb(40, 40, 40)", "Set of Tracks"],
-    ["rgb(255, 241, 107)", "Skid Trail"],
-    ["rgb(179, 200, 85)", "Slide"],
-    ["rgb(152, 125, 185)", "Other"]
+    ["rgb(127, 80, 23)", "Scat"],
+    ["rgb(223, 194, 125)", "Scent Mound"],
+    ["rgb(255, 248, 114)", "Set of Tracks"],
+    ["rgb(136, 181, 169)", "Skid Trail"],
+    ["rgb(9, 36, 153)", "Slide"],
+    ["rgb(200, 200, 200)", "Other"],
+    ["rgb(192, 177, 0)", "null"]
 
   ],
   "layerStyles": [
     {
-        "id": "beaversign-53hmpx",
-        "type": "symbol",
-        "source": "composite",
-        "source-layer": "BeaverSign-53hmpx",
-        "layout": {
-            "text-field": [
-                "match",
-                ["get", "Type"],
-                ["bank_den", "pond_lodge", "bank_lodge"],
-                "+",
-                [
-                    "harvested_branches",
-                    "food_cache",
-                    "chew_stick",
-                    "clipped_vegetation",
-                    "felled_tree"
+            "id": "beaversign-53hmpx",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "BeaverSign-53hmpx",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "Type"],
+                    ["bank_den", "pond_lodge", "bank_lodge"],
+                    "+",
+                    [
+                        "harvested_branches",
+                        "food_cache",
+                        "chew_stick",
+                        "clipped_vegetation",
+                        "felled_tree"
+                    ],
+                    "*",
+                    ""
                 ],
-                "*",
-                ""
-            ],
-            "text-size": 20
+                "text-size": 20,
+                "visibility": "none"
+            },
+            "paint": {
+                "text-color": [
+                    "match",
+                    ["get", "Type"],
+                    ["bank_den"],
+                    "rgb(255, 216, 107)",
+                    ["bank_lodge"],
+                    "rgb(255, 141, 35)",
+                    ["pond_lodge"],
+                    "rgb(189, 3, 0)",
+                    ["chew_stick"],
+                    "rgb(140, 255, 136)",
+                    ["clipped_vegetation"],
+                    "rgb(110, 223, 56)",
+                    ["felled_tree"],
+                    "rgb(216, 255, 0)",
+                    ["food_cache"],
+                    "rgb(8, 205, 188)",
+                    ["harvested_branches"],
+                    "rgb(194, 230, 153)",
+                    "rgb(192, 177, 0)"
+                ],
+                "text-halo-color": "rgb(0, 0, 0)",
+                "text-halo-width": 0.75
+            }
         },
-        "paint": {
-            "text-color": [
-                "match",
-                ["get", "Type"],
-                ["bank_den"],
-                "rgb(255, 141, 35)",
-                ["bank_lodge"],
-                "rgb(255, 216, 107)",
-                ["pond_lodge"],
-                "rgb(141, 27, 25)",
-                ["chew_stick"],
-                "rgb(178, 223, 138)",
-                ["clipped_vegetation"],
-                "rgb(51, 160, 44)",
-                ["felled_tree"],
-                "rgb(137, 91, 69)",
-                ["food_cache"],
-                "rgb(124, 108, 99)",
-                ["harvested_branches"],
-                "rgb(195, 174, 113)",
-                "#000000"
-            ],
-            "text-halo-color": "rgb(0, 0, 0)",
-            "text-halo-width": 0.75
-        }
-    },
-    {
-        "id": "beaversign-53hmpx (1)",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "BeaverSign-53hmpx",
-        "paint": {
-            "circle-color": [
-                "match",
-                ["get", "Type"],
-                ["canal"],
-                "rgb(166, 206, 227)",
-                ["pond_excavation"],
-                "rgb(18, 141, 218)",
-                ["scat"],
-                "rgb(85, 56, 43)",
-                ["scent_mound"],
-                "rgb(255, 127, 0)",
-                ["set_of_tracks"],
-                "rgb(40, 40, 40)",
-                ["skid_trail"],
-                "rgb(255, 241, 107)",
-                ["slide"],
-                "rgb(179, 200, 85)",
-                ["other"],
-                "rgb(152, 125, 185)",
-                "rgba(0, 0, 0, 0)"
-            ],
-            "circle-stroke-width": [
-                "match",
-                ["get", "Type"],
-                [
-                    "canal",
-                    "pond_excavation",
-                    "scat",
-                    "scent_mound",
-                    "set_of_tracks",
-                    "slide",
-                    "skid_trail",
-                    "other"
+        {
+            "id": "beaversign-53hmpx (1)",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "BeaverSign-53hmpx",
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "Type"],
+                    ["canal"],
+                    "rgb(194, 251, 252)",
+                    ["pond_excavation"],
+                    "rgb(18, 141, 218)",
+                    ["scat"],
+                    "rgb(127, 80, 23)",
+                    ["scent_mound"],
+                    "rgb(223, 194, 125)",
+                    ["set_of_tracks"],
+                    "rgb(255, 248, 114)",
+                    ["skid_trail"],
+                    "rgb(136, 181, 169)",
+                    ["slide"],
+                    "rgb(9, 36, 153)",
+                    ["other"],
+                    "rgb(200, 200, 200)",
+                    [
+                        "food_cache",
+                        "harvested_branches",
+                        "chew_stick",
+                        "bank_den",
+                        "clipped_vegetation",
+                        "pond_lodge",
+                        "bank_lodge",
+                        "felled_tree"
+                    ],
+                    "rgba(194, 178, 0, 0)",
+                    "rgb(194, 178, 0)"
                 ],
-                0.75,
-                0
-            ]
+                "circle-stroke-width": [
+                    "match",
+                    ["get", "Type"],
+                    [
+                        "canal",
+                        "pond_excavation",
+                        "scat",
+                        "scent_mound",
+                        "set_of_tracks",
+                        "slide",
+                        "skid_trail",
+                        "other"
+                    ],
+                    0.75,
+                    0
+                ]
+            }
         }
-    }
     ]
 }

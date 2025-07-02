@@ -3,48 +3,54 @@
   "legend": [
     ["rgb(247, 114, 6)", "Non-Riparian"],
     ["rgb(67, 196, 65)", "Riparian"],
-    ["rgb(17, 106, 222)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
-    {
-      "id": "vegetationextents-blkag0",
-      "type": "fill",
-      "source": "composite",
-      "source-layer": "VegetationExtents-blkag0",
-      "layout": {},
-      "paint": {
-          "fill-color": [
-              "match",
-              ["get", "Type"],
-              ["Non-Riparian"],
-              "rgb(247, 114, 6)",
-              ["Riparian"],
-              "rgb(67, 196, 65)",
-              "rgb(17, 106, 222)"
-          ],
-          "fill-opacity": 0.5,
-          "fill-outline-color": "rgba(0, 0, 0, 0)"
-      }
-  },
-  {
-      "id": "vegetationextents-blkag0 (1)",
-      "type": "line",
-      "source": "composite",
-      "source-layer": "VegetationExtents-blkag0",
-      "layout": {},
-      "paint": {
-          "line-color": [
-              "match",
-              ["get", "Type"],
-              ["Non-Riparian"],
-              "rgb(247, 114, 6)",
-              ["Riparian"],
-              "rgb(14, 91, 14)",
-              "#000000"
-          ],
-          "line-width": 1.75,
-          "line-dasharray": [4.5, 1.5]
-      }
-  }
+{
+            "id": "vegetationextents-blkag0",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "VegetationExtents-blkag0",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "Type"],
+                    ["Non-Riparian"],
+                    "rgb(247, 114, 6)",
+                    ["Riparian"],
+                    "rgb(67, 196, 65)",
+                    "rgb(192, 177, 0)"
+                ],
+                "fill-opacity": [
+                    "match",
+                    ["get", "Type"],
+                    ["Non-Riparian", "Riparian"],
+                    0.6,
+                    1
+                ],
+                "fill-outline-color": "rgba(0, 0, 0, 0)"
+            }
+        },
+        {
+            "id": "vegetationextents-blkag0 (1)",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "VegetationExtents-blkag0",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "Type"],
+                    ["Non-Riparian"],
+                    "rgb(247, 114, 6)",
+                    ["Riparian"],
+                    "rgb(14, 91, 14)",
+                    "#000000"
+                ],
+                "line-width": 1.75,
+                "line-dasharray": [4.5, 1.5]
+            }
+        }
   ]
 }

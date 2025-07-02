@@ -3,14 +3,15 @@
   "legend": [
     ["rgb(192, 0, 0)", "High"],
     ["rgb(0, 176, 80)", "Low"],
-    ["rgb(255, 255, 0)", "Medium"]
+    ["rgb(255, 255, 0)", "Medium"],
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "riskpolygon-7gv89o",
+        "id": "riskpolygon6-25-3wozog",
         "type": "fill",
         "source": "composite",
-        "source-layer": "RiskPolygon-7gv89o",
+        "source-layer": "RiskPolygon6_25-3wozog",
         "layout": {},
         "paint": {
             "fill-color": [
@@ -22,17 +23,54 @@
                 "rgb(0, 176, 80)",
                 ["Medium"],
                 "rgb(255, 255, 0)",
-                "#000000"
+                "rgb(192, 177, 0)"
+            ],
+            "fill-outline-color": "rgb(0, 0, 0)",
+            "fill-opacity": [
+                "match",
+                ["get", "Risk"],
+                ["High", "Low", "Medium"],
+                0.5,
+                1
             ]
         }
     },
     {
-        "id": "riskpolygon-7gv89o (1)",
+        "id": "riskpolygon6-25-3wozog (1)",
         "type": "line",
         "source": "composite",
-        "source-layer": "RiskPolygon-7gv89o",
+        "source-layer": "RiskPolygon6_25-3wozog",
         "layout": {},
-        "paint": {}
+        "paint": {"line-width": 0.75, "line-opacity": 0.5}
+    },
+    {
+        "id": "riskpolygon6-25-3wozog (2)",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "RiskPolygon6_25-3wozog",
+        "layout": {
+            "text-field": [
+                "match",
+                ["get", "Type"],
+                ["Infrastructure"],
+                "Infrastructure",
+                ["Crop/Pasture"],
+                "Crop/Pasture",
+                ""
+            ],
+            "text-font": [
+                "Arial Unicode MS Bold",
+                "Arial Unicode MS Regular"
+            ],
+            "text-size": 12,
+            "text-justify": "right",
+            "text-offset": [0, 0]
+        },
+        "paint": {
+            "text-halo-color": "rgb(255, 255, 255)",
+            "text-halo-width": 2,
+            "text-halo-blur": 1
+        }
     }
     ]
 }

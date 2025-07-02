@@ -1,11 +1,12 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(178, 223, 139)", "Building Materials"],
+    ["rgb(124, 210, 47)", "Building Materials"],
     ["rgb(215, 25, 28)", "Caution"],
-    ["rgb(154, 154, 154)", "Infrastructure"],
+    ["rgb(255, 255, 255)", "Infrastructure"],
     ["rgb(241, 163, 64)", "Logistics"],
-    ["rgb(0, 0, 0)", "Other"]
+    ["rgb(0, 0, 0)", "Other"],
+    ["rgb(192, 177, 0)", "null"]
  
 
   ],
@@ -15,34 +16,43 @@
         "type": "fill",
         "source": "composite",
         "source-layer": "Observation_polygon_design-a9fo4k",
-        "layout": {},
         "paint": {
-            "fill-outline-color": [
-                "match",
-                ["get", "Observation Type"],
-                ["Building Materials"],
-                "rgb(178, 223, 139)",
-                ["Caution"],
-                "rgb(255, 255, 255)",
-                ["Infrastructure", "Other"],
-                "rgb(0, 0, 0)",
-                ["Logistics"],
-                "rgb(241, 163, 64)",
-                "rgba(0, 0, 0, 0)"
-            ],
+            "fill-outline-color": "rgba(0, 0, 0, 0)",
             "fill-color": [
                 "match",
                 ["get", "Observation Type"],
                 ["Building Materials"],
-                "rgba(178, 223, 139, 0.59)",
+                "rgb(124, 210, 47)",
                 ["Caution"],
-                "rgba(215, 25, 28, 0.59)",
+                "rgb(215, 25, 28)",
                 ["Infrastructure"],
-                "rgb(154, 154, 154)",
+                "rgb(255, 255, 255)",
                 ["Logistics"],
-                "rgba(241, 163, 64, 0.59)",
-                "rgba(0, 0, 0, 0.59)"
-            ]
+                "rgb(241, 163, 64)",
+                ["Other"],
+                "rgb(0, 0, 0)",
+                "rgb(192, 177, 0)"
+            ],
+            "fill-opacity": 0.6
+        }
+    },
+    {
+        "id": "observation-polygon-design-a9fo4k (1)",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "Observation_polygon_design-a9fo4k",
+        "slot": "",
+        "layout": {},
+        "paint": {
+            "line-color": [
+                "match",
+                ["get", "Observation Type"],
+                ["Logistics", "Building Materials", "Caution", "Other"],
+                "rgb(255, 255, 255)",
+                "#000000"
+            ],
+            "line-width": 2,
+            "line-dasharray": [5, 1]
         }
     }
     ]

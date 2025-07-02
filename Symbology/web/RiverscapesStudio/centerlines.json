@@ -3,14 +3,35 @@
   "legend": [
     ["rgb(0, 77, 168)", "Non-Primary"],
     ["rgb(0, 169, 230)", "Primary"],
-    ["rgb(154, 53, 227)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
+      "id": "centerlines-2r4ana (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Centerlines-2r4ana",
+      "slot": "",
+      "layout": {},
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Type"],
+              ["Non-Primary"],
+              "rgba(0, 0, 0, 0)",
+              ["Primary"],
+              "rgb(0, 169, 230)",
+              "rgb(192, 177, 0)"
+          ],
+          "line-width": 2
+      }
+  },
+  {
       "id": "centerlines-2r4ana",
       "type": "line",
       "source": "composite",
       "source-layer": "Centerlines-2r4ana",
+      "slot": "",
       "layout": {},
       "paint": {
           "line-color": [
@@ -19,10 +40,11 @@
               ["Non-Primary"],
               "rgb(0, 77, 168)",
               ["Primary"],
-              "rgb(0, 169, 230)",
-              "rgb(154, 53, 227)"
+              "rgba(0, 168, 230, 0)",
+              "rgb(192, 177, 0)"
           ],
-          "line-width": ["match", ["get", "Type"], ["Primary"], 3, 1]
+          "line-width": ["match", ["get", "Type"], ["Primary"], 3, 1],
+          "line-dasharray": [6, 2]
       }
   }
   ]

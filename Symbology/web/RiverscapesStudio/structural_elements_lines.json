@@ -1,39 +1,37 @@
 {
-  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(136, 113, 49)", "Dam"],
-    ["rgb(229, 182, 54)", "Other"]
+    ["rgb(255, 216, 107)", "Dam"],
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "structuralelements-1xnbbs (1)",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "StructuralElements-1xnbbs",
-        "layout": {},
-        "paint": {
-            "line-color": "rgb(255, 255, 255)",
-            "line-width": 5,
-            "line-dasharray": [0.75, 1.1]
-        }
-    },
-    {
-        "id": "structuralelements-1xnbbs",
-        "type": "line",
-        "source": "composite",
-        "source-layer": "StructuralElements-1xnbbs",
-        "layout": {},
-        "paint": {
-            "line-color": [
-                "match",
-                ["get", "Type"],
-                ["Dam"],
-                "rgb(136, 113, 49)",
-                "rgb(229, 182, 54)"
-            ],
-            "line-width": 3,
-            "line-dasharray": [2, 1]
-        }
-    }
+      "id": "structuralelements-1xnbbs (1)",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "StructuralElements-1xnbbs",
+      "paint": {
+          "line-color": "rgb(0, 0, 0)",
+          "line-width": 5,
+          "line-dasharray": [0.75, 1.1]
+      }
+  },
+  {
+      "id": "structuralelements-1xnbbs",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "StructuralElements-1xnbbs",
+      "paint": {
+          "line-color": [
+              "match",
+              ["get", "Type"],
+              ["Dam"],
+              "rgb(255, 216, 107)",
+              "rgb(192, 177, 0)"
+          ],
+          "line-width": 3,
+          "line-dasharray": [2, 1]
+      }
+  }
   ]
 }

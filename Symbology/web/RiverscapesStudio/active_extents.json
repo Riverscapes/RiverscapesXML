@@ -3,7 +3,7 @@
   "legend": [
     ["rgb(77, 175, 74)", "Active"],
     ["rgb(228, 224, 28)", "Inactive"],
-    ["rgb(141, 90, 153)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
@@ -20,9 +20,10 @@
               "rgb(77, 175, 74)",
               ["Inactive"],
               "rgb(228, 224, 28)",
-              "rgb(141, 90, 153)"
+              "rgb(192, 177, 0)"
           ],
-          "fill-opacity": 0.6
+          "fill-opacity": 0.6,
+          "fill-outline-color": "rgba(0, 0, 0, 0)"
       }
   }
   ]

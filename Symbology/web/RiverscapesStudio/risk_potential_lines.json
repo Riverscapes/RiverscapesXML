@@ -4,14 +4,15 @@
     ["rgb(192, 0, 0)", "High"],
     ["rgb(0, 176, 80)", "Low"],
     ["rgb(255, 255, 0)", "Medium"],
-    ["rgb(237, 27, 191)", "other"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-      "id": "risklines-792yxw",
+      "id": "risklines-6-25-ajxf2x",
       "type": "line",
       "source": "composite",
-      "source-layer": "RiskLines-792yxw",
+      "source-layer": "RiskLines_6_25-ajxf2x",
+      "layout": {},
       "paint": {
           "line-color": [
               "match",
@@ -22,9 +23,40 @@
               "rgb(0, 176, 80)",
               ["Medium"],
               "rgb(255, 255, 0)",
-              "rgb(237, 27, 191)"
+              "rgb(192, 177, 0)"
           ],
           "line-width": 2.5
+      }
+  },
+  {
+      "id": "risklines-6-25-ajxf2x (1)",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "RiskLines_6_25-ajxf2x",
+      "layout": {
+          "text-field": [
+              "match",
+              ["get", "Type"],
+              ["Road"],
+              "Road",
+              ["Pathway/Trail"],
+              "Pathway/Trail",
+              ["Railroad"],
+              "Railroad",
+              ""
+          ],
+          "text-font": [
+              "Arial Unicode MS Bold",
+              "Arial Unicode MS Regular"
+          ],
+          "text-size": 14,
+          "text-justify": "right"
+      },
+      "paint": {
+          "text-translate": [35, -10],
+          "text-halo-color": "rgb(255, 255, 255)",
+          "text-halo-width": 2,
+          "text-halo-blur": 1
       }
   }
     ]

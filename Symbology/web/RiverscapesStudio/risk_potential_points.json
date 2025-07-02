@@ -4,29 +4,61 @@
     ["rgb(192, 0, 0)", "High"],
     ["rgb(0, 176, 80)", "Low"],
     ["rgb(255, 255, 0)", "Medium"],
-    ["rgb(29, 200, 154)", "0"]
+    ["rgb(192, 177, 0)", "null"]
   ],
   "layerStyles": [
     {
-        "id": "riskpoints-aozuwq",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "RiskPoints-aozuwq",
-        "layout": {},
-        "paint": {
-            "circle-color": [
-                "match",
-                ["get", "Risk"],
-                ["High"],
-                "rgb(192, 0, 0)",
-                ["Medium"],
-                "rgb(255, 255, 0)",
-                ["Low"],
-                "rgb(0, 176, 80)",
-                "rgb(29, 200, 154)"
-            ],
-            "circle-stroke-width": 1
-        }
-    }
+      "id": "riskpoints6-15-d46uh7",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "RiskPoints6_15-d46uh7",
+      "layout": {},
+      "paint": {
+          "circle-radius": 4,
+          "circle-color": [
+              "match",
+              ["get", "Risk"],
+              ["High"],
+              "rgb(192, 0, 0)",
+              ["Low"],
+              "rgb(0, 176, 80)",
+              ["Medium"],
+              "rgb(255, 255, 0)",
+              "rgb(192, 177, 0)"
+          ],
+          "circle-stroke-width": 0.75
+      }
+  },
+  {
+      "id": "riskpoints6-15-d46uh7 (1)",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "RiskPoints6_15-d46uh7",
+      "layout": {
+          "text-field": [
+              "match",
+              ["get", "Type"],
+              ["Culvert"],
+              "Culvert",
+              ["Bridge"],
+              "Bridge",
+              ["Diversion"],
+              "Diversion",
+              ""
+          ],
+          "text-font": [
+              "Arial Unicode MS Bold",
+              "Arial Unicode MS Regular"
+          ],
+          "text-size": 14,
+          "text-justify": "right"
+      },
+      "paint": {
+          "text-translate": [35, -10],
+          "text-halo-color": "rgb(255, 255, 255)",
+          "text-halo-width": 2,
+          "text-halo-blur": 1
+      }
+  }
     ]
 }
