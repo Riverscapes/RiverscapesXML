@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#feebe2", "< 25 feet"],
+    ["#f768a1", "25-50 feet"],
+    ["#ae017e", "51-100 feet"],
+    ["#48008d", "> 100 feet"],
+    ["#828282", "Undetermined"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Dam Height",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "nid_edited-coquur",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "nidHeightId"],
+                    ["Less than 25 feet"],
+                    "#feebe2",
+                    ["25-50 feet"],
+                    "#f768a1",
+                    ["51-100 feet"],
+                    "#ae017e",
+                    ["Greater than 100 feet"],
+                    "#48008d",
+                    ["Undetermined"],
+                    "#828282"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    3,
+                    11,
+                    4,
+                    13.5,
+                    5,
+                    15,
+                    6,
+                    22,
+                    7
+                ],
+                "circle-stroke-width": 0.5
+            }
+        }
+    ]
+}

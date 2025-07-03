@@ -1,0 +1,59 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#bf5b17", "Federal"],
+    ["#fdc086", "State"],
+    ["#ffff99", "Local Government"],
+    ["#386cb0", "Public Utility"],
+    ["#7fc97f", "Tribal Government"],
+    ["#beaed4", "Private"],
+    ["#f0027f", "Not Listed"],
+    ["#828282", "NULL"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Dam Ownership",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "nid_edited-coquur",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "primaryOwnerTypeId"],
+                    ["Federal"],
+                    "#bf5b17",
+                    ["State"],
+                    "#fdc086",
+                    ["Local Government"],
+                    "#ffff99",
+                    ["Public Utility"],
+                    "#386cb0",
+                    ["Tribal Government"],
+                    "#7fc97f",
+                    ["Private"],
+                    "#beaed4",
+                    ["Not Listed"],
+                    "#f0027f",
+                    "#828282"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    3,
+                    11,
+                    4,
+                    13.5,
+                    5,
+                    15,
+                    6,
+                    22,
+                    7
+                ],
+                "circle-stroke-width": 0.5
+            }
+        }
+    ]
+}
