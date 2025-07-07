@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["004da8", "Flow Areas"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "flowareas-49zavq",
+            "layout": {},
+            "paint": {"fill-color": "#004da8"}
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "flowareas-49zavq",
+            "layout": {},
+            "paint": {"line-width": 0.5}
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#4065eb", "Waterbodies"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "waterbodies-aukcaw",
+            "layout": {},
+            "paint": {"fill-color": "#97dbf2"}
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "waterbodies-aukcaw",
+            "layout": {},
+            "paint": {"line-width": 0.5, "line-color": "#4065eb"}
+        }
+    ]
+}
