@@ -1,0 +1,52 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#5da8b1", "Estuarine and Marine Deepwater"],
+    ["#9ad4bb", "Estuarine and Marine Wetland"],
+    ["#aad36b", "Freshwater Emergent Wetland"],
+    ["#5eb07a", "Freshwater Forested/Shrub Wetland"],
+    ["#9db1d3", "Freshwater Pond"],
+    ["#6a5fa2", "Lake"],
+    ["#62b5cb", "Riverine"],
+    ["#caaf8a", "Other"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "wetlands_sample_edited-19zwle",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "WETLAND_TY"],
+                    ["Estuarine and Marine Deepwater"],
+                    "#5da8b1",
+                    ["Estuarine and Marine Wetland"],
+                    "#9ad4bb",
+                    ["Freshwater Emergent Wetland"],
+                    "#aad36b",
+                    ["Freshwater Forested/Shrub Wetland"],
+                    "#5eb07a",
+                    ["Freshwater Pond"],
+                    "#9db1d3",
+                    ["Lake"],
+                    "#6a5fa2",
+                    ["Riverine"],
+                    "#62b5cb",
+                    "#caaf8a"
+                ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "wetlands_sample_edited-19zwle",
+            "layout": {},
+            "paint": {"line-width": 0.1}
+        }
+    ]
+}

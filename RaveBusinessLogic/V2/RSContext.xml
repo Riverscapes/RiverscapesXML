@@ -15,11 +15,11 @@
       </Node>
       <Node label="Hydrology">
         <Children collapsed="false">
-          <Node label="Hydrography (NHD HR+)">
+          <Node label="Hydrography (NHD HR+, 1:24k)">
             <Children collapsed="true">
               <Node label="Perennial Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdperrenial" id="perrenial" />
               <Node label="Intermittent Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdintermittent" id="intermittent" />
-              <Node label="Ephemeral Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdephemeral" />
+              <Node label="Ephemeral Drainage Network" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="nhdephemeral" id="ephemeral"/>
               <Node label="Network - Upstream Drainage Area" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="upstreamdrainagearea" />
               <Node label="Full NHD HR+ Drainage Network (by FCode)" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines" />
               <Node label="Full NHD HR+ Drainage Network (simple)" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="flow_lines_simple" />
@@ -28,12 +28,6 @@
               <Node label="Lakes, Ponds, Reservoirs and Water Bodies" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDWaterbody']" type="polygon" symbology="waterbody" />
               <Node label="Canals and Ditches" xpath="Datasets/Vector[@id='Canals']" type="line" symbology="canals_ditches" />
               <Node label="Pipes and Ditches" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='NHDFlowline']" type="line" symbology="pipes" />
-              <Node label="Segmented Hydrography">
-                <Children>
-                  <Node xpathlabel="Name" xpath="Datasets/Geopackage[@id='HYDRODERIVATIVES']/Layers/Vector[@lyrName='network_300m']" type="line" symbology="300_seg" />
-                  <Node xpathlabel="Name" xpath="Datasets/Geopackage[@id='HYDRODERIVATIVES']/Layers/Vector[@lyrName='network_intersected_300m']" type="line" symbology="300_seg_X" />
-                </Children>
-              </Node>
             </Children>
           </Node>
           <Node label="Watershed Boundaries (HUCs)">
@@ -46,7 +40,7 @@
               <Node label="Region - 2-Digit HUC" xpath="Datasets/Geopackage[@id='NHDPLUSHR']/Layers/Vector[@lyrName='WBDHU2']" type="polygon" symbology="wbdhu2" />
             </Children>
           </Node>
-          <Node label="Hydrography (NHDPlus V2)">
+          <Node label="Hydrography (NHDPlus V2, 1:100k)">
             <Children collapsed="true">
               <Node label="Flow Lines (NHDPlus V2)" xpath="Datasets/Geopackage[@id='NHDPLUSV2']/Layers/Vector[@lyrName='nhdflowline_network']" type="line" symbology="nhdplusv2_flowlines" />
               <Node label="Flow Areas (NHDPlus V2)" xpath="Datasets/Geopackage[@id='NHDPLUSV2']/Layers/Vector[@lyrName='nhdarea']" type="polygon" symbology="nhdplusv2_flowareas" />
@@ -57,14 +51,13 @@
             <Children collapsed="true">
               <Node label="Dams by owner" xpath="Datasets/Geopackage[@id='NATIONAL_DAMS']/Layers/Vector[@lyrName='NationalDams']" type="point" symbology="nid_dams_ownership" />
               <Node label="Dams by height" xpath="Datasets/Geopackage[@id='NATIONAL_DAMS']/Layers/Vector[@lyrName='NationalDams']" type="point" symbology="nid_dams_height" />
+              <Node label="Dam Name" xpath="Datasets/Geopackage[@id='NATIONAL_DAMS']/Layers/Vector[@lyrName='NationalDams']" type="point" symbology="nid_dams_name" />
             </Children>
           </Node>
           <Node label="National Wetlands Inventory">
             <Children collapsed="true">
               <Node label="Wetlands" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Wetlands']" type="polygon" symbology="nwi_wetlands" />
               <Node label="Riparian Areas" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Riparian']" type="polygon" symbology="nwi_riparian" />
-              <Node label="Wetland Project Areas" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Wetlands_Project_metadata']" type="polygon" symbology="nwi_wetland_project" />
-              <Node label="Riparian Project Areas" xpath="Datasets/Geopackage[@id='NATIONAL_WETLANDS']/Layers/Vector[@lyrName='Riparian_Project_metadata']" type="polygon" symbology="nwi_riparian_project" />
             </Children>
             </Node>
         </Children>
@@ -168,6 +161,7 @@
       <Layers>
         <Layer id="perrenial" />
         <Layer id="intermittent" />
+        <Layer id="ephemeral" />
         <Layer id="huc10" /> <!-- A test to see if we like it and to see if we avoid the webrave problem of green fill with HUC8-->
       </Layers>
     </View>
@@ -197,6 +191,13 @@
         <Layer id="perrenial" />
         <Layer id="intermittent" />
         <Layer id="owner" /> 
+      </Layers>
+    </View>
+    <View name="Geology" id="Geology">
+      <Layers>
+        <Layer id="perrenial" />
+        <Layer id="geo" />
+        <Layer id="hs" />
       </Layers>
     </View>
   </Views>

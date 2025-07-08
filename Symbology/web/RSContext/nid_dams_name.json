@@ -1,0 +1,50 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(0, 100%, 50%)", "Dam"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Point",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "nid_edited-coquur",
+            "layout": {},
+            "paint": {
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    2,
+                    11,
+                    3,
+                    13.5,
+                    4,
+                    15,
+                    5,
+                    22,
+                    6
+                ],
+                "circle-color": "hsl(0, 100%, 50%)",
+                "circle-stroke-width": 0.2
+            }
+        },
+        {
+            "id": "Label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "nid_edited-coquur",
+            "layout": {
+                "text-field": ["to-string", ["get", "name"]],
+                "text-size": 12,
+                "text-allow-overlap": true,
+                "text-offset": [0, 1.75]
+            },
+            "paint": {
+                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-halo-width": 2
+            }
+        }
+    ]
+}
