@@ -6,8 +6,8 @@
     ["#e69800", "Ephemeral (46007)"],
     ["#73dfff", "Canal (33600, 33601, 33603)"],
     ["#ffaa00", "Connector (33400)"],
-    ["cf596a", "Artificial Path (55800)"],
-    ["#ffffff", "Pipe (42800-42816)"]
+    ["#cf596a", "Artificial Path (55800)"],
+    ["#000000", "Pipe (42800-42816)"]
   ],
   "layerStyles": [
         {
@@ -42,7 +42,7 @@
                     "#000000",
                     "hsla(0, 0%, 0%, 0)"
                 ],
-                "line-gap-width": 0.05
+                "line-gap-width": 2
             }
         },
         {

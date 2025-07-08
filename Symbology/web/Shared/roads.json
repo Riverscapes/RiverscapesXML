@@ -1,68 +1,106 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(0, 52%, 34%)", "Expressway"],
-    ["hsl(0, 48%, 60%)", "Secondary Hwy"],
-    ["hsl(120, 0%, 43%)", "Local Connector"],
-    ["hsl(0, 0%, 61%)", "Local Road"],
-    ["hsl(0, 48%, 60%)", "Ramp"],
-    ["hsla(0, 0%, 40.78%, 0)", "4WD (dashed)"]
+    ["#822929", "Expressway"],
+    ["#c96767", "Secondary Hwy"],
+    ["#000000", "Local Connector"],
+    ["#e8e8e8", "Local Road"],
+    ["#c96767", "Ramp"],
+    ["#000000", "4WD (double dashes)"],
+    ["#000000", "Ferry (dashed)"],
+    ["#ffffff", "Tunnel (dashed)"]
   ],
   "layerStyles": [
-    {
-      "id": "4WD",
-      "type": "line",
-      "source": "composite",
-      "source-layer": "Transportation-01o5gm",
-      "layout": {},
-      "paint": {
-          "line-color": [
-              "match",
-              ["get", "tnmfrc"],
-              [6],
-              "hsla(0, 0%, 40.78%, 0)",
-              "hsla(0, 0%, 0%, 0)"
-          ],
-          "line-gap-width": ["match", ["get", "tnmfrc"], [6], 2, 0],
-          "line-dasharray": [4, 5]
-      }
-  },
-  {
-      "id": "Roads",
-      "type": "line",
-      "source": "composite",
-      "source-layer": "Transportation-01o5gm",
-      "layout": {},
-      "paint": {
-          "line-color": [
-              "match",
-              ["get", "tnmfrc"],
-              [1],
-              "hsl(0, 52%, 34%)",
-              [2],
-              "hsl(0, 48%, 60%)",
-              [3],
-              "hsl(120, 0%, 43%)",
-              [4],
-              "hsl(0, 0%, 61%)",
-              [5],
-              "hsl(0, 48%, 60%)",
-              "hsla(0, 0%, 0%, 0)"
-          ],
-          "line-width": [
-              "match",
-              ["get", "tnmfrc"],
-              [1],
-              2.5,
-              [2],
-              1.75,
-              [3],
-              1.5,
-              [5],
-              0.75,
-              1
-          ]
-      }
-  }
-  ]
+        {
+            "id": "Dashed",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "roads_sample-a48d0a",
+            "layout": {},
+            "paint": {
+                "line-dasharray": [2, 2],
+                "line-color": [
+                    "match",
+                    ["get", "tnmfrc"],
+                    [7],
+                    "#000000",
+                    [8],
+                    "#ffffff",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "line-width": ["match", ["get", "tnmfrc"], [7], 0.75, [8], 2, 0]
+            }
+        },
+        {
+            "id": "4wd 1",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "roads_sample-a48d0a",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "tnmfrc"],
+                    [6],
+                    "#000000",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "line-dasharray": [5, 2],
+                "line-width": 0.75
+            }
+        },
+        {
+            "id": "4wd 2",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "roads_sample-a48d0a",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "tnmfrc"],
+                    [6],
+                    "#000000",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "line-dasharray": [5, 2],
+                "line-offset": 3,
+                "line-width": 0.75
+            }
+        },
+        {
+            "id": "Solid",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "roads_sample-a48d0a",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "case",
+                    ["match", ["get", "tnmfrc"], [1], true, false],
+                    "#822929",
+                    ["match", ["get", "tnmfrc"], [2, 5], true, false],
+                    "#c96767",
+                    ["match", ["get", "tnmfrc"], [3], true, false],
+                    "#000000",
+                    ["match", ["get", "tnmfrc"], [4], true, false],
+                    "#e8e8e8",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "line-width": [
+                    "match",
+                    ["get", "tnmfrc"],
+                    [1],
+                    2.5,
+                    [2, 5],
+                    1.75,
+                    [3],
+                    1.5,
+                    [4],
+                    0.9,
+                    0
+                ]
+            }
+        }
+    ]
 }

@@ -3,18 +3,18 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/roads.json"
+    "CIMPATH=map/wetlands_edited.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "Roads",
-      "uRI" : "CIMPATH=map/roads.json",
+      "name" : "wetlands_edited",
+      "uRI" : "CIMPATH=map/wetlands_edited.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "roads",
+      "description" : "wetlands_edited",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
@@ -35,13 +35,13 @@
       "featureElevationExpression" : "0",
       "featureTable" : {
         "type" : "CIMFeatureTable",
-        "displayField" : "name",
+        "displayField" : "ATTRIBUTE",
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\issue_811\\RSContext_SulphurCreek_2.0.2\\transportation",
-          "workspaceFactory" : "Shapefile",
-          "dataset" : "roads.shp",
+          "workspaceConnectionString" : "DATABASE=..\\..\\Curation_Testing\\esri_curation\\Default.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "wetlands_edited",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -57,20 +57,20 @@
         {
           "type" : "CIMLabelClass",
           "expressionTitle" : "Custom",
-          "expression" : "$feature.name",
+          "expression" : "$feature.ATTRIBUTE",
           "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
-            "featureType" : "Line",
+            "featureType" : "Polygon",
             "avoidPolygonHoles" : true,
             "canOverrunFeature" : true,
             "canPlaceLabelOutsidePolygon" : true,
             "canRemoveOverlappingLabel" : true,
             "canStackLabel" : true,
             "centerLabelAnchorType" : "Symbol",
-            "connectionType" : "MinimizeLabels",
-            "constrainOffset" : "AboveLine",
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
             "contourAlignmentType" : "Page",
             "contourLadderType" : "Straight",
             "contourMaximumAngle" : 90,
@@ -107,17 +107,17 @@
               "trimStackingSeparators" : true
             },
             "lineFeatureType" : "General",
-            "linePlacementMethod" : "OffsetStraightFromLine",
-            "maximumLabelOverrun" : 16,
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 80,
             "maximumLabelOverrunUnit" : "Point",
             "measureFromClippedFeatureGeometry" : true,
             "minimumFeatureSizeUnit" : "Map",
-            "multiPartOption" : "OneLabelPerFeature",
+            "multiPartOption" : "OneLabelPerPart",
             "offsetAlongLineProperties" : {
               "type" : "CIMMaplexOffsetAlongLineProperties",
               "placementMethod" : "BestPositionAlongLine",
               "labelAnchorPoint" : "CenterOfLabel",
-              "distanceUnit" : "Map",
+              "distanceUnit" : "Percentage",
               "useLineDirection" : true
             },
             "pointExternalZonePriorities" : {
@@ -150,7 +150,7 @@
               "type" : "CIMMaplexInternalZonePriorities",
               "center" : 1
             },
-            "polygonPlacementMethod" : "CurvedInPolygon",
+            "polygonPlacementMethod" : "HorizontalInPolygon",
             "primaryOffset" : 1,
             "primaryOffsetUnit" : "Point",
             "removeAmbiguousLabels" : "All",
@@ -288,39 +288,52 @@
           "minAlpha" : 100,
           "maxAlpha" : 100
         },
-        "defaultLabel" : "<all other values>",
+        "defaultLabel" : "Other",
         "defaultSymbol" : {
           "type" : "CIMSymbolReference",
           "symbol" : {
-            "type" : "CIMLineSymbol",
+            "type" : "CIMPolygonSymbol",
             "symbolLayers" : [
               {
                 "type" : "CIMSolidStroke",
                 "enable" : true,
-                "name" : "Level_0",
                 "capStyle" : "Round",
                 "joinStyle" : "Round",
                 "lineStyle3D" : "Strip",
                 "miterLimit" : 10,
-                "width" : 1,
+                "width" : 0.10000000000000001,
                 "height3D" : 1,
                 "anchor3D" : "Center",
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    171,
-                    159,
+                    0,
+                    0,
                     0,
                     100
                   ]
                 }
+              },
+              {
+                "type" : "CIMSolidFill",
+                "enable" : true,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    202,
+                    175,
+                    138,
+                    60
+                  ]
+                }
               }
-            ]
+            ],
+            "angleAlignment" : "Map"
           }
         },
         "defaultSymbolPatch" : "Default",
         "fields" : [
-          "tnmfrc"
+          "WETLAND_TY"
         ],
         "groups" : [
           {
@@ -328,131 +341,22 @@
             "classes" : [
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Expressway",
+                "editable" : true,
+                "label" : "Estuarine and Marine Deepwater",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
                   "symbol" : {
-                    "type" : "CIMLineSymbol",
+                    "type" : "CIMPolygonSymbol",
                     "symbolLayers" : [
                       {
                         "type" : "CIMSolidStroke",
                         "enable" : true,
-                        "name" : "Level_10",
-                        "colorLocked" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 1.25,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            175,
-                            75,
-                            76,
-                            100
-                          ]
-                        }
-                      },
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "name" : "Level_9",
-                        "colorLocked" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 2.5,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            130,
-                            41,
-                            41,
-                            100
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "1"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "Secondary Hwy",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMLineSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "name" : "Level_7",
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 1.75,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            201,
-                            103,
-                            103,
-                            100
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "2"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "Local Connector",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMLineSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "name" : "Level_6",
                         "capStyle" : "Round",
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 0.10000000000000001,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -464,15 +368,29 @@
                             100
                           ]
                         }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            186.43000000000001,
+                            47.460000000000001,
+                            69.409999999999997,
+                            60
+                          ]
+                        }
                       }
-                    ]
+                    ],
+                    "angleAlignment" : "Map"
                   }
                 },
                 "values" : [
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "3"
+                      "Estuarine and Marine Deepwater"
                     ]
                   }
                 ],
@@ -480,125 +398,22 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Local Road",
+                "editable" : true,
+                "label" : "Estuarine and Marine Wetland",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
                   "symbol" : {
-                    "type" : "CIMLineSymbol",
+                    "type" : "CIMPolygonSymbol",
                     "symbolLayers" : [
                       {
                         "type" : "CIMSolidStroke",
                         "enable" : true,
-                        "name" : "Level_0",
                         "capStyle" : "Round",
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            232,
-                            232,
-                            232,
-                            100
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "4"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "Ramp",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMLineSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "name" : "Level_7",
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 1.75,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            201,
-                            103,
-                            103,
-                            100
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "5"
-                    ]
-                  }
-                ],
-                "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "4WD",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMLineSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMSolidStroke",
-                        "effects" : [
-                          {
-                            "type" : "CIMGeometricEffectDashes",
-                            "dashTemplate" : [
-                              3,
-                              2
-                            ],
-                            "lineDashEnding" : "NoConstraint",
-                            "controlPointEnding" : "NoConstraint"
-                          },
-                          {
-                            "type" : "CIMGeometricEffectOffset",
-                            "method" : "Mitered",
-                            "offset" : 1.6166666666666667,
-                            "option" : "Fast"
-                          }
-                        ],
-                        "enable" : true,
-                        "name" : "Level_2",
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 0.5,
+                        "width" : 0.10000000000000001,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -612,52 +427,27 @@
                         }
                       },
                       {
-                        "type" : "CIMSolidStroke",
-                        "effects" : [
-                          {
-                            "type" : "CIMGeometricEffectDashes",
-                            "dashTemplate" : [
-                              3,
-                              2
-                            ],
-                            "lineDashEnding" : "NoConstraint",
-                            "controlPointEnding" : "NoConstraint"
-                          },
-                          {
-                            "type" : "CIMGeometricEffectOffset",
-                            "method" : "Mitered",
-                            "offset" : -1.6166666666666667,
-                            "option" : "Fast"
-                          }
-                        ],
+                        "type" : "CIMSolidFill",
                         "enable" : true,
-                        "name" : "Level_1",
-                        "colorLocked" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 0.5,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
                         "color" : {
-                          "type" : "CIMRGBColor",
+                          "type" : "CIMHSVColor",
                           "values" : [
-                            0,
-                            0,
-                            0,
-                            100
+                            154.13999999999999,
+                            27.359999999999999,
+                            83.140000000000001,
+                            60
                           ]
                         }
                       }
-                    ]
+                    ],
+                    "angleAlignment" : "Map"
                   }
                 },
                 "values" : [
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "6"
+                      "Estuarine and Marine Wetland"
                     ]
                   }
                 ],
@@ -665,33 +455,21 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Ferry",
+                "label" : "Freshwater Emergent Wetland",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
                   "symbol" : {
-                    "type" : "CIMLineSymbol",
+                    "type" : "CIMPolygonSymbol",
                     "symbolLayers" : [
                       {
                         "type" : "CIMSolidStroke",
-                        "effects" : [
-                          {
-                            "type" : "CIMGeometricEffectDashes",
-                            "dashTemplate" : [
-                              3,
-                              3
-                            ],
-                            "lineDashEnding" : "NoConstraint",
-                            "controlPointEnding" : "NoConstraint"
-                          }
-                        ],
                         "enable" : true,
-                        "name" : "Level_0",
                         "capStyle" : "Round",
-                        "joinStyle" : "Miter",
+                        "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 0.75,
+                        "width" : 0.10000000000000001,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -703,15 +481,29 @@
                             100
                           ]
                         }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            83.650000000000006,
+                            49.289999999999999,
+                            82.75,
+                            60
+                          ]
+                        }
                       }
-                    ]
+                    ],
+                    "angleAlignment" : "Map"
                   }
                 },
                 "values" : [
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "7"
+                      "Freshwater Emergent Wetland"
                     ]
                   }
                 ],
@@ -719,192 +511,233 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Tunnel",
+                "label" : "Freshwater Forested/Shrub Wetland",
                 "patch" : "Default",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
                   "symbol" : {
-                    "type" : "CIMLineSymbol",
+                    "type" : "CIMPolygonSymbol",
                     "symbolLayers" : [
                       {
                         "type" : "CIMSolidStroke",
-                        "effects" : [
-                          {
-                            "type" : "CIMGeometricEffectDashes",
-                            "dashTemplate" : [
-                              3.6000000000000001,
-                              1.6000000000000001
-                            ],
-                            "lineDashEnding" : "NoConstraint",
-                            "controlPointEnding" : "NoConstraint"
-                          },
-                          {
-                            "type" : "CIMGeometricEffectOffset",
-                            "method" : "Mitered",
-                            "offset" : 0.69840000000000002,
-                            "option" : "Fast"
-                          }
-                        ],
                         "enable" : true,
-                        "name" : "Level_2",
-                        "colorLocked" : true,
                         "capStyle" : "Round",
-                        "joinStyle" : "Miter",
+                        "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 0.216,
+                        "width" : 0.10000000000000001,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
                           "values" : [
-                            156,
-                            156,
-                            156,
-                            100
-                          ]
-                        }
-                      },
-                      {
-                        "type" : "CIMSolidStroke",
-                        "effects" : [
-                          {
-                            "type" : "CIMGeometricEffectDashes",
-                            "dashTemplate" : [
-                              3.6000000000000001,
-                              1.6000000000000001
-                            ],
-                            "lineDashEnding" : "NoConstraint",
-                            "controlPointEnding" : "NoConstraint"
-                          },
-                          {
-                            "type" : "CIMGeometricEffectOffset",
-                            "method" : "Mitered",
-                            "offset" : -0.69840000000000002,
-                            "option" : "Fast"
-                          }
-                        ],
-                        "enable" : true,
-                        "name" : "Level_1",
-                        "colorLocked" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 0.216,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            156,
-                            156,
-                            156,
-                            100
-                          ]
-                        }
-                      },
-                      {
-                        "type" : "CIMCharacterMarker",
-                        "enable" : true,
-                        "name" : "Level_0",
-                        "anchorPoint" : {
-                          "x" : 1.8576000000000001,
-                          "y" : 0
-                        },
-                        "anchorPointUnits" : "Absolute",
-                        "dominantSizeAxis3D" : "Y",
-                        "rotation" : 180,
-                        "size" : 13.00032,
-                        "billboardMode3D" : "FaceNearPlane",
-                        "markerPlacement" : {
-                          "type" : "CIMMarkerPlacementAtRatioPositions",
-                          "angleToLine" : true,
-                          "beginPosition" : 1.5,
-                          "endPosition" : 1.5,
-                          "flipFirst" : true,
-                          "positionArray" : [
                             0,
-                            1
+                            0,
+                            0,
+                            100
                           ]
-                        },
-                        "characterIndex" : 8250,
-                        "fontFamilyName" : "Arial",
-                        "fontStyleName" : "Regular",
-                        "fontType" : "Unspecified",
-                        "scaleX" : 1,
-                        "symbol" : {
-                          "type" : "CIMPolygonSymbol",
-                          "symbolLayers" : [
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "name" : "Level_0",
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  156,
-                                  156,
-                                  156,
-                                  100
-                                ]
-                              }
-                            }
-                          ],
-                          "angleAlignment" : "Map"
-                        },
-                        "scaleSymbolsProportionally" : true,
-                        "respectFrame" : true
+                        }
                       },
                       {
-                        "type" : "CIMSolidStroke",
-                        "effects" : [
-                          {
-                            "type" : "CIMGeometricEffectDashes",
-                            "dashTemplate" : [
-                              0,
-                              44
-                            ],
-                            "lineDashEnding" : "NoConstraint",
-                            "controlPointEnding" : "NoConstraint"
-                          }
-                        ],
+                        "type" : "CIMSolidFill",
                         "enable" : true,
-                        "name" : "Level_0",
-                        "capStyle" : "Butt",
-                        "joinStyle" : "Miter",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 0.216,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
                         "color" : {
-                          "type" : "CIMRGBColor",
+                          "type" : "CIMHSVColor",
                           "values" : [
-                            155,
-                            155,
-                            155,
-                            100
+                            140.49000000000001,
+                            46.590000000000003,
+                            69.019999999999996,
+                            60
                           ]
                         }
                       }
-                    ]
+                    ],
+                    "angleAlignment" : "Map"
                   }
                 },
                 "values" : [
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "8"
+                      "Freshwater Forested/Shrub Wetland"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Freshwater Pond",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.10000000000000001,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            0,
+                            0,
+                            0,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            217.78,
+                            25.59,
+                            82.75,
+                            60
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Freshwater Pond"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Lake",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.10000000000000001,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            0,
+                            0,
+                            0,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            249.84999999999999,
+                            41.359999999999999,
+                            63.530000000000001,
+                            60
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Lake"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Riverine",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.10000000000000001,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            0,
+                            0,
+                            0,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            192.56999999999999,
+                            51.719999999999999,
+                            79.609999999999999,
+                            60
+                          ]
+                        }
+                      }
+                    ],
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Riverine"
                     ]
                   }
                 ],
                 "visible" : true
               }
             ],
-            "heading" : "TNMFRC"
+            "heading" : "WETLAND_TY"
           }
         ],
+        "useDefaultSymbol" : true,
         "polygonSymbolColorTarget" : "Fill"
       },
       "scaleSymbols" : true,
