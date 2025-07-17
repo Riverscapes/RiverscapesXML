@@ -1,59 +1,97 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(247, 252, 245)", "< 2%"],
-    ["rgb(226, 244, 221)", "2% - 5%"],
-    ["rgb(192, 230, 185)", "5% - 10%"],
-    ["rgb(148, 211, 144)", "10% - 15%"],
-    ["rgb(96, 186, 108)", "15% - 25%"],
-    ["rgb(50, 155, 81)","25% - 50%"],
-    ["rgb(12, 120, 53)", "50% - 75%"],
-    ["rgb(0, 68, 27)", "> 75%"]
+    ["#ffffff", "0%"],
+    ["#ffffa7", "0% to 10%"],
+    ["#c2e699", "10% to 25%"],
+    ["#78c679", "25% to 50%"],
+    ["#218640", "50% to 75%"],
+    ["#004144", "> 75%"]
   ],
   "layerStyles": [
-    {
-      "id": "Est prop VB Low Lying",
-      "type": "circle",
-      "source": "composite",
-      "source-layer": "IGO_edit-dtm2v4",
-      "paint": {
-          "circle-color": [
-              "step",
-              ["get", "low_lying_floodplain_proportion"],
-              "rgb(247, 252, 245)",
-              0.02,
-              "rgb(226, 244, 221)",
-              0.05,
-              "rgb(192, 230, 185)",
-              0.1,
-              "rgb(148, 211, 144)",
-              0.15,
-              "rgb(96, 186, 108)",
-              0.25,
-              "rgb(50, 155, 81)",
-              0.5,
-              "rgb(12, 120, 53)",
-              0.75,
-              "rgb(0, 68, 27)",
-              0.9213307925124556,
-              "rgb(0, 68, 27)"
-          ],
-          "circle-radius": [
-            "interpolate",
-            ["linear"],
-            ["zoom"],
-            10,
-            1,
-            11,
-            2,
-            13.55,
-            3,
-            15,
-            4,
-            22,
-            5
-        ]
-      }
-  }
-  ]
+        {
+            "id": "Small Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vbet_igo_prop_sample-7a69ib",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "low_lying_floodplain_proportion"],
+                    0,
+                    "#ffffff",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    0.5,
+                    11,
+                    1,
+                    13.5,
+                    1.5,
+                    15,
+                    2,
+                    22,
+                    2.5
+                ]
+            }
+        },
+        {
+            "id": "Regular Size Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vbet_igo_prop_sample-7a69ib",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "low_lying_floodplain_proportion"],
+                    0,
+                    "hsla(0, 0%, 0%, 0)",
+                    0.000001,
+                    "hsla(0, 0%, 0%, 0)",
+                    0.000002,
+                    "#ffffa7",
+                    0.1,
+                    "#ffffa7",
+                    0.10001,
+                    "#c2e699",
+                    0.25,
+                    "#c2e699",
+                    0.25001,
+                    "#78c679",
+                    0.5,
+                    "#78c679",
+                    0.50001,
+                    "#218640",
+                    0.75,
+                    "#218640",
+                    0.75001,
+                    "#004144",
+                    2,
+                    "#004144"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    1.5,
+                    11,
+                    2.5,
+                    13.5,
+                    3.5,
+                    15,
+                    4.5,
+                    22,
+                    5.5
+                ]
+            }
+        }
+    ]
 }
