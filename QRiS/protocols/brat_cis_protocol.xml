@@ -197,12 +197,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
@@ -227,12 +221,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
@@ -249,6 +237,12 @@
                         </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
@@ -259,23 +253,35 @@
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Pervasive">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Pervasive">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
@@ -287,12 +293,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
@@ -317,12 +317,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
@@ -339,6 +333,12 @@
                         </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
@@ -349,244 +349,400 @@
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                           <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Pervasive">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Pervasive">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Frequent">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
@@ -601,6 +757,12 @@
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
@@ -611,12 +773,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
@@ -637,71 +793,77 @@
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
@@ -731,7 +893,43 @@
                             <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
@@ -739,7 +937,7 @@
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
@@ -749,7 +947,85 @@
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
                     </DerivedValues>
                 </ListField>
@@ -945,12 +1221,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
@@ -975,12 +1245,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
@@ -997,6 +1261,12 @@
                         </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
@@ -1007,23 +1277,35 @@
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Pervasive">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Pervasive">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
@@ -1035,12 +1317,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
@@ -1065,12 +1341,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
@@ -1087,6 +1357,12 @@
                         </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
@@ -1097,244 +1373,400 @@
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                           <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Pervasive">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Pervasive">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Frequent">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="high_streampower">Dam Persists</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Occasional">
@@ -1349,6 +1781,12 @@
                             <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
                         </DerivedValue>
+                        <DerivedValue output="Frequent">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Breach</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
                         <DerivedValue output="Occasional">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
@@ -1359,12 +1797,6 @@
                             <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Rare">
-                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
@@ -1385,71 +1817,77 @@
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Frequent">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
-                        </DerivedValue>
-                        <DerivedValue output="Occasional">
-                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
-                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
-                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
-                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
-                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
-                            <InputValue field_id_ref="slope">So steep they cannot build a dam (e.g. greater than 20% slope)</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Occasional Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
@@ -1479,7 +1917,43 @@
                             <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
                             <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
                             <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Occasional">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
                         </DerivedValue>
                         <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
@@ -1487,7 +1961,7 @@
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
                             <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
-                        <DerivedValue output="Occasional">
+                        <DerivedValue output="Rare">
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
@@ -1497,7 +1971,85 @@
                             <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
                             <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
                             <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Pervasive</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
                             <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Rare</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Occasional</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="None">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Probably can build dam</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (evidence or current or past dams)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Can build dam (inferred)</InputValue>
+                        </DerivedValue>
+                        <DerivedValue output="Rare">
+                            <InputValue field_id_ref="dam_density_vegetation">Frequent</InputValue>
+                            <InputValue field_id_ref="base_streampower">Probably can build dam</InputValue>
+                            <InputValue field_id_ref="high_streampower">Blowout</InputValue>
+                            <InputValue field_id_ref="slope">Really flat (can build dam, but might not need as many as one dam might back up water greater than 0.5 km)</InputValue>
                         </DerivedValue>
                     </DerivedValues>
                 </ListField>
