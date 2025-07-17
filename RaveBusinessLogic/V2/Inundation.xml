@@ -6,7 +6,7 @@
     <Children>
       <Node label="Mapping" id="mapping">
         <Children>
-          <Repeater label="DCEs" xpath="Realizations/InundationDCE">
+          <Repeater label="DCEs" xpath="Realizations/Realization[@id[starts-with(., 'DCE_')]]">
             <Node xpathlabel="Name">
               <Children>
                 <Node label="Channels">
