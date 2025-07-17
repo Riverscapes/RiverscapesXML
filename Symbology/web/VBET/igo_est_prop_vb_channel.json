@@ -1,59 +1,97 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(247, 251, 255)", "< 2%"],
-    ["rgb(220, 233, 246)", "2% - 5%"],
-    ["rgb(190, 216, 236)", "5% - 10%"],
-    ["rgb(143, 194, 222)", "10% - 15%"],
-    ["rgb(91, 163, 208)", "15% - 25%"],
-    ["rgb(50, 130, 190)","25% - 50%"],
-    ["rgb(17, 92, 165)", "50% - 75%"],
-    ["rgb(8, 48, 107)", "> 75%"]
+    ["#ffffff", "0%"],
+    ["#e5ffcd", "0% to 10%"],
+    ["#99e29d", "10% to 25%"],
+    ["#7bbbcc", "25% to 50%"],
+    ["#0868ac", "50% to 75%"],
+    ["#070463", "> 75%"]
   ],
   "layerStyles": [
-    {
-        "id": "Est. Prop of VB Channel",
-        "type": "circle",
-        "source": "composite",
-        "source-layer": "IGO_edit-dtm2v4",
-        "paint": {
-            "circle-color": [
-                "step",
-                ["get", "active_channel_proportion"],
-                "rgb(247, 251, 255)",
-                0.02,
-                "rgb(220, 233, 246)",
-                0.05,
-                "rgb(190, 216, 236)",
-                0.1,
-                "rgb(143, 194, 222)",
-                0.15,
-                "rgb(91, 163, 208)",
-                0.25,
-                "rgb(50, 130, 190)",
-                0.5,
-                "rgb(17, 92, 165)",
-                0.75,
-                "rgb(8, 48, 107)",
-                100,
-                "rgb(8, 48, 107)"
-            ],
-             "circle-radius": [
-                "interpolate",
-                ["linear"],
-                ["zoom"],
-                10,
-                1,
-                11,
-                2,
-                13.55,
-                3,
-                15,
-                4,
-                22,
-                5
-            ]
+        {
+            "id": "Small Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vbet_igo_prop_sample-7a69ib",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "active_channel_proportion"],
+                    0,
+                    "#ffffff",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    0.5,
+                    11,
+                    1,
+                    13.5,
+                    1.5,
+                    15,
+                    2,
+                    22,
+                    2.5
+                ]
+            }
+        },
+        {
+            "id": "Regular Size Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vbet_igo_prop_sample-7a69ib",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "active_channel_proportion"],
+                    0,
+                    "hsla(0, 0%, 0%, 0)",
+                    0.000001,
+                    "hsla(0, 0%, 0%, 0)",
+                    0.000002,
+                    "#e5ffcd",
+                    0.1,
+                    "#e5ffcd",
+                    0.10001,
+                    "#99e29d",
+                    0.25,
+                    "#99e29d",
+                    0.25001,
+                    "#7bbbcc",
+                    0.5,
+                    "#7bbbcc",
+                    0.50001,
+                    "#0868ac",
+                    0.75,
+                    "#0868ac",
+                    0.75001,
+                    "#070463",
+                    2,
+                    "#070463"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    1.5,
+                    11,
+                    2.5,
+                    13.5,
+                    3.5,
+                    15,
+                    4.5,
+                    22,
+                    5.5
+                ]
+            }
         }
-    }
-  ]
+    ]
 }
