@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Riverscapes Dynamics</Name>
+  <ProjectType>RSDynamics</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Outputs" xpath="Realizations/Realization/Datasets">
+        <Children collapsed="true">
+          <Node label="VBET IGOs"
+            xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']"
+            type="point" symbology="vbet_igos" id="vbet_igos_raw" />
+          <Node label="VBET DGOs"
+            xpath="Geopackage/Layers/Vector[@lyrName='vbet_dgos']"
+            type="polygon" symbology="vbet_dgos" id="vbet_dgos_raw" />
+          <Node label="30yr Dynamics Alluvial Raster"
+            xpath="Raster[@id='ALLUVIAL_30YR']"
+            type="raster" symbology="dynamics_raster" id="alluvial_30yr" />
+        </Children>
+      </Node>
+      <Node xpathlabel="Name" xpath="CommonDatasets/Raster[@id='HILLSHADE']" type="raster"
+        transparency="40" symbology="hillshade" id="hillshade" />
+    </Children>
+  </Node>
+  <Views default="DEFAULT">
+    <View name="Primary Outputs" id="DEFAULT">
+      <Layers>
+        <Layer id="vbet_igos_raw" />
+        <Layer id="vbet_dgos_raw" />
+        <Layer id="alluvial_30yr" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+  </Views>
+</Project>
