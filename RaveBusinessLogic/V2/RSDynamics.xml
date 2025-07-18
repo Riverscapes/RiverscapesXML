@@ -8,8 +8,8 @@
       <Node label="Outputs" xpath="Realizations/Realization/Datasets">
         <Children collapsed="true">
           <Node label="VBET IGOs"
-            xpath="Geopackage/Layers/Vector[@lyrName='vbet_igos']"
-            type="point" symbology="vbet_igos" id="vbet_igos_raw" />
+            xpath="Geopackage/Layers/Vector[@lyrName='vbet_igo_metrics']"
+            type="point" id="vbet_igos_stdev" symbology="igo_zstat_stdev" />
           <Node label="VBET DGOs"
             xpath="Geopackage/Layers/Vector[@lyrName='vbet_dgos']"
             type="polygon" symbology="vbet_dgos" id="vbet_dgos_raw" />
@@ -25,7 +25,7 @@
   <Views default="DEFAULT">
     <View name="Primary Outputs" id="DEFAULT">
       <Layers>
-        <Layer id="vbet_igos_raw" />
+        <Layer id="vbet_igos_stdev" />
         <Layer id="vbet_dgos_raw" />
         <Layer id="alluvial_30yr" />
         <Layer id="hillshade" />
