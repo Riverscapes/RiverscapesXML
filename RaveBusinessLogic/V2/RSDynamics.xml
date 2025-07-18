@@ -8,7 +8,7 @@
       <Node label="Outputs" xpath="Realizations/Realization/Datasets">
         <Children collapsed="true">
           <Node label="VBET IGOs"
-            xpath="Geopackage/Layers/Vector[@lyrName='vbet_igo_metrics']"
+            xpath="Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']"
             type="point" id="vbet_igos_stdev" symbology="igo_zstat_stdev" />
           <Node label="VBET DGOs"
             xpath="Geopackage/Layers/Vector[@lyrName='vbet_dgos']"
