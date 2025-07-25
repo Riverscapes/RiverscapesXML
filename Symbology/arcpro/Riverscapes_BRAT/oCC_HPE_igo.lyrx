@@ -17,8 +17,9 @@
       "description" : "Historic Riverscape Dam Capacity (All)",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/49ebe11ddc5f43faaae78f4c53c668d3.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
+      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -36,170 +37,13 @@
         "type" : "CIMFeatureTable",
         "displayField" : "Risk",
         "editable" : true,
-        "fieldDescriptions" : [
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "IGOID",
-            "fieldName" : "IGOID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ReachCode",
-            "fieldName" : "ReachCode",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "level_path",
-            "fieldName" : "level_path",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "seg_distance",
-            "fieldName" : "seg_distance",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "stream_size",
-            "fieldName" : "stream_size",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "oVC_EX",
-            "fieldName" : "oVC_EX",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "oVC_HPE",
-            "fieldName" : "oVC_HPE",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "oCC_EX",
-            "fieldName" : "oCC_EX",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "oCC_HPE",
-            "fieldName" : "oCC_HPE",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Risk",
-            "fieldName" : "Risk",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Limitation",
-            "fieldName" : "Limitation",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Opportunity",
-            "fieldName" : "Opportunity",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "geom",
-            "fieldName" : "geom",
-            "visible" : true,
-            "searchMode" : "Exact"
-          }
-        ],
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\Riverscape_BRAT_Nevada\\outputs\\brat.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\2025 CONUS\\BRAT_Sulphur_5.2.0\\outputs\\brat.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vwIgos",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select IGOID,ReachCode,level_path,seg_distance,stream_size,oVC_EX,oVC_HPE,oCC_EX,oCC_HPE,Risk,Limitation,Opportunity,geom from main.vwIgos",
+          "sqlQuery" : "select IGOID,ReachCode,level_path,seg_distance,stream_size,oVC_EX,oVC_HPE,oCC_EX,oCC_HPE,Risk,Limitation,Opportunity,Dam_Setting,geom from main.vwIgos",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -321,6 +165,15 @@
             },
             {
               "name" : "Opportunity",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "Dam_Setting",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 2147483647,
@@ -676,7 +529,7 @@
         "breaks" : [
           {
             "type" : "CIMClassBreak",
-            "label" : "None: 0 dams",
+            "label" : "0 dams/km (0 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -688,7 +541,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -713,108 +566,7 @@
                                     2
                                   ],
                                   [
-                                    2.6802572847990424e-15,
-                                    0
-                                  ],
-                                  0,
-                                  1
-                                ]
-                              }
-                            ]
-                          ]
-                        },
-                        "symbol" : {
-                          "type" : "CIMPolygonSymbol",
-                          "symbolLayers" : [
-                            {
-                              "type" : "CIMSolidStroke",
-                              "enable" : true,
-                              "capStyle" : "Round",
-                              "joinStyle" : "Round",
-                              "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
-                              "width" : 0,
-                              "height3D" : 1,
-                              "anchor3D" : "Center",
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  0,
-                                  0,
-                                  0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  245,
-                                  0,
-                                  0,
-                                  100
-                                ]
-                              }
-                            }
-                          ],
-                          "angleAlignment" : "Map"
-                        }
-                      }
-                    ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
-                  }
-                ],
-                "haloSize" : 1,
-                "scaleX" : 1,
-                "angleAlignment" : "Display"
-              }
-            },
-            "upperBound" : 9.9999999999999995e-07
-          },
-          {
-            "type" : "CIMClassBreak",
-            "label" : "Rare: 0-1 dams/km",
-            "patch" : "Default",
-            "symbol" : {
-              "type" : "CIMSymbolReference",
-              "symbol" : {
-                "type" : "CIMPointSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMVectorMarker",
-                    "enable" : true,
-                    "anchorPointUnits" : "Relative",
-                    "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
-                    "billboardMode3D" : "FaceNearPlane",
-                    "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
-                    },
-                    "markerGraphics" : [
-                      {
-                        "type" : "CIMMarkerGraphic",
-                        "geometry" : {
-                          "curveRings" : [
-                            [
-                              [
-                                1.2246467991473532e-16,
-                                2
-                              ],
-                              {
-                                "a" : [
-                                  [
-                                    1.2246467991473532e-16,
-                                    2
-                                  ],
-                                  [
-                                    2.6802572847990424e-15,
+                                    5.5166980445011814e-15,
                                     0
                                   ],
                                   0,
@@ -854,8 +606,8 @@
                                 "type" : "CIMRGBColor",
                                 "values" : [
                                   255,
-                                  170,
-                                  0,
+                                  255,
+                                  255,
                                   100
                                 ]
                               }
@@ -872,13 +624,44 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
-            },
-            "upperBound" : 1
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 0.5
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 1.5
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 6
+                }
+              ]
+            }
           },
           {
             "type" : "CIMClassBreak",
-            "label" : "Occasional: 1-5 dams/km",
+            "label" : "0-3 dams/km (0-5 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -890,7 +673,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -915,7 +698,140 @@
                                     2
                                   ],
                                   [
-                                    2.6802572847990424e-15,
+                                    5.559674419647962e-15,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMPolygonSymbol",
+                          "symbolLayers" : [
+                            {
+                              "type" : "CIMSolidStroke",
+                              "enable" : true,
+                              "capStyle" : "Round",
+                              "joinStyle" : "Round",
+                              "lineStyle3D" : "Strip",
+                              "miterLimit" : 10,
+                              "width" : 0,
+                              "height3D" : 1,
+                              "anchor3D" : "Center",
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  0,
+                                  0,
+                                  0,
+                                  100
+                                ]
+                              }
+                            },
+                            {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  243,
+                                  146,
+                                  17,
+                                  100
+                                ]
+                              }
+                            }
+                          ],
+                          "angleAlignment" : "Map"
+                        }
+                      }
+                    ],
+                    "scaleSymbolsProportionally" : true,
+                    "respectFrame" : true
+                  }
+                ],
+                "haloSize" : 1,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
+            },
+            "upperBound" : 3
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "3-10 dams/km (5-16 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMVectorMarker",
+                    "enable" : true,
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 6,
+                    "billboardMode3D" : "FaceNearPlane",
+                    "frame" : {
+                      "xmin" : -2,
+                      "ymin" : -2,
+                      "xmax" : 2,
+                      "ymax" : 2
+                    },
+                    "markerGraphics" : [
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    1.2246467991473532e-16,
+                                    2
+                                  ],
+                                  [
+                                    5.559674419647962e-15,
                                     0
                                   ],
                                   0,
@@ -955,109 +871,8 @@
                                 "type" : "CIMRGBColor",
                                 "values" : [
                                   245,
-                                  245,
-                                  0,
-                                  100
-                                ]
-                              }
-                            }
-                          ],
-                          "angleAlignment" : "Map"
-                        }
-                      }
-                    ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
-                  }
-                ],
-                "haloSize" : 1,
-                "scaleX" : 1,
-                "angleAlignment" : "Display"
-              }
-            },
-            "upperBound" : 5
-          },
-          {
-            "type" : "CIMClassBreak",
-            "label" : "Frequent: 5-15 dams/km",
-            "patch" : "Default",
-            "symbol" : {
-              "type" : "CIMSymbolReference",
-              "symbol" : {
-                "type" : "CIMPointSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMVectorMarker",
-                    "enable" : true,
-                    "anchorPointUnits" : "Relative",
-                    "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
-                    "billboardMode3D" : "FaceNearPlane",
-                    "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
-                    },
-                    "markerGraphics" : [
-                      {
-                        "type" : "CIMMarkerGraphic",
-                        "geometry" : {
-                          "curveRings" : [
-                            [
-                              [
-                                1.2246467991473532e-16,
-                                2
-                              ],
-                              {
-                                "a" : [
-                                  [
-                                    1.2246467991473532e-16,
-                                    2
-                                  ],
-                                  [
-                                    2.6802572847990424e-15,
-                                    0
-                                  ],
-                                  0,
-                                  1
-                                ]
-                              }
-                            ]
-                          ]
-                        },
-                        "symbol" : {
-                          "type" : "CIMPolygonSymbol",
-                          "symbolLayers" : [
-                            {
-                              "type" : "CIMSolidStroke",
-                              "enable" : true,
-                              "capStyle" : "Round",
-                              "joinStyle" : "Round",
-                              "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
-                              "width" : 0,
-                              "height3D" : 1,
-                              "anchor3D" : "Center",
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  0,
-                                  0,
-                                  0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMRGBColor",
-                                "values" : [
-                                  76,
                                   230,
-                                  1,
+                                  65,
                                   100
                                 ]
                               }
@@ -1074,13 +889,178 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
+            },
+            "upperBound" : 10
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "10-15 dams/km (16-24 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMVectorMarker",
+                    "enable" : true,
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 6,
+                    "billboardMode3D" : "FaceNearPlane",
+                    "frame" : {
+                      "xmin" : -2,
+                      "ymin" : -2,
+                      "xmax" : 2,
+                      "ymax" : 2
+                    },
+                    "markerGraphics" : [
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    1.2246467991473532e-16,
+                                    2
+                                  ],
+                                  [
+                                    5.559674419647962e-15,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMPolygonSymbol",
+                          "symbolLayers" : [
+                            {
+                              "type" : "CIMSolidStroke",
+                              "enable" : true,
+                              "capStyle" : "Round",
+                              "joinStyle" : "Round",
+                              "lineStyle3D" : "Strip",
+                              "miterLimit" : 10,
+                              "width" : 0,
+                              "height3D" : 1,
+                              "anchor3D" : "Center",
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  0,
+                                  0,
+                                  0,
+                                  100
+                                ]
+                              }
+                            },
+                            {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  148,
+                                  206,
+                                  50,
+                                  100
+                                ]
+                              }
+                            }
+                          ],
+                          "angleAlignment" : "Map"
+                        }
+                      }
+                    ],
+                    "scaleSymbolsProportionally" : true,
+                    "respectFrame" : true
+                  }
+                ],
+                "haloSize" : 1,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 15
           },
           {
             "type" : "CIMClassBreak",
-            "label" : "Pervasive: >15 dams/km",
+            "label" : "15-25 dams/km (24-40 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -1092,7 +1072,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1117,7 +1097,7 @@
                                     2
                                   ],
                                   [
-                                    2.6802572847990424e-15,
+                                    5.559674419647962e-15,
                                     0
                                   ],
                                   0,
@@ -1156,9 +1136,9 @@
                               "color" : {
                                 "type" : "CIMRGBColor",
                                 "values" : [
-                                  0,
-                                  92,
-                                  230,
+                                  68,
+                                  186,
+                                  29,
                                   100
                                 ]
                               }
@@ -1175,9 +1155,307 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
-            "upperBound" : 300
+            "upperBound" : 25
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "25-45 dams/km (40-72 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMVectorMarker",
+                    "enable" : true,
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 6,
+                    "billboardMode3D" : "FaceNearPlane",
+                    "frame" : {
+                      "xmin" : -2,
+                      "ymin" : -2,
+                      "xmax" : 2,
+                      "ymax" : 2
+                    },
+                    "markerGraphics" : [
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    1.2246467991473532e-16,
+                                    2
+                                  ],
+                                  [
+                                    5.559674419647962e-15,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMPolygonSymbol",
+                          "symbolLayers" : [
+                            {
+                              "type" : "CIMSolidStroke",
+                              "enable" : true,
+                              "capStyle" : "Round",
+                              "joinStyle" : "Round",
+                              "lineStyle3D" : "Strip",
+                              "miterLimit" : 10,
+                              "width" : 0,
+                              "height3D" : 1,
+                              "anchor3D" : "Center",
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  0,
+                                  0,
+                                  0,
+                                  100
+                                ]
+                              }
+                            },
+                            {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  46,
+                                  105,
+                                  96,
+                                  100
+                                ]
+                              }
+                            }
+                          ],
+                          "angleAlignment" : "Map"
+                        }
+                      }
+                    ],
+                    "scaleSymbolsProportionally" : true,
+                    "respectFrame" : true
+                  }
+                ],
+                "haloSize" : 1,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
+            },
+            "upperBound" : 45
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "> 45 dams/km (> 72 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMVectorMarker",
+                    "enable" : true,
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 6,
+                    "billboardMode3D" : "FaceNearPlane",
+                    "frame" : {
+                      "xmin" : -2,
+                      "ymin" : -2,
+                      "xmax" : 2,
+                      "ymax" : 2
+                    },
+                    "markerGraphics" : [
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    1.2246467991473532e-16,
+                                    2
+                                  ],
+                                  [
+                                    5.5453489612657015e-15,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMPolygonSymbol",
+                          "symbolLayers" : [
+                            {
+                              "type" : "CIMSolidStroke",
+                              "enable" : true,
+                              "capStyle" : "Round",
+                              "joinStyle" : "Round",
+                              "lineStyle3D" : "Strip",
+                              "miterLimit" : 10,
+                              "width" : 0,
+                              "height3D" : 1,
+                              "anchor3D" : "Center",
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  0,
+                                  0,
+                                  0,
+                                  100
+                                ]
+                              }
+                            },
+                            {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  25,
+                                  25,
+                                  164,
+                                  100
+                                ]
+                              }
+                            }
+                          ],
+                          "angleAlignment" : "Map"
+                        }
+                      }
+                    ],
+                    "scaleSymbolsProportionally" : true,
+                    "respectFrame" : true
+                  }
+                ],
+                "haloSize" : 1,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
+            },
+            "upperBound" : 1000
           }
         ],
         "showInAscendingOrder" : true,
@@ -1217,7 +1495,7 @@
                                 2
                               ],
                               [
-                                2.4367244922566943e-15,
+                                8.6539734302161406e-15,
                                 0
                               ],
                               0,
@@ -1324,7 +1602,7 @@
                                 2
                               ],
                               [
-                                2.4367244922566943e-15,
+                                8.6539734302161406e-15,
                                 0
                               ],
                               0,
@@ -1397,7 +1675,7 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/49ebe11ddc5f43faaae78f4c53c668d3.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
