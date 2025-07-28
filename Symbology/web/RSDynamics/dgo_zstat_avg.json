@@ -23,20 +23,20 @@
   ],
   "layerStyles": [
     {
-      "id": "vw-igo-sample-cf7ljl",
-      "type": "circle",
+      "id": "dgo-metrics-sample-byd148",
+      "type": "fill",
       "source": "composite",
-      "source-layer": "vw_igo_sample-cf7ljl",
+      "source-layer": "dgo_metrics_sample-byd148",
       "layout": {},
       "paint": {
-        "circle-color": [
+        "fill-color": [
           "interpolate",
           [
             "linear"
           ],
           [
             "get",
-            "zstat_max"
+            "zstat_avg"
           ],
           0,
           "#440154",
@@ -49,25 +49,16 @@
           1.0,
           "#fde725"
         ],
-        "circle-radius": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          10,
-          1.5,
-          11,
-          2.5,
-          13.5,
-          3.5,
-          15,
-          4.5,
-          22,
-          5.5
-        ]
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "outline",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "paint": {
+        "line-width": 0.1
       }
     }
   ]

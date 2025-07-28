@@ -36,7 +36,7 @@
           ],
           [
             "get",
-            "zstat_max"
+            "zstat_stdev"
           ],
           0,
           "#440154",

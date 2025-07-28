@@ -36,7 +36,7 @@
           ],
           [
             "get",
-            "zstat_max"
+            "zstat_avg"
           ],
           0,
           "#440154",
