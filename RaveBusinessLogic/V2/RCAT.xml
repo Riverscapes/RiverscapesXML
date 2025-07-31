@@ -40,8 +40,8 @@
                     </Node>
                     <Node label="Rasters">
                         <Children collapsed="true">
-                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40"/>
-                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40"/>
+                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40" id="ex_rast"/>
+                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40" id="hist_rast"/>
                             <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="Veg_conversion_raster" transparency="40" id="conversion_raster"/>
@@ -110,6 +110,15 @@
        <Layer id="hillshade"/>
        <Layer id="evt_rip"/>
        <Layer id="rvd"/>
+      </Layers>
+     </View>
+     <View name="Riparian" id="rip_raster">
+      <Description>This view shows the the existing and historic riparian vegetation extents</Description>
+      <Layers>
+       <Layer id="dgo" />
+       <Layer id="ex_rast"/>
+       <Layer id="hist_rast"/>
+       <Layer id="hillshade"/>
       </Layers>
      </View>
      <View name="Conversion" id="conv">

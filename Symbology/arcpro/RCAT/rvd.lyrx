@@ -3,22 +3,23 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vwreaches.json"
+    "CIMPATH=map/riparian_vegetation_departure.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vwReaches",
-      "uRI" : "CIMPATH=map/main_vwreaches.json",
+      "name" : "Riparian Vegetation Departure",
+      "uRI" : "CIMPATH=map/riparian_vegetation_departure.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vwReaches",
+      "description" : "Riparian Vegetation Departure",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
         "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
+      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -31,6 +32,7 @@
       "blendingMode" : "Alpha",
       "allowDrapingOnIntegratedMesh" : true,
       "autoGenerateFeatureTemplates" : true,
+      "featureElevationExpression" : "0",
       "featureTable" : {
         "type" : "CIMFeatureTable",
         "displayField" : "StreamName",
@@ -88,6 +90,13 @@
           },
           {
             "type" : "CIMFieldDescription",
+            "alias" : "WatershedID",
+            "fieldName" : "WatershedID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
             "alias" : "StreamName",
             "fieldName" : "StreamName",
             "visible" : true,
@@ -132,6 +141,62 @@
               "roundingOption" : "esriRoundNumberOfDecimals",
               "roundingValue" : 6
             },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ownership",
+            "fieldName" : "ownership",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "divergence",
+            "fieldName" : "divergence",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "stream_order",
+            "fieldName" : "stream_order",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "us_state",
+            "fieldName" : "us_state",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ecoregion_iii",
+            "fieldName" : "ecoregion_iii",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ecoregion_iv",
+            "fieldName" : "ecoregion_iv",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -451,26 +516,13 @@
             "searchMode" : "Exact"
           }
         ],
-        "timeFields" : {
-          "type" : "CIMTimeTableDefinition"
-        },
-        "timeDefinition" : {
-          "type" : "CIMTimeDataDefinition",
-          "hasLiveData" : true
-        },
-        "timeDisplayDefinition" : {
-          "type" : "CIMTimeDisplayDefinition",
-          "timeInterval" : 0,
-          "timeIntervalUnits" : "esriTimeUnitsHours",
-          "timeOffsetUnits" : "esriTimeUnitsYears"
-        },
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\1701020301_landers\\RCAT_Landers\\outputs\\rcat.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\2025 CONUS\\RCAT_Sulphur_4.1.0\\outputs\\rcat.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vwReaches",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select ReachID,FCode,ReachCode,NHDPlusID,StreamName,level_path,TotDASqKm,DivDASqKm,iPC_LU,FloodplainAccess,FromConifer,FromDevegetated,FromGrassShrubland,NoChange,GrassShrubland,Devegetation,Conifer,Invasive,Development,Agriculture,NonRiparian,ConversionID,LevelID,ExistingRiparianMean,HistoricRiparianMean,RiparianDeparture,RiparianDepartureID,Condition,geom,ConversionCode,ConversionType,Departure from main.vwReaches",
+          "sqlQuery" : "select ReachID,FCode,ReachCode,NHDPlusID,WatershedID,StreamName,level_path,TotDASqKm,DivDASqKm,ownership,divergence,stream_order,us_state,ecoregion_iii,ecoregion_iv,iPC_LU,FloodplainAccess,FromConifer,FromDevegetated,FromGrassShrubland,NoChange,GrassShrubland,Devegetation,Conifer,Invasive,Development,Agriculture,NonRiparian,ConversionID,LevelID,ExistingRiparianMean,HistoricRiparianMean,RiparianDeparture,RiparianDepartureID,Condition,geom,ConversionCode,ConversionType,Departure from main.vwReaches",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -488,26 +540,6 @@
           },
           "oIDFields" : "ReachID",
           "geometryType" : "esriGeometryPolyline",
-          "extent" : {
-            "xmin" : -112.769611262999945,
-            "ymin" : 46.9656413790000329,
-            "xmax" : -112.506634434999967,
-            "ymax" : 47.2349475010000788,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "ReachID",
@@ -548,6 +580,15 @@
               "dbmsType" : 11
             },
             {
+              "name" : "WatershedID",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
               "name" : "StreamName",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
@@ -582,6 +623,60 @@
               "precision" : 0,
               "scale" : 0,
               "dbmsType" : 4
+            },
+            {
+              "name" : "ownership",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "divergence",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "stream_order",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "us_state",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "ecoregion_iii",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "ecoregion_iv",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
             },
             {
               "name" : "iPC_LU",
@@ -828,12 +923,6 @@
         "searchOrder" : "esriSearchOrderSpatial"
       },
       "htmlPopupEnabled" : true,
-      "htmlPopupFormat" : {
-        "type" : "CIMHtmlPopupFormat",
-        "htmlUseCodedDomainValues" : true,
-        "htmlPresentationStyle" : "TwoColumnTable"
-      },
-      "isFlattened" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
@@ -842,8 +931,9 @@
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
-          "expression" : "[StreamName]",
-          "expressionEngine" : "VBScript",
+          "expressionTitle" : "Custom",
+          "expression" : "$feature.StreamName",
+          "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
@@ -963,8 +1053,8 @@
             "truncationExcludedCharacters" : "0123456789",
             "polygonAnchorPointPerimeterInsetUnit" : "Point"
           },
-          "name" : "Default",
-          "priority" : 1,
+          "name" : "Class 1",
+          "priority" : -1,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
             "featureType" : "Line",
@@ -1009,33 +1099,21 @@
             "symbol" : {
               "type" : "CIMTextSymbol",
               "blockProgression" : "TTB",
-              "compatibilityMode" : true,
               "depth3D" : 1,
-              "drawSoftHyphen" : true,
               "extrapolateBaselines" : true,
-              "flipAngle" : 90,
               "fontEffects" : "Normal",
               "fontEncoding" : "Unicode",
-              "fontFamilyName" : "Arial",
+              "fontFamilyName" : "Tahoma",
               "fontStyleName" : "Regular",
               "fontType" : "Unspecified",
               "haloSize" : 1,
-              "height" : 8,
+              "height" : 10,
               "hinting" : "Default",
-              "horizontalAlignment" : "Center",
+              "horizontalAlignment" : "Left",
               "kerning" : true,
               "letterWidth" : 100,
               "ligatures" : true,
               "lineGapType" : "ExtraLeading",
-              "shadowColor" : {
-                "type" : "CIMRGBColor",
-                "values" : [
-                  0,
-                  0,
-                  0,
-                  100
-                ]
-              },
               "symbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
@@ -1691,7 +1769,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1733,7 +1811,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1775,7 +1853,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1817,7 +1895,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1845,6 +1923,49 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Increase: < 0%",
+                "patch" : "LineHorizontal",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMLineSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 1.5,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            177.88,
+                            100,
+                            66.670000000000002,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Increase: < 0%"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
                 "label" : "No Historic Riparian Veg. Detected",
                 "patch" : "Default",
                 "symbol" : {
@@ -1859,7 +1980,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1,
+                        "width" : 0.90000000000000002,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1880,6 +2001,60 @@
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
                       "None"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Valley Too Narrow to Sample",
+                "patch" : "LineHorizontal",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMLineSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "effects" : [
+                          {
+                            "type" : "CIMGeometricEffectDashes",
+                            "dashTemplate" : [
+                              3,
+                              6
+                            ],
+                            "lineDashEnding" : "NoConstraint",
+                            "controlPointEnding" : "NoConstraint"
+                          }
+                        ],
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.75,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            35,
+                            35,
+                            35,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Valley Too Narrow to Sample"
                     ]
                   }
                 ],

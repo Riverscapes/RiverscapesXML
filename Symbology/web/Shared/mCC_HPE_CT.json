@@ -1,11 +1,11 @@
 {
   "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(0, 100%, 48%)", "No Dams"],
-    ["hsl(40, 100%, 50%)", "Single Dam"],
-    ["hsl(60, 100%, 48%)","Small Complex (1-3 dams)"],
-    ["hsl(100, 100%, 45%)","Medium Complex (3-5 dams)"],
-    ["hsl(216, 100%, 45%)","Large Complex (>5 dams)"]
+    ["#ffffcc", "No Dams"],
+    ["#a1dab4", "Single Dam"],
+    ["#41b6c4","Small Complex (1-3 dams)"],
+    ["#2c7fb8","Medium Complex (3-5 dams)"],
+    ["#253494","Large Complex (>5 dams)"]
   ],
   "layerStyles": [
     {
@@ -16,25 +16,29 @@
       "layout": {},
       "paint": {
           "line-color": [
-              "step",
+              "interpolate",
+              ["linear"],
               ["get", "mCC_HPE_CT"],
-              "hsl(0, 100%, 48%)",
+              0,
+              "#ffffcc",
               0.000001,
-              "hsl(40, 100%, 50%)",
+              "#ffffcc",
+              0.000002,
+              "#a1dab4",
               1,
-              "hsl(40, 100%, 50%)",
+              "#a1dab4",
               1.000001,
-              "hsl(60, 100%, 48%)",
+              "#41b6c4",
               3,
-              "hsl(60, 100%, 48%)",
+              "#41b6c4",
               3.000001,
-              "hsl(100, 100%, 45%)",
+              "#2c7fb8",
               5,
-              "hsl(100, 100%, 45%)",
+              "#2c7fb8",
               5.000001,
-              "hsl(216, 100%, 45%)",
-              10.81,
-              "hsl(216, 100%, 45%)"
+              "#253494",
+              300,
+              "#253494"
           ]
       }
   }

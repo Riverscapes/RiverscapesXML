@@ -7,51 +7,19 @@
       <Node label="Project Report" xpath="Outputs/HTMLFile" type="report" />
       <Node label="Riverscape Metrics" xpath="Realizations/Realization">
         <Children collapsed="false">
-          <Node label="Beaver Metrics">
-            <Children collapsed="true">
-              <Node label="IGO Beaver Metrics">
-                <Children collapsed="true">
-                  <Node label="Existing Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_capacity" symbology="brat_capacity_rme3" />
-                  <Node label="Historic Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_brat_capacity" symbology="hist_brat_capacity_rme3" />
-                  <Node label="Risk of Undesirable Dams" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_risk" symbology="brat_risk_rme3" />
-                  <Node label="Restoration or Conservation Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_opportunity" symbology="brat_opportunity_rme3" />
-                  <Node label="Unsuitable or Limited Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_limitation" symbology="brat_limitation_rme3" />
-                  <Node label="Existing Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="complex_size" symbology="complex_rme3" />
-                  <Node label="Historic Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_complex_size" symbology="complex_hist_rme3" />
-                  <Node label="Dam Setting" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dam_setting" symbology="dam_setting_rme3" />
-                  <!-- Old Version -->
-                  <Node label="Existing Dam Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_capacity" symbology="RME_Capacity" />
-                  <Node label="Risk of Undesirable Dams" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_risk" symbology="RME_Risk" />
-                  <Node label="Restoration or Conservation Opportunities" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_opportunity" symbology="RME_Opportunity" />
-                </Children>
-              </Node>
-              <Node label="DGO Beaver Metrics">
-                <Children collapsed="true">
-                  <Node label="Existing Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_capacity_dgo" symbology="brat_capacity_rme3_dgo" />
-                  <Node label="Historic Dam Capacity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="hist_brat_capacity_dgo" symbology="hist_brat_capacity_rme3_dgo" />
-                  <Node label="Risk of Undesirable Dams" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_risk_dgo" symbology="brat_risk_rme3_dgo" />
-                  <Node label="Restoration or Conservation Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_opportunity_dgo" symbology="brat_opportunity_rme3_dgo" />
-                  <Node label="Unsuitable or Limited Opportunities" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_limitation_dgo" symbology="brat_limitation_rme3_dgo" />
-                  <Node label="Existing Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="complex_size_dgo" symbology="complex_rme3_dgo" />
-                  <Node label="Historic Dam Complex Size" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="hist_complex_size_dgo" symbology="complex_hist_rme3_dgo" />
-                  <Node label="Dam Setting" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="dam_setting_dgo" symbology="dam_setting_rme3_dgo" />
-                </Children>
-              </Node>
-            </Children>
-          </Node>
           <Node label="Descriptive Metrics">
             <Children collapsed="true">
               <Node label="IGO Descriptive Metrics">
                 <Children collapsed="true">
-                  <Node label="Land Ownership" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="ownership" symbology="ownership_rme3" />
-                  <Node label="Drainage Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="drainage" symbology="drainage_rme3" />
-                  <Node label="Stream Name" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="name" symbology="stream_name_rme3" />
-                  <Node label="Stream Order" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="order" symbology="stream_order_rme3" />
-                  <Node label="Headwater (Yes/No)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="headwater" symbology="headwater_rme3" />
-                  <Node label="Waterbody Type" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="waterbody" symbology="waterbody_rme3" />
-                  <Node label="Level 3 Ecoregions" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="eco3" symbology="eco3_rme3" />
+                  <Node label="Dominant Land Ownership (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="ownership" symbology="ownership_rme3" />
+                  <Node label="Drainage Area (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="drainage" symbology="drainage_rme3" />
+                  <Node label="Stream Name (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="name" symbology="stream_name_rme3" />
+                  <Node label="Stream Order (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="order" symbology="stream_order_rme3" />
+                  <Node label="Headwater (Yes/No)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="headwater" symbology="headwater_rme3" />
+                  <Node label="Waterbody Type (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="waterbody" symbology="waterbody_rme3" />
+                  <Node label="Level 3 Ecoregions (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="eco3" symbology="eco3_rme3" />
                   <!-- Old Version -->
-                  <Node label="Land Ownership" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rme_igo_ownership" symbology="RME_Ownership" />
+                  <Node label="Dominant Land Ownership" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rme_igo_ownership" symbology="RME_Ownership" />
                   <Node label="Drainage Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rme_igo_drainage_area" symbology="RME_Drainage" />
                   <Node label="Stream Order" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="nhd_igo_streamorder" symbology="Stream_Order" />
                   <Node label="Headwater" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="nhd_igo_headwater" symbology="Headwater" />
@@ -59,13 +27,33 @@
               </Node>
               <Node label="DGO Descriptive Metrics">
                 <Children collapsed="true">
-                  <Node label="Land Ownership" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="ownership_dgo" symbology="ownership_rme3_dgo" />
-                  <Node label="Drainage Area" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="drainage_dgo" symbology="drainage_rme3_dgo" />
-                  <Node label="Stream Name" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="name_dgo" symbology="stream_name_rme3_dgo" />
-                  <Node label="Stream Order" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="order_dgo" symbology="stream_order_rme3_dgo" />
-                  <Node label="Headwater (Yes/No)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="headwater_dgo" symbology="headwater_rme3_dgo" />
-                  <Node label="Waterbody Type" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="waterbody_dgo" symbology="waterbody_rme3_dgo" />
-                  <Node label="Level 3 Ecoregions" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="eco3_dgo" symbology="eco3_rme3_dgo" />
+                  <Node label="Dominant Land Ownership (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="ownership_dgo" symbology="ownership_rme3_dgo" />
+                  <Node label="Drainage Area (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="drainage_dgo" symbology="drainage_rme3_dgo" />
+                  <Node label="Stream Name (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="name_dgo" symbology="stream_name_rme3_dgo" />
+                  <Node label="Stream Order (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="order_dgo" symbology="stream_order_rme3_dgo" />
+                  <Node label="Headwater (Yes/No) (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="headwater_dgo" symbology="headwater_rme3_dgo" />
+                  <Node label="Waterbody Type (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="waterbody_dgo" symbology="waterbody_rme3_dgo" />
+                  <Node label="Level 3 Ecoregions (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="eco3_dgo" symbology="eco3_rme3_dgo" />
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+          <Node label="Hydrologic Metrics">
+            <Children collapsed="true">
+              <Node label="IGO Hydrologic Metrics">
+                <Children collapsed="true">
+                  <Node label="Baseflow (cfs)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="qlow" symbology="baseflow_rme3" />
+                  <Node label="Typical Flood (cfs)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="q2" symbology="flood_rme3" />
+                  <Node label="Baseflow Stream Power (watts)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="splow" symbology="splow_rme3" />
+                  <Node label="Flood Stream Power (watts)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="sphigh" symbology="sphigh_rme3" />
+                </Children>
+              </Node>
+              <Node label="DGO Hydrologic Metrics">
+                <Children collapsed="true">
+                  <Node label="Baseflow (cfs)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="qlow_dgo" symbology="baseflow_rme3_dgo" />
+                  <Node label="Typical Flood (cfs)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="q2_dgo" symbology="flood_rme3_dgo" />
+                  <Node label="Baseflow Stream Power (watts)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="splow_dgo" symbology="splow_rme3_dgo" />
+                  <Node label="Flood Stream Power (watts)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="sphigh_dgo" symbology="sphigh_rme3_dgo" />
                 </Children>
               </Node>
             </Children>
@@ -74,24 +62,24 @@
             <Children collapsed="true">
               <Node label="IGO Geomorphic Metrics">
                 <Children collapsed="true">
-                  <Node label="Primary Channel Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="stream_grad" symbology="stream_grad_rme3" />
-                  <Node label="Valley Bottom Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="vb_grad" symbology="valley_grad_rme3" />
-                  <Node label="Relative Flow Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rel_flow" symbology="rel_flow_length_rme3" />
-                  <Node label="Confluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="confluence" symbology="confluence_count_rme3" />
-                  <Node label="Diffluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="diffluence" symbology="diffluence_count_rme3" />
-                  <Node label="Tributary Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="tributary" symbology="trib_count_rme3" />
-                  <Node label="Tributaries per Kilometer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="trib_km" symbology="trib_km_rme3" />
-                  <Node label="Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="plan_sin" symbology="plan_sin_rme3" />
-                  <Node label="Integrated Width" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="int_width" symbology="integrated_width_rme3" />
-                  <Node label="Active Channel Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="act_chan" symbology="act_chan_ratio_rme3" />
-                  <Node label="Low-Lying Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="low_lying" symbology="low_lying_ratio_rme3" />
-                  <Node label="Elevated Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="elev" symbology="elevated_ratio_rme3" />
-                  <Node label="Floodplain Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="floodplain" symbology="floodplain_ratio_rme3" />
-                  <Node label="Acres of Valley Bottom per Mile" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="ac_vb_mi" symbology="ac_vb_mi_rme3" />
-                  <Node label="Hectares of Valley Bottom per Kilometer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hec_vb_km" symbology="hec_vb_km_rme3" />
-                  <Node label="Channel Width" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="chan_width" symbology="chan_width_rme3" />
-                  <Node label="Confinement Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="confine_ratio" symbology="confine_ratio_rme3" />
-                  <Node label="Constriction Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="constrict_ratio" symbology="constrict_ratio_rme3" />
+                  <Node label="Primary Channel Gradient (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="stream_grad" symbology="stream_grad_rme3" />
+                  <Node label="Valley Bottom Gradient (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="vb_grad" symbology="valley_grad_rme3" />
+                  <Node label="Relative Flow Length (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rel_flow" symbology="rel_flow_length_rme3" />
+                  <Node label="Confluence Count (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="confluence" symbology="confluence_count_rme3" />
+                  <Node label="Diffluence Count (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="diffluence" symbology="diffluence_count_rme3" />
+                  <Node label="Tributary Count (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="tributary" symbology="trib_count_rme3" />
+                  <Node label="Tributaries per Kilometer (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="trib_km" symbology="trib_km_rme3" />
+                  <Node label="Planform Sinuosity (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="plan_sin" symbology="plan_sin_rme3" />
+                  <Node label="Integrated Width (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="int_width" symbology="integrated_width_rme3" />
+                  <Node label="Active Channel Ratio (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="act_chan" symbology="act_chan_ratio_rme3" />
+                  <Node label="Low-Lying Ratio (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="low_lying" symbology="low_lying_ratio_rme3" />
+                  <Node label="Elevated Ratio (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="elev" symbology="elevated_ratio_rme3" />
+                  <Node label="Floodplain Ratio (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="floodplain" symbology="floodplain_ratio_rme3" />
+                  <Node label="Acres of Valley Bottom per Mile (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="ac_vb_mi" symbology="ac_vb_mi_rme3" />
+                  <Node label="Hectares of Valley Bottom per Kilometer (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hec_vb_km" symbology="hec_vb_km_rme3" />
+                  <Node label="Channel Width (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="chan_width" symbology="chan_width_rme3" />
+                  <Node label="Confinement Ratio (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="confine_ratio" symbology="confine_ratio_rme3" />
+                  <Node label="Constriction Ratio (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="constrict_ratio" symbology="constrict_ratio_rme3" />
                   <!-- Old Version -->
                   <Node label="Primary Channel Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rme_igo_prim_channel_gradient" symbology="Stream_Grad" />
                   <Node label="Valley Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rme_igo_valleybottom_gradient" symbology="Valley_Grad" />
@@ -112,44 +100,24 @@
               </Node>
               <Node label="DGO Geomorphic Metrics">
                 <Children collapsed="true">
-                  <Node label="Primary Channel Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="stream_grad_dgo" symbology="stream_grad_rme3_dgo" />
-                  <Node label="Valley Bottom Gradient" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="vb_grad_dgo" symbology="valley_grad_rme3_dgo" />
-                  <Node label="Relative Flow Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rel_flow_dgo" symbology="rel_flow_length_rme3_dgo" />
-                  <Node label="Confluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="confluence_dgo" symbology="confluence_count_rme3_dgo" />
-                  <Node label="Diffluence Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="diffluence_dgo" symbology="diffluence_count_rme3_dgo" />
-                  <Node label="Tributary Count" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="tributary_dgo" symbology="trib_count_rme3_dgo" />
-                  <Node label="Tributaries per Kilometer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="trib_km_dgo" symbology="trib_km_rme3_dgo" />
-                  <Node label="Planform Sinuosity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="plan_sin_dgo" symbology="plan_sin_rme3_dgo" />
-                  <Node label="Integrated Width" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="int_width_dgo" symbology="integrated_width_rme3_dgo" />
-                  <Node label="Active Channel Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="act_chan_dgo" symbology="act_chan_ratio_rme3_dgo" />
-                  <Node label="Low-Lying Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="low_lying_dgo" symbology="low_lying_ratio_rme3_dgo" />
-                  <Node label="Elevated Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="elev_dgo" symbology="elevated_ratio_rme3_dgo" />
-                  <Node label="Floodplain Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="floodplain_dgo" symbology="floodplain_ratio_rme3_dgo" />
-                  <Node label="Acres of Valley Bottom per Mile" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="ac_vb_mi_dgo" symbology="ac_vb_mi_rme3_dgo" />
-                  <Node label="Hectares of Valley Bottom per Kilometer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="hec_vb_km_dgo" symbology="hec_vb_km_rme3_dgo" />
-                  <Node label="Channel Width" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="chan_width_dgo" symbology="chan_width_rme3_dgo" />
-                  <Node label="Confinement Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="confine_ratio_dgo" symbology="confine_ratio_rme3_dgo" />
-                  <Node label="Constriction Ratio" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="constrict_ratio_dgo" symbology="constrict_ratio_rme3_dgo" />
-                </Children>
-              </Node>
-            </Children>
-          </Node>
-          <Node label="Hydrologic Metrics">
-            <Children collapsed="true">
-              <Node label="IGO Hydrologic Metrics">
-                <Children collapsed="true">
-                  <Node label="Baseflow (cfs)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="qlow" symbology="baseflow_rme3" />
-                  <Node label="Typical Flood (cfs)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="q2" symbology="flood_rme3" />
-                  <Node label="Baseflow Stream Power (watts)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="splow" symbology="splow_rme3" />
-                  <Node label="Flood Stream Power (watts)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="sphigh" symbology="sphigh_rme3" />
-                </Children>
-              </Node>
-              <Node label="DGO Hydrologic Metrics">
-                <Children collapsed="true">
-                  <Node label="Baseflow (cfs)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="qlow_dgo" symbology="baseflow_rme3_dgo" />
-                  <Node label="Typical Flood (cfs)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="q2_dgo" symbology="flood_rme3_dgo" />
-                  <Node label="Baseflow Stream Power (watts)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="splow_dgo" symbology="splow_rme3_dgo" />
-                  <Node label="Flood Stream Power (watts)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="sphigh_dgo" symbology="sphigh_rme3_dgo" />
+                  <Node label="Primary Channel Gradient (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="stream_grad_dgo" symbology="stream_grad_rme3_dgo" />
+                  <Node label="Valley Bottom Gradient (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="vb_grad_dgo" symbology="valley_grad_rme3_dgo" />
+                  <Node label="Relative Flow Length (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rel_flow_dgo" symbology="rel_flow_length_rme3_dgo" />
+                  <Node label="Confluence Count (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="confluence_dgo" symbology="confluence_count_rme3_dgo" />
+                  <Node label="Diffluence Count (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="diffluence_dgo" symbology="diffluence_count_rme3_dgo" />
+                  <Node label="Tributary Count (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="tributary_dgo" symbology="trib_count_rme3_dgo" />
+                  <Node label="Tributaries per Kilometer (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="trib_km_dgo" symbology="trib_km_rme3_dgo" />
+                  <Node label="Planform Sinuosity (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="plan_sin_dgo" symbology="plan_sin_rme3_dgo" />
+                  <Node label="Integrated Width (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="int_width_dgo" symbology="integrated_width_rme3_dgo" />
+                  <Node label="Active Channel Ratio (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="act_chan_dgo" symbology="act_chan_ratio_rme3_dgo" />
+                  <Node label="Low-Lying Ratio (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="low_lying_dgo" symbology="low_lying_ratio_rme3_dgo" />
+                  <Node label="Elevated Ratio (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="elev_dgo" symbology="elevated_ratio_rme3_dgo" />
+                  <Node label="Floodplain Ratio (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="floodplain_dgo" symbology="floodplain_ratio_rme3_dgo" />
+                  <Node label="Acres of Valley Bottom per Mile (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="ac_vb_mi_dgo" symbology="ac_vb_mi_rme3_dgo" />
+                  <Node label="Hectares of Valley Bottom per Kilometer (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="hec_vb_km_dgo" symbology="hec_vb_km_rme3_dgo" />
+                  <Node label="Channel Width (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="chan_width_dgo" symbology="chan_width_rme3_dgo" />
+                  <Node label="Confinement Ratio (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="confine_ratio_dgo" symbology="confine_ratio_rme3_dgo" />
+                  <Node label="Constriction Ratio (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="constrict_ratio_dgo" symbology="constrict_ratio_rme3_dgo" />
                 </Children>
               </Node>
             </Children>
@@ -158,17 +126,17 @@
             <Children collapsed="true">
               <Node label="IGO Anthropogenic Impact Metrics">
                 <Children collapsed="true">
-                  <Node label="Road Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="road_len" symbology="road_len_rme3" />
-                  <Node label="Road Density" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="road_dens" symbology="road_dens_rme3" />
-                  <Node label="Railroad Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rail_len" symbology="rail_len_rme3" />
-                  <Node label="Railroad Density" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rail_dens" symbology="rail_dens_rme3" />
-                  <Node label="Land Use Intensity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lui" symbology="lui_rme3" />
-                  <Node label="Distance to Road" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="road_dist" symbology="road_dist_rme3" />
-                  <Node label="Distance to Rail" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rail_dist" symbology="rail_dist_rme3" />
-                  <Node label="Distance to Points of Diversion" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="div_dist" symbology="div_dist_rme3" />
-                  <Node label="Distance to Canals/Ditches" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="canal_dist" symbology="canal_dist_rme3" />
-                  <Node label="Distance to Nearest Infrastructure" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="infra_dist" symbology="infra_dist_rme3" />
-                  <Node label="Floodplain Accessibility" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="fldpln_acc" symbology="fldpln_acc_rme3" />
+                  <Node label="Road Length (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="road_len" symbology="road_len_rme3" />
+                  <Node label="Road Density (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="road_dens" symbology="road_dens_rme3" />
+                  <Node label="Railroad Length (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rail_len" symbology="rail_len_rme3" />
+                  <Node label="Railroad Density (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rail_dens" symbology="rail_dens_rme3" />
+                  <Node label="Land Use Intensity (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lui" symbology="lui_rme3" />
+                  <Node label="Distance to Road (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="road_dist" symbology="road_dist_rme3" />
+                  <Node label="Distance to Rail (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rail_dist" symbology="rail_dist_rme3" />
+                  <Node label="Distance to Points of Diversion (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="div_dist" symbology="div_dist_rme3" />
+                  <Node label="Distance to Canals/Ditches (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="canal_dist" symbology="canal_dist_rme3" />
+                  <Node label="Distance to Nearest Infrastructure (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="infra_dist" symbology="infra_dist_rme3" />
+                  <Node label="Floodplain Accessibility (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="fldpln_acc" symbology="fldpln_acc_rme3" />
                   <!-- Old Version -->
                   <Node label="Road Density" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="anthro_igo_road_dens" symbology="Road_Density" />
                   <Node label="Railroad Density" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="anthro_igo_rail_dens" symbology="Rail_Density" />
@@ -178,17 +146,17 @@
               </Node>
               <Node label="DGO Anthropogenic Impact Metrics">
                 <Children collapsed="true">
-                  <Node label="Road Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="road_len_dgo" symbology="road_len_rme3_dgo" />
-                  <Node label="Road Density" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="road_dens_dgo" symbology="road_dens_rme3_dgo" />
-                  <Node label="Railroad Length" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rail_len_dgo" symbology="rail_len_rme3_dgo" />
-                  <Node label="Railroad Density" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rail_dens_dgo" symbology="rail_dens_rme3_dgo" />
-                  <Node label="Land Use Intensity" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lui_dgo" symbology="lui_rme3_dgo" />
-                  <Node label="Distance to Road" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="road_dist_dgo" symbology="road_dist_rme3_dgo" />
-                  <Node label="Distance to Rail" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rail_dist_dgo" symbology="rail_dist_rme3_dgo" />
-                  <Node label="Distance to Points of Diversion" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="div_dist_dgo" symbology="div_dist_rme3_dgo" />
-                  <Node label="Distance to Canals/Ditches" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="canal_dist_dgo" symbology="canal_dist_rme3_dgo" />
-                  <Node label="Distance to Nearest Infrastructure" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="infra_dist_dgo" symbology="infra_dist_rme3_dgo" />
-                  <Node label="Floodplain Accessibility" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="fldpln_acc_dgo" symbology="fldpln_acc_rme3_dgo" />
+                  <Node label="Road Length (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="road_len_dgo" symbology="road_len_rme3_dgo" />
+                  <Node label="Road Density (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="road_dens_dgo" symbology="road_dens_rme3_dgo" />
+                  <Node label="Railroad Length (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rail_len_dgo" symbology="rail_len_rme3_dgo" />
+                  <Node label="Railroad Density (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rail_dens_dgo" symbology="rail_dens_rme3_dgo" />
+                  <Node label="Land Use Intensity (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lui_dgo" symbology="lui_rme3_dgo" />
+                  <Node label="Distance to Road (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="road_dist_dgo" symbology="road_dist_rme3_dgo" />
+                  <Node label="Distance to Rail (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rail_dist_dgo" symbology="rail_dist_rme3_dgo" />
+                  <Node label="Distance to Points of Diversion (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="div_dist_dgo" symbology="div_dist_rme3_dgo" />
+                  <Node label="Distance to Canals/Ditches (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="canal_dist_dgo" symbology="canal_dist_rme3_dgo" />
+                  <Node label="Distance to Nearest Infrastructure (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="infra_dist_dgo" symbology="infra_dist_rme3_dgo" />
+                  <Node label="Floodplain Accessibility (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="fldpln_acc_dgo" symbology="fldpln_acc_rme3_dgo" />
                 </Children>
               </Node>
             </Children>
@@ -197,37 +165,37 @@
             <Children collapsed="true">
               <Node label="IGO Vegetation Metrics">
                 <Children collapsed="true">
-                  <Node label="Proportion Agriculture" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_ag" symbology="lf_ag_rme3" />
-                  <Node label="Proportion Conifer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con" symbology="lf_con_rme3" />
-                  <Node label="Proportion Mixed Conifer/Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con_hard" symbology="lf_con_hard_rme3" />
-                  <Node label="Proportion Developed" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_dev" symbology="lf_dev_rme3" />
-                  <Node label="Proportion Exotic Herbaceous" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_ex_herb" symbology="lf_ex_herb_rme3" />
-                  <Node label="Proportion Exotic Woody (Tree/Shrub)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_ex_woody" symbology="lf_ex_woody_rme3" />
-                  <Node label="Proportion Grassland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_grass" symbology="lf_grass_rme3" />
-                  <Node label="Proportion Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_hard" symbology="lf_hard_rme3" />
-                  <Node label="Proportion Riparian (Landfire)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_rip" symbology="lf_rip_rme3" />
-                  <Node label="Proportion Shrubland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_shrub" symbology="lf_shrub_rme3" />
-                  <Node label="Proportion Sparsley Vegetated" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_sparse" symbology="lf_sparse_rme3" />
-                  <Node label="Historic Proportion Conifer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con_hist" symbology="lf_con_hist_rme3" />
-                  <Node label="Historic Proportion Mixed Conifer/Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con_hard_hist" symbology="lf_con_hard_hist_rme3" />
-                  <Node label="Historic Proportion Grassland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_grass_hist" symbology="lf_grass_hist_rme3" />
-                  <Node label="Historic Proportion Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_hard_hist" symbology="lf_hard_hist_rme3" />
-                  <Node label="Historic Proportion Mixed Hardwood/Conifer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_hard_con_hist" symbology="lf_hard_con_hist_rme3" />
-                  <Node label="Historic Proportion Peatland Forest" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_peat_for_hist" symbology="lf_peat_for_hist_rme3" />
-                  <Node label="Historic Proportion Peatland Non-Forest" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_peat_non_hist" symbology="lf_peat_non_hist_rme3" />
-                  <Node label="Historic Proportion Riparian (Landfire)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_rip_hist" symbology="lf_rip_hist_rme3" />
-                  <Node label="Historic Proportion Savanna" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_sav_hist" symbology="lf_sav_hist_rme3" />
-                  <Node label="Historic Proportion Shrubland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_shrub_hist" symbology="lf_shrub_hist_rme3" />
-                  <Node label="Historic Proportion Sparsley Vegetated" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_sparse_hist" symbology="lf_sparse_hist_rme3" />
-                  <Node label="Proportion Riparian (RCAT)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="prop_rip_rcat" symbology="prop_rip_rcat_rme3" />
-                  <Node label="Historic Proportion Riparian (RCAT)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="prop_rip_hist_rcat" symbology="prop_rip_hist_rcat_rme3" />
-                  <Node label="Riparian Vegetation Departure" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rip_dep" symbology="rip_dep_rme3" />
-                  <Node label="Conversion to Agriculture" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="ag_conv" symbology="ag_conv_rme3" />
-                  <Node label="Conversion to Developed" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dev_conv" symbology="dev_conv_rme3" />
-                  <Node label="Conversion to Grassland/Shrubland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="grass_shrub_conv" symbology="gra_shr_conv_rme3" />
-                  <Node label="Conifer Encroachment" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="con_encr" symbology="con_encr_rme3" />
-                  <Node label="Conversion to Invasive" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="inv_conv" symbology="inv_conv_rme3" />
-                  <Node label="Riparian Condition" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rip_cond" symbology="rip_cond_rme3" />
+                  <Node label="Proportion Agriculture (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_ag" symbology="lf_ag_rme3" />
+                  <Node label="Proportion Conifer (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con" symbology="lf_con_rme3" />
+                  <Node label="Proportion Mixed Conifer/Hardwood (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con_hard" symbology="lf_con_hard_rme3" />
+                  <Node label="Proportion Developed (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_dev" symbology="lf_dev_rme3" />
+                  <Node label="Proportion Exotic Herbaceous (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_ex_herb" symbology="lf_ex_herb_rme3" />
+                  <Node label="Proportion Exotic Woody (Tree/Shrub)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_ex_woody" symbology="lf_ex_woody_rme3" />
+                  <Node label="Proportion Grassland (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_grass" symbology="lf_grass_rme3" />
+                  <Node label="Proportion Hardwood (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_hard" symbology="lf_hard_rme3" />
+                  <Node label="Proportion Riparian (Landfire)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_rip" symbology="lf_rip_rme3" />
+                  <Node label="Proportion Shrubland (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_shrub" symbology="lf_shrub_rme3" />
+                  <Node label="Proportion Sparsley Vegetated (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_sparse" symbology="lf_sparse_rme3" />
+                  <Node label="Historic Proportion Conifer (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con_hist" symbology="lf_con_hist_rme3" />
+                  <Node label="Historic Proportion Mixed Conifer/Hardwood (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_con_hard_hist" symbology="lf_con_hard_hist_rme3" />
+                  <Node label="Historic Proportion Grassland (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_grass_hist" symbology="lf_grass_hist_rme3" />
+                  <Node label="Historic Proportion Hardwood (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_hard_hist" symbology="lf_hard_hist_rme3" />
+                  <Node label="Historic Proportion Mixed Hardwood/Conifer (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_hard_con_hist" symbology="lf_hard_con_hist_rme3" />
+                  <Node label="Historic Proportion Peatland Forest (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_peat_for_hist" symbology="lf_peat_for_hist_rme3" />
+                  <Node label="Historic Proportion Peatland Non-Forest (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_peat_non_hist" symbology="lf_peat_non_hist_rme3" />
+                  <Node label="Historic Proportion Riparian (Landfire)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_rip_hist" symbology="lf_rip_hist_rme3" />
+                  <Node label="Historic Proportion Savanna (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_sav_hist" symbology="lf_sav_hist_rme3" />
+                  <Node label="Historic Proportion Shrubland (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_shrub_hist" symbology="lf_shrub_hist_rme3" />
+                  <Node label="Historic Proportion Sparsley Vegetated (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="lf_sparse_hist" symbology="lf_sparse_hist_rme3" />
+                  <Node label="Proportion Riparian (RCAT)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="prop_rip_rcat" symbology="prop_rip_rcat_rme3" />
+                  <Node label="Historic Proportion Riparian (RCAT)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="prop_rip_hist_rcat" symbology="prop_rip_hist_rcat_rme3" />
+                  <Node label="Riparian Vegetation Departure (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rip_dep" symbology="rip_dep_rme3" />
+                  <Node label="Conversion to Agriculture (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="ag_conv" symbology="ag_conv_rme3" />
+                  <Node label="Conversion to Developed (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dev_conv" symbology="dev_conv_rme3" />
+                  <Node label="Conversion to Grassland/Shrubland (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="grass_shrub_conv" symbology="gra_shr_conv_rme3" />
+                  <Node label="Conifer Encroachment (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="con_encr" symbology="con_encr_rme3" />
+                  <Node label="Conversion to Invasive (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="inv_conv" symbology="inv_conv_rme3" />
+                  <Node label="Riparian Condition (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="rip_cond" symbology="rip_cond_rme3" />
                   <!-- Old Version -->
                   <Node label="Proportion Riparian" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rcat_igo_rip" symbology="Prop_Rip" />
                   <Node label="Riparian Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="rcat_igo_rvd" symbology="IGO_RVD" />
@@ -237,46 +205,73 @@
               </Node>
               <Node label="DGO Vegetation Metrics">
                 <Children collapsed="true">
-                  <Node label="Proportion Agriculture" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_ag_dgo" symbology="lf_ag_rme3_dgo" />
-                  <Node label="Proportion Conifer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_dgo" symbology="lf_con_rme3_dgo" />
-                  <Node label="Proportion Mixed Conifer/Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_hard_dgo" symbology="lf_con_hard_rme3_dgo" />
-                  <Node label="Proportion Developed" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_dev_dgo" symbology="lf_dev_rme3_dgo" />
-                  <Node label="Proportion Exotic Herbaceous" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_ex_herb_dgo" symbology="lf_ex_herb_rme3_dgo" />
-                  <Node label="Proportion Exotic Woody (Tree/Shrub)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_ex_woody_dgo" symbology="lf_ex_woody_rme3_dgo" />
-                  <Node label="Proportion Grassland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_grass_dgo" symbology="lf_grass_rme3_dgo" />
-                  <Node label="Proportion Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_hard_dgo" symbology="lf_hard_rme3_dgo" />
-                  <Node label="Proportion Riparian (Landfire)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_rip_dgo" symbology="lf_rip_rme3_dgo" />
-                  <Node label="Proportion Shrubland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_shrub_dgo" symbology="lf_shrub_rme3_dgo" />
-                  <Node label="Proportion Sparsley Vegetated" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_sparse_dgo" symbology="lf_sparse_rme3_dgo" />
-                  <Node label="Historic Proportion Conifer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_hist_dgo" symbology="lf_con_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Mixed Conifer/Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_hard_hist_dgo" symbology="lf_con_hard_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Grassland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_grass_hist_dgo" symbology="lf_grass_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Hardwood" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_hard_hist_dgo" symbology="lf_hard_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Mixed Hardwood/Conifer" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_hard_con_hist_dgo" symbology="lf_hard_con_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Peatland Forest" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_peat_for_hist_dgo" symbology="lf_peat_for_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Peatland Non-Forest" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_peat_non_hist_dgo" symbology="lf_peat_non_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Riparian (Landfire)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_rip_hist_dgo" symbology="lf_rip_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Savanna" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_sav_hist_dgo" symbology="lf_sav_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Shrubland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_shrub_hist_dgo" symbology="lf_shrub_hist_rme3_dgo" />
-                  <Node label="Historic Proportion Sparsley Vegetated" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_sparse_hist_dgo" symbology="lf_sparse_hist_rme3_dgo" />
-                  <Node label="Proportion Riparian (RCAT)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="prop_rip_rcat_dgo" symbology="prop_rip_rcat_rme3_dgo" />
-                  <Node label="Historic Proportion Riparian (RCAT)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="prop_rip_hist_rcat_dgo" symbology="prop_rip_hist_rcat_rme3_dgo" />
-                  <Node label="Riparian Vegetation Departure" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rip_dep_dgo" symbology="rip_dep_rme3_dgo" />
-                  <Node label="Conversion to Agriculture" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="ag_conv_dgo" symbology="ag_conv_rme3_dgo" />
-                  <Node label="Conversion to Developed" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="dev_conv_dgo" symbology="dev_conv_rme3_dgo" />
-                  <Node label="Conversion to Grassland/Shrubland" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="grass_shrub_conv_dgo" symbology="gra_shr_conv_rme3_dgo" />
-                  <Node label="Conifer Encroachment" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="con_encr_dgo" symbology="con_encr_rme3_dgo" />
-                  <Node label="Conversion to Invasive" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="inv_conv_dgo" symbology="inv_conv_rme3_dgo" />
-                  <Node label="Riparian Condition" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rip_cond_dgo" symbology="rip_cond_rme3_dgo" />
+                  <Node label="Proportion Agriculture (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_ag_dgo" symbology="lf_ag_rme3_dgo" />
+                  <Node label="Proportion Conifer (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_dgo" symbology="lf_con_rme3_dgo" />
+                  <Node label="Proportion Mixed Conifer/Hardwood (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_hard_dgo" symbology="lf_con_hard_rme3_dgo" />
+                  <Node label="Proportion Developed (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_dev_dgo" symbology="lf_dev_rme3_dgo" />
+                  <Node label="Proportion Exotic Herbaceous (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_ex_herb_dgo" symbology="lf_ex_herb_rme3_dgo" />
+                  <Node label="Proportion Exotic Woody (Tree/Shrub)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_ex_woody_dgo" symbology="lf_ex_woody_rme3_dgo" />
+                  <Node label="Proportion Grassland (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_grass_dgo" symbology="lf_grass_rme3_dgo" />
+                  <Node label="Proportion Hardwood (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_hard_dgo" symbology="lf_hard_rme3_dgo" />
+                  <Node label="Proportion Riparian (Landfire)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_rip_dgo" symbology="lf_rip_rme3_dgo" />
+                  <Node label="Proportion Shrubland (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_shrub_dgo" symbology="lf_shrub_rme3_dgo" />
+                  <Node label="Proportion Sparsley Vegetated (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_sparse_dgo" symbology="lf_sparse_rme3_dgo" />
+                  <Node label="Historic Proportion Conifer (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_hist_dgo" symbology="lf_con_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Mixed Conifer/Hardwood (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_con_hard_hist_dgo" symbology="lf_con_hard_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Grassland (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_grass_hist_dgo" symbology="lf_grass_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Hardwood (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_hard_hist_dgo" symbology="lf_hard_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Mixed Hardwood/Conifer (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_hard_con_hist_dgo" symbology="lf_hard_con_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Peatland Forest (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_peat_for_hist_dgo" symbology="lf_peat_for_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Peatland Non-Forest (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_peat_non_hist_dgo" symbology="lf_peat_non_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Riparian (Landfire)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_rip_hist_dgo" symbology="lf_rip_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Savanna (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_sav_hist_dgo" symbology="lf_sav_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Shrubland (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_shrub_hist_dgo" symbology="lf_shrub_hist_rme3_dgo" />
+                  <Node label="Historic Proportion Sparsley Vegetated (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="lf_sparse_hist_dgo" symbology="lf_sparse_hist_rme3_dgo" />
+                  <Node label="Proportion Riparian (RCAT)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="prop_rip_rcat_dgo" symbology="prop_rip_rcat_rme3_dgo" />
+                  <Node label="Historic Proportion Riparian (RCAT)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="prop_rip_hist_rcat_dgo" symbology="prop_rip_hist_rcat_rme3_dgo" />
+                  <Node label="Riparian Vegetation Departure (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rip_dep_dgo" symbology="rip_dep_rme3_dgo" />
+                  <Node label="Conversion to Agriculture (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="ag_conv_dgo" symbology="ag_conv_rme3_dgo" />
+                  <Node label="Conversion to Developed (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="dev_conv_dgo" symbology="dev_conv_rme3_dgo" />
+                  <Node label="Conversion to Grassland/Shrubland (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="grass_shrub_conv_dgo" symbology="gra_shr_conv_rme3_dgo" />
+                  <Node label="Conifer Encroachment (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="con_encr_dgo" symbology="con_encr_rme3_dgo" />
+                  <Node label="Conversion to Invasive (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="inv_conv_dgo" symbology="inv_conv_rme3_dgo" />
+                  <Node label="Riparian Condition (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="rip_cond_dgo" symbology="rip_cond_rme3_dgo" />
                 </Children>
               </Node>
             </Children>
           </Node>
-        </Children>
-      </Node>
-      <Node label="Intermediates" xpath='Realizations/Realization'>
-        <Children collapsed="true">
-          <Node label="Junction Points" xpath= "Intermediates/Geopackage/Layers/Vector[@lyrName='junction_points']" type="point" id="junction_points" symbology="Junc_Points" />
+          <Node label="Beaver Metrics">
+            <Children collapsed="true">
+              <Node label="IGO Beaver Metrics">
+                <Children collapsed="true">
+                  <Node label="Existing Dam Capacity (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_capacity" symbology="brat_capacity_rme3" />
+                  <Node label="Historic Dam Capacity (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_brat_capacity" symbology="hist_brat_capacity_rme3" />
+                  <Node label="Risk of Undesirable Dams (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_risk" symbology="brat_risk_rme3" />
+                  <Node label="Restoration or Conservation Opportunities (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_opportunity" symbology="brat_opportunity_rme3" />
+                  <Node label="Unsuitable or Limited Opportunities (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="brat_limitation" symbology="brat_limitation_rme3" />
+                  <Node label="Existing Dam Complex Size (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="complex_size" symbology="complex_rme3" />
+                  <Node label="Historic Dam Complex Size (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="hist_complex_size" symbology="complex_hist_rme3" />
+                  <Node label="Dam Setting (IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" id="dam_setting" symbology="dam_setting_rme3" />
+                  <!-- Old Version -->
+                  <Node label="Existing Dam Capacity" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_capacity" symbology="RME_Capacity" />
+                  <Node label="Risk of Undesirable Dams" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_risk" symbology="RME_Risk" />
+                  <Node label="Restoration or Conservation Opportunities" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='rme_igos']" type="point" id="brat_igo_opportunity" symbology="RME_Opportunity" />
+                </Children>
+              </Node>
+              <Node label="DGO Beaver Metrics">
+                <Children collapsed="true">
+                  <Node label="Existing Dam Capacity (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_capacity_dgo" symbology="brat_capacity_rme3_dgo" />
+                  <Node label="Historic Dam Capacity (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="hist_brat_capacity_dgo" symbology="hist_brat_capacity_rme3_dgo" />
+                  <Node label="Risk of Undesirable Dams (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_risk_dgo" symbology="brat_risk_rme3_dgo" />
+                  <Node label="Restoration or Conservation Opportunities (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_opportunity_dgo" symbology="brat_opportunity_rme3_dgo" />
+                  <Node label="Unsuitable or Limited Opportunities (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="brat_limitation_dgo" symbology="brat_limitation_rme3_dgo" />
+                  <Node label="Existing Dam Complex Size (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="complex_size_dgo" symbology="complex_rme3_dgo" />
+                  <Node label="Historic Dam Complex Size (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="hist_complex_size_dgo" symbology="complex_hist_rme3_dgo" />
+                  <Node label="Dam Setting (DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" id="dam_setting_dgo" symbology="dam_setting_rme3_dgo" />
+                </Children>
+              </Node>
+            </Children>
+          </Node>
         </Children>
       </Node>
       <Node label="Inputs" xpath="Realizations/Realization">
