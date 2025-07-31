@@ -12,6 +12,7 @@
       "layout": {},
       "paint": {
         "circle-color": "rgb(0, 76, 115)",
+        "circle-stroke-width": 0.75,
         "circle-radius": [
           "interpolate",
           [
@@ -21,15 +22,15 @@
             "zoom"
           ],
           10,
-          2,
+          3.5,
           11,
-          3,
+          4.5,
           13.5,
-          4,
+          5.5,
           15,
-          5,
+          6.5,
           22,
-          6
+          7.5
         ]
       }
     }

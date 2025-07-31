@@ -26,7 +26,7 @@
                     </Node>
                     <Node label="Reach Outputs">
                         <Children collapsed="true">
-                            <Node label="Land Ownership" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reach_ownership" />
+                            <Node label="Dominant Land Ownership" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="reach_ownership" />
                             <Node label="Land Use Intensity (Reach)" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_LU" />
                             <Node label="Distance to Nearest Infrastructure" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="oPC_Dist_anthro" />
                             <Node label="Distance to Railroad" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Rail_anthro" />

@@ -17,7 +17,7 @@
       "description" : "Existing Dam Capacity",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/49ebe11ddc5f43faaae78f4c53c668d3.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -48,7 +48,7 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\Riverscape_BRAT_Nevada\\outputs\\brat.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\2025 CONUS\\BRAT_Sulphur_5.2.0\\outputs\\brat.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vwReaches",
           "datasetType" : "esriDTFeatureClass",
@@ -916,7 +916,108 @@
         "breaks" : [
           {
             "type" : "CIMClassBreak",
-            "label" : "None: 0 dams",
+            "label" : "0 dams/km (0 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.5,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        255,
+                        255,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "0-3 dams/km (0-5 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.75,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        243,
+                        146,
+                        17,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 3
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "3-10 dams/km (5-16 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.75,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        245,
+                        230,
+                        65,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 10
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "10-15 dams/km (16-24 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -936,111 +1037,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        245,
-                        0,
-                        0,
-                        100
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            "upperBound" : 9.9999999999999995e-07
-          },
-          {
-            "type" : "CIMClassBreak",
-            "label" : "Rare: 0-1 dams/km (0-2 dams/mi)",
-            "patch" : "Default",
-            "symbol" : {
-              "type" : "CIMSymbolReference",
-              "symbol" : {
-                "type" : "CIMLineSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMSolidStroke",
-                    "enable" : true,
-                    "capStyle" : "Round",
-                    "joinStyle" : "Round",
-                    "lineStyle3D" : "Strip",
-                    "miterLimit" : 10,
-                    "width" : 1.4000000000000001,
-                    "height3D" : 1,
-                    "anchor3D" : "Center",
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        255,
-                        170,
-                        0,
-                        100
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            "upperBound" : 1
-          },
-          {
-            "type" : "CIMClassBreak",
-            "label" : "Occasional:  1-5 dams/km (2-8 dams/mi)",
-            "patch" : "Default",
-            "symbol" : {
-              "type" : "CIMSymbolReference",
-              "symbol" : {
-                "type" : "CIMLineSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMSolidStroke",
-                    "enable" : true,
-                    "capStyle" : "Round",
-                    "joinStyle" : "Round",
-                    "lineStyle3D" : "Strip",
-                    "miterLimit" : 10,
-                    "width" : 1.8,
-                    "height3D" : 1,
-                    "anchor3D" : "Center",
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        245,
-                        245,
-                        0,
-                        100
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            "upperBound" : 5
-          },
-          {
-            "type" : "CIMClassBreak",
-            "label" : "Frequent: 5-15 dams/km (8-24 dams/mi)",
-            "patch" : "Default",
-            "symbol" : {
-              "type" : "CIMSymbolReference",
-              "symbol" : {
-                "type" : "CIMLineSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMSolidStroke",
-                    "enable" : true,
-                    "capStyle" : "Round",
-                    "joinStyle" : "Round",
-                    "lineStyle3D" : "Strip",
-                    "miterLimit" : 10,
-                    "width" : 2.2000000000000002,
-                    "height3D" : 1,
-                    "anchor3D" : "Center",
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        76,
-                        230,
-                        1,
+                        148,
+                        206,
+                        50,
                         100
                       ]
                     }
@@ -1052,7 +1051,7 @@
           },
           {
             "type" : "CIMClassBreak",
-            "label" : "Pervasive: 15-40 dams/km (24-64 dams/mi)",
+            "label" : "15-25 dams/km (24-40 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -1066,15 +1065,15 @@
                     "joinStyle" : "Round",
                     "lineStyle3D" : "Strip",
                     "miterLimit" : 10,
-                    "width" : 2.6000000000000001,
+                    "width" : 1,
                     "height3D" : 1,
                     "anchor3D" : "Center",
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        0,
-                        92,
-                        230,
+                        68,
+                        186,
+                        29,
                         100
                       ]
                     }
@@ -1082,7 +1081,75 @@
                 ]
               }
             },
-            "upperBound" : 200
+            "upperBound" : 25
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "25-45 dams/km (40-72 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 1.5,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        46,
+                        105,
+                        96,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 45
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "> 45 dams/km (> 72 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 1.5,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        25,
+                        25,
+                        164,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 1000
           }
         ],
         "showInAscendingOrder" : true,
@@ -1168,7 +1235,10 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/49ebe11ddc5f43faaae78f4c53c668d3.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,

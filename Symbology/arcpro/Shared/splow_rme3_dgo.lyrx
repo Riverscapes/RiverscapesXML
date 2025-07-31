@@ -1,23 +1,23 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.5.0",
-  "build" : 57366,
+  "version" : "3.3.0",
+  "build" : 52636,
   "layers" : [
-    "CIMPATH=Map1/main_ExportFeatures2.json"
+    "CIMPATH=map/baseflow_stream_power__watts_2.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main_ExportFeatures2",
-      "uRI" : "CIMPATH=Map1/main_ExportFeatures2.json",
+      "name" : "Baseflow Stream Power (watts)",
+      "uRI" : "CIMPATH=map/baseflow_stream_power__watts_2.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main_ExportFeatures2",
+      "description" : "Baseflow Stream Power (watts)",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map1/77b04de764c2433cabc7541086fc6851.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -37,1753 +37,1254 @@
         "type" : "CIMFeatureTable",
         "displayField" : "stream_name",
         "editable" : true,
-        "fieldDescriptions" : [
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "OBJECTID",
-            "fieldName" : "OBJECTID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ownership",
-            "fieldName" : "ownership",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "state",
-            "fieldName" : "state",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "county",
-            "fieldName" : "county",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "drainage_area",
-            "fieldName" : "drainage_area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "watershed_id",
-            "fieldName" : "watershed_id",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "stream_name",
-            "fieldName" : "stream_name",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "stream_order",
-            "fieldName" : "stream_order",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "headwater",
-            "fieldName" : "headwater",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "stream_length",
-            "fieldName" : "stream_length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "waterbody_type",
-            "fieldName" : "waterbody_type",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "waterbody_extent",
-            "fieldName" : "waterbody_extent",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ecoregion3",
-            "fieldName" : "ecoregion3",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ecoregion4",
-            "fieldName" : "ecoregion4",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "dgoid:1",
-            "fieldName" : "dgoid_1",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "prim_channel_gradient",
-            "fieldName" : "prim_channel_gradient",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "valleybottom_gradient",
-            "fieldName" : "valleybottom_gradient",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "rel_flow_length",
-            "fieldName" : "rel_flow_length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "confluences",
-            "fieldName" : "confluences",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "diffluences",
-            "fieldName" : "diffluences",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "tributaries",
-            "fieldName" : "tributaries",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "tribs_per_km",
-            "fieldName" : "tribs_per_km",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "planform_sinuosity",
-            "fieldName" : "planform_sinuosity",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lowlying_area",
-            "fieldName" : "lowlying_area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "elevated_area",
-            "fieldName" : "elevated_area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "channel_area",
-            "fieldName" : "channel_area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "floodplain_area",
-            "fieldName" : "floodplain_area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "integrated_width",
-            "fieldName" : "integrated_width",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "active_channel_ratio",
-            "fieldName" : "active_channel_ratio",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "low_lying_ratio",
-            "fieldName" : "low_lying_ratio",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "elevated_ratio",
-            "fieldName" : "elevated_ratio",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "floodplain_ratio",
-            "fieldName" : "floodplain_ratio",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "acres_vb_per_mile",
-            "fieldName" : "acres_vb_per_mile",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "hect_vb_per_km",
-            "fieldName" : "hect_vb_per_km",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "channel_width",
-            "fieldName" : "channel_width",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "confinement_ratio",
-            "fieldName" : "confinement_ratio",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "constriction_ratio",
-            "fieldName" : "constriction_ratio",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "confining_margins",
-            "fieldName" : "confining_margins",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "constricting_margins",
-            "fieldName" : "constricting_margins",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "dgoid:2",
-            "fieldName" : "dgoid_2",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_evt",
-            "fieldName" : "lf_evt",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_bps",
-            "fieldName" : "lf_bps",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_agriculture_prop",
-            "fieldName" : "lf_agriculture_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_agriculture",
-            "fieldName" : "lf_agriculture",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_conifer_prop",
-            "fieldName" : "lf_conifer_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_conifer",
-            "fieldName" : "lf_conifer",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_conifer_hardwood_prop",
-            "fieldName" : "lf_conifer_hardwood_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_conifer_hardwood",
-            "fieldName" : "lf_conifer_hardwood",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_developed_prop",
-            "fieldName" : "lf_developed_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_developed",
-            "fieldName" : "lf_developed",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_exotic_herbaceous_prop",
-            "fieldName" : "lf_exotic_herbaceous_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_exotic_herbaceous",
-            "fieldName" : "lf_exotic_herbaceous",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_exotic_tree_shrub_prop",
-            "fieldName" : "lf_exotic_tree_shrub_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_exotic_tree_shrub",
-            "fieldName" : "lf_exotic_tree_shrub",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_grassland_prop",
-            "fieldName" : "lf_grassland_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_grassland",
-            "fieldName" : "lf_grassland",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hardwood_prop",
-            "fieldName" : "lf_hardwood_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hardwood",
-            "fieldName" : "lf_hardwood",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_riparian_prop",
-            "fieldName" : "lf_riparian_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_riparian",
-            "fieldName" : "lf_riparian",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_shrubland_prop",
-            "fieldName" : "lf_shrubland_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_shrubland",
-            "fieldName" : "lf_shrubland",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_sparsely_vegetated_prop",
-            "fieldName" : "lf_sparsely_vegetated_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_sparsely_vegetated",
-            "fieldName" : "lf_sparsely_vegetated",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_conifer_prop",
-            "fieldName" : "lf_hist_conifer_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_conifer",
-            "fieldName" : "lf_hist_conifer",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_conifer_hardwood_prop",
-            "fieldName" : "lf_hist_conifer_hardwood_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_conifer_hardwood",
-            "fieldName" : "lf_hist_conifer_hardwood",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_grassland_prop",
-            "fieldName" : "lf_hist_grassland_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_grassland",
-            "fieldName" : "lf_hist_grassland",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_hardwood_prop",
-            "fieldName" : "lf_hist_hardwood_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_hardwood",
-            "fieldName" : "lf_hist_hardwood",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_hardwood_conifer_prop",
-            "fieldName" : "lf_hist_hardwood_conifer_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_hardwood_conifer",
-            "fieldName" : "lf_hist_hardwood_conifer",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_peatland_forest_prop",
-            "fieldName" : "lf_hist_peatland_forest_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_peatland_forest",
-            "fieldName" : "lf_hist_peatland_forest",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_peatland_nonforest_prop",
-            "fieldName" : "lf_hist_peatland_nonforest_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_peatland_nonforest",
-            "fieldName" : "lf_hist_peatland_nonforest",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_riparian_prop",
-            "fieldName" : "lf_hist_riparian_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_riparian",
-            "fieldName" : "lf_hist_riparian",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_savanna_prop",
-            "fieldName" : "lf_hist_savanna_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_savanna",
-            "fieldName" : "lf_hist_savanna",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_shrubland_prop",
-            "fieldName" : "lf_hist_shrubland_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_shrubland",
-            "fieldName" : "lf_hist_shrubland",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_sparsely_vegetated_prop",
-            "fieldName" : "lf_hist_sparsely_vegetated_prop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "lf_hist_sparsely_vegetated",
-            "fieldName" : "lf_hist_sparsely_vegetated",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ex_riparian",
-            "fieldName" : "ex_riparian",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "hist_riparian",
-            "fieldName" : "hist_riparian",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "prop_riparian",
-            "fieldName" : "prop_riparian",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "hist_prop_riparian",
-            "fieldName" : "hist_prop_riparian",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "riparian_veg_departure",
-            "fieldName" : "riparian_veg_departure",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ag_conversion",
-            "fieldName" : "ag_conversion",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "develop",
-            "fieldName" : "develop",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "grass_shrub_conversion",
-            "fieldName" : "grass_shrub_conversion",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "conifer_encroachment",
-            "fieldName" : "conifer_encroachment",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "invasive_conversion",
-            "fieldName" : "invasive_conversion",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "riparian_condition",
-            "fieldName" : "riparian_condition",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "dgoid:3",
-            "fieldName" : "dgoid_3",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "qlow",
-            "fieldName" : "qlow",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "q2",
-            "fieldName" : "q2",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "splow",
-            "fieldName" : "splow",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "sphigh",
-            "fieldName" : "sphigh",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "dgoid:4",
-            "fieldName" : "dgoid_4",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "road_len",
-            "fieldName" : "road_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "road_dens",
-            "fieldName" : "road_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "rail_len",
-            "fieldName" : "rail_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "rail_dens",
-            "fieldName" : "rail_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "land_use_intens",
-            "fieldName" : "land_use_intens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "road_dist",
-            "fieldName" : "road_dist",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "rail_dist",
-            "fieldName" : "rail_dist",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "div_dist",
-            "fieldName" : "div_dist",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "canal_dist",
-            "fieldName" : "canal_dist",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "infra_dist",
-            "fieldName" : "infra_dist",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "fldpln_access",
-            "fieldName" : "fldpln_access",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "access_fldpln_extent",
-            "fieldName" : "access_fldpln_extent",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "dgoid:3726984107",
-            "fieldName" : "dgoid_3726984107",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_capacity",
-            "fieldName" : "brat_capacity",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_hist_capacity",
-            "fieldName" : "brat_hist_capacity",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_risk",
-            "fieldName" : "brat_risk",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_opportunity",
-            "fieldName" : "brat_opportunity",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_limitation",
-            "fieldName" : "brat_limitation",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_complex_size",
-            "fieldName" : "brat_complex_size",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "brat_hist_complex_size",
-            "fieldName" : "brat_hist_complex_size",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "dam_setting",
-            "fieldName" : "dam_setting",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "level_path",
-            "fieldName" : "level_path",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "seg_distance",
-            "fieldName" : "seg_distance",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "centerline_length",
-            "fieldName" : "centerline_length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "segment_area",
-            "fieldName" : "segment_area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "FCode",
-            "fieldName" : "FCode",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Length",
-            "fieldName" : "Shape_Length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          }
-        ],
         "dataConnection" : {
-          "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\..\\..\\..\\..\\Documents\\ArcGIS\\Projects\\RME\\Default.gdb",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "main_ExportFeatures2",
-          "datasetType" : "esriDTFeatureClass"
+          "type" : "CIMSqlQueryDataConnection",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\2025 CONUS\\MetricEngine_Sulphur_3.0.5\\outputs\\riverscapes_metrics.gpkg",
+          "workspaceFactory" : "Sql",
+          "dataset" : "main.%vw_dgo_metrics_34",
+          "datasetType" : "esriDTFeatureClass",
+          "sqlQuery" : "select dgoid,ownership,state,county,drainage_area,watershed_id,stream_name,stream_order,headwater,stream_length,waterbody_type,waterbody_extent,ecoregion3,ecoregion4,elevation,geology,huc12,\"dgoid:1\",prim_channel_gradient,valleybottom_gradient,rel_flow_length,confluences,diffluences,tributaries,tribs_per_km,planform_sinuosity,lowlying_area,elevated_area,channel_area,floodplain_area,integrated_width,active_channel_ratio,low_lying_ratio,elevated_ratio,floodplain_ratio,acres_vb_per_mile,hect_vb_per_km,channel_width,confinement_ratio,constriction_ratio,confining_margins,constricting_margins,\"dgoid:2\",lf_evt,lf_bps,lf_agriculture_prop,lf_agriculture,lf_conifer_prop,lf_conifer,lf_conifer_hardwood_prop,lf_conifer_hardwood,lf_developed_prop,lf_developed,lf_exotic_herbaceous_prop,lf_exotic_herbaceous,lf_exotic_tree_shrub_prop,lf_exotic_tree_shrub,lf_grassland_prop,lf_grassland,lf_hardwood_prop,lf_hardwood,lf_riparian_prop,lf_riparian,lf_shrubland_prop,lf_shrubland,lf_sparsely_vegetated_prop,lf_sparsely_vegetated,lf_hist_conifer_prop,lf_hist_conifer,lf_hist_conifer_hardwood_prop,lf_hist_conifer_hardwood,lf_hist_grassland_prop,lf_hist_grassland,lf_hist_hardwood_prop,lf_hist_hardwood,lf_hist_hardwood_conifer_prop,lf_hist_hardwood_conifer,lf_hist_peatland_forest_prop,lf_hist_peatland_forest,lf_hist_peatland_nonforest_prop,lf_hist_peatland_nonforest,lf_hist_riparian_prop,lf_hist_riparian,lf_hist_savanna_prop,lf_hist_savanna,lf_hist_shrubland_prop,lf_hist_shrubland,lf_hist_sparsely_vegetated_prop,lf_hist_sparsely_vegetated,ex_riparian,hist_riparian,prop_riparian,hist_prop_riparian,riparian_veg_departure,ag_conversion,develop,grass_shrub_conversion,conifer_encroachment,invasive_conversion,riparian_condition,\"dgoid:3\",qlow,q2,splow,sphigh,\"dgoid:4\",road_len,road_dens,rail_len,rail_dens,land_use_intens,road_dist,rail_dist,div_dist,canal_dist,infra_dist,fldpln_access,access_fldpln_extent,\"dgoid:347974428\",brat_capacity,brat_hist_capacity,brat_risk,brat_opportunity,brat_limitation,brat_complex_size,brat_hist_complex_size,dam_setting,geom,level_path,seg_distance,centerline_length,segment_area,FCode from main.vw_dgo_metrics",
+          "srid" : "4326",
+          "spatialReference" : {
+            "wkid" : 4326,
+            "latestWkid" : 4326,
+            "xyTolerance" : 8.983152841195215e-09,
+            "zTolerance" : 0.001,
+            "mTolerance" : 0.001,
+            "falseX" : -400,
+            "falseY" : -400,
+            "xyUnits" : 999999999.99999988,
+            "falseZ" : -100000,
+            "zUnits" : 10000,
+            "falseM" : -100000,
+            "mUnits" : 10000
+          },
+          "oIDFields" : "dgoid",
+          "geometryType" : "esriGeometryPolygon",
+          "queryFields" : [
+            {
+              "name" : "dgoid",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : false,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "required" : true,
+              "editable" : false,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "ownership",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "state",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "county",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "drainage_area",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "watershed_id",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "stream_name",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "stream_order",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "headwater",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "stream_length",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "waterbody_type",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "waterbody_extent",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "ecoregion3",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "ecoregion4",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "elevation",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "geology",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "huc12",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "dgoid:1",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : false,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "prim_channel_gradient",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "valleybottom_gradient",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "rel_flow_length",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "confluences",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "diffluences",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "tributaries",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "tribs_per_km",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "planform_sinuosity",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lowlying_area",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "elevated_area",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "channel_area",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "floodplain_area",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "integrated_width",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "active_channel_ratio",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "low_lying_ratio",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "elevated_ratio",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "floodplain_ratio",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "acres_vb_per_mile",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "hect_vb_per_km",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "channel_width",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "confinement_ratio",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "constriction_ratio",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "confining_margins",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "constricting_margins",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "dgoid:2",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : false,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "lf_evt",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "lf_bps",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "lf_agriculture_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_agriculture",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_conifer_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_conifer",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_conifer_hardwood_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_conifer_hardwood",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_developed_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_developed",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_exotic_herbaceous_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_exotic_herbaceous",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_exotic_tree_shrub_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_exotic_tree_shrub",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_grassland_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_grassland",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hardwood_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hardwood",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_riparian_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_riparian",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_shrubland_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_shrubland",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_sparsely_vegetated_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_sparsely_vegetated",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_conifer_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_conifer",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_conifer_hardwood_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_conifer_hardwood",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_grassland_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_grassland",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_hardwood_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_hardwood",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_hardwood_conifer_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_hardwood_conifer",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_peatland_forest_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_peatland_forest",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_peatland_nonforest_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_peatland_nonforest",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_riparian_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_riparian",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_savanna_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_savanna",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_shrubland_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_shrubland",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_sparsely_vegetated_prop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "lf_hist_sparsely_vegetated",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "ex_riparian",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "hist_riparian",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "prop_riparian",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "hist_prop_riparian",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "riparian_veg_departure",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "ag_conversion",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "develop",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "grass_shrub_conversion",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "conifer_encroachment",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "invasive_conversion",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "riparian_condition",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "dgoid:3",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : false,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "qlow",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "q2",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "splow",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "sphigh",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "dgoid:4",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : false,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "road_len",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "road_dens",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "rail_len",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "rail_dens",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "land_use_intens",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "road_dist",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "rail_dist",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "div_dist",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "canal_dist",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "infra_dist",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "fldpln_access",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "access_fldpln_extent",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "dgoid:347974428",
+              "type" : "esriFieldTypeBigInteger",
+              "isNullable" : false,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 11
+            },
+            {
+              "name" : "brat_capacity",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "brat_hist_capacity",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "brat_risk",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "brat_opportunity",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "brat_limitation",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "brat_complex_size",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "brat_hist_complex_size",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "dam_setting",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "geom",
+              "type" : "esriFieldTypeGeometry",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "geometryDef" : {
+                "avgNumPoints" : 0,
+                "geometryType" : "esriGeometryPolygon",
+                "hasM" : false,
+                "hasZ" : false,
+                "spatialReference" : {
+                  "wkid" : 4326,
+                  "latestWkid" : 4326,
+                  "xyTolerance" : 8.983152841195215e-09,
+                  "zTolerance" : 0.001,
+                  "mTolerance" : 0.001,
+                  "falseX" : -400,
+                  "falseY" : -400,
+                  "xyUnits" : 999999999.99999988,
+                  "falseZ" : -100000,
+                  "zUnits" : 10000,
+                  "falseM" : -100000,
+                  "mUnits" : 10000
+                }
+              },
+              "dbmsType" : 8
+            },
+            {
+              "name" : "level_path",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "seg_distance",
+              "type" : "esriFieldTypeInteger",
+              "isNullable" : true,
+              "length" : 4,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 2
+            },
+            {
+              "name" : "centerline_length",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "segment_area",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "FCode",
+              "type" : "esriFieldTypeInteger",
+              "isNullable" : true,
+              "length" : 4,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 2
+            }
+          ],
+          "spatialStorageType" : 11,
+          "isTableBased" : true,
+          "mappedOIDFieldLength" : "OID64Bit"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
@@ -1845,8 +1346,7 @@
                   "splitAfter" : true
                 }
               ],
-              "trimStackingSeparators" : true,
-              "preferToStackLongLabels" : true
+              "trimStackingSeparators" : true
             },
             "lineFeatureType" : "General",
             "linePlacementMethod" : "OffsetCurvedFromLine",
@@ -2048,57 +1548,107 @@
         "heading" : "splow",
         "polygonSymbolColorTarget" : "Fill",
         "drawGraduatedSymbolsAboveAllLayers" : true,
-        "authoringInfo" : {
-          "type" : "CIMClassBreaksRendererAuthoringInfo",
-          "numberOfHistogramBins" : 10,
-          "templateSymbol" : {
-            "type" : "CIMSymbolReference",
-            "symbol" : {
-              "type" : "CIMPolygonSymbol",
-              "symbolLayers" : [
-                {
-                  "type" : "CIMSolidStroke",
-                  "enable" : true,
-                  "capStyle" : "Round",
-                  "joinStyle" : "Round",
-                  "lineStyle3D" : "Strip",
-                  "miterLimit" : 10,
-                  "width" : 0.10000000000000001,
-                  "height3D" : 1,
-                  "anchor3D" : "Center",
-                  "color" : {
-                    "type" : "CIMRGBColor",
-                    "values" : [
-                      35,
-                      35,
-                      35,
-                      100
-                    ]
-                  }
-                },
-                {
-                  "type" : "CIMSolidFill",
-                  "enable" : true,
-                  "color" : {
-                    "type" : "CIMHSVColor",
-                    "values" : [
-                      0,
-                      0,
-                      96.079999999999998,
-                      70
-                    ]
-                  }
-                }
-              ],
-              "angleAlignment" : "Map"
-            }
-          }
-        },
         "classificationMethod" : "Manual",
         "breaks" : [
           {
             "type" : "CIMClassBreak",
-            "label" : "0 - 20",
+            "label" : "0 - 5",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.10000000000000001,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        35,
+                        35,
+                        35,
+                        100
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMHSVColor",
+                      "values" : [
+                        267.79000000000002,
+                        100,
+                        58.43,
+                        70
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              }
+            },
+            "upperBound" : 5
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "5 - 15",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.10000000000000001,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        35,
+                        35,
+                        35,
+                        100
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMHSVColor",
+                      "values" : [
+                        221.96000000000001,
+                        76.879999999999995,
+                        72.939999999999998,
+                        70
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              }
+            },
+            "upperBound" : 15
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "15 - 20",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -2338,7 +1888,7 @@
           },
           {
             "type" : "CIMClassBreak",
-            "label" : ">5000",
+            "label" : "> 5000",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -2382,7 +1932,7 @@
                 "angleAlignment" : "Map"
               }
             },
-            "upperBound" : 10000000000
+            "upperBound" : 10000000
           }
         ],
         "showInAscendingOrder" : true,
@@ -2438,7 +1988,6 @@
           "roundingValue" : 6,
           "zeroPad" : true
         },
-        "alwaysUpdateClassLabels" : true,
         "sampleSize" : 10000,
         "normalizationType" : "Nothing",
         "exclusionLabel" : "<excluded>",
@@ -2497,28 +2046,13 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map1/77b04de764c2433cabc7541086fc6851.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
-      "layer3DProperties" : {
-        "type" : "CIM3DLayerProperties",
-        "castShadows" : true,
-        "isLayerLit" : true,
-        "layerFaceCulling" : "None",
-        "preloadTextureCutoffHigh" : 0.29999999999999999,
-        "preloadTextureCutoffLow" : 0.59999999999999998,
-        "textureCutoffHigh" : 0.29999999999999999,
-        "textureCutoffLow" : 0.59999999999999998,
-        "useCompressedTextures" : true,
-        "verticalExaggeration" : 1,
-        "exaggerationMode" : "ScaleZ",
-        "lighting" : "OneSideDataNormal",
-        "optimizeMarkerTransparency" : true
-      },
       "layerType" : "Operational",
       "showLegends" : false,
       "visibility" : true,

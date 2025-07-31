@@ -8,7 +8,7 @@
         ["rgb(84, 227, 110)", "Estuary (49300)"],
         ["rgb(250, 224, 78)", "Playa (36100)"],
         ["rgb(204, 212, 255)", "Ice Mass (37800)"],
-        ["rgb(0, 0, 0)", "NULL"]
+        ["rgb(0, 0, 0)", "No Waterbodies Mapped"]
     ],
   "layerStyles": [
         {

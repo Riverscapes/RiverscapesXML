@@ -9,11 +9,12 @@
     ["rgb(29, 145, 192)", "6"],
     ["rgb(34, 94, 168)", "7"],
     ["rgb(37, 52, 148)", "8"],
-    ["rgb(90, 90, 90)", "None or > 8"]
+    ["#1f0066", "> 8"],
+    ["#000000", "None"]
   ],
   "layerStyles": [
         {
-            "id": "dgo-metrics-sample-byd148",
+            "id": "Fill, NULL through 8",
             "type": "fill",
             "source": "composite",
             "source-layer": "dgo_metrics_sample-byd148",
@@ -38,8 +39,31 @@
                 "rgb(34, 94, 168)",
                 [8],
                 "rgb(37, 52, 148)",
-                "rgb(90, 90, 90)"
+                "#000000"
             ],
+                "fill-opacity": 0.6
+            }
+        },
+        {
+            "id": "Fill, >8",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_metrics_sample-byd148",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "stream_order"],
+                    0,
+                    "hsla(0, 0%, 0%, 0)",
+                    8,
+                    "hsla(0, 0%, 0%, 0)",
+                    8.5,
+                    "#1f0066",
+                    1000,
+                    "#1f0066"
+                ],
                 "fill-opacity": 0.6
             }
         },
