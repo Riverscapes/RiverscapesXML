@@ -1,534 +1,468 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.40.4-Bratislava" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" minScale="100000000" simplifyDrawingHints="1" maxScale="0" autoRefreshMode="Disabled" simplifyLocal="1" symbologyReferenceScale="-1" simplifyDrawingTol="1" styleCategories="AllStyleCategories" autoRefreshTime="0" simplifyAlgorithm="0" labelsEnabled="0" readOnly="0">
+<qgis simplifyDrawingHints="1" simplifyDrawingTol="1" maxScale="0" version="3.20.0-Odense" styleCategories="AllStyleCategories" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" readOnly="0" labelsEnabled="0" simplifyMaxScale="1" minScale="100000000">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal mode="0" endField="" limitMode="0" durationField="ReachID" enabled="0" accumulate="0" startField="" fixedDuration="0" durationUnit="min" endExpression="" startExpression="">
+  <temporal endExpression="" enabled="0" accumulate="0" startField="" durationUnit="min" endField="" fixedDuration="0" mode="0" durationField="" startExpression="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation respectLayerSymbol="1" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" zscale="1" clamping="Terrain" symbology="Line" zoffset="0" type="IndividualFeatures" binding="Centroid" extrusion="0">
-    <data-defined-properties>
-      <Option type="Map">
-        <Option name="name" value="" type="QString"/>
-        <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
-      </Option>
-    </data-defined-properties>
-    <profileLineSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" frame_rate="10" alpha="1" type="line" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{d17a9f5a-5449-4605-8cf1-ec3b5d3175e0}">
-          <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="114,155,111,255,rgb:0.44705882352941179,0.60784313725490191,0.43529411764705883,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.6" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-          </Option>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </profileLineSymbol>
-    <profileFillSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" frame_rate="10" alpha="1" type="fill" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleFill" id="{1eeb1825-f704-4c25-a61d-5a2b48b8d034}">
-          <Option type="Map">
-            <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="color" value="114,155,111,255,rgb:0.44705882352941179,0.60784313725490191,0.43529411764705883,1" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="offset" value="0,0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="outline_color" value="81,111,79,255,rgb:0.31932555123216599,0.4341649500267033,0.3109178301670863,1" type="QString"/>
-            <Option name="outline_style" value="solid" type="QString"/>
-            <Option name="outline_width" value="0.2" type="QString"/>
-            <Option name="outline_width_unit" value="MM" type="QString"/>
-            <Option name="style" value="solid" type="QString"/>
-          </Option>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </profileFillSymbol>
-    <profileMarkerSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" frame_rate="10" alpha="1" type="marker" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleMarker" id="{9ffdd6e6-a1f1-428f-9fcd-dad3184e7d2f}">
-          <Option type="Map">
-            <Option name="angle" value="0" type="QString"/>
-            <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="114,155,111,255,rgb:0.44705882352941179,0.60784313725490191,0.43529411764705883,1" type="QString"/>
-            <Option name="horizontal_anchor_point" value="1" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="name" value="diamond" type="QString"/>
-            <Option name="offset" value="0,0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="outline_color" value="81,111,79,255,rgb:0.31932555123216599,0.4341649500267033,0.3109178301670863,1" type="QString"/>
-            <Option name="outline_style" value="solid" type="QString"/>
-            <Option name="outline_width" value="0.2" type="QString"/>
-            <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="outline_width_unit" value="MM" type="QString"/>
-            <Option name="scale_method" value="diameter" type="QString"/>
-            <Option name="size" value="3" type="QString"/>
-            <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="size_unit" value="MM" type="QString"/>
-            <Option name="vertical_anchor_point" value="1" type="QString"/>
-          </Option>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </profileMarkerSymbol>
-  </elevation>
-  <renderer-v2 referencescale="-1" attr="oCC_EX" enableorderby="0" forceraster="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" symbollevels="0">
+  <renderer-v2 type="graduatedSymbol" forceraster="0" attr="oCC_EX" enableorderby="0" symbollevels="0" graduatedMethod="GraduatedColor">
     <ranges>
-      <range lower="0.000000000000000" uuid="{16b3a366-4557-4216-8e51-7ab048efd741}" symbol="0" label="0 dams/km (0 dams/mi)" upper="0.000000000000000" render="true"/>
-      <range lower="0.000000000000000" uuid="{04fafea1-cae6-45b4-b1e7-fadd20a399ba}" symbol="1" label="0-3 dams/km (0-5 dams/mi)" upper="3.000000000000000" render="true"/>
-      <range lower="3.000000000000000" uuid="0" symbol="2" label="3-10 dams/km (5-16 dams/mi)" upper="10.000000000000000" render="true"/>
-      <range lower="10.000000000000000" uuid="1" symbol="3" label="10-15 dams/km (16-24 dams/mi)" upper="15.000000000000000" render="true"/>
-      <range lower="15.000000000000000" uuid="2" symbol="4" label="15-25 dams/km (24-40 dams/mi)" upper="25.000000000000000" render="true"/>
-      <range lower="25.000000000000000" uuid="3" symbol="5" label="25-45 dams/km (40-72 dams/mi)" upper="45.000000000000000" render="true"/>
-      <range lower="45.000000000000000" uuid="4" symbol="6" label="> 45 dams/km (> 72 dams/mi)" upper="1000.000000000000000" render="true"/>
+      <range lower="0.000000000000000" label="None: 0 dams" render="true" symbol="0" upper="0.000001000000000"/>
+      <range lower="0.000001000000000" label="Rare: 0-1 dams/km (0-2 dams/mi)" render="true" symbol="1" upper="1.000010000000000"/>
+      <range lower="1.000010000000000" label="Occasional:  1-5 dams/km (2-8 dams/mi)" render="true" symbol="2" upper="5.000010000000000"/>
+      <range lower="5.000010000000000" label="Frequent: 5-15 dams/km (8-24 dams/mi)" render="true" symbol="3" upper="15.000010000000000"/>
+      <range lower="15.000010000000000" label="Pervasive: 15-40 dams/km (24-64 dams/mi)" render="true" symbol="4" upper="40.000000000000000"/>
     </ranges>
     <symbols>
-      <symbol clip_to_extent="1" is_animated="0" name="0" frame_rate="10" alpha="1" type="line" force_rhr="0">
+      <symbol name="0" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{9e5489b2-1485-41f8-b49b-b7431acc0be7}">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="255,255,255,255,rgb:1,1,1,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.2" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="245,0,0,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.25"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
           </Option>
+          <prop v="0" k="align_dash_pattern"/>
+          <prop v="square" k="capstyle"/>
+          <prop v="5;2" k="customdash"/>
+          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+          <prop v="MM" k="customdash_unit"/>
+          <prop v="0" k="dash_pattern_offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+          <prop v="MM" k="dash_pattern_offset_unit"/>
+          <prop v="0" k="draw_inside_polygon"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="245,0,0,255" k="line_color"/>
+          <prop v="solid" k="line_style"/>
+          <prop v="0.25" k="line_width"/>
+          <prop v="MM" k="line_width_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="0" k="trim_distance_end"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_end_unit"/>
+          <prop v="0" k="trim_distance_start"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_start_unit"/>
+          <prop v="0" k="tweak_dash_pattern_on_corners"/>
+          <prop v="0" k="use_custom_dash"/>
+          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="1" frame_rate="10" alpha="1" type="line" force_rhr="0">
+      <symbol name="1" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{9e5489b2-1485-41f8-b49b-b7431acc0be7}">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="243,146,17,255,hsv:0.09530555555555556,0.93073929961089497,0.95402456702525373,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.3" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="255,170,0,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.26"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
           </Option>
+          <prop v="0" k="align_dash_pattern"/>
+          <prop v="square" k="capstyle"/>
+          <prop v="5;2" k="customdash"/>
+          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+          <prop v="MM" k="customdash_unit"/>
+          <prop v="0" k="dash_pattern_offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+          <prop v="MM" k="dash_pattern_offset_unit"/>
+          <prop v="0" k="draw_inside_polygon"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="255,170,0,255" k="line_color"/>
+          <prop v="solid" k="line_style"/>
+          <prop v="0.26" k="line_width"/>
+          <prop v="MM" k="line_width_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="0" k="trim_distance_end"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_end_unit"/>
+          <prop v="0" k="trim_distance_start"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_start_unit"/>
+          <prop v="0" k="tweak_dash_pattern_on_corners"/>
+          <prop v="0" k="use_custom_dash"/>
+          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="2" frame_rate="10" alpha="1" type="line" force_rhr="0">
+      <symbol name="2" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{f87283dc-63e7-4e8c-bc27-1b3e2fdbcaf1}">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="245,230,65,255,hsv:0.15338888888888888,0.73260090028229186,0.95985351338979175,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.3" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="245,245,0,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.26"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
           </Option>
+          <prop v="0" k="align_dash_pattern"/>
+          <prop v="square" k="capstyle"/>
+          <prop v="5;2" k="customdash"/>
+          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+          <prop v="MM" k="customdash_unit"/>
+          <prop v="0" k="dash_pattern_offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+          <prop v="MM" k="dash_pattern_offset_unit"/>
+          <prop v="0" k="draw_inside_polygon"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="245,245,0,255" k="line_color"/>
+          <prop v="solid" k="line_style"/>
+          <prop v="0.26" k="line_width"/>
+          <prop v="MM" k="line_width_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="0" k="trim_distance_end"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_end_unit"/>
+          <prop v="0" k="trim_distance_start"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_start_unit"/>
+          <prop v="0" k="tweak_dash_pattern_on_corners"/>
+          <prop v="0" k="use_custom_dash"/>
+          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="3" frame_rate="10" alpha="1" type="line" force_rhr="0">
+      <symbol name="3" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{6a03f9fb-ca0b-4df5-aa89-c8321e225618}">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="148,206,50,255,rgb:0.58039215686274515,0.80784313725490198,0.19607843137254902,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.5" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="76,230,1,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.5"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
           </Option>
+          <prop v="0" k="align_dash_pattern"/>
+          <prop v="square" k="capstyle"/>
+          <prop v="5;2" k="customdash"/>
+          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+          <prop v="MM" k="customdash_unit"/>
+          <prop v="0" k="dash_pattern_offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+          <prop v="MM" k="dash_pattern_offset_unit"/>
+          <prop v="0" k="draw_inside_polygon"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="76,230,1,255" k="line_color"/>
+          <prop v="solid" k="line_style"/>
+          <prop v="0.5" k="line_width"/>
+          <prop v="MM" k="line_width_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="0" k="trim_distance_end"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_end_unit"/>
+          <prop v="0" k="trim_distance_start"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_start_unit"/>
+          <prop v="0" k="tweak_dash_pattern_on_corners"/>
+          <prop v="0" k="use_custom_dash"/>
+          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="4" frame_rate="10" alpha="1" type="line" force_rhr="0">
+      <symbol name="4" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{1cc3d55e-a85c-4417-9d7c-6363b4cdf2ea}">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="68,186,29,255,rgb:0.26666666666666666,0.72941176470588232,0.11372549019607843,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.5" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="0,92,230,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.75"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
           </Option>
+          <prop v="0" k="align_dash_pattern"/>
+          <prop v="square" k="capstyle"/>
+          <prop v="5;2" k="customdash"/>
+          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+          <prop v="MM" k="customdash_unit"/>
+          <prop v="0" k="dash_pattern_offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+          <prop v="MM" k="dash_pattern_offset_unit"/>
+          <prop v="0" k="draw_inside_polygon"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,92,230,255" k="line_color"/>
+          <prop v="solid" k="line_style"/>
+          <prop v="0.75" k="line_width"/>
+          <prop v="MM" k="line_width_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="0" k="trim_distance_end"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_end_unit"/>
+          <prop v="0" k="trim_distance_start"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_start_unit"/>
+          <prop v="0" k="tweak_dash_pattern_on_corners"/>
+          <prop v="0" k="use_custom_dash"/>
+          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="5" frame_rate="10" alpha="1" type="line" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{00c0a5c5-70ad-4d11-9b2b-e7a268f178ac}">
-          <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="46,105,96,255,rgb:0.1803921568627451,0.41176470588235292,0.37647058823529411,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.7" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-          </Option>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="6" frame_rate="10" alpha="1" type="line" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{73df9cd5-b819-4bb4-b302-d5c43c241981}">
-          <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="25,25,164,255,rgb:0.09803921568627451,0.09803921568627451,0.64313725490196083,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.8" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-          </Option>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol clip_to_extent="1" is_animated="0" name="0" frame_rate="10" alpha="1" type="line" force_rhr="0">
+      <symbol name="0" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{9e5489b2-1485-41f8-b49b-b7431acc0be7}">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="196,60,57,255,rgb:0.7686274509803922,0.23529411764705882,0.22352941176470589,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.26" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="196,60,57,255"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.26"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
           </Option>
+          <prop v="0" k="align_dash_pattern"/>
+          <prop v="square" k="capstyle"/>
+          <prop v="5;2" k="customdash"/>
+          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+          <prop v="MM" k="customdash_unit"/>
+          <prop v="0" k="dash_pattern_offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+          <prop v="MM" k="dash_pattern_offset_unit"/>
+          <prop v="0" k="draw_inside_polygon"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="196,60,57,255" k="line_color"/>
+          <prop v="solid" k="line_style"/>
+          <prop v="0.26" k="line_width"/>
+          <prop v="MM" k="line_width_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="0" k="trim_distance_end"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_end_unit"/>
+          <prop v="0" k="trim_distance_start"/>
+          <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+          <prop v="MM" k="trim_distance_start_unit"/>
+          <prop v="0" k="tweak_dash_pattern_on_corners"/>
+          <prop v="0" k="use_custom_dash"/>
+          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -536,18 +470,21 @@
     </source-symbol>
     <colorramp name="[source]" type="gradient">
       <Option type="Map">
-        <Option name="color1" value="215,25,28,255,rgb:0.84313725490196079,0.09803921568627451,0.10980392156862745,1" type="QString"/>
-        <Option name="color2" value="78,255,19,255,rgb:0.30588235294117649,1,0.07450980392156863,1" type="QString"/>
-        <Option name="direction" value="ccw" type="QString"/>
-        <Option name="discrete" value="0" type="QString"/>
-        <Option name="rampType" value="gradient" type="QString"/>
-        <Option name="spec" value="rgb" type="QString"/>
-        <Option name="stops" value="0.25;253,174,97,255,rgb:0.99215686274509807,0.68235294117647061,0.38039215686274508,1;rgb;ccw:0.485577;255,255,88,255,rgb:1,1,0.34509803921568627,1;rgb;ccw:0.75;171,221,164,255,rgb:0.6705882352941176,0.8666666666666667,0.64313725490196083,1;rgb;ccw" type="QString"/>
+        <Option name="color1" type="QString" value="215,25,28,255"/>
+        <Option name="color2" type="QString" value="78,255,19,255"/>
+        <Option name="discrete" type="QString" value="0"/>
+        <Option name="rampType" type="QString" value="gradient"/>
+        <Option name="stops" type="QString" value="0.25;253,174,97,255:0.485577;255,255,88,255:0.75;171,221,164,255"/>
       </Option>
+      <prop v="215,25,28,255" k="color1"/>
+      <prop v="78,255,19,255" k="color2"/>
+      <prop v="0" k="discrete"/>
+      <prop v="gradient" k="rampType"/>
+      <prop v="0.25;253,174,97,255:0.485577;255,255,88,255:0.75;171,221,164,255" k="stops"/>
     </colorramp>
     <classificationMethod id="Quantile">
-      <symmetricMode astride="0" enabled="0" symmetrypoint="0"/>
-      <labelFormat trimtrailingzeroes="0" format="%1 - %2" labelprecision="4"/>
+      <symmetricMode symmetrypoint="0" enabled="0" astride="0"/>
+      <labelFormat format="%1 - %2" labelprecision="4" trimtrailingzeroes="1"/>
       <parameters>
         <Option/>
       </parameters>
@@ -555,137 +492,105 @@
     </classificationMethod>
     <rotation/>
     <sizescale/>
-    <data-defined-properties>
-      <Option type="Map">
-        <Option name="name" value="" type="QString"/>
-        <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
-      </Option>
-    </data-defined-properties>
   </renderer-v2>
-  <selection mode="Default">
-    <selectionColor invalid="1"/>
-    <selectionSymbol>
-      <symbol clip_to_extent="1" is_animated="0" name="" frame_rate="10" alpha="1" type="line" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option name="name" value="" type="QString"/>
-            <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
-          </Option>
-        </data_defined_properties>
-        <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{3225e62d-7b0e-4068-907a-3903307d0c27}">
-          <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.26" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-          </Option>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </selectionSymbol>
-  </selection>
   <customproperties>
     <Option type="Map">
-      <Option name="embeddedWidgets/count" value="0" type="int"/>
-      <Option name="variableNames"/>
-      <Option name="variableValues"/>
+      <Option name="embeddedWidgets/count" type="int" value="0"/>
+      <Option name="variableNames" type="invalid"/>
+      <Option name="variableValues" type="invalid"/>
     </Option>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <LinearlyInterpolatedDiagramRenderer lowerValue="0" upperWidth="5" upperValue="0" upperHeight="5" lowerHeight="0" lowerWidth="0" diagramType="Histogram" classificationAttributeExpression="" attributeLegend="1">
-    <DiagramCategory spacing="5" stackedDiagramSpacing="0" opacity="1" height="15" minScaleDenominator="0" labelPlacementMethod="XHeight" diagramOrientation="Up" minimumSize="0" penWidth="0" spacingUnit="MM" showAxis="1" enabled="0" backgroundAlpha="255" barWidth="5" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" sizeType="MM" stackedDiagramMode="Horizontal" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" stackedDiagramSpacingUnit="MM" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" penColor="#000000" spacingUnitScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" rotationOffset="270" penAlpha="255" width="15" direction="0">
-      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" strikethrough="0" bold="0" style="" underline="0" italic="0"/>
-      <attribute field="" label="" color="#000000" colorOpacity="1"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory spacingUnit="MM" backgroundColor="#ffffff" spacingUnitScale="3x:0,0,0,0,0,0" opacity="1" diagramOrientation="Up" showAxis="1" scaleBasedVisibility="0" sizeType="MM" lineSizeType="MM" sizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" rotationOffset="270" width="15" penAlpha="255" height="15" maxScaleDenominator="1e+08" spacing="5" minScaleDenominator="0" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" penWidth="0" direction="0" barWidth="5" scaleDependency="Area" enabled="0" penColor="#000000">
+      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute label="" field="" color="#000000"/>
       <axisSymbol>
-        <symbol clip_to_extent="1" is_animated="0" name="" frame_rate="10" alpha="1" type="line" force_rhr="0">
+        <symbol name="" type="line" force_rhr="0" alpha="1" clip_to_extent="1">
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer pass="0" enabled="1" locked="0" class="SimpleLine" id="{678f836a-c708-4c1a-908a-cf89503f318e}">
+          <layer class="SimpleLine" locked="0" enabled="1" pass="0">
             <Option type="Map">
-              <Option name="align_dash_pattern" value="0" type="QString"/>
-              <Option name="capstyle" value="square" type="QString"/>
-              <Option name="customdash" value="5;2" type="QString"/>
-              <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="customdash_unit" value="MM" type="QString"/>
-              <Option name="dash_pattern_offset" value="0" type="QString"/>
-              <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-              <Option name="draw_inside_polygon" value="0" type="QString"/>
-              <Option name="joinstyle" value="bevel" type="QString"/>
-              <Option name="line_color" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1" type="QString"/>
-              <Option name="line_style" value="solid" type="QString"/>
-              <Option name="line_width" value="0.26" type="QString"/>
-              <Option name="line_width_unit" value="MM" type="QString"/>
-              <Option name="offset" value="0" type="QString"/>
-              <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="offset_unit" value="MM" type="QString"/>
-              <Option name="ring_filter" value="0" type="QString"/>
-              <Option name="trim_distance_end" value="0" type="QString"/>
-              <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-              <Option name="trim_distance_start" value="0" type="QString"/>
-              <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-              <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-              <Option name="use_custom_dash" value="0" type="QString"/>
-              <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+              <Option name="align_dash_pattern" type="QString" value="0"/>
+              <Option name="capstyle" type="QString" value="square"/>
+              <Option name="customdash" type="QString" value="5;2"/>
+              <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="customdash_unit" type="QString" value="MM"/>
+              <Option name="dash_pattern_offset" type="QString" value="0"/>
+              <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+              <Option name="draw_inside_polygon" type="QString" value="0"/>
+              <Option name="joinstyle" type="QString" value="bevel"/>
+              <Option name="line_color" type="QString" value="35,35,35,255"/>
+              <Option name="line_style" type="QString" value="solid"/>
+              <Option name="line_width" type="QString" value="0.26"/>
+              <Option name="line_width_unit" type="QString" value="MM"/>
+              <Option name="offset" type="QString" value="0"/>
+              <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="offset_unit" type="QString" value="MM"/>
+              <Option name="ring_filter" type="QString" value="0"/>
+              <Option name="trim_distance_end" type="QString" value="0"/>
+              <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+              <Option name="trim_distance_start" type="QString" value="0"/>
+              <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+              <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+              <Option name="use_custom_dash" type="QString" value="0"/>
+              <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             </Option>
+            <prop v="0" k="align_dash_pattern"/>
+            <prop v="square" k="capstyle"/>
+            <prop v="5;2" k="customdash"/>
+            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+            <prop v="MM" k="customdash_unit"/>
+            <prop v="0" k="dash_pattern_offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+            <prop v="MM" k="dash_pattern_offset_unit"/>
+            <prop v="0" k="draw_inside_polygon"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="35,35,35,255" k="line_color"/>
+            <prop v="solid" k="line_style"/>
+            <prop v="0.26" k="line_width"/>
+            <prop v="MM" k="line_width_unit"/>
+            <prop v="0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0" k="ring_filter"/>
+            <prop v="0" k="trim_distance_end"/>
+            <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+            <prop v="MM" k="trim_distance_end_unit"/>
+            <prop v="0" k="trim_distance_start"/>
+            <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+            <prop v="MM" k="trim_distance_start_unit"/>
+            <prop v="0" k="tweak_dash_pattern_on_corners"/>
+            <prop v="0" k="use_custom_dash"/>
+            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
+                <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
           </layer>
         </symbol>
       </axisSymbol>
     </DiagramCategory>
-  </LinearlyInterpolatedDiagramRenderer>
-  <DiagramLayerSettings placement="2" showAll="1" linePlacementFlags="18" priority="0" zIndex="0" dist="0" obstacle="0">
+  </SingleCategoryDiagramRenderer>
+  <DiagramLayerSettings obstacle="0" showAll="1" linePlacementFlags="18" placement="2" zIndex="0" dist="0" priority="0">
     <properties>
       <Option type="Map">
-        <Option name="name" value="" type="QString"/>
+        <Option name="name" type="QString" value=""/>
         <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
+        <Option name="type" type="QString" value="collection"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -696,385 +601,364 @@
   <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="ReachID" configurationFlags="NoFlag">
+    <field name="ReachID" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ReachCode" configurationFlags="NoFlag">
+    <field name="WatershedID" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="StreamName" configurationFlags="NoFlag">
+    <field name="ReachCode" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="NHDPlusID" configurationFlags="NoFlag">
+    <field name="IsPeren" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="WatershedID" configurationFlags="NoFlag">
+    <field name="StreamName" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="level_path" configurationFlags="NoFlag">
+    <field name="Orig_DA" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ownership" configurationFlags="NoFlag">
+    <field name="iGeo_Slope" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="divergence" configurationFlags="NoFlag">
+    <field name="iGeo_ElMax" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="stream_order" configurationFlags="NoFlag">
+    <field name="iGeo_ElMin" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="us_state" configurationFlags="NoFlag">
+    <field name="iGeo_Len" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ecoregion_iii" configurationFlags="NoFlag">
+    <field name="iGeo_DA" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ecoregion_iv" configurationFlags="NoFlag">
+    <field name="iVeg100EX" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="IsPeren" configurationFlags="NoFlag">
+    <field name="iVeg_30EX" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iGeo_Slope" configurationFlags="NoFlag">
+    <field name="iVeg100HPE" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iGeo_Len" configurationFlags="NoFlag">
+    <field name="iVeg_30HPE" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iGeo_DA" configurationFlags="NoFlag">
+    <field name="iPC_Road" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iVeg100EX" configurationFlags="NoFlag">
+    <field name="iPC_RoadX" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iVeg_30EX" configurationFlags="NoFlag">
+    <field name="iPC_RoadVB" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iVeg100HPE" configurationFlags="NoFlag">
+    <field name="iPC_Rail" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iVeg_30HPE" configurationFlags="NoFlag">
+    <field name="iPC_RailVB" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_Road" configurationFlags="NoFlag">
+    <field name="iPC_LU" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_RoadX" configurationFlags="NoFlag">
+    <field name="iPC_VLowLU" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_RoadVB" configurationFlags="NoFlag">
+    <field name="iPC_LowLU" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_Rail" configurationFlags="NoFlag">
+    <field name="iPC_ModLU" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_RailVB" configurationFlags="NoFlag">
+    <field name="iPC_HighLU" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_LU" configurationFlags="NoFlag">
+    <field name="iHyd_QLow" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_VLowLU" configurationFlags="NoFlag">
+    <field name="iHyd_Q2" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_LowLU" configurationFlags="NoFlag">
+    <field name="iHyd_SPLow" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_ModLU" configurationFlags="NoFlag">
+    <field name="iHyd_SP2" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_HighLU" configurationFlags="NoFlag">
+    <field name="AgencyID" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iHyd_QLow" configurationFlags="NoFlag">
+    <field name="oVC_HPE" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iHyd_Q2" configurationFlags="NoFlag">
+    <field name="oVC_EX" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iHyd_SPLow" configurationFlags="NoFlag">
+    <field name="oCC_HPE" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iHyd_SP2" configurationFlags="NoFlag">
+    <field name="mCC_HPE_CT" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="oVC_HPE" configurationFlags="NoFlag">
+    <field name="oCC_EX" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="oVC_EX" configurationFlags="NoFlag">
+    <field name="mCC_EX_CT" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="oCC_HPE" configurationFlags="NoFlag">
+    <field name="LimitationID" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="mCC_HPE_CT" configurationFlags="NoFlag">
+    <field name="RiskID" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="oCC_EX" configurationFlags="NoFlag">
+    <field name="OpportunityID" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="mCC_EX_CT" configurationFlags="NoFlag">
+    <field name="iPC_Canal" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="LimitationID" configurationFlags="NoFlag">
+    <field name="iPC_DivPts" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="RiskID" configurationFlags="NoFlag">
+    <field name="iPC_Privat" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="OpportunityID" configurationFlags="NoFlag">
+    <field name="oPC_Dist" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_Canal" configurationFlags="NoFlag">
+    <field name="IsMainCh" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_DivPts" configurationFlags="NoFlag">
+    <field name="IsMultiCh" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="iPC_Privat" configurationFlags="NoFlag">
+    <field name="mCC_HisDep" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="oPC_Dist" configurationFlags="NoFlag">
+    <field name="Watershed" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="IsMainCh" configurationFlags="NoFlag">
+    <field name="ReachType" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="IsMultiCh" configurationFlags="NoFlag">
+    <field name="Agency" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="mCC_HisDep" configurationFlags="NoFlag">
+    <field name="Limitation" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="Dam_Setting" configurationFlags="NoFlag">
+    <field name="Risk" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ReachType" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="Limitation" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="Risk" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="Opportunity" configurationFlags="NoFlag">
+    <field name="Opportunity" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -1083,305 +967,177 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="ReachID" name="" index="0"/>
-    <alias field="ReachCode" name="" index="1"/>
-    <alias field="StreamName" name="" index="2"/>
-    <alias field="NHDPlusID" name="" index="3"/>
-    <alias field="WatershedID" name="" index="4"/>
-    <alias field="level_path" name="" index="5"/>
-    <alias field="ownership" name="" index="6"/>
-    <alias field="divergence" name="" index="7"/>
-    <alias field="stream_order" name="" index="8"/>
-    <alias field="us_state" name="" index="9"/>
-    <alias field="ecoregion_iii" name="" index="10"/>
-    <alias field="ecoregion_iv" name="" index="11"/>
-    <alias field="IsPeren" name="" index="12"/>
-    <alias field="iGeo_Slope" name="" index="13"/>
-    <alias field="iGeo_Len" name="" index="14"/>
-    <alias field="iGeo_DA" name="" index="15"/>
-    <alias field="iVeg100EX" name="" index="16"/>
-    <alias field="iVeg_30EX" name="" index="17"/>
-    <alias field="iVeg100HPE" name="" index="18"/>
-    <alias field="iVeg_30HPE" name="" index="19"/>
-    <alias field="iPC_Road" name="" index="20"/>
-    <alias field="iPC_RoadX" name="" index="21"/>
-    <alias field="iPC_RoadVB" name="" index="22"/>
-    <alias field="iPC_Rail" name="" index="23"/>
-    <alias field="iPC_RailVB" name="" index="24"/>
-    <alias field="iPC_LU" name="" index="25"/>
-    <alias field="iPC_VLowLU" name="" index="26"/>
-    <alias field="iPC_LowLU" name="" index="27"/>
-    <alias field="iPC_ModLU" name="" index="28"/>
-    <alias field="iPC_HighLU" name="" index="29"/>
-    <alias field="iHyd_QLow" name="" index="30"/>
-    <alias field="iHyd_Q2" name="" index="31"/>
-    <alias field="iHyd_SPLow" name="" index="32"/>
-    <alias field="iHyd_SP2" name="" index="33"/>
-    <alias field="oVC_HPE" name="" index="34"/>
-    <alias field="oVC_EX" name="" index="35"/>
-    <alias field="oCC_HPE" name="" index="36"/>
-    <alias field="mCC_HPE_CT" name="" index="37"/>
-    <alias field="oCC_EX" name="" index="38"/>
-    <alias field="mCC_EX_CT" name="" index="39"/>
-    <alias field="LimitationID" name="" index="40"/>
-    <alias field="RiskID" name="" index="41"/>
-    <alias field="OpportunityID" name="" index="42"/>
-    <alias field="iPC_Canal" name="" index="43"/>
-    <alias field="iPC_DivPts" name="" index="44"/>
-    <alias field="iPC_Privat" name="" index="45"/>
-    <alias field="oPC_Dist" name="" index="46"/>
-    <alias field="IsMainCh" name="" index="47"/>
-    <alias field="IsMultiCh" name="" index="48"/>
-    <alias field="mCC_HisDep" name="" index="49"/>
-    <alias field="Dam_Setting" name="" index="50"/>
-    <alias field="ReachType" name="" index="51"/>
-    <alias field="Limitation" name="" index="52"/>
-    <alias field="Risk" name="" index="53"/>
-    <alias field="Opportunity" name="" index="54"/>
+    <alias name="" field="ReachID" index="0"/>
+    <alias name="" field="WatershedID" index="1"/>
+    <alias name="" field="ReachCode" index="2"/>
+    <alias name="" field="IsPeren" index="3"/>
+    <alias name="" field="StreamName" index="4"/>
+    <alias name="" field="Orig_DA" index="5"/>
+    <alias name="" field="iGeo_Slope" index="6"/>
+    <alias name="" field="iGeo_ElMax" index="7"/>
+    <alias name="" field="iGeo_ElMin" index="8"/>
+    <alias name="" field="iGeo_Len" index="9"/>
+    <alias name="" field="iGeo_DA" index="10"/>
+    <alias name="" field="iVeg100EX" index="11"/>
+    <alias name="" field="iVeg_30EX" index="12"/>
+    <alias name="" field="iVeg100HPE" index="13"/>
+    <alias name="" field="iVeg_30HPE" index="14"/>
+    <alias name="" field="iPC_Road" index="15"/>
+    <alias name="" field="iPC_RoadX" index="16"/>
+    <alias name="" field="iPC_RoadVB" index="17"/>
+    <alias name="" field="iPC_Rail" index="18"/>
+    <alias name="" field="iPC_RailVB" index="19"/>
+    <alias name="" field="iPC_LU" index="20"/>
+    <alias name="" field="iPC_VLowLU" index="21"/>
+    <alias name="" field="iPC_LowLU" index="22"/>
+    <alias name="" field="iPC_ModLU" index="23"/>
+    <alias name="" field="iPC_HighLU" index="24"/>
+    <alias name="" field="iHyd_QLow" index="25"/>
+    <alias name="" field="iHyd_Q2" index="26"/>
+    <alias name="" field="iHyd_SPLow" index="27"/>
+    <alias name="" field="iHyd_SP2" index="28"/>
+    <alias name="" field="AgencyID" index="29"/>
+    <alias name="" field="oVC_HPE" index="30"/>
+    <alias name="" field="oVC_EX" index="31"/>
+    <alias name="" field="oCC_HPE" index="32"/>
+    <alias name="" field="mCC_HPE_CT" index="33"/>
+    <alias name="" field="oCC_EX" index="34"/>
+    <alias name="" field="mCC_EX_CT" index="35"/>
+    <alias name="" field="LimitationID" index="36"/>
+    <alias name="" field="RiskID" index="37"/>
+    <alias name="" field="OpportunityID" index="38"/>
+    <alias name="" field="iPC_Canal" index="39"/>
+    <alias name="" field="iPC_DivPts" index="40"/>
+    <alias name="" field="iPC_Privat" index="41"/>
+    <alias name="" field="oPC_Dist" index="42"/>
+    <alias name="" field="IsMainCh" index="43"/>
+    <alias name="" field="IsMultiCh" index="44"/>
+    <alias name="" field="mCC_HisDep" index="45"/>
+    <alias name="" field="Watershed" index="46"/>
+    <alias name="" field="ReachType" index="47"/>
+    <alias name="" field="Agency" index="48"/>
+    <alias name="" field="Limitation" index="49"/>
+    <alias name="" field="Risk" index="50"/>
+    <alias name="" field="Opportunity" index="51"/>
   </aliases>
-  <splitPolicies>
-    <policy field="ReachID" policy="Duplicate"/>
-    <policy field="ReachCode" policy="Duplicate"/>
-    <policy field="StreamName" policy="Duplicate"/>
-    <policy field="NHDPlusID" policy="Duplicate"/>
-    <policy field="WatershedID" policy="Duplicate"/>
-    <policy field="level_path" policy="Duplicate"/>
-    <policy field="ownership" policy="Duplicate"/>
-    <policy field="divergence" policy="Duplicate"/>
-    <policy field="stream_order" policy="Duplicate"/>
-    <policy field="us_state" policy="Duplicate"/>
-    <policy field="ecoregion_iii" policy="Duplicate"/>
-    <policy field="ecoregion_iv" policy="Duplicate"/>
-    <policy field="IsPeren" policy="Duplicate"/>
-    <policy field="iGeo_Slope" policy="Duplicate"/>
-    <policy field="iGeo_Len" policy="Duplicate"/>
-    <policy field="iGeo_DA" policy="Duplicate"/>
-    <policy field="iVeg100EX" policy="Duplicate"/>
-    <policy field="iVeg_30EX" policy="Duplicate"/>
-    <policy field="iVeg100HPE" policy="Duplicate"/>
-    <policy field="iVeg_30HPE" policy="Duplicate"/>
-    <policy field="iPC_Road" policy="Duplicate"/>
-    <policy field="iPC_RoadX" policy="Duplicate"/>
-    <policy field="iPC_RoadVB" policy="Duplicate"/>
-    <policy field="iPC_Rail" policy="Duplicate"/>
-    <policy field="iPC_RailVB" policy="Duplicate"/>
-    <policy field="iPC_LU" policy="Duplicate"/>
-    <policy field="iPC_VLowLU" policy="Duplicate"/>
-    <policy field="iPC_LowLU" policy="Duplicate"/>
-    <policy field="iPC_ModLU" policy="Duplicate"/>
-    <policy field="iPC_HighLU" policy="Duplicate"/>
-    <policy field="iHyd_QLow" policy="Duplicate"/>
-    <policy field="iHyd_Q2" policy="Duplicate"/>
-    <policy field="iHyd_SPLow" policy="Duplicate"/>
-    <policy field="iHyd_SP2" policy="Duplicate"/>
-    <policy field="oVC_HPE" policy="Duplicate"/>
-    <policy field="oVC_EX" policy="Duplicate"/>
-    <policy field="oCC_HPE" policy="Duplicate"/>
-    <policy field="mCC_HPE_CT" policy="Duplicate"/>
-    <policy field="oCC_EX" policy="Duplicate"/>
-    <policy field="mCC_EX_CT" policy="Duplicate"/>
-    <policy field="LimitationID" policy="Duplicate"/>
-    <policy field="RiskID" policy="Duplicate"/>
-    <policy field="OpportunityID" policy="Duplicate"/>
-    <policy field="iPC_Canal" policy="Duplicate"/>
-    <policy field="iPC_DivPts" policy="Duplicate"/>
-    <policy field="iPC_Privat" policy="Duplicate"/>
-    <policy field="oPC_Dist" policy="Duplicate"/>
-    <policy field="IsMainCh" policy="Duplicate"/>
-    <policy field="IsMultiCh" policy="Duplicate"/>
-    <policy field="mCC_HisDep" policy="Duplicate"/>
-    <policy field="Dam_Setting" policy="Duplicate"/>
-    <policy field="ReachType" policy="Duplicate"/>
-    <policy field="Limitation" policy="Duplicate"/>
-    <policy field="Risk" policy="Duplicate"/>
-    <policy field="Opportunity" policy="Duplicate"/>
-  </splitPolicies>
-  <duplicatePolicies>
-    <policy field="ReachID" policy="Duplicate"/>
-    <policy field="ReachCode" policy="Duplicate"/>
-    <policy field="StreamName" policy="Duplicate"/>
-    <policy field="NHDPlusID" policy="Duplicate"/>
-    <policy field="WatershedID" policy="Duplicate"/>
-    <policy field="level_path" policy="Duplicate"/>
-    <policy field="ownership" policy="Duplicate"/>
-    <policy field="divergence" policy="Duplicate"/>
-    <policy field="stream_order" policy="Duplicate"/>
-    <policy field="us_state" policy="Duplicate"/>
-    <policy field="ecoregion_iii" policy="Duplicate"/>
-    <policy field="ecoregion_iv" policy="Duplicate"/>
-    <policy field="IsPeren" policy="Duplicate"/>
-    <policy field="iGeo_Slope" policy="Duplicate"/>
-    <policy field="iGeo_Len" policy="Duplicate"/>
-    <policy field="iGeo_DA" policy="Duplicate"/>
-    <policy field="iVeg100EX" policy="Duplicate"/>
-    <policy field="iVeg_30EX" policy="Duplicate"/>
-    <policy field="iVeg100HPE" policy="Duplicate"/>
-    <policy field="iVeg_30HPE" policy="Duplicate"/>
-    <policy field="iPC_Road" policy="Duplicate"/>
-    <policy field="iPC_RoadX" policy="Duplicate"/>
-    <policy field="iPC_RoadVB" policy="Duplicate"/>
-    <policy field="iPC_Rail" policy="Duplicate"/>
-    <policy field="iPC_RailVB" policy="Duplicate"/>
-    <policy field="iPC_LU" policy="Duplicate"/>
-    <policy field="iPC_VLowLU" policy="Duplicate"/>
-    <policy field="iPC_LowLU" policy="Duplicate"/>
-    <policy field="iPC_ModLU" policy="Duplicate"/>
-    <policy field="iPC_HighLU" policy="Duplicate"/>
-    <policy field="iHyd_QLow" policy="Duplicate"/>
-    <policy field="iHyd_Q2" policy="Duplicate"/>
-    <policy field="iHyd_SPLow" policy="Duplicate"/>
-    <policy field="iHyd_SP2" policy="Duplicate"/>
-    <policy field="oVC_HPE" policy="Duplicate"/>
-    <policy field="oVC_EX" policy="Duplicate"/>
-    <policy field="oCC_HPE" policy="Duplicate"/>
-    <policy field="mCC_HPE_CT" policy="Duplicate"/>
-    <policy field="oCC_EX" policy="Duplicate"/>
-    <policy field="mCC_EX_CT" policy="Duplicate"/>
-    <policy field="LimitationID" policy="Duplicate"/>
-    <policy field="RiskID" policy="Duplicate"/>
-    <policy field="OpportunityID" policy="Duplicate"/>
-    <policy field="iPC_Canal" policy="Duplicate"/>
-    <policy field="iPC_DivPts" policy="Duplicate"/>
-    <policy field="iPC_Privat" policy="Duplicate"/>
-    <policy field="oPC_Dist" policy="Duplicate"/>
-    <policy field="IsMainCh" policy="Duplicate"/>
-    <policy field="IsMultiCh" policy="Duplicate"/>
-    <policy field="mCC_HisDep" policy="Duplicate"/>
-    <policy field="Dam_Setting" policy="Duplicate"/>
-    <policy field="ReachType" policy="Duplicate"/>
-    <policy field="Limitation" policy="Duplicate"/>
-    <policy field="Risk" policy="Duplicate"/>
-    <policy field="Opportunity" policy="Duplicate"/>
-  </duplicatePolicies>
   <defaults>
-    <default field="ReachID" expression="" applyOnUpdate="0"/>
-    <default field="ReachCode" expression="" applyOnUpdate="0"/>
-    <default field="StreamName" expression="" applyOnUpdate="0"/>
-    <default field="NHDPlusID" expression="" applyOnUpdate="0"/>
-    <default field="WatershedID" expression="" applyOnUpdate="0"/>
-    <default field="level_path" expression="" applyOnUpdate="0"/>
-    <default field="ownership" expression="" applyOnUpdate="0"/>
-    <default field="divergence" expression="" applyOnUpdate="0"/>
-    <default field="stream_order" expression="" applyOnUpdate="0"/>
-    <default field="us_state" expression="" applyOnUpdate="0"/>
-    <default field="ecoregion_iii" expression="" applyOnUpdate="0"/>
-    <default field="ecoregion_iv" expression="" applyOnUpdate="0"/>
-    <default field="IsPeren" expression="" applyOnUpdate="0"/>
-    <default field="iGeo_Slope" expression="" applyOnUpdate="0"/>
-    <default field="iGeo_Len" expression="" applyOnUpdate="0"/>
-    <default field="iGeo_DA" expression="" applyOnUpdate="0"/>
-    <default field="iVeg100EX" expression="" applyOnUpdate="0"/>
-    <default field="iVeg_30EX" expression="" applyOnUpdate="0"/>
-    <default field="iVeg100HPE" expression="" applyOnUpdate="0"/>
-    <default field="iVeg_30HPE" expression="" applyOnUpdate="0"/>
-    <default field="iPC_Road" expression="" applyOnUpdate="0"/>
-    <default field="iPC_RoadX" expression="" applyOnUpdate="0"/>
-    <default field="iPC_RoadVB" expression="" applyOnUpdate="0"/>
-    <default field="iPC_Rail" expression="" applyOnUpdate="0"/>
-    <default field="iPC_RailVB" expression="" applyOnUpdate="0"/>
-    <default field="iPC_LU" expression="" applyOnUpdate="0"/>
-    <default field="iPC_VLowLU" expression="" applyOnUpdate="0"/>
-    <default field="iPC_LowLU" expression="" applyOnUpdate="0"/>
-    <default field="iPC_ModLU" expression="" applyOnUpdate="0"/>
-    <default field="iPC_HighLU" expression="" applyOnUpdate="0"/>
-    <default field="iHyd_QLow" expression="" applyOnUpdate="0"/>
-    <default field="iHyd_Q2" expression="" applyOnUpdate="0"/>
-    <default field="iHyd_SPLow" expression="" applyOnUpdate="0"/>
-    <default field="iHyd_SP2" expression="" applyOnUpdate="0"/>
-    <default field="oVC_HPE" expression="" applyOnUpdate="0"/>
-    <default field="oVC_EX" expression="" applyOnUpdate="0"/>
-    <default field="oCC_HPE" expression="" applyOnUpdate="0"/>
-    <default field="mCC_HPE_CT" expression="" applyOnUpdate="0"/>
-    <default field="oCC_EX" expression="" applyOnUpdate="0"/>
-    <default field="mCC_EX_CT" expression="" applyOnUpdate="0"/>
-    <default field="LimitationID" expression="" applyOnUpdate="0"/>
-    <default field="RiskID" expression="" applyOnUpdate="0"/>
-    <default field="OpportunityID" expression="" applyOnUpdate="0"/>
-    <default field="iPC_Canal" expression="" applyOnUpdate="0"/>
-    <default field="iPC_DivPts" expression="" applyOnUpdate="0"/>
-    <default field="iPC_Privat" expression="" applyOnUpdate="0"/>
-    <default field="oPC_Dist" expression="" applyOnUpdate="0"/>
-    <default field="IsMainCh" expression="" applyOnUpdate="0"/>
-    <default field="IsMultiCh" expression="" applyOnUpdate="0"/>
-    <default field="mCC_HisDep" expression="" applyOnUpdate="0"/>
-    <default field="Dam_Setting" expression="" applyOnUpdate="0"/>
-    <default field="ReachType" expression="" applyOnUpdate="0"/>
-    <default field="Limitation" expression="" applyOnUpdate="0"/>
-    <default field="Risk" expression="" applyOnUpdate="0"/>
-    <default field="Opportunity" expression="" applyOnUpdate="0"/>
+    <default expression="" applyOnUpdate="0" field="ReachID"/>
+    <default expression="" applyOnUpdate="0" field="WatershedID"/>
+    <default expression="" applyOnUpdate="0" field="ReachCode"/>
+    <default expression="" applyOnUpdate="0" field="IsPeren"/>
+    <default expression="" applyOnUpdate="0" field="StreamName"/>
+    <default expression="" applyOnUpdate="0" field="Orig_DA"/>
+    <default expression="" applyOnUpdate="0" field="iGeo_Slope"/>
+    <default expression="" applyOnUpdate="0" field="iGeo_ElMax"/>
+    <default expression="" applyOnUpdate="0" field="iGeo_ElMin"/>
+    <default expression="" applyOnUpdate="0" field="iGeo_Len"/>
+    <default expression="" applyOnUpdate="0" field="iGeo_DA"/>
+    <default expression="" applyOnUpdate="0" field="iVeg100EX"/>
+    <default expression="" applyOnUpdate="0" field="iVeg_30EX"/>
+    <default expression="" applyOnUpdate="0" field="iVeg100HPE"/>
+    <default expression="" applyOnUpdate="0" field="iVeg_30HPE"/>
+    <default expression="" applyOnUpdate="0" field="iPC_Road"/>
+    <default expression="" applyOnUpdate="0" field="iPC_RoadX"/>
+    <default expression="" applyOnUpdate="0" field="iPC_RoadVB"/>
+    <default expression="" applyOnUpdate="0" field="iPC_Rail"/>
+    <default expression="" applyOnUpdate="0" field="iPC_RailVB"/>
+    <default expression="" applyOnUpdate="0" field="iPC_LU"/>
+    <default expression="" applyOnUpdate="0" field="iPC_VLowLU"/>
+    <default expression="" applyOnUpdate="0" field="iPC_LowLU"/>
+    <default expression="" applyOnUpdate="0" field="iPC_ModLU"/>
+    <default expression="" applyOnUpdate="0" field="iPC_HighLU"/>
+    <default expression="" applyOnUpdate="0" field="iHyd_QLow"/>
+    <default expression="" applyOnUpdate="0" field="iHyd_Q2"/>
+    <default expression="" applyOnUpdate="0" field="iHyd_SPLow"/>
+    <default expression="" applyOnUpdate="0" field="iHyd_SP2"/>
+    <default expression="" applyOnUpdate="0" field="AgencyID"/>
+    <default expression="" applyOnUpdate="0" field="oVC_HPE"/>
+    <default expression="" applyOnUpdate="0" field="oVC_EX"/>
+    <default expression="" applyOnUpdate="0" field="oCC_HPE"/>
+    <default expression="" applyOnUpdate="0" field="mCC_HPE_CT"/>
+    <default expression="" applyOnUpdate="0" field="oCC_EX"/>
+    <default expression="" applyOnUpdate="0" field="mCC_EX_CT"/>
+    <default expression="" applyOnUpdate="0" field="LimitationID"/>
+    <default expression="" applyOnUpdate="0" field="RiskID"/>
+    <default expression="" applyOnUpdate="0" field="OpportunityID"/>
+    <default expression="" applyOnUpdate="0" field="iPC_Canal"/>
+    <default expression="" applyOnUpdate="0" field="iPC_DivPts"/>
+    <default expression="" applyOnUpdate="0" field="iPC_Privat"/>
+    <default expression="" applyOnUpdate="0" field="oPC_Dist"/>
+    <default expression="" applyOnUpdate="0" field="IsMainCh"/>
+    <default expression="" applyOnUpdate="0" field="IsMultiCh"/>
+    <default expression="" applyOnUpdate="0" field="mCC_HisDep"/>
+    <default expression="" applyOnUpdate="0" field="Watershed"/>
+    <default expression="" applyOnUpdate="0" field="ReachType"/>
+    <default expression="" applyOnUpdate="0" field="Agency"/>
+    <default expression="" applyOnUpdate="0" field="Limitation"/>
+    <default expression="" applyOnUpdate="0" field="Risk"/>
+    <default expression="" applyOnUpdate="0" field="Opportunity"/>
   </defaults>
   <constraints>
-    <constraint field="ReachID" constraints="3" unique_strength="1" exp_strength="0" notnull_strength="1"/>
-    <constraint field="ReachCode" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="StreamName" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="NHDPlusID" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="WatershedID" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="level_path" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="ownership" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="divergence" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="stream_order" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="us_state" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="ecoregion_iii" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="ecoregion_iv" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="IsPeren" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iGeo_Slope" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iGeo_Len" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iGeo_DA" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iVeg100EX" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iVeg_30EX" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iVeg100HPE" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iVeg_30HPE" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_Road" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_RoadX" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_RoadVB" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_Rail" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_RailVB" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_LU" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_VLowLU" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_LowLU" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_ModLU" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_HighLU" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iHyd_QLow" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iHyd_Q2" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iHyd_SPLow" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iHyd_SP2" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="oVC_HPE" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="oVC_EX" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="oCC_HPE" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="mCC_HPE_CT" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="oCC_EX" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="mCC_EX_CT" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="LimitationID" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="RiskID" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="OpportunityID" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_Canal" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_DivPts" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="iPC_Privat" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="oPC_Dist" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="IsMainCh" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="IsMultiCh" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="mCC_HisDep" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="Dam_Setting" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="ReachType" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="Limitation" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="Risk" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="Opportunity" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint notnull_strength="0" field="ReachID" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="WatershedID" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="ReachCode" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="IsPeren" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="StreamName" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="Orig_DA" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iGeo_Slope" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iGeo_ElMax" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iGeo_ElMin" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iGeo_Len" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iGeo_DA" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iVeg100EX" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iVeg_30EX" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iVeg100HPE" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iVeg_30HPE" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_Road" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_RoadX" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_RoadVB" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_Rail" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_RailVB" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_LU" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_VLowLU" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_LowLU" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_ModLU" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_HighLU" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iHyd_QLow" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iHyd_Q2" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iHyd_SPLow" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iHyd_SP2" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="AgencyID" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="oVC_HPE" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="oVC_EX" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="oCC_HPE" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="mCC_HPE_CT" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="oCC_EX" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="mCC_EX_CT" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="LimitationID" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="RiskID" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="OpportunityID" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_Canal" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_DivPts" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="iPC_Privat" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="oPC_Dist" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="IsMainCh" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="IsMultiCh" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="mCC_HisDep" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="Watershed" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="ReachType" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="Agency" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="Limitation" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="Risk" constraints="0" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" field="Opportunity" constraints="0" unique_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint field="ReachID" exp="" desc=""/>
-    <constraint field="ReachCode" exp="" desc=""/>
-    <constraint field="StreamName" exp="" desc=""/>
-    <constraint field="NHDPlusID" exp="" desc=""/>
     <constraint field="WatershedID" exp="" desc=""/>
-    <constraint field="level_path" exp="" desc=""/>
-    <constraint field="ownership" exp="" desc=""/>
-    <constraint field="divergence" exp="" desc=""/>
-    <constraint field="stream_order" exp="" desc=""/>
-    <constraint field="us_state" exp="" desc=""/>
-    <constraint field="ecoregion_iii" exp="" desc=""/>
-    <constraint field="ecoregion_iv" exp="" desc=""/>
+    <constraint field="ReachCode" exp="" desc=""/>
     <constraint field="IsPeren" exp="" desc=""/>
+    <constraint field="StreamName" exp="" desc=""/>
+    <constraint field="Orig_DA" exp="" desc=""/>
     <constraint field="iGeo_Slope" exp="" desc=""/>
+    <constraint field="iGeo_ElMax" exp="" desc=""/>
+    <constraint field="iGeo_ElMin" exp="" desc=""/>
     <constraint field="iGeo_Len" exp="" desc=""/>
     <constraint field="iGeo_DA" exp="" desc=""/>
     <constraint field="iVeg100EX" exp="" desc=""/>
@@ -1402,6 +1158,7 @@
     <constraint field="iHyd_Q2" exp="" desc=""/>
     <constraint field="iHyd_SPLow" exp="" desc=""/>
     <constraint field="iHyd_SP2" exp="" desc=""/>
+    <constraint field="AgencyID" exp="" desc=""/>
     <constraint field="oVC_HPE" exp="" desc=""/>
     <constraint field="oVC_EX" exp="" desc=""/>
     <constraint field="oCC_HPE" exp="" desc=""/>
@@ -1418,8 +1175,9 @@
     <constraint field="IsMainCh" exp="" desc=""/>
     <constraint field="IsMultiCh" exp="" desc=""/>
     <constraint field="mCC_HisDep" exp="" desc=""/>
-    <constraint field="Dam_Setting" exp="" desc=""/>
+    <constraint field="Watershed" exp="" desc=""/>
     <constraint field="ReachType" exp="" desc=""/>
+    <constraint field="Agency" exp="" desc=""/>
     <constraint field="Limitation" exp="" desc=""/>
     <constraint field="Risk" exp="" desc=""/>
     <constraint field="Opportunity" exp="" desc=""/>
@@ -1428,64 +1186,61 @@
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
     <columns>
-      <column name="ReachID" type="field" hidden="0" width="-1"/>
-      <column name="WatershedID" type="field" hidden="0" width="-1"/>
-      <column name="ReachCode" type="field" hidden="0" width="-1"/>
-      <column name="IsPeren" type="field" hidden="0" width="-1"/>
-      <column name="StreamName" type="field" hidden="0" width="-1"/>
-      <column name="iGeo_Slope" type="field" hidden="0" width="-1"/>
-      <column name="iGeo_Len" type="field" hidden="0" width="-1"/>
-      <column name="iGeo_DA" type="field" hidden="0" width="-1"/>
-      <column name="iVeg100EX" type="field" hidden="0" width="-1"/>
-      <column name="iVeg_30EX" type="field" hidden="0" width="-1"/>
-      <column name="iVeg100HPE" type="field" hidden="0" width="-1"/>
-      <column name="iVeg_30HPE" type="field" hidden="0" width="-1"/>
-      <column name="iPC_Road" type="field" hidden="0" width="-1"/>
-      <column name="iPC_RoadX" type="field" hidden="0" width="-1"/>
-      <column name="iPC_RoadVB" type="field" hidden="0" width="-1"/>
-      <column name="iPC_Rail" type="field" hidden="0" width="-1"/>
-      <column name="iPC_RailVB" type="field" hidden="0" width="-1"/>
-      <column name="iPC_LU" type="field" hidden="0" width="-1"/>
-      <column name="iPC_VLowLU" type="field" hidden="0" width="-1"/>
-      <column name="iPC_LowLU" type="field" hidden="0" width="-1"/>
-      <column name="iPC_ModLU" type="field" hidden="0" width="-1"/>
-      <column name="iPC_HighLU" type="field" hidden="0" width="-1"/>
-      <column name="iHyd_QLow" type="field" hidden="0" width="-1"/>
-      <column name="iHyd_Q2" type="field" hidden="0" width="-1"/>
-      <column name="iHyd_SPLow" type="field" hidden="0" width="-1"/>
-      <column name="iHyd_SP2" type="field" hidden="0" width="-1"/>
-      <column name="oVC_HPE" type="field" hidden="0" width="-1"/>
-      <column name="oVC_EX" type="field" hidden="0" width="-1"/>
-      <column name="oCC_HPE" type="field" hidden="0" width="-1"/>
-      <column name="mCC_HPE_CT" type="field" hidden="0" width="-1"/>
-      <column name="oCC_EX" type="field" hidden="0" width="-1"/>
-      <column name="mCC_EX_CT" type="field" hidden="0" width="-1"/>
-      <column name="LimitationID" type="field" hidden="0" width="-1"/>
-      <column name="RiskID" type="field" hidden="0" width="-1"/>
-      <column name="OpportunityID" type="field" hidden="0" width="-1"/>
-      <column name="iPC_Canal" type="field" hidden="0" width="-1"/>
-      <column name="iPC_DivPts" type="field" hidden="0" width="-1"/>
-      <column name="iPC_Privat" type="field" hidden="0" width="-1"/>
-      <column name="oPC_Dist" type="field" hidden="0" width="-1"/>
-      <column name="IsMainCh" type="field" hidden="0" width="-1"/>
-      <column name="IsMultiCh" type="field" hidden="0" width="-1"/>
-      <column name="mCC_HisDep" type="field" hidden="0" width="-1"/>
-      <column name="ReachType" type="field" hidden="0" width="-1"/>
-      <column name="Limitation" type="field" hidden="0" width="-1"/>
-      <column name="Risk" type="field" hidden="0" width="-1"/>
-      <column name="Opportunity" type="field" hidden="0" width="-1"/>
-      <column name="NHDPlusID" type="field" hidden="0" width="-1"/>
-      <column name="level_path" type="field" hidden="0" width="-1"/>
-      <column name="ownership" type="field" hidden="0" width="-1"/>
-      <column name="divergence" type="field" hidden="0" width="-1"/>
-      <column name="stream_order" type="field" hidden="0" width="-1"/>
-      <column name="us_state" type="field" hidden="0" width="-1"/>
-      <column name="ecoregion_iii" type="field" hidden="0" width="-1"/>
-      <column name="ecoregion_iv" type="field" hidden="0" width="-1"/>
-      <column name="Dam_Setting" type="field" hidden="0" width="-1"/>
-      <column type="actions" hidden="1" width="-1"/>
+      <column name="ReachID" hidden="0" type="field" width="-1"/>
+      <column name="WatershedID" hidden="0" type="field" width="-1"/>
+      <column name="ReachCode" hidden="0" type="field" width="-1"/>
+      <column name="IsPeren" hidden="0" type="field" width="-1"/>
+      <column name="StreamName" hidden="0" type="field" width="-1"/>
+      <column name="Orig_DA" hidden="0" type="field" width="-1"/>
+      <column name="iGeo_Slope" hidden="0" type="field" width="-1"/>
+      <column name="iGeo_ElMax" hidden="0" type="field" width="-1"/>
+      <column name="iGeo_ElMin" hidden="0" type="field" width="-1"/>
+      <column name="iGeo_Len" hidden="0" type="field" width="-1"/>
+      <column name="iGeo_DA" hidden="0" type="field" width="-1"/>
+      <column name="iVeg100EX" hidden="0" type="field" width="-1"/>
+      <column name="iVeg_30EX" hidden="0" type="field" width="-1"/>
+      <column name="iVeg100HPE" hidden="0" type="field" width="-1"/>
+      <column name="iVeg_30HPE" hidden="0" type="field" width="-1"/>
+      <column name="iPC_Road" hidden="0" type="field" width="-1"/>
+      <column name="iPC_RoadX" hidden="0" type="field" width="-1"/>
+      <column name="iPC_RoadVB" hidden="0" type="field" width="-1"/>
+      <column name="iPC_Rail" hidden="0" type="field" width="-1"/>
+      <column name="iPC_RailVB" hidden="0" type="field" width="-1"/>
+      <column name="iPC_LU" hidden="0" type="field" width="-1"/>
+      <column name="iPC_VLowLU" hidden="0" type="field" width="-1"/>
+      <column name="iPC_LowLU" hidden="0" type="field" width="-1"/>
+      <column name="iPC_ModLU" hidden="0" type="field" width="-1"/>
+      <column name="iPC_HighLU" hidden="0" type="field" width="-1"/>
+      <column name="iHyd_QLow" hidden="0" type="field" width="-1"/>
+      <column name="iHyd_Q2" hidden="0" type="field" width="-1"/>
+      <column name="iHyd_SPLow" hidden="0" type="field" width="-1"/>
+      <column name="iHyd_SP2" hidden="0" type="field" width="-1"/>
+      <column name="AgencyID" hidden="0" type="field" width="-1"/>
+      <column name="oVC_HPE" hidden="0" type="field" width="-1"/>
+      <column name="oVC_EX" hidden="0" type="field" width="-1"/>
+      <column name="oCC_HPE" hidden="0" type="field" width="-1"/>
+      <column name="mCC_HPE_CT" hidden="0" type="field" width="-1"/>
+      <column name="oCC_EX" hidden="0" type="field" width="-1"/>
+      <column name="mCC_EX_CT" hidden="0" type="field" width="-1"/>
+      <column name="LimitationID" hidden="0" type="field" width="-1"/>
+      <column name="RiskID" hidden="0" type="field" width="-1"/>
+      <column name="OpportunityID" hidden="0" type="field" width="-1"/>
+      <column name="iPC_Canal" hidden="0" type="field" width="-1"/>
+      <column name="iPC_DivPts" hidden="0" type="field" width="-1"/>
+      <column name="iPC_Privat" hidden="0" type="field" width="-1"/>
+      <column name="oPC_Dist" hidden="0" type="field" width="-1"/>
+      <column name="IsMainCh" hidden="0" type="field" width="-1"/>
+      <column name="IsMultiCh" hidden="0" type="field" width="-1"/>
+      <column name="mCC_HisDep" hidden="0" type="field" width="-1"/>
+      <column name="Watershed" hidden="0" type="field" width="-1"/>
+      <column name="ReachType" hidden="0" type="field" width="-1"/>
+      <column name="Agency" hidden="0" type="field" width="-1"/>
+      <column name="Limitation" hidden="0" type="field" width="-1"/>
+      <column name="Risk" hidden="0" type="field" width="-1"/>
+      <column name="Opportunity" hidden="0" type="field" width="-1"/>
+      <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -1519,13 +1274,11 @@ def my_form_open(dialog, layer, feature):
   <editable>
     <field name="Agency" editable="1"/>
     <field name="AgencyID" editable="1"/>
-    <field name="Dam_Setting" editable="1"/>
     <field name="IsMainCh" editable="1"/>
     <field name="IsMultiCh" editable="1"/>
     <field name="IsPeren" editable="1"/>
     <field name="Limitation" editable="1"/>
     <field name="LimitationID" editable="1"/>
-    <field name="NHDPlusID" editable="1"/>
     <field name="Opportunity" editable="1"/>
     <field name="OpportunityID" editable="1"/>
     <field name="Orig_DA" editable="1"/>
@@ -1537,9 +1290,6 @@ def my_form_open(dialog, layer, feature):
     <field name="StreamName" editable="1"/>
     <field name="Watershed" editable="1"/>
     <field name="WatershedID" editable="1"/>
-    <field name="divergence" editable="1"/>
-    <field name="ecoregion_iii" editable="1"/>
-    <field name="ecoregion_iv" editable="1"/>
     <field name="iGeo_DA" editable="1"/>
     <field name="iGeo_ElMax" editable="1"/>
     <field name="iGeo_ElMin" editable="1"/>
@@ -1566,7 +1316,6 @@ def my_form_open(dialog, layer, feature):
     <field name="iVeg100HPE" editable="1"/>
     <field name="iVeg_30EX" editable="1"/>
     <field name="iVeg_30HPE" editable="1"/>
-    <field name="level_path" editable="1"/>
     <field name="mCC_EX_CT" editable="1"/>
     <field name="mCC_HPE_CT" editable="1"/>
     <field name="mCC_HisDep" editable="1"/>
@@ -1575,83 +1324,69 @@ def my_form_open(dialog, layer, feature):
     <field name="oPC_Dist" editable="1"/>
     <field name="oVC_EX" editable="1"/>
     <field name="oVC_HPE" editable="1"/>
-    <field name="ownership" editable="1"/>
-    <field name="stream_order" editable="1"/>
-    <field name="us_state" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="Agency"/>
-    <field labelOnTop="0" name="AgencyID"/>
-    <field labelOnTop="0" name="Dam_Setting"/>
-    <field labelOnTop="0" name="IsMainCh"/>
-    <field labelOnTop="0" name="IsMultiCh"/>
-    <field labelOnTop="0" name="IsPeren"/>
-    <field labelOnTop="0" name="Limitation"/>
-    <field labelOnTop="0" name="LimitationID"/>
-    <field labelOnTop="0" name="NHDPlusID"/>
-    <field labelOnTop="0" name="Opportunity"/>
-    <field labelOnTop="0" name="OpportunityID"/>
-    <field labelOnTop="0" name="Orig_DA"/>
-    <field labelOnTop="0" name="ReachCode"/>
-    <field labelOnTop="0" name="ReachID"/>
-    <field labelOnTop="0" name="ReachType"/>
-    <field labelOnTop="0" name="Risk"/>
-    <field labelOnTop="0" name="RiskID"/>
-    <field labelOnTop="0" name="StreamName"/>
-    <field labelOnTop="0" name="Watershed"/>
-    <field labelOnTop="0" name="WatershedID"/>
-    <field labelOnTop="0" name="divergence"/>
-    <field labelOnTop="0" name="ecoregion_iii"/>
-    <field labelOnTop="0" name="ecoregion_iv"/>
-    <field labelOnTop="0" name="iGeo_DA"/>
-    <field labelOnTop="0" name="iGeo_ElMax"/>
-    <field labelOnTop="0" name="iGeo_ElMin"/>
-    <field labelOnTop="0" name="iGeo_Len"/>
-    <field labelOnTop="0" name="iGeo_Slope"/>
-    <field labelOnTop="0" name="iHyd_Q2"/>
-    <field labelOnTop="0" name="iHyd_QLow"/>
-    <field labelOnTop="0" name="iHyd_SP2"/>
-    <field labelOnTop="0" name="iHyd_SPLow"/>
-    <field labelOnTop="0" name="iPC_Canal"/>
-    <field labelOnTop="0" name="iPC_DivPts"/>
-    <field labelOnTop="0" name="iPC_HighLU"/>
-    <field labelOnTop="0" name="iPC_LU"/>
-    <field labelOnTop="0" name="iPC_LowLU"/>
-    <field labelOnTop="0" name="iPC_ModLU"/>
-    <field labelOnTop="0" name="iPC_Privat"/>
-    <field labelOnTop="0" name="iPC_Rail"/>
-    <field labelOnTop="0" name="iPC_RailVB"/>
-    <field labelOnTop="0" name="iPC_Road"/>
-    <field labelOnTop="0" name="iPC_RoadVB"/>
-    <field labelOnTop="0" name="iPC_RoadX"/>
-    <field labelOnTop="0" name="iPC_VLowLU"/>
-    <field labelOnTop="0" name="iVeg100EX"/>
-    <field labelOnTop="0" name="iVeg100HPE"/>
-    <field labelOnTop="0" name="iVeg_30EX"/>
-    <field labelOnTop="0" name="iVeg_30HPE"/>
-    <field labelOnTop="0" name="level_path"/>
-    <field labelOnTop="0" name="mCC_EX_CT"/>
-    <field labelOnTop="0" name="mCC_HPE_CT"/>
-    <field labelOnTop="0" name="mCC_HisDep"/>
-    <field labelOnTop="0" name="oCC_EX"/>
-    <field labelOnTop="0" name="oCC_HPE"/>
-    <field labelOnTop="0" name="oPC_Dist"/>
-    <field labelOnTop="0" name="oVC_EX"/>
-    <field labelOnTop="0" name="oVC_HPE"/>
-    <field labelOnTop="0" name="ownership"/>
-    <field labelOnTop="0" name="stream_order"/>
-    <field labelOnTop="0" name="us_state"/>
+    <field name="Agency" labelOnTop="0"/>
+    <field name="AgencyID" labelOnTop="0"/>
+    <field name="IsMainCh" labelOnTop="0"/>
+    <field name="IsMultiCh" labelOnTop="0"/>
+    <field name="IsPeren" labelOnTop="0"/>
+    <field name="Limitation" labelOnTop="0"/>
+    <field name="LimitationID" labelOnTop="0"/>
+    <field name="Opportunity" labelOnTop="0"/>
+    <field name="OpportunityID" labelOnTop="0"/>
+    <field name="Orig_DA" labelOnTop="0"/>
+    <field name="ReachCode" labelOnTop="0"/>
+    <field name="ReachID" labelOnTop="0"/>
+    <field name="ReachType" labelOnTop="0"/>
+    <field name="Risk" labelOnTop="0"/>
+    <field name="RiskID" labelOnTop="0"/>
+    <field name="StreamName" labelOnTop="0"/>
+    <field name="Watershed" labelOnTop="0"/>
+    <field name="WatershedID" labelOnTop="0"/>
+    <field name="iGeo_DA" labelOnTop="0"/>
+    <field name="iGeo_ElMax" labelOnTop="0"/>
+    <field name="iGeo_ElMin" labelOnTop="0"/>
+    <field name="iGeo_Len" labelOnTop="0"/>
+    <field name="iGeo_Slope" labelOnTop="0"/>
+    <field name="iHyd_Q2" labelOnTop="0"/>
+    <field name="iHyd_QLow" labelOnTop="0"/>
+    <field name="iHyd_SP2" labelOnTop="0"/>
+    <field name="iHyd_SPLow" labelOnTop="0"/>
+    <field name="iPC_Canal" labelOnTop="0"/>
+    <field name="iPC_DivPts" labelOnTop="0"/>
+    <field name="iPC_HighLU" labelOnTop="0"/>
+    <field name="iPC_LU" labelOnTop="0"/>
+    <field name="iPC_LowLU" labelOnTop="0"/>
+    <field name="iPC_ModLU" labelOnTop="0"/>
+    <field name="iPC_Privat" labelOnTop="0"/>
+    <field name="iPC_Rail" labelOnTop="0"/>
+    <field name="iPC_RailVB" labelOnTop="0"/>
+    <field name="iPC_Road" labelOnTop="0"/>
+    <field name="iPC_RoadVB" labelOnTop="0"/>
+    <field name="iPC_RoadX" labelOnTop="0"/>
+    <field name="iPC_VLowLU" labelOnTop="0"/>
+    <field name="iVeg100EX" labelOnTop="0"/>
+    <field name="iVeg100HPE" labelOnTop="0"/>
+    <field name="iVeg_30EX" labelOnTop="0"/>
+    <field name="iVeg_30HPE" labelOnTop="0"/>
+    <field name="mCC_EX_CT" labelOnTop="0"/>
+    <field name="mCC_HPE_CT" labelOnTop="0"/>
+    <field name="mCC_HisDep" labelOnTop="0"/>
+    <field name="oCC_EX" labelOnTop="0"/>
+    <field name="oCC_HPE" labelOnTop="0"/>
+    <field name="oPC_Dist" labelOnTop="0"/>
+    <field name="oVC_EX" labelOnTop="0"/>
+    <field name="oVC_HPE" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="Agency" reuseLastValue="0"/>
     <field name="AgencyID" reuseLastValue="0"/>
-    <field name="Dam_Setting" reuseLastValue="0"/>
     <field name="IsMainCh" reuseLastValue="0"/>
     <field name="IsMultiCh" reuseLastValue="0"/>
     <field name="IsPeren" reuseLastValue="0"/>
     <field name="Limitation" reuseLastValue="0"/>
     <field name="LimitationID" reuseLastValue="0"/>
-    <field name="NHDPlusID" reuseLastValue="0"/>
     <field name="Opportunity" reuseLastValue="0"/>
     <field name="OpportunityID" reuseLastValue="0"/>
     <field name="Orig_DA" reuseLastValue="0"/>
@@ -1663,9 +1398,6 @@ def my_form_open(dialog, layer, feature):
     <field name="StreamName" reuseLastValue="0"/>
     <field name="Watershed" reuseLastValue="0"/>
     <field name="WatershedID" reuseLastValue="0"/>
-    <field name="divergence" reuseLastValue="0"/>
-    <field name="ecoregion_iii" reuseLastValue="0"/>
-    <field name="ecoregion_iv" reuseLastValue="0"/>
     <field name="iGeo_DA" reuseLastValue="0"/>
     <field name="iGeo_ElMax" reuseLastValue="0"/>
     <field name="iGeo_ElMin" reuseLastValue="0"/>
@@ -1692,7 +1424,6 @@ def my_form_open(dialog, layer, feature):
     <field name="iVeg100HPE" reuseLastValue="0"/>
     <field name="iVeg_30EX" reuseLastValue="0"/>
     <field name="iVeg_30HPE" reuseLastValue="0"/>
-    <field name="level_path" reuseLastValue="0"/>
     <field name="mCC_EX_CT" reuseLastValue="0"/>
     <field name="mCC_HPE_CT" reuseLastValue="0"/>
     <field name="mCC_HisDep" reuseLastValue="0"/>
@@ -1701,13 +1432,10 @@ def my_form_open(dialog, layer, feature):
     <field name="oPC_Dist" reuseLastValue="0"/>
     <field name="oVC_EX" reuseLastValue="0"/>
     <field name="oVC_HPE" reuseLastValue="0"/>
-    <field name="ownership" reuseLastValue="0"/>
-    <field name="stream_order" reuseLastValue="0"/>
-    <field name="us_state" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
   <previewExpression>"StreamName"</previewExpression>
-  <mapTip enabled="1"></mapTip>
+  <mapTip></mapTip>
   <layerGeometryType>1</layerGeometryType>
 </qgis>
