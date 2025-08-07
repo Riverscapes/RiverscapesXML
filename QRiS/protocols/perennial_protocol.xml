@@ -1,0 +1,162 @@
+<Protocol machine_code="BEAVER_CENSUS" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Perennial Streamflow Protocol</Label>
+    <Description>Assessment of perennial vs non-perennial streamflow</Description>
+    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-07-23</CreationDate>
+    <UpdatedDate>2025-07-23</UpdatedDate>
+    <Layers>
+        <Layer id="observations" version="1.0" geom_type="Point">
+            <Label>Observations</Label>
+            <Symbology>observations_perennial_protocol.qml</Symbology>
+            <Description>Observation Points Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Observations</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="flow_type" version="1.0">
+                    <Label>Flow Type</Label>
+                    <Values>
+                        <Value>Perennial</Value>
+                        <Value>Intermittent</Value>
+                        <Value>Ephemeral</Value> 
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                    <DefaultValue>None</DefaultValue>
+                </TextField>
+                <AttachmentField id="photo_path" version="1.0">
+                    <Label>Photo Path</Label>
+                </AttachmentField>                              
+            </Fields>                        
+        </Layer>
+        <Layer id="flow_type" version="1.0" geom_type="Linestring">
+            <Label>Flow Type</Label>
+            <Symbology>flow_type_perennial_protocol.qml</Symbology>
+            <Description>Flow Type Line Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Observations</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="flow_type" version="1.0">
+                    <Label>Flow Type</Label>
+                    <Values>
+                        <Value>Perennial</Value>
+                        <Value>Intermittent</Value>
+                        <Value>Ephemeral</Value> 
+                    </Values>                       
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                    <DefaultValue>None</DefaultValue>
+                </TextField>                             
+            </Fields>  
+        </Layer>                              
+    </Layers>
+    <Metrics>
+        <Metric id="perennial_length" version="1.0" calculation_machine_code="length">
+            <Label>Perennial Stream Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Sum of all perennial channel lengths.</Description>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Perennial</Value>
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="perennial_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Perennial</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of total channel length that is perennial.</Description>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Perennial</Value>
+                    </AttributeFilter>                
+                </DCELayer>  
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Denominator</Usage>
+                </DCELayer>          
+            </Parameters>
+        </Metric>
+        <Metric id="intermittent_length" version="1.0" calculation_machine_code="length">
+            <Label>Intermittent Stream Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Sum of all intermittent channel lengths.</Description>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Intermittent</Value>
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="intermittent_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Intermittent</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of total channel length that is intermittent.</Description>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Intermittent</Value>
+                    </AttributeFilter>                
+                </DCELayer>  
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Denominator</Usage>
+                </DCELayer>          
+            </Parameters>
+        </Metric>  
+        <Metric id="ephemeral_length" version="1.0" calculation_machine_code="length">
+            <Label>Ephemeral Stream Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Sum of all ephemeral channel lengths.</Description>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Ephemeral</Value>
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="ephemeral_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Ephemeral</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of total channel length that is ephemeral.</Description>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Ephemeral</Value>
+                    </AttributeFilter>                
+                </DCELayer>  
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Denominator</Usage>
+                </DCELayer>          
+            </Parameters>
+        </Metric>            
+    </Metrics>
+</Protocol>

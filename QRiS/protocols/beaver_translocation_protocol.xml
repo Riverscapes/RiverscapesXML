@@ -1,0 +1,238 @@
+<Protocol machine_code="BEAVER_CENSUS" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Beaver Translocation Protocol</Label>
+    <Description>Beaver Translocation Layers for Assessment</Description>
+    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-07-23</CreationDate>
+    <UpdatedDate>2025-07-23</UpdatedDate>
+    <Layers>
+        <Layer id="beaver_translocation_site_observations" version="1.0" geom_type="Polygon">
+            <Label>Site Observations</Label>
+            <Symbology>site_observations.qml</Symbology>
+            <Description>Observations for Beaver Translocation Site</Description>
+            <Hierarchy>
+                <HierarchyItem>Observations</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <TextField id="site_id" version="1.0">
+                    <Label>Site ID</Label>                    
+                </TextField>
+                <IntegerField id="observed_beaver" version="1.0">
+                    <Label>Observed Beaver</Label>
+                </IntegerField>
+                <IntegerField id="active_dams" version="1.0">
+                    <Label>Active Dams</Label>
+                </IntegerField>
+                <IntegerField id="active_dens" version="1.0">
+                    <Label>Active Dens</Label>
+                </IntegerField>
+                <IntegerField id="active_lodges" version="1.0">
+                    <Label>Active Lodges</Label>
+                </IntegerField>
+                <IntegerField id="forage_chaches" version="1.0">
+                    <Label>Forage Chaches</Label>
+                </IntegerField> 
+                <ListField id="tracks" version="1.0">
+                    <Label>Tracks</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>        
+                </ListField>
+                <ListField id="fresh_chewings_cuttings" version="1.0">
+                    <Label>Fresh Chewings/Cuttings</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <ListField id="scent_mounds_droppings" version="1.0">
+                    <Label>Scent Mounds/Droppings</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField> 
+                <TextField id="other" version="1.0">
+                    <Label>Other Observations</Label>
+                    <DefaultValue>None</DefaultValue>
+                </TextField>                           
+                <ListField id="landowner_risk" version="1.0">
+                    <Label>Landowner Risk</Label>                    
+                    <Values>
+                        <Value>High</Value>
+                        <Value>Medium</Value>
+                        <Value>Low</Value>                                              
+                    </Values>
+                </ListField>
+                <ListField id="infrastructure_risk" version="1.0">
+                    <Label>Infrastructure Risk</Label>
+                    <Values>
+                        <Value>High</Value>
+                        <Value>Medium</Value>
+                        <Value>Low</Value>
+                    </Values>                    
+                </ListField>                           
+            </Fields>                        
+        </Layer>
+        <Layer id="suitability_assessment" version="1.0" geom_type="Linestring">
+            <Label>Suitability Assessment</Label>
+            <Symbology>suitability_assessment.qml</Symbology>
+            <Description>Assessment of Habitat and Geomorphic Features for Beaver Translocation Site</Description>
+            <Hierarchy>
+                <HierarchyItem>Observations</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <TextField id="site_id" version="1.0">
+                    <Label>Site ID</Label>                    
+                </TextField>
+                <ListField id="stream_gradient" version="1.0">
+                    <Label>Stream Gradient</Label>                    
+                    <Values>
+                        <Value>≤3%</Value>
+                        <Value>4-6%</Value>    
+                        <Value>≥7%</Value>
+                    </Values>
+                </ListField>
+                <ListField id="stream_flow" version="1.0">
+                    <Label>Stream Flow (cfs)</Label>
+                    <Values>
+                        <Value>Low (≤10 cfs)</Value>
+                        <Value>Moderate (11-50 cfs)</Value>
+                        <Value>High (≥51 cfs)</Value> 
+                    </Values>                   
+                </ListField>
+                <FloatField id="stream_depth" version="1.0">
+                    <Label>Stream Depth (ft)</Label>
+                    <DefaultValue>0.0</DefaultValue>
+                </FloatField>
+                <ListField id="pools" version="1.0">
+                    <Label>Multiple Pools Greater than 3 ft</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <ListField id="stream_substrate" version="1.0">
+                    <Label>Stream Substrate Type</Label>
+                    <Values>
+                        <Value>Silt/Clay/Mud</Value>
+                        <Value>Sand</Value>
+                        <Value>Gravel</Value>
+                        <Value>Cobble/Boulders</Value>
+                        <Value>Bedrock</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="habitat_unit_availability" version="1.0">
+                    <Label>Habitat Unit Availability</Label>
+                    <Values>
+                        <Value>Large Pond</Value>
+                        <Value>≥2000 ft of stream length in each direction</Value>
+                        <Value>≤2000 ft of stream length in each direction</Value>                        
+                    </Values>
+                </ListField>
+                <ListField id="hardwood_food_source" version="1.0">
+                    <Label>Hardwood Food Source (aspen, willow, alder, etc)</Label>
+                    <Values>
+                        <Value>≤30 ft</Value>
+                        <Value>≤100 ft</Value>
+                        <Value>≤300 ft</Value>
+                        <Value>≥300 ft</Value>
+                    </Values>
+                </ListField>
+                <ListField id="hardwood_food_abundance" version="1.0">
+                    <Label >Hardwood Food Source Abundance</Label>
+                    <Values>
+                        <Value>Plenty</Value>
+                        <Value>Some</Value>
+                        <Value>Few</Value>
+                    </Values>
+                </ListField>
+                <ListField id="herbaceous_food" version="1.0">
+                    <Label>Herbaceous Food Source (aquatic vegetation, grasses, forbs, and/or shrubs)</Label>
+                    <Values>
+                        <Value>Abundant</Value>
+                        <Value>Minimal</Value>
+                    </Values>
+                </ListField>
+                <ListField id="adjacent_floodplain" version="1.0">
+                    <Label>Adjacent Floodplain</Label>
+                    <Values>
+                        <Value>Adjacent Floodplain</Value>
+                        <Value>Narrow Channel</Value>
+                    </Values>
+                </ListField>
+                <ListField id="bank_height" version="1.0">
+                    <Label>Bank Height</Label>
+                    <Values>
+                        <Value>Low (≤3 ft)</Value>
+                        <Value>Moderate (3-6 ft)</Value>
+                        <Value>High (≥6 ft)</Value>
+                    </Values>
+                </ListField>
+                <ListField id="bank_substrate" version="1.0">
+                    <Label>Bank Substrate Type</Label>
+                    <Values>
+                        <Value>Silt/Clay/Mud</Value>
+                        <Value>Sand</Value>
+                        <Value>Gravel</Value>
+                        <Value>Cobble/Boulders</Value>
+                        <Value>Bedrock</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="dam_lodge_building_materials" version="1.0">
+                    <Label>Dam/Lodge Building Materials</Label>
+                    <Values>
+                        <Value>Variety of 1-6" Diameter Woody Vegetation Available</Value>
+                        <Value>Insufficient Building Material Present</Value>                        
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                    <DefaultValue>None</DefaultValue>
+                </TextField>                
+            </Fields>                                     
+        </Layer>     
+            <Layer id="beaver_release_monitoring" version="1.0" geom_type="Point">
+            <Label>Post Release Monitoring Assessment</Label>
+            <Symbology>beaver_release.qml</Symbology>
+            <Description>Post Release Monitoring at Beaver Translocaton Site</Description>
+            <Hierarchy>
+                <HierarchyItem>Monitoring</HierarchyItem>            
+            </Hierarchy>
+            <Fields>
+                <TextField id="site_id" version="1.0">
+                    <Label>Site ID</Label>                    
+                </TextField>
+                <TextField id="permit_number" version="1.0">
+                    <Label>Permit Number</Label>                                      
+                </TextField>                                                                        
+                <IntegerField id="number_of_beaver" version="1.0">
+                    <Label>Number of Beaver Released</Label>
+                    <DefaultValue>0</DefaultValue>
+                </IntegerField>                                           
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>                    
+                </TextField>                                               
+            </Fields> 
+        </Layer>
+    </Layers>
+    <Metrics>
+        <Metric id="beaver_released" version="1.0" calculation_machine_code="count">
+            <Label>Beaver Released</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total beaver released within sample frames.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="beaver_release_monitoring">
+                    <CountFields><CountField field_id_ref="number_of_beaver" />
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+    </Metrics>
+</Protocol>
