@@ -23,18 +23,34 @@
               </Node> 
             </Children>
           </Node>
-          <Node label="Riverscape Network">
+          <Node label="Riverscape Network (IGO)">
             <Children>
               <Node label="Baseflow (IGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow" symbology="igo_baseflow" />
               <Node label="Flood (IGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood" symbology="igo_flood" />
               <Node label="Baseflow Stream Power (IGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow_sp" symbology="igo_low_stream_power" />
               <Node label="Flood Stream Power (IGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_sp" symbology="igo_q2_stream_power" />
-              <Node label="Riverscape Network - Perennial Only">
+              <Node label="Riverscape Network (IGO) - Perennial Only">
                 <Children collapsed="true">
                   <Node label="Baseflow (IGO) (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow_per" symbology="igo_baseflow_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Flood (IGO) (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_per" symbology="igo_flood_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Baseflow Stream Power (IGO) (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_baseflow_sp_per" symbology="igo_low_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Flood Stream Power (IGO) (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" id="igo_flood_sp_per" symbology="igo_q2_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+          <Node label="Riverscape Network (DGO)">
+            <Children>
+              <Node label="Baseflow (DGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_baseflow" symbology="dgo_baseflow" />
+              <Node label="Flood (DGO) (cfs)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_flood" symbology="dgo_flood" />
+              <Node label="Baseflow Stream Power (DGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_baseflow_sp" symbology="dgo_low_stream_power" />
+              <Node label="Flood Stream Power (DGO) (watts)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_flood_sp" symbology="dgo_q2_stream_power" />
+              <Node label="Riverscape Network (DGO) - Perennial Only">
+                <Children collapsed="true">
+                  <Node label="Baseflow (DGO) (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_baseflow_per" symbology="dgo_baseflow_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+                  <Node label="Flood (DGO) (cfs) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_flood_per" symbology="dgo_flood_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+                  <Node label="Baseflow Stream Power (DGO) (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_baseflow_sp_per" symbology="dgo_low_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+                  <Node label="Flood Stream Power (DGO) (watts) - Perennial" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" id="dgo_flood_sp_per" symbology="dgo_q2_stream_power_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                 </Children>
               </Node>
             </Children>

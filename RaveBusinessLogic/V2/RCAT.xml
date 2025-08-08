@@ -12,6 +12,12 @@
                             <Node label="Riparian Condition - Perennial (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_per" id="rcat_condition_igo_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                         </Children>
                     </Node>
+                    <Node label="DGOs">
+                        <Children collapsed="true">
+                            <Node label="Riparian Condition (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="condition_dgo" id="rcat_condition_dgo"/>
+                            <Node label="Riparian Condition - Perennial (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="condition_dgo_per" id="rcat_condition_dgo_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+                        </Children>
+                    </Node>
                     <Node label="Reaches">
                         <Children>
                             <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition_v2" id="rcat_condition" />
@@ -28,6 +34,12 @@
                             <Node label="Land Use Intensity (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="iPC_LU_igo" id="LUI_igo" />
                             <Node label="Floodplain Accessibility (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="FPAccess_igo" id="fpaccess_igo"/>
                             <Node label="Riparian Vegetation Conversion Type (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="Veg_conversion_igo" id="Veg_conversion_igo"/>
+                        </Children>
+                    </Node>
+                    <Node label="DGOs">
+                        <Children collapsed="true">
+                            <Node label="Riparian Vegetation Departure (DGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="rvd_dgo" id="rvd_dgo"/>
+                            <Node label="Floodplain Accessibility (DGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="FPAccess_dgo" id="fpaccess_dgo"/>
                         </Children>
                     </Node>
                     <Node label="Reaches">

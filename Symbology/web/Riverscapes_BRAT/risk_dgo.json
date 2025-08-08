@@ -1,0 +1,42 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+      ["hsl(0, 100%, 45%)", "Considerable Risk"],
+      ["hsl(40, 100%, 50%)", "Some Risk"],
+      ["hsl(194, 100%, 50%)","Minor Risk"],
+      ["rgb(165, 165, 165)","Negligible Risk"]
+    ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_subset-4lvaxu",
+            "layout": {},
+            "paint": {
+                "fill-opacity": 0.7,
+                "fill-color": [
+                  "match",
+                  ["get", "Risk"],
+                  ["Negligible Risk"],
+                  "rgb(165, 165, 165)",
+                  ["Minor Risk"],
+                  "hsl(194, 100%, 50%)",
+                  ["Some Risk"],
+                  "hsl(40, 100%, 50%)",
+                  ["Considerable Risk"],
+                  "hsl(0, 100%, 45%)",
+                  "hsl(178, 4%, 100%)"
+                ]
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_subset-4lvaxu",
+            "layout": {},
+            "paint": {"line-width": 0.2}
+        }
+    ]
+}

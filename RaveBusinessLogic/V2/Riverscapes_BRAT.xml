@@ -36,6 +36,18 @@
                   </Node>
                 </Children>
               </Node>
+              <Node label="DGOs">
+                <Children>
+                  <Node label="Existing Riverscape Dam Capacity (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_EX_filtered_dgo" id="ex_capacity_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+                  <Node label="Historic Riverscape Dam Capacity (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_HPE_filtered_dgo" id ="his_capacity_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Riverscape Capacity for Entire Network (overestimate including non-perennial)">
+                    <Children>
+                      <Node label="Existing Riverscape Dam Capacity (DGO|All)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_EX_dgo"  />
+                      <Node label="Historic Riverscape Dam Capacity (DGO|All)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_HPE_dgo" />
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
             </Children> 
           </Node>
           <Node label="Management">
@@ -52,6 +64,13 @@
                   <Node label="Unsuitable or Limited Opportunities (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="limitation_igo" id="limited_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
                   <Node label="Risk of Undesirable Dams (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="risk_igo" id="risk_igo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
                   <Node label="Restoration or Conservation Opportunities (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="opportunity_igo" id="opportunity_igo" />
+                </Children>
+              </Node>
+              <Node label="DGOs">
+                <Children collapsed="true">
+                  <Node label="Unsuitable or Limited Opportunities (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="limitation_dgo" id="limited_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Risk of Undesirable Dams (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="risk_dgo" id="risk_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Restoration or Conservation Opportunities (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="opportunity_dgo" id="opportunity_dgo" />
                 </Children>
               </Node>
             </Children>

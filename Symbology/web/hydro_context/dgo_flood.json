@@ -1,0 +1,59 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(247, 251, 255)", "0 - 1"],
+    ["rgb(209, 226, 243)", "1 - 10"],
+    ["rgb(154, 200, 224)", "10 - 100"],
+    ["rgb(82, 157, 204)", "100 - 1000"],
+    ["rgb(29, 108, 177)", "1000 - 10000"],
+    ["rgb(8, 48, 107)", "> 10000"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "vwDgos_Hydro_Fixed-daye7w",
+            "paint": {
+                "fill-opacity": 0.7,
+                "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "Q2"],
+                0,
+                "rgb(247, 251, 255)",
+                1,
+                "rgb(247, 251, 255)",
+                1.0001,
+                "rgb(209, 226, 243)",
+                10,
+                "rgb(209, 226, 243)",
+                10.0001,
+                "rgb(154, 200, 224)",
+                100,
+                "rgb(154, 200, 224)",
+                100.0001,
+                "rgb(82, 157, 204)",
+                1000,
+                "rgb(82, 157, 204)",
+                1000.0001,
+                "rgb(29, 108, 177)",
+                10000,
+                "rgb(29, 108, 177)",
+                10000.0001,
+                "rgb(8, 48, 107)",
+                10000000,
+                "rgb(8, 48, 107)"
+            ]
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "vwDgos_Hydro_Fixed-daye7w",
+            "layout": {},
+            "paint": {"line-width": 0.2}
+        }
+    ]
+}
