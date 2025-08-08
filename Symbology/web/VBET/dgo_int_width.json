@@ -1,0 +1,54 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(71, 44, 124)", "< 10 m"],
+    ["rgb(59, 82, 139)", "10 - 25 m"],
+    ["rgb(44, 114, 142)", "25 - 100 m"],
+    ["rgb(33, 144, 141)", "100 - 250 m"],
+    ["rgb(40, 147, 128)", "250 - 500 m"],
+    ["rgb(93, 201, 99)","500 m - 1 km"],
+    ["rgb(171, 220, 50)", "1 km - 10 km"],
+    ["rgb(253, 231, 37)", "> 10 km"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "vbet_dgos_sample-4tzd84",
+            "layout": {},
+            "paint": {
+                "fill-opacity": 0.7,
+                "fill-color": [
+                "step",
+                ["get", "integrated_width"],
+                "rgb(71, 44, 124)",
+                10,
+                "rgb(59, 82, 139)",
+                25,
+                "rgb(44, 114, 142)",
+                100,
+                "rgb(33, 144, 141)",
+                250,
+                "rgb(40, 147, 128)",
+                500,
+                "rgb(93, 201, 99)",
+                1000,
+                "rgb(171, 220, 50)",
+                10000,
+                "rgb(253, 231, 37)",
+                100000,
+                "rgb(253, 231, 37)"
+            ]
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "vbet_dgos_sample-4tzd84",
+            "layout": {},
+            "paint": {"line-width": 0.2}
+        }
+    ]
+}

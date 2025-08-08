@@ -38,6 +38,16 @@
                             <Node label="Distance to Canals/Ditches" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="iPC_Canal_anthro" />
                         </Children>
                     </Node>
+                    <Node label="DGO Outputs">
+                        <Children collapsed="true">
+                            <Node label="Land Use Intensity (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="iPC_LU_dgo" id="lui_dgo" />
+                            <Node label="Road Length (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="road_len_dgo" id="rd_len_dgo" />
+                            <Node label="Railroad Length (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="rail_len_dgo" id="rail_len_dgo" />
+                            <Node label="Canal Length (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="canal_len_dgo" id="canal_len_dgo" />
+                            <Node label="Road Crossing Count (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="roadcross_ct_dgo" id="roadx_dgo" />
+                            <Node label="Diversion Point Count (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="DivPts_ct_dgo" id="divpt_dgo" />
+                        </Children>
+                    </Node>
                 </Children>
             </Node>
             <Node label="Intermediates" xpath="Realizations/Realization/Intermediates">
@@ -90,7 +100,7 @@
     </Node>
     <Views default="LUI">
         <View name="Land Use Intensity" id="LUI">
-            <Description>This view displayis the Land Use Intensity raster and IGOs</Description>
+            <Description>This view display is the Land Use Intensity raster and IGOs</Description>
             <Layers>
                 <Layer id="hs"/>
                 <Layer id="lui"/>
@@ -98,7 +108,7 @@
             </Layers>
         </View>
         <View name="Sampling Frames" id="igo_dgo">
-            <Description>This view displayis the sampling units (IGOs and DGOs)</Description>
+            <Description>This view display is the sampling units (IGOs and DGOs)</Description>
             <Layers>
                 <Layer id="hs"/>
                 <Layer id="dgo"/>
@@ -106,7 +116,7 @@
             </Layers>
         </View>
         <View name="Canals" id="canal_pv">
-            <Description>This view displayis the canals network and canal density IGOs</Description>
+            <Description>This view display is the canals network and canal density IGOs</Description>
             <Layers>
                 <Layer id="hs"/>
                 <Layer id="canals_ditches"/>
@@ -114,7 +124,7 @@
             </Layers>
         </View>
         <View name="Roads" id="road_pv">
-            <Description>This view displayis the roads network and road density IGOs</Description>
+            <Description>This view display is the roads network and road density IGOs</Description>
             <Layers>
                 <Layer id="hs"/>
                 <Layer id="roads"/>
@@ -122,7 +132,7 @@
             </Layers>
         </View>
         <View name="Railroads" id="rail_pv">
-            <Description>This view displayis the rail network and railroad density IGOs</Description>
+            <Description>This view display is the rail network and railroad density IGOs</Description>
             <Layers>
                 <Layer id="hs"/>
                 <Layer id="rail_dens_igo"/>

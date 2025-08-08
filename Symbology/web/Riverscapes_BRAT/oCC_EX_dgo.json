@@ -1,0 +1,65 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["#ffffff", "0 dams/km (0 dams/mi)"],
+    ["#f39211", "0-3 dams/km (0-5 dams/mi)"],
+    ["#f5e641", "3-10 dams/km (5-16 dams/mi)"],
+    ["#94ce32", "10-15 dams/km (16-24 dams/mi)"],
+    ["#44ba1d","15-25 dams/km (24-40 dams/mi)"],
+    ["#2e6960","25-45 dams/km (40-72 dams/mi)"],
+    ["#1919a4","> 45 dams/km (> 72 dams/mi)"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "vwDgos_BRAT-2mz777",
+            "layout": {},
+            "paint": {
+                "fill-opacity": 0.7,
+                "fill-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "oCC_EX"],
+                    0,
+                    "#ffffff",
+                    0.00001,
+                    "#ffffff",
+                    0.00002,
+                    "#f39211",
+                    3,
+                    "#f39211",
+                    3.00001,
+                    "#f5e641",
+                    10,
+                    "#f5e641",
+                    10.00001,
+                    "#94ce32",
+                    15,
+                    "#94ce32",
+                    15.00001,
+                    "#44ba1d",
+                    25,
+                    "#44ba1d",
+                    25.00001,
+                    "#2e6960",
+                    45,
+                    "#2e6960",
+                    45.00001,
+                    "#1919a4",
+                    200,
+                    "#1919a4"
+                ]
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "vwDgos_BRAT-2mz777",
+            "layout": {},
+            "paint": {"line-width": 0.2}
+        }
+    ]
+}

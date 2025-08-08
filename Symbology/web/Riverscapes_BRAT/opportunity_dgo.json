@@ -1,0 +1,51 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+      ["hsl(120, 100%, 33%)", "Conservation/Appropriate for Translocation"],
+      ["hsl(194, 100%, 50%)", "Encourage Beaver Expansion/Colonization"],
+      ["hsl(53, 100%, 45%)","Beaver Mimicry"],
+      ["hsl(24, 36%, 39%)", "Land Management Change"],
+      ["hsl(1, 55%, 50%)", "Conflict Management"],
+      ["hsl(240, 86%, 48%)", "Potential Floodpain/Side Channel Opportunities"],
+      ["hsl(0, 0%, 73%)", "Natural or Anthropogenic Limitations"]
+    ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "dgo_subset-4lvaxu",
+            "layout": {},
+            "paint": {
+                "fill-opacity": 0.7,
+                "fill-color": [
+                "match",
+                ["get", "Opportunity"],
+                ["Conservation/Appropriate for Translocation"],
+                "hsl(120, 100%, 33%)",
+                ["Encourage Beaver Expansion/Colonization"],
+                "hsl(194, 100%, 50%)",
+                ["Beaver Mimicry"],
+                "hsl(53, 100%, 45%)",
+                ["Conflict Management"],
+                "hsl(1, 55%, 50%)",
+                ["Land Management Change"],
+                "hsl(24, 36%, 39%)",
+                ["Potential Floodpain/Side Channel Opportunities"],
+                "hsl(240, 86%, 48%)",
+                ["Natural or Anthropogenic Limitations"],
+                "hsl(0, 0%, 73%)",
+                "hsl(0, 0%, 0%)"
+            ]
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "dgo_subset-4lvaxu",
+            "layout": {},
+            "paint": {"line-width": 0.2}
+        }
+    ]
+}
