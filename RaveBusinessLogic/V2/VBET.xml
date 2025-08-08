@@ -37,9 +37,10 @@
           </Node>
           <Node label="Sample Frame Metrics (DGO)">
             <Children collapsed="true">
-              <Node label="Est. Prop. of Channel (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_prop_vb_channel" transparency="40" id="DGO" />
-              <Node label="Est. Prop. of VB Low-Lying (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_prop_vb_lowlying" transparency="40" id="DGO" />
-              <Node label="Est. Prop. of VB Elevated (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_prop_vb_elevated" transparency="40" id="DGO" />
+              <Node label="Est. Prop. of Channel (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_prop_vb_channel" transparency="40" id="DGO_prop_chan" />
+              <Node label="Est. Prop. of VB Low-Lying (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_prop_vb_lowlying" transparency="40" id="DGO_prop_low" />
+              <Node label="Est. Prop. of VB Elevated (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_prop_vb_elevated" transparency="40" id="DGO_prop_elev" />
+              <Node label="Integrated VB Width (DGOs)" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='vbet_dgos']" type="polygon" symbology="dgo_int_width" transparency="40" id="DGO_int_width" />
             </Children>
           </Node>
           <Node label="Moving Window Metrics (IGO)" >

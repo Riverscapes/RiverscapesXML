@@ -1,0 +1,63 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(43, 131, 186)", "0 - 20"],
+    ["rgb(145, 203, 168)", "20 - 50"],
+    ["rgb(221, 241, 180)", "50 - 200"],
+    ["rgb(254, 223, 153)", "200 - 1000"],
+    ["rgb(245, 144, 83)", "1000 - 5000"],
+    ["rgb(215, 25, 28)", "> 5000"]
+  ],
+  "layerStyles": [
+        {
+            "id": "Fill",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "GeoJSON_subset-2x2fck",
+            "layout": {},
+            "paint": {
+                "fill-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 0.7, 0],
+                "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "SPLow"],
+                0,
+                "rgb(43, 131, 186)",
+                20,
+                "rgb(43, 131, 186)",
+                20.0001,
+                "rgb(145, 203, 168)",
+                50,
+                "rgb(145, 203, 168)",
+                50.0001,
+                "rgb(221, 241, 180)",
+                200,
+                "rgb(221, 241, 180)",
+                200.0001,
+                "rgb(254, 223, 153)",
+                1000,
+                "rgb(254, 223, 153)",
+                1000.0001,
+                "rgb(245, 144, 83)",
+                5000,
+                "rgb(245, 144, 83)",
+                5000.0001,
+                "rgb(215, 25, 28)",
+                10000000,
+                "rgb(215, 25, 28)"
+            ]
+            }
+        },
+        {
+            "id": "Outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "GeoJSON_subset-2x2fck",
+            "layout": {},
+            "paint": {
+                "line-width": 0.2,
+                "line-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 1, 0]
+            }
+        }
+    ]
+}
