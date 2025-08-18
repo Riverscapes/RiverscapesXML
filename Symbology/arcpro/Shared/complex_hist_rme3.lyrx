@@ -3,25 +3,22 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/complex_size.json"
+    "CIMPATH=map/historic_dam_complex_size.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "Historic Complex Size",
-      "uRI" : "CIMPATH=map/complex_size.json",
+      "name" : "Historic Dam Complex Size",
+      "uRI" : "CIMPATH=map/historic_dam_complex_size.json",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant",
-        "start" : -62135596800000
+        "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/ae574fd1ff911e4c4528fcfd90e4ab97.xml",
       "useSourceMetadata" : true,
-      "description" : "main.vw_igo_metrics",
+      "description" : "Historic Dam Complex Size",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/7b23c3a40bf84ff3860be3dc6aaeaec5.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
-      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -41,11 +38,11 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\MetricEngine_SulphurCreek_3.0.1\\outputs\\riverscapes_metrics.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\2025 CONUS\\MetricEngine_Sulphur_3.0.5\\outputs\\riverscapes_metrics.gpkg",
           "workspaceFactory" : "Sql",
-          "dataset" : "main.%vw_igo_metrics",
+          "dataset" : "main.%vw_igo_metrics_17",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select igoid,ownership,state,county,drainage_area,watershed_id,stream_name,stream_order,headwater,stream_length,waterbody_type,waterbody_extent,ecoregion3,ecoregion4,\"igoid:1\",prim_channel_gradient,valleybottom_gradient,rel_flow_length,confluences,diffluences,tributaries,tribs_per_km,planform_sinuosity,lowlying_area,elevated_area,channel_area,floodplain_area,integrated_width,active_channel_ratio,low_lying_ratio,elevated_ratio,floodplain_ratio,acres_vb_per_mile,hect_vb_per_km,channel_width,confinement_ratio,constriction_ratio,confining_margins,constricting_margins,\"igoid:2\",lf_evt,lf_bps,lf_agriculture_prop,lf_agriculture,lf_conifer_prop,lf_conifer,lf_conifer_hardwood_prop,lf_conifer_hardwood,lf_developed_prop,lf_developed,lf_exotic_herbaceous_prop,lf_exotic_herbaceous,lf_exotic_tree_shrub_prop,lf_exotic_tree_shrub,lf_grassland_prop,lf_grassland,lf_hardwood_prop,lf_hardwood,lf_riparian_prop,lf_riparian,lf_shrubland_prop,lf_shrubland,lf_sparsely_vegetated_prop,lf_sparsely_vegetated,lf_hist_conifer_prop,lf_hist_conifer,lf_hist_conifer_hardwood_prop,lf_hist_conifer_hardwood,lf_hist_grassland_prop,lf_hist_grassland,lf_hist_hardwood_prop,lf_hist_hardwood,lf_hist_hardwood_conifer_prop,lf_hist_hardwood_conifer,lf_hist_peatland_forest_prop,lf_hist_peatland_forest,lf_hist_peatland_nonforest_prop,lf_hist_peatland_nonforest,lf_hist_riparian_prop,lf_hist_riparian,lf_hist_savanna_prop,lf_hist_savanna,lf_hist_shrubland_prop,lf_hist_shrubland,lf_hist_sparsely_vegetated_prop,lf_hist_sparsely_vegetated,ex_riparian,hist_riparian,prop_riparian,hist_prop_riparian,riparian_veg_departure,ag_conversion,develop,grass_shrub_conversion,conifer_encroachment,invasive_conversion,riparian_condition,\"igoid:3\",qlow,q2,splow,sphigh,\"igoid:4\",road_len,road_dens,rail_len,rail_dens,land_use_intens,road_dist,rail_dist,div_dist,canal_dist,infra_dist,fldpln_access,access_fldpln_extent,\"igoid:1823064302\",brat_capacity,brat_hist_capacity,brat_risk,brat_opportunity,brat_limitation,brat_complex_size,brat_hist_complex_size,dam_setting,geom,level_path,seg_distance,FCode from main.vw_igo_metrics",
+          "sqlQuery" : "select igoid,ownership,state,county,drainage_area,watershed_id,stream_name,stream_order,headwater,stream_length,waterbody_type,waterbody_extent,ecoregion3,ecoregion4,elevation,geology,huc12,\"igoid:1\",prim_channel_gradient,valleybottom_gradient,rel_flow_length,confluences,diffluences,tributaries,tribs_per_km,planform_sinuosity,lowlying_area,elevated_area,channel_area,floodplain_area,integrated_width,active_channel_ratio,low_lying_ratio,elevated_ratio,floodplain_ratio,acres_vb_per_mile,hect_vb_per_km,channel_width,confinement_ratio,constriction_ratio,confining_margins,constricting_margins,\"igoid:2\",lf_evt,lf_bps,lf_agriculture_prop,lf_agriculture,lf_conifer_prop,lf_conifer,lf_conifer_hardwood_prop,lf_conifer_hardwood,lf_developed_prop,lf_developed,lf_exotic_herbaceous_prop,lf_exotic_herbaceous,lf_exotic_tree_shrub_prop,lf_exotic_tree_shrub,lf_grassland_prop,lf_grassland,lf_hardwood_prop,lf_hardwood,lf_riparian_prop,lf_riparian,lf_shrubland_prop,lf_shrubland,lf_sparsely_vegetated_prop,lf_sparsely_vegetated,lf_hist_conifer_prop,lf_hist_conifer,lf_hist_conifer_hardwood_prop,lf_hist_conifer_hardwood,lf_hist_grassland_prop,lf_hist_grassland,lf_hist_hardwood_prop,lf_hist_hardwood,lf_hist_hardwood_conifer_prop,lf_hist_hardwood_conifer,lf_hist_peatland_forest_prop,lf_hist_peatland_forest,lf_hist_peatland_nonforest_prop,lf_hist_peatland_nonforest,lf_hist_riparian_prop,lf_hist_riparian,lf_hist_savanna_prop,lf_hist_savanna,lf_hist_shrubland_prop,lf_hist_shrubland,lf_hist_sparsely_vegetated_prop,lf_hist_sparsely_vegetated,ex_riparian,hist_riparian,prop_riparian,hist_prop_riparian,riparian_veg_departure,ag_conversion,develop,grass_shrub_conversion,conifer_encroachment,invasive_conversion,riparian_condition,\"igoid:3\",qlow,q2,splow,sphigh,\"igoid:4\",road_len,road_dens,rail_len,rail_dens,land_use_intens,road_dist,rail_dist,div_dist,canal_dist,infra_dist,fldpln_access,access_fldpln_extent,\"igoid:2606141955\",brat_capacity,brat_hist_capacity,brat_risk,brat_opportunity,brat_limitation,brat_complex_size,brat_hist_complex_size,dam_setting,geom,level_path,seg_distance,FCode from main.vw_igo_metrics",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -63,26 +60,6 @@
           },
           "oIDFields" : "igoid",
           "geometryType" : "esriGeometryPoint",
-          "extent" : {
-            "xmin" : -110.999606634999964,
-            "ymin" : 40.9836569270000268,
-            "xmax" : -110.707139513999948,
-            "ymax" : 41.298762206000049,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "igoid",
@@ -205,6 +182,33 @@
             },
             {
               "name" : "ecoregion4",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "elevation",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "geology",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "huc12",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 2147483647,
@@ -1122,7 +1126,7 @@
               "dbmsType" : 4
             },
             {
-              "name" : "igoid:1823064302",
+              "name" : "igoid:2606141955",
               "type" : "esriFieldTypeBigInteger",
               "isNullable" : false,
               "length" : 8,
@@ -1614,7 +1618,7 @@
                                     2
                                   ],
                                   [
-                                    7.121149383314311e-15,
+                                    8.209884220366078e-15,
                                     0
                                   ],
                                   0,
@@ -1653,9 +1657,9 @@
                               "color" : {
                                 "type" : "CIMRGBColor",
                                 "values" : [
-                                  245,
-                                  0,
-                                  0,
+                                  255,
+                                  255,
+                                  204,
                                   100
                                 ]
                               }
@@ -1677,32 +1681,32 @@
                 {
                   "type" : "CIMScaleDependentSizeVariation",
                   "scale" : 100000000,
-                  "size" : 1
+                  "size" : 0.5
                 },
                 {
                   "type" : "CIMScaleDependentSizeVariation",
                   "scale" : 500000,
-                  "size" : 2
+                  "size" : 1
                 },
                 {
                   "type" : "CIMScaleDependentSizeVariation",
                   "scale" : 100000,
-                  "size" : 3
+                  "size" : 1.5
                 },
                 {
                   "type" : "CIMScaleDependentSizeVariation",
                   "scale" : 50000,
-                  "size" : 4
+                  "size" : 2
                 },
                 {
                   "type" : "CIMScaleDependentSizeVariation",
                   "scale" : 10000,
-                  "size" : 8
+                  "size" : 4
                 },
                 {
                   "type" : "CIMScaleDependentSizeVariation",
                   "scale" : 1000,
-                  "size" : 10
+                  "size" : 6
                 }
               ]
             }
@@ -1746,7 +1750,7 @@
                                     2
                                   ],
                                   [
-                                    7.7371440937514945e-15,
+                                    9.0694117233016823e-15,
                                     0
                                   ],
                                   0,
@@ -1785,9 +1789,9 @@
                               "color" : {
                                 "type" : "CIMRGBColor",
                                 "values" : [
-                                  255,
-                                  170,
-                                  0,
+                                  161,
+                                  218,
+                                  180,
                                   100
                                 ]
                               }
@@ -1879,7 +1883,7 @@
                                     2
                                   ],
                                   [
-                                    7.7657950105160154e-15,
+                                    9.0980626400662033e-15,
                                     0
                                   ],
                                   0,
@@ -1918,9 +1922,9 @@
                               "color" : {
                                 "type" : "CIMRGBColor",
                                 "values" : [
-                                  245,
-                                  245,
-                                  0,
+                                  65,
+                                  182,
+                                  196,
                                   100
                                 ]
                               }
@@ -2012,7 +2016,7 @@
                                     2
                                   ],
                                   [
-                                    7.7657950105160154e-15,
+                                    9.0980626400662033e-15,
                                     0
                                   ],
                                   0,
@@ -2051,9 +2055,9 @@
                               "color" : {
                                 "type" : "CIMRGBColor",
                                 "values" : [
-                                  76,
-                                  230,
-                                  1,
+                                  44,
+                                  127,
+                                  184,
                                   100
                                 ]
                               }
@@ -2145,7 +2149,7 @@
                                     2
                                   ],
                                   [
-                                    7.7657950105160154e-15,
+                                    9.0980626400662033e-15,
                                     0
                                   ],
                                   0,
@@ -2184,9 +2188,9 @@
                               "color" : {
                                 "type" : "CIMRGBColor",
                                 "values" : [
-                                  0,
-                                  92,
-                                  230,
+                                  37,
+                                  52,
+                                  148,
                                   100
                                 ]
                               }
@@ -2277,7 +2281,7 @@
                                 2
                               ],
                               [
-                                8.1812333036015571e-15,
+                                9.1123880984484629e-15,
                                 0
                               ],
                               0,
@@ -2384,7 +2388,7 @@
                                 2
                               ],
                               [
-                                8.1812333036015571e-15,
+                                9.1123880984484629e-15,
                                 0
                               ],
                               0,
@@ -2451,20 +2455,13 @@
       "snappable" : true
     }
   ],
-  "binaryReferences" : [
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/ae574fd1ff911e4c4528fcfd90e4ab97.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\">\r\n\t<Esri>\r\n\t\t<CreaDate>20250612</CreaDate>\r\n\t\t<CreaTime>17395700</CreaTime>\r\n\t\t<ArcGISFormat>1.0</ArcGISFormat>\r\n\t\t<SyncOnce>TRUE</SyncOnce>\r\n\t</Esri>\r\n</metadata>\r\n"
-    }
-  ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",
   "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
   "elevationSurfaceLayerDefinitions" : [
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/7b23c3a40bf84ff3860be3dc6aaeaec5.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
