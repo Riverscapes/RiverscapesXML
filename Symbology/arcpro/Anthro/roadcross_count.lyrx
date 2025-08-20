@@ -37,327 +37,9 @@
         "type" : "CIMFeatureTable",
         "displayField" : "FCode",
         "editable" : true,
-        "fieldDescriptions" : [
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "IGOID",
-            "fieldName" : "IGOID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "FCode",
-            "fieldName" : "FCode",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "level_path",
-            "fieldName" : "level_path",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "seg_distance",
-            "fieldName" : "seg_distance",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "stream_size",
-            "fieldName" : "stream_size",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "LUI",
-            "fieldName" : "LUI",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_len",
-            "fieldName" : "Road_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_dens",
-            "fieldName" : "Road_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Rail_len",
-            "fieldName" : "Rail_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Rail_dens",
-            "fieldName" : "Rail_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Canal_len",
-            "fieldName" : "Canal_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Canal_dens",
-            "fieldName" : "Canal_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "RoadX_ct",
-            "fieldName" : "RoadX_ct",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "RoadX_dens",
-            "fieldName" : "RoadX_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "DivPts_ct",
-            "fieldName" : "DivPts_ct",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "DivPts_dens",
-            "fieldName" : "DivPts_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_prim_len",
-            "fieldName" : "Road_prim_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_prim_dens",
-            "fieldName" : "Road_prim_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_sec_len",
-            "fieldName" : "Road_sec_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_sec_dens",
-            "fieldName" : "Road_sec_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_4wd_len",
-            "fieldName" : "Road_4wd_len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Road_4wd_dens",
-            "fieldName" : "Road_4wd_dens",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "geom",
-            "fieldName" : "geom",
-            "visible" : true,
-            "searchMode" : "Exact"
-          }
-        ],
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\1601010102_sulphur\\Anthro_Sulphur\\outputs\\anthro.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\2025 CONUS\\Anthro_Sulphur_1.0.1\\outputs\\anthro.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vwIgos",
           "datasetType" : "esriDTFeatureClass",
@@ -627,7 +309,7 @@
         {
           "type" : "CIMLabelClass",
           "expressionTitle" : "Custom",
-          "expression" : "$feature.IGOID",
+          "expression" : "$feature.FCode",
           "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
@@ -940,7 +622,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -965,7 +647,7 @@
                                     2
                                   ],
                                   [
-                                    2.4080735754336047e-15,
+                                    5.3447925439140605e-15,
                                     0
                                   ],
                                   0,
@@ -1016,14 +698,45 @@
                         }
                       }
                     ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
+                    "respectFrame" : false
                   }
                 ],
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 1
           },
@@ -1041,7 +754,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1066,7 +779,7 @@
                                     2
                                   ],
                                   [
-                                    2.4080735754336047e-15,
+                                    5.5453489612657015e-15,
                                     0
                                   ],
                                   0,
@@ -1117,14 +830,45 @@
                         }
                       }
                     ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
+                    "respectFrame" : false
                   }
                 ],
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 2
           },
@@ -1142,7 +886,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1167,7 +911,7 @@
                                     2
                                   ],
                                   [
-                                    2.4080735754336047e-15,
+                                    5.5453489612657015e-15,
                                     0
                                   ],
                                   0,
@@ -1218,14 +962,45 @@
                         }
                       }
                     ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
+                    "respectFrame" : false
                   }
                 ],
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 5
           },
@@ -1243,7 +1018,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1268,7 +1043,7 @@
                                     2
                                   ],
                                   [
-                                    2.4080735754336047e-15,
+                                    5.5453489612657015e-15,
                                     0
                                   ],
                                   0,
@@ -1319,14 +1094,45 @@
                         }
                       }
                     ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
+                    "respectFrame" : false
                   }
                 ],
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 10
           },
@@ -1344,7 +1150,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 3,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1369,7 +1175,7 @@
                                     2
                                   ],
                                   [
-                                    2.4080735754336047e-15,
+                                    5.5453489612657015e-15,
                                     0
                                   ],
                                   0,
@@ -1420,14 +1226,45 @@
                         }
                       }
                     ],
-                    "scaleSymbolsProportionally" : true,
-                    "respectFrame" : true
+                    "respectFrame" : false
                   }
                 ],
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 100
           }
@@ -1469,7 +1306,7 @@
                                 2
                               ],
                               [
-                                1.5485460126403701e-15,
+                                5.0726088346511188e-15,
                                 0
                               ],
                               0,
@@ -1576,7 +1413,7 @@
                                 2
                               ],
                               [
-                                1.5485460126403701e-15,
+                                5.0726088346511188e-15,
                                 0
                               ],
                               0,

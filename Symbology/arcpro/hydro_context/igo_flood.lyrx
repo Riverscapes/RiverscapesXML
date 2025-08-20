@@ -3,21 +3,21 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_hydo_igo_edited.json"
+    "CIMPATH=map/flood__igo___cfs_2.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.hydo_igo_edited",
-      "uRI" : "CIMPATH=map/main_hydo_igo_edited.json",
+      "name" : "Flood (IGO) (cfs)",
+      "uRI" : "CIMPATH=map/flood__igo___cfs_2.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.hydo_igo_edited",
+      "description" : "Flood (IGO) (cfs)",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/320be485708c4714b5862f9069a191fa.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -39,11 +39,11 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=.\\hydro_igo_edited.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\2025 CONUS\\HydroContext_Sulphur_1.0.2\\outputs\\hydro.gpkg",
           "workspaceFactory" : "Sql",
-          "dataset" : "main.%hydo_igo_edited",
+          "dataset" : "main.%vwIgos",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select fid,geom,IGOID,FCode,level_path,seg_distance,stream_size,WatershedID,ElevMax,ElevMin,Length_m,Slope,DrainArea,QLow,Q2,SPLow,SP2 from main.hydo_igo_edited",
+          "sqlQuery" : "select IGOID,FCode,level_path,seg_distance,stream_size,WatershedID,ElevMax,ElevMin,Length_m,Slope,DrainArea,QLow,Q2,SPLow,SP2,geom from main.vwIgos",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -59,31 +59,11 @@
             "falseM" : -100000,
             "mUnits" : 10000
           },
-          "oIDFields" : "fid",
+          "oIDFields" : "IGOID",
           "geometryType" : "esriGeometryMultipoint",
-          "extent" : {
-            "xmin" : -111.402266999999938,
-            "ymin" : 40.8095970000000534,
-            "xmax" : -110.96491199999997,
-            "ymax" : 41.0507240000000593,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
-              "name" : "fid",
+              "name" : "IGOID",
               "type" : "esriFieldTypeBigInteger",
               "isNullable" : false,
               "length" : 8,
@@ -91,44 +71,6 @@
               "scale" : 0,
               "required" : true,
               "editable" : false,
-              "dbmsType" : 11
-            },
-            {
-              "name" : "geom",
-              "type" : "esriFieldTypeGeometry",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "geometryDef" : {
-                "avgNumPoints" : 0,
-                "geometryType" : "esriGeometryMultipoint",
-                "hasM" : false,
-                "hasZ" : false,
-                "spatialReference" : {
-                  "wkid" : 4326,
-                  "latestWkid" : 4326,
-                  "xyTolerance" : 8.983152841195215e-09,
-                  "zTolerance" : 0.001,
-                  "mTolerance" : 0.001,
-                  "falseX" : -400,
-                  "falseY" : -400,
-                  "xyUnits" : 999999999.99999988,
-                  "falseZ" : -100000,
-                  "zUnits" : 10000,
-                  "falseM" : -100000,
-                  "mUnits" : 10000
-                }
-              },
-              "dbmsType" : 8
-            },
-            {
-              "name" : "IGOID",
-              "type" : "esriFieldTypeBigInteger",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
               "dbmsType" : 11
             },
             {
@@ -256,6 +198,35 @@
               "precision" : 0,
               "scale" : 0,
               "dbmsType" : 4
+            },
+            {
+              "name" : "geom",
+              "type" : "esriFieldTypeGeometry",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "geometryDef" : {
+                "avgNumPoints" : 0,
+                "geometryType" : "esriGeometryMultipoint",
+                "hasM" : false,
+                "hasZ" : false,
+                "spatialReference" : {
+                  "wkid" : 4326,
+                  "latestWkid" : 4326,
+                  "xyTolerance" : 8.983152841195215e-09,
+                  "zTolerance" : 0.001,
+                  "mTolerance" : 0.001,
+                  "falseX" : -400,
+                  "falseY" : -400,
+                  "xyUnits" : 999999999.99999988,
+                  "falseZ" : -100000,
+                  "zUnits" : 10000,
+                  "falseM" : -100000,
+                  "mUnits" : 10000
+                }
+              },
+              "dbmsType" : 8
             }
           ],
           "spatialStorageType" : 11,
@@ -588,7 +559,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 4,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -613,7 +584,7 @@
                                     2
                                   ],
                                   [
-                                    1.9639843619522576e-15,
+                                    5.559674419647962e-15,
                                     0
                                   ],
                                   0,
@@ -671,7 +642,39 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 1
           },
@@ -689,7 +692,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 4,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -714,7 +717,7 @@
                                     2
                                   ],
                                   [
-                                    1.9639843619522576e-15,
+                                    5.9034854208222037e-15,
                                     0
                                   ],
                                   0,
@@ -772,7 +775,39 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 10
           },
@@ -790,7 +825,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 4,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -815,7 +850,7 @@
                                     2
                                   ],
                                   [
-                                    1.9639843619522576e-15,
+                                    5.9034854208222037e-15,
                                     0
                                   ],
                                   0,
@@ -873,7 +908,39 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 100
           },
@@ -891,7 +958,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 4,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -916,7 +983,7 @@
                                     2
                                   ],
                                   [
-                                    1.9639843619522576e-15,
+                                    5.9034854208222037e-15,
                                     0
                                   ],
                                   0,
@@ -974,7 +1041,39 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 1000
           },
@@ -992,7 +1091,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 4,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1017,7 +1116,7 @@
                                     2
                                   ],
                                   [
-                                    1.9639843619522576e-15,
+                                    5.559674419647962e-15,
                                     0
                                   ],
                                   0,
@@ -1075,7 +1174,39 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 10000
           },
@@ -1093,7 +1224,7 @@
                     "enable" : true,
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
-                    "size" : 4,
+                    "size" : 6,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
                       "xmin" : -2,
@@ -1118,7 +1249,7 @@
                                     2
                                   ],
                                   [
-                                    1.9639843619522576e-15,
+                                    5.9034854208222037e-15,
                                     0
                                   ],
                                   0,
@@ -1176,7 +1307,39 @@
                 "haloSize" : 1,
                 "scaleX" : 1,
                 "angleAlignment" : "Display"
-              }
+              },
+              "scaleDependentSizeVariation" : [
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000000,
+                  "size" : 1
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 500000,
+                  "size" : 2
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 100000,
+                  "size" : 3
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 50000,
+                  "size" : 4
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 10000,
+                  "size" : 8
+                },
+                {
+                  "type" : "CIMScaleDependentSizeVariation",
+                  "scale" : 1000,
+                  "size" : 10
+                }
+              ]
             },
             "upperBound" : 10000000
           }
@@ -1218,7 +1381,7 @@
                                 2
                               ],
                               [
-                                1.7920788501198677e-15,
+                                5.960787254351244e-15,
                                 0
                               ],
                               0,
@@ -1325,7 +1488,7 @@
                                 2
                               ],
                               [
-                                1.7920788501198677e-15,
+                                5.960787254351244e-15,
                                 0
                               ],
                               0,
@@ -1398,7 +1561,10 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/320be485708c4714b5862f9069a191fa.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
