@@ -1,0 +1,97 @@
+<Protocol machine_code="RIM" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
+    <Label>Riverscape Inundation Mapping</Label>
+    <Description>Protocol to aid in efficient mapping of structurally forced inundation patterns in beaver impacted riverscapes</Description>
+    <URL>https://rim.riverscapes.net/</URL>
+    <Citation>Bartelt K. 2021. Valley Bottom Inundation Patterns in Beaver-Modified Streams: A Potential Proxy for Hydrologic Inefficiency, Masters Thesis, Utah State University: Logan, UT. Available from: https://digitalcommons.usu.edu/etd/8226. DOI: 10.26076/a66b-0708.</Citation>
+    <Author>Karen Bartelt</Author>
+    <CreationDate>2025-02-05</CreationDate>
+    <UpdatedDate>2025-02-05</UpdatedDate>
+    <MetaData>
+        <Meta name=""></Meta>
+    </MetaData>
+    <Layers>
+        <Layer id="dam_crests" version="1.0" geom_type="Linestring">
+            <Label>Dam Crests</Label>
+            <Symbology>crests_type.qml</Symbology>
+            <Description>Dam Crests Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Assessments</HierarchyItem>
+                <HierarchyItem>Beaver Dam Building</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="dam_state" version="1.0">
+                    <Label>Dam State</Label>
+                    <Values>
+                        <Value>Blown Out</Value>
+                        <Value>Breached</Value>
+                        <Value>Intact</Value>
+                    </Values>              
+                </ListField>
+                <ListField id="crest_type" version="1.0">
+                    <Label>Crest Type</Label>
+                    <Values>
+                        <Value>Active</Value>
+                        <Value>Inactive</Value>
+                    </Values>
+                </ListField>
+            </Fields>
+        </Layer>
+        <Layer id="thalwegs" version="1.0" geom_type="Linestring">
+            <Label>Thalwegs</Label>
+            <Symbology>Thalweg_main.qml</Symbology>
+            <Description>Thalwegs within the riverscape</Description>
+            <Hierarchy>
+                <HierarchyItem>Observations</HierarchyItem>
+                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
+                <HierarchyItem>Channel</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="type_id" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Main</Value>
+                        <Value>Anabranch</Value>
+                        <Value>Split</Value>
+                        <Value>Braid</Value>
+                    </Values>
+                </ListField>   
+            </Fields>
+        </Layer>
+        <Layer id="inundation" version="1.0" geom_type="Polygon">
+            <Label>Inundation</Label>
+            <Symbology>inundation_extents.qml</Symbology>
+            <Description>Inundation Extents Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Observations</HierarchyItem>
+                <HierarchyItem>Hydraulic Mapping</HierarchyItem>
+            </Hierarchy>    
+            <Fields>
+                <ListField id="type_id" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Free Flowing</Value>
+                        <Value>Overflow</Value>
+                        <Value>Ponded</Value>
+                    </Values>
+                </ListField>
+            </Fields>
+        </Layer>
+    </Layers>
+    <Metrics>
+        <Metric id="channel_gradient" version="1.0" calculation_machine_code="gradient">
+            <Label>Channel Gradient</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The channel gradient of the main channel</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="thalwegs">
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Main</Value>
+                    </AttributeFilter>
+                </DCELayer> 
+            </Parameters>
+        </Metric>
+    </Metrics>
+</Protocol>
