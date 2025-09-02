@@ -12,6 +12,12 @@
                             <Node label="Riparian Condition - Perennial (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="condition_igo_per" id="rcat_condition_igo_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                         </Children>
                     </Node>
+                    <Node label="DGOs">
+                        <Children collapsed="true">
+                            <Node label="Riparian Condition (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="condition_dgo" id="rcat_condition_dgo"/>
+                            <Node label="Riparian Condition - Perennial (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="condition_dgo_per" id="rcat_condition_dgo_per" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
+                        </Children>
+                    </Node>
                     <Node label="Reaches">
                         <Children>
                             <Node label="Riparian Condition" xpath="Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="condition_v2" id="rcat_condition" />
@@ -30,6 +36,12 @@
                             <Node label="Riparian Vegetation Conversion Type (IGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="Veg_conversion_igo" id="Veg_conversion_igo"/>
                         </Children>
                     </Node>
+                    <Node label="DGOs">
+                        <Children collapsed="true">
+                            <Node label="Riparian Vegetation Departure (DGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="rvd_dgo" id="rvd_dgo"/>
+                            <Node label="Floodplain Accessibility (DGO)" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="FPAccess_dgo" id="fpaccess_dgo"/>
+                        </Children>
+                    </Node>
                     <Node label="Reaches">
                         <Children collapsed="true">
                             <Node label="Riparian Vegetation Departure" xpath="Outputs/Geopackage/Layers/Vector[@lyrName='vwReaches']" type="line" symbology="rvd" id="rvd"/>
@@ -40,8 +52,8 @@
                     </Node>
                     <Node label="Rasters">
                         <Children collapsed="true">
-                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40"/>
-                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40"/>
+                            <Node label="Existing Riparian" xpath="Intermediates/Raster[@id='EXRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40" id="ex_rast"/>
+                            <Node label="Historic Riparian" xpath="Intermediates/Raster[@id='HISTRIPARIAN']" type="raster" symbology="Rip_Veg" transparency="40" id="hist_rast"/>
                             <Node label="Existing Vegetated" xpath="Intermediates/Raster[@id='EXVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Historic Vegetated" xpath="Intermediates/Raster[@id='HISTVEGETATED']" type="raster" symbology="Veg" transparency="40"/>
                             <Node label="Conversion" xpath="Intermediates/Raster[@id='CONVERSION']" type="raster" symbology="Veg_conversion_raster" transparency="40" id="conversion_raster"/>
@@ -110,6 +122,15 @@
        <Layer id="hillshade"/>
        <Layer id="evt_rip"/>
        <Layer id="rvd"/>
+      </Layers>
+     </View>
+     <View name="Riparian" id="rip_raster">
+      <Description>This view shows the the existing and historic riparian vegetation extents</Description>
+      <Layers>
+       <Layer id="dgo" />
+       <Layer id="ex_rast"/>
+       <Layer id="hist_rast"/>
+       <Layer id="hillshade"/>
       </Layers>
      </View>
      <View name="Conversion" id="conv">

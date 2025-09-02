@@ -3,23 +3,22 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_vw_dgo_metrics.json"
+    "CIMPATH=map/existing_dam_capacity2.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.vw_dgo_metrics",
-      "uRI" : "CIMPATH=map/main_vw_dgo_metrics.json",
+      "name" : "Existing Dam Capacity",
+      "uRI" : "CIMPATH=map/existing_dam_capacity2.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.vw_dgo_metrics",
+      "description" : "Existing Dam Capacity",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/7b23c3a40bf84ff3860be3dc6aaeaec5.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
-      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -39,11 +38,11 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\ETAL\\RME_3.0.0\\MetricEngine_SulphurCreek_3.0.1\\outputs\\riverscapes_metrics.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\2025 CONUS\\MetricEngine_Sulphur_3.0.5\\outputs\\riverscapes_metrics.gpkg",
           "workspaceFactory" : "Sql",
           "dataset" : "main.%vw_dgo_metrics",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select dgoid,ownership,state,county,drainage_area,watershed_id,stream_name,stream_order,headwater,stream_length,waterbody_type,waterbody_extent,ecoregion3,ecoregion4,\"dgoid:1\",prim_channel_gradient,valleybottom_gradient,rel_flow_length,confluences,diffluences,tributaries,tribs_per_km,planform_sinuosity,lowlying_area,elevated_area,channel_area,floodplain_area,integrated_width,active_channel_ratio,low_lying_ratio,elevated_ratio,floodplain_ratio,acres_vb_per_mile,hect_vb_per_km,channel_width,confinement_ratio,constriction_ratio,confining_margins,constricting_margins,\"dgoid:2\",lf_evt,lf_bps,lf_agriculture_prop,lf_agriculture,lf_conifer_prop,lf_conifer,lf_conifer_hardwood_prop,lf_conifer_hardwood,lf_developed_prop,lf_developed,lf_exotic_herbaceous_prop,lf_exotic_herbaceous,lf_exotic_tree_shrub_prop,lf_exotic_tree_shrub,lf_grassland_prop,lf_grassland,lf_hardwood_prop,lf_hardwood,lf_riparian_prop,lf_riparian,lf_shrubland_prop,lf_shrubland,lf_sparsely_vegetated_prop,lf_sparsely_vegetated,lf_hist_conifer_prop,lf_hist_conifer,lf_hist_conifer_hardwood_prop,lf_hist_conifer_hardwood,lf_hist_grassland_prop,lf_hist_grassland,lf_hist_hardwood_prop,lf_hist_hardwood,lf_hist_hardwood_conifer_prop,lf_hist_hardwood_conifer,lf_hist_peatland_forest_prop,lf_hist_peatland_forest,lf_hist_peatland_nonforest_prop,lf_hist_peatland_nonforest,lf_hist_riparian_prop,lf_hist_riparian,lf_hist_savanna_prop,lf_hist_savanna,lf_hist_shrubland_prop,lf_hist_shrubland,lf_hist_sparsely_vegetated_prop,lf_hist_sparsely_vegetated,ex_riparian,hist_riparian,prop_riparian,hist_prop_riparian,riparian_veg_departure,ag_conversion,develop,grass_shrub_conversion,conifer_encroachment,invasive_conversion,riparian_condition,\"dgoid:3\",qlow,q2,splow,sphigh,\"dgoid:4\",road_len,road_dens,rail_len,rail_dens,land_use_intens,road_dist,rail_dist,div_dist,canal_dist,infra_dist,fldpln_access,access_fldpln_extent,\"dgoid:1342107204\",brat_capacity,brat_hist_capacity,brat_risk,brat_opportunity,brat_limitation,brat_complex_size,brat_hist_complex_size,dam_setting,geom,level_path,seg_distance,centerline_length,segment_area,FCode from main.vw_dgo_metrics",
+          "sqlQuery" : "select dgoid,ownership,state,county,drainage_area,watershed_id,stream_name,stream_order,headwater,stream_length,waterbody_type,waterbody_extent,ecoregion3,ecoregion4,elevation,geology,huc12,\"dgoid:1\",prim_channel_gradient,valleybottom_gradient,rel_flow_length,confluences,diffluences,tributaries,tribs_per_km,planform_sinuosity,lowlying_area,elevated_area,channel_area,floodplain_area,integrated_width,active_channel_ratio,low_lying_ratio,elevated_ratio,floodplain_ratio,acres_vb_per_mile,hect_vb_per_km,channel_width,confinement_ratio,constriction_ratio,confining_margins,constricting_margins,\"dgoid:2\",lf_evt,lf_bps,lf_agriculture_prop,lf_agriculture,lf_conifer_prop,lf_conifer,lf_conifer_hardwood_prop,lf_conifer_hardwood,lf_developed_prop,lf_developed,lf_exotic_herbaceous_prop,lf_exotic_herbaceous,lf_exotic_tree_shrub_prop,lf_exotic_tree_shrub,lf_grassland_prop,lf_grassland,lf_hardwood_prop,lf_hardwood,lf_riparian_prop,lf_riparian,lf_shrubland_prop,lf_shrubland,lf_sparsely_vegetated_prop,lf_sparsely_vegetated,lf_hist_conifer_prop,lf_hist_conifer,lf_hist_conifer_hardwood_prop,lf_hist_conifer_hardwood,lf_hist_grassland_prop,lf_hist_grassland,lf_hist_hardwood_prop,lf_hist_hardwood,lf_hist_hardwood_conifer_prop,lf_hist_hardwood_conifer,lf_hist_peatland_forest_prop,lf_hist_peatland_forest,lf_hist_peatland_nonforest_prop,lf_hist_peatland_nonforest,lf_hist_riparian_prop,lf_hist_riparian,lf_hist_savanna_prop,lf_hist_savanna,lf_hist_shrubland_prop,lf_hist_shrubland,lf_hist_sparsely_vegetated_prop,lf_hist_sparsely_vegetated,ex_riparian,hist_riparian,prop_riparian,hist_prop_riparian,riparian_veg_departure,ag_conversion,develop,grass_shrub_conversion,conifer_encroachment,invasive_conversion,riparian_condition,\"dgoid:3\",qlow,q2,splow,sphigh,\"dgoid:4\",road_len,road_dens,rail_len,rail_dens,land_use_intens,road_dist,rail_dist,div_dist,canal_dist,infra_dist,fldpln_access,access_fldpln_extent,\"dgoid:354062106\",brat_capacity,brat_hist_capacity,brat_risk,brat_opportunity,brat_limitation,brat_complex_size,brat_hist_complex_size,dam_setting,geom,level_path,seg_distance,centerline_length,segment_area,FCode from main.vw_dgo_metrics",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -61,26 +60,6 @@
           },
           "oIDFields" : "dgoid",
           "geometryType" : "esriGeometryPolygon",
-          "extent" : {
-            "xmin" : -111.002097150999987,
-            "ymin" : 40.9825918290000573,
-            "xmax" : -110.706632422999974,
-            "ymax" : 41.2999562500000366,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
               "name" : "dgoid",
@@ -203,6 +182,33 @@
             },
             {
               "name" : "ecoregion4",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "elevation",
+              "type" : "esriFieldTypeDouble",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 4
+            },
+            {
+              "name" : "geology",
+              "type" : "esriFieldTypeString",
+              "isNullable" : true,
+              "length" : 2147483647,
+              "precision" : 0,
+              "scale" : 0,
+              "dbmsType" : 13
+            },
+            {
+              "name" : "huc12",
               "type" : "esriFieldTypeString",
               "isNullable" : true,
               "length" : 2147483647,
@@ -1120,7 +1126,7 @@
               "dbmsType" : 4
             },
             {
-              "name" : "dgoid:1342107204",
+              "name" : "dgoid:354062106",
               "type" : "esriFieldTypeBigInteger",
               "isNullable" : false,
               "length" : 8,
@@ -1593,7 +1599,7 @@
         "breaks" : [
           {
             "type" : "CIMClassBreak",
-            "label" : "None: 0 dams",
+            "label" : "0 dams/km (0 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -1613,56 +1619,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        0,
-                        0,
-                        0,
-                        100
-                      ]
-                    }
-                  },
-                  {
-                    "type" : "CIMSolidFill",
-                    "enable" : true,
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        245,
-                        0,
-                        0,
-                        70
-                      ]
-                    }
-                  }
-                ],
-                "angleAlignment" : "Map"
-              }
-            }
-          },
-          {
-            "type" : "CIMClassBreak",
-            "label" : "Rare: 0-1 dams/km",
-            "patch" : "Default",
-            "symbol" : {
-              "type" : "CIMSymbolReference",
-              "symbol" : {
-                "type" : "CIMPolygonSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMSolidStroke",
-                    "enable" : true,
-                    "capStyle" : "Round",
-                    "joinStyle" : "Round",
-                    "lineStyle3D" : "Strip",
-                    "miterLimit" : 10,
-                    "width" : 0.10000000000000001,
-                    "height3D" : 1,
-                    "anchor3D" : "Center",
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        0,
-                        0,
-                        0,
+                        35,
+                        35,
+                        35,
                         100
                       ]
                     }
@@ -1674,8 +1633,8 @@
                       "type" : "CIMRGBColor",
                       "values" : [
                         255,
-                        170,
-                        0,
+                        255,
+                        255,
                         70
                       ]
                     }
@@ -1683,12 +1642,11 @@
                 ],
                 "angleAlignment" : "Map"
               }
-            },
-            "upperBound" : 1
+            }
           },
           {
             "type" : "CIMClassBreak",
-            "label" : "Occasional: 1-5 dams/km",
+            "label" : "0-3 dams/km (0-5 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -1708,9 +1666,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        0,
-                        0,
-                        0,
+                        35,
+                        35,
+                        35,
                         100
                       ]
                     }
@@ -1721,9 +1679,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        245,
-                        245,
-                        0,
+                        243,
+                        146,
+                        17,
                         70
                       ]
                     }
@@ -1732,11 +1690,11 @@
                 "angleAlignment" : "Map"
               }
             },
-            "upperBound" : 5
+            "upperBound" : 3
           },
           {
             "type" : "CIMClassBreak",
-            "label" : "Frequent: 5-15 dams/km",
+            "label" : "3-10 dams/km (5-16 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -1756,9 +1714,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        0,
-                        0,
-                        0,
+                        35,
+                        35,
+                        35,
                         100
                       ]
                     }
@@ -1769,9 +1727,57 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        76,
+                        245,
                         230,
-                        1,
+                        65,
+                        70
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              }
+            },
+            "upperBound" : 10
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "10-15 dams/km (16-24 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.10000000000000001,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        35,
+                        35,
+                        35,
+                        100
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        148,
+                        206,
+                        50,
                         70
                       ]
                     }
@@ -1784,7 +1790,7 @@
           },
           {
             "type" : "CIMClassBreak",
-            "label" : "Pervasive: >15 dams/km",
+            "label" : "15-25 dams/km (24-40 dams/mi)",
             "patch" : "Default",
             "symbol" : {
               "type" : "CIMSymbolReference",
@@ -1804,9 +1810,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        0,
-                        0,
-                        0,
+                        35,
+                        35,
+                        35,
                         100
                       ]
                     }
@@ -1817,9 +1823,9 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        0,
-                        92,
-                        230,
+                        68,
+                        186,
+                        29,
                         70
                       ]
                     }
@@ -1828,7 +1834,103 @@
                 "angleAlignment" : "Map"
               }
             },
-            "upperBound" : 10000
+            "upperBound" : 25
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "25-45 dams/km (40-72 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.10000000000000001,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        35,
+                        35,
+                        35,
+                        100
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        46,
+                        105,
+                        96,
+                        70
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              }
+            },
+            "upperBound" : 45
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "> 45 dams/km (> 72 dams/mi)",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0.10000000000000001,
+                    "height3D" : 1,
+                    "anchor3D" : "Center",
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        35,
+                        35,
+                        35,
+                        100
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        25,
+                        25,
+                        164,
+                        70
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              }
+            },
+            "upperBound" : 100000
           }
         ],
         "showInAscendingOrder" : true,
@@ -1942,7 +2044,7 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/7b23c3a40bf84ff3860be3dc6aaeaec5.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },

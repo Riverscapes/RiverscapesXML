@@ -1,15 +1,15 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(245, 0, 0)", "No dams"],
-    ["rgb(255, 170, 0)", "Single Dam"],
-    ["rgb(245, 245, 0)","Small Complex (1-3 dams)"],
-    ["rgb(76, 230, 1)","Medium Complex (3-5 dams)"],
-    ["rgb(0, 92, 230)","Large Complex (>5 dams)"]
+    ["#ffffcc", "No dams"],
+    ["#a1dab4", "Single Dam"],
+    ["#41b6c4","Small Complex (1-3 dams)"],
+    ["#2c7fb8","Medium Complex (3-5 dams)"],
+    ["#253494","Large Complex (>5 dams)"]
   ],
   "layerStyles": [
         {
-            "id": "vw-igo-sample-cf7ljl",
+            "id": "Regular Size Points",
             "type": "circle",
             "source": "composite",
             "source-layer": "vw_igo_sample-cf7ljl",
@@ -20,25 +20,25 @@
                     ["linear"],
                     ["get", "brat_hist_complex_size"],
                     0,
-                    "rgb(245, 0, 0)",
+                    "hsla(0, 0%, 0%, 0)",
                     0.000001,
-                    "rgb(245, 0, 0)",
+                    "hsla(0, 0%, 0%, 0)",
                     0.000002,
-                    "rgb(255, 170, 0)",
+                    "#a1dab4",
                     1,
-                    "rgb(255, 170, 0)",
+                    "#a1dab4",
                     1.0001,
-                    "rgb(245, 245, 0)",
+                    "#41b6c4",
                     3,
-                    "rgb(245, 245, 0)",
+                    "#41b6c4",
                     3.0001,
-                    "rgb(76, 230, 1)",
+                    "#2c7fb8",
                     5,
-                    "rgb(76, 230, 1)",
+                    "#2c7fb8",
                     5.0001,
-                    "rgb(0, 92, 230)",
+                    "#253494",
                     10000,
-                    "rgb(0, 92, 230)"
+                    "#253494"
                 ],
             "circle-radius": [
               "interpolate",
@@ -55,6 +55,37 @@
               22,
               5.5
             ]
+            }
+        },
+        {
+            "id": "Small Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vw_igo_sample-cf7ljl",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "brat_hist_complex_size"],
+                    0,
+                    "#ffffcc",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+            "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    0.5,
+                    11,
+                    1,
+                    13.5,
+                    1.5,
+                    15,
+                    2,
+                    22,
+                    2.5
+                ]
             }
         }
     ]

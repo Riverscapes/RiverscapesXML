@@ -36,6 +36,18 @@
                   </Node>
                 </Children>
               </Node>
+              <Node label="DGOs">
+                <Children>
+                  <Node label="Existing Riverscape Dam Capacity (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_EX_filtered_dgo" id="ex_capacity_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 " />  
+                  <Node label="Historic Riverscape Dam Capacity (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_HPE_filtered_dgo" id ="his_capacity_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 55800 " />
+                  <Node label="Riverscape Capacity for Entire Network (overestimate including non-perennial)">
+                    <Children>
+                      <Node label="Existing Riverscape Dam Capacity (DGO|All)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_EX_dgo"  />
+                      <Node label="Historic Riverscape Dam Capacity (DGO|All)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="oCC_HPE_dgo" />
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
             </Children> 
           </Node>
           <Node label="Management">
@@ -54,9 +66,15 @@
                   <Node label="Restoration or Conservation Opportunities (IGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwIgos']" type="point" symbology="opportunity_igo" id="opportunity_igo" />
                 </Children>
               </Node>
+              <Node label="DGOs">
+                <Children collapsed="true">
+                  <Node label="Unsuitable or Limited Opportunities (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="limitation_dgo" id="limited_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Risk of Undesirable Dams (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="risk_dgo" id="risk_dgo" filter="&quot;ReachCode&quot;=46006 OR &quot;ReachCode&quot; = 33600 OR &quot;ReachCode&quot; = 55800 "/>
+                  <Node label="Restoration or Conservation Opportunities (DGO)" xpath="Geopackage/Layers/Vector[@lyrName='vwDgos']" type="polygon" symbology="opportunity_dgo" id="opportunity_dgo" />
+                </Children>
+              </Node>
             </Children>
           </Node>
-          <Node label="Outputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
           <Node label="Project Report"  xpath="HTMLFile" type="report" />
         </Children>
       </Node>
@@ -80,17 +98,16 @@
           </Node>
           <Node label="Vegetation Suitability">
             <Children collapsed="true">
-              <Node label="Existing Vegetation Suitability" xpath="Intermediates/Raster[@id='EXVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
-              <Node label="Historic Vegetation Suitability" xpath="Intermediates/Raster[@id='HISTVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" />
+              <Node label="Existing Vegetation Suitability" xpath="Intermediates/Raster[@id='EXVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" id="ex_veg_suit" />
+              <Node label="Historic Vegetation Suitability" xpath="Intermediates/Raster[@id='HISTVEG_SUIT']" type="raster" symbology="veg_suitability" transparency="40" id="hist_veg_suit" />
             </Children>
           </Node>
           <Node label="Buffers">
             <Children collapsed="true">
-              <Node label="30m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='30M_BUFFER']" type="polygon" symbology="buf30"/>
-              <Node label="100m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='buffer_100m']" type="polygon" symbology="buf100"/>
+              <Node label="30m Buffer" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='buffer_30m']" type="polygon" symbology="buf30" id="buf_30" />
+              <Node label="100m Buffer" xpath="Intermediates/Geopackage/Layers/Vector[@lyrName='buffer_100m']" type="polygon" symbology="buf100" id="buf_100" />
             </Children>
           </Node>
-          <Node label="Intermediates Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
       <Node label="Inputs" xpath="Realizations/Realization/Inputs">
@@ -141,7 +158,6 @@
               <Node label="Hillshade" xpath="Raster[@id='HILLSHADE']" type="raster" symbology="Hillshade" id="hillshade" />
             </Children>
           </Node>
-          <Node label="Inputs Geopackage (SQLite Database)" xpath="Geopackage" type="file" /> 
         </Children>
       </Node>
       <Node label="Log File" xpath="Realizations/Realization/Logs/LogFile" type="file" />
@@ -182,6 +198,16 @@
       <Layers>
         <Layer id="hillshade" />
         <Layer id="opportunity" />
+      </Layers>
+    </View>
+    <View name="Vegetation Suitability" id="veg_suit">
+      <Description>This view shows existing and historic vegetation suitability with 30 and 100m channel buffers</Description>
+      <Layers>
+        <Layer id="buf_30" />
+        <Layer id="buf_100" />
+        <Layer id="ex_veg_suit" />
+        <Layer id="hist_veg_suit" />
+        <Layer id="hillshade" />
       </Layers>
     </View>
     <View name="BRAT Slope" id="BRAT_slope">

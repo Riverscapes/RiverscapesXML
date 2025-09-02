@@ -1,51 +1,144 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(0, 100%, 48%)", "Large: > 66%"],
-    ["hsl(60, 100%, 48%)", "Significant: 33% to 66%"],
-    ["hsl(84, 100%, 48%)", "Minor: 10% to 33%"],
-    ["hsl(100, 100%, 33%)", "Negligible: < 10%"],
-    ["hsl(0, 0%, 70%)", "No Historic Riparian Veg. Detected"]
+    ["#ff0000", "Large: > 66%"],
+    ["#f5f500", "Significant: 33% to 66%"],
+    ["#94f700", "Minor: 10% to 33%"],
+    ["#38a800", "Negligible: < 10%"],
+    ["#00aaa4", "Increase: < 0%"],
+    ["#828282", "No Historic Riparian Veg. Detected"],
+    ["#000000", "Valley Too Narrow to Sample"]
   ],
   "layerStyles": [
-    {
-      "id": "igo-6dm17v",
-      "type": "circle",
-      "source": "composite",
-      "source-layer": "IGO-6dm17v",
-      "layout": {},
-      "paint": {
-          "circle-radius": [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              10,
-              1,
-              11,
-              2,
-              13.55,
-              3,
-              15,
-              4,
-              22,
-              5
-          ],
-          "circle-color": [
-              "interpolate",
-              ["linear"],
-              ["get", "RiparianDepartureID"],
-              0,
-              "hsl(0, 0%, 51%)",
-              1,
-              "hsl(100, 100%, 33%)",
-              2,
-              "hsl(84, 100%, 48%)",
-              3,
-              "hsl(60, 100%, 48%)",
-              4,
-              "hsl(0, 100%, 50%)"
-          ]
-      }
-  }
-  ]
+        {
+            "id": "Large Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "rvd_igo_sample-6enrgp",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "Departure"],
+                    ["Increase: < 0%"],
+                    "#00aaa4",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    2,
+                    11,
+                    3,
+                    13.5,
+                    4,
+                    15,
+                    5,
+                    22,
+                    6
+                ]
+            }
+        },
+        {
+            "id": "Regular Size Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "rvd_igo_sample-6enrgp",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "Departure"],
+                    ["Large: > 66%"],
+                    "#ff0000",
+                    ["Significant: 33% to 66%"],
+                    "#f5f500",
+                    ["Minor: 10% to 33%"],
+                    "#94f700",
+                    ["Negligible: < 10%"],
+                    "#38a800",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    1.5,
+                    11,
+                    2.5,
+                    13.5,
+                    3.5,
+                    15,
+                    4.5,
+                    22,
+                    5.5
+                ]
+            }
+        },
+        {
+            "id": "Small Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "rvd_igo_sample-6enrgp",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "Departure"],
+                    ["None"],
+                    "#828282",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    1,
+                    11,
+                    2,
+                    13.5,
+                    3,
+                    15,
+                    4,
+                    22,
+                    5
+                ]
+            }
+        },
+        {
+            "id": "Smallest Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "rvd_igo_sample-6enrgp",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "Departure"],
+                    ["Valley Too Narrow to Sample"],
+                    "#000000",
+                    "hsla(0, 0%, 0%, 0)"
+                ],
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10,
+                    0.75,
+                    11,
+                    1.25,
+                    13.5,
+                    1.75,
+                    15,
+                    2.25,
+                    22,
+                    2.75
+                ]
+            }
+        }
+    ]
 }
