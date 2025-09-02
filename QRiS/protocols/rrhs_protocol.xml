@@ -1,4 +1,4 @@
-<Protocol machine_code="LTPBR_RRHS" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
+<Protocol machine_code="LTPBR_RRHS" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Rapid Riverscape Health Protocol</Label>
     <Description>Adapted rapid survey from LTPBR V2 Protocol</Description>
     <URL>https://lowtechpbr.restoration.usu.edu/</URL>
@@ -28,34 +28,34 @@
                 </ListField>
                 <IntegerField id="active_floodplain_percent" version="1.0">
                     <Label>Active Floodplain %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Active Valley Bottom</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="inactive_floodplain_percent" version="1.0">
                     <Label>Inactive Floodplain %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Active Valley Bottom</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="active_channel_percent" version="1.0">
                     <Label>Active Channel %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Active Valley Bottom</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="confluence_count" version="1.0">
                     <Label>Confluence Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Junctions</Value>
@@ -64,7 +64,7 @@
                 </IntegerField>
                 <IntegerField id="diffluence_count" version="1.0">
                     <Label>Diffluence Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Junctions</Value>
@@ -73,7 +73,7 @@
                 </IntegerField>
                 <IntegerField id="channel_head_count" version="1.0">
                     <Label>Channel Head Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Junctions</Value>
@@ -82,7 +82,7 @@
                 </IntegerField>
                 <IntegerField id="dam_count" version="1.0">
                     <Label>Dam Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Structural Elements</Value>
@@ -91,7 +91,7 @@
                 </IntegerField>
                 <IntegerField id="jam_count" version="1.0">
                     <Label>Jam Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Structural Elements</Value>
@@ -100,7 +100,7 @@
                 </IntegerField>
                 <IntegerField id="vegetative_mass_count" version="1.0">
                     <Label>Vegetative Mass Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Structural Elements</Value>
@@ -109,7 +109,7 @@
                 </IntegerField>
                 <IntegerField id="pool_count" version="1.0">
                     <Label>Pool Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -118,7 +118,7 @@
                 </IntegerField>
                 <IntegerField id="pond_count" version="1.0">
                     <Label>Pond Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -127,7 +127,7 @@
                 </IntegerField>
                 <IntegerField id="chute_count" version="1.0">
                     <Label>Chute Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -136,7 +136,7 @@
                 </IntegerField>
                 <IntegerField id="riffle_count" version="1.0">
                     <Label>Riffle Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -145,7 +145,7 @@
                 </IntegerField>
                 <IntegerField id="mid_channel_bar_count" version="1.0">
                     <Label>Mid-Channel Bar Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -154,7 +154,7 @@
                 </IntegerField>
                 <IntegerField id="bank_attached_bar_count" version="1.0">
                     <Label>Bank-Attached Bar Count</Label>
-                    <DefaultLevel>0</DefaultLevel>
+                    <DefaultValue>0</DefaultValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -163,48 +163,48 @@
                 </IntegerField>
                 <IntegerField id="ponded_percent" version="1.0">
                     <Label>Ponded %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Inundation</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="free_flowing_percent" version="1.0">
                     <Label>Free Flowing %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Inundation</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="overflow_percent" version="1.0">
                     <Label>Overflow %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Inundation</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="recovery_potential_percent" version="1.0">
                     <Label>Recovery Potential %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Recovery Potential</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
                 <IntegerField id="riparian_vegetation_percent" version="1.0">
                     <Label>Riparian Vegetation %</Label>
-                    <MaximumValue>100</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Riparian Vegetation</Value>
                         </Values>
                     </Visibility>
+                    <MaximumValue>100</MaximumValue>
                 </IntegerField>
             </Fields>
         </Layer>

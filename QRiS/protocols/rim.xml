@@ -1,4 +1,4 @@
-<Protocol machine_code="RIM" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
+<Protocol machine_code="RIM" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Riverscape Inundation Mapping</Label>
     <Description>Protocol to aid in efficient mapping of structurally forced inundation patterns in beaver impacted riverscapes</Description>
     <URL>https://rim.riverscapes.net/</URL>
