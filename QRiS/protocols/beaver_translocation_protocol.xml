@@ -9,7 +9,7 @@
     <Layers>
         <Layer id="beaver_translocation_site_observations" version="1.0" geom_type="Polygon">
             <Label>Site Observations</Label>
-            <Symbology>site_observations.qml</Symbology>
+            <Symbology>beaver_translocation_site_observations.qml</Symbology>
             <Description>Observations for Beaver Translocation Site</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>                

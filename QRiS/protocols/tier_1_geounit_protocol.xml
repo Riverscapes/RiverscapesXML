@@ -49,7 +49,7 @@
         </Layer>
         <Layer id="margins" version="1.0" geom_type="Linestring">
             <Label>Margins</Label>
-            <Symbology>margins.xml</Symbology>
+            <Symbology>margins.qml</Symbology>
             <Description>Margins of the Valley, Valley Bottom, and Active Channel</Description>
             <Fields>
                 <ListField id="tier_1_margin_type" version="1.0">

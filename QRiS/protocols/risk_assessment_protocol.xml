@@ -1,0 +1,508 @@
+<Protocol machine_code="RISK_ASSESSMENT" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Risk Assessment Protocol</Label>
+    <Description>Risk Assessment of Stream, Infrastructure, and Property</Description>
+    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-08-19</CreationDate>
+    <UpdatedDate>2025-09-03</UpdatedDate>
+    <Layers>
+        <Layer id="stream_assessment" version="1.0" geom_type="Linestring">
+            <Label>Stream Assessment</Label>
+            <Symbology>stream_assessment.qml</Symbology>
+            <Description>LTPBR Opportunity Within Stream of Interest</Description>
+            <Hierarchy>
+                <HierarchyItem>Stream Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="stream_order" version="1.0">
+                    <Label>Stream Order Wadeability</Label>
+                    <Values>
+                        <Value>1st through 3rd Order Wadeable Stream</Value>
+                        <Value>3rd through 5th Order Wadeable Stream</Value>
+                        <Value>5th Order Non-Wadeable Stream or Higher</Value>
+                    </Values>
+                </ListField>
+                <ListField id="bank_material" version="1.0">
+                    <Label>Bank Material</Label>
+                    <Values>
+                        <Value>Loosely consolidated sediment and/or rock</Value>
+                        <Value>Moderately compacted sediment and/or rock</Value>
+                        <Value>Compact sediment and/or rock</Value>
+                    </Values>
+                </ListField>
+                <ListField id="bed_material" version="1.0">
+                    <Label>Bed Material</Label>
+                    <Values>
+                        <Value>Silt or clay</Value>
+                        <Value>Sand or fine gravel</Value>
+                        <Value>Coarse gravel or small cobbles</Value>
+                        <Value>Large Cobbles or Boulders</Value>
+                        <Value>Bedrock</Value>
+                    </Values>
+                </ListField>
+                <ListField id="riparian_vegetation" version="1.0">
+                    <Label>Riparian Vegetation</Label>
+                    <Values>
+                        <Value>Bare</Value>
+                        <Value>Upland dominant; little to no riparian vegetation</Value>
+                        <Value>Mixture of riparian and upland species</Value>
+                        <Value>Riparian dominant; little to no upland vegetation</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Flood Risk</Label>
+                    <Values>
+                        <Value>Evidence of small, frequent flood events</Value>
+                        <Value>Evidence of medium-sized, infrequent flood events</Value>
+                        <Value>Evidence of large, rare flood events</Value>
+                    </Values>
+                </ListField>
+                <IntegerField id="opportunity_rating" version="1.0">
+                    <Label>Opportunity Rating</Label>
+                    <Slider min="0" max="5" step="1" />
+                </IntegerField>
+                <TextField id="notes" version="1.0"> 
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="land_use" version="1.0" geom_type="Polygon">
+            <Label>Land Use Assessment</Label>
+            <Symbology>land_use.qml</Symbology>
+            <Description>Assessment of current and historic land use and resulting riparian vegetation deapture</Description>
+            <Hierarchy>
+                <HierarchyItem>Land Use Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="current_land_use" version="1.0">
+                    <Label>Current Land Use</Label>
+                    <Values>
+                        <Value>Undeveloped Range or Forest</Value>
+                        <Value>Crop, Pasture, or Hay</Value>
+                        <Value>Developed</Value>
+                    </Values>
+                </ListField>
+                <ListField id="historic_land_use" version="1.0">
+                    <Label>Estimated Historic Land Use</Label>
+                    <Values>
+                        <Value>Undeveloped Range or Forest</Value>
+                        <Value>Crop, Pasture, or Hay</Value>
+                        <Value>Developed</Value>
+                    </Values>
+                </ListField>
+                <ListField id="riparian_veg_departure" version="1.0">
+                    <Label>Estimated Riparian Veg Departure</Label>
+                    <Values>
+                        <Value>Large Departure from Estimated Historic Conditions</Value>
+                        <Value>Small Departure from Estimated Historic Conditions</Value>
+                        <Value>No Change</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="buildings" version="1.0" geom_type="Polygon">
+            <Label>Buildings</Label>
+            <Symbology>ltpbr_risk_polygon.qml</Symbology>
+            <Description>Risk Assessment for Buildings</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="roads" version="1.0" geom_type="Linestring">
+            <Label>Roads</Label>
+            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Description>Risk Assessment for Roads</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="bridges" version="1.0" geom_type="Linestring">
+            <Label>Bridges</Label>
+            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Description>Risk Assessment for Bridges</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="canals" version="1.0" geom_type="Linestring">
+            <Label>Canals</Label>
+            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Description>Risk Assessment for Canals</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="Diversions" version="1.0" geom_type="Point">
+            <Label>Diversions</Label>
+            <Symbology>ltpbr_risk_point.qml</Symbology>
+            <Description>Risk Assessment for Diversions</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="culverts" version="1.0" geom_type="Point">
+            <Label>Culverts</Label>
+            <Symbology>ltpbr_risk_point.qml</Symbology>
+            <Description>Risk Assessment for Culverts</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="other_point" version="1.0" geom_type="Point">
+            <Label>Other</Label>
+            <Symbology>ltpbr_risk_point.qml</Symbology>
+            <Description>Risk Assessment for Other Infrastructure Not Listed</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="type" version="1.0">
+                    <Label>Infrastructure Type</Label>
+                </TextField>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="other_line" version="1.0" geom_type="Linestring">
+            <Label>Other</Label>
+            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Description>Risk Assessment for Other Infrastructure Not Listed</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="type" version="1.0">
+                    <Label>Infrastructure Type</Label>
+                </TextField>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="other_polygon" version="1.0" geom_type="Polygon">
+            <Label>Other</Label>
+            <Symbology>ltpbr_risk_polygon.qml</Symbology>
+            <Description>Risk Assessment for Other Infrastructure Not Listed</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="type" version="1.0">
+                    <Label>Infrastructure Type</Label>
+                </TextField>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="property_assessment" version="1.0" geom_type="Point">
+            <Label>Property Assessment</Label>
+            <Symbology>property.qml</Symbology>
+            <Description>Assessment of LTPBR Feasibility on Property</Description>
+            <Hierarchy>
+                <HierarchyItem>Property Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="channel_floodplain_assessment" version="1.0">
+                    <Label>Channel and Floodplain Adjustments in Valley Bottom</Label>
+                    <Values>
+                        <Value>Landowner/manager willing to allow stream and floodplain adjustment in all of valley bottom</Value>
+                        <Value>Landowner/manager willing to allow stream and floodplain adjustment in some protions of valley bottom</Value>    
+                        <Value>Landowner/manager unwilling to allow stream and floodplain adjustment in valley bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="wood_accumulation_beaver_activity" version="1.0">
+                    <Label>Wood Accumulation and Beaver Activity in Valley Bottom</Label>
+                    <Values>
+                        <Value>Landowner/manager willing to allow dynamic processes</Value>
+                        <Value>Landowner/manager willing to allow some processes</Value>
+                        <Value>Landowner/manager unwilling to allow processes of wood accumulation and/or beaver activity</Value>
+                    </Values>
+                </ListField>
+                <ListField id="adaptive_management" version="1.0">
+                    <Label>Adaptive Management</Label>
+                    <Values>
+                        <Value>Landowner/manager committed to follow up monitoring, maintainence, and treatments</Value>
+                        <Value>Landowner/manager committed to follow up monitoring, maintainence, and treatments but limited resourcess restrict adaptive management</Value>
+                        <Value>Landowner/manager wants single intervention; no follow up monitoring, maintainence, or treatments</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="adjacent_landowners_assessment" version="1.0" geom_type="Point">
+            <Label>Adjacent Landowner Assessment</Label>
+            <Symbology>property2.qml</Symbology>
+            <Description>Assessment of LTPBR Feasibility of Nearby Landowners</Description>
+            <Hierarchy>
+                <HierarchyItem>Property Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="ltbpr_approval" version="1.0">
+                    <Label>Aprroval of LTPBR</Label>
+                    <Values>
+                        <Value>Large majority of adjacent landowners approve of LTPBR actions near their property</Value>
+                        <Value>Some adjacent landowners approve of LTPBR actions near their property</Value>
+                        <Value>Small minority of adjacent landowners approve of LTPBR actions near their property</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    </Layers>
+    </Protocol>
