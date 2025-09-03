@@ -1,0 +1,382 @@
+<Protocol machine_code="LTPBR_BASE" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Barrier Assessment Protocol</Label>
+    <Description>Barrier Assessment based on Southeast Aquatic Resources Partnership (SARP) data forms.</Description>
+    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-08-18</CreationDate>
+    <UpdatedDate>2025-08-18</UpdatedDate>
+    <Layers>
+        <Layer id="crossing_info" version="1.0" geom_type="Point">
+            <Label>Crossing Information</Label>
+            <Symbology>crossing.qml</Symbology>
+            <Description>Contextual information for crossing where barrier is located</Description>
+            <Fields>
+                <TextField id="id" version="1.0">
+                    <Label>ID</Label>
+                </TextField>
+                <TextField id="date" version="1.0">
+                    <Label>Date</Label>
+                </TextField>
+                <TextField id="stream_name" version="1.0">
+                    <Label>Stream Name</Label>
+                </TextField>
+                <ListField id="crossing_type" version="1.0">
+                    <Label>Crossing Type</Label>
+                    <Values>
+                        <Value>Bridge</Value>
+                        <Value>Culvert</Value>
+                        <Value>Multiple Culvert</Value>
+                        <Value>Ford</Value>
+                        <Value>No Crossing</Value>
+                        <Value>Removed Crossing</Value>
+                        <Value>Buried Stream</Value>
+                        <Value>Inaccessible</Value>
+                        <Value>Partially Inaccessible</Value>
+                        <Value>No Upstream Channel</Value>
+                        <Value>Bridge Adequate</Value>
+                    </Values>
+                </ListField>
+                <IntegerField id="number_culverts" version="1.0">
+                    <Label>Number of Culverts</Label>
+                    <MinimumValue>0</MinimumValue>
+                </IntegerField>
+                <TextField id="photo_id" version="1.0">
+                    <Label>Photo ID</Label>
+                </TextField>
+                <ListField id="flow_condition" version="1.0">
+                    <Label>Flow Condition</Label>
+                    <Values>
+                        <Value>No Flow</Value>
+                        <Value>Typical Low Flow</Value>
+                        <Value>Moderate</Value>
+                        <Value>High</Value>
+                    </Values>
+                </ListField>
+                <ListField id="crossing_condition" version="1.0">
+                    <Label>Crossing Condition</Label>
+                    <Values>
+                        <Value>Ok</Value>
+                        <Value>Poor</Value>
+                        <Value>New</Value>
+                        <Value>Unknown</Value>
+                        <Value>Failing</Value>
+                    </Values>
+                </ListField>
+                <ListField id="alignment" version="1.0">
+                    <Label>Alignment</Label>
+                    <Values>
+                        <Value>Flow-Aligned</Value>
+                        <Value>Skewed</Value>
+                    </Values>
+                </ListField>
+                <FloatField id="active_channel_width" version="1.0">
+                    <Label>Active Channel Width (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <ListField id="constriction" version="1.0">
+                    <Label>Constriction</Label>
+                    <Values>
+                        <Value>Severe</Value>
+                        <Value>Moderate</Value>
+                        <Value>Spans Bankfull Channel</Value>
+                        <Value>Spans Full Channel</Value>
+                    </Values>
+                </ListField>
+                <ListField id="tailwater_pool" version="1.0">
+                    <Label>Tailwater Scour Pool</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Small</Value>
+                        <Value>Large</Value>
+                    </Values>
+                </ListField>
+                <ListField id="inlet_pool" version="1.0">
+                    <Label>Inlet Scour Pool</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Small</Value>
+                        <Value>Large</Value>
+                    </Values>
+                </ListField>
+                <ListField id="vegetation_cover" version="1.0">
+                    <Label>Vegetation Cover</Label>
+                    <Values>
+                        <Value>Low</Value>
+                        <Value>Medium</Value>
+                        <Value>High</Value>
+                    </Values>
+                </ListField>
+                <TextField id="comments" version="1.0">
+                    <Label>Comments</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="outlet_assessment" version="1.0" geom_type="Point">
+            <Label>Outlet Assessment</Label>
+            <Symbology>outlet.qml</Symbology>
+            <Description>Assessment of Outlet</Description>
+            <Fields>
+                <ListField id="structure_material" version="1.0">
+                    <Label>Structure Material</Label>
+                    <Values>
+                        <Value>Metal</Value>
+                        <Value>Concrete</Value>
+                        <Value>Plastic</Value>
+                        <Value>Wood</Value>
+                        <Value>Rock/Stone</Value>
+                        <Value>Fiberglass</Value>
+                        <Value>Combination</Value>
+                    </Values>
+                </ListField>
+                <ListField id="outlet_armoring" version="1.0">
+                    <Label>Outlet Armoring</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <ListField id="outlet_grade" version="1.0">
+                    <Label>Outlet Grade</Label>
+                    <Values>
+                        <Value>At Stream Grade</Value>
+                        <Value>Free Fall</Value>
+                        <Value>Cascade</Value>
+                        <Value>Free Fall onto Cascade</Value>
+                        <Value>Clogged/Collaposed/Submerged</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <FloatField id="outlet_width" version="1.0">
+                    <Label>Outlet Width (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="outlet_height" version="1.0">
+                    <Label>Outlet Height (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="water_width" version="1.0">
+                    <Label>Water Width (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="water_depth" version="1.0">
+                    <Label>Water Depth (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="outlet_drop_water_surface" version="1.0">
+                    <Label>Outlet Drop to Water Surface (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="outlet_drop_stream_bottom" version="1.0">
+                    <Label>Outlet Drop to Stream Bottom (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="structure_length" version="1.0">
+                    <Label>Structure Length (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <ListField id="undermining" version="1.0">
+                    <Label>Undermining</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <TextField id="comments" version="1.0">
+                    <Label>Comments</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="inlet_assessment" version="1.0" geom_type="Point">
+            <Label>Inlet Assessment</Label>
+            <Symbology>inlet.qml</Symbology>
+            <Description>Assessment of Inlet</Description>
+            <Fields>
+                <ListField id="structure_material" version="1.0">
+                    <Label>Structure Material</Label>
+                    <Values>
+                        <Value>Metal</Value>
+                        <Value>Concrete</Value>
+                        <Value>Plastic</Value>
+                        <Value>Wood</Value>
+                        <Value>Rock/Stone</Value>
+                        <Value>Fiberglass</Value>
+                        <Value>Combination</Value>
+                    </Values>
+                </ListField>
+                <ListField id="inlet_armoring" version="1.0">
+                    <Label>Outlet Armoring</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <ListField id="inlet_grade" version="1.0">
+                    <Label>Inlet Grade</Label>
+                    <Values>
+                        <Value>At Stream Grade</Value>
+                        <Value>Inlet Drop</Value>
+                        <Value>Perched</Value>
+                        <Value>Clogged/Collaposed/Submerged</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="inlet_type" version="1.0">
+                    <Label>Inlet Type</Label>
+                    <Values>
+                        <Value>Projecting</Value>
+                        <Value>Headwall</Value>
+                        <Value>Wingwalls</Value>
+                        <Value>Headwall and Wingwalls</Value>
+                        <Value>Mitered to Slope</Value>
+                        <Value>Other</Value>
+                        <Value>None</Value>
+                    </Values>
+                </ListField>
+                <ListField id="undermining" version="1.0">
+                    <Label>Undermining</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <FloatField id="inlet_width" version="1.0">
+                    <Label>Inlet Width (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="inlet_height" version="1.0">
+                    <Label>Inlet Height (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="water_width" version="1.0">
+                    <Label>Water Width (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="water_depth" version="1.0">
+                    <Label>Water Depth (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <FloatField id="inlet_drop_stream_bottom" version="1.0">
+                    <Label>Inlet Drop to Stream Bottom (m)</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <TextField id="comments" version="1.0">
+                    <Label>Comments</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="additional_conditions" version="1.0" geom_type="Point">
+            <Label>Additional Conditions</Label>
+            <Symbology>conditions.qml</Symbology>
+            <Description>Additional Information about Barrier</Description>
+            <Fields>
+                <FloatField id="slope" version="1.0">
+                    <Label>Slope</Label>
+                    <MinimumValue>0</MinimumValue>
+                </FloatField>
+                <ListField id="internal_structures" version="1.0">
+                    <Label>Internal Structures</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Baffles/Weirs</Value>
+                        <Value>Supports</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="stream_substrate_type" version="1.0">
+                    <Label>Stream Substrate Type</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Silt</Value>
+                        <Value>Sand</Value>
+                        <Value>Gravel</Value>
+                        <Value>Cobble</Value>
+                        <Value>Boulder</Value>
+                        <Value>Bedrock</Value>
+                        <Value>Organic Material</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_substrate_type" version="1.0">
+                    <Label>Structure Substrate Type</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Silt</Value>
+                        <Value>Sand</Value>
+                        <Value>Gravel</Value>
+                        <Value>Cobble</Value>
+                        <Value>Boulder</Value>
+                        <Value>Bedrock</Value>
+                        <Value>Organic Material</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_substrate_coverage" version="1.0">
+                    <Label>Structure Substrate Coverage</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>25%</Value>
+                        <Value>50%</Value>
+                        <Value>75%</Value>
+                        <Value>100%</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="physical_barriers" version="1.0">
+                    <Label>Physical Barriers</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Debris/Sediment/Rock</Value>
+                        <Value>Deformation</Value>
+                        <Value>Free Fall</Value>
+                        <Value>Fencing</Value>
+                        <Value>Dry</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="severity" version="1.0">
+                    <Label>Barrier Severity</Label>
+                    <Values>
+                        <Value>None</Value>
+                        <Value>Minor</Value>
+                        <Value>Moderate</Value>
+                        <Value>Severe</Value>
+                    </Values>
+                </ListField>
+                <ListField id="water_depth_stream" version="1.0">
+                    <Label>Water Depth Matches Stream</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No-Shallower</Value>
+                        <Value>No-Deeper</Value>
+                        <Value>Unknown</Value>
+                        <Value>Dry</Value>
+                        <Value>Dry-Stream Also Dry</Value>
+                    </Values>
+                </ListField>
+                <ListField id="water_depth_velocity" version="1.0">
+                    <Label>Water Velocity Matches Stream</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No-Faster</Value>
+                        <Value>No-Slower</Value>
+                        <Value>Unknown</Value>
+                        <Value>Dry</Value>
+                        <Value>Dry-Stream Also Dry</Value>
+                    </Values>
+                </ListField>
+                <ListField id="dry_passage" version="1.0">
+                    <Label>Dry Passage through Structure</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <TextField id="comments" version="1.0">
+                    <Label>Comments</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    </Layers>
+    </Protocol>
