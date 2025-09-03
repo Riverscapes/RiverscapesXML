@@ -12,7 +12,7 @@
     <Layers>
         <Layer id="dam_crests" version="1.0" geom_type="Linestring">
             <Label>Dam Crests</Label>
-            <Symbology>crests_type.qml</Symbology>
+            <Symbology>dam_crests_rim.qml</Symbology>
             <Description>Dam Crests Layer</Description>
             <Hierarchy>
                 <HierarchyItem>Assessments</HierarchyItem>
@@ -38,7 +38,7 @@
         </Layer>
         <Layer id="thalwegs" version="1.0" geom_type="Linestring">
             <Label>Thalwegs</Label>
-            <Symbology>Thalweg_main.qml</Symbology>
+            <Symbology>thalwegs_rim.qml</Symbology>
             <Description>Thalwegs within the riverscape</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>
@@ -59,7 +59,7 @@
         </Layer>
         <Layer id="inundation" version="1.0" geom_type="Polygon">
             <Label>Inundation</Label>
-            <Symbology>inundation_extents.qml</Symbology>
+            <Symbology>inundation_extents_rim.qml</Symbology>
             <Description>Inundation Extents Layer</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>
@@ -78,6 +78,40 @@
         </Layer>
     </Layers>
     <Metrics>
+        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area">
+            <Label>Riverscape Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The area of the riverscape valley bottom within the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="metric_layer"/>
+            </Parameters>
+        </Metric>
+        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length">
+            <Label>Riverscape Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The length of the riverscape centerline within the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="metric_layer"/>
+            </Parameters>
+        </Metric>
+        <Metric id="integrated_valley_width" version="1.0" calculation_machine_code="proportion">
+            <Label>Integrated Valley Width</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Valley width, the area of the valley divided by the valley centerline length</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="numerator" />
+                <InputLayer input_ref="centerline" usage="denominator" />
+            </Parameters>
+        </Metric>
         <Metric id="channel_gradient" version="1.0" calculation_machine_code="gradient">
             <Label>Channel Gradient</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -91,6 +125,203 @@
                         <Value>Main</Value>
                     </AttributeFilter>
                 </DCELayer> 
+            </Parameters>
+        </Metric>
+        <Metric id="thalweg_length_main" version="1.0" calculation_machine_code="length">
+            <Label>Thalweg Length (main)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The length of the main channel within the riverscape sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="thalwegs">
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Main</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="thalweg_length_all" version="1.0" calculation_machine_code="length">
+            <Label>Thalweg Length (all)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The length of the all channels within the riverscape sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <MaximumValue>1000000</MaximumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="thalwegs">
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_thalweg_main" version="1.0" calculation_machine_code="proportion">
+            <Label>Percent Thalweg that is the Main Thalweg </Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the thalwegs that is the main thalweg</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="thalwegs">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Main</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="thalwegs">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="sinuosity" version="1.0" calculation_machine_code="sinuosity">
+            <Label>Sinuosity</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The sinuosity of the main channel in the riverscape sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="thalwegs">
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Main</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="relative_flow_length" version="1.0" calculation_machine_code="length">
+            <Label>Relative Flow Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The sum of all channel lengths per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>          
+                <DCELayer layer_id_ref="thalwegs"/>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_crests">
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density" version="1.0" calculation_machine_code="count">
+            <Label>Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of beaver dams per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Numerator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count_intact" version="1.0" calculation_machine_code="count">
+            <Label>Intact Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_crests">
+                    <AttributeFilter field_id_ref="dam_state"> 
+                        <Value>Intact</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density_intact" version="1.0" calculation_machine_code="count">
+            <Label>Intact Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of beaver dams per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="dam_state"> 
+                        <Value>Intact</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count_breached" version="1.0" calculation_machine_code="count">
+            <Label>Breached Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_crests">
+                    <AttributeFilter field_id_ref="dam_state"> 
+                        <Value>Breached</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density_breached" version="1.0" calculation_machine_code="count">
+            <Label>Breached Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of beaver dams per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="dam_state"> 
+                        <Value>Breached</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count_blownout" version="1.0" calculation_machine_code="count">
+            <Label>Blown Out Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_crests">
+                    <AttributeFilter field_id_ref="dam_state"> 
+                        <Value>Blown Out</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density_blownout" version="1.0" calculation_machine_code="count">
+            <Label>Blown Out Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of beaver dams per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="dam_state"> 
+                        <Value>Blown Out</Value>
+                    </AttributeFilter>
+                </DCELayer>
             </Parameters>
         </Metric>
     </Metrics>
