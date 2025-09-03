@@ -100,18 +100,6 @@
                 <InputLayer input_ref="centerline" usage="metric_layer"/>
             </Parameters>
         </Metric>
-        <Metric id="integrated_valley_width" version="1.0" calculation_machine_code="proportion">
-            <Label>Integrated Valley Width</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Valley width, the area of the valley divided by the valley centerline length</Description>
-            <DefinitionURL/>
-            <MinimumValue>0</MinimumValue>
-            <Precision>3</Precision>
-            <Parameters>
-                <InputLayer input_ref="valley_bottom" usage="numerator" />
-                <InputLayer input_ref="centerline" usage="denominator" />
-            </Parameters>
-        </Metric>
         <Metric id="channel_gradient" version="1.0" calculation_machine_code="gradient">
             <Label>Channel Gradient</Label>
             <DefaultLevel>Metric</DefaultLevel>
