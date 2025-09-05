@@ -1,15 +1,16 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["hsl(226, 79%, 58%)", "< 0.01"],
-    ["hsl(204, 84%, 57%)", "0.01 - 0.025"],
-    ["hsl(185, 89%, 56%)", "0.025 - 0.1"],
-    ["hsl(106, 64%, 68%)", "0.1 - 1"],
-    ["hsl(55, 100%, 50%)", "> 1"]
+    ["#ffffff", "0"],
+    ["#4067e8", "0 - 0.01"],
+    ["#35a4ed", "0.01 - 0.025"],
+    ["#29e1f3", "0.025 - 0.1"],
+    ["#93e27a", "0.1 - 1"],
+    ["#ffea00", "> 1"]
   ],
   "layerStyles": [
     {
-      "id": "igos-5l0gli",
+      "id": "Regular Points",
       "type": "circle",
       "source": "composite",
       "source-layer": "IGOs-5l0gli",
@@ -20,40 +21,75 @@
               ["linear"],
               ["zoom"],
               10,
-              1,
+              1.5,
               11,
-              2,
+              2.5,
               13.5,
-              3,
+              3.5,
               15,
-              4,
+              4.5,
               22,
-              5
+              5.5
           ],
           "circle-color": [
               "interpolate",
               ["linear"],
               ["get", "Canal_dens"],
               0,
-              "hsl(226, 79%, 58%)",
+              "hsla(0, 0%, 0%, 0)",
+              0.00000009,
+              "hsla(0, 0%, 0%, 0)",
+              0.0000001,
+              "#4067e8",
               0.0100,
-              "hsl(226, 79%, 58%)",
+              "#4067e8",
               0.01001,
-              "hsl(204, 84%, 57%)",
+              "#35a4ed",
               0.02500,
-              "hsl(204, 84%, 57%)",
+              "#35a4ed",
               0.025001,
-              "hsl(185, 89%, 56%)",
+              "#29e1f3",
               0.100,
-              "hsl(185, 89%, 56%)",
+              "#29e1f3",
               0.1001,
-              "hsl(106, 64%, 68%)",
+              "#93e27a",
               1.00,
-              "hsl(106, 64%, 68%)",
+              "#93e27a",
               1.001,
-              "hsl(55, 100%, 50%)",
+              "#ffea00",
               100.00,
-              "hsl(55, 100%, 50%)"
+              "#ffea00"
+          ]
+      }
+  },
+  {
+      "id": "Regular Points",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "IGOs-5l0gli",
+      "layout": {},
+      "paint": {
+          "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              0.75,
+              11,
+              1.25,
+              13.5,
+              1.75,
+              15,
+              2.25,
+              22,
+              2.75
+          ],
+          "circle-color": [
+              "match",
+              ["get", "Canal_dens"],
+              [0],
+              "#ffffff",
+              "hsla(0, 0%, 0%, 0)"
           ]
       }
   }
