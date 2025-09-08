@@ -210,10 +210,10 @@
                 <ListField id="observation_polygon_type" version="1.0">
                     <Label>Observation Type</Label>
                     <Values>
+                        <Value>Building Materials</Value>
                         <Value>Caution</Value>
+                        <Value>Infrastructure</Value>
                         <Value>Logistics</Value>
-                        <Value>Riverscape Feature</Value>
-                        <Value>Road</Value>
                         <Value>Other</Value>
                     </Values>
                 </ListField>
@@ -230,14 +230,15 @@
                 <ListField id="observation_line_type" version="1.0">
                     <Label>Observation Type</Label>
                     <Values>
-                        <Value>Building Materials</Value>
-                        <Value>Caution</Value>
-                        <Value>Infrastructure</Value>
+                        Value>Caution</Value>
                         <Value>Logistics</Value>
+                        <Value>Riverscape Feature</Value>
+                        <Value>Road</Value>
                         <Value>Other</Value>
                     </Values>
                 </ListField>
             </Fields>
         </Layer>
     </Layers>
+
 </Protocol>
