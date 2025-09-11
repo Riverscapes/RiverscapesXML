@@ -1,17 +1,17 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(140, 81, 10)", "0 - 1"],
-    ["rgb(216, 179, 101)", "1 - 2"],
-    ["rgb(246, 232, 195)", "2 - 5"],
-    ["rgb(245, 245, 245)", "5 - 10"],
-    ["rgb(199, 234, 229)", "10 - 20"],
-    ["rgb(90, 180, 172)", "20 - 50"],
-    ["rgb(1, 102, 94)", "> 50"]
+    ["#ffffff", "0"],
+    ["#8c510a", "1 - 2"],
+    ["#d8b365", "3 - 5"],
+    ["#f6e8c3", "6 - 10"],
+    ["#c7eae5", "11 - 20"],
+    ["#5ab4ac", "21 - 50"],
+    ["#01665e", "> 50"]
   ],
   "layerStyles": [
         {
-            "id": "vw-igo-sample-cf7ljl",
+            "id": "Regular Points",
             "type": "circle",
             "source": "composite",
             "source-layer": "vw_igo_sample-cf7ljl",
@@ -19,25 +19,25 @@
             "paint": {
                 "circle-color": [
                 "case",
-                ["<=", ["get", "tribs_per_km"], 1],
-                "rgb(140, 81, 10)", 
-                ["all", [">", ["get", "tribs_per_km"], 1], 
+                ["<=", ["get", "tribs_per_km"], 0],
+                "hsla(0, 0%, 0%, 0)", 
+                ["all", [">", ["get", "tribs_per_km"], 0], 
                 ["<=", ["get", "tribs_per_km"], 2]],
-                "rgb(216, 179, 101)", 
+                "#8c510a", 
                 ["all", [">", ["get", "tribs_per_km"], 2], 
                 ["<=", ["get", "tribs_per_km"], 5]],
-                "rgb(246, 232, 195)", 
+                "#d8b365", 
                 ["all", [">", ["get", "tribs_per_km"], 5], 
                 ["<=", ["get", "tribs_per_km"], 10]],
-                "rgb(245, 245, 245)", 
+                "#f6e8c3", 
                 ["all", [">", ["get", "tribs_per_km"], 10], 
                 ["<=", ["get", "tribs_per_km"], 20]],
-                "rgb(199, 234, 229)", 
+                "#c7eae5", 
                 ["all", [">", ["get", "tribs_per_km"], 20], 
                 ["<=", ["get", "tribs_per_km"], 50]],
-                "rgb(90, 180, 172)", 
+                "#5ab4ac", 
                 [">", ["get", "tribs_per_km"], 50],
-                "rgb(1, 102, 94)", 
+                "#01665e", 
                 "hsla(0, 0%, 0%, 0)" 
             ],
             "circle-radius": [
@@ -54,6 +54,37 @@
               4.5,
               22,
               5.5
+          ]
+            }
+        },
+        {
+            "id": "Small Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vw_igo_sample-cf7ljl",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+              "match",
+              ["get", "tribs_per_km"],
+              [0],
+              "#ffffff",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              0.75,
+              11,
+              1.25,
+              13.5,
+              1.75,
+              15,
+              2.25,
+              22,
+              2.75
           ]
             }
         }
