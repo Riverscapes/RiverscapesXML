@@ -1,471 +1,471 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis symbologyReferenceScale="-1" simplifyAlgorithm="0" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" readOnly="0" simplifyDrawingHints="0" simplifyMaxScale="1" version="3.40.4-Bratislava" minScale="100000000" autoRefreshTime="0" simplifyDrawingTol="1" styleCategories="AllStyleCategories" autoRefreshMode="Disabled" maxScale="0" simplifyLocal="1">
+<qgis autoRefreshMode="Disabled" simplifyLocal="1" minScale="100000000" symbologyReferenceScale="-1" autoRefreshTime="0" readOnly="0" labelsEnabled="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" version="3.40.4-Bratislava" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" simplifyDrawingTol="1" maxScale="0" simplifyDrawingHints="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal startExpression="" accumulate="0" durationField="" mode="0" durationUnit="min" startField="" fixedDuration="0" limitMode="0" endField="" endExpression="" enabled="0">
+  <temporal limitMode="0" enabled="0" endField="" startExpression="" accumulate="0" fixedDuration="0" mode="0" durationUnit="min" startField="" durationField="igoid" endExpression="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation type="IndividualFeatures" zscale="1" clamping="Terrain" binding="Centroid" symbology="Line" respectLayerSymbol="1" extrusion="0" zoffset="0" extrusionEnabled="0" showMarkerSymbolInSurfacePlots="0">
+  <elevation respectLayerSymbol="1" binding="Centroid" type="IndividualFeatures" extrusionEnabled="0" clamping="Terrain" symbology="Line" showMarkerSymbolInSurfacePlots="0" zoffset="0" zscale="1" extrusion="0">
     <data-defined-properties>
       <Option type="Map">
-        <Option name="name" type="QString" value=""/>
+        <Option type="QString" name="name" value=""/>
         <Option name="properties"/>
-        <Option name="type" type="QString" value="collection"/>
+        <Option type="QString" name="type" value="collection"/>
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="line" frame_rate="10" name="" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleLine" id="{ac3089aa-7f58-4bfd-8688-20d65a587214}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{ac3089aa-7f58-4bfd-8688-20d65a587214}" class="SimpleLine" pass="0">
           <Option type="Map">
-            <Option name="align_dash_pattern" type="QString" value="0"/>
-            <Option name="capstyle" type="QString" value="square"/>
-            <Option name="customdash" type="QString" value="5;2"/>
-            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="customdash_unit" type="QString" value="MM"/>
-            <Option name="dash_pattern_offset" type="QString" value="0"/>
-            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
-            <Option name="draw_inside_polygon" type="QString" value="0"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="line_color" type="QString" value="190,178,151,255,rgb:0.74509803921568629,0.69803921568627447,0.59215686274509804,1"/>
-            <Option name="line_style" type="QString" value="solid"/>
-            <Option name="line_width" type="QString" value="0.6"/>
-            <Option name="line_width_unit" type="QString" value="MM"/>
-            <Option name="offset" type="QString" value="0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="ring_filter" type="QString" value="0"/>
-            <Option name="trim_distance_end" type="QString" value="0"/>
-            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
-            <Option name="trim_distance_start" type="QString" value="0"/>
-            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
-            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
-            <Option name="use_custom_dash" type="QString" value="0"/>
-            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="align_dash_pattern" value="0"/>
+            <Option type="QString" name="capstyle" value="square"/>
+            <Option type="QString" name="customdash" value="5;2"/>
+            <Option type="QString" name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="customdash_unit" value="MM"/>
+            <Option type="QString" name="dash_pattern_offset" value="0"/>
+            <Option type="QString" name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="dash_pattern_offset_unit" value="MM"/>
+            <Option type="QString" name="draw_inside_polygon" value="0"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="line_color" value="190,178,151,255,rgb:0.74509803921568629,0.69803921568627447,0.59215686274509804,1"/>
+            <Option type="QString" name="line_style" value="solid"/>
+            <Option type="QString" name="line_width" value="0.6"/>
+            <Option type="QString" name="line_width_unit" value="MM"/>
+            <Option type="QString" name="offset" value="0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="ring_filter" value="0"/>
+            <Option type="QString" name="trim_distance_end" value="0"/>
+            <Option type="QString" name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="trim_distance_end_unit" value="MM"/>
+            <Option type="QString" name="trim_distance_start" value="0"/>
+            <Option type="QString" name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="trim_distance_start_unit" value="MM"/>
+            <Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
+            <Option type="QString" name="use_custom_dash" value="0"/>
+            <Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="fill" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="fill" frame_rate="10" name="" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" id="{8d8531e6-ba41-4a2f-81fb-0016eebdb2a4}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{8d8531e6-ba41-4a2f-81fb-0016eebdb2a4}" class="SimpleFill" pass="0">
           <Option type="Map">
-            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="190,178,151,255,rgb:0.74509803921568629,0.69803921568627447,0.59215686274509804,1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="136,127,108,255,rgb:0.53333333333333333,0.49803921568627452,0.42352941176470588,1"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0.2"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="style" type="QString" value="solid"/>
+            <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="color" value="190,178,151,255,rgb:0.74509803921568629,0.69803921568627447,0.59215686274509804,1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="136,127,108,255,rgb:0.53333333333333333,0.49803921568627452,0.42352941176470588,1"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0.2"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="style" value="solid"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{7494ad5f-4db0-43b6-982a-610f2090087a}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{7494ad5f-4db0-43b6-982a-610f2090087a}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="190,178,151,255,rgb:0.74509803921568629,0.69803921568627447,0.59215686274509804,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="diamond"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="136,127,108,255,rgb:0.53333333333333333,0.49803921568627452,0.42352941176470588,1"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0.2"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="3"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="190,178,151,255,rgb:0.74509803921568629,0.69803921568627447,0.59215686274509804,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="diamond"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="136,127,108,255,rgb:0.53333333333333333,0.49803921568627452,0.42352941176470588,1"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0.2"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="3"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 referencescale="-1" type="RuleRenderer" enableorderby="0" symbollevels="0" forceraster="0">
+  <renderer-v2 referencescale="-1" forceraster="0" type="RuleRenderer" enableorderby="0" symbollevels="0">
     <rules key="{a4e0bc55-6114-4cc9-8118-e13f88b0793a}">
-      <rule key="{6c1f78cc-1ead-494b-97b7-e51b925f5835}" symbol="0" filter="&quot;tribs_per_km&quot; &lt;= 1" label="0 - 1"/>
-      <rule key="{ece61269-c379-4f71-ab91-518663ce043d}" symbol="1" filter="&quot;tribs_per_km&quot; > 1 and &quot;tribs_per_km&quot; &lt;= 2" label="1 - 2"/>
-      <rule key="{22a45a95-54c7-470d-8002-4b89bd44fb09}" symbol="2" filter="&quot;tribs_per_km&quot; > 2 and &quot;tribs_per_km&quot; &lt;= 5" label="2 - 5"/>
-      <rule key="{bdc53808-e6fb-4236-b40c-82f2f70a9835}" symbol="3" filter="&quot;tribs_per_km&quot; > 5 and &quot;tribs_per_km&quot; &lt;= 10" label="5 - 10"/>
-      <rule key="{ef189caa-8e1c-474d-b2bd-7b8db3d353c9}" symbol="4" filter="&quot;tribs_per_km&quot; > 10 and &quot;tribs_per_km&quot; &lt;= 20" label="10 - 20"/>
-      <rule key="{cf1d5325-bce4-4f94-aaf3-6e6c5a65f132}" symbol="5" filter="&quot;tribs_per_km&quot; > 20 and &quot;tribs_per_km&quot; &lt;= 50" label="20 - 50"/>
-      <rule key="{00374e54-5c57-4ddc-a946-b234988f3984}" symbol="6" filter="&quot;tribs_per_km&quot; > 50" label="> 50"/>
+      <rule label="0" key="{6c1f78cc-1ead-494b-97b7-e51b925f5835}" symbol="0" filter="&quot;tribs_per_km&quot; = 0"/>
+      <rule label="1 - 2" key="{ece61269-c379-4f71-ab91-518663ce043d}" symbol="1" filter="&quot;tribs_per_km&quot; > 0 and &quot;tribs_per_km&quot; &lt;= 2"/>
+      <rule label="3 - 5" key="{22a45a95-54c7-470d-8002-4b89bd44fb09}" symbol="2" filter="&quot;tribs_per_km&quot; > 2 and &quot;tribs_per_km&quot; &lt;= 5"/>
+      <rule label="6 - 10" key="{bdc53808-e6fb-4236-b40c-82f2f70a9835}" symbol="3" filter="&quot;tribs_per_km&quot; > 5 and &quot;tribs_per_km&quot; &lt;= 10"/>
+      <rule label="11 - 20" key="{ef189caa-8e1c-474d-b2bd-7b8db3d353c9}" symbol="4" filter="&quot;tribs_per_km&quot; > 10 and &quot;tribs_per_km&quot; &lt;= 20"/>
+      <rule label="21 - 50" key="{cf1d5325-bce4-4f94-aaf3-6e6c5a65f132}" symbol="5" filter="&quot;tribs_per_km&quot; > 20 and &quot;tribs_per_km&quot; &lt;= 50"/>
+      <rule label="> 50" key="{00374e54-5c57-4ddc-a946-b234988f3984}" symbol="6" filter="&quot;tribs_per_km&quot; > 50"/>
     </rules>
     <symbols>
-      <symbol name="0" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="0" is_animated="0" alpha="0.75" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{338fec5e-faff-4cd0-96f2-2cd43db4e604}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{f538b5e3-f2cb-4bfb-9787-dd57bfa6936c}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="140,81,10,255,rgb:0.5490196078431373,0.31764705882352939,0.0392156862745098,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="255,255,255,255,rgb:1,1,1,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
+            <Option type="QString" name="outline_style" value="no"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.25&#xd;&#xa;    ELSE 0.25 + (@zoom_level - 10) * 0.1&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="1" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="1" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{f59465dd-0b97-43d5-9fa0-3ac6b4561312}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{338fec5e-faff-4cd0-96f2-2cd43db4e604}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="216,179,101,255,rgb:0.84705882352941175,0.70196078431372544,0.396078431372549,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="140,81,10,255,rgb:0.5490196078431373,0.31764705882352939,0.0392156862745098,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1.5"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="2" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="2" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{ad711e31-c2ff-47c2-8330-8bdf070d74b8}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{f59465dd-0b97-43d5-9fa0-3ac6b4561312}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="246,232,195,255,rgb:0.96470588235294119,0.90980392156862744,0.76470588235294112,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="216,179,101,255,rgb:0.84705882352941175,0.70196078431372544,0.396078431372549,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1.5"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="3" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="3" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{7846f736-8d25-43e8-81ca-977bf015c3b9}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{ad711e31-c2ff-47c2-8330-8bdf070d74b8}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="245,245,245,255,rgb:0.96078431372549022,0.96078431372549022,0.96078431372549022,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="246,232,195,255,rgb:0.96470588235294119,0.90980392156862744,0.76470588235294112,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1.5"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="4" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="4" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{c7751200-887b-4751-90da-b15f00634f47}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{c7751200-887b-4751-90da-b15f00634f47}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="199,234,229,255,rgb:0.7803921568627451,0.91764705882352937,0.89803921568627454,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="199,234,229,255,rgb:0.7803921568627451,0.91764705882352937,0.89803921568627454,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1.5"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="5" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="5" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{d671898f-82f0-4afc-9457-bd4e0e9ab929}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{d671898f-82f0-4afc-9457-bd4e0e9ab929}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="90,180,172,255,rgb:0.35294117647058826,0.70588235294117652,0.67450980392156867,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="90,180,172,255,rgb:0.35294117647058826,0.70588235294117652,0.67450980392156867,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1.5"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="6" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="6" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{78a68cff-d00d-449e-a894-2b9766c9f989}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{78a68cff-d00d-449e-a894-2b9766c9f989}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="1,102,94,255,rgb:0.00392156862745098,0.40000000000000002,0.36862745098039218,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="1.5"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="1,102,94,255,rgb:0.00392156862745098,0.40000000000000002,0.36862745098039218,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,0,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,0"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="1.5"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties" type="Map">
-                <Option name="size" type="Map">
-                  <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
-                  <Option name="type" type="int" value="3"/>
+              <Option type="QString" name="name" value=""/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="size">
+                  <Option type="bool" name="active" value="true"/>
+                  <Option type="QString" name="expression" value="CASE &#xd;&#xa;    WHEN @zoom_level &lt;= 10 THEN 0.6&#xd;&#xa;    ELSE 0.6 + (@zoom_level - 10) * 0.3&#xd;&#xa;END"/>
+                  <Option type="int" name="type" value="3"/>
                 </Option>
               </Option>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -473,50 +473,50 @@
     </symbols>
     <data-defined-properties>
       <Option type="Map">
-        <Option name="name" type="QString" value=""/>
+        <Option type="QString" name="name" value=""/>
         <Option name="properties"/>
-        <Option name="type" type="QString" value="collection"/>
+        <Option type="QString" name="type" value="collection"/>
       </Option>
     </data-defined-properties>
   </renderer-v2>
   <selection mode="Default">
     <selectionColor invalid="1"/>
     <selectionSymbol>
-      <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" is_animated="0" frame_rate="10">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" name="" is_animated="0" alpha="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" id="{30f04302-1548-47ac-96c3-60f808bfcb9a}" locked="0" pass="0" enabled="1">
+        <layer locked="0" enabled="1" id="{30f04302-1548-47ac-96c3-60f808bfcb9a}" class="SimpleMarker" pass="0">
           <Option type="Map">
-            <Option name="angle" type="QString" value="0"/>
-            <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="255,0,0,255,rgb:1,0,0,1"/>
-            <Option name="horizontal_anchor_point" type="QString" value="1"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="name" type="QString" value="circle"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="0"/>
-            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="scale_method" type="QString" value="diameter"/>
-            <Option name="size" type="QString" value="2"/>
-            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="size_unit" type="QString" value="MM"/>
-            <Option name="vertical_anchor_point" type="QString" value="1"/>
+            <Option type="QString" name="angle" value="0"/>
+            <Option type="QString" name="cap_style" value="square"/>
+            <Option type="QString" name="color" value="255,0,0,255,rgb:1,0,0,1"/>
+            <Option type="QString" name="horizontal_anchor_point" value="1"/>
+            <Option type="QString" name="joinstyle" value="bevel"/>
+            <Option type="QString" name="name" value="circle"/>
+            <Option type="QString" name="offset" value="0,0"/>
+            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="offset_unit" value="MM"/>
+            <Option type="QString" name="outline_color" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
+            <Option type="QString" name="outline_style" value="solid"/>
+            <Option type="QString" name="outline_width" value="0"/>
+            <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="outline_width_unit" value="MM"/>
+            <Option type="QString" name="scale_method" value="diameter"/>
+            <Option type="QString" name="size" value="2"/>
+            <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+            <Option type="QString" name="size_unit" value="MM"/>
+            <Option type="QString" name="vertical_anchor_point" value="1"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -525,10 +525,10 @@
   </selection>
   <customproperties>
     <Option type="Map">
-      <Option name="dualview/previewExpressions" type="List">
+      <Option type="List" name="dualview/previewExpressions">
         <Option type="QString" value="&quot;anthro_igo_road_dens&quot;"/>
       </Option>
-      <Option name="embeddedWidgets/count" type="int" value="0"/>
+      <Option type="int" name="embeddedWidgets/count" value="0"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
     </Option>
@@ -536,54 +536,54 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <LinearlyInterpolatedDiagramRenderer diagramType="Histogram" lowerValue="0" classificationAttributeExpression="" attributeLegend="1" lowerWidth="0" upperValue="0" lowerHeight="0" upperHeight="5" upperWidth="5">
-    <DiagramCategory spacingUnit="MM" direction="0" minimumSize="0" spacingUnitScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" barWidth="5" enabled="0" maxScaleDenominator="1e+08" height="15" stackedDiagramSpacingUnit="MM" lineSizeType="MM" scaleDependency="Area" penColor="#000000" stackedDiagramSpacing="0" scaleBasedVisibility="0" penWidth="0" backgroundColor="#ffffff" opacity="1" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" minScaleDenominator="0" stackedDiagramMode="Horizontal" width="15" showAxis="1" diagramOrientation="Up" sizeType="MM" backgroundAlpha="255" penAlpha="255" spacing="5" rotationOffset="270" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0">
-      <fontProperties strikethrough="0" bold="0" underline="0" italic="0" description="MS Shell Dlg 2,8.1,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute colorOpacity="1" color="#000000" label="" field=""/>
+  <LinearlyInterpolatedDiagramRenderer diagramType="Histogram" upperWidth="5" lowerValue="0" upperValue="0" lowerHeight="0" lowerWidth="0" attributeLegend="1" upperHeight="5" classificationAttributeExpression="">
+    <DiagramCategory stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" sizeType="MM" barWidth="5" direction="0" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" stackedDiagramSpacingUnit="MM" backgroundColor="#ffffff" width="15" backgroundAlpha="255" rotationOffset="270" enabled="0" labelPlacementMethod="XHeight" penWidth="0" scaleDependency="Area" spacingUnit="MM" diagramOrientation="Up" spacing="5" height="15" minScaleDenominator="0" opacity="1" scaleBasedVisibility="0" penAlpha="255" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" stackedDiagramMode="Horizontal" stackedDiagramSpacing="0" maxScaleDenominator="1e+08" minimumSize="0">
+      <fontProperties bold="0" strikethrough="0" style="" description="MS Shell Dlg 2,8.1,-1,5,50,0,0,0,0,0" italic="0" underline="0"/>
+      <attribute color="#000000" colorOpacity="1" label="" field=""/>
       <axisSymbol>
-        <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line" is_animated="0" frame_rate="10">
+        <symbol clip_to_extent="1" type="line" frame_rate="10" name="" is_animated="0" alpha="1" force_rhr="0">
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" id="{671ed23e-9343-4898-a203-b64b9ad9baf5}" locked="0" pass="0" enabled="1">
+          <layer locked="0" enabled="1" id="{671ed23e-9343-4898-a203-b64b9ad9baf5}" class="SimpleLine" pass="0">
             <Option type="Map">
-              <Option name="align_dash_pattern" type="QString" value="0"/>
-              <Option name="capstyle" type="QString" value="square"/>
-              <Option name="customdash" type="QString" value="5;2"/>
-              <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="customdash_unit" type="QString" value="MM"/>
-              <Option name="dash_pattern_offset" type="QString" value="0"/>
-              <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
-              <Option name="draw_inside_polygon" type="QString" value="0"/>
-              <Option name="joinstyle" type="QString" value="bevel"/>
-              <Option name="line_color" type="QString" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
-              <Option name="line_style" type="QString" value="solid"/>
-              <Option name="line_width" type="QString" value="0.26"/>
-              <Option name="line_width_unit" type="QString" value="MM"/>
-              <Option name="offset" type="QString" value="0"/>
-              <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="offset_unit" type="QString" value="MM"/>
-              <Option name="ring_filter" type="QString" value="0"/>
-              <Option name="trim_distance_end" type="QString" value="0"/>
-              <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="trim_distance_end_unit" type="QString" value="MM"/>
-              <Option name="trim_distance_start" type="QString" value="0"/>
-              <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="trim_distance_start_unit" type="QString" value="MM"/>
-              <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
-              <Option name="use_custom_dash" type="QString" value="0"/>
-              <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option type="QString" name="align_dash_pattern" value="0"/>
+              <Option type="QString" name="capstyle" value="square"/>
+              <Option type="QString" name="customdash" value="5;2"/>
+              <Option type="QString" name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+              <Option type="QString" name="customdash_unit" value="MM"/>
+              <Option type="QString" name="dash_pattern_offset" value="0"/>
+              <Option type="QString" name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+              <Option type="QString" name="dash_pattern_offset_unit" value="MM"/>
+              <Option type="QString" name="draw_inside_polygon" value="0"/>
+              <Option type="QString" name="joinstyle" value="bevel"/>
+              <Option type="QString" name="line_color" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
+              <Option type="QString" name="line_style" value="solid"/>
+              <Option type="QString" name="line_width" value="0.26"/>
+              <Option type="QString" name="line_width_unit" value="MM"/>
+              <Option type="QString" name="offset" value="0"/>
+              <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+              <Option type="QString" name="offset_unit" value="MM"/>
+              <Option type="QString" name="ring_filter" value="0"/>
+              <Option type="QString" name="trim_distance_end" value="0"/>
+              <Option type="QString" name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+              <Option type="QString" name="trim_distance_end_unit" value="MM"/>
+              <Option type="QString" name="trim_distance_start" value="0"/>
+              <Option type="QString" name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+              <Option type="QString" name="trim_distance_start_unit" value="MM"/>
+              <Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
+              <Option type="QString" name="use_custom_dash" value="0"/>
+              <Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             </Option>
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" type="QString" value=""/>
+                <Option type="QString" name="name" value=""/>
                 <Option name="properties"/>
-                <Option name="type" type="QString" value="collection"/>
+                <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -591,12 +591,12 @@
       </axisSymbol>
     </DiagramCategory>
   </LinearlyInterpolatedDiagramRenderer>
-  <DiagramLayerSettings placement="0" dist="0" linePlacementFlags="18" obstacle="0" priority="0" zIndex="0" showAll="1">
+  <DiagramLayerSettings linePlacementFlags="18" obstacle="0" dist="0" showAll="1" placement="0" priority="0" zIndex="0">
     <properties>
       <Option type="Map">
-        <Option name="name" type="QString" value=""/>
+        <Option type="QString" name="name" value=""/>
         <Option name="properties"/>
-        <Option name="type" type="QString" value="collection"/>
+        <Option type="QString" name="type" value="collection"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -699,6 +699,27 @@
       </editWidget>
     </field>
     <field name="ecoregion4" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="elevation" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="geology" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="huc12" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -1412,7 +1433,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="igoid:1179022658" configurationFlags="NoFlag">
+    <field name="igoid:3911386866" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -1498,133 +1519,136 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" index="0" field="igoid"/>
-    <alias name="" index="1" field="ownership"/>
-    <alias name="" index="2" field="state"/>
-    <alias name="" index="3" field="county"/>
-    <alias name="" index="4" field="drainage_area"/>
-    <alias name="" index="5" field="watershed_id"/>
-    <alias name="" index="6" field="stream_name"/>
-    <alias name="" index="7" field="stream_order"/>
-    <alias name="" index="8" field="headwater"/>
-    <alias name="" index="9" field="stream_length"/>
-    <alias name="" index="10" field="waterbody_type"/>
-    <alias name="" index="11" field="waterbody_extent"/>
-    <alias name="" index="12" field="ecoregion3"/>
-    <alias name="" index="13" field="ecoregion4"/>
-    <alias name="" index="14" field="igoid:1"/>
-    <alias name="" index="15" field="prim_channel_gradient"/>
-    <alias name="" index="16" field="valleybottom_gradient"/>
-    <alias name="" index="17" field="rel_flow_length"/>
-    <alias name="" index="18" field="confluences"/>
-    <alias name="" index="19" field="diffluences"/>
-    <alias name="" index="20" field="tributaries"/>
-    <alias name="" index="21" field="tribs_per_km"/>
-    <alias name="" index="22" field="planform_sinuosity"/>
-    <alias name="" index="23" field="lowlying_area"/>
-    <alias name="" index="24" field="elevated_area"/>
-    <alias name="" index="25" field="channel_area"/>
-    <alias name="" index="26" field="floodplain_area"/>
-    <alias name="" index="27" field="integrated_width"/>
-    <alias name="" index="28" field="active_channel_ratio"/>
-    <alias name="" index="29" field="low_lying_ratio"/>
-    <alias name="" index="30" field="elevated_ratio"/>
-    <alias name="" index="31" field="floodplain_ratio"/>
-    <alias name="" index="32" field="acres_vb_per_mile"/>
-    <alias name="" index="33" field="hect_vb_per_km"/>
-    <alias name="" index="34" field="channel_width"/>
-    <alias name="" index="35" field="confinement_ratio"/>
-    <alias name="" index="36" field="constriction_ratio"/>
-    <alias name="" index="37" field="confining_margins"/>
-    <alias name="" index="38" field="constricting_margins"/>
-    <alias name="" index="39" field="igoid:2"/>
-    <alias name="" index="40" field="lf_evt"/>
-    <alias name="" index="41" field="lf_bps"/>
-    <alias name="" index="42" field="lf_agriculture_prop"/>
-    <alias name="" index="43" field="lf_agriculture"/>
-    <alias name="" index="44" field="lf_conifer_prop"/>
-    <alias name="" index="45" field="lf_conifer"/>
-    <alias name="" index="46" field="lf_conifer_hardwood_prop"/>
-    <alias name="" index="47" field="lf_conifer_hardwood"/>
-    <alias name="" index="48" field="lf_developed_prop"/>
-    <alias name="" index="49" field="lf_developed"/>
-    <alias name="" index="50" field="lf_exotic_herbaceous_prop"/>
-    <alias name="" index="51" field="lf_exotic_herbaceous"/>
-    <alias name="" index="52" field="lf_exotic_tree_shrub_prop"/>
-    <alias name="" index="53" field="lf_exotic_tree_shrub"/>
-    <alias name="" index="54" field="lf_grassland_prop"/>
-    <alias name="" index="55" field="lf_grassland"/>
-    <alias name="" index="56" field="lf_hardwood_prop"/>
-    <alias name="" index="57" field="lf_hardwood"/>
-    <alias name="" index="58" field="lf_riparian_prop"/>
-    <alias name="" index="59" field="lf_riparian"/>
-    <alias name="" index="60" field="lf_shrubland_prop"/>
-    <alias name="" index="61" field="lf_shrubland"/>
-    <alias name="" index="62" field="lf_sparsely_vegetated_prop"/>
-    <alias name="" index="63" field="lf_sparsely_vegetated"/>
-    <alias name="" index="64" field="lf_hist_conifer_prop"/>
-    <alias name="" index="65" field="lf_hist_conifer"/>
-    <alias name="" index="66" field="lf_hist_conifer_hardwood_prop"/>
-    <alias name="" index="67" field="lf_hist_conifer_hardwood"/>
-    <alias name="" index="68" field="lf_hist_grassland_prop"/>
-    <alias name="" index="69" field="lf_hist_grassland"/>
-    <alias name="" index="70" field="lf_hist_hardwood_prop"/>
-    <alias name="" index="71" field="lf_hist_hardwood"/>
-    <alias name="" index="72" field="lf_hist_hardwood_conifer_prop"/>
-    <alias name="" index="73" field="lf_hist_hardwood_conifer"/>
-    <alias name="" index="74" field="lf_hist_peatland_forest_prop"/>
-    <alias name="" index="75" field="lf_hist_peatland_forest"/>
-    <alias name="" index="76" field="lf_hist_peatland_nonforest_prop"/>
-    <alias name="" index="77" field="lf_hist_peatland_nonforest"/>
-    <alias name="" index="78" field="lf_hist_riparian_prop"/>
-    <alias name="" index="79" field="lf_hist_riparian"/>
-    <alias name="" index="80" field="lf_hist_savanna_prop"/>
-    <alias name="" index="81" field="lf_hist_savanna"/>
-    <alias name="" index="82" field="lf_hist_shrubland_prop"/>
-    <alias name="" index="83" field="lf_hist_shrubland"/>
-    <alias name="" index="84" field="lf_hist_sparsely_vegetated_prop"/>
-    <alias name="" index="85" field="lf_hist_sparsely_vegetated"/>
-    <alias name="" index="86" field="ex_riparian"/>
-    <alias name="" index="87" field="hist_riparian"/>
-    <alias name="" index="88" field="prop_riparian"/>
-    <alias name="" index="89" field="hist_prop_riparian"/>
-    <alias name="" index="90" field="riparian_veg_departure"/>
-    <alias name="" index="91" field="ag_conversion"/>
-    <alias name="" index="92" field="develop"/>
-    <alias name="" index="93" field="grass_shrub_conversion"/>
-    <alias name="" index="94" field="conifer_encroachment"/>
-    <alias name="" index="95" field="invasive_conversion"/>
-    <alias name="" index="96" field="riparian_condition"/>
-    <alias name="" index="97" field="igoid:3"/>
-    <alias name="" index="98" field="qlow"/>
-    <alias name="" index="99" field="q2"/>
-    <alias name="" index="100" field="splow"/>
-    <alias name="" index="101" field="sphigh"/>
-    <alias name="" index="102" field="igoid:4"/>
-    <alias name="" index="103" field="road_len"/>
-    <alias name="" index="104" field="road_dens"/>
-    <alias name="" index="105" field="rail_len"/>
-    <alias name="" index="106" field="rail_dens"/>
-    <alias name="" index="107" field="land_use_intens"/>
-    <alias name="" index="108" field="road_dist"/>
-    <alias name="" index="109" field="rail_dist"/>
-    <alias name="" index="110" field="div_dist"/>
-    <alias name="" index="111" field="canal_dist"/>
-    <alias name="" index="112" field="infra_dist"/>
-    <alias name="" index="113" field="fldpln_access"/>
-    <alias name="" index="114" field="access_fldpln_extent"/>
-    <alias name="" index="115" field="igoid:1179022658"/>
-    <alias name="" index="116" field="brat_capacity"/>
-    <alias name="" index="117" field="brat_hist_capacity"/>
-    <alias name="" index="118" field="brat_risk"/>
-    <alias name="" index="119" field="brat_opportunity"/>
-    <alias name="" index="120" field="brat_limitation"/>
-    <alias name="" index="121" field="brat_complex_size"/>
-    <alias name="" index="122" field="brat_hist_complex_size"/>
-    <alias name="" index="123" field="dam_setting"/>
-    <alias name="" index="124" field="level_path"/>
-    <alias name="" index="125" field="seg_distance"/>
-    <alias name="" index="126" field="FCode"/>
+    <alias field="igoid" name="" index="0"/>
+    <alias field="ownership" name="" index="1"/>
+    <alias field="state" name="" index="2"/>
+    <alias field="county" name="" index="3"/>
+    <alias field="drainage_area" name="" index="4"/>
+    <alias field="watershed_id" name="" index="5"/>
+    <alias field="stream_name" name="" index="6"/>
+    <alias field="stream_order" name="" index="7"/>
+    <alias field="headwater" name="" index="8"/>
+    <alias field="stream_length" name="" index="9"/>
+    <alias field="waterbody_type" name="" index="10"/>
+    <alias field="waterbody_extent" name="" index="11"/>
+    <alias field="ecoregion3" name="" index="12"/>
+    <alias field="ecoregion4" name="" index="13"/>
+    <alias field="elevation" name="" index="14"/>
+    <alias field="geology" name="" index="15"/>
+    <alias field="huc12" name="" index="16"/>
+    <alias field="igoid:1" name="" index="17"/>
+    <alias field="prim_channel_gradient" name="" index="18"/>
+    <alias field="valleybottom_gradient" name="" index="19"/>
+    <alias field="rel_flow_length" name="" index="20"/>
+    <alias field="confluences" name="" index="21"/>
+    <alias field="diffluences" name="" index="22"/>
+    <alias field="tributaries" name="" index="23"/>
+    <alias field="tribs_per_km" name="" index="24"/>
+    <alias field="planform_sinuosity" name="" index="25"/>
+    <alias field="lowlying_area" name="" index="26"/>
+    <alias field="elevated_area" name="" index="27"/>
+    <alias field="channel_area" name="" index="28"/>
+    <alias field="floodplain_area" name="" index="29"/>
+    <alias field="integrated_width" name="" index="30"/>
+    <alias field="active_channel_ratio" name="" index="31"/>
+    <alias field="low_lying_ratio" name="" index="32"/>
+    <alias field="elevated_ratio" name="" index="33"/>
+    <alias field="floodplain_ratio" name="" index="34"/>
+    <alias field="acres_vb_per_mile" name="" index="35"/>
+    <alias field="hect_vb_per_km" name="" index="36"/>
+    <alias field="channel_width" name="" index="37"/>
+    <alias field="confinement_ratio" name="" index="38"/>
+    <alias field="constriction_ratio" name="" index="39"/>
+    <alias field="confining_margins" name="" index="40"/>
+    <alias field="constricting_margins" name="" index="41"/>
+    <alias field="igoid:2" name="" index="42"/>
+    <alias field="lf_evt" name="" index="43"/>
+    <alias field="lf_bps" name="" index="44"/>
+    <alias field="lf_agriculture_prop" name="" index="45"/>
+    <alias field="lf_agriculture" name="" index="46"/>
+    <alias field="lf_conifer_prop" name="" index="47"/>
+    <alias field="lf_conifer" name="" index="48"/>
+    <alias field="lf_conifer_hardwood_prop" name="" index="49"/>
+    <alias field="lf_conifer_hardwood" name="" index="50"/>
+    <alias field="lf_developed_prop" name="" index="51"/>
+    <alias field="lf_developed" name="" index="52"/>
+    <alias field="lf_exotic_herbaceous_prop" name="" index="53"/>
+    <alias field="lf_exotic_herbaceous" name="" index="54"/>
+    <alias field="lf_exotic_tree_shrub_prop" name="" index="55"/>
+    <alias field="lf_exotic_tree_shrub" name="" index="56"/>
+    <alias field="lf_grassland_prop" name="" index="57"/>
+    <alias field="lf_grassland" name="" index="58"/>
+    <alias field="lf_hardwood_prop" name="" index="59"/>
+    <alias field="lf_hardwood" name="" index="60"/>
+    <alias field="lf_riparian_prop" name="" index="61"/>
+    <alias field="lf_riparian" name="" index="62"/>
+    <alias field="lf_shrubland_prop" name="" index="63"/>
+    <alias field="lf_shrubland" name="" index="64"/>
+    <alias field="lf_sparsely_vegetated_prop" name="" index="65"/>
+    <alias field="lf_sparsely_vegetated" name="" index="66"/>
+    <alias field="lf_hist_conifer_prop" name="" index="67"/>
+    <alias field="lf_hist_conifer" name="" index="68"/>
+    <alias field="lf_hist_conifer_hardwood_prop" name="" index="69"/>
+    <alias field="lf_hist_conifer_hardwood" name="" index="70"/>
+    <alias field="lf_hist_grassland_prop" name="" index="71"/>
+    <alias field="lf_hist_grassland" name="" index="72"/>
+    <alias field="lf_hist_hardwood_prop" name="" index="73"/>
+    <alias field="lf_hist_hardwood" name="" index="74"/>
+    <alias field="lf_hist_hardwood_conifer_prop" name="" index="75"/>
+    <alias field="lf_hist_hardwood_conifer" name="" index="76"/>
+    <alias field="lf_hist_peatland_forest_prop" name="" index="77"/>
+    <alias field="lf_hist_peatland_forest" name="" index="78"/>
+    <alias field="lf_hist_peatland_nonforest_prop" name="" index="79"/>
+    <alias field="lf_hist_peatland_nonforest" name="" index="80"/>
+    <alias field="lf_hist_riparian_prop" name="" index="81"/>
+    <alias field="lf_hist_riparian" name="" index="82"/>
+    <alias field="lf_hist_savanna_prop" name="" index="83"/>
+    <alias field="lf_hist_savanna" name="" index="84"/>
+    <alias field="lf_hist_shrubland_prop" name="" index="85"/>
+    <alias field="lf_hist_shrubland" name="" index="86"/>
+    <alias field="lf_hist_sparsely_vegetated_prop" name="" index="87"/>
+    <alias field="lf_hist_sparsely_vegetated" name="" index="88"/>
+    <alias field="ex_riparian" name="" index="89"/>
+    <alias field="hist_riparian" name="" index="90"/>
+    <alias field="prop_riparian" name="" index="91"/>
+    <alias field="hist_prop_riparian" name="" index="92"/>
+    <alias field="riparian_veg_departure" name="" index="93"/>
+    <alias field="ag_conversion" name="" index="94"/>
+    <alias field="develop" name="" index="95"/>
+    <alias field="grass_shrub_conversion" name="" index="96"/>
+    <alias field="conifer_encroachment" name="" index="97"/>
+    <alias field="invasive_conversion" name="" index="98"/>
+    <alias field="riparian_condition" name="" index="99"/>
+    <alias field="igoid:3" name="" index="100"/>
+    <alias field="qlow" name="" index="101"/>
+    <alias field="q2" name="" index="102"/>
+    <alias field="splow" name="" index="103"/>
+    <alias field="sphigh" name="" index="104"/>
+    <alias field="igoid:4" name="" index="105"/>
+    <alias field="road_len" name="" index="106"/>
+    <alias field="road_dens" name="" index="107"/>
+    <alias field="rail_len" name="" index="108"/>
+    <alias field="rail_dens" name="" index="109"/>
+    <alias field="land_use_intens" name="" index="110"/>
+    <alias field="road_dist" name="" index="111"/>
+    <alias field="rail_dist" name="" index="112"/>
+    <alias field="div_dist" name="" index="113"/>
+    <alias field="canal_dist" name="" index="114"/>
+    <alias field="infra_dist" name="" index="115"/>
+    <alias field="fldpln_access" name="" index="116"/>
+    <alias field="access_fldpln_extent" name="" index="117"/>
+    <alias field="igoid:3911386866" name="" index="118"/>
+    <alias field="brat_capacity" name="" index="119"/>
+    <alias field="brat_hist_capacity" name="" index="120"/>
+    <alias field="brat_risk" name="" index="121"/>
+    <alias field="brat_opportunity" name="" index="122"/>
+    <alias field="brat_limitation" name="" index="123"/>
+    <alias field="brat_complex_size" name="" index="124"/>
+    <alias field="brat_hist_complex_size" name="" index="125"/>
+    <alias field="dam_setting" name="" index="126"/>
+    <alias field="level_path" name="" index="127"/>
+    <alias field="seg_distance" name="" index="128"/>
+    <alias field="FCode" name="" index="129"/>
   </aliases>
   <splitPolicies>
     <policy field="igoid" policy="Duplicate"/>
@@ -1641,6 +1665,9 @@
     <policy field="waterbody_extent" policy="Duplicate"/>
     <policy field="ecoregion3" policy="Duplicate"/>
     <policy field="ecoregion4" policy="Duplicate"/>
+    <policy field="elevation" policy="Duplicate"/>
+    <policy field="geology" policy="Duplicate"/>
+    <policy field="huc12" policy="Duplicate"/>
     <policy field="igoid:1" policy="Duplicate"/>
     <policy field="prim_channel_gradient" policy="Duplicate"/>
     <policy field="valleybottom_gradient" policy="Duplicate"/>
@@ -1742,7 +1769,7 @@
     <policy field="infra_dist" policy="Duplicate"/>
     <policy field="fldpln_access" policy="Duplicate"/>
     <policy field="access_fldpln_extent" policy="Duplicate"/>
-    <policy field="igoid:1179022658" policy="Duplicate"/>
+    <policy field="igoid:3911386866" policy="Duplicate"/>
     <policy field="brat_capacity" policy="Duplicate"/>
     <policy field="brat_hist_capacity" policy="Duplicate"/>
     <policy field="brat_risk" policy="Duplicate"/>
@@ -1770,6 +1797,9 @@
     <policy field="waterbody_extent" policy="Duplicate"/>
     <policy field="ecoregion3" policy="Duplicate"/>
     <policy field="ecoregion4" policy="Duplicate"/>
+    <policy field="elevation" policy="Duplicate"/>
+    <policy field="geology" policy="Duplicate"/>
+    <policy field="huc12" policy="Duplicate"/>
     <policy field="igoid:1" policy="Duplicate"/>
     <policy field="prim_channel_gradient" policy="Duplicate"/>
     <policy field="valleybottom_gradient" policy="Duplicate"/>
@@ -1871,7 +1901,7 @@
     <policy field="infra_dist" policy="Duplicate"/>
     <policy field="fldpln_access" policy="Duplicate"/>
     <policy field="access_fldpln_extent" policy="Duplicate"/>
-    <policy field="igoid:1179022658" policy="Duplicate"/>
+    <policy field="igoid:3911386866" policy="Duplicate"/>
     <policy field="brat_capacity" policy="Duplicate"/>
     <policy field="brat_hist_capacity" policy="Duplicate"/>
     <policy field="brat_risk" policy="Duplicate"/>
@@ -1885,525 +1915,537 @@
     <policy field="FCode" policy="Duplicate"/>
   </duplicatePolicies>
   <defaults>
-    <default applyOnUpdate="0" field="igoid" expression=""/>
-    <default applyOnUpdate="0" field="ownership" expression=""/>
-    <default applyOnUpdate="0" field="state" expression=""/>
-    <default applyOnUpdate="0" field="county" expression=""/>
-    <default applyOnUpdate="0" field="drainage_area" expression=""/>
-    <default applyOnUpdate="0" field="watershed_id" expression=""/>
-    <default applyOnUpdate="0" field="stream_name" expression=""/>
-    <default applyOnUpdate="0" field="stream_order" expression=""/>
-    <default applyOnUpdate="0" field="headwater" expression=""/>
-    <default applyOnUpdate="0" field="stream_length" expression=""/>
-    <default applyOnUpdate="0" field="waterbody_type" expression=""/>
-    <default applyOnUpdate="0" field="waterbody_extent" expression=""/>
-    <default applyOnUpdate="0" field="ecoregion3" expression=""/>
-    <default applyOnUpdate="0" field="ecoregion4" expression=""/>
-    <default applyOnUpdate="0" field="igoid:1" expression=""/>
-    <default applyOnUpdate="0" field="prim_channel_gradient" expression=""/>
-    <default applyOnUpdate="0" field="valleybottom_gradient" expression=""/>
-    <default applyOnUpdate="0" field="rel_flow_length" expression=""/>
-    <default applyOnUpdate="0" field="confluences" expression=""/>
-    <default applyOnUpdate="0" field="diffluences" expression=""/>
-    <default applyOnUpdate="0" field="tributaries" expression=""/>
-    <default applyOnUpdate="0" field="tribs_per_km" expression=""/>
-    <default applyOnUpdate="0" field="planform_sinuosity" expression=""/>
-    <default applyOnUpdate="0" field="lowlying_area" expression=""/>
-    <default applyOnUpdate="0" field="elevated_area" expression=""/>
-    <default applyOnUpdate="0" field="channel_area" expression=""/>
-    <default applyOnUpdate="0" field="floodplain_area" expression=""/>
-    <default applyOnUpdate="0" field="integrated_width" expression=""/>
-    <default applyOnUpdate="0" field="active_channel_ratio" expression=""/>
-    <default applyOnUpdate="0" field="low_lying_ratio" expression=""/>
-    <default applyOnUpdate="0" field="elevated_ratio" expression=""/>
-    <default applyOnUpdate="0" field="floodplain_ratio" expression=""/>
-    <default applyOnUpdate="0" field="acres_vb_per_mile" expression=""/>
-    <default applyOnUpdate="0" field="hect_vb_per_km" expression=""/>
-    <default applyOnUpdate="0" field="channel_width" expression=""/>
-    <default applyOnUpdate="0" field="confinement_ratio" expression=""/>
-    <default applyOnUpdate="0" field="constriction_ratio" expression=""/>
-    <default applyOnUpdate="0" field="confining_margins" expression=""/>
-    <default applyOnUpdate="0" field="constricting_margins" expression=""/>
-    <default applyOnUpdate="0" field="igoid:2" expression=""/>
-    <default applyOnUpdate="0" field="lf_evt" expression=""/>
-    <default applyOnUpdate="0" field="lf_bps" expression=""/>
-    <default applyOnUpdate="0" field="lf_agriculture_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_agriculture" expression=""/>
-    <default applyOnUpdate="0" field="lf_conifer_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_conifer" expression=""/>
-    <default applyOnUpdate="0" field="lf_conifer_hardwood_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_conifer_hardwood" expression=""/>
-    <default applyOnUpdate="0" field="lf_developed_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_developed" expression=""/>
-    <default applyOnUpdate="0" field="lf_exotic_herbaceous_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_exotic_herbaceous" expression=""/>
-    <default applyOnUpdate="0" field="lf_exotic_tree_shrub_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_exotic_tree_shrub" expression=""/>
-    <default applyOnUpdate="0" field="lf_grassland_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_grassland" expression=""/>
-    <default applyOnUpdate="0" field="lf_hardwood_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hardwood" expression=""/>
-    <default applyOnUpdate="0" field="lf_riparian_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_riparian" expression=""/>
-    <default applyOnUpdate="0" field="lf_shrubland_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_shrubland" expression=""/>
-    <default applyOnUpdate="0" field="lf_sparsely_vegetated_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_sparsely_vegetated" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_conifer_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_conifer" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_conifer_hardwood_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_conifer_hardwood" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_grassland_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_grassland" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_hardwood_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_hardwood" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_hardwood_conifer_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_hardwood_conifer" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_peatland_forest_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_peatland_forest" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_peatland_nonforest_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_peatland_nonforest" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_riparian_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_riparian" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_savanna_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_savanna" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_shrubland_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_shrubland" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_sparsely_vegetated_prop" expression=""/>
-    <default applyOnUpdate="0" field="lf_hist_sparsely_vegetated" expression=""/>
-    <default applyOnUpdate="0" field="ex_riparian" expression=""/>
-    <default applyOnUpdate="0" field="hist_riparian" expression=""/>
-    <default applyOnUpdate="0" field="prop_riparian" expression=""/>
-    <default applyOnUpdate="0" field="hist_prop_riparian" expression=""/>
-    <default applyOnUpdate="0" field="riparian_veg_departure" expression=""/>
-    <default applyOnUpdate="0" field="ag_conversion" expression=""/>
-    <default applyOnUpdate="0" field="develop" expression=""/>
-    <default applyOnUpdate="0" field="grass_shrub_conversion" expression=""/>
-    <default applyOnUpdate="0" field="conifer_encroachment" expression=""/>
-    <default applyOnUpdate="0" field="invasive_conversion" expression=""/>
-    <default applyOnUpdate="0" field="riparian_condition" expression=""/>
-    <default applyOnUpdate="0" field="igoid:3" expression=""/>
-    <default applyOnUpdate="0" field="qlow" expression=""/>
-    <default applyOnUpdate="0" field="q2" expression=""/>
-    <default applyOnUpdate="0" field="splow" expression=""/>
-    <default applyOnUpdate="0" field="sphigh" expression=""/>
-    <default applyOnUpdate="0" field="igoid:4" expression=""/>
-    <default applyOnUpdate="0" field="road_len" expression=""/>
-    <default applyOnUpdate="0" field="road_dens" expression=""/>
-    <default applyOnUpdate="0" field="rail_len" expression=""/>
-    <default applyOnUpdate="0" field="rail_dens" expression=""/>
-    <default applyOnUpdate="0" field="land_use_intens" expression=""/>
-    <default applyOnUpdate="0" field="road_dist" expression=""/>
-    <default applyOnUpdate="0" field="rail_dist" expression=""/>
-    <default applyOnUpdate="0" field="div_dist" expression=""/>
-    <default applyOnUpdate="0" field="canal_dist" expression=""/>
-    <default applyOnUpdate="0" field="infra_dist" expression=""/>
-    <default applyOnUpdate="0" field="fldpln_access" expression=""/>
-    <default applyOnUpdate="0" field="access_fldpln_extent" expression=""/>
-    <default applyOnUpdate="0" field="igoid:1179022658" expression=""/>
-    <default applyOnUpdate="0" field="brat_capacity" expression=""/>
-    <default applyOnUpdate="0" field="brat_hist_capacity" expression=""/>
-    <default applyOnUpdate="0" field="brat_risk" expression=""/>
-    <default applyOnUpdate="0" field="brat_opportunity" expression=""/>
-    <default applyOnUpdate="0" field="brat_limitation" expression=""/>
-    <default applyOnUpdate="0" field="brat_complex_size" expression=""/>
-    <default applyOnUpdate="0" field="brat_hist_complex_size" expression=""/>
-    <default applyOnUpdate="0" field="dam_setting" expression=""/>
-    <default applyOnUpdate="0" field="level_path" expression=""/>
-    <default applyOnUpdate="0" field="seg_distance" expression=""/>
-    <default applyOnUpdate="0" field="FCode" expression=""/>
+    <default field="igoid" applyOnUpdate="0" expression=""/>
+    <default field="ownership" applyOnUpdate="0" expression=""/>
+    <default field="state" applyOnUpdate="0" expression=""/>
+    <default field="county" applyOnUpdate="0" expression=""/>
+    <default field="drainage_area" applyOnUpdate="0" expression=""/>
+    <default field="watershed_id" applyOnUpdate="0" expression=""/>
+    <default field="stream_name" applyOnUpdate="0" expression=""/>
+    <default field="stream_order" applyOnUpdate="0" expression=""/>
+    <default field="headwater" applyOnUpdate="0" expression=""/>
+    <default field="stream_length" applyOnUpdate="0" expression=""/>
+    <default field="waterbody_type" applyOnUpdate="0" expression=""/>
+    <default field="waterbody_extent" applyOnUpdate="0" expression=""/>
+    <default field="ecoregion3" applyOnUpdate="0" expression=""/>
+    <default field="ecoregion4" applyOnUpdate="0" expression=""/>
+    <default field="elevation" applyOnUpdate="0" expression=""/>
+    <default field="geology" applyOnUpdate="0" expression=""/>
+    <default field="huc12" applyOnUpdate="0" expression=""/>
+    <default field="igoid:1" applyOnUpdate="0" expression=""/>
+    <default field="prim_channel_gradient" applyOnUpdate="0" expression=""/>
+    <default field="valleybottom_gradient" applyOnUpdate="0" expression=""/>
+    <default field="rel_flow_length" applyOnUpdate="0" expression=""/>
+    <default field="confluences" applyOnUpdate="0" expression=""/>
+    <default field="diffluences" applyOnUpdate="0" expression=""/>
+    <default field="tributaries" applyOnUpdate="0" expression=""/>
+    <default field="tribs_per_km" applyOnUpdate="0" expression=""/>
+    <default field="planform_sinuosity" applyOnUpdate="0" expression=""/>
+    <default field="lowlying_area" applyOnUpdate="0" expression=""/>
+    <default field="elevated_area" applyOnUpdate="0" expression=""/>
+    <default field="channel_area" applyOnUpdate="0" expression=""/>
+    <default field="floodplain_area" applyOnUpdate="0" expression=""/>
+    <default field="integrated_width" applyOnUpdate="0" expression=""/>
+    <default field="active_channel_ratio" applyOnUpdate="0" expression=""/>
+    <default field="low_lying_ratio" applyOnUpdate="0" expression=""/>
+    <default field="elevated_ratio" applyOnUpdate="0" expression=""/>
+    <default field="floodplain_ratio" applyOnUpdate="0" expression=""/>
+    <default field="acres_vb_per_mile" applyOnUpdate="0" expression=""/>
+    <default field="hect_vb_per_km" applyOnUpdate="0" expression=""/>
+    <default field="channel_width" applyOnUpdate="0" expression=""/>
+    <default field="confinement_ratio" applyOnUpdate="0" expression=""/>
+    <default field="constriction_ratio" applyOnUpdate="0" expression=""/>
+    <default field="confining_margins" applyOnUpdate="0" expression=""/>
+    <default field="constricting_margins" applyOnUpdate="0" expression=""/>
+    <default field="igoid:2" applyOnUpdate="0" expression=""/>
+    <default field="lf_evt" applyOnUpdate="0" expression=""/>
+    <default field="lf_bps" applyOnUpdate="0" expression=""/>
+    <default field="lf_agriculture_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_agriculture" applyOnUpdate="0" expression=""/>
+    <default field="lf_conifer_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_conifer" applyOnUpdate="0" expression=""/>
+    <default field="lf_conifer_hardwood_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_conifer_hardwood" applyOnUpdate="0" expression=""/>
+    <default field="lf_developed_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_developed" applyOnUpdate="0" expression=""/>
+    <default field="lf_exotic_herbaceous_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_exotic_herbaceous" applyOnUpdate="0" expression=""/>
+    <default field="lf_exotic_tree_shrub_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_exotic_tree_shrub" applyOnUpdate="0" expression=""/>
+    <default field="lf_grassland_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_grassland" applyOnUpdate="0" expression=""/>
+    <default field="lf_hardwood_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hardwood" applyOnUpdate="0" expression=""/>
+    <default field="lf_riparian_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_riparian" applyOnUpdate="0" expression=""/>
+    <default field="lf_shrubland_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_shrubland" applyOnUpdate="0" expression=""/>
+    <default field="lf_sparsely_vegetated_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_sparsely_vegetated" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_conifer_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_conifer" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_conifer_hardwood_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_conifer_hardwood" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_grassland_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_grassland" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_hardwood_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_hardwood" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_hardwood_conifer_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_hardwood_conifer" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_peatland_forest_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_peatland_forest" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_peatland_nonforest_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_peatland_nonforest" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_riparian_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_riparian" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_savanna_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_savanna" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_shrubland_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_shrubland" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_sparsely_vegetated_prop" applyOnUpdate="0" expression=""/>
+    <default field="lf_hist_sparsely_vegetated" applyOnUpdate="0" expression=""/>
+    <default field="ex_riparian" applyOnUpdate="0" expression=""/>
+    <default field="hist_riparian" applyOnUpdate="0" expression=""/>
+    <default field="prop_riparian" applyOnUpdate="0" expression=""/>
+    <default field="hist_prop_riparian" applyOnUpdate="0" expression=""/>
+    <default field="riparian_veg_departure" applyOnUpdate="0" expression=""/>
+    <default field="ag_conversion" applyOnUpdate="0" expression=""/>
+    <default field="develop" applyOnUpdate="0" expression=""/>
+    <default field="grass_shrub_conversion" applyOnUpdate="0" expression=""/>
+    <default field="conifer_encroachment" applyOnUpdate="0" expression=""/>
+    <default field="invasive_conversion" applyOnUpdate="0" expression=""/>
+    <default field="riparian_condition" applyOnUpdate="0" expression=""/>
+    <default field="igoid:3" applyOnUpdate="0" expression=""/>
+    <default field="qlow" applyOnUpdate="0" expression=""/>
+    <default field="q2" applyOnUpdate="0" expression=""/>
+    <default field="splow" applyOnUpdate="0" expression=""/>
+    <default field="sphigh" applyOnUpdate="0" expression=""/>
+    <default field="igoid:4" applyOnUpdate="0" expression=""/>
+    <default field="road_len" applyOnUpdate="0" expression=""/>
+    <default field="road_dens" applyOnUpdate="0" expression=""/>
+    <default field="rail_len" applyOnUpdate="0" expression=""/>
+    <default field="rail_dens" applyOnUpdate="0" expression=""/>
+    <default field="land_use_intens" applyOnUpdate="0" expression=""/>
+    <default field="road_dist" applyOnUpdate="0" expression=""/>
+    <default field="rail_dist" applyOnUpdate="0" expression=""/>
+    <default field="div_dist" applyOnUpdate="0" expression=""/>
+    <default field="canal_dist" applyOnUpdate="0" expression=""/>
+    <default field="infra_dist" applyOnUpdate="0" expression=""/>
+    <default field="fldpln_access" applyOnUpdate="0" expression=""/>
+    <default field="access_fldpln_extent" applyOnUpdate="0" expression=""/>
+    <default field="igoid:3911386866" applyOnUpdate="0" expression=""/>
+    <default field="brat_capacity" applyOnUpdate="0" expression=""/>
+    <default field="brat_hist_capacity" applyOnUpdate="0" expression=""/>
+    <default field="brat_risk" applyOnUpdate="0" expression=""/>
+    <default field="brat_opportunity" applyOnUpdate="0" expression=""/>
+    <default field="brat_limitation" applyOnUpdate="0" expression=""/>
+    <default field="brat_complex_size" applyOnUpdate="0" expression=""/>
+    <default field="brat_hist_complex_size" applyOnUpdate="0" expression=""/>
+    <default field="dam_setting" applyOnUpdate="0" expression=""/>
+    <default field="level_path" applyOnUpdate="0" expression=""/>
+    <default field="seg_distance" applyOnUpdate="0" expression=""/>
+    <default field="FCode" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" unique_strength="1" notnull_strength="1" field="igoid" constraints="3"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="ownership" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="state" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="county" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="drainage_area" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="watershed_id" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="stream_name" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="stream_order" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="headwater" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="stream_length" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="waterbody_type" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="waterbody_extent" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="ecoregion3" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="ecoregion4" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="igoid:1" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="prim_channel_gradient" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="valleybottom_gradient" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="rel_flow_length" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="confluences" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="diffluences" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="tributaries" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="tribs_per_km" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="planform_sinuosity" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lowlying_area" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="elevated_area" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="channel_area" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="floodplain_area" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="integrated_width" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="active_channel_ratio" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="low_lying_ratio" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="elevated_ratio" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="floodplain_ratio" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="acres_vb_per_mile" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="hect_vb_per_km" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="channel_width" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="confinement_ratio" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="constriction_ratio" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="confining_margins" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="constricting_margins" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="igoid:2" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_evt" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_bps" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_agriculture_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_agriculture" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_conifer_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_conifer" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_conifer_hardwood_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_conifer_hardwood" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_developed_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_developed" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_exotic_herbaceous_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_exotic_herbaceous" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_exotic_tree_shrub_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_exotic_tree_shrub" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_grassland_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_grassland" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hardwood_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hardwood" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_riparian_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_riparian" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_shrubland_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_shrubland" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_sparsely_vegetated_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_sparsely_vegetated" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_conifer_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_conifer" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_conifer_hardwood_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_conifer_hardwood" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_grassland_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_grassland" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_hardwood_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_hardwood" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_hardwood_conifer_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_hardwood_conifer" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_peatland_forest_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_peatland_forest" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_peatland_nonforest_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_peatland_nonforest" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_riparian_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_riparian" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_savanna_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_savanna" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_shrubland_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_shrubland" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_sparsely_vegetated_prop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="lf_hist_sparsely_vegetated" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="ex_riparian" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="hist_riparian" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="prop_riparian" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="hist_prop_riparian" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="riparian_veg_departure" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="ag_conversion" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="develop" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="grass_shrub_conversion" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="conifer_encroachment" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="invasive_conversion" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="riparian_condition" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="igoid:3" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="qlow" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="q2" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="splow" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="sphigh" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="igoid:4" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="road_len" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="road_dens" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="rail_len" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="rail_dens" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="land_use_intens" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="road_dist" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="rail_dist" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="div_dist" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="canal_dist" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="infra_dist" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="fldpln_access" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="access_fldpln_extent" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="igoid:1179022658" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_capacity" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_hist_capacity" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_risk" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_opportunity" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_limitation" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_complex_size" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="brat_hist_complex_size" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="dam_setting" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="level_path" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="seg_distance" constraints="0"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="FCode" constraints="0"/>
+    <constraint field="igoid" unique_strength="1" notnull_strength="1" constraints="3" exp_strength="0"/>
+    <constraint field="ownership" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="state" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="county" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="drainage_area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="watershed_id" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="stream_name" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="stream_order" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="headwater" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="stream_length" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="waterbody_type" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="waterbody_extent" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="ecoregion3" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="ecoregion4" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="elevation" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="geology" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="huc12" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="igoid:1" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="prim_channel_gradient" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="valleybottom_gradient" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="rel_flow_length" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="confluences" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="diffluences" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="tributaries" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="tribs_per_km" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="planform_sinuosity" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lowlying_area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="elevated_area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="channel_area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="floodplain_area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="integrated_width" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="active_channel_ratio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="low_lying_ratio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="elevated_ratio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="floodplain_ratio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="acres_vb_per_mile" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="hect_vb_per_km" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="channel_width" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="confinement_ratio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="constriction_ratio" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="confining_margins" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="constricting_margins" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="igoid:2" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_evt" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_bps" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_agriculture_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_agriculture" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_conifer_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_conifer" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_conifer_hardwood_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_conifer_hardwood" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_developed_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_developed" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_exotic_herbaceous_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_exotic_herbaceous" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_exotic_tree_shrub_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_exotic_tree_shrub" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_grassland_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_grassland" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hardwood_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hardwood" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_riparian_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_riparian" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_shrubland_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_shrubland" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_sparsely_vegetated_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_sparsely_vegetated" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_conifer_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_conifer" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_conifer_hardwood_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_conifer_hardwood" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_grassland_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_grassland" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_hardwood_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_hardwood" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_hardwood_conifer_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_hardwood_conifer" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_peatland_forest_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_peatland_forest" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_peatland_nonforest_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_peatland_nonforest" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_riparian_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_riparian" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_savanna_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_savanna" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_shrubland_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_shrubland" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_sparsely_vegetated_prop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="lf_hist_sparsely_vegetated" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="ex_riparian" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="hist_riparian" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="prop_riparian" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="hist_prop_riparian" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="riparian_veg_departure" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="ag_conversion" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="develop" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="grass_shrub_conversion" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="conifer_encroachment" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="invasive_conversion" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="riparian_condition" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="igoid:3" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="qlow" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="q2" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="splow" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="sphigh" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="igoid:4" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="road_len" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="road_dens" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="rail_len" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="rail_dens" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="land_use_intens" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="road_dist" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="rail_dist" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="div_dist" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="canal_dist" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="infra_dist" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="fldpln_access" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="access_fldpln_extent" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="igoid:3911386866" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_capacity" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_hist_capacity" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_risk" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_opportunity" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_limitation" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_complex_size" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="brat_hist_complex_size" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="dam_setting" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="level_path" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="seg_distance" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="FCode" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" desc="" field="igoid"/>
-    <constraint exp="" desc="" field="ownership"/>
-    <constraint exp="" desc="" field="state"/>
-    <constraint exp="" desc="" field="county"/>
-    <constraint exp="" desc="" field="drainage_area"/>
-    <constraint exp="" desc="" field="watershed_id"/>
-    <constraint exp="" desc="" field="stream_name"/>
-    <constraint exp="" desc="" field="stream_order"/>
-    <constraint exp="" desc="" field="headwater"/>
-    <constraint exp="" desc="" field="stream_length"/>
-    <constraint exp="" desc="" field="waterbody_type"/>
-    <constraint exp="" desc="" field="waterbody_extent"/>
-    <constraint exp="" desc="" field="ecoregion3"/>
-    <constraint exp="" desc="" field="ecoregion4"/>
-    <constraint exp="" desc="" field="igoid:1"/>
-    <constraint exp="" desc="" field="prim_channel_gradient"/>
-    <constraint exp="" desc="" field="valleybottom_gradient"/>
-    <constraint exp="" desc="" field="rel_flow_length"/>
-    <constraint exp="" desc="" field="confluences"/>
-    <constraint exp="" desc="" field="diffluences"/>
-    <constraint exp="" desc="" field="tributaries"/>
-    <constraint exp="" desc="" field="tribs_per_km"/>
-    <constraint exp="" desc="" field="planform_sinuosity"/>
-    <constraint exp="" desc="" field="lowlying_area"/>
-    <constraint exp="" desc="" field="elevated_area"/>
-    <constraint exp="" desc="" field="channel_area"/>
-    <constraint exp="" desc="" field="floodplain_area"/>
-    <constraint exp="" desc="" field="integrated_width"/>
-    <constraint exp="" desc="" field="active_channel_ratio"/>
-    <constraint exp="" desc="" field="low_lying_ratio"/>
-    <constraint exp="" desc="" field="elevated_ratio"/>
-    <constraint exp="" desc="" field="floodplain_ratio"/>
-    <constraint exp="" desc="" field="acres_vb_per_mile"/>
-    <constraint exp="" desc="" field="hect_vb_per_km"/>
-    <constraint exp="" desc="" field="channel_width"/>
-    <constraint exp="" desc="" field="confinement_ratio"/>
-    <constraint exp="" desc="" field="constriction_ratio"/>
-    <constraint exp="" desc="" field="confining_margins"/>
-    <constraint exp="" desc="" field="constricting_margins"/>
-    <constraint exp="" desc="" field="igoid:2"/>
-    <constraint exp="" desc="" field="lf_evt"/>
-    <constraint exp="" desc="" field="lf_bps"/>
-    <constraint exp="" desc="" field="lf_agriculture_prop"/>
-    <constraint exp="" desc="" field="lf_agriculture"/>
-    <constraint exp="" desc="" field="lf_conifer_prop"/>
-    <constraint exp="" desc="" field="lf_conifer"/>
-    <constraint exp="" desc="" field="lf_conifer_hardwood_prop"/>
-    <constraint exp="" desc="" field="lf_conifer_hardwood"/>
-    <constraint exp="" desc="" field="lf_developed_prop"/>
-    <constraint exp="" desc="" field="lf_developed"/>
-    <constraint exp="" desc="" field="lf_exotic_herbaceous_prop"/>
-    <constraint exp="" desc="" field="lf_exotic_herbaceous"/>
-    <constraint exp="" desc="" field="lf_exotic_tree_shrub_prop"/>
-    <constraint exp="" desc="" field="lf_exotic_tree_shrub"/>
-    <constraint exp="" desc="" field="lf_grassland_prop"/>
-    <constraint exp="" desc="" field="lf_grassland"/>
-    <constraint exp="" desc="" field="lf_hardwood_prop"/>
-    <constraint exp="" desc="" field="lf_hardwood"/>
-    <constraint exp="" desc="" field="lf_riparian_prop"/>
-    <constraint exp="" desc="" field="lf_riparian"/>
-    <constraint exp="" desc="" field="lf_shrubland_prop"/>
-    <constraint exp="" desc="" field="lf_shrubland"/>
-    <constraint exp="" desc="" field="lf_sparsely_vegetated_prop"/>
-    <constraint exp="" desc="" field="lf_sparsely_vegetated"/>
-    <constraint exp="" desc="" field="lf_hist_conifer_prop"/>
-    <constraint exp="" desc="" field="lf_hist_conifer"/>
-    <constraint exp="" desc="" field="lf_hist_conifer_hardwood_prop"/>
-    <constraint exp="" desc="" field="lf_hist_conifer_hardwood"/>
-    <constraint exp="" desc="" field="lf_hist_grassland_prop"/>
-    <constraint exp="" desc="" field="lf_hist_grassland"/>
-    <constraint exp="" desc="" field="lf_hist_hardwood_prop"/>
-    <constraint exp="" desc="" field="lf_hist_hardwood"/>
-    <constraint exp="" desc="" field="lf_hist_hardwood_conifer_prop"/>
-    <constraint exp="" desc="" field="lf_hist_hardwood_conifer"/>
-    <constraint exp="" desc="" field="lf_hist_peatland_forest_prop"/>
-    <constraint exp="" desc="" field="lf_hist_peatland_forest"/>
-    <constraint exp="" desc="" field="lf_hist_peatland_nonforest_prop"/>
-    <constraint exp="" desc="" field="lf_hist_peatland_nonforest"/>
-    <constraint exp="" desc="" field="lf_hist_riparian_prop"/>
-    <constraint exp="" desc="" field="lf_hist_riparian"/>
-    <constraint exp="" desc="" field="lf_hist_savanna_prop"/>
-    <constraint exp="" desc="" field="lf_hist_savanna"/>
-    <constraint exp="" desc="" field="lf_hist_shrubland_prop"/>
-    <constraint exp="" desc="" field="lf_hist_shrubland"/>
-    <constraint exp="" desc="" field="lf_hist_sparsely_vegetated_prop"/>
-    <constraint exp="" desc="" field="lf_hist_sparsely_vegetated"/>
-    <constraint exp="" desc="" field="ex_riparian"/>
-    <constraint exp="" desc="" field="hist_riparian"/>
-    <constraint exp="" desc="" field="prop_riparian"/>
-    <constraint exp="" desc="" field="hist_prop_riparian"/>
-    <constraint exp="" desc="" field="riparian_veg_departure"/>
-    <constraint exp="" desc="" field="ag_conversion"/>
-    <constraint exp="" desc="" field="develop"/>
-    <constraint exp="" desc="" field="grass_shrub_conversion"/>
-    <constraint exp="" desc="" field="conifer_encroachment"/>
-    <constraint exp="" desc="" field="invasive_conversion"/>
-    <constraint exp="" desc="" field="riparian_condition"/>
-    <constraint exp="" desc="" field="igoid:3"/>
-    <constraint exp="" desc="" field="qlow"/>
-    <constraint exp="" desc="" field="q2"/>
-    <constraint exp="" desc="" field="splow"/>
-    <constraint exp="" desc="" field="sphigh"/>
-    <constraint exp="" desc="" field="igoid:4"/>
-    <constraint exp="" desc="" field="road_len"/>
-    <constraint exp="" desc="" field="road_dens"/>
-    <constraint exp="" desc="" field="rail_len"/>
-    <constraint exp="" desc="" field="rail_dens"/>
-    <constraint exp="" desc="" field="land_use_intens"/>
-    <constraint exp="" desc="" field="road_dist"/>
-    <constraint exp="" desc="" field="rail_dist"/>
-    <constraint exp="" desc="" field="div_dist"/>
-    <constraint exp="" desc="" field="canal_dist"/>
-    <constraint exp="" desc="" field="infra_dist"/>
-    <constraint exp="" desc="" field="fldpln_access"/>
-    <constraint exp="" desc="" field="access_fldpln_extent"/>
-    <constraint exp="" desc="" field="igoid:1179022658"/>
-    <constraint exp="" desc="" field="brat_capacity"/>
-    <constraint exp="" desc="" field="brat_hist_capacity"/>
-    <constraint exp="" desc="" field="brat_risk"/>
-    <constraint exp="" desc="" field="brat_opportunity"/>
-    <constraint exp="" desc="" field="brat_limitation"/>
-    <constraint exp="" desc="" field="brat_complex_size"/>
-    <constraint exp="" desc="" field="brat_hist_complex_size"/>
-    <constraint exp="" desc="" field="dam_setting"/>
-    <constraint exp="" desc="" field="level_path"/>
-    <constraint exp="" desc="" field="seg_distance"/>
-    <constraint exp="" desc="" field="FCode"/>
+    <constraint field="igoid" desc="" exp=""/>
+    <constraint field="ownership" desc="" exp=""/>
+    <constraint field="state" desc="" exp=""/>
+    <constraint field="county" desc="" exp=""/>
+    <constraint field="drainage_area" desc="" exp=""/>
+    <constraint field="watershed_id" desc="" exp=""/>
+    <constraint field="stream_name" desc="" exp=""/>
+    <constraint field="stream_order" desc="" exp=""/>
+    <constraint field="headwater" desc="" exp=""/>
+    <constraint field="stream_length" desc="" exp=""/>
+    <constraint field="waterbody_type" desc="" exp=""/>
+    <constraint field="waterbody_extent" desc="" exp=""/>
+    <constraint field="ecoregion3" desc="" exp=""/>
+    <constraint field="ecoregion4" desc="" exp=""/>
+    <constraint field="elevation" desc="" exp=""/>
+    <constraint field="geology" desc="" exp=""/>
+    <constraint field="huc12" desc="" exp=""/>
+    <constraint field="igoid:1" desc="" exp=""/>
+    <constraint field="prim_channel_gradient" desc="" exp=""/>
+    <constraint field="valleybottom_gradient" desc="" exp=""/>
+    <constraint field="rel_flow_length" desc="" exp=""/>
+    <constraint field="confluences" desc="" exp=""/>
+    <constraint field="diffluences" desc="" exp=""/>
+    <constraint field="tributaries" desc="" exp=""/>
+    <constraint field="tribs_per_km" desc="" exp=""/>
+    <constraint field="planform_sinuosity" desc="" exp=""/>
+    <constraint field="lowlying_area" desc="" exp=""/>
+    <constraint field="elevated_area" desc="" exp=""/>
+    <constraint field="channel_area" desc="" exp=""/>
+    <constraint field="floodplain_area" desc="" exp=""/>
+    <constraint field="integrated_width" desc="" exp=""/>
+    <constraint field="active_channel_ratio" desc="" exp=""/>
+    <constraint field="low_lying_ratio" desc="" exp=""/>
+    <constraint field="elevated_ratio" desc="" exp=""/>
+    <constraint field="floodplain_ratio" desc="" exp=""/>
+    <constraint field="acres_vb_per_mile" desc="" exp=""/>
+    <constraint field="hect_vb_per_km" desc="" exp=""/>
+    <constraint field="channel_width" desc="" exp=""/>
+    <constraint field="confinement_ratio" desc="" exp=""/>
+    <constraint field="constriction_ratio" desc="" exp=""/>
+    <constraint field="confining_margins" desc="" exp=""/>
+    <constraint field="constricting_margins" desc="" exp=""/>
+    <constraint field="igoid:2" desc="" exp=""/>
+    <constraint field="lf_evt" desc="" exp=""/>
+    <constraint field="lf_bps" desc="" exp=""/>
+    <constraint field="lf_agriculture_prop" desc="" exp=""/>
+    <constraint field="lf_agriculture" desc="" exp=""/>
+    <constraint field="lf_conifer_prop" desc="" exp=""/>
+    <constraint field="lf_conifer" desc="" exp=""/>
+    <constraint field="lf_conifer_hardwood_prop" desc="" exp=""/>
+    <constraint field="lf_conifer_hardwood" desc="" exp=""/>
+    <constraint field="lf_developed_prop" desc="" exp=""/>
+    <constraint field="lf_developed" desc="" exp=""/>
+    <constraint field="lf_exotic_herbaceous_prop" desc="" exp=""/>
+    <constraint field="lf_exotic_herbaceous" desc="" exp=""/>
+    <constraint field="lf_exotic_tree_shrub_prop" desc="" exp=""/>
+    <constraint field="lf_exotic_tree_shrub" desc="" exp=""/>
+    <constraint field="lf_grassland_prop" desc="" exp=""/>
+    <constraint field="lf_grassland" desc="" exp=""/>
+    <constraint field="lf_hardwood_prop" desc="" exp=""/>
+    <constraint field="lf_hardwood" desc="" exp=""/>
+    <constraint field="lf_riparian_prop" desc="" exp=""/>
+    <constraint field="lf_riparian" desc="" exp=""/>
+    <constraint field="lf_shrubland_prop" desc="" exp=""/>
+    <constraint field="lf_shrubland" desc="" exp=""/>
+    <constraint field="lf_sparsely_vegetated_prop" desc="" exp=""/>
+    <constraint field="lf_sparsely_vegetated" desc="" exp=""/>
+    <constraint field="lf_hist_conifer_prop" desc="" exp=""/>
+    <constraint field="lf_hist_conifer" desc="" exp=""/>
+    <constraint field="lf_hist_conifer_hardwood_prop" desc="" exp=""/>
+    <constraint field="lf_hist_conifer_hardwood" desc="" exp=""/>
+    <constraint field="lf_hist_grassland_prop" desc="" exp=""/>
+    <constraint field="lf_hist_grassland" desc="" exp=""/>
+    <constraint field="lf_hist_hardwood_prop" desc="" exp=""/>
+    <constraint field="lf_hist_hardwood" desc="" exp=""/>
+    <constraint field="lf_hist_hardwood_conifer_prop" desc="" exp=""/>
+    <constraint field="lf_hist_hardwood_conifer" desc="" exp=""/>
+    <constraint field="lf_hist_peatland_forest_prop" desc="" exp=""/>
+    <constraint field="lf_hist_peatland_forest" desc="" exp=""/>
+    <constraint field="lf_hist_peatland_nonforest_prop" desc="" exp=""/>
+    <constraint field="lf_hist_peatland_nonforest" desc="" exp=""/>
+    <constraint field="lf_hist_riparian_prop" desc="" exp=""/>
+    <constraint field="lf_hist_riparian" desc="" exp=""/>
+    <constraint field="lf_hist_savanna_prop" desc="" exp=""/>
+    <constraint field="lf_hist_savanna" desc="" exp=""/>
+    <constraint field="lf_hist_shrubland_prop" desc="" exp=""/>
+    <constraint field="lf_hist_shrubland" desc="" exp=""/>
+    <constraint field="lf_hist_sparsely_vegetated_prop" desc="" exp=""/>
+    <constraint field="lf_hist_sparsely_vegetated" desc="" exp=""/>
+    <constraint field="ex_riparian" desc="" exp=""/>
+    <constraint field="hist_riparian" desc="" exp=""/>
+    <constraint field="prop_riparian" desc="" exp=""/>
+    <constraint field="hist_prop_riparian" desc="" exp=""/>
+    <constraint field="riparian_veg_departure" desc="" exp=""/>
+    <constraint field="ag_conversion" desc="" exp=""/>
+    <constraint field="develop" desc="" exp=""/>
+    <constraint field="grass_shrub_conversion" desc="" exp=""/>
+    <constraint field="conifer_encroachment" desc="" exp=""/>
+    <constraint field="invasive_conversion" desc="" exp=""/>
+    <constraint field="riparian_condition" desc="" exp=""/>
+    <constraint field="igoid:3" desc="" exp=""/>
+    <constraint field="qlow" desc="" exp=""/>
+    <constraint field="q2" desc="" exp=""/>
+    <constraint field="splow" desc="" exp=""/>
+    <constraint field="sphigh" desc="" exp=""/>
+    <constraint field="igoid:4" desc="" exp=""/>
+    <constraint field="road_len" desc="" exp=""/>
+    <constraint field="road_dens" desc="" exp=""/>
+    <constraint field="rail_len" desc="" exp=""/>
+    <constraint field="rail_dens" desc="" exp=""/>
+    <constraint field="land_use_intens" desc="" exp=""/>
+    <constraint field="road_dist" desc="" exp=""/>
+    <constraint field="rail_dist" desc="" exp=""/>
+    <constraint field="div_dist" desc="" exp=""/>
+    <constraint field="canal_dist" desc="" exp=""/>
+    <constraint field="infra_dist" desc="" exp=""/>
+    <constraint field="fldpln_access" desc="" exp=""/>
+    <constraint field="access_fldpln_extent" desc="" exp=""/>
+    <constraint field="igoid:3911386866" desc="" exp=""/>
+    <constraint field="brat_capacity" desc="" exp=""/>
+    <constraint field="brat_hist_capacity" desc="" exp=""/>
+    <constraint field="brat_risk" desc="" exp=""/>
+    <constraint field="brat_opportunity" desc="" exp=""/>
+    <constraint field="brat_limitation" desc="" exp=""/>
+    <constraint field="brat_complex_size" desc="" exp=""/>
+    <constraint field="brat_hist_complex_size" desc="" exp=""/>
+    <constraint field="dam_setting" desc="" exp=""/>
+    <constraint field="level_path" desc="" exp=""/>
+    <constraint field="seg_distance" desc="" exp=""/>
+    <constraint field="FCode" desc="" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="1" sortExpression="&quot;rme_igo_trib_per_km&quot;">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;rme_igo_trib_per_km&quot;" sortOrder="1">
     <columns>
-      <column name="level_path" hidden="0" type="field" width="-1"/>
-      <column name="seg_distance" hidden="0" type="field" width="-1"/>
-      <column name="FCode" hidden="0" type="field" width="-1"/>
-      <column name="igoid" hidden="0" type="field" width="-1"/>
-      <column name="ownership" hidden="0" type="field" width="-1"/>
-      <column name="state" hidden="0" type="field" width="-1"/>
-      <column name="county" hidden="0" type="field" width="-1"/>
-      <column name="drainage_area" hidden="0" type="field" width="-1"/>
-      <column name="watershed_id" hidden="0" type="field" width="-1"/>
-      <column name="stream_name" hidden="0" type="field" width="-1"/>
-      <column name="stream_order" hidden="0" type="field" width="-1"/>
-      <column name="headwater" hidden="0" type="field" width="-1"/>
-      <column name="stream_length" hidden="0" type="field" width="-1"/>
-      <column name="waterbody_type" hidden="0" type="field" width="-1"/>
-      <column name="waterbody_extent" hidden="0" type="field" width="-1"/>
-      <column name="ecoregion3" hidden="0" type="field" width="-1"/>
-      <column name="ecoregion4" hidden="0" type="field" width="-1"/>
-      <column name="igoid:1" hidden="0" type="field" width="-1"/>
-      <column name="prim_channel_gradient" hidden="0" type="field" width="-1"/>
-      <column name="valleybottom_gradient" hidden="0" type="field" width="-1"/>
-      <column name="rel_flow_length" hidden="0" type="field" width="-1"/>
-      <column name="confluences" hidden="0" type="field" width="-1"/>
-      <column name="diffluences" hidden="0" type="field" width="-1"/>
-      <column name="tributaries" hidden="0" type="field" width="-1"/>
-      <column name="tribs_per_km" hidden="0" type="field" width="-1"/>
-      <column name="planform_sinuosity" hidden="0" type="field" width="-1"/>
-      <column name="lowlying_area" hidden="0" type="field" width="-1"/>
-      <column name="elevated_area" hidden="0" type="field" width="-1"/>
-      <column name="channel_area" hidden="0" type="field" width="-1"/>
-      <column name="floodplain_area" hidden="0" type="field" width="-1"/>
-      <column name="integrated_width" hidden="0" type="field" width="-1"/>
-      <column name="active_channel_ratio" hidden="0" type="field" width="-1"/>
-      <column name="low_lying_ratio" hidden="0" type="field" width="-1"/>
-      <column name="elevated_ratio" hidden="0" type="field" width="-1"/>
-      <column name="floodplain_ratio" hidden="0" type="field" width="-1"/>
-      <column name="acres_vb_per_mile" hidden="0" type="field" width="-1"/>
-      <column name="hect_vb_per_km" hidden="0" type="field" width="-1"/>
-      <column name="channel_width" hidden="0" type="field" width="-1"/>
-      <column name="confinement_ratio" hidden="0" type="field" width="-1"/>
-      <column name="constriction_ratio" hidden="0" type="field" width="-1"/>
-      <column name="confining_margins" hidden="0" type="field" width="-1"/>
-      <column name="constricting_margins" hidden="0" type="field" width="-1"/>
-      <column name="igoid:2" hidden="0" type="field" width="-1"/>
-      <column name="lf_evt" hidden="0" type="field" width="-1"/>
-      <column name="lf_bps" hidden="0" type="field" width="-1"/>
-      <column name="lf_agriculture_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_agriculture" hidden="0" type="field" width="-1"/>
-      <column name="lf_conifer_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_conifer" hidden="0" type="field" width="-1"/>
-      <column name="lf_conifer_hardwood_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_conifer_hardwood" hidden="0" type="field" width="-1"/>
-      <column name="lf_developed_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_developed" hidden="0" type="field" width="-1"/>
-      <column name="lf_exotic_herbaceous_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_exotic_herbaceous" hidden="0" type="field" width="-1"/>
-      <column name="lf_exotic_tree_shrub_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_exotic_tree_shrub" hidden="0" type="field" width="-1"/>
-      <column name="lf_grassland_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_grassland" hidden="0" type="field" width="-1"/>
-      <column name="lf_hardwood_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hardwood" hidden="0" type="field" width="-1"/>
-      <column name="lf_riparian_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_riparian" hidden="0" type="field" width="-1"/>
-      <column name="lf_shrubland_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_shrubland" hidden="0" type="field" width="-1"/>
-      <column name="lf_sparsely_vegetated_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_sparsely_vegetated" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_conifer_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_conifer" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_conifer_hardwood_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_conifer_hardwood" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_grassland_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_grassland" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_hardwood_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_hardwood" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_hardwood_conifer_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_hardwood_conifer" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_peatland_forest_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_peatland_forest" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_peatland_nonforest_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_peatland_nonforest" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_riparian_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_riparian" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_savanna_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_savanna" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_shrubland_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_shrubland" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_sparsely_vegetated_prop" hidden="0" type="field" width="-1"/>
-      <column name="lf_hist_sparsely_vegetated" hidden="0" type="field" width="-1"/>
-      <column name="ex_riparian" hidden="0" type="field" width="-1"/>
-      <column name="hist_riparian" hidden="0" type="field" width="-1"/>
-      <column name="prop_riparian" hidden="0" type="field" width="-1"/>
-      <column name="hist_prop_riparian" hidden="0" type="field" width="-1"/>
-      <column name="riparian_veg_departure" hidden="0" type="field" width="-1"/>
-      <column name="ag_conversion" hidden="0" type="field" width="-1"/>
-      <column name="develop" hidden="0" type="field" width="-1"/>
-      <column name="grass_shrub_conversion" hidden="0" type="field" width="-1"/>
-      <column name="conifer_encroachment" hidden="0" type="field" width="-1"/>
-      <column name="invasive_conversion" hidden="0" type="field" width="-1"/>
-      <column name="riparian_condition" hidden="0" type="field" width="-1"/>
-      <column name="igoid:3" hidden="0" type="field" width="-1"/>
-      <column name="qlow" hidden="0" type="field" width="-1"/>
-      <column name="q2" hidden="0" type="field" width="-1"/>
-      <column name="splow" hidden="0" type="field" width="-1"/>
-      <column name="sphigh" hidden="0" type="field" width="-1"/>
-      <column name="igoid:4" hidden="0" type="field" width="-1"/>
-      <column name="road_len" hidden="0" type="field" width="-1"/>
-      <column name="road_dens" hidden="0" type="field" width="-1"/>
-      <column name="rail_len" hidden="0" type="field" width="-1"/>
-      <column name="rail_dens" hidden="0" type="field" width="-1"/>
-      <column name="land_use_intens" hidden="0" type="field" width="-1"/>
-      <column name="road_dist" hidden="0" type="field" width="-1"/>
-      <column name="rail_dist" hidden="0" type="field" width="-1"/>
-      <column name="div_dist" hidden="0" type="field" width="-1"/>
-      <column name="canal_dist" hidden="0" type="field" width="-1"/>
-      <column name="infra_dist" hidden="0" type="field" width="-1"/>
-      <column name="fldpln_access" hidden="0" type="field" width="-1"/>
-      <column name="access_fldpln_extent" hidden="0" type="field" width="-1"/>
-      <column name="igoid:1179022658" hidden="0" type="field" width="-1"/>
-      <column name="brat_capacity" hidden="0" type="field" width="-1"/>
-      <column name="brat_hist_capacity" hidden="0" type="field" width="-1"/>
-      <column name="brat_risk" hidden="0" type="field" width="-1"/>
-      <column name="brat_opportunity" hidden="0" type="field" width="-1"/>
-      <column name="brat_limitation" hidden="0" type="field" width="-1"/>
-      <column name="brat_complex_size" hidden="0" type="field" width="-1"/>
-      <column name="brat_hist_complex_size" hidden="0" type="field" width="-1"/>
-      <column name="dam_setting" hidden="0" type="field" width="-1"/>
+      <column hidden="0" type="field" name="level_path" width="-1"/>
+      <column hidden="0" type="field" name="seg_distance" width="-1"/>
+      <column hidden="0" type="field" name="FCode" width="-1"/>
+      <column hidden="0" type="field" name="igoid" width="-1"/>
+      <column hidden="0" type="field" name="ownership" width="-1"/>
+      <column hidden="0" type="field" name="state" width="-1"/>
+      <column hidden="0" type="field" name="county" width="-1"/>
+      <column hidden="0" type="field" name="drainage_area" width="-1"/>
+      <column hidden="0" type="field" name="watershed_id" width="-1"/>
+      <column hidden="0" type="field" name="stream_name" width="-1"/>
+      <column hidden="0" type="field" name="stream_order" width="-1"/>
+      <column hidden="0" type="field" name="headwater" width="-1"/>
+      <column hidden="0" type="field" name="stream_length" width="-1"/>
+      <column hidden="0" type="field" name="waterbody_type" width="-1"/>
+      <column hidden="0" type="field" name="waterbody_extent" width="-1"/>
+      <column hidden="0" type="field" name="ecoregion3" width="-1"/>
+      <column hidden="0" type="field" name="ecoregion4" width="-1"/>
+      <column hidden="0" type="field" name="igoid:1" width="-1"/>
+      <column hidden="0" type="field" name="prim_channel_gradient" width="-1"/>
+      <column hidden="0" type="field" name="valleybottom_gradient" width="-1"/>
+      <column hidden="0" type="field" name="rel_flow_length" width="-1"/>
+      <column hidden="0" type="field" name="confluences" width="-1"/>
+      <column hidden="0" type="field" name="diffluences" width="-1"/>
+      <column hidden="0" type="field" name="tributaries" width="-1"/>
+      <column hidden="0" type="field" name="tribs_per_km" width="-1"/>
+      <column hidden="0" type="field" name="planform_sinuosity" width="-1"/>
+      <column hidden="0" type="field" name="lowlying_area" width="-1"/>
+      <column hidden="0" type="field" name="elevated_area" width="-1"/>
+      <column hidden="0" type="field" name="channel_area" width="-1"/>
+      <column hidden="0" type="field" name="floodplain_area" width="-1"/>
+      <column hidden="0" type="field" name="integrated_width" width="-1"/>
+      <column hidden="0" type="field" name="active_channel_ratio" width="-1"/>
+      <column hidden="0" type="field" name="low_lying_ratio" width="-1"/>
+      <column hidden="0" type="field" name="elevated_ratio" width="-1"/>
+      <column hidden="0" type="field" name="floodplain_ratio" width="-1"/>
+      <column hidden="0" type="field" name="acres_vb_per_mile" width="-1"/>
+      <column hidden="0" type="field" name="hect_vb_per_km" width="-1"/>
+      <column hidden="0" type="field" name="channel_width" width="-1"/>
+      <column hidden="0" type="field" name="confinement_ratio" width="-1"/>
+      <column hidden="0" type="field" name="constriction_ratio" width="-1"/>
+      <column hidden="0" type="field" name="confining_margins" width="-1"/>
+      <column hidden="0" type="field" name="constricting_margins" width="-1"/>
+      <column hidden="0" type="field" name="igoid:2" width="-1"/>
+      <column hidden="0" type="field" name="lf_evt" width="-1"/>
+      <column hidden="0" type="field" name="lf_bps" width="-1"/>
+      <column hidden="0" type="field" name="lf_agriculture_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_agriculture" width="-1"/>
+      <column hidden="0" type="field" name="lf_conifer_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_conifer" width="-1"/>
+      <column hidden="0" type="field" name="lf_conifer_hardwood_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_conifer_hardwood" width="-1"/>
+      <column hidden="0" type="field" name="lf_developed_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_developed" width="-1"/>
+      <column hidden="0" type="field" name="lf_exotic_herbaceous_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_exotic_herbaceous" width="-1"/>
+      <column hidden="0" type="field" name="lf_exotic_tree_shrub_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_exotic_tree_shrub" width="-1"/>
+      <column hidden="0" type="field" name="lf_grassland_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_grassland" width="-1"/>
+      <column hidden="0" type="field" name="lf_hardwood_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hardwood" width="-1"/>
+      <column hidden="0" type="field" name="lf_riparian_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_riparian" width="-1"/>
+      <column hidden="0" type="field" name="lf_shrubland_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_shrubland" width="-1"/>
+      <column hidden="0" type="field" name="lf_sparsely_vegetated_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_sparsely_vegetated" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_conifer_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_conifer" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_conifer_hardwood_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_conifer_hardwood" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_grassland_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_grassland" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_hardwood_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_hardwood" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_hardwood_conifer_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_hardwood_conifer" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_peatland_forest_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_peatland_forest" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_peatland_nonforest_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_peatland_nonforest" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_riparian_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_riparian" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_savanna_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_savanna" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_shrubland_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_shrubland" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_sparsely_vegetated_prop" width="-1"/>
+      <column hidden="0" type="field" name="lf_hist_sparsely_vegetated" width="-1"/>
+      <column hidden="0" type="field" name="ex_riparian" width="-1"/>
+      <column hidden="0" type="field" name="hist_riparian" width="-1"/>
+      <column hidden="0" type="field" name="prop_riparian" width="-1"/>
+      <column hidden="0" type="field" name="hist_prop_riparian" width="-1"/>
+      <column hidden="0" type="field" name="riparian_veg_departure" width="-1"/>
+      <column hidden="0" type="field" name="ag_conversion" width="-1"/>
+      <column hidden="0" type="field" name="develop" width="-1"/>
+      <column hidden="0" type="field" name="grass_shrub_conversion" width="-1"/>
+      <column hidden="0" type="field" name="conifer_encroachment" width="-1"/>
+      <column hidden="0" type="field" name="invasive_conversion" width="-1"/>
+      <column hidden="0" type="field" name="riparian_condition" width="-1"/>
+      <column hidden="0" type="field" name="igoid:3" width="-1"/>
+      <column hidden="0" type="field" name="qlow" width="-1"/>
+      <column hidden="0" type="field" name="q2" width="-1"/>
+      <column hidden="0" type="field" name="splow" width="-1"/>
+      <column hidden="0" type="field" name="sphigh" width="-1"/>
+      <column hidden="0" type="field" name="igoid:4" width="-1"/>
+      <column hidden="0" type="field" name="road_len" width="-1"/>
+      <column hidden="0" type="field" name="road_dens" width="-1"/>
+      <column hidden="0" type="field" name="rail_len" width="-1"/>
+      <column hidden="0" type="field" name="rail_dens" width="-1"/>
+      <column hidden="0" type="field" name="land_use_intens" width="-1"/>
+      <column hidden="0" type="field" name="road_dist" width="-1"/>
+      <column hidden="0" type="field" name="rail_dist" width="-1"/>
+      <column hidden="0" type="field" name="div_dist" width="-1"/>
+      <column hidden="0" type="field" name="canal_dist" width="-1"/>
+      <column hidden="0" type="field" name="infra_dist" width="-1"/>
+      <column hidden="0" type="field" name="fldpln_access" width="-1"/>
+      <column hidden="0" type="field" name="access_fldpln_extent" width="-1"/>
+      <column hidden="0" type="field" name="brat_capacity" width="-1"/>
+      <column hidden="0" type="field" name="brat_hist_capacity" width="-1"/>
+      <column hidden="0" type="field" name="brat_risk" width="-1"/>
+      <column hidden="0" type="field" name="brat_opportunity" width="-1"/>
+      <column hidden="0" type="field" name="brat_limitation" width="-1"/>
+      <column hidden="0" type="field" name="brat_complex_size" width="-1"/>
+      <column hidden="0" type="field" name="brat_hist_complex_size" width="-1"/>
+      <column hidden="0" type="field" name="dam_setting" width="-1"/>
+      <column hidden="0" type="field" name="elevation" width="-1"/>
+      <column hidden="0" type="field" name="geology" width="-1"/>
+      <column hidden="0" type="field" name="huc12" width="-1"/>
+      <column hidden="0" type="field" name="igoid:3911386866" width="-1"/>
       <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
@@ -2436,179 +2478,183 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field name="FCode" editable="1"/>
-    <field name="access_fldpln_extent" editable="1"/>
-    <field name="acres_vb_per_mile" editable="1"/>
-    <field name="active_channel_ratio" editable="1"/>
-    <field name="ag_conversion" editable="1"/>
-    <field name="anthro_igo_land_use_intens" editable="1"/>
-    <field name="anthro_igo_rail_dens" editable="1"/>
-    <field name="anthro_igo_road_dens" editable="1"/>
-    <field name="brat_capacity" editable="1"/>
-    <field name="brat_complex_size" editable="1"/>
-    <field name="brat_hist_capacity" editable="1"/>
-    <field name="brat_hist_complex_size" editable="1"/>
-    <field name="brat_igo_capacity" editable="1"/>
-    <field name="brat_igo_opportunity" editable="1"/>
-    <field name="brat_igo_risk" editable="1"/>
-    <field name="brat_limitation" editable="1"/>
-    <field name="brat_opportunity" editable="1"/>
-    <field name="brat_risk" editable="1"/>
-    <field name="canal_dist" editable="1"/>
-    <field name="channel_area" editable="1"/>
-    <field name="channel_width" editable="1"/>
-    <field name="conf_dgo_confining_margins" editable="1"/>
-    <field name="conf_igo_confinement_ratio" editable="1"/>
-    <field name="conf_igo_constriction_ratio" editable="1"/>
-    <field name="confinement_ratio" editable="1"/>
-    <field name="confining_margins" editable="1"/>
-    <field name="confluences" editable="1"/>
-    <field name="conifer_encroachment" editable="1"/>
-    <field name="constricting_margins" editable="1"/>
-    <field name="constriction_ratio" editable="1"/>
-    <field name="county" editable="1"/>
-    <field name="dam_setting" editable="1"/>
-    <field name="develop" editable="1"/>
-    <field name="diffluences" editable="1"/>
-    <field name="div_dist" editable="1"/>
-    <field name="drainage_area" editable="1"/>
-    <field name="ecoregion3" editable="1"/>
-    <field name="ecoregion4" editable="1"/>
-    <field name="elevated_area" editable="1"/>
-    <field name="elevated_ratio" editable="1"/>
-    <field name="epa_dgo_ecoregion3" editable="1"/>
-    <field name="epa_dgo_ecoregion4" editable="1"/>
-    <field name="ex_riparian" editable="1"/>
-    <field name="fid" editable="1"/>
-    <field name="fldpln_access" editable="1"/>
-    <field name="floodplain_area" editable="1"/>
-    <field name="floodplain_ratio" editable="1"/>
-    <field name="grass_shrub_conversion" editable="1"/>
-    <field name="headwater" editable="1"/>
-    <field name="hect_vb_per_km" editable="1"/>
-    <field name="hist_prop_riparian" editable="1"/>
-    <field name="hist_riparian" editable="1"/>
-    <field name="igoid" editable="1"/>
-    <field name="igoid:1" editable="1"/>
-    <field name="igoid:1715241439" editable="1"/>
-    <field name="igoid:2" editable="1"/>
-    <field name="igoid:3" editable="1"/>
-    <field name="igoid:4" editable="1"/>
-    <field name="infra_dist" editable="1"/>
-    <field name="integrated_width" editable="1"/>
-    <field name="invasive_conversion" editable="1"/>
-    <field name="land_use_intens" editable="1"/>
-    <field name="level_path" editable="1"/>
-    <field name="lf_agriculture" editable="1"/>
-    <field name="lf_agriculture_prop" editable="1"/>
-    <field name="lf_bps" editable="1"/>
-    <field name="lf_conifer" editable="1"/>
-    <field name="lf_conifer_hardwood" editable="1"/>
-    <field name="lf_conifer_hardwood_prop" editable="1"/>
-    <field name="lf_conifer_prop" editable="1"/>
-    <field name="lf_developed" editable="1"/>
-    <field name="lf_developed_prop" editable="1"/>
-    <field name="lf_evt" editable="1"/>
-    <field name="lf_exotic_herbaceous" editable="1"/>
-    <field name="lf_exotic_herbaceous_prop" editable="1"/>
-    <field name="lf_exotic_tree_shrub" editable="1"/>
-    <field name="lf_exotic_tree_shrub_prop" editable="1"/>
-    <field name="lf_grassland" editable="1"/>
-    <field name="lf_grassland_prop" editable="1"/>
-    <field name="lf_hardwood" editable="1"/>
-    <field name="lf_hardwood_prop" editable="1"/>
-    <field name="lf_hist_conifer" editable="1"/>
-    <field name="lf_hist_conifer_hardwood" editable="1"/>
-    <field name="lf_hist_conifer_hardwood_prop" editable="1"/>
-    <field name="lf_hist_conifer_prop" editable="1"/>
-    <field name="lf_hist_grassland" editable="1"/>
-    <field name="lf_hist_grassland_prop" editable="1"/>
-    <field name="lf_hist_hardwood" editable="1"/>
-    <field name="lf_hist_hardwood_conifer" editable="1"/>
-    <field name="lf_hist_hardwood_conifer_prop" editable="1"/>
-    <field name="lf_hist_hardwood_prop" editable="1"/>
-    <field name="lf_hist_peatland_forest" editable="1"/>
-    <field name="lf_hist_peatland_forest_prop" editable="1"/>
-    <field name="lf_hist_peatland_nonforest" editable="1"/>
-    <field name="lf_hist_peatland_nonforest_prop" editable="1"/>
-    <field name="lf_hist_riparian" editable="1"/>
-    <field name="lf_hist_riparian_prop" editable="1"/>
-    <field name="lf_hist_savanna" editable="1"/>
-    <field name="lf_hist_savanna_prop" editable="1"/>
-    <field name="lf_hist_shrubland" editable="1"/>
-    <field name="lf_hist_shrubland_prop" editable="1"/>
-    <field name="lf_hist_sparsely_vegetated" editable="1"/>
-    <field name="lf_hist_sparsely_vegetated_prop" editable="1"/>
-    <field name="lf_riparian" editable="1"/>
-    <field name="lf_riparian_prop" editable="1"/>
-    <field name="lf_shrubland" editable="1"/>
-    <field name="lf_shrubland_prop" editable="1"/>
-    <field name="lf_sparsely_vegetated" editable="1"/>
-    <field name="lf_sparsely_vegetated_prop" editable="1"/>
-    <field name="low_lying_ratio" editable="1"/>
-    <field name="lowlying_area" editable="1"/>
-    <field name="nhd_dgo_headwater" editable="1"/>
-    <field name="nhd_dgo_streamlength" editable="1"/>
-    <field name="nhd_dgo_streamorder" editable="1"/>
-    <field name="nhd_dgo_streamtype" editable="1"/>
-    <field name="ownership" editable="1"/>
-    <field name="planform_sinuosity" editable="1"/>
-    <field name="prim_channel_gradient" editable="1"/>
-    <field name="prop_riparian" editable="1"/>
-    <field name="q2" editable="1"/>
-    <field name="qlow" editable="1"/>
-    <field name="rail_dens" editable="1"/>
-    <field name="rail_dist" editable="1"/>
-    <field name="rail_len" editable="1"/>
-    <field name="rcat_igo_fldpln_access" editable="1"/>
-    <field name="rcat_igo_prop_riparian" editable="1"/>
-    <field name="rcat_igo_riparian_ag_conversion" editable="1"/>
-    <field name="rcat_igo_riparian_develop" editable="1"/>
-    <field name="rcat_igo_riparian_veg_departure" editable="1"/>
-    <field name="rel_flow_length" editable="1"/>
-    <field name="riparian_condition" editable="1"/>
-    <field name="riparian_veg_departure" editable="1"/>
-    <field name="rme_dgo_confluences" editable="1"/>
-    <field name="rme_dgo_county" editable="1"/>
-    <field name="rme_dgo_diffluences" editable="1"/>
-    <field name="rme_dgo_drainage_area" editable="1"/>
-    <field name="rme_dgo_ownership" editable="1"/>
-    <field name="rme_dgo_state" editable="1"/>
-    <field name="rme_igo_planform_sinuosity" editable="1"/>
-    <field name="rme_igo_prim_channel_gradient" editable="1"/>
-    <field name="rme_igo_rel_flow_length" editable="1"/>
-    <field name="rme_igo_trib_per_km" editable="1"/>
-    <field name="rme_igo_valleybottom_gradient" editable="1"/>
-    <field name="road_dens" editable="1"/>
-    <field name="road_dist" editable="1"/>
-    <field name="road_len" editable="1"/>
-    <field name="seg_distance" editable="1"/>
-    <field name="sphigh" editable="1"/>
-    <field name="splow" editable="1"/>
-    <field name="state" editable="1"/>
-    <field name="stream_length" editable="1"/>
-    <field name="stream_name" editable="1"/>
-    <field name="stream_order" editable="1"/>
-    <field name="stream_size" editable="1"/>
-    <field name="tribs_per_km" editable="1"/>
-    <field name="tributaries" editable="1"/>
-    <field name="valleybottom_gradient" editable="1"/>
-    <field name="vbet_dgo_channel_area" editable="1"/>
-    <field name="vbet_dgo_elevated_area" editable="1"/>
-    <field name="vbet_dgo_floodplain_area" editable="1"/>
-    <field name="vbet_dgo_lowlying_area" editable="1"/>
-    <field name="vbet_dgo_streamsize" editable="1"/>
-    <field name="vbet_igo_acres_vb_per_mile" editable="1"/>
-    <field name="vbet_igo_active_channel_ratio" editable="1"/>
-    <field name="vbet_igo_elevated_ratio" editable="1"/>
-    <field name="vbet_igo_floodplain_ratio" editable="1"/>
-    <field name="vbet_igo_hect_vb_per_km" editable="1"/>
-    <field name="vbet_igo_integrated_width" editable="1"/>
-    <field name="vbet_igo_low_lying_ratio" editable="1"/>
-    <field name="waterbody_extent" editable="1"/>
-    <field name="waterbody_type" editable="1"/>
-    <field name="watershed_id" editable="1"/>
-    <field name="window_size" editable="1"/>
+    <field editable="1" name="FCode"/>
+    <field editable="1" name="access_fldpln_extent"/>
+    <field editable="1" name="acres_vb_per_mile"/>
+    <field editable="1" name="active_channel_ratio"/>
+    <field editable="1" name="ag_conversion"/>
+    <field editable="1" name="anthro_igo_land_use_intens"/>
+    <field editable="1" name="anthro_igo_rail_dens"/>
+    <field editable="1" name="anthro_igo_road_dens"/>
+    <field editable="1" name="brat_capacity"/>
+    <field editable="1" name="brat_complex_size"/>
+    <field editable="1" name="brat_hist_capacity"/>
+    <field editable="1" name="brat_hist_complex_size"/>
+    <field editable="1" name="brat_igo_capacity"/>
+    <field editable="1" name="brat_igo_opportunity"/>
+    <field editable="1" name="brat_igo_risk"/>
+    <field editable="1" name="brat_limitation"/>
+    <field editable="1" name="brat_opportunity"/>
+    <field editable="1" name="brat_risk"/>
+    <field editable="1" name="canal_dist"/>
+    <field editable="1" name="channel_area"/>
+    <field editable="1" name="channel_width"/>
+    <field editable="1" name="conf_dgo_confining_margins"/>
+    <field editable="1" name="conf_igo_confinement_ratio"/>
+    <field editable="1" name="conf_igo_constriction_ratio"/>
+    <field editable="1" name="confinement_ratio"/>
+    <field editable="1" name="confining_margins"/>
+    <field editable="1" name="confluences"/>
+    <field editable="1" name="conifer_encroachment"/>
+    <field editable="1" name="constricting_margins"/>
+    <field editable="1" name="constriction_ratio"/>
+    <field editable="1" name="county"/>
+    <field editable="1" name="dam_setting"/>
+    <field editable="1" name="develop"/>
+    <field editable="1" name="diffluences"/>
+    <field editable="1" name="div_dist"/>
+    <field editable="1" name="drainage_area"/>
+    <field editable="1" name="ecoregion3"/>
+    <field editable="1" name="ecoregion4"/>
+    <field editable="1" name="elevated_area"/>
+    <field editable="1" name="elevated_ratio"/>
+    <field editable="1" name="elevation"/>
+    <field editable="1" name="epa_dgo_ecoregion3"/>
+    <field editable="1" name="epa_dgo_ecoregion4"/>
+    <field editable="1" name="ex_riparian"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="fldpln_access"/>
+    <field editable="1" name="floodplain_area"/>
+    <field editable="1" name="floodplain_ratio"/>
+    <field editable="1" name="geology"/>
+    <field editable="1" name="grass_shrub_conversion"/>
+    <field editable="1" name="headwater"/>
+    <field editable="1" name="hect_vb_per_km"/>
+    <field editable="1" name="hist_prop_riparian"/>
+    <field editable="1" name="hist_riparian"/>
+    <field editable="1" name="huc12"/>
+    <field editable="1" name="igoid"/>
+    <field editable="1" name="igoid:1"/>
+    <field editable="1" name="igoid:1715241439"/>
+    <field editable="1" name="igoid:2"/>
+    <field editable="1" name="igoid:3"/>
+    <field editable="1" name="igoid:3911386866"/>
+    <field editable="1" name="igoid:4"/>
+    <field editable="1" name="infra_dist"/>
+    <field editable="1" name="integrated_width"/>
+    <field editable="1" name="invasive_conversion"/>
+    <field editable="1" name="land_use_intens"/>
+    <field editable="1" name="level_path"/>
+    <field editable="1" name="lf_agriculture"/>
+    <field editable="1" name="lf_agriculture_prop"/>
+    <field editable="1" name="lf_bps"/>
+    <field editable="1" name="lf_conifer"/>
+    <field editable="1" name="lf_conifer_hardwood"/>
+    <field editable="1" name="lf_conifer_hardwood_prop"/>
+    <field editable="1" name="lf_conifer_prop"/>
+    <field editable="1" name="lf_developed"/>
+    <field editable="1" name="lf_developed_prop"/>
+    <field editable="1" name="lf_evt"/>
+    <field editable="1" name="lf_exotic_herbaceous"/>
+    <field editable="1" name="lf_exotic_herbaceous_prop"/>
+    <field editable="1" name="lf_exotic_tree_shrub"/>
+    <field editable="1" name="lf_exotic_tree_shrub_prop"/>
+    <field editable="1" name="lf_grassland"/>
+    <field editable="1" name="lf_grassland_prop"/>
+    <field editable="1" name="lf_hardwood"/>
+    <field editable="1" name="lf_hardwood_prop"/>
+    <field editable="1" name="lf_hist_conifer"/>
+    <field editable="1" name="lf_hist_conifer_hardwood"/>
+    <field editable="1" name="lf_hist_conifer_hardwood_prop"/>
+    <field editable="1" name="lf_hist_conifer_prop"/>
+    <field editable="1" name="lf_hist_grassland"/>
+    <field editable="1" name="lf_hist_grassland_prop"/>
+    <field editable="1" name="lf_hist_hardwood"/>
+    <field editable="1" name="lf_hist_hardwood_conifer"/>
+    <field editable="1" name="lf_hist_hardwood_conifer_prop"/>
+    <field editable="1" name="lf_hist_hardwood_prop"/>
+    <field editable="1" name="lf_hist_peatland_forest"/>
+    <field editable="1" name="lf_hist_peatland_forest_prop"/>
+    <field editable="1" name="lf_hist_peatland_nonforest"/>
+    <field editable="1" name="lf_hist_peatland_nonforest_prop"/>
+    <field editable="1" name="lf_hist_riparian"/>
+    <field editable="1" name="lf_hist_riparian_prop"/>
+    <field editable="1" name="lf_hist_savanna"/>
+    <field editable="1" name="lf_hist_savanna_prop"/>
+    <field editable="1" name="lf_hist_shrubland"/>
+    <field editable="1" name="lf_hist_shrubland_prop"/>
+    <field editable="1" name="lf_hist_sparsely_vegetated"/>
+    <field editable="1" name="lf_hist_sparsely_vegetated_prop"/>
+    <field editable="1" name="lf_riparian"/>
+    <field editable="1" name="lf_riparian_prop"/>
+    <field editable="1" name="lf_shrubland"/>
+    <field editable="1" name="lf_shrubland_prop"/>
+    <field editable="1" name="lf_sparsely_vegetated"/>
+    <field editable="1" name="lf_sparsely_vegetated_prop"/>
+    <field editable="1" name="low_lying_ratio"/>
+    <field editable="1" name="lowlying_area"/>
+    <field editable="1" name="nhd_dgo_headwater"/>
+    <field editable="1" name="nhd_dgo_streamlength"/>
+    <field editable="1" name="nhd_dgo_streamorder"/>
+    <field editable="1" name="nhd_dgo_streamtype"/>
+    <field editable="1" name="ownership"/>
+    <field editable="1" name="planform_sinuosity"/>
+    <field editable="1" name="prim_channel_gradient"/>
+    <field editable="1" name="prop_riparian"/>
+    <field editable="1" name="q2"/>
+    <field editable="1" name="qlow"/>
+    <field editable="1" name="rail_dens"/>
+    <field editable="1" name="rail_dist"/>
+    <field editable="1" name="rail_len"/>
+    <field editable="1" name="rcat_igo_fldpln_access"/>
+    <field editable="1" name="rcat_igo_prop_riparian"/>
+    <field editable="1" name="rcat_igo_riparian_ag_conversion"/>
+    <field editable="1" name="rcat_igo_riparian_develop"/>
+    <field editable="1" name="rcat_igo_riparian_veg_departure"/>
+    <field editable="1" name="rel_flow_length"/>
+    <field editable="1" name="riparian_condition"/>
+    <field editable="1" name="riparian_veg_departure"/>
+    <field editable="1" name="rme_dgo_confluences"/>
+    <field editable="1" name="rme_dgo_county"/>
+    <field editable="1" name="rme_dgo_diffluences"/>
+    <field editable="1" name="rme_dgo_drainage_area"/>
+    <field editable="1" name="rme_dgo_ownership"/>
+    <field editable="1" name="rme_dgo_state"/>
+    <field editable="1" name="rme_igo_planform_sinuosity"/>
+    <field editable="1" name="rme_igo_prim_channel_gradient"/>
+    <field editable="1" name="rme_igo_rel_flow_length"/>
+    <field editable="1" name="rme_igo_trib_per_km"/>
+    <field editable="1" name="rme_igo_valleybottom_gradient"/>
+    <field editable="1" name="road_dens"/>
+    <field editable="1" name="road_dist"/>
+    <field editable="1" name="road_len"/>
+    <field editable="1" name="seg_distance"/>
+    <field editable="1" name="sphigh"/>
+    <field editable="1" name="splow"/>
+    <field editable="1" name="state"/>
+    <field editable="1" name="stream_length"/>
+    <field editable="1" name="stream_name"/>
+    <field editable="1" name="stream_order"/>
+    <field editable="1" name="stream_size"/>
+    <field editable="1" name="tribs_per_km"/>
+    <field editable="1" name="tributaries"/>
+    <field editable="1" name="valleybottom_gradient"/>
+    <field editable="1" name="vbet_dgo_channel_area"/>
+    <field editable="1" name="vbet_dgo_elevated_area"/>
+    <field editable="1" name="vbet_dgo_floodplain_area"/>
+    <field editable="1" name="vbet_dgo_lowlying_area"/>
+    <field editable="1" name="vbet_dgo_streamsize"/>
+    <field editable="1" name="vbet_igo_acres_vb_per_mile"/>
+    <field editable="1" name="vbet_igo_active_channel_ratio"/>
+    <field editable="1" name="vbet_igo_elevated_ratio"/>
+    <field editable="1" name="vbet_igo_floodplain_ratio"/>
+    <field editable="1" name="vbet_igo_hect_vb_per_km"/>
+    <field editable="1" name="vbet_igo_integrated_width"/>
+    <field editable="1" name="vbet_igo_low_lying_ratio"/>
+    <field editable="1" name="waterbody_extent"/>
+    <field editable="1" name="waterbody_type"/>
+    <field editable="1" name="watershed_id"/>
+    <field editable="1" name="window_size"/>
   </editable>
   <labelOnTop>
     <field name="FCode" labelOnTop="0"/>
@@ -2651,6 +2697,7 @@ def my_form_open(dialog, layer, feature):
     <field name="ecoregion4" labelOnTop="0"/>
     <field name="elevated_area" labelOnTop="0"/>
     <field name="elevated_ratio" labelOnTop="0"/>
+    <field name="elevation" labelOnTop="0"/>
     <field name="epa_dgo_ecoregion3" labelOnTop="0"/>
     <field name="epa_dgo_ecoregion4" labelOnTop="0"/>
     <field name="ex_riparian" labelOnTop="0"/>
@@ -2658,16 +2705,19 @@ def my_form_open(dialog, layer, feature):
     <field name="fldpln_access" labelOnTop="0"/>
     <field name="floodplain_area" labelOnTop="0"/>
     <field name="floodplain_ratio" labelOnTop="0"/>
+    <field name="geology" labelOnTop="0"/>
     <field name="grass_shrub_conversion" labelOnTop="0"/>
     <field name="headwater" labelOnTop="0"/>
     <field name="hect_vb_per_km" labelOnTop="0"/>
     <field name="hist_prop_riparian" labelOnTop="0"/>
     <field name="hist_riparian" labelOnTop="0"/>
+    <field name="huc12" labelOnTop="0"/>
     <field name="igoid" labelOnTop="0"/>
     <field name="igoid:1" labelOnTop="0"/>
     <field name="igoid:1715241439" labelOnTop="0"/>
     <field name="igoid:2" labelOnTop="0"/>
     <field name="igoid:3" labelOnTop="0"/>
+    <field name="igoid:3911386866" labelOnTop="0"/>
     <field name="igoid:4" labelOnTop="0"/>
     <field name="infra_dist" labelOnTop="0"/>
     <field name="integrated_width" labelOnTop="0"/>
@@ -2826,6 +2876,7 @@ def my_form_open(dialog, layer, feature):
     <field name="ecoregion4" reuseLastValue="0"/>
     <field name="elevated_area" reuseLastValue="0"/>
     <field name="elevated_ratio" reuseLastValue="0"/>
+    <field name="elevation" reuseLastValue="0"/>
     <field name="epa_dgo_ecoregion3" reuseLastValue="0"/>
     <field name="epa_dgo_ecoregion4" reuseLastValue="0"/>
     <field name="ex_riparian" reuseLastValue="0"/>
@@ -2833,16 +2884,19 @@ def my_form_open(dialog, layer, feature):
     <field name="fldpln_access" reuseLastValue="0"/>
     <field name="floodplain_area" reuseLastValue="0"/>
     <field name="floodplain_ratio" reuseLastValue="0"/>
+    <field name="geology" reuseLastValue="0"/>
     <field name="grass_shrub_conversion" reuseLastValue="0"/>
     <field name="headwater" reuseLastValue="0"/>
     <field name="hect_vb_per_km" reuseLastValue="0"/>
     <field name="hist_prop_riparian" reuseLastValue="0"/>
     <field name="hist_riparian" reuseLastValue="0"/>
+    <field name="huc12" reuseLastValue="0"/>
     <field name="igoid" reuseLastValue="0"/>
     <field name="igoid:1" reuseLastValue="0"/>
     <field name="igoid:1715241439" reuseLastValue="0"/>
     <field name="igoid:2" reuseLastValue="0"/>
     <field name="igoid:3" reuseLastValue="0"/>
+    <field name="igoid:3911386866" reuseLastValue="0"/>
     <field name="igoid:4" reuseLastValue="0"/>
     <field name="infra_dist" reuseLastValue="0"/>
     <field name="integrated_width" reuseLastValue="0"/>
