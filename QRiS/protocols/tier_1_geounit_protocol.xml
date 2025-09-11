@@ -1,7 +1,7 @@
 <Protocol machine_code="TIER_1_GEOUNIT" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Tier 1 Geomorphic Unit Protocol</Label>
     <Description>Tier 1 Geomorphic Unit Assessment of Valley Bottom</Description>
-    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/tier-1-geounit-protocol</URL>
     <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-08-18</CreationDate>
