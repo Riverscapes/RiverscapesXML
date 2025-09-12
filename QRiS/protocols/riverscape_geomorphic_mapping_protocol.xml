@@ -1,0 +1,135 @@
+<Protocol machine_code="GEOMPORPHIC_MAPPING" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Geomorphic Mapping of Riverscapes</Label>
+    <Description>Geomorphic Unit Assessment of Valley Bottom</Description>
+    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-08-18</CreationDate>
+    <UpdatedDate>2025-09-02</UpdatedDate>
+    <Layers>
+            <Layer id="tier_1_geomorphic_unit_extents" version="1.0" geom_type="Polygon">
+            <Label>Geomorphic Units</Label>
+            <Symbology>tier_1_extents.qml</Symbology>
+            <Description>Tier 1 Geomorphic Units Polygon Layer</Description>
+            <Fields>
+                <ListField id="geo_unit_type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Active Channel</Value>
+                        <Value>Active Floodplain</Value>
+                        <Value>Inactive Floodplain</Value>
+                        <Value>Terrace</Value>
+                        <Value>Alluvial Fan</Value>
+                        <Value>Colluvial Fan</Value>
+                        <Value>Moraine</Value>
+                        <Value>Hillslope/Upland</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="margins" version="1.0" geom_type="Linestring">
+            <Label>Active Confining Margins</Label>
+            <Symbology>margins.qml</Symbology>
+            <Description>Margins of the Valley, Valley Bottom, and Active Channel</Description>
+            <Fields>
+                <ListField id="margin_type" version="1.0"> 
+                    <Label>Margin Type(s)</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Valley Bottom Margin</Value>
+                        <Value>Valley Margin</Value>
+                        <Value>Anthropogenic</Value>
+                    </Values>
+                </ListField>
+                <ListField id="anthro_margin_type" version="1.0">
+                    <Label>Anthropogenic Margin Type</Label>
+                    <Values>
+                        <Value>Embankment</Value>
+                        <Value>Fence</Value>
+                        <Value>Hedgerow</Value>
+                        <Value>Constructed Levee</Value>
+                        <Value>Railroad</Value>
+                        <Value>Road</Value>
+                        <Value>Wall</Value>
+                    </Values>
+                </ListField>
+                <ListField id="confinement_type" version="1.0">
+                    <Label>Confinement Type</Label>
+                    <Values>
+                        <Value>Left</Value>
+                        <Value>Right</Value>
+                    </Values>
+                </ListField>
+                <ListField id="sediment_source" version="1.0">
+                    <Label>Potential Sediment Source</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <ListField id="wood_source" version="1.0">
+                    <Label>Potential Wood Source</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    </Layers>
+    <Metrics>
+        <Metric id="active_channel_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Active Channel Proportion</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of Active Channel within Valley Bottom of Each Sample Frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="geo_unit_type">
+                        <Value>Channel</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric> 
+        <Metric id="active_floodplain_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Active Floodplain Proportion</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of Active Floodplain within Valley Bottom of Each Sample Frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="geo_unit_type">
+                        <Value>Active Floodplain</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="inactive_floodplain_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Inactive Floodplain Proportion</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of Inactive Floodplain within Valley Bottom of Each Sample Frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="geo_unit_type">
+                        <Value>Inactive Floodplain</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+    </Metrics>
+</Protocol>
