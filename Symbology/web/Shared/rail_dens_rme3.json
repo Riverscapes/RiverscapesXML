@@ -1,15 +1,16 @@
 {
   "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
   "legend": [
-    ["rgb(97, 37, 176)", "< 0.01"],
-    ["rgb(180, 111, 110)", "0.01 - 0.025"],
-    ["rgb(214, 132, 0)", "0.025 - 0.1"],
-    ["rgb(217, 173, 10)", "0.1 - 1"],
-    ["rgb(255, 225, 60)", "> 1"]
+    ["#ffffff", "0"],
+    ["#6852d9", "0 - 0.01"],
+    ["#9f6b6c", "0.01 - 0.025"],
+    ["#d68400", "0.025 - 0.1"],
+    ["#fbb420", "0.1 - 1"],
+    ["#ffe13c", "> 1"]
   ],
   "layerStyles": [
         {
-            "id": "vw-igo-sample-cf7ljl",
+            "id": "Regular Points",
             "type": "circle",
             "source": "composite",
             "source-layer": "vw_igo_sample-cf7ljl",
@@ -20,25 +21,29 @@
                 ["linear"],
                 ["get", "rail_dens"],
                 0,
-                "rgb(97, 37, 176)",
+                "hsla(0, 0%, 0%, 0)",
+                0.00000009,
+                "hsla(0, 0%, 0%, 0)",
+                0.0000001,
+                "#6852d9",
                 0.01,
-                "rgb(97, 37, 176)",
+                "#6852d9",
                 0.0101,
-                "rgb(180, 111, 110)",
+                "#9f6b6c",
                 0.025,
-                "rgb(180, 111, 110)",
+                "#9f6b6c",
                 0.02501,
-                "rgb(214, 132, 0)",
+                "#d68400",
                 0.1,
-                "rgb(214, 132, 0)",
+                "#d68400",
                 0.1001,
-                "rgb(217, 173, 10)",
+                "#fbb420",
                 1,
-                "rgb(217, 173, 10)",
+                "#fbb420",
                 1.0001,
-                "rgb(255, 225, 60)",
+                "#ffe13c",
                 1000000,
-                "rgb(255, 225, 60)"
+                "#ffe13c"
             ],
             "circle-radius": [
               "interpolate",
@@ -55,6 +60,37 @@
               22,
               5.5
             ]
+            }
+        },
+        {
+            "id": "Small Points",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "vw_igo_sample-cf7ljl",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+              "match",
+              ["get", "rail_dens"],
+              [0],
+              "#ffffff",
+              "hsla(0, 0%, 0%, 0)"
+          ],
+            "circle-radius": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              10,
+              0.75,
+              11,
+              1.25,
+              13.5,
+              1.75,
+              15,
+              2.25,
+              22,
+              2.75
+          ]
             }
         }
     ]
