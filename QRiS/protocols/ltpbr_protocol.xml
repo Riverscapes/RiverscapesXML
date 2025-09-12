@@ -958,6 +958,19 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="percent_recovery_potential" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Proportion of Riverscape with Recovery Potential</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the riverscape that has recovery potential</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="recovery_potential">
+                    <Usage>Numerator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="pool_area" version="1.0" calculation_machine_code="area">
             <Label>Pool Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
