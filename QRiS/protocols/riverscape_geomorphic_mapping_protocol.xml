@@ -94,7 +94,7 @@
                 <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
                     <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="geo_unit_type">
-                        <Value>Channel</Value>
+                        <Value>Active Channel</Value>
                     </AttributeFilter>
                 </DCELayer>
             </Parameters>
