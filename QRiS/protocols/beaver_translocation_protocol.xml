@@ -5,7 +5,7 @@
     <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-07-23</CreationDate>
-    <UpdatedDate>2025-07-23</UpdatedDate>
+    <UpdatedDate>2025-09-17</UpdatedDate>
     <Layers>
         <Layer id="beaver_translocation_site_observations" version="1.0" geom_type="Polygon">
             <Label>Site Observations</Label>
@@ -56,7 +56,6 @@
                 </ListField> 
                 <TextField id="other" version="1.0">
                     <Label>Other Observations</Label>
-                    <DefaultValue>None</DefaultValue>
                 </TextField>                           
                 <ListField id="landowner_risk" version="1.0">
                     <Label>Landowner Risk</Label>                    
@@ -212,7 +211,6 @@
                 </TextField>                                                                        
                 <IntegerField id="number_of_beaver" version="1.0">
                     <Label>Number of Beaver Released</Label>
-                    <DefaultValue>0</DefaultValue>
                 </IntegerField>                                           
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>                    
@@ -220,19 +218,4 @@
             </Fields> 
         </Layer>
     </Layers>
-    <Metrics>
-        <Metric id="beaver_released" version="1.0" calculation_machine_code="count">
-            <Label>Beaver Released</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Total beaver released within sample frames.</Description>
-            <MinimumValue>0</MinimumValue>
-            <Precision>1</Precision>
-            <Parameters>
-                <DCELayer layer_id_ref="beaver_release_monitoring">
-                    <CountFields><CountField field_id_ref="number_of_beaver" />
-                    </CountFields>
-                </DCELayer>
-            </Parameters>
-        </Metric>
-    </Metrics>
 </Protocol>

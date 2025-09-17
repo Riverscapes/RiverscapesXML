@@ -5,7 +5,7 @@
     <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-08-18</CreationDate>
-    <UpdatedDate>2025-08-18</UpdatedDate>
+    <UpdatedDate>2025-09-17</UpdatedDate>
     <Layers>
         <Layer id="crossing_info" version="1.0" geom_type="Point">
             <Label>Crossing Information</Label>
@@ -39,7 +39,6 @@
                 </ListField>
                 <IntegerField id="number_culverts" version="1.0">
                     <Label>Number of Culverts</Label>
-                    <MinimumValue>0</MinimumValue>
                 </IntegerField>
                 <TextField id="photo_id" version="1.0">
                     <Label>Photo ID</Label>
@@ -72,7 +71,6 @@
                 </ListField>
                 <FloatField id="active_channel_width" version="1.0">
                     <Label>Active Channel Width (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <ListField id="constriction" version="1.0">
                     <Label>Constriction</Label>
@@ -149,31 +147,24 @@
                 </ListField>
                 <FloatField id="outlet_width" version="1.0">
                     <Label>Outlet Width (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="outlet_height" version="1.0">
                     <Label>Outlet Height (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="water_width" version="1.0">
                     <Label>Water Width (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="water_depth" version="1.0">
                     <Label>Water Depth (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="outlet_drop_water_surface" version="1.0">
                     <Label>Outlet Drop to Water Surface (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="outlet_drop_stream_bottom" version="1.0">
                     <Label>Outlet Drop to Stream Bottom (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="structure_length" version="1.0">
                     <Label>Structure Length (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <ListField id="undermining" version="1.0">
                     <Label>Undermining</Label>
@@ -242,23 +233,18 @@
                 </ListField>
                 <FloatField id="inlet_width" version="1.0">
                     <Label>Inlet Width (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="inlet_height" version="1.0">
                     <Label>Inlet Height (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="water_width" version="1.0">
                     <Label>Water Width (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="water_depth" version="1.0">
                     <Label>Water Depth (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <FloatField id="inlet_drop_stream_bottom" version="1.0">
                     <Label>Inlet Drop to Stream Bottom (m)</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <TextField id="comments" version="1.0">
                     <Label>Comments</Label>
@@ -272,7 +258,6 @@
             <Fields>
                 <FloatField id="slope" version="1.0">
                     <Label>Slope</Label>
-                    <MinimumValue>0</MinimumValue>
                 </FloatField>
                 <ListField id="internal_structures" version="1.0">
                     <Label>Internal Structures</Label>
