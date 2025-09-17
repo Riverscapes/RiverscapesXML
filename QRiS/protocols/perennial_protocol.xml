@@ -5,7 +5,7 @@
     <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-07-23</CreationDate>
-    <UpdatedDate>2025-07-23</UpdatedDate>
+    <UpdatedDate>2025-09-17</UpdatedDate>
     <Layers>
         <Layer id="observations" version="1.0" geom_type="Point">
             <Label>Observations</Label>
@@ -19,13 +19,11 @@
                     <Label>Flow Type</Label>
                     <Values>
                         <Value>Perennial</Value>
-                        <Value>Intermittent</Value>
-                        <Value>Ephemeral</Value> 
+                        <Value>Non-Perennial</Value> 
                     </Values>
                 </ListField>
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>
-                    <DefaultValue>None</DefaultValue>
                 </TextField>
                 <AttachmentField id="photo_path" version="1.0">
                     <Label>Photo Path</Label>
@@ -44,13 +42,11 @@
                     <Label>Flow Type</Label>
                     <Values>
                         <Value>Perennial</Value>
-                        <Value>Intermittent</Value>
-                        <Value>Ephemeral</Value> 
+                        <Value>Non-Perennial</Value>  
                     </Values>                       
                 </ListField>
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>
-                    <DefaultValue>None</DefaultValue>
                 </TextField>                             
             </Fields>  
         </Layer>                              
@@ -62,7 +58,7 @@
             <Description>Sum of all perennial channel lengths.</Description>
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
-            <Precision>3</Precision>
+            <Precision>2</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="flow_type">
                     <AttributeFilter field_id_ref="flow_type">
@@ -77,7 +73,7 @@
             <Description>Proportion of total channel length that is perennial.</Description>
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
-            <Precision>3</Precision>
+            <Precision>2</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="flow_type">
                     <Usage>Numerator</Usage>
@@ -90,73 +86,39 @@
                 </DCELayer>          
             </Parameters>
         </Metric>
-        <Metric id="intermittent_length" version="1.0" calculation_machine_code="length">
-            <Label>Intermittent Stream Length</Label>
+        <Metric id="non_perennial_length" version="1.0" calculation_machine_code="length">
+            <Label>Non-Perennial Stream Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>Sum of all intermittent channel lengths.</Description>
+            <Description>Sum of all non-perennial channel lengths.</Description>
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
-            <Precision>3</Precision>
+            <Precision>2</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="flow_type">
                     <AttributeFilter field_id_ref="flow_type">
-                        <Value>Intermittent</Value>
+                        <Value>Non-Perennial</Value> 
                     </AttributeFilter>
                 </DCELayer>            
             </Parameters>
         </Metric>
-        <Metric id="intermittent_proportion" version="1.0" calculation_machine_code="proportion">
-            <Label>Proportion Intermittent</Label>
+        <Metric id="non_perennial_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Non-Perennial</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>Proportion of total channel length that is intermittent.</Description>
+            <Description>Proportion of total channel length that is non-perennial.</Description>
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
-            <Precision>3</Precision>
+            <Precision>2</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="flow_type">
                     <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="flow_type">
-                        <Value>Intermittent</Value>
+                        <Value>Non-Perennial</Value> 
                     </AttributeFilter>                
                 </DCELayer>  
                 <DCELayer layer_id_ref="flow_type">
                     <Usage>Denominator</Usage>
                 </DCELayer>          
             </Parameters>
-        </Metric>  
-        <Metric id="ephemeral_length" version="1.0" calculation_machine_code="length">
-            <Label>Ephemeral Stream Length</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Sum of all ephemeral channel lengths.</Description>
-            <MinimumValue>0</MinimumValue>
-            <MaximumValue>1000000</MaximumValue>
-            <Precision>3</Precision>
-            <Parameters>
-                <DCELayer layer_id_ref="flow_type">
-                    <AttributeFilter field_id_ref="flow_type">
-                        <Value>Ephemeral</Value>
-                    </AttributeFilter>
-                </DCELayer>            
-            </Parameters>
-        </Metric>
-        <Metric id="ephemeral_proportion" version="1.0" calculation_machine_code="proportion">
-            <Label>Proportion Ephemeral</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Proportion of total channel length that is ephemeral.</Description>
-            <MinimumValue>0</MinimumValue>
-            <MaximumValue>1000000</MaximumValue>
-            <Precision>3</Precision>
-            <Parameters>
-                <DCELayer layer_id_ref="flow_type">
-                    <Usage>Numerator</Usage>
-                    <AttributeFilter field_id_ref="flow_type">
-                        <Value>Ephemeral</Value>
-                    </AttributeFilter>                
-                </DCELayer>  
-                <DCELayer layer_id_ref="flow_type">
-                    <Usage>Denominator</Usage>
-                </DCELayer>          
-            </Parameters>
-        </Metric>            
+        </Metric>             
     </Metrics>
 </Protocol>
