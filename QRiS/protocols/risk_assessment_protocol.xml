@@ -70,7 +70,7 @@
         <Layer id="land_use" version="1.0" geom_type="Polygon">
             <Label>Land Use Assessment</Label>
             <Symbology>land_use.qml</Symbology>
-            <Description>Assessment of current and historic land use and resulting riparian vegetation deapture</Description>
+            <Description>Assessment of current and historic land use and resulting riparian vegetation departure</Description>
             <Hierarchy>
                 <HierarchyItem>Land Use Assessment</HierarchyItem>
             </Hierarchy>
@@ -289,9 +289,9 @@
                 </TextField>
             </Fields>
         </Layer>
-        <Layer id="culverts" version="1.0" geom_type="Point">
+        <Layer id="culverts" version="1.0" geom_type="Linestring">
             <Label>Culverts</Label>
-            <Symbology>ltpbr_risk_point.qml</Symbology>
+            <Symbology>ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Culverts</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -319,6 +319,61 @@
                     <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
                     <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
                     <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="utility_lines" version="1.0" geom_type="Linestring">
+            <Label>Utility Lines</Label>
+            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Description>Risk Assessment for Utility Lines</Description>
+            <Hierarchy>
+                <HierarchyItem>Infrastructure Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="location" version="1.0">
+                    <Label>Location</Label>
+                    <Values>
+                        <Value>Within Valley Bottom and Adjacent To Channel</Value>
+                        <Value>Within Valley Bottom and Nonadjacent To Channel</Value>
+                        <Value>Outside Valley Bottom</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>High Risk</Value>
+                        <Value>Medium Risk</Value>
+                        <Value>Low Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>LTPBR Risk</Label>
+                   <Values>
+                    <Value>Low Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>Medium Probability of Being Negtively Impacted by LTPBR</Value>
+                    <Value>High Probability of Being Negtively Impacted by LTPBR</Value>
+                   </Values> 
+                </ListField>
+                <ListField id="utility_location" version="1.0">
+                    <Label>Utility Location</Label>
+                   <Values>
+                    <Value>Overhead</Value>
+                    <Value>Underground</Value>
+                    <Value>Surface Level</Value>
+                   </Values> 
+                </ListField>
+                <ListField id="type" version="1.0">
+                    <Label>Utility Type</Label>
+                   <Values>
+                    <Value>Gas</Value>
+                    <Value>Electric</Value>
+                    <Value>Water</Value>
+                    <Value>Sewage</Value>
+                    <Value>Telecommunications</Value>
                    </Values> 
                 </ListField>
                 <TextField id="notes" version="1.0">
@@ -483,7 +538,7 @@
                 </TextField>
             </Fields>
         </Layer>
-        <Layer id="adjacent_landowners_assessment" version="1.0" geom_type="Point">
+        <Layer id="adjacent_landowners_assessment" version="1.0" geom_type="Polygon">
             <Label>Adjacent Landowner Assessment</Label>
             <Symbology>property2.qml</Symbology>
             <Description>Assessment of LTPBR Feasibility of Nearby Landowners</Description>
