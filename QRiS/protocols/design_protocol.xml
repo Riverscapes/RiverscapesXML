@@ -149,7 +149,7 @@
                         <Value>Structure: Hydraulic - Ponding Flow</Value>
                         <Value>Structure: Hydraulic - Shunting Flow</Value>
                         <Value>Structure: Hydraulic - Splitting Flow</Value>
-                        <Value>Structure: Scout Pool Formation</Value>
+                        <Value>Structure: Scour Pool Formation</Value>
                     </Values>
                 </ListField>
                 <ListField id="zoi_stage" version="1.0">
@@ -210,10 +210,10 @@
                 <ListField id="observation_polygon_type" version="1.0">
                     <Label>Observation Type</Label>
                     <Values>
+                        <Value>Building Materials</Value>
                         <Value>Caution</Value>
+                        <Value>Infrastructure</Value>
                         <Value>Logistics</Value>
-                        <Value>Riverscape Feature</Value>
-                        <Value>Road</Value>
                         <Value>Other</Value>
                     </Values>
                 </ListField>
@@ -230,10 +230,10 @@
                 <ListField id="observation_line_type" version="1.0">
                     <Label>Observation Type</Label>
                     <Values>
-                        <Value>Building Materials</Value>
                         <Value>Caution</Value>
-                        <Value>Infrastructure</Value>
                         <Value>Logistics</Value>
+                        <Value>Riverscape Feature</Value>
+                        <Value>Road</Value>
                         <Value>Other</Value>
                     </Values>
                 </ListField>
