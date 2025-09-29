@@ -160,6 +160,13 @@
                     </Children> -->
                 </Node>
             </Repeater>
+            <Node label="Attachments" xpath="Realizations/Realization[@id='attachments']" id="attachments">
+                <Children collapsed="true">
+                    <Repeater label="Files" xpath="Datasets/File">
+                        <Node xpathlabel="Name" type="file"/>
+                    </Repeater>
+                </Children>
+            </Node>
         </Children>
       </Node>
     <Views default="DEFAULT">
