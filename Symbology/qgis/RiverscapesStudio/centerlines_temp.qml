@@ -10,7 +10,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{6c871ff2-524c-45b4-b702-249207c56608}" locked="0">
+        <layer enabled="1" pass="0" class="SimpleLine" id="{b0b4e737-1ee9-4a74-82b6-c1129763fffc}" locked="0">
           <Option type="Map">
             <Option value="0" name="align_dash_pattern" type="QString"/>
             <Option value="square" name="capstyle" type="QString"/>
@@ -22,9 +22,9 @@
             <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
             <Option value="0" name="draw_inside_polygon" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="255,255,255,255,rgb:1,1,1,1" name="line_color" type="QString"/>
-            <Option value="dot" name="line_style" type="QString"/>
-            <Option value="1" name="line_width" type="QString"/>
+            <Option value="0,75,255,255,rgb:0,0.29411764705882354,1,1" name="line_color" type="QString"/>
+            <Option value="solid" name="line_style" type="QString"/>
+            <Option value="0.85" name="line_width" type="QString"/>
             <Option value="MM" name="line_width_unit" type="QString"/>
             <Option value="0" name="offset" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
@@ -71,7 +71,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleLine" id="{a784040f-ca23-4bd1-b1ab-0550ab25839c}" locked="0">
+        <layer enabled="1" pass="0" class="SimpleLine" id="{959dd5b3-3ae3-4729-bbb5-c0de17d2869f}" locked="0">
           <Option type="Map">
             <Option value="0" name="align_dash_pattern" type="QString"/>
             <Option value="square" name="capstyle" type="QString"/>
