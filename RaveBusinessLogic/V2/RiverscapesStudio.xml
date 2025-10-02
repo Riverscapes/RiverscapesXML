@@ -154,11 +154,14 @@
                 </Node>  
             </Repeater>
             <Repeater label="Analyses" xpath="Realizations/Realization[contains(@id, 'analysis')]">
-                <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_analysis')]" type="polygon">
+                <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_analysis')]" type="file">
                     <!-- <Children>
                         <Node label="Analysis" />
                     </Children> -->
                 </Node>
+            </Repeater>
+            <Repeater label="Attachments" xpath="Realizations/Realization[contains(@id, 'attachments')]/Datasets/File">
+                <Node xpathlabel="Name"  type="file"></Node>
             </Repeater>
         </Children>
       </Node>
