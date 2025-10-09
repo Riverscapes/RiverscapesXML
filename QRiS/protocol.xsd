@@ -343,7 +343,16 @@
         <xs:attribute name="id" type="IdType" use="required"/>
         <xs:attribute name="version" type="xs:string" use="required"/>
         <xs:attribute name="calculation_machine_code" type="xs:string" use="required"/>
+            <xs:attribute name="status" type="MetricStatusType" use="optional"/>
     </xs:complexType>
+
+    <xs:simpleType name="MetricStatusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="active"/>
+            <xs:enumeration value="deprecated"/>
+            <xs:enumeration value="experimental"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="MetricLevelType">
         <xs:restriction base="xs:string">
