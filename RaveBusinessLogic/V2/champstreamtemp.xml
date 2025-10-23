@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>CHaMP Stream Temperature</Name>
+    <ProjectType>CHaMPStreamTemp</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="CHaMP Sites" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='sites']" type="point" id="champ_sites" />
+            <Node label="Average Stream Temperature" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_avg_stream_temp']" type="point" id="champ_avg_temp" />
+            <Node label="Stream Temperature CSVs" xpath="Datasets/ZipFile[@id='StreamTempCSVs']" type="file" id="champ_temp_csvs" />
+            <Node label="Stream Temperature Statistics" xpath="Datasets/ZipFile[@id='StreamTempStats']" type="file" id="champ_temp_stats" />
+            <Node label="Processing Log File" xpath="Logs/LogFile[@id='LOGFILE']" type="file" id="champ_log_file" />
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="Average Stream Temperature" id="DEFAULT">
+            <Layers>
+                <Layer id="champ_avg_temp" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
+    
