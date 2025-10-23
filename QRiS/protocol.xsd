@@ -28,9 +28,10 @@
                     </xs:key>
                 </xs:element>
                 <xs:element name="Metrics" type="MetricsType" minOccurs="0" maxOccurs="1">
-                    <xs:unique name="UniqueMetricIDs">
+                    <xs:unique name="UniqueMetricIDVersion">
                         <xs:selector xpath="Metric"/>
                         <xs:field xpath="@id"/>
+                        <xs:field xpath="@version"/>
                     </xs:unique>
                 </xs:element>
             </xs:sequence>
