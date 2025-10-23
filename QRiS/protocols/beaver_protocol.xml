@@ -1,0 +1,311 @@
+<Protocol machine_code="BEAVER" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Beaver Protocol</Label>
+    <Description>Protocol that includes layers related to beaver dam surveys, complex surveys, utilization surveys, and translocation sites</Description>
+    <URL>https://lowtechpbr.restoration.usu.edu/</URL> <!-- Replace URL -->
+    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation> <!-- Replace Citation -->
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-10-22</CreationDate>
+    <UpdatedDate>2025-10-23</UpdatedDate>
+    <Layers>
+        <Layer id="beaver_activity" version="1.0" geom_type="Point">
+            <Label>Beaver Activity</Label>
+            <Symbology>beaver_protocol_beaver_sign.qml</Symbology>
+            <Description>Beaver Activity</Description>
+            <Hierarchy>
+                <HierarchyItem>Beaver Activity</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="sign_type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Bank Den</Value>
+                        <Value>Bank Lodge</Value>
+                        <Value>Canal</Value>
+                        <Value>Chew Stick</Value>
+                        <Value>Clipped Vegetation</Value>
+                        <Value>Felled Tree</Value>
+                        <Value>Food Cache</Value>
+                        <Value>Harvested Branches</Value>
+                        <Value>Pond Excavation</Value>
+                        <Value>Pond Lodge</Value>
+                        <Value>Scat</Value>
+                        <Value>Scent Mound</Value>
+                        <Value>Set of Tracks</Value>
+                        <Value>Skid Trail</Value>
+                        <Value>Slide</Value>
+                         <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                           
+            </Fields>                        
+        </Layer>
+        <Layer id="dam_survey" version="1.0" geom_type="Point">
+            <Label>Beaver Dam Survey</Label>
+            <Symbology>beaver_protocol_dam_survey.qml</Symbology>
+            <Description>Survey of Beaver Dams</Description>
+            <Hierarchy>
+                <HierarchyItem>Beaver Survey</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Primary Beaver Dam</Value>
+                        <Value>Secondary Beaver Dam</Value>
+                        <Value>Beaver Occupied Primary BDA</Value>
+                        <Value>Beaver Occupied Secondary BDA</Value>
+                    </Values>
+                </ListField>
+                <ListField id="dam_status" version="1.0">
+                    <Label>Dam Status</Label>
+                    <Values>
+                        <Value>Intact</Value>
+                        <Value>Breached</Value>
+                        <Value>Blown Out</Value>
+                    </Values>
+                </ListField>
+                <ListField id="maintained" version="1.0">
+                    <Label>Actively Maintained</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                           
+            </Fields>                        
+        </Layer>
+        <Layer id="complex_survey" version="1.0" geom_type="Point">
+            <Label>Complex Survey</Label>
+            <Symbology>beaver_protocol_complex_survey.qml</Symbology>
+            <Description>Survey of Beaver Dam Complexes (place point on largest primary dam)</Description>
+            <Hierarchy>
+                <HierarchyItem>Complex Survey</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <IntegerField id="primary_dams_count" version="1.0">
+                    <Label>Number of Primary Dams</Label>
+                </IntegerField>
+                <IntegerField id="secondary_dams_count" version="1.0">
+                    <Label>Number of Secondary Dams</Label>
+                </IntegerField>
+                <IntegerField id="total_dams_count" version="1.0">
+                    <Label>Number of Dams</Label>
+                </IntegerField>
+                <IntegerField id="uncertainty" version="1.0">
+                    <Label>Uncertainty (±)</Label>
+                </IntegerField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                             
+            </Fields>  
+        </Layer>           
+        <Layer id="beaver_translocations" version="1.0" geom_type="Point">
+            <Label>Beaver Translocations</Label>
+            <Symbology>beaver_protocol_translocations.qml</Symbology>
+            <Description>Locations of Beaver Translocation Sources, Holding, and Release Sites</Description>
+            <Hierarchy>
+                <HierarchyItem>Translocation Sites</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Capture Site</Value>
+                        <Value>Holding Site</Value>
+                        <Value>Release Site</Value>
+                    </Values>                       
+                </ListField>
+                <IntegerField id="number_kits" version="1.0">
+                    <Label>Number of Kits</Label>
+                </IntegerField>
+                <IntegerField id="number_subadults" version="1.0">
+                    <Label>Number of Sub-Adults</Label>
+                </IntegerField>
+                <IntegerField id="number_adults" version="1.0">
+                    <Label>Number of Adults</Label>
+                </IntegerField>
+                <IntegerField id="number_beaver" version="1.0">
+                    <Label>Number of Beaver</Label>
+                </IntegerField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                             
+            </Fields>  
+        </Layer>
+        <Layer id="ltpbr_structures" version="1.0" geom_type="Point">
+            <Label>LTPBR Structures</Label>
+            <Symbology>beaver_protocol_structure_points.qml</Symbology>
+            <Description>LTPBR As-Built Structures</Description>
+            <Hierarchy>
+                <HierarchyItem>As-Built Structures</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Rhino</Value>
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Bag Plugs</Value>
+                        <Value>Fell Tree</Value>
+                        <Value>Floodplain BDA</Value>
+                        <Value>Floodplain LWD</Value>
+                        <Value>Full Tree</Value>
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Headcut Treatment</Value>
+                        <Value>Leaky Dam</Value>
+                        <Value>One Rock Dam</Value>
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value>
+                        <Value>PALS - Channel Spanning</Value>
+                        <Value>PALS - Constriction Jet</Value>
+                        <Value>PALS - Left Bank Attached</Value>
+                        <Value>PALS - Mid Channel</Value>
+                        <Value>PALS - Rhino</Value>
+                        <Value>PALS - Right Bank Attached</Value>
+                        <Value>Post and Brush Plug</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Rhino</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>
+                        <Value>Strategic Felling</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>
+                        <Value>Tree Dam</Value>
+                        <Value>Tree Plug</Value>
+                        <Value>Vanes</Value>
+                        <Value>Wicker Weirs</Value>
+                        <Value>Wood Jam</Value>
+                        <Value>Zuni Bowl</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                     <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="beaver_confict" version="1.0" geom_type="Point">
+            <Label>Beaver Conflict</Label>
+            <Symbology>beaver_protocol_beaver_conflict.qml</Symbology>
+            <Description>Assessment of Beaver Conflicts</Description>
+            <Hierarchy>
+                <HierarchyItem>Beaver Conflict</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="risk_type" version="1.0">
+                    <Label>Risk Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Infrastructure</Value>
+                        <Value>Landowner</Value>
+                        <Value>Agricultural</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="status" version="1.0">
+                    <Label>Status</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Previous</Value>
+                        <Value>Current</Value>
+                        <Value>Future</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>                            
+    </Layers>
+    <Metrics>
+        <Metric id="dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Total Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of All Beaver Dams in Sample Frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_survey">
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density" version="1.0" calculation_machine_code="count">
+            <Label>Total Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Density of All Beaver Dams in Sample Frame normalized by Valley Bottom Centerline.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization" />
+                <DCELayer layer_id_ref="dam_survey">
+                </DCELayer>                           
+            </Parameters>
+        </Metric>
+        <Metric id="active_dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Active Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of All Active Beaver Dams in Sample Frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="maintained">
+                        <Value>Yes</Value>
+                    </AttributeFilter>              
+                </DCELayer>         
+            </Parameters>
+        </Metric>
+        <Metric id="active_dam_density" version="1.0" calculation_machine_code="count">
+            <Label>Active Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Density of All Active Beaver Dams in Sample Frame normalized by Valley Bottom Centerline.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization" />
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="maintained">
+                        <Value>Yes</Value>
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="inactive_dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Inactive Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of All Inactive Beaver Dams in Sample Frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="maintained">
+                        <Value>No</Value>
+                    </AttributeFilter>              
+                </DCELayer>          
+            </Parameters>
+        </Metric>   
+            <Metric id="inactive_dam_density" version="1.0" calculation_machine_code="count">
+            <Label>Inactive Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Density of All Inactive Beaver Dams in Sample Frame normalized by Valley Bottom Centerline.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization" />
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="maintained">
+                        <Value>No</Value>
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>           
+    </Metrics>
+</Protocol>
