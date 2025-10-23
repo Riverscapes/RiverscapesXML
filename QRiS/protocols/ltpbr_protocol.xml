@@ -2,7 +2,7 @@
     <Label>LTPBR Protocol</Label>
     <Description>Base LTPBR Layers</Description>
     <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/ltpbr-dce-protocol</URL>
-    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <Citation>Weber N., Wheaton J.M., Shalcross A., Al-Chokhachy R, Bailey P., Bartelt K., Bennett S., Bouwes B., Bouwes N., Gilbert J., Dickard M., Heitke J., Jordan C., Glassic H., MacFarlane W.W., Miller S., Saunders C., Whitehead K. 2024. Low-Tech Process-Based Restoration Design and Monitoring Protocol: Standard Methods for Developing Project Designs and Assessing Riverscape Health. Version 2.0. Prepared by Anabranch Solutions and Utah State University Riverscapes Assessment and Monitoring Lab. Prepared for the Bureau of Land Management. Logan, UT. 81 pp. DOI: 10.5281/zenodo.13769899 </Citation>
     <Author>Nick Weber</Author>
     <CreationDate>2024-09-01</CreationDate>
     <UpdatedDate>2024-09-01</UpdatedDate>
@@ -634,7 +634,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="dam_count" version="1.0" calculation_machine_code="count">
+        <Metric id="dam_count" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Dam Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The number of dams in each sample frame</Description>
@@ -647,6 +647,25 @@
                         <CountField field_id_ref="structure_count"/>
                     </CountFields>
                     <AttributeFilter field_id_ref="structure_type">
+                        <Value>Dam</Value>
+                        <Value>Dam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count" version="2.0" calculation_machine_code="count">
+            <Label>Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structural_elements_points">
+                    <CountFields>
+                        <CountField field_id_ref="structure_count"/>
+                    </CountFields>
+                    <AttributeFilter field_id_ref="structural_element_type">
                         <Value>Dam</Value>
                         <Value>Dam Complex</Value>
                     </AttributeFilter>
@@ -776,7 +795,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="jam_density" version="1.0" calculation_machine_code="count">
+        <Metric id="jam_density" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Jam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The number of jams per length of riverscape</Description>
@@ -796,6 +815,31 @@
                 </DCELayer>
                 <DCELayer layer_id_ref="structural_elements_areas">
                     <AttributeFilter field_id_ref="Type">
+                        <Value>Jam</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="jam_density" version="2.0" calculation_machine_code="count">
+            <Label>Jam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of jams per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structural_elements_points">
+                    <CountFields>
+                        <CountField field_id_ref="structure_count"/>
+                    </CountFields>
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Jam</Value>
+                        <Value>Jam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="structural_elements_areas">
+                    <AttributeFilter field_id_ref="structural_element_type">
                         <Value>Jam</Value>
                     </AttributeFilter>
                 </DCELayer>
