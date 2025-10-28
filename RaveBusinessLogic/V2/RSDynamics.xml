@@ -58,21 +58,21 @@
                                         <Repeater label="Vegetation"
                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'VEGETATION')]">
                                                 <Node xpathlabel="Name"
-                                                        type="raster"
+                                                        type="raster" symbology="classification_probability"
                                                 />
 
                                         </Repeater>
                                         <Repeater label="Water"
                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WATER')]">
                                                 <Node xpathlabel="Name"
-                                                        type="raster"
+                                                        type="raster" symbology="classification_probability"
                                                 />
 
                                         </Repeater>
                                         <Repeater label="Alluvial"
                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL')]">
                                                 <Node xpathlabel="Name"
-                                                        type="raster"
+                                                        type="raster" symbology="classification_probability"
                                                 />
 
                                         </Repeater>
