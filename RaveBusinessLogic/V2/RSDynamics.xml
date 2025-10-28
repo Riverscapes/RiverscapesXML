@@ -6,140 +6,97 @@
         <Node xpathlabel="Name">
                 <Children collapsed="false">
                         <Node label="Outputs">
-                                <Children collapsed="false">
-
-                                        <Repeater label="1 year" collapsed="true"
-                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, '1yr')]">
-                                                <Node xpathlabel="Name" type="raster"
-                                                        symbology="dynamics_raster" />
-                                        </Repeater>
-
-                                        <Node label="5 years">
-                                                <Children collapsed="true">
-                                                        <Repeater label="DGOs" collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_5yr')]">
+                                <Children collapsed="true">
+                                        <Node label="95% Confidence Interval">
+                                                <Children>
+                                                        <Repeater label="Area"
+                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_area_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
-                                                                        symbology="epoch_mean" />
+                                                                        symbology="epoch_area" />
                                                         </Repeater>
-                                                        <Repeater label="Rasters"
-                                                                collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, '5yr')]">
+                                                        <Repeater label="Width"
+                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_width_95_')]">
                                                                 <Node xpathlabel="Name"
-                                                                        type="raster"
-                                                                        symbology="dynamics_raster" />
+                                                                        type="polygon"
+                                                                        symbology="epoch_width" />
+                                                        </Repeater>
+                                                        <Repeater label="Percent"
+                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_pc_95_')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="polygon"
+                                                                        symbology="epoch_pc" />
                                                         </Repeater>
                                                 </Children>
                                         </Node>
-
-                                        <Node label="30 years">
-                                                <Children collapsed="true">
-                                                        <!-- <Node label="DGOs"> -->
-                                                        <!-- <Children> -->
-                                                        <Repeater label="DGOs" collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_30yr')]">
+                                        <Node label="68% Confidence Interval">
+                                                <Children>
+                                                        <Repeater label="Area"
+                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_area_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
-                                                                        symbology="epoch_mean" />
+                                                                        symbology="epoch_area" />
                                                         </Repeater>
-
-
-                                                        <!-- <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_veg_1980_2025_mean']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_veg_1980_2025_min']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_veg_1980_2025_max']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_veg_1980_2025_std']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_water_1980_2025_mean']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_water_1980_2025_min']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_water_1980_2025_max']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_water_1980_2025_std']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_alluvial_1980_2025_mean']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_alluvial_1980_2025_min']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_alluvial_1980_2025_max']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_30yr_alluvial_1980_2025_std']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1989_1994_mean']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1989_1994_min']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1989_1994_max']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1989_1994_std']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1999_2004_mean']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1999_2004_min']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1999_2004_max']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" />
-                                                                        <Node xpathlabel="Name"
-                                                        xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[@lyrName='vw_5yr_alluvial_1999_2004_std']"
-                                                                                type="polygon"
-                                                                                symbology="epoch_mean" /> -->
-                                                        <!-- </Children> -->
-                                                        <!-- </Node> -->
-                                                        <Repeater label="Rasters" collapsed="false"
-                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, '30yr')]">
+                                                        <Repeater label="Width"
+                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_width_68_')]">
                                                                 <Node xpathlabel="Name"
-                                                                        type="raster"
-                                                                        symbology="dynamics_raster" />
+                                                                        type="polygon"
+                                                                        symbology="epoch_width" />
+                                                        </Repeater>
+                                                        <Repeater label="Percent"
+                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_pc_68_')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="polygon"
+                                                                        symbology="epoch_pc" />
                                                         </Repeater>
                                                 </Children>
                                         </Node>
                                 </Children>
                         </Node>
-                        <Repeater label="Classified Rasters" collapsed="true"
-                                xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_')]">
-                                <Node xpathlabel="Name" type="raster" />
-                        </Repeater>
+                        <Node label="Epoch Rasters">
+                                <Children>
+                                        <Repeater label="Vegetation"
+                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'VEGETATION')]">
+                                                <Node xpathlabel="Name"
+                                                        type="raster"
+                                                />
+
+                                        </Repeater>
+                                        <Repeater label="Water"
+                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WATER')]">
+                                                <Node xpathlabel="Name"
+                                                        type="raster"
+                                                />
+
+                                        </Repeater>
+                                        <Repeater label="Alluvial"
+                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL')]">
+                                                <Node xpathlabel="Name"
+                                                        type="raster"
+                                                />
+
+                                        </Repeater>
+                                </Children>
+                        </Node>
+                        <Node label="Classified Rasters">
+                                <Children collapsed="true">
+                                        <Repeater label="Vegetation"
+                                                xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_VEG')]">
+                                                <Node xpathlabel="Name" type="raster"
+                                                        symbology="class_bin_veg" />
+                                        </Repeater>
+                                        <Repeater label="Water"
+                                                xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_WATER')]">
+                                                <Node xpathlabel="Name" type="raster"
+                                                        symbology="class_bin_water" />
+                                        </Repeater>
+                                        <Repeater label="Active"
+                                                xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_ALLUVIAL')]">
+                                                <Node xpathlabel="Name" type="raster"
+                                                        symbology="class_bin_active" />
+                                        </Repeater>
+                                </Children>
+                        </Node>
                         <Node xpathlabel="Name"
                                 xpath="Realizations/Realization/Inputs/Raster[@id='HILLSHADE']"
                                 type="raster" transparency="40" symbology="hillshade" id="hillshade" />
