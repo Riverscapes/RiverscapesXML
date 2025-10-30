@@ -11,7 +11,10 @@ from rsxml.logging.logger import Logger
 from rsxml.constants import XSD_URL
 
 
-def fetch_xml(xml_url: str):
+DEFAULT_HTTP_TIMEOUT = 15  # seconds
+
+
+def fetch_xml(xml_url: str, timeout: int | float = DEFAULT_HTTP_TIMEOUT):
     """_summary_
 
     Args:
@@ -27,10 +30,18 @@ def fetch_xml(xml_url: str):
     # fetch an xml file from the internet using the url https://xml.riverscapes.net/Project.xsd
     # and return the contents as a string
     try:
-        xsd = requests.get(xml_url).text
-    except Exception as e:
-        log.error(f'Could not fetch XML from {xml_url}')
-        raise e
+        resp = requests.get(xml_url, timeout=timeout, headers={"User-Agent": "rsxml/"})
+        resp.raise_for_status()
+        xsd = resp.text
+    except requests.Timeout as e:
+        log.error(f'Timeout fetching XML from {xml_url} after {timeout}s')
+        raise
+    except requests.HTTPError as e:
+        log.error(f'HTTP {resp.status_code} fetching XML from {xml_url}')
+        raise
+    except Exception as e:  # pragma: no cover - unexpected path
+        log.error(f'Unexpected error fetching XML from {xml_url}: {e}')
+        raise
 
     # Admitedly this is a bit hack-y but it works for now so....
     # xsd = xsd.replace('https://xml.riverscapes.net/', './')

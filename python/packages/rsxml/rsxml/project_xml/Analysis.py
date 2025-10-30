@@ -51,15 +51,15 @@ class Analysis(RSObj):
         self.products = products
 
     @staticmethod
-    def datasets_from_xml(xml_node: ET.Element, ds_type: str, common_datasets: List[Dataset] = []) -> List[Dataset | RefDataset]:
+    def datasets_from_xml(xml_node: ET.Element, ds_type: str, common_datasets: List[Dataset] | None = None) -> List[Dataset | RefDataset]:
         """This works across a dataset container AND accounts for the possibility of RefDatasets
         """
-        retvals = []
+        retvals: List[Dataset | RefDataset] = []
         found = xml_node.find(ds_type)
-        if found:
+        if found is not None:
             for ds in found:
                 if ds.tag == 'CommonDatasetRef':
-                    retvals.append(RefDataset.from_xml(ds, common_datasets))
+                    retvals.append(RefDataset.from_xml(ds, common_datasets or []))
                 elif ds.tag == 'Geopackage':
                     retvals.append(Geopackage.from_xml(ds))
                 else:

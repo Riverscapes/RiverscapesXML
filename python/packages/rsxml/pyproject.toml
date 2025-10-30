@@ -1,29 +1,63 @@
+###############
+# rsxml packaging configuration (uv + PEP 621)
+# After migration from setup.py / Poetry.
+# Build with:   uv build
+# Publish with: uv publish --token $PYPI_TOKEN
+###############
+
 [build-system]
-requires = ["setuptools>=58.0.4", "wheel>=0.37.0"]
+requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.poetry]
+[project]
 name = "rsxml"
-version = "{file = \"rsxml/__version__.py\", key = \"__version__\"}"
+dynamic = ["version", "readme"]
 description = "Riverscapes XML helpers for use across Python3 open-source GIS Stack"
-authors = [
-  { name="Matt Reimer", email="info@northarrowresearch.com"}
+authors = [ { name = "Matt Reimer", email = "info@northarrowresearch.com" } ]
+# PEP 621/639 license specification (avoid deprecated classifier usage)
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+  "lxml>=4.9.2",
+  "requests>=2.31.0",
+  "semver>=2.10.2",
 ]
-license = "MIT"
-homepage = "https://github.com/Riverscapes/RiverscapesXML"
-repository = "https://github.com/Riverscapes/RiverscapesXML"
-documentation = "https://github.com/Riverscapes/RiverscapesXML"
-
-[tool.poetry.dependencies]
-python = "^3.10.0"
-semver = ">=2.10.2"
-argparse = "*"
-readme="README.md"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Typing :: Typed",
+  "Operating System :: OS Independent",
+]
+keywords = ["riverscapes", "xml", "gis", "hydrology"]
+urls = { "Source" = "https://github.com/Riverscapes/RiverscapesXML", "Homepage" = "https://github.com/Riverscapes/RiverscapesXML", "Issues" = "https://github.com/Riverscapes/RiverscapesXML/issues" }
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.4",
+  "flake8>=7.1.1",
+  "pylint>=2.15.0",
+  "autopep8>=1.7.0",
+  "termcolor>=2.3.0",
+  "jsonschema>=4.15.0",
 ]
 
-[build-system.sdist]
-formats = ["gztar", "zip"]
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+include = ["rsxml", "rsxml.*"]
+
+[tool.setuptools.package-data]
+rsxml = ["py.typed"]
+
+[tool.setuptools.dynamic]
+version = { attr = "rsxml.__version__" }
+readme = { file = ["README.md"], content-type = "text/markdown" }
+
+[tool.uv]
+dev-dependencies = ["rsxml[dev]"]

@@ -137,8 +137,73 @@ Alternatively you can start by constructing a project object and then add each o
 
 # Install
 
-```sh
-$ python -m pip install rsxml
+Install from PyPI (standard pip):
+
+```bash
+pip install rsxml
+```
+
+Or with the faster uv resolver & cache:
+
+```bash
+uv pip install rsxml
+```
+
+---
+
+## Development Workflow (uv)
+
+We use a PEP 621 `pyproject.toml` and recommend [uv](https://github.com/astral-sh/uv) for quick, reproducible installs.
+
+### 1. Install uv (one time)
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# or: pip install --user uv
+```
+
+### 2. Create / activate a virtual environment
+```bash
+uv venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install project (editable) + dev extras
+```bash
+uv pip install -e .[dev]
+```
+Alternatively (lock + sync):
+```bash
+uv sync --extra dev
+```
+
+### 4. Run tests
+```bash
+pytest -q
+```
+
+### 5. Lint / style tools
+```bash
+flake8 rsxml
+pylint rsxml
+autopep8 -r --in-place rsxml
+```
+
+### 6. Build artifacts
+```bash
+uv build
+ls dist/
+```
+
+### 7. Publish (maintainers)
+```bash
+export PYPI_TOKEN=your-token
+uv publish --token $PYPI_TOKEN
+```
+
+Scripts are also available:
+```bash
+./scripts/build.sh      # uv build wrapper
+./scripts/deploy.sh     # uv publish wrapper (needs PYPI_TOKEN)
 ```
 
 # Changes

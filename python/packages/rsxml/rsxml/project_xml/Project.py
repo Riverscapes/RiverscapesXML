@@ -147,22 +147,22 @@ class Project(RSObj):
 
         realizations = []
         realization_nodes = xml_node.find('Realizations')
-        if realization_nodes:
+        if realization_nodes is not None:
             for realization_node in realization_nodes:
-                if realization_node:
+                if realization_node is not None:
                     realizations.append(Realization.from_xml(realization_node, common_datasets))
 
         qaqc_events = []
         qaqc_events_nodes = xml_node.find('QAQCEvents')
-        if qaqc_events_nodes:
+        if qaqc_events_nodes is not None:
             for qaqc_event_node in qaqc_events_nodes:
-                if qaqc_event_node:
+                if qaqc_event_node is not None:
                     qaqc_events.append(QAQCEvent.from_xml(qaqc_event_node))
 
         project = Project(
             name=rsobj.name,
             project_type=xml_node.find('ProjectType').text,
-            bounds=ProjectBounds.from_xml(project_bounds_find) if project_bounds_find else None,
+            bounds=ProjectBounds.from_xml(project_bounds_find) if project_bounds_find is not None else None,
             proj_path=proj_path,
             summary=rsobj.summary,
             description=rsobj.description,

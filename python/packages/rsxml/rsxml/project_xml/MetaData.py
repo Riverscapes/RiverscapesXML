@@ -2,9 +2,9 @@
 """
 
 from __future__ import annotations
-from typing import List, NamedTuple
+from typing import List, NamedTuple, Union
 import xml.etree.cElementTree as ET
-MetaValue = str or float or int
+MetaValue = Union[str, float, int]
 
 # These types are taken from the XSD definition
 # https://github.com/Riverscapes/RiverscapesXML/blob/e5b7a967d1c17224d6ef001acf37e7df8c129391/Projects/XSD/V2/RiverscapesProject.xsd#L501-L521
@@ -60,7 +60,7 @@ class MetaData():
     container_tag: str
     inner_tag: str
 
-    def __init__(self, values: List[Meta] = [], container_tag: str = 'MetaData', inner_tag: str = 'Meta') -> None:
+    def __init__(self, values: List[Meta] | None = None, container_tag: str = 'MetaData', inner_tag: str = 'Meta') -> None:
         """
         Initializes an instance of the Metadata class.
 
@@ -82,18 +82,17 @@ class MetaData():
                             inner_tag='CustomInner')
         """
 
-        if values and not isinstance(values, List):
-            raise ValueError('values must be a list of Meta')
-
-        if values:
+        if values is not None:
+            if not isinstance(values, list):
+                raise ValueError('values must be a list of Meta')
+            # Validate provided meta entries
             for meta in values:
                 if meta.type is not None:
                     self._validate_meta_type(meta.type)
-
                 if meta.ext is not None:
                     self._validate_ext_type(meta.ext)
 
-        self._values = values if values else []
+        self._values = list(values) if values else []
         self.container_tag = container_tag
         self.inner_tag = inner_tag
 

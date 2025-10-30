@@ -6,9 +6,12 @@
   "configurations": [
     {
       "name": "Python: Current File",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${file}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/../../lib/commons"
+      },
       "console": "integratedTerminal",
       "envFile": "${workspaceFolder}/.env",
       "justMyCode": true
@@ -17,7 +20,7 @@
       // You need to enable QGIS VSCode debugger plugin 
       // Before this will work
       "name": "QGIS Debug",
-      "type": "python",
+      "type": "debugpy",
       "request": "attach",
       "port": 5678,
       "host": "localhost",

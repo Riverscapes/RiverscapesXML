@@ -63,7 +63,7 @@ class _LoggerSingleton:
             if verbose is True and log_level is not None:
                 raise ValueError("Cannot set both verbose and log_level")
 
-            self.verbose = verbose if verbose else log_level >= logging.DEBUG
+            self.verbose = verbose if verbose else log_level is not None and log_level >= logging.DEBUG
             loglevel = log_level if log_level else logging.INFO if not verbose else logging.DEBUG
 
             self.logger = logging.getLogger("LOGGER")

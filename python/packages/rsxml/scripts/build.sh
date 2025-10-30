@@ -1,14 +1,20 @@
-#!/bin/bash
-# This script builds the python package
-# It should be run from the root of the project
+#!/usr/bin/env bash
+set -euo pipefail
 
-# remove old version
-rm -rf dist/*
-rm -fr build/*
+echo "==> Building rsxml with uv"
 
-# build new version
-pip install wheel twine
+if ! command -v uv >/dev/null 2>&1; then
+	echo "uv not found on PATH. Installing locally via pip (user)." >&2
+	python -m pip install --user uv
+fi
 
-python setup.py sdist bdist_wheel
-twine check dist/*
-# twine upload dist/*
+# Clean previous build artifacts
+rm -rf dist build *.egg-info || true
+
+# Build (creates sdist and wheel under dist/)
+uv build
+
+echo "==> Build artifacts:"
+ls -1 dist || true
+
+echo "Run 'uv publish --token $PYPI_TOKEN' or use scripts/deploy.sh to upload."

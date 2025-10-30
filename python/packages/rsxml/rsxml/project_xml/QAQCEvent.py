@@ -90,7 +90,7 @@ class QAQCEvent(RSObj):
 
         links = {}
         links_node = xml_node.find('Links')
-        if links_node:
+        if links_node is not None:
             for link_node in links_node.findall('URL'):
                 links[link_node.get('text')] = link_node.text
 
