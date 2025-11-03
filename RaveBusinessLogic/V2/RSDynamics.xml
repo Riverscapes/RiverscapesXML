@@ -111,16 +111,19 @@
                         <Node label="Binary Classified Rasters">
                                 <Children collapsed="true">
                                         <Repeater label="Vegetation"
+                                                collapsed="true"
                                                 xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_VEG')]">
                                                 <Node xpathlabel="Name" type="raster"
                                                         symbology="class_bin_veg" />
                                         </Repeater>
                                         <Repeater label="Water"
+                                                collapsed="true"
                                                 xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_WATER')]">
                                                 <Node xpathlabel="Name" type="raster"
                                                         symbology="class_bin_water" />
                                         </Repeater>
                                         <Repeater label="Active"
+                                                collapsed="true"
                                                 xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_ALLUVIAL')]">
                                                 <Node xpathlabel="Name" type="raster"
                                                         symbology="class_bin_active" />
