@@ -99,9 +99,9 @@
         <Node label="Inputs" xpath="Inputs">
           <Children collapsed="true">
             <Node label="Channel Area Polygons" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" id="channel_area_polygons" symbology="vbet_channel_area" transparency="40" />
-            <Node label="Stream Name Label" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="stream_name_label" id="stream_name_label" />
-            <Node label="Channel Network Level Paths" xpath="Geopackage/Layers/Vector[@lyrName='Flowlines_VAA']" type="line" id="channel_levelpath" symbology="levelpath" />
-            <Node label="Level Path Label" xpath="Inputs/Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="level_path_label" id="level_path_label" />
+            <Node label="Stream Name Label" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="stream_name_label" id="stream_name_label" />
+            <Node label="Channel Network Level Paths" xpath="Geopackage/Layers/Vector[@lyrName='network_intersected']" type="line" id="channel_levelpath" symbology="levelpath" />
+            <Node label="Level Path Label" xpath="Geopackage/Layers/Vector[@lyrName='channel_area_polygons']" type="polygon" symbology="level_path_label" id="level_path_label" />
             <Node label="Digital Elevation Model" xpath="Raster[@id='DEM']" type="raster" symbology="dem" transparency="40" id="dem" />
           </Children>     
         </Node>
