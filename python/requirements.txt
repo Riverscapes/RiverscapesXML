@@ -5,6 +5,6 @@ lxml==6.0.2
 pycodestyle==2.12.0
 pylint==2.15.0
 pytest==8.3.4
-requests==2.31.0
+requests==2.32.4
 toml==0.10.2
 urllib3==2.0.6
