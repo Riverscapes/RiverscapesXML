@@ -36,30 +36,10 @@
     <xs:complexContent>
       <xs:extension base="RealizationType">
         <xs:sequence>
-          <xs:element type="GUTDataSetContainerType" name="Inputs" minOccurs="0" />
-          <xs:element type="GUTDataSetContainerType" name="EvidenceLayers" minOccurs="0" />
+          <xs:element type="DataSetContainerType" name="Inputs" minOccurs="0" />
+          <xs:element type="DataSetContainerType" name="EvidenceLayers" minOccurs="0" />
           <xs:element type="GUTAnalysesType" name="Analyses" minOccurs="0" />
         </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-
-
-  <xs:complexType name="GUTDataSetContainerType">
-    <xs:complexContent>
-      <xs:extension base="DataSetContainerType">
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
-          <xs:element type="RasterType" name="Raster" />
-          <xs:element type="RasterType" name="Vector" />
-          <xs:element type="VectorType" name="Centerline" />
-          <xs:element type="VectorType" name="CrossSections" />
-          <xs:element type="VectorType" name="Extent" />
-          <xs:element type="VectorType" name="Islands" />
-          <xs:element type="VectorType" name="ChannelUnits" />
-          <xs:element type="VectorType" name="Thalweg" />
-          <xs:element type="RasterType" name="DEM" />
-          <xs:element type="RasterType" name="Slope" />
-        </xs:choice>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>

@@ -206,17 +206,9 @@ Scripts are also available:
 ./scripts/deploy.sh     # uv publish wrapper (needs PYPI_TOKEN)
 ```
 
-# Changes
-
-See [CHANGES.md](./CHANGES.md)
-
 # Contribution & Development
 
 RSXML was developed by [North Arrow Research Ltd.](https://northarrowresearch.com) in collaboration with the [Riverscapes Consortium](https://riverscapes.net).
-
-# License
-
-See [LICENSE](./LICENSE)
 
 # Additional Resources
 

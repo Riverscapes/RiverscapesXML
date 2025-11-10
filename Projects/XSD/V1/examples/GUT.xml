@@ -14,54 +14,54 @@
     <GUT dateCreated="2020-06-02T15:55:42.993753" guid="2ff0ce7e-a524-11ea-b6de-f40f243c4b95" id="GUT_2012" productVersion="2.1">
       <Name>2012</Name>
       <Inputs>
-        <Centerline guid="2ff0d1bc-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+        <Vector guid="2ff0d1bc-a524-11ea-b6de-f40f243c4b95" id="BFCL">
           <Name>Bankfull Centerline</Name>
           <Path>2012/Inputs/BCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="2ff0d694-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+        </Vector>
+        <Vector guid="2ff0d694-a524-11ea-b6de-f40f243c4b95" id="BFXS">
           <Name>Bankfull Cross Sections</Name>
           <Path>2012/Inputs/BCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="2ff0db12-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+        </Vector>
+        <Vector guid="2ff0db12-a524-11ea-b6de-f40f243c4b95" id="BFEX">
           <Name>Bankfull Extent</Name>
           <Path>2012/Inputs/BExtent.shp</Path>
-        </Extent>
-        <Islands guid="2ff0dfb8-a524-11ea-b6de-f40f243c4b95" id="BFI">
+        </Vector>
+        <Vector guid="2ff0dfb8-a524-11ea-b6de-f40f243c4b95" id="BFI">
           <Name>Bankfull Islands</Name>
           <Path>2012/Inputs/BIslands.shp</Path>
-        </Islands>
-        <ChannelUnits guid="2ff0e4a4-a524-11ea-b6de-f40f243c4b95" id="CU">
+        </Vector>
+        <Vector guid="2ff0e4a4-a524-11ea-b6de-f40f243c4b95" id="CU">
           <Name>Channel Units</Name>
           <Path>2012/Inputs/Channel_Units.shp</Path>
-        </ChannelUnits>
-        <ChannelUnits guid="2ff0e9d6-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+        </Vector>
+        <Vector guid="2ff0e9d6-a524-11ea-b6de-f40f243c4b95" id="CU_1">
           <Name>Channel Units (Field)</Name>
           <Path>2012/Inputs/Channel_Units_Field.shp</Path>
-        </ChannelUnits>
+        </Vector>
         <DEM guid="2ff0ef26-a524-11ea-b6de-f40f243c4b95" id="DEM">
           <Name>DEM</Name>
           <Path>2012/Inputs/DEM.tif</Path>
         </DEM>
-        <Thalweg guid="2ff0f4bc-a524-11ea-b6de-f40f243c4b95" id="TH">
+        <Vector guid="2ff0f4bc-a524-11ea-b6de-f40f243c4b95" id="TH">
           <Name>Thalweg</Name>
           <Path>2012/Inputs/Thalweg.shp</Path>
-        </Thalweg>
-        <Centerline guid="2ff0faa2-a524-11ea-b6de-f40f243c4b95" id="WCL">
+        </Vector>
+        <Vector guid="2ff0faa2-a524-11ea-b6de-f40f243c4b95" id="WCL">
           <Name>Wetted Centerline</Name>
           <Path>2012/Inputs/WCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="2ff100ba-a524-11ea-b6de-f40f243c4b95" id="WXS">
+        </Vector>
+        <Vector guid="2ff100ba-a524-11ea-b6de-f40f243c4b95" id="WXS">
           <Name>Wetted Cross Sections</Name>
           <Path>2012/Inputs/WCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="2ff10722-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+        </Vector>
+        <Vector guid="2ff10722-a524-11ea-b6de-f40f243c4b95" id="WEEX">
           <Name>Wetted Extent</Name>
           <Path>2012/Inputs/WExtent.shp</Path>
-        </Extent>
-        <Islands guid="2ff10dda-a524-11ea-b6de-f40f243c4b95" id="WI">
+        </Vector>
+        <Vector guid="2ff10dda-a524-11ea-b6de-f40f243c4b95" id="WI">
           <Name>Wetted Islands</Name>
           <Path>2012/Inputs/WIslands.shp</Path>
-        </Islands>
+        </Vector>
       </Inputs>
       <EvidenceLayers>
         <Raster guid="2ff11be0-a524-11ea-b6de-f40f243c4b95" id="ID">
@@ -76,10 +76,10 @@
           <Name>Bankfull Channel Raster</Name>
           <Path>2012/EvidenceLayers/bfCh.tif</Path>
         </Raster>
-        <Slope guid="2ff1359e-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+        <Raster guid="2ff1359e-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
           <Name>Bankfull Surface Slope Raster</Name>
           <Path>2012/EvidenceLayers/bfSlope.tif</Path>
-        </Slope>
+        </Raster>
         <Raster guid="2ff13dbe-a524-11ea-b6de-f40f243c4b95" id="ID_2">
           <Name>bfSlope_Percent.tif</Name>
           <Path>2012/EvidenceLayers/bfSlope_Percent.tif</Path>
@@ -88,10 +88,10 @@
           <Name>bfSlope_Percent_Smooth.tif</Name>
           <Path>2012/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
         </Raster>
-        <Slope guid="2ff14ebc-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+        <Raster guid="2ff14ebc-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
           <Name>Smoothed Bankfull Surface Slope Raster</Name>
           <Path>2012/EvidenceLayers/bfSlope_Smooth.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="2ff15790-a524-11ea-b6de-f40f243c4b95" id="ID_1">
           <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
           <Path>2012/EvidenceLayers/bfslope_smooth_cat.shp</Path>
@@ -144,10 +144,10 @@
           <Name>Residual Topography Raster</Name>
           <Path>2012/EvidenceLayers/resTopo.tif</Path>
         </Raster>
-        <Slope guid="2ff25e4c-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+        <Raster guid="2ff25e4c-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
           <Name>In-Channel DEM Slope Raster</Name>
           <Path>2012/EvidenceLayers/slope_inCh_DEM.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="2ff26c84-a524-11ea-b6de-f40f243c4b95" id="ID_7">
           <Name>tmp_bowltrans.shp</Name>
           <Path>2012/EvidenceLayers/tmp_bowltrans.shp</Path>
@@ -208,54 +208,54 @@
     <GUT dateCreated="2020-06-02T15:55:43.010685" guid="2ff3635a-a524-11ea-b6de-f40f243c4b95" id="GUT_2013" productVersion="2.1">
       <Name>2013</Name>
       <Inputs>
-        <Centerline guid="2ff374ee-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+        <Vector guid="2ff374ee-a524-11ea-b6de-f40f243c4b95" id="BFCL">
           <Name>Bankfull Centerline</Name>
           <Path>2013/Inputs/BCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="2ff385d8-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+        </Vector>
+        <Vector guid="2ff385d8-a524-11ea-b6de-f40f243c4b95" id="BFXS">
           <Name>Bankfull Cross Sections</Name>
           <Path>2013/Inputs/BCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="2ff396cc-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+        </Vector>
+        <Vector guid="2ff396cc-a524-11ea-b6de-f40f243c4b95" id="BFEX">
           <Name>Bankfull Extent</Name>
           <Path>2013/Inputs/BExtent.shp</Path>
-        </Extent>
-        <Islands guid="2ff3ab30-a524-11ea-b6de-f40f243c4b95" id="BFI">
+        </Vector>
+        <Vector guid="2ff3ab30-a524-11ea-b6de-f40f243c4b95" id="BFI">
           <Name>Bankfull Islands</Name>
           <Path>2013/Inputs/BIslands.shp</Path>
-        </Islands>
-        <ChannelUnits guid="2ff3bd1e-a524-11ea-b6de-f40f243c4b95" id="CU">
+        </Vector>
+        <Vector guid="2ff3bd1e-a524-11ea-b6de-f40f243c4b95" id="CU">
           <Name>Channel Units</Name>
           <Path>2013/Inputs/Channel_Units.shp</Path>
-        </ChannelUnits>
-        <ChannelUnits guid="2ff3cec6-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+        </Vector>
+        <Vector guid="2ff3cec6-a524-11ea-b6de-f40f243c4b95" id="CU_1">
           <Name>Channel Units (Field)</Name>
           <Path>2013/Inputs/Channel_Units_Field.shp</Path>
-        </ChannelUnits>
+        </Vector>
         <DEM guid="2ff3e0dc-a524-11ea-b6de-f40f243c4b95" id="DEM">
           <Name>DEM</Name>
           <Path>2013/Inputs/DEM.tif</Path>
         </DEM>
-        <Thalweg guid="2ff3f306-a524-11ea-b6de-f40f243c4b95" id="TH">
+        <Vector guid="2ff3f306-a524-11ea-b6de-f40f243c4b95" id="TH">
           <Name>Thalweg</Name>
           <Path>2013/Inputs/Thalweg.shp</Path>
-        </Thalweg>
-        <Centerline guid="2ff40580-a524-11ea-b6de-f40f243c4b95" id="WCL">
+        </Vector>
+        <Vector guid="2ff40580-a524-11ea-b6de-f40f243c4b95" id="WCL">
           <Name>Wetted Centerline</Name>
           <Path>2013/Inputs/WCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="2ff41836-a524-11ea-b6de-f40f243c4b95" id="WXS">
+        </Vector>
+        <Vector guid="2ff41836-a524-11ea-b6de-f40f243c4b95" id="WXS">
           <Name>Wetted Cross Sections</Name>
           <Path>2013/Inputs/WCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="2ff42b1e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+        </Vector>
+        <Vector guid="2ff42b1e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
           <Name>Wetted Extent</Name>
           <Path>2013/Inputs/WExtent.shp</Path>
-        </Extent>
-        <Islands guid="2ff43e4c-a524-11ea-b6de-f40f243c4b95" id="WI">
+        </Vector>
+        <Vector guid="2ff43e4c-a524-11ea-b6de-f40f243c4b95" id="WI">
           <Name>Wetted Islands</Name>
           <Path>2013/Inputs/WIslands.shp</Path>
-        </Islands>
+        </Vector>
       </Inputs>
       <EvidenceLayers>
         <Raster guid="2ff45ecc-a524-11ea-b6de-f40f243c4b95" id="ID">
@@ -270,10 +270,10 @@
           <Name>Bankfull Channel Raster</Name>
           <Path>2013/EvidenceLayers/bfCh.tif</Path>
         </Raster>
-        <Slope guid="2ff49cb6-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+        <Raster guid="2ff49cb6-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
           <Name>Bankfull Surface Slope Raster</Name>
           <Path>2013/EvidenceLayers/bfSlope.tif</Path>
-        </Slope>
+        </Raster>
         <Raster guid="2ff4b16a-a524-11ea-b6de-f40f243c4b95" id="ID_2">
           <Name>bfSlope_Percent.tif</Name>
           <Path>2013/EvidenceLayers/bfSlope_Percent.tif</Path>
@@ -282,10 +282,10 @@
           <Name>bfSlope_Percent_Smooth.tif</Name>
           <Path>2013/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
         </Raster>
-        <Slope guid="2ff4dcb2-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+        <Raster guid="2ff4dcb2-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
           <Name>Smoothed Bankfull Surface Slope Raster</Name>
           <Path>2013/EvidenceLayers/bfSlope_Smooth.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="2ff4f346-a524-11ea-b6de-f40f243c4b95" id="ID_1">
           <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
           <Path>2013/EvidenceLayers/bfslope_smooth_cat.shp</Path>
@@ -338,10 +338,10 @@
           <Name>Residual Topography Raster</Name>
           <Path>2013/EvidenceLayers/resTopo.tif</Path>
         </Raster>
-        <Slope guid="2ff66dca-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+        <Raster guid="2ff66dca-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
           <Name>In-Channel DEM Slope Raster</Name>
           <Path>2013/EvidenceLayers/slope_inCh_DEM.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="2ff68a30-a524-11ea-b6de-f40f243c4b95" id="ID_7">
           <Name>tmp_bowltrans.shp</Name>
           <Path>2013/EvidenceLayers/tmp_bowltrans.shp</Path>
@@ -451,54 +451,54 @@
     <GUT dateCreated="2020-06-02T15:55:43.053537" guid="2ff9ed38-a524-11ea-b6de-f40f243c4b95" id="GUT_2014" productVersion="2.1">
       <Name>2014</Name>
       <Inputs>
-        <Centerline guid="2ffa1556-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+        <Vector guid="2ffa1556-a524-11ea-b6de-f40f243c4b95" id="BFCL">
           <Name>Bankfull Centerline</Name>
           <Path>2014/Inputs/BCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="2ffa64de-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+        </Vector>
+        <Vector guid="2ffa64de-a524-11ea-b6de-f40f243c4b95" id="BFXS">
           <Name>Bankfull Cross Sections</Name>
           <Path>2014/Inputs/BCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="2ffa896e-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+        </Vector>
+        <Vector guid="2ffa896e-a524-11ea-b6de-f40f243c4b95" id="BFEX">
           <Name>Bankfull Extent</Name>
           <Path>2014/Inputs/BExtent.shp</Path>
-        </Extent>
-        <Islands guid="2ffaad68-a524-11ea-b6de-f40f243c4b95" id="BFI">
+        </Vector>
+        <Vector guid="2ffaad68-a524-11ea-b6de-f40f243c4b95" id="BFI">
           <Name>Bankfull Islands</Name>
           <Path>2014/Inputs/BIslands.shp</Path>
-        </Islands>
-        <ChannelUnits guid="2ffad158-a524-11ea-b6de-f40f243c4b95" id="CU">
+        </Vector>
+        <Vector guid="2ffad158-a524-11ea-b6de-f40f243c4b95" id="CU">
           <Name>Channel Units</Name>
           <Path>2014/Inputs/Channel_Units.shp</Path>
-        </ChannelUnits>
-        <ChannelUnits guid="2ffaf570-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+        </Vector>
+        <Vector guid="2ffaf570-a524-11ea-b6de-f40f243c4b95" id="CU_1">
           <Name>Channel Units (Field)</Name>
           <Path>2014/Inputs/Channel_Units_Field.shp</Path>
-        </ChannelUnits>
+        </Vector>
         <DEM guid="2ffb19ba-a524-11ea-b6de-f40f243c4b95" id="DEM">
           <Name>DEM</Name>
           <Path>2014/Inputs/DEM.tif</Path>
         </DEM>
-        <Thalweg guid="2ffb3e36-a524-11ea-b6de-f40f243c4b95" id="TH">
+        <Vector guid="2ffb3e36-a524-11ea-b6de-f40f243c4b95" id="TH">
           <Name>Thalweg</Name>
           <Path>2014/Inputs/Thalweg.shp</Path>
-        </Thalweg>
-        <Centerline guid="2ffb6320-a524-11ea-b6de-f40f243c4b95" id="WCL">
+        </Vector>
+        <Vector guid="2ffb6320-a524-11ea-b6de-f40f243c4b95" id="WCL">
           <Name>Wetted Centerline</Name>
           <Path>2014/Inputs/WCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="2ffb8832-a524-11ea-b6de-f40f243c4b95" id="WXS">
+        </Vector>
+        <Vector guid="2ffb8832-a524-11ea-b6de-f40f243c4b95" id="WXS">
           <Name>Wetted Cross Sections</Name>
           <Path>2014/Inputs/WCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="2ffbb92e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+        </Vector>
+        <Vector guid="2ffbb92e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
           <Name>Wetted Extent</Name>
           <Path>2014/Inputs/WExtent.shp</Path>
-        </Extent>
-        <Islands guid="2ffc1cf2-a524-11ea-b6de-f40f243c4b95" id="WI">
+        </Vector>
+        <Vector guid="2ffc1cf2-a524-11ea-b6de-f40f243c4b95" id="WI">
           <Name>Wetted Islands</Name>
           <Path>2014/Inputs/WIslands.shp</Path>
-        </Islands>
+        </Vector>
       </Inputs>
       <EvidenceLayers>
         <Raster guid="2ffc4eca-a524-11ea-b6de-f40f243c4b95" id="ID">
@@ -513,10 +513,10 @@
           <Name>Bankfull Channel Raster</Name>
           <Path>2014/EvidenceLayers/bfCh.tif</Path>
         </Raster>
-        <Slope guid="2ffcc328-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+        <Raster guid="2ffcc328-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
           <Name>Bankfull Surface Slope Raster</Name>
           <Path>2014/EvidenceLayers/bfSlope.tif</Path>
-        </Slope>
+        </Raster>
         <Raster guid="2ffce9d4-a524-11ea-b6de-f40f243c4b95" id="ID_2">
           <Name>bfSlope_Percent.tif</Name>
           <Path>2014/EvidenceLayers/bfSlope_Percent.tif</Path>
@@ -525,10 +525,10 @@
           <Name>bfSlope_Percent_Smooth.tif</Name>
           <Path>2014/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
         </Raster>
-        <Slope guid="2ffd3b5a-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+        <Raster guid="2ffd3b5a-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
           <Name>Smoothed Bankfull Surface Slope Raster</Name>
           <Path>2014/EvidenceLayers/bfSlope_Smooth.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="2ffd62d8-a524-11ea-b6de-f40f243c4b95" id="ID_1">
           <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
           <Path>2014/EvidenceLayers/bfslope_smooth_cat.shp</Path>
@@ -581,10 +581,10 @@
           <Name>Residual Topography Raster</Name>
           <Path>2014/EvidenceLayers/resTopo.tif</Path>
         </Raster>
-        <Slope guid="2fffff3e-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+        <Raster guid="2fffff3e-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
           <Name>In-Channel DEM Slope Raster</Name>
           <Path>2014/EvidenceLayers/slope_inCh_DEM.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="30002dd8-a524-11ea-b6de-f40f243c4b95" id="ID_7">
           <Name>tmp_bowltrans.shp</Name>
           <Path>2014/EvidenceLayers/tmp_bowltrans.shp</Path>
@@ -645,46 +645,46 @@
     <GUT dateCreated="2020-06-02T15:55:43.117699" guid="3003b7be-a524-11ea-b6de-f40f243c4b95" id="GUT_2015" productVersion="2.1">
       <Name>2015</Name>
       <Inputs>
-        <Centerline guid="3003e5ea-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+        <Vector guid="3003e5ea-a524-11ea-b6de-f40f243c4b95" id="BFCL">
           <Name>Bankfull Centerline</Name>
           <Path>2015/Inputs/BCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="300415c4-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+        </Vector>
+        <Vector guid="300415c4-a524-11ea-b6de-f40f243c4b95" id="BFXS">
           <Name>Bankfull Cross Sections</Name>
           <Path>2015/Inputs/BCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="3004458a-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+        </Vector>
+        <Vector guid="3004458a-a524-11ea-b6de-f40f243c4b95" id="BFEX">
           <Name>Bankfull Extent</Name>
           <Path>2015/Inputs/BExtent.shp</Path>
-        </Extent>
-        <ChannelUnits guid="3004ae26-a524-11ea-b6de-f40f243c4b95" id="CU">
+        </Vector>
+        <Vector guid="3004ae26-a524-11ea-b6de-f40f243c4b95" id="CU">
           <Name>Channel Units</Name>
           <Path>2015/Inputs/Channel_Units.shp</Path>
-        </ChannelUnits>
-        <ChannelUnits guid="3004ec74-a524-11ea-b6de-f40f243c4b95" id="CU_1">
+        </Vector>
+        <Vector guid="3004ec74-a524-11ea-b6de-f40f243c4b95" id="CU_1">
           <Name>Channel Units (Field)</Name>
           <Path>2015/Inputs/Channel_Units_Field.shp</Path>
-        </ChannelUnits>
+        </Vector>
         <DEM guid="30051da2-a524-11ea-b6de-f40f243c4b95" id="DEM">
           <Name>DEM</Name>
           <Path>2015/Inputs/DEM.tif</Path>
         </DEM>
-        <Thalweg guid="30054fe8-a524-11ea-b6de-f40f243c4b95" id="TH">
+        <Vector guid="30054fe8-a524-11ea-b6de-f40f243c4b95" id="TH">
           <Name>Thalweg</Name>
           <Path>2015/Inputs/Thalweg.shp</Path>
-        </Thalweg>
-        <Centerline guid="30058120-a524-11ea-b6de-f40f243c4b95" id="WCL">
+        </Vector>
+        <Vector guid="30058120-a524-11ea-b6de-f40f243c4b95" id="WCL">
           <Name>Wetted Centerline</Name>
           <Path>2015/Inputs/WCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="3005b262-a524-11ea-b6de-f40f243c4b95" id="WXS">
+        </Vector>
+        <Vector guid="3005b262-a524-11ea-b6de-f40f243c4b95" id="WXS">
           <Name>Wetted Cross Sections</Name>
           <Path>2015/Inputs/WCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="3005e3fe-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+        </Vector>
+        <Vector guid="3005e3fe-a524-11ea-b6de-f40f243c4b95" id="WEEX">
           <Name>Wetted Extent</Name>
           <Path>2015/Inputs/WExtent.shp</Path>
-        </Extent>
+        </Vector>
       </Inputs>
       <EvidenceLayers>
         <Raster guid="30065a82-a524-11ea-b6de-f40f243c4b95" id="ID">
@@ -699,10 +699,10 @@
           <Name>Bankfull Channel Raster</Name>
           <Path>2015/EvidenceLayers/bfCh.tif</Path>
         </Raster>
-        <Slope guid="3006f906-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+        <Raster guid="3006f906-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
           <Name>Bankfull Surface Slope Raster</Name>
           <Path>2015/EvidenceLayers/bfSlope.tif</Path>
-        </Slope>
+        </Raster>
         <Raster guid="30072c50-a524-11ea-b6de-f40f243c4b95" id="ID_2">
           <Name>bfSlope_Percent.tif</Name>
           <Path>2015/EvidenceLayers/bfSlope_Percent.tif</Path>
@@ -711,10 +711,10 @@
           <Name>bfSlope_Percent_Smooth.tif</Name>
           <Path>2015/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
         </Raster>
-        <Slope guid="300793a2-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+        <Raster guid="300793a2-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
           <Name>Smoothed Bankfull Surface Slope Raster</Name>
           <Path>2015/EvidenceLayers/bfSlope_Smooth.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="3007c836-a524-11ea-b6de-f40f243c4b95" id="ID_1">
           <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
           <Path>2015/EvidenceLayers/bfslope_smooth_cat.shp</Path>
@@ -767,10 +767,10 @@
           <Name>Residual Topography Raster</Name>
           <Path>2015/EvidenceLayers/resTopo.tif</Path>
         </Raster>
-        <Slope guid="300b0a3c-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+        <Raster guid="300b0a3c-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
           <Name>In-Channel DEM Slope Raster</Name>
           <Path>2015/EvidenceLayers/slope_inCh_DEM.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="300b9876-a524-11ea-b6de-f40f243c4b95" id="ID_7">
           <Name>tmp_bowltrans.shp</Name>
           <Path>2015/EvidenceLayers/tmp_bowltrans.shp</Path>
@@ -843,38 +843,38 @@
     <GUT dateCreated="2020-06-02T15:55:43.197048" guid="300fd332-a524-11ea-b6de-f40f243c4b95" id="GUT_2017" productVersion="2.1">
       <Name>2017</Name>
       <Inputs>
-        <Centerline guid="30100f3c-a524-11ea-b6de-f40f243c4b95" id="BFCL">
+        <Vector guid="30100f3c-a524-11ea-b6de-f40f243c4b95" id="BFCL">
           <Name>Bankfull Centerline</Name>
           <Path>2017/Inputs/BCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="30108d54-a524-11ea-b6de-f40f243c4b95" id="BFXS">
+        </Vector>
+        <Vector guid="30108d54-a524-11ea-b6de-f40f243c4b95" id="BFXS">
           <Name>Bankfull Cross Sections</Name>
           <Path>2017/Inputs/BCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="3010ccc4-a524-11ea-b6de-f40f243c4b95" id="BFEX">
+        </Vector>
+        <Vector guid="3010ccc4-a524-11ea-b6de-f40f243c4b95" id="BFEX">
           <Name>Bankfull Extent</Name>
           <Path>2017/Inputs/BExtent.shp</Path>
-        </Extent>
+        </Vector>
         <DEM guid="30110a68-a524-11ea-b6de-f40f243c4b95" id="DEM">
           <Name>DEM</Name>
           <Path>2017/Inputs/DEM.tif</Path>
         </DEM>
-        <Thalweg guid="301151bc-a524-11ea-b6de-f40f243c4b95" id="TH">
+        <Vector guid="301151bc-a524-11ea-b6de-f40f243c4b95" id="TH">
           <Name>Thalweg</Name>
           <Path>2017/Inputs/Thalweg.shp</Path>
-        </Thalweg>
-        <Centerline guid="30119028-a524-11ea-b6de-f40f243c4b95" id="WCL">
+        </Vector>
+        <Vector guid="30119028-a524-11ea-b6de-f40f243c4b95" id="WCL">
           <Name>Wetted Centerline</Name>
           <Path>2017/Inputs/WCenterline.shp</Path>
-        </Centerline>
-        <CrossSections guid="3011d204-a524-11ea-b6de-f40f243c4b95" id="WXS">
+        </Vector>
+        <Vector guid="3011d204-a524-11ea-b6de-f40f243c4b95" id="WXS">
           <Name>Wetted Cross Sections</Name>
           <Path>2017/Inputs/WCrossSections.shp</Path>
-        </CrossSections>
-        <Extent guid="30121a8e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
+        </Vector>
+        <Vector guid="30121a8e-a524-11ea-b6de-f40f243c4b95" id="WEEX">
           <Name>Wetted Extent</Name>
           <Path>2017/Inputs/WExtent.shp</Path>
-        </Extent>
+        </Vector>
       </Inputs>
       <EvidenceLayers>
         <Raster guid="30128776-a524-11ea-b6de-f40f243c4b95" id="ID">
@@ -889,10 +889,10 @@
           <Name>Bankfull Channel Raster</Name>
           <Path>2017/EvidenceLayers/bfCh.tif</Path>
         </Raster>
-        <Slope guid="30134d3c-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
+        <Raster guid="30134d3c-a524-11ea-b6de-f40f243c4b95" id="BFSSlOPE">
           <Name>Bankfull Surface Slope Raster</Name>
           <Path>2017/EvidenceLayers/bfSlope.tif</Path>
-        </Slope>
+        </Raster>
         <Raster guid="30138d4c-a524-11ea-b6de-f40f243c4b95" id="ID_2">
           <Name>bfSlope_Percent.tif</Name>
           <Path>2017/EvidenceLayers/bfSlope_Percent.tif</Path>
@@ -901,10 +901,10 @@
           <Name>bfSlope_Percent_Smooth.tif</Name>
           <Path>2017/EvidenceLayers/bfSlope_Percent_Smooth.tif</Path>
         </Raster>
-        <Slope guid="30144e58-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
+        <Raster guid="30144e58-a524-11ea-b6de-f40f243c4b95" id="BFSSSMOOTH">
           <Name>Smoothed Bankfull Surface Slope Raster</Name>
           <Path>2017/EvidenceLayers/bfSlope_Smooth.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="301490d4-a524-11ea-b6de-f40f243c4b95" id="ID_1">
           <Name>Smoothed Bankfull Surface Slope Cateogry Polygon</Name>
           <Path>2017/EvidenceLayers/bfslope_smooth_cat.shp</Path>
@@ -957,10 +957,10 @@
           <Name>Residual Topography Raster</Name>
           <Path>2017/EvidenceLayers/resTopo.tif</Path>
         </Raster>
-        <Slope guid="3018715e-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
+        <Raster guid="3018715e-a524-11ea-b6de-f40f243c4b95" id="ICDEMSLOPE">
           <Name>In-Channel DEM Slope Raster</Name>
           <Path>2017/EvidenceLayers/slope_inCh_DEM.tif</Path>
-        </Slope>
+        </Raster>
         <Vector guid="3018be0c-a524-11ea-b6de-f40f243c4b95" id="ID_7">
           <Name>tmp_bowltrans.shp</Name>
           <Path>2017/EvidenceLayers/tmp_bowltrans.shp</Path>
