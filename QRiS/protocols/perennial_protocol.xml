@@ -9,7 +9,7 @@
     <Layers>
         <Layer id="observations" version="1.0" geom_type="Point">
             <Label>Observations</Label>
-            <Symbology>observations_perennial_protocol.qml</Symbology>
+            <Symbology>perennial_protocol_observations.qml</Symbology>
             <Description>Observation Points Layer</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>                
@@ -32,7 +32,7 @@
         </Layer>
         <Layer id="flow_type" version="1.0" geom_type="Linestring">
             <Label>Flow Type</Label>
-            <Symbology>flow_type_perennial_protocol.qml</Symbology>
+            <Symbology>perennial_protocol_flow_type.qml</Symbology>
             <Description>Flow Type Line Layer</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>                

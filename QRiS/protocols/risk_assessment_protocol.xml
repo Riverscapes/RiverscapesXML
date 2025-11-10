@@ -9,7 +9,7 @@
     <Layers>
         <Layer id="stream_assessment" version="1.0" geom_type="Linestring">
             <Label>Stream Assessment</Label>
-            <Symbology>stream_assessment.qml</Symbology>
+            <Symbology>risk_assessment_stream_assessment.qml</Symbology>
             <Description>LTPBR Opportunity Within Stream of Interest</Description>
             <Hierarchy>
                 <HierarchyItem>Stream Assessment</HierarchyItem>
@@ -69,7 +69,7 @@
         </Layer>
         <Layer id="land_use" version="1.0" geom_type="Polygon">
             <Label>Land Use Assessment</Label>
-            <Symbology>land_use.qml</Symbology>
+            <Symbology>risk_assessment_land_use.qml</Symbology>
             <Description>Assessment of current and historic land use and resulting riparian vegetation departure</Description>
             <Hierarchy>
                 <HierarchyItem>Land Use Assessment</HierarchyItem>
@@ -106,7 +106,7 @@
         </Layer>
         <Layer id="buildings" version="1.0" geom_type="Polygon">
             <Label>Buildings</Label>
-            <Symbology>ltpbr_risk_polygon.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_polygon.qml</Symbology>
             <Description>Risk Assessment for Buildings</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -143,7 +143,7 @@
         </Layer>
         <Layer id="roads" version="1.0" geom_type="Linestring">
             <Label>Roads</Label>
-            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Roads</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -180,7 +180,7 @@
         </Layer>
         <Layer id="bridges" version="1.0" geom_type="Linestring">
             <Label>Bridges</Label>
-            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Bridges</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -217,7 +217,7 @@
         </Layer>
         <Layer id="canals" version="1.0" geom_type="Linestring">
             <Label>Canals</Label>
-            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Canals</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -254,7 +254,7 @@
         </Layer>
         <Layer id="Diversions" version="1.0" geom_type="Point">
             <Label>Diversions</Label>
-            <Symbology>ltpbr_risk_point.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_point.qml</Symbology>
             <Description>Risk Assessment for Diversions</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -291,7 +291,7 @@
         </Layer>
         <Layer id="culverts" version="1.0" geom_type="Linestring">
             <Label>Culverts</Label>
-            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Culverts</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -328,7 +328,7 @@
         </Layer>
         <Layer id="utility_lines" version="1.0" geom_type="Linestring">
             <Label>Utility Lines</Label>
-            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Utility Lines</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -383,7 +383,7 @@
         </Layer>
         <Layer id="other_point" version="1.0" geom_type="Point">
             <Label>Other</Label>
-            <Symbology>ltpbr_risk_point.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_point.qml</Symbology>
             <Description>Risk Assessment for Other Infrastructure Not Listed</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -423,7 +423,7 @@
         </Layer>
         <Layer id="other_line" version="1.0" geom_type="Linestring">
             <Label>Other</Label>
-            <Symbology>ltpbr_risk_line.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_line.qml</Symbology>
             <Description>Risk Assessment for Other Infrastructure Not Listed</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -463,7 +463,7 @@
         </Layer>
         <Layer id="other_polygon" version="1.0" geom_type="Polygon">
             <Label>Other</Label>
-            <Symbology>ltpbr_risk_polygon.qml</Symbology>
+            <Symbology>risk_assessment_ltpbr_risk_polygon.qml</Symbology>
             <Description>Risk Assessment for Other Infrastructure Not Listed</Description>
             <Hierarchy>
                 <HierarchyItem>Infrastructure Assessment</HierarchyItem>
@@ -503,7 +503,7 @@
         </Layer>
         <Layer id="property_assessment" version="1.0" geom_type="Point">
             <Label>Property Assessment</Label>
-            <Symbology>property.qml</Symbology>
+            <Symbology>risk_assessment_property.qml</Symbology>
             <Description>Assessment of LTPBR Feasibility on Property</Description>
             <Hierarchy>
                 <HierarchyItem>Property Assessment</HierarchyItem>
@@ -540,7 +540,7 @@
         </Layer>
         <Layer id="adjacent_landowners_assessment" version="1.0" geom_type="Polygon">
             <Label>Adjacent Landowner Assessment</Label>
-            <Symbology>property2.qml</Symbology>
+            <Symbology>risk_assessment_property2.qml</Symbology>
             <Description>Assessment of LTPBR Feasibility of Nearby Landowners</Description>
             <Hierarchy>
                 <HierarchyItem>Property Assessment</HierarchyItem>

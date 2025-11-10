@@ -9,7 +9,7 @@
     <Layers>
         <Layer id="beaver_translocation_site_observations" version="1.0" geom_type="Polygon">
             <Label>Site Observations</Label>
-            <Symbology>beaver_translocation_site_observations.qml</Symbology>
+            <Symbology>translocation_protocol_site_observations.qml</Symbology>
             <Description>Observations for Beaver Translocation Site</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>                
@@ -77,7 +77,7 @@
         </Layer>
         <Layer id="suitability_assessment" version="1.0" geom_type="Linestring">
             <Label>Suitability Assessment</Label>
-            <Symbology>suitability_assessment.qml</Symbology>
+            <Symbology>translocation_protocol_suitability_assessment.qml</Symbology>
             <Description>Assessment of Habitat and Geomorphic Features for Beaver Translocation Site</Description>
             <Hierarchy>
                 <HierarchyItem>Observations</HierarchyItem>                
@@ -197,7 +197,7 @@
         </Layer>     
             <Layer id="beaver_release_monitoring" version="1.0" geom_type="Point">
             <Label>Post Release Monitoring Assessment</Label>
-            <Symbology>beaver_release.qml</Symbology>
+            <Symbology>translocation_protocol_beaver_release.qml</Symbology>
             <Description>Post Release Monitoring at Beaver Translocaton Site</Description>
             <Hierarchy>
                 <HierarchyItem>Monitoring</HierarchyItem>            

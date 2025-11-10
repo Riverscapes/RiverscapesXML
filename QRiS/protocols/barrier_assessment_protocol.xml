@@ -9,7 +9,7 @@
     <Layers>
         <Layer id="crossing_info" version="1.0" geom_type="Point">
             <Label>Crossing Information</Label>
-            <Symbology>crossing.qml</Symbology>
+            <Symbology>barrier_protocol_crossing.qml</Symbology>
             <Description>Contextual information for crossing where barrier is located</Description>
             <Fields>
                 <TextField id="id" version="1.0">
@@ -112,7 +112,7 @@
         </Layer>
         <Layer id="outlet_assessment" version="1.0" geom_type="Point">
             <Label>Outlet Assessment</Label>
-            <Symbology>outlet.qml</Symbology>
+            <Symbology>barrier_protocol_outlet.qml</Symbology>
             <Description>Assessment of Outlet</Description>
             <Fields>
                 <ListField id="structure_material" version="1.0">
@@ -180,7 +180,7 @@
         </Layer>
         <Layer id="inlet_assessment" version="1.0" geom_type="Point">
             <Label>Inlet Assessment</Label>
-            <Symbology>inlet.qml</Symbology>
+            <Symbology>barrier_protocol_inlet.qml</Symbology>
             <Description>Assessment of Inlet</Description>
             <Fields>
                 <ListField id="structure_material" version="1.0">
@@ -253,7 +253,7 @@
         </Layer>
         <Layer id="additional_conditions" version="1.0" geom_type="Point">
             <Label>Additional Conditions</Label>
-            <Symbology>conditions.qml</Symbology>
+            <Symbology>barrier_protocol_conditions.qml</Symbology>
             <Description>Additional Information about Barrier</Description>
             <Fields>
                 <FloatField id="slope" version="1.0">
