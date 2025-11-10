@@ -10,4 +10,4 @@ pytest==8.3.4
 requests==2.31.0
 termcolor==2.3.0
 toml==0.10.1
-urllib3==2.0.6
+urllib3==2.5.0
