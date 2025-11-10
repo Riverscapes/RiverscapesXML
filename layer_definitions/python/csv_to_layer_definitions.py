@@ -35,9 +35,9 @@ import argparse
 import csv
 import json
 import sys
+from urllib.request import urlopen
 from pathlib import Path
 from jsonschema import Draft7Validator
-from urllib.request import urlopen
 
 SCHEMA_URL = "https://s3.us-west-2.amazonaws.com/releases.northarrowresearch.com/reports/2025beta/metadata_schemas/layer_definitions.schema.json"
 
@@ -45,12 +45,18 @@ REQUIRED_ROW_FIELDS = ["layer_id", "column_name", "dtype"]
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Convert spreadsheet CSV to layer_definitions.json (validated against remote schema)")
-    p.add_argument("--csv", required=True, help="Input CSV export from spreadsheet")
-    p.add_argument("--authority-name", required=True, help="Authority name (package/tool identifier)")
-    p.add_argument("--tool-schema-version", required=False, help="Tool schema version (semver)")
-    p.add_argument("--authority-version", required=False, help="(Deprecated) legacy flag; use --tool-schema-version")
-    p.add_argument("--out", default="metadata_schemas/layer_definitions.json", help="Output JSON path")
+    p = argparse.ArgumentParser(
+        description="Convert spreadsheet CSV to layer_definitions.json (validated against remote schema)")
+    p.add_argument("--csv", required=True,
+                   help="Input CSV export from spreadsheet")
+    p.add_argument("--authority-name", required=True,
+                   help="Authority name (package/tool identifier)")
+    p.add_argument("--tool-schema-version", required=False,
+                   help="Tool schema version (semver)")
+    p.add_argument("--authority-version", required=False,
+                   help="(Deprecated) legacy flag; use --tool-schema-version")
+    p.add_argument(
+        "--out", default="metadata_schemas/layer_definitions.json", help="Output JSON path")
     return p.parse_args()
 
 
@@ -106,11 +112,14 @@ def build_definition(authority_name: str, tool_schema_version: str, rows: list[d
             existing = layers[lid]
             # Only record a conflict if the raw (explicit) value is non-empty and differs; ignore fallback-derived values.
             if raw_layer_name and raw_layer_name != existing["layer_name"]:
-                conflicts.append({"layer_id": lid, "field": "layer_name", "kept": existing["layer_name"], "ignored": raw_layer_name})
+                conflicts.append({"layer_id": lid, "field": "layer_name",
+                                 "kept": existing["layer_name"], "ignored": raw_layer_name})
             if raw_desc and raw_desc != existing["description"]:
-                conflicts.append({"layer_id": lid, "field": "description", "kept": existing["description"], "ignored": raw_desc})
+                conflicts.append({"layer_id": lid, "field": "description",
+                                 "kept": existing["description"], "ignored": raw_desc})
             if raw_type and raw_type != existing["layer_type"]:
-                conflicts.append({"layer_id": lid, "field": "layer_type", "kept": existing["layer_type"], "ignored": raw_type})
+                conflicts.append({"layer_id": lid, "field": "layer_type",
+                                 "kept": existing["layer_type"], "ignored": raw_type})
         layers[lid]["columns"].append({
             "name": r["column_name"].strip(),
             "dtype": r["dtype"].strip(),
@@ -136,7 +145,8 @@ def validate(defs: dict) -> None:
         with urlopen(SCHEMA_URL) as resp:
             schema = json.loads(resp.read().decode("utf-8"))
     except Exception as e:
-        print(f"Failed to fetch remote schema {SCHEMA_URL}: {e}", file=sys.stderr)
+        print(
+            f"Failed to fetch remote schema {SCHEMA_URL}: {e}", file=sys.stderr)
         sys.exit(3)
     Draft7Validator(schema).validate(defs)
 
@@ -152,7 +162,8 @@ def main() -> None:
     if not tool_schema_version:
         print("Missing required --tool-schema-version", file=sys.stderr)
         sys.exit(2)
-    defs, conflicts = build_definition(args.authority_name, tool_schema_version, rows)
+    defs, conflicts = build_definition(
+        args.authority_name, tool_schema_version, rows)
     try:
         validate(defs)
     except Exception as e:
@@ -166,9 +177,11 @@ def main() -> None:
     out_path.write_text(json.dumps(defs, indent=2), encoding="utf-8")
     print(f"Wrote unified layer definitions JSON: {out_path}")
     if conflicts:
-        print(f"NOTE: {len(conflicts)} metadata conflict(s) detected (first occurrence kept):", file=sys.stderr)
+        print(
+            f"NOTE: {len(conflicts)} metadata conflict(s) detected (first occurrence kept):", file=sys.stderr)
         for c in conflicts[:10]:
-            print(f"  layer_id={c['layer_id']} field={c['field']} kept='{c['kept']}' ignored='{c['ignored']}'", file=sys.stderr)
+            print(
+                f"  layer_id={c['layer_id']} field={c['field']} kept='{c['kept']}' ignored='{c['ignored']}'", file=sys.stderr)
         if len(conflicts) > 10:
             print(f"  ... {len(conflicts)-10} more", file=sys.stderr)
 
