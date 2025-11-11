@@ -39,7 +39,7 @@ from urllib.request import urlopen
 from pathlib import Path
 from jsonschema import Draft7Validator
 
-SCHEMA_URL = "https://s3.us-west-2.amazonaws.com/releases.northarrowresearch.com/reports/2025beta/metadata_schemas/layer_definitions.schema.json"
+SCHEMA_URL = "https://xml.riverscapes.net/riverscapes_metadata/layer_definitions/schema/layer_definitions.schema.json"
 
 REQUIRED_ROW_FIELDS = ["layer_id", "column_name", "dtype"]
 
