@@ -35,3 +35,7 @@ These urls are stored in the AWS System manager store for easy lookup by process
 `AWS Systems Manager --> Parameter Store`
 
 You might also need to rebuild and redeploy any lambda works. Look for `PROGRAMS_DIR_JSON`
+
+## Riverscapes Metadata
+
+Definitions and tools for defining layer definitions. Has its own [README](rivescapes_metadata/README.md).
