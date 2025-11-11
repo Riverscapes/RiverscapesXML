@@ -30,14 +30,14 @@
                                                 </Repeater>
                                         /> -->
                                         <Repeater label="Water"
-                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WATER')]">
+                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED')]">
                                                 <Node xpathlabel="Name"
-                                                        type="raster" transparency="60"
+                                                        type="raster" transparency="60" symbology="wetted_pc"
                                                 />
                                         </Repeater>
                                         <Repeater label="Active"
                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL')]">
-                                                <Node xpathlabel="Name" transparency="60"
+                                                <Node xpathlabel="Name" transparency="60" symbology="alluvial_pc"
                                                         type="raster"
                                                 />
                                         </Repeater>
@@ -110,15 +110,17 @@
 
                         <Node label="Binary Classified Rasters">
                                 <Children collapsed="true">
+                                        <!--
                                         <Repeater label="Vegetation"
                                                 collapsed="true"
                                                 xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_VEG')]">
                                                 <Node xpathlabel="Name" type="raster"
                                                         symbology="class_bin_veg" />
                                         </Repeater>
+                                        -->
                                         <Repeater label="Water"
                                                 collapsed="true"
-                                                xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_WATER')]">
+                                                xpath="Realizations/Realization/Inputs/Raster[starts-with(@id, 'CLASS_WETTED')]">
                                                 <Node xpathlabel="Name" type="raster"
                                                         symbology="class_bin_water" />
                                         </Repeater>
