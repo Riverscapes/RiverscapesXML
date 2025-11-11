@@ -29,13 +29,13 @@
                                                         type="raster"
                                                 </Repeater>
                                         /> -->
-                                        <Repeater label="Water"
+                                        <Repeater label="Water" collapsed="true"
                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED')]">
                                                 <Node xpathlabel="Name"
                                                         type="raster" transparency="60" symbology="wetted_pc"
                                                 />
                                         </Repeater>
-                                        <Repeater label="Active"
+                                        <Repeater label="Active" collapsed="true"
                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL')]">
                                                 <Node xpathlabel="Name" transparency="60" symbology="alluvial_pc"
                                                         type="raster"
@@ -47,27 +47,27 @@
                                 <Children collapsed="false">
                                         <Node label="95% Confidence Interval">
                                                 <Children>
-                                                        <Repeater label="Area"
+                                                        <Repeater label="Area" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_area_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
                                                                         symbology="epoch_area" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Area As Percent of Sample Frame Area"
+                                                                label="Area As Percent of Sample Frame Area" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_areapc_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
                                                                         symbology="epoch_pc" />
                                                         </Repeater>
-                                                        <Repeater label="Width"
+                                                        <Repeater label="Width" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_width_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
                                                                         symbology="epoch_width" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Width As Percent of Sample Frame Width"
+                                                                label="Width As Percent of Sample Frame Width" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_widthpc_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
@@ -77,27 +77,27 @@
                                         </Node>
                                         <Node label="68% Confidence Interval">
                                                 <Children>
-                                                        <Repeater label="Area"
+                                                        <Repeater label="Area" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_area_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
                                                                         symbology="epoch_area" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Area As Percent of Sample Frame Area"
+                                                                label="Area As Percent of Sample Frame Area" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_areapc_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
                                                                         symbology="epoch_pc" />
                                                         </Repeater>
-                                                        <Repeater label="Width"
+                                                        <Repeater label="Width" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_width_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
                                                                         symbology="epoch_width" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Width As Percent of Sample Frame Width"
+                                                                label="Width As Percent of Sample Frame Width" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_widthpc_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
