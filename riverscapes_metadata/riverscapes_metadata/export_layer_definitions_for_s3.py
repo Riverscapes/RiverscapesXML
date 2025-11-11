@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Flatten unified layer_definitions metadata file into partitioned Parquet (default) files for Athena.
+"""Flatten unified layer_definitions metadata file(s) into partitioned Parquet (default) files for Athena.
 
 Output pattern:
     dist/metadata/authority=<repo>/authority_name=<name>/tool_schema_version=<version>/layer_metadata.parquet
@@ -14,12 +14,12 @@ Defaults:
     - No per-row timestamp; generation timestamp stored once in index.json.
 
 Usage examples:
-    python scripts/metadata/export_layer_definitions_for_s3.py
-    python scripts/metadata/export_layer_definitions_for_s3.py --format csv --include-partition-cols
+    python export_layer_definitions_for_s3.py
+    python export_layer_definitions_for_s3.py --format csv --include-partition-cols
 
 Notes:
     - Scans repository recursively for 'layer_definitions.json'.
-    - Single file contains catalog + layer structural definitions (no def_path indirection).
+    - Single file contains catalog + layer structural definitions.
     - Robust to missing optional fields.
     - Designed for Python >= 3.12 (compatible >=3.10).
     - Parquet writing uses pyarrow.
@@ -37,7 +37,7 @@ from pathlib import Path
 from jsonschema import Draft7Validator
 from urllib.request import urlopen
 
-SCHEMA_URL = "https://s3.us-west-2.amazonaws.com/releases.northarrowresearch.com/reports/2025beta/metadata_schemas/layer_definitions.schema.json"
+from riverscapes_metadata import SCHEMA_URL
 
 CATALOG_FILENAME = "layer_definitions.json"
 OUTPUT_COLUMNS = [  # logical full schema (including partition columns)

@@ -8,20 +8,22 @@ This folder contains artifacts to support a consistent metadata handling in Rive
 
 This schema is published to xml.riverscapes.net and defines the information, required and optional, to include in the layer_definitions
 
-### python \ export_layer_definitions_for_s3
+### riverscapes_metadata \ export_layer_definitions_for_s3
 
 `export_layer_definitions_for_s3.py` 
 Currently this is in the data-exchange-scripts repo. Maybe we will move it here later.
 
-### python \ csv_to_layer_definitions
+### riverscapes_metadata \ csv_to_layer_definitions
 
-This is a utility to convert a csv file into a compliant JSON. The [google sheet layer_definitions template](https://docs.google.com/spreadsheets/d/1kmcAwVS9PcPpiqJEulhSmZG9wIR11vgikw__JanYt90/edit?usp=sharing) can be copied and used to export such a csv. 
+This is a utility to convert a csv file into a compliant JSON. The [google sheet layer_definitions template](https://docs.google.com/spreadsheets/d/1kmcAwVS9PcPpiqJEulhSmZG9wIR11vgikw__JanYt90/edit?usp=sharing) can be copied and used to export such a csv.
 
 This is intended for one time use, not as an ongoing pipeline.
 
+Sample input and output are in the `test` folder.
+
 ## Athena External Table
 
-We publish to: `s3://riverscapes-athena/metadata/layer_definitions/`
+We publish to: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/`
 
 Recommended external table DDL (Parquet, partition columns excluded from file content):
 
@@ -49,7 +51,7 @@ PARTITIONED BY (
   tool_schema_version string COMMENT 'Tool schema version (semver)'
 )
 STORED AS PARQUET
-LOCATION 's3://riverscapes-athena/metadata/layer_definitions/';
+LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions/';
 ```
 
 Add new partitions (after upload):
@@ -64,7 +66,7 @@ ADD IF NOT EXISTS PARTITION (
   authority_name='rme_to_athena',
   tool_schema_version='1.0.0'
 )
-LOCATION 's3://riverscapes-athena/metadata/layer_definitions/authority=data-exchange-scripts/authority_name=rme_to_athena/tool_schema_version=1.0.0/';
+LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions/authority=data-exchange-scripts/authority_name=rme_to_athena/tool_schema_version=1.0.0/';
 ```
 
 ### Example Queries
