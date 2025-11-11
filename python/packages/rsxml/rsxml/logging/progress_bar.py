@@ -44,18 +44,22 @@ class ProgressBar:
         self.visible = False
 
     def finish(self):
+        """ Finish the progress bar
+        """
         if (self.start_time is None):
             duration = "0s"
         else:
             duration = pretty_duration(int(time.time() - self.start_time))
         if self.byte_format:
-            writestr = "Completed: {}  Total Time: {}     \n".format(sizeof_fmt(self.total), duration)
+            writestr = f"Completed: {sizeof_fmt(self.total)}  Total Time: {duration}     \n"
         else:
-            writestr = "Completed {:,} operations.  Total Time: {}     \n".format(self.total, duration)
+            writestr = f"Completed {self.total:,} operations.  Total Time: {duration}     \n"
         log = Logger(self.text)
         log.info(writestr)
 
     def output(self):
+        """ Output the progress bar
+        """
         first_time = False
         if self.start_time is None:
             first_time = True

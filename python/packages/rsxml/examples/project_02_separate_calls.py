@@ -2,6 +2,8 @@
 Example showing how to create a project XML by calling methods separately
 rather than specifying everything in the constructor (as in example 1).
 """
+import tempfile
+from datetime import datetime
 # in your code you woulf write:
 # from riverscapes import rsxml
 from rsxml.project_xml import (
@@ -14,8 +16,6 @@ from rsxml.project_xml import (
     MetaData,
     Meta
 )
-import tempfile
-from datetime import datetime
 from rsxml import Logger
 
 
@@ -79,7 +79,7 @@ if __name__ == '__main__':
         print("\n\nConsole Output\n========================================================================\n")
         main(f.name)
         print("\n\nProject XML\n========================================================================\n")
-        with open(f.name, 'r') as f:
+        with open(f.name, 'r', encoding='utf-8') as f:
             print(f.read())
 
 

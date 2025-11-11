@@ -6,7 +6,7 @@ You can then write the project to an XML file.
 """
 from __future__ import annotations
 from typing import List
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 import os
 
 from rsxml.project_xml.MetaData import MetaData

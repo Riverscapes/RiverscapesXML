@@ -99,6 +99,7 @@ class _LoggerSingleton:
             :param exception:
             :return:
             """
+            txtmsg = message
             msg_log_level = self.loglevels[severity.upper()]
 
             # If we're not verbose and the log level is less than info then don't print

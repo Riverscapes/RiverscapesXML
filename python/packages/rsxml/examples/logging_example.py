@@ -8,8 +8,8 @@ NOTE: For QGIS plugins you should use QgsMessageLog instead of this class.
 - https://qgis.org/pyqgis/3.2/core/Message/QgsMessageLog.html
 
 """
-from rsxml import Logger
 import tempfile
+from rsxml import Logger
 
 
 def main(logfile: str):
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         main(f.name)
 
         # Now print the log file at f
-        with open(f.name, "r") as f2:
+        with open(f.name, "r", encoding="utf-8") as f2:
             print("\n\nLogfile Output\n========================================================================\n")
             print(f2.read())
         pass

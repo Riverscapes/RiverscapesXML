@@ -2,9 +2,9 @@
 from __future__ import annotations
 from typing import List
 import os
-from rsxml import Logger
-from rsxml import project_xml
-from rsxml import validate_project_file
+from rsxml.logging import Logger
+from rsxml.project_xml import project_xml
+from rsxml.validation import validate_project_file
 
 
 class ProjectValidation:
@@ -28,7 +28,7 @@ class ProjectValidation:
 
     @property
     def valid(self):
-        return len(self._errors) == 0
+        return len(self.errors) == 0
 
     def _validate_dataset(self, dataset: project_xml.Dataset):
         path = dataset.path

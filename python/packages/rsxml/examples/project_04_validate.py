@@ -1,6 +1,7 @@
 import os
-import json
-from rsxml import validate_project_file, Logger
+# import json
+from rsxml import Logger
+from rsxml.validation import validate_project_file
 from rsxml.project_xml import ProjectValidation
 
 

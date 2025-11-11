@@ -8,7 +8,7 @@ project XML file and add realizations, datasets, etc. to it.
 # from riverscapes import rsxml
 import tempfile
 import os
-from datetime import date
+# from datetime import date
 from rsxml.project_xml import (
     Project,
     Dataset,
@@ -59,7 +59,7 @@ def main(filepath: str):
 if __name__ == '__main__':
     with tempfile.NamedTemporaryFile(prefix='project.rs.', suffix='.xml') as f:
         # Prepopulate the file with the XML from our sample file
-        with open(os.path.join(os.path.dirname(__file__), 'project_03_input.rs.xml'), 'r') as inf:
+        with open(os.path.join(os.path.dirname(__file__), 'project_03_input.rs.xml'), 'r', encoding='utf-8') as inf:
             f.write(inf.read().encode('utf-8'))
             f.flush()
 
@@ -67,7 +67,7 @@ if __name__ == '__main__':
         main(f.name)
 
         print("\n\nProject XML\n========================================================================\n")
-        with open(f.name, 'r') as f:
+        with open(f.name, 'r', encoding='utf-8') as f:
             print(f.read())
 
 

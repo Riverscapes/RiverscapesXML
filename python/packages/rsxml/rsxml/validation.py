@@ -1,8 +1,7 @@
 """_summary_"""
 from __future__ import annotations
-from typing import List
-import requests
 from io import BytesIO
+import requests
 try:
     from lxml import etree
 except ImportError:
@@ -84,7 +83,7 @@ def validate_project_file(project_file_path: str):
         raise e
 
     try:
-        with open(project_file_path, 'r') as f:
+        with open(project_file_path, 'r', encoding='utf-8') as f:
             xml = f.read()
     except Exception as e:
         log.error(f'Could not read XML file {project_file_path}')

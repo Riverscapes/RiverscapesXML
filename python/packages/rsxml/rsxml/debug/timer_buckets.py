@@ -15,7 +15,7 @@ class TimerBucketsBorg:
 
 
 class TimerBuckets(TimerBucketsBorg):
-    """
+    """ Timer Buckets Class
     """
     timers: Dict(str, float)
     ticks: TickType
@@ -112,7 +112,7 @@ class TimerBuckets(TimerBucketsBorg):
             self.total += self.timer.elapsed()
             self.tick_total += self.timer.elapsed()
 
-    def generate_table(self) -> Tuple(List[str, str], List):
+    def generate_table(self) -> Tuple[List[Tuple[str, str]], List]:
         """ return something we can either write to a CSV or to a SQLite DB
 
         Returns:
@@ -187,7 +187,7 @@ class TimerBuckets(TimerBucketsBorg):
 
         columns, csv_arr = self.generate_table()
 
-        with open(final_path, 'w') as csvfile:
+        with open(final_path, 'w', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow([k for k, v in columns])  # header row
             for row in csv_arr:

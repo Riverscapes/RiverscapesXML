@@ -1,6 +1,6 @@
 """ Project bounds XML """
 from __future__ import annotations
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 from rsxml.project_xml.common import Coords, BoundingBox
 
 

@@ -18,9 +18,9 @@ from_xml that can be used to parse an XML node into an RSObj.
 """
 from __future__ import annotations
 import abc
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 
-from rsxml.project_xml.MetaData import MetaData, Meta
+from rsxml.project_xml.MetaData import MetaData
 
 
 class RSObj (abc.ABC):

@@ -1,5 +1,5 @@
 from __future__ import annotations
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 
 
 class Warehouse:

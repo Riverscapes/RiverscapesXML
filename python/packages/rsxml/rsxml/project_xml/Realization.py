@@ -10,7 +10,7 @@ from __future__ import annotations
 from typing import List
 import re
 from datetime import datetime
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 
 from rsxml.project_xml.RSObj import RSObj
 from rsxml.project_xml.Geopackage import Geopackage

@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 from typing import List, NamedTuple, Union
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 MetaValue = Union[str, float, int]
 
 # These types are taken from the XSD definition

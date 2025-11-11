@@ -962,7 +962,6 @@ dependencies = [
     { name = "lxml" },
     { name = "requests" },
     { name = "semver" },
-    { name = "urllib3" },
 ]
 
 [package.optional-dependencies]
@@ -993,7 +992,6 @@ requires-dist = [
     { name = "requests", specifier = ">=2.31.0" },
     { name = "semver", specifier = ">=2.10.2" },
     { name = "termcolor", marker = "extra == 'dev'", specifier = ">=2.3.0" },
-    { name = "urllib3", specifier = ">=2.0.2" },
 ]
 provides-extras = ["dev"]
 

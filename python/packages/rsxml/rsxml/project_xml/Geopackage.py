@@ -4,7 +4,7 @@ Datasets have subtypes of Geopackage or Log.
     """
 from __future__ import annotations
 from typing import List
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 
 from rsxml.project_xml.Dataset import Dataset
 from rsxml.project_xml.RSObj import RSObj

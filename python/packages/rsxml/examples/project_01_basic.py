@@ -8,6 +8,8 @@ go as arguments to the project constructor. When you are done you simply call
 the write() method to write the project XML file to disk.
 """
 
+import tempfile
+from datetime import datetime
 # in your code you would write:
 from rsxml.project_xml import (
     Project,
@@ -22,10 +24,8 @@ from rsxml.project_xml import (
     GeoPackageDatasetTypes,
     Realization,
 )
-import tempfile
 # logging is always a good practice
 from rsxml import Logger
-from datetime import datetime
 
 
 def main(filepath: str):
@@ -122,7 +122,7 @@ if __name__ == '__main__':
         print("\n\nConsole Output\n========================================================================\n")
         main(f.name)
         print("\n\nProject XML\n========================================================================\n")
-        with open(f.name, 'r') as f:
+        with open(f.name, 'r', encoding='utf-8') as f:
             print(f.read())
 
 
