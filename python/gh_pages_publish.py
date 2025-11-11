@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 # These are the folders we will scrape
 FOLDERS = [
-    'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic', 'QRiS', r'riverscapes_metadata\layer_definitions\schema'
+    'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic', 'QRiS', r'riverscapes_metadata\schema'
 ]
 FILES = [
     'BaseMaps.xml'
