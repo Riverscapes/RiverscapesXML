@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://xml.riverscapes.net/layer_definition/0.6.0",
+    "$id": "https://xml.riverscapes.net/layer_definition/0.6.1",
     "title": "Riverscapes Layer Definitions (Unified)",
     "description": "Combined schema embedding all layer structural + descriptive metadata in a single file to avoid cross-file references",
     "type": "object",
@@ -71,6 +71,10 @@
                             "File"
                         ],
                         "description": "Layer category corresponding to subset of RiverscapesProject.xsd DataSetContainerType name"
+                    },
+                    "theme": {
+                        "type": "string",
+                        "description": "Layer theme. Used for grouping layers together in generated documentation."
                     },
                     "columns": {
                         "type": "array",
