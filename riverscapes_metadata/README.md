@@ -16,7 +16,8 @@ This schema is published to xml.riverscapes.net and defines the information, req
 ### riverscapes_metadata \ export_layer_definitions_for_s3
 
 `export_layer_definitions_for_s3.py`
-Currently this is in the data-exchange-scripts repo. Maybe we will move it here later.
+
+This is exported for use in other repositories to go flatten `layer_definition.json` into a parquet files (partitioned by repository/tool/tool-schema-version) that serve as source for Athena table (see below).
 
 ### riverscapes_metadata \ csv_to_layer_definitions
 
