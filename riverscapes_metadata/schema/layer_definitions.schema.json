@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://xml.riverscapes.net/layer_definition/0.5.1",
+    "$id": "https://xml.riverscapes.net/layer_definition/0.6.0",
     "title": "Riverscapes Layer Definitions (Unified)",
     "description": "Combined schema embedding all layer structural + descriptive metadata in a single file to avoid cross-file references",
     "type": "object",
