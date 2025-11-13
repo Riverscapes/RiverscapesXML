@@ -38,6 +38,8 @@ from jsonschema import Draft7Validator
 from urllib.request import urlopen
 
 from riverscapes_metadata import SCHEMA_URL
+# FOR TESTING, can use a different path, e.g. 
+# SCHEMA_URL = "https://raw.githubusercontent.com/Riverscapes/RiverscapesXML/refs/heads/layerdefs0.6.1/riverscapes_metadata/schema/layer_definitions.schema.json"
 
 CATALOG_FILENAME = "layer_definitions.json"
 OUTPUT_COLUMNS = [  # logical full schema (including partition columns)

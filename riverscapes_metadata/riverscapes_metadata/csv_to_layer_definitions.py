@@ -4,8 +4,10 @@
 Spreadsheet expectations (single sheet -> CSV rows):
 Columns (header names case-sensitive):
     layer_id, layer_name, layer_type, layer_description,
-    column_name, dtype, friendly_name, data_unit, col_description,
+    column_name, dtype, friendly_name, data_unit, description,
     is_key, is_required, theme, preferred_bin_definition, default_value
+
+Note theme is column theme - we haven't added layer_theme to the spreadsheet yet. 
 
 Authority metadata (authority_name, tool_schema_version) will be provided via CLI flags instead of sheet columns to avoid accidental edits.
 
@@ -123,7 +125,7 @@ def build_definition(authority_name: str, tool_schema_version: str, rows: list[d
             "dtype": (r.get("dtype") or "").strip(),
             "friendly_name": (r.get("friendly_name") or "").strip(),
             "data_unit": (r.get("data_unit") or "").strip(),
-            "description": (r.get("col_description") or "").strip(),
+            "description": (r.get("description") or "").strip(),
             "is_key": coerce_bool(r.get("is_key"), False),
             "is_required": coerce_bool(r.get("is_required"), False),
             "theme": (r.get("theme") or "").strip(),
