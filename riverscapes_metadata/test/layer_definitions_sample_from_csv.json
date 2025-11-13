@@ -7,7 +7,7 @@
       "layer_id": "raw_rme",
       "layer_name": "raw_rme_pq",
       "description": "DGO metrics from RME project geopackages",
-      "layer_type": "table",
+      "layer_type": "Vector",
       "columns": [
         {
           "name": "brat_capacity",
@@ -435,7 +435,7 @@
       "layer_id": "rpt_rme",
       "layer_name": "rpt_rme_pq",
       "description": "report view",
-      "layer_type": "view",
+      "layer_type": "DataTable",
       "columns": [
         {
           "name": "fcode_desc",
@@ -467,7 +467,7 @@
       "layer_id": "rs_context_huc10",
       "layer_name": "rs_context_huc10",
       "description": "",
-      "layer_type": "table",
+      "layer_type": "DataTable",
       "columns": [
         {
           "name": "huc",
