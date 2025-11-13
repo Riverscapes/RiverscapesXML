@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Convert a flat CSV export from a spreadsheet into unified layer_definitions.json.
 
-Option set chosen: (1) Manual CSV export + (9) Cutover ceremony.
-
 Spreadsheet expectations (single sheet -> CSV rows):
 Columns (header names case-sensitive):
     layer_id, layer_name, layer_type, layer_description,
@@ -18,7 +16,7 @@ Cutover process recommendation:
   4. Lock the spreadsheet / mark read-only.
 
 Validation:
-  - Enforces presence of layer_id, column_name, dtype per row.
+  - Enforces presence of layer_id, column_name per row.
   - Aggregates rows into unified structure and validates with jsonschema.
   - Exits non-zero and prints errors if validation fails.
 
@@ -41,7 +39,7 @@ from jsonschema import Draft7Validator
 
 from riverscapes_metadata import SCHEMA_URL
 
-REQUIRED_ROW_FIELDS = ["layer_id", "column_name", "dtype"]
+REQUIRED_ROW_FIELDS = ["layer_id", "column_name"]
 
 
 def parse_args() -> argparse.Namespace:
@@ -122,7 +120,7 @@ def build_definition(authority_name: str, tool_schema_version: str, rows: list[d
                                  "kept": existing["layer_type"], "ignored": raw_type})
         layers[lid]["columns"].append({
             "name": r["column_name"].strip(),
-            "dtype": r["dtype"].strip(),
+            "dtype": (r.get("dtype") or "").strip(),
             "friendly_name": (r.get("friendly_name") or "").strip(),
             "data_unit": (r.get("data_unit") or "").strip(),
             "description": (r.get("col_description") or "").strip(),
