@@ -6,11 +6,16 @@ This folder contains artifacts to support a consistent metadata handling in Rive
 
 ### Json schema
 
-This schema is published to xml.riverscapes.net and defines the information, required and optional, to include in the layer_definitions
+This schema is published to xml.riverscapes.net and defines the information, required and optional, to include in the layer_definitions. Layer metadata now includes:
+
+- `path`: relative or absolute location of the layer delivery artifact (S3 key, repo path, etc.).
+- `theme`: optional higher-level grouping for the layer itself (distinct from column `theme`).
+- Expanded `layer_type` options aligned with RiverscapesProject.xsd `DataSetContainerType` (e.g., `Raster`, `Vector`, `Geopackage`).
+- Optional provenance fields (`source_url`, `data_product_version`).
 
 ### riverscapes_metadata \ export_layer_definitions_for_s3
 
-`export_layer_definitions_for_s3.py` 
+`export_layer_definitions_for_s3.py`
 Currently this is in the data-exchange-scripts repo. Maybe we will move it here later.
 
 ### riverscapes_metadata \ csv_to_layer_definitions
@@ -29,10 +34,14 @@ Recommended external table DDL (Parquet, partition columns excluded from file co
 
 ```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS layer_definitions (
-  layer_id          string  COMMENT 'Stable identifier of the layer or table, for example used for project.rs.xml id',
-  layer_name        string  COMMENT 'Human-readable layer or table name (may match layer_id)',
-  layer_type        string  COMMENT 'Layer category (table, view, raster, vector)',
-  layer_description string  COMMENT 'Human-readable summary of the layer',
+  layer_id                  string  COMMENT 'Stable identifier of the layer or table, for example used for project.rs.xml id',
+  layer_name                string  COMMENT 'Human-readable layer or table name (may match layer_id)',
+  layer_type                string  COMMENT 'Layer category (CommonDatasetRef, Raster, Vector, Geopackage, etc.)',
+  layer_path                string  COMMENT 'Relative or absolute path to the delivered layer artifact',
+  layer_theme               string  COMMENT 'High level grouping for the layer (e.g., Hydrology, Vegetation)',
+  layer_source_url          string  COMMENT 'Provenance or documentation URL for the layer',
+  layer_data_product_version string COMMENT 'Data vintage/year or version string',
+  layer_description         string  COMMENT 'Human-readable summary of the layer',
   name              string  COMMENT 'Column (or raster band) identifier',
   friendly_name     string  COMMENT 'Display-friendly name for the column',
   theme             string  COMMENT 'Grouping theme -- useful for very wide tables (e.g., Beaver, Hydrology)',

@@ -47,6 +47,10 @@ OUTPUT_COLUMNS = [  # logical full schema (including partition columns)
     "layer_id",
     "layer_name",
     "layer_type",
+    "layer_path",
+    "layer_theme",
+    "layer_source_url",
+    "layer_data_product_version",
     "layer_description",
     # column-defining fields with prefixes removed
     "name",
@@ -122,6 +126,10 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
             continue
         layer_name = layer.get("layer_name", layer_id)
         layer_type = layer.get("layer_type", "")
+        layer_path = layer.get("path", "")
+        layer_theme = layer.get("theme", "")
+        layer_source_url = layer.get("source_url", "")
+        layer_data_product_version = layer.get("data_product_version", "")
         layer_description = layer.get("description", "")
         columns = layer.get("columns", [])
         for col in columns:
@@ -143,6 +151,10 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "layer_id": layer_id,
                 "layer_name": layer_name,
                 "layer_type": layer_type,
+                "layer_path": layer_path,
+                "layer_theme": layer_theme,
+                "layer_source_url": layer_source_url,
+                "layer_data_product_version": layer_data_product_version,
                 "layer_description": layer_description,
                 "name": cname,
                 "friendly_name": col.get("friendly_name", ""),
@@ -176,6 +188,10 @@ def write_parquet(rows: list[dict], output: Path, columns: list[str]) -> None:
         "layer_id": pa.string(),
         "layer_name": pa.string(),
         "layer_type": pa.string(),
+    "layer_path": pa.string(),
+    "layer_theme": pa.string(),
+    "layer_source_url": pa.string(),
+    "layer_data_product_version": pa.string(),
         "layer_description": pa.string(),
         "name": pa.string(),
         "friendly_name": pa.string(),
