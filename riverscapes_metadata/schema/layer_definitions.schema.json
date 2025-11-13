@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://xml.riverscapes.net/layer_definition/0.5.0",
+    "$id": "https://xml.riverscapes.net/layer_definition/0.5.1",
     "title": "Riverscapes Layer Definitions (Unified)",
     "description": "Combined schema embedding all layer structural + descriptive metadata in a single file to avoid cross-file references",
     "type": "object",
@@ -31,6 +31,10 @@
                         "type": "string",
                         "description": "Human-readable layer or table name (may match layer_id)"
                     },
+                    "path": {
+                        "type": "string",
+                        "description": "Relative or absolute path to the layer"
+                    },
                     "description": {
                         "type": "string",
                         "description": "Human-readable summary of the layer"
@@ -47,12 +51,26 @@
                     "layer_type": {
                         "type": "string",
                         "enum": [
-                            "table",
-                            "view",
-                            "raster",
-                            "vector"
+                            "CommonDatasetRef",
+                            "Raster",
+                            "Vector",
+                            "Geopackage",
+                            "DEM",
+                            "HillShade",
+                            "CSV",
+                            "Image",
+                            "Video",
+                            "DataTable",
+                            "Database",
+                            "MSAccessDB",
+                            "SQLiteDB",
+                            "PDF",
+                            "HTMLFile",
+                            "ZipFile",
+                            "LogFile",
+                            "File"
                         ],
-                        "description": "Layer category"
+                        "description": "Layer category corresponding to subset of RiverscapesProject.xsd DataSetContainerType name"
                     },
                     "columns": {
                         "type": "array",
@@ -128,8 +146,7 @@
                 }
             },
             "required": [
-                "name",
-                "dtype"
+                "name"
             ],
             "additionalProperties": false
         }
