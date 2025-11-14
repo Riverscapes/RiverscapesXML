@@ -22,25 +22,68 @@
                         </Node>
                         <Node label="Frequency Rasters">
                                 <Children collapsed="true">
-                                        <!-- 
-                                        <Repeater label="Vegetation"
-                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'VEGETATION')]">
-                                                <Node xpathlabel="Name"
-                                                        type="raster"
-                                                </Repeater>
-                                        /> -->
-                                        <Repeater label="Water" collapsed="true"
-                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED')]">
-                                                <Node xpathlabel="Name"
-                                                        type="raster" transparency="60" symbology="wetted_pc"
-                                                />
-                                        </Repeater>
-                                        <Repeater label="Active" collapsed="true"
-                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL')]">
-                                                <Node xpathlabel="Name" transparency="60" symbology="alluvial_pc"
-                                                        type="raster"
-                                                />
-                                        </Repeater>
+                                        <Node label="1 Year">
+                                                <Children>
+                                                        <Repeater label="Water" collapsed="true"
+                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '01yr')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="raster"
+                                                                        transparency="60"
+                                                                        symbology="frequency_percent"
+                                                                />
+                                                        </Repeater>
+                                                        <Repeater label="Active" collapsed="true"
+                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '01yr')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="raster"
+                                                                        transparency="60"
+                                                                        symbology="frequency_percent"
+                                                                />
+                                                        </Repeater>
+                                                </Children>
+                                        </Node>
+
+                                        <Node label="5 Years">
+                                                <Children>
+                                                        <Repeater label="Water" collapsed="true"
+                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '05yr')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="raster"
+                                                                        transparency="60"
+                                                                        symbology="frequency_percent"
+                                                                />
+                                                        </Repeater>
+                                                        <Repeater label="Active" collapsed="true"
+                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '05yr')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="raster"
+                                                                        transparency="60"
+                                                                        symbology="frequency_percent"
+                                                                />
+                                                        </Repeater>
+                                                </Children>
+                                        </Node>
+
+                                         <Node label="30 Years">
+                                                <Children>
+                                                        <Repeater label="Water" collapsed="true"
+                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '30yr')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="raster"
+                                                                        transparency="60"
+                                                                        symbology="frequency_percent"
+                                                                />
+                                                        </Repeater>
+                                                         <Repeater label="Active" collapsed="true"
+                                                                xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '30yr')]">
+                                                                <Node xpathlabel="Name"
+                                                                        type="raster"
+                                                                        transparency="60"
+                                                                        symbology="frequency_percent"
+                                                                />
+                                                        </Repeater>
+                                                </Children>
+                                        </Node>
                                 </Children>
                         </Node>
                         <Node label="DGO Sample Frame Statistics">
@@ -54,7 +97,8 @@
                                                                         symbology="epoch_area" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Area As Percent of Sample Frame Area" collapsed="true"
+                                                                label="Area As Percent of Sample Frame Area"
+                                                                collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_areapc_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
@@ -67,7 +111,8 @@
                                                                         symbology="epoch_width" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Width As Percent of Sample Frame Width" collapsed="true"
+                                                                label="Width As Percent of Sample Frame Width"
+                                                                collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_widthpc_95_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
@@ -84,7 +129,8 @@
                                                                         symbology="epoch_area" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Area As Percent of Sample Frame Area" collapsed="true"
+                                                                label="Area As Percent of Sample Frame Area"
+                                                                collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_areapc_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
@@ -97,7 +143,8 @@
                                                                         symbology="epoch_width" />
                                                         </Repeater>
                                                         <Repeater
-                                                                label="Width As Percent of Sample Frame Width" collapsed="true"
+                                                                label="Width As Percent of Sample Frame Width"
+                                                                collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_widthpc_68_')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="polygon"
