@@ -28,7 +28,7 @@
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '01yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
-                                                                        transparency="60"
+                                                                        transparency="30"
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
@@ -36,7 +36,7 @@
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '01yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
-                                                                        transparency="60"
+                                                                        transparency="30"
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
@@ -49,7 +49,7 @@
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '05yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
-                                                                        transparency="60"
+                                                                        transparency="30"
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
@@ -57,7 +57,7 @@
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '05yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
-                                                                        transparency="60"
+                                                                        transparency="30"
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
@@ -70,7 +70,7 @@
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '30yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
-                                                                        transparency="60"
+                                                                        transparency="30"
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
@@ -78,7 +78,7 @@
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '30yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
-                                                                        transparency="60"
+                                                                        transparency="30"
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
