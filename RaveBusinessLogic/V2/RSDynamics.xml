@@ -29,7 +29,7 @@
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
                                                                         transparency="60"
-                                                                        symbology="frequency_percent"
+                                                                        symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
                                                         <Repeater label="Active" collapsed="true"
@@ -37,7 +37,7 @@
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
                                                                         transparency="60"
-                                                                        symbology="frequency_percent"
+                                                                        symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
                                                 </Children>
@@ -50,7 +50,7 @@
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
                                                                         transparency="60"
-                                                                        symbology="frequency_percent"
+                                                                        symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
                                                         <Repeater label="Active" collapsed="true"
@@ -58,7 +58,7 @@
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
                                                                         transparency="60"
-                                                                        symbology="frequency_percent"
+                                                                        symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
                                                 </Children>
@@ -71,7 +71,7 @@
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
                                                                         transparency="60"
-                                                                        symbology="frequency_percent"
+                                                                        symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
                                                          <Repeater label="Active" collapsed="true"
@@ -79,7 +79,7 @@
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
                                                                         transparency="60"
-                                                                        symbology="frequency_percent"
+                                                                        symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
                                                 </Children>
