@@ -64,7 +64,7 @@
                                                 </Children>
                                         </Node>
 
-                                         <Node label="30 Years">
+                                        <Node label="30 Years">
                                                 <Children>
                                                         <Repeater label="Water" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'WETTED') and contains(@id, '30yr')]">
@@ -74,7 +74,7 @@
                                                                         symbology="frequency_normalized"
                                                                 />
                                                         </Repeater>
-                                                         <Repeater label="Active" collapsed="true"
+                                                        <Repeater label="Active" collapsed="true"
                                                                 xpath="Realizations/Realization/Outputs/Raster[contains(@id, 'ALLUVIAL') and contains(@id, '30yr')]">
                                                                 <Node xpathlabel="Name"
                                                                         type="raster"
@@ -88,70 +88,358 @@
                         </Node>
                         <Node label="DGO Sample Frame Statistics">
                                 <Children collapsed="false">
-                                        <Node label="95% Confidence Interval">
-                                                <Children>
-                                                        <Repeater label="Area" collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_area_95_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_area" />
-                                                        </Repeater>
-                                                        <Repeater
-                                                                label="Area As Percent of Sample Frame Area"
-                                                                collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_areapc_95_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_pc" />
-                                                        </Repeater>
-                                                        <Repeater label="Width" collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_width_95_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_width" />
-                                                        </Repeater>
-                                                        <Repeater
-                                                                label="Width As Percent of Sample Frame Width"
-                                                                collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_widthpc_95_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_pc" />
-                                                        </Repeater>
+                                        <Node label="Active (95% Confidence Interval)">
+                                                <Children collapsed="true">
+                                                        <Node label="30 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+                                                        <Node label="5 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+
                                                 </Children>
                                         </Node>
-                                        <Node label="68% Confidence Interval">
-                                                <Children>
-                                                        <Repeater label="Area" collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_area_68_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_area" />
-                                                        </Repeater>
-                                                        <Repeater
-                                                                label="Area As Percent of Sample Frame Area"
-                                                                collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_areapc_68_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_pc" />
-                                                        </Repeater>
-                                                        <Repeater label="Width" collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_width_68_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_width" />
-                                                        </Repeater>
-                                                        <Repeater
-                                                                label="Width As Percent of Sample Frame Width"
-                                                                collapsed="true"
-                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[starts-with(@lyrName, 'vw_widthpc_68_')]">
-                                                                <Node xpathlabel="Name"
-                                                                        type="polygon"
-                                                                        symbology="epoch_pc" />
-                                                        </Repeater>
+                                        <Node label="Active (68% Confidence Interval)">
+                                                <Children collapsed="true">
+                                                        <Node label="30 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '30yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+                                                        <Node label="5 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'active') and contains(@lyrName, '5yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+
                                                 </Children>
                                         </Node>
+
+                                        <Node label="Water (95% Confidence Interval)">
+                                                <Children collapsed="true">
+                                                        <Node label="30 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+                                                        <Node label="5 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_95_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+
+                                                </Children>
+                                        </Node>
+
+                                        <Node label="Water (68% Confidence Interval)">
+                                                <Children collapsed="true">
+                                                        <Node label="30 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '30yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+                                                        <Node label="5 Years">
+                                                                <Children collapsed="true">
+                                                                        <Repeater label="Width"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_width_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_width" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Width Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_widthpc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+
+                                                                        <Repeater label="Area"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_area_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_area" />
+                                                                        </Repeater>
+                                                                        <Repeater
+                                                                                label="Area Percent"
+                                                                                collapsed="true"
+                                                                                xpath="Realizations/Realization/Outputs/Geopackage[@id='RSDYNAMICS_DGOS']/Layers/Vector[contains(@lyrName, '_68_') and contains(@lyrName, 'wet') and contains(@lyrName, '5yr') and contains(@lyrName, '_areapc_')]">
+                                                                                <Node
+                                                                                        xpathlabel="Name"
+                                                                                        type="polygon"
+                                                                                        symbology="epoch_pc" />
+                                                                        </Repeater>
+                                                                </Children>
+
+                                                        </Node>
+
+
+                                                </Children>
+                                        </Node>
+
+
                                 </Children>
                         </Node>
 
