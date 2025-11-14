@@ -1,0 +1,65 @@
+{
+  "legend": [
+    [
+      "#440154",
+      "0 - 0"
+    ],
+    [
+      "#3b528b",
+      "0 - 0"
+    ],
+    [
+      "#21908d",
+      "0 - 0.021"
+    ],
+    [
+      "#5dc963",
+      "0.021 - 0.057"
+    ],
+    [
+      "#fde725",
+      "0.057 - 1.0"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "dgo-metrics-sample-byd148",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "value"
+          ],
+          0,
+          "#440154",
+          0.000001,
+          "#3b528b",
+          0.021,
+          "#21908d",
+          0.057,
+           "#5dc963",
+          1.0,
+          "#fde725"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "outline",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "paint": {
+        "line-width": 0.1
+      }
+    }
+  ]
+}
