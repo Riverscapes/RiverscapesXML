@@ -38,4 +38,4 @@ You might also need to rebuild and redeploy any lambda works. Look for `PROGRAMS
 
 ## Riverscapes Metadata
 
-Definitions and tools for defining layer definitions. Has its own [README](rivescapes_metadata/README.md).
+Definitions and tools for defining layer definitions. Has its own [README](riverscapes_metadata/README.md).
