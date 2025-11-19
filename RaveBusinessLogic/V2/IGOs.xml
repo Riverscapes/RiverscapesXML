@@ -5,11 +5,6 @@
   <ProjectType>igos</ProjectType>
   <Node xpathlabel="Name">
     <Children collapsed="true">
-      <Node label="Inputs">
-        <Children collapsed="false">
-          <Node label="Area of Interest Extent" type="polygon" xpath="project_bounds.geojson" />
-        </Children>
-      </Node>
       <Node label="Riverscape Metrics" xpath="Realizations/Realization">
         <Children collapsed="false">
           <Node label="Beaver Metrics">
@@ -278,6 +273,9 @@
       </Node>
       <Node label="Inputs" xpath="Realizations/Realization">
         <Children collapsed="true">
+          <Node label="Area of Interest Extent" type="polygon"
+            xpath="Datasets/Geopackage[@id='InputAOI']/Layers/Vector[@lyrName='AOI']" id="aoi"
+            symbology="AOI" />
           <Node label="Sample Frames">
             <Children collapsed="true">
               <Node label="Integrated Geographic Objects (IGOs)"
@@ -286,16 +284,19 @@
               <Node label="HUC10 Boundaries"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='huc10']" type="polygon"
                 id="huc10" symbology="HUC10" />
+              <Node label="List of Source projects" type="file"
+                xpath="Logs/LogFile[@id='source_projects']" />
             </Children>
           </Node>
         </Children>
       </Node>
-      <Node label="Log File" xpath="Logs/LogFile" type="file" />
+      <Node label="Log File" xpath="Logs/LogFile[@id='LOG']" type="file" />
     </Children>
   </Node>
   <Views default="VB">
-    <View name="Valley Bottom" id="VB">
+    <View name="Valley Bottom Acres per Mile" id="VB">
       <Layers>
+        <Layer id="aoi" />
         <Layer id="ac_vb_mi" />
       </Layers>
     </View>
