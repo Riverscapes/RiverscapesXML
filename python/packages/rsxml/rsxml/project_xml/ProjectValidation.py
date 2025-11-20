@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import List
 import os
 from rsxml.logging import Logger
-from rsxml.project_xml import project_xml
+## Import project_xml only inside methods to avoid circular import
 from rsxml.validation import validate_project_file
 
 
@@ -30,7 +30,9 @@ class ProjectValidation:
     def valid(self):
         return len(self.errors) == 0
 
-    def _validate_dataset(self, dataset: project_xml.Dataset):
+    def _validate_dataset(self, dataset):
+        # Import Dataset here to avoid circular import
+        from rsxml.project_xml import Dataset
         path = dataset.path
 
     def _validate(self):
@@ -65,7 +67,9 @@ class ProjectValidation:
                     self.all_files.append(os.path.join(relpath, file))
 
         # Now parse the Project file
-        proj = project_xml.Project.load_project(project_xml_path)
+        # Import Project here to avoid circular import
+        from rsxml.project_xml import Project
+        proj = Project.load_project(project_xml_path)
 
         for dataset in proj.common_datasets:
             self._validate_dataset(dataset)
