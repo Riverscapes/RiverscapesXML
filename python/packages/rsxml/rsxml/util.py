@@ -113,7 +113,7 @@ def safe_remove_dir(dir_path):
         file_path (str or Path): Directory path to remove.
     """
     log = Logger("safe_remove_dir")
-    path = Path (dir_path)
+    path = Path(dir_path)
     try:
         shutil.rmtree(dir_path, ignore_errors=True)
         log.debug(f'Directory removed: {dir_path}')
@@ -133,10 +133,11 @@ def safe_makedirs(dir_create_path):
 
     # Safety check on path lengths
     if len(str(path)) < 5 or len(path.parts) <= 2:
-        raise Exception(f'Invalid path: {path}')
+        raise ValueError(f'Invalid path: {path}')
 
-    if path.exists() and path.isfile():
-        raise Exception(f'Can\'t create directory if there is a file of the same name: {path}')
+    if path.exists() and path.is_file():
+        raise FileExistsError(
+            f'Can\'t create directory if there is a file of the same name: {path}')
 
     if not path.exists():
         try:
@@ -190,7 +191,8 @@ def get_obj_size(obj):
 
         # Filter object that are already marked.
         # Using dict notation will prevent repeated objects.
-        new_refr = {o_id: o for o_id, o in all_refr if o_id not in marked and not isinstance(o, type)}
+        new_refr = {o_id: o for o_id,
+                    o in all_refr if o_id not in marked and not isinstance(o, type)}
 
         # The new obj_q will be the ones that were not marked,
         # and we will update marked with their ids so we will
