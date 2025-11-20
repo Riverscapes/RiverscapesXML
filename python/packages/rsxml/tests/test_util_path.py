@@ -35,17 +35,17 @@ class UtilPathTest(unittest.TestCase):
         util.safe_remove_dir(self.test_dir_subdir)
         self.assertFalse(os.path.exists(self.test_dir_subdir))
 
-    # def test_safe_makedirs_with_path(self):
-    #     util.safe_makedirs(self.test_dir_path)
-    #     self.assertTrue(self.test_dir_path.is_dir())
-    #     util.safe_remove_dir(self.test_dir_path)
-    #     self.assertFalse(self.test_dir_path.exists())
+    def test_safe_makedirs_with_path(self):
+        util.safe_makedirs(self.test_dir_path)
+        self.assertTrue(self.test_dir_path.is_dir())
+        util.safe_remove_dir(self.test_dir_path)
+        self.assertFalse(self.test_dir_path.exists())
 
-    # def test_safe_remove_dir_with_path(self):
-    #     self.test_dir_path.mkdir(exist_ok=True)
-    #     self.assertTrue(self.test_dir_path.is_dir())
-    #     util.safe_remove_dir(self.test_dir_path)
-    #     self.assertFalse(self.test_dir_path.exists())
+    def test_safe_remove_dir_with_path(self):
+        self.test_dir_path.mkdir(exist_ok=True)
+        self.assertTrue(self.test_dir_path.is_dir())
+        util.safe_remove_dir(self.test_dir_path)
+        self.assertFalse(self.test_dir_path.exists())
 
 if __name__ == "__main__":
     unittest.main()

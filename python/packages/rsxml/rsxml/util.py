@@ -1,19 +1,16 @@
-"""_summary_
+"""Utility functions for file and directory operations, formatting, and metadata parsing.
 
-Raises:
-    Exception: _description_
-    Exception: _description_
-    e: _description_
-    Exception: _description_
-    Exception: _description_
-    Exception: _description_
-    Exception: _description_
+This module provides helper functions for:
+- Batch processing of iterables
+- Safe file and directory removal
+- File comparison using size and MD5 hash
+- Safe recursive directory creation
+- Formatting byte sizes
+- Calculating object memory size
+- Formatting durations in a human-readable way
+- Parsing metadata from strings
 
-Returns:
-    _type_: _description_
-
-Yields:
-    _type_: _description_
+Logging is used for error handling and debugging.
 """
 import sys
 import gc
@@ -21,6 +18,7 @@ import shutil
 import hashlib
 import os
 import math
+from pathlib import Path
 from rsxml.logging.logger import Logger
 
 # Set if this environment variable is set don't show any UI
@@ -112,9 +110,10 @@ def safe_remove_dir(dir_path):
     """Remove a directory without throwing an error
 
     Args:
-        file_path ([type]): [description]
+        file_path (str or Path): Directory path to remove.
     """
     log = Logger("safe_remove_dir")
+    path = Path (dir_path)
     try:
         shutil.rmtree(dir_path, ignore_errors=True)
         log.debug(f'Directory removed: {dir_path}')
@@ -127,25 +126,26 @@ def safe_makedirs(dir_create_path):
     """safely, recursively make a directory
 
     Arguments:
-        dir_create_path {[type]} -- [description]
+        dir_create_path (str or Path): Directory path to create.
     """
     log = Logger("MakeDir")
+    path = Path(dir_create_path)
 
     # Safety check on path lengths
-    if len(dir_create_path) < 5 or len(dir_create_path.split(os.path.sep)) <= 2:
-        raise Exception(f'Invalid path: {dir_create_path}')
+    if len(str(path)) < 5 or len(path.parts) <= 2:
+        raise Exception(f'Invalid path: {path}')
 
-    if os.path.exists(dir_create_path) and os.path.isfile(dir_create_path):
-        raise Exception(f'Can\'t create directory if there is a file of the same name: {dir_create_path}')
+    if path.exists() and path.isfile():
+        raise Exception(f'Can\'t create directory if there is a file of the same name: {path}')
 
-    if not os.path.exists(dir_create_path):
+    if not path.exists():
         try:
-            log.info(f'Folder not found. Creating: {dir_create_path}')
-            os.makedirs(dir_create_path)
+            log.info(f'Folder not found. Creating: {path}')
+            path.mkdir(parents=True, exist_ok=True)
         except Exception as err:
             # Possible that something else made the folder while we were trying
-            if not os.path.exists(dir_create_path):
-                log.error(f'Could not create folder: {dir_create_path}')
+            if not path.exists():
+                log.error(f'Could not create folder: {path}')
                 raise err
 
 
