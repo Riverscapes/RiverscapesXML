@@ -1,0 +1,57 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(49, 49, 49)", "Bridge"],
+    ["rgb(140, 81, 10)", "Culvert"],
+    ["rgb(191, 129, 45)", "Multiple Culvert"],
+    ["rgb(33, 102, 172)", "Ford"],
+    ["rgb(146, 197, 222)", "No Crossing"],
+    [ "rgb(2, 199, 183)", "Removed Crossing"],
+    ["rgb(13, 152, 92)", "Buried Stream"],
+    ["rgb(178, 24, 43)", "Inaccessible"],
+    ["rgb(224, 130, 20)", "Partially Inaccessible"],
+    ["rgb(230, 86, 44)", "No Upstream Channel"],
+    ["rgb(135, 135, 135)", "Bridge Adequate"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+        {
+            "id": "crossing-6my4qc",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "crossing-6my4qc",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "crossing_type"],
+                    ["Bridge"],
+                    "rgb(49, 49, 49)",
+                    ["Culvert"],
+                    "rgb(140, 81, 10)",
+                    ["Multiple Culvert"],
+                    "rgb(191, 129, 45)",
+                    ["Ford"],
+                    "rgb(33, 102, 172)",
+                    ["No Crossing"],
+                    "rgb(146, 197, 222)",
+                    ["Removed Crossing"],
+                    "rgb(2, 199, 183)",
+                    ["Buried Stream"],
+                    "rgb(13, 152, 92)",
+                    ["Inaccessible"],
+                    "rgb(178, 24, 43)",
+                    ["Partially Inaccessible"],
+                    "rgb(224, 130, 20)",
+                    ["No Upstream Channel"],
+                    "rgb(230, 86, 44)",
+                    ["Bridge Adequate"],
+                    "rgb(135, 135, 135)",
+                    "rgb(192, 177, 0)"
+                ],
+                "circle-stroke-color": "rgb(255, 255, 255)",
+                "circle-stroke-width": 0.75
+            }
+        }
+  ]        
+}
