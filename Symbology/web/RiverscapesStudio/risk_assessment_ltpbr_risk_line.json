@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(192, 0, 0)", "High Probability of Being Negtively Impacted by LTPBR"],
+    ["rgb(255, 255, 0)", "Medium Probability of Being Negtively Impacted by LTPBR"],
+    ["rgb(0, 176, 80)", "Low Probability of Being Negtively Impacted by LTPBR"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+{
+            "id": "roads-aegydk",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "roads-aegydk",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "ltpbr_risk"],
+                    ["High Probability of Being Negtively Impacted by LTPBR"],
+                    "rgb(192, 0, 0)",
+                    ["Medium Probability of Being Negtively Impacted by LTPBR"],
+                    "rgb(255, 255, 0)",
+                    ["Low Probability of Being Negtively Impacted by LTPBR"],
+                    "rgb(0, 176, 80)",
+                    "rgb(192, 177, 0)"
+                ],
+                "line-width": 2
+            }
+        }
+    ]
+}

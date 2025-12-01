@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(23, 87, 158)", "Perennial"],
+    ["rgb(117, 223, 254)", "Non-Perennial"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+ {
+            "id": "observations-cl4sd0",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "Observations-cl4sd0",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "flow_type"],
+                    ["Perennial"],
+                    "rgb(23, 87, 158)",
+                    ["Non-Perennial"],
+                    "rgb(117, 223, 254)",
+                    "rgb(193, 177, 0)"
+                ],
+                "circle-stroke-width": 0.75,
+                "circle-stroke-color": "rgb(255, 255, 255)"
+            }
+        }
+    ]
+}

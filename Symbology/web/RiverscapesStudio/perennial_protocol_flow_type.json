@@ -1,0 +1,46 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 76, 168)", "Perennial"],
+    ["rgb(117, 223, 255)", "Non-Perennial"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+ {
+            "id": "flow-type-acishz (1)",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "flow_type-acishz",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "flow_type"],
+                    ["Non-Perennial"],
+                    "rgb(117, 223, 255)",
+                    "rgba(0, 0, 0, 0)"
+                ],
+                "line-dasharray": [4, 1, 2, 1, 2, 1]
+            }
+        },
+        {
+            "id": "flow-type-acishz",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "flow_type-acishz",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "flow_type"],
+                    ["Perennial"],
+                    "rgb(0, 76, 168)",
+                    ["Non-Perennial"],
+                    "rgba(0, 0, 0, 0)",
+                    "rgb(193, 177, 0)"
+                ],
+                "line-width": 2
+            }
+        }
+    ]
+}

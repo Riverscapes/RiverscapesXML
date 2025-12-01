@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(113, 149, 182)", "Channel"],
+    ["rgb(129, 220, 126)", "Active Floodplain"],
+    ["rgb(158, 202, 165)", "Inactive Floodplain"],
+    ["rgb(240, 177, 109)", "Terrace"],
+    ["rgb(245, 243, 153)", "Alluvial Fan"],
+    ["rgb(234, 244, 49)", "Colluvial Fan"],
+    ["rgb(197, 195, 194)", "Moraine"],
+    ["rgb(201, 188, 163)", "Hillslope/Upland"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+         {
+            "id": "tier-1-extents-bdyf3f",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "tier_1_extents-bdyf3f",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "Type"],
+                    ["Channel"],
+                    "rgb(113, 149, 182)",
+                    ["Active Floodplain"],
+                    "rgb(129, 220, 126)",
+                    ["Inactive Floodplain"],
+                    "rgb(158, 202, 165)",
+                    ["Terrace"],
+                    "rgb(240, 177, 109)",
+                    ["Alluvial Fan"],
+                    "rgb(245, 243, 153)",
+                    ["Colluvial Fan"],
+                    "rgb(234, 244, 49)",
+                    ["Moraine"],
+                    "rgb(197, 195, 194)",
+                    ["Hillslope/Upland"],
+                    "rgb(201, 188, 163)",
+                    "rgb(193, 177, 0)"
+                ],
+                "fill-opacity": 0.7,
+                "fill-outline-color": "rgb(0, 0, 0)"
+            }
+        },
+        {
+            "id": "tier-1-extents-bdyf3f (1)",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "tier_1_extents-bdyf3f",
+            "layout": {},
+            "paint": {
+                "line-width": 0.25,
+                "line-color": "rgb(35, 35, 35)",
+                "line-opacity": 0.7
+            }
+        }
+  ]        
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(13, 206, 71)", "Undeveloped Range or Forest"],
+    ["rgb(254, 216, 76)", "Crop, Pasture, or Hay"],
+    ["rgb(105, 105, 105)", "Developed"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+{
+            "id": "land-use-3siped",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "land_use-3siped",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "current_land_use"],
+                    ["Undeveloped Range or Forest"],
+                    "rgba(13, 206, 71, 0.6)",
+                    ["Crop, Pasture, or Hay"],
+                    "rgba(254, 216, 76, 0.6)",
+                    ["Developed"],
+                    "rgba(105, 105, 105, 0.6)",
+                    "rgb(193, 177, 0)"
+                ]
+            }
+        },
+        {
+            "id": "land-use-3siped (1)",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "land_use-3siped",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "current_land_use"],
+                    ["Undeveloped Range or Forest"],
+                    "rgb(3, 204, 63)",
+                    ["Crop, Pasture, or Hay"],
+                    "rgb(254, 216, 76)",
+                    ["Developed"],
+                    "rgb(255, 255, 255)",
+                    "#000000"
+                ],
+                "line-width": 1.5,
+                "line-dasharray": [3.5, 1]
+            }
+        }
+    ]
+}
