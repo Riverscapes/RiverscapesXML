@@ -36,6 +36,7 @@ from pathlib import Path
 
 from jsonschema import Draft7Validator
 from urllib.request import urlopen
+import pint
 
 from riverscapes_metadata import SCHEMA_URL
 # FOR TESTING, can use a different path, e.g. 
@@ -51,6 +52,7 @@ OUTPUT_COLUMNS = [  # logical full schema (including partition columns)
     "layer_type",
     "layer_path",
     "layer_theme",
+    "layer_source_title",
     "layer_source_url",
     "layer_data_product_version",
     "layer_description",
@@ -67,7 +69,17 @@ OUTPUT_COLUMNS = [  # logical full schema (including partition columns)
     # populated by flatten script
     "commit_sha",
 ]
+ureg = pint.get_application_registry()
 
+def is_valid_unit(str) -> bool: 
+    """check if supplied string parses as a Pint unit, or is 'NA' """
+    if str == 'NA':
+        return True
+    try: 
+        unit = ureg.Unit(str)
+        return True
+    except Exception:
+        return False
 
 def git_commit_sha() -> str | None:
     """Return current git commit SHA or None if not available."""
@@ -81,12 +93,6 @@ def git_commit_sha() -> str | None:
 def find_catalogs(root: Path) -> list[Path]:
     """Find all catalogs in the repository."""
     return [p for p in root.rglob(CATALOG_FILENAME)]
-
-
-def load_json(path: Path) -> dict:
-    """Load JSON from disk."""
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
 
 
 def safe_get(d: dict, key: str, default: str = "") -> str:
@@ -108,8 +114,19 @@ def _load_remote_validator() -> Draft7Validator | None:
 
 
 def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draft7Validator | None, errors: list[dict]) -> list[dict]:
-    """Flatten a unified layer_definitions.json file into row dicts."""
-    data = load_json(defs_path)
+    """Flatten a unified layer_definitions.json file into row dicts. """
+
+    rows: list[dict] = []
+    try: 
+        with defs_path.open("r", encoding="utf-8") as f:
+            data= json.load(f)
+    except json.decoder.JSONDecodeError as e:
+        errors.append({
+            "file": str(defs_path),
+            "type": "file",
+            "message": f"Problem loading file: {e}"
+        })
+        return rows
     if validator:
         for e in validator.iter_errors(data):
             errors.append({
@@ -121,7 +138,6 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
     authority_name = data.get("authority_name", "")
     tool_schema_version = data.get("tool_schema_version")
     layers = data.get("layers", [])
-    rows: list[dict] = []
     for layer in layers:
         layer_id = layer.get("layer_id") or layer.get("layer_name") or ""
         if not layer_id:
@@ -130,6 +146,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
         layer_type = layer.get("layer_type", "")
         layer_path = layer.get("path", "")
         layer_theme = layer.get("theme", "")
+        layer_source_title = layer.get("source_title", "")
         layer_source_url = layer.get("source_url", "")
         layer_data_product_version = layer.get("data_product_version", "")
         layer_description = layer.get("description", "")
@@ -138,6 +155,15 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
             cname = col.get("name", "")
             if not cname:
                 continue
+            # validate units
+            unit_val = col.get("data_unit","")
+            if not is_valid_unit(unit_val):
+                errors.append ({
+                    "file": str(defs_path),
+                    "type": "units",
+                    "message": f"Invalid unit '{unit_val}' for layer '{layer_id}', column '{cname}'."
+                })
+
             default_val = col.get("default_value")
             # Normalize default_value to simple JSON-compatible scalar or None; store as string for heterogeneity
             if isinstance(default_val, (dict, list)):
@@ -155,6 +181,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "layer_type": layer_type,
                 "layer_path": layer_path,
                 "layer_theme": layer_theme,
+                "layer_source_title" : layer_source_title,
                 "layer_source_url": layer_source_url,
                 "layer_data_product_version": layer_data_product_version,
                 "layer_description": layer_description,
@@ -190,10 +217,11 @@ def write_parquet(rows: list[dict], output: Path, columns: list[str]) -> None:
         "layer_id": pa.string(),
         "layer_name": pa.string(),
         "layer_type": pa.string(),
-    "layer_path": pa.string(),
-    "layer_theme": pa.string(),
-    "layer_source_url": pa.string(),
-    "layer_data_product_version": pa.string(),
+        "layer_path": pa.string(),
+        "layer_theme": pa.string(),
+        "layer_source_title": pa.string(),
+        "layer_source_url": pa.string(),
+        "layer_data_product_version": pa.string(),
         "layer_description": pa.string(),
         "name": pa.string(),
         "friendly_name": pa.string(),
@@ -232,6 +260,7 @@ def group_rows(rows: list[dict]) -> dict[tuple[str, str, str], list[dict]]:
 
 
 def main() -> None:
+    """On success or failure writes to index.json in the dist folder"""
     args = parse_args()
     root = Path(args.root).resolve()
     base_output = Path(args.output)
@@ -247,10 +276,14 @@ def main() -> None:
     for c in catalogs:
         all_rows.extend(flatten_definitions(c, commit_sha=commit_sha, validator=catalog_validator, errors=validation_errors))
 
+    # Index now written to top-level dist/ directory (sibling to metadata/ partitions)
+    top_dist = (root / "dist")
+    top_dist.mkdir(parents=True, exist_ok=True)
+    index_path = top_dist / "index.json"
+
     # Loud failure on any validation errors BEFORE writing partition outputs.
     if validation_errors:
-        base_output.mkdir(parents=True, exist_ok=True)
-        index_path = base_output / "index.json"
+        # write index.json
         with index_path.open("w", encoding="utf-8") as f:
             json.dump({
                 "generated_at": _dt.date.today().isoformat(),
@@ -260,6 +293,13 @@ def main() -> None:
                 "validation_errors": validation_errors,
                 "status": "validation_failed"
             }, f, indent=2)
+        # Print errors to the console for visibility in GitHub Actions
+        print("\n--- Validation Errors ---")
+        for error in validation_errors:
+            file = error.get("file", "N/A")
+            message = error.get("message", "No message")
+            print(f"File: {file}\nError: {message}\n")
+        print("-------------------------")
         print(f"Validation failed with {len(validation_errors)} error(s). See {index_path}")
         raise SystemExit(1)
 
@@ -286,10 +326,6 @@ def main() -> None:
         })
 
     # Write index.json
-    # Index now written to top-level dist/ directory (sibling to metadata/ partitions)
-    top_dist = (root / "dist")
-    top_dist.mkdir(parents=True, exist_ok=True)
-    index_path = top_dist / "index.json"
     with index_path.open("w", encoding="utf-8") as f:
         json.dump({
             "generated_at": _dt.date.today().isoformat(),

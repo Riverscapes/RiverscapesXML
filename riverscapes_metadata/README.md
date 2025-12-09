@@ -11,7 +11,7 @@ This schema is published to xml.riverscapes.net and defines the information, req
 - `path`: relative or absolute location of the layer delivery artifact (S3 key, repo path, etc.).
 - `theme`: optional higher-level grouping for the layer itself (distinct from column `theme`).
 - Expanded `layer_type` options aligned with RiverscapesProject.xsd `DataSetContainerType` (e.g., `Raster`, `Vector`, `Geopackage`).
-- Optional provenance fields (`source_url`, `data_product_version`).
+- Optional provenance fields (`source_title`, `source_url`, `data_product_version`).
 
 ### riverscapes_metadata \ export_layer_definitions_for_s3
 
@@ -40,6 +40,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS layer_definitions (
   layer_type                string  COMMENT 'Layer category (CommonDatasetRef, Raster, Vector, Geopackage, etc.)',
   layer_path                string  COMMENT 'Relative or absolute path to the delivered layer artifact',
   layer_theme               string  COMMENT 'High level grouping for the layer (e.g., Hydrology, Vegetation)',
+  layer_source_title        string  COMMENT 'External provenance or documentation title'
   layer_source_url          string  COMMENT 'Provenance or documentation URL for the layer',
   layer_data_product_version string COMMENT 'Data vintage/year or version string',
   layer_description         string  COMMENT 'Human-readable summary of the layer',
@@ -54,7 +55,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS layer_definitions (
   default_value     string  COMMENT 'Default value for new records',
   commit_sha        string  COMMENT 'git commit at time of harvest from authority json'
 )
-COMMENT 'Unified Riverscapes layer column definitions (structural + descriptive metadata)'
+COMMENT 'Unified Riverscapes layer column definitions (structural + descriptive metadata).'
 PARTITIONED BY (
   authority          string COMMENT 'Repository root name (publishing authority)',
   authority_name     string COMMENT 'Issuing package/tool authority name',
