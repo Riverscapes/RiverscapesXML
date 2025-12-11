@@ -9,10 +9,12 @@ dependencies = [
     "pyarrow>=22.0.0",
     "urllib3>=2.5.0",
     "pint>=0.25",
+    "boto3>=1.42.6",
 ]
 
 [project.scripts]
 export-layer-definitions-for-s3 = "riverscapes_metadata.export_layer_definitions_for_s3:main"
+publish-metadata-to-s3 = "riverscapes_metadata.publish_metadata:main"
 
 [build-system]
 requires = ["setuptools>=61", "wheel"]
