@@ -1,6 +1,6 @@
 {
   "$schema": "https://xml.riverscapes.net/riverscapes_metadata/schema/layer_definitions.schema.json",
-  "authority_name": "vbet example",
+  "authority_name": "vbet example (TESTING)",
   "tool_schema_version": "1.0.0",
   "layers": [
     {
@@ -267,6 +267,8 @@
       "layer_type": "Raster",
       "description": "The raster valley bottom output, where the valley associated with each level path is a unique raster pixel value.",
       "path": "intermediates/vbet_level_path_zones.tif",
+      "source_title": "Source Title Example",
+      "source_url": "https://tools.riverscapes.net/vbet/data#discrete-geographic-objects-dgos-vbet_dgos",
       "theme": "Intermediates"
     },
     {
