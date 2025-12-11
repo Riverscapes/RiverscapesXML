@@ -1,6 +1,6 @@
 [project]
 name = "riverscapes-metadata"
-version = "0.1.1"
+version = "0.1.2"
 description = "tools for managing layer definitions in riverscapes-tools and other repos that generate data"
 readme = "README.md"
 requires-python = ">=3.12"
