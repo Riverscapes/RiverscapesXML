@@ -431,9 +431,9 @@
             </Fields>            
         </Layer>
         <Layer id="recovery_potential" version="1.0" geom_type="Polygon">
-            <Label>Recovery Potential</Label>
-            <Symbology>recovery_potential.qml</Symbology>
-            <Description>Recovery Potential Layer</Description>
+            <Label>Recovery Space</Label>
+            <Symbology>recovery_space.qml</Symbology>
+            <Description>Recovery Space Layer</Description>
             <MenuItems>
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
@@ -1003,9 +1003,9 @@
             </Parameters>
         </Metric>
         <Metric id="percent_recovery_potential" version="1.0" calculation_machine_code="area_proportion">
-            <Label>Proportion of Riverscape with Recovery Potential</Label>
+            <Label>Proportion of Riverscape with Recovery Space</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The percent of the riverscape that has recovery potential</Description>
+            <Description>The percent of the riverscape that has recovery space</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>

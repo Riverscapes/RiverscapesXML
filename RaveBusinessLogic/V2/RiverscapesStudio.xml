@@ -114,9 +114,9 @@
                                         <Node label="SEM Cluer and Thorne" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'cem_phases')]" type="polygon" symbology="cem_phases" id="cem_phases"/>
                                     </Children>
                                 </Node>
-                                <Node label="Recovery Potential">
+                                <Node label="Recovery Space">
                                     <Children collapsed="true">
-                                        <Node label="Recovery Potential" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'recovery_potential')]" type="polygon" symbology="recovery_potential" id="recovery_potential"/>
+                                        <Node label="Recovery Space" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'recovery_potential')]" type="polygon" symbology="recovery_space" id="recovery_potential"/>
                                     </Children>
                                 </Node>
                                 <Node label="Risk Potential">
