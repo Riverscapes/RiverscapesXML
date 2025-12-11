@@ -33,6 +33,14 @@ Shared/mean_annual_precip
 Shared/Vegetation_Departure
 Shared/Veg_Height
 Shared/wsDEM
+RSDynamics/dynamics_raster
+RSDynamics/class_bin_water
+RSDynamics/classification_probability
+RSDynamics/wetted_pc
+RSDynamics/frequency_percent
+RSDynamics/class_bin_active
+RSDynamics/frequency_normalized
+RSDynamics/alluvial_pc
 BRAT/veg_suitability
 pyBRAT/py_lu
 pyBRAT/py_VEG_CODE
@@ -45,6 +53,10 @@ GUT/ev_mBendIndex
 GUT/ev_DEMSlope_Raster
 GUT/ev_resDepth
 GUT/ev_bfCh
+Grazing/slope_percent
+Grazing/water_prox
+Grazing/grazing_likelihood
+Grazing/veg_suit_raster
 Hydro/wDepth
 Hydro/velocityMag
 Hydro/depthError

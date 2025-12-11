@@ -10,7 +10,7 @@ This one runs `python/gh_pages_publish.py` does a custom publish to github pages
 
 What does `python/gh_pages_publish.py` do?
 
-### 1. Create digest json file`index.json`
+### 1. Create digest json file `index.json`
 
 Creates `index.json` which contains a digest of every program xml, project XSD, business logic xml and every symbology lyr file for all 3 versions of RAVE. 
 

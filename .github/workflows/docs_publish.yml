@@ -28,13 +28,22 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Sync dependencies
+        run: uv sync
+        working-directory: python
+
       - name: Build public site
-        run: |
-          python python/gh_pages_publish.py
+        run: uv run --project python python gh_pages_publish.py
+        working-directory: python
 
       # Use S3 syncing to deploy this to the appropriate bucket inside rs-web-monorepo VPC Stack
       - uses: jakejarvis/s3-sync-action@master

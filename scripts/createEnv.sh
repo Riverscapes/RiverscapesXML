@@ -2,25 +2,15 @@
 set -eu
 
 # On OSX you must have run `brew install gdal` so that the header files are findable 
-python3 --version
-python3 -m venv .venv
-# Make sure pip is at a good version
-.venv/bin/python3 -m pip install --upgrade pip
+if ! command -v uv >/dev/null 2>&1; then
+  echo "uv is required. Install it from https://docs.astral.sh/uv/." >&2
+  exit 1
+fi
 
-# Now install everything else
-.venv/bin/pip --timeout=120 install -r python/requirements.dev.txt
+ROOT_DIR=$(cd "$(dirname "$0")/.." && pwd)
 
+pushd "$ROOT_DIR/python" >/dev/null
+uv sync --group dev
+popd >/dev/null
 
-# Iterate the string array using for loop
-ORIGPWD=`pwd`
-
-# Symlinking the .venv is useful for VSCode workspaces 
-# trying to find the python interpreter automatically
-array=( "python/packages/rsxml" "python")
-for tooldir in "${array[@]}" ; do 
-  # Install our packages as being editable
-  # .venv/bin/pip install -e $tooldir
-  cd $tooldir
-  ln -sf ../../.venv
-  cd $ORIGPWD
-done
+echo "uv environment ready in python/.venv"
