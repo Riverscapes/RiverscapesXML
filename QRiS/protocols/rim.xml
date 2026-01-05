@@ -162,13 +162,13 @@
             <Precision>3</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="thalwegs">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="type_id">
                         <Value>Main</Value>
                     </AttributeFilter>
                 </DCELayer>
                 <DCELayer layer_id_ref="thalwegs">
-                    <Usage>denominator</Usage>
+                    <Usage>Denominator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
@@ -221,7 +221,7 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
@@ -250,7 +250,7 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="dam_state"> 
                         <Value>Intact</Value>
                     </AttributeFilter>
@@ -282,7 +282,7 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="dam_state"> 
                         <Value>Breached</Value>
                     </AttributeFilter>
@@ -314,7 +314,7 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="dam_state"> 
                         <Value>Blown Out</Value>
                     </AttributeFilter>
@@ -331,7 +331,7 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="denominator"/>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
@@ -344,7 +344,7 @@
             <Precision>3</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="crest_type">
                         <Value>Active</Value>
                     </AttributeFilter>
@@ -434,7 +434,7 @@
             <Precision>3</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
@@ -447,7 +447,7 @@
             <Precision>3</Precision>
             <Parameters>                
                 <DCELayer layer_id_ref="inundation">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="type_id">
                         <Value>Free Flowing</Value>
                     </AttributeFilter>
@@ -463,7 +463,7 @@
             <Precision>3</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="type_id">
                         <Value>Ponded</Value>
                     </AttributeFilter>
@@ -479,7 +479,7 @@
             <Precision>3</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
-                    <Usage>numerator</Usage>
+                    <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="type_id">
                         <Value>Overflow</Value>
                     </AttributeFilter>
