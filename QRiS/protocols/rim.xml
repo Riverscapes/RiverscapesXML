@@ -329,7 +329,7 @@
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
             <Parameters>
-                <InputLayer input_ref="centerline" usage="Denominator"/>
+                <InputLayer input_ref="centerline" usage="denominator"/>
                 <DCELayer layer_id_ref="dam_crests">
                     <Usage>Numerator</Usage>
                 </DCELayer>
