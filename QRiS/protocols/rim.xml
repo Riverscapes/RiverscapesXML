@@ -1,8 +1,8 @@
-<Protocol machine_code="RIM" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+<Protocol machine_code="RIM" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
     <Label>Riverscape Inundation Mapping</Label>
     <Description>Protocol to aid in efficient mapping of structurally forced inundation patterns in beaver impacted riverscapes</Description>
     <URL>https://rim.riverscapes.net/</URL>
-    <Citation>Bartelt K. 2021. Valley Bottom Inundation Patterns in Beaver-Modified Streams: A Potential Proxy for Hydrologic Inefficiency, Masters Thesis, Utah State University: Logan, UT. Available from: https://digitalcommons.usu.edu/etd/8226. DOI: 10.26076/a66b-0708.</Citation>
+    <Citation>Bartelt KM, Belmont P, Gilbert JT, Hammill E, Macfarlane WW, Saunders WC, et al. (2025) Mapping valley bottom inundation patterns from beaver dam activity: A potential proxy for hydrologic inefficiency. PLOS Water 4(11): e0000428. DOI: 10.1371/journal.pwat.0000428</Citation>
     <Author>Karen Bartelt</Author>
     <CreationDate>2025-02-05</CreationDate>
     <UpdatedDate>2025-02-05</UpdatedDate>
@@ -13,11 +13,10 @@
         <Layer id="dam_crests" version="1.0" geom_type="Linestring">
             <Label>Dam Crests</Label>
             <Symbology>dam_crests_rim.qml</Symbology>
-            <Description>Dam Crests Layer</Description>
+            <Description>Representation of the top of a beaver dam</Description>
             <Hierarchy>
-                <HierarchyItem>Assessments</HierarchyItem>
-                <HierarchyItem>Beaver Dam Building</HierarchyItem>
-            </Hierarchy>
+                <HierarchyItem>RIM Protocol Layers</HierarchyItem>
+            </Hierarchy> 
             <Fields>
                 <ListField id="dam_state" version="1.0">
                     <Label>Dam State</Label>
@@ -39,12 +38,10 @@
         <Layer id="thalwegs" version="1.0" geom_type="Linestring">
             <Label>Thalwegs</Label>
             <Symbology>thalwegs_rim.qml</Symbology>
-            <Description>Thalwegs within the riverscape</Description>
+            <Description>The deepest part of the active channel, if imagery doesnt allow map he centerline of the channel</Description>
             <Hierarchy>
-                <HierarchyItem>Observations</HierarchyItem>
-                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
-                <HierarchyItem>Channel</HierarchyItem>
-            </Hierarchy>
+                <HierarchyItem>RIM Protocol Layers</HierarchyItem>
+            </Hierarchy> 
             <Fields>
                 <ListField id="type_id" version="1.0">
                     <Label>Type</Label>
@@ -60,10 +57,9 @@
         <Layer id="inundation" version="1.0" geom_type="Polygon">
             <Label>Inundation</Label>
             <Symbology>inundation_extents_rim.qml</Symbology>
-            <Description>Inundation Extents Layer</Description>
+            <Description>The wetted extent of the riverscape divided into 3 different categories</Description>
             <Hierarchy>
-                <HierarchyItem>Observations</HierarchyItem>
-                <HierarchyItem>Hydraulic Mapping</HierarchyItem>
+                <HierarchyItem>RIM Protocol Layers</HierarchyItem>
             </Hierarchy>    
             <Fields>
                 <ListField id="type_id" version="1.0">
@@ -79,7 +75,7 @@
     </Layers>
     <Metrics>
         <Metric id="riverscape_area" version="1.0" calculation_machine_code="area">
-            <Label>Riverscape Area</Label>
+            <Label>Valley Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The area of the riverscape valley bottom within the sample frame</Description>
             <DefinitionURL/>
@@ -90,7 +86,7 @@
             </Parameters>
         </Metric>
         <Metric id="riverscape_length" version="1.0" calculation_machine_code="length">
-            <Label>Riverscape Length</Label>
+            <Label>Valley Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The length of the riverscape centerline within the sample frame</Description>
             <DefinitionURL/>
@@ -100,7 +96,19 @@
                 <InputLayer input_ref="centerline" usage="metric_layer"/>
             </Parameters>
         </Metric>
-        <Metric id="channel_gradient" version="1.0" calculation_machine_code="gradient">
+       <!-- <Metric id="integrated_valley_width" version="1.0" calculation_machine_code="proportion">
+            <Label>Integrated Valley Width</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Valley width, the area of the valley divided by the valley centerline length</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="Numerator"/>
+                <InputLayer input_ref="centerline" usage="Denominator" />
+            </Parameters>
+        </Metric> -->
+       <Metric id="channel_gradient" version="1.0" calculation_machine_code="gradient">
             <Label>Channel Gradient</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The channel gradient of the main channel</Description>
@@ -108,6 +116,7 @@
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
             <Parameters>
+                <InputLayer input_ref="dem" usage="surface"/>
                 <DCELayer layer_id_ref="thalwegs">
                     <AttributeFilter field_id_ref="type_id">
                         <Value>Main</Value>
@@ -116,7 +125,7 @@
             </Parameters>
         </Metric>
         <Metric id="thalweg_length_main" version="1.0" calculation_machine_code="length">
-            <Label>Thalweg Length (main)</Label>
+            <Label>Channel Length (main)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The length of the main channel within the riverscape sample frame</Description>
             <DefinitionURL/>
@@ -132,7 +141,7 @@
             </Parameters>
         </Metric>
         <Metric id="thalweg_length_all" version="1.0" calculation_machine_code="length">
-            <Label>Thalweg Length (all)</Label>
+            <Label>Channel Length (all)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The length of the all channels within the riverscape sample frame</Description>
             <DefinitionURL/>
@@ -145,7 +154,7 @@
             </Parameters>
         </Metric>
         <Metric id="percent_thalweg_main" version="1.0" calculation_machine_code="proportion">
-            <Label>Percent Thalweg that is the Main Thalweg </Label>
+            <Label>Proportion of Total Thalweg that is the Main Thalweg </Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The percent of the thalwegs that is the main thalweg</Description>
             <DefinitionURL/>
@@ -164,7 +173,7 @@
             </Parameters>
         </Metric>
         <Metric id="sinuosity" version="1.0" calculation_machine_code="sinuosity">
-            <Label>Sinuosity</Label>
+            <Label>Sinuosity (main)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The sinuosity of the main channel in the riverscape sample frame</Description>
             <DefinitionURL/>
@@ -191,9 +200,9 @@
             </Parameters>
         </Metric>
         <Metric id="dam_count" version="1.0" calculation_machine_code="count">
-            <Label>Dam Count</Label>
+            <Label>Number of Dams</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of dams in each sample frame</Description>
+            <Description>The number of beaver dams in each sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
@@ -217,9 +226,9 @@
             </Parameters>
         </Metric>
         <Metric id="dam_count_intact" version="1.0" calculation_machine_code="count">
-            <Label>Intact Dam Count</Label>
+            <Label>Number of Intact Dams</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of dams in each sample frame</Description>
+            <Description>The number of intact beaver dams in each sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
@@ -234,7 +243,7 @@
         <Metric id="dam_density_intact" version="1.0" calculation_machine_code="count">
             <Label>Intact Dam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of beaver dams per length of riverscape</Description>
+            <Description>The number of intact beaver dams per length of riverscape</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
@@ -249,9 +258,9 @@
             </Parameters>
         </Metric>
         <Metric id="dam_count_breached" version="1.0" calculation_machine_code="count">
-            <Label>Breached Dam Count</Label>
+            <Label>Number of Breached Dams</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of dams in each sample frame</Description>
+            <Description>The number of breached beaver dams in each sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
@@ -266,7 +275,7 @@
         <Metric id="dam_density_breached" version="1.0" calculation_machine_code="count">
             <Label>Breached Dam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of beaver dams per length of riverscape</Description>
+            <Description>The number of breached beaver dams per length of riverscape</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
@@ -281,9 +290,9 @@
             </Parameters>
         </Metric>
         <Metric id="dam_count_blownout" version="1.0" calculation_machine_code="count">
-            <Label>Blown Out Dam Count</Label>
+            <Label>Number of Blown Out Dams</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of dams in each sample frame</Description>
+            <Description>The number of blown out beaver dams in each sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
@@ -298,7 +307,7 @@
         <Metric id="dam_density_blownout" version="1.0" calculation_machine_code="count">
             <Label>Blown Out Dam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of beaver dams per length of riverscape</Description>
+            <Description>The number of blown out beaver dams per length of riverscape</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
@@ -308,6 +317,171 @@
                     <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="dam_state"> 
                         <Value>Blown Out</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="crest_length_ratio_all" version="1.0" calculation_machine_code="proportion">
+            <Label>Ratio of Dam Crest Length to Valley Length (all dams)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of all dams crest length to to the valley length </Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="denominator"/>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Numerator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="crest_length_structurally_forcing" version="1.0" calculation_machine_code="proportion">
+            <Label>Percent of Dam Crest Length that is Actively Structurally Forcing Flow</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of  dam crest length that is classified as actively structurally forcing flow to the length of all dam crests</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="crest_type">
+                        <Value>Active</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="dam_crests">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+       <!--  <Metric id="integrated_wetted_width" version="1.0" calculation_machine_code="proportion">
+            <Label>Wetted width, the area of all inundation divided by the valley centerline length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description></Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <Usage>Numerator</Usage>
+                </DCELayer>
+                <InputLayer input_ref="centerline" usage="Denominator"/>
+            </Parameters>
+        </Metric> -->
+         <Metric id="total_inundated_area" version="1.0" calculation_machine_code="area">
+            <Label>Total Inundated Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The inundated area of all 3 classifications added together</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="free_flowing_area" version="1.0" calculation_machine_code="area">
+            <Label>Total Area of Free Flowing Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The area of free flowing inundation type</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <AttributeFilter field_id_ref="type_id">
+                            <Value>Free Flowing</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="ponded_area" version="1.0" calculation_machine_code="area">
+            <Label>Total Area of Ponded Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The area of ponded inundation type</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <AttributeFilter field_id_ref="type_id">
+                            <Value>Ponded</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="overflow_area" version="1.0" calculation_machine_code="area">
+            <Label>Total Area of Overflow Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>the area of overflow inundation type</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <AttributeFilter field_id_ref="type_id">
+                            <Value>Overflow</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_inundated" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Percent of the Valley Bottom that is Inundated</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the riverscape that is inundated</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <Usage>Numerator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_free_flowing" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Percent of the Valley Bottom with Free Flowing Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the riverscape that is free flowing</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>                
+                <DCELayer layer_id_ref="inundation">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Free Flowing</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_ponded" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Percent of the Valley Bottom with Ponded Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the riverscape that is ponded</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Ponded</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_overflow" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Percent of the Valley Bottom with Overflow Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the riverscape that is overflow</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type_id">
+                        <Value>Overflow</Value>
                     </AttributeFilter>
                 </DCELayer>
             </Parameters>
