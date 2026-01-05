@@ -329,7 +329,7 @@
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
             <Parameters>
-                <InputLayer input_ref="centerline" usage="denominator"/>
+                <InputLayer input_ref="centerline" usage="Denominator"/>
                 <DCELayer layer_id_ref="dam_crests">
                     <Usage>Numerator</Usage>
                 </DCELayer>
@@ -350,7 +350,7 @@
                     </AttributeFilter>
                 </DCELayer>
                 <DCELayer layer_id_ref="dam_crests">
-                    <Usage>denominator</Usage>
+                    <Usage>Denominator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
