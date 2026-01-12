@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 255, 255)", "Pour Points"]
+  ],
+  "layerStyles": [
+      {
+            "id": "pourpoint-0akn7i",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "PourPoint-0akn7i",
+            "layout": {},
+            "paint": {
+                "circle-radius": 12,
+                "circle-color": "rgb(219, 30, 42)",
+                "circle-stroke-color": "rgb(128, 17, 25)",
+                "circle-stroke-width": 1.5
+            }
+        }
+    ]
+}
