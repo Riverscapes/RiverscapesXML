@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(70, 175, 255)", "profiles"]
+  ],
+  "layerStyles": [
+{
+            "id": "centerlines-saved-008eyv",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "centerlines_saved-008eyv",
+            "layout": {},
+            "paint": {
+                "line-color": "rgb(70, 175, 255)",
+                "line-width": 3,
+                "line-dasharray": [3, 1, 1, 1]
+            }
+        }
+    ]
+}
