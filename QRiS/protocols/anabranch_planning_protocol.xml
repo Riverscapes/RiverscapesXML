@@ -1,0 +1,350 @@
+<Protocol machine_code="ANABRANCH_PLANNING" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Anabranch Planning Protocol</Label>
+    <Description>Planning for Low-Tech Restoration and Assessment of Stream, Infrastructure, and Property Risks</Description>
+    <URL></URL>
+    <Citation></Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-12-16</CreationDate>
+    <UpdatedDate>2026-1-12</UpdatedDate>
+    <Layers>
+        <Layer id="stream_assessment" version="1.0" geom_type="Linestring">
+            <Label>Stream Assessment for Low-Tech</Label>
+            <Symbology>planning_protocol_stream_assessment.qml</Symbology>
+            <Description>LTPBR Opportunity Within Stream of Interest</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="stream_order" version="1.0">
+                    <Label>Wadeability for Low-Tech</Label>
+                    <Values>
+                        <Value>1st through 3rd Order Wadeable Stream</Value>
+                        <Value>3rd through 5th Order Wadeable Stream</Value>
+                        <Value>5th Order Non-Wadeable Stream or Higher</Value>
+                    </Values>
+                </ListField>
+                <ListField id="slope" version="1.0">
+                    <Label>Slope</Label>
+                    <Values>
+                        <Value>≤ 3%</Value>
+                        <Value>3-6%</Value>
+                        <Value>≥ 7%</Value>
+                    </Values>
+                </ListField>
+                <ListField id="bank_erodibility" version="1.0">
+                    <Label>Bank Erodibility</Label>
+                    <Values>
+                        <Value>High Erodibility (loosely consolidated)</Value>
+                        <Value>Moderate Erodibility</Value>
+                        <Value>Low Erodibility (compact)</Value>
+                    </Values>
+                </ListField>
+                <ListField id="bed_material" version="1.0">
+                    <Label>Bed Material</Label>
+                    <Values>
+                        <Value>Clay</Value>
+                        <Value>Silt</Value>
+                        <Value>Sand</Value>
+                        <Value>Gravel</Value>
+                        <Value>Cobble</Value>
+                        <Value>Boulder</Value>
+                        <Value>Bedrock</Value>
+                    </Values>
+                </ListField>
+                <ListField id="habitat_suitability_beaver" version="1.0">
+                    <Label>Habitat Suitability for Beaver</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Preferred Beaver Habitat</Value>
+                        <Value>Suitable Beaver Habitat</Value>
+                        <Value>Unsuitable Beaver Habitat</Value>
+                        <Value>Sufficient Food Sources for Beaver</Value>
+                        <Value>Insufficient Food Sources for Beaver</Value>
+                        <Value>Sufficient Vegetation for Beaver Dam Building</Value>
+                        <Value>Insufficient Vegetation for Beaver Dam Building</Value>
+                        <Value>Possible Dam Building at Low Stream Power</Value>
+                        <Value>Unlikely Dam Building at Low Stream Power</Value>
+                        <Value>Possible Dam Blowout at High Stream Power</Value>
+                        <Value>Unlikely Dam Blowout at High Stream Power</Value>
+                    </Values>
+                </ListField>
+                <ListField id="habitat_suitability_fish" version="1.0">
+                    <Label>Habitat Suitability for Fish</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Preferred Fish Habitat</Value>
+                        <Value>Suitable Fish Habitat</Value>
+                        <Value>Unsuitable Fish Habitat</Value>
+                        <Value>Sufficient Habitat Units for Fish</Value>
+                        <Value>Insufficient Habitat Units for Fish</Value>
+                        <Value>Sufficient Streamside Vegetation for Fish</Value>
+                        <Value>Insufficient Streamside Vegetation for Fish</Value>
+                        <Value>Sufficient Food Sources for Fish</Value>
+                        <Value>Insufficient Food Sources for Fish</Value>
+                    </Values>
+                </ListField>
+                <ListField id="habitat_units" version="1.0">
+                    <Label>Habitat Units</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Riffles</Value>
+                        <Value>Pools</Value>
+                        <Value>Ponds</Value>
+                        <Value>Bank Attached Bars</Value>
+                        <Value>Mid Channel Bars</Value>
+                        <Value>Chutes</Value>
+                        <Value>Glide/Runs</Value>
+                        <Value>Rapids/Cascades</Value>
+                    </Values>
+                </ListField>
+                <ListField id="vegetation_material" version="1.0">
+                    <Label>Material for Low-Tech</Label>
+                    <Values>
+                        <Value>Bare (needs to be imported)</Value>
+                        <Value>Upland dominant; little to no riparian vegetation</Value>
+                        <Value>Mixture of riparian and upland species</Value>
+                        <Value>Riparian dominant; little to no upland vegetation</Value>
+                    </Values>
+                </ListField>
+                <IntegerField id="opportunity_rating" version="1.0">
+                    <Label>Opportunity Rating</Label>
+                    <Slider min="0" max="5" step="1" />
+                </IntegerField>
+                <TextField id="notes" version="1.0"> 
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="risk_assessment_point" version="1.0" geom_type="Point">
+            <Label>Risk Assessment (Point)</Label>
+            <Symbology>planning_protocol_risk_point.qml</Symbology>
+            <Description>Point Layer for Risk Assessment</Description>
+            <Hierarchy> 
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+                <HierarchyItem>Risk Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Diversion</Value>
+                        <Value>Culvert</Value>
+                        <Value>Retention Pond</Value>
+                        <Value>Dam</Value>
+                        <Value>Weir</Value>
+                        <Value>Barrier</Value>
+                        <Value>Ford</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ownership" version="1.0">
+                    <Label>Ownership</Label>
+                    <Values>
+                        <Value>Public</Value>
+                        <Value>Private</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>Floods Regularly (e.g., every year or floodway)</Value>
+                        <Value>Floods Occasionally (i.e. active floodplain)</Value>
+                        <Value>Floods Rarely (i.e. in very large events)</Value>
+                        <Value>Flooded Historically (i.e. plausible flooding - inactive floodplain)</Value>
+                        <Value>Minimal to No Flood Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="fish_barrier" version="1.0">
+                    <Label>Potential Fish Barrier</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                        <Value>Unsure</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>Potential LTPBR Impacts</Label>
+                    <Values>
+                        <Value>Likely increase in flood risk</Value>
+                        <Value>Negligible increase in flood risk possible</Value>
+                        <Value>No likely impact</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>   
+            </Fields>
+        </Layer>
+        <Layer id="risk_assessment_line" version="1.0" geom_type="Linestring">
+            <Label>Risk Assessment (Line)</Label>
+            <Symbology>planning_protocol_risk_line.qml</Symbology>
+            <Description>Line Layer for Risk Assessment</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+                <HierarchyItem>Risk Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Road - Paved</Value>
+                        <Value>Road - Dirt</Value>
+                        <Value>Trail or Track</Value>
+                        <Value>Railroad</Value>
+                        <Value>Bridge</Value>
+                        <Value>Canal</Value>
+                        <Value>Levee</Value>
+                        <Value>Berm</Value>
+                        <Value>Utility Line</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ownership" version="1.0">
+                    <Label>Ownership</Label>
+                    <Values>
+                        <Value>Public</Value>
+                        <Value>Private</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>Floods Regularly (e.g., every year or floodway)</Value>
+                        <Value>Floods Occasionally (i.e. active floodplain)</Value>
+                        <Value>Floods Rarely (i.e. in very large events)</Value>
+                        <Value>Flooded Historically (i.e. plausible flooding - inactive floodplain)</Value>
+                        <Value>Minimal to No Flood Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="fish_barrier" version="1.0">
+                    <Label>Potential Fish Barrier</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                        <Value>Unsure</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>Potential LTPBR Impacts</Label>
+                    <Values>
+                        <Value>Likely increase in flood risk</Value>
+                        <Value>Negligible increase in flood risk possible</Value>
+                        <Value>No likely impact</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>  
+            </Fields>
+        </Layer>
+        <Layer id="risk_assessment_polygon" version="1.0" geom_type="Polygon">
+            <Label>Risk Assessment (Polygon)</Label>
+            <Symbology>planning_protocol_risk_polygon.qml</Symbology>
+            <Description>Polygon Layer for Risk Assessment</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+                <HierarchyItem>Risk Assessment</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Agriculture - Cultivated Crops</Value>
+                        <Value>Agriculture - Pasture/Grazing</Value>
+                        <Value>Commercial</Value>
+                        <Value>Residential</Value>
+                        <Value>Industrial</Value>
+                        <Value>Road or Parking</Value>
+                        <Value>Reservoir</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ownership" version="1.0">
+                    <Label>Ownership</Label>
+                    <Values>
+                        <Value>Public</Value>
+                        <Value>Private</Value>
+                        <Value>Unknown</Value>
+                    </Values>
+                </ListField>
+                <ListField id="flood_risk" version="1.0">
+                    <Label>Potential Flood Risk</Label>
+                    <Values>
+                        <Value>Floods Regularly (e.g., every year or floodway)</Value>
+                        <Value>Floods Occasionally (i.e. active floodplain)</Value>
+                        <Value>Floods Rarely (i.e. in very large events)</Value>
+                        <Value>Flooded Historically (i.e. plausible flooding - inactive floodplain)</Value>
+                        <Value>Minimal to No Flood Risk</Value>
+                    </Values>
+                </ListField>
+                <ListField id="fish_barrier" version="1.0">
+                    <Label>Potential Fish Barrier</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                        <Value>Unsure</Value>
+                    </Values>
+                </ListField>
+                <ListField id="ltpbr_risk" version="1.0">
+                    <Label>Potential LTPBR Impacts</Label>
+                    <Values>
+                        <Value>Likely increase in flood risk</Value>
+                        <Value>Negligible increase in flood risk possible</Value>
+                        <Value>No likely impact</Value>
+                   </Values> 
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>  
+            </Fields>
+        </Layer>
+        <Layer id="property_assessment" version="1.0" geom_type="Polygon">
+            <Label>Property and Landowner Assessment</Label>
+            <Symbology>planning_protocol_land_use.qml</Symbology>
+            <Description>Assessment of current and historic land use and resulting riparian vegetation deapture</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="parcel_id" version="1.0">
+                     <Label>Parcel ID</Label>
+                </TextField>
+                <TextField id="property_landowner" version="1.0">
+                    <Label>Landowner Name/Organization</Label>
+                </TextField>
+                <ListField id="current_land_use" version="1.0">
+                    <Label>Current Land Use</Label>
+                    <Values>
+                        <Value>Undeveloped Range or Forest</Value>
+                        <Value>Crop, Pasture, or Hay</Value>
+                        <Value>Developed</Value>
+                    </Values>
+                </ListField>
+                <ListField id="riparian_veg_departure" version="1.0">
+                    <Label>Estimated Riparian Vegetation Departure</Label>
+                    <Values>
+                        <Value>Large Departure from Estimated Historic Conditions</Value>
+                        <Value>Small Departure from Estimated Historic Conditions</Value>
+                    </Values>
+                </ListField>
+                <ListField id="landowner_approval" version="1.0">
+                    <Label>Landowner Approval of Low-tech</Label>
+                    <Values>
+                        <Value>Approves of Low-Tech Restoration, Stream and Floodplain Adjustments by Beaver Activity and Wood Accumulation, and Adaptive Management</Value>
+                        <Value>Approves of Low-Tech Restoration but Willing to Only Allow Some Dynamic Processes in the Valley Bottom</Value>
+                        <Value>Approves of Low-Tech but Wants Limited Intervention(s) and Minor Processes in the Valley Bottom</Value>
+                        <Value>Doesn't Approve of Low-Tech</Value>
+                    </Values>
+                </ListField>
+                <ListField id="adjacent_landowner_assessment" version="1.0">
+                    <Label>Adjacent Landowner Assessment</Label>
+                    <Values>
+                        <Value>Overwhelming Approval of LTPBR Actions</Value>
+                        <Value>Majority Approval of LTPBR Actions</Value>
+                        <Value>Minority Approval of LTPBR actions</Value>
+                        <Value>Potential Water Rights Conflict(s)</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    </Layers>
+    </Protocol>

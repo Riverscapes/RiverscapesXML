@@ -1,0 +1,826 @@
+<Protocol machine_code="ANABRANCH_DESIGN" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Anabranch Design Protocol</Label>
+    <Description>Design Layers for Anabranch</Description>
+    <URL></URL>
+    <Citation></Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2025-07-22</CreationDate>
+    <UpdatedDate>2026-1-12</UpdatedDate>
+    <Layers>
+        <Layer id="structure_points" version="1.0" geom_type="Point">
+            <Label>Structure Points</Label>
+            <Symbology>structure_points.qml</Symbology>
+            <Description>Structure Points Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Structures</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="structure_type" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Values>
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Mid Channel</Value>
+                        <Value>ALS - Rhino</Value>
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Bag Plugs</Value>
+                        <Value>Fell Tree</Value>
+                        <Value>Floodplain BDA</Value>
+                        <Value>Floodplain LWD</Value>
+                        <Value>Full Tree</Value>
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Headcut Treatment</Value>
+                        <Value>Leaky Dam</Value>
+                        <Value>One Rock Dam</Value>
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value>
+                        <Value>PALS - Channel Spanning</Value>
+                        <Value>PALS - Constriction Jet</Value>
+                        <Value>PALS - Left Bank Attached</Value>
+                        <Value>PALS - Mid Channel</Value>
+                        <Value>PALS - Rhino</Value>
+                        <Value>PALS - Right Bank Attached</Value>
+                        <Value>Post and Brush Plug</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Rhino</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>
+                        <Value>Strategic Felling</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>
+                        <Value>Tree Dam</Value>
+                        <Value>Tree Plug</Value>
+                        <Value>Vanes</Value>
+                        <Value>Wicker Weirs</Value>
+                        <Value>Wood Jam</Value>
+                        <Value>Zuni Bowl</Value>
+                    </Values>
+                </ListField>
+                <TextField id="complex_number" version="1.0">
+                    <Label>Complex Number</Label>
+                </TextField>
+                <TextField id="structure_number" version="1.0">
+                    <Label>Structure Number</Label>
+                </TextField>
+                <FloatField id="length" version="1.0">
+                    <Label>Estimated Structure Length</Label>
+                </FloatField>
+                <FloatField id="width" version="1.0">
+                    <Label>Estimated Structure Width</Label>
+                </FloatField>
+                <FloatField id="height" version="1.0">
+                    <Label>Estimated Structure Height</Label>
+                </FloatField>
+                <IntegerField id="number_of_posts" version="1.0">
+                    <Label>Estimated Number of Posts</Label>
+                </IntegerField>
+                <FloatField id="fill_volume" version="1.0">
+                    <Label>Estimated Fill Volume</Label>                   
+                </FloatField>        
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>                    
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="structure_lines" version="1.0" geom_type="Linestring">
+            <Label>Structure Lines</Label>
+            <Symbology>structure_lines.qml</Symbology>
+            <Description>Structure Lines Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Structures</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="structure_type" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Values>
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Mid Channel</Value>
+                        <Value>ALS - Rhino</Value>
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Bag Plugs</Value>
+                        <Value>Fell Tree</Value>
+                        <Value>Floodplain BDA</Value>
+                        <Value>Floodplain LWD</Value>
+                        <Value>Full Tree</Value>
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Headcut Treatment</Value>
+                        <Value>Leaky Dam</Value>
+                        <Value>One Rock Dam</Value>
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value>
+                        <Value>PALS - Channel Spanning</Value>
+                        <Value>PALS - Constriction Jet</Value>
+                        <Value>PALS - Left Bank Attached</Value>
+                        <Value>PALS - Mid Channel</Value>
+                        <Value>PALS - Rhino</Value>
+                        <Value>PALS - Right Bank Attached</Value>
+                        <Value>Post and Brush Plug</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Rhino</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>
+                        <Value>Strategic Felling</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>
+                        <Value>Tree Dam</Value>
+                        <Value>Tree Plug</Value>
+                        <Value>Vanes</Value>
+                        <Value>Wicker Weirs</Value>
+                        <Value>Wood Jam</Value>
+                        <Value>Zuni Bowl</Value>
+                    </Values>
+                </ListField>
+                <TextField id="complex_number" version="1.0">
+                    <Label>Complex Number</Label>
+                </TextField>
+                <TextField id="structure_number" version="1.0">
+                    <Label>Structure Number</Label>
+                </TextField>
+                <FloatField id="width" version="1.0">
+                    <Label>Estimated Structure Width</Label>
+                </FloatField>
+                <FloatField id="height" version="1.0">
+                    <Label>Estimated Structure Height</Label>
+                </FloatField>
+                <IntegerField id="number_of_posts" version="1.0">
+                    <Label>Estimated Number of Posts</Label>
+                </IntegerField>
+                <FloatField id="fill_volume" version="1.0">
+                    <Label>Estimated Fill Volume</Label>                   
+                </FloatField>        
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>                    
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="zoi" version="1.0" geom_type="Polygon">
+            <Label>Zones of Influence</Label>
+            <Symbology>zoi.qml</Symbology>
+            <Description>Zones of Influence Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="zoi_type" version="1.0">
+                    <Label>ZOI Type</Label>
+                    <Values>
+                        <Value>Complex: Headcut Arrest</Value>
+                        <Value>Complex: Increase Channel Complexity</Value>
+                        <Value>Complex: Increase Floodplain Connectivity</Value>
+                        <Value>Complex: Lateral Channel Migration</Value>
+                        <Value>Complex: Overbank Flow Dispersal</Value>
+                        <Value>Complex: Pond/Wetland Creation</Value>
+                        <Value>Complex: Riparian/Wetland Expansion</Value>
+                        <Value>Complex: Side-Channel Connection</Value>
+                        <Value>Complex: Widening and Aggradation</Value>
+                        <Value>Structure: Geomorphic - Deposition in upstream backwater</Value>
+                        <Value>Structure: Geomorphic - Deposition of bar</Value>
+                        <Value>Structure: Geomorphic - Deposition overbank</Value>
+                        <Value>Structure: Geomorphic - Erode Bank</Value>
+                        <Value>Structure: Geomorphic - Erosion from convergent jet</Value>
+                        <Value>Structure: Geomorphic - Erosion from plunge</Value>
+                        <Value>Structure: Geomorphic - Erosion from return flow headcut</Value>
+                        <Value>Structure: Geomorphic - Erosion of bar edge</Value>
+                        <Value>Structure: Hydraulic - Constriction Jet</Value>
+                        <Value>Structure: Hydraulic - Divergent Flow</Value>
+                        <Value>Structure: Hydraulic - Eddy</Value>
+                        <Value>Structure: Hydraulic - Overflow</Value>
+                        <Value>Structure: Hydraulic - Ponding Flow</Value>
+                        <Value>Structure: Hydraulic - Shunting Flow</Value>
+                        <Value>Structure: Hydraulic - Splitting Flow</Value>
+                        <Value>Structure: Scour Pool Formation</Value>
+                    </Values>
+                </ListField>
+                <ListField id="zoi_stage" version="1.0">
+                    <Label>Stage</Label>
+                    <Values>
+                        <Value>Baseflow</Value>
+                        <Value>Typical Flood</Value>
+                        <Value>Large Flood</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="complexes" version="1.0" geom_type="Polygon">
+            <Label>Structure Complex Extents</Label>
+            <Symbology>complexes.qml</Symbology>
+            <Description>Structure Complex Extents Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Structures</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="complex_number" version="1.0">
+                    <Label>Complex Number</Label>
+                </TextField>
+                <IntegerField id="number_of_structures" version="1.0">
+                    <Label>Estimated Number of Structures</Label>
+                </IntegerField>
+                <IntegerField id="structure_uncertainty" version="1.0">
+                    <Label>Structure Uncertainty (±)</Label>
+                </IntegerField>
+                <IntegerField id="estimated_fill_volume" version="1.0">
+                    <Label>Estimated Total Fill Volume</Label>
+                </IntegerField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    <Layer id="observation_points" version="1.0" geom_type="Point">
+            <Label>Observation Points</Label>
+            <Symbology>observation_points.qml</Symbology>
+            <Description>Observation Points Layer</Description>
+            <MenuItems>
+                <MenuItem>import_photos</MenuItem>
+            </MenuItems>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="observation_point_type" version="1.0">
+                    <Label>Observation Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Building Materials</Value>
+                        <Value>Caution</Value>
+                        <Value>Design Consideration</Value>
+                        <Value>Logistics</Value>
+                        <Value>Riverscape Feature</Value>
+                        <Value>Photo Observation</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>                
+                <AttachmentField id="photo_path" version="1.0">
+                    <Label>Photo Path</Label>
+                </AttachmentField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="observation_lines" version="1.0" geom_type="Linestring">
+            <Label>Observation Lines</Label>
+            <Symbology>observation_lines.qml</Symbology>
+            <Description>Observation Lines Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="observation_line_type" version="1.0">
+                    <Label>Observation Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Building Materials</Value>
+                        <Value>Caution</Value>
+                        <Value>Infrastructure</Value>
+                        <Value>Logistics</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="observation_polygons" version="1.0" geom_type="Polygon">
+            <Label>Observation Polygons</Label>
+            <Symbology>observation_polygons.qml</Symbology>
+            <Description>Observation Polygons Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="observation_polygon_type" version="1.0">
+                    <Label>Observation Type</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Caution</Value>
+                        <Value>Logistics</Value>
+                        <Value>Riverscape Feature</Value>
+                        <Value>Road</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="recovery_space" version="1.0" geom_type="Polygon">
+            <Label>Recovery Space</Label>
+            <Symbology>recovery_space.qml</Symbology>
+            <Description>Recovery Space Layer</Description>
+            <MenuItems>
+                <MenuItem>copy_from_valley_bottom</MenuItem>
+            </MenuItems>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    </Layers>
+    <Metrics>
+        <Metric id="structure_count_structures" version="1.0" calculation_machine_code="count">
+            <Label>Structure Count (Structures)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of structures (points and lines) within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">                 
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_density_structures" version="1.0" calculation_machine_code="count">
+            <Label>Structure Density (Structures)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of structures (points and lines) within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">                    
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="bda_count" version="1.0" calculation_machine_code="count">
+            <Label>BDA Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of BDA structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>                        
+                    </AttributeFilter>                 
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>                        
+                    </AttributeFilter>   
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="bda_density" version="1.0" calculation_machine_code="count">
+            <Label>BDA Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of BDA structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>                        
+                    </AttributeFilter>                 
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Secondary BDA</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>                        
+                    </AttributeFilter>   
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="pals_count" version="1.0" calculation_machine_code="count">
+            <Label>PALS Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of PALS structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points"> 
+                    <AttributeFilter field_id_ref="structure_type">                        
+                        <Value>Leaky Dam</Value>  
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value> 
+                        <Value>PALS - Channel Spanning</Value> 
+                        <Value>PALS - Constriction Jet</Value>                   
+                        <Value>PALS - Left Bank Attached</Value>  
+                        <Value>PALS - Mid Channel</Value> 
+                        <Value>PALS - Right Bank Attached</Value>                                
+                        <Value>PALS - Rhino</Value>  
+                        <Value>Post and Brush Plug</Value>  
+                        <Value>Rhino</Value>                           
+                        <Value>Wicker Weirs</Value>
+                    </AttributeFilter>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">                        
+                        <Value>Leaky Dam</Value>  
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value> 
+                        <Value>PALS - Channel Spanning</Value> 
+                        <Value>PALS - Constriction Jet</Value>                   
+                        <Value>PALS - Left Bank Attached</Value>  
+                        <Value>PALS - Mid Channel</Value> 
+                        <Value>PALS - Right Bank Attached</Value>                                
+                        <Value>PALS - Rhino</Value>  
+                        <Value>Post and Brush Plug</Value>  
+                        <Value>Rhino</Value>                           
+                        <Value>Wicker Weirs</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="pals_density" version="1.0" calculation_machine_code="count">
+            <Label>PALS Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of PALS structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="structure_type">                        
+                        <Value>Leaky Dam</Value>  
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value> 
+                        <Value>PALS - Channel Spanning</Value> 
+                        <Value>PALS - Constriction Jet</Value>                   
+                        <Value>PALS - Left Bank Attached</Value>  
+                        <Value>PALS - Mid Channel</Value> 
+                        <Value>PALS - Right Bank Attached</Value>                                
+                        <Value>PALS - Rhino</Value>  
+                        <Value>Post and Brush Plug</Value>  
+                        <Value>Rhino</Value>                           
+                        <Value>Wicker Weirs</Value>
+                    </AttributeFilter>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">                        
+                        <Value>Leaky Dam</Value>  
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value> 
+                        <Value>PALS - Channel Spanning</Value> 
+                        <Value>PALS - Constriction Jet</Value>                   
+                        <Value>PALS - Left Bank Attached</Value>  
+                        <Value>PALS - Mid Channel</Value> 
+                        <Value>PALS - Right Bank Attached</Value>                                
+                        <Value>PALS - Rhino</Value>  
+                        <Value>Post and Brush Plug</Value>  
+                        <Value>Rhino</Value>                           
+                        <Value>Wicker Weirs</Value>
+                    </AttributeFilter>  
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="als_count" version="1.0" calculation_machine_code="count">
+            <Label>ALS Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of ALS structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points"> 
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Mid Channel</Value>
+                        <Value>ALS - Rhino</Value> 
+                        <Value>Fell Tree</Value>                 
+                        <Value>Full Tree</Value> 
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Strategic Felling</Value>   
+                        <Value>Tree Dam</Value>                   
+                        <Value>Tree Plug</Value>                        
+                        <Value>Wood Jam</Value>                        
+                    </AttributeFilter>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Mid Channel</Value>
+                        <Value>ALS - Rhino</Value> 
+                        <Value>Fell Tree</Value>                 
+                        <Value>Full Tree</Value> 
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Strategic Felling</Value>   
+                        <Value>Tree Dam</Value>                   
+                        <Value>Tree Plug</Value>                        
+                        <Value>Wood Jam</Value>                         
+                    </AttributeFilter> 
+                </DCELayer>
+            </Parameters>            
+        </Metric> 
+        <Metric id="als_density" version="1.0" calculation_machine_code="count">
+            <Label>ALS Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of ALS structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Mid Channel</Value>
+                        <Value>ALS - Rhino</Value> 
+                        <Value>Fell Tree</Value>                 
+                        <Value>Full Tree</Value> 
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Strategic Felling</Value>   
+                        <Value>Tree Dam</Value>                   
+                        <Value>Tree Plug</Value>                        
+                        <Value>Wood Jam</Value>                         
+                    </AttributeFilter>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Mid Channel</Value>
+                        <Value>ALS - Rhino</Value> 
+                        <Value>Fell Tree</Value>                 
+                        <Value>Full Tree</Value> 
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Strategic Felling</Value>   
+                        <Value>Tree Dam</Value>                   
+                        <Value>Tree Plug</Value>                        
+                        <Value>Wood Jam</Value>                         
+                    </AttributeFilter>    
+                </DCELayer>
+            </Parameters>            
+        </Metric>       
+        <Metric id="other_count" version="1.0" calculation_machine_code="count">
+            <Label>Other Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of Other structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points"> 
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>Bag Plugs</Value>  
+                        <Value>Floodplain BDA</Value>  
+                        <Value>Floodplain LWD</Value>                         
+                        <Value>Headcut Treatment</Value>                        
+                        <Value>One Rock Dam</Value>                        
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>                 
+                        <Value>Vanes</Value>
+                        <Value>Zuni Bowl</Value> 
+                    </AttributeFilter>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>Bag Plugs</Value>  
+                        <Value>Floodplain BDA</Value>  
+                        <Value>Floodplain LWD</Value>                         
+                        <Value>Headcut Treatment</Value>                        
+                        <Value>One Rock Dam</Value>                        
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>                 
+                        <Value>Vanes</Value>
+                        <Value>Zuni Bowl</Value> 
+                    </AttributeFilter>   
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="other_density" version="1.0" calculation_machine_code="count">
+            <Label>Other Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of Other structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>Bag Plugs</Value>  
+                        <Value>Floodplain BDA</Value>  
+                        <Value>Floodplain LWD</Value>                         
+                        <Value>Headcut Treatment</Value>                        
+                        <Value>One Rock Dam</Value>                        
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>                 
+                        <Value>Vanes</Value>
+                        <Value>Zuni Bowl</Value> 
+                    </AttributeFilter>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="structure_type">
+                        <Value>Bag Plugs</Value>  
+                        <Value>Floodplain BDA</Value>  
+                        <Value>Floodplain LWD</Value>                         
+                        <Value>Headcut Treatment</Value>                        
+                        <Value>One Rock Dam</Value>                        
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>                 
+                        <Value>Vanes</Value>
+                        <Value>Zuni Bowl</Value> 
+                    </AttributeFilter>    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_length" version="1.0" calculation_machine_code="length">
+            <Label>Structure Length (Structures)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total length of structures (lines) within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_lines">                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="fill_volume_structures" version="1.0" calculation_machine_code="count">
+            <Label>Fill Volume (Structures)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total fill volume of structures within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points"> 
+                    <CountFields><CountField field_id_ref="fill_volume" />
+                    </CountFields>                                                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <CountFields><CountField field_id_ref="fill_volume" />
+                    </CountFields>
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="complex_count" version="1.0" calculation_machine_code="count">
+            <Label>Complex Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of complexes within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complexes">                 
+                </DCELayer>                
+            </Parameters>            
+        </Metric>
+        <Metric id="complex_area" version="1.0" calculation_machine_code="area">
+            <Label>Complex Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total area of complexes within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complexes">                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_count_complex" version="1.0" calculation_machine_code="count">
+            <Label>Structure Count (Complex)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of structures for comlexes within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complexes">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_structures" />
+                    </CountFields>                                                
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_density_complex" version="1.0" calculation_machine_code="count">
+            <Label>Structure Density (Complex)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of structures for complexes within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="complexes">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_structures" />
+                    </CountFields>                                                
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="fill_volume_complex" version="1.0" calculation_machine_code="count">
+            <Label>Fill Volume (Complex)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total fill volume of complexes within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complexes">
+                    <CountFields> 
+                        <CountField field_id_ref="estimated_fill_volume" />
+                    </CountFields>                                                
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="zoi_area" version="1.0" calculation_machine_code="area">
+            <Label>ZOI Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total ZOI area within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="zoi">                 
+                </DCELayer>                
+            </Parameters>            
+        </Metric>
+        <Metric id="recovery_space_area" version="1.0" calculation_machine_code="area">
+            <Label>Recovery Space Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total area of recovery space within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="recovery_space">                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="recovery_space_valley_bottom" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Recovery Space (% of Valley Bottom)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of recovery space to valley bottom area within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="recovery_space">
+                    <Usage>Numerator</Usage>
+                </DCELayer>  
+            </Parameters>            
+        </Metric>
+        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area">
+            <Label>Riverscape Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The area of the riverscape valley bottom within the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="metric_layer"/>
+            </Parameters>
+        </Metric>
+        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length">
+            <Label>Riverscape Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The length of the riverscape centerline within the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="metric_layer"/>
+            </Parameters>
+        </Metric>
+    </Metrics>
+</Protocol>
