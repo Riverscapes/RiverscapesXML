@@ -14,6 +14,7 @@ dependencies = [
 
 [project.scripts]
 export-layer-definitions-for-s3 = "riverscapes_metadata.export_layer_definitions_for_s3:main"
+validate-metadata = "riverscapes_metadata.export_layer_definitions_for_s3:validate_cli"
 publish-metadata-to-s3 = "riverscapes_metadata.publish_metadata:main"
 
 [build-system]

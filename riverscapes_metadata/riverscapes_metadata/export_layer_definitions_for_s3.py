@@ -32,6 +32,8 @@ import csv
 import json
 import subprocess
 import datetime as _dt
+import sys
+import re
 from pathlib import Path
 
 from jsonschema import Draft7Validator
@@ -80,6 +82,42 @@ def is_valid_unit(str) -> bool:
         return True
     except Exception:
         return False
+
+def normalize_version(version_str: str) -> str:
+    """Normalize version string to Major.Minor.Patch format suitable for Athena partitioning.
+    
+    1. Strip leading 'v' or 'V'.
+    2. Remove build metadata/prerelease tags (anything after - or +).
+    3. Ensure exactly three components by padding with .0 or truncating.
+    """
+    if not version_str:
+        return "0.0.0"
+        
+    # Remove 'v' prefix
+    v = version_str.lstrip("vV")
+    
+    # Remove prerelease/metadata
+    v = re.split(r'[-+]', v)[0]
+    
+    # Split into components
+    parts = v.split('.')
+    
+    # Filter non-numeric parts (robustness)
+    numeric_parts = []
+    for p in parts:
+        if p.isdigit():
+            numeric_parts.append(p)
+        else:
+            break # Stop at first non-numeric
+            
+    # Pad to 3
+    while len(numeric_parts) < 3:
+        numeric_parts.append("0")
+        
+    # Truncate to 3
+    final_parts = numeric_parts[:3]
+    
+    return ".".join(final_parts)
 
 def git_commit_sha() -> str | None:
     """Return current git commit SHA or None if not available."""
@@ -136,7 +174,10 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "path": list(e.path)
             })
     authority_name = data.get("authority_name", "")
-    tool_schema_version = data.get("tool_schema_version")
+
+    raw_version = data.get("tool_schema_version", "0.0.0")
+    tool_schema_version = normalize_version(raw_version)
+
     layers = data.get("layers", [])
     for layer in layers:
         layer_id = layer.get("layer_id") or layer.get("layer_name") or ""
@@ -156,9 +197,9 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
             if not cname:
                 continue
             # validate units
-            unit_val = col.get("data_unit","")
-            if not is_valid_unit(unit_val):
-                errors.append ({
+            unit_val = col.get("data_unit", "")
+            if unit_val and not is_valid_unit(unit_val):
+                errors.append({
                     "file": str(defs_path),
                     "type": "units",
                     "message": f"Invalid unit '{unit_val}' for layer '{layer_id}', column '{cname}'."
@@ -259,6 +300,51 @@ def group_rows(rows: list[dict]) -> dict[tuple[str, str, str], list[dict]]:
     return groups
 
 
+def scan_and_validate(root_path: Path) -> tuple[list[dict], list[dict], str | None]:
+    """
+    Scans for catalogs, runs validations, and returns valid rows and errors.
+    Shared logic between main (export) and validate_cli (local check).
+    """
+    commit_sha = git_commit_sha()
+    catalogs = find_catalogs(root_path)
+    
+    # Unified validator
+    catalog_validator = _load_remote_validator()
+    
+    validation_errors: list[dict] = []
+    all_rows: list[dict] = []
+    
+    for c in catalogs:
+        all_rows.extend(flatten_definitions(c, commit_sha=commit_sha, validator=catalog_validator, errors=validation_errors))
+        
+    return all_rows, validation_errors, commit_sha
+
+
+def validate_cli() -> None:
+    """Entry point for local validation (no file generation)."""
+    parser = argparse.ArgumentParser(description="Validate layer_definitions.json files in the repository.")
+    parser.add_argument("--root", default=str(Path.cwd()), help="Root directory to scan.")
+    args = parser.parse_args()
+    
+    root = Path(args.root).resolve()
+    print(f"Scanning for metadata in {root}...")
+    
+    _, errors, _ = scan_and_validate(root)
+    
+    if errors:
+        print("\n--- Validation Errors ---")
+        for error in errors:
+            file = error.get("file", "N/A")
+            message = error.get("message", "No message")
+            print(f"File: {file}\nError: {message}\n")
+        print("-------------------------")
+        print(f"FAILED: Found {len(errors)} error(s).")
+        sys.exit(1)
+    else:
+        print("SUCCESS: All metadata files are valid.")
+        sys.exit(0)
+
+
 def main() -> None:
     """On success or failure writes to index.json in the dist folder"""
     args = parse_args()
@@ -266,15 +352,8 @@ def main() -> None:
     base_output = Path(args.output)
     if not base_output.is_absolute():
         base_output = root / base_output
-    commit_sha = git_commit_sha()
-
-    catalogs = find_catalogs(root)
-    # Unified validator
-    catalog_validator = _load_remote_validator()
-    validation_errors: list[dict] = []
-    all_rows: list[dict] = []
-    for c in catalogs:
-        all_rows.extend(flatten_definitions(c, commit_sha=commit_sha, validator=catalog_validator, errors=validation_errors))
+    
+    all_rows, validation_errors, commit_sha = scan_and_validate(root)
 
     # Index now written to top-level dist/ directory (sibling to metadata/ partitions)
     top_dist = (root / "dist")
