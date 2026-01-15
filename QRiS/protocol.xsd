@@ -141,7 +141,7 @@
     </xs:complexType>
 
     <xs:complexType name="LayerType">
-        <xs:sequence>
+        <xs:all>
             <xs:element name="Label" type="xs:string" minOccurs="1" maxOccurs="1"/>
             <xs:element name="Symbology" type="xs:string" minOccurs="1" maxOccurs="1"/>
             <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1"/>
@@ -159,7 +159,7 @@
                     <xs:field xpath="@name" />
                 </xs:unique>
             </xs:element>
-        </xs:sequence>
+        </xs:all>
         <xs:attribute name="id" type="IdType" use="required"/>
         <xs:attribute name="version" type="xs:string" use="required"/>
         <xs:attribute name="geom_type" type="GeomType" use="required"/>
@@ -394,6 +394,8 @@
             <xs:enumeration value="normalization"/>
             <xs:enumeration value="surface"/>
             <xs:enumeration value="metric_layer"/>
+            <xs:enumeration value="denominator"/>
+            <xs:enumeration value="numerator"/>
         </xs:restriction>
     </xs:simpleType>
 
