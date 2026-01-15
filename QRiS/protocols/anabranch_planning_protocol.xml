@@ -346,5 +346,31 @@
                 </TextField>
             </Fields>
         </Layer>
+        <Layer id="minimum_recovery_space" version="1.0" geom_type="Polygon">
+            <Label>Recovery Space - Minimum</Label>
+            <Symbology>planning_protocol_min_recovery_space.qml</Symbology>
+            <Description>Minimum Recovery Space</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                             
+            </Fields>  
+        </Layer>
+        <Layer id="maximum_recovery_space" version="1.0" geom_type="Polygon">
+            <Label>Recovery Space - Maximum</Label>
+            <Symbology>planning_protocol_max_recovery_space.qml</Symbology>
+            <Description>Maximum Recovery Space</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Planning</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                             
+            </Fields>  
+        </Layer>
     </Layers>
     </Protocol>
