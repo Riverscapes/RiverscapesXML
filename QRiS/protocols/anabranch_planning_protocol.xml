@@ -350,6 +350,9 @@
             <Label>Recovery Space - Minimum</Label>
             <Symbology>planning_protocol_min_recovery_space.qml</Symbology>
             <Description>Minimum Recovery Space</Description>
+            <MenuItems>
+                <MenuItem>copy_from_valley_bottom</MenuItem>
+            </MenuItems>
             <Hierarchy>
                 <HierarchyItem>Anabranch Planning</HierarchyItem>
             </Hierarchy>
@@ -374,3 +377,4 @@
         </Layer>
     </Layers>
     </Protocol>
+
