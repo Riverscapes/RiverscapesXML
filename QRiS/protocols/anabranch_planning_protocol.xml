@@ -380,7 +380,7 @@
         </Layer>
     </Layers>
     <Metrics>
-           <Metric id="area_maximum_recovery_space" version="1.0" calculation_machine_code="area">
+        <Metric id="area_maximum_recovery_space" version="1.0" calculation_machine_code="area">
             <Label>Maximum Potential Uplift Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Area of maximum recovery space extent in sample frame.</Description>
@@ -403,8 +403,7 @@
                 </DCELayer>            
             </Parameters>
         </Metric>
-        <Metrics>
-           <Metric id="area_minimum_recovery_space" version="1.0" calculation_machine_code="area">
+        <Metric id="area_minimum_recovery_space" version="1.0" calculation_machine_code="area">
             <Label>Minimum Potential Uplift Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Area of minimum recovery space extent in sample frame.</Description>
@@ -429,5 +428,6 @@
         </Metric>
     </Metrics>
 </Protocol>
+
 
 
