@@ -32,6 +32,7 @@
                         <xs:selector xpath="Metric"/>
                         <xs:field xpath="@id"/>
                         <xs:field xpath="@version"/>
+                        <xs:field xpath="@status"/>
                     </xs:unique>
                 </xs:element>
             </xs:sequence>
@@ -344,7 +345,7 @@
         <xs:attribute name="id" type="IdType" use="required"/>
         <xs:attribute name="version" type="xs:string" use="required"/>
         <xs:attribute name="calculation_machine_code" type="xs:string" use="required"/>
-            <xs:attribute name="status" type="MetricStatusType" use="optional"/>
+        <xs:attribute name="status" type="MetricStatusType" default="active"/>
     </xs:complexType>
 
     <xs:simpleType name="MetricStatusType">
