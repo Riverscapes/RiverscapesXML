@@ -7,11 +7,23 @@
     <CreationDate>2024-09-01</CreationDate>
     <UpdatedDate>2024-09-01</UpdatedDate>
     <Layers>
+          <Layer id="active_channel" version="1.0" geom_type="Polygon">
+            <Label>Active Channel</Label>
+            <Symbology>active_channels.qml</Symbology>
+            <Description>Active Channel Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
+                <HierarchyItem>Channel</HierarchyItem>
+            </Hierarchy>
+        </Layer>
         <Layer id="dam_crests" version="1.0" geom_type="Linestring">
             <Label>Dam Crests</Label>
             <Symbology>beaver_dams.qml</Symbology>
             <Description>Dam Crests Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Beaver Dam Building</HierarchyItem>
             </Hierarchy>
@@ -49,16 +61,6 @@
                 </ListField>
             </Fields>
         </Layer>
-        <Layer id="active_channel" version="1.0" geom_type="Polygon">
-            <Label>Active Channel</Label>
-            <Symbology>active_channels.qml</Symbology>
-            <Description>Active Channel Layer</Description>
-            <Hierarchy>
-                <HierarchyItem>Observations</HierarchyItem>
-                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
-                <HierarchyItem>Channel</HierarchyItem>
-            </Hierarchy>
-        </Layer>
         <Layer id="active_extents" version="1.0" geom_type="Polygon">
             <Label>Active Extents</Label>
             <Symbology>active_extents.qml</Symbology>
@@ -67,6 +69,7 @@
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Floodplain</HierarchyItem>
@@ -86,6 +89,7 @@
             <Symbology>centerlines.qml</Symbology>
             <Description>Centerlines of the Active Channel</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -113,6 +117,7 @@
             <Symbology>inundation_extents.qml</Symbology>
             <Description>Inundation Extents Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Hydraulic Mapping</HierarchyItem>
             </Hierarchy>    
@@ -132,6 +137,7 @@
             <Symbology>channel_junctions.qml</Symbology>
             <Description>Channel Junctions Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -153,6 +159,7 @@
             <Symbology>geomorphic_unit_extents.qml</Symbology>
             <Description>Geomporhpic Units Extents Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -188,6 +195,7 @@
             <Symbology>geomorphic_units.qml</Symbology>
             <Description>Geomorphic Unit Points Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -235,6 +243,7 @@
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Geomorphic Condition</HierarchyItem>
             </Hierarchy>
@@ -260,6 +269,7 @@
             <Symbology>vegetation_extents.qml</Symbology>
             <Description>Vegetation Extents Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Vegetation Mapping</HierarchyItem>
             </Hierarchy>
@@ -298,6 +308,7 @@
                 <MenuItem>import_photos</MenuItem>
             </MenuItems>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Other</HierarchyItem>
             </Hierarchy>
@@ -312,6 +323,7 @@
             <Symbology>observation_lines_dce.qml</Symbology>
             <Description>Observations Lines Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Other</HierarchyItem>
             </Hierarchy>
@@ -321,6 +333,7 @@
             <Symbology>observation_polygons_dce.qml</Symbology>
             <Description>Observations Polygons Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Other</HierarchyItem>
             </Hierarchy>
@@ -330,6 +343,7 @@
             <Symbology>structural_elements_points.qml</Symbology>
             <Description>Structural Elements Points Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Structural Elements</HierarchyItem>
             </Hierarchy>
@@ -398,6 +412,7 @@
             <Symbology>structural_elements_lines.qml</Symbology>
             <Description>Structural Elements Lines Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Structural Elements</HierarchyItem>
             </Hierarchy>
@@ -415,6 +430,7 @@
             <Symbology>structural_elements_areas.qml</Symbology>
             <Description>Structural Elements Areas Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Structural Elements</HierarchyItem>
             </Hierarchy>
@@ -434,18 +450,20 @@
             <Label>Recovery Space</Label>
             <Symbology>recovery_space.qml</Symbology>
             <Description>Recovery Space Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
+                <HierarchyItem>Assessments</HierarchyItem>
+            </Hierarchy>
             <MenuItems>
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
-            <Hierarchy>
-                <HierarchyItem>Assessments</HierarchyItem>
-            </Hierarchy>
         </Layer>
         <Layer id="risk_potential_points" version="1.0" geom_type="Point">
             <Label>Risk Potential</Label>
             <Symbology>risk_potential_points.qml</Symbology>
             <Description>Risk Potential Point Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Risk Potential</HierarchyItem>
             </Hierarchy>
@@ -473,6 +491,7 @@
             <Symbology>risk_potential_lines.qml</Symbology>
             <Description>Risk Potential Line Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Risk Potential</HierarchyItem>
             </Hierarchy>
@@ -500,6 +519,7 @@
             <Symbology>risk_potential_polygons.qml</Symbology>
             <Description>Risk Potential Polygon Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Risk Potential</HierarchyItem>
             </Hierarchy>
@@ -553,6 +573,62 @@
             <Precision>1</Precision>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines"/>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_area" version="1.0" calculation_machine_code="area">
+            <Label>Bank Attached Bar Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The area of of bank attached bars in containing sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_count" version="1.0" calculation_machine_code="count">
+            <Label>Bank Attached Bar Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of bank attached bars in containing sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="geomorphic_units">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_density" version="1.0" calculation_machine_code="count">
+            <Label>Bank Attached Bar Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of bank attached bars per km of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="geomorphic_units">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
             </Parameters>
         </Metric>
         <Metric id="channel_head_count" version="1.0" calculation_machine_code="count">
