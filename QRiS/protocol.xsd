@@ -331,17 +331,18 @@
     </xs:complexType>
 
     <xs:complexType name="MetricType">
-        <xs:sequence>
+        <xs:all>
             <xs:element name="Label" type="xs:string" minOccurs="1" maxOccurs="1"/>
             <xs:element name="DefaultLevel" type="MetricLevelType" minOccurs="1" maxOccurs="1"/>
             <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1"/>
             <xs:element name="DefinitionURL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="Hierarchy" type="HierarchyItemsType" minOccurs="0" maxOccurs="1"/>
             <xs:element name="MinimumValue" type="xs:float" minOccurs="0" maxOccurs="1"/>
             <xs:element name="MaximumValue" type="xs:float" minOccurs="0" maxOccurs="1"/>
             <xs:element name="Precision" type="xs:integer" minOccurs="0" maxOccurs="1"/>
             <xs:element name="Parameters" type="MetricParametersType" minOccurs="0" maxOccurs="1">
             </xs:element>
-        </xs:sequence>
+        </xs:all>
         <xs:attribute name="id" type="IdType" use="required"/>
         <xs:attribute name="version" type="xs:string" use="required"/>
         <xs:attribute name="calculation_machine_code" type="xs:string" use="required"/>
