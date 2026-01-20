@@ -11,6 +11,11 @@
             <Label>Geomorphic Units</Label>
             <Symbology>geomorphic_mapping_tier_1_extents.qml</Symbology>
             <Description>Tier 1 Geomorphic Units Polygon Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Mapping of Riverscapes Protocol Layers</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
+            </Hierarchy>
             <Fields>
                 <ListField id="geo_unit_type" version="1.0">
                     <Label>Type</Label>
@@ -34,6 +39,11 @@
             <Label>Active Confining Margins</Label>
             <Symbology>geomorphic_mapping_margins.qml</Symbology>
             <Description>Margins of the Valley, Valley Bottom, and Active Channel</Description>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Mapping of Riverscapes Protocol Layers</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
+            </Hierarchy>
             <Fields>
                 <ListField id="margin_type" version="1.0"> 
                     <Label>Margin Type(s)</Label>
