@@ -1,6 +1,14 @@
+"""Script to help convert layer definitions from schema 0.7.1 to 0.8.0
+COPILOT CREATED AND NOT YET REVIEWD OR TESTED
+TODO: Add dtype migration as well
+-Lorin
+"""
+
 import os
 import json
 from typing import List
+
+
 
 def migrate_layer_definitions(filepath: str) -> bool:
     """
