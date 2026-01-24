@@ -1,14 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://xml.riverscapes.net/layer_definition/0.7.1",
+    "$id": "https://xml.riverscapes.net/layer_definition/0.8.0",
     "title": "Riverscapes Layer Definitions (Unified)",
-    "description": "Combined schema embedding all layer structural + descriptive metadata in a single file. By convention named layer_definitions.json",
+    "description": "Schema to define structural + descriptive metadata for multiple layers (typically database tables) and their columns in a single file. By convention named layer_definitions.json. See https://docs.riverscapes.net/standards/metadata",
     "type": "object",
     "properties": {
         "$schema": {
             "type": "string"
         },
-        "authority_name": {
+        "tool_schema_name": {
             "type": "string",
             "description": "Tool Schema Name, usually the name of the Python package in which this is defined"
         },
@@ -98,7 +98,7 @@
         }
     },
     "required": [
-        "authority_name",
+        "tool_schema_name",
         "tool_schema_version",
         "layers"
     ],
@@ -113,7 +113,21 @@
                 },
                 "dtype": {
                     "type": "string",
-                    "description": "Data type (INTEGER, REAL, TEXT, etc.)"
+                    "description": "The logical data type. System should use this for mapping  to the appropriate physical type (e.g., SQLite INTEGER vs Pandas Int64).",
+                    "enum": [
+                        "INTEGER",
+                        "FLOAT",
+                        "STRING",
+                        "BOOLEAN",
+                        "DATETIME",
+                        "DECIMAL",
+                        "GEOMETRY",
+                        "STRUCTURED"
+                    ]
+                },
+                "dtype_parameters": {
+                    "type": "object",
+                    "description": "Optional technical hints clarifying data type. For Geometry this can be SRID, For STRUCTURED, specify list/map/schema. For DECIMAL, specify precision/scale. Use JSON syntax."
                 },
                 "friendly_name": {
                     "type": "string",
@@ -148,6 +162,10 @@
                     ],
                     "description": "Default value for new records"
                 },
+                "preferred_format": {
+                    "type": "string",
+                    "description": "Suggested format for output, specified in Python's format specification mini-language, e.g. {:2f} for a fixed-point notation with 2 digits following decimal."
+                },
                 "preferred_bin_definition": {
                     "type": "string",
                     "description": "Identifier of preferred bin definition (optional)"
@@ -161,7 +179,7 @@
     },
     "examples": [
         {
-            "authority_name": "rme_to_athena",
+            "tool_schema_name": "rme_to_athena",
             "tool_schema_version": "1.0.0",
             "layers": [
                 {
@@ -172,7 +190,7 @@
                     "columns": [
                         {
                             "name": "brat_capacity",
-                            "dtype": "REAL",
+                            "dtype": "FLOAT",
                             "friendly_name": "Existing Beaver Dam Capacity",
                             "theme": "Beaver",
                             "data_unit": "km^-1",
