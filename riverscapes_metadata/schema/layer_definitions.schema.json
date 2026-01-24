@@ -122,7 +122,8 @@
                         "DATETIME",
                         "DECIMAL",
                         "GEOMETRY",
-                        "STRUCTURED"
+                        "STRUCTURED",
+                        "BINARY"
                     ]
                 },
                 "dtype_parameters": {
