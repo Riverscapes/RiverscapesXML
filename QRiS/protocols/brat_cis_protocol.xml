@@ -12,6 +12,7 @@
             <Symbology>brat_cis.qml</Symbology>
             <Description>Brat CIS Layer</Description>
             <Hierarchy>
+                <HierarchyItem>BRAT CIS Protocol</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Beaver Dam Building</HierarchyItem>
             </Hierarchy>
@@ -1036,6 +1037,7 @@
             <Symbology>brat_cis_reaches.qml</Symbology>
             <Description>Brat CIS Layer</Description>
             <Hierarchy>
+                <HierarchyItem>BRAT CIS Protocol</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Beaver Dam Building</HierarchyItem>
             </Hierarchy>

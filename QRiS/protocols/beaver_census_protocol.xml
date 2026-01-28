@@ -12,6 +12,7 @@
             <Symbology>beaver_dam.qml</Symbology>
             <Description>Beaver Dam Layer</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Census Protocol</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Beaver Activity</HierarchyItem>
             </Hierarchy>
@@ -42,6 +43,7 @@
             <Symbology>beaver_sign.qml</Symbology>
             <Description>Beaver Sign Layer</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Census Protocol</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Beaver Activity</HierarchyItem>
             </Hierarchy>

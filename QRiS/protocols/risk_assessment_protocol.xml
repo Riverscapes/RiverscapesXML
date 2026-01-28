@@ -1,4 +1,4 @@
-<Protocol machine_code="RISK_ASSESSMENT" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+<Protocol machine_code="RISK_ASSESSMENT" version="1.0" status="deprecated" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Risk Assessment Protocol</Label>
     <Description>Risk Assessment of Stream, Infrastructure, and Property</Description>
     <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/risk-assessment-protocol</URL>
