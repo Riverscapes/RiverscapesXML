@@ -12,6 +12,7 @@
             <Symbology>beaver_protocol_beaver_sign.qml</Symbology>
             <Description>Beaver Activity</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Protocol</HierarchyItem>
                 <HierarchyItem>Beaver Activity</HierarchyItem>                
             </Hierarchy>
             <Fields>
@@ -46,6 +47,7 @@
             <Symbology>beaver_protocol_dam_survey.qml</Symbology>
             <Description>Survey of Beaver Dams</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Protocol</HierarchyItem>
                 <HierarchyItem>Beaver Survey</HierarchyItem>                
             </Hierarchy>
             <Fields>
@@ -83,6 +85,7 @@
             <Symbology>beaver_protocol_complex_survey.qml</Symbology>
             <Description>Survey of Beaver Dam Complexes (place point on largest primary dam)</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Protocol</HierarchyItem>
                 <HierarchyItem>Complex Survey</HierarchyItem>                
             </Hierarchy>
             <Fields>
@@ -108,6 +111,7 @@
             <Symbology>beaver_protocol_translocations.qml</Symbology>
             <Description>Locations of Beaver Translocation Sources, Holding, and Release Sites</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Protocol</HierarchyItem>
                 <HierarchyItem>Translocation Sites</HierarchyItem>                
             </Hierarchy>
             <Fields>
@@ -141,6 +145,7 @@
             <Symbology>beaver_protocol_structure_points.qml</Symbology>
             <Description>LTPBR As-Built Structures</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Protocol</HierarchyItem>
                 <HierarchyItem>As-Built Structures</HierarchyItem>
             </Hierarchy>
             <Fields>
@@ -199,6 +204,7 @@
             <Symbology>beaver_protocol_beaver_conflict.qml</Symbology>
             <Description>Assessment of Beaver Conflicts</Description>
             <Hierarchy>
+                <HierarchyItem>Beaver Protocol</HierarchyItem>
                 <HierarchyItem>Beaver Conflict</HierarchyItem>
             </Hierarchy>
             <Fields>

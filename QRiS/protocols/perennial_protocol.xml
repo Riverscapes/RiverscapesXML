@@ -12,6 +12,7 @@
             <Symbology>perennial_protocol_observations.qml</Symbology>
             <Description>Observation Points Layer</Description>
             <Hierarchy>
+                <HierarchyItem>Perennial Streamflow Protocol</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>                
             </Hierarchy>
             <Fields>
@@ -35,6 +36,7 @@
             <Symbology>perennial_protocol_flow_type.qml</Symbology>
             <Description>Flow Type Line Layer</Description>
             <Hierarchy>
+                <HierarchyItem>Perennial Streamflow Protocol</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>                
             </Hierarchy>
             <Fields>
