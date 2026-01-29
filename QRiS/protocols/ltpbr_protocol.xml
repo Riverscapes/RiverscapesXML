@@ -729,7 +729,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="dam_count" version="2.0" calculation_machine_code="count">
+        <Metric id="dam_count" version="2.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Dam Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The number of dams in each sample frame</Description>
@@ -744,6 +744,30 @@
                     <AttributeFilter field_id_ref="structural_element_type">
                         <Value>Dam</Value>
                         <Value>Dam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count" version="3.0" calculation_machine_code="count">
+            <Label>Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structural_elements_points">
+                    <CountFields>
+                        <CountField field_id_ref="structure_count"/>
+                    </CountFields>
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Dam</Value>
+                        <Value>Dam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="structural_elements_lines">
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Dam</Value>
                     </AttributeFilter>
                 </DCELayer>
             </Parameters>
