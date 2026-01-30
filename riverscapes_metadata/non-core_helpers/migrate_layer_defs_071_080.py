@@ -1,97 +1,129 @@
 """Script to help convert layer definitions from schema 0.7.1 to 0.8.0
-COPILOT CREATED AND NOT YET REVIEWD OR TESTED
-TODO: Add dtype migration as well
--Lorin
+Tested and worked on rme_to_athena
+-Lorin Jan 2026
 """
-
-import os
+import argparse
+from pathlib import Path
 import json
-from typing import List
 
+OLD_DTYPE_TO_NEW_MAP = [
+    ('ARRAY', 'STRUCTURED'),
+    ('MEDIUMINT', 'INTEGER'),
+    ('POINT', 'GEOMETRY'),
+    ('REAL', 'FLOAT'),
+    ('STRUCT', 'STRUCTURED'),
+    ('TEXT', 'STRING'),
+    ('bigint', 'INTEGER'),
+    ('binary', 'BINARY'),
+    ('double', 'FLOAT'),
+    ('string', 'STRING'),
+    ('struct', 'STRUCTURED'),
+]
 
 
 def migrate_layer_definitions(filepath: str) -> bool:
     """
-    Migrates a single layer_definitions.json file by renaming 'authority_name' to 'tool_schema_name'.
-    
-    This function checks if the file contains the legacy 'authority_name' key.
-    If found, it replaces it with 'tool_schema_name', preserving the value,
-    and writes the file back to disk with consistent indentation.
-    
+    Migrates a single layer_definitions.json file by renaming 'authority_name' to 'tool_schema_name' and updating dtype values
+
     Args:
         filepath (str): The absolute path to the layer_definitions.json file.
-        
+
     Returns:
         bool: True if the file was modified, False if no changes were needed or file was invalid.
     """
-    with open(filepath, 'r', encoding='utf-8') as f:
+    path = Path(filepath)
+    with path.open('r', encoding='utf-8') as f:
         try:
             data = json.load(f)
         except json.JSONDecodeError:
             print(f"Skipping invalid JSON: {filepath}")
             return False
 
-    # Check if this file needs migration
-    if 'authority_name' in data:
-        print(f"Migrating {filepath}...")
-        
-        # Rename the key
-        # We use pop to remove the old key and return its value
-        data['tool_schema_name'] = data.pop('authority_name')
-        
-        # Note: tool_schema_version is left untouched as 0.8 is considered the target version.
+    changed = False
 
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4)
+    # Check if this file needs migration for authority_name
+    if 'authority_name' in data:
+        # Rename the key.
+        # Issue - the new key automatically goes to the end. Alternative is to replace with regex instead of json - more fragile and complex.
+        data['tool_schema_name'] = data.pop('authority_name')
+        changed = True
+
+    # Check for dtype migration in layer definitions
+    dtype_map = dict(OLD_DTYPE_TO_NEW_MAP)
+    if 'layers' in data and isinstance(data['layers'], list):
+        for layer in data['layers']:
+            if isinstance(layer, dict) and 'columns' in layer and isinstance(layer['columns'], list):
+                for column in layer['columns']:
+                    if isinstance(column, dict) and 'dtype' in column:
+                        old_dtype = column['dtype']
+                        new_dtype = dtype_map.get(old_dtype, old_dtype)
+                        if new_dtype and new_dtype != old_dtype:
+                            column['dtype'] = new_dtype
+                            changed = True
+
+    if changed:
+        # You can tune indent, separators, and ensure_ascii for minimal diffs with the original file.
+        # Example: indent=None, separators=(",", ": "), ensure_ascii=False
+        with path.open('w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
         return True
-    
     return False
 
-def scan_and_migrate(root_dirs: List[str]):
+
+def scan_and_migrate(root_dirs: list[Path]):
     """
     Scans the provided root directories for 'layer_definitions.json' files and applies migration.
-    
-    It recursively walks through the directory tree looking for files that match the 
-    exact name 'layer_definitions.json'.
-    
-    Args:
-        root_dirs (List[str]): List of absolute directory paths to scan recursively.
-    """
-    count = 0
-    checked = 0
-    for root_dir in root_dirs:
-        if not os.path.exists(root_dir):
-            print(f"Directory not found: {root_dir}")
-            continue
-            
-        print(f"Scanning {root_dir}...")
-        for root, dirs, files in os.walk(root_dir):
-            for file in files:
-                if file == 'layer_definitions.json':
-                    checked += 1
-                    full_path = os.path.join(root, file)
-                    if migrate_layer_definitions(full_path):
-                        count += 1
 
-    print(f"Migration complete. Scanned {checked} files. Updated {count} files.")
+    It recursively walks through the directory tree looking for files that match the
+    exact name 'layer_definitions.json'.
+
+    Args:
+        root_dirs (list[Path]): List of Path objects to scan recursively.
+    """
+    changed_files = []
+    unchanged_files = []
+    checked = 0
+    for root_path in root_dirs:
+        if not root_path.exists():
+            print(f"Directory not found: {root_path}")
+            continue
+
+        print(f"Scanning {root_path}...")
+        for path in root_path.rglob('layer_definitions.json'):
+            checked += 1
+            if migrate_layer_definitions(str(path)):
+                changed_files.append(str(path))
+            else:
+                unchanged_files.append(str(path))
+
+    print(f"\nMigration complete. Scanned {checked} files.")
+    print(f"Updated {len(changed_files)} files:")
+    for f in changed_files:
+        print(f"  [CHANGED] {f}")
+    print(f"Unchanged {len(unchanged_files)} files:")
+    for f in unchanged_files:
+        print(f"  [UNCHANGED] {f}")
+
 
 def main():
     """
     Main entry point for the migration script.
-    
-    Determines the workspace root relative to this script's location
-    and initiates the scan and migrate process.
+
+    Accepts an optional command-line argument for the path to scan. If not provided, uses the current directory.
     """
-    # Calculate workspace root. 
-    # This script is located at: riverscapes_metadata/non-core_helpers/migrate_authority_name.py
-    # So workspace root is two levels up from the script's directory (parent of 'riverscapes_metadata').
-    current_script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    # ../../ from riverscapes_metadata/non-core_helpers
-    workspace_root = os.path.abspath(os.path.join(current_script_dir, '..', '..'))
-    
-    print(f"Starting migration scan from workspace root: {workspace_root}")
-    scan_and_migrate([workspace_root])
+    parser = argparse.ArgumentParser(description="Migrate layer_definitions.json files from schema 0.7.1 to 0.8.0.")
+    parser.add_argument(
+        "path",
+        nargs="?",
+        default=Path.cwd(),
+        type=Path,
+        help="Directory to scan recursively (default: current directory)"
+    )
+    args = parser.parse_args()
+    scan_path = args.path.resolve()
+    print(f"Starting migration scan from: {scan_path}")
+    scan_and_migrate([scan_path])
+
 
 if __name__ == "__main__":
     main()
