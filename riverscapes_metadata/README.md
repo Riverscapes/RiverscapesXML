@@ -29,17 +29,17 @@ Sample input and output are in the `test` folder.
 
 ## Athena External Table
 
-We publish to: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/`
+We publish to: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/` (old way) `s3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/schema_majorver/` where `schema_majorver` is a major version change that is incompatible with previous (e.g. deleted column, change partition)
 
 Recommended external table DDL (Parquet, partition columns excluded from file content):
 
 ```sql
-CREATE EXTERNAL TABLE IF NOT EXISTS layer_definitions (
+CREATE EXTERNAL TABLE IF NOT EXISTS rs_raw.layer_definitions_08 (
   layer_id                  string  COMMENT 'Stable identifier of the layer or table, for example used for project.rs.xml id',
   layer_name                string  COMMENT 'Human-readable layer or table name (may match layer_id)',
   layer_type                string  COMMENT 'Layer category (CommonDatasetRef, Raster, Vector, Geopackage, etc.)',
   layer_path                string  COMMENT 'Relative or absolute path to the delivered layer artifact',
-  layer_theme               string  COMMENT 'High level grouping for the layer (e.g., Hydrology, Vegetation)',
+  layer_theme               string  COMMENT 'High level grouping for the layer (e.g. Hydrology, Vegetation)',
   layer_source_title        string  COMMENT 'External provenance or documentation title'
   layer_source_url          string  COMMENT 'Provenance or documentation URL for the layer',
   layer_data_product_version string COMMENT 'Data vintage/year or version string',
@@ -48,8 +48,9 @@ CREATE EXTERNAL TABLE IF NOT EXISTS layer_definitions (
   name              string  COMMENT 'Column (or raster band) identifier',
   friendly_name     string  COMMENT 'Display-friendly name for the column',
   theme             string  COMMENT 'Grouping theme -- useful for very wide tables (e.g., Beaver, Hydrology)',
-  data_unit         string  COMMENT 'Pint-compatible unit string (e.g., m, km^2, %)',
+  data_unit         string  COMMENT 'Pint-compatible unit string (e.g. m, km^2, %)',
   dtype             string  COMMENT 'Data type (INTEGER, REAL, TEXT, etc.)',
+  dtype_parameters  string  COMMENT 'Dictionary of parameters providing more detail on the data type (e.g. SRID:4326, BIT_DEPTH:8)',
   description       string  COMMENT 'Detailed description of the column',
   is_key            boolean COMMENT 'Participates in a primary/unique key',
   is_required       boolean COMMENT 'True if field cannot be empty. Corresponds to SQL NOT NULL',
@@ -63,7 +64,7 @@ PARTITIONED BY (
   tool_schema_version string COMMENT 'Tool schema version (semver)'
 )
 STORED AS PARQUET
-LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions/';
+LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/';
 ```
 
 Add new partitions (after upload):
@@ -79,6 +80,46 @@ ADD IF NOT EXISTS PARTITION (
   tool_schema_version='1.0.0'
 )
 LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions/authority=data-exchange-scripts/authority_name=rme_to_athena/tool_schema_version=1.0.0/';
+```
+
+### View that reports should use
+
+```sql
+CREATE VIEW default.layer_definitions_latest AS
+WITH
+  RankedLayers AS (
+   SELECT
+     *
+   , DENSE_RANK() OVER (PARTITION BY authority, authority_name ORDER BY COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0) DESC) version_rank
+   FROM
+     "default".layer_definitions
+) 
+SELECT
+  authority
+, authority_name
+, tool_schema_name 
+, tool_schema_version
+, layer_id
+, layer_name
+, layer_type
+, layer_path
+, layer_theme
+, layer_source_url
+, layer_data_product_version
+, layer_description
+, name
+, friendly_name
+, theme
+, data_unit
+, dtype
+, description
+, is_key
+, is_required
+, default_value
+, commit_sha
+FROM
+  RankedLayers
+WHERE (version_rank = 1)
 ```
 
 ### Example Queries
@@ -119,3 +160,6 @@ WHERE a.authority='data-exchange-scripts'
   AND a.tool_schema_version='1.0.0'
   AND b.tool_schema_version='1.1.0';
 ```
+
+## Safely making changes to the schema
+
