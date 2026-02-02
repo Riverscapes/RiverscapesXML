@@ -38,6 +38,7 @@
         {
           "name": "features",
           "data_unit": "count",
+          "dtype": "INTEGER",
           "friendly_name": "Number of features"
         },
         {
@@ -54,7 +55,7 @@
         },
         {
           "name": "FCode",
-          "dtype": "",
+          "dtype": "MEDIUMINT",
           "friendly_name": "",
           "data_unit": "NA",
           "description": "NHD FCode representing the flow type of the main channel in the riverscape",
@@ -66,7 +67,7 @@
         },
         {
           "name": "low_lying_floodplain_area",
-          "dtype": "",
+          "dtype": "REAL",
           "friendly_name": "",
           "data_unit": "m^2",
           "description": "Area of low-lying floodplain surface in the polygon",
