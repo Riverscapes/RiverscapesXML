@@ -59,6 +59,7 @@ OUTPUT_COLUMNS = [  # logical full schema (including partition columns)
     "layer_data_product_version",
     "layer_description",
     # column-defining fields with prefixes removed
+    "column_index",
     "name",
     "friendly_name",
     "theme",
@@ -192,7 +193,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
         layer_data_product_version = layer.get("data_product_version", "")
         layer_description = layer.get("description", "")
         columns = layer.get("columns", [])
-        for col in columns:
+        for i, col in enumerate(columns):
             cname = col.get("name", "")
             if not cname:
                 continue
@@ -226,6 +227,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "layer_source_url": layer_source_url,
                 "layer_data_product_version": layer_data_product_version,
                 "layer_description": layer_description,
+                "column_index": i,
                 "name": cname,
                 "friendly_name": col.get("friendly_name", ""),
                 "theme": col.get("theme", ""),
@@ -263,6 +265,7 @@ def write_parquet(rows: list[dict], output: Path, columns: list[str]) -> None:
         "layer_source_title": pa.string(),
         "layer_source_url": pa.string(),
         "layer_data_product_version": pa.string(),
+        "column_index": pa.int32(),
         "layer_description": pa.string(),
         "name": pa.string(),
         "friendly_name": pa.string(),
