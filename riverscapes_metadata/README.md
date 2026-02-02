@@ -161,5 +161,60 @@ WHERE a.authority='data-exchange-scripts'
   AND b.tool_schema_version='1.1.0';
 ```
 
-## Safely making changes to the schema
+## Safely making changes to the schema (Migration Roadmap)
 
+Because so many downstream tools depend on this metadata, we cannot simply break the table schema. Instead, we follow a pattern of "Expand and Contract" using Athena Views to shield consumers from changes.
+
+### The Architecture
+
+1. Bronze Layer (Raw Files) output from `publish_metadata.py` 
+    - **Old Location (<= v0.7)**: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/`
+    - Partitioned by `authority`, `authority_name`, `tool_schema_version`.
+    - **New Location (>= v0.8)**: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/`
+    - Partitioned by `authority`, `tool_schema_name`, `tool_schema_version`.
+    - These are external tables defined in the `rs_raw` database (e.g. `rs_raw.layer_definitions_08`, `rs_raw.layer_definitions_07`).
+
+2. Silver Layer (Unified View)
+    - A view `layer_definitions` that UNIONs valid records from raw tables.
+    - Handles column renaming (e.g., mapping `authority_name` to `tool_schema_name`).
+    - Casts types to ensure consistency.
+
+3. Gold Layer (Public Interface)
+    - **View**: `default.layer_definitions_latest`
+    - Reports and dashboards query this view.
+    - It filters for the highest version number per tool to show only the active schema.
+    - include deprecated columns until all prod reports are refactored
+
+### Migration Steps for Breaking Changes
+
+When introducing a breaking change (like v0.7 -> v0.8):
+
+1. **Update the Producer**:
+    - Modify `export_layer_definitions_for_s3.py` to output to the new S3 path: `.../layer_definitions_raw/0.8/`.
+    - Update the valid JSON schemas.
+
+2. **Create New Raw Table**:
+    - Define `rs_raw.layer_definitions_08` pointing to the new S3 bucket path.
+
+3. **Shield the Consumers**:
+    - Update the intermediate view (`rs.layer_definitions`) to `UNION ALL` the legacy table and the new table.
+    - Map the old columns to the new names so the shape matches.
+
+    ```sql
+    CREATE OR REPLACE VIEW rs.layer_definitions AS
+    SELECT 
+        layer_id, 
+        authority_name AS tool_schema_name, -- Map old to new
+        ... 
+    FROM rs_raw.layer_definitions_legacy
+    UNION ALL
+    SELECT 
+        layer_id, 
+        tool_schema_name, 
+        ... 
+    FROM rs_raw.layer_definitions_08
+    ```
+
+4. **Deprecate**:
+    - Once all tools are migrated to v0.8, remove the legacy part of the UNION in the view.
+    - Archive the old raw data.

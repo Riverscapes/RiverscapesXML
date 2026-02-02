@@ -1,16 +1,11 @@
 # Tool Changes
 
-## December 2026
+For **Schema changes** see CHANGELOG in schema folder
+
+## Feb 2026
+
+Handling for 0.8 schema, new S3 paths allowing for two concurrent layer_definitions_schema versions and smooth transition between them.
+
+## December 2025
 
 * validation of units using Pint library prior to upload to S3/Athena
-
-# Schema Versions
-
-## 0.7.1 December 2026
-
-* Added new `layers/source_title` attribute
-* Improved descriptions including clarification of Units
-
-## 0.6.1 November 2026
-
-* published and working
