@@ -44,6 +44,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS layer_definitions (
   layer_source_url          string  COMMENT 'Provenance or documentation URL for the layer',
   layer_data_product_version string COMMENT 'Data vintage/year or version string',
   layer_description         string  COMMENT 'Human-readable summary of the layer',
+  column_index      int     COMMENT 'Order of column in the definition',
   name              string  COMMENT 'Column (or raster band) identifier',
   friendly_name     string  COMMENT 'Display-friendly name for the column',
   theme             string  COMMENT 'Grouping theme -- useful for very wide tables (e.g., Beaver, Hydrology)',
