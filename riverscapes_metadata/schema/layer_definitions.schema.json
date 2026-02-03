@@ -113,7 +113,7 @@
                 },
                 "dtype": {
                     "type": "string",
-                    "description": "The logical data type. System should use this for mapping  to the appropriate physical type (e.g., SQLite INTEGER vs Pandas Int64).",
+                    "description": "The logical data type. System should use this for mapping to the appropriate physical type (e.g., SQLite INTEGER vs Pandas Int64).",
                     "enum": [
                         "INTEGER",
                         "FLOAT",
@@ -128,7 +128,7 @@
                 },
                 "dtype_parameters": {
                     "type": "object",
-                    "description": "Optional technical hints clarifying data type. For Geometry this can be SRID, For STRUCTURED, specify list/map/schema. For DECIMAL, specify precision/scale. Use JSON syntax."
+                    "description": "Optional technical hints clarifying data type. Use JSON syntax. e.g. GEOMETRY srid; STRUCTURED list/map/schema; DECIMAL precision & scale"
                 },
                 "friendly_name": {
                     "type": "string",
@@ -198,6 +198,12 @@
                             "description": "Existing number of beaver dams per unit riverscape length supported",
                             "is_key": false,
                             "is_required": true
+                        },
+                        {
+                            "name": "geometry",
+                            "dtype": "GEOMETRY",
+                            "dtype_parameters": {"srid": 4326, "geometry_type": "MULTIPOLYGON"},
+                            "friendly_name": "Polygon representing the DGO"
                         }
                     ]
                 }

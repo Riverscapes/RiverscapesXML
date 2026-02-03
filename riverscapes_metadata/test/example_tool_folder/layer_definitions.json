@@ -1,6 +1,6 @@
 {
   "$schema": "https://xml.riverscapes.net/riverscapes_metadata/schema/layer_definitions.schema.json",
-  "tool_schema_version": "1.0.0",
+  "tool_schema_version": "1.1.0",
   "layers": [
     {
       "layer_id": "VBET_DGO_POLYGONS",
@@ -20,6 +20,12 @@
           "theme": "",
           "preferred_bin_definition": "",
           "default_value": null
+        },
+        {
+          "name": "geom",
+          "friendly_name": "DGO geometry",
+          "dtype": "GEOMETRY",
+          "dtype_parameters": {"srid":4326}
         },
         {
           "name": "level_path",
@@ -46,7 +52,7 @@
           "is_key": false,
           "is_required": false,
           "theme": "",
-          "preferred_bin_definition": "",
+          "preferred_format": "{,.0}",
           "default_value": null
         },
         {
