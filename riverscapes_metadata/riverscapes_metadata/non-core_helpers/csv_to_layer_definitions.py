@@ -9,7 +9,7 @@ Columns (header names case-sensitive):
 
 Note theme is column theme - we haven't added layer_theme to the spreadsheet yet. 
 
-Authority metadata (authority_name, tool_schema_version) will be provided via CLI flags instead of sheet columns to avoid accidental edits.
+Authority metadata (tool_schema_name, tool_schema_version) will be provided via CLI flags instead of sheet columns to avoid accidental edits.
 
 Cutover process recommendation:
   1. Team maintains spreadsheet until ready.
@@ -25,7 +25,7 @@ Validation:
 Usage:
   python scripts/metadata/csv_to_layer_definitions.py \
       --csv definitions.csv \
-      --authority-name rme_to_athena \
+      --tool-schema-name rme_to_athena \
       --tool-schema-version 1.0.0 \
       --out metadata_schemas/layer_definitions.json
 
@@ -49,12 +49,10 @@ def parse_args() -> argparse.Namespace:
         description="Convert spreadsheet CSV to layer_definitions.json (validated against remote schema)")
     p.add_argument("--csv", required=True,
                    help="Input CSV export from spreadsheet")
-    p.add_argument("--authority-name", required=True,
-                   help="Authority name (package/tool identifier)")
+    p.add_argument("--tool-schema-name", required=True,
+                   help="Tool schema name (package/tool identifier)")
     p.add_argument("--tool-schema-version", required=False,
                    help="Tool schema version (semver)")
-    p.add_argument("--authority-version", required=False,
-                   help="(Deprecated) legacy flag; use --tool-schema-version")
     p.add_argument(
         "--out", default="metadata_schemas/layer_definitions.json", help="Output JSON path")
     return p.parse_args()
@@ -77,7 +75,7 @@ def coerce_bool(val: str | None, default: bool) -> bool:
     return default
 
 
-def build_definition(authority_name: str, tool_schema_version: str, rows: list[dict]) -> tuple[dict, list[dict]]:
+def build_definition(tool_schema_name: str, tool_schema_version: str, rows: list[dict]) -> tuple[dict, list[dict]]:
     """Build unified definitions.
 
     First occurrence of layer-level metadata (layer_name, layer_type, layer_description) wins.
@@ -120,21 +118,23 @@ def build_definition(authority_name: str, tool_schema_version: str, rows: list[d
             if raw_type and raw_type != existing["layer_type"]:
                 conflicts.append({"layer_id": lid, "field": "layer_type",
                                  "kept": existing["layer_type"], "ignored": raw_type})
-        layers[lid]["columns"].append({
+            
+        col_def = {
             "name": r["column_name"].strip(),
-            "dtype": (r.get("dtype") or "").strip(),
-            "friendly_name": (r.get("friendly_name") or "").strip(),
-            "data_unit": (r.get("data_unit") or "").strip(),
-            "description": (r.get("description") or "").strip(),
             "is_key": coerce_bool(r.get("is_key"), False),
             "is_required": coerce_bool(r.get("is_required"), False),
-            "theme": (r.get("theme") or "").strip(),
-            "preferred_bin_definition": (r.get("preferred_bin_definition") or "").strip(),
-            "default_value": (r.get("default_value") or None),
-        })
+        }
+        # for optional column values, only include them if they have a value
+        for key in ["dtype","friendly_name", "data_unit", "description", "theme", "preferred_format", "preferred_bin_definition", "default_value"]:
+            val = (r.get(key) or "").strip()
+            if val:
+                col_def[key] = val
+        
+        layers[lid]["columns"].append(col_def)
+
     return ({
         "$schema": SCHEMA_URL,
-        "authority_name": authority_name,
+        "tool_schema_name": tool_schema_name,
         "tool_schema_version": tool_schema_version,
         "layers": list(layers.values())
     }, conflicts)
@@ -163,7 +163,7 @@ def main() -> None:
         print("Missing required --tool-schema-version", file=sys.stderr)
         sys.exit(2)
     defs, conflicts = build_definition(
-        args.authority_name, tool_schema_version, rows)
+        args.tool_schema_name, tool_schema_version, rows)
     try:
         validate(defs)
     except Exception as e:
