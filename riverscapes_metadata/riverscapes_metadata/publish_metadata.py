@@ -82,7 +82,7 @@ def main():
 
     # Environment variables from GitHub Actions
     table_name = os.environ.get('TABLE_NAME', 'layer_definitions')
-    s3_base_path = os.environ.get('S3_BASE_PATH', 's3://riverscapes-athena/riverscapes_metadata/layer_definitions')
+    s3_base_path = os.environ.get('S3_BASE_PATH', 's3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/')
     athena_database = os.environ.get('ATHENA_DATABASE', 'default')
     athena_result_bucket = os.environ.get('ATHENA_RESULT_BUCKET', 's3://riverscapes-athena-output/query-results/metadata')
 

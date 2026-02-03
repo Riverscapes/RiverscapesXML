@@ -31,7 +31,7 @@ Sample input and output are in the `test` folder.
 
 We publish to: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/` (old way) `s3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/schema_majorver/` where `schema_majorver` is a major version change that is incompatible with previous (e.g. deleted column, change partition)
 
-Recommended external table DDL (Parquet, partition columns excluded from file content):
+External table DDL (Parquet, no partitions):
 
 ```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS rs_raw.layer_definitions_08 (
@@ -55,31 +55,14 @@ CREATE EXTERNAL TABLE IF NOT EXISTS rs_raw.layer_definitions_08 (
   is_key            boolean COMMENT 'Participates in a primary/unique key',
   is_required       boolean COMMENT 'True if field cannot be empty. Corresponds to SQL NOT NULL',
   default_value     string  COMMENT 'Default value for new records',
-  commit_sha        string  COMMENT 'git commit at time of harvest from authority json'
-)
-COMMENT 'Unified Riverscapes layer column definitions (structural + descriptive metadata).'
-PARTITIONED BY (
-  authority          string COMMENT 'Repository root name (publishing authority)',
-  authority_name     string COMMENT 'Issuing package/tool authority name',
+  commit_sha        string  COMMENT 'git commit at time of harvest from authority json',
+  authority          string COMMENT 'Repository root name (publishing authority) (e.g. riverscapes-tools)',
+  tool_schema_name     string COMMENT 'Issuing package/tool name (e.g. VBET)',
   tool_schema_version string COMMENT 'Tool schema version (semver)'
 )
+COMMENT 'Unified Riverscapes layer column definitions (structural + descriptive metadata).'
 STORED AS PARQUET
 LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/';
-```
-
-Add new partitions (after upload):
-
-```sql
--- auto-discover
-MSCK REPAIR TABLE layer_definitions;  
--- OR manual:
-ALTER TABLE layer_definitions
-ADD IF NOT EXISTS PARTITION (
-  authority='data-exchange-scripts',
-  authority_name='rme_to_athena',
-  tool_schema_version='1.0.0'
-)
-LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions/authority=data-exchange-scripts/authority_name=rme_to_athena/tool_schema_version=1.0.0/';
 ```
 
 ### View that reports should use
@@ -90,7 +73,7 @@ WITH
   RankedLayers AS (
    SELECT
      *
-   , DENSE_RANK() OVER (PARTITION BY authority, authority_name ORDER BY COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0) DESC) version_rank
+   , DENSE_RANK() OVER (PARTITION BY authority, tool_schema_name ORDER BY COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0) DESC) version_rank
    FROM
      "default".layer_definitions
 ) 
@@ -189,14 +172,34 @@ Because so many downstream tools depend on this metadata, we cannot simply break
 
 When introducing a breaking change (like v0.7 -> v0.8):
 
-1. **Update the Producer**:
-    - Modify `export_layer_definitions_for_s3.py` to output to the new S3 path: `.../layer_definitions_raw/0.8/`.
-    - Update the valid JSON schemas.
+1. Schema & Scaffolding
+   1. Create branch e.g. `metaschema0.8`
+   2. Update `riverscapes_metadata/schema/layer_definitions.schema.json` with the new structure.
+   3. Create a one-off migration script (e.g., `riverscapes_metadata/migrate_layer_defs_07_to_08.py`) to automate converting existing `layer_definitions.json` files in repositories to the new format.
+   4. Update `export_layer_definitions_for_s3.py` to handle the new schema logic and output to the new S3 path (e.g., `.../layer_definitions_raw/0.8/`).
 
-2. **Create New Raw Table**:
-    - Define `rs_raw.layer_definitions_08` pointing to the new S3 bucket path.
+2. Create New Raw Table in Athena
+   1. Define `rs_raw.layer_definitions_08` pointing to the new S3 bucket path.
 
-3. **Shield the Consumers**:
+3. Testing Phase
+   1. publish branch
+   2. change the URL in `__ini__.py` to point to the raw.githubusercontent.com version of the schema
+   3. test in this repo
+
+4. Dual schema phase
+   1. we currenly only have one "live" schema on xml.riverscapes.net. we may need to reconsider in future
+   2. Migrate definitions in riverscapes-tools and data-exchange-tools
+      1. use the script to update the `layer_definition*.json` files. These will now be invalid with the old schema
+      2. they can be published with the scripts on the rsxml branch
+
+5. Manage data & view for reports
+
+Most important is for production reports still be able to get correct info from layer_definisions_latest view.
+So when renaming a field we:
+1. add new field - so now we have old and new
+2. mitigate reports
+3. remove old field
+
     - Update the intermediate view (`rs.layer_definitions`) to `UNION ALL` the legacy table and the new table.
     - Map the old columns to the new names so the shape matches.
 
@@ -206,7 +209,7 @@ When introducing a breaking change (like v0.7 -> v0.8):
         layer_id, 
         authority_name AS tool_schema_name, -- Map old to new
         ... 
-    FROM rs_raw.layer_definitions_legacy
+    FROM rs_raw.layer_definitions_07
     UNION ALL
     SELECT 
         layer_id, 
@@ -215,6 +218,8 @@ When introducing a breaking change (like v0.7 -> v0.8):
     FROM rs_raw.layer_definitions_08
     ```
 
-4. **Deprecate**:
+* merge branch to master
+
+6. **Deprecate**:
     - Once all tools are migrated to v0.8, remove the legacy part of the UNION in the view.
-    - Archive the old raw data.
+    - Archive or delete the old raw data in S3.
