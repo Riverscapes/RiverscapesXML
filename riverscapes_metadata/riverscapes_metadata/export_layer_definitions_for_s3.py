@@ -9,8 +9,6 @@ Index manifest:
 
 Defaults:
     - Format: parquet (use --format csv to get CSV instead)
-    - commit_sha always included (current repo HEAD).
-    - No per-row timestamp; generation timestamp stored once in index.json.
 
 Usage examples:
     python export_layer_definitions_for_s3.py
@@ -24,17 +22,18 @@ Notes:
     - Parquet writing uses pyarrow.
 """
 from __future__ import annotations
-import pyarrow.parquet as pq
-import pyarrow as pa
 import argparse
 import csv
 import json
+import shutil
 import subprocess
 import datetime as _dt
 import sys
 import re
 from pathlib import Path
 
+import pyarrow as pa
+import pyarrow.parquet as pq
 from jsonschema import Draft7Validator
 from urllib.request import urlopen
 import pint
@@ -240,7 +239,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 default_val_out = None
             else:
                 default_val_out = str(default_val)
-            rows.append({
+            row = {
                 "authority": Path.cwd().name,
                 "tool_schema_name": tool_schema_name,
                 "tool_schema_version": tool_schema_version,
@@ -262,12 +261,13 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "dtype_parameters": json.dumps(col.get("dtype_parameters")) if col.get("dtype_parameters") else None,
                 "description": col.get("description", ""),
                 "is_key": col.get("is_key", False),
-                "is_required": (col.get("is_required") if "is_required" in col else (not col.get("is_nullable", True))),             
+                "is_required": col.get("is_required", False),             
                 "default_value": default_val_out,
                 "preferred_format": col.get("preferred_format", ""),
                 "preferred_bin_definition": col.get("preferred_bin_definition", ""),
                 "commit_sha": commit_sha or "",
-            })
+            }
+            rows.append(row)
     return rows
 
 
@@ -354,7 +354,9 @@ def validate_cli() -> None:
 
 
 def main() -> None:
-    """On success or failure writes to index.json in the dist folder"""
+    """On success or failure writes to index.json in the dist folder
+    **deletes everything from the dist folder first!**
+    """
     args = parse_args()
     root = Path(args.root).resolve()
     print(f"Scanning for metadata in {root}...")
@@ -362,6 +364,10 @@ def main() -> None:
     if not base_output.is_absolute():
         base_output = root / base_output
     
+    if base_output.exists():
+        print(f"Cleaning existing output directory: {base_output}")
+        shutil.rmtree(base_output)
+
     all_rows, validation_errors, commit_sha = scan_and_validate(root)
 
     # Index now written to top-level dist/ directory (sibling to metadata/ partitions)
