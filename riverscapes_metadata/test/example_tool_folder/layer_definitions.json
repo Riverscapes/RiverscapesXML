@@ -1,6 +1,5 @@
 {
   "$schema": "https://xml.riverscapes.net/riverscapes_metadata/schema/layer_definitions.schema.json",
-  "authority_name": "vbet example (TESTING)",
   "tool_schema_version": "1.0.0",
   "layers": [
     {
@@ -13,7 +12,6 @@
       "columns": [
         {
           "name": "fid",
-          "dtype": "",
           "friendly_name": "",
           "data_unit": "NA",
           "description": "Unique identifier for each feature",
@@ -25,7 +23,6 @@
         },
         {
           "name": "level_path",
-          "dtype": "",
           "friendly_name": "Level Path",
           "data_unit": "NA",
           "description": "Unique identifier for each stream in the NHD dataset from headwater to outlet",
@@ -43,7 +40,6 @@
         },
         {
           "name": "seg_distance",
-          "dtype": "",
           "friendly_name": "",
           "data_unit": "m",
           "description": "Distance downstream along a given level path of the feature",
@@ -55,7 +51,7 @@
         },
         {
           "name": "FCode",
-          "dtype": "MEDIUMINT",
+          "dtype": "INTEGER",
           "friendly_name": "",
           "data_unit": "NA",
           "description": "NHD FCode representing the flow type of the main channel in the riverscape",
@@ -67,7 +63,7 @@
         },
         {
           "name": "low_lying_floodplain_area",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "m^2",
           "description": "Area of low-lying floodplain surface in the polygon",
@@ -79,7 +75,6 @@
         },
         {
           "name": "low_lying_floodplain_prop",
-          "dtype": "",
           "friendly_name": "",
           "data_unit": "dimensionless",
           "description": "Proportion of the polygon that is low-lying floodplain",
@@ -91,7 +86,7 @@
         },
         {
           "name": "active_channel_area",
-          "dtype": "",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "m^2",
           "description": "area of channel polygon in the polygon",
@@ -103,7 +98,7 @@
         },
         {
           "name": "active_channel_prop",
-          "dtype": "",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "dimensionless",
           "description": "Proportion of the polygon that is channel",
@@ -115,7 +110,7 @@
         },
         {
           "name": "elevated_floodplain_area",
-          "dtype": "",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "m^2",
           "description": "Area of elevation floodplain in the polygon",
@@ -127,7 +122,7 @@
         },
         {
           "name": "elevated_floodplain_prop",
-          "dtype": "",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "dimensionless",
           "description": "Proportion of the polygon that is elevated floodplain",
@@ -139,7 +134,7 @@
         },
         {
           "name": "floodplain_area",
-          "dtype": "",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "m^2",
           "description": "Area of floodplain (low-lying + elevated) in the polygon",
@@ -150,7 +145,7 @@
         },
         {
           "name": "floodplain_prop",
-          "dtype": "",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "dimensionless",
           "description": "Proportion of the polygon that is floodplain",
@@ -162,7 +157,6 @@
         },
         {
           "name": "centerline_length",
-          "dtype": "",
           "friendly_name": "",
           "data_unit": "m",
           "description": "Total valley length of the polygon",
@@ -174,7 +168,6 @@
         },
         {
           "name": "segment_area",
-          "dtype": "",
           "friendly_name": "",
           "data_unit": "m^2",
           "description": "Area of the polygon",
@@ -186,7 +179,6 @@
         },
         {
           "name": "integrated_width",
-          "dtype": "",
           "friendly_name": "",
           "data_unit": "m",
           "description": "Average width (area/centerline length) of the polygon",
@@ -344,5 +336,6 @@
       "path": "outputs/vbet.gpkg/vbet_igos",
       "theme": "Outputs"
     }
-  ]
+  ],
+  "tool_schema_name": "vbet example (TESTING)"
 }
