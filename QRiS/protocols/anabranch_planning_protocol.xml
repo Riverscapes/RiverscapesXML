@@ -426,8 +426,133 @@
                 </DCELayer>            
             </Parameters>
         </Metric>
+        <Metric id="medium_risk_count" version="1.0" calculation_machine_code="count">
+            <Label>Medium Risk Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of Points, Lines, and Polygons Identified as Medium Risk</Description>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_point">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Negligible increase in flood risk possible</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="risk_assessment_line">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Negligible increase in flood risk possible</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="risk_assessment_polygon">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Negligible increase in flood risk possible</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="high_risk_count" version="1.0" calculation_machine_code="count">
+            <Label>High Risk Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of Points, Lines, and Polygons Identified as High Risk</Description>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_point">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Likely increase in flood risk</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="risk_assessment_line">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Likely increase in flood risk</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="risk_assessment_polygon">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Likely increase in flood risk</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="medium_risk_length" version="1.0" calculation_machine_code="length">
+            <Label>Medium Risk Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total Length of Lines Identified as Medium Risk</Description>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_line">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Negligible increase in flood risk possible</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="high_risk_length" version="1.0" calculation_machine_code="length">
+            <Label>High Risk Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total Length of Lines Identified as High Risk</Description>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_line">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Likely increase in flood risk</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="medium_risk_area" version="1.0" calculation_machine_code="area">
+            <Label>Medium Risk Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total Area of Polygons Identified as Medium Risk</Description>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_polygon">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Negligible increase in flood risk possible</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="proportion_medium_risk" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Proportion of Medium Risk Area (% of riverscape)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Ratio of Medium Risk Area to Sample Frame Area.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_polygon">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Negligible increase in flood risk possible</Value>
+                    </AttributeFilter>
+                </DCELayer>           
+            </Parameters>
+        </Metric>
+        <Metric id="high_risk_area" version="1.0" calculation_machine_code="area">
+            <Label>High Risk Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total Area of Polygons Identified as High Risk</Description>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_polygon">
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Likely increase in flood risk</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="proportion_high_risk" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Proportion of High Risk Area (% of riverscape)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Ratio of High Risk Area to Sample Frame Area.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="risk_assessment_polygon">
+                     <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="ltpbr_risk">
+                        <Value>Likely increase in flood risk</Value>
+                    </AttributeFilter>
+                </DCELayer>           
+            </Parameters>
+        </Metric>
     </Metrics>
 </Protocol>
-
-
-
