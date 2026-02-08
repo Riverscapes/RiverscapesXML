@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>CHaMP Macroinvertebrate</Name>
+  <ProjectType>CHaMPMacroinvertebrate</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization[@id='REALIZATION1']">
+    <Children collapsed="false">
+      <Node label="Macroinvertebrate Habitat Data Static" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='HabitatDataStatic']" type="point" id="macro_habitat_static" />
+      <Node label="Drift Data CSV" xpath="Datasets/File[@id='drift_data_csv']" type="file" id="drift_data_csv" />
+      <Node label="Dynamic Habitat Data CSV" xpath="Datasets/File[@id='dynamic_habitat_csv']" type="file" id="dynamic_habitat_csv" />
+      <Node label="Static Habitat Data CSV" xpath="Datasets/File[@id='static_habitat_csv']" type="file" id="static_habitat_csv" />
+    </Children>
+  </Node>
+  <Views default="DEFAULT">
+    <View name="Static Habitat Data" id="DEFAULT">
+      <Layers>
+        <Layer id="macro_habitat_static" />
+      </Layers>
+    </View>
+  </Views>
+</Project>
