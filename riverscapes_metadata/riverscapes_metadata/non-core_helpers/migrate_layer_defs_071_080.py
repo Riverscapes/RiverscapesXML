@@ -65,7 +65,7 @@ def migrate_layer_definitions(filepath: str) -> bool:
         # You can tune indent, separators, and ensure_ascii for minimal diffs with the original file.
         # Example: indent=None, separators=(",", ": "), ensure_ascii=False
         with path.open('w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2)
+            json.dump(data, f, indent=2, ensure_ascii=False)
         return True
     return False
 
