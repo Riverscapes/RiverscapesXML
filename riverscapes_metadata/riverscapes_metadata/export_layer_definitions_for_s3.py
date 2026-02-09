@@ -17,6 +17,7 @@ Usage examples:
 Notes:
     - Scans repository recursively for 'layer_definitions*.json'.
     - Single file contains catalog + layer structural definitions.
+    - adds column_index to preserve order of records in the json source once loaded into SQL
     - Robust to missing optional fields.
     - Designed for Python >= 3.12
     - Parquet writing uses pyarrow.
@@ -39,11 +40,11 @@ from urllib.request import urlopen
 import pint
 
 from riverscapes_metadata import SCHEMA_URL
-# FOR TESTING, can use a different path, e.g. 
+# FOR TESTING, can use a different path, e.g.
 # SCHEMA_URL = "https://raw.githubusercontent.com/Riverscapes/RiverscapesXML/refs/heads/layerdefs0.6.1/riverscapes_metadata/schema/layer_definitions.schema.json"
 
 # rglob pattern to search for. Matches e.g. `layer_definitions.json`, `layer_definition_ver2.json`
-CATALOG_FILENAME = "layer_definitions*.json" 
+CATALOG_FILENAME = "layer_definitions*.json"
 # Central definition of output schema {column_name: pyarrow_type}
 COLUMN_DEFINITIONS = {
     "authority": pa.string(),
@@ -79,56 +80,60 @@ OUTPUT_COLUMNS = list(COLUMN_DEFINITIONS.keys())
 
 ureg = pint.get_application_registry()
 
-def is_valid_unit(str) -> bool: 
+
+def is_valid_unit(str) -> bool:
     """check if supplied string parses as a Pint unit, or is 'NA' """
     if str == 'NA':
         return True
-    try: 
+    try:
         unit = ureg.Unit(str)
         return True
     except Exception:
         return False
 
+
 def normalize_version(version_str: str) -> str:
     """Normalize version string to Major.Minor.Patch format suitable for Athena partitioning.
-    
+
     1. Strip leading 'v' or 'V'.
     2. Remove build metadata/prerelease tags (anything after - or +).
     3. Ensure exactly three components by padding with .0 or truncating.
     """
     if not version_str:
         return "0.0.0"
-        
+
     # Remove 'v' prefix
     v = version_str.lstrip("vV")
-    
+
     # Remove prerelease/metadata
     v = re.split(r'[-+]', v)[0]
-    
+
     # Split into components
     parts = v.split('.')
-    
+
     # Filter non-numeric parts (robustness)
     numeric_parts = []
     for p in parts:
         if p.isdigit():
             numeric_parts.append(p)
         else:
-            break # Stop at first non-numeric
-            
+            break  # Stop at first non-numeric
+
     # Pad to 3
     while len(numeric_parts) < 3:
         numeric_parts.append("0")
-        
+
     # Truncate to 3
     final_parts = numeric_parts[:3]
-    
+
     return ".".join(final_parts)
+
 
 def git_commit_sha() -> str | None:
     """Return current git commit SHA or None if not available."""
     try:
-        sha = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+        sha = subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], text=True).strip()
         return sha
     except Exception:
         return None
@@ -160,7 +165,7 @@ def _load_remote_validator() -> Draft7Validator | None:
 def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draft7Validator | None, errors: list[dict]) -> list[dict]:
     """
     Flatten a layer_definitions.json file into a list of row dictionaries suitable for export.
-    
+
     This function reads the JSON file, validates it (if a validator is provided), and
     transforms the nested layer/column structure into a flat list of records.
 
@@ -177,9 +182,9 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
     """
 
     rows: list[dict] = []
-    try: 
+    try:
         with defs_path.open("r", encoding="utf-8") as f:
-            data= json.load(f)
+            data = json.load(f)
     except json.decoder.JSONDecodeError as e:
         errors.append({
             "file": str(defs_path),
@@ -188,10 +193,11 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
         })
         return rows
     if validator:
-        declared_schema = data.get("$schema","") # this is the URL 
-        # expected_schema_id = validator.schema.get("$id", "") # this is the ID 
+        declared_schema = data.get("$schema", "")  # this is the URL
+        # expected_schema_id = validator.schema.get("$id", "") # this is the ID
         if declared_schema != SCHEMA_URL:
-            print(f"WARNING Schema URL of the file ({declared_schema}) differs from one this script is using for validation ({SCHEMA_URL})")
+            print(
+                f"WARNING Schema URL of the file ({declared_schema}) differs from one this script is using for validation ({SCHEMA_URL})")
         for e in validator.iter_errors(data):
             errors.append({
                 "file": str(defs_path),
@@ -234,7 +240,8 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
             default_val = col.get("default_value")
             # Normalize default_value to simple JSON-compatible scalar or None; store as string for heterogeneity
             if isinstance(default_val, (dict, list)):
-                default_val_out = json.dumps(default_val, separators=(",", ":"))
+                default_val_out = json.dumps(
+                    default_val, separators=(",", ":"))
             elif default_val is None:
                 default_val_out = None
             else:
@@ -248,7 +255,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "layer_type": layer_type,
                 "layer_path": layer_path,
                 "layer_theme": layer_theme,
-                "layer_source_title" : layer_source_title,
+                "layer_source_title": layer_source_title,
                 "layer_source_url": layer_source_url,
                 "layer_data_product_version": layer_data_product_version,
                 "layer_description": layer_description,
@@ -261,7 +268,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
                 "dtype_parameters": json.dumps(col.get("dtype_parameters")) if col.get("dtype_parameters") else None,
                 "description": col.get("description", ""),
                 "is_key": col.get("is_key", False),
-                "is_required": col.get("is_required", False),             
+                "is_required": col.get("is_required", False),
                 "default_value": default_val_out,
                 "preferred_format": col.get("preferred_format", ""),
                 "preferred_bin_definition": col.get("preferred_bin_definition", ""),
@@ -285,25 +292,32 @@ def write_parquet(rows: list[dict], output: Path, columns: list[str]) -> None:
     """Write rows to Parquet using pyarrow."""
     output.parent.mkdir(parents=True, exist_ok=True)
     # Build Arrow schema dynamically from central definition
-    pa_fields = [pa.field(c, COLUMN_DEFINITIONS.get(c, pa.string())) for c in columns]
+    pa_fields = [pa.field(c, COLUMN_DEFINITIONS.get(c, pa.string()))
+                 for c in columns]
     data_cols = {c: [r.get(c) for r in rows] for c in columns}
     table = pa.Table.from_pydict(data_cols, schema=pa.schema(pa_fields))
     pq.write_table(table, output)
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Flatten layer catalogs into partitioned metadata files for Athena.")
-    parser.add_argument("--root", default=str(Path(__file__).resolve().parents[2]), help="Repo root to scan (default: project root).")
-    parser.add_argument("--format", choices=["csv", "parquet"], default="parquet", help="Output file format per partition (default parquet).")
-    parser.add_argument("--include-partition-cols", action="store_true", help="Include authority, tool_schema_name and tool_schema_version columns inside each file (default: excluded).")
-    parser.add_argument("--output", default="dist/metadata", help="Base output directory.")
+    parser = argparse.ArgumentParser(
+        description="Flatten layer catalogs into partitioned metadata files for Athena.")
+    parser.add_argument("--root", default=str(Path(__file__).resolve(
+    ).parents[2]), help="Repo root to scan (default: project root).")
+    parser.add_argument("--format", choices=["csv", "parquet"], default="parquet",
+                        help="Output file format per partition (default parquet).")
+    parser.add_argument("--include-partition-cols", action="store_true",
+                        help="Include authority, tool_schema_name and tool_schema_version columns inside each file (default: excluded).")
+    parser.add_argument("--output", default="dist/metadata",
+                        help="Base output directory.")
     return parser.parse_args()
 
 
 def group_rows(rows: list[dict]) -> dict[tuple[str, str, str], list[dict]]:
     groups: dict[tuple[str, str, str], list[dict]] = {}
     for r in rows:
-        key = (r.get("authority", ""), r.get("tool_schema_name", ""), r.get("tool_schema_version", ""))
+        key = (r.get("authority", ""), r.get("tool_schema_name", ""),
+               r.get("tool_schema_version", ""))
         groups.setdefault(key, []).append(r)
     return groups
 
@@ -315,30 +329,33 @@ def scan_and_validate(root_path: Path) -> tuple[list[dict], list[dict], str | No
     """
     commit_sha = git_commit_sha()
     catalogs = find_catalogs(root_path)
-    
+
     # Unified validator
     catalog_validator = _load_remote_validator()
-    
+
     validation_errors: list[dict] = []
     all_rows: list[dict] = []
-    
+
     for c in catalogs:
-        all_rows.extend(flatten_definitions(c, commit_sha=commit_sha, validator=catalog_validator, errors=validation_errors))
-        
+        all_rows.extend(flatten_definitions(c, commit_sha=commit_sha,
+                        validator=catalog_validator, errors=validation_errors))
+
     return all_rows, validation_errors, commit_sha
 
 
 def validate_cli() -> None:
     """Entry point for local validation (no file generation)."""
-    parser = argparse.ArgumentParser(description="Validate layer_definitions.json files in the repository.")
-    parser.add_argument("--root", default=str(Path.cwd()), help="Root directory to scan.")
+    parser = argparse.ArgumentParser(
+        description="Validate layer_definitions.json files in the repository.")
+    parser.add_argument("--root", default=str(Path.cwd()),
+                        help="Root directory to scan.")
     args = parser.parse_args()
-    
+
     root = Path(args.root).resolve()
     print(f"Scanning for metadata in {root}...")
-    
+
     _, errors, _ = scan_and_validate(root)
-    
+
     if errors:
         print("\n--- Validation Errors ---")
         for error in errors:
@@ -363,7 +380,7 @@ def main() -> None:
     base_output = Path(args.output)
     if not base_output.is_absolute():
         base_output = root / base_output
-    
+
     if base_output.exists():
         print(f"Cleaning existing output directory: {base_output}")
         shutil.rmtree(base_output)
@@ -394,15 +411,19 @@ def main() -> None:
             message = error.get("message", "No message")
             print(f"File: {file}\nError: {message}\n")
         print("-------------------------")
-        print(f"Validation failed with {len(validation_errors)} error(s). See {index_path}")
+        print(
+            f"Validation failed with {len(validation_errors)} error(s). See {index_path}")
         raise SystemExit(1)
 
     groups = group_rows(all_rows)
     index_manifest = []
     for (repo_auth, auth_name, schema_ver), rows_group in groups.items():
-        part_dir = base_output / f"authority={repo_auth}" / f"tool_schema_name={auth_name}" / f"tool_schema_version={schema_ver}"
+        part_dir = base_output / \
+            f"authority={repo_auth}" / f"tool_schema_name={auth_name}" / \
+            f"tool_schema_version={schema_ver}"
         columns = OUTPUT_COLUMNS.copy()
-        out_path = part_dir / ("layer_metadata." + ("parquet" if args.format == "parquet" else "csv"))
+        out_path = part_dir / \
+            ("layer_metadata." + ("parquet" if args.format == "parquet" else "csv"))
         if args.format == "parquet":
             write_parquet(rows_group, out_path, columns)
         else:
