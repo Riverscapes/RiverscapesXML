@@ -18,6 +18,7 @@ Notes:
     - Scans repository recursively for 'layer_definitions*.json'.
     - Single file contains catalog + layer structural definitions.
     - adds column_index to preserve order of records in the json source once loaded into SQL
+    - although we're using partitioning folders, the Athena table no longer is partitioned, therefore the "partition" data is included in the parquet
     - Robust to missing optional fields.
     - Designed for Python >= 3.12
     - Parquet writing uses pyarrow.
@@ -173,7 +174,7 @@ def flatten_definitions(defs_path: Path, commit_sha: str | None, validator: Draf
         defs_path (Path): Path to the layer_definitions.json file.
         commit_sha (str | None): A git commit SHA to include in the output rows.
         validator (Draft7Validator | None): An optional JSON schema validator.
-        errors (list[dict]): A mutable list to collect validation errors. 
+        errors (list[dict]): A mutable list to collect validation errors.
                              Errors are appended in-place; this list is modified by the function.
 
     Returns:
@@ -306,10 +307,10 @@ def parse_args() -> argparse.Namespace:
     ).parents[2]), help="Repo root to scan (default: project root).")
     parser.add_argument("--format", choices=["csv", "parquet"], default="parquet",
                         help="Output file format per partition (default parquet).")
-    parser.add_argument("--include-partition-cols", action="store_true",
-                        help="Include authority, tool_schema_name and tool_schema_version columns inside each file (default: excluded).")
     parser.add_argument("--output", default="dist/metadata",
                         help="Base output directory.")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Validate only, do not write any files.")
     return parser.parse_args()
 
 
@@ -325,7 +326,6 @@ def group_rows(rows: list[dict]) -> dict[tuple[str, str, str], list[dict]]:
 def scan_and_validate(root_path: Path) -> tuple[list[dict], list[dict], str | None]:
     """
     Scans for catalogs, runs validations, and returns valid rows and errors.
-    Shared logic between main (export) and validate_cli (local check).
     """
     commit_sha = git_commit_sha()
     catalogs = find_catalogs(root_path)
@@ -376,54 +376,68 @@ def main() -> None:
     """
     args = parse_args()
     root = Path(args.root).resolve()
-    print(f"Scanning for metadata in {root}...")
+    print(f"Scanning for metadata in {root} ...")
     base_output = Path(args.output)
     if not base_output.is_absolute():
         base_output = root / base_output
 
-    if base_output.exists():
-        print(f"Cleaning existing output directory: {base_output}")
-        shutil.rmtree(base_output)
-
     all_rows, validation_errors, commit_sha = scan_and_validate(root)
 
-    # Index now written to top-level dist/ directory (sibling to metadata/ partitions)
-    top_dist = (root / "dist")
-    top_dist.mkdir(parents=True, exist_ok=True)
-    index_path = top_dist / "index.json"
-
-    # Loud failure on any validation errors BEFORE writing partition outputs.
+    # 1. Handle Validation Errors
     if validation_errors:
-        # write index.json
-        with index_path.open("w", encoding="utf-8") as f:
-            json.dump({
-                "generated_at": _dt.date.today().isoformat(),
-                "commit_sha": commit_sha,
-                "partitions": [],
-                "total_rows": len(all_rows),
-                "validation_errors": validation_errors,
-                "status": "validation_failed"
-            }, f, indent=2)
-        # Print errors to the console for visibility in GitHub Actions
         print("\n--- Validation Errors ---")
         for error in validation_errors:
             file = error.get("file", "N/A")
             message = error.get("message", "No message")
             print(f"File: {file}\nError: {message}\n")
         print("-------------------------")
-        print(
-            f"Validation failed with {len(validation_errors)} error(s). See {index_path}")
-        raise SystemExit(1)
 
+        if not args.dry_run:
+            # Only create directory and write failure report if NOT a dry run
+            top_dist = (root / "dist")
+            top_dist.mkdir(parents=True, exist_ok=True)
+            index_path = top_dist / "index.json"
+
+            with index_path.open("w", encoding="utf-8") as f:
+                json.dump({
+                    "generated_at": _dt.date.today().isoformat(),
+                    "commit_sha": commit_sha,
+                    "partitions": [],
+                    "total_rows": len(all_rows),
+                    "validation_errors": validation_errors,
+                    "status": "validation_failed"
+                }, f, indent=2)
+            print(f"Validation failed. Wrote report to {index_path}")
+        else:
+            print("DRY RUN: Errors found. No report written.")
+
+        sys.exit(1)
+
+    # 2. Group Valid Rows
     groups = group_rows(all_rows)
+
+    # 3. Handle Dry Run Success
+    if args.dry_run:
+        print(f"DRY RUN: Validation passed. Found {len(all_rows)} rows across {len(groups)} partitions.")
+        print("Would generate the following partitions:")
+        for (repo_auth, auth_name, schema_ver), rows_group in groups.items():
+            print(f" - authority={repo_auth}/tool_schema_name={auth_name}/tool_schema_version={schema_ver} ({len(rows_group)} rows)")
+        return
+
+    # 4. Proceed with Writing Output
+    top_dist = (root / "dist")
+    top_dist.mkdir(parents=True, exist_ok=True)
+    index_path = top_dist / "index.json"
+
+    if base_output.exists():
+        print(f"Cleaning existing output directory: {base_output}")
+        shutil.rmtree(base_output)
+
     index_manifest = []
     for (repo_auth, auth_name, schema_ver), rows_group in groups.items():
-        part_dir = base_output / \
-            f"authority={repo_auth}" / f"tool_schema_name={auth_name}" / \
-            f"tool_schema_version={schema_ver}"
-        columns = OUTPUT_COLUMNS.copy()
-        out_path = part_dir / \
-            ("layer_metadata." + ("parquet" if args.format == "parquet" else "csv"))
+        part_dir = base_output / f"authority={repo_auth}" / f"tool_schema_name={auth_name}" / f"tool_schema_version={schema_ver}"
+        columns = OUTPUT_COLUMNS.copy()  # Always include partition columns now
+        out_path = part_dir / ("layer_metadata." + ("parquet" if args.format == "parquet" else "csv"))
         if args.format == "parquet":
             write_parquet(rows_group, out_path, columns)
         else:
@@ -451,7 +465,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    if "--validate-only" in sys.argv:
-        validate_cli()
-    else:
-        main()
+    main()
