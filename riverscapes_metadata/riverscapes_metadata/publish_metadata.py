@@ -1,7 +1,7 @@
 """Publish metadata from local 
 IE. push .parquet files from local dist folder to AWS s3 bucket for Athena to pick up
 With ver 0.8 we keep the partition-like folder structure but no longer partition the athena table.
-The former partition keys (authority, authority-name (now renamed tool-schema-name) and tool-schema-version are now in the parquet file. 
+The former partition keys (authority, authority-name (now renamed tool-schema-name) and tool-schema-version) are now in the parquet file. 
 Therefore rebuilding the table is not necessary. 
 
 -Written by Copilot with Lorin directing Fall 2025
@@ -34,7 +34,7 @@ def upload_directory_to_s3(source_dir: Path, s3_uri: str):
     for file_path in source_dir.rglob('*'):
         if file_path.is_file():
             # ABORT if we find unexpected files (like CSVs) that would break the table
-            if file_path.suffix.lower() != '.parquet': 
+            if file_path.suffix.lower() != '.parquet':
                 logging.error(f"Found unexpected file: {file_path}")
                 raise ValueError(
                     f"Aborting upload: Found non-Parquet file '{file_path.name}'. "
@@ -96,7 +96,7 @@ def main():
     args = parser.parse_args()
 
     dist_dir = Path(args.root) / 'dist'
-    metadata_dir = dist_dir /  'metadata'
+    metadata_dir = dist_dir / 'metadata'
 
     # Environment variables from GitHub Actions
     table_name = os.environ.get('TABLE_NAME', 'layer_definitions')
