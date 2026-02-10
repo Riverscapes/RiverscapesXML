@@ -67,64 +67,131 @@ STORED AS PARQUET
 LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/';
 ```
 
-### View that reports should use
+### View that reports should use: `default`.`layer_definitions_latest`
+
+This combines the best of either the old or new version of the metadata.
 
 ```sql
-CREATE VIEW default.layer_definitions_latest AS
+CREATE OR REPLACE VIEW "layer_definitions_latest" AS 
 WITH
-  RankedLayers AS (
+  layerdef08 AS (
    SELECT
-     *
-   , DENSE_RANK() OVER (PARTITION BY authority, tool_schema_name ORDER BY COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) DESC, COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0) DESC) version_rank
+     'defs08' sourcetable
+   , authority
+   , tool_schema_name authority_name
+   , tool_schema_name
+   , tool_schema_version
+   , layer_id
+   , layer_name
+   , layer_type
+   , layer_path
+   , layer_theme
+   , layer_source_url
+   , layer_source_title
+   , layer_data_product_version
+   , layer_description
+   , column_index
+   , name
+   , friendly_name
+   , theme
+   , data_unit
+   , dtype
+   , dtype_parameters
+   , description
+   , is_key
+   , is_required
+   , default_value
+   , preferred_format
+   , preferred_bin_definition
+   , commit_sha
+   , (((COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) * 1000000) + (COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) * 1000)) + COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0)) tool_schema_version_int
    FROM
-     "default".layer_definitions
+     "rs_raw"."layer_definitions_08"
 ) 
-SELECT
-  authority
-, authority_name
-, tool_schema_name 
-, tool_schema_version
-, layer_id
-, layer_name
-, layer_type
-, layer_path
-, layer_theme
-, layer_source_url
-, layer_data_product_version
-, layer_description
-, name
-, friendly_name
-, theme
-, data_unit
-, dtype
-, description
-, is_key
-, is_required
-, default_value
-, commit_sha
+, layerdefs07 AS (
+   SELECT
+     'defs07' sourcetable
+   , authority
+   , authority_name
+   , authority_name tool_schema_name
+   , tool_schema_version
+   , layer_id
+   , layer_name
+   , layer_type
+   , layer_path
+   , layer_theme
+   , layer_source_url
+   , null layer_source_title
+   , layer_data_product_version
+   , layer_description
+   , -1 column_index
+   , name
+   , friendly_name
+   , theme
+   , data_unit
+   , dtype
+   , null dtype_parameters
+   , description
+   , is_key
+   , is_required
+   , default_value
+   , null preferred_format
+   , null preferred_bin_definition
+   , commit_sha
+   , (((COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) * 1000000) + (COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) * 1000)) + COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0)) tool_schema_version_int
+   FROM
+     "rs_raw"."layer_definitions_07"
+) 
+, combined_defs AS (
+   SELECT *
+   FROM
+     layerdef08
+UNION ALL    SELECT *
+   FROM
+     layerdefs07
+) 
+, winning_combinations AS (
+   SELECT
+     authority
+   , authority_name
+   , tool_schema_version_int
+   , sourcetable
+   FROM
+     (
+      SELECT
+        authority
+      , authority_name
+      , tool_schema_version_int
+      , sourcetable
+      , ROW_NUMBER() OVER (PARTITION BY authority, authority_name ORDER BY tool_schema_version_int DESC, sourcetable DESC) rank_priority
+      FROM
+        combined_defs
+   ) 
+   WHERE (rank_priority = 1)
+) 
+SELECT base.*
 FROM
-  RankedLayers
-WHERE (version_rank = 1)
+  (combined_defs base
+INNER JOIN winning_combinations win ON ((base.authority = win.authority) AND (base.authority_name = win.authority_name) AND (base.tool_schema_version_int = win.tool_schema_version_int) AND (base.sourcetable = win.sourcetable)))
 ```
 
 ### Example Queries
 
-List column definitions for a tool version:
+List column definitions for a tool (latest version):
 
 ```sql
 SELECT name, friendly_name, dtype, description
-FROM layer_definitions
+FROM default.layer_definitions_latest
 WHERE authority='data-exchange-scripts'
-  AND authority_name='rme_to_athena'
-  AND tool_schema_version='1.0.1'
-ORDER BY name;
+  AND tool_schema_name='rme_to_athena'
+ORDER BY column_index, name;
 ```
 
 Count columns by dtype across all authorities:
 
 ```sql
 SELECT dtype, COUNT(*) AS n
-FROM layer_definitions
+FROM layer_definitions_latest
 GROUP BY dtype
 ORDER BY n DESC;
 ```
@@ -148,7 +215,7 @@ WHERE a.authority='data-exchange-scripts'
 
 ## Safely making changes to the schema (Migration Roadmap)
 
-Because so many downstream tools depend on this metadata, we cannot simply break the table schema. Instead, we follow a pattern of "Expand and Contract" using Athena Views to shield consumers from changes.
+Because downstream tools (especially the reporting.riverscapes.net platform) depend on this metadata, we cannot simply break the table schema. Instead, we follow a pattern of "Expand and Contract" using Athena Views to shield consumers from changes.
 
 ### The Architecture
 
