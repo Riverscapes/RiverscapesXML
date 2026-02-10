@@ -2,13 +2,15 @@
 
 ## 0.8.0
 
-* adds `preferred_format` for columns
-* adds `dtype_parameters` for additional specifications about the data type e.g. {"precision": 10, "scale": 2}  for DECIMAL or {"srid": 4326} for GEOMETRY or {"structure": "map", "key": "STRING", "value": "FLOAT"} for STRUCTURED
-
 ### Breaking changes
 
 * `authority_name` is now renamed `tool_schema_name`. A python script to crawl and remediate existing layer_definitions is found in non-core_helpers `migrate_authority_name.py` 
-* `dtype` is now an enum of **logical** data types. Producing and consuming applications should be able to translate these to physical data types, especially when combined with `is_required`
+* `dtype` is now an enum of **logical** data types. Producing and consuming applications should be able to translate these to physical data types, especially when combined with `is_required` and `dtype_parameters`.
+
+### Additions
+
+* adds `preferred_format` for columns
+* adds `dtype_parameters` for additional specifications about the data type e.g. {"precision": 10, "scale": 2}  for DECIMAL or {"srid": 4326} for GEOMETRY or {"structure": "map", "key": "STRING", "value": "FLOAT"} for STRUCTURED
 
 ## 0.7.1 December 2025
 
