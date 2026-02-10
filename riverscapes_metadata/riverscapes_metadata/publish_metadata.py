@@ -26,7 +26,7 @@ def upload_directory_to_s3(source_dir: Path, s3_uri: str):
     s3 = boto3.resource('s3')
     parts = urlparse(s3_uri)
     bucket_name = parts.netloc
-    prefix = parts.path.lstrip('/')
+    prefix = parts.path.strip('/')
 
     bucket = s3.Bucket(bucket_name)
 
