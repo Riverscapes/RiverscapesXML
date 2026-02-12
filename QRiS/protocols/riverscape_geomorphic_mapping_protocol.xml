@@ -1,4 +1,4 @@
-<Protocol machine_code="GEOMPORPHIC_MAPPING" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+<Protocol machine_code="GEOMPORPHIC_MAPPING" version="1.0" status="experimental" protocol_type="dce" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Geomorphic Mapping of Riverscapes</Label>
     <Description>Geomorphic Unit Assessment of Valley Bottom</Description>
     <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/tier-1-geounit-protocol</URL>
@@ -109,6 +109,21 @@
                 </DCELayer>
             </Parameters>
         </Metric> 
+        <Metric id="active_channel_area" version="1.0" calculation_machine_code="area">
+            <Label>Active Channel Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Area of Active Channel within Valley Bottom of Each Sample Frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geo_unit_type">
+                        <Value>Active Channel</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric> 
         <Metric id="active_floodplain_proportion" version="1.0" calculation_machine_code="area_proportion">
             <Label>Active Floodplain Proportion</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -119,6 +134,21 @@
             <Parameters>
                 <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
                     <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="geo_unit_type">
+                        <Value>Active Floodplain</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="active_floodplain_area" version="1.0" calculation_machine_code="area">
+            <Label>Active Floodplain Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Area of Active Floodplain within Valley Bottom of Each Sample Frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
                     <AttributeFilter field_id_ref="geo_unit_type">
                         <Value>Active Floodplain</Value>
                     </AttributeFilter>
@@ -138,6 +168,101 @@
                     <AttributeFilter field_id_ref="geo_unit_type">
                         <Value>Inactive Floodplain</Value>
                     </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="inactive_floodplain_area" version="1.0" calculation_machine_code="area">
+            <Label>Inactive Floodplain Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Area of Inactive Floodplain within Valley Bottom of Each Sample Frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="tier_1_geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geo_unit_type">
+                        <Value>Inactive Floodplain</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="margin_length" version="1.0" calculation_machine_code="length">
+            <Label>Total Margin Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total length of all margin types</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="margin_length_left" version="1.0" calculation_machine_code="length">
+            <Label>Margin Length (left)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total length of left valley margins</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                    <AttributeFilter field_id_ref='confinement_type'>
+                        <Value>Left</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="margin_length_right" version="1.0" calculation_machine_code="length">
+            <Label>Margin Length (right)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total length of right valley margins</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                    <AttributeFilter field_id_ref='confinement_type'>
+                        <Value>Right</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="proportion_sediment_source" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion of Margin that is a Sediment Source</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The proportion of total margin length that has potential to supply sediment to the stream</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref='sediment_source'>
+                        <Value>Yes</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="proportion_wood_source" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion of Margin that is a Wood Source</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The proportion of total margin length that has potential to supply wood to the stream</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref='wood_source'>
+                        <Value>Yes</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Denominator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
