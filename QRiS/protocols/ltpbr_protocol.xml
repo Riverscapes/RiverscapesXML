@@ -759,7 +759,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="dam_count" version="2.0" calculation_machine_code="count">
+        <Metric id="dam_count" version="2.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Dam Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The number of dams in each sample frame</Description>
@@ -1610,3 +1610,4 @@
         </Metric>
     </Metrics>
 </Protocol>
+
