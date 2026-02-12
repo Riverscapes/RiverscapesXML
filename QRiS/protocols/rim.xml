@@ -1,4 +1,4 @@
-<Protocol machine_code="RIM" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
+<Protocol machine_code="RIM" version="1.0" status="production" protocol_type="dce" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../protocol.xsd">
     <Label>Riverscape Inundation Mapping</Label>
     <Description>Protocol to aid in efficient mapping of structurally forced inundation patterns in beaver impacted riverscapes</Description>
     <URL>https://rim.riverscapes.net/</URL>
@@ -81,6 +81,10 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Independant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="valley_bottom" usage="metric_layer"/>
             </Parameters>
@@ -92,11 +96,15 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Independant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="metric_layer"/>
             </Parameters>
         </Metric>
-       <!-- <Metric id="integrated_valley_width" version="1.0" calculation_machine_code="proportion">
+        <!-- <Metric id="integrated_valley_width" version="1.0" calculation_machine_code="proportion">
             <Label>Integrated Valley Width</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Valley width, the area of the valley divided by the valley centerline length</Description>
@@ -104,10 +112,26 @@
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
             <Parameters>
-                <InputLayer input_ref="valley_bottom" usage="Numerator"/>
-                <InputLayer input_ref="centerline" usage="Denominator" />
+                <InputLayer input_ref="valley_bottom" usage="numerator"/>
+                <InputLayer input_ref="centerline" usage="denominator" />
             </Parameters>
         </Metric> -->
+        <Metric id="valley_gradient" version="1.0" calculation_machine_code="gradient">
+            <Label>Valley Gradient</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The gradient of the valley centerline</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Independant</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <InputLayer input_ref="dem" usage="surface"/>
+                <InputLayer input_ref="centerline" usage="metric_layer"/> 
+            </Parameters>
+        </Metric>
        <Metric id="channel_gradient" version="1.0" calculation_machine_code="gradient">
             <Label>Channel Gradient</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -115,6 +139,10 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Dependant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="dem" usage="surface"/>
                 <DCELayer layer_id_ref="thalwegs">
@@ -132,6 +160,10 @@
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Dependant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="thalwegs">
                     <AttributeFilter field_id_ref="type_id">
@@ -148,6 +180,10 @@
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Dependant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="thalwegs">
                 </DCELayer>
@@ -160,6 +196,10 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Dependant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="thalwegs">
                     <Usage>Numerator</Usage>
@@ -179,6 +219,10 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Dependant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="thalwegs">
                     <AttributeFilter field_id_ref="type_id">
@@ -194,6 +238,10 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Site and Hydrogeomorphic</HierarchyItem>
+                <HierarchyItem>Condition Dependant</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>          
                 <DCELayer layer_id_ref="thalwegs"/>
@@ -206,6 +254,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="dam_crests">
                 </DCELayer>
@@ -218,6 +269,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
@@ -232,6 +286,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="dam_crests">
                     <AttributeFilter field_id_ref="dam_state"> 
@@ -247,6 +304,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
@@ -264,6 +324,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="dam_crests">
                     <AttributeFilter field_id_ref="dam_state"> 
@@ -279,6 +342,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
@@ -296,6 +362,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="dam_crests">
                     <AttributeFilter field_id_ref="dam_state"> 
@@ -311,6 +380,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="dam_crests">
@@ -328,6 +400,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="denominator"/>
                 <DCELayer layer_id_ref="dam_crests">
@@ -342,6 +417,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Forcing</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="dam_crests">
                     <Usage>Numerator</Usage>
@@ -354,7 +432,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-       <!--  <Metric id="integrated_wetted_width" version="1.0" calculation_machine_code="proportion">
+        <!-- <Metric id="integrated_wetted_width" version="1.0" calculation_machine_code="proportion">
             <Label>Wetted width, the area of all inundation divided by the valley centerline length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description></Description>
@@ -362,10 +440,10 @@
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
             <Parameters>
+                <InputLayer input_ref="centerline" usage="denominator"/>
                 <DCELayer layer_id_ref="inundation">
-                    <Usage>Numerator</Usage>
+                    <Usage>numerator</Usage>
                 </DCELayer>
-                <InputLayer input_ref="centerline" usage="Denominator"/>
             </Parameters>
         </Metric> -->
          <Metric id="total_inundated_area" version="1.0" calculation_machine_code="area">
@@ -375,6 +453,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                 </DCELayer>
@@ -387,6 +468,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                     <AttributeFilter field_id_ref="type_id">
@@ -402,6 +486,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                     <AttributeFilter field_id_ref="type_id">
@@ -417,6 +504,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                     <AttributeFilter field_id_ref="type_id">
@@ -432,6 +522,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                     <Usage>Numerator</Usage>
@@ -445,6 +538,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>                
                 <DCELayer layer_id_ref="inundation">
                     <Usage>Numerator</Usage>
@@ -461,6 +557,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                     <Usage>Numerator</Usage>
@@ -477,6 +576,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Inundation</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation">
                     <Usage>Numerator</Usage>
