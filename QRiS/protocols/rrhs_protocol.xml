@@ -1,7 +1,7 @@
 <Protocol machine_code="LTPBR_RRHS" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Rapid Riverscape Health Protocol</Label>
     <Description>Adapted rapid survey from LTPBR V2 Protocol</Description>
-    <URL></URL>
+    <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/rapid-riverscape-health-survey</URL>
     <Citation>Weber N., Wheaton J.M.,  Shalcross A.,  Al-Chokhachy R, Bailey P., Bartelt K., Bennett S., Bouwes B., Bouwes N., Gilbert J., Dickard M., Heitke J., Jordan C., Glassic H., MacFarlane W.W., Miller S., Saunders C., Whitehead K. 2024. Low-Tech Process-Based Restoration Design and Monitoring Protocol: Standard Methods for Developing Project Designs and Assessing Riverscape Health. Version 2.0. Prepared by Anabranch Solutions and Utah State University Riverscapes Assessment and Monitoring Lab. Prepared for the Bureau of Land Management. Logan, UT. 81 pp. DOI: 10.5281/zenodo.13769899</Citation>
     <Author>Nick Weber</Author>
     <CreationDate>2025-02-05</CreationDate>
