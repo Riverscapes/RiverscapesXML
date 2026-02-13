@@ -1,8 +1,8 @@
 <Protocol machine_code="ANABRANCH_ASBUILT" version="1.0" status="experimental" protocol_type="asbuilt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Anabranch As-Built Protocol</Label>
     <Description>As-Built Layers for Anabranch</Description>
-    <URL></URL> 
-    <Citation></Citation>
+    <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/as-built-protocols/anabranch-as-built</URL> 
+    <Citation>NA</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-07-22</CreationDate>
     <UpdatedDate>2026-1-12</UpdatedDate>

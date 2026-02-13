@@ -1,8 +1,8 @@
 <Protocol machine_code="ANABRANCH_PLANNING" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Anabranch Planning Protocol</Label>
     <Description>Planning for Low-Tech Restoration and Assessment of Stream, Infrastructure, and Property Risks</Description>
-    <URL></URL>
-    <Citation></Citation>
+    <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/anabranch-planning</URL>
+    <Citation>NA</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-12-16</CreationDate>
     <UpdatedDate>2026-1-12</UpdatedDate>
