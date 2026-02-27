@@ -225,13 +225,19 @@
                     </Values>
                 </ListField>
                 <FloatField id="length" version="1.0">
-                    <Label>Length</Label>               
+                    <Label>Length</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>               
                 </FloatField>
                 <FloatField id="width" version="1.0">
                     <Label>Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="depth" version="1.0">
                     <Label>Depth</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
             </Fields>
         </Layer>
@@ -362,6 +368,8 @@
                 <IntegerField id="structure_count" version="1.0">
                     <Label>Structure Count</Label>
                     <DefaultValue>1</DefaultValue>
+                    <MinimumValue>1</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam Complex</Value>
@@ -371,6 +379,8 @@
                 </IntegerField>
                 <FloatField id="length" version="1.0">
                     <Label>Length</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam</Value>
@@ -382,6 +392,8 @@
                 </FloatField>
                 <FloatField id="width" version="1.0">
                     <Label>Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam</Value>
@@ -393,6 +405,8 @@
                 </FloatField>
                 <FloatField id="height" version="1.0">
                     <Label>Height</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam</Value>
@@ -404,6 +418,8 @@
                 </FloatField>
                 <IntegerField id="large_wood_count" version="1.0">
                     <Label>Large Wood Count</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
             </Fields>
         </Layer>
@@ -443,6 +459,8 @@
                 </ListField>
                 <IntegerField id="large_wood_count" version="1.0">
                     <Label>Large Wood Count</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
             </Fields>            
         </Layer>
@@ -1610,4 +1628,3 @@
         </Metric>
     </Metrics>
 </Protocol>
-
