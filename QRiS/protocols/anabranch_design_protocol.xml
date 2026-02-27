@@ -70,18 +70,28 @@
                 </TextField>
                 <FloatField id="length" version="1.0">
                     <Label>Estimated Structure Length</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="width" version="1.0">
                     <Label>Estimated Structure Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="height" version="1.0">
                     <Label>Estimated Structure Height</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <IntegerField id="number_of_posts" version="1.0">
                     <Label>Estimated Number of Posts</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <FloatField id="fill_volume" version="1.0">
-                    <Label>Estimated Fill Volume</Label>                   
+                    <Label>Estimated Fill Volume</Label> 
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>                  
                 </FloatField>        
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>                    
@@ -151,15 +161,23 @@
                 </TextField>
                 <FloatField id="width" version="1.0">
                     <Label>Estimated Structure Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="height" version="1.0">
                     <Label>Estimated Structure Height</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <IntegerField id="number_of_posts" version="1.0">
                     <Label>Estimated Number of Posts</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <FloatField id="fill_volume" version="1.0">
-                    <Label>Estimated Fill Volume</Label>                   
+                    <Label>Estimated Fill Volume</Label>   
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>                
                 </FloatField>        
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>                    
@@ -232,12 +250,18 @@
                 </TextField>
                 <IntegerField id="number_of_structures" version="1.0">
                     <Label>Estimated Number of Structures</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="structure_uncertainty" version="1.0">
                     <Label>Structure Uncertainty (±)</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="estimated_fill_volume" version="1.0">
                     <Label>Estimated Total Fill Volume</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>

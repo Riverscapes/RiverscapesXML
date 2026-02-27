@@ -91,15 +91,23 @@
             <Fields>
                 <IntegerField id="primary_dams_count" version="1.0">
                     <Label>Number of Primary Dams</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="secondary_dams_count" version="1.0">
                     <Label>Number of Secondary Dams</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="total_dams_count" version="1.0">
                     <Label>Number of Dams</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="uncertainty" version="1.0">
                     <Label>Uncertainty (±)</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>
@@ -125,15 +133,23 @@
                 </ListField>
                 <IntegerField id="number_kits" version="1.0">
                     <Label>Number of Kits</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="number_subadults" version="1.0">
                     <Label>Number of Sub-Adults</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="number_adults" version="1.0">
                     <Label>Number of Adults</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="number_beaver" version="1.0">
                     <Label>Number of Beaver</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>
