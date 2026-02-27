@@ -77,18 +77,28 @@
                 </TextField>
                 <FloatField id="length" version="1.0">
                     <Label>Structure Length</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="width" version="1.0">
                     <Label>Structure Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="height" version="1.0">
                     <Label>Structure Height</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>  
                 <IntegerField id="number_of_posts" version="1.0">
                     <Label>Number of Posts</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="number_of_large_wood_pieces" version="1.0">
                     <Label>Number of Large Wood Pieces</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>      
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>                    
@@ -165,15 +175,23 @@
                 </TextField>
                 <FloatField id="width" version="1.0">
                     <Label>Structure Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="height" version="1.0">
                     <Label>Structure Height</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>  
                 <IntegerField id="number_of_posts" version="1.0">
                     <Label>Number of Posts</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
                 <IntegerField id="number_of_large_wood_pieces" version="1.0">
                     <Label>Number of Large Wood Pieces</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>      
                 <TextField id="notes" version="1.0">
                     <Label>Notes</Label>                    
