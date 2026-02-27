@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <!-- <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/project_explorer.xsd"> -->
+    <Name>CHaMP Photos</Name>
+    <ProjectType>CHaMPPhotos</ProjectType>
+    <Node xpathlabel="Name" xpath="Realizations/Realization">
+        <Children collapsed="false">
+            <Node label="CHaMP Photos" xpath="Datasets/Geopackage/Layers/Vector[@lyrName='photo_data']" 
+            type="point" id="champ_photos" symbology="champ_photos" />
+        </Children>
+    </Node>
+    <Views default="DEFAULT">
+        <View name="CHaMP Photos" id="DEFAULT">
+            <Layers>
+                <Layer id="champ_photos" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
+    
