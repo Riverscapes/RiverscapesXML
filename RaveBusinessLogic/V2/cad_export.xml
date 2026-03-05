@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>CAD Export</Name>
+  <ProjectType>cad_export</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Outputs" xpath="Outputs">
+        <Children collapsed="false">
+          <Node label="Control CSV" xpath="CSV[@id='control_csv']" type="file" />
+          <Node label="Topo DXF" xpath="Vector[@id='topo_dxf']" type="file" />
+          <Node label="Topo CSV" xpath="CSV[@id='topo_csv']" type="file" />
+          <Node label="TIN DXF" xpath="Vector[@id='tin_dxf']" type="file" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>
