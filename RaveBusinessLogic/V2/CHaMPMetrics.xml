@@ -30,7 +30,7 @@
                     <Node label="Bankfull Channel Qualifying Island Area" symbology="Bf_QIsland_Area" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
                     <Node label="Wetted Depth SD" symbology="DpthWet_SD" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
                     <Node label="Wetted Channel Mainstem Area" symbology="WetMChnl_Area" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
-                    <Node label="Discharge" symbology="discharge" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Discharge" symbology="discharge" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" id="discharge" />
                     <Node label="Conductivity" symbology="Cond" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
                     <Node label="Alkalinity" symbology="Alk" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
                     <Node label="Solar Access: Summer Avg" symbology="SolarSummr_Avg" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
@@ -43,8 +43,8 @@
                     <Node label="Pool-To-Turbulent Area Ratio" symbology="PoolToTurbulentAreaRatio" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
                 </Children>
             </Node>
-            <Node label="Watersheds" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='watersheds']" type="polygon" symbology="watersheds" />
-            <Node label="Sites" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_sites']" type="point" symbology="sites" />
+            <Node label="Watersheds" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='watersheds']" type="polygon" symbology="watersheds" id="watersheds"/>
+            <Node label="Sites" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_sites']" type="point" symbology="sites" id="sites"/>
             <Node label="CSV Files">
                 <Children collapsed="true">
                     <Node label="Metrics CSV" xpath="Realizations/Realization/Outputs/CSV[@id='Metrics_csv']" type="file" />
@@ -53,4 +53,13 @@
             </Node>
         </Children>
     </Node>
+    <Views>
+        <View name="Default View" id="DEFAULTVIEW">
+            <Layers>
+                <Layer id="discharge" />
+                <Layer id="sites" />
+                <Layer id="watersheds" />
+            </Layers>
+        </View>
+    </Views>
 </Project>
