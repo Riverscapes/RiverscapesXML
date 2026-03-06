@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Substrate</Name>
+  <ProjectType>Substrate</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Outputs">
+        <Children collapsed="false">
+          <Node label="Substrate Shapefile" xpath="Outputs/Vector[Name='Substrate_Shapefile']" type="polygon" />
+          <Node label="Substrate Raster" xpath="Outputs/Vector[Name='Substrate_Raster']" type="raster" transparency="50" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Project>
