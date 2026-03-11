@@ -5,7 +5,7 @@
     <Citation>NA</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-08-18</CreationDate>
-    <UpdatedDate>2025-09-02</UpdatedDate>
+    <UpdatedDate>2026-03-11</UpdatedDate>
     <Layers>
             <Layer id="tier_1_geomorphic_unit_extents" version="1.0" geom_type="Polygon">
             <Label>Geomorphic Units</Label>
@@ -156,7 +156,7 @@
             </Parameters>
         </Metric>
         <Metric id="inactive_floodplain_proportion" version="1.0" calculation_machine_code="area_proportion">
-            <Label>Inactive Floodplain Proportion</Label>
+            <Label>Inactive Floodplain Proportion (Mapped)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Proportion of Inactive Floodplain within Valley Bottom of Each Sample Frame</Description>
             <DefinitionURL/>
@@ -172,7 +172,7 @@
             </Parameters>
         </Metric>
         <Metric id="inactive_floodplain_area" version="1.0" calculation_machine_code="area">
-            <Label>Inactive Floodplain Area</Label>
+            <Label>Inactive Floodplain Area (Mapped)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Area of Inactive Floodplain within Valley Bottom of Each Sample Frame</Description>
             <DefinitionURL/>
@@ -186,10 +186,22 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="margin_count" version="1.0" calculation_machine_code="count">
+            <Label>Total Margin Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total count of margins in sample frame. This includes all valley bottom, valley, and anthropogenic margins.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="margin_length" version="1.0" calculation_machine_code="length">
             <Label>Total Margin Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The total length of all margin types</Description>
+            <Description>The total length of all margin types in sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>2</Precision>
@@ -201,7 +213,7 @@
         <Metric id="margin_length_left" version="1.0" calculation_machine_code="length">
             <Label>Margin Length (left)</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The total length of left valley margins</Description>
+            <Description>The total length of left valley margins in sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>2</Precision>
@@ -213,10 +225,29 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="margin_proportion_left" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Margins on Left</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of left valley margin length to total margin length in sample frame.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref='confinement_type'>
+                        <Value>Left</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="margin_length_right" version="1.0" calculation_machine_code="length">
             <Label>Margin Length (right)</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The total length of right valley margins</Description>
+            <Description>The total length of right valley margins in sample frame</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>2</Precision>
@@ -225,6 +256,25 @@
                     <AttributeFilter field_id_ref='confinement_type'>
                         <Value>Right</Value>
                     </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="margin_proportion_right" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Margins on Right</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of right valley margin length to total margin length in sample frame.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref='confinement_type'>
+                        <Value>Right</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="margins">
+                    <Usage>Denominator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
