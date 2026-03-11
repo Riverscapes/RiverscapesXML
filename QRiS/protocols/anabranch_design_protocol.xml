@@ -5,7 +5,7 @@
     <Citation>NA</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-07-22</CreationDate>
-    <UpdatedDate>2026-1-12</UpdatedDate>
+    <UpdatedDate>2026-03-10</UpdatedDate>
     <Layers>
         <Layer id="structure_points" version="1.0" geom_type="Point">
             <Label>Structure Points</Label>
@@ -246,10 +246,10 @@
             </Hierarchy>
             <Fields>
                 <TextField id="complex_number" version="1.0">
-                    <Label>Complex Number</Label>
+                    <Label>Complex ID</Label>
                 </TextField>
                 <IntegerField id="number_of_structures" version="1.0">
-                    <Label>Estimated Number of Structures</Label>
+                    <Label>Structure Count</Label>
                     <MinimumValue>0</MinimumValue>
                     <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
@@ -366,7 +366,44 @@
         </Layer>
     </Layers>
     <Metrics>
-        <Metric id="structure_count_structures" version="1.0" calculation_machine_code="count">
+        <Metric id="structure_count" version="1.0" calculation_machine_code="count">
+            <Label>Structure Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of structures (points and lines) summed with counts from complex polygons within the sample frame. Structures can be mapped as a mix of types, but should not be duplicated (e.g., as both point and line).</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">                 
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+                <DCELayer layer_id_ref="complexes">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_structures" />
+                    </CountFields>                                                
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_density" version="1.0" calculation_machine_code="count">
+            <Label>Structure Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of structures (points and lines) summed with counts from complex polygons within the sample frame. Structures can be mapped as a mix of types, but should not be duplicated (e.g., as both point and line).</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">                    
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+                <DCELayer layer_id_ref="complexes">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_structures" />
+                    </CountFields>                                                
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_count_structures" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Structure Count (Structures)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The count of structures (points and lines) within the sample frame.</Description>            
@@ -379,7 +416,7 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
-        <Metric id="structure_density_structures" version="1.0" calculation_machine_code="count">
+        <Metric id="structure_density_structures" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Structure Density (Structures)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The density of structures (points and lines) within the sample frame.</Description>            
@@ -698,7 +735,7 @@
             </Parameters>            
         </Metric>
         <Metric id="structure_length" version="1.0" calculation_machine_code="length">
-            <Label>Structure Length (Structures)</Label>
+            <Label>Total Crest Length of Structures</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The total length of structures (lines) within the sample frame.</Description>            
             <MinimumValue>0</MinimumValue>            
@@ -708,7 +745,7 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
-        <Metric id="fill_volume_structures" version="1.0" calculation_machine_code="count">
+        <Metric id="fill_volume_structures" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Fill Volume (Structures)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The total fill volume of structures within the sample frame.</Description>            
@@ -725,6 +762,28 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
+        <Metric id="fill_volume" version="1.0" calculation_machine_code="count">
+            <Label>Fill Volume</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total fill volume of structures (points and lines) summed with fill volume from complexes within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points"> 
+                    <CountFields><CountField field_id_ref="fill_volume" />
+                    </CountFields>                                                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <CountFields><CountField field_id_ref="fill_volume" />
+                    </CountFields>
+                </DCELayer>
+                <DCELayer layer_id_ref="complexes">
+                    <CountFields> 
+                        <CountField field_id_ref="estimated_fill_volume" />
+                    </CountFields>                                                
+                </DCELayer>
+            </Parameters>            
+        </Metric>
         <Metric id="complex_count" version="1.0" calculation_machine_code="count">
             <Label>Complex Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -732,7 +791,7 @@
             <MinimumValue>0</MinimumValue>            
             <Precision>1</Precision>
             <Parameters>
-                <DCELayer layer_id_ref="complexes">                 
+                <DCELayer layer_id_ref="complexes">
                 </DCELayer>                
             </Parameters>            
         </Metric>
@@ -747,7 +806,19 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
-        <Metric id="structure_count_complex" version="1.0" calculation_machine_code="count">
+        <Metric id="complex_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Complex Area as Proportion of Sample Frame</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of complex area to sample frame area.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complexes">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="structure_count_complex" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Structure Count (Complex)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The count of structures for comlexes within the sample frame.</Description>            
@@ -761,7 +832,7 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
-        <Metric id="structure_density_complex" version="1.0" calculation_machine_code="count">
+        <Metric id="structure_density_complex" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Structure Density (Complex)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The density of structures for complexes within the sample frame.</Description>            
@@ -776,7 +847,7 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
-        <Metric id="fill_volume_complex" version="1.0" calculation_machine_code="count">
+        <Metric id="fill_volume_complex" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Fill Volume (Complex)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The total fill volume of complexes within the sample frame.</Description>            
@@ -801,6 +872,18 @@
                 </DCELayer>                
             </Parameters>            
         </Metric>
+        <Metric id="zoi_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>ZOI Area as Proportion of Sample Frame</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of ZOI area to sample frame area.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="zoi">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
         <Metric id="recovery_space_area" version="1.0" calculation_machine_code="area">
             <Label>Recovery Space Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -813,9 +896,9 @@
             </Parameters>            
         </Metric>
         <Metric id="recovery_space_valley_bottom" version="1.0" calculation_machine_code="area_proportion">
-            <Label>Recovery Space (% of Valley Bottom)</Label>
+            <Label>Recovery Space Area as Proportion of Sample Frame</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The ratio of recovery space to valley bottom area within the sample frame.</Description>            
+            <Description>The ratio of recovery space area to sample frame area.</Description>            
             <MinimumValue>0</MinimumValue>            
             <Precision>3</Precision>
             <Parameters>
@@ -824,7 +907,7 @@
                 </DCELayer>  
             </Parameters>            
         </Metric>
-        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area">
+        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area"> <!--Remove when Intrinsic Metrics Added to QRiS-->
             <Label>Riverscape Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The area of the riverscape valley bottom within the sample frame</Description>
@@ -835,7 +918,7 @@
                 <InputLayer input_ref="valley_bottom" usage="metric_layer"/>
             </Parameters>
         </Metric>
-        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length">
+        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length"> <!--Remove when Intrinsic Metrics Added to QRiS-->
             <Label>Riverscape Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The length of the riverscape centerline within the sample frame</Description>
@@ -845,6 +928,25 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="metric_layer"/>
             </Parameters>
+        </Metric>
+        <Metric id="post_count" version="1.0" calculation_machine_code="count">
+            <Label>Count of Posts</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of estimated structure posts within the sample frame.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_posts" />
+                    </CountFields>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_posts" />
+                    </CountFields>  
+                </DCELayer>
+            </Parameters>            
         </Metric>
     </Metrics>
 </Protocol>

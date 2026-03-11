@@ -217,9 +217,9 @@
     </Layers>
     <Metrics>
         <Metric id="structure_count" version="1.0" calculation_machine_code="count">
-            <Label>Structure Count</Label>
+            <Label>Total Structure Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The count of structures within the sample frame.</Description>            
+            <Description>The count of structures within the sample frame. Structures can be mapped as points and lines, but should not be duplicated.</Description>            
             <MinimumValue>0</MinimumValue>            
             <Precision>1</Precision>
             <Parameters>
@@ -230,9 +230,9 @@
             </Parameters>            
         </Metric>
         <Metric id="structure_density" version="1.0" calculation_machine_code="count">
-            <Label>Structure Density</Label>
+            <Label>Total Structure Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The density of structures within the sample frame.</Description>            
+            <Description>The density of structures within the sample frame. Structures can be mapped as points and lines, but should not be duplicated.</Description>            
             <MinimumValue>0</MinimumValue>            
             <Precision>3</Precision>
             <Parameters>
@@ -548,7 +548,7 @@
             </Parameters>            
         </Metric>
         <Metric id="structure_length" version="1.0" calculation_machine_code="length">
-            <Label>Structure Length</Label>
+            <Label>Total Crest Length of Structures</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The total length of structures within the sample frame.</Description>            
             <MinimumValue>0</MinimumValue>            
@@ -558,7 +558,7 @@
                 </DCELayer>
             </Parameters>            
         </Metric>
-        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area">
+        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area"> <!--Remove when Intrinsic Metrics Added to QRiS-->
             <Label>Riverscape Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The area of the riverscape valley bottom within the sample frame</Description>
@@ -569,7 +569,7 @@
                 <InputLayer input_ref="valley_bottom" usage="metric_layer"/>
             </Parameters>
         </Metric>
-        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length">
+        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length"> <!--Remove when Intrinsic Metrics Added to QRiS-->
             <Label>Riverscape Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The length of the riverscape centerline within the sample frame</Description>
@@ -579,6 +579,82 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="metric_layer"/>
             </Parameters>
+        </Metric>
+        <Metric id="post_count" version="1.0" calculation_machine_code="count">
+            <Label>Count of Posts</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of structure posts within the sample frame. This includes both lines and points.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_posts" />
+                    </CountFields>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_posts" />
+                    </CountFields>  
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="new_structure_count" version="1.0" calculation_machine_code="count">
+            <Label>New As-Built Structure Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of newly built structures within the sample frame. Structures can be mapped as points and lines, but should not be duplicated.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="maintainence_structure">
+                        <Value>No</Value>
+                    </AttributeFilter>                 
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="maintainence_structure">
+                        <Value>No</Value>
+                    </AttributeFilter>   
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="maintainence_structure_count" version="1.0" calculation_machine_code="count">
+            <Label>Maintainence Structure Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of maintainence structures within the sample frame. Structures can be mapped as points and lines, but should not be duplicated.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                    <AttributeFilter field_id_ref="maintainence_structure">
+                        <Value>Yes</Value>
+                    </AttributeFilter>                 
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <AttributeFilter field_id_ref="maintainence_structure">
+                        <Value>Yes</Value>
+                    </AttributeFilter>   
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="large_wood_count" version="1.0" calculation_machine_code="count">
+            <Label>Count of Large Wood Pieces</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of large wood pieces within the sample frame. This includes both lines and points.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_large_wood_pieces" />
+                    </CountFields>                
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                    <CountFields> 
+                        <CountField field_id_ref="number_of_large_wood_pieces" />
+                    </CountFields>  
+                </DCELayer>
+            </Parameters>            
         </Metric>
     </Metrics>
 </Protocol>
