@@ -1,0 +1,7 @@
+[flake8]
+ignore = F401,E501,F841,W504,E226,E721,W291,W292,E302,E225,E231,E211,E203
+exclude = packages,.venv,.git,__pycache__
+
+
+
+

@@ -1,17 +1,29 @@
-<Protocol machine_code="LTPBR_BASE" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+<Protocol machine_code="LTPBR_BASE" version="1.0" status="production" protocol_type="dce" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>LTPBR Protocol</Label>
     <Description>Base LTPBR Layers</Description>
-    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
-    <Citation> Wheaton J.M., Bennett S.N., Bouwes, N., Maestas J.D. and Shahverdian S.M. (Editors). 2019. Low-Tech Process-Based Restoration of Riverscapes: Design Manual. Version 1.0. Utah State University Restoration Consortium. Logan, UT. 286 pp. DOI: 10.13140/RG.2.2.19590.63049/2.</Citation>
+    <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/ltpbr-dce-protocol</URL>
+    <Citation>Weber N., Wheaton J.M., Shalcross A., Al-Chokhachy R, Bailey P., Bartelt K., Bennett S., Bouwes B., Bouwes N., Gilbert J., Dickard M., Heitke J., Jordan C., Glassic H., MacFarlane W.W., Miller S., Saunders C., Whitehead K. 2024. Low-Tech Process-Based Restoration Design and Monitoring Protocol: Standard Methods for Developing Project Designs and Assessing Riverscape Health. Version 2.0. Prepared by Anabranch Solutions and Utah State University Riverscapes Assessment and Monitoring Lab. Prepared for the Bureau of Land Management. Logan, UT. 81 pp. DOI: 10.5281/zenodo.13769899 </Citation>
     <Author>Nick Weber</Author>
     <CreationDate>2024-09-01</CreationDate>
     <UpdatedDate>2024-09-01</UpdatedDate>
     <Layers>
+          <Layer id="active_channel" version="1.0" geom_type="Polygon">
+            <Label>Active Channel</Label>
+            <Symbology>active_channels.qml</Symbology>
+            <Description>Active Channel Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>
+                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
+                <HierarchyItem>Channel</HierarchyItem>
+            </Hierarchy>
+        </Layer>
         <Layer id="dam_crests" version="1.0" geom_type="Linestring">
             <Label>Dam Crests</Label>
             <Symbology>beaver_dams.qml</Symbology>
             <Description>Dam Crests Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Beaver Dam Building</HierarchyItem>
             </Hierarchy>
@@ -49,16 +61,6 @@
                 </ListField>
             </Fields>
         </Layer>
-        <Layer id="active_channel" version="1.0" geom_type="Polygon">
-            <Label>Active Channel</Label>
-            <Symbology>active_channels.qml</Symbology>
-            <Description>Active Channel Layer</Description>
-            <Hierarchy>
-                <HierarchyItem>Observations</HierarchyItem>
-                <HierarchyItem>Geomorphic Mapping</HierarchyItem>
-                <HierarchyItem>Channel</HierarchyItem>
-            </Hierarchy>
-        </Layer>
         <Layer id="active_extents" version="1.0" geom_type="Polygon">
             <Label>Active Extents</Label>
             <Symbology>active_extents.qml</Symbology>
@@ -67,6 +69,7 @@
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Floodplain</HierarchyItem>
@@ -86,6 +89,7 @@
             <Symbology>centerlines.qml</Symbology>
             <Description>Centerlines of the Active Channel</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -113,6 +117,7 @@
             <Symbology>inundation_extents.qml</Symbology>
             <Description>Inundation Extents Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Hydraulic Mapping</HierarchyItem>
             </Hierarchy>    
@@ -132,6 +137,7 @@
             <Symbology>channel_junctions.qml</Symbology>
             <Description>Channel Junctions Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -153,6 +159,7 @@
             <Symbology>geomorphic_unit_extents.qml</Symbology>
             <Description>Geomporhpic Units Extents Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -188,6 +195,7 @@
             <Symbology>geomorphic_units.qml</Symbology>
             <Description>Geomorphic Unit Points Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Geomorphic Mapping</HierarchyItem>
                 <HierarchyItem>Channel</HierarchyItem>
@@ -217,13 +225,19 @@
                     </Values>
                 </ListField>
                 <FloatField id="length" version="1.0">
-                    <Label>Length</Label>               
+                    <Label>Length</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>               
                 </FloatField>
                 <FloatField id="width" version="1.0">
                     <Label>Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
                 <FloatField id="depth" version="1.0">
                     <Label>Depth</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </FloatField>
             </Fields>
         </Layer>
@@ -235,6 +249,7 @@
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Geomorphic Condition</HierarchyItem>
             </Hierarchy>
@@ -260,6 +275,7 @@
             <Symbology>vegetation_extents.qml</Symbology>
             <Description>Vegetation Extents Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Vegetation Mapping</HierarchyItem>
             </Hierarchy>
@@ -298,6 +314,7 @@
                 <MenuItem>import_photos</MenuItem>
             </MenuItems>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Other</HierarchyItem>
             </Hierarchy>
@@ -312,6 +329,7 @@
             <Symbology>observation_lines_dce.qml</Symbology>
             <Description>Observations Lines Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Other</HierarchyItem>
             </Hierarchy>
@@ -321,6 +339,7 @@
             <Symbology>observation_polygons_dce.qml</Symbology>
             <Description>Observations Polygons Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Other</HierarchyItem>
             </Hierarchy>
@@ -330,6 +349,7 @@
             <Symbology>structural_elements_points.qml</Symbology>
             <Description>Structural Elements Points Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Structural Elements</HierarchyItem>
             </Hierarchy>
@@ -348,6 +368,8 @@
                 <IntegerField id="structure_count" version="1.0">
                     <Label>Structure Count</Label>
                     <DefaultValue>1</DefaultValue>
+                    <MinimumValue>1</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam Complex</Value>
@@ -357,6 +379,8 @@
                 </IntegerField>
                 <FloatField id="length" version="1.0">
                     <Label>Length</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam</Value>
@@ -368,6 +392,8 @@
                 </FloatField>
                 <FloatField id="width" version="1.0">
                     <Label>Width</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam</Value>
@@ -379,6 +405,8 @@
                 </FloatField>
                 <FloatField id="height" version="1.0">
                     <Label>Height</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="structural_element_type">
                         <Values>
                             <Value>Dam</Value>
@@ -390,6 +418,8 @@
                 </FloatField>
                 <IntegerField id="large_wood_count" version="1.0">
                     <Label>Large Wood Count</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
             </Fields>
         </Layer>
@@ -398,6 +428,7 @@
             <Symbology>structural_elements_lines.qml</Symbology>
             <Description>Structural Elements Lines Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Structural Elements</HierarchyItem>
             </Hierarchy>
@@ -415,6 +446,7 @@
             <Symbology>structural_elements_areas.qml</Symbology>
             <Description>Structural Elements Areas Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Observations</HierarchyItem>
                 <HierarchyItem>Structural Elements</HierarchyItem>
             </Hierarchy>
@@ -427,25 +459,29 @@
                 </ListField>
                 <IntegerField id="large_wood_count" version="1.0">
                     <Label>Large Wood Count</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                 </IntegerField>
             </Fields>            
         </Layer>
         <Layer id="recovery_potential" version="1.0" geom_type="Polygon">
-            <Label>Recovery Potential</Label>
-            <Symbology>recovery_potential.qml</Symbology>
-            <Description>Recovery Potential Layer</Description>
+            <Label>Recovery Space</Label>
+            <Symbology>recovery_space.qml</Symbology>
+            <Description>Recovery Space Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
+                <HierarchyItem>Assessments</HierarchyItem>
+            </Hierarchy>
             <MenuItems>
                 <MenuItem>copy_from_valley_bottom</MenuItem>
             </MenuItems>
-            <Hierarchy>
-                <HierarchyItem>Assessments</HierarchyItem>
-            </Hierarchy>
         </Layer>
         <Layer id="risk_potential_points" version="1.0" geom_type="Point">
             <Label>Risk Potential</Label>
             <Symbology>risk_potential_points.qml</Symbology>
             <Description>Risk Potential Point Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Risk Potential</HierarchyItem>
             </Hierarchy>
@@ -473,6 +509,7 @@
             <Symbology>risk_potential_lines.qml</Symbology>
             <Description>Risk Potential Line Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Risk Potential</HierarchyItem>
             </Hierarchy>
@@ -500,6 +537,7 @@
             <Symbology>risk_potential_polygons.qml</Symbology>
             <Description>Risk Potential Polygon Layer</Description>
             <Hierarchy>
+                <HierarchyItem>LTPBR Protocol Layers</HierarchyItem>
                 <HierarchyItem>Assessments</HierarchyItem>
                 <HierarchyItem>Risk Potential</HierarchyItem>
             </Hierarchy>
@@ -530,6 +568,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Elements</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="structural_elements_points">
@@ -551,8 +592,76 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines"/>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_area" version="1.0" calculation_machine_code="area">
+            <Label>Bank Attached Bar Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The area of of bank attached bars in containing sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_count" version="1.0" calculation_machine_code="count">
+            <Label>Bank Attached Bar Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of bank attached bars in containing sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="geomorphic_units">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_density" version="1.0" calculation_machine_code="count">
+            <Label>Bank Attached Bar Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of bank attached bars per km of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="geomorphic_units">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="geomorphic_unit_extents">
+                    <AttributeFilter field_id_ref="geomorphic_unit_type">
+                        <Value>Bank Attached Bar</Value>
+                    </AttributeFilter>
+                </DCELayer>
             </Parameters>
         </Metric>
         <Metric id="channel_head_count" version="1.0" calculation_machine_code="count">
@@ -562,6 +671,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="channel_junctions">
                     <AttributeFilter field_id_ref="junction_type">
@@ -577,6 +689,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="channel_junctions">
@@ -593,6 +708,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines">
                     <AttributeFilter field_id_ref="type_id">
@@ -608,6 +726,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="channel_junctions">
                     <AttributeFilter field_id_ref="junction_type">
@@ -624,6 +745,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="channel_junctions">
@@ -634,7 +758,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="dam_count" version="1.0" calculation_machine_code="count">
+        <Metric id="dam_count" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Dam Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The number of dams in each sample frame</Description>
@@ -653,6 +777,55 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="dam_count" version="2.0" status= 'deprecated' calculation_machine_code="count">
+            <Label>Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Elements</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="structural_elements_points">
+                    <CountFields>
+                        <CountField field_id_ref="structure_count"/>
+                    </CountFields>
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Dam</Value>
+                        <Value>Dam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="dam_count" version="3.0" calculation_machine_code="count">
+            <Label>Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of dams in each sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Elements</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="structural_elements_points">
+                    <CountFields>
+                        <CountField field_id_ref="structure_count"/>
+                    </CountFields>
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Dam</Value>
+                        <Value>Dam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="structural_elements_lines">
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Dam</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="diffluence_count" version="1.0" calculation_machine_code="count">
             <Label>Diffluence Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -660,6 +833,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                     <DCELayer layer_id_ref="channel_junctions">
                         <AttributeFilter field_id_ref="junction_type">
@@ -675,6 +851,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="channel_junctions">
@@ -691,6 +870,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines"/>
             </Parameters>
@@ -702,6 +884,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents">
                     <AttributeFilter field_id_ref="type_id">
@@ -717,6 +902,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents"/>
             </Parameters>
@@ -728,6 +916,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="active_extents">
                     <Usage>Numerator</Usage>
@@ -744,6 +935,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Elements</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="structural_elements_areas">
                     <AttributeFilter field_id_ref="structural_element_type">
@@ -759,6 +953,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Elements</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="structural_elements_points">
                     <CountFields>
@@ -776,7 +973,7 @@
                 </DCELayer>
             </Parameters>
         </Metric>
-        <Metric id="jam_density" version="1.0" calculation_machine_code="count">
+        <Metric id="jam_density" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Jam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The number of jams per length of riverscape</Description>
@@ -801,6 +998,34 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="jam_density" version="2.0" calculation_machine_code="count">
+            <Label>Jam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of jams per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Structural Elements</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structural_elements_points">
+                    <CountFields>
+                        <CountField field_id_ref="structure_count"/>
+                    </CountFields>
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Jam</Value>
+                        <Value>Jam Complex</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="structural_elements_areas">
+                    <AttributeFilter field_id_ref="structural_element_type">
+                        <Value>Jam</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="mid_channel_bar_area" version="1.0" calculation_machine_code="area">
             <Label>Mid Channel Bar Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -808,6 +1033,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="geomorphic_unit_extents">
                     <AttributeFilter field_id_ref="geomorphic_unit_type">
@@ -823,6 +1051,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="geomorphic_units">
                     <AttributeFilter field_id_ref="geomorphic_unit_type">
@@ -843,6 +1074,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="geomorphic_units">
@@ -864,6 +1098,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents">
                     <AttributeFilter field_id_ref="type_id">
@@ -879,6 +1116,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>                
                 <DCELayer layer_id_ref="inundation_extents">
                     <Usage>Numerator</Usage>
@@ -898,6 +1138,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents">
                     <Usage>Numerator</Usage>
@@ -911,6 +1154,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents">
                     <Usage>Numerator</Usage>
@@ -930,6 +1176,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents">
                     <Usage>Numerator</Usage>
@@ -949,12 +1198,31 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Vegetation</HierarchyItem>
+            </Hierarchy>
             <Parameters>                
                 <DCELayer layer_id_ref="vegetation_extents">
                     <Usage>Numerator</Usage>
                     <AttributeFilter field_id_ref="vegetation_type">
                         <Value>Riparian</Value>
                     </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_recovery_potential" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Proportion of Riverscape with Recovery Space</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The percent of the riverscape that has recovery space</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Recovery Space</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="recovery_potential">
+                    <Usage>Numerator</Usage>
                 </DCELayer>
             </Parameters>
         </Metric>
@@ -965,6 +1233,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="geomorphic_unit_extents">
                     <AttributeFilter field_id_ref="geomorphic_unit_type">
@@ -982,6 +1253,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="geomorphic_units">
                     <AttributeFilter field_id_ref="geomorphic_unit_type">
@@ -1006,6 +1280,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="geomorphic_units">
@@ -1031,6 +1308,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Hydraulic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="inundation_extents">
                     <AttributeFilter field_id_ref="type_id">
@@ -1047,6 +1327,9 @@
             <MinimumValue>0</MinimumValue>
             <MaximumValue>1000000</MaximumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines">
                     <AttributeFilter field_id_ref="type_id">
@@ -1062,6 +1345,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>          
                 <DCELayer layer_id_ref="centerlines"/>
@@ -1074,6 +1360,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>                
                 <DCELayer layer_id_ref="geomorphic_unit_extents">
                     <AttributeFilter field_id_ref="geomorphic_unit_type">
@@ -1089,6 +1378,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>1</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="geomorphic_units">
                     <AttributeFilter field_id_ref="geomorphic_unit_type">
@@ -1109,6 +1401,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization"/>
                 <DCELayer layer_id_ref="geomorphic_units">
@@ -1130,6 +1425,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Riverscape</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="valley_bottom" usage="metric_layer"/>
             </Parameters>
@@ -1141,6 +1439,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Riverscape</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="metric_layer"/>
             </Parameters>
@@ -1152,6 +1453,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="centerlines">
                     <AttributeFilter field_id_ref="type_id">
@@ -1167,6 +1471,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1182,6 +1489,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1197,6 +1507,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1212,6 +1525,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1227,6 +1543,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1242,6 +1561,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1257,6 +1579,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1272,6 +1597,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">
@@ -1287,6 +1615,9 @@
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
+            <Hierarchy>
+                <HierarchyItem>Geomorphic Condition</HierarchyItem>
+            </Hierarchy>
             <Parameters>
                 <DCELayer layer_id_ref="cem_phases">
                     <AttributeFilter field_id_ref="sem_stage">

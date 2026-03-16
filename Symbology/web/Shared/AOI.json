@@ -1,0 +1,17 @@
+{
+    "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+    "legend": [],
+    "layerStyles": [
+        {
+            "id": "AOI-957cando",
+            "type": "line",
+            "source": "AOI",
+            "source-layer": "AOI-957cando",
+            "layout": {},
+            "paint": {
+                "line-color": "hsl(0, 100%, 33%)",
+                "line-width": 2
+            }
+        }
+    ]
+}

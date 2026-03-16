@@ -1,7 +1,7 @@
 <Protocol machine_code="LTPBR_RRHS" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Rapid Riverscape Health Protocol</Label>
     <Description>Adapted rapid survey from LTPBR V2 Protocol</Description>
-    <URL>https://lowtechpbr.restoration.usu.edu/</URL>
+    <URL>https://qris.riverscapes.net/technical-reference/protocols/protocol-library/dce-protocols/rapid-riverscape-health-survey</URL>
     <Citation>Weber N., Wheaton J.M.,  Shalcross A.,  Al-Chokhachy R, Bailey P., Bartelt K., Bennett S., Bouwes B., Bouwes N., Gilbert J., Dickard M., Heitke J., Jordan C., Glassic H., MacFarlane W.W., Miller S., Saunders C., Whitehead K. 2024. Low-Tech Process-Based Restoration Design and Monitoring Protocol: Standard Methods for Developing Project Designs and Assessing Riverscape Health. Version 2.0. Prepared by Anabranch Solutions and Utah State University Riverscapes Assessment and Monitoring Lab. Prepared for the Bureau of Land Management. Logan, UT. 81 pp. DOI: 10.5281/zenodo.13769899</Citation>
     <Author>Nick Weber</Author>
     <CreationDate>2025-02-05</CreationDate>
@@ -13,6 +13,10 @@
         <Layer id="rapid_riverscape_health_observations" version="1.0" geom_type="Point">
             <Label>Rapid Riverscape Health Observations</Label>
             <Symbology></Symbology>
+            <Description>A single layer meant to survey multiple riverscape feature types at one point representing a section (DGO) of the overall riverscape</Description>
+            <Hierarchy>
+                <HierarchyItem>RRHS Protocol Layers</HierarchyItem>
+            </Hierarchy>
             <Fields>
                 <ListField id="features_surveyed" version="1.0">
                     <Label>Features Surveyed</Label>
@@ -56,6 +60,8 @@
                 <IntegerField id="confluence_count" version="1.0">
                     <Label>Confluence Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Junctions</Value>
@@ -65,6 +71,8 @@
                 <IntegerField id="diffluence_count" version="1.0">
                     <Label>Diffluence Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Junctions</Value>
@@ -74,6 +82,8 @@
                 <IntegerField id="channel_head_count" version="1.0">
                     <Label>Channel Head Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Junctions</Value>
@@ -83,6 +93,8 @@
                 <IntegerField id="dam_count" version="1.0">
                     <Label>Dam Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Structural Elements</Value>
@@ -92,6 +104,8 @@
                 <IntegerField id="jam_count" version="1.0">
                     <Label>Jam Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Structural Elements</Value>
@@ -101,6 +115,8 @@
                 <IntegerField id="vegetative_mass_count" version="1.0">
                     <Label>Vegetative Mass Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Structural Elements</Value>
@@ -110,6 +126,8 @@
                 <IntegerField id="pool_count" version="1.0">
                     <Label>Pool Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -119,6 +137,8 @@
                 <IntegerField id="pond_count" version="1.0">
                     <Label>Pond Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -128,6 +148,8 @@
                 <IntegerField id="chute_count" version="1.0">
                     <Label>Chute Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -137,6 +159,8 @@
                 <IntegerField id="riffle_count" version="1.0">
                     <Label>Riffle Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -146,6 +170,8 @@
                 <IntegerField id="mid_channel_bar_count" version="1.0">
                     <Label>Mid-Channel Bar Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>
@@ -155,6 +181,8 @@
                 <IntegerField id="bank_attached_bar_count" version="1.0">
                     <Label>Bank-Attached Bar Count</Label>
                     <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
                     <Visibility field_id_ref="features_surveyed">
                         <Values>
                             <Value>Channel Units</Value>

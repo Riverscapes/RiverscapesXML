@@ -1,0 +1,26 @@
+[project]
+name = "riverscapes-metadata"
+version = "0.1.2"
+description = "tools for managing layer definitions in riverscapes-tools and other repos that generate data"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jsonschema>=4.25.1",
+    "pyarrow>=22.0.0",
+    "urllib3>=2.5.0",
+    "pint>=0.25",
+    "boto3>=1.42.6",
+]
+
+[project.scripts]
+export-layer-definitions-for-s3 = "riverscapes_metadata.export_layer_definitions_for_s3:main"
+validate-metadata = "riverscapes_metadata.export_layer_definitions_for_s3:validate_cli"
+publish-metadata-to-s3 = "riverscapes_metadata.publish_metadata:main"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["riverscapes_metadata"]

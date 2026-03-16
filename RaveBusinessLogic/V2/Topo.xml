@@ -131,6 +131,20 @@
           </Node>
         </Children>
       </Node>
+      <Node label="Aux Measurements">
+        <!--
+        We need this parent Node and Children tag because both QViewer and Web Viewer do not respect the
+        collapsed attribute on the Repeater node itself.
+ 
+        https://github.com/Riverscapes/QRAVEPlugin/issues/188
+        https://github.com/Riverscapes/rs-web-monorepo/issues/827
+        -->
+        <Children collapsed="true">
+          <Repeater label="Aux Measurements" xpath="Realizations/Realization/Datasets/File">
+            <Node xpathlabel="Name" type="file" />
+          </Repeater>
+        </Children>
+      </Node>
     </Children>
   </Node>
       <Views default="DEFAULT">

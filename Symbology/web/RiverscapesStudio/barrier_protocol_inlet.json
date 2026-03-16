@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 223, 255)", "Inlets"]
+  ],
+  "layerStyles": [
+{
+            "id": "inlets-9azr1v",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "inlets-9azr1v",
+            "layout": {"text-field": "*", "text-size": 28},
+            "paint": {
+                "text-color": "rgb(0, 223, 255)",
+                "text-halo-width": 0.75,
+                "text-halo-color": "rgb(0, 0, 0)"
+            }
+        }
+    ]
+}

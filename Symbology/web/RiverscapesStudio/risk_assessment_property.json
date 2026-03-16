@@ -1,0 +1,65 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 176, 80)", "Landowner/manager willing to alllow stream and floodplain adjustment in all of valley bottom"],
+    ["rgb(255, 255, 0)", "Landowner/manager willing to alllow stream and floodplain adjustment in some protions of valley bottom"],
+    ["rgb(175, 0, 0)", "Landowner/manager unwilling to alllow stream and floodplain adjustment in valley bottom"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+{
+            "id": "property1-1acost",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "property1-1acost",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "channel_floodplain_assessment"],
+                    [
+                        "Landowner/manager willing to alllow stream and floodplain adjustment in all of valley bottom"
+                    ],
+                    "rgba(0, 176, 80, 0.6)",
+                    [
+                        "Landowner/manager willing to alllow stream and floodplain adjustment in some protions of valley bottom"
+                    ],
+                    "rgba(255, 255, 0, 0.6)",
+                    [
+                        "Landowner/manager unwilling to alllow stream and floodplain adjustment in valley bottom"
+                    ],
+                    "rgba(175, 0, 0, 0.6)",
+                    "rgb(193, 177, 0)"
+                ]
+            }
+        },
+        {
+            "id": "property1-1acost (1)",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "property1-1acost",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "channel_floodplain_assessment"],
+                    [
+                        "Landowner/manager willing to alllow stream and floodplain adjustment in all of valley bottom"
+                    ],
+                    "rgb(0, 100, 80)",
+                    [
+                        "Landowner/manager willing to alllow stream and floodplain adjustment in some protions of valley bottom"
+                    ],
+                    "rgb(255, 255, 35)",
+                    [
+                        "Landowner/manager unwilling to alllow stream and floodplain adjustment in valley bottom"
+                    ],
+                    "rgb(175, 0, 0)",
+                    "#000000"
+                ],
+                "line-width": 2,
+                "line-dasharray": [4, 1.5]
+            }
+        }
+    ]
+}

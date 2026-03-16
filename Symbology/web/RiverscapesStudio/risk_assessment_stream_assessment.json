@@ -1,0 +1,42 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 208, 252)", "1st through 3rd Order Wadeable Stream"],
+    ["rgb(26, 201, 44)", "3rd through 5th Order Wadeable Stream"],
+    ["rgb(215, 48, 39)", "5th Order Non-Wadeable Stream or Higher"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+{
+            "id": "stream-assessment-46gqax",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "stream_assessment-46gqax",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "stream_order"],
+                    ["1st through 3rd Order Wadeable Stream"],
+                    "rgb(0, 208, 252)",
+                    ["3rd through 5th Order Wadeable Stream"],
+                    "rgb(26, 201, 44)",
+                    ["5th Order Non-Wadeable Stream or Higher"],
+                    "rgb(215, 48, 39)",
+                    "rgb(192, 177, 0)"
+                ],
+                "line-width": [
+                    "match",
+                    ["get", "stream_order"],
+                    ["1st through 3rd Order Wadeable Stream"],
+                    1.5,
+                    ["3rd through 5th Order Wadeable Stream"],
+                    2.5,
+                    ["5th Order Non-Wadeable Stream or Higher"],
+                    4,
+                    1
+                ]
+            }
+        }
+    ]
+}

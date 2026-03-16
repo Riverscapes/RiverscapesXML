@@ -1,0 +1,75 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(218, 13, 140)", "Channel Margin"],
+    ["rgb(0, 0, 0)", "Valley Bottom Margin (dashed line)"],
+    ["rgb(0, 0, 0)", "Valley Margin (line with circles)"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+{
+            "id": "margins-5hbr5x",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "margins-5hbr5x",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "tier_1_margin_type"],
+                    ["Channel Margin"],
+                    "rgb(218, 13, 140)",
+                    ["Valley Margin"],
+                    "rgb(0, 0, 0)",
+                    "rgba(217, 13, 139, 0)"
+                ],
+                "line-width": [
+                    "match",
+                    ["get", "tier_1_margin_type"],
+                    ["Channel Margin"],
+                    2.5,
+                    ["Valley Margin"],
+                    3,
+                    1
+                ]
+            }
+        },
+        {
+            "id": "margins-5hbr5x (1)",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "margins-5hbr5x",
+            "layout": {},
+            "paint": {
+                "circle-color": [
+                    "match",
+                    ["get", "tier_1_margin_type"],
+                    ["Valley Margin"],
+                    "#000000",
+                    "rgba(0, 0, 0, 0)"
+                ],
+                "circle-translate": [3, -3]
+            }
+        },
+        {
+            "id": "margins-5hbr5x (2)",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "margins-5hbr5x",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "tier_1_margin_type"],
+                    ["Valley Bottom Margin"],
+                    "#000000",
+                    ["Channel Margin", "Valley Margin"],
+                    "rgba(0, 0, 0, 0)",
+                    "rgb(192, 177, 0)"
+                ],
+                "line-width": 3.5,
+                "line-dasharray": [3, 2]
+            }
+        }
+    ]
+}

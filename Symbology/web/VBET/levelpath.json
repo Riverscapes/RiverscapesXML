@@ -11,7 +11,7 @@
           "source": "composite",
           "source-layer": "LevelPaths_net-afw9tr",
           "layout": {
-              "text-field": ["to-string", ["get", "vbet_level_path"]],
+              "text-field": ["to-string", ["get", "level_path"]],
               "text-size": [
                 "interpolate",
                 ["linear"],

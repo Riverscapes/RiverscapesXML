@@ -1,0 +1,53 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(253, 191, 111)", "Sample Frames"]
+  ],
+  "layerStyles": [
+{
+            "id": "sampleframes-6405px",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "SampleFrames-6405px",
+            "layout": {},
+            "paint": {
+                "line-color": "rgb(253, 191, 111)",
+                "line-width": 4.5,
+                "line-dasharray": [4, 1]
+            }
+        },
+        {
+            "id": "sampleframes-6405px (1)",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "SampleFrames-6405px",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "display_label"],
+                    ["1"],
+                    "1",
+                    ["2"],
+                    "2",
+                    ["3"],
+                    "3",
+                    ["4"],
+                    "4",
+                    ["5"],
+                    "5",
+                    "6"
+                ],
+                "text-font": [
+                    "Arial Unicode MS Bold",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 20
+            },
+            "paint": {
+                "text-color": "rgb(255, 127, 0)",
+                "text-halo-color": "rgb(255, 255, 255)",
+                "text-halo-width": 1.5
+            }
+        }
+    ]
+}

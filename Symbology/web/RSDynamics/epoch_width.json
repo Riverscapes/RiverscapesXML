@@ -1,0 +1,57 @@
+{
+  "legend": [
+    ["#FFFFFF", "NULL"],
+    ["#30123B", "0 - 71.43"],
+    ["#4777EF", "71.43 - 142.86"],
+    ["#1BD0D5", "142.86 - 214.29"],
+    ["#64FD6A", "214.29 - 285.71"],
+    ["#D3E835", "285.71 - 357.14"],
+    ["#FE992C", "357.14 - 428.57"],
+    ["#D93807", "428.57 - 500"],
+    ["#7A0403", "500"]
+  ],
+  "layerStyles": [
+    {
+      "id": "dgo-metrics-sample-byd148",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "case",
+          ["==", ["get", "value"], null],
+          "rgba(0,0,0,0)",
+          [
+            "interpolate",
+            ["linear"],
+            ["get", "value"],
+            0, "rgba(48,18,59,1)",
+            71.42857142857143, "rgba(71,119,239,1)",
+            142.85714285714286, "rgba(27,208,213,1)",
+            214.28571428571428, "rgba(100,253,106,1)",
+            285.7142857142857, "rgba(211,232,53,1)",
+            357.1428571428571, "rgba(254,153,44,1)",
+            428.57142857142856, "rgba(217,56,7,1)",
+            500, "rgba(122,4,3,1)"
+          ]
+        ],
+        "fill-opacity": [
+          "case",
+          ["==", ["get", "value"], null],
+          0,
+          0.7
+        ]
+      }
+    },
+    {
+      "id": "outline",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "paint": {
+        "line-width": 1
+      }
+    }
+  ]
+}

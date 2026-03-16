@@ -1,14 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
-  <Name>CHaMP Metrics</Name>
-  <ProjectType>CHAMPMetrics</ProjectType>
-  <Node xpathlabel="Name">
-    <Children collapsed="false">
-      <Node label="Outputs" xpath="Realizations/Realization/Analyses/Analysis/Products">
-        <Children>
-          <Node label="CHaMP Metrics" xpath="Vector" type="point" />
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>CHaMP Metrics</Name>
+    <ProjectType>CHAMPMETRICS</ProjectType>
+    <Node xpathlabel="Name">
+        <Children collapsed="false">
+            <Node label="Site Metrics">
+                <Children>
+                    <Node label="Gradient" symbology="Grad" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Sinuosity" symbology="Sin" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Thalweg Site Length" symbology="Lgth_Thlwg" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Sinuosity Via Centerline" symbology="Sin_CL" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Site Length" symbology="Lgth_Wet" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Area" symbology="Area_Wet" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Site Length" symbology="Lgth_Bf" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Area" symbology="Area_Bf" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Volume" symbology="WetVol" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Detrended Elevation SD" symbology="DetrendElev_SD" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Volume" symbology="BfVol" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Channel Total Length" symbology="Lgth_WetChnl" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Channel Braidedness" symbology="WetBraid" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Channel Total Length" symbology="Lgth_BfChnl" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Channel Braidedness" symbology="BfBraid" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Channel Island Count" symbology="Wet_Island_Ct" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Channel Qualifying Island Count" symbology="Wet_QIsland_Ct" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Channel Qualifying Island Area" symbology="Wet_QIsland_Area" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Channel Island Count" symbology="Bf_Island_Ct" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Channel Qualifying Island Count" symbology="Bf_QIsland_Ct" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Bankfull Channel Qualifying Island Area" symbology="Bf_QIsland_Area" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Depth SD" symbology="DpthWet_SD" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Wetted Channel Mainstem Area" symbology="WetMChnl_Area" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Discharge" symbology="discharge" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" id="discharge" />
+                    <Node label="Conductivity" symbology="Cond" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Alkalinity" symbology="Alk" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Solar Access: Summer Avg" symbology="SolarSummr_Avg" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Constraining Feature Height Average" symbology="ConstrainingFeatureHeightAverage" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Flood Prone Width Average" symbology="FloodProneWidthAverage" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Valley Width" symbology="ValleyWidth" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Constraining Feature Type" symbology="ConstrainingFeatureType" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Percent Constrained" symbology="PercentConstrained" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Channel Pattern" symbology="ChannelPattern" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                    <Node label="Pool-To-Turbulent Area Ratio" symbology="PoolToTurbulentAreaRatio" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_metrics']" type="point" />
+                </Children>
+            </Node>
+            <Node label="Watersheds" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='watersheds']" type="polygon" symbology="watersheds" id="watersheds"/>
+            <Node label="Sites" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_sites']" type="point" symbology="sites" id="sites"/>
+            <Node label="CSV Files">
+                <Children collapsed="true">
+                    <Node label="Metrics CSV" xpath="Realizations/Realization/Outputs/CSV[@id='Metrics_csv']" type="file" />
+                    <Node label="TopoMetrics Fields CSV" xpath="Realizations/Realization/Outputs/CSV[@id='TopoMetrics_fields_csv']" type="file" />
+                </Children>
+            </Node>
         </Children>
-      </Node>
-    </Children>
-  </Node>
+    </Node>
+    <Views>
+        <View name="Default View" id="DEFAULTVIEW">
+            <Layers>
+                <Layer id="discharge" />
+                <Layer id="sites" />
+                <Layer id="watersheds" />
+            </Layers>
+        </View>
+    </Views>
 </Project>

@@ -1,0 +1,213 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://xml.riverscapes.net/layer_definition/0.8.0",
+    "title": "Riverscapes Layer Definitions (Unified)",
+    "description": "Schema to define structural + descriptive metadata for multiple layers (typically database tables) and their columns in a single file. By convention named layer_definitions.json. See https://docs.riverscapes.net/standards/metadata",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "tool_schema_name": {
+            "type": "string",
+            "description": "Tool Schema Name, usually the name of the Python package in which this is defined"
+        },
+        "tool_schema_version": {
+            "type": "string",
+            "description": "Tool schema version (semver) increment major for deleted tables or columns, minor for added tables or columns, patch for non-breaking changes"
+        },
+        "layers": {
+            "type": "array",
+            "minItems": 1,
+            "description": "List of layer definitions (tables, views, rasters, vectors)",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "layer_id": {
+                        "type": "string",
+                        "description": "Stable identifier of the layer or table, for example used for project.rs.xml id"
+                    },
+                    "layer_name": {
+                        "type": "string",
+                        "description": "Human-readable layer or table name (may match layer_id)"
+                    },
+                    "path": {
+                        "type": "string",
+                        "description": "Relative or absolute path to the layer"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Human-readable summary of the layer"
+                    },
+                    "source_title": {
+                        "type": "string",
+                        "description": "External provenance or documentation title"
+                    },
+                    "source_url": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "External provenance or documentation URL"
+                    },
+                    "data_product_version": {
+                        "type": "string",
+                        "description": "Data vintage/year or range"
+                    },
+                    "layer_type": {
+                        "type": "string",
+                        "enum": [
+                            "CommonDatasetRef",
+                            "Raster",
+                            "Vector",
+                            "Geopackage",
+                            "DEM",
+                            "HillShade",
+                            "CSV",
+                            "Image",
+                            "Video",
+                            "DataTable",
+                            "Database",
+                            "MSAccessDB",
+                            "SQLiteDB",
+                            "PDF",
+                            "HTMLFile",
+                            "ZipFile",
+                            "LogFile",
+                            "File"
+                        ],
+                        "description": "Layer category corresponding to subset of RiverscapesProject.xsd DataSetContainerType name"
+                    },
+                    "theme": {
+                        "type": "string",
+                        "description": "Layer theme. Used for grouping layers together in generated documentation."
+                    },
+                    "columns": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "$ref": "#/$defs/column"
+                        },
+                        "description": "Ordered list of column (field) definitions (or bands)"
+                    }
+                },
+                "required": [
+                    "layer_id",
+                    "layer_name"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "tool_schema_name",
+        "tool_schema_version",
+        "layers"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+        "column": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Column (or raster band) identifier"
+                },
+                "dtype": {
+                    "type": "string",
+                    "description": "The logical data type. System should use this for mapping to the appropriate physical type (e.g., SQLite INTEGER vs Pandas Int64).",
+                    "enum": [
+                        "INTEGER",
+                        "FLOAT",
+                        "STRING",
+                        "BOOLEAN",
+                        "DATETIME",
+                        "DECIMAL",
+                        "GEOMETRY",
+                        "STRUCTURED",
+                        "BINARY"
+                    ]
+                },
+                "dtype_parameters": {
+                    "type": "object",
+                    "description": "Optional technical hints clarifying data type. Use JSON syntax. e.g. GEOMETRY srid; STRUCTURED list/map/schema; DECIMAL precision & scale"
+                },
+                "friendly_name": {
+                    "type": "string",
+                    "description": "Display-friendly name for the column"
+                },
+                "theme": {
+                    "type": "string",
+                    "description": "Grouping theme -- useful for very wide tables (e.g., Beaver, Hydrology)"
+                },
+                "data_unit": {
+                    "type": "string",
+                    "description": "Pint-compatible unit string (e.g., m, km^2, %, dimensionless, count) or NA for not applicable"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Detailed description of the column"
+                },
+                "is_key": {
+                    "type": "boolean",
+                    "description": "Participates in a primary/unique key"
+                },
+                "is_required": {
+                    "type": "boolean",
+                    "description": "True if field cannot be empty. Corresponds to SQL NOT NULL."
+                },
+                "default_value": {
+                    "type": [
+                        "string",
+                        "number",
+                        "boolean",
+                        "null"
+                    ],
+                    "description": "Default value for new records"
+                },
+                "preferred_format": {
+                    "type": "string",
+                    "description": "Suggested format for output, specified in Python's format specification mini-language, e.g. {:2f} for a fixed-point notation with 2 digits following decimal."
+                },
+                "preferred_bin_definition": {
+                    "type": "string",
+                    "description": "Identifier of preferred bin definition (optional)"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "examples": [
+        {
+            "tool_schema_name": "rme_to_athena",
+            "tool_schema_version": "1.0.0",
+            "layers": [
+                {
+                    "layer_id": "raw_rme",
+                    "layer_name": "Raw Riverscapes Metrics",
+                    "description": "Primary metrics table scraped from RME",
+                    "layer_type": "table",
+                    "columns": [
+                        {
+                            "name": "brat_capacity",
+                            "dtype": "FLOAT",
+                            "friendly_name": "Existing Beaver Dam Capacity",
+                            "theme": "Beaver",
+                            "data_unit": "km^-1",
+                            "description": "Existing number of beaver dams per unit riverscape length supported",
+                            "is_key": false,
+                            "is_required": true
+                        },
+                        {
+                            "name": "geometry",
+                            "dtype": "GEOMETRY",
+                            "dtype_parameters": {"srid": 4326, "geometry_type": "MULTIPOLYGON"},
+                            "friendly_name": "Polygon representing the DGO"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

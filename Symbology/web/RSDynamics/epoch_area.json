@@ -1,0 +1,57 @@
+{
+  "legend": [
+    ["#FFFFFF", "NULL"],
+    ["#30123B", "0 - 100"],
+    ["#4777EF", "100 - 200"],
+    ["#1BD0D5", "200 - 300"],
+    ["#64FD6A", "300 - 400"],
+    ["#D3E835", "400 - 500"],
+    ["#FE992C", "500 - 600"],
+    ["#D93807", "600 - 700"],
+    ["#7A0403", "700"]
+  ],
+  "layerStyles": [
+    {
+      "id": "dgo-metrics-sample-byd148",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "case",
+          ["==", ["get", "value"], null],
+          "rgba(0,0,0,0)",
+          [
+            "interpolate",
+            ["linear"],
+            ["get", "value"],
+            0, "rgba(48,18,59,1)",
+            100, "rgba(71,119,239,1)",
+            200, "rgba(27,208,213,1)",
+            300, "rgba(100,253,106,1)",
+            400, "rgba(211,232,53,1)",
+            500, "rgba(254,153,44,1)",
+            600, "rgba(217,56,7,1)",
+            700, "rgba(122,4,3,1)"
+          ]
+        ],
+        "fill-opacity": [
+          "case",
+          ["==", ["get", "value"], null],
+          0,
+          0.7
+        ]
+      }
+    },
+    {
+      "id": "outline",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dgo_metrics_sample-byd148",
+      "paint": {
+        "line-width": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(68, 1, 84)",
+      "0.0002 - 0.0014"
+    ],
+    [
+      "rgb(59, 82, 139)",
+      "0.0014 - 0.003"
+    ],
+    [
+      "rgb(33, 144, 141)",
+      "0.003 - 0.0054"
+    ],
+    [
+      "rgb(93, 201, 99)",
+      "0.0054 - 0.0084"
+    ],
+    [
+      "rgb(253, 231, 37)",
+      "0.0084 - 0.0257"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cr_fishperm2",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "cr_fishperm2",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "step",
+          [
+            "get",
+            "fishPerM2"
+          ],
+          "rgb(68, 1, 84)",
+          0.001415538652574,
+          "rgb(59, 82, 139)",
+          0.002990506283756,
+          "rgb(33, 144, 141)",
+          0.005368613054858,
+          "rgb(93, 201, 99)",
+          0.008439713197939,
+          "rgb(253, 231, 37)"
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          11,
+          5,
+          13.5,
+          7,
+          15,
+          9,
+          22,
+          11
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(3, 223, 235)", "Suitability Assessment"]
+  ],
+  "layerStyles": [
+{
+            "id": "suitability-assessment-d5b4x9",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "suitability_assessment-d5b4x9",
+            "layout": {},
+            "paint": {
+                "line-color": "rgb(3, 223, 235)",
+                "line-width": 2,
+                "line-dasharray": [4, 3]
+            }
+        }
+    ]
+}

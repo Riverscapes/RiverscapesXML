@@ -6,22 +6,22 @@
         <Children>
             <Node label="Inputs" xpath="Realizations/Realization[@id='inputs']" id="inputs">
                 <Children collapsed="true">
-                    <Repeater label="Riverscapes" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_valley_bottom')]">
+                    <Repeater label="Riverscapes" xpath="Datasets/Geopackage/Layers/Vector[@type='valley_bottom']">
                         <Node xpathlabel="Name" type="polygon" symbology="valley_bottom"/>
                     </Repeater>
                     <Repeater label="Surfaces" xpath="Datasets/Raster[contains(@id,'surface')]">
                         <Node xpathlabel="Name" type="raster"/>
                     </Repeater>
-                    <Repeater label="AOIs" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_aoi')]">
+                    <Repeater label="AOIs" xpath="Datasets/Geopackage/Layers/Vector[@type='aoi']">
                         <Node xpathlabel="Name" type="polygon" symbology="mask"/>
                     </Repeater>
-                    <Repeater label="Sample Frames" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_sample_frame')]">
+                    <Repeater label="Sample Frames" xpath="Datasets/Geopackage/Layers/Vector[@type='sample_frame']">
                         <Node xpathlabel="Name" type="polygon" symbology="sampling_frames"/>
                     </Repeater>
-                    <Repeater label="Profiles" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_profile')]">
+                    <Repeater label="Profiles" xpath="Datasets/Geopackage/Layers/Vector[@type='profile']">
                         <Node xpathlabel="Name" type="line" symbology="profiles"/>
                     </Repeater>
-                    <Repeater label="Cross Sections" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_cross_section')]">
+                    <Repeater label="Cross Sections" xpath="Datasets/Geopackage/Layers/Vector[@type='cross_section']">
                         <Node xpathlabel="Name" type="line" symbology="cross_sections"/>
                     </Repeater>
                     <Node label="Context">
@@ -114,9 +114,9 @@
                                         <Node label="SEM Cluer and Thorne" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'cem_phases')]" type="polygon" symbology="cem_phases" id="cem_phases"/>
                                     </Children>
                                 </Node>
-                                <Node label="Recovery Potential">
+                                <Node label="Recovery Space">
                                     <Children collapsed="true">
-                                        <Node label="Recovery Potential" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'recovery_potential')]" type="polygon" symbology="recovery_potential" id="recovery_potential"/>
+                                        <Node label="Recovery Space" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'recovery_potential')]" type="polygon" symbology="recovery_space" id="recovery_potential"/>
                                     </Children>
                                 </Node>
                                 <Node label="Risk Potential">
@@ -154,11 +154,14 @@
                 </Node>  
             </Repeater>
             <Repeater label="Analyses" xpath="Realizations/Realization[contains(@id, 'analysis')]">
-                <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_analysis')]" type="polygon">
+                <Node xpathlabel="Name" xpath="Datasets/Geopackage/Layers/Vector[contains(@lyrName, 'vw_analysis')]" type="file">
                     <!-- <Children>
                         <Node label="Analysis" />
                     </Children> -->
                 </Node>
+            </Repeater>
+            <Repeater label="Attachments" xpath="Realizations/Realization[contains(@id, 'attachments')]/Datasets/File">
+                <Node xpathlabel="Name"  type="file"></Node>
             </Repeater>
         </Children>
       </Node>

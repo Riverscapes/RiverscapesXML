@@ -1,18 +1,29 @@
 import os
 import json
 import unittest
+from pathlib import Path
 # import sys
 # import csv
 from validate import get_xml, collect_files, get_xsd, validate_web_vector_json, validate_xml, validate_qramp, validate_qris_metric_json
 
+PROJECT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = PROJECT_DIR.parent
+os.chdir(REPO_ROOT)
+
+
+def root_path(relative: str) -> str:
+    """Convert a repository-relative path into an absolute string."""
+    return str(REPO_ROOT / relative)
+
+
 # We do this mapping because we want the current version's XML tested against the corrent
 # version's XSD.
 XML_DIGEST = [
-    {'xml': './Programs/**/*.xml', 'xsd': './Program.xsd'},
-    {'xml': './RaveBusinessLogic/*.xml', 'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
-    {'xml': './RaveBusinessLogic/V2/*.xml', 'xsd': './RaveBusinessLogic/XSD/project_explorer.xsd'},
-    {'xml': './BaseMaps.xml', 'xsd': './BaseMaps.xsd'},
-    {'xml': './QRiS/protocols/*.xml', 'xsd': './QRiS/protocol.xsd'}
+    {'xml': root_path('Programs/**/*.xml'), 'xsd': root_path('Program.xsd')},
+    {'xml': root_path('RaveBusinessLogic/*.xml'), 'xsd': root_path('RaveBusinessLogic/XSD/project_explorer.xsd')},
+    {'xml': root_path('RaveBusinessLogic/V2/*.xml'), 'xsd': root_path('RaveBusinessLogic/XSD/project_explorer.xsd')},
+    {'xml': root_path('BaseMaps.xml'), 'xsd': root_path('BaseMaps.xsd')},
+    {'xml': root_path('QRiS/protocols/*.xml'), 'xsd': root_path('QRiS/protocol.xsd')}
 ]
 
 
@@ -56,8 +67,8 @@ class TestLambdaFunc(unittest.TestCase):
         errors = []
 
         print("\nTesting Web Symbologies:\n========================")
-        with open('./Symbology/web/vector.schema.json', encoding='utf-8') as f:
-            symbology_paths = collect_files('./Symbology/web/**/*.json')
+        with open(root_path('Symbology/web/vector.schema.json'), encoding='utf-8') as f:
+            symbology_paths = collect_files(root_path('Symbology/web/**/*.json'))
             schema = json.load(f)
 
             for json_path in symbology_paths:
@@ -72,10 +83,10 @@ class TestLambdaFunc(unittest.TestCase):
                 print(f"Tested web symbology: {json_path}")
 
         print("\nTesting QRiS Metrics:\n========================")
-        with open('./QRiS/qris_metrics.schema.json', encoding='utf-8') as f:
+        with open(root_path('QRiS/qris_metrics.schema.json'), encoding='utf-8') as f:
             metric_paths = [
-                *collect_files('./QRiS/metrics/*.json'),
-                *collect_files('./QRiS/metrics/**/*.json'),
+                *collect_files(root_path('QRiS/metrics/*.json')),
+                *collect_files(root_path('QRiS/metrics/**/*.json')),
             ]
             schema = json.load(f)
 
@@ -96,7 +107,7 @@ class TestLambdaFunc(unittest.TestCase):
         """QGIS Color Ramps follow a very particular type
         """
         errors = []
-        ramp_paths = collect_files('./Symbology/web/**/*.txt')
+        ramp_paths = collect_files(root_path('Symbology/web/**/*.txt'))
         for ramp_path in ramp_paths:
             try:
                 with open(ramp_path, 'r', encoding='utf-8') as data:
@@ -118,13 +129,13 @@ class TestLambdaFunc(unittest.TestCase):
             errors = []
             tested_xsds = []
             print(f"\nTesting Project XMLS {ver}:\n========================")
-            xmls = collect_files(f'./Projects/XSD/{ver}/examples/*.xml')
+            xmls = collect_files(root_path(f'Projects/XSD/{ver}/examples/*.xml'))
             for xml_path in xmls:
                 basename = os.path.basename(os.path.splitext(xml_path)[0])
                 if ver == 'V1':
-                    xsd_path = f'Projects/XSD/{ver}/{basename}.xsd'
+                    xsd_path = root_path(f'Projects/XSD/{ver}/{basename}.xsd')
                 else:
-                    xsd_path = f'Projects/XSD/{ver}/RiverscapesProject.xsd'
+                    xsd_path = root_path(f'Projects/XSD/{ver}/RiverscapesProject.xsd')
                 xml_file = get_xml(xml_path)
                 try:
                     # If there's no XSD for this project then just skip it for now

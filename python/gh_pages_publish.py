@@ -4,12 +4,16 @@ import glob
 import json
 import shutil
 import logging
+from pathlib import Path
 
 logging.basicConfig(level=logging.DEBUG)
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+os.chdir(ROOT_DIR)
+
 # These are the folders we will scrape
 FOLDERS = [
-    'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic', 'QRiS'
+    'Programs', 'Projects', 'Symbology', 'RaveBusinessLogic', 'QRiS', 'riverscapes_metadata/schema'
 ]
 FILES = [
     'BaseMaps.xml'
@@ -43,7 +47,7 @@ def md5(fname: str) -> str:
         print(e)
         return None
 
-# This script should be run in the Root folder of the repo
+# Ensure all paths resolve relative to the repository root regardless of invocation location
 
 
 def build_index():

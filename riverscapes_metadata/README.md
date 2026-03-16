@@ -1,0 +1,294 @@
+# Layer Definitions
+
+This folder contains artifacts to support a consistent metadata handling in Riverscapes tools. Any model or script that generates data can use this to help define the layers (tables, views, vector and raster gis layers) and their attributes (columns or bands). By following the specification defined here, consumers of the data (humans or other tools) will know exactly what they are getting.
+
+## Contents
+
+### Json schema
+
+This schema is published to xml.riverscapes.net and defines the information, required and optional, to include in the layer_definitions. Layer metadata now includes:
+
+- `path`: relative or absolute location of the layer delivery artifact (S3 key, repo path, etc.).
+- `theme`: optional higher-level grouping for the layer itself (distinct from column `theme`).
+- Expanded `layer_type` options aligned with RiverscapesProject.xsd `DataSetContainerType` (e.g., `Raster`, `Vector`, `Geopackage`).
+- Optional provenance fields (`source_title`, `source_url`, `data_product_version`).
+
+### riverscapes_metadata \ export_layer_definitions_for_s3
+
+`export_layer_definitions_for_s3.py`
+
+This is exported for use in other repositories to go flatten `layer_definition.json` into a parquet files (partitioned by repository/tool/tool-schema-version) that serve as source for Athena table (see below).
+
+### riverscapes_metadata \ csv_to_layer_definitions
+
+This is a utility to convert a csv file into a compliant JSON. The [google sheet layer_definitions template](https://docs.google.com/spreadsheets/d/1kmcAwVS9PcPpiqJEulhSmZG9wIR11vgikw__JanYt90/edit?usp=sharing) can be copied and used to export such a csv.
+
+This is intended for one time use, not as an ongoing pipeline.
+
+Sample input and output are in the `test` folder.
+
+## Athena External Table
+
+We publish to: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/` (old way) `s3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/schema_majorver/` where `schema_majorver` is a major version change that is incompatible with previous (e.g. deleted column, change partition)
+
+External table DDL (Parquet, no partitions):
+
+```sql
+CREATE EXTERNAL TABLE IF NOT EXISTS rs_raw.layer_definitions_08 (
+  layer_id                  string  COMMENT 'Stable identifier of the layer or table, for example used for project.rs.xml id',
+  layer_name                string  COMMENT 'Human-readable layer or table name (may match layer_id)',
+  layer_type                string  COMMENT 'Layer category (CommonDatasetRef, Raster, Vector, Geopackage, etc.)',
+  layer_path                string  COMMENT 'Relative or absolute path to the delivered layer artifact',
+  layer_theme               string  COMMENT 'High level grouping for the layer (e.g. Hydrology, Vegetation)',
+  layer_source_title        string  COMMENT 'External provenance or documentation title', 
+  layer_source_url          string  COMMENT 'Provenance or documentation URL for the layer',
+  layer_data_product_version string COMMENT 'Data vintage/year or version string',
+  layer_description         string  COMMENT 'Human-readable summary of the layer',
+  column_index      int     COMMENT 'Order of column in the definition file. 0-based.',
+  name              string  COMMENT 'Column (or raster band) identifier',
+  friendly_name     string  COMMENT 'Display-friendly name for the column',
+  theme             string  COMMENT 'Grouping theme -- useful for very wide tables (e.g., Beaver, Hydrology)',
+  data_unit         string  COMMENT 'Pint-compatible unit string (e.g. m, km^2, %)',
+  dtype             string  COMMENT 'Data type (INTEGER, REAL, TEXT, etc.)',
+  dtype_parameters  string  COMMENT 'Dictionary of parameters providing more detail on the data type (e.g. srid:4326, bit_depth:8)',
+  description       string  COMMENT 'Detailed description of the column',
+  is_key            boolean COMMENT 'Participates in a primary/unique key',
+  is_required       boolean COMMENT 'True if field cannot be empty. Corresponds to SQL NOT NULL',
+  default_value     string  COMMENT 'Default value for new records',
+  preferred_format  string  COMMENT 'Preferred number format for output using python format mini-language',
+  preferred_bin_definition string COMMENT 'Preferred bin definition (lookup name)',
+  commit_sha        string  COMMENT 'git commit at time of harvest from authority json',
+  authority          string COMMENT 'Repository root name (publishing authority) (e.g. riverscapes-tools)',
+  tool_schema_name     string COMMENT 'Issuing package/tool name (e.g. VBET)',
+  tool_schema_version string COMMENT 'Tool schema version (semver)'
+)
+COMMENT 'Unified Riverscapes layer column definitions (structural + descriptive metadata).'
+STORED AS PARQUET
+LOCATION 's3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/';
+```
+
+### View that reports should use: `default`.`layer_definitions_latest`
+
+This combines the best of either the old or new version of the metadata.
+
+```sql
+CREATE OR REPLACE VIEW "layer_definitions_latest" AS 
+WITH
+  layerdef08 AS (
+   SELECT
+     'defs08' sourcetable
+   , authority
+   , tool_schema_name authority_name
+   , tool_schema_name
+   , tool_schema_version
+   , layer_id
+   , layer_name
+   , layer_type
+   , layer_path
+   , layer_theme
+   , layer_source_url
+   , layer_source_title
+   , layer_data_product_version
+   , layer_description
+   , column_index
+   , name
+   , friendly_name
+   , theme
+   , data_unit
+   , dtype
+   , dtype_parameters
+   , description
+   , is_key
+   , is_required
+   , default_value
+   , preferred_format
+   , preferred_bin_definition
+   , commit_sha
+   , (((COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) * 1000000) + (COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) * 1000)) + COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0)) tool_schema_version_int
+   FROM
+     "rs_raw"."layer_definitions_08"
+) 
+, layerdefs07 AS (
+   SELECT
+     'defs07' sourcetable
+   , authority
+   , authority_name
+   , authority_name tool_schema_name
+   , tool_schema_version
+   , layer_id
+   , layer_name
+   , layer_type
+   , layer_path
+   , layer_theme
+   , layer_source_url
+   , null layer_source_title
+   , layer_data_product_version
+   , layer_description
+   , -1 column_index
+   , name
+   , friendly_name
+   , theme
+   , data_unit
+   , dtype
+   , null dtype_parameters
+   , description
+   , is_key
+   , is_required
+   , default_value
+   , null preferred_format
+   , null preferred_bin_definition
+   , commit_sha
+   , (((COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 1) AS INTEGER), 0) * 1000000) + (COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 2) AS INTEGER), 0) * 1000)) + COALESCE(TRY_CAST(SPLIT_PART(tool_schema_version, '.', 3) AS INTEGER), 0)) tool_schema_version_int
+   FROM
+     "rs_raw"."layer_definitions_07"
+) 
+, combined_defs AS (
+   SELECT *
+   FROM
+     layerdef08
+UNION ALL    SELECT *
+   FROM
+     layerdefs07
+) 
+, winning_combinations AS (
+   SELECT
+     authority
+   , authority_name
+   , tool_schema_version_int
+   , sourcetable
+   FROM
+     (
+      SELECT
+        authority
+      , authority_name
+      , tool_schema_version_int
+      , sourcetable
+      , ROW_NUMBER() OVER (PARTITION BY authority, authority_name ORDER BY tool_schema_version_int DESC, sourcetable DESC) rank_priority
+      FROM
+        combined_defs
+   ) 
+   WHERE (rank_priority = 1)
+) 
+SELECT base.*
+FROM
+  (combined_defs base
+INNER JOIN winning_combinations win ON ((base.authority = win.authority) AND (base.authority_name = win.authority_name) AND (base.tool_schema_version_int = win.tool_schema_version_int) AND (base.sourcetable = win.sourcetable)))
+```
+
+### Example Queries
+
+List column definitions for a tool (latest version):
+
+```sql
+SELECT name, friendly_name, dtype, description
+FROM default.layer_definitions_latest
+WHERE authority='data-exchange-scripts'
+  AND tool_schema_name='rme_to_athena'
+ORDER BY column_index, name;
+```
+
+Count columns by dtype across all authorities:
+
+```sql
+SELECT dtype, COUNT(*) AS n
+FROM layer_definitions_latest
+GROUP BY dtype
+ORDER BY n DESC;
+```
+
+Compare two versions of a tool:
+
+```sql
+SELECT a.name,
+       a.dtype AS dtype_v1,
+       b.dtype AS dtype_v2
+FROM layer_definitions a
+JOIN layer_definitions b
+  ON a.authority = b.authority
+ AND a.authority_name = b.authority_name
+ AND a.name = b.name
+WHERE a.authority='data-exchange-scripts'
+  AND a.authority_name='rme_to_athena'
+  AND a.tool_schema_version='1.0.0'
+  AND b.tool_schema_version='1.1.0';
+```
+
+## Safely making changes to the schema (Migration Roadmap)
+
+Because downstream tools (especially the reporting.riverscapes.net platform) depend on this metadata, we cannot simply break the table schema. Instead, we follow a pattern of "Expand and Contract" using Athena Views to shield consumers from changes.
+
+### The Architecture
+
+1. Bronze Layer (Raw Files) output from `publish_metadata.py` 
+    - **Old Location (<= v0.7)**: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions/`
+    - Partitioned by `authority`, `authority_name`, `tool_schema_version`.
+    - **New Location (>= v0.8)**: `s3://riverscapes-athena/riverscapes_metadata/layer_definitions_raw/0.8/`
+    - Partitioned by `authority`, `tool_schema_name`, `tool_schema_version`.
+    - These are external tables defined in the `rs_raw` database (e.g. `rs_raw.layer_definitions_08`, `rs_raw.layer_definitions_07`).
+
+2. Silver Layer (Unified View)
+    - A view `layer_definitions` that UNIONs valid records from raw tables.
+    - Handles column renaming (e.g., mapping `authority_name` to `tool_schema_name`).
+    - Casts types to ensure consistency.
+
+3. Gold Layer (Public Interface)
+    - **View**: `default.layer_definitions_latest`
+    - Reports and dashboards query this view.
+    - It filters for the highest version number per tool to show only the active schema.
+    - include deprecated columns until all prod reports are refactored
+
+### Migration Steps for Breaking Changes
+
+When introducing a breaking change (like v0.7 -> v0.8):
+
+1. Schema & Scaffolding
+   1. Create branch e.g. `metaschema0.8`
+   2. Update `riverscapes_metadata/schema/layer_definitions.schema.json` with the new structure.
+   3. Create a one-off migration script (e.g., `riverscapes_metadata/migrate_layer_defs_07_to_08.py`) to automate converting existing `layer_definitions.json` files in repositories to the new format.
+   4. Update `export_layer_definitions_for_s3.py` to handle the new schema logic and output to the new S3 path (e.g., `.../layer_definitions_raw/0.8/`).
+
+2. Create New Raw Table in Athena
+   1. Define `rs_raw.layer_definitions_08` pointing to the new S3 bucket path.
+
+3. Testing Phase
+   1. publish branch
+   2. change the URL in `__ini__.py` to point to the raw.githubusercontent.com version of the schema
+   3. test in this repo
+
+4. Dual schema phase
+   1. we currenly only have one "live" schema on xml.riverscapes.net. we may need to reconsider in future
+   2. Migrate definitions in riverscapes-tools and data-exchange-tools
+      1. use the script to update the `layer_definition*.json` files. These will now be invalid with the old schema
+      2. they can be published with the scripts on the rsxml branch
+
+5. Manage data & view for reports
+
+Most important is for production reports still be able to get correct info from layer_definisions_latest view.
+So when renaming a field we:
+1. add new field - so now we have old and new
+2. mitigate reports
+3. remove old field
+
+    - Update the intermediate view (`rs.layer_definitions`) to `UNION ALL` the legacy table and the new table.
+    - Map the old columns to the new names so the shape matches.
+
+    ```sql
+    CREATE OR REPLACE VIEW rs.layer_definitions AS
+    SELECT 
+        layer_id, 
+        authority_name AS tool_schema_name, -- Map old to new
+        ... 
+    FROM rs_raw.layer_definitions_07
+    UNION ALL
+    SELECT 
+        layer_id, 
+        tool_schema_name, 
+        ... 
+    FROM rs_raw.layer_definitions_08
+    ```
+
+* merge branch to master
+
+6. **Deprecate**:
+    - Once all tools are migrated to v0.8, remove the legacy part of the UNION in the view.
+    - Archive or delete the old raw data in S3.

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>CHaMP Quantile Regression Forest (QRF)</Name>
+    <ProjectType>QRF</ProjectType>
+    <Node xpathlabel="Name">
+        <Children collapsed="false">
+            <Node label="QRF Layers">
+                <Children>
+                    <Node label="Chinook Parr" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_sites_chnk_parr']" type="point" symbology="fishperm2" id="cp" />
+                    <Node label="Chinook Redds" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_sites_chnk_redds']" type="point" symbology="fishperm2" id="cr" />
+                    <Node label="Steelhead Juvenile" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_sites_sthd_juv']" type="point" symbology="fishperm2" id="sj" />
+                    <Node label="Steelhead Redds" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_sites_sthd_redds']" type="point" symbology="fishperm2" id="sr" />
+                </Children>
+            </Node>
+            <Node label="Sites" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_sites']" type="point" symbology="sites" id="sites"/>
+            <Node label="All Visits" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='vw_all_visits']" type="point" id="visits" />
+            <Node label="Watersheds" xpath="Realizations/Realization/Outputs/Geopackage/Layers/Vector[@lyrName='watersheds']" type="polygon" symbology="watersheds" id="watersheds"/>
+            <Node label="CSV Files">
+                <Children collapsed="true">
+                    <Node label="Fish Data" xpath="Realizations/Realization/Outputs/CSV[@id='FishData_csv']" type="file" />
+                    <Node label="Habitat Data" xpath="Realizations/Realization/Outputs/CSV[@id='HabitatData_csv']" type="file" />
+                    <Node label="IC Sites with Metrics" xpath="Realizations/Realization/Outputs/CSV[@id='IC_Sites_withMetrics_20151016_csv']" type="file" />
+
+                    <Node label="Chinook Parr">
+                        <Children>
+                            <Node label="Selected Metrics" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkParr_SelectedMetrics_csv']" type="file" />
+                            <Node label="Cap per M" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkParr_Chnk_Cap_QRF_perM_20170830_csv']" type="file" />
+                            <Node label="Cap per M2" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkParr_Chnk_Cap_QRF_perM2_20170830_csv']" type="file" />
+                            <Node label="Sites Cap" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkParr_CHaMP_Sites_ChnkParrCap_perM_20170830_csv']" type="file" />
+                            <Node label="Visits Cap" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkParr_CHaMP_Visits_ChnkParrCap_perM_20170830_csv']" type="file" />
+                        </Children>
+                    </Node>
+
+                    <Node label="Chinook Redds">
+                        <Children>
+                            <Node label="Selected Metrics" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkRedds_SelectedMetrics_csv']" type="file" />
+                            <Node label="Cap per M" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkRedds_Chnk_Cap_QRF_perM_20170830_csv']" type="file" />
+                            <Node label="Cap per M2" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkRedds_Chnk_Cap_QRF_perM2_20170830_csv']" type="file" />
+                            <Node label="Sites Cap" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkRedds_CHaMP_Sites_ChnkReddsCap_perM_20170830_csv']" type="file" />
+                            <Node label="Visits Cap" xpath="Realizations/Realization/Outputs/CSV[@id='ChnkRedds_CHaMP_Visits_ChnkReddsCap_perM_20170830_csv']" type="file" />
+                        </Children>
+                    </Node>
+
+                    <Node label="Steelhead Juvenile">
+                        <Children>
+                            <Node label="Selected Metrics" xpath="Realizations/Realization/Outputs/CSV[@id='SthdJuv_SelectedMetrics_csv']" type="file" />
+                            <Node label="Cap per M" xpath="Realizations/Realization/Outputs/CSV[@id='SthdJuv_Sthd_Cap_QRF_perM_20170830_csv']" type="file" />
+                            <Node label="Cap per M2" xpath="Realizations/Realization/Outputs/CSV[@id='SthdJuv_Sthd_Cap_QRF_perM2_20170830_csv']" type="file" />
+                            <Node label="Sites Cap" xpath="Realizations/Realization/Outputs/CSV[@id='SthdJuv_CHaMP_Sites_SthdJuvCap_perM_20170830_csv']" type="file" />
+                            <Node label="Visits Cap" xpath="Realizations/Realization/Outputs/CSV[@id='SthdJuv_CHaMP_Visits_SthdJuvCap_perM_20170830_csv']" type="file" />
+                        </Children>
+                    </Node>
+
+                    <Node label="Steelhead Redds">
+                        <Children>
+                            <Node label="Selected Metrics" xpath="Realizations/Realization/Outputs/CSV[@id='SthdRedds_SelectedMetrics_csv']" type="file" />
+                            <Node label="Cap per M" xpath="Realizations/Realization/Outputs/CSV[@id='SthdRedds_Sthd_Cap_QRF_perM_20170830_csv']" type="file" />
+                            <Node label="Cap per M2" xpath="Realizations/Realization/Outputs/CSV[@id='SthdRedds_Sthd_Cap_QRF_perM2_20170830_csv']" type="file" />
+                            <Node label="Sites Cap" xpath="Realizations/Realization/Outputs/CSV[@id='SthdRedds_CHaMP_Sites_SthdReddsCap_perM_20170830_csv']" type="file" />
+                            <Node label="Visits Cap" xpath="Realizations/Realization/Outputs/CSV[@id='SthdRedds_CHaMP_Visits_SthdReddsCap_perM_20170830_csv']" type="file" />
+                        </Children>
+                    </Node>
+                </Children>
+            </Node>
+        </Children>
+    </Node>
+    <Views default="DEFAULTVIEW">
+        <View name="Default View" id="DEFAULTVIEW">
+            <Layers>
+                <Layer id="cp" />
+                <Layer id="cr" />
+                <Layer id="sj" />
+                <Layer id="sr" />
+                <Layer id="watersheds" />
+            </Layers>
+        </View>
+    </Views>
+</Project>

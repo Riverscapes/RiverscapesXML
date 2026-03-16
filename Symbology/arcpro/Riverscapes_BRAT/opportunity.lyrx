@@ -3,21 +3,21 @@
   "version" : "3.3.0",
   "build" : 52636,
   "layers" : [
-    "CIMPATH=map/main_br_edited_reach.json"
+    "CIMPATH=map/restoration_or_conservation_opportunities.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "main.BR_edited_reach",
-      "uRI" : "CIMPATH=map/main_br_edited_reach.json",
+      "name" : "Restoration or Conservation Opportunities",
+      "uRI" : "CIMPATH=map/restoration_or_conservation_opportunities.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "main.BR_edited_reach",
+      "description" : "Restoration or Conservation Opportunities",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/49ebe11ddc5f43faaae78f4c53c668d3.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
       },
       "expanded" : true,
       "layerType" : "Operational",
@@ -39,11 +39,11 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\BR_edited_reach.gpkg",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=.\\2025 CONUS\\BRAT_Sulphur_5.2.0\\outputs\\brat.gpkg",
           "workspaceFactory" : "Sql",
-          "dataset" : "main.%BR_edited_reach",
+          "dataset" : "main.%vwReaches",
           "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select fid,geom,ReachID,ReachCode,StreamName,NHDPlusID,WatershedID,level_path,ownership,divergence,stream_order,us_state,ecoregion_iii,ecoregion_iv,IsPeren,iGeo_Slope,iGeo_Len,iGeo_DA,iVeg100EX,iVeg_30EX,iVeg100HPE,iVeg_30HPE,iPC_Road,iPC_RoadX,iPC_RoadVB,iPC_Rail,iPC_RailVB,iPC_LU,iPC_VLowLU,iPC_LowLU,iPC_ModLU,iPC_HighLU,iHyd_QLow,iHyd_Q2,iHyd_SPLow,iHyd_SP2,oVC_HPE,oVC_EX,oCC_HPE,mCC_HPE_CT,oCC_EX,mCC_EX_CT,LimitationID,RiskID,OpportunityID,iPC_Canal,iPC_DivPts,iPC_Privat,oPC_Dist,IsMainCh,IsMultiCh,mCC_HisDep,Dam_Setting,ReachType,Limitation,Risk,Opportunity from main.BR_edited_reach",
+          "sqlQuery" : "select ReachID,ReachCode,StreamName,NHDPlusID,WatershedID,level_path,ownership,divergence,stream_order,us_state,ecoregion_iii,ecoregion_iv,IsPeren,iGeo_Slope,iGeo_Len,iGeo_DA,iVeg100EX,iVeg_30EX,iVeg100HPE,iVeg_30HPE,iPC_Road,iPC_RoadX,iPC_RoadVB,iPC_Rail,iPC_RailVB,iPC_LU,iPC_VLowLU,iPC_LowLU,iPC_ModLU,iPC_HighLU,iHyd_QLow,iHyd_Q2,iHyd_SPLow,iHyd_SP2,oVC_HPE,oVC_EX,oCC_HPE,mCC_HPE_CT,oCC_EX,mCC_EX_CT,LimitationID,RiskID,OpportunityID,iPC_Canal,iPC_DivPts,iPC_Privat,oPC_Dist,IsMainCh,IsMultiCh,mCC_HisDep,Dam_Setting,ReachType,Limitation,Risk,Opportunity,geom from main.vwReaches",
           "srid" : "4326",
           "spatialReference" : {
             "wkid" : 4326,
@@ -59,31 +59,11 @@
             "falseM" : -100000,
             "mUnits" : 10000
           },
-          "oIDFields" : "fid",
+          "oIDFields" : "ReachID",
           "geometryType" : "esriGeometryPolyline",
-          "extent" : {
-            "xmin" : -113.228171999999972,
-            "ymin" : 46.668228000000056,
-            "xmax" : -112.526137999999946,
-            "ymax" : 46.9211850000000368,
-            "spatialReference" : {
-              "wkid" : 4326,
-              "latestWkid" : 4326,
-              "xyTolerance" : 8.983152841195215e-09,
-              "zTolerance" : 0.001,
-              "mTolerance" : 0.001,
-              "falseX" : -400,
-              "falseY" : -400,
-              "xyUnits" : 999999999.99999988,
-              "falseZ" : -100000,
-              "zUnits" : 10000,
-              "falseM" : -100000,
-              "mUnits" : 10000
-            }
-          },
           "queryFields" : [
             {
-              "name" : "fid",
+              "name" : "ReachID",
               "type" : "esriFieldTypeBigInteger",
               "isNullable" : false,
               "length" : 8,
@@ -91,44 +71,6 @@
               "scale" : 0,
               "required" : true,
               "editable" : false,
-              "dbmsType" : 11
-            },
-            {
-              "name" : "geom",
-              "type" : "esriFieldTypeGeometry",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "geometryDef" : {
-                "avgNumPoints" : 0,
-                "geometryType" : "esriGeometryPolyline",
-                "hasM" : false,
-                "hasZ" : false,
-                "spatialReference" : {
-                  "wkid" : 4326,
-                  "latestWkid" : 4326,
-                  "xyTolerance" : 8.983152841195215e-09,
-                  "zTolerance" : 0.001,
-                  "mTolerance" : 0.001,
-                  "falseX" : -400,
-                  "falseY" : -400,
-                  "xyUnits" : 999999999.99999988,
-                  "falseZ" : -100000,
-                  "zUnits" : 10000,
-                  "falseM" : -100000,
-                  "mUnits" : 10000
-                }
-              },
-              "dbmsType" : 8
-            },
-            {
-              "name" : "ReachID",
-              "type" : "esriFieldTypeBigInteger",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
               "dbmsType" : 11
             },
             {
@@ -233,7 +175,7 @@
             {
               "name" : "IsPeren",
               "type" : "esriFieldTypeBigInteger",
-              "isNullable" : true,
+              "isNullable" : false,
               "length" : 8,
               "precision" : 0,
               "scale" : 0,
@@ -593,7 +535,7 @@
             {
               "name" : "Limitation",
               "type" : "esriFieldTypeString",
-              "isNullable" : true,
+              "isNullable" : false,
               "length" : 2147483647,
               "precision" : 0,
               "scale" : 0,
@@ -602,7 +544,7 @@
             {
               "name" : "Risk",
               "type" : "esriFieldTypeString",
-              "isNullable" : true,
+              "isNullable" : false,
               "length" : 2147483647,
               "precision" : 0,
               "scale" : 0,
@@ -611,11 +553,40 @@
             {
               "name" : "Opportunity",
               "type" : "esriFieldTypeString",
-              "isNullable" : true,
+              "isNullable" : false,
               "length" : 2147483647,
               "precision" : 0,
               "scale" : 0,
               "dbmsType" : 13
+            },
+            {
+              "name" : "geom",
+              "type" : "esriFieldTypeGeometry",
+              "isNullable" : true,
+              "length" : 8,
+              "precision" : 0,
+              "scale" : 0,
+              "geometryDef" : {
+                "avgNumPoints" : 0,
+                "geometryType" : "esriGeometryPolyline",
+                "hasM" : false,
+                "hasZ" : false,
+                "spatialReference" : {
+                  "wkid" : 4326,
+                  "latestWkid" : 4326,
+                  "xyTolerance" : 8.983152841195215e-09,
+                  "zTolerance" : 0.001,
+                  "mTolerance" : 0.001,
+                  "falseX" : -400,
+                  "falseY" : -400,
+                  "xyUnits" : 999999999.99999988,
+                  "falseZ" : -100000,
+                  "zUnits" : 10000,
+                  "falseM" : -100000,
+                  "mUnits" : 10000
+                }
+              },
+              "dbmsType" : 8
             }
           ],
           "spatialStorageType" : 11,
@@ -919,7 +890,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1.25,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -961,7 +932,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1.25,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -989,8 +960,9 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Appropriate for Beaver Mimicry",
-                "patch" : "Default",
+                "editable" : true,
+                "label" : "Beaver Mimicry",
+                "patch" : "LineHorizontal",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
                   "symbol" : {
@@ -1003,15 +975,15 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1,
+                        "width" : 1.25,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
-                          "type" : "CIMRGBColor",
+                          "type" : "CIMHSVColor",
                           "values" : [
-                            230,
-                            204,
-                            0,
+                            53.219999999999999,
+                            100,
+                            90.200000000000003,
                             100
                           ]
                         }
@@ -1023,7 +995,7 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "Appropriate for Beaver Mimicry"
+                      "Beaver Mimicry"
                     ]
                   }
                 ],
@@ -1031,8 +1003,9 @@
               },
               {
                 "type" : "CIMUniqueValueClass",
-                "label" : "Address Resource Limitations",
-                "patch" : "Default",
+                "editable" : true,
+                "label" : "Conflict Management",
+                "patch" : "LineHorizontal",
                 "symbol" : {
                   "type" : "CIMSymbolReference",
                   "symbol" : {
@@ -1045,15 +1018,15 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1.25,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
-                          "type" : "CIMRGBColor",
+                          "type" : "CIMHSVColor",
                           "values" : [
-                            137,
-                            93,
-                            64,
+                            1.3,
+                            70.920000000000002,
+                            76.859999999999999,
                             100
                           ]
                         }
@@ -1065,7 +1038,50 @@
                   {
                     "type" : "CIMUniqueValue",
                     "fieldValues" : [
-                      "Address Resource Limitations"
+                      "Conflict Management"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Land Management Change",
+                "patch" : "LineHorizontal",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMLineSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 1.25,
+                        "height3D" : 1,
+                        "anchor3D" : "Center",
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            23.84,
+                            53.280000000000001,
+                            53.729999999999997,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Land Management Change"
                     ]
                   }
                 ],
@@ -1087,7 +1103,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 1.5,
+                        "width" : 1.25,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -1154,54 +1170,11 @@
                   }
                 ],
                 "visible" : true
-              },
-              {
-                "type" : "CIMUniqueValueClass",
-                "label" : "Null",
-                "patch" : "Default",
-                "symbol" : {
-                  "type" : "CIMSymbolReference",
-                  "symbol" : {
-                    "type" : "CIMLineSymbol",
-                    "symbolLayers" : [
-                      {
-                        "type" : "CIMSolidStroke",
-                        "enable" : true,
-                        "capStyle" : "Round",
-                        "joinStyle" : "Round",
-                        "lineStyle3D" : "Strip",
-                        "miterLimit" : 10,
-                        "width" : 1,
-                        "height3D" : 1,
-                        "anchor3D" : "Center",
-                        "color" : {
-                          "type" : "CIMRGBColor",
-                          "values" : [
-                            255,
-                            255,
-                            255,
-                            100
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                "values" : [
-                  {
-                    "type" : "CIMUniqueValue",
-                    "fieldValues" : [
-                      "<Null>"
-                    ]
-                  }
-                ],
-                "visible" : true
               }
             ],
             "heading" : "Opportunity"
           }
         ],
-        "useDefaultSymbol" : true,
         "polygonSymbolColorTarget" : "Fill"
       },
       "scaleSymbols" : true,
@@ -1214,7 +1187,7 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/49ebe11ddc5f43faaae78f4c53c668d3.json",
+      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },

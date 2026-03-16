@@ -1,30 +1,30 @@
 {
-	"folders": [
-		{
-			"path": "RaveBusinessLogic"
-		},
-		{
-			"path": "Projects"
-		},
-		{
-			"path": "Symbology"
-		},
-		{
-			"path": "Programs"
-		},
+  "folders": [
+    {
+      "path": "RaveBusinessLogic"
+    },
+    {
+      "path": "Projects"
+    },
+    {
+      "path": "Symbology"
+    },
+    {
+      "path": "riverscapes_metadata"
+    },
     {
       "name": "QRiS",
-			"path": "QRiS"
-		},
-		{
+      "path": "QRiS"
+    },
+    {
       "name": "🔧 Python Scripts",
-			"path": "python"
-		},
-		{
+      "path": "python"
+    },
+    {
       "name": "🏠 ROOT",
-			"path": "."
-		}
-	],
+      "path": "."
+    }
+  ],
   "settings": {
     "terminal.integrated.defaultProfile.linux": "zsh",
     "[python]": {

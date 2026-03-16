@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 170, 0)", "Left"],
+    ["rgb(253, 108, 60)", "Right"],
+    ["rgb(213, 8, 0)", "Both"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+{
+            "id": "confining-margins-1bwuk1",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "confining_margins-1bwuk1",
+            "layout": {},
+            "paint": {
+                "line-color": [
+                    "match",
+                    ["get", "confinement_type"],
+                    ["Left"],
+                    "rgb(255, 170, 0)",
+                    ["Right"],
+                    "rgb(253, 108, 60)",
+                    ["Both"],
+                    "rgb(213, 8, 0)",
+                    "rgb(192, 177, 0)"
+                ],
+                "line-width": 2.25
+            }
+        }
+    ]
+}

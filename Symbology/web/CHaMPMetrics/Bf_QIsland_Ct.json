@@ -1,0 +1,71 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255, 255, 0)",
+      "0.00 - 0.00"
+    ],
+    [
+      "rgb(154, 205, 50)",
+      "0.00 - 0.00"
+    ],
+    [
+      "rgb(34, 139, 34)",
+      "0.00 - 0.00"
+    ],
+    [
+      "rgb(255, 140, 0)",
+      "0.00 - 0.00"
+    ],
+    [
+      "rgb(220, 20, 60)",
+      "0.00 - 6.00"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "rme-igos-sample-2f60tk",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "RME_igos_sample-2f60tk",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "step",
+          [
+            "get",
+            "Bf_QIsland_Ct"
+          ],
+          "rgb(255, 255, 0)",
+          0.0,
+          "rgb(154, 205, 50)",
+          0.0,
+          "rgb(34, 139, 34)",
+          0.0,
+          "rgb(255, 140, 0)",
+          0.0,
+          "rgb(220, 20, 60)"
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          11,
+          5,
+          13.5,
+          7,
+          15,
+          9,
+          22,
+          11
+        ]
+      }
+    }
+  ]
+}
