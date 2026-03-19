@@ -351,7 +351,12 @@
           <xs:field xpath="@name" />
         </xs:unique>
       </xs:element>
-      <xs:element type="GeopackageLayersType" name="Layers" />
+      <xs:element name="Layers" type="GeopackageLayersType">
+        <xs:unique name="UniqueLayerLyrName">
+          <xs:selector xpath="*" />
+          <xs:field xpath="@lyrName" />
+        </xs:unique>
+      </xs:element>
     </xs:all>
     <xs:attribute type="ProjectIdType" name="id" use="required" />
     <xs:attribute type="xs:string" name="type" use="optional" />
