@@ -1,0 +1,73 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0, 0, 4)",
+      "0 - 672"
+    ],
+    [
+      "rgb(80, 18, 123)",
+      "672 - 1345"
+    ],
+    [
+      "rgb(182, 55, 122)",
+      "1345 - 2017"
+    ],
+    [
+      "rgb(251, 135, 97)",
+      "2017 - 2690"
+    ],
+    [
+      "rgb(252, 253, 191)",
+      "2690 - 3362"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "elevation",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "elevation",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "step",
+          [
+            "get",
+            "ELEV_M"
+          ],
+          "rgb(0, 0, 4)",
+          672.488000000000056,
+          "rgb(80, 18, 123)",
+          1344.976000000000113,
+          "rgb(182, 55, 122)",
+          2017.464000000000169,
+          "rgb(251, 135, 97)",
+          2689.952000000000226,
+          "rgb(252, 253, 191)"
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          11,
+          5,
+          13.5,
+          7,
+          15,
+          9,
+          22,
+          11
+        ],
+        "circle-stroke-color": "rgb(35, 35, 35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

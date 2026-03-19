@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+    <Name>CHaMP Master sample</Name>
+    <ProjectType>GRTS</ProjectType>
+    <Node xpathlabel="Name">
+        <Children collapsed="false">
+            <Node label="Elevation" xpath="Realizations/Realization/Datasets/Geopackage/Layers/Vector[@lyrName='columbia_basin_master_sample_20100411']" type="point" id="elevation" />
+            <Node label="Measure" xpath="Realizations/Realization/Datasets/Geopackage/Layers/Vector[@lyrName='columbia_basin_master_sample_20100411']" type="point" symbology="measure" id="measure"/>
+        </Children>
+    </Node>
+    <Views default="DEFAULTVIEW">
+        <View name="Default View" id="DEFAULTVIEW">
+            <Layers>
+                <Layer id="measure" />
+            </Layers>
+        </View>
+    </Views>
+</Project>
