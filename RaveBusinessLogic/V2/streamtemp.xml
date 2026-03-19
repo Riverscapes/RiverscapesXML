@@ -5,27 +5,133 @@
   <ProjectType>streamtemp</ProjectType>
   <Node xpathlabel="Name">
     <Children collapsed="false">
-      <Node label="Stream Temperature" xpath="Realizations/Realization">
+      <Node label="Stream Temperature" xpath = "Realizations/Realization">
         <Children>
-          <Node label="Stream Temperature Anomalies 1960s Lines">
+          <Node label='Baseline'>
             <Children>
-              <Node label="spring"
-                xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']"
-                type="line" id="sp_stream_temp" symbology="stream_temp_anom_lines" />
-              <Node label="summer"
-                xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']"
-                type="line" id="su_stream_temp" symbology="stream_temp_anom_lines" />
-              <Node label="fall"
-                xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']"
-                type="line" id="fa_stream_temp" symbology="stream_temp_anom_lines" />
-              <Node label="winter"
-                xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']"
-                type="line" id="wi_stream_temp" symbology="stream_temp_anom_lines" />
+              <Node label="Spring" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2020s_lines']" type="line" id="sp_stream_temp" symbology="stream_temp_anom_lines" />
+              <Node label="Summer" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2020s_lines']" type="line" id="su_stream_temp" symbology="stream_temp_anom_lines" />
+              <Node label="Fall" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2020s_lines']" type="line" id="fa_stream_temp" symbology="stream_temp_anom_lines" />
+              <Node label="Winter" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2020s_lines']" type="line" id="wi_stream_temp" symbology="stream_temp_anom_lines" />
             </Children>
           </Node>
-          <Node label="Stream Temperature 2020s Lines"
-            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2020s_lines']"
-            type="line" symbology="" />
+          <Node label='Anomalies'>
+            <Children>
+              <Node label='1960s'>
+                <Children>
+                  <Node label="Spring (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']" type="line" id="sp_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Summer (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']" type="line" id="su_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Fall (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']" type="line" id="fa_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Winter (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_lines']" type="line" id="wi_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label='Polygons'>
+                    <Children>
+                      <Node label="Contributing area">
+                        <Children>
+                          <Node label="Spring (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                      <Node label="12-digit HUC">
+                        <Children>
+                          <Node label="Spring (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_byHUC12_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_byHUC12_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_byHUC12_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (1960s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1960s_byHUC12_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
+              <Node label='1990s'>
+                <Children>
+                  <Node label="Spring (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_lines']" type="line" id="sp_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Summer (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_lines']" type="line" id="su_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Fall (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_lines']" type="line" id="fa_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Winter (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_lines']" type="line" id="wi_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label='Polygons'>
+                    <Children>
+                      <Node label="Contributing area">
+                        <Children>
+                          <Node label="Spring (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                      <Node label="12-digit HUC">
+                        <Children>
+                          <Node label="Spring (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_byHUC12_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_byHUC12_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_byHUC12_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (1990s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_1990s_byHUC12_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
+              <Node label='2050s'>
+                <Children>
+                  <Node label="Spring (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_lines']" type="line" id="sp_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Summer (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_lines']" type="line" id="su_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Fall (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_lines']" type="line" id="fa_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Winter (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_lines']" type="line" id="wi_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label='Polygons 2050s'>
+                    <Children>
+                      <Node label="Contributing area">
+                        <Children>
+                          <Node label="Spring (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                      <Node label="12-digit HUC">
+                        <Children>
+                          <Node label="Spring (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_byHUC12_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_byHUC12_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_byHUC12_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (2050s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_byHUC12_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
+              <Node label='2080s'>
+                <Children>
+                  <Node label="Spring (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_lines']" type="line" id="sp_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Summer (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_lines']" type="line" id="su_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Fall (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_lines']" type="line" id="fa_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label="Winter (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_lines']" type="line" id="wi_stream_temp" symbology="stream_temp_anom_lines" />
+                  <Node label='Polygons'>
+                    <Children>
+                      <Node label="Contributing area">
+                        <Children>
+                          <Node label="Spring (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                      <Node label="12-digit HUC">
+                        <Children>
+                          <Node label="Spring (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_byHUC12_polygons']" type="polygon" id="sp_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Summer (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_byHUC12_polygons']" type="polygon" id="su_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Fall (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_byHUC12_polygons']" type="polygon" id="fa_stream_temp" symbology="stream_temp_anom_polygons" />
+                          <Node label="Winter (2080s)" xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_byHUC12_polygons']" type="polygon" id="wi_stream_temp" symbology="stream_temp_anom_polygons" />
+                        </Children>
+                      </Node>
+                    </Children>
+                  </Node>
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+          
           <Node label="Stream Temperature 2020s Polygons"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_2020s_polygons']"
             type="polygon" symbology="" />
@@ -57,14 +163,14 @@
           <Node label="Stream Temperature Anomalies 2020s by HUC12 Polygons"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2020_byHUC12_polygons']"
             type="polygon" symbology="stream_temp_anom_polygons" />
-          <Node label="Stream Temperature Anomalies 2050s Lines"
-            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_lines']"
+          <Node label="Stream Temperature Anomalies 2080s Lines"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_lines']"
             type="line" symbology="stream_temp_anom_lines" />
-          <Node label="Stream Temperature Anomalies 2050s Polygons"
-            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_polygons']"
+          <Node label="Stream Temperature Anomalies 2080s Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_polygons']"
             type="line" symbology="stream_temp_anom_polygons" />
-          <Node label="Stream Temperature Anomalies 2050s by HUC12 Polygons"
-            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2050s_byHUC12_polygons']"
+          <Node label="Stream Temperature Anomalies 2080s by HUC12 Polygons"
+            xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_byHUC12_polygons']"
             type="polygon" symbology="stream_temp_anom_polygons" />
           <Node label="Stream Temperature Anomalies 2080s Lines"
             xpath="Datasets/Geopackage[@id='OUTPUT']/Layers/Vector[@lyrName='vw_stream_temperature_anomalies_2080s_lines']"
@@ -146,8 +252,8 @@
       </Node>
     </Children>
   </Node>
-  <Views default="temporal_covariates_anomalies_1990s">
-    <View name="Temporal Covariates 1990s Anomalies" id="temporal_covariates_anomalies_1990s">
+  <Views default="temporal_covariates_anomalies_1990s)"  >
+    <View name="Temporal Covariates 1990s Anomalies" id="temporal_covariates_anomalies_1990s)"  >
         <Layers>
             <Layer id="vw_temporal_covariates_anomalies_1990s_lines" />
             <Layer id="vw_temporal_covariates_anomalies_1990s_polygons" />
