@@ -8,7 +8,7 @@ dependencies = [
   "inquirer==2.10.0",
   "jsonschema==4.15.0",
   "lxml==6.0.2",
-  "requests==2.32.4",
+  "requests==2.33.0",
   "termcolor==2.3.0",
   "toml==0.10.2",
   "urllib3==2.0.6",
