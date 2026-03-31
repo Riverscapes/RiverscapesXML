@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>GCD</Name>
+  <ProjectType>GCD</ProjectType>
+
+  <!--
+    GCD Business Logic for Riverscapes Viewer
+    ==========================================
+    Mirrors the C# GCDProjectGroup tree structure:
+
+      Project Name
+      ├─ Inputs
+      │    ├─ DEM Surveys
+      │    │    └─ [Survey Name]
+      │    │         ├─ DEM raster
+      │    │         ├─ Hillshade
+      │    │         ├─ Associated Surfaces  (if any)
+      │    │         ├─ Error Surfaces       (if any)
+      │    │         └─ Linear Extractions   (if any)
+      │    ├─ Reference Surfaces
+      │    │    └─ [Surface Name]
+      │    │         ├─ Hillshade
+      │    │         ├─ Error Surfaces       (if any)
+      │    │         └─ Linear Extractions   (if any)
+      │    └─ Masks
+      │         └─ [Mask polygon]
+      └─ Analyses
+           ├─ Change Detections (DoDs)
+           │    └─ [New / Old Surface Pair]
+           │         └─ [DoD Name]
+           │              ├─ Raw DoD
+           │              ├─ Thresholded DoD
+           │              ├─ Thresholded Error
+           │              ├─ Summary
+           │              ├─ Budget Segregations  (if any)
+           │              └─ Linear Extractions   (if any)
+           └─ Inter-Comparisons
+                └─ [IC Name]
+  -->
+
+  <Node xpathlabel="Name">
+    <Children>
+
+      <!-- ══════════════════════════════════════════════════════════
+           INPUTS
+           ══════════════════════════════════════════════════════════ -->
+      <Node label="Inputs">
+        <Children>
+
+          <!-- DEM SURVEYS — one Realization per survey (id != 'GCD_ANALYSES', not a dod_pair_) -->
+          <Repeater label="DEM Surveys"
+            xpath="Realizations/Realization[@id!='GCD_ANALYSES' and not(starts-with(@id,'dod_pair_'))]">
+            <Node xpathlabel="Name">
+              <Children collapsed="true">
+
+                <Node xpathlabel="Name" xpath="Inputs/DEM" type="raster" symbology="dem" />
+                <Node xpathlabel="Name" xpath="Inputs/Raster[@type='Hillshade']" type="raster"
+                  symbology="Hillshade" />
+
+                <Repeater label="Associated Surfaces"
+                  xpath="Inputs/Raster[@type='AssociatedSurface']">
+                  <Node xpathlabel="Name" type="raster" symbology="raster" />
+                </Repeater>
+
+                <Repeater label="Error Surfaces" xpath="Inputs/Raster[@type='ErrorSurface']">
+                  <Node xpathlabel="Name" type="raster" symbology="raster" />
+                </Repeater>
+
+                <Repeater label="Linear Extractions" xpath="Inputs/Vector[@type='LinearExtraction']">
+                  <Node xpathlabel="Name" type="file" />
+                </Repeater>
+
+              </Children>
+            </Node>
+          </Repeater>
+
+          <!-- REFERENCE SURFACES — one entry per surface, with children nested under it -->
+          <Repeater label="Reference Surfaces"
+            xpath="Realizations/Realization[@id='GCD_ANALYSES']/Inputs/Raster[@type='ReferenceSurface']">
+            <Node xpathlabel="Name" type="raster" symbology="dem">
+              <Children collapsed="true">
+
+                <Node xpathlabel="Name" xpath="../Raster[@type='Hillshade']"
+                  type="raster" symbology="Hillshade" />
+
+                <Repeater label="Error Surfaces" xpath="../Raster[@type='ErrorSurface']">
+                  <Node xpathlabel="Name" type="raster" symbology="raster" />
+                </Repeater>
+
+                <Repeater label="Linear Extractions" xpath="../Vector[@type='LinearExtraction']">
+                  <Node xpathlabel="Name" type="file" />
+                </Repeater>
+
+              </Children>
+            </Node>
+          </Repeater>
+
+          <!-- MASKS -->
+          <!-- <Node label="Masks" xpath="Realizations/Realization[@id='GCD_ANALYSES']/Inputs">
+            <Children collapsed="true"> -->
+
+          <Repeater label="Masks"
+            xpath="Realizations/Realization[@id='GCD_ANALYSES']/Inputs/Vector[@type='Mask']">
+            <Node xpathlabel="Name" type="polygon" symbology="AOI" />
+          </Repeater>
+
+          <!-- </Children>
+          </Node> -->
+
+        </Children>
+      </Node>
+
+      <!-- ══════════════════════════════════════════════════════════
+           ANALYSES
+           ══════════════════════════════════════════════════════════ -->
+      <Node label="Analyses">
+        <Children>
+
+          <Repeater label="Change Detections"
+            xpath="Realizations/Realization[starts-with(@id,'dod_pair_')]">
+            <Node xpathlabel="Name">
+              <Children collapsed="true">
+
+                <Repeater label="DoDs" xpath="Analysis">
+                  <Node xpathlabel="Name">
+                    <Children collapsed="true">
+                      <Node xpathlabel="Name" xpath="Products/Raster[@type='RawDoD']"
+                        type="raster" symbology="raster" id="raw_dod" />
+                      <Node xpathlabel="Name" xpath="Products/Raster[@type='ThresholdedDoD']"
+                        type="raster" symbology="raster" id="thr_dod" />
+                      <Node xpathlabel="Name" xpath="Products/Raster[@type='DoDError']"
+                        type="raster" symbology="raster" id="dod_err" />
+                      <Node xpathlabel="Name" xpath="Products/DataTable[@type='DoDSummary']"
+                        type="file" />
+
+                      <Repeater label="Budget Segregations"
+                        xpath="Products/DataTable[@type='BudgetSegSummary']">
+                        <Node xpathlabel="Name" type="file" />
+                      </Repeater>
+
+                      <Repeater label="Linear Extractions"
+                        xpath="Products/Vector[@type='DoDLinearExtraction']">
+                        <Node xpathlabel="Name" type="file" />
+                      </Repeater>
+                    </Children>
+                  </Node>
+                </Repeater>
+
+              </Children>
+            </Node>
+          </Repeater>
+
+          <!-- INTER-COMPARISONS -->
+          <Repeater label="Inter-Comparisons"
+            xpath="Realizations/Realization[@id='GCD_ANALYSES']/Analyses/Analysis[MetaData/Meta[@name='GCD_TYPE']='InterComparison']/Products/DataTable[@type='InterComparisonSummary']">
+            <Node xpathlabel="Name" type="file" />
+          </Repeater>
+        </Children>
+      </Node>
+
+    </Children>
+  </Node>
+
+</Project>
