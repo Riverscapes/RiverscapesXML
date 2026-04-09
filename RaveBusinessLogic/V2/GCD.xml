@@ -108,6 +108,11 @@
           <!-- </Children>
           </Node> -->
 
+          <Repeater label="Profile Routes"
+            xpath="Realizations/Realization[@id='GCD_ANALYSES']/Inputs/Vector[@type='ProfileRoute']">
+            <Node xpathlabel="Name" type="line" />
+          </Repeater>
+
         </Children>
       </Node>
 
@@ -122,7 +127,7 @@
             <Node xpathlabel="Name">
               <Children collapsed="true">
 
-                <Repeater label="DoDs" xpath="Analysis">
+                <Repeater label="DoD" xpath="Analyses/Analysis">
                   <Node xpathlabel="Name">
                     <Children collapsed="true">
                       <Node xpathlabel="Name" xpath="Products/Raster[@type='RawDoD']"
@@ -152,10 +157,21 @@
           </Repeater>
 
           <!-- INTER-COMPARISONS -->
-          <Repeater label="Inter-Comparisons"
-            xpath="Realizations/Realization[@id='GCD_ANALYSES']/Analyses/Analysis[MetaData/Meta[@name='GCD_TYPE']='InterComparison']/Products/DataTable[@type='InterComparisonSummary']">
-            <Node xpathlabel="Name" type="file" />
-          </Repeater>
+          <Node label="Inter-Comparisons"
+            xpath="Realizations/Realization[@id='GCD_ANALYSES']/Analyses">
+            <Children collapsed="true">
+
+              <Repeater xpath="Analysis[MetaData/Meta[@name='GCD_TYPE']='InterComparison']">
+                <Node xpathlabel="Name">
+                  <Children collapsed="true">
+                    <Node xpathlabel="Name"
+                      xpath="Products/DataTable[@type='InterComparisonSummary']" type="file" />
+                  </Children>
+                </Node>
+              </Repeater>
+
+            </Children>
+          </Node>
         </Children>
       </Node>
 
