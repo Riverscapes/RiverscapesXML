@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Convert a flat CSV export from a spreadsheet into unified layer_definitions.json.
 
+An input template is available at https://docs.google.com/spreadsheets/d/1kmcAwVS9PcPpiqJEulhSmZG9wIR11vgikw__JanYt90/edit?usp=sharing
+
 Spreadsheet expectations (single sheet -> CSV rows):
 Columns (header names case-sensitive):
     layer_id, layer_name, layer_type, layer_description,
@@ -23,13 +25,14 @@ Validation:
   - Exits non-zero and prints errors if validation fails.
 
 Usage:
-  python scripts/metadata/csv_to_layer_definitions.py \
+  python riverscapes_metadata/non-core_helpers/csv_to_layer_definitions.py \
       --csv definitions.csv \
       --tool-schema-name rme_to_athena \
       --tool-schema-version 1.0.0 \
       --out metadata_schemas/layer_definitions.json
 
 """
+
 from __future__ import annotations
 import argparse
 import csv
@@ -46,15 +49,22 @@ REQUIRED_ROW_FIELDS = ["layer_id", "column_name"]
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="Convert spreadsheet CSV to layer_definitions.json (validated against remote schema)")
-    p.add_argument("--csv", required=True,
-                   help="Input CSV export from spreadsheet")
-    p.add_argument("--tool-schema-name", required=True,
-                   help="Tool schema name (package/tool identifier)")
-    p.add_argument("--tool-schema-version", required=False,
-                   help="Tool schema version (semver)")
+        description="Convert spreadsheet CSV to layer_definitions.json (validated against remote schema)"
+    )
+    p.add_argument("--csv", required=True, help="Input CSV export from spreadsheet")
     p.add_argument(
-        "--out", default="metadata_schemas/layer_definitions.json", help="Output JSON path")
+        "--tool-schema-name",
+        required=True,
+        help="Tool schema name (package/tool identifier)",
+    )
+    p.add_argument(
+        "--tool-schema-version", required=False, help="Tool schema version (semver)"
+    )
+    p.add_argument(
+        "--out",
+        default="metadata_schemas/layer_definitions.json",
+        help="Output JSON path",
+    )
     return p.parse_args()
 
 
@@ -64,18 +74,20 @@ def load_rows(csv_path: Path) -> list[dict]:
         return [dict(r) for r in reader]
 
 
-def coerce_bool(val: str | None, default: bool) -> bool:
-    if val is None or val == "":
-        return default
+def coerce_bool(val: str | None) -> bool | None:
+    if val is None or val.strip() == "":
+        return None
     v = val.strip().lower()
     if v in {"true", "1", "yes", "y"}:
         return True
     if v in {"false", "0", "no", "n"}:
         return False
-    return default
+    return None
 
 
-def build_definition(tool_schema_name: str, tool_schema_version: str, rows: list[dict]) -> tuple[dict, list[dict]]:
+def build_definition(
+    tool_schema_name: str, tool_schema_version: str, rows: list[dict]
+) -> tuple[dict, list[dict]]:
     """Build unified definitions.
 
     First occurrence of layer-level metadata (layer_name, layer_type, layer_description) wins.
@@ -104,40 +116,71 @@ def build_definition(tool_schema_name: str, tool_schema_version: str, rows: list
                 "layer_name": new_layer_name,
                 "description": new_desc,
                 "layer_type": new_type,
-                "columns": []
+                "columns": [],
             }
         else:
             existing = layers[lid]
             # Only record a conflict if the raw (explicit) value is non-empty and differs; ignore fallback-derived values.
             if raw_layer_name and raw_layer_name != existing["layer_name"]:
-                conflicts.append({"layer_id": lid, "field": "layer_name",
-                                 "kept": existing["layer_name"], "ignored": raw_layer_name})
+                conflicts.append(
+                    {
+                        "layer_id": lid,
+                        "field": "layer_name",
+                        "kept": existing["layer_name"],
+                        "ignored": raw_layer_name,
+                    }
+                )
             if raw_desc and raw_desc != existing["description"]:
-                conflicts.append({"layer_id": lid, "field": "description",
-                                 "kept": existing["description"], "ignored": raw_desc})
+                conflicts.append(
+                    {
+                        "layer_id": lid,
+                        "field": "description",
+                        "kept": existing["description"],
+                        "ignored": raw_desc,
+                    }
+                )
             if raw_type and raw_type != existing["layer_type"]:
-                conflicts.append({"layer_id": lid, "field": "layer_type",
-                                 "kept": existing["layer_type"], "ignored": raw_type})
-            
-        col_def = {
-            "name": r["column_name"].strip(),
-            "is_key": coerce_bool(r.get("is_key"), False),
-            "is_required": coerce_bool(r.get("is_required"), False),
-        }
-        # for optional column values, only include them if they have a value
-        for key in ["dtype","friendly_name", "data_unit", "description", "theme", "preferred_format", "preferred_bin_definition", "default_value"]:
+                conflicts.append(
+                    {
+                        "layer_id": lid,
+                        "field": "layer_type",
+                        "kept": existing["layer_type"],
+                        "ignored": raw_type,
+                    }
+                )
+
+        col_def = {"name": r["column_name"].strip()}
+        # add optional boolean columns if they have a value
+        for key in ["is_key", "is_required"]:
+            val = coerce_bool(r.get(key))
+            if val is not None:
+                col_def[key] = val
+        # for optional string column values, only include them if they have a value
+        for key in [
+            "dtype",
+            "friendly_name",
+            "data_unit",
+            "description",
+            "theme",
+            "preferred_format",
+            "preferred_bin_definition",
+            "default_value",
+        ]:
             val = (r.get(key) or "").strip()
             if val:
                 col_def[key] = val
-        
+
         layers[lid]["columns"].append(col_def)
 
-    return ({
-        "$schema": SCHEMA_URL,
-        "tool_schema_name": tool_schema_name,
-        "tool_schema_version": tool_schema_version,
-        "layers": list(layers.values())
-    }, conflicts)
+    return (
+        {
+            "$schema": SCHEMA_URL,
+            "tool_schema_name": tool_schema_name,
+            "tool_schema_version": tool_schema_version,
+            "layers": list(layers.values()),
+        },
+        conflicts,
+    )
 
 
 def validate(defs: dict) -> None:
@@ -145,8 +188,7 @@ def validate(defs: dict) -> None:
         with urlopen(SCHEMA_URL) as resp:
             schema = json.loads(resp.read().decode("utf-8"))
     except Exception as e:
-        print(
-            f"Failed to fetch remote schema {SCHEMA_URL}: {e}", file=sys.stderr)
+        print(f"Failed to fetch remote schema {SCHEMA_URL}: {e}", file=sys.stderr)
         sys.exit(3)
     Draft7Validator(schema).validate(defs)
 
@@ -162,8 +204,7 @@ def main() -> None:
     if not tool_schema_version:
         print("Missing required --tool-schema-version", file=sys.stderr)
         sys.exit(2)
-    defs, conflicts = build_definition(
-        args.tool_schema_name, tool_schema_version, rows)
+    defs, conflicts = build_definition(args.tool_schema_name, tool_schema_version, rows)
     try:
         validate(defs)
     except Exception as e:
@@ -178,12 +219,16 @@ def main() -> None:
     print(f"Wrote unified layer definitions JSON: {out_path}")
     if conflicts:
         print(
-            f"NOTE: {len(conflicts)} metadata conflict(s) detected (first occurrence kept):", file=sys.stderr)
+            f"NOTE: {len(conflicts)} metadata conflict(s) detected (first occurrence kept):",
+            file=sys.stderr,
+        )
         for c in conflicts[:10]:
             print(
-                f"  layer_id={c['layer_id']} field={c['field']} kept='{c['kept']}' ignored='{c['ignored']}'", file=sys.stderr)
+                f"  layer_id={c['layer_id']} field={c['field']} kept='{c['kept']}' ignored='{c['ignored']}'",
+                file=sys.stderr,
+            )
         if len(conflicts) > 10:
-            print(f"  ... {len(conflicts)-10} more", file=sys.stderr)
+            print(f"  ... {len(conflicts) - 10} more", file=sys.stderr)
 
 
 if __name__ == "__main__":
