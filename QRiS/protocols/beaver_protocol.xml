@@ -5,7 +5,7 @@
     <Citation>NA</Citation> 
     <Author>Zach Burgert</Author>
     <CreationDate>2025-10-22</CreationDate>
-    <UpdatedDate>2025-10-23</UpdatedDate>
+    <UpdatedDate>2026-03-11</UpdatedDate>
     <Layers>
         <Layer id="beaver_activity" version="1.0" geom_type="Point">
             <Label>Beaver Activity</Label>
@@ -13,7 +13,7 @@
             <Description>Beaver Activity</Description>
             <Hierarchy>
                 <HierarchyItem>Beaver Protocol</HierarchyItem>
-                <HierarchyItem>Beaver Activity</HierarchyItem>                
+                <HierarchyItem>Beaver Management</HierarchyItem>                
             </Hierarchy>
             <Fields>
                 <ListField id="sign_type" version="1.0">
@@ -48,7 +48,7 @@
             <Description>Survey of Beaver Dams</Description>
             <Hierarchy>
                 <HierarchyItem>Beaver Protocol</HierarchyItem>
-                <HierarchyItem>Beaver Survey</HierarchyItem>                
+                <HierarchyItem>Beaver Dam Activity</HierarchyItem>                
             </Hierarchy>
             <Fields>
                 <ListField id="type" version="1.0">
@@ -86,7 +86,7 @@
             <Description>Survey of Beaver Dam Complexes (place point on largest primary dam)</Description>
             <Hierarchy>
                 <HierarchyItem>Beaver Protocol</HierarchyItem>
-                <HierarchyItem>Complex Survey</HierarchyItem>                
+                <HierarchyItem>Beaver Dam Activity</HierarchyItem>                
             </Hierarchy>
             <Fields>
                 <IntegerField id="primary_dams_count" version="1.0">
@@ -120,7 +120,7 @@
             <Description>Locations of Beaver Translocation Sources, Holding, and Release Sites</Description>
             <Hierarchy>
                 <HierarchyItem>Beaver Protocol</HierarchyItem>
-                <HierarchyItem>Translocation Sites</HierarchyItem>                
+                <HierarchyItem>Beaver Management</HierarchyItem>                
             </Hierarchy>
             <Fields>
                 <ListField id="type" version="1.0">
@@ -162,7 +162,7 @@
             <Description>LTPBR As-Built Structures</Description>
             <Hierarchy>
                 <HierarchyItem>Beaver Protocol</HierarchyItem>
-                <HierarchyItem>As-Built Structures</HierarchyItem>
+                <HierarchyItem>Beaver Management</HierarchyItem>
             </Hierarchy>
             <Fields>
                 <ListField id="type" version="1.0">
@@ -221,7 +221,7 @@
             <Description>Assessment of Beaver Conflicts</Description>
             <Hierarchy>
                 <HierarchyItem>Beaver Protocol</HierarchyItem>
-                <HierarchyItem>Beaver Conflict</HierarchyItem>
+                <HierarchyItem>Beaver Management</HierarchyItem>
             </Hierarchy>
             <Fields>
                 <ListField id="risk_type" version="1.0">
@@ -248,7 +248,7 @@
         </Layer>                            
     </Layers>
     <Metrics>
-        <Metric id="dam_count" version="1.0" calculation_machine_code="count">
+        <Metric id="dam_count" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Total Dam Count</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Count of All Beaver Dams in Sample Frame.</Description>
@@ -259,7 +259,23 @@
                 </DCELayer>            
             </Parameters>
         </Metric>
-        <Metric id="dam_density" version="1.0" calculation_machine_code="count">
+        <Metric id="dam_count" version="2.0" calculation_machine_code="count">
+            <Label>Total Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all beaver dams in sample frame summed by individual dams and complex dams. Beaver dams can be mapped as both individual dams or within complexes but cannot be duplicated. </Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_survey">
+                </DCELayer>
+                <DCELayer layer_id_ref="complex_survey">
+                    <CountFields>
+                        <CountField field_id_ref="total_dams_count"/>
+                    </CountFields>
+                </DCELayer>       
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density" version="1.0" status= 'deprecated' calculation_machine_code="count">
             <Label>Total Dam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Density of All Beaver Dams in Sample Frame normalized by Valley Bottom Centerline.</Description>
@@ -268,6 +284,105 @@
             <Parameters>
                 <InputLayer input_ref="centerline" usage="normalization" />
                 <DCELayer layer_id_ref="dam_survey">
+                </DCELayer>                           
+            </Parameters>
+        </Metric>
+        <Metric id="dam_density" version="2.0" calculation_machine_code="count">
+            <Label>Total Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Density of all beaver dams in sample frame summed by individual dams and complex dams and normalized by valley bottom centerline. Beaver dams can be mapped as both individual dams or within complexes but cannot be duplicated.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization" />
+                <DCELayer layer_id_ref="dam_survey">
+                </DCELayer>
+                <DCELayer layer_id_ref="complex_survey">
+                    <CountFields>
+                        <CountField field_id_ref="total_dams_count"/>
+                    </CountFields>
+                </DCELayer>                           
+            </Parameters>
+        </Metric>
+        <Metric id="primary_dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Primary Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all primary beaver dams in sample frame summed by individual dams and complex dams. Primary beaver dams can be mapped as both individual dams or within complexes but cannot be duplicated. </Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Primary Beaver Dam</Value>
+                        <Value>Beaver Occupied Primary BDA</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="complex_survey">
+                    <CountFields>
+                        <CountField field_id_ref="primary_dams_count"/>
+                    </CountFields>
+                </DCELayer>       
+            </Parameters>
+        </Metric>
+        <Metric id="primary_dam_density" version="1.0" calculation_machine_code="count">
+            <Label>Primary Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Density of all primary beaver dams in sample frame summed by individual dams and complex dams and normalized by valley bottom centerline. Primary beaver dams can be mapped as both individual dams or within complexes but cannot be duplicated.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization" />
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Primary Beaver Dam</Value>
+                        <Value>Beaver Occupied Primary BDA</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="complex_survey">
+                    <CountFields>
+                        <CountField field_id_ref="primary_dams_count"/>
+                    </CountFields>
+                </DCELayer>                          
+            </Parameters>
+        </Metric>
+        <Metric id="secondary_dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Secondary Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all secondary beaver dams in sample frame summed by individual dams and complex dams. Secondary beaver dams can be mapped as both individual dams or within complexes but cannot be duplicated. </Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Secondary Beaver Dam</Value>
+                        <Value>Beaver Occupied Secondary BDA</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="complex_survey">
+                    <CountFields>
+                        <CountField field_id_ref="secondary_dams_count"/>
+                    </CountFields>
+                </DCELayer>       
+            </Parameters>
+        </Metric>
+        <Metric id="secondary_dam_density" version="1.0" calculation_machine_code="count">
+            <Label>Secondary Dam Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Density of all secondary beaver dams in sample frame summed by individual dams and complex dams and normalized by valley bottom centerline. Secondary beaver dams can be mapped as both individual dams or within complexes but cannot be duplicated.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization" />
+                <DCELayer layer_id_ref="dam_survey">
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Secondary Beaver Dam</Value>
+                        <Value>Beaver Occupied Secondary BDA</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="complex_survey">
+                    <CountFields>
+                        <CountField field_id_ref="secondary_dams_count"/>
+                    </CountFields>
                 </DCELayer>                           
             </Parameters>
         </Metric>
@@ -327,6 +442,62 @@
                         <Value>No</Value>
                     </AttributeFilter>
                 </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="total_kits_translocations" version="1.0" calculation_machine_code="count">
+            <Label>Total Kits Translocated</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all beaver kits translocated in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="beaver_translocations">
+                    <CountFields>
+                        <CountField field_id_ref="number_kits"/>
+                    </CountFields>
+                </DCELayer>       
+            </Parameters>
+        </Metric> 
+        <Metric id="total_sub_adults_translocations" version="1.0" calculation_machine_code="count">
+            <Label>Total Sub Adults Translocated</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all sub-adult beaver translocated in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="beaver_translocations">
+                    <CountFields>
+                        <CountField field_id_ref="number_subadults"/>
+                    </CountFields>
+                </DCELayer>       
+            </Parameters>
+        </Metric> 
+        <Metric id="total_adults_translocations" version="1.0" calculation_machine_code="count">
+            <Label>Total Adults Translocated</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all adult beaver translocated in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="beaver_translocations">
+                    <CountFields>
+                        <CountField field_id_ref="number_adults"/>
+                    </CountFields>
+                </DCELayer>       
+            </Parameters>
+        </Metric> 
+        <Metric id="total_beaver_translocations" version="1.0" calculation_machine_code="count">
+            <Label>Total Beaver Translocated</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all beaver translocated in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="beaver_translocations">
+                    <CountFields>
+                        <CountField field_id_ref="number_beaver"/>
+                    </CountFields>
+                </DCELayer>       
             </Parameters>
         </Metric>           
     </Metrics>
