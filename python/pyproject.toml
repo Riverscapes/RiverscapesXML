@@ -5,21 +5,21 @@ description = "Utility scripts and automation for Riverscapes XML workflows"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-  "inquirer==2.10.0",
-  "jsonschema==4.15.0",
-  "lxml==6.0.2",
-  "requests==2.32.4",
-  "termcolor==2.3.0",
-  "toml==0.10.2",
-  "urllib3==2.0.6",
+  "inquirer>=2.10.0",
+  "jsonschema>=4.26.0",
+  "lxml>=6.0.2",
+  "requests>=2.32.4",
+  "termcolor>=2.3.0",
+  "toml>=0.10.2",
+  "urllib3>=2.6.3",
 ]
 
 [dependency-groups]
 dev = [
-  "autopep8==1.7.0",
-  "flake8==7.1.1",
-  "mccabe==0.7.0",
-  "pycodestyle==2.12.0",
-  "pylint==2.15.0",
-  "pytest==8.3.4",
+  "autopep8>=2.0.0",
+  "flake8>=7.1.1",
+  "mccabe>=0.7.0",
+  "pycodestyle>=2.12.0",
+  "pylint>=3.0.0",
+  "pytest>=8.3.4",
 ]
