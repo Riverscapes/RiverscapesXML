@@ -1,4 +1,4 @@
-<Protocol machine_code="LTPBR_Monitoring_Protocol_NFWF" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+<Protocol machine_code="LTPBR_MONITORING_PROTOCOL_NFWF" version="1.0" status="experimental" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>LTPBR Monitoring for NFWF, Colorado River Basin</Label>
     <Description>Base monitoring layers for National Fish and Wildlife Foundation (NFWF) funded LTPBR projects in the Colorado River Basin.</Description>
     <URL>https://qris.riverscapes.net/technical-reference/protocols/</URL>
