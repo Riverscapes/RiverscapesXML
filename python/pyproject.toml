@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
   "inquirer>=2.10.0",
   "jsonschema>=4.26.0",
-  "lxml>=6.0.2",
+  "lxml>=6.1.0",
   "requests>=2.32.4",
   "termcolor>=2.3.0",
   "toml>=0.10.2",
