@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>GEMS</Name>
+  <ProjectType>NZGEMS</ProjectType>
+  <Node xpathlabel="Name" xpath="Realizations/Realization">
+    <Children collapsed="false">
+      <Node label="Outputs">
+        <!--<Children collapsed="false">
+          <No outputs defined yet - placeholder for future layers 
+        </Children>-->
+      </Node>
+      <Node label="Intermediates">
+        <Children collapsed="false">
+          <Node label="Slope Analysis">
+            <Children collapsed="false">
+              <Node label="Landslide Delivery Zones to Channel" xpath="Intermediates/Raster[@id='surface_5']" type="raster" symbology="delivery_risk" transparency="40" id="delivery_risk" />
+              <Node label="Slope Stability (Normal Conditions)" xpath="Intermediates/Raster[@id='surface_6']" type="raster" symbology="slope_stability_normal" transparency="40" id="slope_stability_normal" />
+              <Node label="Slope Stability (Toe Removed)" xpath="Intermediates/Raster[@id='surface_7']" type="raster" symbology="slope_stability_toe_removed" transparency="40" id="slope_stability_toe_removed" />
+              <Node label="Slide Runout Paths" xpath="Intermediates/Raster[@id='surface_8']" type="raster" symbology="runout_paths" transparency="40" id="runout_paths" />
+              <Node label="Slide Runout Source" xpath="Intermediates/Raster[@id='surface_9']" type="raster" symbology="runout_source" transparency="40" id="runout_source" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Inputs" xpath="Inputs">
+        <Children collapsed="false">
+          <Node label="Terrain">
+            <Children collapsed="false">
+              <Node label="DEM" xpath="Raster[@id='surface_2']" type="raster" symbology="dem" transparency="40" id="dem" />
+              <Node label="Slope Raster" xpath="Raster[@id='surface_3']" type="raster" symbology="slope" transparency="40" id="slope_raster" />
+              <Node label="HAND Raster" xpath="Raster[@id='surface_4']" type="raster" symbology="hand" transparency="40" id="hand_raster" />
+            </Children>
+          </Node>
+          <Node label="Valley Bottom">
+            <Children collapsed="false">
+              <Node label="VBET Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom_extent']" type="polygon" symbology="vbet_extent_hollow" transparency="40" id="valley_bottom_extent" />
+              <Node label="VBET Centerline" xpath="Geopackage/Layers/Vector[@lyrName='centerline_of_valley_bottom']" type="line" symbology="CL_vb" id="vbet_centerline" />
+              <Node label="VBET Channel Network" xpath="Geopackage/Layers/Vector[@lyrName='channel_network']" type="line" symbology="flow_lines" id="channel_network" />
+              <Node label="VBET DGOs" xpath="Geopackage/Layers/Vector[@lyrName='vbet_discrete_geographic_objects']" type="polygon" symbology="DGO" id="vbet_dgos" />
+              <Node label="ARC Streamline 10m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="vbet_channel_area" transparency="40" id="buffer_corridor" />
+            </Children>
+          </Node>
+          <Node label="Flood Zones">
+            <Children collapsed="false">
+              <Node label="Flood Hazard Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_hazard_areas']" type="polygon" symbology="vbet_elevated" transparency="40" id="flood_hazard_areas" />
+              <Node label="Flood Prone Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_prone_areas']" type="polygon" symbology="vbet_lowlying" transparency="40" id="flood_prone_areas" />
+              <Node label="Floodplains" xpath="Geopackage/Layers/Vector[@lyrName='floodplains']" type="polygon" symbology="vbet_lowlying" transparency="40" id="floodplains" />
+            </Children>
+          </Node>
+          <Node label="Planning Layers">
+            <Children collapsed="false">
+              <Node label="Future Urban Areas" xpath="Geopackage/Layers/Vector[@lyrName='future_urban_areas']" type="polygon" symbology="future_urban" transparency="40" id="future_urban_areas" />
+              <Node label="Primary Parcels" xpath="Geopackage/Layers/Vector[@lyrName='parcels']" type="polygon" symbology="parcels" transparency="40" id="parcels" />
+              <Node label="Soil Type" xpath="Geopackage/Layers/Vector[@lyrName='soil_type']" type="polygon" symbology="soil_type" transparency="40" id="soil_type" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+      <Node label="Hillshade">
+        <Children collapsed="true">
+          <Node xpathlabel="Name" xpath="Inputs/HillShade[@id='surface_1']" type="raster" symbology="hillshade" id="hillshade" />
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+  <Views default="DEFAULT">
+    <View name="Slope Stability (Normal Conditions)" id="DEFAULT">
+      <Layers>
+        <Layer id="slope_stability_normal" />
+        <Layer id="valley_bottom_extent" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Slope Stability (Toe Removed)" id="ToeRemoved">
+      <Layers>
+        <Layer id="slope_stability_toe_removed" />
+        <Layer id="valley_bottom_extent" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Landslide Delivery Risk" id="DeliveryRisk">
+      <Layers>
+        <Layer id="delivery_risk" />
+        <Layer id="channel_network" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Slide Runout" id="Runout">
+      <Layers>
+        <Layer id="runout_paths" />
+        <Layer id="runout_source" />
+        <Layer id="channel_network" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Flood Zones" id="FloodZones">
+      <Layers>
+        <Layer id="flood_hazard_areas" />
+        <Layer id="flood_prone_areas" />
+        <Layer id="floodplains" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Planning Context" id="Planning">
+      <Layers>
+        <Layer id="future_urban_areas" />
+        <Layer id="parcels" />
+        <Layer id="valley_bottom_extent" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="GEMS Inputs" id="Inputs">
+      <Layers>
+        <Layer id="channel_network" />
+        <Layer id="valley_bottom_extent" />
+        <Layer id="dem" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+  </Views>
+</Project>
