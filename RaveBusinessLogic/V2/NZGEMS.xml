@@ -21,32 +21,32 @@
         <Children collapsed="false">
           <Node label="Terrain">
             <Children collapsed="false">
-              <Node label="DEM" xpath="Raster[@id='surface_2']" type="raster" symbology="dem" transparency="40" id="dem" />
+              <Node label="DEM" xpath="DEM[@id='surface_2']" type="raster" symbology="dem" transparency="40" id="dem" />
               <Node label="Slope Raster" xpath="Raster[@id='surface_3']" type="raster" symbology="slope" transparency="40" id="slope_raster" />
               <Node label="HAND Raster" xpath="Raster[@id='surface_4']" type="raster" symbology="hand" transparency="40" id="hand_raster" />
             </Children>
           </Node>
           <Node label="Valley Bottom">
             <Children collapsed="false">
-              <Node label="VBET Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom_extent']" type="polygon" symbology="vbet_extent_hollow" transparency="40" id="valley_bottom_extent" />
+              <Node label="VBET Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom_extent']" type="polygon" symbology="vbet_extent_hollow" transparency="0" id="valley_bottom_extent" />
               <Node label="VBET Centerline" xpath="Geopackage/Layers/Vector[@lyrName='centerline_of_valley_bottom']" type="line" symbology="CL_vb" id="vbet_centerline" />
               <Node label="VBET Channel Network" xpath="Geopackage/Layers/Vector[@lyrName='channel_network']" type="line" symbology="flow_lines" id="channel_network" />
               <Node label="VBET DGOs" xpath="Geopackage/Layers/Vector[@lyrName='vbet_discrete_geographic_objects']" type="polygon" symbology="DGO" id="vbet_dgos" />
-              <Node label="ARC Streamline 10m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="arc_10m_buffer" transparency="40" id="buffer_corridor" />
+              <Node label="ARC Streamline 10m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="arc_10m_buffer" transparency="0" id="buffer_corridor" />
             </Children>
           </Node>
           <Node label="Flood Zones">
             <Children collapsed="false">
-              <Node label="Flood Hazard Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_hazard_areas']" type="polygon" symbology="flood_hazard" transparency="40" id="flood_hazard_areas" />
-              <Node label="Flood Prone Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_prone_areas']" type="polygon" symbology="flood_prone_areas" transparency="40" id="flood_prone_areas" />
-              <Node label="Floodplains" xpath="Geopackage/Layers/Vector[@lyrName='floodplains']" type="polygon" symbology="floodplains" transparency="40" id="floodplains" />
+              <Node label="Flood Hazard Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_hazard_areas']" type="polygon" symbology="flood_hazard" transparency="30" id="flood_hazard_areas" />
+              <Node label="Flood Prone Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_prone_areas']" type="polygon" symbology="flood_prone_areas" transparency="30" id="flood_prone_areas" />
+              <Node label="Floodplains" xpath="Geopackage/Layers/Vector[@lyrName='floodplains']" type="polygon" symbology="floodplains" transparency="30" id="floodplains" />
             </Children>
           </Node>
           <Node label="Planning Layers">
             <Children collapsed="false">
-              <Node label="Future Urban Areas" xpath="Geopackage/Layers/Vector[@lyrName='future_urban_areas']" type="polygon" symbology="future_urban_areas" transparency="40" id="future_urban_areas" />
-              <Node label="Primary Parcels" xpath="Geopackage/Layers/Vector[@lyrName='parcels']" type="polygon" symbology="parcels_NZ" transparency="40" id="parcels" />
-              <Node label="Soil Type" xpath="Geopackage/Layers/Vector[@lyrName='soil_type']" type="polygon" symbology="soil_type_NZ" transparency="40" id="soil_type" />
+              <Node label="Future Urban Areas" xpath="Geopackage/Layers/Vector[@lyrName='future_urban_areas']" type="polygon" symbology="future_urban_areas" transparency="0" id="future_urban_areas" />
+              <Node label="Primary Parcels" xpath="Geopackage/Layers/Vector[@lyrName='parcels']" type="polygon" symbology="parcels_NZ" transparency="30" id="parcels" />
+              <Node label="Soil Type" xpath="Geopackage/Layers/Vector[@lyrName='soil_type']" type="polygon" symbology="soil_type_NZ" transparency="30" id="soil_type" />
             </Children>
           </Node>
         </Children>
@@ -59,24 +59,11 @@
     </Children>
   </Node>
   <Views default="DEFAULT">
-    <View name="Slope Stability (Normal Conditions)" id="DEFAULT">
+    <View name="Input Corridors" id="DEFAULT">
       <Layers>
-        <Layer id="slope_stability_normal" />
+        <Layer id="10m_buffer_corridor" />
         <Layer id="valley_bottom_extent" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
-    <View name="Slope Stability (Toe Removed)" id="ToeRemoved">
-      <Layers>
-        <Layer id="slope_stability_toe_removed" />
-        <Layer id="valley_bottom_extent" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
-    <View name="Landslide Delivery Risk" id="DeliveryRisk">
-      <Layers>
-        <Layer id="delivery_risk" />
-        <Layer id="channel_network" />
+        <Layer id="floodplains" />
         <Layer id="hillshade" />
       </Layers>
     </View>
@@ -88,27 +75,11 @@
         <Layer id="hillshade" />
       </Layers>
     </View>
-    <View name="Flood Zones" id="FloodZones">
-      <Layers>
-        <Layer id="flood_hazard_areas" />
-        <Layer id="flood_prone_areas" />
-        <Layer id="floodplains" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
     <View name="Planning Context" id="Planning">
       <Layers>
         <Layer id="future_urban_areas" />
         <Layer id="parcels" />
         <Layer id="valley_bottom_extent" />
-        <Layer id="hillshade" />
-      </Layers>
-    </View>
-    <View name="GEMS Inputs" id="Inputs">
-      <Layers>
-        <Layer id="channel_network" />
-        <Layer id="valley_bottom_extent" />
-        <Layer id="dem" />
         <Layer id="hillshade" />
       </Layers>
     </View>
