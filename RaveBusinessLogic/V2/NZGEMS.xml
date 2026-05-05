@@ -4,18 +4,13 @@
   <ProjectType>NZGEMS</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
-      <Node label="Outputs">
-        <!--<Children collapsed="false">
-          <No outputs defined yet - placeholder for future layers 
-        </Children>-->
-      </Node>
       <Node label="Intermediates">
         <Children collapsed="false">
           <Node label="Slope Analysis">
             <Children collapsed="false">
-              <Node label="Landslide Delivery Zones to Channel" xpath="Intermediates/Raster[@id='surface_5']" type="raster" symbology="delivery_risk" transparency="40" id="delivery_risk" />
-              <Node label="Slope Stability (Normal Conditions)" xpath="Intermediates/Raster[@id='surface_6']" type="raster" symbology="slope_stability_normal" transparency="40" id="slope_stability_normal" />
-              <Node label="Slope Stability (Toe Removed)" xpath="Intermediates/Raster[@id='surface_7']" type="raster" symbology="slope_stability_toe_removed" transparency="40" id="slope_stability_toe_removed" />
+              <Node label="Landslide Delivery Zones to Channel" xpath="Intermediates/Raster[@id='surface_5']" type="raster" symbology="channel_delivery_zone" transparency="40" id="delivery_risk" />
+              <Node label="Slope Stability (Normal Conditions)" xpath="Intermediates/Raster[@id='surface_6']" type="raster" symbology="slope_stability" transparency="40" id="slope_stability_normal" />
+              <Node label="Slope Stability (Toe Removed)" xpath="Intermediates/Raster[@id='surface_7']" type="raster" symbology="slope_stability" transparency="40" id="slope_stability_toe_removed" />
               <Node label="Slide Runout Paths" xpath="Intermediates/Raster[@id='surface_8']" type="raster" symbology="runout_paths" transparency="40" id="runout_paths" />
               <Node label="Slide Runout Source" xpath="Intermediates/Raster[@id='surface_9']" type="raster" symbology="runout_source" transparency="40" id="runout_source" />
             </Children>
@@ -37,21 +32,21 @@
               <Node label="VBET Centerline" xpath="Geopackage/Layers/Vector[@lyrName='centerline_of_valley_bottom']" type="line" symbology="CL_vb" id="vbet_centerline" />
               <Node label="VBET Channel Network" xpath="Geopackage/Layers/Vector[@lyrName='channel_network']" type="line" symbology="flow_lines" id="channel_network" />
               <Node label="VBET DGOs" xpath="Geopackage/Layers/Vector[@lyrName='vbet_discrete_geographic_objects']" type="polygon" symbology="DGO" id="vbet_dgos" />
-              <Node label="ARC Streamline 10m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="vbet_channel_area" transparency="40" id="buffer_corridor" />
+              <Node label="ARC Streamline 10m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="arc_10m_buffer" transparency="40" id="buffer_corridor" />
             </Children>
           </Node>
           <Node label="Flood Zones">
             <Children collapsed="false">
-              <Node label="Flood Hazard Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_hazard_areas']" type="polygon" symbology="vbet_elevated" transparency="40" id="flood_hazard_areas" />
-              <Node label="Flood Prone Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_prone_areas']" type="polygon" symbology="vbet_lowlying" transparency="40" id="flood_prone_areas" />
-              <Node label="Floodplains" xpath="Geopackage/Layers/Vector[@lyrName='floodplains']" type="polygon" symbology="vbet_lowlying" transparency="40" id="floodplains" />
+              <Node label="Flood Hazard Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_hazard_areas']" type="polygon" symbology="flood_hazard" transparency="40" id="flood_hazard_areas" />
+              <Node label="Flood Prone Areas" xpath="Geopackage/Layers/Vector[@lyrName='flood_prone_areas']" type="polygon" symbology="flood_prone_areas" transparency="40" id="flood_prone_areas" />
+              <Node label="Floodplains" xpath="Geopackage/Layers/Vector[@lyrName='floodplains']" type="polygon" symbology="floodplains" transparency="40" id="floodplains" />
             </Children>
           </Node>
           <Node label="Planning Layers">
             <Children collapsed="false">
-              <Node label="Future Urban Areas" xpath="Geopackage/Layers/Vector[@lyrName='future_urban_areas']" type="polygon" symbology="future_urban" transparency="40" id="future_urban_areas" />
-              <Node label="Primary Parcels" xpath="Geopackage/Layers/Vector[@lyrName='parcels']" type="polygon" symbology="parcels" transparency="40" id="parcels" />
-              <Node label="Soil Type" xpath="Geopackage/Layers/Vector[@lyrName='soil_type']" type="polygon" symbology="soil_type" transparency="40" id="soil_type" />
+              <Node label="Future Urban Areas" xpath="Geopackage/Layers/Vector[@lyrName='future_urban_areas']" type="polygon" symbology="future_urban_areas" transparency="40" id="future_urban_areas" />
+              <Node label="Primary Parcels" xpath="Geopackage/Layers/Vector[@lyrName='parcels']" type="polygon" symbology="parcels_NZ" transparency="40" id="parcels" />
+              <Node label="Soil Type" xpath="Geopackage/Layers/Vector[@lyrName='soil_type']" type="polygon" symbology="soil_type_NZ" transparency="40" id="soil_type" />
             </Children>
           </Node>
         </Children>
