@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,255,127)",
+      "< 2mm"
+    ],
+    [
+      "rgb(247,190,67)",
+      "2-64mm"
+    ],
+    [
+      "rgb(230,120,20)",
+      "64-256mm"
+    ],
+    [
+      "rgb(200,80,0)",
+      "256mm+"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cu_D90",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "cu_D90",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "D90"
+          ],
+          0,
+          "rgb(255,255,127)",
+          2,
+          "rgb(252,233,106)",
+          64,
+          "rgb(247,190,67)",
+          256,
+          "rgb(230,120,20)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "cu_D90-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "cu_D90",
+      "paint": {
+        "line-color": "rgb(110,110,110)",
+        "line-width": 0.5
+      }
+    }
+  ]
+}

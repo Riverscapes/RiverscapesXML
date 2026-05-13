@@ -1,0 +1,3 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+1,249,0,255,255,Channel Delivery Zone

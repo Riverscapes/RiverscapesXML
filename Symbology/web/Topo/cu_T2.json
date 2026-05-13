@@ -1,0 +1,88 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(63,98,150)",
+      "Beaver Pool"
+    ],
+    [
+      "rgb(115,178,255)",
+      "Dam Pool"
+    ],
+    [
+      "rgb(0,77,168)",
+      "Plunge Pool"
+    ],
+    [
+      "rgb(0,112,255)",
+      "Scour Pool"
+    ],
+    [
+      "rgb(255,170,0)",
+      "Riffle"
+    ],
+    [
+      "rgb(117,193,167)",
+      "Rapid"
+    ],
+    [
+      "rgb(70,137,112)",
+      "Cascade"
+    ],
+    [
+      "rgb(104,104,104)",
+      "Falls"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cu_T2-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "cu_T2",
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "UnitType"
+          ],
+          [
+            "Beaver Pool"
+          ],
+          "rgb(63,98,150)",
+          [
+            "Dam Pool"
+          ],
+          "rgb(115,178,255)",
+          [
+            "Plunge Pool"
+          ],
+          "rgb(0,77,168)",
+          [
+            "Scour Pool"
+          ],
+          "rgb(0,112,255)",
+          [
+            "Riffle"
+          ],
+          "rgb(255,170,0)",
+          [
+            "Rapid"
+          ],
+          "rgb(117,193,167)",
+          [
+            "Cascade"
+          ],
+          "rgb(70,137,112)",
+          [
+            "Falls"
+          ],
+          "rgb(104,104,104)",
+          "rgb(192,177,0)"
+        ],
+        "fill-opacity": 0.6
+      }
+    }
+  ]
+}

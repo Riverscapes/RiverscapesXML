@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(243,166,178)",
+      "Bankfull Extent"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "bfExtent-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "bfExtent",
+      "paint": {
+        "fill-color": "rgb(243,166,178)",
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "bfExtent-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "bfExtent",
+      "paint": {
+        "line-color": "rgb(243,166,178)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

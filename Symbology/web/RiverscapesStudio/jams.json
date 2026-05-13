@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(213, 143, 38)", "Natural"],
+    ["rgb(100, 149, 237)", "Artificial"],
+    ["rgb(180, 180, 180)", "Unknown"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "jams",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "jams",
+      "layout": {},
+      "paint": {
+        "circle-radius": 6,
+        "circle-color": [
+          "match",
+          ["get", "structure_source_id"],
+          [1], "rgb(213, 143, 38)",
+          [2], "rgb(100, 149, 237)",
+          [3], "rgb(180, 180, 180)",
+          "rgb(192, 177, 0)"
+        ],
+        "circle-stroke-color": "rgb(35, 35, 35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

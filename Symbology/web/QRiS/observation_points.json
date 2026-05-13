@@ -1,0 +1,123 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(241, 163, 64)", "Logistics"],
+    ["rgb(15, 222, 225)", "Riverscape Feature"],
+    ["rgb(255, 210, 15)", "Design Consideration"],
+    ["rgb(124, 210, 47)", "Building Materials"],
+    ["rgb(0, 0, 0)", "Photo Observation"],
+    ["rgb(215, 25, 28)", "Caution"],
+    ["rgb(200, 200, 200)", "Other"],
+    ["rgb(192, 177, 0)", "null"]
+ 
+
+  ],
+  "layerStyles": [
+    {
+        "id": "observation-point-design-86zn3u",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "Observation_point_design-86zn3u",
+        "layout": {
+            "text-field": [
+                "match",
+                ["get", "Observation Type"],
+                ["Caution"],
+                "!",
+                ["Logistics"],
+                "L",
+                ["Riverscape Feature"],
+                "RF",
+                ["Design Consideration"],
+                "DC",
+                ["Building Materials"],
+                "BM",
+                ["Photo Observation"],
+                "PO",
+                ""
+            ],
+            "text-size": 20,
+            "text-font": [
+                "Arial Unicode MS Bold",
+                "Arial Unicode MS Regular"
+            ],
+            "icon-size": [
+                "match",
+                ["get", "Observation Type"],
+                ["Riverscape Feature"],
+                1.75,
+                ["Other"],
+                1,
+                1.25
+            ]
+        },
+        "paint": {
+            "text-color": [
+                "match",
+                ["get", "Observation Type"],
+                ["Logistics"],
+                "rgb(241, 163, 64)",
+                ["Caution"],
+                "rgb(215, 25, 28)",
+                ["Riverscape Feature"],
+                "rgb(15, 222, 225)",
+                ["Design Consideration"],
+                "rgb(255, 210, 15)",
+                ["Building Materials"],
+                "rgb(124, 210, 47)",
+                ["Photo Observation"],
+                "rgb(0, 0, 0)",
+                "rgb(192, 177, 0)"
+            ],
+            "text-halo-color": [
+                "match",
+                ["get", "Observation Type"],
+                [
+                    "Logistics",
+                    "Riverscape Feature",
+                    "Design Consideration",
+                    "Building Materials"
+                ],
+                "rgb(0, 0, 0)",
+                ["Caution", "Photo Observation"],
+                "rgb(255, 255, 255)",
+                "rgba(0, 0, 0, 0)"
+            ],
+            "text-halo-width": [
+                "match",
+                ["get", "Observation Type"],
+                ["Logistics"],
+                0.75,
+                ["Caution"],
+                1.5,
+                1
+            ]
+        }
+    },
+    {
+        "id": "observation-point-design-86zn3u (1)",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "Observation_point_design-86zn3u",
+        "slot": "",
+        "layout": {},
+        "paint": {
+            "circle-color": [
+                "match",
+                ["get", "Observation Type"],
+                ["Other"],
+                "rgb(200, 200, 200)",
+                "rgba(0, 0, 0, 0)"
+            ],
+            "circle-stroke-color": [
+                "match",
+                ["get", "Observation Type"],
+                ["Other"],
+                "rgb(5, 5, 5)",
+                "rgba(5, 5, 5, 0)"
+            ],
+            "circle-stroke-width": 1
+        }
+    }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(206, 1, 118)", "Complex Survey Site"]
+  ],
+  "layerStyles": [
+    {
+      "id": "beaver-protocol-complex-survey",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "beaver_protocol_complex_survey",
+      "layout": {},
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(206, 1, 118)",
+        "circle-stroke-color": "rgb(35, 35, 35)",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(180,215,158)",
+      "Valley Bottom Width"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "ValleyBottomWidthPolygons-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "ValleyBottomWidthPolygons",
+      "paint": {
+        "fill-color": "rgb(180,215,158)",
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "ValleyBottomWidthPolygons-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ValleyBottomWidthPolygons",
+      "paint": {
+        "line-color": "rgb(180,215,158)",
+        "line-width": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(245, 0, 0)", "None: 0 dams"],
+    ["rgb(255, 170, 0)", "Rare: 0-1 dams/km"],
+    ["rgb(245, 245, 0)", "Occasional: 1-5 dams/km"],
+    ["rgb(76, 230, 0)", "Frequent: 5-15 dams/km"],
+    ["rgb(0, 92, 230)", "Pervasive: 15-40 dams/km"],
+    ["rgb(0, 0, 0)", "Null (no value)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "brat-cis-reaches",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "brat_cis_reaches",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "Dam Density (Combined)"],
+          ["None"], "rgb(245, 0, 0)",
+          ["Rare"], "rgb(255, 170, 0)",
+          ["Occasional"], "rgb(245, 245, 0)",
+          ["Frequent"], "rgb(76, 230, 0)",
+          ["Pervasive"], "rgb(0, 92, 230)",
+          "rgb(0, 0, 0)"
+        ],
+        "line-width": 1.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(190,178,151)",
+      "LUI IGO"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "lui-igo",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "LUI_IGO",
+      "paint": {
+        "line-color": "rgb(190,178,151)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

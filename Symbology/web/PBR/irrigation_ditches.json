@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,170,0)",
+      "Irrigation Ditches"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "irrigation-ditches",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "irrigation_ditches",
+      "paint": {
+        "line-color": "rgb(255,170,0)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

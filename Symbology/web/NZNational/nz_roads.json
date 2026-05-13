@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,200,100)",
+      "Roads"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "nz-roads",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nz_roads",
+      "paint": {
+        "line-color": "rgb(255,200,100)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

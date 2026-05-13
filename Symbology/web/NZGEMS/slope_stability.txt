@@ -1,0 +1,6 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+1,77,239,239,0,Most Stable
+2,242,225,110,255,Unstable
+3,222,134,19,255,More Unstable
+4,220,16,16,255,Most Unstable

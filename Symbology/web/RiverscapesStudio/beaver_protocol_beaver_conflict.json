@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(225, 225, 225)", "Infrastructure"],
+    ["rgb(211, 34, 158)", "Landowner"],
+    ["rgb(254, 216, 76)", "Agricultural"],
+    ["rgb(0, 0, 0)", "Other"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "beaver-protocol-beaver-conflict",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "beaver_protocol_beaver_conflict",
+      "layout": {},
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": [
+          "match",
+          ["get", "conflict_type"],
+          ["Infrastructure"], "rgb(225, 225, 225)",
+          ["Landowner"], "rgb(211, 34, 158)",
+          ["Agricultural"], "rgb(254, 216, 76)",
+          ["Other"], "rgb(0, 0, 0)",
+          "rgb(192, 177, 0)"
+        ],
+        "circle-stroke-color": "rgb(25, 25, 25)",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

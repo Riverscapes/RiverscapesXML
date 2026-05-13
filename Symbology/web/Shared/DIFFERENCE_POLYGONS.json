@@ -1,0 +1,16 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["hsl(351, 76%, 80%)", "Difference Polygons"]
+  ],
+  "layerStyles": [
+        {
+            "id": "differencepolygons-5yfk09",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "DifferencePolygons-5yfk09",
+            "layout": {},
+            "paint": {"fill-color": "hsl(351, 76%, 80%)"}
+        }
+    ]
+}

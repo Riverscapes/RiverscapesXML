@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: THIS XSD WAS GENERATED AUTOMATICALLY USING TRANG -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="qgis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="flags"/>
+        <xs:element minOccurs="0" ref="temporal"/>
+        <xs:element minOccurs="0" ref="elevation"/>
+        <xs:element minOccurs="0" ref="renderer-v2"/>
+        <xs:element minOccurs="0" ref="selection"/>
+        <xs:element minOccurs="0" ref="labeling"/>
+        <xs:element minOccurs="0" ref="customproperties"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="DiagramLayerSettings"/>
+          <xs:element ref="LinearlyInterpolatedDiagramRenderer"/>
+          <xs:element ref="SingleCategoryDiagramRenderer"/>
+          <xs:element ref="aliases"/>
+          <xs:element ref="attributeEditorForm"/>
+          <xs:element ref="attributeactions"/>
+          <xs:element ref="attributetableconfig"/>
+          <xs:element ref="blendMode"/>
+          <xs:element ref="conditionalstyles"/>
+          <xs:element ref="constraintExpressions"/>
+          <xs:element ref="constraints"/>
+          <xs:element ref="dataDefinedFieldProperties"/>
+          <xs:element ref="defaults"/>
+          <xs:element ref="duplicatePolicies"/>
+          <xs:element ref="editable"/>
+          <xs:element ref="editform"/>
+          <xs:element ref="editforminit"/>
+          <xs:element ref="editforminitcode"/>
+          <xs:element ref="editforminitcodesource"/>
+          <xs:element ref="editforminitfilepath"/>
+          <xs:element ref="editorlayout"/>
+          <xs:element ref="excludeAttributesWFS"/>
+          <xs:element ref="excludeAttributesWMS"/>
+          <xs:element ref="expressionfields"/>
+          <xs:element ref="featformsuppress"/>
+          <xs:element ref="featureBlendMode"/>
+          <xs:element ref="fieldConfiguration"/>
+          <xs:element ref="geometryOptions"/>
+          <xs:element ref="labelOnTop"/>
+          <xs:element ref="layerOpacity"/>
+          <xs:element ref="legend"/>
+          <xs:element ref="mapTip"/>
+          <xs:element ref="pipe"/>
+          <xs:element ref="pipe-data-defined-properties"/>
+          <xs:element ref="previewExpression"/>
+          <xs:element ref="referencedLayers"/>
+          <xs:element ref="referencingLayers"/>
+          <xs:element ref="reuseLastValue"/>
+          <xs:element ref="splitPolicies"/>
+          <xs:element ref="storedexpressions"/>
+          <xs:element ref="widgets"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="layerGeometryType"/>
+      </xs:sequence>
+      <xs:attribute name="autoRefreshMode" type="xs:NCName"/>
+      <xs:attribute name="autoRefreshTime" type="xs:integer"/>
+      <xs:attribute name="hasScaleBasedVisibilityFlag" type="xs:integer"/>
+      <xs:attribute name="labelsEnabled" type="xs:integer"/>
+      <xs:attribute name="maxScale" type="xs:integer"/>
+      <xs:attribute name="minScale" type="xs:double"/>
+      <xs:attribute name="readOnly" type="xs:integer"/>
+      <xs:attribute name="simplifyAlgorithm" type="xs:integer"/>
+      <xs:attribute name="simplifyDrawingHints" type="xs:integer"/>
+      <xs:attribute name="simplifyDrawingTol" type="xs:integer"/>
+      <xs:attribute name="simplifyLocal" type="xs:integer"/>
+      <xs:attribute name="simplifyMaxScale" type="xs:integer"/>
+      <xs:attribute name="styleCategories" use="required"/>
+      <xs:attribute name="symbologyReferenceScale" type="xs:integer"/>
+      <xs:attribute name="version" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="flags">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Identifiable"/>
+        <xs:element ref="Removable"/>
+        <xs:element ref="Searchable"/>
+        <xs:element minOccurs="0" ref="Private"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Identifiable" type="xs:integer"/>
+  <xs:element name="Removable" type="xs:integer"/>
+  <xs:element name="Searchable" type="xs:integer"/>
+  <xs:element name="Private" type="xs:integer"/>
+  <xs:element name="temporal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="fixedRange"/>
+      </xs:sequence>
+      <xs:attribute name="accumulate" type="xs:integer"/>
+      <xs:attribute name="bandNumber" type="xs:integer"/>
+      <xs:attribute name="durationField"/>
+      <xs:attribute name="durationUnit" type="xs:NCName"/>
+      <xs:attribute name="enabled" use="required" type="xs:integer"/>
+      <xs:attribute name="endExpression"/>
+      <xs:attribute name="endField"/>
+      <xs:attribute name="fetchMode" type="xs:integer"/>
+      <xs:attribute name="fixedDuration" type="xs:integer"/>
+      <xs:attribute name="limitMode" type="xs:integer"/>
+      <xs:attribute name="mode" use="required" type="xs:integer"/>
+      <xs:attribute name="startExpression"/>
+      <xs:attribute name="startField"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fixedRange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="start"/>
+        <xs:element ref="end"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="start">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="end">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="elevation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data-defined-properties"/>
+        <xs:element ref="profileLineSymbol"/>
+        <xs:element ref="profileFillSymbol"/>
+        <xs:element minOccurs="0" ref="profileMarkerSymbol"/>
+      </xs:sequence>
+      <xs:attribute name="band" type="xs:integer"/>
+      <xs:attribute name="binding" type="xs:NCName"/>
+      <xs:attribute name="clamping" type="xs:NCName"/>
+      <xs:attribute name="enabled" type="xs:integer"/>
+      <xs:attribute name="extrusion" type="xs:integer"/>
+      <xs:attribute name="extrusionEnabled" type="xs:integer"/>
+      <xs:attribute name="mode" type="xs:NCName"/>
+      <xs:attribute name="respectLayerSymbol" type="xs:integer"/>
+      <xs:attribute name="showMarkerSymbolInSurfacePlots" type="xs:integer"/>
+      <xs:attribute name="symbology" use="required" type="xs:NCName"/>
+      <xs:attribute name="type" type="xs:NCName"/>
+      <xs:attribute name="zoffset" use="required" type="xs:integer"/>
+      <xs:attribute name="zscale" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="profileLineSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="profileFillSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="profileMarkerSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="renderer-v2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:element ref="rules"/>
+          <xs:element ref="categories"/>
+          <xs:element ref="ranges"/>
+        </xs:choice>
+        <xs:element ref="symbols"/>
+        <xs:element minOccurs="0" ref="source-symbol"/>
+        <xs:element minOccurs="0" ref="colorramp"/>
+        <xs:element minOccurs="0" ref="classificationMethod"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="rotation"/>
+          <xs:element ref="sizescale"/>
+        </xs:sequence>
+        <xs:element minOccurs="0" ref="data-defined-properties"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="effect"/>
+          <xs:element ref="orderby"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="attr"/>
+      <xs:attribute name="enableorderby" use="required" type="xs:integer"/>
+      <xs:attribute name="forceraster" use="required" type="xs:integer"/>
+      <xs:attribute name="graduatedMethod" type="xs:NCName"/>
+      <xs:attribute name="referencescale" type="xs:integer"/>
+      <xs:attribute name="symbollevels" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="category"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category">
+    <xs:complexType>
+      <xs:attribute name="label" use="required"/>
+      <xs:attribute name="render" use="required" type="xs:boolean"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="type" type="xs:NCName"/>
+      <xs:attribute name="uuid"/>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ranges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="range"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="range">
+    <xs:complexType>
+      <xs:attribute name="label" use="required"/>
+      <xs:attribute name="lower" use="required" type="xs:string"/>
+      <xs:attribute name="render" use="required" type="xs:boolean"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="upper" use="required" type="xs:string"/>
+      <xs:attribute name="uuid"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symbols">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="source-symbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="classificationMethod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symmetricMode"/>
+        <xs:element ref="labelFormat"/>
+        <xs:element ref="parameters"/>
+        <xs:element ref="extraInformation"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symmetricMode">
+    <xs:complexType>
+      <xs:attribute name="astride" use="required" type="xs:integer"/>
+      <xs:attribute name="enabled" use="required" type="xs:integer"/>
+      <xs:attribute name="symmetrypoint" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="labelFormat">
+    <xs:complexType>
+      <xs:attribute name="format" use="required"/>
+      <xs:attribute name="labelprecision" use="required" type="xs:integer"/>
+      <xs:attribute name="trimtrailingzeroes" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="extraInformation">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="rotation">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="sizescale">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="orderby">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="orderByClause"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="orderByClause">
+    <xs:complexType mixed="true">
+      <xs:attribute name="asc" use="required" type="xs:integer"/>
+      <xs:attribute name="nullsFirst" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="selectionColor"/>
+        <xs:element ref="selectionSymbol"/>
+      </xs:sequence>
+      <xs:attribute name="mode" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selectionColor">
+    <xs:complexType>
+      <xs:attribute name="invalid" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selectionSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="labeling">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="rules"/>
+        <xs:element ref="settings"/>
+      </xs:choice>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="customproperties">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="Option"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="property"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="value"/>
+      </xs:sequence>
+      <xs:attribute name="key" use="required"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="value" type="xs:string"/>
+  <xs:element name="DiagramLayerSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="properties"/>
+      </xs:sequence>
+      <xs:attribute name="dist" use="required" type="xs:integer"/>
+      <xs:attribute name="linePlacementFlags" use="required" type="xs:integer"/>
+      <xs:attribute name="obstacle" use="required" type="xs:integer"/>
+      <xs:attribute name="placement" use="required" type="xs:integer"/>
+      <xs:attribute name="priority" use="required" type="xs:integer"/>
+      <xs:attribute name="showAll" use="required" type="xs:integer"/>
+      <xs:attribute name="zIndex" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LinearlyInterpolatedDiagramRenderer">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="DiagramCategory">
+          <xs:attribute name="attributeLegend" use="required" type="xs:integer"/>
+          <xs:attribute name="classificationAttributeExpression" use="required"/>
+          <xs:attribute name="diagramType" use="required" type="xs:NCName"/>
+          <xs:attribute name="lowerHeight" use="required" type="xs:integer"/>
+          <xs:attribute name="lowerValue" use="required" type="xs:integer"/>
+          <xs:attribute name="lowerWidth" use="required" type="xs:integer"/>
+          <xs:attribute name="upperHeight" use="required" type="xs:integer"/>
+          <xs:attribute name="upperValue" use="required" type="xs:integer"/>
+          <xs:attribute name="upperWidth" use="required" type="xs:integer"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SingleCategoryDiagramRenderer">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="DiagramCategory">
+          <xs:attribute name="attributeLegend" use="required" type="xs:integer"/>
+          <xs:attribute name="diagramType" use="required" type="xs:NCName"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="aliases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="alias"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alias">
+    <xs:complexType>
+      <xs:attribute name="field" use="required" type="xs:anyURI"/>
+      <xs:attribute name="index" use="required" type="xs:integer"/>
+      <xs:attribute name="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attributeEditorForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="attributeEditorField"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attributeEditorField">
+    <xs:complexType>
+      <xs:attribute name="index" use="required" type="xs:integer"/>
+      <xs:attribute name="name" use="required" type="xs:NCName"/>
+      <xs:attribute name="showLabel" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attributeactions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="defaultAction"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultAction">
+    <xs:complexType>
+      <xs:attribute name="key" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attributetableconfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="columns"/>
+      </xs:sequence>
+      <xs:attribute name="actionWidgetStyle" use="required" type="xs:NCName"/>
+      <xs:attribute name="sortExpression" use="required"/>
+      <xs:attribute name="sortOrder" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="columns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="column"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="column">
+    <xs:complexType>
+      <xs:attribute name="hidden" use="required" type="xs:integer"/>
+      <xs:attribute name="name" type="xs:anyURI"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="blendMode" type="xs:integer"/>
+  <xs:element name="conditionalstyles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="rowstyles"/>
+        <xs:element ref="fieldstyles"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rowstyles">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="fieldstyles">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="constraintExpressions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="constraint"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="constraints">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="constraint"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataDefinedFieldProperties">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="defaults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="default"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="default">
+    <xs:complexType>
+      <xs:attribute name="applyOnUpdate" use="required" type="xs:integer"/>
+      <xs:attribute name="expression" use="required"/>
+      <xs:attribute name="field" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="duplicatePolicies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="policy"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="field"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editform">
+    <xs:complexType>
+      <xs:attribute name="tolerant" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editforminit">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="editforminitcode" type="xs:string"/>
+  <xs:element name="editforminitcodesource" type="xs:integer"/>
+  <xs:element name="editforminitfilepath">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="editorlayout" type="xs:NCName"/>
+  <xs:element name="excludeAttributesWFS">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="excludeAttributesWMS">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="expressionfields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="field"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="featformsuppress" type="xs:integer"/>
+  <xs:element name="featureBlendMode" type="xs:integer"/>
+  <xs:element name="fieldConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="field"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="geometryOptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="activeChecks"/>
+        <xs:element ref="checkConfiguration"/>
+      </xs:sequence>
+      <xs:attribute name="geometryPrecision" use="required" type="xs:integer"/>
+      <xs:attribute name="removeDuplicateNodes" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="activeChecks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Option"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Option"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="labelOnTop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="field"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="layerOpacity" type="xs:decimal"/>
+  <xs:element name="legend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="text-on-symbol"/>
+      </xs:sequence>
+      <xs:attribute name="showLabelLegend" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-on-symbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="text-style"/>
+        <xs:element ref="content"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mapTip">
+    <xs:complexType>
+      <xs:attribute name="enabled" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pipe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="provider"/>
+        <xs:element ref="rasterrenderer"/>
+        <xs:element ref="brightnesscontrast"/>
+        <xs:element ref="huesaturation"/>
+        <xs:element ref="rasterresampler"/>
+        <xs:element minOccurs="0" ref="resamplingStage"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="provider">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="resampling"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resampling">
+    <xs:complexType>
+      <xs:attribute name="enabled" use="required" type="xs:boolean"/>
+      <xs:attribute name="maxOversampling" use="required" type="xs:integer"/>
+      <xs:attribute name="zoomedInResamplingMethod" use="required" type="xs:NCName"/>
+      <xs:attribute name="zoomedOutResamplingMethod" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rasterrenderer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="rasterTransparency"/>
+        <xs:element ref="minMaxOrigin"/>
+        <xs:element minOccurs="0" ref="colorPalette"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="colorramp"/>
+          <xs:element ref="rastershader"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="alphaBand" use="required" type="xs:integer"/>
+      <xs:attribute name="band" type="xs:integer"/>
+      <xs:attribute name="blueBand" type="xs:integer"/>
+      <xs:attribute name="classificationMax" type="xs:double"/>
+      <xs:attribute name="classificationMin" type="xs:double"/>
+      <xs:attribute name="greenBand" type="xs:integer"/>
+      <xs:attribute name="nodataColor"/>
+      <xs:attribute name="opacity" use="required" type="xs:decimal"/>
+      <xs:attribute name="redBand" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rasterTransparency">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="minMaxOrigin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="limits"/>
+        <xs:element ref="extent"/>
+        <xs:element ref="statAccuracy"/>
+        <xs:element ref="cumulativeCutLower"/>
+        <xs:element ref="cumulativeCutUpper"/>
+        <xs:element ref="stdDevFactor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limits" type="xs:NCName"/>
+  <xs:element name="extent" type="xs:NCName"/>
+  <xs:element name="statAccuracy" type="xs:NCName"/>
+  <xs:element name="cumulativeCutLower" type="xs:decimal"/>
+  <xs:element name="cumulativeCutUpper" type="xs:decimal"/>
+  <xs:element name="stdDevFactor" type="xs:integer"/>
+  <xs:element name="colorPalette">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="paletteEntry"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paletteEntry">
+    <xs:complexType>
+      <xs:attribute name="alpha" use="required" type="xs:integer"/>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="label" use="required"/>
+      <xs:attribute name="value" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rastershader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="colorrampshader"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="colorrampshader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="colorramp"/>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+        <xs:element minOccurs="0" ref="rampLegendSettings"/>
+      </xs:sequence>
+      <xs:attribute name="classificationMode" use="required" type="xs:integer"/>
+      <xs:attribute name="clip" use="required" type="xs:integer"/>
+      <xs:attribute name="colorRampType" use="required" type="xs:NCName"/>
+      <xs:attribute name="labelPrecision" use="required" type="xs:integer"/>
+      <xs:attribute name="maximumValue" use="required" type="xs:double"/>
+      <xs:attribute name="minimumValue" use="required" type="xs:double"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rampLegendSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="numericFormat"/>
+      </xs:sequence>
+      <xs:attribute name="direction" use="required" type="xs:integer"/>
+      <xs:attribute name="maximumLabel" use="required"/>
+      <xs:attribute name="minimumLabel" use="required"/>
+      <xs:attribute name="orientation" use="required" type="xs:integer"/>
+      <xs:attribute name="prefix" use="required"/>
+      <xs:attribute name="suffix" use="required"/>
+      <xs:attribute name="useContinuousLegend" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numericFormat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brightnesscontrast">
+    <xs:complexType>
+      <xs:attribute name="brightness" use="required" type="xs:integer"/>
+      <xs:attribute name="contrast" use="required" type="xs:integer"/>
+      <xs:attribute name="gamma" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="huesaturation">
+    <xs:complexType>
+      <xs:attribute name="colorizeBlue" use="required" type="xs:integer"/>
+      <xs:attribute name="colorizeGreen" use="required" type="xs:integer"/>
+      <xs:attribute name="colorizeOn" use="required" type="xs:integer"/>
+      <xs:attribute name="colorizeRed" use="required" type="xs:integer"/>
+      <xs:attribute name="colorizeStrength" use="required" type="xs:integer"/>
+      <xs:attribute name="grayscaleMode" use="required" type="xs:integer"/>
+      <xs:attribute name="invertColors" type="xs:integer"/>
+      <xs:attribute name="saturation" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rasterresampler">
+    <xs:complexType>
+      <xs:attribute name="maxOversampling" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resamplingStage" type="xs:NCName"/>
+  <xs:element name="pipe-data-defined-properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="previewExpression" type="xs:string"/>
+  <xs:element name="referencedLayers">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="referencingLayers">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="reuseLastValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="field"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="splitPolicies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="policy"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storedexpressions">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="widgets">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="layerGeometryType" type="xs:integer"/>
+  <xs:element name="data-defined-properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symbol">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="data_defined_properties"/>
+        <xs:element ref="layer"/>
+      </xs:choice>
+      <xs:attribute name="alpha" use="required" type="xs:decimal"/>
+      <xs:attribute name="clip_to_extent" use="required" type="xs:integer"/>
+      <xs:attribute name="force_rhr" use="required" type="xs:integer"/>
+      <xs:attribute name="frame_rate" type="xs:integer"/>
+      <xs:attribute name="is_animated" type="xs:integer"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="renderer_should_use_levels" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="layer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Option"/>
+        <xs:element ref="data_defined_properties"/>
+        <xs:element ref="effect"/>
+        <xs:element ref="prop"/>
+        <xs:element ref="symbol"/>
+      </xs:choice>
+      <xs:attribute name="class" use="required" type="xs:NCName"/>
+      <xs:attribute name="enabled" use="required" type="xs:integer"/>
+      <xs:attribute name="id"/>
+      <xs:attribute name="locked" use="required" type="xs:integer"/>
+      <xs:attribute name="pass" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="rule"/>
+      </xs:sequence>
+      <xs:attribute name="key" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="colorramp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Option"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="prop"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Option">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Option"/>
+      </xs:sequence>
+      <xs:attribute name="name"/>
+      <xs:attribute name="type" type="xs:NCName"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="effect">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="effect"/>
+          <xs:element ref="Option"/>
+          <xs:element ref="prop"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="enabled" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="text-style"/>
+        <xs:element ref="text-format"/>
+        <xs:element ref="placement"/>
+        <xs:element ref="rendering"/>
+        <xs:element ref="dd_properties"/>
+        <xs:element ref="callout"/>
+      </xs:sequence>
+      <xs:attribute name="calloutType" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-format">
+    <xs:complexType>
+      <xs:attribute name="addDirectionSymbol" use="required" type="xs:integer"/>
+      <xs:attribute name="autoWrapLength" use="required" type="xs:integer"/>
+      <xs:attribute name="decimals" use="required" type="xs:integer"/>
+      <xs:attribute name="formatNumbers" use="required" type="xs:integer"/>
+      <xs:attribute name="leftDirectionSymbol" use="required"/>
+      <xs:attribute name="multilineAlign" use="required" type="xs:integer"/>
+      <xs:attribute name="placeDirectionSymbol" use="required" type="xs:integer"/>
+      <xs:attribute name="plussign" use="required" type="xs:integer"/>
+      <xs:attribute name="reverseDirectionSymbol" use="required" type="xs:integer"/>
+      <xs:attribute name="rightDirectionSymbol" use="required"/>
+      <xs:attribute name="useMaxLineLengthForAutoWrap" use="required" type="xs:integer"/>
+      <xs:attribute name="wrapChar" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="placement">
+    <xs:complexType>
+      <xs:attribute name="allowDegraded" type="xs:integer"/>
+      <xs:attribute name="centroidInside" use="required" type="xs:integer"/>
+      <xs:attribute name="centroidWhole" use="required" type="xs:integer"/>
+      <xs:attribute name="dist" use="required" type="xs:integer"/>
+      <xs:attribute name="distMapUnitScale" use="required"/>
+      <xs:attribute name="distUnits" use="required" type="xs:NCName"/>
+      <xs:attribute name="fitInPolygonOnly" use="required" type="xs:integer"/>
+      <xs:attribute name="geometryGenerator" use="required"/>
+      <xs:attribute name="geometryGeneratorEnabled" use="required" type="xs:integer"/>
+      <xs:attribute name="geometryGeneratorType" use="required" type="xs:NCName"/>
+      <xs:attribute name="labelOffsetMapUnitScale" use="required"/>
+      <xs:attribute name="layerType" use="required" type="xs:NCName"/>
+      <xs:attribute name="lineAnchorClipping" type="xs:integer"/>
+      <xs:attribute name="lineAnchorPercent" use="required" type="xs:decimal"/>
+      <xs:attribute name="lineAnchorTextPoint" type="xs:NCName"/>
+      <xs:attribute name="lineAnchorType" use="required" type="xs:integer"/>
+      <xs:attribute name="maxCurvedCharAngleIn" use="required" type="xs:integer"/>
+      <xs:attribute name="maxCurvedCharAngleOut" use="required" type="xs:integer"/>
+      <xs:attribute name="maximumDistance" type="xs:integer"/>
+      <xs:attribute name="maximumDistanceMapUnitScale"/>
+      <xs:attribute name="maximumDistanceUnit" type="xs:NCName"/>
+      <xs:attribute name="offsetType" use="required" type="xs:integer"/>
+      <xs:attribute name="offsetUnits" use="required" type="xs:NCName"/>
+      <xs:attribute name="overlapHandling" type="xs:NCName"/>
+      <xs:attribute name="overrunDistance" use="required" type="xs:integer"/>
+      <xs:attribute name="overrunDistanceMapUnitScale" use="required"/>
+      <xs:attribute name="overrunDistanceUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="placement" use="required" type="xs:integer"/>
+      <xs:attribute name="placementFlags" use="required" type="xs:integer"/>
+      <xs:attribute name="polygonPlacementFlags" use="required" type="xs:integer"/>
+      <xs:attribute name="predefinedPositionOrder" use="required"/>
+      <xs:attribute name="preserveRotation" use="required" type="xs:integer"/>
+      <xs:attribute name="prioritization" type="xs:NCName"/>
+      <xs:attribute name="priority" use="required" type="xs:integer"/>
+      <xs:attribute name="quadOffset" use="required" type="xs:integer"/>
+      <xs:attribute name="repeatDistance" use="required" type="xs:integer"/>
+      <xs:attribute name="repeatDistanceMapUnitScale" use="required"/>
+      <xs:attribute name="repeatDistanceUnits" use="required" type="xs:NCName"/>
+      <xs:attribute name="rotationAngle" use="required" type="xs:integer"/>
+      <xs:attribute name="rotationUnit" type="xs:NCName"/>
+      <xs:attribute name="xOffset" use="required" type="xs:integer"/>
+      <xs:attribute name="yOffset" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rendering">
+    <xs:complexType>
+      <xs:attribute name="displayAll" type="xs:integer"/>
+      <xs:attribute name="drawLabels" use="required" type="xs:integer"/>
+      <xs:attribute name="fontLimitPixelSize" use="required" type="xs:integer"/>
+      <xs:attribute name="fontMaxPixelSize" use="required" type="xs:integer"/>
+      <xs:attribute name="fontMinPixelSize" use="required" type="xs:integer"/>
+      <xs:attribute name="labelPerPart" use="required" type="xs:integer"/>
+      <xs:attribute name="limitNumLabels" use="required" type="xs:integer"/>
+      <xs:attribute name="maxNumLabels" use="required" type="xs:integer"/>
+      <xs:attribute name="mergeLines" use="required" type="xs:integer"/>
+      <xs:attribute name="minFeatureSize" use="required" type="xs:integer"/>
+      <xs:attribute name="obstacle" use="required" type="xs:integer"/>
+      <xs:attribute name="obstacleFactor" use="required" type="xs:integer"/>
+      <xs:attribute name="obstacleType" use="required" type="xs:integer"/>
+      <xs:attribute name="scaleMax" use="required" type="xs:integer"/>
+      <xs:attribute name="scaleMin" use="required" type="xs:integer"/>
+      <xs:attribute name="scaleVisibility" use="required" type="xs:integer"/>
+      <xs:attribute name="unplacedVisibility" type="xs:integer"/>
+      <xs:attribute name="upsidedownLabels" use="required" type="xs:integer"/>
+      <xs:attribute name="zIndex" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="callout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:attribute name="alpha" type="xs:integer"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="key"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="field">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="editWidget"/>
+      </xs:sequence>
+      <xs:attribute name="comment"/>
+      <xs:attribute name="configurationFlags" type="xs:NCName"/>
+      <xs:attribute name="editable" type="xs:integer"/>
+      <xs:attribute name="expression"/>
+      <xs:attribute name="labelOnTop" type="xs:integer"/>
+      <xs:attribute name="length" type="xs:integer"/>
+      <xs:attribute name="name" use="required" type="xs:anyURI"/>
+      <xs:attribute name="precision" type="xs:integer"/>
+      <xs:attribute name="reuseLastValue" type="xs:integer"/>
+      <xs:attribute name="subType" type="xs:integer"/>
+      <xs:attribute name="type" type="xs:integer"/>
+      <xs:attribute name="typeName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editWidget">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="config"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="config">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="policy">
+    <xs:complexType>
+      <xs:attribute name="field" use="required" type="xs:anyURI"/>
+      <xs:attribute name="policy" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="constraint">
+    <xs:complexType>
+      <xs:attribute name="constraints" type="xs:integer"/>
+      <xs:attribute name="desc"/>
+      <xs:attribute name="exp"/>
+      <xs:attribute name="exp_strength" type="xs:integer"/>
+      <xs:attribute name="field" use="required" type="xs:anyURI"/>
+      <xs:attribute name="notnull_strength" type="xs:integer"/>
+      <xs:attribute name="unique_strength" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-style">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="families"/>
+        <xs:element ref="text-buffer"/>
+        <xs:element ref="text-mask"/>
+        <xs:element ref="background"/>
+        <xs:element ref="shadow"/>
+        <xs:element ref="dd_properties"/>
+        <xs:element minOccurs="0" ref="substitutions"/>
+      </xs:sequence>
+      <xs:attribute name="allowHtml" use="required" type="xs:integer"/>
+      <xs:attribute name="blendMode" use="required" type="xs:integer"/>
+      <xs:attribute name="capitalization" use="required" type="xs:integer"/>
+      <xs:attribute name="fieldName"/>
+      <xs:attribute name="fontFamily" use="required"/>
+      <xs:attribute name="fontItalic" use="required" type="xs:integer"/>
+      <xs:attribute name="fontKerning" use="required" type="xs:integer"/>
+      <xs:attribute name="fontLetterSpacing" use="required" type="xs:integer"/>
+      <xs:attribute name="fontSize" use="required" type="xs:decimal"/>
+      <xs:attribute name="fontSizeMapUnitScale" use="required"/>
+      <xs:attribute name="fontSizeUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="fontStrikeout" use="required" type="xs:integer"/>
+      <xs:attribute name="fontUnderline" use="required" type="xs:integer"/>
+      <xs:attribute name="fontWeight" use="required" type="xs:integer"/>
+      <xs:attribute name="fontWordSpacing" use="required" type="xs:integer"/>
+      <xs:attribute name="forcedBold" type="xs:integer"/>
+      <xs:attribute name="forcedItalic" type="xs:integer"/>
+      <xs:attribute name="isExpression" type="xs:integer"/>
+      <xs:attribute name="legendString" type="xs:NCName"/>
+      <xs:attribute name="multilineHeight" use="required" type="xs:integer"/>
+      <xs:attribute name="multilineHeightUnit" type="xs:NCName"/>
+      <xs:attribute name="namedStyle" use="required"/>
+      <xs:attribute name="previewBkgrdColor" use="required"/>
+      <xs:attribute name="stretchFactor" type="xs:integer"/>
+      <xs:attribute name="tabStopDistance" type="xs:integer"/>
+      <xs:attribute name="tabStopDistanceMapUnitScale"/>
+      <xs:attribute name="tabStopDistanceUnit" type="xs:NCName"/>
+      <xs:attribute name="textColor" use="required"/>
+      <xs:attribute name="textOpacity" use="required" type="xs:integer"/>
+      <xs:attribute name="textOrientation" use="required" type="xs:NCName"/>
+      <xs:attribute name="useSubstitutions" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="families">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="family"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="family">
+    <xs:complexType>
+      <xs:attribute name="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-buffer">
+    <xs:complexType>
+      <xs:attribute name="bufferBlendMode" use="required" type="xs:integer"/>
+      <xs:attribute name="bufferColor" use="required"/>
+      <xs:attribute name="bufferDraw" use="required" type="xs:integer"/>
+      <xs:attribute name="bufferJoinStyle" use="required" type="xs:integer"/>
+      <xs:attribute name="bufferNoFill" use="required" type="xs:integer"/>
+      <xs:attribute name="bufferOpacity" use="required" type="xs:integer"/>
+      <xs:attribute name="bufferSize" use="required" type="xs:decimal"/>
+      <xs:attribute name="bufferSizeMapUnitScale" use="required"/>
+      <xs:attribute name="bufferSizeUnits" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-mask">
+    <xs:complexType>
+      <xs:attribute name="maskEnabled" use="required" type="xs:integer"/>
+      <xs:attribute name="maskJoinStyle" use="required" type="xs:integer"/>
+      <xs:attribute name="maskOpacity" use="required" type="xs:integer"/>
+      <xs:attribute name="maskSize" use="required" type="xs:decimal"/>
+      <xs:attribute name="maskSize2" type="xs:decimal"/>
+      <xs:attribute name="maskSizeMapUnitScale" use="required"/>
+      <xs:attribute name="maskSizeUnits" use="required" type="xs:NCName"/>
+      <xs:attribute name="maskType" use="required" type="xs:integer"/>
+      <xs:attribute name="maskedSymbolLayers" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="background">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="symbol"/>
+      </xs:sequence>
+      <xs:attribute name="shapeBlendMode" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeBorderColor" use="required"/>
+      <xs:attribute name="shapeBorderWidth" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeBorderWidthMapUnitScale" use="required"/>
+      <xs:attribute name="shapeBorderWidthUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="shapeDraw" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeFillColor" use="required"/>
+      <xs:attribute name="shapeJoinStyle" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeOffsetMapUnitScale" use="required"/>
+      <xs:attribute name="shapeOffsetUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="shapeOffsetX" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeOffsetY" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeOpacity" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeRadiiMapUnitScale" use="required"/>
+      <xs:attribute name="shapeRadiiUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="shapeRadiiX" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeRadiiY" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeRotation" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeRotationType" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeSVGFile" use="required"/>
+      <xs:attribute name="shapeSizeMapUnitScale" use="required"/>
+      <xs:attribute name="shapeSizeType" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeSizeUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="shapeSizeX" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeSizeY" use="required" type="xs:integer"/>
+      <xs:attribute name="shapeType" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shadow">
+    <xs:complexType>
+      <xs:attribute name="shadowBlendMode" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowColor" use="required"/>
+      <xs:attribute name="shadowDraw" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowOffsetAngle" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowOffsetDist" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowOffsetGlobal" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowOffsetMapUnitScale" use="required"/>
+      <xs:attribute name="shadowOffsetUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="shadowOpacity" use="required" type="xs:decimal"/>
+      <xs:attribute name="shadowRadius" use="required" type="xs:decimal"/>
+      <xs:attribute name="shadowRadiusAlphaOnly" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowRadiusMapUnitScale" use="required"/>
+      <xs:attribute name="shadowRadiusUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="shadowScale" use="required" type="xs:integer"/>
+      <xs:attribute name="shadowUnder" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="substitutions">
+    <xs:complexType/>
+  </xs:element>
+  <xs:complexType name="DiagramCategory">
+    <xs:sequence>
+      <xs:element ref="DiagramCategory"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DiagramCategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="fontProperties"/>
+        <xs:element minOccurs="0" ref="attribute"/>
+        <xs:element ref="axisSymbol"/>
+      </xs:sequence>
+      <xs:attribute name="backgroundAlpha" use="required" type="xs:integer"/>
+      <xs:attribute name="backgroundColor" use="required"/>
+      <xs:attribute name="barWidth" use="required" type="xs:integer"/>
+      <xs:attribute name="diagramOrientation" use="required" type="xs:NCName"/>
+      <xs:attribute name="direction" use="required" type="xs:integer"/>
+      <xs:attribute name="enabled" use="required" type="xs:integer"/>
+      <xs:attribute name="height" use="required" type="xs:integer"/>
+      <xs:attribute name="labelPlacementMethod" use="required" type="xs:NCName"/>
+      <xs:attribute name="lineSizeScale" use="required"/>
+      <xs:attribute name="lineSizeType" use="required" type="xs:NCName"/>
+      <xs:attribute name="maxScaleDenominator" use="required" type="xs:double"/>
+      <xs:attribute name="minScaleDenominator" use="required" type="xs:integer"/>
+      <xs:attribute name="minimumSize" use="required" type="xs:integer"/>
+      <xs:attribute name="opacity" use="required" type="xs:integer"/>
+      <xs:attribute name="penAlpha" use="required" type="xs:integer"/>
+      <xs:attribute name="penColor" use="required"/>
+      <xs:attribute name="penWidth" use="required" type="xs:integer"/>
+      <xs:attribute name="rotationOffset" use="required" type="xs:integer"/>
+      <xs:attribute name="scaleBasedVisibility" use="required" type="xs:integer"/>
+      <xs:attribute name="scaleDependency" use="required" type="xs:NCName"/>
+      <xs:attribute name="showAxis" use="required" type="xs:integer"/>
+      <xs:attribute name="sizeScale" use="required"/>
+      <xs:attribute name="sizeType" use="required" type="xs:NCName"/>
+      <xs:attribute name="spacing" use="required" type="xs:integer"/>
+      <xs:attribute name="spacingUnit" use="required" type="xs:NCName"/>
+      <xs:attribute name="spacingUnitScale" use="required"/>
+      <xs:attribute name="stackedDiagramMode" type="xs:NCName"/>
+      <xs:attribute name="stackedDiagramSpacing" type="xs:integer"/>
+      <xs:attribute name="stackedDiagramSpacingUnit" type="xs:NCName"/>
+      <xs:attribute name="stackedDiagramSpacingUnitScale"/>
+      <xs:attribute name="width" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fontProperties">
+    <xs:complexType>
+      <xs:attribute name="bold" type="xs:integer"/>
+      <xs:attribute name="description" use="required"/>
+      <xs:attribute name="italic" type="xs:integer"/>
+      <xs:attribute name="strikethrough" type="xs:integer"/>
+      <xs:attribute name="style" use="required"/>
+      <xs:attribute name="underline" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attribute">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="colorOpacity" type="xs:integer"/>
+      <xs:attribute name="field" use="required"/>
+      <xs:attribute name="label" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="axisSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="symbol"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data_defined_properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prop">
+    <xs:complexType>
+      <xs:attribute name="k" use="required" type="xs:NCName"/>
+      <xs:attribute name="v" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rule">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="settings"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="rule"/>
+      </xs:choice>
+      <xs:attribute name="checkstate" type="xs:integer"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="filter"/>
+      <xs:attribute name="key" use="required"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="scalemaxdenom" type="xs:integer"/>
+      <xs:attribute name="scalemindenom" type="xs:integer"/>
+      <xs:attribute name="symbol" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dd_properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Option"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

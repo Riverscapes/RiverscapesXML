@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(215, 25, 28)", "< 5 ac/mi"],
+    ["rgb(190, 110, 70)", "5 - 25 ac/mi"],
+    ["rgb(165, 195, 112)", "25 - 75 ac/mi"],
+    ["rgb(43, 131, 186)", "> 75 ac/mi"]
+  ],
+  "layerStyles": [
+    {
+      "id": "acres_vb_mile",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "acres_vb_mile",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "interpolate", ["linear"], ["get", "acres_vb_mi"],
+          0, "rgb(215, 25, 28)",
+          5, "rgb(190, 110, 70)",
+          25, "rgb(165, 195, 112)",
+          75, "rgb(43, 131, 186)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {"id": "acres_vb_mile-line", "type": "line", "source": "composite",
+      "source-layer": "acres_vb_mile", "paint": {"line-width": 0.5}}
+  ]
+}

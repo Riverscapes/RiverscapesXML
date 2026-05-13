@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(231,113,72)",
+      "Topo Points"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "pts_topo",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "pts_topo",
+      "paint": {
+        "line-color": "rgb(231,113,72)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(133, 131, 220)", "Lines"]
+  ],
+  "layerStyles": [
+    {
+      "id": "lines",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "lines",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(133, 131, 220)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

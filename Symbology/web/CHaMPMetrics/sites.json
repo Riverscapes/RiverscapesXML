@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(130,222,214)",
+      "Site"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "champ-sites",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "sites",
+      "paint": {
+        "circle-radius": 5,
+        "circle-color": "rgb(130,222,214)",
+        "circle-stroke-color": "rgb(35,35,35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

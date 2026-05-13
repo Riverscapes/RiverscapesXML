@@ -77,5 +77,14 @@
       "GitHub.copilot-chat",
       "GitHub.copilot"
     ]
-  }
+  },
+  "json.schemaDownload.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "Symbology/web/**/*.json"
+      ],
+      "url": "./Symbology/web/vector.schema.json"
+    }
+  ]
 }

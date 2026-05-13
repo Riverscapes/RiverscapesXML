@@ -1,0 +1,407 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+-9999,132,140,200,255,Wyoming Basins Dwarf Sagebrush Shrubland and Steppe
+11,215,215,158,255,Willamette Valley Upland Prairie and Savanna
+12,242,237,168,255,Western Highland Rim Prairie and Barrens
+31,168,168,0,255,Western Great Plains Wooded Draw and Ravine
+381,245,245,150,255,Western Great Plains Tallgrass Prairie
+383,255,235,190,255,Western Great Plains Sparsely Vegetated Systems
+384,205,205,102,255,Western Great Plains Shortgrass Prairie
+385,169,0,230,255,Western Great Plains Sandhill Steppe
+386,245,218,169,255,Western Great Plains Sand Prairie
+387,156,40,156,255,Western Great Plains Mesquite Woodland and Shrubland
+388,137,205,102,255,Western Great Plains Foothill and Piedmont Grassland
+389,102,153,205,255,Western Great Plains Floodplain Systems
+390,220,0,0,255,Western Great Plains Dry Bur Oak Forest and Woodland
+391,82,0,201,255,Western Great Plains Depressional Wetland Systems - Saline
+392,104,0,156,255,Western Great Plains Depressional Wetland Systems - Playa
+393,104,0,156,255,Western Great Plains Depressional Wetland Systems
+394,68,242,0,255,West Gulf Coastal Plain Wet Longleaf Pine Savanna and Flatwoods
+395,112,127,0,255,West Gulf Coastal Plain Upland Longleaf Pine Forest and Woodland
+396,255,36,158,255,West Gulf Coastal Plain Southern Calcareous Prairie
+397,209,217,0,255,West Gulf Coastal Plain Sandhill Oak and Shortleaf Pine Forest and Woodland
+398,100,168,0,255,West Gulf Coastal Plain Pine-Hardwood Forest
+399,99,235,97,255,West Gulf Coastal Plain Pine-Hardwood Flatwoods
+400,255,0,110,255,West Gulf Coastal Plain Northern Calcareous Prairie
+401,38,115,0,255,West Gulf Coastal Plain Nonriverine Wet Hardwood Flatwoods
+402,181,158,143,255,West Gulf Coastal Plain Mesic Hardwood Forest
+403,219,69,223,255,West Gulf Coastal Plain Chenier and Upper Texas Coastal Fringe Forest and Woodland
+404,245,185,47,255,Texas-Louisiana Saline Coastal Prairie
+405,219,163,223,255,Texas-Louisiana Coastal Prairie
+406,199,215,105,255,Tamaulipan Savanna Grassland
+407,171,214,235,255,Tamaulipan Riparian Systems
+408,215,156,160,255,Tamaulipan Mixed Deciduous Thornscrub
+409,102,181,205,255,Tamaulipan Floodplain
+410,235,87,0,255,Tamaulipan Clay Grassland
+411,205,102,153,255,Tamaulipan Calcareous Thornscrub
+412,247,115,255,255,Southwest Florida Coastal Strand and Maritime Hammock
+413,168,56,0,255,Southern Rocky Mountain Ponderosa Pine Woodland - South
+414,148,26,54,255,Southern Rocky Mountain Ponderosa Pine Woodland - North
+415,168,56,0,255,Southern Rocky Mountain Ponderosa Pine Woodland
+416,255,85,0,255,Southern Rocky Mountain Ponderosa Pine Savanna - South
+417,237,125,33,255,Southern Rocky Mountain Ponderosa Pine Savanna - North
+418,255,85,0,255,Southern Rocky Mountain Ponderosa Pine Savanna
+419,183,138,46,255,Southern Rocky Mountain Pinyon-Juniper Woodland
+420,167,205,178,255,Southern Rocky Mountain Montane-Subalpine Grassland
+421,115,149,230,255,Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland
+422,135,86,20,255,Southern Rocky Mountain Juniper Woodland and Savanna
+423,190,210,255,255,Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland
+424,222,153,122,255,Southern Ridge and Valley/Cumberland Dry Calcareous Forest
+425,99,199,125,255,Southern Piedmont Mesic Forest
+426,211,186,255,255,Southern Piedmont Dry Oak(-Pine) Forest
+427,184,156,33,255,Southern Interior Low Plateau Dry-Mesic Oak Forest
+428,62,245,51,255,Southern Crowley`s Ridge Mesic Loess Slope Forest
+429,134,219,24,255,Southern Colorado Plateau Sand Shrubland
+430,190,232,255,255,Southern Coastal Plain Seepage Swamp and Baygall
+431,168,10,0,255,Southern Coastal Plain Nonriverine Cypress Dome
+432,191,151,71,255,Southern Coastal Plain Mesic Slope Forest
+433,245,231,186,255,Southern Coastal Plain Dry Upland Hardwood Forest
+434,255,142,107,255,Southern Coastal Plain Blackland Prairie and Woodland
+435,68,160,130,255,Southern California Oak Woodland and Savanna
+436,226,245,174,255,Southern California Dry-Mesic Chaparral
+437,158,215,194,255,Southern California Coastal Scrub
+438,255,127,127,255,Southern Blackland Tallgrass Prairie
+439,209,255,179,255,Southern Atlantic Coastal Plain Wet Pine Savanna and Flatwoods
+440,186,130,255,255,Southern Atlantic Coastal Plain Maritime Forest
+441,100,0,70,255,Southern Atlantic Coastal Plain Dune and Maritime Grassland
+442,181,227,194,255,Southern Appalachian Oak Forest
+443,163,156,46,255,Southern Appalachian Northern Hardwood Forest
+444,117,71,197,255,Southern Appalachian Montane Pine Forest and Woodland
+445,255,200,97,255,Southern Appalachian Low-Elevation Pine Forest
+446,240,10,10,255,Southern Appalachian Grass and Shrub Bald
+447,138,177,255,255,Southern and Central Appalachian Cove Forest
+448,143,161,26,255,Southeastern Interior Longleaf Pine Woodland
+449,135,75,120,255,Southeastern Great Plains Tallgrass Prairie
+450,228,94,255,255,Southeast Florida Coastal Strand and Maritime Hammock
+451,186,237,38,255,South-Central Interior/Upper Coastal Plain Wet Flatwoods
+452,156,237,38,255,South-Central Interior/Upper Coastal Plain Flatwoods
+453,71,135,148,255,South-Central Interior Mesophytic Forest
+454,255,237,207,255,South Texas Sand Sheet Grassland
+456,135,38,0,255,South Texas Lomas
+457,214,170,102,255,South Florida Pine Rockland
+458,162,230,140,255,South Florida Pine Flatwoods
+459,128,121,0,255,South Florida Hardwood Hammock
+460,212,255,237,255,South Florida Everglades Sawgrass Marsh
+461,224,0,123,255,South Florida Dwarf Cypress Savanna
+462,200,10,0,255,South Florida Cypress Dome
+463,233,214,245,255,Sonoran Paloverde-Mixed Cacti Desert Scrub
+464,176,6,99,255,Sonoran Mid-Elevation Desert Scrub
+465,255,160,0,255,Sonoran Granite Outcrop Desert Scrub
+466,255,197,173,255,Sonora-Mojave Semi-Desert Chaparral
+467,245,222,110,255,Sonora-Mojave Mixed Salt Desert Scrub
+468,52,154,184,255,Sonora-Mojave Creosotebush-White Bursage Desert Scrub
+469,230,255,230,255,Sierran-Intermontane Desert Western White Pine-White Fir Woodland
+470,127,234,0,255,Sierra Nevada Subalpine Lodgepole Pine Forest and Woodland - Wet
+471,179,255,0,255,Sierra Nevada Subalpine Lodgepole Pine Forest and Woodland - Dry
+472,127,234,0,255,Sierra Nevada Subalpine Lodgepole Pine Forest and Woodland
+473,25,125,95,255,Sierra Nevada Alpine Dwarf-Shrubland
+474,49,165,167,255,Rocky Mountain Subalpine/Upper Montane Riparian Systems
+475,0,197,255,255,Rocky Mountain Subalpine-Montane Mesic Meadow
+476,227,223,162,255,Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland
+477,56,168,0,255,Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland
+478,211,255,190,255,Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland
+479,85,255,0,255,Rocky Mountain Poor-Site Lodgepole Pine Forest
+480,123,124,93,255,Rocky Mountain Montane Riparian Systems
+481,137,25,135,255,Rocky Mountain Lower Montane-Foothill Shrubland - True Mountain Mahogany
+482,137,68,101,255,Rocky Mountain Lower Montane-Foothill Shrubland - No True Mountain Mahogany
+483,137,68,101,255,Rocky Mountain Lower Montane-Foothill Shrubland
+484,128,251,26,255,Rocky Mountain Lodgepole Pine Forest
+485,102,205,171,255,Rocky Mountain Gambel Oak-Mixed Montane Shrubland - Patchy
+486,115,255,223,255,Rocky Mountain Gambel Oak-Mixed Montane Shrubland  - Continuous
+487,115,255,223,255,Rocky Mountain Gambel Oak-Mixed Montane Shrubland
+488,102,205,171,255,Rocky Mountain Foothill Limber Pine-Juniper Woodland
+491,255,211,127,255,Rocky Mountain Bigtooth Maple Ravine Woodland
+492,255,255,115,255,Rocky Mountain Aspen Forest and Woodland
+493,255,255,190,255,Rocky Mountain Alpine/Montane Sparsely Vegetated Systems
+494,93,43,29,255,Rocky Mountain Alpine Turf
+495,130,130,130,255,Rocky Mountain Alpine Fell-Field
+496,19,118,92,255,Rocky Mountain Alpine Dwarf-Shrubland
+497,237,94,54,255,Piedmont Hardpan Woodland and Forest
+498,255,255,255,255,Perennial Ice/Snow
+499,232,227,138,255,Pennyroyal Karst Plain Prairie and Barrens
+500,106,117,0,255,Paleozoic Plateau Bluff and Talus
+501,68,79,125,255,Pacific Coastal Marsh Systems
+502,196,164,100,255,Ozark-Ouachita Shortleaf Pine-Oak Forest and Woodland
+503,68,137,112,255,Ozark-Ouachita Shortleaf Pine-Bluestem Woodland
+505,0,135,74,255,Ozark-Ouachita Mesic Hardwood Forest
+506,115,115,0,255,Ozark-Ouachita Dry-Mesic Oak Forest
+508,97,69,0,255,Ozark-Ouachita Dry Oak Woodland
+510,0,38,115,255,Ouachita Montane Oak Forest
+512,0,92,230,255,Open Water
+513,255,175,135,255,Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Savanna
+516,189,106,64,255,Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Low Elevation Woodland
+517,189,106,64,255,Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna
+518,168,0,132,255,Northwestern Great Plains Shrubland
+519,215,255,232,255,Northwestern Great Plains Mixedgrass Prairie
+520,0,115,76,255,Northwestern Great Plains Highland White Spruce Woodland
+521,196,178,156,255,Northwestern Great Plains Canyon
+522,11,202,170,255,Northwestern Great Plains Aspen Forest and Parkland
+523,184,132,29,255,Northern Tallgrass Prairie
+525,167,205,195,255,Northern Rocky Mountain Subalpine-Upper Montane Grassland
+526,255,170,0,255,Northern Rocky Mountain Subalpine Woodland and Parkland
+527,168,120,0,255,Northern Rocky Mountain Ponderosa Pine Woodland and Savanna - Xeric
+528,168,85,0,255,Northern Rocky Mountain Ponderosa Pine Woodland and Savanna - Mesic
+530,168,85,0,255,Northern Rocky Mountain Ponderosa Pine Woodland and Savanna
+531,137,68,80,255,Northern Rocky Mountain Montane-Foothill Deciduous Shrubland
+532,18,144,84,255,Northern Rocky Mountain Mesic Montane Mixed Conifer Forest - Cedar Groves
+533,95,147,229,255,Northern Rocky Mountain Mesic Montane Mixed Conifer Forest
+534,171,205,102,255,Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland
+535,255,120,0,255,Northern Rocky Mountain Foothill Conifer Wooded Steppe
+536,200,209,255,255,Northern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest - Ponderosa Pine-Douglas-fir
+537,143,204,177,255,Northern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest - Lodgepole Pine
+538,150,36,181,255,Northern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest - Larch
+539,230,5,8,255,Northern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest - Grand Fir
+540,200,209,255,255,Northern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest
+541,68,79,137,255,Northern Rocky Mountain Conifer Swamp
+542,202,122,245,255,Northern Crowley`s Ridge Sand Forest
+544,255,133,0,255,Northern California Mesic Subalpine Woodland
+545,148,194,168,255,Northern California Coastal Scrub
+546,255,165,82,255,Northern Atlantic Coastal Plain Pitch Pine Barrens
+547,237,0,179,255,Northern Atlantic Coastal Plain Maritime Forest
+548,161,112,90,255,Northern Atlantic Coastal Plain Hardwood Forest
+549,100,31,87,255,Northern Atlantic Coastal Plain Dune and Swale
+550,245,246,175,255,Northern and Central California Dry-Mesic Chaparral
+551,255,196,82,255,Northeastern Interior Pine Barrens
+552,215,185,100,255,Northeastern Interior Dry-Mesic Oak Forest
+553,255,235,176,255,North-Central Oak Barrens
+554,211,237,38,255,North-Central Interior Wet Flatwoods
+555,214,0,157,255,North-Central Interior Sand and Gravel Tallgrass Prairie
+556,230,213,138,255,North-Central Interior Oak Savanna
+557,237,161,102,255,North-Central Interior Maple-Basswood Forest
+558,176,163,222,255,North-Central Interior Dry-Mesic Oak Forest and Woodland
+560,179,207,143,255,North-Central Interior Dry Oak Forest and Woodland
+561,0,156,44,255,North-Central Interior Beech-Maple Forest
+562,245,186,157,255,North Pacific Wooded Volcanic Flowage
+563,70,85,137,255,North Pacific Swamp Systems
+564,255,240,190,255,North Pacific Sparsely Vegetated Systems
+565,255,120,120,255,North Pacific Oak Woodland
+566,114,208,242,255,North Pacific Mountain Hemlock Forest - Xeric
+567,165,230,252,255,North Pacific Mountain Hemlock Forest - Wet
+568,255,0,197,255,North Pacific Montane Shrubland
+569,188,207,212,255,North Pacific Montane Riparian Woodland and Shrubland - Wet
+570,172,194,193,255,North Pacific Montane Riparian Woodland and Shrubland - Dry
+571,199,230,158,255,North Pacific Montane Grassland
+572,249,189,252,255,North Pacific Mesic Western Hemlock-Silver Fir Forest
+573,170,227,170,255,North Pacific Maritime Mesic-Wet Douglas-fir-Western Hemlock Forest
+574,255,145,0,255,North Pacific Maritime Mesic Subalpine Parkland
+575,222,252,222,255,North Pacific Maritime Dry-Mesic Douglas-fir-Western Hemlock Forest
+576,177,179,125,255,North Pacific Lowland Riparian Forest and Shrubland
+577,215,176,158,255,North Pacific Hypermaritime Western Red-cedar-Western Hemlock Forest
+579,213,127,227,255,North Pacific Hypermaritime Sitka Spruce Forest
+580,217,189,252,255,North Pacific Dry-Mesic Silver Fir-Western Hemlock-Douglas-fir Forest
+581,137,68,68,255,North Pacific Dry Douglas-fir(-Madrone) Forest and Woodland
+582,20,125,125,255,North Pacific Dry and Mesic Alpine Dwarf-Shrubland or Fell-field or Meadow
+583,255,247,163,255,North Pacific Broadleaf Landslide Forest and Shrubland
+584,255,250,0,255,North Pacific Avalanche Chute Shrubland
+585,167,195,167,255,North Pacific Alpine and Subalpine Dry Grassland
+586,255,255,190,255,North American Warm Desert Sparsely Vegetated Systems
+587,84,160,117,255,North American Warm Desert Riparian Systems - Stringers
+588,123,160,117,255,North American Warm Desert Riparian Systems
+589,0,0,0,255,No Data
+590,242,242,82,255,Nashville Basin Limestone Glade and Woodland
+591,216,6,73,255,Mojave Mid-Elevation Mixed Desert Scrub
+592,173,250,211,255,Mogollon Chaparral
+593,0,107,82,255,Mississippi River Alluvial Plain Dry-Mesic Loess Slope Forest
+594,107,54,36,255,Mississippi Delta Maritime Forest
+595,255,120,0,255,Middle Rocky Mountain Montane Douglas-fir Forest and Woodland - Fire-maintained Savanna
+596,214,112,0,255,Middle Rocky Mountain Montane Douglas-fir Forest and Woodland
+597,226,194,162,255,Mediterranean California Subalpine Woodland
+598,0,188,255,255,Mediterranean California Subalpine Meadow
+599,255,245,215,255,Mediterranean California Sparsely Vegetated Systems
+600,255,145,151,255,Mediterranean California Red Fir Forest - Southern Sierra
+601,255,59,127,255,Mediterranean California Red Fir Forest - Cascades
+602,255,59,127,255,Mediterranean California Red Fir Forest
+604,220,100,100,255,Mediterranean California Mixed Oak Woodland
+605,164,196,143,255,Mediterranean California Mixed Evergreen Forest - Interior
+606,164,196,143,255,Mediterranean California Mixed Evergreen Forest - Coastal
+607,164,196,143,255,Mediterranean California Mixed Evergreen Forest
+608,115,0,76,255,Mediterranean California Mesic Serpentine Woodland and Chaparral
+609,84,98,168,255,Mediterranean California Mesic Mixed Conifer Forest and Woodland
+610,180,80,145,255,Mediterranean California Lower Montane Black Oak-Conifer Forest and Woodland
+611,158,187,215,255,Mediterranean California Dry-Mesic Mixed Conifer Forest and Woodland
+612,140,140,140,255,Mediterranean California Alpine Fell-Field
+613,100,43,29,255,Mediterranean California Alpine Dry Tundra
+614,73,128,57,255,Madrean Upper Montane Conifer-Oak Forest and Woodland
+615,160,106,31,255,Madrean Pinyon-Juniper Woodland
+616,116,212,180,255,Madrean Oriental Chaparral
+617,167,189,30,255,Madrean Lower Montane Pine-Oak Forest and Woodland
+618,207,157,143,255,Madrean Juniper Savanna
+619,0,167,132,255,Madrean Encinal
+620,98,0,117,255,Lower Mississippi River Flatwoods
+621,222,196,138,255,Lower Mississippi River Dune Woodland and Forest
+622,227,227,92,255,Lower Mississippi Alluvial Plain Grand Prairie
+623,196,150,245,255,Llano Uplift Acidic Forest-Woodland-Glade
+624,232,160,255,255,Laurentian-Acadian Swamp Systems
+625,0,168,107,255,Laurentian-Acadian Shrub-Herbaceous Wetland Systems
+626,208,255,99,255,Laurentian-Acadian Pine-Hemlock-Hardwood Forest
+627,255,167,127,255,Laurentian-Acadian Northern Pine(-Oak) Forest - Pine Dominated
+628,255,191,191,255,Laurentian-Acadian Northern Pine(-Oak) Forest
+629,38,105,0,255,Laurentian-Acadian Northern Hardwoods Forest - Northern Sugar Maple-Basswood
+630,76,230,0,255,Laurentian-Acadian Northern Hardwoods Forest - Hemlock
+631,76,230,0,255,Laurentian-Acadian Northern Hardwoods Forest
+632,122,143,245,255,Laurentian-Acadian Floodplain Systems
+633,232,189,255,255,Laurentian-Acadian Alkaline Conifer-Hardwood Swamp
+634,153,66,100,255,Laurentian Pine-Oak Barrens - Jack Pine
+635,153,66,0,255,Laurentian Pine-Oak Barrens
+636,210,235,0,255,Klamath-Siskiyou Xeromorphic Serpentine Savanna and Chaparral
+637,237,139,90,255,Klamath-Siskiyou Upper Montane Serpentine Mixed Conifer Woodland
+638,245,181,149,255,Klamath-Siskiyou Lower Montane Serpentine Mixed Conifer Woodland
+639,14,46,57,255,Inter-Mountain Basins Subalpine Limber-Bristlecone Pine Woodland
+640,255,255,190,255,Inter-Mountain Basins Sparsely Vegetated Systems
+641,194,158,215,255,Inter-Mountain Basins Semi-Desert Shrub-Steppe
+642,185,174,211,255,Inter-Mountain Basins Semi-Desert Grassland
+643,230,0,169,255,Inter-Mountain Basins Montane Sagebrush Steppe - Mountain Big Sagebrush
+644,255,197,191,255,Inter-Mountain Basins Montane Sagebrush Steppe - Low Sagebrush
+645,230,0,169,255,Inter-Mountain Basins Montane Sagebrush Steppe
+646,154,156,117,255,Inter-Mountain Basins Montane Riparian Systems
+647,245,202,122,255,Inter-Mountain Basins Mixed Salt Desert Scrub
+648,11,190,127,255,Inter-Mountain Basins Mat Saltbush Shrubland
+649,137,112,68,255,Inter-Mountain Basins Juniper Savanna
+650,225,225,225,255,Inter-Mountain Basins Greasewood Flat
+651,191,19,230,255,Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland
+652,255,115,223,255,Inter-Mountain Basins Big Sagebrush Steppe
+653,255,163,180,255,Inter-Mountain Basins Big Sagebrush Shrubland - Wyoming Big Sagebrush
+654,255,190,232,255,Inter-Mountain Basins Big Sagebrush Shrubland - Upland
+655,255,190,232,255,Inter-Mountain Basins Big Sagebrush Shrubland - Semi-Desert
+656,255,190,232,255,Inter-Mountain Basins Big Sagebrush Shrubland - Basin Big Sagebrush
+657,255,190,232,255,Inter-Mountain Basins Big Sagebrush Shrubland
+658,230,230,0,255,Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - Low Elevation
+659,200,230,0,255,Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - High Elevation
+660,230,230,0,255,Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland
+661,255,235,0,255,Gulf and Atlantic Coastal Plain Tidal Marsh Systems
+662,102,212,179,255,Gulf and Atlantic Coastal Plain Swamp Systems
+663,171,97,56,255,Gulf and Atlantic Coastal Plain Sparsely Vegetated Systems
+664,171,185,235,255,Gulf and Atlantic Coastal Plain Small Stream Riparian Systems
+665,102,119,205,255,Gulf and Atlantic Coastal Plain Floodplain Systems
+666,156,100,163,255,Great Plains Prairie Pothole
+667,181,0,0,255,Great Lakes Wooded Dune and Swale
+668,235,255,0,255,Great Lakes Wet-Mesic Lakeplain Prairie
+669,122,245,202,255,Great Lakes Coastal Marsh Systems
+670,227,235,117,255,Great Lakes Alvar
+671,57,194,207,255,Great Basin Xeric Mixed Sagebrush Shrubland
+672,174,250,255,255,Great Basin Semi-Desert Chaparral
+673,115,76,0,255,Great Basin Pinyon-Juniper Woodland
+674,240,255,94,255,Floridian Highlands Freshwater Marsh
+675,255,200,0,255,Florida Peninsula Inland Scrub
+676,76,186,10,255,Florida Longleaf Pine Sandhill
+677,255,214,214,255,Florida Dry Prairie
+678,122,163,245,255,Edwards Plateau Riparian
+679,255,168,232,255,Edwards Plateau Mesic Canyon
+680,255,203,125,255,Edwards Plateau Limestone Shrubland
+681,209,255,115,255,Edwards Plateau Limestone Savanna and Woodland
+682,102,255,171,255,Edwards Plateau Dry-Mesic Slope Forest and Woodland
+683,229,94,99,255,Eastern Serpentine Woodland
+684,252,252,186,255,Eastern Highland Rim Prairie and Barrens
+685,148,20,51,255,Eastern Great Plains Wet Meadow-Prairie-Marsh
+686,220,240,0,255,Eastern Great Plains Tallgrass Aspen Parkland
+687,75,170,190,255,Eastern Great Plains Floodplain Systems
+688,69,69,156,255,Eastern Boreal Floodplain
+689,194,94,0,255,East-Central Texas Plains Southern Pine Forest and Woodland
+690,207,148,10,255,East-Central Texas Plains Post Oak Savanna and Woodland
+691,168,8,54,255,East Gulf Coastal Plain Southern Loess Bluff Forest
+692,77,33,156,255,East Gulf Coastal Plain Southern Loblolly-Hardwood Flatwoods
+693,255,217,120,255,East Gulf Coastal Plain Savanna and Wet Prairie
+694,168,124,35,255,East Gulf Coastal Plain Northern Mesic Hardwood Slope Forest
+695,217,148,171,255,East Gulf Coastal Plain Northern Loess Plain Oak-Hickory Upland
+696,232,161,212,255,East Gulf Coastal Plain Northern Loess Bluff Forest
+697,222,205,149,255,East Gulf Coastal Plain Northern Dry Upland Hardwood Forest
+698,149,227,118,255,East Gulf Coastal Plain Near-Coast Pine Flatwoods
+699,214,130,255,255,East Gulf Coastal Plain Maritime Forest
+700,195,255,74,255,East Gulf Coastal Plain Limestone Forest
+701,252,245,171,255,East Gulf Coastal Plain Jackson Plain Prairie and Barrens
+702,152,176,0,255,East Gulf Coastal Plain Interior Upland Longleaf Pine Woodland
+703,223,97,255,255,East Gulf Coastal Plain Interior Shortleaf Pine-Oak Forest
+704,132,54,222,255,East Gulf Coastal Plain Dune and Coastal Grassland
+705,205,102,102,255,East Cascades Oak-Ponderosa Pine Forest and Woodland
+706,95,158,180,255,East Cascades Mesic Montane Mixed-Conifer Forest and Woodland
+707,137,90,68,255,Crosstimbers Oak Forest and Woodland
+708,14,245,98,255,Columbia Plateau Western Juniper Woodland and Savanna
+709,235,218,234,255,Columbia Plateau Steppe and Grassland
+710,190,255,232,255,Columbia Plateau Scabland Shrubland
+711,132,140,173,255,Columbia Plateau Low Sagebrush Steppe
+712,220,220,0,255,Columbia Basin Palouse Prairie
+713,205,245,122,255,Columbia Basin Foothill and Canyon Dry Grassland
+714,205,170,102,255,Colorado Plateau Pinyon-Juniper Woodland
+715,255,0,0,255,Colorado Plateau Pinyon-Juniper Shrubland
+716,158,170,215,255,Colorado Plateau Mixed Low Sagebrush Shrubland
+717,52,155,207,255,Colorado Plateau Blackbrush-Mormon-tea Shrubland
+718,166,179,130,255,Chihuahuan-Sonoran Desert Bottomland and Swale Grassland - Tobosa Grassland
+719,100,150,75,255,Chihuahuan-Sonoran Desert Bottomland and Swale Grassland - Alkali Sacaton
+720,166,179,130,255,Chihuahuan-Sonoran Desert Bottomland and Swale Grassland
+721,232,127,105,255,Chihuahuan Succulent Desert Scrub
+722,229,69,99,255,Chihuahuan Stabilized Coppice Dune and Sand Flat Scrub
+723,229,221,133,255,Chihuahuan Sandy Plains Semi-Desert Grassland
+724,244,191,0,255,Chihuahuan Mixed Salt Desert Scrub
+725,205,137,102,255,Chihuahuan Mixed Desert and Thorn Scrub - Steppe
+726,245,162,122,255,Chihuahuan Mixed Desert and Thorn Scrub - Shrubland
+727,245,162,122,255,Chihuahuan Mixed Desert and Thorn Scrub
+728,199,215,158,255,Chihuahuan Loamy Plains Desert Grassland
+729,145,230,0,255,Chihuahuan Gypsophilous Grassland and Steppe
+730,223,115,255,255,Chihuahuan Creosotebush Desert Scrub
+731,232,255,196,255,Central Tallgrass Prairie
+732,112,168,112,255,Central Mixedgrass Prairie
+733,229,38,0,255,Central Interior Highlands Dry Acidic Glade and Barrens
+734,255,235,20,255,Central Interior Highlands Calcareous Glade and Barrens
+735,207,61,255,255,Central Interior and Appalachian Swamp Systems
+736,240,150,20,255,Central Interior and Appalachian Shrub-Herbaceous Wetland Systems
+737,36,255,20,255,Central Interior and Appalachian Riparian Systems
+738,48,237,56,255,Central Interior and Appalachian Floodplain Systems - Large Floodplains
+739,0,191,176,255,Central Interior and Appalachian Floodplain Systems
+740,150,245,103,255,Central Florida Pine Flatwoods
+741,143,237,41,255,Central Atlantic Coastal Plain Wet Longleaf Pine Savanna and Flatwoods
+742,99,214,255,255,Central Atlantic Coastal Plain Nonriverine Swamp and Wet Hardwood Forest
+743,237,0,229,255,Central Atlantic Coastal Plain Maritime Forest
+744,255,0,77,255,Central Appalachian Pine-Oak Rocky Woodland
+745,0,255,220,255,Central Appalachian Dry Oak-Pine Forest
+746,255,153,229,255,Central Appalachian Alkaline Glade and Woodland
+747,132,0,207,255,Central and Upper Texas Coast Dune and Coastal Grassland
+748,119,171,87,255,Central and Southern California Mixed Evergreen Woodland
+749,207,214,51,255,Central and Southern Appalachian Spruce-Fir Forest
+750,180,130,180,255,Central and Southern Appalachian Montane Oak Forest
+751,165,245,122,255,Central and South Texas Coastal Fringe Forest and Woodland
+752,92,237,201,255,Caribbean Swamp Systems
+753,0,217,255,255,Caribbean Coastal Wetland Systems
+754,172,105,205,255,California Xeric Serpentine Chaparral
+755,237,240,216,255,California Northern Coastal Grassland
+756,210,170,50,255,California Montane Woodland and Chaparral
+757,65,150,167,255,California Montane Riparian Systems
+758,167,70,0,255,California Montane Jeffrey Pine(-Ponderosa Pine) Woodland
+759,205,188,214,255,California Mesic Serpentine Grassland
+760,200,190,85,255,California Mesic Chaparral
+761,200,170,140,255,California Maritime Chaparral
+762,179,255,232,255,California Lower Montane Blue Oak-Foothill Pine Woodland and Savanna
+763,168,0,0,255,California Coastal Redwood Forest
+764,68,145,112,255,California Coastal Live Oak Woodland and Savanna
+765,237,207,0,255,California Coastal Closed-Cone Conifer Forest and Woodland
+766,62,171,215,255,California Central Valley Riparian Woodland and Shrubland
+767,230,130,130,255,California Central Valley Mixed Oak Savanna
+768,163,255,115,255,California Central Valley and Southern Coastal Grassland
+769,147,194,114,255,Boreal White Spruce-Fir-Hardwood Forest - Inland
+770,110,137,70,255,Boreal White Spruce-Fir-Hardwood Forest - Coastal
+771,255,255,145,255,Boreal White Spruce-Fir-Hardwood Forest - Aspen-Birch
+772,135,200,114,255,Boreal Jack Pine-Black Spruce Forest - Spruce-Fir
+773,255,140,140,255,Boreal Jack Pine-Black Spruce Forest - Pine Barrens
+775,255,140,140,255,Boreal Jack Pine-Black Spruce Forest
+776,255,245,56,255,Boreal Aspen-Birch Forest
+777,106,0,138,255,Boreal Acidic Peatland Systems
+778,199,227,148,255,Bluegrass Savanna and Woodland
+779,0,0,0,255,Barren-Rock/Sand/Clay
+780,135,186,24,255,Atlantic Coastal Plain Upland Longleaf Pine Woodland
+781,68,79,145,255,Atlantic Coastal Plain Streamhead Seepage Swamp-Pocosin-Baygall
+782,255,125,0,255,Atlantic Coastal Plain Peatland Pocosin and Canebrake
+783,168,112,0,255,Atlantic Coastal Plain Mesic Hardwood Forest
+784,78,156,26,255,Atlantic Coastal Plain Fall-line Sandhills Longleaf Pine Woodland
+785,230,205,156,255,Atlantic Coastal Plain Dry and Dry-Mesic Oak Forest
+786,255,232,79,255,Atlantic Coastal Plain Clay-Based Carolina Bay Wetland
+787,204,138,179,255,Arkansas Valley Prairie and Woodland - Woodland
+788,255,120,187,255,Arkansas Valley Prairie and Woodland - Prairie
+789,156,156,156,255,Appalachian Shale Barrens
+790,214,255,145,255,Appalachian (Hemlock-)Northern Hardwood Forest
+791,255,221,216,255,Apacherian-Chihuahuan Semi-Desert Grassland and Steppe
+792,255,56,132,255,Apacherian-Chihuahuan Mesquite Upland Scrub
+793,186,184,148,255,Allegheny-Cumberland Dry Oak Forest and Woodland
+794,242,245,41,255,Alabama Ketona Glade and Woodland
+795,150,255,231,255,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz
+796,144,107,181,255,Acadian-Appalachian Montane Spruce-Fir Forest
+797,200,0,125,255,Acadian-Appalachian Alpine Tundra
+798,130,160,100,255,Acadian Low-Elevation Spruce-Fir-Hardwood Forest

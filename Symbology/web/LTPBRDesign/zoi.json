@@ -1,0 +1,48 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(31, 44, 224)", "Increase Channel Complexity"],
+    ["rgb(192, 99, 215)", "Accelerate Incision Recovery"],
+    ["rgb(255, 50, 50)", "Lateral Channel Migration"],
+    ["rgb(50, 200, 150)", "Increase Floodplain Connectivity"],
+    ["rgb(150, 80, 20)", "Facilitate Beaver Translocation"],
+    ["rgb(180, 180, 180)", "Other"],
+    ["rgb(192, 177, 0)", "Unclassified"]
+  ],
+  "layerStyles": [
+    {
+      "id": "ltpbr-zoi-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "zoi",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "zoi_type_id"],
+          [1], "rgb(31, 44, 224)",
+          [2], "rgb(192, 99, 215)",
+          [3], "rgb(255, 50, 50)",
+          [4], "rgb(50, 200, 150)",
+          [5], "rgb(150, 80, 20)",
+          [6], "rgb(180, 180, 180)",
+          "rgb(192, 177, 0)"
+        ],
+        "fill-opacity": 0.45,
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "ltpbr-zoi-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "zoi",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(35, 35, 35)",
+        "line-width": 1,
+        "line-dasharray": [4, 1, 1, 1]
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+1,209,255,115,255,Vegetated
+0,255,255,255,255,Non-Vegetated

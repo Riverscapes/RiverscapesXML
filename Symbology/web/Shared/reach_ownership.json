@@ -1,0 +1,32 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(213, 180, 60)", "Private"],
+    ["rgb(76, 230, 0)", "USFS"],
+    ["rgb(255, 170, 0)", "BLM"],
+    ["rgb(0, 112, 255)", "NPS"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "reach-ownership",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "reach_ownership",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "ownership"],
+          ["PVT"], "rgb(213, 180, 60)",
+          ["USFS"], "rgb(76, 230, 0)",
+          ["BLM"], "rgb(255, 170, 0)",
+          ["NPS"], "rgb(0, 112, 255)",
+          ["None"], "rgb(192, 177, 0)",
+          "rgb(192, 177, 0)"
+        ],
+        "line-width": 2
+      }
+    }
+  ]
+}

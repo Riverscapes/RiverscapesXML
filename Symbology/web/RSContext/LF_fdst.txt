@@ -1,0 +1,68 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+-9999,255,255,255,255,Fill-Not Mapped
+-1111,111,111,111,255,Fill-NoData
+0,0,0,0,255,No Disturbance
+111,214,96,77,255,Fire - Low
+112,214,96,77,255,Fire - Low
+113,214,96,77,255,Fire - Low
+121,214,96,77,255,Fire - Moderate
+122,214,96,77,255,Fire - Moderate
+123,214,96,77,255,Fire - Moderate
+131,214,96,77,255,Fire - High
+132,214,96,77,255,Fire - High
+133,214,96,77,255,Fire - High
+211,244,165,130,255,Mechanical Add - Low
+212,244,165,130,255,Mechanical Add - Low
+213,244,165,130,255,Mechanical Add - Low
+221,244,165,130,255,Mechanical Add - Moderate
+222,244,165,130,255,Mechanical Add - Moderate
+223,244,165,130,255,Mechanical Add - Moderate
+231,244,165,130,255,Mechanical Add - High
+232,244,165,130,255,Mechanical Add - High
+233,244,165,130,255,Mechanical Add - High
+311,253,219,199,255,Mechanical Remove - Low
+312,253,219,199,255,Mechanical Remove - Low
+313,253,219,199,255,Mechanical Remove - Low
+321,253,219,199,255,Mechanical Remove - Moderate
+322,253,219,199,255,Mechanical Remove - Moderate
+323,253,219,199,255,Mechanical Remove - Moderate
+331,253,219,199,255,Mechanical Remove - High
+332,253,219,199,255,Mechanical Remove - High
+333,253,219,199,255,Mechanical Remove - High
+411,209,229,240,255,Windthrow - Low
+412,209,229,240,255,Windthrow - Low
+413,209,229,240,255,Windthrow - Low
+421,209,229,240,255,Windthrow - Moderate
+422,209,229,240,255,Windthrow - Moderate
+423,209,229,240,255,Windthrow - Moderate
+431,209,229,240,255,Windthrow - High
+432,209,229,240,255,Windthrow - High
+433,209,229,240,255,Windthrow - High
+511,146,197,222,255,Insects-Disease - Low
+512,146,197,222,255,Insects-Disease - Low
+513,146,197,222,255,Insects-Disease - Low
+521,146,197,222,255,Insects-Disease - Moderate
+522,146,197,222,255,Insects-Disease - Moderate
+523,146,197,222,255,Insects-Disease - Moderate
+531,146,197,222,255,Insects-Disease - High
+532,146,197,222,255,Insects-Disease - High
+533,146,197,222,255,Insects-Disease - High
+611,67,147,197,255,Mechanical Unknown - Low
+612,67,147,197,255,Mechanical Unknown - Low
+613,67,147,197,255,Mechanical Unknown - Low
+621,67,147,197,255,Mechanical Unknown - Moderate
+622,67,147,197,255,Mechanical Unknown - Moderate
+623,67,147,197,255,Mechanical Unknown - Moderate
+631,67,147,197,255,Mechanical Unknown - High
+632,67,147,197,255,Mechanical Unknown - High
+633,67,147,197,255,Mechanical Unknown - High
+711,33,102,172,255,Mastication - Low
+712,33,102,172,255,Mastication - Low
+713,33,102,172,255,Mastication - Low
+721,33,102,172,255,Mastication - Moderate
+722,33,102,172,255,Mastication - Moderate
+723,33,102,172,255,Mastication - Moderate
+731,33,102,172,255,Mastication - High
+732,33,102,172,255,Mastication - High
+733,33,102,172,255,Mastication - High

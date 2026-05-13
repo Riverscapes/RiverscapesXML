@@ -1,0 +1,29 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(161, 49, 251)", "Translocation Site"],
+    ["rgb(253, 231, 76)", "Other"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "beaver-protocol-translocations",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "beaver_protocol_translocations",
+      "layout": {},
+      "paint": {
+        "circle-radius": 6,
+        "circle-color": [
+          "match",
+          ["get", "translocation_type"],
+          ["Translocation Site"], "rgb(161, 49, 251)",
+          ["Other"], "rgb(253, 231, 76)",
+          "rgb(192, 177, 0)"
+        ],
+        "circle-stroke-color": "rgb(35, 35, 35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

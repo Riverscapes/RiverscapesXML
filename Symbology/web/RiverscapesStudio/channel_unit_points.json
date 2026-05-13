@@ -1,0 +1,35 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(83, 240, 201)", "Concavity"],
+    ["rgb(232, 205, 129)", "Convexity"],
+    ["rgb(127, 148, 215)", "Planar"],
+    ["rgb(206, 182, 103)", "Pond"],
+    ["rgb(238, 27, 76)", "NA"],
+    ["rgb(192, 177, 0)", "Unclassified"]
+  ],
+  "layerStyles": [
+    {
+      "id": "channel-unit-points",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "channel_unit_points",
+      "layout": {},
+      "paint": {
+        "circle-radius": 6,
+        "circle-color": [
+          "match",
+          ["get", "unit_type"],
+          [1], "rgb(83, 240, 201)",
+          [2], "rgb(232, 205, 129)",
+          [3], "rgb(127, 148, 215)",
+          [4], "rgb(206, 182, 103)",
+          [5], "rgb(238, 27, 76)",
+          "rgb(192, 177, 0)"
+        ],
+        "circle-stroke-color": "rgb(35, 35, 35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

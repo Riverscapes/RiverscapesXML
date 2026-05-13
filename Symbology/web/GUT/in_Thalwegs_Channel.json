@@ -1,0 +1,52 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,169,230)",
+      "Main"
+    ],
+    [
+      "rgb(0,92,230)",
+      "Secondary"
+    ],
+    [
+      "rgb(130,130,130)",
+      "Other"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "gut-thalwegs-channel",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "in_Thalwegs_Channel",
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "Channel"
+          ],
+          [
+            "Main"
+          ],
+          "rgb(0,169,230)",
+          [
+            "Secondary"
+          ],
+          "rgb(0,92,230)",
+          [
+            "Backwater"
+          ],
+          "rgb(170,255,0)",
+          [
+            "Tributary"
+          ],
+          "rgb(255,170,0)",
+          "rgb(130,130,130)"
+        ],
+        "line-width": 1.5
+      }
+    }
+  ]
+}

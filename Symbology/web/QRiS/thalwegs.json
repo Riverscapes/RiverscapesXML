@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(240, 91, 16)", "Primary"],
+    ["rgb(82, 213, 126)", "Non-Primary"]
+  ],
+  "layerStyles": [
+    {
+      "id": "thalwegs",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "thalwegs",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "type_id"],
+          [1], "rgb(240, 91, 16)",
+          [2], "rgb(82, 213, 126)",
+          "rgb(192, 177, 0)"
+        ],
+        "line-width": 1.5,
+        "line-dasharray": [4, 1, 1, 1]
+      }
+    }
+  ]
+}

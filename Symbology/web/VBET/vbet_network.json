@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(23, 44, 160)", "VBET Network"]
+  ],
+  "layerStyles": [
+    {
+      "id": "vbet_network",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "vbet_network",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(23, 44, 160)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

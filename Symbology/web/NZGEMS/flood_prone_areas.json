@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(24,189,191)",
+      "Flood Prone Areas"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "flood_prone_areas-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "flood_prone_areas",
+      "paint": {
+        "fill-color": "rgb(24,189,191)",
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "flood_prone_areas-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "flood_prone_areas",
+      "paint": {
+        "line-color": "rgb(24,189,191)",
+        "line-width": 1
+      }
+    }
+  ]
+}

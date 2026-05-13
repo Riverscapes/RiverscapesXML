@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,112,255)",
+      "Bankfull Channel Network"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "BankfullChannelNetwork",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BankfullChannelNetwork",
+      "paint": {
+        "line-color": "rgb(0,112,255)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

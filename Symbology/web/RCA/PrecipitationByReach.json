@@ -1,0 +1,38 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,255,127)",
+      "Low Precip"
+    ],
+    [
+      "rgb(100,200,255)",
+      "High Precip"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "precip-by-reach",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "PrecipitationByReach",
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "PRECIP"
+          ],
+          0,
+          "rgb(255,255,127)",
+          500,
+          "rgb(100,200,255)"
+        ],
+        "line-width": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(145, 82, 45)", "Transition Zone"]
+  ],
+  "layerStyles": [
+    {
+      "id": "tzone",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "tzone",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(145, 82, 45)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

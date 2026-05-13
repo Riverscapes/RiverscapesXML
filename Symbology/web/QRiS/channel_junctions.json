@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(87, 231, 16)", "Channel Junction"]
+  ],
+  "layerStyles": [
+    {
+      "id": "channel-junctions",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "channel_junctions",
+      "layout": {},
+      "paint": {
+        "circle-radius": 5,
+        "circle-color": "rgb(87, 231, 16)",
+        "circle-stroke-color": "rgb(255, 255, 255)",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

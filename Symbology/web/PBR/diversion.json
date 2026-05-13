@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,169,230)",
+      "Diversion"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "diversion",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "diversion",
+      "paint": {
+        "line-color": "rgb(0,169,230)",
+        "line-width": 2
+      }
+    }
+  ]
+}

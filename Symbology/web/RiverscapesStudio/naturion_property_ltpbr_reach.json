@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 255, 218)", "LTPbR Reach"]
+  ],
+  "layerStyles": [
+    {
+      "id": "naturion-property-ltpbr-reach",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "naturion_property_ltpbr_reach",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(0, 255, 218)",
+        "line-width": 1.5,
+        "line-dasharray": [4, 2]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(38,115,0)", "VBET 90% Confidence"]
+  ],
+  "layerStyles": [
+    {
+      "id": "vbet90",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "vbet90",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(38,115,0)",
+        "fill-opacity": 0.6,
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+1,76,230,0,255,Historic OR Existing Riparian
+2,38,115,0,255,Historic AND Existing Riparian

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(196, 60, 57)", "Metric VBET Width"]
+  ],
+  "layerStyles": [
+    {
+      "id": "MetricVBET_Width",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "MetricVBET_Width",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(196, 60, 57)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

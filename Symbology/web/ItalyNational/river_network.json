@@ -1,0 +1,48 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,112,255)",
+      "Rivers"
+    ],
+    [
+      "rgb(0,168,132)",
+      "Canals"
+    ],
+    [
+      "rgb(100,180,180)",
+      "Ditches"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "italy-river-network",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "river_network",
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "type"
+          ],
+          [
+            "River_Net_l"
+          ],
+          "rgb(0,112,255)",
+          [
+            "Canals_l"
+          ],
+          "rgb(0,168,132)",
+          [
+            "Ditches_l"
+          ],
+          "rgb(100,180,180)",
+          "rgb(192,177,0)"
+        ],
+        "line-width": 1.5
+      }
+    }
+  ]
+}

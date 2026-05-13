@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(152,230,0)",
+      "Dams"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "pbr-dams",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dams",
+      "paint": {
+        "line-color": "rgb(152,230,0)",
+        "line-width": 2
+      }
+    }
+  ]
+}

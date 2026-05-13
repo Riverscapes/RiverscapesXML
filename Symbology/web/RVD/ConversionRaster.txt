@@ -1,0 +1,11 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+-50,0,230,169,255,Riparian Expansion
+0,204,204,204,255,No Change
+35,170,255,0,255,Conversion to Deciduous
+50,255,170,0,255,Conversion to Grassland/Shrubland
+60,215,194,158,255,Devegetated
+80,112,168,0,255,Conifer Encroachment
+97,169,0,230,255,Conversion to Invasive/Introduced
+98,230,0,0,255,Developed
+99,255,255,190,255,Conversion to Agriculture

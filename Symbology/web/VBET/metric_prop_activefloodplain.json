@@ -1,0 +1,36 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(247, 252, 245)", "< 2%"],
+    ["rgb(186, 228, 179)", "2% to 5%"],
+    ["rgb(116, 196, 118)", "5% to 10%"],
+    ["rgb(49, 163, 84)", "10% to 25%"],
+    ["rgb(0, 109, 44)", "25% to 50%"],
+    ["rgb(0, 68, 27)", "> 50%"]
+  ],
+  "layerStyles": [
+    {
+      "id": "metric_prop_activefloodplain",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "metric_prop_activefloodplain",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "step",
+          ["get", "active_floodplain_proportion"],
+          "rgb(247, 252, 245)",
+          0.02, "rgb(186, 228, 179)",
+          0.05, "rgb(116, 196, 118)",
+          0.10, "rgb(49, 163, 84)",
+          0.25, "rgb(0, 109, 44)",
+          0.5, "rgb(0, 68, 27)"
+        ],
+        "circle-radius": [
+          "interpolate", ["linear"], ["zoom"],
+          10, 1.5, 13, 3, 15, 4.5
+        ]
+      }
+    }
+  ]
+}

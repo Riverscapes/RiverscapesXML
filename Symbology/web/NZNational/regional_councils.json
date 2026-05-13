@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,35,35)",
+      "Regional Councils"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "regional_councils",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "regional_councils",
+      "paint": {
+        "line-color": "rgb(255,35,35)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

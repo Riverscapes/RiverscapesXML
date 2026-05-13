@@ -1,0 +1,52 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,77,168)",
+      "Perennial"
+    ],
+    [
+      "rgb(170,255,0)",
+      "Intermittent"
+    ],
+    [
+      "rgb(230,152,0)",
+      "Ephemeral"
+    ],
+    [
+      "rgb(192,177,0)",
+      "null"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "rca",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "RCA",
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "CONDITION"
+          ],
+          [
+            "Perennial"
+          ],
+          "rgb(0,77,168)",
+          [
+            "Intermittent"
+          ],
+          "rgb(170,255,0)",
+          [
+            "Ephemeral"
+          ],
+          "rgb(230,152,0)",
+          "rgb(192,177,0)"
+        ],
+        "line-width": 1.5
+      }
+    }
+  ]
+}

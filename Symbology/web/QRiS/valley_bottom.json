@@ -1,0 +1,19 @@
+{
+  "$schema": "../vector.schema.json",
+  "legend": [
+    ["rgb(255, 255, 0)", "Valley Bottom"]
+  ],
+  "layerStyles": [
+    {
+      "id": "valley-bottom",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "valley_bottom",
+      "layout": {"line-join": "round"},
+      "paint": {
+        "line-color": "rgb(255, 255, 0)",
+        "line-width": 2
+      }
+    }
+  ]
+}

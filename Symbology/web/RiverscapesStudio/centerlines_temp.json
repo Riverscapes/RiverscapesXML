@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 75, 255)", "Centerlines (Temp)"]
+  ],
+  "layerStyles": [
+    {
+      "id": "centerlines-temp",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "centerlines_temp",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(0, 75, 255)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

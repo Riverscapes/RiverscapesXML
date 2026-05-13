@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(190,207,80)",
+      "Thiessen Point"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "thiessen-point",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "thiessen_point",
+      "paint": {
+        "circle-radius": 4,
+        "circle-color": "rgb(190,207,80)",
+        "circle-stroke-color": "rgb(35,35,35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

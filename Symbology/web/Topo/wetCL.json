@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(125,139,143)",
+      "Wet Centerline"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "wetCL",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "wetCL",
+      "paint": {
+        "line-color": "rgb(125,139,143)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

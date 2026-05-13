@@ -1,0 +1,34 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 0, 197)", "dry to free flowing"],
+    ["rgb(0, 255, 197)", "dry to overflow"],
+    ["rgb(0, 92, 230)", "dry to ponded"],
+    ["rgb(255, 0, 0)", "free flowing to dry"],
+    ["rgb(190, 255, 232)", "free flowing to overflow"],
+    ["rgb(115, 178, 255)", "free flowing to ponded"],
+    ["rgb(187, 242, 221)", "no change / other"]
+  ],
+  "layerStyles": [
+    {
+      "id": "inundation-changes-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Changes in inundation type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "Inun_chang"],
+          ["free_flowing"], "rgb(190, 255, 232)",
+          ["overflow"], "rgb(0, 255, 197)",
+          ["ponded"], "rgb(115, 178, 255)",
+          [" "], "rgb(255, 0, 0)",
+          "rgb(187, 242, 221)"
+        ],
+        "fill-opacity": 0.7,
+        "fill-outline-color": "rgb(110, 110, 110)"
+      }
+    }
+  ]
+}

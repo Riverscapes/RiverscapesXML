@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(190,178,151)",
+      "D50 Points"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cu_D50",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "cu_D50",
+      "paint": {
+        "line-color": "rgb(190,178,151)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

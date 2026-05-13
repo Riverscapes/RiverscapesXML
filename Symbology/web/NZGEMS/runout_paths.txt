@@ -1,0 +1,5 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+1,77,77,239,255,More Likely, small short runouts
+2,19,222,19,255,Less Likely
+3,220,16,16,255,Least Likely, large long runouts

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 0, 0)", "Road - Public Paved"],
+    ["rgb(232, 232, 232)", "Road - Public Dirt"],
+    ["rgb(35, 35, 35)", "Road - Private Paved"],
+    ["rgb(255, 91, 0)", "Road - Private Dirt"],
+    ["rgb(255, 255, 255)", "Trail or Track"],
+    ["rgb(255, 233, 206)", "Railroad"],
+    ["rgb(210, 210, 210)", "Bridge"],
+    ["rgb(115, 223, 255)", "Canal"],
+    ["rgb(140, 81, 10)", "Culvert"],
+    ["rgb(255, 7, 0)", "Utility Line (buried or at ground)"],
+    ["rgb(15, 0, 190)", "Utility Line (overhead)"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "naturion-property-risk-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "naturion_property_risk_line",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "type"],
+          ["Road - Public Paved"], "rgb(0, 0, 0)",
+          ["Road - Public Dirt"], "rgb(232, 232, 232)",
+          ["Road - Privated Paved"], "rgb(35, 35, 35)",
+          ["Road - Private Dirt"], "rgb(255, 91, 0)",
+          ["Trail or Track"], "rgb(255, 255, 255)",
+          ["Railroad"], "rgb(255, 233, 206)",
+          ["Bridge"], "rgb(210, 210, 210)",
+          ["Canal"], "rgb(115, 223, 255)",
+          ["Culvert"], "rgb(140, 81, 10)",
+          ["Utility Line (buried or at ground)"], "rgb(255, 7, 0)",
+          ["Utility Line (overhead)"], "rgb(15, 0, 190)",
+          "rgb(192, 177, 0)"
+        ],
+        "line-width": 1.5
+      }
+    }
+  ]
+}

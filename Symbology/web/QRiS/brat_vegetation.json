@@ -1,0 +1,34 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(255, 34, 0)", "Unsuitable"],
+    ["rgb(255, 153, 0)", "Barely Suitable"],
+    ["rgb(255, 255, 0)", "Moderately Suitable"],
+    ["rgb(122, 171, 0)", "Suitable"],
+    ["rgb(0, 97, 0)", "Preferred"],
+    ["rgb(192, 177, 0)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "brat-vegetation",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "brat_vegetation",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "Suitability"],
+          [0], "rgb(255, 34, 0)",
+          [1], "rgb(255, 153, 0)",
+          [2], "rgb(255, 255, 0)",
+          [3], "rgb(122, 171, 0)",
+          [4], "rgb(0, 97, 0)",
+          "rgb(192, 177, 0)"
+        ],
+        "fill-opacity": 0.8,
+        "fill-outline-color": "rgb(35, 35, 35)"
+      }
+    }
+  ]
+}

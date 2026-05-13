@@ -1,0 +1,3 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+1,252,219,18,255,Slide Source Zones

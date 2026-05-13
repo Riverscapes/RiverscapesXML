@@ -1,0 +1,68 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,77,168)",
+      "Intact"
+    ],
+    [
+      "rgb(56,168,0)",
+      "Functioning"
+    ],
+    [
+      "rgb(255,235,0)",
+      "Degraded"
+    ],
+    [
+      "rgb(255,100,0)",
+      "Impaired"
+    ],
+    [
+      "rgb(200,0,0)",
+      "Absent"
+    ],
+    [
+      "rgb(192,177,0)",
+      "null"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "riparian-condition",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "RiparianCondition",
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "Condition"
+          ],
+          [
+            "Intact"
+          ],
+          "rgb(0,77,168)",
+          [
+            "Functioning"
+          ],
+          "rgb(56,168,0)",
+          [
+            "Degraded"
+          ],
+          "rgb(255,235,0)",
+          [
+            "Impaired"
+          ],
+          "rgb(255,100,0)",
+          [
+            "Absent"
+          ],
+          "rgb(200,0,0)",
+          "rgb(192,177,0)"
+        ],
+        "line-width": 2
+      }
+    }
+  ]
+}

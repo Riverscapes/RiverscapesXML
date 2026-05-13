@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(200,100,100)",
+      "10m Buffer"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "arc_10m_buffer-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "arc_10m_buffer",
+      "paint": {
+        "fill-color": "rgb(200,100,100)",
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "arc_10m_buffer-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "arc_10m_buffer",
+      "paint": {
+        "line-color": "rgb(200,100,100)",
+        "line-width": 1
+      }
+    }
+  ]
+}

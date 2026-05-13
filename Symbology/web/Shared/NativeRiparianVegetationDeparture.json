@@ -1,0 +1,30 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(178, 178, 178)", "No Departure"],
+    ["rgb(255, 0, 0)", "High Departure"],
+    ["rgb(245, 245, 0)", "Moderate Departure"],
+    ["rgb(148, 247, 0)", "Low Departure"],
+    ["rgb(56, 168, 0)", "Very Low Departure"]
+  ],
+  "layerStyles": [
+    {
+      "id": "native-riparian-veg-departure",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "NativeRiparianVegetationDeparture",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "interpolate", ["linear"], ["get", "NATIV_DEP"],
+          0, "rgb(56, 168, 0)",
+          25, "rgb(148, 247, 0)",
+          50, "rgb(245, 245, 0)",
+          75, "rgb(255, 0, 0)",
+          100, "rgb(178, 178, 178)"
+        ],
+        "line-width": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(26, 150, 65)", "0% Elevated"],
+    ["rgb(130, 185, 100)", "25% Elevated"],
+    ["rgb(200, 220, 100)", "50% Elevated"],
+    ["rgb(240, 129, 37)", "75%+ Elevated"]
+  ],
+  "layerStyles": [
+    {
+      "id": "dgo_prop_elevated-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "dgo_prop_elevated",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "interpolate", ["linear"], ["get", "inactive_floodplain_prop"],
+          0, "rgb(26, 150, 65)",
+          0.25, "rgb(130, 185, 100)",
+          0.5, "rgb(200, 220, 100)",
+          1.0, "rgb(240, 129, 37)"
+        ]
+      }
+    },
+    {
+      "id": "dgo_prop_elevated-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dgo_prop_elevated",
+      "layout": {},
+      "paint": {"line-width": 0.5}
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(221, 41, 0)", "Diversion"],
+    ["rgb(255, 233, 206)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "naturion-property-risk-point",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "naturion_property_risk_point",
+      "layout": {},
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": [
+          "match",
+          ["get", "type"],
+          ["Diversion"], "rgb(221, 41, 0)",
+          "rgb(255, 233, 206)"
+        ],
+        "circle-stroke-color": "rgb(0, 0, 0)",
+        "circle-stroke-width": 1.5
+      }
+    }
+  ]
+}

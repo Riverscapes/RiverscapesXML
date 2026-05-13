@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,169,230)",
+      "Thalweg"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "gut-thalwegs-type",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "in_Thalwegs_Type",
+      "paint": {
+        "line-color": "rgb(0,169,230)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}

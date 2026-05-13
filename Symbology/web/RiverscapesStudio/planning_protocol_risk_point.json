@@ -1,0 +1,31 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(192, 0, 0)", "Likely increase in flood risk"],
+    ["rgb(255, 255, 0)", "Negligible increase in flood risk possible"],
+    ["rgb(0, 176, 80)", "No likely impact"],
+    ["rgb(238, 185, 100)", "null"]
+  ],
+  "layerStyles": [
+    {
+      "id": "planning-protocol-risk-point",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "planning_protocol_risk_point",
+      "layout": {},
+      "paint": {
+        "circle-radius": 5,
+        "circle-color": [
+          "match",
+          ["get", "type"],
+          ["Likely increase in flood risk"], "rgb(192, 0, 0)",
+          ["Negligible increase in flood risk possible"], "rgb(255, 255, 0)",
+          ["No likely impact"], "rgb(0, 176, 80)",
+          "rgb(238, 185, 100)"
+        ],
+        "circle-stroke-color": "rgb(35, 35, 35)",
+        "circle-stroke-width": 1
+      }
+    }
+  ]
+}

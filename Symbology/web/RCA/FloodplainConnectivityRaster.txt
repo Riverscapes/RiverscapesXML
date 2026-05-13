@@ -1,0 +1,4 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+0,78,78,78,255,0
+1,137,205,102,255,1

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    ["rgb(0, 0, 0)", "Observations"]
+  ],
+  "layerStyles": [
+{
+            "id": "observation-point-asbuilt-6d54c9",
+            "type": "circle",
+            "source": "composite",
+            "source-layer": "Observation_point_asbuilt-6d54c9",
+            "layout": {},
+            "paint": {
+                "circle-stroke-color": "rgb(255, 255, 255)",
+                "circle-stroke-width": 1.5
+            }
+        }
+  ]
+}

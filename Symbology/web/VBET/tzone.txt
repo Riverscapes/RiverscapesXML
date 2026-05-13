@@ -1,0 +1,5 @@
+# QGIS Generated Color Map Export File
+INTERPOLATION:EXACT
+0,52,68,86,255,Small Catchments
+1,191,223,255,255,Medium Catchments
+2,255,255,255,255,Large Catchments

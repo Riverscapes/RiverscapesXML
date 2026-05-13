@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.net/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(213,180,60)",
+      "Control Points"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "pts_control",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "pts_control",
+      "paint": {
+        "line-color": "rgb(213,180,60)",
+        "line-width": 1.5
+      }
+    }
+  ]
+}
