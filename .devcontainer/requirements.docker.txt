@@ -1,7 +1,7 @@
 autopep8>=2.3.2
 exceptiongroup>=1.1.1
 jsonschema>=4.26.0
-lxml>=6.0.4
+lxml>=6.1.0,<6.1.1  # 6.1.1 published 2026-05-18T19:17 UTC; remove cap once >48h old (~2026-05-20 19:17 UTC)
 packaging>=26.0
 pycodestyle>=2.14.0
 pylint>=4.0.5
@@ -9,4 +9,4 @@ pytest>=9.0.3
 requests>=2.33.0
 semver>=3.0.0
 termcolor>=3.3.0
-urllib3>=2.6.3
+urllib3>=2.7.0

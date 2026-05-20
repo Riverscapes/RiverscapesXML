@@ -7,11 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
   "inquirer>=2.10.0",
   "jsonschema>=4.26.0",
-  "lxml>=6.0.2",
-  "requests>=2.32.4",
+  "lxml>=6.1.0,<6.1.1",  # 6.1.1 published 2026-05-18T19:17 UTC; remove cap once >48h old (~2026-05-20 19:17 UTC)
+  "requests>=2.33.0",
   "termcolor>=2.3.0",
   "toml>=0.10.2",
-  "urllib3>=2.6.3",
+  "urllib3>=2.7.0",
 ]
 
 [dependency-groups]
