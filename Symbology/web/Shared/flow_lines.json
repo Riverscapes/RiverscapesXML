@@ -19,7 +19,7 @@
       "paint": {
           "line-color": [
               "match",
-              ["get", "fcode"],
+              ["get", "FCode"],
               [46006],
               "hsl(213, 100%, 33%)",
               [33400],
@@ -39,7 +39,7 @@
       "paint": {
           "line-color": [
               "match",
-              ["get", "fcode"],
+              ["get", "FCode"],
               [46003],
               "hsl(80, 100%, 50%)",
               [46007],
@@ -61,7 +61,7 @@
           "line-dasharray": [2, 2],
           "line-color": [
               "match",
-              ["get", "fcode"],
+              ["get", "FCode"],
               [
                 42800,
                 42801,
@@ -96,7 +96,7 @@
       "paint": {
           "line-color": [
               "match",
-              ["get", "fcode"],
+              ["get", "FCode"],
               [
                 42800,
                 42801,
