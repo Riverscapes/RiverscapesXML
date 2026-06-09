@@ -80,6 +80,19 @@
                         "type": "string",
                         "description": "Layer theme. Used for grouping layers together in generated documentation."
                     },
+                    "summary": {
+                        "type": "string",
+                        "description": "Short summary of the layer"
+                    },
+                    "citation": {
+                        "type": "string",
+                        "description": "Citation or attribution for this layer's data"
+                    },
+                    "xml_metadata": {
+                        "type": "object",
+                        "description": "Arbitrary key/value metadata for the layer",
+                        "additionalProperties": true
+                    },
                     "columns": {
                         "type": "array",
                         "minItems": 1,
