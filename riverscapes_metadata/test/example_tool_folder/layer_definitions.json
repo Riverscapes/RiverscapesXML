@@ -1,14 +1,20 @@
 {
-  "$schema": "https://xml.riverscapes.net/riverscapes_metadata/schema/layer_definitions.schema.json",
+  "$schema": "../../schema/layer_definitions.schema.json",
   "tool_schema_version": "1.1.0",
   "layers": [
     {
       "layer_id": "VBET_DGO_POLYGONS",
       "layer_name": "VBET DGO Polygons",
       "layer_type": "Vector",
+      "summary": "Discrete Geographic Objects (DGO) representing the valley bottom split into a sampling frame of polygons where the IGO points are at the center of each polygon.",
+      "citation": "Example Citation for VBET DGO Polygons",
       "description": "Discrete Geographic Objects - The valley bottom split into a sampling frame of polygons where the IGO points are at the center of each polygon.",
       "path": "intermediates/vbet_intermediates.gpkg/vbet_dgos",
       "theme": "Outputs",
+      "xml_metadata": {
+        "key": "value",
+        "key2": "value2"
+      },
       "columns": [
         {
           "name": "fid",

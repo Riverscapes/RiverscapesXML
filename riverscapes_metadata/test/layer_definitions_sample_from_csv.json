@@ -1,6 +1,5 @@
 {
-  "$schema": "https://xml.riverscapes.net/riverscapes_metadata/schema/layer_definitions.schema.json",
-  "authority_name": "test_authority",
+  "$schema": "../schema/layer_definitions.schema.json",
   "tool_schema_version": "0.0.1",
   "layers": [
     {
@@ -11,7 +10,7 @@
       "columns": [
         {
           "name": "brat_capacity",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Existing Beaver Dam Capacity",
           "data_unit": "km^-1",
           "description": "",
@@ -23,7 +22,7 @@
         },
         {
           "name": "brat_hist_capacity",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Historical Beaver Dam Capacity",
           "data_unit": "km^-1",
           "description": "",
@@ -35,7 +34,7 @@
         },
         {
           "name": "brat_risk",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Risks to Beaver Dam Restoration",
           "data_unit": "NA",
           "description": "",
@@ -47,7 +46,7 @@
         },
         {
           "name": "brat_opportunity",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Opportunities for Beaver Dam Restoration",
           "data_unit": "NA",
           "description": "",
@@ -59,7 +58,7 @@
         },
         {
           "name": "brat_limitation",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Limiting Factors to Bever Dam Restoration",
           "data_unit": "NA",
           "description": "",
@@ -71,7 +70,7 @@
         },
         {
           "name": "brat_complex_size",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Existing Beaver Dam Complex Size",
           "data_unit": "count",
           "description": "",
@@ -83,7 +82,7 @@
         },
         {
           "name": "brat_hist_complex_size",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Historical Beaver Dam Complex Size",
           "data_unit": "count",
           "description": "",
@@ -95,7 +94,7 @@
         },
         {
           "name": "dam_setting",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Dam Setting",
           "data_unit": "NA",
           "description": "",
@@ -107,7 +106,7 @@
         },
         {
           "name": "ownership",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Ownership Code",
           "data_unit": "NA",
           "description": "",
@@ -119,7 +118,7 @@
         },
         {
           "name": "state",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "US State",
           "data_unit": "NA",
           "description": "",
@@ -131,7 +130,7 @@
         },
         {
           "name": "county",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "US County",
           "data_unit": "NA",
           "description": "",
@@ -143,7 +142,7 @@
         },
         {
           "name": "drainage_area",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Drainage Area",
           "data_unit": "km^2",
           "description": "",
@@ -155,7 +154,7 @@
         },
         {
           "name": "watershed_id",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Watershed ID",
           "data_unit": "NA",
           "description": "",
@@ -167,7 +166,7 @@
         },
         {
           "name": "stream_name",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Stream Name",
           "data_unit": "NA",
           "description": "",
@@ -203,7 +202,7 @@
         },
         {
           "name": "stream_length",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Stream Length",
           "data_unit": "m",
           "description": "",
@@ -215,7 +214,7 @@
         },
         {
           "name": "waterbody_type",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Waterbody Type",
           "data_unit": "NA",
           "description": "",
@@ -227,7 +226,7 @@
         },
         {
           "name": "waterbody_extent",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Waterbody Extent",
           "data_unit": "m^2",
           "description": "",
@@ -239,7 +238,7 @@
         },
         {
           "name": "ecoregion3",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Ecoregion 3",
           "data_unit": "NA",
           "description": "",
@@ -251,7 +250,7 @@
         },
         {
           "name": "ecoregion4",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Ecoregion 4",
           "data_unit": "NA",
           "description": "",
@@ -263,7 +262,7 @@
         },
         {
           "name": "elevation",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Elevation",
           "data_unit": "m",
           "description": "",
@@ -275,7 +274,7 @@
         },
         {
           "name": "geology",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Geology",
           "data_unit": "NA",
           "description": "",
@@ -287,7 +286,7 @@
         },
         {
           "name": "huc12",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "HUC12",
           "data_unit": "NA",
           "description": "",
@@ -299,7 +298,7 @@
         },
         {
           "name": "prim_channel_gradient",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Primary Channel Gradient",
           "data_unit": "%",
           "description": "",
@@ -311,7 +310,7 @@
         },
         {
           "name": "geom",
-          "dtype": "POINT",
+          "dtype": "GEOMETRY",
           "friendly_name": "DGO Geometry",
           "data_unit": "",
           "description": "",
@@ -323,7 +322,7 @@
         },
         {
           "name": "level_path",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Level Path",
           "data_unit": "",
           "description": "",
@@ -335,7 +334,7 @@
         },
         {
           "name": "seg_distance",
-          "dtype": "MEDIUMINT",
+          "dtype": "INTEGER",
           "friendly_name": "Segment Distance",
           "data_unit": "",
           "description": "",
@@ -347,7 +346,7 @@
         },
         {
           "name": "centerline_length",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Riverscape Length",
           "data_unit": "",
           "description": "",
@@ -359,7 +358,7 @@
         },
         {
           "name": "segment_area",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Riverscape Area",
           "data_unit": "",
           "description": "",
@@ -371,7 +370,7 @@
         },
         {
           "name": "fcode",
-          "dtype": "MEDIUMINT",
+          "dtype": "INTEGER",
           "friendly_name": "Feature Code",
           "data_unit": "",
           "description": "",
@@ -383,7 +382,7 @@
         },
         {
           "name": "rme_project_id",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "RME Project ID",
           "data_unit": "",
           "description": "",
@@ -407,7 +406,7 @@
         },
         {
           "name": "rme_version",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "RME Project Version",
           "data_unit": "",
           "description": "",
@@ -439,7 +438,7 @@
       "columns": [
         {
           "name": "fcode_desc",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Flow Type",
           "data_unit": "",
           "description": "",
@@ -451,7 +450,7 @@
         },
         {
           "name": "ownership_desc",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "Ownership",
           "data_unit": "",
           "description": "",
@@ -471,7 +470,7 @@
       "columns": [
         {
           "name": "huc",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "",
           "data_unit": "",
           "description": "",
@@ -483,7 +482,7 @@
         },
         {
           "name": "hucname",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "HUC Name",
           "data_unit": "",
           "description": "",
@@ -495,7 +494,7 @@
         },
         {
           "name": "hucstates",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "",
           "data_unit": "",
           "description": "",
@@ -507,7 +506,7 @@
         },
         {
           "name": "hucareasqkm",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "HUC Area",
           "data_unit": "",
           "description": "",
@@ -519,7 +518,7 @@
         },
         {
           "name": "hucareaacres",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "HUC Area",
           "data_unit": "",
           "description": "",
@@ -531,7 +530,7 @@
         },
         {
           "name": "dem_bins.min",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Lowest Elevation",
           "data_unit": "",
           "description": "",
@@ -543,7 +542,7 @@
         },
         {
           "name": "dem_bins.max",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "Highest Elevation",
           "data_unit": "",
           "description": "",
@@ -555,7 +554,7 @@
         },
         {
           "name": "dem_bins.geotransform",
-          "dtype": "ARRAY",
+          "dtype": "STRUCTURED",
           "friendly_name": "",
           "data_unit": "",
           "description": "",
@@ -567,7 +566,7 @@
         },
         {
           "name": "dem_bins.proj",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "",
           "data_unit": "",
           "description": "",
@@ -579,7 +578,7 @@
         },
         {
           "name": "dem_bins.nodata",
-          "dtype": "REAL",
+          "dtype": "FLOAT",
           "friendly_name": "",
           "data_unit": "",
           "description": "",
@@ -603,7 +602,7 @@
         },
         {
           "name": "dem_bins.hist_type",
-          "dtype": "TEXT",
+          "dtype": "STRING",
           "friendly_name": "",
           "data_unit": "",
           "description": "",
