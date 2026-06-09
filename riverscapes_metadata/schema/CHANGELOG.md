@@ -1,5 +1,11 @@
 # Layer Definitions Schema changes
 
+## 0.8.1
+
+### Additions
+
+* adds `summary`, `citation`, and `xml_metadata` as optional elements for layers
+
 ## 0.8.0
 
 ### Breaking changes
