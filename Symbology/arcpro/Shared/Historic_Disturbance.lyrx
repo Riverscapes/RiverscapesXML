@@ -1,0 +1,5110 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.7.0",
+  "build" : 1901,
+  "layers" : [
+    "CIMPATH=Map/historic_disturbance_tif.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "Historic Disturbance - HDst",
+      "uRI" : "CIMPATH=Map/historic_disturbance_tif.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "historic_disturbance.tif",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=..\\..\\..\\2025 CONUS\\RSContext_Sulphur_2.1.0\\vegetation",
+        "workspaceFactory" : "Raster",
+        "dataset" : "historic_disturbance.tif",
+        "datasetType" : "esriDTAny"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterUniqueValueColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "defaultColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            0,
+            0,
+            0,
+            100
+          ]
+        },
+        "fieldName" : "Class",
+        "groups" : [
+          {
+            "type" : "CIMRasterUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Fill-NoData"
+                ],
+                "label" : "Fill-NoData",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    255,
+                    255,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Fill-Not Mapped"
+                ],
+                "label" : "Fill-Not Mapped",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    111,
+                    111,
+                    111,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Non Disturbed"
+                ],
+                "label" : "Non Disturbed",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "colorSpace" : {
+                    "type" : "CIMICCColorSpace",
+                    "url" : "sRGB IEC61966-2.1"
+                  },
+                  "values" : [
+                    0,
+                    0,
+                    0,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Fire"
+                ],
+                "label" : "Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "colorSpace" : {
+                    "type" : "CIMICCColorSpace",
+                    "url" : "sRGB IEC61966-2.1"
+                  },
+                  "values" : [
+                    255,
+                    0,
+                    0,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Clearcut"
+                ],
+                "label" : "Clearcut",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    128,
+                    97,
+                    69,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Harvest"
+                ],
+                "label" : "Harvest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    255,
+                    119,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Thinning"
+                ],
+                "label" : "Thinning",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    181,
+                    156,
+                    114,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Mastication"
+                ],
+                "label" : "Mastication",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    102,
+                    0,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Other Mechanical"
+                ],
+                "label" : "Other Mechanical",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    96,
+                    255,
+                    71,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Wildfire"
+                ],
+                "label" : "Wildfire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    0,
+                    0,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Wildland Fire Use"
+                ],
+                "label" : "Wildland Fire Use",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    0,
+                    0,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Prescribed Fire"
+                ],
+                "label" : "Prescribed Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    173,
+                    0,
+                    28,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Wildland Fire"
+                ],
+                "label" : "Wildland Fire",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    0,
+                    0,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Weather"
+                ],
+                "label" : "Weather",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    191,
+                    191,
+                    191,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Insects"
+                ],
+                "label" : "Insects",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    146,
+                    232,
+                    215,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Disease"
+                ],
+                "label" : "Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    4,
+                    45,
+                    117,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Unknown"
+                ],
+                "label" : "Unknown",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    122,
+                    127,
+                    117,
+                    100
+                  ]
+                },
+                "visible" : true
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Insects/Disease"
+                ],
+                "label" : "Insects/Disease",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    0,
+                    255,
+                    100
+                  ]
+                },
+                "visible" : true
+              }
+            ],
+            "heading" : "Class"
+          }
+        ],
+        "colorRamp" : {
+          "type" : "CIMMultipartColorRamp",
+          "colorRamps" : [
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            },
+            {
+              "type" : "CIMLinearContinuousColorRamp"
+            }
+          ],
+          "weights" : [
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198,
+            0.00085910652920962198
+          ]
+        },
+        "isDefaultColorVisible" : true
+      },
+      "attributeTable" : {
+        "type" : "CIMRasterTable",
+        "displayField" : "Class",
+        "editable" : true
+      }
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "preloadTextureCutoffHigh" : 0.29999999999999999,
+        "preloadTextureCutoffLow" : 0.59999999999999998,
+        "textureCutoffHigh" : 0.29999999999999999,
+        "textureCutoffLow" : 0.59999999999999998,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "lighting" : "OneSideDataNormal",
+        "optimizeMarkerTransparency" : true
+      },
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
