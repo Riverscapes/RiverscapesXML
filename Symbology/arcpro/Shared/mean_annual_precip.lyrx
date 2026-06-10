@@ -1,0 +1,705 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.7.0",
+  "build" : 1901,
+  "layers" : [
+    "CIMPATH=Map/precipitation_tif.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "Mean Annual Precipitation (mm)",
+      "uRI" : "CIMPATH=Map/precipitation_tif.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "precipitation.tif",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=..\\..\\2025 CONUS\\RSContext_Sulphur_2.1.0\\climate",
+        "workspaceFactory" : "Raster",
+        "dataset" : "precipitation.tif",
+        "datasetType" : "esriDTAny"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterStretchColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "backgroundColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "colorRamp" : {
+          "type" : "CIMMultipartColorRamp",
+          "colorRamps" : [
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  359.06,
+                  100,
+                  50.200000000000003,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  30.120000000000001,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Clockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  30.120000000000001,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  60,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Clockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  60,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  120,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Clockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  120,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  180,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Clockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  180,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  240.47,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Clockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  240.47,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  300,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Clockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  300,
+                  100,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  300,
+                  1.1799999999999999,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Counterclockwise"
+            },
+            {
+              "type" : "CIMPolarContinuousColorRamp",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "fromColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  300,
+                  1.1799999999999999,
+                  100,
+                  100
+                ]
+              },
+              "toColor" : {
+                "type" : "CIMHSVColor",
+                "colorSpace" : {
+                  "type" : "CIMICCColorSpace",
+                  "url" : "sRGB IEC61966-2.1"
+                },
+                "values" : [
+                  -1,
+                  0,
+                  100,
+                  100
+                ]
+              },
+              "interpolationSpace" : "HSV",
+              "polarDirection" : "Counterclockwise"
+            }
+          ],
+          "weights" : [
+            0.16300000000000003,
+            0.10699999999999996,
+            0.11000000000000001,
+            0.12426706827309246,
+            0.12573293172690758,
+            0.059759036144578379,
+            0.19377510040160645,
+            0.1164658634538152
+          ]
+        },
+        "colorScheme" : "Multipart Color Scheme",
+        "customStretchMax" : 1,
+        "gammaValue" : 1,
+        "maxPercent" : 0.5,
+        "minPercent" : 0.5,
+        "standardDeviationParam" : 2,
+        "statsType" : "AreaOfView",
+        "stretchClasses" : [
+          {
+            "type" : "CIMRasterStretchClass",
+            "label" : "264.29",
+            "value" : 264.29000854492188
+          },
+          {
+            "type" : "CIMRasterStretchClass",
+            "value" : 542.97499084472656
+          },
+          {
+            "type" : "CIMRasterStretchClass",
+            "label" : "821.66",
+            "value" : 821.65997314453125
+          }
+        ],
+        "stretchStats" : {
+          "type" : "StatsHistogram",
+          "min" : 264.29000854492188,
+          "max" : 821.65997314453125,
+          "mean" : 428.17531992384232,
+          "stddev" : 111.94819290370016,
+          "limitMin" : 264.29000854492188,
+          "limitMax" : 821.65997314453125,
+          "histogram" : [
+            0.0030991735537190084,
+            0.0030991735537190084,
+            0.0020661157024793389,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0072314049586776862,
+            0.0020661157024793389,
+            0.0041322314049586778,
+            0.0072314049586776862,
+            0.0072314049586776862,
+            0.012396694214876033,
+            0.01962809917355372,
+            0.016528925619834711,
+            0.011363636363636364,
+            0.012396694214876033,
+            0.0092975206611570251,
+            0.014462809917355372,
+            0.0051652892561983473,
+            0.010330578512396695,
+            0.012396694214876033,
+            0.0072314049586776862,
+            0.0072314049586776862,
+            0.016528925619834711,
+            0.0051652892561983473,
+            0.012396694214876033,
+            0.0061983471074380167,
+            0.0061983471074380167,
+            0.014462809917355372,
+            0.0030991735537190084,
+            0.0092975206611570251,
+            0.010330578512396695,
+            0.0061983471074380167,
+            0.0082644628099173556,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0030991735537190084,
+            0.0041322314049586778,
+            0.0072314049586776862,
+            0.0061983471074380167,
+            0.0020661157024793389,
+            0.0041322314049586778,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0041322314049586778,
+            0.0051652892561983473,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0072314049586776862,
+            0.0030991735537190084,
+            0.0061983471074380167,
+            0.013429752066115703,
+            0.0061983471074380167,
+            0.0061983471074380167,
+            0.0082644628099173556,
+            0.0020661157024793389,
+            0.0072314049586776862,
+            0.0030991735537190084,
+            0.0092975206611570251,
+            0.0082644628099173556,
+            0.0041322314049586778,
+            0.0072314049586776862,
+            0.0051652892561983473,
+            0.0082644628099173556,
+            0.0061983471074380167,
+            0.0061983471074380167,
+            0.0061983471074380167,
+            0.0072314049586776862,
+            0.0072314049586776862,
+            0.011363636363636364,
+            0.0082644628099173556,
+            0.0072314049586776862,
+            0.0092975206611570251,
+            0.0051652892561983473,
+            0.012396694214876033,
+            0.013429752066115703,
+            0.0051652892561983473,
+            0.0072314049586776862,
+            0.011363636363636364,
+            0.011363636363636364,
+            0.011363636363636364,
+            0.0082644628099173556,
+            0.0072314049586776862,
+            0.0072314049586776862,
+            0.0072314049586776862,
+            0.011363636363636364,
+            0.0041322314049586778,
+            0.0051652892561983473,
+            0.0030991735537190084,
+            0.0092975206611570251,
+            0.0061983471074380167,
+            0.0051652892561983473,
+            0.0051652892561983473,
+            0.0061983471074380167,
+            0.0030991735537190084,
+            0,
+            0.0030991735537190084,
+            0.0072314049586776862,
+            0.0051652892561983473,
+            0.0051652892561983473,
+            0,
+            0.0020661157024793389,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0030991735537190084,
+            0.0030991735537190084,
+            0.0072314049586776862,
+            0.0010330578512396695,
+            0.0030991735537190084,
+            0.0041322314049586778,
+            0.0072314049586776862,
+            0.0020661157024793389,
+            0.0041322314049586778,
+            0.0030991735537190084,
+            0.0061983471074380167,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0041322314049586778,
+            0.0051652892561983473,
+            0.0030991735537190084,
+            0.0051652892561983473,
+            0.0051652892561983473,
+            0.0020661157024793389,
+            0.0030991735537190084,
+            0.0041322314049586778,
+            0.0061983471074380167,
+            0.0072314049586776862,
+            0.0082644628099173556,
+            0.0061983471074380167,
+            0.0082644628099173556,
+            0.0061983471074380167,
+            0.0051652892561983473,
+            0.0092975206611570251,
+            0.0061983471074380167,
+            0.0072314049586776862,
+            0.0030991735537190084,
+            0.0061983471074380167,
+            0.0051652892561983473,
+            0.0051652892561983473,
+            0.0051652892561983473,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0.0051652892561983473,
+            0.0061983471074380167,
+            0.0020661157024793389,
+            0.0030991735537190084,
+            0,
+            0.0030991735537190084,
+            0.0020661157024793389,
+            0.0041322314049586778,
+            0.0030991735537190084,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0.0020661157024793389,
+            0.0030991735537190084,
+            0.0020661157024793389,
+            0,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0.0041322314049586778,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0.0030991735537190084,
+            0,
+            0.0020661157024793389,
+            0.0020661157024793389,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0,
+            0,
+            0,
+            0.0010330578512396695,
+            0,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0.0020661157024793389,
+            0.0020661157024793389,
+            0,
+            0,
+            0.0020661157024793389,
+            0,
+            0,
+            0.0010330578512396695,
+            0,
+            0.0010330578512396695,
+            0.0020661157024793389,
+            0,
+            0,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0,
+            0,
+            0,
+            0,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0,
+            0.0010330578512396695,
+            0,
+            0,
+            0.0010330578512396695,
+            0,
+            0.0010330578512396695,
+            0.0010330578512396695,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.0010330578512396695,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.0010330578512396695,
+            0,
+            0.0020661157024793389,
+            0.0020661157024793389,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.0010330578512396695,
+            0,
+            0,
+            0.0020661157024793389,
+            0.0010330578512396695,
+            0,
+            0,
+            0,
+            0,
+            0.0010330578512396695
+          ],
+          "nsamples" : 968,
+          "resolution" : 2.1857645670572916
+        },
+        "stretchType" : "PercentMinimumMaximum"
+      }
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
+  "elevationSurfaceLayerDefinitions" : [
+    {
+      "type" : "CIMElevationSurfaceLayer",
+      "name" : "Ground",
+      "uRI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "Ground",
+      "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "preloadTextureCutoffHigh" : 0.29999999999999999,
+        "preloadTextureCutoffLow" : 0.59999999999999998,
+        "textureCutoffHigh" : 0.29999999999999999,
+        "textureCutoffLow" : 0.59999999999999998,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "lighting" : "OneSideDataNormal",
+        "optimizeMarkerTransparency" : true
+      },
+      "layerType" : "Operational",
+      "showLegends" : false,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "elevationMode" : "BaseGlobeSurface",
+      "verticalExaggeration" : 1,
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
