@@ -1,15 +1,15 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.3.0",
-  "build" : 52636,
+  "version" : "3.7.0",
+  "build" : 1901,
   "layers" : [
-    "CIMPATH=map/ecoregions.json"
+    "CIMPATH=Map/ecoregions4.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "ecoregions",
-      "uRI" : "CIMPATH=map/ecoregions.json",
+      "name" : "Level 3 Ecoregions",
+      "uRI" : "CIMPATH=Map/ecoregions4.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
@@ -17,9 +17,8 @@
       "description" : "ecoregions",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json"
       },
-      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -36,193 +35,9 @@
         "type" : "CIMFeatureTable",
         "displayField" : "US_L4NAME",
         "editable" : true,
-        "fieldDescriptions" : [
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "FID",
-            "fieldName" : "FID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L4CODE",
-            "fieldName" : "US_L4CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L4NAME",
-            "fieldName" : "US_L4NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L3CODE",
-            "fieldName" : "US_L3CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L3NAME",
-            "fieldName" : "US_L3NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L3CODE",
-            "fieldName" : "NA_L3CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L3NAME",
-            "fieldName" : "NA_L3NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L2CODE",
-            "fieldName" : "NA_L2CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L2NAME",
-            "fieldName" : "NA_L2NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L1CODE",
-            "fieldName" : "NA_L1CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L1NAME",
-            "fieldName" : "NA_L1NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "STATE_NAME",
-            "fieldName" : "STATE_NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "EPA_REGION",
-            "fieldName" : "EPA_REGION",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L4_KEY",
-            "fieldName" : "L4_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L3_KEY",
-            "fieldName" : "L3_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L2_KEY",
-            "fieldName" : "L2_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L1_KEY",
-            "fieldName" : "L1_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Leng",
-            "fieldName" : "Shape_Leng",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          }
-        ],
-        "timeFields" : {
-          "type" : "CIMTimeTableDefinition"
-        },
-        "timeDefinition" : {
-          "type" : "CIMTimeDataDefinition",
-          "hasLiveData" : true
-        },
-        "timeDisplayDefinition" : {
-          "type" : "CIMTimeDisplayDefinition",
-          "timeInterval" : 0,
-          "timeIntervalUnits" : "esriTimeUnitsHours",
-          "timeOffsetUnits" : "esriTimeUnitsYears"
-        },
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\1701020301_landers\\Riverscapes_Context_Landers\\ecoregions",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\2025 CONUS\\RSContext_Sulphur_2.1.0\\ecoregions",
           "workspaceFactory" : "Shapefile",
           "dataset" : "ecoregions.shp",
           "datasetType" : "esriDTFeatureClass"
@@ -231,30 +46,30 @@
         "searchOrder" : "esriSearchOrderSpatial"
       },
       "htmlPopupEnabled" : true,
-      "htmlPopupFormat" : {
-        "type" : "CIMHtmlPopupFormat",
-        "htmlUseCodedDomainValues" : true,
-        "htmlPresentationStyle" : "TwoColumnTable"
-      },
-      "isFlattened" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
+      "featureElevationExpressionInfo" : {
+        "type" : "CIMExpressionInfo",
+        "title" : "Custom",
+        "expression" : "0",
+        "returnType" : "Default"
+      },
       "featureBlendingMode" : "Alpha",
       "layerEffectsMode" : "Layer",
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
           "expressionTitle" : "Custom",
-          "expression" : "[NA_L3CODE]",
-          "expressionEngine" : "VBScript",
+          "expression" : "$feature.NA_L3CODE + \" \" + $feature.NA_L3NAME",
+          "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
             "featureType" : "Polygon",
             "avoidPolygonHoles" : true,
             "canOverrunFeature" : true,
-            "canPlaceLabelOutsidePolygon" : false,
+            "canPlaceLabelOutsidePolygon" : true,
             "canRemoveOverlappingLabel" : true,
             "canStackLabel" : true,
             "centerLabelAnchorType" : "Symbol",
@@ -272,7 +87,7 @@
             "graticuleAlignmentType" : "Straight",
             "keyNumberGroupName" : "Default",
             "labelBuffer" : 15,
-            "labelLargestPolygon" : false,
+            "labelLargestPolygon" : true,
             "labelPriority" : -1,
             "labelStackingProperties" : {
               "type" : "CIMMaplexLabelStackingProperties",
@@ -293,12 +108,14 @@
                   "splitAfter" : true
                 }
               ],
-              "trimStackingSeparators" : true
+              "trimStackingSeparators" : true,
+              "preferToStackLongLabels" : true
             },
             "lineFeatureType" : "General",
             "linePlacementMethod" : "OffsetCurvedFromLine",
-            "maximumLabelOverrun" : 100,
+            "maximumLabelOverrun" : 80,
             "maximumLabelOverrunUnit" : "Point",
+            "measureFromClippedFeatureGeometry" : true,
             "minimumFeatureSizeUnit" : "Map",
             "multiPartOption" : "OneLabelPerPart",
             "offsetAlongLineProperties" : {
@@ -343,7 +160,7 @@
             "primaryOffsetUnit" : "Point",
             "removeAmbiguousLabels" : "All",
             "removeExtraWhiteSpace" : true,
-            "repetitionIntervalUnit" : "Map",
+            "repetitionIntervalUnit" : "Point",
             "rotationProperties" : {
               "type" : "CIMMaplexRotationProperties",
               "rotationType" : "Arithmetic",
@@ -363,10 +180,11 @@
             "truncationMarkerCharacter" : ".",
             "truncationMinimumLength" : 1,
             "truncationPreferredCharacters" : "aeiou",
+            "truncationExcludedCharacters" : "0123456789",
             "polygonAnchorPointPerimeterInsetUnit" : "Point"
           },
-          "name" : "Default",
-          "priority" : 2,
+          "name" : "Class 1",
+          "priority" : -1,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
             "featureType" : "Line",
@@ -411,33 +229,21 @@
             "symbol" : {
               "type" : "CIMTextSymbol",
               "blockProgression" : "TTB",
-              "compatibilityMode" : true,
               "depth3D" : 1,
-              "drawSoftHyphen" : true,
               "extrapolateBaselines" : true,
-              "flipAngle" : 90,
               "fontEffects" : "Normal",
               "fontEncoding" : "Unicode",
               "fontFamilyName" : "Arial",
               "fontStyleName" : "Regular",
-              "fontType" : "Unspecified",
+              "fontType" : "TrueType",
               "haloSize" : 1,
               "height" : 8,
               "hinting" : "Default",
-              "horizontalAlignment" : "Center",
+              "horizontalAlignment" : "Left",
               "kerning" : true,
               "letterWidth" : 100,
               "ligatures" : true,
               "lineGapType" : "ExtraLeading",
-              "shadowColor" : {
-                "type" : "CIMRGBColor",
-                "values" : [
-                  0,
-                  0,
-                  0,
-                  100
-                ]
-              },
               "symbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
@@ -447,15 +253,22 @@
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
-                        255,
-                        255,
-                        255,
+                        0,
+                        0,
+                        0,
                         100
                       ]
                     }
                   }
                 ],
                 "angleAlignment" : "Map"
+              },
+              "symbol3DProperties" : {
+                "type" : "CIM3DSymbolProperties",
+                "dominantSizeAxis3D" : "Z",
+                "rotationOrder3D" : "YXZ",
+                "scaleZ" : 1,
+                "scaleY" : 1
               },
               "textCase" : "Normal",
               "textDirection" : "LTR",
@@ -506,6 +319,10 @@
                 "anchor3D" : "Center",
                 "color" : {
                   "type" : "CIMRGBColor",
+                  "colorSpace" : {
+                    "type" : "CIMICCColorSpace",
+                    "url" : "sRGB IEC61966-2.1"
+                  },
                   "values" : [
                     110,
                     110,
@@ -519,6 +336,10 @@
                 "enable" : true,
                 "color" : {
                   "type" : "CIMRGBColor",
+                  "colorSpace" : {
+                    "type" : "CIMICCColorSpace",
+                    "url" : "sRGB IEC61966-2.1"
+                  },
                   "values" : [
                     0,
                     0,
@@ -561,6 +382,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -574,6 +399,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             222,
                             255,
@@ -618,6 +447,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -631,6 +464,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             167,
                             81,
@@ -675,6 +512,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -688,6 +529,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             246,
                             83,
@@ -732,6 +577,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -745,6 +594,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             204,
                             51,
@@ -789,6 +642,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -802,6 +659,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             31,
                             48,
@@ -846,6 +707,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -859,6 +724,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             0,
                             71,
@@ -903,6 +772,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -916,6 +789,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             141,
                             2,
@@ -960,6 +837,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -973,6 +854,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             207,
                             209,
@@ -1017,6 +902,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1030,6 +919,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             143,
                             0,
@@ -1074,6 +967,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1087,6 +984,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             74,
                             39,
@@ -1131,6 +1032,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1144,6 +1049,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             112,
                             41,
@@ -1188,6 +1097,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1201,6 +1114,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             177,
                             132,
@@ -1245,6 +1162,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1258,6 +1179,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             210,
@@ -1302,6 +1227,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1315,6 +1244,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             20,
@@ -1359,6 +1292,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1372,6 +1309,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             254,
                             152,
@@ -1416,6 +1357,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1429,6 +1374,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             132,
@@ -1473,6 +1422,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1486,6 +1439,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             105,
                             62,
@@ -1530,6 +1487,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1543,6 +1504,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             194,
                             112,
@@ -1587,6 +1552,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1600,6 +1569,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             51,
                             33,
@@ -1644,6 +1617,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1657,6 +1634,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             0,
                             157,
@@ -1701,6 +1682,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1714,6 +1699,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             20,
                             248,
@@ -1758,6 +1747,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1771,6 +1764,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             102,
                             252,
@@ -1815,6 +1812,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1828,6 +1829,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             138,
                             69,
@@ -1871,6 +1876,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1884,6 +1893,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             177,
                             131,
@@ -1928,6 +1941,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1941,6 +1958,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             103,
                             74,
@@ -1985,6 +2006,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -1998,6 +2023,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             210,
                             132,
@@ -2042,6 +2071,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2055,6 +2088,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             220,
                             204,
@@ -2099,6 +2136,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2112,6 +2153,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             138,
                             126,
@@ -2156,6 +2201,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2169,6 +2218,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             64,
                             37,
@@ -2212,6 +2265,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2225,6 +2282,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             223,
                             206,
@@ -2268,6 +2329,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2281,6 +2346,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             186,
                             165,
@@ -2325,6 +2394,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2338,6 +2411,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             102,
                             102,
@@ -2382,6 +2459,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2395,6 +2476,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             158,
                             174,
@@ -2439,6 +2524,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2452,6 +2541,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             204,
                             202,
@@ -2496,6 +2589,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2509,6 +2606,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             143,
                             143,
@@ -2553,6 +2654,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2566,6 +2671,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             153,
                             255,
@@ -2610,6 +2719,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2623,6 +2736,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             97,
                             223,
@@ -2667,6 +2784,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2680,6 +2801,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             29,
                             151,
@@ -2724,6 +2849,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2737,6 +2866,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             171,
                             39,
@@ -2781,6 +2914,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2794,6 +2931,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             124,
                             9,
@@ -2838,6 +2979,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2851,6 +2996,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             254,
                             111,
@@ -2895,6 +3044,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2908,6 +3061,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             8,
@@ -2952,6 +3109,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -2965,6 +3126,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             228,
                             77,
@@ -3009,6 +3174,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3022,6 +3191,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             166,
                             44,
@@ -3066,6 +3239,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3079,6 +3256,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             127,
@@ -3123,6 +3304,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3136,6 +3321,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             236,
                             88,
@@ -3180,6 +3369,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3193,6 +3386,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             197,
                             98,
@@ -3237,6 +3434,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3250,6 +3451,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             254,
                             216,
@@ -3294,6 +3499,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3307,6 +3516,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             192,
                             128,
@@ -3351,6 +3564,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3364,6 +3581,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             244,
                             194,
@@ -3408,6 +3629,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3421,6 +3646,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             185,
@@ -3465,6 +3694,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3478,6 +3711,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             184,
                             134,
@@ -3522,6 +3759,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3535,6 +3776,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             235,
                             242,
@@ -3579,6 +3824,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3592,6 +3841,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             172,
                             182,
@@ -3636,6 +3889,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3649,6 +3906,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             207,
                             181,
@@ -3693,6 +3954,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3706,6 +3971,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             242,
                             242,
@@ -3750,6 +4019,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3763,6 +4036,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             218,
                             230,
@@ -3807,6 +4084,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3820,6 +4101,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3864,6 +4149,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3877,6 +4166,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             250,
                             229,
@@ -3921,6 +4214,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3934,6 +4231,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             250,
                             194,
@@ -3978,6 +4279,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -3991,6 +4296,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4035,6 +4344,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4048,6 +4361,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             208,
                             0,
@@ -4092,6 +4409,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4105,6 +4426,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             97,
                             64,
@@ -4149,6 +4474,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4162,6 +4491,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             205,
                             177,
@@ -4206,6 +4539,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4219,6 +4556,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             164,
                             89,
@@ -4263,6 +4604,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4276,6 +4621,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             142,
@@ -4320,6 +4669,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4333,6 +4686,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             72,
                             59,
@@ -4377,6 +4734,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4390,6 +4751,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             192,
                             79,
@@ -4434,6 +4799,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4447,6 +4816,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             88,
                             16,
@@ -4491,6 +4864,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4504,6 +4881,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             199,
                             21,
@@ -4548,6 +4929,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4561,6 +4946,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             237,
                             201,
@@ -4605,6 +4994,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4618,6 +5011,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             253,
                             191,
@@ -4662,6 +5059,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4675,6 +5076,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             153,
                             250,
@@ -4719,6 +5124,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4732,6 +5141,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             168,
                             214,
@@ -4776,6 +5189,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4789,6 +5206,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             90,
                             237,
@@ -4833,6 +5254,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4846,6 +5271,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             61,
                             140,
@@ -4889,6 +5318,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4902,6 +5335,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             0,
                             94,
@@ -4946,6 +5383,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -4959,6 +5400,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             117,
                             145,
@@ -5003,6 +5448,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5016,6 +5465,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             130,
                             255,
@@ -5060,6 +5513,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5073,6 +5530,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             181,
                             200,
@@ -5117,6 +5578,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5130,6 +5595,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             112,
                             231,
@@ -5174,6 +5643,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5187,6 +5660,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             45,
                             159,
@@ -5231,6 +5708,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5244,6 +5725,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             207,
                             254.84999999999999,
@@ -5288,6 +5773,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5301,6 +5790,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             151,
                             197,
@@ -5345,6 +5838,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5358,6 +5855,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             202,
                             254,
@@ -5402,6 +5903,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5415,6 +5920,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             84,
                             114,
@@ -5459,6 +5968,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5472,6 +5985,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             76,
                             187,
@@ -5516,6 +6033,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             255,
                             255,
@@ -5529,6 +6050,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             56,
                             158,
@@ -5555,6 +6080,7 @@
             "heading" : "NA_L3CODE"
           }
         ],
+        "isDefaultSymbolVisible" : true,
         "polygonSymbolColorTarget" : "Fill"
       },
       "scaleSymbols" : true,
@@ -5567,13 +6093,28 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "uRI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "preloadTextureCutoffHigh" : 0.29999999999999999,
+        "preloadTextureCutoffLow" : 0.59999999999999998,
+        "textureCutoffHigh" : 0.29999999999999999,
+        "textureCutoffLow" : 0.59999999999999998,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "lighting" : "OneSideDataNormal",
+        "optimizeMarkerTransparency" : true
+      },
       "layerType" : "Operational",
       "showLegends" : false,
       "visibility" : true,

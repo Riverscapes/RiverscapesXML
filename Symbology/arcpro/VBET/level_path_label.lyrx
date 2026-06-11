@@ -1,25 +1,25 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.3.0",
-  "build" : 52636,
+  "version" : "3.7.0",
+  "build" : 1901,
   "layers" : [
-    "CIMPATH=map/estimated_channel__channel_area_input_3.json"
+    "CIMPATH=Map/main_channel_area_polygons3.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "Level Path Label",
-      "uRI" : "CIMPATH=map/estimated_channel__channel_area_input_3.json",
+      "uRI" : "CIMPATH=Map/main_channel_area_polygons3.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/31bcdddb1840dae495ee1cd475a6fd55.xml",
       "useSourceMetadata" : true,
-      "description" : "Estimated Channel (Channel Area Input)",
+      "description" : "main.channel_area_polygons",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json"
       },
+      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -36,549 +36,60 @@
         "type" : "CIMFeatureTable",
         "displayField" : "GNIS_Name",
         "editable" : true,
-        "fieldDescriptions" : [
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "fid",
-            "fieldName" : "fid",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "geom",
-            "fieldName" : "geom",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "GNIS_ID",
-            "fieldName" : "GNIS_ID",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "GNIS_Name",
-            "fieldName" : "GNIS_Name",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ReachCode",
-            "fieldName" : "ReachCode",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "FType",
-            "fieldName" : "FType",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "FCode",
-            "fieldName" : "FCode",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NHDPlusID",
-            "fieldName" : "NHDPlusID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "TotDASqKM",
-            "fieldName" : "TotDASqKM",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "DivDASqKM",
-            "fieldName" : "DivDASqKM",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "level_path",
-            "fieldName" : "level_path",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "downstream_level_path",
-            "fieldName" : "downstream_level_path",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "upstream_level_path",
-            "fieldName" : "upstream_level_path",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "divergence",
-            "fieldName" : "divergence",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "stream_order",
-            "fieldName" : "stream_order",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ownership",
-            "fieldName" : "ownership",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "us_state",
-            "fieldName" : "us_state",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ecoregion_iii",
-            "fieldName" : "ecoregion_iii",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "ecoregion_iv",
-            "fieldName" : "ecoregion_iv",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "bankfull_m",
-            "fieldName" : "bankfull_m",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "area_m2",
-            "fieldName" : "area_m2",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          }
-        ],
-        "timeFields" : {
-          "type" : "CIMTimeTableDefinition"
-        },
-        "timeDefinition" : {
-          "type" : "CIMTimeDataDefinition",
-          "hasLiveData" : true
-        },
-        "timeDisplayDefinition" : {
-          "type" : "CIMTimeDisplayDefinition",
-          "timeInterval" : 0,
-          "timeIntervalUnits" : "esriTimeUnitsHours",
-          "timeOffsetUnits" : "esriTimeUnitsYears"
-        },
         "dataConnection" : {
-          "type" : "CIMSqlQueryDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=OSA;DATABASE=..\\..\\Curation_Testing\\1601010102_sulphur\\VBET_Sulphur\\inputs\\vbet_inputs.gpkg",
+          "type" : "CIMStandardDataConnection",
+          "workspaceConnectionString" : "DATABASE=..\\..\\2025 CONUS\\VBET_Sulphur_4.1.2\\inputs\\vbet_inputs.gpkg",
           "workspaceFactory" : "Sql",
-          "dataset" : "main.%channel_area_polygons",
-          "datasetType" : "esriDTFeatureClass",
-          "sqlQuery" : "select fid,geom,GNIS_ID,GNIS_Name,ReachCode,FType,FCode,NHDPlusID,TotDASqKM,DivDASqKM,level_path,downstream_level_path,upstream_level_path,divergence,stream_order,ownership,us_state,ecoregion_iii,ecoregion_iv,bankfull_m,area_m2 from main.channel_area_polygons",
-          "srid" : "4326",
-          "spatialReference" : {
-            "wkid" : 4326,
-            "latestWkid" : 4326,
-            "xyTolerance" : 8.983152841195215e-09,
-            "zTolerance" : 0.001,
-            "mTolerance" : 0.001,
-            "falseX" : -400,
-            "falseY" : -400,
-            "xyUnits" : 999999999.99999988,
-            "falseZ" : -100000,
-            "zUnits" : 10000,
-            "falseM" : -100000,
-            "mUnits" : 10000
-          },
-          "oIDFields" : "fid",
-          "geometryType" : "esriGeometryPolygon",
-          "queryFields" : [
-            {
-              "name" : "fid",
-              "type" : "esriFieldTypeBigInteger",
-              "isNullable" : false,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "required" : true,
-              "editable" : false,
-              "dbmsType" : 11
-            },
-            {
-              "name" : "geom",
-              "type" : "esriFieldTypeGeometry",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "geometryDef" : {
-                "avgNumPoints" : 0,
-                "geometryType" : "esriGeometryPolygon",
-                "hasM" : false,
-                "hasZ" : false,
-                "spatialReference" : {
-                  "wkid" : 4326,
-                  "latestWkid" : 4326,
-                  "xyTolerance" : 8.983152841195215e-09,
-                  "zTolerance" : 0.001,
-                  "mTolerance" : 0.001,
-                  "falseX" : -400,
-                  "falseY" : -400,
-                  "xyUnits" : 999999999.99999988,
-                  "falseZ" : -100000,
-                  "zUnits" : 10000,
-                  "falseM" : -100000,
-                  "mUnits" : 10000
-                }
-              },
-              "dbmsType" : 8
-            },
-            {
-              "name" : "GNIS_ID",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 10,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "GNIS_Name",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 65,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "ReachCode",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 14,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 5
-            },
-            {
-              "name" : "FType",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "FCode",
-              "type" : "esriFieldTypeInteger",
-              "isNullable" : true,
-              "length" : 4,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 2
-            },
-            {
-              "name" : "NHDPlusID",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "TotDASqKM",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "DivDASqKM",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "level_path",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "downstream_level_path",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "upstream_level_path",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "divergence",
-              "type" : "esriFieldTypeBigInteger",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 11
-            },
-            {
-              "name" : "stream_order",
-              "type" : "esriFieldTypeBigInteger",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 11
-            },
-            {
-              "name" : "ownership",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 2147483647,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 13
-            },
-            {
-              "name" : "us_state",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 2147483647,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 13
-            },
-            {
-              "name" : "ecoregion_iii",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 2147483647,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 13
-            },
-            {
-              "name" : "ecoregion_iv",
-              "type" : "esriFieldTypeString",
-              "isNullable" : true,
-              "length" : 2147483647,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 13
-            },
-            {
-              "name" : "bankfull_m",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            },
-            {
-              "name" : "area_m2",
-              "type" : "esriFieldTypeDouble",
-              "isNullable" : true,
-              "length" : 8,
-              "precision" : 0,
-              "scale" : 0,
-              "dbmsType" : 4
-            }
-          ],
-          "spatialStorageType" : 11,
-          "isTableBased" : true,
-          "mappedOIDFieldLength" : "OID64Bit"
+          "dataset" : "channel_area_polygons",
+          "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
       },
       "htmlPopupEnabled" : true,
-      "htmlPopupFormat" : {
-        "type" : "CIMHtmlPopupFormat",
-        "htmlUseCodedDomainValues" : true,
-        "htmlPresentationStyle" : "TwoColumnTable"
-      },
-      "isFlattened" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
+      "featureElevationExpressionInfo" : {
+        "type" : "CIMExpressionInfo",
+        "title" : "Custom",
+        "expression" : "0",
+        "returnType" : "Default"
+      },
       "featureBlendingMode" : "Alpha",
       "layerEffectsMode" : "Layer",
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
-          "expression" : "[level_path]",
-          "expressionEngine" : "VBScript",
+          "expressionTitle" : "Custom",
+          "expression" : "$feature.level_path",
+          "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
             "featureType" : "Polygon",
-            "avoidOverlappingLabeledPolygonsAsIfHoles" : true,
             "avoidPolygonHoles" : true,
             "canOverrunFeature" : true,
             "canPlaceLabelOutsidePolygon" : true,
-            "canRemoveOverlappingLabel" : false,
-            "canStackLabel" : false,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
             "centerLabelAnchorType" : "Symbol",
-            "connectionType" : "MinimizeLabels",
+            "connectionType" : "Unambiguous",
             "constrainOffset" : "NoConstraint",
-            "contourAlignmentType" : "Uphill",
-            "contourLadderType" : "None",
-            "contourMaximumAngle" : 0,
-            "enableConnection" : false,
-            "featureWeight" : 100,
-            "fontHeightReductionLimit" : 0,
-            "fontHeightReductionStep" : 0,
-            "fontWidthReductionLimit" : 0,
-            "fontWidthReductionStep" : 0,
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
             "graticuleAlignmentType" : "Straight",
-            "isLabelBufferHardConstraint" : true,
-            "isMinimumSizeBasedOnArea" : true,
-            "labelBuffer" : 20,
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
             "labelLargestPolygon" : true,
-            "labelPriority" : 0,
+            "labelPriority" : -1,
             "labelStackingProperties" : {
               "type" : "CIMMaplexLabelStackingProperties",
               "stackAlignment" : "ChooseBest",
@@ -598,14 +109,16 @@
                   "splitAfter" : true
                 }
               ],
-              "trimStackingSeparators" : true
+              "trimStackingSeparators" : true,
+              "preferToStackLongLabels" : true
             },
             "lineFeatureType" : "General",
-            "linePlacementMethod" : "CenteredHorizontalOnLine",
-            "maximumLabelOverrun" : 36,
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 80,
             "maximumLabelOverrunUnit" : "Point",
+            "measureFromClippedFeatureGeometry" : true,
             "minimumFeatureSizeUnit" : "Map",
-            "multiPartOption" : "OneLabelPerFeature",
+            "multiPartOption" : "OneLabelPerPart",
             "offsetAlongLineProperties" : {
               "type" : "CIMMaplexOffsetAlongLineProperties",
               "placementMethod" : "BestPositionAlongLine",
@@ -626,7 +139,7 @@
             },
             "pointPlacementMethod" : "AroundPoint",
             "polygonAnchorPointType" : "GeometricCenter",
-            "polygonBoundaryWeight" : 200,
+            "polygonBoundaryWeight" : 0,
             "polygonExternalZones" : {
               "type" : "CIMMaplexExternalZonePriorities",
               "aboveLeft" : 4,
@@ -643,13 +156,12 @@
               "type" : "CIMMaplexInternalZonePriorities",
               "center" : 1
             },
-            "polygonPlacementMethod" : "StraightInPolygon",
-            "preferHorizontalPlacement" : true,
+            "polygonPlacementMethod" : "HorizontalInPolygon",
             "primaryOffset" : 1,
             "primaryOffsetUnit" : "Point",
             "removeAmbiguousLabels" : "All",
-            "removeExtraWhiteSpace" : false,
-            "repetitionIntervalUnit" : "Map",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Point",
             "rotationProperties" : {
               "type" : "CIMMaplexRotationProperties",
               "rotationType" : "Arithmetic",
@@ -671,11 +183,11 @@
             "truncationMarkerCharacter" : ".",
             "truncationMinimumLength" : 1,
             "truncationPreferredCharacters" : "aeiou",
-            "truncationExcludedCharacters" : "1234567890",
+            "truncationExcludedCharacters" : "0123456789",
             "polygonAnchorPointPerimeterInsetUnit" : "Point"
           },
-          "name" : "Default",
-          "priority" : 1,
+          "name" : "Class 1",
+          "priority" : -1,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
             "featureType" : "Line",
@@ -720,16 +232,13 @@
             "symbol" : {
               "type" : "CIMTextSymbol",
               "blockProgression" : "TTB",
-              "compatibilityMode" : true,
               "depth3D" : 1,
-              "drawSoftHyphen" : true,
               "extrapolateBaselines" : true,
-              "flipAngle" : 90,
               "fontEffects" : "Normal",
               "fontEncoding" : "Unicode",
               "fontFamilyName" : "Arial",
-              "fontStyleName" : "Bold Italic",
-              "fontType" : "Unspecified",
+              "fontStyleName" : "Italic",
+              "fontType" : "TrueType",
               "haloSize" : 2,
               "haloSymbol" : {
                 "type" : "CIMPolygonSymbol",
@@ -737,7 +246,7 @@
                   {
                     "type" : "CIMSolidFill",
                     "enable" : true,
-                    "name" : "New_a357ea38-fb63-452f-91a7-aa003420edfe",
+                    "name" : "New_df5251d7-b0fa-476d-ac49-91a8dc03db59",
                     "color" : {
                       "type" : "CIMRGBColor",
                       "values" : [
@@ -751,46 +260,16 @@
                 ],
                 "angleAlignment" : "Map"
               },
-              "height" : 10,
+              "height" : 8,
               "hinting" : "Default",
-              "horizontalAlignment" : "Center",
+              "horizontalAlignment" : "Left",
               "kerning" : true,
               "letterWidth" : 100,
               "ligatures" : true,
               "lineGapType" : "ExtraLeading",
-              "shadowColor" : {
-                "type" : "CIMRGBColor",
-                "values" : [
-                  0,
-                  0,
-                  0,
-                  100
-                ]
-              },
               "symbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
-                  {
-                    "type" : "CIMSolidStroke",
-                    "enable" : true,
-                    "name" : "New_fc319505-ecc6-43f3-b3f5-10228abdc015",
-                    "capStyle" : "Round",
-                    "joinStyle" : "Round",
-                    "lineStyle3D" : "Strip",
-                    "miterLimit" : 4,
-                    "width" : 0,
-                    "height3D" : 1,
-                    "anchor3D" : "Center",
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        190,
-                        232,
-                        255,
-                        0
-                      ]
-                    }
-                  },
                   {
                     "type" : "CIMSolidFill",
                     "enable" : true,
@@ -820,19 +299,7 @@
               "verticalGlyphOrientation" : "Right",
               "wordSpacing" : 100,
               "billboardMode3D" : "FaceNearPlane"
-            },
-            "scaleDependentSizeVariation" : [
-              {
-                "type" : "CIMScaleDependentSizeVariation",
-                "scale" : 100000000,
-                "size" : 8
-              },
-              {
-                "type" : "CIMScaleDependentSizeVariation",
-                "scale" : 1000,
-                "size" : 10
-              }
-            ]
+            }
           },
           "useCodedValue" : true,
           "visibility" : true,
@@ -856,15 +323,15 @@
                 "joinStyle" : "Round",
                 "lineStyle3D" : "Strip",
                 "miterLimit" : 10,
-                "width" : 1,
+                "width" : 0.5,
                 "height3D" : 1,
                 "anchor3D" : "Center",
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    78,
-                    78,
-                    78,
+                    25,
+                    52,
+                    72,
                     100
                   ]
                 }
@@ -878,7 +345,7 @@
                     55,
                     126,
                     184,
-                    100
+                    70
                   ]
                 }
               }
@@ -891,26 +358,34 @@
       "snappable" : true
     }
   ],
-  "binaryReferences" : [
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/31bcdddb1840dae495ee1cd475a6fd55.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20250113</CreaDate><CreaTime>12403100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Estimated Channel (Channel Area Input)</resTitle></idCitation><idAbs>Estimated Channel (Channel Area Input)</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
-    }
-  ],
   "rGBColorProfile" : "sRGB IEC61966-2.1",
   "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2",
   "elevationSurfaceLayerDefinitions" : [
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "uRI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "preloadTextureCutoffHigh" : 0.29999999999999999,
+        "preloadTextureCutoffLow" : 0.59999999999999998,
+        "textureCutoffHigh" : 0.29999999999999999,
+        "textureCutoffLow" : 0.59999999999999998,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "lighting" : "OneSideDataNormal",
+        "optimizeMarkerTransparency" : true
+      },
       "layerType" : "Operational",
       "showLegends" : false,
       "visibility" : true,
