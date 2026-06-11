@@ -1,15 +1,15 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.3.0",
-  "build" : 52636,
+  "version" : "3.7.0",
+  "build" : 1901,
   "layers" : [
-    "CIMPATH=map/ecoregions.json"
+    "CIMPATH=Map/ecoregions3.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "ecoregions",
-      "uRI" : "CIMPATH=map/ecoregions.json",
+      "name" : "Level 2 Ecoregions",
+      "uRI" : "CIMPATH=Map/ecoregions3.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
@@ -17,9 +17,8 @@
       "description" : "ecoregions",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "elevationSurfaceLayerURI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json"
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json"
       },
-      "expanded" : true,
       "layerType" : "Operational",
       "showLegends" : true,
       "visibility" : true,
@@ -36,193 +35,9 @@
         "type" : "CIMFeatureTable",
         "displayField" : "US_L4NAME",
         "editable" : true,
-        "fieldDescriptions" : [
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "FID",
-            "fieldName" : "FID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "readOnly" : true,
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L4CODE",
-            "fieldName" : "US_L4CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L4NAME",
-            "fieldName" : "US_L4NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L3CODE",
-            "fieldName" : "US_L3CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "US_L3NAME",
-            "fieldName" : "US_L3NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L3CODE",
-            "fieldName" : "NA_L3CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L3NAME",
-            "fieldName" : "NA_L3NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L2CODE",
-            "fieldName" : "NA_L2CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L2NAME",
-            "fieldName" : "NA_L2NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L1CODE",
-            "fieldName" : "NA_L1CODE",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "NA_L1NAME",
-            "fieldName" : "NA_L1NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "STATE_NAME",
-            "fieldName" : "STATE_NAME",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "EPA_REGION",
-            "fieldName" : "EPA_REGION",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L4_KEY",
-            "fieldName" : "L4_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L3_KEY",
-            "fieldName" : "L3_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L2_KEY",
-            "fieldName" : "L2_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "L1_KEY",
-            "fieldName" : "L1_KEY",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Leng",
-            "fieldName" : "Shape_Leng",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          }
-        ],
-        "timeFields" : {
-          "type" : "CIMTimeTableDefinition"
-        },
-        "timeDefinition" : {
-          "type" : "CIMTimeDataDefinition",
-          "hasLiveData" : true
-        },
-        "timeDisplayDefinition" : {
-          "type" : "CIMTimeDisplayDefinition",
-          "timeInterval" : 0,
-          "timeIntervalUnits" : "esriTimeUnitsHours",
-          "timeOffsetUnits" : "esriTimeUnitsYears"
-        },
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\1701020301_landers\\Riverscapes_Context_Landers\\ecoregions",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\2025 CONUS\\RSContext_Sulphur_2.1.0\\ecoregions",
           "workspaceFactory" : "Shapefile",
           "dataset" : "ecoregions.shp",
           "datasetType" : "esriDTFeatureClass"
@@ -231,22 +46,23 @@
         "searchOrder" : "esriSearchOrderSpatial"
       },
       "htmlPopupEnabled" : true,
-      "htmlPopupFormat" : {
-        "type" : "CIMHtmlPopupFormat",
-        "htmlUseCodedDomainValues" : true,
-        "htmlPresentationStyle" : "TwoColumnTable"
-      },
-      "isFlattened" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
       "displayFiltersType" : "ByScale",
+      "featureElevationExpressionInfo" : {
+        "type" : "CIMExpressionInfo",
+        "title" : "Custom",
+        "expression" : "0",
+        "returnType" : "Default"
+      },
       "featureBlendingMode" : "Alpha",
       "layerEffectsMode" : "Layer",
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
-          "expression" : "[NA_L2NAME]",
-          "expressionEngine" : "VBScript",
+          "expressionTitle" : "Custom",
+          "expression" : "$feature.NA_L2CODE + \" \" + $feature.NA_L2NAME",
+          "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
@@ -292,7 +108,8 @@
                   "splitAfter" : true
                 }
               ],
-              "trimStackingSeparators" : true
+              "trimStackingSeparators" : true,
+              "preferToStackLongLabels" : true
             },
             "lineFeatureType" : "General",
             "linePlacementMethod" : "OffsetCurvedFromLine",
@@ -366,8 +183,8 @@
             "truncationExcludedCharacters" : "0123456789",
             "polygonAnchorPointPerimeterInsetUnit" : "Point"
           },
-          "name" : "Default",
-          "priority" : 1,
+          "name" : "Class 1",
+          "priority" : -1,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
             "featureType" : "Line",
@@ -412,33 +229,21 @@
             "symbol" : {
               "type" : "CIMTextSymbol",
               "blockProgression" : "TTB",
-              "compatibilityMode" : true,
               "depth3D" : 1,
-              "drawSoftHyphen" : true,
               "extrapolateBaselines" : true,
-              "flipAngle" : 90,
               "fontEffects" : "Normal",
               "fontEncoding" : "Unicode",
               "fontFamilyName" : "Arial",
               "fontStyleName" : "Regular",
-              "fontType" : "Unspecified",
+              "fontType" : "TrueType",
               "haloSize" : 1,
-              "height" : 12,
+              "height" : 8,
               "hinting" : "Default",
-              "horizontalAlignment" : "Center",
+              "horizontalAlignment" : "Left",
               "kerning" : true,
               "letterWidth" : 100,
               "ligatures" : true,
               "lineGapType" : "ExtraLeading",
-              "shadowColor" : {
-                "type" : "CIMRGBColor",
-                "values" : [
-                  0,
-                  0,
-                  0,
-                  100
-                ]
-              },
               "symbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
@@ -457,6 +262,13 @@
                   }
                 ],
                 "angleAlignment" : "Map"
+              },
+              "symbol3DProperties" : {
+                "type" : "CIM3DSymbolProperties",
+                "dominantSizeAxis3D" : "Z",
+                "rotationOrder3D" : "YXZ",
+                "scaleZ" : 1,
+                "scaleY" : 1
               },
               "textCase" : "Normal",
               "textDirection" : "LTR",
@@ -507,6 +319,10 @@
                 "anchor3D" : "Center",
                 "color" : {
                   "type" : "CIMRGBColor",
+                  "colorSpace" : {
+                    "type" : "CIMICCColorSpace",
+                    "url" : "sRGB IEC61966-2.1"
+                  },
                   "values" : [
                     110,
                     110,
@@ -520,6 +336,10 @@
                 "enable" : true,
                 "color" : {
                   "type" : "CIMRGBColor",
+                  "colorSpace" : {
+                    "type" : "CIMICCColorSpace",
+                    "url" : "sRGB IEC61966-2.1"
+                  },
                   "values" : [
                     215,
                     218,
@@ -554,6 +374,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             13,
                             0,
@@ -591,6 +415,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             60,
                             35,
@@ -628,6 +456,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             9,
                             0,
@@ -665,6 +497,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             2,
                             10,
@@ -702,6 +538,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             18,
                             0,
@@ -739,6 +579,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             12,
                             9,
@@ -776,6 +620,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             6,
                             22,
@@ -813,6 +661,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             185,
                             216,
@@ -849,6 +701,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             168,
                             202,
@@ -885,6 +741,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             190,
                             219,
@@ -921,6 +781,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             109,
                             166,
@@ -957,6 +821,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             149,
                             194,
@@ -993,6 +861,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             114,
                             194,
@@ -1029,6 +901,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             0,
                             52,
@@ -1066,6 +942,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             4,
                             41,
@@ -1103,6 +983,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             2,
                             60,
@@ -1140,6 +1024,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             0,
                             45,
@@ -1177,6 +1065,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             4,
                             71,
@@ -1214,6 +1106,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             5,
                             40,
@@ -1251,6 +1147,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             35,
                             65,
@@ -1288,6 +1188,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             12,
                             39,
@@ -1325,6 +1229,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             40,
                             48,
@@ -1362,6 +1270,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             20,
                             65,
@@ -1399,6 +1311,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             20,
                             80,
@@ -1436,6 +1352,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             18,
                             26,
@@ -1473,6 +1393,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             30,
                             21,
@@ -1510,6 +1434,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             19,
                             10,
@@ -1547,6 +1475,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             80,
                             20,
@@ -1584,6 +1516,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             65,
                             20,
@@ -1621,6 +1557,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             56,
                             3,
@@ -1658,6 +1598,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             80,
                             0,
@@ -1695,6 +1639,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             40,
                             10,
@@ -1732,6 +1680,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             53,
                             0,
@@ -1769,6 +1721,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             64,
                             3,
@@ -1806,6 +1762,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             45,
                             183,
@@ -1842,6 +1802,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             174,
                             222,
@@ -1878,6 +1842,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             85,
                             195,
@@ -1914,6 +1882,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             190,
                             215,
@@ -1950,6 +1922,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             211,
                             230,
@@ -1986,6 +1962,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             227,
                             242,
@@ -2022,6 +2002,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             66,
                             192,
@@ -2058,6 +2042,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             164,
                             203,
@@ -2094,6 +2082,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             227,
                             242,
@@ -2130,6 +2122,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             207,
                             228,
@@ -2166,6 +2162,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             81,
                             189,
@@ -2202,6 +2202,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             185,
                             216,
@@ -2238,6 +2242,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             0,
                             10,
@@ -2283,6 +2291,10 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             110,
                             110,
@@ -2296,6 +2308,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMRGBColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
                             250,
                             224,
@@ -2332,6 +2348,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             2,
                             20,
@@ -2369,6 +2389,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             5,
                             20,
@@ -2406,6 +2430,10 @@
                         "enable" : true,
                         "color" : {
                           "type" : "CIMCMYKColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "U.S. Web Coated (SWOP) v2"
+                          },
                           "values" : [
                             0,
                             30,
@@ -2433,6 +2461,7 @@
             "heading" : "North America L2"
           }
         ],
+        "isDefaultSymbolVisible" : true,
         "polygonSymbolColorTarget" : "Fill"
       },
       "scaleSymbols" : true,
@@ -2445,13 +2474,28 @@
     {
       "type" : "CIMElevationSurfaceLayer",
       "name" : "Ground",
-      "uRI" : "CIMPATH=Map/7d7072e6416e464682803d99a9d3d585.json",
+      "uRI" : "CIMPATH=Map/78fe8198229d4401afac3a8c1c718b37.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
       "description" : "Ground",
       "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "preloadTextureCutoffHigh" : 0.29999999999999999,
+        "preloadTextureCutoffLow" : 0.59999999999999998,
+        "textureCutoffHigh" : 0.29999999999999999,
+        "textureCutoffLow" : 0.59999999999999998,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "lighting" : "OneSideDataNormal",
+        "optimizeMarkerTransparency" : true
+      },
       "layerType" : "Operational",
       "showLegends" : false,
       "visibility" : true,
