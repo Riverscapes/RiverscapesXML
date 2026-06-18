@@ -6,6 +6,10 @@
 
 * adds `summary`, `citation`, and `xml_metadata` as optional elements for layers
 
+#### Comment
+
+In the Data Exchange, `Description` is meant as a long-form text. It can include markdown and can be multiple pages long (up to 100k characters). `Summary` is used as a one-sentence subtitle under the title (up to 500 characters). 
+
 ## 0.8.0
 
 ### Breaking changes
