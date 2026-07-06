@@ -1,6 +1,7 @@
 # QGIS Generated Color Map Export File
 INTERPOLATION:DISCRETE
 0,0,77,168,255,0 (Active Channel)
+0.0001,38,115,0,255,0.00 - 0.25 m
 0.25,38,115,0,255,0.00 - 0.25 m
 0.5,121,172,96,255,0.25 - 0.50 m
 1,127,189,93,255,0.50 - 1.00 m
