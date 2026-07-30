@@ -4,8 +4,19 @@
   <ProjectType>NZGEMS</ProjectType>
   <Node xpathlabel="Name" xpath="Realizations/Realization">
     <Children collapsed="false">
-      <Node label="Intermediates">
+      <Node label="Outputs" xpath="Outputs">
         <Children collapsed="false">
+          <Node label="Stream Type" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="stream_type" transparency="0" id="stream_type" />
+          <Node label="Management" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="management" transparency="0" id="management" />
+          <Node label="Stability" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="geo_stability" transparency="0" id="geo_stability" />
+          <Node label="Confinement" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="confinement" transparency="0" id="confinement" />
+          <Node label="Slope" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="slope" transparency="0" id="slope" />
+          <Node label="Buffers Idea 1" xpath="Geopackage/Layers/Vector[@lyrName='buffers_method_1']" type="polygon" symbology="buffers_method_1" transparency="0" id="buffers_1" />
+          <Node label="Buffers Idea 2" xpath="Geopackage/Layers/Vector[@lyrName='buffers_method_2']" type="polygon" symbology="arc_10m_buffer" transparency="0" id="buffers_2" />
+        </Children>
+      </Node>
+      <Node label="Intermediates">
+        <Children collapsed="true">
           <Node label="Slope Analysis">
             <Children collapsed="false">
               <Node label="Landslide Delivery Zones to Channel" xpath="Intermediates/Raster[@id='surface_5']" type="raster" symbology="channel_delivery_zone" transparency="40" id="delivery_risk" />
@@ -18,7 +29,7 @@
         </Children>
       </Node>
       <Node label="Inputs" xpath="Inputs">
-        <Children collapsed="false">
+        <Children collapsed="true">
           <Node label="Terrain">
             <Children collapsed="false">
               <Node label="DEM" xpath="DEM[@id='surface_2']" type="raster" symbology="dem" transparency="40" id="dem" />
@@ -59,7 +70,15 @@
     </Children>
   </Node>
   <Views default="DEFAULT">
-    <View name="Input Corridors" id="DEFAULT">
+    <View name="Stream Type" id="DEFAULT">
+      <Layers>
+        <Layer id="stream_type" />
+        <Layer id="buffers_2" />
+        <Layer id="buffers_1" />
+        <Layer id="hillshade" />
+      </Layers>
+    </View>
+    <View name="Input Corridors" id="corridor">
       <Layers>
         <Layer id="10m_buffer_corridor" />
         <Layer id="valley_bottom_extent" />
