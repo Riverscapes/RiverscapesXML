@@ -44,7 +44,7 @@
         {
             "id": "Outline",
             "type": "line",
-            "source": "mapbox://chloeseeborg.l366mp31x3i3",
+            "source": "composite",
             "source-layer": "84b341b045c7a30055e3",
             "layout": {},
             "paint": {"line-opacity": 0.8, "line-width": 0.2}
