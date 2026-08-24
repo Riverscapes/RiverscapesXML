@@ -1,0 +1,467 @@
+<Protocol machine_code="TENMILE_MONITORING_SURVEY" version="1.0" status="production" protocol_type="dce" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>Tenmile Monitoring Protocol</Label>
+    <Description>Monitoring Protocol for Tenmile</Description>
+    <URL></URL>
+    <Citation></Citation>
+    <Author>Zach Burgert</Author>
+    <CreationDate>2026-07-24</CreationDate>
+    <UpdatedDate>2026-08-19</UpdatedDate>
+    <Layers>
+          <Layer id="active_channel_extents" version="1.0" geom_type="Polygon">
+            <Label>Active Channel Extents</Label>
+            <Symbology>tenmile_channel_extent.qml</Symbology>
+            <Description>Active Channel Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Tenmile Monitoring Protocol</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Wetted Channel</Value> 
+                        <Value>Vegetated Wetland</Value> 
+                        <Value>Bar Deposit</Value>
+                        <Value>Dry Channel</Value>
+                    </Values>
+                </ListField>
+            </Fields>
+        </Layer>
+        <Layer id="inundation_extents" version="1.0" geom_type="Polygon">
+            <Label>Inundation Extents</Label>
+            <Symbology>tenmile_inundation_extent.qml</Symbology>
+            <Description>Inundation Extents Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Tenmile Monitoring Protocol</HierarchyItem>
+            </Hierarchy>    
+            <Fields>
+                <ListField id="type" version="1.0">
+                    <Label>Extent Type</Label>
+                    <Values>
+                        <Value>Free Flowing</Value>
+                        <Value>Ponding</Value>
+                        <Value>Side Channel Overflow</Value>
+                        <Value>Overbank Flow</Value>
+                        <Value>Newly Forming Channel</Value>
+                        <Value>Meadow/Wetland</Value>
+                        <Value>Dry</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structurally_forced" version="1.0">
+                    <Label>Structurally Forced</Label>
+                    <Values>
+                        <Value>Yes</Value>
+                        <Value>No</Value>
+                    </Values>
+                </ListField>
+            </Fields>
+        </Layer>
+        <Layer id="vegetation_extents_desktop" version="1.0" geom_type="Polygon">
+            <Label>Vegetation Extents (Desktop)</Label>
+            <Symbology>tenmile_vegetation_extent_desktop.qml</Symbology>
+            <Description>Vegetation Extents Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Tenmile Monitoring Protocol</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="vegetation_type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Forested</Value>
+                        <Value>Shrub</Value>
+                        <Value>Herbaceous</Value>
+                        <Value>Mixed</Value>
+                        <Value>Bare</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="veg_cover" version="1.0">
+                    <Label>% Vegetation/Canopy Cover</Label>
+                    <Values>
+                        <Value>0-10%</Value>
+                        <Value>10-25%</Value>
+                        <Value>25-50%</Value>
+                        <Value>50-75%</Value>
+                        <Value>75-90%</Value>
+                        <Value>90-100%</Value>
+                    </Values>
+                </ListField>
+            </Fields>
+        </Layer>
+        <Layer id="vegetation_extents_field" version="1.0" geom_type="Polygon">
+            <Label>Vegetation Extents (Field)</Label>
+            <Symbology>tenmile_vegetation_extent_field.qml</Symbology>
+            <Description>Vegetation Extents Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Tenmile Monitoring Protocol</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="vegetation_type" version="1.0">
+                    <Label>Type</Label>
+                    <Values>
+                        <Value>Forested</Value>
+                        <Value>Shrub</Value>
+                        <Value>Herbaceous</Value>
+                        <Value>Mixed</Value>
+                        <Value>Bare</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="tier_2" version="1.0">
+                    <Label>Type 2 Tier</Label>
+                    <Values>
+                        <Value>Riparian Forested</Value>
+                        <Value>Upland Forested</Value>
+                        <Value>Riparian Shrub</Value>
+                        <Value>Upland Shrub</Value>
+                        <Value>Riparian Herbaceous</Value>
+                        <Value>Upland Herbaceous</Value>
+                        <Value>Mixed</Value>
+                        <Value>Undefined</Value>
+                    </Values>
+                </ListField>
+                <ListField id="tier_3" version="">
+                    <Label>Type 3 Tier</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Coniferous</Value>
+                        <Value>Deciduous</Value>
+                        <Value>Willow</Value>
+                        <Value>Rush</Value>
+                        <Value>Sedge</Value>
+                        <Value>Grass</Value>
+                        <Value>Invasive</Value>
+                    </Values>
+                </ListField>
+                <ListField id="veg_cover" version="1.0">
+                    <Label>% Vegetation/Canopy Cover</Label>
+                    <Values>
+                        <Value>0-10%</Value>
+                        <Value>10-25%</Value>
+                        <Value>25-50%</Value>
+                        <Value>50-75%</Value>
+                        <Value>75-90%</Value>
+                        <Value>90-100%</Value>
+                    </Values>
+                </ListField>
+            </Fields>
+        </Layer>
+    </Layers>
+    <Metrics>
+        <Metric id="inundation_area" version="1.0" calculation_machine_code="area">
+            <Label>Inundation Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total inundation area within the sample frame.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="active_channel_extents"></DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="inundation_percent" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Inundation Area (% of sample frame)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation area to sample frame area.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Numerator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_active_inundation" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Active Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation area that is wetted channel and vegetated wetland.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Extent Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Wetted Channel</Value> 
+                        <Value>Vegetated Wetland</Value> 
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_bar_deposit" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Bar Deposit</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation area that is bar deposit.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Extent Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Bar Deposit</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_dry_inundation" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Dry Inundation</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation area that is dry channel.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Extent Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Dry Channel</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="active_channel_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_free_flowing" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Free Flowing</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is free flowing.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Free Flowing</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_ponding" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Ponding</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is ponding.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Ponding</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_overflow" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Overflow</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is overbank flow and side channel flow.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Side Channel Overflow</Value>
+                        <Value>Overbank Flow</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_newly_forming_channel" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Newly Forming Channel</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is newly forming channel.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Newly Forming Channel</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_meadow_wetland" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Meadow/Wetland</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is wetland/meadow.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Meadow/Wetland</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_dry" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Dry</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is dry.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="type">
+                        <Value>Dry</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_structurally_forced" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Structurally Forced</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of inundation extent that is structurally forced by natural or artifical structures.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Channel Inundation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="structurally_forced">
+                        <Value>Yes</Value>
+                    </AttributeFilter>
+                </DCELayer>
+                <DCELayer layer_id_ref="inundation_extents">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_vegetated_desktop" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Vegetated (Desktop)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of sample frame area that is vegetated. Use for desktop survey of vegetation.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Vegetation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="vegetation_extents_desktop">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="vegetation_type">
+                        <Value>Forested</Value>
+                        <Value>Shrub</Value>
+                        <Value>Herbaceous</Value>
+                        <Value>Mixed</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_vegetated_field" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Vegetated (Field)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of sample frame area that is vegetated. Use for field survey of vegetation.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Vegetation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="vegetation_extents_field">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="vegetation_type">
+                        <Value>Forested</Value>
+                        <Value>Shrub</Value>
+                        <Value>Herbaceous</Value>
+                        <Value>Mixed</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="percent_riparian_field" version="1.0" calculation_machine_code="area_proportion">
+            <Label>% Riparian (Field)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ratio of sample frame area that is riparian vegetation. Use for field survey of vegetation.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Hierarchy>
+                <HierarchyItem>Vegetation Metric</HierarchyItem>
+            </Hierarchy>
+            <Parameters>
+                <DCELayer layer_id_ref="vegetation_extents_field">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="tier_2">
+                        <Value>Riparian Forested</Value>
+                        <Value>Riparian Shrub</Value>
+                        <Value>Riparian Herbaceous</Value>
+                    </AttributeFilter>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+    </Metrics>
+</Protocol>
