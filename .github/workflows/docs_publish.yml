@@ -42,7 +42,7 @@ jobs:
         working-directory: python
 
       - name: Build public site
-        run: uv run --project python python gh_pages_publish.py
+        run: uv run python gh_pages_publish.py
         working-directory: python
 
       # Use S3 syncing to deploy this to the appropriate bucket inside rs-web-monorepo VPC Stack
