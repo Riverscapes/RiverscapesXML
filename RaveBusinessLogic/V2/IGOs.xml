@@ -7,6 +7,13 @@
     <Children collapsed="true">
       <Node label="Riverscape Metrics" xpath="Realizations/Realization">
         <Children collapsed="false">
+          <Node label="All Metrics">
+            <Children collapsed="true">
+              <Node label="All Metrics" 
+                xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_metrics']" 
+                type="point" id="all_metrics" symbology="IGO" />
+            </Children>
+          </Node>
           <Node label="Beaver Metrics">
             <Children collapsed="true">
               <Node label="Existing Dam Capacity"
