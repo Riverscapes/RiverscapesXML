@@ -12,6 +12,7 @@
         </data_defined_properties>
         <layer id="{c6ff0cfe-535b-4ff8-8017-14f06aa77926}" class="SimpleFill" pass="0" enabled="1" locked="0">
           <Option type="Map">
+            <!-- TRIGGER QML2WebSymbology -->
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="color" value="164,113,88,255,rgb:0.64313725490196083,0.44313725490196076,0.34509803921568627,1"/>
             <Option type="QString" name="joinstyle" value="bevel"/>
