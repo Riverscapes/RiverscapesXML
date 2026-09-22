@@ -1,0 +1,61 @@
+# Sync QGIS .qml symbology files to web .json format
+# Runs automatically when QML changes are merged to master
+
+name: Symbology Sync
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Symbology/qgis/**'
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.12]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Use the repo's default token — commits back will trigger a
+          # status check without re-running the workflow (see [skip ci]
+          # below).
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Sync dependencies
+        run: uv sync
+        working-directory: python
+
+      - name: Convert missing QML → JSON
+        run: uv run python QML2WebSymbology.py --missing
+        working-directory: python
+
+      - name: Commit new JSON files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A Symbology/web/
+          if git diff --cached --quiet; then
+            echo "No new JSON files to commit."
+          else
+            git commit -m "Auto-convert QML → JSON for missing symbology files [skip ci]"
+            git push
+          fi
