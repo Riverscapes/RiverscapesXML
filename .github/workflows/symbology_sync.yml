@@ -2,11 +2,11 @@
 # Runs automatically when QML changes are merged to master.
 #
 # `master` is branch-protected (pull requests + the required "validate"
-# status check). This workflow relies on an exemption: the built-in
-# "GitHub Actions" app is on the branch ruleset's bypass list (repo
-# Settings → Rules → Rulesets), so the bot's GITHUB_TOKEN can commit
-# the generated JSON straight to master. Without that bypass, the push
-# is rejected ("GH006: Protected branch update failed").
+# status check). This workflow relies on an exemption: the bot pushes
+# with SYMBOLOGY_SYNC_TOKEN, a fine-grained PAT whose owner is on a
+# team listed in the master ruleset's bypass list (repo Settings →
+# Rules → Rulesets, "Always allow"). GITHUB_TOKEN (the GitHub Actions
+# app identity) cannot be added to a bypass list.
 
 name: Symbology Sync
 
@@ -33,6 +33,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The bot's push back to master uses this token, so its owner
+          # must be a member of a team on the master ruleset's bypass
+          # list, or the push is rejected ("GH006: Protected branch
+          # update failed"). Create it under Settings → Secrets and
+          # variables → Actions.
+          token: ${{ secrets.SYMBOLOGY_SYNC_TOKEN }}
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5

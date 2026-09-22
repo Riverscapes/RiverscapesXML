@@ -32,7 +32,8 @@ Notes:
 
 - Only one run per branch happens at a time; a newer push cancels an in-progress run and starts fresh.
 - The bot's own commit is tagged `[skip ci]`, so the action does **not** re-trigger itself in an infinite loop.
-- The bot can push to `master` directly only because the **GitHub Actions** app is on the branch ruleset's bypass list (repo **Settings → Rules → Rulesets**). Humans still need pull requests — the exemption is scoped to the bot.
+- The bot pushes to `master` directly with the `SYMBOLOGY_SYNC_TOKEN` fine-grained PAT (Contents: Read & Write on this repo). The PAT's owner must be a member of an org team that sits on the `master` ruleset's bypass list (**Settings → Rules → Rulesets**, *Always allow*). The `GITHUB_TOKEN` identity (the GitHub Actions app) **cannot** be added to a bypass list, so a PAT is required. Humans still need pull requests — the exemption is scoped to the bot's team.
+- **One-time setup:** create the PAT for a (bot) account, put that account in an org team, add that team to the `master` ruleset's bypass list, then save the PAT as the `SYMBOLOGY_SYNC_TOKEN` Actions secret (Settings → Secrets and variables → Actions).
 
 ## What happens during a run
 
@@ -105,5 +106,5 @@ uv run python QML2WebSymbology.py --dir MyProject --force
 - Converter messages you may see in the logs:
   - `skipped` — output already exists (expected; see above), raster renderer, or no convertible vector symbology
   - `note ... distinct rule colours; only the first is applied` — for rule-based renderers with multiple colours; the web schema has no per-rule filters, so only the first rule's colour is used
-- **The final `git push` failed with `GH006: Protected branch update failed`?** The bot's bypass is missing or was removed: add the **GitHub Actions** app to the bypass list of the `master` ruleset (repo **Settings → Rules → Rulesets**).
+- **The final `git push` failed with `GH006: Protected branch update failed`?** The bot's bypass is missing or was removed: confirm the `SYMBOLOGY_SYNC_TOKEN` secret exists and that its owner's team is on the `master` ruleset's bypass list (**Settings → Rules → Rulesets**, *Always allow*). The GitHub Actions app is *not* an eligible bypass actor — don't expect to find it in the bypass list.
 - **The action didn't run at all?** Check that your push touched `Symbology/qgis/**` and went to `master`, then use the manual *Run workflow* button.
