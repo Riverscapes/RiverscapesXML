@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,0,0)",
+      "pts topo"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "pts_topo-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "pts_topo",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(255,0,0)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,0,0)",
+      "<all other values>"
+    ],
+    [
+      "rgb(38,115,0)",
+      "bf"
+    ],
+    [
+      "rgb(0,0,0)",
+      "bl"
+    ],
+    [
+      "rgb(0,92,230)",
+      "lw"
+    ],
+    [
+      "rgb(0,92,230)",
+      "rw"
+    ],
+    [
+      "rgb(0,0,0)",
+      "tb"
+    ],
+    [
+      "rgb(0,0,0)",
+      "to"
+    ],
+    [
+      "rgb(115,255,223)",
+      "wg"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "breaklines-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Code",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "Code"
+          ],
+          "",
+          "rgb(0,0,0)",
+          "bf",
+          "rgb(38,115,0)",
+          "bl",
+          "rgb(0,0,0)",
+          "lw",
+          "rgb(0,92,230)",
+          "rw",
+          "rgb(0,92,230)",
+          "tb",
+          "rgb(0,0,0)",
+          "to",
+          "rgb(0,0,0)",
+          "wg",
+          "rgb(115,255,223)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

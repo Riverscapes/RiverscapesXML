@@ -1,0 +1,77 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(29,124,13,0.502)",
+      "Forested"
+    ],
+    [
+      "rgba(148,248,16,0.502)",
+      "Shrub"
+    ],
+    [
+      "rgba(118,255,185,0.502)",
+      "Herbaceous"
+    ],
+    [
+      "rgba(158,1,185,0.502)",
+      "Mixed"
+    ],
+    [
+      "rgba(255,255,204,0.502)",
+      "Bare"
+    ],
+    [
+      "rgba(181,181,181,0.502)",
+      "Other"
+    ],
+    [
+      "rgb(166,197,4)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "tenmile_vegetation_extent_desktop-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Type"
+          ],
+          "Forested",
+          "rgba(29,124,13,0.502)",
+          "Shrub",
+          "rgba(148,248,16,0.502)",
+          "Herbaceous",
+          "rgba(118,255,185,0.502)",
+          "Mixed",
+          "rgba(158,1,185,0.502)",
+          "Bare",
+          "rgba(255,255,204,0.502)",
+          "Other",
+          "rgba(181,181,181,0.502)",
+          "NULL",
+          "rgb(166,197,4)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "tenmile_vegetation_extent_desktop-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

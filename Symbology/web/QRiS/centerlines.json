@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,77,168)",
+      "Non-Primary"
+    ],
+    [
+      "rgb(0,169,230)",
+      "Primary"
+    ],
+    [
+      "rgb(154,53,227)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "centerlines-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "Type"
+          ],
+          "Non-Primary",
+          "rgb(0,77,168)",
+          "Primary",
+          "rgb(0,169,230)",
+          "",
+          "rgb(154,53,227)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

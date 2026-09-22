@@ -1,0 +1,34 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(76,230,0)",
+      "vbet70"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "vbet70-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "vbet70",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(76,230,0)",
+        "fill-opacity": 0.6
+      }
+    },
+    {
+      "id": "vbet70-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "vbet70",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(76,230,0)",
+        "line-width": 0.2,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(160,0,163)",
+      "<all other values>"
+    ],
+    [
+      "rgb(190,232,255)",
+      "ws"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "pts_streamFeatures-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "Code",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "Code"
+          ],
+          "",
+          "rgb(160,0,163)",
+          "ws",
+          "rgb(190,232,255)",
+          "rgb(128,128,128)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

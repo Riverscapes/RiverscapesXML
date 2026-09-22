@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,0,0)",
+      "velocityVec"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "velocityVec-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "velocityVec",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(0,0,0)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

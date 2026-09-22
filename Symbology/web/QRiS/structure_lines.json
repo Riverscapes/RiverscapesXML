@@ -1,0 +1,38 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,255,255)",
+      "BDA"
+    ],
+    [
+      "rgb(255,255,255)",
+      "PALS"
+    ],
+    [
+      "rgb(255,255,255)",
+      "ALS"
+    ],
+    [
+      "rgb(255,255,255)",
+      "Other"
+    ],
+    [
+      "rgb(225,89,137)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "structure_lines-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "structure_lines",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,255,255)",
+        "line-width": 1
+      }
+    }
+  ]
+}

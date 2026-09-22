@@ -1,0 +1,22 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(232,113,141)",
+      "BANKFULL NETWORK"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "BANKFULL_NETWORK-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BANKFULL_NETWORK",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(232,113,141)",
+        "line-width": 0.33
+      }
+    }
+  ]
+}

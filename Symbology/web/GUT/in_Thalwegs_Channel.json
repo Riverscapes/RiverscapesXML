@@ -1,0 +1,55 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(130,130,130)",
+      "Other or No Label"
+    ],
+    [
+      "rgb(0,169,230)",
+      "Main"
+    ],
+    [
+      "rgb(0,169,230)",
+      "Secondary"
+    ],
+    [
+      "rgb(0,169,230)",
+      "Backwater"
+    ],
+    [
+      "rgb(0,169,230)",
+      "Tributary"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "in_Thalwegs_Channel-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Channel",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "Channel"
+          ],
+          "",
+          "rgb(130,130,130)",
+          "Main",
+          "rgb(0,169,230)",
+          "Secondary",
+          "rgb(0,169,230)",
+          "Backwater",
+          "rgb(0,169,230)",
+          "Tributary",
+          "rgb(0,169,230)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

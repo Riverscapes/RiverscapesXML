@@ -1,0 +1,54 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(130,130,130)",
+      "Other or No Label"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Thalweg Type"
+    ],
+    [
+      "rgb(0,169,230)",
+      "Main"
+    ],
+    [
+      "rgb(0,92,230)",
+      "Anabranch"
+    ],
+    [
+      "rgb(115,223,255)",
+      "Return"
+    ],
+    [
+      "rgb(0,230,169)",
+      "Cut-off"
+    ],
+    [
+      "rgb(0,168,132)",
+      "Braid"
+    ],
+    [
+      "rgb(223,115,255)",
+      "Split"
+    ],
+    [
+      "rgb(132,0,168)",
+      "Tributary"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "in_Thalwegs_Type-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "in_Thalwegs_Type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(130,130,130)",
+        "line-width": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,0,0)",
+      "observation points dce"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "observation_points_dce-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "observation_points_dce",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(0,0,0)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

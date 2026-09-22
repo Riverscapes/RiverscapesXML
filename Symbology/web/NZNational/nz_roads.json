@@ -1,0 +1,73 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,0,4)",
+      "1"
+    ],
+    [
+      "rgb(35,17,81)",
+      "2"
+    ],
+    [
+      "rgb(95,24,127)",
+      "3"
+    ],
+    [
+      "rgb(152,45,128)",
+      "4"
+    ],
+    [
+      "rgb(211,67,110)",
+      "5"
+    ],
+    [
+      "rgb(248,118,92)",
+      "6"
+    ],
+    [
+      "rgb(254,186,128)",
+      "7"
+    ],
+    [
+      "rgb(252,253,191)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "nz_roads-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "lane_count",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "lane_count"
+          ],
+          1,
+          "rgb(0,0,4)",
+          2,
+          "rgb(35,17,81)",
+          3,
+          "rgb(95,24,127)",
+          4,
+          "rgb(152,45,128)",
+          5,
+          "rgb(211,67,110)",
+          6,
+          "rgb(248,118,92)",
+          7,
+          "rgb(254,186,128)",
+          "NULL",
+          "rgb(252,253,191)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

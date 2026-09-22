@@ -1,0 +1,84 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(247,252,245)",
+      "Missing Data"
+    ],
+    [
+      "rgb(213,239,207)",
+      "0 - 7%"
+    ],
+    [
+      "rgb(158,215,152)",
+      "7 - 10%"
+    ],
+    [
+      "rgb(85,181,103)",
+      "10 - 14%"
+    ],
+    [
+      "rgb(29,134,65)",
+      "14 - 17%"
+    ],
+    [
+      "rgb(0,68,27)",
+      "> 17%"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "proportion_vb-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "proportion_vb",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "proportion_vb"
+          ],
+          0.0,
+          "rgb(247,252,245)",
+          0.0001,
+          "rgb(213,239,207)",
+          0.0699,
+          "rgb(213,239,207)",
+          0.07,
+          "rgb(158,215,152)",
+          0.0999,
+          "rgb(158,215,152)",
+          0.1,
+          "rgb(85,181,103)",
+          0.1399,
+          "rgb(85,181,103)",
+          0.14,
+          "rgb(29,134,65)",
+          0.1699,
+          "rgb(29,134,65)",
+          0.17,
+          "rgb(0,68,27)",
+          0.215683,
+          "rgb(0,68,27)"
+        ],
+        "fill-opacity": 0.6
+      }
+    },
+    {
+      "id": "proportion_vb-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "proportion_vb",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

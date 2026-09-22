@@ -1,0 +1,73 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(122,4,3)",
+      "1a Critical: slope + channel failing together"
+    ],
+    [
+      "rgb(217,56,7)",
+      "1b Critical: slope instability"
+    ],
+    [
+      "rgb(254,153,44)",
+      "1c Critical: severe channel erosion"
+    ],
+    [
+      "rgb(211,232,53)",
+      "2 Act before development"
+    ],
+    [
+      "rgb(100,253,106)",
+      "2s Space for adjustment"
+    ],
+    [
+      "rgb(27,208,213)",
+      "3 Protect now"
+    ],
+    [
+      "rgb(71,119,239)",
+      "3b Outfall dissipation / headcut arrest"
+    ],
+    [
+      "rgb(48,18,59)",
+      "4 Standard"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "management-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "mgmt_tier",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "mgmt_tier"
+          ],
+          "1a Critical: slope + channel failing together",
+          "rgb(122,4,3)",
+          "1b Critical: slope instability",
+          "rgb(217,56,7)",
+          "1c Critical: severe channel erosion",
+          "rgb(254,153,44)",
+          "2 Act before development",
+          "rgb(211,232,53)",
+          "2s Space for adjustment",
+          "rgb(100,253,106)",
+          "3 Protect now",
+          "rgb(27,208,213)",
+          "3b Outfall dissipation / headcut arrest",
+          "rgb(71,119,239)",
+          "4 Standard",
+          "rgb(48,18,59)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

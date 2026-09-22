@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(253,191,111)",
+      "sampling frames"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "sampling_frames-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "sampling_frames",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(253,191,111)",
+        "line-width": 1.2,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

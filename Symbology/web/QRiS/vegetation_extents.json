@@ -1,0 +1,53 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(247,114,6,0.502)",
+      "Non-Riparian"
+    ],
+    [
+      "rgba(67,196,65,0.502)",
+      "Riparian"
+    ],
+    [
+      "rgb(17,106,222)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "vegetation_extents-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Type"
+          ],
+          "Non-Riparian",
+          "rgba(247,114,6,0.502)",
+          "Riparian",
+          "rgba(67,196,65,0.502)",
+          "",
+          "rgb(17,106,222)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "vegetation_extents-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

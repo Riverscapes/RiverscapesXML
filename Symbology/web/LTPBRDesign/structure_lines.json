@@ -1,0 +1,61 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(232,22,212)",
+      "BDA Large"
+    ],
+    [
+      "rgb(15,117,8)",
+      "BDA Small"
+    ],
+    [
+      "rgb(17,73,91)",
+      "BDA Postless"
+    ],
+    [
+      "rgb(12,60,96)",
+      "PALS Mid-Channel"
+    ],
+    [
+      "rgb(170,53,178)",
+      "PALS Bank Attached"
+    ],
+    [
+      "rgb(200,18,10)",
+      "Wood Jam"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "structure_lines-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "structure_type_id",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "structure_type_id"
+          ],
+          1,
+          "rgb(232,22,212)",
+          2,
+          "rgb(15,117,8)",
+          3,
+          "rgb(17,73,91)",
+          4,
+          "rgb(12,60,96)",
+          5,
+          "rgb(170,53,178)",
+          6,
+          "rgb(200,18,10)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

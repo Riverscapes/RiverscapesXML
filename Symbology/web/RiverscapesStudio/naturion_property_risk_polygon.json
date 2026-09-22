@@ -1,0 +1,83 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(254,216,76,0.6)",
+      "Agriculture - Cultivated Annual Crops"
+    ],
+    [
+      "rgba(163,255,78,0.6)",
+      "Agriculture - Cultivated Perennial Crop/Orchard"
+    ],
+    [
+      "rgba(13,205,71,0.6)",
+      "Agriculture - Pasture/Grazing"
+    ],
+    [
+      "rgba(255,133,131,0.6)",
+      "Commercial"
+    ],
+    [
+      "rgba(255,255,255,0.6)",
+      "Residential"
+    ],
+    [
+      "rgba(105,105,105,0.6)",
+      "Industrial"
+    ],
+    [
+      "rgba(0,0,0,0.6)",
+      "Road or Parking"
+    ],
+    [
+      "rgba(255,233,206,0.6)",
+      "Other"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "naturion_property_risk_polygon-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "type"
+          ],
+          "Agriculture - Cultivated Annual Crops",
+          "rgba(254,216,76,0.6)",
+          "Agriculture - Cultivated Perennial Crop/Orchard",
+          "rgba(163,255,78,0.6)",
+          "Agriculture - Pasture/Grazing",
+          "rgba(13,205,71,0.6)",
+          "Commercial",
+          "rgba(255,133,131,0.6)",
+          "Residential",
+          "rgba(255,255,255,0.6)",
+          "Industrial",
+          "rgba(105,105,105,0.6)",
+          "Road or Parking",
+          "rgba(0,0,0,0.6)",
+          "NULL",
+          "rgba(255,233,206,0.6)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "naturion_property_risk_polygon-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

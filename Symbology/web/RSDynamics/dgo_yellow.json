@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,246,0)",
+      "dgo yellow"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "dgo_yellow-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "dgo_yellow",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,246,0)",
+        "line-width": 0.5,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

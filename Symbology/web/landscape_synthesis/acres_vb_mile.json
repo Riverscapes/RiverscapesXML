@@ -1,0 +1,84 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(215,25,28)",
+      "Missing Data"
+    ],
+    [
+      "rgb(245,144,83)",
+      "0 - 15"
+    ],
+    [
+      "rgb(254,223,153)",
+      "15 - 25"
+    ],
+    [
+      "rgb(221,241,180)",
+      "25 - 40"
+    ],
+    [
+      "rgb(145,203,168)",
+      "40 - 55"
+    ],
+    [
+      "rgb(43,131,186)",
+      "> 50"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "acres_vb_mile-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "acres_vb_mi",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "acres_vb_mi"
+          ],
+          0.0,
+          "rgb(215,25,28)",
+          0.0001,
+          "rgb(245,144,83)",
+          14.9999,
+          "rgb(245,144,83)",
+          15.0,
+          "rgb(254,223,153)",
+          24.9999,
+          "rgb(254,223,153)",
+          25.0,
+          "rgb(221,241,180)",
+          39.9999,
+          "rgb(221,241,180)",
+          40.0,
+          "rgb(145,203,168)",
+          54.9999,
+          "rgb(145,203,168)",
+          55.0,
+          "rgb(43,131,186)",
+          68.639,
+          "rgb(43,131,186)"
+        ],
+        "fill-opacity": 0.6
+      }
+    },
+    {
+      "id": "acres_vb_mile-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "acres_vb_mi",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

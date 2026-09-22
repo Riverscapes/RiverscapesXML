@@ -1,0 +1,114 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(147,202,46)",
+      "Asotin"
+    ],
+    [
+      "rgb(94,72,237)",
+      "Entiat"
+    ],
+    [
+      "rgb(46,225,180)",
+      "John Day"
+    ],
+    [
+      "rgb(75,220,114)",
+      "Lemhi"
+    ],
+    [
+      "rgb(45,101,212)",
+      "Methow"
+    ],
+    [
+      "rgb(200,188,82)",
+      "Minam"
+    ],
+    [
+      "rgb(229,161,110)",
+      "Panther Creek"
+    ],
+    [
+      "rgb(213,101,105)",
+      "South Fork Salmon"
+    ],
+    [
+      "rgb(85,191,220)",
+      "Tucannon"
+    ],
+    [
+      "rgb(122,220,100)",
+      "Upper Grande Ronde"
+    ],
+    [
+      "rgb(212,124,208)",
+      "Wenatchee"
+    ],
+    [
+      "rgb(237,82,157)",
+      "Yankee Fork"
+    ],
+    [
+      "rgb(180,94,237)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "watersheds-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "name",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "name"
+          ],
+          "Asotin",
+          "rgb(147,202,46)",
+          "Entiat",
+          "rgb(94,72,237)",
+          "John Day",
+          "rgb(46,225,180)",
+          "Lemhi",
+          "rgb(75,220,114)",
+          "Methow",
+          "rgb(45,101,212)",
+          "Minam",
+          "rgb(200,188,82)",
+          "Panther Creek",
+          "rgb(229,161,110)",
+          "South Fork Salmon",
+          "rgb(213,101,105)",
+          "Tucannon",
+          "rgb(85,191,220)",
+          "Upper Grande Ronde",
+          "rgb(122,220,100)",
+          "Wenatchee",
+          "rgb(212,124,208)",
+          "Yankee Fork",
+          "rgb(237,82,157)",
+          "NULL",
+          "rgb(180,94,237)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "watersheds-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "name",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

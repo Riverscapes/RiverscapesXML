@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(18,131,14)",
+      "< 30% Inactive"
+    ],
+    [
+      "rgb(149,207,146)",
+      "30% to 60% inactive"
+    ],
+    [
+      "rgb(229,224,134)",
+      "60% to 90% inactive"
+    ],
+    [
+      "rgb(255,127,0)",
+      "> 90% Inactive"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "metric_prop_inactivevb-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "inactive_floodplain_proportion",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "inactive_floodplain_proportion"
+          ],
+          0.0,
+          "rgb(18,131,14)",
+          0.2999,
+          "rgb(18,131,14)",
+          0.3,
+          "rgb(149,207,146)",
+          0.5999,
+          "rgb(149,207,146)",
+          0.6,
+          "rgb(229,224,134)",
+          0.8999,
+          "rgb(229,224,134)",
+          0.9,
+          "rgb(255,127,0)",
+          1.0,
+          "rgb(255,127,0)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

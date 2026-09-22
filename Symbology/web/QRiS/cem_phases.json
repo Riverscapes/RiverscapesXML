@@ -1,0 +1,95 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(5,105,9,0.502)",
+      "0 Anastomosing"
+    ],
+    [
+      "rgba(72,118,152,0.502)",
+      "1 Sinuous Single Thread"
+    ],
+    [
+      "rgba(131,108,56,0.502)",
+      "2 Channelized"
+    ],
+    [
+      "rgba(141,27,25,0.502)",
+      "3 Degradation"
+    ],
+    [
+      "rgba(255,151,5,0.502)",
+      "4 Degradation and Widening"
+    ],
+    [
+      "rgba(195,174,113,0.502)",
+      "5 Aggradation and Widening"
+    ],
+    [
+      "rgba(255,226,5,0.502)",
+      "6 Quasi Equilibrium"
+    ],
+    [
+      "rgba(130,198,98,0.502)",
+      "7 Laterally Active"
+    ],
+    [
+      "rgba(0,242,16,0.502)",
+      "8 Anastomosing"
+    ],
+    [
+      "rgb(90,141,203)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cem_phases-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "SEM Stage",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "SEM Stage"
+          ],
+          "0 Anastomosing",
+          "rgba(5,105,9,0.502)",
+          "1 Sinuous Single Thread",
+          "rgba(72,118,152,0.502)",
+          "2 Channelized",
+          "rgba(131,108,56,0.502)",
+          "3 Degradation",
+          "rgba(141,27,25,0.502)",
+          "4 Degradation and Widening",
+          "rgba(255,151,5,0.502)",
+          "5 Aggradation and Widening",
+          "rgba(195,174,113,0.502)",
+          "6 Quasi Equilibrium",
+          "rgba(255,226,5,0.502)",
+          "7 Laterally Active",
+          "rgba(130,198,98,0.502)",
+          "8 Anastomosing",
+          "rgba(0,242,16,0.502)",
+          "",
+          "rgb(90,141,203)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "cem_phases-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "SEM Stage",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

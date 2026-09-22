@@ -1,0 +1,92 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(178,178,178)",
+      "No Historic Riparian Vegetation Detected"
+    ],
+    [
+      "rgb(255,0,0)",
+      "Large Departure: > 66%"
+    ],
+    [
+      "rgb(245,245,0)",
+      "Significant Departure: 33% to 66%"
+    ],
+    [
+      "rgb(148,247,0)",
+      "Minor Departure: 10% to 33%"
+    ],
+    [
+      "rgb(56,168,0)",
+      "Negligible Departure: <10%"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "NativeRiparianVegetationDeparture-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "NATIV_DEP",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "NATIV_DEP"
+          ],
+          -9999.0,
+          "rgb(178,178,178)",
+          -9998.999999,
+          "rgb(255,0,0)",
+          0.333234,
+          "rgb(255,0,0)",
+          0.333334,
+          "rgb(245,245,0)",
+          0.666568,
+          "rgb(245,245,0)",
+          0.666668,
+          "rgb(148,247,0)",
+          0.899901,
+          "rgb(148,247,0)",
+          0.900001,
+          "rgb(56,168,0)",
+          10000000.0,
+          "rgb(56,168,0)"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "NATIV_DEP"
+          ],
+          -9999.0,
+          1.0,
+          -9998.999999,
+          1.5,
+          0.333234,
+          1.5,
+          0.333334,
+          1.5,
+          0.666568,
+          1.5,
+          0.666668,
+          1.5,
+          0.899901,
+          1.5,
+          0.900001,
+          1.5,
+          10000000.0,
+          1.5
+        ]
+      }
+    }
+  ]
+}

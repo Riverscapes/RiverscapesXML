@@ -1,0 +1,68 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(163,242,242)",
+      "Low Channel Area"
+    ],
+    [
+      "rgb(122,201,224)",
+      "Low-Mid Channel Area"
+    ],
+    [
+      "rgb(82,160,205)",
+      "Mid Channel Area"
+    ],
+    [
+      "rgb(41,118,187)",
+      "Mid-High Channel Area"
+    ],
+    [
+      "rgb(0,77,168)",
+      "High Channel Area"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "Act_Chan_Area-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "active_channel_area",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "active_channel_area"
+          ],
+          31.4193,
+          "rgb(163,242,242)",
+          114.25672,
+          "rgb(163,242,242)",
+          114.25682,
+          "rgb(122,201,224)",
+          217.00514,
+          "rgb(122,201,224)",
+          217.00524,
+          "rgb(82,160,205)",
+          592.01588,
+          "rgb(82,160,205)",
+          592.01598,
+          "rgb(41,118,187)",
+          1228.68858,
+          "rgb(41,118,187)",
+          1228.68868,
+          "rgb(0,77,168)",
+          157292.2337,
+          "rgb(0,77,168)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

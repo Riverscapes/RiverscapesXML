@@ -1,0 +1,22 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(190,207,80)",
+      "basins"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "basins-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "basins",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(190,207,80)",
+        "fill-opacity": 0.6
+      }
+    }
+  ]
+}

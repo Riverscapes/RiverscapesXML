@@ -1,0 +1,50 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(161,49,251)",
+      "Capture Site"
+    ],
+    [
+      "rgb(253,231,76)",
+      "Holding Site"
+    ],
+    [
+      "rgb(78,205,228)",
+      "Release Site"
+    ],
+    [
+      "rgb(192,177,0)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "beaver_protocol_translocations-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "type",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "type"
+          ],
+          "Capture Site",
+          "rgb(161,49,251)",
+          "Holding Site",
+          "rgb(253,231,76)",
+          "Release Site",
+          "rgb(78,205,228)",
+          "",
+          "rgb(192,177,0)",
+          "rgb(128,128,128)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

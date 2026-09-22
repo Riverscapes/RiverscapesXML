@@ -1,0 +1,77 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(31,44,224,0.455)",
+      "Increase Channel Complexity"
+    ],
+    [
+      "rgba(192,99,215,0.447)",
+      "Accelerate Incision Recovery"
+    ],
+    [
+      "rgba(67,215,228,0.451)",
+      "Lateral Channel Migration"
+    ],
+    [
+      "rgba(217,155,89,0.455)",
+      "Increase Floodplain Connectivity"
+    ],
+    [
+      "rgba(110,205,132,0.451)",
+      "Facilitate Beaver Translocation"
+    ],
+    [
+      "rgb(218,82,0)",
+      "Other"
+    ],
+    [
+      "rgb(0,0,0)",
+      "Unclassified"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "zoi-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "type_id",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "type_id"
+          ],
+          1,
+          "rgba(31,44,224,0.455)",
+          2,
+          "rgba(192,99,215,0.447)",
+          3,
+          "rgba(67,215,228,0.451)",
+          4,
+          "rgba(217,155,89,0.455)",
+          5,
+          "rgba(110,205,132,0.451)",
+          6,
+          "rgb(218,82,0)",
+          "",
+          "rgb(0,0,0)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "zoi-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "type_id",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

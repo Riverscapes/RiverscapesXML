@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(84,176,74)",
+      "stream gages"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "stream_gages-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "stream_gages",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(84,176,74)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(204,204,204)",
+      "No Data"
+    ],
+    [
+      "rgb(137,112,68)",
+      "< 50%"
+    ],
+    [
+      "rgb(205,170,102)",
+      "51 - 75%"
+    ],
+    [
+      "rgb(245,245,122)",
+      "76 - 90%"
+    ],
+    [
+      "rgb(152,230,0)",
+      "91 - 100%"
+    ],
+    [
+      "rgb(38,115,0)",
+      "< 100%"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "ProportionHistoricallyVegetated-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "HIST_VEG",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "HIST_VEG"
+          ],
+          -9999.0,
+          "rgb(204,204,204)",
+          -9.9e-05,
+          "rgb(204,204,204)",
+          1e-06,
+          "rgb(137,112,68)",
+          0.499901,
+          "rgb(137,112,68)",
+          0.500001,
+          "rgb(205,170,102)",
+          0.749901,
+          "rgb(205,170,102)",
+          0.750001,
+          "rgb(245,245,122)",
+          0.899901,
+          "rgb(245,245,122)",
+          0.900001,
+          "rgb(152,230,0)",
+          0.999901,
+          "rgb(152,230,0)",
+          1.000001,
+          "rgb(38,115,0)",
+          50.0,
+          "rgb(38,115,0)"
+        ],
+        "line-width": 1.0
+      }
+    }
+  ]
+}

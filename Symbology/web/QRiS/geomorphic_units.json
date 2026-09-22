@@ -1,0 +1,75 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(128,128,128)",
+      "Trough"
+    ],
+    [
+      "rgb(145,210,199)",
+      "Chute"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Bowl"
+    ],
+    [
+      "rgb(65,109,180)",
+      "Pond"
+    ],
+    [
+      "rgb(0,77,168)",
+      "Pool"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Mound"
+    ],
+    [
+      "rgb(168,0,0)",
+      "Bank Attached Bar"
+    ],
+    [
+      "rgb(137,91,69)",
+      "Mid Channel Bar"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Plane"
+    ],
+    [
+      "rgb(230,230,0)",
+      "Glide/Run"
+    ],
+    [
+      "rgb(109,196,167)",
+      "Rapid"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Saddle"
+    ],
+    [
+      "rgb(250,170,0)",
+      "Riffle"
+    ],
+    [
+      "rgb(141,90,153)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "geomorphic_units-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "geomorphic_units",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(145,210,199)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

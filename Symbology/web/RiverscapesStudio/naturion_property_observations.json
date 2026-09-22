@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,159,68)",
+      "naturion property observations"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "naturion_property_observations-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "naturion_property_observations",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(255,159,68)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

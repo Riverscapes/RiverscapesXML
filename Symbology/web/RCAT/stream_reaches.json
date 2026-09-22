@@ -1,0 +1,91 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,77,168)",
+      "46006 - Perrenial"
+    ],
+    [
+      "rgb(170,255,0)",
+      "46003 - Intermittent"
+    ],
+    [
+      "rgb(230,152,0)",
+      "46007 - Ephemeral"
+    ],
+    [
+      "rgb(163,242,242)",
+      "33600 - Canal"
+    ],
+    [
+      "rgb(255,170,0)",
+      "33400 - Connector"
+    ],
+    [
+      "rgb(207,89,106)",
+      "55800 - Artificial Path"
+    ],
+    [
+      "rgb(0,0,0)",
+      "42800 - Pipe"
+    ],
+    [
+      "rgb(0,0,0)",
+      "42801 - Pipe"
+    ],
+    [
+      "rgb(0,0,0)",
+      "42802 - Pipe"
+    ],
+    [
+      "rgb(0,0,0)",
+      "42807 - Pipe"
+    ],
+    [
+      "rgb(0,0,0)",
+      "42813 - Pipe"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "stream_reaches-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "FCode",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "FCode"
+          ],
+          46006,
+          "rgb(0,77,168)",
+          46003,
+          "rgb(170,255,0)",
+          46007,
+          "rgb(230,152,0)",
+          33600,
+          "rgb(163,242,242)",
+          33400,
+          "rgb(255,170,0)",
+          55800,
+          "rgb(207,89,106)",
+          42800,
+          "rgb(0,0,0)",
+          42801,
+          "rgb(0,0,0)",
+          42802,
+          "rgb(0,0,0)",
+          42807,
+          "rgb(0,0,0)",
+          42813,
+          "rgb(0,0,0)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}
