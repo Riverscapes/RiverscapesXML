@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(9,98,242,0.318)",
+      "thiessen dissolved"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "thiessen_dissolved-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "thiessen_dissolved",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(9,98,242,0.318)"
+      }
+    },
+    {
+      "id": "thiessen_dissolved-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "thiessen_dissolved",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(0,113,242)",
+        "line-width": 0.26,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

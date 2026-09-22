@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(172,120,255,0.502)",
+      "planning protocol min recovery space"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "planning_protocol_min_recovery_space-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "planning_protocol_min_recovery_space",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(172,120,255,0.502)"
+      }
+    },
+    {
+      "id": "planning_protocol_min_recovery_space-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "planning_protocol_min_recovery_space",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,255,255)",
+        "line-width": 0.46,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

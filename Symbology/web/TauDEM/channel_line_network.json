@@ -1,0 +1,22 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(23,44,160)",
+      "channel line network"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "channel_line_network-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "channel_line_network",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(23,44,160)",
+        "line-width": 0.26
+      }
+    }
+  ]
+}

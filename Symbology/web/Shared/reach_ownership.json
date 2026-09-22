@@ -1,0 +1,199 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(150,150,150)",
+      " Private"
+    ],
+    [
+      "rgb(159,221,174)",
+      "United States Forest Service"
+    ],
+    [
+      "rgb(255,234,140)",
+      "Bureau of Land Management"
+    ],
+    [
+      "rgb(209,153,255)",
+      "National Park Service"
+    ],
+    [
+      "rgb(255,255,255)",
+      "None"
+    ],
+    [
+      "rgb(232,228,97)",
+      "United States Army Corps of Engineers"
+    ],
+    [
+      "rgb(59,81,143)",
+      "United States Bureau of Reclamation"
+    ],
+    [
+      "rgb(168,111,103)",
+      "United States Department of Agriculture"
+    ],
+    [
+      "rgb(240,98,245)",
+      "United States Department of Interior"
+    ],
+    [
+      "rgb(250,177,255)",
+      "United States Department Of Defence"
+    ],
+    [
+      "rgb(91,179,166)",
+      " United States Fish and Wildlife Service"
+    ],
+    [
+      "rgb(216,162,135)",
+      " United States Department of Energy"
+    ],
+    [
+      "rgb(115,178,255)",
+      "State"
+    ],
+    [
+      "rgb(159,221,174)",
+      "Forest Service"
+    ],
+    [
+      "rgb(59,163,95)",
+      "Bonneville Power Administration"
+    ],
+    [
+      "rgb(46,115,133)",
+      "USCG"
+    ],
+    [
+      "rgb(224,189,150)",
+      "BOP"
+    ],
+    [
+      "rgb(107,51,128)",
+      "IBWC"
+    ],
+    [
+      "rgb(116,85,128)",
+      "FAA"
+    ],
+    [
+      "rgb(219,127,159)",
+      "United States Department of Justice"
+    ],
+    [
+      "rgb(207,91,183)",
+      "United States Navy"
+    ],
+    [
+      "rgb(173,66,66)",
+      "USMC"
+    ],
+    [
+      "rgb(116,85,128)",
+      "FHA"
+    ],
+    [
+      "rgb(73,209,164)",
+      "GSA"
+    ],
+    [
+      "rgb(149,217,240)",
+      "VA"
+    ],
+    [
+      "rgb(245,105,168)",
+      "United States Army"
+    ],
+    [
+      "rgb(207,117,87)",
+      "United States Air Force"
+    ],
+    [
+      "rgb(255,180,81)",
+      "Bureau of Indian Affairs"
+    ],
+    [
+      "rgb(0,0,0)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "reach_ownership-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ownership",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "ownership"
+          ],
+          "PVT",
+          "rgb(150,150,150)",
+          "USFS",
+          "rgb(159,221,174)",
+          "BLM",
+          "rgb(255,234,140)",
+          "NPS",
+          "rgb(209,153,255)",
+          "None",
+          "rgb(255,255,255)",
+          "USACE",
+          "rgb(232,228,97)",
+          "USBR",
+          "rgb(59,81,143)",
+          "USDA",
+          "rgb(168,111,103)",
+          "DOI",
+          "rgb(240,98,245)",
+          "DOD",
+          "rgb(250,177,255)",
+          "FWS",
+          "rgb(91,179,166)",
+          "DOE",
+          "rgb(216,162,135)",
+          "ST",
+          "rgb(115,178,255)",
+          "4USFS",
+          "rgb(159,221,174)",
+          "BPA",
+          "rgb(59,163,95)",
+          "USCG",
+          "rgb(46,115,133)",
+          "BOP",
+          "rgb(224,189,150)",
+          "IBWC",
+          "rgb(107,51,128)",
+          "FAA",
+          "rgb(116,85,128)",
+          "DOJ",
+          "rgb(219,127,159)",
+          "NAVY",
+          "rgb(207,91,183)",
+          "USMC",
+          "rgb(173,66,66)",
+          "FHA",
+          "rgb(116,85,128)",
+          "GSA",
+          "rgb(73,209,164)",
+          "VA",
+          "rgb(149,217,240)",
+          "ARMY",
+          "rgb(245,105,168)",
+          "USAF",
+          "rgb(207,117,87)",
+          "BIA",
+          "rgb(255,180,81)",
+          "",
+          "rgb(0,0,0)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,255,204)",
+      "VRI Class I"
+    ],
+    [
+      "rgb(129,206,185)",
+      "VRI Class II"
+    ],
+    [
+      "rgb(51,145,188)",
+      "VRI Class III"
+    ],
+    [
+      "rgb(37,52,148)",
+      "VRI Class IV"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "VRI_CLASS_CODE",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "VRI_CLASS_CODE"
+          ],
+          "I",
+          "rgb(255,255,204)",
+          "II",
+          "rgb(129,206,185)",
+          "III",
+          "rgb(51,145,188)",
+          "IV",
+          "rgb(37,52,148)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "BLM_Natl_Visual_Resource_Inventory_Classes_Polygon_A-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "VRI_CLASS_CODE",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

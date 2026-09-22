@@ -1,0 +1,84 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(250,250,250)",
+      "Coastal Bay"
+    ],
+    [
+      "rgb(215,215,215)",
+      "Conservation Land"
+    ],
+    [
+      "rgb(180,180,180)",
+      "Inland Bay"
+    ],
+    [
+      "rgb(145,145,145)",
+      "Island"
+    ],
+    [
+      "rgb(110,110,110)",
+      "Lake"
+    ],
+    [
+      "rgb(75,75,75)",
+      "Locality"
+    ],
+    [
+      "rgb(40,40,40)",
+      "Suburb"
+    ],
+    [
+      "rgb(5,5,5)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "nz_suburbs-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "type"
+          ],
+          "Coastal Bay",
+          "rgb(250,250,250)",
+          "Conservation Land",
+          "rgb(215,215,215)",
+          "Inland Bay",
+          "rgb(180,180,180)",
+          "Island",
+          "rgb(145,145,145)",
+          "Lake",
+          "rgb(110,110,110)",
+          "Locality",
+          "rgb(75,75,75)",
+          "Suburb",
+          "rgb(40,40,40)",
+          "NULL",
+          "rgb(5,5,5)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "nz_suburbs-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

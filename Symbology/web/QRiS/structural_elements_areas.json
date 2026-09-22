@@ -1,0 +1,47 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(136,113,49,0.6)",
+      "Jam"
+    ],
+    [
+      "rgb(152,125,183)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "structural_elements_areas-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Type"
+          ],
+          "Jam",
+          "rgba(136,113,49,0.6)",
+          "",
+          "rgb(152,125,183)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "structural_elements_areas-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

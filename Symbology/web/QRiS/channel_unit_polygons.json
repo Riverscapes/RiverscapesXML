@@ -1,0 +1,71 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(105,232,202,0.451)",
+      "Concavity"
+    ],
+    [
+      "rgba(238,47,91,0.451)",
+      "Convexity"
+    ],
+    [
+      "rgba(127,148,215,0.455)",
+      "Planar"
+    ],
+    [
+      "rgba(206,182,103,0.459)",
+      "Pond"
+    ],
+    [
+      "rgb(238,27,76)",
+      "NA"
+    ],
+    [
+      "rgb(0,0,0)",
+      "Unclassified"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "channel_unit_polygons-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "unit_type_id",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "unit_type_id"
+          ],
+          1,
+          "rgba(105,232,202,0.451)",
+          2,
+          "rgba(238,47,91,0.451)",
+          3,
+          "rgba(127,148,215,0.455)",
+          4,
+          "rgba(206,182,103,0.459)",
+          5,
+          "rgb(238,27,76)",
+          "",
+          "rgb(0,0,0)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "channel_unit_polygons-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "unit_type_id",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

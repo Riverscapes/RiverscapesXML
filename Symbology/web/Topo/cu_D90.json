@@ -1,0 +1,110 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,255,127)",
+      "Fines (< 2  mm)"
+    ],
+    [
+      "rgb(252,233,106)",
+      "Very Fine Gravel (2 to 4 mm)"
+    ],
+    [
+      "rgb(250,209,85)",
+      "Fine Gravel (4 to 8 mm)"
+    ],
+    [
+      "rgb(247,190,67)",
+      "Medium Gravel (8 to 16 mm)"
+    ],
+    [
+      "rgb(242,167,46)",
+      "Coarse Gravel (16 to 32 mm)"
+    ],
+    [
+      "rgb(207,122,31)",
+      "Very Coarse Gravel (32 to 64 mm)"
+    ],
+    [
+      "rgb(173,83,19)",
+      "Coarse Gravel (64 to 128 mm)"
+    ],
+    [
+      "rgb(138,46,10)",
+      "Cobble (128 to 256 mm)"
+    ],
+    [
+      "rgb(107,0,0)",
+      "Boulder (> 128 mm)"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cu_D90-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "D90",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "D90"
+          ],
+          1.0,
+          "rgb(255,255,127)",
+          1.999901,
+          "rgb(255,255,127)",
+          2.000001,
+          "rgb(252,233,106)",
+          3.999901,
+          "rgb(252,233,106)",
+          4.000001,
+          "rgb(250,209,85)",
+          7.999901,
+          "rgb(250,209,85)",
+          8.000001,
+          "rgb(247,190,67)",
+          15.999901,
+          "rgb(247,190,67)",
+          16.000001,
+          "rgb(242,167,46)",
+          31.999901,
+          "rgb(242,167,46)",
+          32.000001,
+          "rgb(207,122,31)",
+          63.999901,
+          "rgb(207,122,31)",
+          64.000001,
+          "rgb(173,83,19)",
+          127.999901,
+          "rgb(173,83,19)",
+          128.000001,
+          "rgb(138,46,10)",
+          255.999901,
+          "rgb(138,46,10)",
+          256.000001,
+          "rgb(107,0,0)",
+          1000000.0,
+          "rgb(107,0,0)"
+        ],
+        "fill-opacity": 0.6
+      }
+    },
+    {
+      "id": "cu_D90-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "D90",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

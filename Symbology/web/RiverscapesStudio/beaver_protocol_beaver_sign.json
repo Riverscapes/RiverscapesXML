@@ -1,0 +1,128 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,216,107)",
+      "Bank Den"
+    ],
+    [
+      "rgb(255,141,35)",
+      "Bank Lodge"
+    ],
+    [
+      "rgb(189,3,0)",
+      "Pond Lodge"
+    ],
+    [
+      "rgb(140,255,136)",
+      "Chew Stick"
+    ],
+    [
+      "rgb(110,223,56)",
+      "Clipped Vegetation"
+    ],
+    [
+      "rgb(216,255,0)",
+      "Felled Tree"
+    ],
+    [
+      "rgb(8,205,188)",
+      "Food Cache"
+    ],
+    [
+      "rgb(194,230,153)",
+      "Harvested Branches"
+    ],
+    [
+      "rgb(194,251,252)",
+      "Canal"
+    ],
+    [
+      "rgb(32,162,243)",
+      "Pond Excavation"
+    ],
+    [
+      "rgb(127,80,23)",
+      "Scat"
+    ],
+    [
+      "rgb(223,194,125)",
+      "Scent Mound"
+    ],
+    [
+      "rgb(255,248,115)",
+      "Set of Tracks"
+    ],
+    [
+      "rgb(136,181,169)",
+      "Skid Trail"
+    ],
+    [
+      "rgb(9,36,153)",
+      "Slide"
+    ],
+    [
+      "rgb(200,200,200)",
+      "Other"
+    ],
+    [
+      "rgb(192,177,0)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "beaver_protocol_beaver_sign-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "match",
+          [
+            "get",
+            "Type"
+          ],
+          "Bank Den",
+          "rgb(255,216,107)",
+          "Bank Lodge",
+          "rgb(255,141,35)",
+          "Pond Lodge",
+          "rgb(189,3,0)",
+          "Chew Stick",
+          "rgb(140,255,136)",
+          "Clipped Vegetation",
+          "rgb(110,223,56)",
+          "Felled Tree",
+          "rgb(216,255,0)",
+          "Food Cache",
+          "rgb(8,205,188)",
+          "Harvested Branches",
+          "rgb(194,230,153)",
+          "Canal",
+          "rgb(194,251,252)",
+          "Pond Excavation",
+          "rgb(32,162,243)",
+          "Scat",
+          "rgb(127,80,23)",
+          "Scent Mound",
+          "rgb(223,194,125)",
+          "Set of Tracks",
+          "rgb(255,248,115)",
+          "Skid Trail",
+          "rgb(136,181,169)",
+          "Slide",
+          "rgb(9,36,153)",
+          "Other",
+          "rgb(200,200,200)",
+          "",
+          "rgb(192,177,0)",
+          "rgb(128,128,128)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

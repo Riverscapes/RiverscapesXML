@@ -1,0 +1,55 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(56,168,0)",
+      "Negligible Departure: < 10%"
+    ],
+    [
+      "rgb(176,224,0)",
+      "Minor Departure: 10% to 33%"
+    ],
+    [
+      "rgb(255,170,0)",
+      "Significant Departure: 33% to 66%"
+    ],
+    [
+      "rgb(255,0,0)",
+      "Large Departure: > 66%"
+    ],
+    [
+      "rgb(0,130,166)",
+      "<all other values>"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "RiparianVegetationDeparture-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "RVD",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "RVD"
+          ],
+          "Negligible Departure: < 10%",
+          "rgb(56,168,0)",
+          "Minor Departure: 10% to 33%",
+          "rgb(176,224,0)",
+          "Significant Departure: 33% to 66%",
+          "rgb(255,170,0)",
+          "Large Departure: > 66%",
+          "rgb(255,0,0)",
+          "",
+          "rgb(0,130,166)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

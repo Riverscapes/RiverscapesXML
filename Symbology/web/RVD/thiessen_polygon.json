@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(126,127,128,0.086)",
+      "thiessen polygon"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "thiessen_polygon-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "thiessen_polygon",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(126,127,128,0.086)"
+      }
+    },
+    {
+      "id": "thiessen_polygon-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "thiessen_polygon",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(35,35,35)",
+        "line-width": 0.26,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

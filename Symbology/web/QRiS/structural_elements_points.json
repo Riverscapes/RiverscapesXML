@@ -1,0 +1,55 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(128,128,128)",
+      "Complex"
+    ],
+    [
+      "rgb(136,113,49)",
+      "Jam Complex"
+    ],
+    [
+      "rgb(255,216,107)",
+      "Dam Complex"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Structure"
+    ],
+    [
+      "rgb(255,216,107)",
+      "Dam"
+    ],
+    [
+      "rgb(136,113,49)",
+      "Jam"
+    ],
+    [
+      "rgb(163,163,163)",
+      "Root Mass"
+    ],
+    [
+      "rgb(248,146,183)",
+      "Other"
+    ],
+    [
+      "rgb(255,158,23)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "structural_elements_points-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "structural_elements_points",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(136,113,49)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

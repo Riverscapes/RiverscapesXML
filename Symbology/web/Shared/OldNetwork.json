@@ -1,0 +1,22 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(10,147,252)",
+      "OldNetwork"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "OldNetwork-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "OldNetwork",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(10,147,252)",
+        "line-width": 1.0
+      }
+    }
+  ]
+}

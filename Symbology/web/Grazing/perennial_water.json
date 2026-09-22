@@ -1,0 +1,34 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,213,250)",
+      "perennial water"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "perennial_water-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "perennial_water",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(0,213,250)",
+        "fill-opacity": 0.6
+      }
+    },
+    {
+      "id": "perennial_water-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "perennial_water",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(0,213,250)",
+        "line-width": 0.26,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

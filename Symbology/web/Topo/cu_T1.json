@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(163,237,83)",
+      "Fast Water Non-Turbulent"
+    ],
+    [
+      "rgb(255,85,0)",
+      "Fast-Turbulent"
+    ],
+    [
+      "rgb(115,223,255)",
+      "Slow Water/Pool"
+    ],
+    [
+      "rgb(139,77,219)",
+      "Small Side Channel"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cu_T1-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "ChannelUnits.csv.Tier1",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "ChannelUnits.csv.Tier1"
+          ],
+          "Fast Water Non-Turbulent",
+          "rgb(163,237,83)",
+          "Fast-Turbulent",
+          "rgb(255,85,0)",
+          "Slow/Pool",
+          "rgb(115,223,255)",
+          "Small Side Channel",
+          "rgb(139,77,219)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "cu_T1-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ChannelUnits.csv.Tier1",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

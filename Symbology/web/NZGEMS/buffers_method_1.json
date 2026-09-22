@@ -1,0 +1,84 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(208,28,139)",
+      "Very High Hazard"
+    ],
+    [
+      "rgb(227,116,184)",
+      "High Hazard"
+    ],
+    [
+      "rgb(242,191,222)",
+      "Valley Bottom"
+    ],
+    [
+      "rgb(245,228,239)",
+      "Valley Bottom and Very High Hazard"
+    ],
+    [
+      "rgb(229,241,215)",
+      "Valley Bottom and High Hazard"
+    ],
+    [
+      "rgb(193,228,150)",
+      "Valley Bottom Threshhold"
+    ],
+    [
+      "rgb(138,202,93)",
+      "Minimum"
+    ],
+    [
+      "rgb(77,172,38)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "buffers_method_1-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Buf type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Buf type"
+          ],
+          "Very High Hazard",
+          "rgb(208,28,139)",
+          "High Hazard",
+          "rgb(227,116,184)",
+          "Valley Bottom",
+          "rgb(242,191,222)",
+          "Valley Bottom and Very High Hazard",
+          "rgb(245,228,239)",
+          "Valley Bottom and High Hazard",
+          "rgb(229,241,215)",
+          "Valley Bottom Threshhold",
+          "rgb(193,228,150)",
+          "Minimum",
+          "rgb(138,202,93)",
+          "NULL",
+          "rgb(77,172,38)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "buffers_method_1-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Buf type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

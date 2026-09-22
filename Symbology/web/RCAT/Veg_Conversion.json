@@ -1,0 +1,66 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(229,229,21)",
+      "Conv. To Agriculture"
+    ],
+    [
+      "rgb(215,70,153)",
+      "Conifer Encroachment"
+    ],
+    [
+      "rgb(54,195,242)",
+      "Conv. To Grass/Shrubland"
+    ],
+    [
+      "rgb(137,76,158)",
+      "Conv. To Invasive"
+    ],
+    [
+      "rgb(249,114,11)",
+      "Non-Riparian Conversions"
+    ],
+    [
+      "rgb(166,116,42)",
+      "Devegetation"
+    ],
+    [
+      "rgb(237,32,36)",
+      "Developement"
+    ],
+    [
+      "rgb(79,79,79)",
+      "Multiple Conv. Types"
+    ],
+    [
+      "rgb(109,190,69)",
+      "Negligible to Minor Veg. Conversion"
+    ],
+    [
+      "rgb(215,235,242)",
+      "From Grass/Shrubland to Riparian"
+    ],
+    [
+      "rgb(247,214,167)",
+      "From Devegetated to Riparian"
+    ],
+    [
+      "rgb(242,209,228)",
+      "From Conifer to Riparian"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "Veg_Conversion-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Veg_Conversion",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(229,229,21)",
+        "line-width": 1
+      }
+    }
+  ]
+}

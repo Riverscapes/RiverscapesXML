@@ -1,0 +1,65 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(0,176,80,0.6)",
+      "Approves of Low-Tech but Wants Limited Intervention(s) and Minor Processes in the Valley Bottom"
+    ],
+    [
+      "rgba(255,255,0,0.6)",
+      "Approves of Low-Tech Restoration but Willing to Only Allow Some Dynamic Processes in the Valley Bottom"
+    ],
+    [
+      "rgba(255,190,0,0.6)",
+      "Approves of Low-Tech Restoration, Stream and Floodplain Adjustments by Beaver Activity and Wood Accumulation, and Adaptive Management"
+    ],
+    [
+      "rgba(175,0,0,0.6)",
+      "Doesn't Approve of Low-Tech"
+    ],
+    [
+      "rgb(226,127,84)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "planning_protocol_land_use-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Landowner Approval of Low-tech",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Landowner Approval of Low-tech"
+          ],
+          "Approves of Low-Tech but Wants Limited Intervention(s) and Minor Processes in the Valley Bottom",
+          "rgba(0,176,80,0.6)",
+          "Approves of Low-Tech Restoration but Willing to Only Allow Some Dynamic Processes in the Valley Bottom",
+          "rgba(255,255,0,0.6)",
+          "Approves of Low-Tech Restoration, Stream and Floodplain Adjustments by Beaver Activity and Wood Accumulation, and Adaptive Management",
+          "rgba(255,190,0,0.6)",
+          "Doesn't Approve of Low-Tech",
+          "rgba(175,0,0,0.6)",
+          "NULL",
+          "rgb(226,127,84)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "planning_protocol_land_use-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Landowner Approval of Low-tech",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(204,204,204)",
+      "No Land Use Data"
+    ],
+    [
+      "rgb(56,168,0)",
+      "Natural (0)"
+    ],
+    [
+      "rgb(230,230,0)",
+      "Light Agriculture (0.01 - 0.33)"
+    ],
+    [
+      "rgb(255,128,0)",
+      "Heavy Agriculture (0.34 - 0.66)"
+    ],
+    [
+      "rgb(255,0,0)",
+      "Developed (> 0.67)"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "LandUseIntensity-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "LUI",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "LUI"
+          ],
+          -9999.0,
+          "rgb(204,204,204)",
+          -0.010099,
+          "rgb(204,204,204)",
+          -0.009999,
+          "rgb(56,168,0)",
+          -9.9e-05,
+          "rgb(56,168,0)",
+          1e-06,
+          "rgb(230,230,0)",
+          0.329901,
+          "rgb(230,230,0)",
+          0.330001,
+          "rgb(255,128,0)",
+          0.659901,
+          "rgb(255,128,0)",
+          0.660001,
+          "rgb(255,0,0)",
+          1.0,
+          "rgb(255,0,0)"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "LUI"
+          ],
+          -9999.0,
+          1.0,
+          -0.010099,
+          1.0,
+          -0.009999,
+          1.1,
+          -9.9e-05,
+          1.1,
+          1e-06,
+          1.0,
+          0.329901,
+          1.0,
+          0.330001,
+          1.0,
+          0.659901,
+          1.0,
+          0.660001,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ]
+}

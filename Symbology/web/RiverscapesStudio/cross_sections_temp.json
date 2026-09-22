@@ -1,0 +1,22 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(255,70,215)",
+      "cross sections temp"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "cross_sections_temp-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "cross_sections_temp",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,70,215)",
+        "line-width": 1.0
+      }
+    }
+  ]
+}

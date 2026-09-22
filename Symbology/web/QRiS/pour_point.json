@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(219,30,42)",
+      "pour point"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "pour_point-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "pour_point",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(219,30,42)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

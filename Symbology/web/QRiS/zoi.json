@@ -1,0 +1,165 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(164,113,88)",
+      "Complex ZOI"
+    ],
+    [
+      "rgb(8,232,232)",
+      "Increase Floodplain Connectivity"
+    ],
+    [
+      "rgb(25,54,219)",
+      "Overbank Flow Dispersal"
+    ],
+    [
+      "rgb(144,97,56)",
+      "Aggradation and Avulsion"
+    ],
+    [
+      "rgb(91,137,194)",
+      "Side-Channel Connection"
+    ],
+    [
+      "rgb(9,235,84)",
+      "Riparian/Wetland Expansion"
+    ],
+    [
+      "rgb(182,44,224)",
+      "Facilitate Beaver Translocation"
+    ],
+    [
+      "rgb(115,12,250)",
+      "Pond/Wetland Creation"
+    ],
+    [
+      "rgb(252,128,20)",
+      "Accelerate Incision Recovery"
+    ],
+    [
+      "rgb(226,12,48)",
+      "Lateral Channel Migration"
+    ],
+    [
+      "rgb(232,220,92)",
+      "Widening and Aggradation"
+    ],
+    [
+      "rgb(252,106,184)",
+      "Increase Channel Complexity"
+    ],
+    [
+      "rgb(185,54,44)",
+      "Headcut Arrest"
+    ],
+    [
+      "rgb(63,106,27)",
+      "Cover/Complexity"
+    ],
+    [
+      "rgb(164,113,88)",
+      "Structure ZOI"
+    ],
+    [
+      "rgb(0,0,0)",
+      "Hydraulic"
+    ],
+    [
+      "rgba(99,58,11,0.4)",
+      "Eddy"
+    ],
+    [
+      "rgba(216,179,101,0.4)",
+      "Splitting Flow"
+    ],
+    [
+      "rgba(3,87,80,0.4)",
+      "Shunting Flow"
+    ],
+    [
+      "rgba(65,203,189,0.4)",
+      "Ponding Flow"
+    ],
+    [
+      "rgba(197,27,125,0.4)",
+      "Overflow"
+    ],
+    [
+      "rgba(118,42,131,0.4)",
+      "Constriction Jet"
+    ],
+    [
+      "rgba(252,197,192,0.4)",
+      "Divergent Flow"
+    ],
+    [
+      "rgb(0,0,0)",
+      "Geomorphic"
+    ],
+    [
+      "rgb(215,25,28)",
+      "Erode Bank"
+    ],
+    [
+      "rgb(244,96,0)",
+      "Erosion from return flow headcut"
+    ],
+    [
+      "rgb(242,156,9)",
+      "Erosion from plunge"
+    ],
+    [
+      "rgb(234,211,2)",
+      "Erosion from convergent jet"
+    ],
+    [
+      "rgb(241,255,49)",
+      "Erosion of bar edge"
+    ],
+    [
+      "rgb(0,134,79)",
+      "Deposition overbank"
+    ],
+    [
+      "rgb(102,191,25)",
+      "Deposition of bar"
+    ],
+    [
+      "rgb(140,202,64)",
+      "Deposition in upstream backwater"
+    ],
+    [
+      "rgb(83,186,255)",
+      "Scout Pool Formation"
+    ],
+    [
+      "rgb(196,60,57)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "zoi-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "zoi",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgb(164,113,88)",
+        "fill-opacity": 0.6
+      }
+    },
+    {
+      "id": "zoi-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "zoi",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

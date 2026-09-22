@@ -1,0 +1,23 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(38,115,0)",
+      "ValleyBottomOutline"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "ValleyBottomOutline-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "ValleyBottomOutline",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(38,115,0)",
+        "line-width": 0.0,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

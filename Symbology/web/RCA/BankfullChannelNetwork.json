@@ -1,0 +1,73 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(242,241,162)",
+      "< 16 m"
+    ],
+    [
+      "rgb(255,252,56)",
+      "16 - 20 m"
+    ],
+    [
+      "rgb(255,128,0)",
+      "20 - 24 m"
+    ],
+    [
+      "rgb(245,5,165)",
+      "24 - 30 m"
+    ],
+    [
+      "rgb(145,18,224)",
+      "30 - 40 m"
+    ],
+    [
+      "rgb(12,28,173)",
+      "> 40 m"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "BankfullChannelNetwork-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "BUFWIDTH",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "BUFWIDTH"
+          ],
+          8.0,
+          "rgb(242,241,162)",
+          8.000001,
+          "rgb(255,252,56)",
+          9.999901,
+          "rgb(255,252,56)",
+          10.000001,
+          "rgb(255,128,0)",
+          11.999901,
+          "rgb(255,128,0)",
+          12.000001,
+          "rgb(245,5,165)",
+          14.999901,
+          "rgb(245,5,165)",
+          15.000001,
+          "rgb(145,18,224)",
+          19.999901,
+          "rgb(145,18,224)",
+          20.000001,
+          "rgb(12,28,173)",
+          50.0,
+          "rgb(12,28,173)"
+        ],
+        "line-width": 1.2
+      }
+    }
+  ]
+}

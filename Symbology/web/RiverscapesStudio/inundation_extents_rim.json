@@ -1,0 +1,59 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(255,0,197,0.6)",
+      "Free Flowing"
+    ],
+    [
+      "rgba(0,230,169,0.6)",
+      "Overflow"
+    ],
+    [
+      "rgba(0,112,255,0.6)",
+      "Ponded"
+    ],
+    [
+      "rgb(192,177,0)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "inundation_extents_rim-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Type"
+          ],
+          "Free Flowing",
+          "rgba(255,0,197,0.6)",
+          "Overflow",
+          "rgba(0,230,169,0.6)",
+          "Ponded",
+          "rgba(0,112,255,0.6)",
+          "",
+          "rgb(192,177,0)",
+          "rgb(128,128,128)"
+        ]
+      }
+    },
+    {
+      "id": "inundation_extents_rim-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Type",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

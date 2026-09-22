@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(51,160,44)",
+      "0 - 25"
+    ],
+    [
+      "rgb(129,161,71)",
+      "25 - 50"
+    ],
+    [
+      "rgb(234,163,57)",
+      "50 - 75"
+    ],
+    [
+      "rgb(255,0,0)",
+      "75 - 100"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "LUI_IGO-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "LUI",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "LUI"
+          ],
+          0.0,
+          "rgb(51,160,44)",
+          24.9999,
+          "rgb(51,160,44)",
+          25.0,
+          "rgb(129,161,71)",
+          49.9999,
+          "rgb(129,161,71)",
+          50.0,
+          "rgb(234,163,57)",
+          74.9999,
+          "rgb(234,163,57)",
+          75.0,
+          "rgb(255,0,0)",
+          100.0,
+          "rgb(255,0,0)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

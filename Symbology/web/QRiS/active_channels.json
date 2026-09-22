@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(151,219,242,0.6)",
+      "active channels"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "active_channels-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "active_channels",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(151,219,242,0.6)"
+      }
+    }
+  ]
+}

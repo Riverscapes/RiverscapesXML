@@ -1,0 +1,33 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(201,221,226,0.255)",
+      "complexes"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "complexes-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "complexes",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(201,221,226,0.255)"
+      }
+    },
+    {
+      "id": "complexes-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "complexes",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,0,0)",
+        "line-width": 0.5,
+        "line-opacity": 0.8
+      }
+    }
+  ]
+}

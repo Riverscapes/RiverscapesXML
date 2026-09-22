@@ -1,0 +1,39 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(128,128,128)",
+      "BDA"
+    ],
+    [
+      "rgb(128,128,128)",
+      "PALS"
+    ],
+    [
+      "rgb(128,128,128)",
+      "ALS"
+    ],
+    [
+      "rgb(128,128,128)",
+      "Other"
+    ],
+    [
+      "rgb(183,72,75)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "structure_points-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "structure_points",
+      "layout": {},
+      "paint": {
+        "circle-color": "rgb(183,72,75)",
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

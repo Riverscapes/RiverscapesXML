@@ -1,0 +1,68 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(88,87,70)",
+      "No floodplain"
+    ],
+    [
+      "rgb(113,120,68)",
+      "Low Floodplain"
+    ],
+    [
+      "rgb(138,153,65)",
+      "Mid Floodplain"
+    ],
+    [
+      "rgb(163,187,63)",
+      "Mid-High Floodplain"
+    ],
+    [
+      "rgb(188,220,60)",
+      "High Floodplain"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "Act_Fld_Area-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "active_floodplain_area",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "active_floodplain_area"
+          ],
+          0.0,
+          "rgb(88,87,70)",
+          0.0999,
+          "rgb(88,87,70)",
+          0.1,
+          "rgb(113,120,68)",
+          2311.66094,
+          "rgb(113,120,68)",
+          2311.66104,
+          "rgb(138,153,65)",
+          3514.01518,
+          "rgb(138,153,65)",
+          3514.01528,
+          "rgb(163,187,63)",
+          7564.18356,
+          "rgb(163,187,63)",
+          7564.18366,
+          "rgb(188,220,60)",
+          281300.5016,
+          "rgb(188,220,60)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

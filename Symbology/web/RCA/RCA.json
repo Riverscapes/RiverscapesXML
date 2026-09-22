@@ -1,0 +1,73 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,77,168)",
+      "Confined - Unimpacted"
+    ],
+    [
+      "rgb(168,0,0)",
+      "Confined - Impacted"
+    ],
+    [
+      "rgb(0,230,169)",
+      "Intact > 0.85"
+    ],
+    [
+      "rgb(170,255,0)",
+      "Good 0.65 - 0.85"
+    ],
+    [
+      "rgb(255,255,115)",
+      "Moderate 0.4 - 0.65"
+    ],
+    [
+      "rgb(255,170,0)",
+      "Poor 0.2 - 0.4"
+    ],
+    [
+      "rgb(255,0,0)",
+      "Very Poor < 0.2"
+    ],
+    [
+      "rgb(17,168,0)",
+      "<all other values>"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "RCA-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "CONDITION",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "CONDITION"
+          ],
+          "Confined - Unimpacted",
+          "rgb(0,77,168)",
+          "Confined - Impacted",
+          "rgb(168,0,0)",
+          "Intact",
+          "rgb(0,230,169)",
+          "Good",
+          "rgb(170,255,0)",
+          "Moderate",
+          "rgb(255,255,115)",
+          "Poor",
+          "rgb(255,170,0)",
+          "Very Poor",
+          "rgb(255,0,0)",
+          "",
+          "rgb(17,168,0)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

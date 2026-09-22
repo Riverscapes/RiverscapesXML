@@ -1,0 +1,78 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(11,4,5)",
+      "1"
+    ],
+    [
+      "rgb(52,36,70)",
+      "2"
+    ],
+    [
+      "rgb(64,73,142)",
+      "3"
+    ],
+    [
+      "rgb(53,123,163)",
+      "4"
+    ],
+    [
+      "rgb(57,171,172)",
+      "5"
+    ],
+    [
+      "rgb(122,214,174)",
+      "6"
+    ],
+    [
+      "rgb(222,245,229)",
+      ""
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "CwingStreamOrder-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "StreamOrde",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "StreamOrde"
+          ],
+          1,
+          "rgb(11,4,5)",
+          2,
+          "rgb(52,36,70)",
+          3,
+          "rgb(64,73,142)",
+          4,
+          "rgb(53,123,163)",
+          5,
+          "rgb(57,171,172)",
+          6,
+          "rgb(122,214,174)",
+          "",
+          "rgb(222,245,229)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "CwingStreamOrder-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "StreamOrde",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}

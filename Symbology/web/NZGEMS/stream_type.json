@@ -1,0 +1,79 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(215,25,28)",
+      "Confined headwater"
+    ],
+    [
+      "rgb(234,100,63)",
+      "Confined valley reach"
+    ],
+    [
+      "rgb(253,174,97)",
+      "Headwater swale"
+    ],
+    [
+      "rgb(254,215,144)",
+      "Partly confined headwater"
+    ],
+    [
+      "rgb(255,255,191)",
+      "Partly confined lowland"
+    ],
+    [
+      "rgb(213,238,178)",
+      "Partly confined mid-catchment"
+    ],
+    [
+      "rgb(171,221,164)",
+      "Steep headwater"
+    ],
+    [
+      "rgb(107,176,175)",
+      "Unconfined mainstem"
+    ],
+    [
+      "rgb(43,131,186)",
+      "Unconfined mid-catchment"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "stream_type-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "stream type",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "stream type"
+          ],
+          "Confined headwater",
+          "rgb(215,25,28)",
+          "Confined valley reach",
+          "rgb(234,100,63)",
+          "Headwater swale",
+          "rgb(253,174,97)",
+          "Partly confined headwater",
+          "rgb(254,215,144)",
+          "Partly confined lowland",
+          "rgb(255,255,191)",
+          "Partly confined mid-catchment",
+          "rgb(213,238,178)",
+          "Steep headwater",
+          "rgb(171,221,164)",
+          "Unconfined mainstem",
+          "rgb(107,176,175)",
+          "Unconfined mid-catchment",
+          "rgb(43,131,186)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

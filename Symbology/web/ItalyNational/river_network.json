@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(72,0,194)",
+      "Canals_l"
+    ],
+    [
+      "rgb(165,116,224)",
+      "Ditches_l"
+    ],
+    [
+      "rgb(67,26,201)",
+      "River_Net_l"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "river_network-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "sourceLayer",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "sourceLayer"
+          ],
+          "Canals_l",
+          "rgb(72,0,194)",
+          "Ditches_l",
+          "rgb(165,116,224)",
+          "River_Net_l",
+          "rgb(67,26,201)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}
