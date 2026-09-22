@@ -31,7 +31,8 @@ The action (`.github/workflows/symbology_sync.yml`) runs in two situations:
 Notes:
 
 - Only one run per branch happens at a time; a newer push cancels an in-progress run and starts fresh.
-- The bot's changes only touch `Symbology/web/`, which is outside the action's trigger path, so the action does **not** re-trigger itself in an infinite loop.
+- The bot's own commit is tagged `[skip ci]`, so the action does **not** re-trigger itself in an infinite loop.
+- The bot can push to `master` directly only because the **GitHub Actions** app is on the branch ruleset's bypass list (repo **Settings → Rules → Rulesets**). Humans still need pull requests — the exemption is scoped to the bot.
 
 ## What happens during a run
 
@@ -45,7 +46,7 @@ The action runs on a fresh Ubuntu runner with Python 3.12 and performs these ste
    - For each `.qml` file, generates the matching `.json` in `Symbology/web/<same folder>/`.
    - The output references `Symbology/web/vector.schema.json` via its `$schema` property, and the converter will fail the run if a file cannot be parsed into that shape. (Strict schema validation is only available when running the converter locally with `--validate`.)
 
-4. **Commit & pull request** — if any new JSON files were produced, they are committed to a dedicated bot branch (`bot/symbology-sync-<run-id>`) by `github-actions[bot]` and a pull request is opened against `master`. The workflow then tries to auto-merge that PR as soon as the required status check (`validate (3.12)`) passes. If branch protection also requires an approving review, the PR stays open and the run logs its URL for a human to merge. If nothing new was produced, no branch, commit, or PR is created.
+4. **Commit** — if any new JSON files were produced, they are committed to `master` by `github-actions[bot]` with the message *"Auto-convert QML → JSON for missing symbology files [skip ci]"*. If nothing new was produced, no commit is made.
 
 ## What the converter supports
 
@@ -76,8 +77,8 @@ Specifically:
 1. Put your `.qml` file in the folder that matches your program, e.g. `Symbology/qgis/MyProject/`.
    - The folder name becomes part of the output path and the URL, so choose it carefully.
    - Each `.qml` file gets its own JSON; a single QML containing several layers is also fine — the converter maps them into the JSON `layerStyles`.
-2. Commit and open a pull request against `master` (the branch is protected — changes must go through a PR). The PR must **include** changes under `Symbology/qgis/` for the action to run.
-3. Merge the QML PR. Within a couple of minutes the action runs, opens a follow-up PR adding the new JSON to `Symbology/web/`, and merges it automatically once the required checks pass (or leaves it open for you to merge if a review is required).
+2. Commit and push to `master`. The push must **include** changes under `Symbology/qgis/` for the action to run.
+3. Within a couple of minutes the action finishes and adds the new JSON to `Symbology/web/` in a follow-up commit from the bot.
 4. Reference the JSON in the viewer, e.g. `https://xml.riverscapes.xyz/Symbology/web/MyProject/my_style.json`.
 
 ## Updating existing symbology
@@ -86,8 +87,8 @@ Because the action never overwrites an existing JSON, updating a style takes one
 
 1. Edit or replace the `.qml` file in `Symbology/qgis/`.
 2. **Delete the corresponding `.json`** in `Symbology/web/`.
-3. Open a pull request against `master` that contains **both** the QML change and the JSON deletion. (Deleting only the JSON will *not* trigger the action — the trigger watches `Symbology/qgis/`, not `Symbology/web/`.)
-4. After the PR is merged, the action detects the missing JSON, regenerates it from your updated QML, and delivers it via its own auto-merged pull request.
+3. Commit **both** the QML change and the JSON deletion together and push to `master`. (Deleting only the JSON will *not* trigger the action — the trigger watches `Symbology/qgis/`, not `Symbology/web/`.)
+4. The action detects the missing JSON and regenerates it from your updated QML.
 
 Alternatively, regenerate locally and push the result yourself:
 
@@ -104,6 +105,5 @@ uv run python QML2WebSymbology.py --dir MyProject --force
 - Converter messages you may see in the logs:
   - `skipped` — output already exists (expected; see above), raster renderer, or no convertible vector symbology
   - `note ... distinct rule colours; only the first is applied` — for rule-based renderers with multiple colours; the web schema has no per-rule filters, so only the first rule's colour is used
-- **The bot's pull request wasn't merged automatically?** Open the run's log — it prints the PR link. The PR waits on the required `validate (3.12)` status check; if branch protection also requires an approving review (or auto-merge is disabled), a human has to merge it.
-- **PR creation failed?** The run's last steps will show the error. `master` is protected, so the bot can only deliver through a PR; make sure the repo setting *Allow GitHub Actions to create and approve pull requests* is enabled.
-- **The action didn't run at all?** Check that your merged PR touched `Symbology/qgis/**` and went to `master`, then use the manual *Run workflow* button (a manual run also opens the same kind of bot PR).
+- **The final `git push` failed with `GH006: Protected branch update failed`?** The bot's bypass is missing or was removed: add the **GitHub Actions** app to the bypass list of the `master` ruleset (repo **Settings → Rules → Rulesets**).
+- **The action didn't run at all?** Check that your push touched `Symbology/qgis/**` and went to `master`, then use the manual *Run workflow* button.
