@@ -10,7 +10,10 @@
           <Node label="Management" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="management" transparency="0" id="management" />
           <Node label="Stability" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="geo_stability" transparency="0" id="geo_stability" />
           <Node label="Confinement" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="confinement" transparency="0" id="confinement" />
+          <Node label="Drainage Area" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="drainage_area" transparency="0" id="drainage_area" />
+          <Node label="Future Urbanization" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="urbanization" transparency="0" id="future_urbanization" />
           <Node label="Slope" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="slope" transparency="0" id="slope" />
+          <Node label="Stream Energy (Future Conditions)" xpath="Geopackage/Layers/Vector[@lyrName='stream_type']" type="line" symbology="energy_class" transparency="0" id="stream energy" />
           <Node label="Buffers Idea 1" xpath="Geopackage/Layers/Vector[@lyrName='buffers_method_1']" type="polygon" symbology="buffers_method_1" transparency="0" id="buffers_1" />
           <Node label="Buffers Idea 2" xpath="Geopackage/Layers/Vector[@lyrName='buffers_method_2']" type="polygon" symbology="arc_10m_buffer" transparency="0" id="buffers_2" />
         </Children>
@@ -39,11 +42,10 @@
           </Node>
           <Node label="Valley Bottom">
             <Children collapsed="false">
-              <Node label="VBET Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom_extent']" type="polygon" symbology="vbet_extent_hollow" transparency="0" id="valley_bottom_extent" />
+              <Node label="VBET Valley Bottom" xpath="Geopackage/Layers/Vector[@lyrName='valley_bottom_extent']" type="polygon" symbology="vbet_extent_filled" transparency="0" id="valley_bottom_extent" />
               <Node label="VBET Centerline" xpath="Geopackage/Layers/Vector[@lyrName='centerline_of_valley_bottom']" type="line" symbology="CL_vb" id="vbet_centerline" />
               <Node label="VBET Channel Network" xpath="Geopackage/Layers/Vector[@lyrName='channel_network']" type="line" symbology="flow_lines" id="channel_network" />
               <Node label="VBET DGOs" xpath="Geopackage/Layers/Vector[@lyrName='vbet_discrete_geographic_objects']" type="polygon" symbology="DGO" id="vbet_dgos" />
-              <Node label="ARC Streamline 10m Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="arc_10m_buffer" transparency="0" id="buffer_corridor" />
             </Children>
           </Node>
           <Node label="Flood Zones">
@@ -55,7 +57,12 @@
           </Node>
           <Node label="Planning Layers">
             <Children collapsed="false">
+              <Node label="ARC Streamline Buffer" xpath="Geopackage/Layers/Vector[@lyrName='10m_buffer_corridor']" type="polygon" symbology="arc_10m_buffer" transparency="0" id="buffer_corridor" />
               <Node label="Future Urban Areas" xpath="Geopackage/Layers/Vector[@lyrName='future_urban_areas']" type="polygon" symbology="future_urban_areas" transparency="0" id="future_urban_areas" />
+              <Node label="Ara Hills" xpath="Geopackage/Layers/Vector[@lyrName='arahills']" type="polygon" symbology="zoned_dev" transparency="0" id="arahills" />
+              <Node label="Delmore" xpath="Geopackage/Layers/Vector[@lyrName='delmore']" type="polygon" symbology="zoned_dev" transparency="0" id="delmore" />
+              <Node label="Milldale" xpath="Geopackage/Layers/Vector[@lyrName='milldale_14_17']" type="polygon" symbology="zoned_dev" transparency="0" id="milldale" />
+              <Node label="Silverdale" xpath="Geopackage/Layers/Vector[@lyrName='pc103_silverdale_west']" type="polygon" symbology="zoned_dev" transparency="0" id="silverdale" />
               <Node label="Primary Parcels" xpath="Geopackage/Layers/Vector[@lyrName='parcels']" type="polygon" symbology="parcels_NZ" transparency="30" id="parcels" />
               <Node label="Soil Type" xpath="Geopackage/Layers/Vector[@lyrName='soil_type']" type="polygon" symbology="soil_type_NZ" transparency="30" id="soil_type" />
             </Children>
