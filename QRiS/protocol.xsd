@@ -21,7 +21,7 @@
                         <xs:field xpath="@name" />
                     </xs:unique>
                 </xs:element>
-                <xs:element name="Layers" type="LayersType" minOccurs="1" maxOccurs="1">
+                <xs:element name="Layers" type="LayersType" minOccurs="0" maxOccurs="1">
                     <xs:key name="layerID">
                         <xs:selector xpath="Layer"/>
                         <xs:field xpath="@id"/>
@@ -131,6 +131,7 @@
             <xs:enumeration value="asbuilt"/>
             <xs:enumeration value="design"/>
             <xs:enumeration value="dce"/>
+            <xs:enumeration value="system"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -357,6 +358,7 @@
     <xs:complexType name="MetricParametersType">
         <xs:sequence>
             <xs:element name="InputLayer" type="InputLayerType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="MetricDependency" type="MetricDependencyType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DCELayer" type="DCELayerType" minOccurs="0" maxOccurs="unbounded">
                 <!--Not finding layer ref id-->
                 <xs:keyref name="layerIDRef" refer="layerID">
@@ -370,6 +372,13 @@
     <xs:complexType name="InputLayerType">
         <xs:attribute name="input_ref" type="InputRefType" use="required"/>
         <xs:attribute name="usage" type="InputUsageType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="MetricDependencyType">
+        <xs:attribute name="metric_id_ref" type="IdType" use="required"/>
+        <xs:attribute name="protocol_machine_code_ref" type="IdType" use="required"/>
+        <xs:attribute name="version" type="xs:string" use="required"/>
+        <xs:attribute name="usage" type="IdType" use="required"/>
     </xs:complexType>
 
     <xs:simpleType name="InputRefType">
@@ -387,6 +396,14 @@
             <xs:enumeration value="metric_layer"/>
             <xs:enumeration value="denominator"/>
             <xs:enumeration value="numerator"/>
+            <xs:enumeration value="profile_upstream"/>
+            <xs:enumeration value="profile_downstream"/>
+            <xs:enumeration value="profile_difference"/>
+            <xs:enumeration value="sample_frame_area"/>
+            <xs:enumeration value="sample_frame_length"/>
+            <xs:enumeration value="sample_frame_upstream"/>
+            <xs:enumeration value="sample_frame_downstream"/>
+            <xs:enumeration value="sample_frame_difference"/>
         </xs:restriction>
     </xs:simpleType>
 

@@ -1,4 +1,4 @@
-<Protocol machine_code="RIVERSCAPE_SYSTEM_PROTOCOL" protocol_type="system" version="1.0" status="production">
+<Protocol machine_code="RIVERSCAPE_SYSTEM_PROTOCOL" protocol_type="system" version="1.0" status="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
     <Label>Riverscape System Metrics Protocol</Label>
     <Description>System protocol for shared riverscape, profile, sample frame, and intrinsic metrics defined from analysis inputs.</Description>
     <URL>https://riverscapes.net</URL>
