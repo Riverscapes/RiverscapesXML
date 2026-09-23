@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(208,28,139)",
+      "Urbanized"
+    ],
+    [
+      "rgb(255,146,228)",
+      "Semi-Urban"
+    ],
+    [
+      "rgb(77,172,38)",
+      "Rural"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "urbanization-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "urb_cat_future",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "urb_cat_future"
+          ],
+          "Urbanized",
+          "rgb(208,28,139)",
+          "Semi-Urban",
+          "rgb(255,146,228)",
+          "Rural",
+          "rgb(77,172,38)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

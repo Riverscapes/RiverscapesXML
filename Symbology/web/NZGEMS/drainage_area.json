@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(8,48,107)",
+      "Large (>200 Ha)"
+    ],
+    [
+      "rgb(115,178,216)",
+      "Medium (25 - 200 Ha)"
+    ],
+    [
+      "rgb(247,251,255)",
+      "Small (<25 Ha)"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "drainage_area-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "catch area",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "catch area"
+          ],
+          "Large",
+          "rgb(8,48,107)",
+          "Medium",
+          "rgb(115,178,216)",
+          "Small",
+          "rgb(247,251,255)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(230,97,1)",
+      "Severe (>200)"
+    ],
+    [
+      "rgb(179,164,205)",
+      "Active / erosive (60-200)"
+    ],
+    [
+      "rgb(94,60,153)",
+      "Low / conveyance (15-60)"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "energy_class-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "energy_class",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "energy_class"
+          ],
+          "Severe (>200)",
+          "rgb(230,97,1)",
+          "Active / erosive (60-200)",
+          "rgb(179,164,205)",
+          "Low / conveyance (15-60)",
+          "rgb(94,60,153)",
+          "rgb(128,128,128)"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}
