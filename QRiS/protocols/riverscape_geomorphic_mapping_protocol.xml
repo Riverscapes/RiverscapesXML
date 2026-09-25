@@ -91,6 +91,34 @@
                 </TextField>
             </Fields>
         </Layer>
+        <Layer id="reaches" version="1.0" geom_type="Polygon">
+            <Label>Project Reaches</Label>
+            <Symbology>reach_objectives.qml</Symbology>
+            <Description>Reach Objectives and Condition</Description>
+            <MenuItems>
+                <MenuItem>copy_from_valley_bottom</MenuItem>
+            </MenuItems>
+            <Fields>
+                <ListField id="reach_objective" version="1.0">
+                    <Label>Primary Reach Objective</Label>
+                    <Values>
+                        <Value>Increase Channel Complexity</Value>
+                        <Value>Increase Floodplain Connectivity</Value>
+                        <Value>Riparian/Wetland Expansion</Value>
+                        <Value>Side Channel Connection</Value>
+                        <Value>Pond/Wetland Creation</Value>
+                        <Value>Widening and Aggradation</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <TextField id="condition" version="1.0">
+                    <Label>Reach Condition</Label>
+                </TextField> 
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                             
+            </Fields>  
+        </Layer>
     </Layers>
     <Metrics>
         <Metric id="active_channel_proportion" version="1.0" calculation_machine_code="area_proportion">

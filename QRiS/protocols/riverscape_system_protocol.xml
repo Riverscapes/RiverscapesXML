@@ -7,290 +7,154 @@
     <CreationDate>2026-04-27</CreationDate>
     <UpdatedDate>2026-06-04</UpdatedDate>
     <Metrics>
-        <Metric id="riverscape_length" version="1.0" calculation_machine_code="length" status="active">
-            <Label>Riverscape Length</Label>
+        <Metric id="total_riverscape_length" version="1.0" calculation_machine_code="length" status="active">
+            <Label>Total Riverscape Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Total centerline length from the analysis centerline input.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="numerator" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Riverscape</HierarchyItem>
-                <HierarchyItem>Corridor</HierarchyItem>
-            </Hierarchy>
         </Metric>
 
-        <Metric id="riverscape_area" version="1.0" calculation_machine_code="area" status="active">
-            <Label>Riverscape Area</Label>
+        <Metric id="total_riverscape_area" version="1.0" calculation_machine_code="area" status="active">
+            <Label>Total Riverscape Area</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Total valley bottom area from the analysis valley bottom input.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
                 <InputLayer input_ref="valley_bottom" usage="numerator" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Riverscape</HierarchyItem>
-                <HierarchyItem>Corridor</HierarchyItem>
-            </Hierarchy>
         </Metric>
 
-        <Metric id="riverscape_integrated_width" version="1.0" calculation_machine_code="proportion" status="active">
-            <Label>Riverscape Integrated Width</Label>
+        <Metric id="total_riverscape_integrated_width" version="1.0" calculation_machine_code="proportion" status="active">
+            <Label>Total Riverscape Integrated Width</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Derived integrated corridor width computed as riverscape area divided by riverscape length.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
-                <MetricDependency metric_id_ref="riverscape_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
-                <MetricDependency metric_id_ref="riverscape_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
+                <MetricDependency metric_id_ref="total_riverscape_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
+                <MetricDependency metric_id_ref="total_riverscape_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Riverscape</HierarchyItem>
-                <HierarchyItem>Derived</HierarchyItem>
-            </Hierarchy>
         </Metric>
 
-        <Metric id="profile_length" version="1.0" calculation_machine_code="length" status="active">
-            <Label>Profile Length</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Total profile centerline length from the analysis centerline input.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="numerator" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Profile</HierarchyItem>
-                <HierarchyItem>Planform</HierarchyItem>
-            </Hierarchy>
-        </Metric>
 
         <Metric id="profile_sinuosity_planform" version="1.0" calculation_machine_code="sinuosity" status="active">
             <Label>Profile Sinuosity (Planform)</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>Planform sinuosity of the profile centerline.</Description>
+            <Description>Planform sinuosity of the profile centerline in each sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="numerator" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Profile</HierarchyItem>
-                <HierarchyItem>Planform</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="profile_gradient" version="1.0" calculation_machine_code="gradient" status="active">
-            <Label>Profile Gradient</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Profile gradient computed from centerline geometry and DEM endpoint sampling.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="numerator" />
-                <InputLayer input_ref="dem" usage="surface" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Profile</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="profile_upstream_elevation" version="1.0" calculation_machine_code="elevation" status="active">
-            <Label>Profile Upstream Sampled Elevation</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Upstream endpoint elevation sampled from DEM at the profile start point.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="profile_upstream" />
-                <InputLayer input_ref="dem" usage="surface" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Profile</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="profile_downstream_elevation" version="1.0" calculation_machine_code="elevation" status="active">
-            <Label>Profile Downstream Sampled Elevation</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Downstream endpoint elevation sampled from DEM at the profile end point.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="profile_downstream" />
-                <InputLayer input_ref="dem" usage="surface" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Profile</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="profile_elevation_difference" version="1.0" calculation_machine_code="elevation" status="active">
-            <Label>Profile Elevation Difference</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Difference between downstream and upstream sampled elevations for the profile.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="profile_difference" />
-                <InputLayer input_ref="dem" usage="surface" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Profile</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="sample_frame_area" version="1.0" calculation_machine_code="area" status="active">
-            <Label>Sample Frame Area</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Total area of the sample frame polygon.</Description>
-            <Parameters>
-                <InputLayer input_ref="valley_bottom" usage="sample_frame_area" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Area</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="sample_frame_area_proportion" version="1.0" calculation_machine_code="proportion" status="active">
-            <Label>Sample Frame Area Proportion</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Proportion of this sample frame area relative to the total area of all sample frames.</Description>
-            <Parameters>
-                <MetricDependency metric_id_ref="sample_frame_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
-                <MetricDependency metric_id_ref="riverscape_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Area</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="sample_frame_corridor_length" version="1.0" calculation_machine_code="length" status="active">
-            <Label>Sample Frame Corridor Length</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Centerline corridor length intersecting the current sample frame.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="sample_frame_length" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Corridor</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="sample_frame_length_proportion" version="1.0" calculation_machine_code="proportion" status="active">
-            <Label>Sample Frame Length Proportion</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Proportion of sample frame corridor length relative to total riverscape corridor length.</Description>
-            <Parameters>
-                <MetricDependency metric_id_ref="sample_frame_corridor_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
-                <MetricDependency metric_id_ref="riverscape_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Corridor</HierarchyItem>
-            </Hierarchy>
         </Metric>
 
         <Metric id="sample_frame_gradient" version="1.0" calculation_machine_code="gradient" status="active">
-            <Label>Sample Frame Gradient</Label>
+            <Label>Riverscape Gradient</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Sample frame gradient from centerline and DEM using upstream/downstream endpoint sampling.</Description>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="numerator" />
                 <InputLayer input_ref="dem" usage="surface" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
+        </Metric>
+
+        <Metric id="sample_frame_area" version="1.0" calculation_machine_code="area" status="active">
+            <Label>Riverscape Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Total area of the riverscape in the sample frame polygon.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="sample_frame_area" />
+            </Parameters>
+        </Metric>
+
+        <Metric id="sample_frame_area_proportion" version="1.0" calculation_machine_code="proportion" status="active">
+            <Label>Riverscape Area Proportion</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of the riverscape in this sample frame area relative to the total riverscape area.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <MetricDependency metric_id_ref="sample_frame_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
+                <MetricDependency metric_id_ref="total_riverscape_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
+            </Parameters>
+        </Metric>
+
+        <Metric id="sample_frame_corridor_length" version="1.0" calculation_machine_code="length" status="active">
+            <Label>Riverscape Length</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Centerline corridor length intersecting the current sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="sample_frame_length" />
+            </Parameters>
+        </Metric>
+
+        <Metric id="riverscape_integrated_width" version="1.0" calculation_machine_code="proportion" status="active">
+            <Label>Riverscape Integrated Width</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Derived integrated corridor width computed as riverscape area divided by riverscape length within the sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <MetricDependency metric_id_ref="sample_frame_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
+                <MetricDependency metric_id_ref="sample_frame_corridor_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
+            </Parameters>
+        </Metric>
+
+        <Metric id="sample_frame_length_proportion" version="1.0" calculation_machine_code="proportion" status="active">
+            <Label>Riverscape Length Proportion</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of sample frame corridor length relative to total riverscape corridor length.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <MetricDependency metric_id_ref="sample_frame_corridor_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
+                <MetricDependency metric_id_ref="total_riverscape_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
+            </Parameters>
         </Metric>
 
         <Metric id="sample_frame_upstream_elevation" version="1.0" calculation_machine_code="elevation" status="active">
-            <Label>Sample Frame Upstream Sampled Elevation</Label>
+            <Label>Riverscape Upstream Sampled Elevation</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Upstream endpoint elevation sampled from DEM at the sample frame corridor start point.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="sample_frame_upstream" />
                 <InputLayer input_ref="dem" usage="surface" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
         </Metric>
 
         <Metric id="sample_frame_downstream_elevation" version="1.0" calculation_machine_code="elevation" status="active">
-            <Label>Sample Frame Downstream Sampled Elevation</Label>
+            <Label>Riverscape Downstream Sampled Elevation</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Downstream endpoint elevation sampled from DEM at the sample frame corridor end point.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="sample_frame_downstream" />
                 <InputLayer input_ref="dem" usage="surface" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
         </Metric>
 
         <Metric id="sample_frame_elevation_difference" version="1.0" calculation_machine_code="elevation" status="active">
-            <Label>Sample Frame Elevation Difference</Label>
+            <Label>Riverscape Elevation Difference</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Difference between downstream and upstream sampled elevations for the sample frame corridor.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
             <Parameters>
                 <InputLayer input_ref="centerline" usage="sample_frame_difference" />
                 <InputLayer input_ref="dem" usage="surface" />
             </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Sample Frame</HierarchyItem>
-                <HierarchyItem>Elevation</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="intrinsic_centerline_length" version="1.0" calculation_machine_code="length" status="active">
-            <Label>Intrinsic Centerline Length</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Centerline length from analysis centerline input clipped to sample frame.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="numerator" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Intrinsic</HierarchyItem>
-                <HierarchyItem>Centerline</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="intrinsic_valley_bottom_area" version="1.0" calculation_machine_code="area" status="active">
-            <Label>Intrinsic Valley Bottom Area</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Valley bottom area from analysis valley bottom input clipped to sample frame.</Description>
-            <Parameters>
-                <InputLayer input_ref="valley_bottom" usage="numerator" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Intrinsic</HierarchyItem>
-                <HierarchyItem>Riverscape</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="intrinsic_centerline_gradient" version="1.0" calculation_machine_code="gradient" status="active">
-            <Label>Intrinsic Centerline Gradient</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Gradient from centerline and DEM analysis inputs.</Description>
-            <Parameters>
-                <InputLayer input_ref="centerline" usage="numerator" />
-                <InputLayer input_ref="dem" usage="surface" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Intrinsic</HierarchyItem>
-                <HierarchyItem>Centerline</HierarchyItem>
-            </Hierarchy>
-        </Metric>
-
-        <Metric id="intrinsic_length_area_ratio" version="1.0" calculation_machine_code="proportion" status="active">
-            <Label>Intrinsic Length to Area Ratio</Label>
-            <DefaultLevel>Metric</DefaultLevel>
-            <Description>Derived ratio of intrinsic centerline length to intrinsic valley bottom area.</Description>
-            <Parameters>
-                <MetricDependency metric_id_ref="intrinsic_centerline_length" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="numerator" />
-                <MetricDependency metric_id_ref="intrinsic_valley_bottom_area" protocol_machine_code_ref="RIVERSCAPE_SYSTEM_PROTOCOL" version="1.0" usage="denominator" />
-            </Parameters>
-            <Hierarchy>
-                <HierarchyItem>Intrinsic</HierarchyItem>
-                <HierarchyItem>Derived</HierarchyItem>
-            </Hierarchy>
         </Metric>
     </Metrics>
 </Protocol>
