@@ -5,14 +5,14 @@
     <Citation>Weber N., Wheaton J.M.,  Shalcross A.,  Al-Chokhachy R, Bailey P., Bartelt K., Bennett S., Bouwes B., Bouwes N., Gilbert J., Dickard M., Heitke J., Jordan C., Glassic H., MacFarlane W.W., Miller S., Saunders C., Whitehead K. 2024. Low-Tech Process-Based Restoration Design and Monitoring Protocol: Standard Methods for Developing Project Designs and Assessing Riverscape Health. Version 2.0. Prepared by Anabranch Solutions and Utah State University Riverscapes Assessment and Monitoring Lab. Prepared for the Bureau of Land Management. Logan, UT. 81 pp. DOI: 10.5281/zenodo.13769899</Citation>
     <Author>Nick Weber</Author>
     <CreationDate>2025-02-05</CreationDate>
-    <UpdatedDate>2025-02-05</UpdatedDate>
+    <UpdatedDate>2026-03-11</UpdatedDate>
     <MetaData>
         <Meta name=""></Meta>
     </MetaData>
     <Layers>
-        <Layer id="rapid_riverscape_health_observations" version="1.0" geom_type="Point">
+        <Layer id="rapid_riverscape_health_observations" version="1.0" status= 'deprecated' geom_type="Point">
             <Label>Rapid Riverscape Health Observations</Label>
-            <Symbology></Symbology>
+            <Symbology>rrhs_point.qml</Symbology>
             <Description>A single layer meant to survey multiple riverscape feature types at one point representing a section (DGO) of the overall riverscape</Description>
             <Hierarchy>
                 <HierarchyItem>RRHS Protocol Layers</HierarchyItem>
@@ -236,8 +236,258 @@
                 </IntegerField>
             </Fields>
         </Layer>
+        <Layer id="rapid_riverscape_health_observations" version="2.0" geom_type="Point">
+            <Label>Rapid Riverscape Health Observations</Label>
+            <Symbology>rrhs_point.qml</Symbology>
+            <Description>A single layer meant to survey multiple riverscape feature types at one point representing a section (DGO) of the overall riverscape</Description>
+            <Hierarchy>
+                <HierarchyItem>RRHS Protocol Layers</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="features_surveyed" version="1.0">
+                    <Label>Features Surveyed</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Active Valley Bottom</Value>
+                        <Value>Channel Units</Value>
+                        <Value>Recovery Space</Value>
+                        <Value>Structural Elements</Value>
+                        <Value>Channel Junctions</Value>
+                        <Value>Inundation</Value>
+                        <Value>Riparian Vegetation</Value>
+                    </Values>
+                </ListField>
+                <IntegerField id="active_floodplain_percent" version="1.0">
+                    <Label>Active Floodplain %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Active Valley Bottom</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="inactive_floodplain_percent" version="1.0">
+                    <Label>Inactive Floodplain %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Active Valley Bottom</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="active_channel_percent" version="1.0">
+                    <Label>Active Channel %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Active Valley Bottom</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="confluence_count" version="1.0">
+                    <Label>Confluence Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Junctions</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="diffluence_count" version="1.0">
+                    <Label>Diffluence Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Junctions</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="channel_head_count" version="1.0">
+                    <Label>Channel Head Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Junctions</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="dam_count" version="1.0">
+                    <Label>Dam Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Structural Elements</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="jam_count" version="1.0">
+                    <Label>Jam Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Structural Elements</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="vegetative_mass_count" version="1.0">
+                    <Label>Vegetative Mass Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Structural Elements</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="pool_count" version="1.0">
+                    <Label>Pool Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Units</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="pond_count" version="1.0">
+                    <Label>Pond Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Units</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="chute_count" version="1.0">
+                    <Label>Chute Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Units</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="riffle_count" version="1.0">
+                    <Label>Riffle Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Units</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="mid_channel_bar_count" version="1.0">
+                    <Label>Mid-Channel Bar Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Units</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="bank_attached_bar_count" version="1.0">
+                    <Label>Bank-Attached Bar Count</Label>
+                    <DefaultValue>0</DefaultValue>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Channel Units</Value>
+                        </Values>
+                    </Visibility>
+                </IntegerField>
+                <IntegerField id="ponded_percent" version="1.0">
+                    <Label>Ponded %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Inundation</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="free_flowing_percent" version="1.0">
+                    <Label>Free Flowing %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Inundation</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="overflow_percent" version="1.0">
+                    <Label>Overflow %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Inundation</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="recovery_space_area" version="1.0">
+                    <Label>Recovery Space Area</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Recovery Space</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>999999999</MaximumValue>
+                </IntegerField>
+                <IntegerField id="recovery_potential_percent" version="1.0">
+                    <Label>Recovery Space %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Recovery Space</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+                <IntegerField id="riparian_vegetation_percent" version="1.0">
+                    <Label>Riparian Vegetation %</Label>
+                    <Visibility field_id_ref="features_surveyed">
+                        <Values>
+                            <Value>Riparian Vegetation</Value>
+                        </Values>
+                    </Visibility>
+                    <MaximumValue>100</MaximumValue>
+                </IntegerField>
+            </Fields>
+        </Layer>
     </Layers>
     <Metrics>
+        <Metric id="dam_count" version="1.0" calculation_machine_code="count">
+            <Label>Dam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all dams in sample frame</Description>
+            <DefinitionURL></DefinitionURL>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="dam_count" />
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="dam_density" version="1.0" calculation_machine_code="count">
             <Label>Dam Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -251,6 +501,21 @@
                     <Usage>Numerator</Usage>
                     <CountFields>
                         <CountField field_id_ref="dam_count" />
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="jam_count" version="1.0" calculation_machine_code="count">
+            <Label>Jam Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Count of all jams in sample frame</Description>
+            <DefinitionURL></DefinitionURL>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="jam_count" />
                     </CountFields>
                 </DCELayer>
             </Parameters>
@@ -271,10 +536,27 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="pool_count" version="1.0" calculation_machine_code="count">
+            <Label>Pool Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of pools, ponds, and chutes in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="pool_count"/>
+                        <CountField field_id_ref="pond_count"/>
+                        <CountField field_id_ref="chute_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="pool_density" version="1.0" calculation_machine_code="count">
             <Label>Pool Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of pools per length of riverscape</Description>
+            <Description>The number of pools, ponds, and chutes per length of riverscape</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
@@ -286,6 +568,85 @@
                         <CountField field_id_ref="pool_count"/>
                         <CountField field_id_ref="pond_count"/>
                         <CountField field_id_ref="chute_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="pond_count" version="1.0" calculation_machine_code="count">
+            <Label>Pond Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of ponds in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="pond_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="pond_density" version="1.0" calculation_machine_code="count">
+            <Label>Pond Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of ponds per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <Usage>Numerator</Usage>
+                    <CountFields>
+                        <CountField field_id_ref="pond_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="chute_count" version="1.0" calculation_machine_code="count">
+            <Label>Chute Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of chutes in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="chute_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="chute_density" version="1.0" calculation_machine_code="count">
+            <Label>Chute Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of chutes per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <Usage>Numerator</Usage>
+                    <CountFields>
+                        <CountField field_id_ref="chute_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="riffle_count" version="1.0" calculation_machine_code="count">
+            <Label>Riffle Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of riffles in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="riffle_count"/>
                     </CountFields>
                 </DCELayer>
             </Parameters>
@@ -307,10 +668,26 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="bar_count" version="1.0" calculation_machine_code="count">
+            <Label>Bar Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of mid channel and bank attached bars in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="mid_channel_bar_count"/>
+                        <CountField field_id_ref="bank_attached_bar_count"/>
+                    </CountFields>    
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="bar_density" version="1.0" calculation_machine_code="count">
             <Label>Bar Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
-            <Description>The number of bars per length of riverscape</Description>
+            <Description>The number of mid channel and bank attached bars per length of riverscape</Description>
             <DefinitionURL/>
             <MinimumValue>0</MinimumValue>
             <Precision>3</Precision>
@@ -322,6 +699,85 @@
                         <CountField field_id_ref="mid_channel_bar_count"/>
                         <CountField field_id_ref="bank_attached_bar_count"/>
                     </CountFields>    
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="mid_channel_bar_count" version="1.0" calculation_machine_code="count">
+            <Label>Mid Channel Bar Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of mid channel bars in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="mid_channel_bar_count"/>
+                    </CountFields>    
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="mid_channel_bar_density" version="1.0" calculation_machine_code="count">
+            <Label>Mid Channel Bar Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of mid channel bars per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <Usage>Numerator</Usage>
+                    <CountFields>
+                        <CountField field_id_ref="mid_channel_bar_count"/>
+                    </CountFields>    
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_count" version="1.0" calculation_machine_code="count">
+            <Label>Bank Attached Bar Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of bank attached bars in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="bank_attached_bar_count"/>
+                    </CountFields>    
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="bank_attached_bar_density" version="1.0" calculation_machine_code="count">
+            <Label>Bank Attached Bar Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of bank attached bars per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <Usage>Numerator</Usage>
+                    <CountFields>
+                        <CountField field_id_ref="bank_attached_bar_count"/>
+                    </CountFields>    
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="confluence_count" version="1.0" calculation_machine_code="count">
+            <Label>Confluence Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of confluences in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="confluence_count"/>
+                    </CountFields>
                 </DCELayer>
             </Parameters>
         </Metric>
@@ -342,6 +798,21 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="diffluence_count" version="1.0" calculation_machine_code="count">
+            <Label>Diffluence Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of diffluences in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="diffluence_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="diffluence_density" version="1.0" calculation_machine_code="count">
             <Label>Diffluence Density</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -355,6 +826,21 @@
                     <Usage>Numerator</Usage>
                     <CountFields>
                         <CountField field_id_ref="diffluence_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="channel_head_count" version="1.0" calculation_machine_code="count">
+            <Label>Channel Head Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of channel heads in the sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="channel_head_count"/>
                     </CountFields>
                 </DCELayer>
             </Parameters>
@@ -453,6 +939,38 @@
                 </DCELayer>
             </Parameters>
         </Metric>
+        <Metric id="vegetation_mass_count" version="1.0" calculation_machine_code="count">
+            <Label>Vegetation Mass Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The count of vegetation mass in sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>0</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="vegetative_mass_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="vegetation_mass_density" version="1.0" calculation_machine_code="count">
+            <Label>Vegetation Mass Density</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of vegetation mass per length of riverscape</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <Usage>Numerator</Usage>
+                    <CountFields>
+                        <CountField field_id_ref="vegetative_mass_count"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
         <Metric id="proportion_active" version="1.0" calculation_machine_code="count">
             <Label>Proportion of Active Valley Bottom</Label>
             <DefaultLevel>Metric</DefaultLevel>
@@ -466,6 +984,51 @@
                         <CountField field_id_ref="active_floodplain_percent"/>
                         <CountField field_id_ref="active_channel_percent"/>
                     </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="proportion_inactive" version="1.0" calculation_machine_code="count">
+            <Label>Proportion of Inactive Valley Bottom</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The proportion of the riverscape that is inactive</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="inactive_floodplain_percent"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="recovery_space_area" version="1.0" calculation_machine_code="count">
+            <Label>Recovery Space Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The sum of all recovery space area in sample frame</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <CountFields>
+                        <CountField field_id_ref="recovery_space_area"/>
+                    </CountFields>
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="recovery_space_percent" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Proportion Recovery Space</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The proportion of recovery space area to smaple frame area</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="rapid_riverscape_health_observations">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="recovery_space_area">
+                    </AttributeFilter>
                 </DCELayer>
             </Parameters>
         </Metric>
