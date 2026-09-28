@@ -416,7 +416,7 @@
                 </DCELayer>            
             </Parameters>
         </Metric>
-        <Metric id="proportion_minimum_recovery_space" version="1.0" calculation_machine_code="area_proportion">
+        <Metric id="proportion_minimum_recovery_space" version="2.0" calculation_machine_code="area_proportion">
             <Label>Minimum Potential Uplift (% of riverscape)</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Ratio of minimum recovery space to sample frame area.</Description>
