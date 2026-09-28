@@ -5,9 +5,9 @@
     <Citation>NA</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-07-23</CreationDate>
-    <UpdatedDate>2025-09-17</UpdatedDate>
+    <UpdatedDate>2026-03-11</UpdatedDate>
     <Layers>
-        <Layer id="observations" version="1.0" geom_type="Point">
+        <Layer id="observations" version="1.0" status= 'deprecated' geom_type="Point">
             <Label>Observations</Label>
             <Symbology>perennial_protocol_observations.qml</Symbology>
             <Description>Observation Points Layer</Description>
@@ -31,7 +31,35 @@
                 </AttachmentField>                              
             </Fields>                        
         </Layer>
-        <Layer id="flow_type" version="1.0" geom_type="Linestring">
+        <Layer id="observations" version="2.0" geom_type="Point">
+            <Label>Observations</Label>
+            <Symbology>perennial_protocol_observations.qml</Symbology>
+            <Description>Observation Points Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Perennial Streamflow Protocol</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="flow_type" version="1.0">
+                    <Label>Flow Type</Label>
+                    <Values>
+                        <Value>Dry</Value>
+                        <Value>Standing</Value>
+                        <Value>Flowing</Value>  
+                    </Values>
+                </ListField>
+                <TextField id="date" version="1.0">
+                    <Label>Date Observed</Label>
+                </TextField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+                <AttachmentField id="photo_path" version="1.0">
+                    <Label>Photo Path</Label>
+                </AttachmentField>                              
+            </Fields>                        
+        </Layer>
+        <Layer id="flow_type" version="1.0" status= 'deprecated' geom_type="Linestring">
             <Label>Flow Type</Label>
             <Symbology>perennial_protocol_flow_type.qml</Symbology>
             <Description>Flow Type Line Layer</Description>
@@ -51,10 +79,35 @@
                     <Label>Notes</Label>
                 </TextField>                             
             </Fields>  
-        </Layer>                              
+        </Layer>  
+        <Layer id="flow_type" version="2.0" geom_type="Linestring">
+            <Label>Flow Type</Label>
+            <Symbology>perennial_protocol_flow_type.qml</Symbology>
+            <Description>Flow Type Line Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Perennial Streamflow Protocol</HierarchyItem>
+                <HierarchyItem>Observations</HierarchyItem>                
+            </Hierarchy>
+            <Fields>
+                <ListField id="flow_type" version="1.0">
+                    <Label>Flow Type</Label>
+                    <Values>
+                        <Value>Dry</Value>
+                        <Value>Standing</Value>
+                        <Value>Flowing</Value>   
+                    </Values>                       
+                </ListField>
+                <TextField id="date" version="1.0">
+                    <Label>Date Observed</Label>
+                </TextField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>                             
+            </Fields>  
+        </Layer>                            
     </Layers>
     <Metrics>
-        <Metric id="perennial_length" version="1.0" calculation_machine_code="length">
+        <Metric id="perennial_length" version="1.0" status= 'deprecated' calculation_machine_code="length">
             <Label>Perennial Stream Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Sum of all perennial channel lengths.</Description>
@@ -69,7 +122,7 @@
                 </DCELayer>            
             </Parameters>
         </Metric>
-        <Metric id="perennial_proportion" version="1.0" calculation_machine_code="proportion">
+        <Metric id="perennial_proportion" version="1.0" status= 'deprecated' calculation_machine_code="proportion">
             <Label>Proportion Perennial</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Proportion of total channel length that is perennial.</Description>
@@ -88,7 +141,7 @@
                 </DCELayer>          
             </Parameters>
         </Metric>
-        <Metric id="non_perennial_length" version="1.0" calculation_machine_code="length">
+        <Metric id="non_perennial_length" version="1.0" status= 'deprecated' calculation_machine_code="length">
             <Label>Non-Perennial Stream Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Sum of all non-perennial channel lengths.</Description>
@@ -103,7 +156,7 @@
                 </DCELayer>            
             </Parameters>
         </Metric>
-        <Metric id="non_perennial_proportion" version="1.0" calculation_machine_code="proportion">
+        <Metric id="non_perennial_proportion" version="1.0" status= 'deprecated' calculation_machine_code="proportion">
             <Label>Proportion Non-Perennial</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>Proportion of total channel length that is non-perennial.</Description>
@@ -121,6 +174,102 @@
                     <Usage>Denominator</Usage>
                 </DCELayer>          
             </Parameters>
-        </Metric>             
+        </Metric> 
+        <Metric id="dry_length" version="1.0" calculation_machine_code="length">
+            <Label>Stream Length Classified as Dry</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Sum of all stream lengths classified as "Dry" in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Dry</Value> 
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="dry_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Dry</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of total channel length that is classifed as "Dry" in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Dry</Value> 
+                    </AttributeFilter>                
+                </DCELayer>  
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Denominator</Usage>
+                </DCELayer>          
+            </Parameters>
+        </Metric>
+        <Metric id="standing_length" version="1.0" calculation_machine_code="length">
+            <Label>Stream Length Classified as Standing</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Sum of all stream lengths classified as "Standing" in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Standing</Value> 
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="standing_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Standing</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of total channel length that is classifed as "Standing" in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Standing</Value> 
+                    </AttributeFilter>                
+                </DCELayer>  
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Denominator</Usage>
+                </DCELayer>          
+            </Parameters>
+        </Metric>  
+        <Metric id="flowing_length" version="1.0" calculation_machine_code="length">
+            <Label>Stream Length Classified as Flowing</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Sum of all stream lengths classified as "Flowing" in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Flowing</Value> 
+                    </AttributeFilter>
+                </DCELayer>            
+            </Parameters>
+        </Metric>
+        <Metric id="flowing_proportion" version="1.0" calculation_machine_code="proportion">
+            <Label>Proportion Flowing</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>Proportion of total channel length that is classifed as "Flowing" in sample frame.</Description>
+            <MinimumValue>0</MinimumValue>
+            <Precision>2</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Numerator</Usage>
+                    <AttributeFilter field_id_ref="flow_type">
+                        <Value>Flowing</Value> 
+                    </AttributeFilter>                
+                </DCELayer>  
+                <DCELayer layer_id_ref="flow_type">
+                    <Usage>Denominator</Usage>
+                </DCELayer>          
+            </Parameters>
+        </Metric>              
     </Metrics>
 </Protocol>
