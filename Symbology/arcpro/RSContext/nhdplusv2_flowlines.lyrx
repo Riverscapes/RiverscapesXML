@@ -1,20 +1,20 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "3.3.0",
-  "build" : 52636,
+  "version" : "3.7.0",
+  "build" : 1901,
   "layers" : [
-    "CIMPATH=map/flowlines_nhdplusv2_edited.json"
+    "CIMPATH=Map/main_nhdflowline_network.json"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "FlowLines_NHDPlusV2_Edited",
-      "uRI" : "CIMPATH=map/flowlines_nhdplusv2_edited.json",
+      "name" : "Flow Lines (NHDPlus V2)",
+      "uRI" : "CIMPATH=Map/main_nhdflowline_network.json",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
       "useSourceMetadata" : true,
-      "description" : "FlowLines_NHDPlusV2_Edited",
+      "description" : "main.nhdflowline_network",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface"
       },
@@ -41,7 +41,7 @@
       },
       "layerType" : "Operational",
       "showLegends" : true,
-      "visibility" : false,
+      "visibility" : true,
       "displayCacheType" : "Permanent",
       "maxDisplayCacheAge" : 5,
       "showPopups" : true,
@@ -58,9 +58,9 @@
         "editable" : true,
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\Curation_Testing\\esri_curation\\Default.gdb",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "FlowLines_NHDPlusV2_Edited",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\2025 CONUS\\RSContext_Sulphur_2.1.0\\hydrology\\nhdplusv2.gpkg",
+          "workspaceFactory" : "Sql",
+          "dataset" : "nhdflowline_network",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -123,7 +123,8 @@
                   "splitAfter" : true
                 }
               ],
-              "trimStackingSeparators" : true
+              "trimStackingSeparators" : true,
+              "preferToStackLongLabels" : false
             },
             "lineFeatureType" : "General",
             "linePlacementMethod" : "OffsetStraightFromLine",
@@ -398,10 +399,14 @@
                           {
                             "type" : "CIMGeometricEffectDashes",
                             "dashTemplate" : [
-                              6,
-                              3,
-                              3,
-                              3
+                              15,
+                              2.5,
+                              2.5,
+                              2.5,
+                              2.5,
+                              2.5,
+                              2.5,
+                              2.5
                             ],
                             "lineDashEnding" : "NoConstraint",
                             "controlPointEnding" : "NoConstraint"
@@ -412,14 +417,18 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 0.5,
+                        "width" : 0.69999999999999996,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMHSVColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
-                            80,
-                            100,
+                            194.13999999999999,
+                            54.899999999999999,
                             100,
                             100
                           ]
@@ -454,10 +463,14 @@
                           {
                             "type" : "CIMGeometricEffectDashes",
                             "dashTemplate" : [
-                              6,
-                              3,
-                              3,
-                              3
+                              9,
+                              1.5,
+                              1.5,
+                              1.5,
+                              1.5,
+                              1.5,
+                              1.5,
+                              1.5
                             ],
                             "lineDashEnding" : "NoConstraint",
                             "controlPointEnding" : "NoConstraint"
@@ -468,7 +481,7 @@
                         "joinStyle" : "Round",
                         "lineStyle3D" : "Strip",
                         "miterLimit" : 10,
-                        "width" : 0.5,
+                        "width" : 0.59999999999999998,
                         "height3D" : 1,
                         "anchor3D" : "Center",
                         "color" : {
@@ -509,8 +522,8 @@
                           {
                             "type" : "CIMGeometricEffectDashes",
                             "dashTemplate" : [
-                              2.5,
-                              2.5
+                              3,
+                              2
                             ],
                             "lineDashEnding" : "NoConstraint",
                             "controlPointEnding" : "NoConstraint"
@@ -526,9 +539,13 @@
                         "anchor3D" : "Center",
                         "color" : {
                           "type" : "CIMHSVColor",
+                          "colorSpace" : {
+                            "type" : "CIMICCColorSpace",
+                            "url" : "sRGB IEC61966-2.1"
+                          },
                           "values" : [
-                            193.72,
-                            54.899999999999999,
+                            319.75999999999999,
+                            100,
                             100,
                             100
                           ]
@@ -709,6 +726,7 @@
             "heading" : "Custom"
           }
         ],
+        "isDefaultSymbolVisible" : true,
         "valueExpressionInfo" : {
           "type" : "CIMExpressionInfo",
           "title" : "Custom",
