@@ -1,0 +1,46 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(0,77,168)",
+      "Perennial (46006)"
+    ],
+    [
+      "rgb(115,222,255)",
+      "Intermittent (46003)"
+    ],
+    [
+      "rgb(230,152,0)",
+      "Ephemeral (46007)"
+    ],
+    [
+      "rgb(255,0,171)",
+      "Canal (33600, 33601, 33603)"
+    ],
+    [
+      "rgb(255,170,0)",
+      "Connector (33400)"
+    ],
+    [
+      "rgb(207,89,106)",
+      "Artificial Path (55800)"
+    ],
+    [
+      "rgb(0,0,0)",
+      "Pipe (42800-42816)"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "nhdplusv2_flowlines-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(0,77,168)",
+        "line-width": 1
+      }
+    }
+  ]
+}
