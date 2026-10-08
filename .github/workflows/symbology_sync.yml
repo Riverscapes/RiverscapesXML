@@ -1,5 +1,14 @@
-# Sync QGIS .qml symbology files to web .json format
-# Runs automatically when QML changes are merged to master.
+# Sync QGIS .qml symbology files to web .json format (Symbology/web/<dir>).
+#
+# Runs automatically on push to master when either:
+#   - any Symbology/qgis/**/*.qml file is added, modified, deleted or renamed
+#   - any Symbology/web/VBET/**/*.json file is DELETED, so it can be rebuilt
+#     from the corresponding .qml file
+#
+# GitHub's `paths:` filter cannot express "deleted only", so the trigger is
+# broad (QML changes + all VBET JSON changes) and the "Detect relevant
+# changes" step narrows it down: JSON files that were merely edited/added are
+# ignored, only deletions trigger a rebuild.
 #
 # `master` is branch-protected (pull requests + the required "validate"
 # status check). This workflow relies on an exemption: the bot pushes
@@ -15,7 +24,8 @@ on:
     branches:
       - master
     paths:
-      - 'Symbology/qgis/**'
+      - 'Symbology/qgis/**/*.qml'
+      - 'Symbology/web/**/*.json'
 
   # Allow manual trigger from the Actions tab
   workflow_dispatch:
