@@ -1,0 +1,680 @@
+<Protocol machine_code="DESIGN_V3" version="1.0" status="experimental"  protocol_type="design" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.riverscapes.net/QRiS/protocol.xsd">
+    <Label>LTPBR Design Protocol V3</Label>
+    <Description>Design Layers for LTPBR Design V3</Description>
+    <URL></URL>
+    <Citation>NA</Citation>
+    <Author>Josh Gilbert</Author>
+    <CreationDate>2026-10-09</CreationDate>
+    <UpdatedDate>2026-10-09</UpdatedDate>
+    <Layers>
+        <Layer id="recovery_space" version="1.0" geom_type="Polygon">
+            <Label>Recovery Space</Label>
+            <Symbology>recovery_space.qml</Symbology>
+            <Description>Recovery Space Layer</Description>
+            <MenuItems>
+                <MenuItem>copy_from_valley_bottom</MenuItem>
+            </MenuItems>
+            <Hierarchy>
+                <HierarchyItem>Design Elements</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="reaches" version="1.0" geom_type="Polygon">
+            <Label>Project Sub-Reaches</Label>
+            <Symbology></Symbology>
+            <Description>Objectives and conditions of project sub-reaches</Description>
+            <Hierarchy>
+                <HierarchyItem>Design Elements</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="primary_objective" version="1.0">
+                    <Label>Primary Reach Objective</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Beaver Translocation</Value>
+                        <Value>Incision Recovery</Value>
+                        <Value>Increase Channel Complexity</Value>
+                        <Value>Increase Floodplain Connectivity</Value>
+                        <Value>Lateral Channel Migration</Value>
+                        <Value>Overbank Flow Dispersal</Value>
+                        <Value>Pond/Wetland Creation</Value>
+                        <Value>Riparian/Wetland Expansion</Value>
+                        <Value>Side-Channel Connection</Value>
+                        <Value>Widening and Aggradation</Value>
+                    </Values>
+                </ListField>
+                <ListField id="secondary_objective" version="1.0">
+                    <Label>Secondary Reach Objectives</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Beaver Translocation</Value>
+                        <Value>Incision Recovery</Value>
+                        <Value>Increase Channel Complexity</Value>
+                        <Value>Increase Floodplain Connectivity</Value>
+                        <Value>Lateral Channel Migration</Value>
+                        <Value>Overbank Flow Dispersal</Value>
+                        <Value>Pond/Wetland Creation</Value>
+                        <Value>Riparian/Wetland Expansion</Value>
+                        <Value>Side-Channel Connection</Value>
+                        <Value>Widening and Aggradation</Value>
+                    </Values>
+                </ListField>
+                <!-- Restoration objectives are coming from the reach scale text box objectives in the reach sacle NWP maps-->
+                <TextField id="restoration_objectives" version="1.0"> 
+                    <Label>Objectives Elaborated(Narrative)</Label>
+                </TextField>
+                <TextField id="reach_condition" version="1.0">
+                    <Label>Current Reach Condition</Label>
+                </TextField>
+                <TextField id="reach_condition_future" version="1.0">
+                    <Label>Anticipated Reach Condition</Label>
+                </TextField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="structure_points" version="1.0" geom_type="Point">
+            <Label>Structure Points</Label>
+            <Symbology></Symbology>
+            <Description>Structure locations represented by points</Description>
+            <Hierarchy>
+                <HierarchyItem>Design Elements</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="structure_class" version="1.0">
+                    <Label>Structure Class</Label>
+                    <Values allow_custom_values="true">
+                        <Value>BDA</Value>
+                        <Value>PALS</Value>
+                        <Value>ALS</Value>
+                        <Value>Wood Addition</Value>
+                        <Value>Rock Addition</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_bda" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>BDA</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Floodplain BDA</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Secondary BDA</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_pals" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>PALS</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value>
+                        <Value>PALS - Channel Spanning</Value>
+                        <Value>PALS - Constriction Jet</Value>
+                        <Value>PALS - Mid Channel</Value>
+                        <Value>PALS - Rhino</Value>
+                        <Value>Rhino</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_als" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>ALS</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Rhino</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_wood" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>Wood Addition</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>Floodplain LWD</Value>
+                        <Value>Fell Tree</Value>
+                        <Value>Full Tree</Value>
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Strategic Felling</Value>
+                        <Value>Wood Jam</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_rock" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>Rock Addition</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                         <Value>One Rock Dam</Value>
+                         <Value>Media Luna</Value>
+                         <Value>Rock Rundown</Value>
+                         <Value>Zuni Bowl</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_other" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>Other</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>Bag Plugs</Value>
+                        <Value>Baffles</Value>
+                        <Value>Headcut Treatment</Value>
+                        <Value>Leaky Dam</Value>
+                        <Value>Post and Brush Plug</Value>
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>
+                        <Value>Tree Dam</Value>
+                        <Value>Tree Plug</Value>
+                        <Value>Vanes</Value>
+                        <Value>Wicker Weirs</Value>
+                    </Values>
+                </ListField>
+                <IntegerField id="number_of_posts" version="1.0">
+                    <Label>Estimated Number of Posts</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                </IntegerField>
+                <FloatField id="fill_volume" version="1.0">
+                    <Label>Estimated Fill Volume</Label> 
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>                  
+                </FloatField> 
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="structure_lines" version="1.0" geom_type="Linestring">
+            <Label>Structure Lines</Label>
+            <Symbology></Symbology>
+            <Description>Structure locations represented by lines</Description>
+            <Hierarchy>
+                <HierarchyItem>Design Elements</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="structure_class" version="1.0">
+                    <Label>Structure Class</Label>
+                    <Values allow_custom_values="true">
+                        <Value>BDA</Value>
+                        <Value>PALS</Value>
+                        <Value>ALS</Value>
+                        <Value>Wood Addition</Value>
+                        <Value>Rock Addition</Value>
+                        <Value>Other</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_bda" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>BDA</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>BDA</Value>
+                        <Value>BDA Postless</Value>
+                        <Value>Floodplain BDA</Value>
+                        <Value>Postline Wicker Weave</Value>
+                        <Value>Primary BDA</Value>
+                        <Value>Secondary BDA</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_pals" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>PALS</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>PALS</Value>
+                        <Value>PALS - Bank Attached</Value>
+                        <Value>PALS - Bank Blaster</Value>
+                        <Value>PALS - Channel Spanning</Value>
+                        <Value>PALS - Constriction Jet</Value>
+                        <Value>PALS - Mid Channel</Value>
+                        <Value>PALS - Rhino</Value>
+                        <Value>Rhino</Value>
+                        <Value>Tight PALS (BDA without sod)</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_als" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>ALS</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>ALS</Value>
+                        <Value>ALS - Bank Attached</Value>
+                        <Value>ALS - Bank Blaster</Value>
+                        <Value>ALS - Channel Spanning</Value>
+                        <Value>ALS - Rhino</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_wood" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>Wood Addition</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>Floodplain LWD</Value>
+                        <Value>Fell Tree</Value>
+                        <Value>Full Tree</Value>
+                        <Value>Grip Hoist Tree</Value>
+                        <Value>Strategic Felling</Value>
+                        <Value>Wood Jam</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_rock" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>Rock Addition</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                         <Value>One Rock Dam</Value>
+                         <Value>Media Luna</Value>
+                         <Value>Rock Rundown</Value>
+                         <Value>Zuni Bowl</Value>
+                    </Values>
+                </ListField>
+                <ListField id="structure_type_other" version="1.0">
+                    <Label>Structure Type</Label>
+                    <Visibility field_id_ref="structure_class">
+                        <Values>
+                            <Value>Other</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>Bag Plugs</Value>
+                        <Value>Baffles</Value>
+                        <Value>Headcut Treatment</Value>
+                        <Value>Leaky Dam</Value>
+                        <Value>Post and Brush Plug</Value>
+                        <Value>Sedge Plugs</Value>
+                        <Value>Spreaders</Value>
+                        <Value>Tree Dam</Value>
+                        <Value>Tree Plug</Value>
+                        <Value>Vanes</Value>
+                        <Value>Wicker Weirs</Value>
+                    </Values>
+                </ListField>
+                <IntegerField id="number_of_posts" version="1.0">
+                    <Label>Estimated Number of Posts</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                </IntegerField>
+                <FloatField id="fill_volume" version="1.0">
+                    <Label>Estimated Fill Volume</Label> 
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>                  
+                </FloatField> 
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="complex_zoi" version="1.0" geom_type="Polygon">
+            <Label>Complex Zones of Influence</Label>
+            <Symbology></Symbology>
+            <Description>Zones of Influence at the complex scale</Description>
+            <Hierarchy>
+                <HierarchyItem>Design Elements</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="zoi_type_complex"  version="1.0">
+                    <Label> ZOI Type </Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Hydraulic Influence Extent</Value>
+                        <Value>Geomorphic Adjustment Extent</Value>
+                        <Value>Vegetation Influence Extent</Value>
+                    </Values>
+                </ListField>
+                <ListField id="zoi_stage" version="1.0">
+                    <Label>Stage</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Baseflow</Value>
+                        <Value>Typical Flood</Value>
+                        <Value>Large Flood</Value>
+                    </Values>
+                </ListField>
+                 <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="structure_zoi" version="1.0" geom_type="Polygon">
+            <Label>Structure Zones of Influence</Label>
+            <Symbology></Symbology>
+            <Description>Zones of Influence at the structure scale</Description>
+            <Hierarchy>
+                <HierarchyItem>Design Elements</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="zoi_class" version="1.0">
+                    <Label>ZOI Class</Label>
+                        <Values>
+                            <Value>Geomorphic</Value>
+                            <Value>Hydraulic</Value>
+                        </Values>
+                </ListField>
+                <ListField id="zoi_type_structure_geomorphic"  version="1.0">
+                    <Label> ZOI Type </Label>
+                    <Visibility field_id_ref="zoi_class">
+                        <Values>
+                            <Value>Geomorphic</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>Deposition in upstream backwater</Value>
+                        <Value>Deposition of bar</Value>
+                        <Value>Deposition overbank</Value>
+                        <Value>Erode Bank</Value>
+                        <Value>Erosion from convergent jet</Value>
+                        <Value>Erosion from plunge</Value>
+                        <Value>Erosion from return flow headcut</Value>
+                        <Value>Erosion of bar edge</Value>
+                    </Values>
+                </ListField>
+                <ListField id="zoi_type_structure_hydraulic"  version="1.0">
+                    <Label> ZOI Type </Label>
+                    <Visibility field_id_ref="zoi_class">
+                        <Values>
+                            <Value>Hydraulic</Value>
+                        </Values>
+                    </Visibility>
+                    <Values>
+                        <Value></Value>
+                        <Value>Constriction Jet</Value>
+                        <Value>Divergent Flow</Value>
+                        <Value>Eddy</Value>
+                        <Value>Overflow</Value>
+                        <Value>Ponding Flow</Value>
+                        <Value>Shunting Flow</Value>
+                        <Value>Splitting Flow</Value>
+                        <Value>Scour Pool Formation</Value>
+                    </Values>
+                </ListField>
+                <ListField id="zoi_stage" version="1.0">
+                    <Label>Stage</Label>
+                    <Values allow_custom_values="true">
+                        <Value>Baseflow</Value>
+                        <Value>Typical Flood</Value>
+                        <Value>Large Flood</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="building_materials" version="1.0" geom_type="Polygon">
+            <Label>Source Building Materials</Label>
+            <Symbology></Symbology>
+            <Description>Locations that have been determined suitable to source construction material from</Description>
+            <Hierarchy>
+                <HierarchyItem>Construction Logistics</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <ListField id="material_type" version="1.0">
+                    <Label>Material Type</Label>
+                    <Values allow_multiple_values="true">
+                        <Value>Brush</Value>
+                        <Value>Downed Wood</Value>
+                        <Value>Trees</Value>
+                        <Value>Sod</Value>
+                        <Value>Rock</Value>
+                        <Value>Soil</Value>
+                    </Values>
+                </ListField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="construction" version="1.0" geom_type="Polygon">
+            <Label>Limits of Construction</Label>
+            <Symbology></Symbology>
+            <Description>The extent of the area where construction will occur</Description>
+            <Hierarchy>
+                <HierarchyItem>Construction Logistics</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="disturbance" version="1.0" geom_type="Polygon">
+            <Label>Limits of Disturbance</Label>
+            <Symbology></Symbology>
+            <Description>The extent of the area where disturbance will occur, this includes access to the river, staging areas, etc.</Description>
+            <Hierarchy>
+                <HierarchyItem>Construction Logistics</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="staging" version="1.0" geom_type="Polygon">
+            <Label>Staging Areas</Label>
+            <Symbology></Symbology>
+            <Description>Areas where staging materials and equipment will occur</Description>
+            <Hierarchy>
+                <HierarchyItem>Construction Logistics</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="access" version="1.0" geom_type="Linestring">
+            <Label>Access Routes</Label>
+            <Symbology></Symbology>
+            <Description>Routes that will be used to access the project areas and staging areas</Description>
+            <Hierarchy>
+                <HierarchyItem>Construction Logistics</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+    </Layers>
+    <Metrics>
+        <Metric id="structure_count" version="1.0" calculation_machine_code="count">
+            <Label>Structure Count</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The number of structures in each sample frame. Structures can be mapped as points and lines, but should not be duplicated.</Description>
+            <DefinitionURL/>
+            <MinimumValue>0</MinimumValue>
+            <Precision>1</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="structure_points">
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+            </Parameters>
+        </Metric>
+        <Metric id="structure_density_length" version="1.0" calculation_machine_code="count">
+            <Label>Structure Density (Length)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of structures (points and lines) within the sample frame by riverscape length. Structures can be mapped as points and lines, but should not be duplicated.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="centerline" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">                    
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <!-- <Metric id="structure_density_area" version="1.0" calculation_machine_code="count">
+            <Label>Structure Density (Area)</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The density of structures (points and lines) within the sample frame by riverscape area. Structures can be mapped as points and lines, but should not be duplicated.</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="normalization"/>
+                <DCELayer layer_id_ref="structure_points">                    
+                </DCELayer>
+                <DCELayer layer_id_ref="structure_lines">
+                </DCELayer>
+            </Parameters>            
+        </Metric> -->
+        <Metric id="treatment_area" version="1.0" calculation_machine_code="area">
+            <Label>Treatment Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total area that will be treated, delineated by "Limits of Construction"</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="construction">                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="disturbance_area" version="1.0" calculation_machine_code="area">
+            <Label>Disturbance Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total area that will potentially be disturbed through the project area, delineated by "Limits of Disturbance"</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="disturbance">                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="treatment_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Treatment Proportion of Valley Bottom</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The tratement area as a ratio of the valley bottom area</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="denominator" />
+                <DCELayer layer_id_ref="construction">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="disturbance_proportion" version="1.0" calculation_machine_code="area_proportion">
+            <Label>Disturbance Proportion of Valley Bottom</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The disturbance area as a ratio of the valley bottom area</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="denominator" />
+                <DCELayer layer_id_ref="disturbance">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="zoi_area" version="1.0" calculation_machine_code="area">
+            <Label>Complex ZOI Area</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The total area of complex ZOIs</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complex_zoi">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="zoi_proportion_recovery" version="1.0" calculation_machine_code="area_proportion">
+            <Label>ZOI Proportion of Recovery Space</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ZOI area as a ratio of the recovery space</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <DCELayer layer_id_ref="complex_zoi">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+                <DCELayer layer_id_ref="recovery_space">
+                    <Usage>Denominator</Usage>
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+        <Metric id="zoi_proportion_valley" version="1.0" calculation_machine_code="area_proportion">
+            <Label>ZOI Proportion of Valley Bottom</Label>
+            <DefaultLevel>Metric</DefaultLevel>
+            <Description>The ZOI area as a ratio of the valley bottom</Description>            
+            <MinimumValue>0</MinimumValue>            
+            <Precision>3</Precision>
+            <Parameters>
+                <InputLayer input_ref="valley_bottom" usage="denominator" />
+                <DCELayer layer_id_ref="complex_zoi">
+                    <Usage>Numerator</Usage>                                    
+                </DCELayer>
+            </Parameters>            
+        </Metric>
+    </Metrics>
+</Protocol>
+
+<!-- List of things needed for next week
+ 1. Metrics
+
+ 3. Create symbology
+
+
+ 
+ 
+ List of future items
+ 1. Add fencing layer- options: exclosure, wildlife, livestock, manual input
+ 2. Add crossings layer options: culvert, box culvert, bridge, manual input. length, size(user input)
+ 3. Geomorphic gradeline- cut/fill
+ 4. Other treatments: riparian planting, get full list from alden-->
+ 
