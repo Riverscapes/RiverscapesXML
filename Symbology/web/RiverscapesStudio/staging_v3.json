@@ -1,0 +1,21 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgba(255,255,255,0.4)",
+      "staging v3"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "staging_v3-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "staging_v3",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(255,255,255,0.4)"
+      }
+    }
+  ]
+}

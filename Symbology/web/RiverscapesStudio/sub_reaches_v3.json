@@ -1,0 +1,102 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(156,69,0)",
+      "Beaver Translocation"
+    ],
+    [
+      "rgb(255,200,99)",
+      "Incision Recovery"
+    ],
+    [
+      "rgb(126,40,165)",
+      "Increase Channel Complexity"
+    ],
+    [
+      "rgb(32,245,173)",
+      "Increase Floodplain Connectivity"
+    ],
+    [
+      "rgb(255,39,63)",
+      "Lateral Channel Migration"
+    ],
+    [
+      "rgb(114,184,255)",
+      "Overbank Flow Dispersal"
+    ],
+    [
+      "rgb(0,112,255)",
+      "Pond/Wetland Creation"
+    ],
+    [
+      "rgb(10,176,6)",
+      "Riparian/Wetland Expansion"
+    ],
+    [
+      "rgb(0,64,139)",
+      "Side-Channel Connection"
+    ],
+    [
+      "rgb(253,247,76)",
+      "Widening and Aggradation"
+    ],
+    [
+      "rgb(213,129,185)",
+      "NULL"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "sub_reaches_v3-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "Primary Reach Objective",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "Primary Reach Objective"
+          ],
+          "Beaver Translocation",
+          "rgb(156,69,0)",
+          "Incision Recovery",
+          "rgb(255,200,99)",
+          "Increase Channel Complexity",
+          "rgb(126,40,165)",
+          "Increase Floodplain Connectivity",
+          "rgb(32,245,173)",
+          "Lateral Channel Migration",
+          "rgb(255,39,63)",
+          "Overbank Flow Dispersal",
+          "rgb(114,184,255)",
+          "Pond/Wetland Creation",
+          "rgb(0,112,255)",
+          "Riparian/Wetland Expansion",
+          "rgb(10,176,6)",
+          "Side-Channel Connection",
+          "rgb(0,64,139)",
+          "Widening and Aggradation",
+          "rgb(253,247,76)",
+          "NULL",
+          "rgb(213,129,185)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "sub_reaches_v3-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "Primary Reach Objective",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}
