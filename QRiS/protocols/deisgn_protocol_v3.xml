@@ -25,7 +25,7 @@
         </Layer>
         <Layer id="reaches" version="1.0" geom_type="Polygon">
             <Label>Project Sub-Reaches</Label>
-            <Symbology></Symbology>
+            <Symbology>sub_reaches_v3.qml</Symbology>
             <Description>Objectives and conditions of project sub-reaches</Description>
             <Hierarchy>
                 <HierarchyItem>Design Elements</HierarchyItem>
@@ -78,7 +78,7 @@
         </Layer>
         <Layer id="structure_points" version="1.0" geom_type="Point">
             <Label>Structure Points</Label>
-            <Symbology></Symbology>
+            <Symbology>structure_points_v3.qml</Symbology>
             <Description>Structure locations represented by points</Description>
             <Hierarchy>
                 <HierarchyItem>Design Elements</HierarchyItem>
@@ -219,7 +219,7 @@
         </Layer>
         <Layer id="structure_lines" version="1.0" geom_type="Linestring">
             <Label>Structure Lines</Label>
-            <Symbology></Symbology>
+            <Symbology>structure_lines_v3.qml</Symbology>
             <Description>Structure locations represented by lines</Description>
             <Hierarchy>
                 <HierarchyItem>Design Elements</HierarchyItem>
@@ -367,7 +367,7 @@
             </Hierarchy>
             <Fields>
                 <ListField id="zoi_type_complex"  version="1.0">
-                    <Label> ZOI Type </Label>
+                    <Label>ZOI Type</Label>
                     <Values allow_multiple_values="true">
                         <Value>Hydraulic Influence Extent</Value>
                         <Value>Geomorphic Adjustment Extent</Value>
@@ -389,7 +389,7 @@
         </Layer>
         <Layer id="structure_zoi" version="1.0" geom_type="Polygon">
             <Label>Structure Zones of Influence</Label>
-            <Symbology></Symbology>
+            <Symbology>structure_zoi_v3.qml</Symbology>
             <Description>Zones of Influence at the structure scale</Description>
             <Hierarchy>
                 <HierarchyItem>Design Elements</HierarchyItem>
@@ -403,7 +403,7 @@
                         </Values>
                 </ListField>
                 <ListField id="zoi_type_structure_geomorphic"  version="1.0">
-                    <Label> ZOI Type </Label>
+                    <Label>ZOI Type</Label>
                     <Visibility field_id_ref="zoi_class">
                         <Values>
                             <Value>Geomorphic</Value>
@@ -422,7 +422,7 @@
                     </Values>
                 </ListField>
                 <ListField id="zoi_type_structure_hydraulic"  version="1.0">
-                    <Label> ZOI Type </Label>
+                    <Label>ZOI Type</Label>
                     <Visibility field_id_ref="zoi_class">
                         <Values>
                             <Value>Hydraulic</Value>
@@ -455,7 +455,7 @@
         </Layer>
         <Layer id="building_materials" version="1.0" geom_type="Polygon">
             <Label>Source Building Materials</Label>
-            <Symbology></Symbology>
+            <Symbology>building_materials_v3.qml</Symbology>
             <Description>Locations that have been determined suitable to source construction material from</Description>
             <Hierarchy>
                 <HierarchyItem>Construction Logistics</HierarchyItem>
@@ -479,7 +479,7 @@
         </Layer>
         <Layer id="construction" version="1.0" geom_type="Polygon">
             <Label>Limits of Construction</Label>
-            <Symbology></Symbology>
+            <Symbology>construction_v3.qml</Symbology>
             <Description>The extent of the area where construction will occur</Description>
             <Hierarchy>
                 <HierarchyItem>Construction Logistics</HierarchyItem>
@@ -492,7 +492,7 @@
         </Layer>
         <Layer id="disturbance" version="1.0" geom_type="Polygon">
             <Label>Limits of Disturbance</Label>
-            <Symbology></Symbology>
+            <Symbology>disturbance_v3.qml</Symbology>
             <Description>The extent of the area where disturbance will occur, this includes access to the river, staging areas, etc.</Description>
             <Hierarchy>
                 <HierarchyItem>Construction Logistics</HierarchyItem>
@@ -505,7 +505,7 @@
         </Layer>
         <Layer id="staging" version="1.0" geom_type="Polygon">
             <Label>Staging Areas</Label>
-            <Symbology></Symbology>
+            <Symbology>staging_v3.qml</Symbology>
             <Description>Areas where staging materials and equipment will occur</Description>
             <Hierarchy>
                 <HierarchyItem>Construction Logistics</HierarchyItem>
@@ -518,7 +518,7 @@
         </Layer>
         <Layer id="access" version="1.0" geom_type="Linestring">
             <Label>Access Routes</Label>
-            <Symbology></Symbology>
+            <Symbology>access_v3.qml</Symbology>
             <Description>Routes that will be used to access the project areas and staging areas</Description>
             <Hierarchy>
                 <HierarchyItem>Construction Logistics</HierarchyItem>
@@ -667,7 +667,6 @@
 <!-- List of things needed for next week
  1. Metrics
 
- 3. Create symbology
 
 
  
