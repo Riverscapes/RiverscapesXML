@@ -360,7 +360,7 @@
         </Layer>
         <Layer id="complex_zoi" version="1.0" geom_type="Polygon">
             <Label>Complex Zones of Influence</Label>
-            <Symbology></Symbology>
+            <Symbology>complexes.qml</Symbology>
             <Description>Zones of Influence at the complex scale</Description>
             <Hierarchy>
                 <HierarchyItem>Design Elements</HierarchyItem>
