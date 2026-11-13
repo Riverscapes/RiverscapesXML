@@ -48,17 +48,17 @@
             <Children collapsed="true">
               <Node label="IGO Hydrologic Metrics">
                 <Children collapsed="true">
-                  <Node label="Baseflow (cfs)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_hydro_metrics']" type="point" id="qlow" symbology="baseflow_rme3" />
+                  <Node label="Baseflow (cfs)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_hydro_metrics']" type="point" id="qlow" symbology="baseflow_rme3" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Typical Flood (cfs)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_hydro_metrics']" type="point" id="q2" symbology="flood_rme3" />
-                  <Node label="Baseflow Stream Power (watts)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_hydro_metrics']" type="point" id="splow" symbology="splow_rme3" />
+                  <Node label="Baseflow Stream Power (watts)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_hydro_metrics']" type="point" id="splow" symbology="splow_rme3" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Flood Stream Power (watts)(IGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_igo_hydro_metrics']" type="point" id="sphigh" symbology="sphigh_rme3" />
                 </Children>
               </Node>
               <Node label="DGO Hydrologic Metrics">
                 <Children collapsed="true">
-                  <Node label="Baseflow (cfs)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']" type="polygon" id="qlow_dgo" symbology="baseflow_rme3_dgo" />
+                  <Node label="Baseflow (cfs)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']" type="polygon" id="qlow_dgo" symbology="baseflow_rme3_dgo" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Typical Flood (cfs)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']" type="polygon" id="q2_dgo" symbology="flood_rme3_dgo" />
-                  <Node label="Baseflow Stream Power (watts)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']" type="polygon" id="splow_dgo" symbology="splow_rme3_dgo" />
+                  <Node label="Baseflow Stream Power (watts)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']" type="polygon" id="splow_dgo" symbology="splow_rme3_dgo" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
                   <Node label="Flood Stream Power (watts)(DGO)" xpath= "Outputs/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']" type="polygon" id="sphigh_dgo" symbology="sphigh_rme3_dgo" />
                 </Children>
               </Node>
