@@ -130,13 +130,13 @@
             <Children collapsed="true">
               <Node label="Baseflow (cfs)"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']"
-                type="point" id="qlow" symbology="baseflow_rme3" />
+                type="point" id="qlow" symbology="baseflow_rme3" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
               <Node label="Typical Flood (cfs)"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']"
                 type="point" id="q2" symbology="flood_rme3" />
               <Node label="Baseflow Stream Power (watts)"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']"
-                type="point" id="splow" symbology="splow_rme3" />
+                type="point" id="splow" symbology="splow_rme3" filter="&quot;FCode&quot; in (46006, 55800, 33600)" />
               <Node label="Flood Stream Power (watts)"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_hydro_metrics']"
                 type="point" id="sphigh" symbology="sphigh_rme3" />
