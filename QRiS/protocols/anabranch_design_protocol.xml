@@ -5,7 +5,7 @@
     <Citation>NA</Citation>
     <Author>Zach Burgert</Author>
     <CreationDate>2025-07-22</CreationDate>
-    <UpdatedDate>2026-03-10</UpdatedDate>
+    <UpdatedDate>2026-03-11</UpdatedDate>
     <Layers>
         <Layer id="structure_points" version="1.0" geom_type="Point">
             <Label>Structure Points</Label>
@@ -236,7 +236,7 @@
                 </TextField>
             </Fields>
         </Layer>
-        <Layer id="complexes" version="1.0" geom_type="Polygon">
+        <Layer id="complexes" version="1.0" status= 'deprecated' geom_type="Polygon">
             <Label>Structure Complex Extents</Label>
             <Symbology>complexes.qml</Symbology>
             <Description>Structure Complex Extents Layer</Description>
@@ -255,6 +255,58 @@
                 </IntegerField>
                 <IntegerField id="structure_uncertainty" version="1.0">
                     <Label>Structure Uncertainty (±)</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                </IntegerField>
+                <IntegerField id="estimated_fill_volume" version="1.0">
+                    <Label>Estimated Total Fill Volume</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                </IntegerField>
+                <TextField id="notes" version="1.0">
+                    <Label>Notes</Label>
+                </TextField>
+            </Fields>
+        </Layer>
+        <Layer id="complexes" version="2.0" geom_type="Polygon">
+            <Label>Structure Complex Extents</Label>
+            <Symbology>complexes.qml</Symbology>
+            <Description>Structure Complex Extents Layer</Description>
+            <Hierarchy>
+                <HierarchyItem>Anabranch Design</HierarchyItem>
+                <HierarchyItem>Structures</HierarchyItem>
+            </Hierarchy>
+            <Fields>
+                <IntegerField id="complex_number" version="1.0">
+                    <Label>Complex ID</Label>
+                </IntegerField>
+                <TextField id="complex_label" version="1.0">
+                    <Label>Complex Label</Label>
+                </TextField>
+                <ListField id="complex_objective" version="1.0">
+                    <Label>Primary Complex Objective</Label>
+                    <Values>
+                        <Value>Complex: Headcut Arrest</Value>
+                        <Value>Complex: Increase Channel Complexity</Value>
+                        <Value>Complex: Increase Floodplain Connectivity</Value>
+                        <Value>Complex: Lateral Channel Migration</Value>
+                        <Value>Complex: Overbank Flow Dispersal</Value>
+                        <Value>Complex: Pond/Wetland Creation</Value>
+                        <Value>Complex: Riparian/Wetland Expansion</Value>
+                        <Value>Complex: Side-Channel Connection</Value>
+                        <Value>Complex: Widening and Aggradation</Value>
+                    </Values>
+                </ListField>
+                <TextField id="complex_description" version="1.0">
+                    <Label>Complex Description</Label>
+                </TextField>
+                <IntegerField id="number_of_structures" version="1.0">
+                    <Label>Structure Count</Label>
+                    <MinimumValue>0</MinimumValue>
+                    <MaximumValue>999999999</MaximumValue>
+                </IntegerField>
+                <IntegerField id="structure_uncertainty" version="1.0">
+                    <Label>Uncertainty (±)</Label>
                     <MinimumValue>0</MinimumValue>
                     <MaximumValue>999999999</MaximumValue>
                 </IntegerField>

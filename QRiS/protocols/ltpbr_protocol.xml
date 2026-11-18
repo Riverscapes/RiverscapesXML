@@ -864,7 +864,7 @@
             </Parameters>
         </Metric>
         <Metric id="flow_length" version="1.0" calculation_machine_code="length">
-            <Label>Channel Length</Label>
+            <Label>Total Channel Length</Label>
             <DefaultLevel>Metric</DefaultLevel>
             <Description>The sum of all channel lengths in a sample frame</Description>
             <DefinitionURL/>
