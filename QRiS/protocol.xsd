@@ -396,6 +396,7 @@
             <xs:enumeration value="metric_layer"/>
             <xs:enumeration value="denominator"/>
             <xs:enumeration value="numerator"/>
+            <xs:enumeration value="sample_frame"/>
             <xs:enumeration value="profile_upstream"/>
             <xs:enumeration value="profile_downstream"/>
             <xs:enumeration value="profile_difference"/>
