@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.riverscapes.net/RaveBusinessLogic/XSD/project_explorer.xsd">
+  <Name>Floodplain Restoration Prioritization</Name>
+  <ProjectType>rme_prioritization</ProjectType>
+  <Node xpathlabel="Name">
+    <Children collapsed="false">
+      <Node label="Floodplain Prioritization" xpath="Realizations/Realization">
+        <Children collapsed="false">
+          <Node label="Management">
+            <Children collapsed="false">
+              <Node label="Management Class" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="mgmt_class" id="mgmt_class"/>
+              <Node label="Limiting Factor" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="limiting_factor" id="limiting_factor"/>
+              <Node label="Management Class (IGO points)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='igo_prioritization']" type="point" symbology="mgmt_class_igo" id="mgmt_class_igo"/>
+            </Children>
+          </Node>
+          <Node label="Floodplain Metrics (reach scale)">
+            <Children collapsed="false">
+              <Node label="Total Floodplain Acres" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="tot_uplift_ac" id="tot_ac"/>
+              <Node label="Short-term Acres (low-lying floodplain)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="st_uplift_ac" id="st_ac"/>
+              <Node label="Long-term Acres (elevated floodplain)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="lt_uplift_ac" id="lt_ac"/>
+              <Node label="Short-term Share of Floodplain" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="st_uplift_ratio" id="st_ratio"/>
+              <Node label="Short-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="st_potential" id="st_pot"/>
+              <Node label="Long-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="lt_potential" id="lt_pot"/>
+            </Children>
+          </Node>
+          <Node label="Indices">
+            <Children collapsed="true">
+              <Node label="Physical Opportunity (POI)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="phys_opportunity" id="poi"/>
+              <Node label="Degradation (DI)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="degradation" id="di"/>
+              <Node label="Landscape Resiliency (LRI)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='dgo_prioritization']" type="polygon" symbology="resiliency" id="lri"/>
+            </Children>
+          </Node>
+          <Node label="Floodplain Metrics (large scale)">
+            <Children collapsed="false">
+              <Node label="Tributary">
+                <Children collapsed="true">
+                  <Node label="Tributary Actionable Acres / Floodplain Management Reaches (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_act_rollup']" type="polygon" symbology="trib_act_rank" id="trib_act"/>
+                  <Node label="Tributary Short-term Acres (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_rollup']" type="polygon" symbology="trib_st_rank" id="trib_st"/>
+                  <Node label="Tributary Long-term Acres (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_rollup']" type="polygon" symbology="trib_lt_rank" id="trib_lt"/>
+                  <Node label="Tributary Total Floodplain Acres per Mile (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_rollup']" type="polygon" symbology="trib_pm_rank" id="trib_pm"/>
+                  <Node label="Tributary Short-term Share of Floodplain" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_rollup']" type="polygon" symbology="trib_st_ratio" id="trib_ratio"/>
+                  <Node label="Tributary Short-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_rollup']" type="polygon" symbology="trib_st_potential" id="trib_st_pot"/>
+                  <Node label="Tributary Long-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='trib_rollup']" type="polygon" symbology="trib_lt_potential" id="trib_lt_pot"/>
+                </Children>
+              </Node>
+              <Node label="HUC12">
+                <Children collapsed="true">
+                  <Node label="HUC12 Actionable Acres / Floodplain Management Reaches (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_act_rollup']" type="polygon" symbology="huc12_act_rank" id="huc_act"/>
+                  <Node label="HUC12 Short-term Acres (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_rollup']" type="polygon" symbology="huc12_st_rank" id="huc_st"/>
+                  <Node label="HUC12 Long-term Acres (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_rollup']" type="polygon" symbology="huc12_lt_rank" id="huc_lt"/>
+                  <Node label="HUC12 Total Floodplain Acres per Mile (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_rollup']" type="polygon" symbology="huc12_pm_rank" id="huc_pm"/>
+                  <Node label="HUC12 Short-term Share of Floodplain" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_rollup']" type="polygon" symbology="huc12_st_ratio" id="huc_ratio"/>
+                  <Node label="HUC12 Short-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_rollup']" type="polygon" symbology="huc12_st_potential" id="huc_st_pot"/>
+                  <Node label="HUC12 Long-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='huc12_rollup']" type="polygon" symbology="huc12_lt_potential" id="huc_lt_pot"/>
+                </Children>
+              </Node>
+              <Node label="Landowner">
+                <Children collapsed="true">
+                  <Node label="Landowner Actionable Acres / Floodplain Management Reaches (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='owner_act_rollup']" type="polygon" symbology="owner_act_rank" id="own_act"/>
+                  <Node label="Landowner Short-term Acres (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='owner_rollup']" type="polygon" symbology="owner_st_rank" id="own_st"/>
+                  <Node label="Landowner Long-term Acres (rank)" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='owner_rollup']" type="polygon" symbology="owner_lt_rank" id="own_lt"/>
+                  <Node label="Landowner Short-term Share of Floodplain" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='owner_rollup']" type="polygon" symbology="owner_st_ratio" id="own_ratio"/>
+                  <Node label="Landowner Short-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='owner_rollup']" type="polygon" symbology="owner_st_potential" id="own_st_pot"/>
+                  <Node label="Landowner Long-term Relative Potential" xpath="Outputs/Geopackage[@id='PRIORITIZATION_OUTPUTS']/Layers/Vector[@lyrName='owner_rollup']" type="polygon" symbology="owner_lt_potential" id="own_lt_pot"/>
+                </Children>
+              </Node>
+            </Children>
+          </Node>
+          <Node label="Inputs">
+            <Children collapsed="true">
+              <Node label="RME DGO Metrics" xpath="Inputs/Geopackage[@id='RME_INPUTS']/Layers/Vector[@lyrName='vw_dgo_metrics']" type="polygon" symbology="DGO" id="rme_dgo"/>
+              <Node label="RME IGO Metrics" xpath="Inputs/Geopackage[@id='RME_INPUTS']/Layers/Vector[@lyrName='vw_igo_metrics']" type="point" symbology="IGO" id="rme_igo"/>
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+  <Views default="mgmt">
+    <View name="Management Classes" id="mgmt">
+      <Description>Where and what to address (reach scale)</Description>
+      <Layers>
+        <Layer id="mgmt_class" visible="true"/>
+      </Layers>
+    </View>
+    <View name="Limiting Factors" id="limiting">
+      <Description>Land use, water, or both on Land-Mgmt reaches</Description>
+      <Layers>
+        <Layer id="limiting_factor" visible="true"/>
+      </Layers>
+    </View>
+    <View name="Reach Short-term Acres" id="reach_st">
+      <Description>Low-lying, quick-win reconnectable acres per reach</Description>
+      <Layers>
+        <Layer id="st_ac" visible="true"/>
+      </Layers>
+    </View>
+    <View name="Reach Long-term Acres" id="reach_lt">
+      <Description>Elevated reconnectable acres per reach</Description>
+      <Layers>
+        <Layer id="lt_ac" visible="true"/>
+      </Layers>
+    </View>
+    <View name="Tributary Rollup" id="trib">
+      <Description>Tributaries ranked by actionable acres</Description>
+      <Layers>
+        <Layer id="trib_act" visible="true"/>
+      </Layers>
+    </View>
+    <View name="HUC12 Rollup" id="huc12">
+      <Description>HUC12s ranked by actionable acres</Description>
+      <Layers>
+        <Layer id="huc_act" visible="true"/>
+      </Layers>
+    </View>
+    <View name="Landowner Rollup" id="owner">
+      <Description>Landowners ranked by actionable acres</Description>
+      <Layers>
+        <Layer id="own_act" visible="true"/>
+      </Layers>
+    </View>
+  </Views>
+</Project>
