@@ -56,6 +56,9 @@
               <Node label="Stream Order"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_desc_metrics']"
                 type="point" id="order" symbology="stream_order_rme3" />
+              <Node label="Flow Type"
+                xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_desc_metrics']"
+                type="point" id="flowtype" symbology="flowtype_rme3" />
               <Node label="Headwater (Yes/No)"
                 xpath="Datasets/Geopackage/Layers/Vector[@lyrName='vw_dgo_desc_metrics']"
                 type="point" id="headwater" symbology="headwater_rme3" />
