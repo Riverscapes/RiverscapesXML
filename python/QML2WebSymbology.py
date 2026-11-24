@@ -3,9 +3,24 @@
 
 Handles all vector renderer types (graduatedSymbol, singleSymbol,
 categorizedSymbol, RuleRenderer), geometry types (line/fill/marker), both
-<Option> and <prop> QML attribute formats, translucent colours, and
-<range>/<category> labels. Raster layers and layers without geometry are
-skipped, not failed.
+<Option> and <prop> QML attribute formats, translucent colours, custom dash
+patterns, per-rule filters, and <range>/<category> labels. Raster layers and
+layers without geometry are skipped, not failed.
+
+Two rules follow from issue #1054 ("Web Intermittent Drainage Network"),
+where the intermittent layer also drew every other flowline as a thin grey
+line:
+
+* Field lookups are case-insensitive (_field_expr). QGIS matches field names
+  case-insensitively, Mapbox GL does not, and a layer reaches the web as
+  either `fcode` or `FCode` depending on the source the tile was cut from.
+  Emitting the QML's spelling verbatim is what has silently broken the NHD
+  flowline symbology repeatedly (issues #1000, #1022, #1054).  The known
+  spellings live in _FIELD_ALIASES, so a field whose QML spelling is all
+  lower case still gets a lookup for the camel case the tiles may use.
+* Features that match no category are left unpainted, never given a fallback
+  colour (_TRANSPARENT). A renderer only owns the features its categories
+  describe; painting the rest is what turned the whole drainage network grey.
 
 Usage:
   python QML2WebSymbology.py [--diff]          # coverage report (default)
@@ -24,6 +39,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -33,7 +49,20 @@ from typing import Any
 SCHEMA_URL = "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json"
 EPSILON = 0.0001
 _DEFAULT_COLOR = "rgb(128,128,128)"
+# Fallback for features that match no category. Transparent, not grey: the
+# grey it replaced painted features the renderer does not own (#1054).
+_TRANSPARENT = "rgba(0,0,0,0)"
 _GEOMS = ("line", "fill", "marker")
+# QGIS length units in millimetres, for reconciling a dash pattern with the
+# line width it is drawn at.
+_UNIT_MM = {"mm": 1.0, "point": 0.3527777778, "inch": 25.4}
+# Attribute names that reach the tiles under more than one spelling, and every
+# spelling to probe.  A GeoPackage column arrives lower-cased, a shapefile or a
+# view keeps the source spelling, and a few rule filters spell it all upper.
+# Add an entry here whenever a symbology breaks the same way again.
+_FIELD_ALIASES = {
+    "fcode": ("FCode", "fcode", "FCODE"),
+}
 # <layerGeometryType> fallback: 0=point 1=line 2=polygon (3/4=unknown/null)
 _LGT_GEOM = {"0": "circle", "1": "line", "2": "fill"}
 
@@ -138,6 +167,108 @@ def _fmt(v: float) -> str:
     return "{:g}".format(v)
 
 
+def _field_expr(attr: str) -> Any:
+    """Mapbox expression reading a QGIS field name, whatever its casing.
+
+    QGIS resolves a field name case-insensitively; Mapbox GL does not, and a
+    layer arrives in the browser as `fcode` or `FCode` depending on what the
+    tile was built from (a GeoPackage column comes out lower-cased, a
+    shapefile or a view keeps the source spelling). Probe every casing and
+    use whichever one the tile actually carries.
+    """
+    if not attr:
+        return ["get", ""]
+    aliases = _FIELD_ALIASES.get(attr.lower())
+    if aliases:
+        return ["coalesce"] + [["get", n] for n in aliases]
+    names = list(dict.fromkeys([attr, attr.lower(), attr.upper()]))
+    if len(names) == 1:
+        return ["get", names[0]]
+    return ["coalesce"] + [["get", n] for n in names]
+
+
+def _dash_array(opts: dict[str, str], width: float) -> list | None:
+    """QGIS custom dash pattern -> Mapbox `line-dasharray`.
+
+    QGIS keeps the pattern in `customdash` as ';'-separated lengths in
+    `customdash_unit` and strokes the line at `line_width` in
+    `line_width_unit`. Mapbox expresses the pattern in multiples of the line
+    width, so scale the pattern and the width to a common unit and divide.
+    """
+    if opts.get("use_custom_dash", "").strip().lower() not in ("1", "true"):
+        return None
+    raw = opts.get("customdash") or ""
+    try:
+        parts = [float(p) for p in raw.split(";") if p.strip()]
+    except ValueError:
+        return None
+    if len(parts) < 2 or any(p < 0 for p in parts) or sum(parts) <= 0:
+        return None
+    dash_unit = _UNIT_MM.get((opts.get("customdash_unit") or "").strip().lower())
+    width_unit = _UNIT_MM.get((opts.get("line_width_unit") or "").strip().lower())
+    if dash_unit and width_unit:
+        parts = [p * dash_unit for p in parts]
+        width = width * width_unit
+    if width > 0:
+        parts = [p / width for p in parts]
+    # Mapbox wants an even number of values (a repeated on/off pattern).
+    if len(parts) % 2:
+        parts = parts[:-1]
+    return [round(p, 3) for p in parts] or None
+
+
+def _line_style(opts: dict[str, str], sym_type: str) -> tuple:
+    """(colour, line_width, dasharray) of a line symbol."""
+    width = _num_width(opts, "line_width", 1.0)
+    return _symbol_color(opts, sym_type), width, _dash_array(opts, width)
+
+
+def _shared_dash(items: list[dict]) -> list | None:
+    """The dash pattern to paint when every symbol in a renderer agrees.
+
+    `line-dasharray` is not a data-driven paint property, so a renderer whose
+    categories mix solid and dashed lines cannot say so in one web layer.
+    Emit the shared pattern, or nothing when the symbols disagree.
+    """
+    patterns = {json.dumps(i.get("dash")) for i in items}
+    if len(patterns) != 1:
+        return None
+    return items[0].get("dash") or None
+
+
+def _dash_groups(items: list[dict]) -> list[list[dict]]:
+    """Split categories/ranges into one group per distinct dash pattern."""
+    groups: dict[str, list[dict]] = {}
+    for item in items:
+        groups.setdefault(json.dumps(item.get("dash")), []).append(item)
+    return list(groups.values())
+
+
+def _value_filter(items: list[dict], field: list) -> list:
+    """Restrict a layer to the category values it actually paints.
+
+    Needed wherever the colour collapses to a single value: a one-category
+    renderer has no `match` to fall through, so without this the layer would
+    paint every feature in the tile (issue #1054, inverted).
+    """
+    values = [_int_if_integral(_num(i["value"])) for i in items]
+    if all(isinstance(v, (int, str)) for v in values):
+        return ["match", field, values, True, False]
+    return ["any"] + [["==", field, v] for v in values]
+
+
+def _value_match(items: list[dict], key: str, fallback: Any, field: list) -> Any:
+    """A `match` on field when the categories disagree about key."""
+    values = [i.get(key, fallback) for i in items]
+    if all(v == values[0] for v in values):
+        return values[0]
+    expr: list = ["match", field]
+    for item, value in zip(items, values):
+        expr.extend([_num(item["value"]), value])
+    expr.append(fallback)
+    return expr
+
+
 # -------------------------------------------------------------------
 # QML parsing
 # -------------------------------------------------------------------
@@ -206,11 +337,12 @@ def parse_qml(text: str, file_path: str) -> dict[str, Any]:
     if result["renderer_type"] == "singleSymbol":
         entry = next(iter(syms.values()), None)
         if entry is not None:
-            color = _symbol_color(entry["opts"], entry["type"])
+            color, line_width, dash = _line_style(entry["opts"], entry["type"])
             ss: dict[str, Any] = {
                 "type": entry["type"],
                 "color": color,
-                "line_width": _num_width(entry["opts"], "line_width", 1.0),
+                "line_width": line_width,
+                "dash": dash,
                 "label": Path(file_path).stem.replace("_", " ").replace("-", " "),
             }
             if entry["type"] in ("fill", "marker"):
@@ -225,11 +357,15 @@ def parse_qml(text: str, file_path: str) -> dict[str, Any]:
             for cat in cats_el.findall("category"):
                 value = cat.get("value") or ""
                 entry = syms.get(cat.get("symbol") or "0")
-                color = _symbol_color(entry["opts"], entry["type"]) if entry else None
+                color, line_width, dash = (
+                    _line_style(entry["opts"], entry["type"])
+                    if entry else (None, 1.0, None))
                 result["categories"].append({
                     "value": value,
                     "label": cat.get("label") or value,
                     "color": color,
+                    "line_width": line_width,
+                    "dash": dash,
                 })
 
     # RuleRenderer
@@ -238,18 +374,22 @@ def parse_qml(text: str, file_path: str) -> dict[str, Any]:
         if rules_el is not None:
             # iter() catches nested (group) rules in document order
             for rule in rules_el.iter("rule"):
-                color: str | None = None
+                color = line_width = dash = None
                 inline = rule.find("symbol")
                 if inline is not None and inline.get("type") in _GEOMS:
-                    color = _symbol_color(_options(inline), inline.get("type"))
+                    color, line_width, dash = _line_style(
+                        _options(inline), inline.get("type"))
                 else:
                     entry = syms.get(rule.get("symbol") or "")
                     if entry:
-                        color = _symbol_color(entry["opts"], entry["type"])
+                        color, line_width, dash = _line_style(
+                            entry["opts"], entry["type"])
                 result["rules"].append({
                     "label": rule.get("label") or "",
                     "filter": rule.get("filter") or "",
                     "color": color,
+                    "line_width": line_width if line_width is not None else 1.0,
+                    "dash": dash,
                 })
 
     # graduatedSymbol
@@ -268,6 +408,7 @@ def parse_qml(text: str, file_path: str) -> dict[str, Any]:
                 entry = syms.get(sym)
                 opts = entry["opts"] if entry else {}
                 stype = entry["type"] if entry else "line"
+                color, line_width, dash = _line_style(opts, stype)
                 label = rg.get("label") or ""
                 if not label:
                     label = "{} - {}".format(_fmt(lo), _fmt(hi))
@@ -275,12 +416,279 @@ def parse_qml(text: str, file_path: str) -> dict[str, Any]:
                     "lower": lo,
                     "upper": hi,
                     "label": label,
-                    "color": _symbol_color(opts, stype),
-                    "line_width": _num_width(opts, "line_width", 1.0),
+                    "color": color,
+                    "line_width": line_width,
+                    "dash": dash,
                 })
             result["ranges"].sort(key=lambda r: r["lower"])
 
     return result
+
+
+# ===================================================================
+# QGIS rule filter -> Mapbox GL expression
+# ===================================================================
+
+
+class FilterUnsupported(Exception):
+    """Raised for QGIS rule-filter syntax this converter cannot translate."""
+
+
+_FILTER_TOKEN = re.compile(
+    r"""\s*(?:
+        (?P<lparen>\() |
+        (?P<rparen>\)) |
+        (?P<comma>,) |
+        (?P<op><>|<=|>=|!=|=|<|>) |
+        (?P<string>'(?:[^']|'')*') |
+        (?P<number>[-+]?(?:\d+\.?\d*|\.\d+)) |
+        (?P<ident>[A-Za-z_][A-Za-z_0-9]*) |
+        (?P<field>"(?:[^"]|"")*")
+    )""", re.VERBOSE)
+
+_KEYWORDS = ("and", "or", "not", "in", "is", "null", "like")
+
+
+def _tokenize_filter(text: str) -> list[tuple[str, str]]:
+    tokens: list[tuple[str, str]] = []
+    pos = 0
+    while pos < len(text):
+        m = _FILTER_TOKEN.match(text, pos)
+        if m is None:
+            if text[pos:].strip() == "":
+                break
+            raise FilterUnsupported("unexpected text {!r}".format(text[pos:pos + 20]))
+        pos = m.end()
+        kind, val = m.lastgroup or "", m.group(m.lastgroup or 0) or ""
+        if kind == "ident" and val.lower() in _KEYWORDS:
+            kind = val.lower()
+        tokens.append((kind, val))
+    return tokens
+
+
+def _int_if_integral(v: Any) -> Any:
+    """Normalise 46006.0 to 46006: `match` labels must be integers."""
+    if isinstance(v, float) and v.is_integer():
+        return int(v)
+    return v
+
+
+def _filter_literal(kind: str, val: str) -> Any:
+    if kind == "string":
+        return _num(val[1:-1].replace("''", "'"))
+    return _num(val)
+
+
+def _unquote_ident(raw: str) -> str:
+    if len(raw) >= 2 and raw[0] == '"' and raw[-1] == '"':
+        return raw[1:-1].replace('""', '"')
+    return raw
+
+
+def _field_names(expr: Any) -> list[str] | None:
+    """Source field names behind a _field_expr, or None if it is not one."""
+    if isinstance(expr, list) and len(expr) == 2 and expr[0] == "get":
+        return [expr[1]]
+    if isinstance(expr, list) and expr and expr[0] == "coalesce":
+        names = [e[1] for e in expr[1:] if isinstance(e, list) and e[0] == "get"]
+        return names or None
+    return None
+
+
+class _FilterParser:
+    """Recursive-descent parser for the QGIS rule-filter subset we support.
+
+    Handles `=`, `<>`, `!=`, `<`, `>`, `<=`, `>=`, `IN (...)`, `AND`, `OR`,
+    `NOT` and parentheses - which covers every filter in the repository's
+    RuleRenderer symbologies - and raises FilterUnsupported for anything
+    else rather than guessing.
+    """
+
+    _FLIP = {"<": ">", ">": "<", "<=": ">=", ">=": "<="}
+
+    def __init__(self, text: str) -> None:
+        self.tokens = _tokenize_filter(text)
+        self.i = 0
+
+    def _kind(self) -> str:
+        return self.tokens[self.i][0] if self.i < len(self.tokens) else "end"
+
+    def _take(self, kind: str | None = None) -> tuple[str, str]:
+        if self._kind() == "end":
+            raise FilterUnsupported("unexpected end of filter")
+        tok = self.tokens[self.i]
+        if kind is not None and tok[0] != kind:
+            raise FilterUnsupported("expected {} but found {!r}".format(kind, tok[1]))
+        self.i += 1
+        return tok
+
+    def parse(self) -> Any:
+        expr = self._or()
+        if self._kind() != "end":
+            raise FilterUnsupported("trailing {!r}".format(self.tokens[self.i][1]))
+        return expr
+
+    def _or(self) -> Any:
+        terms = [self._and()]
+        while self._kind() == "or":
+            self._take()
+            terms.append(self._and())
+        return terms[0] if len(terms) == 1 else ["any"] + terms
+
+    def _and(self) -> Any:
+        terms = [self._not()]
+        while self._kind() == "and":
+            self._take()
+            terms.append(self._not())
+        return terms[0] if len(terms) == 1 else ["all"] + terms
+
+    def _not(self) -> Any:
+        if self._kind() == "not":
+            self._take()
+            return ["!", self._not()]
+        return self._atom()
+
+    def _peek_kind(self, ahead: int = 0) -> str:
+        j = self.i + ahead
+        return self.tokens[j][0] if j < len(self.tokens) else "end"
+
+    def _atom(self) -> Any:
+        if self._kind() == "lparen":
+            # Distinguish a bracketed group - "(a AND b)" - from a bare field
+            # QGIS wrapped in brackets, as in "(integrated_width) > 500".
+            ahead = (self._peek_kind(1), self._peek_kind(2), self._peek_kind(3))
+            if ahead[0] in ("field", "ident", "number", "string") and \
+                    ahead[1] == "rparen" and ahead[2] in ("op", "in"):
+                self._take()
+                inner = self._operand()
+                self._take("rparen")
+                return self._comparison(inner)
+            self._take()
+            expr = self._or()
+            self._take("rparen")
+            return expr
+        return self._comparison()
+
+    def _operand(self, allow_field: bool = True) -> Any:
+        kind, val = self._take()
+        if kind in ("field", "ident"):
+            if not allow_field:
+                raise FilterUnsupported("expected a literal, found {!r}".format(val))
+            return _field_expr(_unquote_ident(val))
+        if kind in ("string", "number"):
+            return _filter_literal(kind, val)
+        raise FilterUnsupported("unexpected {!r}".format(val))
+
+    def _comparison(self, left: Any = None) -> Any:
+        if left is None:
+            left = self._operand()
+        kind = self._kind()
+        if kind == "in":
+            self._take()
+            self._take("lparen")
+            values = [_int_if_integral(self._operand(allow_field=False))]
+            while self._kind() == "comma":
+                self._take()
+                values.append(_int_if_integral(self._operand(allow_field=False)))
+            self._take("rparen")
+            if not isinstance(left, list):
+                raise FilterUnsupported("IN needs a field on the left")
+            # `match` labels must be integers or strings; fall back to a
+            # chain of equalities for anything else (e.g. 0.5).
+            if values and all(isinstance(v, int) or isinstance(v, str) for v in values):
+                return ["match", left, values, True, False]
+            return ["any"] + [["==", left, v] for v in values]
+        if kind == "like":
+            self._take()
+            return self._like(left)
+        is_null = kind in ("null", "is") or (
+            kind == "op" and
+            self.tokens[self.i][1] in ("=", "!=") and
+            self._peek_kind(1) == "null")
+        if is_null:
+            return self._null_test(left)
+        if kind != "op":
+            raise FilterUnsupported("expected an operator, found {!r}".format(
+                self.tokens[self.i][1] if self.i < len(self.tokens) else "end"))
+        op = self._take()[1]
+        # QGIS spells equality '='; the style spec spells it '=='.
+        op = {"<>": "!=", "=": "=="}.get(op, op)
+        right = self._operand()
+        if isinstance(left, list) and isinstance(right, list):
+            raise FilterUnsupported("cannot compare two fields")
+        if isinstance(right, list):
+            left, right = right, left
+            op = self._FLIP.get(op, op)
+        if isinstance(right, list):
+            raise FilterUnsupported("needs a field and a literal")
+        return [op, left, right]
+
+    def _null_test(self, left: Any) -> Any:
+        """`x = NULL` / `x IS [NOT] NULL` as a property-presence test.
+
+        A tile omits a null property rather than carrying it, so absence is
+        the closest thing the web layer has to SQL NULL.
+        """
+        if self._kind() == "is":
+            self._take()
+            negate = self._kind() == "not"
+            if negate:
+                self._take()
+            self._take("null")
+        else:
+            negate = self._take()[1] == "!="
+            self._take("null")
+        names = _field_names(left)
+        if not names:
+            raise FilterUnsupported("NULL test needs a plain field")
+        present = ["has", names[0]] if len(names) == 1 else \
+            ["any"] + [["has", n] for n in names]
+        return present if negate else ["!", present]
+
+    def _like(self, left: Any) -> Any:
+        """SQL LIKE with % wildcards, via `in`'s substring test and slice."""
+        lkind, lval = self._take()
+        if lkind != "string":
+            raise FilterUnsupported("LIKE needs a quoted pattern")
+        pattern = lval[1:-1].replace("''", "'")
+        # SQL treats '_' as a single-character wildcard, but every pattern in
+        # this repository uses it literally ("%Early_Cretaceous%" matches the
+        # value 'Early_Cretaceous'), so match it literally rather than drop
+        # the rule. Mapbox has no single-character wildcard to translate to.
+        text = ["to-string", left]
+        if "%" not in pattern:
+            return ["==", text, pattern]
+        core = pattern.strip("%")
+        if not core or "%" in core:
+            raise FilterUnsupported("LIKE needs at most one wildcard at each end")
+        if pattern.startswith("%") and pattern.endswith("%"):
+            return ["in", core, text]
+        if pattern.endswith("%"):
+            return ["==", ["slice", text, 0, len(core)], core]
+        return ["==", ["slice", text, -len(core)], core]
+
+
+def _translate_filter(text: str) -> Any:
+    """Mapbox filter expression for a QGIS rule filter."""
+    return _FilterParser(text).parse()
+
+
+def _rule_filter(raw: str | None) -> Any:
+    """Mapbox filter for one rule.
+
+    An unfiltered/ELSE rule returns None (a catch-all layer), a translatable
+    filter returns the expression, and unsupported QGIS syntax returns False
+    so the caller drops the rule instead of painting features it does not own.
+    """
+    text = (raw or "").strip()
+    if text == "" or text.upper() == "ELSE":
+        return None
+    try:
+        return _translate_filter(text)
+    except FilterUnsupported as e:
+        print("warning: unsupported QGIS rule filter {}: {}".format(text, e),
+              file=sys.stderr)
+        return False
 
 
 # ===================================================================
@@ -346,7 +754,7 @@ def _line_width_expr(rng: list[dict], attr: str):
     widths = [r["line_width"] for r in rng]
     if all(w == widths[0] for w in widths):
         return widths[0]
-    return ["interpolate", ["linear"], ["get", attr]] + \
+    return ["interpolate", ["linear"], _field_expr(attr)] + \
         _range_stops(rng, lambda r, i: r["line_width"])
 
 
@@ -359,15 +767,19 @@ def _has_alpha(v: Any) -> bool:
     return False
 
 
-def _make_layer(lid: str, typ: str, sl: str, paint: dict) -> dict:
-    return {
+def _make_layer(lid: str, typ: str, sl: str, paint: dict,
+                filt: Any = None) -> dict:
+    layer = {
         "id": lid,
         "type": typ,
         "source": "composite",
         "source-layer": sl,
-        "layout": {},
-        "paint": paint,
     }
+    if filt is not None:
+        layer["filter"] = filt
+    layer["layout"] = {}
+    layer["paint"] = paint
+    return layer
 
 
 def build_json(parsed: dict[str, Any], qml_filename: str) -> dict | None:
@@ -377,15 +789,18 @@ def build_json(parsed: dict[str, Any], qml_filename: str) -> dict | None:
     if geom not in ("line", "fill", "circle"):
         return None
     sid = Path(qml_filename).stem
-    sl = attr or sid
+    # The web viewer always replaces source-layer with the tile's real layer
+    # name (see renderableLayers.ts), so it must only be something stable and
+    # honest. It used to be the QGIS attribute name, which read like a layer.
+    sl = sid
     layers: list[dict] = []
 
-    def gl(typ, paint):
-        # ids must be unique per style: one id per layer type
-        layers.append(_make_layer("{}-{}".format(sid, typ), typ, sl, paint))
+    def gl(typ, paint, filt=None, tag=None):
+        lid = "{}-{}{}".format(sid, typ, "-{}".format(tag) if tag else "")
+        layers.append(_make_layer(lid, typ, sl, paint, filt))
 
     def interp() -> list:
-        return ["interpolate", ["linear"], ["get", attr]]
+        return ["interpolate", ["linear"], _field_expr(attr)]
 
     # --- singleSymbol ---
     if rt == "singleSymbol":
@@ -412,7 +827,10 @@ def build_json(parsed: dict[str, Any], qml_filename: str) -> dict | None:
             if c is None:
                 return None
             legend = [[c, s.get("label") or sid]]
-            gl("line", {"line-color": c, "line-width": s.get("line_width", 1)})
+            lp = {"line-color": c, "line-width": s.get("line_width", 1)}
+            if s.get("dash"):
+                lp["line-dasharray"] = s["dash"]
+            gl("line", lp)
         elif geom == "circle":
             if c is None:
                 return None
@@ -431,21 +849,36 @@ def build_json(parsed: dict[str, Any], qml_filename: str) -> dict | None:
         if not cats:
             return None
         legend = [[c["color"], c.get("label") or c["value"]] for c in cats]
-        mx = ["match", ["get", attr]]
+        field = _field_expr(attr)
+        mx = ["match", field]
         for c in cats:
             mx.extend([_num(c["value"]), c["color"]])
-        mx.append(_DEFAULT_COLOR)
+        mx.append(_TRANSPARENT)
+        # Only the colours the renderer actually draws decide whether they need
+        # toning down; the transparent fallback is not one of them.
+        translucent = any(_has_alpha(c["color"]) for c in cats)
         if geom == "fill":
             fp = {"fill-color": mx}
-            if not _has_alpha(mx):
+            if not translucent:
                 fp["fill-opacity"] = 0.7
             gl("fill", fp)
             gl("line", {"line-color": "rgba(0,0,0,0.2)", "line-width": 0.2})
         elif geom == "line":
-            gl("line", {"line-color": mx, "line-width": 1})
+            # `line-dasharray` is not a data-driven paint property, so a
+            # renderer mixing solid and dashed categories needs one layer per
+            # dash pattern - otherwise the QGIS dash (present in the NHD
+            # flowlines, and missing from every auto-converted file) is lost.
+            for n, group in enumerate(_dash_groups(cats)):
+                lp = {
+                    "line-color": _value_match(group, "color", _TRANSPARENT, field),
+                    "line-width": _value_match(group, "line_width", 1, field),
+                }
+                if group[0].get("dash"):
+                    lp["line-dasharray"] = group[0]["dash"]
+                gl("line", lp, _value_filter(group, field), n or None)
         elif geom == "circle":
             cp = {"circle-color": mx, "circle-radius": 4}
-            if not _has_alpha(mx):
+            if not translucent:
                 cp["circle-opacity"] = 0.8
             gl("circle", cp)
         else:
@@ -457,26 +890,39 @@ def build_json(parsed: dict[str, Any], qml_filename: str) -> dict | None:
         rules = parsed["rules"]
         if not rules:
             return None
-        # The web schema has no per-rule filters, so only one colour can be
-        # painted; use the first rule that has a visible colour.
-        color = next((r["color"] for r in rules if r["color"]), None)
-        if color is None:
-            return None
+        # QGIS strokes the rules top-down and honours an ELSE/empty catch-all;
+        # Mapbox paints layers bottom-up, so reverse the document order. Keep
+        # one layer per rule with its filter - flattening the renderer to a
+        # single colour painted the entire RSContext flowline network blue.
         legend = [[r["color"] or _DEFAULT_COLOR, r["label"]] for r in rules]
-        if geom == "fill":
-            fp = {"fill-color": color}
-            if not _has_alpha(color):
-                fp["fill-opacity"] = 0.6
-            gl("fill", fp)
-            gl("line", {"line-color": "rgba(0,0,0,0.2)", "line-width": 0.2})
-        elif geom == "line":
-            gl("line", {"line-color": color, "line-width": 1})
-        elif geom == "circle":
-            cp = {"circle-color": color, "circle-radius": 4}
-            if not _has_alpha(color):
-                cp["circle-opacity"] = 0.8
-            gl("circle", cp)
-        else:
+        rules = list(reversed(rules))
+        painted = 0
+        for i, r in enumerate(rules):
+            color = r["color"]
+            if not color:
+                continue
+            filt = _rule_filter(r.get("filter"))
+            if filt is False:
+                continue
+            if geom == "fill":
+                fp = {"fill-color": color}
+                if not _has_alpha(color):
+                    fp["fill-opacity"] = 0.6
+                gl("fill", fp, filt, i)
+                gl("line", {"line-color": "rgba(0,0,0,0.2)", "line-width": 0.2},
+                   filt, "{}-outline".format(i))
+            elif geom == "line":
+                lp = {"line-color": color, "line-width": r.get("line_width", 1.0)}
+                if r.get("dash"):
+                    lp["line-dasharray"] = r["dash"]
+                gl("line", lp, filt, i)
+            else:
+                cp = {"circle-color": color, "circle-radius": 4}
+                if not _has_alpha(color):
+                    cp["circle-opacity"] = 0.8
+                gl("circle", cp, filt, i)
+            painted += 1
+        if not painted:
             return None
         return {"$schema": SCHEMA_URL, "legend": legend, "layerStyles": layers}
 
@@ -495,10 +941,14 @@ def build_json(parsed: dict[str, Any], qml_filename: str) -> dict | None:
             gl("fill", fp)
             gl("line", {"line-color": "rgba(0,0,0,0.2)", "line-width": 0.2})
         elif geom == "line":
-            gl("line", {
+            lp = {
                 "line-color": color_expr,
                 "line-width": _line_width_expr(colored, attr),
-            })
+            }
+            dash = _shared_dash(colored)
+            if dash:
+                lp["line-dasharray"] = dash
+            gl("line", lp)
         elif geom == "circle":
             cp = {"circle-color": color_expr, "circle-radius": 4}
             if not _has_alpha(color_expr):
@@ -600,13 +1050,6 @@ def convert_subdir(subdir: str, out_dir: str | None = None,
             continue
         try:
             parsed = parse_qml(txt, str(f))
-            if parsed["renderer_type"] == "RuleRenderer":
-                distinct = {r["color"] for r in parsed["rules"] if r["color"]}
-                if len(distinct) > 1:
-                    print(
-                        "note {}: {} distinct rule colours; only the first is "
-                        "applied (web schema has no per-rule filters)".format(
-                            f.name, len(distinct)), file=sys.stderr)
             out = build_json(parsed, f.name)
         except Exception as e:
             print("Parse error {}: {}: {}".format(f, type(e).__name__, e), file=sys.stderr)

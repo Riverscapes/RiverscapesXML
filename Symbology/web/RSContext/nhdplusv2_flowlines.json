@@ -36,10 +36,259 @@
       "type": "line",
       "source": "composite",
       "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "match",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        [
+          42800,
+          42801,
+          42802,
+          42803,
+          42804,
+          42805,
+          42806,
+          42807,
+          42808,
+          42809,
+          42810,
+          42811,
+          42812,
+          42813,
+          42814,
+          42815,
+          42816
+        ],
+        true,
+        false
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(0,0,0)",
+        "line-width": 3.4
+      }
+    },
+    {
+      "id": "nhdplusv2_flowlines-line-1",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        55800
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(207,89,106)",
+        "line-width": 2.0
+      }
+    },
+    {
+      "id": "nhdplusv2_flowlines-line-2",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        33400
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,170,0)",
+        "line-width": 2.0
+      }
+    },
+    {
+      "id": "nhdplusv2_flowlines-line-3",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "match",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        [
+          33600,
+          33601,
+          33603
+        ],
+        true,
+        false
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,0,171)",
+        "line-width": 0.5,
+        "line-dasharray": [
+          10.0,
+          6.0
+        ]
+      }
+    },
+    {
+      "id": "nhdplusv2_flowlines-line-4",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        46007
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(230,152,0)",
+        "line-width": 0.75,
+        "line-dasharray": [
+          8.0,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333
+        ]
+      }
+    },
+    {
+      "id": "nhdplusv2_flowlines-line-5",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        46003
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(115,222,255)",
+        "line-width": 0.75,
+        "line-dasharray": [
+          8.0,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333
+        ]
+      }
+    },
+    {
+      "id": "nhdplusv2_flowlines-line-6",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "nhdplusv2_flowlines",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        46006
+      ],
       "layout": {},
       "paint": {
         "line-color": "rgb(0,77,168)",
-        "line-width": 1
+        "line-width": 1.0
       }
     }
   ]

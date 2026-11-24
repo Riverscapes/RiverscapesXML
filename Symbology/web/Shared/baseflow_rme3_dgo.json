@@ -45,7 +45,7 @@
                 10000000,
                 "rgb(11, 4, 5)"
             ],
-                "fill-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 0.7, 0]
+                "fill-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006, 33600, 55800], 0.7, 0]
             }
         },
         {
@@ -55,7 +55,7 @@
             "source-layer": "dgo_metrics_sample-byd148",
             "paint": {
                 "line-width": 0.1,
-                "line-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 1, 0]
+                "line-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006, 33600, 55800], 1, 0]
             }
         }
     ]

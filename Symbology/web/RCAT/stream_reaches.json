@@ -56,10 +56,7 @@
       "paint": {
         "line-color": [
           "match",
-          [
-            "get",
-            "FCode"
-          ],
+          ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]],
           46006,
           "rgb(0,77,168)",
           46003,
@@ -82,7 +79,7 @@
           "rgb(0,0,0)",
           42813,
           "rgb(0,0,0)",
-          "rgb(128,128,128)"
+          "hsla(0, 0%, 0%, 0)"
         ],
         "line-width": 1
       }

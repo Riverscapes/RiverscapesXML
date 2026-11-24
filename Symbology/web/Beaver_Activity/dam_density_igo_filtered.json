@@ -51,7 +51,7 @@
                 1000,
                 "rgb(8, 21, 80)"
             ],
-            "circle-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 1, 0]
+            "circle-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006, 33600, 55800], 1, 0]
         }
     }
 ]

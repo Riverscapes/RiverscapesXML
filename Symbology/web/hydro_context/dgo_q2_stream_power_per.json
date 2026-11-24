@@ -18,7 +18,7 @@
             "source-layer": "GeoJSON_subset-2x2fck",
             "layout": {},
             "paint": {
-                "fill-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 0.7, 0],
+                "fill-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006, 33600, 55800], 0.7, 0],
                 "fill-color": [
                 "interpolate",
                 ["linear"],
@@ -66,7 +66,7 @@
             "layout": {},
             "paint": {
                 "line-width": 0.2,
-                "line-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 1, 0]
+                "line-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006, 33600, 55800], 1, 0]
             }
         }
     ]

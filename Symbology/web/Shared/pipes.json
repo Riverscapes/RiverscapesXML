@@ -13,7 +13,7 @@
       "paint": {
           "line-color": [
               "match",
-              ["get", "FCode"],
+              ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]],
               [
                   42800,
                   42801,
@@ -47,10 +47,10 @@
       "source-layer": "NHD_flowline-6tver9",
       "layout": {},
       "paint": {
-          "line-width": ["match", ["get", "FCode"], [33400], 0.5, 1],
+          "line-width": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [33400], 0.5, 1],
           "line-color": [
               "match",
-              ["get", "FCode"],
+              ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]],
               [
                   42800,
                   42801,
