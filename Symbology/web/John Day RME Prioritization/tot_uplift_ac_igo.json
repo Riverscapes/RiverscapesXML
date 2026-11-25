@@ -1,0 +1,74 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(230,230,230)",
+      "0 ac"
+    ],
+    [
+      "rgb(255,255,204)",
+      "0 – 0.25 ac"
+    ],
+    [
+      "rgb(194,230,153)",
+      "0.25 – 0.5 ac"
+    ],
+    [
+      "rgb(120,198,121)",
+      "0.5 – 1 ac"
+    ],
+    [
+      "rgb(49,163,84)",
+      "1 – 2 ac"
+    ],
+    [
+      "rgb(0,104,55)",
+      "> 2 ac"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "tot_uplift_ac_igo-circle",
+      "type": "circle",
+      "source": "composite",
+      "source-layer": "tot_uplift_ac",
+      "layout": {},
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "tot_uplift_ac"
+          ],
+          0.0,
+          "rgb(230,230,230)",
+          0.0001,
+          "rgb(255,255,204)",
+          0.2499,
+          "rgb(255,255,204)",
+          0.25,
+          "rgb(194,230,153)",
+          0.4999,
+          "rgb(194,230,153)",
+          0.5,
+          "rgb(120,198,121)",
+          0.9999,
+          "rgb(120,198,121)",
+          1.0,
+          "rgb(49,163,84)",
+          1.9999,
+          "rgb(49,163,84)",
+          2.0,
+          "rgb(0,104,55)",
+          1000000000.0,
+          "rgb(0,104,55)"
+        ],
+        "circle-radius": 4,
+        "circle-opacity": 0.8
+      }
+    }
+  ]
+}

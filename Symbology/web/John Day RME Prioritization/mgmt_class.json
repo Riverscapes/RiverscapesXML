@@ -1,0 +1,66 @@
+{
+  "$schema": "https://xml.riverscapes.xyz/Symbology/web/vector.schema.json",
+  "legend": [
+    [
+      "rgb(63,127,191)",
+      "Conservation/Restoration"
+    ],
+    [
+      "rgb(74,157,127)",
+      "Land Management/Restoration"
+    ],
+    [
+      "rgb(232,195,58)",
+      "Land Management/Limiting Factors"
+    ],
+    [
+      "rgb(196,138,58)",
+      "Non-Floodplain Reach"
+    ],
+    [
+      "rgb(141,143,146)",
+      "Unsuitable"
+    ]
+  ],
+  "layerStyles": [
+    {
+      "id": "mgmt_class-fill",
+      "type": "fill",
+      "source": "composite",
+      "source-layer": "mgmt_class",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "mgmt_class"
+          ],
+          "Conservation/Restoration",
+          "rgb(63,127,191)",
+          "Land Management/Restoration",
+          "rgb(74,157,127)",
+          "Land Management/Limiting Factors",
+          "rgb(232,195,58)",
+          "Non-Floodplain Reach",
+          "rgb(196,138,58)",
+          "Unsuitable",
+          "rgb(141,143,146)",
+          "rgb(128,128,128)"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "mgmt_class-line",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "mgmt_class",
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(0,0,0,0.2)",
+        "line-width": 0.2
+      }
+    }
+  ]
+}
