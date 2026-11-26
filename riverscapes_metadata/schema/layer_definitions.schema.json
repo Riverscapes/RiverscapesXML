@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://xml.riverscapes.net/layer_definition/0.8.1",
+    "$id": "https://xml.riverscapes.net/layer_definition/0.8.2",
     "title": "Riverscapes Layer Definitions (Unified)",
     "description": "Schema to define structural + descriptive metadata for multiple layers (typically database tables) and their columns in a single file. By convention named layer_definitions.json. See https://docs.riverscapes.net/standards/metadata",
     "type": "object",
@@ -47,6 +47,15 @@
                         "type": "string",
                         "format": "uri",
                         "description": "External provenance or documentation URL"
+                    },
+                    "sources": {
+                        "type": "array",
+                        "description": "Ordered upstream source object identifiers for lineage resolution",
+                        "items": {
+                            "type":"string",
+                            "minLength": 1
+                        },
+                        "minItems": 1
                     },
                     "data_product_version": {
                         "type": "string",
@@ -166,6 +175,12 @@
                 "is_required": {
                     "type": "boolean",
                     "description": "True if field cannot be empty. Corresponds to SQL NOT NULL."
+                },
+                "scope": {
+                    "type": "string",
+                    "description": "What is this describing? top_level would be used for physical column in database while the nested could describe logical columns within it, if the value is a JSON or XML object for example.",
+                    "enum": ["top_level", "nested"],
+                    "default": "top_level"
                 },
                 "default_value": {
                     "type": [
