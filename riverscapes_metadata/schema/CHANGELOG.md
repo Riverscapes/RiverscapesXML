@@ -1,5 +1,10 @@
 # Layer Definitions Schema changes
 
+## 0.8.2
+
+* adds optional layer element `sources`
+* adds optional column element `scope` with options `top_level` (default if omitted) and `nested`
+
 ## 0.8.1
 
 ### Additions
