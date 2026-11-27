@@ -19,7 +19,7 @@
         "paint": {
             "circle-color": [
                 "match",
-                ["get", "FCode"],
+                ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]],
                 [46006],
                 "rgb(0, 76, 168)",
                 [33600],
@@ -32,7 +32,7 @@
                 "rgb(170, 255, 0)",
                 [46007],
                 "rgb(230, 153, 0)",
-                "#000000"
+                "hsla(0, 0%, 0%, 0)"
             ],
             "circle-radius": [
               "interpolate",

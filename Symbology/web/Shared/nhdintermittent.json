@@ -11,20 +11,44 @@
       "id": "nhdintermittent-line",
       "type": "line",
       "source": "composite",
-      "source-layer": "FCode",
-      "layout": {},
-      "paint": {
-        "line-color": [
-          "match",
+      "source-layer": "nhdintermittent",
+      "filter": [
+        "match",
+        [
+          "coalesce",
           [
             "get",
             "FCode"
           ],
-          46003,
-          "rgb(115,222,255)",
-          "rgb(128,128,128)"
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
         ],
-        "line-width": 1
+        [
+          46003
+        ],
+        true,
+        false
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(115,222,255)",
+        "line-width": 0.75,
+        "line-dasharray": [
+          8.0,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333
+        ]
       }
     }
   ]

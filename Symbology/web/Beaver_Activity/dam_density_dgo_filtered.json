@@ -50,7 +50,7 @@
                 1000,
                 "rgb(8, 21, 80)"
             ],
-            "fill-opacity": ["match", ["get", "FCode"], [46006], 1, 0]
+            "fill-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006], 1, 0]
         }
     },
     {
@@ -62,7 +62,7 @@
         "paint": {
             "line-width": 0.1,
             "line-color": "rgb(35, 35, 35)",
-            "line-opacity": ["match", ["get", "FCode"], [46006, 33600, 55800], 1, 0]
+            "line-opacity": ["match", ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]], [46006, 33600, 55800], 1, 0]
         }
     }
 ]

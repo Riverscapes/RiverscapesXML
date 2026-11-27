@@ -51,23 +51,58 @@
       "id": "flow_lines-line",
       "type": "line",
       "source": "composite",
-      "source-layer": "FCode",
+      "source-layer": "flow_lines",
+      "filter": [
+        "match",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        [
+          46006,
+          33400,
+          55800,
+          42800,
+          42801,
+          42802,
+          42807,
+          42813
+        ],
+        true,
+        false
+      ],
       "layout": {},
       "paint": {
         "line-color": [
           "match",
           [
-            "get",
-            "FCode"
+            "coalesce",
+            [
+              "get",
+              "FCode"
+            ],
+            [
+              "get",
+              "fcode"
+            ],
+            [
+              "get",
+              "FCODE"
+            ]
           ],
           46006,
           "rgb(0,77,168)",
-          46003,
-          "rgb(115,222,255)",
-          46007,
-          "rgb(230,152,0)",
-          33600,
-          "rgb(255,0,171)",
           33400,
           "rgb(255,170,0)",
           55800,
@@ -82,9 +117,148 @@
           "rgb(0,0,0)",
           42813,
           "rgb(0,0,0)",
-          "rgb(128,128,128)"
+          "rgba(0,0,0,0)"
         ],
-        "line-width": 1
+        "line-width": [
+          "match",
+          [
+            "coalesce",
+            [
+              "get",
+              "FCode"
+            ],
+            [
+              "get",
+              "fcode"
+            ],
+            [
+              "get",
+              "FCODE"
+            ]
+          ],
+          46006,
+          1.0,
+          33400,
+          2.0,
+          55800,
+          2.0,
+          42800,
+          3.4,
+          42801,
+          3.4,
+          42802,
+          3.4,
+          42807,
+          3.4,
+          42813,
+          3.4,
+          1
+        ]
+      }
+    },
+    {
+      "id": "flow_lines-line-1",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "flow_lines",
+      "filter": [
+        "match",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        [
+          46003,
+          46007
+        ],
+        true,
+        false
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "coalesce",
+            [
+              "get",
+              "FCode"
+            ],
+            [
+              "get",
+              "fcode"
+            ],
+            [
+              "get",
+              "FCODE"
+            ]
+          ],
+          46003,
+          "rgb(115,222,255)",
+          46007,
+          "rgb(230,152,0)",
+          "rgba(0,0,0,0)"
+        ],
+        "line-width": 0.75,
+        "line-dasharray": [
+          8.0,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333,
+          1.333
+        ]
+      }
+    },
+    {
+      "id": "flow_lines-line-2",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "flow_lines",
+      "filter": [
+        "match",
+        [
+          "coalesce",
+          [
+            "get",
+            "FCode"
+          ],
+          [
+            "get",
+            "fcode"
+          ],
+          [
+            "get",
+            "FCODE"
+          ]
+        ],
+        [
+          33600
+        ],
+        true,
+        false
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "rgb(255,0,171)",
+        "line-width": 0.5,
+        "line-dasharray": [
+          10.0,
+          6.0
+        ]
       }
     }
   ]

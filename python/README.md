@@ -18,3 +18,14 @@ This directory contains assorted maintenance utilities for publishing Riverscape
 - Add runtime libraries to `[project.dependencies]` in `pyproject.toml`.
 - Add development-only tooling (linters, formatters, tests) under `[dependency-groups.dev]`.
 - Run `uv lock` (or `uv sync`) to refresh `uv.lock` whenever dependencies are changed.
+
+### Symbology modules
+
+`Symbology/qgis/**/*.qml` is the QGIS source of truth; `Symbology/web/**/*.json` is generated from it.
+
+| Module | Purpose |
+|---|---|
+| `QML2WebSymbology.py` | Converts a `.qml` file into the viewer's web symbology JSON. See `symbology_sync.md` for how the GitHub Action uses it. |
+| `maplibre_expr.py` | A small MapLibre GL style-expression evaluator, used by the tests to work out which colour a feature actually renders as. Not used by the viewer. |
+
+Edit the `.qml` and regenerate; never hand-edit a generated `Symbology/web` JSON, because `python/test.py` compares generated files against the converter's output.

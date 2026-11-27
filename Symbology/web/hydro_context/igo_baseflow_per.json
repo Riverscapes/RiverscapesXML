@@ -62,7 +62,7 @@
             ],
             "circle-opacity": [
               "match",
-              ["get", "FCode"],
+              ["coalesce", ["get", "FCode"], ["get", "fcode"], ["get", "FCODE"]],
               [46006, 33600, 55800],
               1,
               0
